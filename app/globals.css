@@ -1,0 +1,250 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+:root {
+  /* Warm alabaster canvas instead of pure white — softer on the eyes over
+     long sessions, cards stay pure white for gentle elevation against it. */
+  --background: #f9fafb;
+  --foreground: #0f1117;
+  --card: #ffffff;
+  --card-foreground: #0f1117;
+  --muted: #f1f2f5;
+  --muted-foreground: #6b7280;
+  --border: #e5e7eb;
+  --primary: #635bff;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f2f5;
+  --secondary-foreground: #1c1f2a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --accent: #eef0ff;
+  --accent-foreground: #4338ca;
+  --radius: 1rem;
+}
+
+.dark {
+  /* Soft obsidian instead of near-black — a faint blue undertone (not pure
+     gray) keeps long dark-mode sessions comfortable without ever reading
+     as "off" or muddy. */
+  --background: #0b0d13;
+  --foreground: #f4f5f7;
+  --card: #131722;
+  --card-foreground: #f4f5f7;
+  --muted: #171b26;
+  --muted-foreground: #9298a8;
+  --border: rgba(255, 255, 255, 0.08);
+  --primary: #7c74ff;
+  --primary-foreground: #ffffff;
+  --secondary: #171b26;
+  --secondary-foreground: #f4f5f7;
+  --destructive: #f87171;
+  --destructive-foreground: #0b0d13;
+  --accent: #1c1f3a;
+  --accent-foreground: #b4b0ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-glow-emerald: #10b981;
+  --color-glow-amber: #f59e0b;
+  /*
+   * Geist Sans covers Latin-script locales (en, es, fr, de, pt, it, id).
+   * ru/ar/ja/hi/zh-CN instead get a purpose-built Noto Sans variant, bundled
+   * via next/font/google and selected per-locale in app/[locale]/layout.tsx,
+   * which sets --font-sans-active on <html>. This renders correctly and
+   * consistently everywhere rather than depending on whichever font (if any)
+   * the visitor's OS happens to have installed for that script.
+   */
+  --font-sans: var(--font-sans-active, var(--font-geist-sans)), ui-sans-serif, system-ui,
+    "Noto Sans Arabic", "Noto Sans JP", "Noto Sans Devanagari", "Noto Sans SC", "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", Menlo, Consolas,
+    monospace;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*
+ * Site-wide ambient gradient. Fixed behind all content (not part of
+ * document flow, so it never affects layout or scrolls with the page) and
+ * built from --primary/--accent so it re-tints automatically between light
+ * and dark mode instead of needing separate light/dark gradient values.
+ * pointer-events: none keeps it from intercepting clicks; z-index: -1 keeps
+ * it behind body's own background color, which still shows through the
+ * gaps between the gradient blobs.
+ */
+.bg-site-gradient {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 45% at 12% 8%, color-mix(in oklab, var(--primary) 22%, transparent), transparent 70%),
+    radial-gradient(ellipse 50% 45% at 88% 15%, color-mix(in oklab, var(--accent-foreground) 16%, transparent), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 50% 100%, color-mix(in oklab, var(--primary) 14%, transparent), transparent 70%);
+  background-size: 200% 200%;
+  animation: site-gradient-drift 20s ease-in-out infinite;
+}
+
+@keyframes site-gradient-drift {
+  0%,
+  100% {
+    background-position: 0% 0%, 100% 0%, 50% 100%;
+  }
+  50% {
+    background-position: 10% 10%, 90% 20%, 45% 90%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-site-gradient {
+    animation: none;
+  }
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* ------------------------------------------------------------------ */
+/* 2026 visual language: ambient backgrounds, glass surfaces, motion   */
+/* ------------------------------------------------------------------ */
+
+.bg-noise {
+  position: relative;
+}
+
+.bg-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.bg-grid-dots {
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 40%, transparent 90%);
+}
+
+.bg-hero-glow {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 0%, color-mix(in oklab, var(--primary) 18%, transparent), transparent),
+    radial-gradient(ellipse 50% 40% at 85% 10%, color-mix(in oklab, var(--primary) 12%, transparent), transparent);
+}
+
+.glass {
+  isolation: isolate;
+  background: color-mix(in oklab, var(--background) 85%, transparent);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid color-mix(in oklab, var(--border) 40%, transparent);
+}
+
+/*
+ * The sticky site header specifically: near-opaque rather than translucent.
+ * A sticky element has page content scrolling underneath it constantly, so
+ * unlike the hero search button (.glass, a one-off non-scrolling surface),
+ * any transparency here risks scrolled-past text visually showing/blending
+ * through at the boundary — especially noticeable with a backdrop-blur
+ * that some browsers intermittently fail to recomposite correctly on
+ * scroll. 96% opacity keeps a faint frosted edge without that risk.
+ */
+.site-header {
+  isolation: isolate;
+  background: color-mix(in oklab, var(--background) 96%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
+}
+
+/*
+ * Lighter frosted surface for bento/discovery cards — enough blur to read
+ * as "glass" without obscuring the card's own text content the way the
+ * header's heavier .glass blur would at this size.
+ */
+.card-glass {
+  isolation: isolate;
+  background: color-mix(in oklab, var(--card) 75%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid color-mix(in oklab, var(--foreground) 8%, transparent);
+}
+
+@theme inline {
+  --animate-glow-pulse: glow-pulse 2.4s ease-in-out infinite;
+  --animate-gradient-x: gradient-x 6s ease infinite;
+
+  @keyframes glow-pulse {
+    0%,
+    100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+  }
+
+  @keyframes gradient-x {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}

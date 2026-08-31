@@ -1,0 +1,2703 @@
+{
+  "site": {
+    "name": "EveryUtili",
+    "tagline": "Free online tools that respect your privacy",
+    "heroDescription": "Convert files, edit PDFs, format code, and run calculators — all processed locally in your browser. No uploads, no sign-up, no limits.",
+    "featureInstant": "Instant, no waiting",
+    "featurePrivate": "Files never leave your device",
+    "featureNoSignup": "No sign-up required",
+    "footerCopyright": "EveryUtili. All processing happens locally in your browser.",
+    "organizationDescription": "Privacy-first online utility suite for file conversion, PDF editing, developer tools, and calculators.",
+    "metaTitleTemplate": "%s | EveryUtili",
+    "metaTitleDefault": "EveryUtili — Free Online File Converters & Calculators",
+    "metaDescription": "Fast, free, privacy-first online tools: image converters, PDF utilities, developer tools, and calculators. Everything runs locally in your browser.",
+    "heroSearchPlaceholder": "Search {count} tools — image, PDF, code, finance…"
+  },
+  "nav": {
+    "viewAll": "View all",
+    "categoriesMenu": "Categories menu"
+  },
+  "privacyBadge": "Processed 100% locally in your browser",
+  "breadcrumbs": {
+    "home": "Home"
+  },
+  "sections": {
+    "quickAnswer": "Quick Answer",
+    "scorecard": "Format & Performance Scorecard",
+    "howToUse": "How to use this tool",
+    "technicalComparison": "Technical Comparison",
+    "faq": "Frequently Asked Questions",
+    "relatedTools": "Related Tools"
+  },
+  "common": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "loadingTool": "Loading tool…",
+    "searchPlaceholder": "Search tools…",
+    "searchAriaLabel": "Search tools",
+    "clearSearchAriaLabel": "Clear search",
+    "noToolsMatch": "No tools match “{query}”. Try a different search term.",
+    "categorySearchPlaceholder": "Search {category}…",
+    "notFoundTitle": "Page not found",
+    "notFoundCta": "Go home",
+    "usedRecently": "Used"
+  },
+  "languageSwitcher": {
+    "label": "Language"
+  },
+  "categories": {
+    "media": {
+      "label": "Media Converters",
+      "description": "Convert, compress, and resize images and video — entirely in your browser.",
+      "navLabel": "Media"
+    },
+    "document": {
+      "label": "Document Utilities",
+      "description": "Merge, split, and edit PDFs and documents without uploading a single byte.",
+      "navLabel": "Documents"
+    },
+    "developer": {
+      "label": "Developer Tools",
+      "description": "Format, validate, and transform code and data on the fly.",
+      "navLabel": "Developer"
+    },
+    "financial": {
+      "label": "Financial Calculators",
+      "description": "Fast, accurate calculators for salary, tax, and budgeting decisions.",
+      "navLabel": "Finance"
+    }
+  },
+  "tools": {
+    "jpg-to-png": {
+      "seoTitle": "Convert JPG to PNG Online – 100% Free & Secure",
+      "metaDescription": "Convert JPG or HEIC images to PNG instantly in your browser. No uploads, no watermarks, no sign-up. Batch convert and download as ZIP in seconds.",
+      "h1": "JPG to PNG Converter",
+      "subheading": "Convert JPG and HEIC images to high-quality PNG files — processed 100% locally in your browser.",
+      "keywords": [
+        "jpg to png",
+        "convert jpg to png",
+        "heic to png",
+        "image converter online",
+        "free jpg png converter"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your images",
+          "text": "Drag and drop or select one or more JPG/HEIC files from your device."
+        },
+        {
+          "name": "Adjust settings",
+          "text": "Optionally resize or adjust the output quality before converting."
+        },
+        {
+          "name": "Convert locally",
+          "text": "Click Convert — processing happens entirely in your browser via a Web Worker."
+        },
+        {
+          "name": "Download your files",
+          "text": "Download each PNG individually or grab them all at once as a ZIP file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is this JPG to PNG converter really free?",
+          "answer": "Yes. There are no limits, watermarks, or hidden fees. All conversions run locally in your browser."
+        },
+        {
+          "question": "Are my images uploaded to a server?",
+          "answer": "No. This tool uses your browser's Canvas API and Web Workers to convert images locally — your files never leave your device."
+        },
+        {
+          "question": "Can I convert HEIC files from my iPhone?",
+          "answer": "Yes, HEIC files are supported and converted to standard PNG format automatically."
+        },
+        {
+          "question": "Is there a limit on batch conversions?",
+          "answer": "No artificial limits are imposed — the only constraint is your device's available memory."
+        }
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JPG",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy",
+              "Lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "No",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Photos",
+              "Graphics, logos, screenshots"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
+    },
+    "merge-pdf": {
+      "seoTitle": "Merge PDF Files Online – 100% Free & Secure",
+      "metaDescription": "Combine multiple PDF files into a single document instantly in your browser. No uploads, no watermarks — fast, private, and free.",
+      "h1": "Merge PDF Files",
+      "subheading": "Combine multiple PDFs into one document — processed 100% locally in your browser.",
+      "keywords": [
+        "merge pdf",
+        "combine pdf files",
+        "pdf merger online",
+        "join pdf files free"
+      ],
+      "howTo": [
+        {
+          "name": "Upload PDF files",
+          "text": "Select two or more PDF files you want to combine."
+        },
+        {
+          "name": "Reorder pages",
+          "text": "Drag to reorder files in the sequence you want them merged."
+        },
+        {
+          "name": "Merge locally",
+          "text": "Click Merge — your files are combined directly in your browser using pdf-lib."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download your merged PDF instantly."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is my PDF data private?",
+          "answer": "Completely. Merging happens locally using pdf-lib — no file is ever uploaded to a server."
+        },
+        {
+          "question": "Is there a page or file size limit?",
+          "answer": "No artificial limits — performance depends only on your device's memory."
+        },
+        {
+          "question": "Can I reorder pages before merging?",
+          "answer": "Yes, you can drag and drop files to control the final page order."
+        }
+      ]
+    },
+    "json-formatter": {
+      "seoTitle": "JSON Formatter & Validator Online – Free & Instant",
+      "metaDescription": "Format, validate, and beautify JSON online with instant syntax error highlighting, tree view, and CSV export. 100% free, no sign-up required.",
+      "h1": "JSON Formatter & Validator",
+      "subheading": "Beautify, validate, and explore JSON with instant error highlighting and a live tree view.",
+      "keywords": [
+        "json formatter",
+        "json validator",
+        "json beautifier",
+        "json to csv",
+        "format json online"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your JSON",
+          "text": "Paste or type your raw JSON into the editor."
+        },
+        {
+          "name": "Auto-validate",
+          "text": "Syntax errors are highlighted instantly as you type."
+        },
+        {
+          "name": "Format & explore",
+          "text": "Use auto-fix formatting or browse the interactive tree view."
+        },
+        {
+          "name": "Export",
+          "text": "Copy the formatted JSON or convert it to CSV."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does this tool send my JSON data anywhere?",
+          "answer": "No. All parsing, formatting, and validation happens locally in your browser."
+        },
+        {
+          "question": "Can I convert JSON to CSV?",
+          "answer": "Yes, use the built-in CSV export for flat or nested JSON arrays."
+        },
+        {
+          "question": "What happens if my JSON is invalid?",
+          "answer": "The editor highlights the exact line and character of the syntax error in real time."
+        }
+      ]
+    },
+    "salary-to-hourly": {
+      "seoTitle": "Salary to Hourly Calculator – Convert Annual Pay Instantly",
+      "metaDescription": "Convert your annual salary to an hourly, daily, weekly, or monthly rate instantly. Free, accurate, and private salary calculator.",
+      "h1": "Salary to Hourly Calculator",
+      "subheading": "Convert your annual salary into hourly, daily, weekly, and monthly rates instantly.",
+      "keywords": [
+        "salary to hourly calculator",
+        "annual salary to hourly rate",
+        "convert salary to hourly wage",
+        "hourly rate calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your annual salary",
+          "text": "Input your gross annual salary amount."
+        },
+        {
+          "name": "Set work hours",
+          "text": "Adjust hours per week and weeks per year if different from default."
+        },
+        {
+          "name": "View results instantly",
+          "text": "See your equivalent hourly, daily, weekly, and monthly rate."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is hourly rate calculated from salary?",
+          "answer": "Annual salary is divided by (hours per week × weeks per year) to determine the equivalent hourly rate."
+        },
+        {
+          "question": "Does this account for taxes?",
+          "answer": "No, this calculates gross pay only. Consult a tax professional for net income estimates."
+        },
+        {
+          "question": "Can I customize working hours?",
+          "answer": "Yes, you can adjust hours per week and paid weeks per year to match your schedule."
+        }
+      ]
+    },
+    "heic-to-jpg": {
+      "seoTitle": "Convert HEIC to JPG Online – 100% Free & Secure",
+      "metaDescription": "Convert iPhone HEIC and HEIF photos to universally compatible JPG images instantly in your browser. No uploads, no watermarks, free forever.",
+      "h1": "HEIC to JPG Converter",
+      "subheading": "Convert HEIC and HEIF photos from your iPhone into standard JPG files — processed 100% locally.",
+      "keywords": [
+        "heic to jpg",
+        "convert heic to jpg",
+        "iphone photo converter",
+        "heif to jpg online",
+        "free heic converter"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your HEIC photos",
+          "text": "Drag and drop or select one or more HEIC/HEIF files from your device."
+        },
+        {
+          "name": "Adjust quality",
+          "text": "Optionally adjust the JPG output quality using the slider."
+        },
+        {
+          "name": "Convert locally",
+          "text": "Click Convert — processing happens entirely in your browser, no upload required."
+        },
+        {
+          "name": "Download your files",
+          "text": "Save each JPG individually or download them all as a ZIP file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Why do I need to convert HEIC to JPG?",
+          "answer": "HEIC is Apple's default photo format, but many websites, apps, and Windows programs don't support it. JPG works everywhere."
+        },
+        {
+          "question": "Are my photos uploaded anywhere?",
+          "answer": "No. Conversion happens locally in your browser — your photos never leave your device."
+        },
+        {
+          "question": "Does this work with photos from any iPhone?",
+          "answer": "Yes, any HEIC or HEIF image exported from an iPhone or iPad is supported, subject to your browser's image decoding support."
+        },
+        {
+          "question": "Will I lose photo quality?",
+          "answer": "You control the JPG quality with a slider, so you can balance file size against visual quality."
+        }
+      ]
+    },
+    "image-compressor": {
+      "seoTitle": "Compress Images Online – Free & Instant Image Optimizer",
+      "metaDescription": "Reduce image file size without losing quality. Compress JPG, PNG, and WebP images instantly in your browser — free, private, no uploads.",
+      "h1": "Image Compressor",
+      "subheading": "Shrink image file sizes with adjustable quality — processed 100% locally in your browser.",
+      "keywords": [
+        "image compressor",
+        "compress jpg online",
+        "reduce image file size",
+        "photo compressor free",
+        "optimize images online"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your images",
+          "text": "Drag and drop or select one or more images from your device."
+        },
+        {
+          "name": "Set compression quality",
+          "text": "Adjust the quality slider to balance file size and visual fidelity."
+        },
+        {
+          "name": "Compress locally",
+          "text": "Click Compress all — your images are processed directly in your browser."
+        },
+        {
+          "name": "Download the results",
+          "text": "Save each compressed image and compare the before/after file size."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How much can I reduce my image file size?",
+          "answer": "Typical savings range from 30% to 80% depending on the original image and the quality setting you choose."
+        },
+        {
+          "question": "Will compression reduce image quality?",
+          "answer": "Some quality loss is expected with lossy compression, but at 70-85% quality the difference is usually imperceptible."
+        },
+        {
+          "question": "Are my images uploaded to a server?",
+          "answer": "No, everything happens locally using the Canvas API — your files never leave your device."
+        }
+      ]
+    },
+    "image-resizer": {
+      "seoTitle": "Resize Images Online – Free & Instant Image Resizer",
+      "metaDescription": "Resize JPG, PNG, or WebP images to exact pixel dimensions instantly in your browser. Free, private, with aspect ratio lock — no uploads.",
+      "h1": "Image Resizer",
+      "subheading": "Resize images to exact pixel dimensions with optional aspect ratio lock — processed 100% locally.",
+      "keywords": [
+        "image resizer",
+        "resize image online",
+        "resize photo free",
+        "change image dimensions",
+        "resize picture pixels"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your images",
+          "text": "Drag and drop or select one or more images from your device."
+        },
+        {
+          "name": "Set target dimensions",
+          "text": "Enter a width and height in pixels, optionally locking the aspect ratio."
+        },
+        {
+          "name": "Resize locally",
+          "text": "Click Resize all — your images are processed directly in your browser."
+        },
+        {
+          "name": "Download the results",
+          "text": "Save each resized image to your device."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I resize multiple images at once?",
+          "answer": "Yes, batch resizing is supported — upload as many images as you like."
+        },
+        {
+          "question": "Will resizing distort my image?",
+          "answer": "Enable the aspect ratio lock to prevent stretching, or disable it for exact custom dimensions."
+        },
+        {
+          "question": "What image formats are supported?",
+          "answer": "JPG, PNG, and most other common browser-supported image formats."
+        }
+      ]
+    },
+    "webp-converter": {
+      "seoTitle": "Convert Images to WebP Online – 100% Free & Secure",
+      "metaDescription": "Convert JPG, PNG, or GIF images to modern WebP format for smaller file sizes and faster websites. 100% free, processed locally in your browser.",
+      "h1": "Image to WebP Converter",
+      "subheading": "Convert JPG, PNG, and GIF images to WebP for smaller files and faster page loads.",
+      "keywords": [
+        "webp converter",
+        "convert jpg to webp",
+        "png to webp",
+        "image to webp online",
+        "free webp converter"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your images",
+          "text": "Drag and drop or select one or more JPG, PNG, or GIF files."
+        },
+        {
+          "name": "Adjust quality",
+          "text": "Fine-tune the WebP compression quality with the slider."
+        },
+        {
+          "name": "Convert locally",
+          "text": "Click Convert all — conversion happens entirely in your browser."
+        },
+        {
+          "name": "Download your files",
+          "text": "Save each WebP image or download them all as a ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Why convert images to WebP?",
+          "answer": "WebP typically produces 25-35% smaller files than JPG or PNG at similar visual quality, improving page load speed."
+        },
+        {
+          "question": "Is WebP supported by all browsers?",
+          "answer": "Yes, all modern browsers (Chrome, Firefox, Safari, Edge) fully support WebP images."
+        },
+        {
+          "question": "Does this tool upload my images anywhere?",
+          "answer": "No, conversion happens locally using a Web Worker — your images never leave your device."
+        }
+      ]
+    },
+    "png-to-jpg": {
+      "seoTitle": "Convert PNG to JPG Online – 100% Free & Secure",
+      "metaDescription": "Convert PNG images to JPG instantly in your browser. Reduce file size, remove transparency, no uploads or watermarks. Free forever.",
+      "h1": "PNG to JPG Converter",
+      "subheading": "Convert PNG images to compact JPG files — processed 100% locally in your browser.",
+      "keywords": [
+        "png to jpg",
+        "convert png to jpg",
+        "png to jpeg converter",
+        "image converter online"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PNG images",
+          "text": "Drag and drop or select one or more PNG files from your device."
+        },
+        {
+          "name": "Adjust quality",
+          "text": "Set the JPG output quality with the slider."
+        },
+        {
+          "name": "Convert locally",
+          "text": "Click Convert all — processing happens entirely in your browser."
+        },
+        {
+          "name": "Download your files",
+          "text": "Save each JPG individually or download them all as a ZIP file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What happens to transparency when converting PNG to JPG?",
+          "answer": "JPG doesn't support transparency, so transparent areas are filled with white during conversion."
+        },
+        {
+          "question": "Why convert PNG to JPG?",
+          "answer": "JPG files are typically much smaller than PNG for photographic images, saving storage and bandwidth."
+        },
+        {
+          "question": "Is this conversion private?",
+          "answer": "Yes, everything happens locally in your browser — no files are ever uploaded."
+        }
+      ]
+    },
+    "base64-image-encoder": {
+      "seoTitle": "Base64 Image Encoder & Decoder – Free Online Tool",
+      "metaDescription": "Convert images to Base64 data URLs and back again, instantly in your browser. Perfect for embedding images in CSS or HTML. 100% free and private.",
+      "h1": "Base64 Image Encoder",
+      "subheading": "Convert images to Base64 data URLs and decode Base64 back to images — entirely in your browser.",
+      "keywords": [
+        "base64 image encoder",
+        "image to base64",
+        "base64 to image",
+        "convert image to base64 string",
+        "data url generator"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a mode",
+          "text": "Switch between encoding an image or decoding a Base64 string."
+        },
+        {
+          "name": "Upload or paste",
+          "text": "Upload an image file, or paste a Base64 string / data URL."
+        },
+        {
+          "name": "View the result",
+          "text": "See the generated Base64 string or decoded image preview instantly."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Copy the Base64 output, or download the decoded image."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is a Base64 data URL used for?",
+          "answer": "Base64 data URLs let you embed images directly inside HTML or CSS without a separate file request."
+        },
+        {
+          "question": "Does encoding increase file size?",
+          "answer": "Yes, Base64 encoding increases size by roughly 33% compared to the original binary file."
+        },
+        {
+          "question": "Is my image uploaded anywhere?",
+          "answer": "No, encoding and decoding both happen locally in your browser using the FileReader API."
+        }
+      ]
+    },
+    "favicon-generator": {
+      "seoTitle": "Favicon Generator Online – Free Multi-Size Favicon Maker",
+      "metaDescription": "Generate a complete set of favicon sizes (16, 32, 48, 180, 192, 512px) from any image, instantly in your browser. Free ZIP download, no sign-up.",
+      "h1": "Favicon Generator",
+      "subheading": "Upload a logo and generate every standard favicon size as a ready-to-use ZIP — processed 100% locally.",
+      "keywords": [
+        "favicon generator",
+        "favicon maker online",
+        "generate favicon from image",
+        "apple touch icon generator",
+        "free favicon creator"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your logo",
+          "text": "Drag and drop a square logo or image — it will be center-cropped automatically."
+        },
+        {
+          "name": "Preview sizes",
+          "text": "Review the generated favicon sizes from 16px up to 512px."
+        },
+        {
+          "name": "Generate the ZIP",
+          "text": "Click Download to render and package all sizes as PNG files."
+        },
+        {
+          "name": "Add to your site",
+          "text": "Extract the ZIP and reference the favicon files in your site's HTML head."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What favicon sizes are generated?",
+          "answer": "16×16, 32×32, 48×48, 180×180 (Apple touch icon), 192×192, and 512×512 pixel PNGs."
+        },
+        {
+          "question": "Does my image need to be square?",
+          "answer": "No, non-square images are automatically center-cropped to a square before resizing."
+        },
+        {
+          "question": "Is this tool free to use?",
+          "answer": "Yes, completely free with no limits, watermarks, or sign-up required."
+        }
+      ]
+    },
+    "qr-code-generator": {
+      "seoTitle": "QR Code Generator Online – Free & Instant, No Sign-Up",
+      "metaDescription": "Generate a custom QR code from any text or URL instantly in your browser. Choose colors and size, then download as PNG. 100% free and private.",
+      "h1": "QR Code Generator",
+      "subheading": "Turn any text, URL, or message into a downloadable QR code — generated 100% locally in your browser.",
+      "keywords": [
+        "qr code generator",
+        "free qr code maker",
+        "create qr code online",
+        "url to qr code",
+        "qr code generator no sign up"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your content",
+          "text": "Type or paste the text, URL, or message you want to encode."
+        },
+        {
+          "name": "Customize appearance",
+          "text": "Adjust the size and pick foreground/background colors."
+        },
+        {
+          "name": "Preview instantly",
+          "text": "Your QR code updates live as you type."
+        },
+        {
+          "name": "Download the PNG",
+          "text": "Click Download to save the QR code image to your device."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do QR codes generated here expire?",
+          "answer": "No, the QR code is generated entirely client-side and encodes your content directly — there's no server or expiration."
+        },
+        {
+          "question": "Can I use this for a business or product?",
+          "answer": "Yes, generated QR codes are free to use for any personal or commercial purpose."
+        },
+        {
+          "question": "What's the maximum amount of text I can encode?",
+          "answer": "QR codes can hold up to a few thousand characters, though shorter content scans more reliably."
+        },
+        {
+          "question": "Is my data sent to a server to generate the code?",
+          "answer": "No, the QR code image is rendered entirely in your browser — nothing is transmitted anywhere."
+        }
+      ]
+    },
+    "color-picker": {
+      "seoTitle": "Image Color Picker Online – Get HEX, RGB & HSL Free",
+      "metaDescription": "Upload an image and click anywhere to sample its exact pixel color as HEX, RGB, and HSL. Free, instant, and processed 100% locally.",
+      "h1": "Image Color Picker",
+      "subheading": "Click anywhere on an uploaded image to sample its exact pixel color — HEX, RGB, and HSL instantly.",
+      "keywords": [
+        "color picker from image",
+        "image color picker online",
+        "hex color picker",
+        "eyedropper tool online",
+        "get color from photo"
+      ],
+      "howTo": [
+        {
+          "name": "Upload an image",
+          "text": "Drag and drop or select an image from your device."
+        },
+        {
+          "name": "Click to sample",
+          "text": "Click anywhere on the image to read the exact pixel color underneath."
+        },
+        {
+          "name": "View the values",
+          "text": "See the sampled color as HEX, RGB, and HSL simultaneously."
+        },
+        {
+          "name": "Copy the value",
+          "text": "Click the copy icon next to any format to copy it to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How accurate is the sampled color?",
+          "answer": "The tool reads the exact pixel value from the image's raw pixel data via the Canvas API, so it's pixel-perfect."
+        },
+        {
+          "question": "Is my image uploaded to a server?",
+          "answer": "No, the image is loaded and sampled entirely within your browser using Canvas getImageData."
+        },
+        {
+          "question": "What color formats are supported?",
+          "answer": "HEX, RGB, and HSL are all shown simultaneously for every sampled pixel."
+        }
+      ]
+    },
+    "split-pdf": {
+      "seoTitle": "Split PDF Online – 100% Free & Secure",
+      "metaDescription": "Split a PDF into individual pages or extract a custom page range, instantly in your browser. No uploads, no watermarks, completely free.",
+      "h1": "Split PDF Files",
+      "subheading": "Split a PDF into separate pages or extract a specific range — processed 100% locally in your browser.",
+      "keywords": [
+        "split pdf",
+        "split pdf online",
+        "extract pdf pages",
+        "pdf splitter free",
+        "separate pdf pages"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to split."
+        },
+        {
+          "name": "Choose a mode",
+          "text": "Split into individual pages, or specify a custom page range to extract."
+        },
+        {
+          "name": "Split locally",
+          "text": "Click Split — pages are separated directly in your browser using pdf-lib."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download a single PDF for a range, or a ZIP of individual page PDFs."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I extract just a few specific pages?",
+          "answer": "Yes, use the page range mode and enter values like \"1-3, 5, 8-10\"."
+        },
+        {
+          "question": "Is my PDF uploaded to a server?",
+          "answer": "No, splitting happens entirely locally using pdf-lib — your file never leaves your device."
+        },
+        {
+          "question": "What do I get when splitting into all pages?",
+          "answer": "A ZIP file containing one PDF per page, ready to download."
+        }
+      ]
+    },
+    "pdf-to-images": {
+      "seoTitle": "Convert PDF to Images Online – 100% Free & Secure",
+      "metaDescription": "Convert every page of a PDF into high-resolution PNG images instantly in your browser. Download individually or as a ZIP. Free, no uploads.",
+      "h1": "PDF to Images Converter",
+      "subheading": "Render every PDF page as a high-resolution PNG image — processed 100% locally in your browser.",
+      "keywords": [
+        "pdf to images",
+        "pdf to png converter",
+        "convert pdf to jpg",
+        "pdf page to image online",
+        "extract images from pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to convert to images."
+        },
+        {
+          "name": "Automatic rendering",
+          "text": "Each page is rendered to a canvas at high resolution using pdf.js."
+        },
+        {
+          "name": "Preview the pages",
+          "text": "Browse thumbnail previews of every rendered page."
+        },
+        {
+          "name": "Download",
+          "text": "Save individual pages or download all pages as a ZIP file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What image format are the pages exported as?",
+          "answer": "Each page is exported as a high-resolution PNG image."
+        },
+        {
+          "question": "Does this work with scanned PDFs?",
+          "answer": "Yes, any PDF page — text-based or scanned — is rendered visually as it appears."
+        },
+        {
+          "question": "Is my document uploaded anywhere?",
+          "answer": "No, rendering happens entirely in your browser using the pdf.js library — nothing is uploaded."
+        }
+      ]
+    },
+    "images-to-pdf": {
+      "seoTitle": "Convert Images to PDF Online – 100% Free & Secure",
+      "metaDescription": "Combine JPG or PNG images into a single PDF document instantly in your browser. Reorder pages, no uploads, no watermarks. Free forever.",
+      "h1": "Images to PDF Converter",
+      "subheading": "Combine JPG and PNG images into a single PDF document — processed 100% locally in your browser.",
+      "keywords": [
+        "images to pdf",
+        "jpg to pdf converter",
+        "png to pdf online",
+        "combine images into pdf",
+        "photo to pdf free"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your images",
+          "text": "Select one or more JPG or PNG images."
+        },
+        {
+          "name": "Reorder pages",
+          "text": "Drag to reorder images in the sequence you want them to appear."
+        },
+        {
+          "name": "Build the PDF",
+          "text": "Click Create PDF — pages are generated directly in your browser using pdf-lib."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download your combined PDF file instantly."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I combine both JPG and PNG images in one PDF?",
+          "answer": "Yes, you can mix JPG and PNG files freely — each is embedded at its native resolution."
+        },
+        {
+          "question": "Can I reorder the images before creating the PDF?",
+          "answer": "Yes, drag and drop the thumbnails to set the exact page order."
+        },
+        {
+          "question": "Is there a limit on how many images I can add?",
+          "answer": "No artificial limit — performance depends only on your device's available memory."
+        }
+      ]
+    },
+    "rotate-pdf": {
+      "seoTitle": "Rotate PDF Online – 100% Free & Secure",
+      "metaDescription": "Rotate all pages in a PDF by 90, 180, or 270 degrees instantly in your browser. No uploads, no watermarks, completely free.",
+      "h1": "Rotate PDF Pages",
+      "subheading": "Rotate every page in a PDF by 90, 180, or 270 degrees — processed 100% locally in your browser.",
+      "keywords": [
+        "rotate pdf",
+        "rotate pdf online",
+        "rotate pdf pages free",
+        "fix pdf orientation"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to rotate."
+        },
+        {
+          "name": "Choose an angle",
+          "text": "Pick 90°, 180°, or 270° rotation."
+        },
+        {
+          "name": "Rotate locally",
+          "text": "Click Rotate — the transformation happens directly in your browser using pdf-lib."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download your rotated PDF instantly."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does this rotate every page or just one?",
+          "answer": "Every page in the document is rotated by the same angle you select."
+        },
+        {
+          "question": "Will rotating affect the PDF's text or quality?",
+          "answer": "No, rotation only changes each page's display orientation metadata — content and quality are preserved."
+        },
+        {
+          "question": "Is my file uploaded to a server?",
+          "answer": "No, rotation happens entirely locally using pdf-lib."
+        }
+      ]
+    },
+    "delete-pdf-pages": {
+      "seoTitle": "Delete PDF Pages Online – 100% Free & Secure",
+      "metaDescription": "Remove specific pages from a PDF instantly in your browser. Select pages or ranges to delete, then download the result. Free, no uploads.",
+      "h1": "Delete PDF Pages",
+      "subheading": "Remove specific pages from a PDF document — processed 100% locally in your browser.",
+      "keywords": [
+        "delete pdf pages",
+        "remove pages from pdf",
+        "pdf page remover online",
+        "edit pdf pages free"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to edit."
+        },
+        {
+          "name": "Choose pages to remove",
+          "text": "Enter page numbers or ranges, e.g. \"2, 4-6\"."
+        },
+        {
+          "name": "Delete locally",
+          "text": "Click Delete Pages — the edit happens directly in your browser using pdf-lib."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download the edited PDF with the selected pages removed."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I remove multiple non-consecutive pages?",
+          "answer": "Yes, use a comma-separated list and ranges, such as \"2, 4-6, 9\"."
+        },
+        {
+          "question": "Can I delete all pages?",
+          "answer": "No, at least one page must remain in the final document."
+        },
+        {
+          "question": "Is my PDF uploaded anywhere?",
+          "answer": "No, all edits happen entirely locally using pdf-lib in your browser."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "seoTitle": "Compress PDF Online – Free & Private PDF Size Reducer",
+      "metaDescription": "Reduce PDF file size by stripping metadata and optimizing structure, instantly in your browser. 100% free, private, no uploads required.",
+      "h1": "Compress PDF Files",
+      "subheading": "Shrink PDF file size with lossless, browser-based optimization — processed 100% locally.",
+      "keywords": [
+        "compress pdf",
+        "reduce pdf file size",
+        "pdf compressor online",
+        "shrink pdf free"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to compress."
+        },
+        {
+          "name": "Compress locally",
+          "text": "Click Compress — metadata is stripped and the file structure is optimized in your browser."
+        },
+        {
+          "name": "Compare sizes",
+          "text": "See the before and after file size comparison."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download your compressed PDF instantly."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How much smaller will my PDF be?",
+          "answer": "Savings vary widely — typically 5-20% from metadata and structural optimization, since true image re-compression needs a server or heavy codec."
+        },
+        {
+          "question": "Will compression affect quality or content?",
+          "answer": "No, this is a lossless optimization — all text, images, and formatting remain unchanged."
+        },
+        {
+          "question": "Why isn't compression as aggressive as some desktop tools?",
+          "answer": "Browser-only processing can't re-encode embedded images with a heavy image codec without significant download size, so gains are more modest than server-side tools."
+        }
+      ]
+    },
+    "word-counter": {
+      "seoTitle": "Word Counter Online – Free Character & Word Count Tool",
+      "metaDescription": "Count words, characters, sentences, and paragraphs instantly as you type. Get an estimated reading time. Free, private, and works offline.",
+      "h1": "Word & Character Counter",
+      "subheading": "Live word, character, sentence, and paragraph counts with estimated reading time — 100% private.",
+      "keywords": [
+        "word counter",
+        "character counter online",
+        "count words free",
+        "reading time calculator",
+        "text statistics tool"
+      ],
+      "howTo": [
+        {
+          "name": "Paste or type your text",
+          "text": "Enter text directly, or paste content from anywhere."
+        },
+        {
+          "name": "View live stats",
+          "text": "Word, character, sentence, and paragraph counts update instantly."
+        },
+        {
+          "name": "Check reading time",
+          "text": "See an estimated reading time based on average reading speed."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is reading time calculated?",
+          "answer": "Reading time is estimated using an average reading speed of 200 words per minute."
+        },
+        {
+          "question": "Does this tool store or send my text anywhere?",
+          "answer": "No, all counting happens locally in your browser as you type — nothing is transmitted."
+        },
+        {
+          "question": "How are sentences and paragraphs counted?",
+          "answer": "Sentences are detected by terminal punctuation (. ! ?) and paragraphs by line breaks."
+        }
+      ]
+    },
+    "base64-encoder-decoder": {
+      "seoTitle": "Base64 Encoder & Decoder Online – Free & Instant",
+      "metaDescription": "Encode text to Base64 or decode Base64 back to plain text, instantly in your browser. Free, private, and works entirely offline.",
+      "h1": "Base64 Encoder / Decoder",
+      "subheading": "Encode and decode Base64 text instantly — processed 100% locally in your browser.",
+      "keywords": [
+        "base64 encoder",
+        "base64 decoder",
+        "encode text to base64",
+        "decode base64 online",
+        "base64 converter free"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a mode",
+          "text": "Select Encode to convert plain text to Base64, or Decode for the reverse."
+        },
+        {
+          "name": "Enter your text",
+          "text": "Type or paste the text you want to transform."
+        },
+        {
+          "name": "View the result",
+          "text": "The converted output updates instantly as you type."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click Copy to copy the output to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is Base64 encoding used for?",
+          "answer": "Base64 encodes binary or text data into ASCII characters, commonly used for embedding data in URLs, JSON, or emails."
+        },
+        {
+          "question": "Is my text sent to a server?",
+          "answer": "No, encoding and decoding both happen locally using your browser's built-in btoa/atob functions."
+        },
+        {
+          "question": "Does this support Unicode text?",
+          "answer": "Yes, non-ASCII characters like emoji and accented letters are correctly handled."
+        }
+      ]
+    },
+    "url-encoder-decoder": {
+      "seoTitle": "URL Encoder & Decoder Online – Free & Instant",
+      "metaDescription": "Encode or decode URLs and query strings instantly in your browser. Free, private percent-encoding tool with no sign-up required.",
+      "h1": "URL Encoder / Decoder",
+      "subheading": "Percent-encode or decode URLs and query strings instantly — processed 100% locally.",
+      "keywords": [
+        "url encoder",
+        "url decoder",
+        "percent encoding online",
+        "encodeuricomponent tool",
+        "decode url free"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a mode",
+          "text": "Select Encode or Decode."
+        },
+        {
+          "name": "Enter your text",
+          "text": "Type or paste a URL, query string, or any text."
+        },
+        {
+          "name": "View the result",
+          "text": "The encoded or decoded output updates instantly."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click Copy to copy the output to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "When do I need URL encoding?",
+          "answer": "URL encoding is needed when special characters (spaces, &, =, ?) appear in query parameters or path segments."
+        },
+        {
+          "question": "What encoding standard does this use?",
+          "answer": "This uses the browser's native encodeURIComponent/decodeURIComponent functions (RFC 3986 percent-encoding)."
+        },
+        {
+          "question": "Is my data sent anywhere?",
+          "answer": "No, all encoding and decoding happens locally in your browser."
+        }
+      ]
+    },
+    "jwt-decoder": {
+      "seoTitle": "JWT Decoder Online – Free & Instant, No Sign-Up",
+      "metaDescription": "Decode JSON Web Tokens (JWT) instantly in your browser. View header, payload, and expiry — no signature verification, no server calls.",
+      "h1": "JWT Decoder",
+      "subheading": "Decode a JWT's header and payload instantly — processed 100% locally, signature never verified server-side.",
+      "keywords": [
+        "jwt decoder",
+        "decode jwt online",
+        "json web token decoder",
+        "jwt parser free",
+        "jwt debugger"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your JWT",
+          "text": "Paste a JSON Web Token into the input field."
+        },
+        {
+          "name": "Automatic decoding",
+          "text": "The header and payload are decoded from Base64URL and shown as formatted JSON."
+        },
+        {
+          "name": "Check expiry",
+          "text": "If an exp claim is present, its expiration status is highlighted."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does this tool verify the JWT signature?",
+          "answer": "No, this tool only decodes the header and payload — it does not verify the signature. Never trust a decoded token without server-side verification."
+        },
+        {
+          "question": "Is my token sent to a server?",
+          "answer": "No, decoding happens entirely locally in your browser using Base64URL decoding."
+        },
+        {
+          "question": "What does the exp claim mean?",
+          "answer": "The exp claim is a Unix timestamp indicating when the token expires. This tool highlights whether it has already expired."
+        }
+      ]
+    },
+    "uuid-generator": {
+      "seoTitle": "UUID Generator Online – Free Bulk UUID v4 Generator",
+      "metaDescription": "Generate random UUID v4 identifiers in bulk, instantly in your browser. Copy individually or all at once. Free, private, no sign-up.",
+      "h1": "UUID Generator",
+      "subheading": "Generate one or thousands of random UUID v4 identifiers instantly — processed 100% locally.",
+      "keywords": [
+        "uuid generator",
+        "generate uuid online",
+        "guid generator free",
+        "random uuid v4",
+        "bulk uuid generator"
+      ],
+      "howTo": [
+        {
+          "name": "Set the count",
+          "text": "Choose how many UUIDs to generate (up to 500 at once)."
+        },
+        {
+          "name": "Customize format",
+          "text": "Toggle hyphens and uppercase formatting as needed."
+        },
+        {
+          "name": "Generate",
+          "text": "Click Generate to produce a fresh batch of UUIDs using crypto.randomUUID."
+        },
+        {
+          "name": "Copy",
+          "text": "Copy an individual UUID or all of them at once."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What UUID version is generated?",
+          "answer": "This tool generates version 4 (random) UUIDs using the browser's native crypto.randomUUID API."
+        },
+        {
+          "question": "Are the UUIDs cryptographically random?",
+          "answer": "Yes, they're generated using the Web Crypto API's cryptographically secure random number generator."
+        },
+        {
+          "question": "How many can I generate at once?",
+          "answer": "Up to 500 UUIDs per batch, with instant copy-all support."
+        }
+      ]
+    },
+    "hash-generator": {
+      "seoTitle": "Hash Generator Online – SHA-1, SHA-256, SHA-512 Free",
+      "metaDescription": "Generate SHA-1, SHA-256, SHA-384, and SHA-512 hashes of text or files instantly in your browser using the Web Crypto API. Free and private.",
+      "h1": "Hash Generator",
+      "subheading": "Compute SHA-1, SHA-256, SHA-384, and SHA-512 hashes of text or files — processed 100% locally.",
+      "keywords": [
+        "hash generator online",
+        "sha256 generator",
+        "sha1 hash online",
+        "file hash checker",
+        "checksum generator free"
+      ],
+      "howTo": [
+        {
+          "name": "Choose text or file",
+          "text": "Switch between hashing raw text or an uploaded file."
+        },
+        {
+          "name": "Enter your input",
+          "text": "Type text or drag & drop a file."
+        },
+        {
+          "name": "View all hashes",
+          "text": "SHA-1, SHA-256, SHA-384, and SHA-512 digests are computed instantly."
+        },
+        {
+          "name": "Copy a hash",
+          "text": "Click the copy icon next to any hash to copy it to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Why is MD5 not offered?",
+          "answer": "MD5 isn't available in the browser's native Web Crypto API and is cryptographically broken — use SHA-256 or SHA-512 instead."
+        },
+        {
+          "question": "Is my file uploaded to a server?",
+          "answer": "No, hashing happens entirely locally using the Web Crypto API's SubtleCrypto.digest function."
+        },
+        {
+          "question": "What is a hash used for?",
+          "answer": "Hashes are used to verify file integrity, detect duplicates, and create fixed-length fingerprints of data."
+        }
+      ]
+    },
+    "regex-tester": {
+      "seoTitle": "Regex Tester Online – Free Regular Expression Debugger",
+      "metaDescription": "Test regular expressions against sample text with live match highlighting, flags, and capture groups. Free, instant, and fully private.",
+      "h1": "Regex Tester",
+      "subheading": "Test regular expressions with live match highlighting and capture group inspection — 100% local.",
+      "keywords": [
+        "regex tester",
+        "regular expression tester online",
+        "regex debugger free",
+        "test regex pattern",
+        "regex match highlighter"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your pattern",
+          "text": "Type a regular expression pattern."
+        },
+        {
+          "name": "Set flags",
+          "text": "Toggle global, ignore case, multiline, or dot-all flags."
+        },
+        {
+          "name": "Add test text",
+          "text": "Paste or type the text you want to test the pattern against."
+        },
+        {
+          "name": "Review matches",
+          "text": "Matches are highlighted live, with a full list of matches and capture groups."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What regex flavor is used?",
+          "answer": "This uses JavaScript's native RegExp engine, the same one used in browsers and Node.js."
+        },
+        {
+          "question": "Can I see capture groups?",
+          "answer": "Yes, each match's capture groups are listed alongside the full match text."
+        },
+        {
+          "question": "Is my test text sent anywhere?",
+          "answer": "No, all matching happens instantly and locally in your browser."
+        }
+      ]
+    },
+    "markdown-previewer": {
+      "seoTitle": "Markdown Previewer Online – Free Live Markdown Editor",
+      "metaDescription": "Write Markdown and see a live, sanitized HTML preview instantly in your browser. Free, private, supports headings, lists, code, and links.",
+      "h1": "Markdown Previewer",
+      "subheading": "Write Markdown and preview the rendered HTML output live — 100% local, sanitized rendering.",
+      "keywords": [
+        "markdown previewer",
+        "markdown editor online",
+        "live markdown preview",
+        "markdown to html free",
+        "md editor online"
+      ],
+      "howTo": [
+        {
+          "name": "Write Markdown",
+          "text": "Type or paste Markdown in the left editor pane."
+        },
+        {
+          "name": "Live preview",
+          "text": "The rendered HTML preview updates instantly on the right."
+        },
+        {
+          "name": "Use standard syntax",
+          "text": "Headings, lists, links, code blocks, and blockquotes are all supported."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the rendered HTML sanitized?",
+          "answer": "Yes, all rendered HTML is sanitized with DOMPurify to prevent script injection before being displayed."
+        },
+        {
+          "question": "Is my Markdown content sent anywhere?",
+          "answer": "No, parsing and rendering both happen entirely in your browser."
+        },
+        {
+          "question": "What Markdown syntax is supported?",
+          "answer": "Standard Markdown: headings, bold/italic, lists, links, images, blockquotes, and fenced code blocks."
+        }
+      ]
+    },
+    "csv-to-json": {
+      "seoTitle": "CSV to JSON Converter Online – Free & Bidirectional",
+      "metaDescription": "Convert CSV to JSON or JSON to CSV instantly in your browser. Handles quoted fields and nested data. Free, private, no uploads.",
+      "h1": "CSV to JSON Converter",
+      "subheading": "Convert between CSV and JSON formats instantly, in both directions — processed 100% locally.",
+      "keywords": [
+        "csv to json",
+        "json to csv converter",
+        "convert csv online",
+        "csv parser free",
+        "csv json converter"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a direction",
+          "text": "Select CSV → JSON or JSON → CSV."
+        },
+        {
+          "name": "Paste your data",
+          "text": "Paste CSV rows or a JSON array into the input pane."
+        },
+        {
+          "name": "View the conversion",
+          "text": "The converted output updates instantly as you type."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Click Copy to copy the converted output to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does this handle quoted CSV fields with commas?",
+          "answer": "Yes, quoted fields containing commas, quotes, or newlines are parsed correctly."
+        },
+        {
+          "question": "What JSON structure is expected for JSON to CSV?",
+          "answer": "An array of flat objects works best; nested objects are automatically flattened with dot notation."
+        },
+        {
+          "question": "Is my data uploaded anywhere?",
+          "answer": "No, all parsing and conversion happens locally in your browser."
+        }
+      ]
+    },
+    "lorem-ipsum-generator": {
+      "seoTitle": "Lorem Ipsum Generator Online – Free Placeholder Text",
+      "metaDescription": "Generate Lorem Ipsum placeholder text by words, sentences, or paragraphs, instantly in your browser. Free, fast, and fully customizable.",
+      "h1": "Lorem Ipsum Generator",
+      "subheading": "Generate placeholder Lorem Ipsum text by words, sentences, or paragraphs — instantly, 100% locally.",
+      "keywords": [
+        "lorem ipsum generator",
+        "placeholder text generator",
+        "dummy text generator online",
+        "lorem ipsum free",
+        "filler text generator"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a unit",
+          "text": "Select words, sentences, or paragraphs."
+        },
+        {
+          "name": "Set the count",
+          "text": "Enter how many units to generate."
+        },
+        {
+          "name": "Generate",
+          "text": "Click Generate to produce fresh placeholder text."
+        },
+        {
+          "name": "Copy the text",
+          "text": "Click Copy to copy the generated text to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is Lorem Ipsum used for?",
+          "answer": "Lorem Ipsum is standard placeholder text used by designers and developers to preview layouts before real content is ready."
+        },
+        {
+          "question": "Can I start with the classic 'Lorem ipsum dolor sit amet'?",
+          "answer": "Yes, toggle the \"Start with Lorem ipsum…\" option to begin with the traditional opening."
+        },
+        {
+          "question": "Is there a limit to how much text I can generate?",
+          "answer": "You can generate up to 100 units (words, sentences, or paragraphs) per click."
+        }
+      ]
+    },
+    "percentage-calculator": {
+      "seoTitle": "Percentage Calculator Online – Free & Instant",
+      "metaDescription": "Calculate X% of Y, what percent X is of Y, or percentage change between two numbers, instantly. Free, accurate, and private.",
+      "h1": "Percentage Calculator",
+      "subheading": "Calculate percentages, percentage-of, and percentage change instantly with three easy modes.",
+      "keywords": [
+        "percentage calculator",
+        "percent of calculator",
+        "percentage change calculator",
+        "what percent is x of y"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a calculation type",
+          "text": "Choose X% of Y, X is what % of Y, or percentage change."
+        },
+        {
+          "name": "Enter your numbers",
+          "text": "Fill in the input fields for your chosen calculation."
+        },
+        {
+          "name": "View the result instantly",
+          "text": "The result updates live as you type."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I calculate X% of Y?",
+          "answer": "Multiply Y by (X divided by 100). For example, 20% of 150 is 150 × 0.20 = 30."
+        },
+        {
+          "question": "How is percentage change calculated?",
+          "answer": "Percentage change is ((new value − old value) / |old value|) × 100."
+        },
+        {
+          "question": "Can percentage change be negative?",
+          "answer": "Yes, a negative result indicates a decrease from the original value."
+        }
+      ]
+    },
+    "discount-calculator": {
+      "seoTitle": "Discount Calculator Online – Free & Instant Sale Price Tool",
+      "metaDescription": "Calculate the final sale price and amount saved from an original price and discount percentage, instantly. Free and private.",
+      "h1": "Discount Calculator",
+      "subheading": "Calculate the final price and savings from any discount percentage — instantly and privately.",
+      "keywords": [
+        "discount calculator",
+        "sale price calculator",
+        "percent off calculator",
+        "calculate discount online"
+      ],
+      "howTo": [
+        {
+          "name": "Enter the original price",
+          "text": "Input the item's price before any discount."
+        },
+        {
+          "name": "Enter the discount percentage",
+          "text": "Input the discount rate, e.g. 25 for 25% off."
+        },
+        {
+          "name": "View results instantly",
+          "text": "See the amount saved and the final price update live."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is the discounted price calculated?",
+          "answer": "Final price = original price − (original price × discount percentage / 100)."
+        },
+        {
+          "question": "Can I calculate stacked discounts?",
+          "answer": "This tool calculates a single discount; for stacked discounts, apply the final price as the next original price."
+        },
+        {
+          "question": "Does this include sales tax?",
+          "answer": "No, this calculates the discount only. Use the Sales Tax Calculator for tax on top of the discounted price."
+        }
+      ]
+    },
+    "tip-calculator": {
+      "seoTitle": "Tip Calculator Online – Free & Instant, Split the Bill",
+      "metaDescription": "Calculate the tip amount and split the total bill between multiple people, instantly in your browser. Free and private.",
+      "h1": "Tip Calculator",
+      "subheading": "Calculate your tip and split the bill between friends — instant results, no ads, no sign-up.",
+      "keywords": [
+        "tip calculator",
+        "bill splitter calculator",
+        "how much to tip calculator",
+        "split the bill online"
+      ],
+      "howTo": [
+        {
+          "name": "Enter the bill amount",
+          "text": "Input the total bill before tip."
+        },
+        {
+          "name": "Choose a tip percentage",
+          "text": "Pick a preset (10-25%) or enter a custom percentage."
+        },
+        {
+          "name": "Set the number of people",
+          "text": "Enter how many people are splitting the bill."
+        },
+        {
+          "name": "View results instantly",
+          "text": "See the tip amount, total bill, and amount owed per person."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What's a standard tip percentage?",
+          "answer": "In the US, 15-20% is typical for good restaurant service, though this varies by region and service type."
+        },
+        {
+          "question": "How is the per-person amount calculated?",
+          "answer": "The bill plus tip is divided evenly by the number of people entered."
+        },
+        {
+          "question": "Can I use a custom tip percentage?",
+          "answer": "Yes, enter any percentage directly in the input field alongside the presets."
+        }
+      ]
+    },
+    "loan-emi-calculator": {
+      "seoTitle": "Loan EMI Calculator Online – Free Monthly Payment Tool",
+      "metaDescription": "Calculate your monthly loan payment (EMI), total interest, and total repayment amount instantly. Free, accurate, and private.",
+      "h1": "Loan EMI Calculator",
+      "subheading": "Calculate your monthly loan payment, total interest, and total repayment — instantly and privately.",
+      "keywords": [
+        "loan emi calculator",
+        "monthly payment calculator",
+        "loan interest calculator",
+        "emi calculator online free"
+      ],
+      "howTo": [
+        {
+          "name": "Enter the loan amount",
+          "text": "Input the principal amount you're borrowing."
+        },
+        {
+          "name": "Enter the interest rate",
+          "text": "Input the annual interest rate as a percentage."
+        },
+        {
+          "name": "Enter the loan term",
+          "text": "Input the repayment period in years."
+        },
+        {
+          "name": "View results instantly",
+          "text": "See your monthly EMI, total interest, and total payment."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What formula is used to calculate EMI?",
+          "answer": "EMI = [P × r × (1+r)^n] / [(1+r)^n − 1], where P is principal, r is the monthly interest rate, and n is the number of months."
+        },
+        {
+          "question": "Does this account for fees or insurance?",
+          "answer": "No, this calculates principal and interest only. Additional fees or insurance are not included."
+        },
+        {
+          "question": "Is this suitable for mortgages and car loans?",
+          "answer": "Yes, the standard amortizing loan formula applies to mortgages, auto loans, and personal loans alike."
+        }
+      ]
+    },
+    "compound-interest-calculator": {
+      "seoTitle": "Compound Interest Calculator Online – Free & Instant",
+      "metaDescription": "Calculate the future value of an investment with compound interest, at any compounding frequency, instantly. Free and private.",
+      "h1": "Compound Interest Calculator",
+      "subheading": "Calculate the future value of your investment with compound interest — instantly and privately.",
+      "keywords": [
+        "compound interest calculator",
+        "investment growth calculator",
+        "future value calculator",
+        "compound interest formula online"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your principal",
+          "text": "Input the initial amount you're investing."
+        },
+        {
+          "name": "Enter the interest rate",
+          "text": "Input the annual interest rate as a percentage."
+        },
+        {
+          "name": "Set the time and frequency",
+          "text": "Enter the investment term in years and choose a compounding frequency."
+        },
+        {
+          "name": "View results instantly",
+          "text": "See the future value and total interest earned."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What formula does this use?",
+          "answer": "A = P(1 + r/n)^(nt), where P is principal, r is annual rate, n is compounding frequency, and t is time in years."
+        },
+        {
+          "question": "How does compounding frequency affect growth?",
+          "answer": "More frequent compounding (e.g. daily vs annually) results in slightly higher returns for the same nominal rate."
+        },
+        {
+          "question": "Does this account for additional contributions?",
+          "answer": "No, this calculates growth from a single initial principal without recurring contributions."
+        }
+      ]
+    },
+    "sales-tax-calculator": {
+      "seoTitle": "Sales Tax Calculator Online – Free & Instant, Both Directions",
+      "metaDescription": "Calculate sales tax on a price, or reverse-calculate the pre-tax price from a total, instantly in your browser. Free and private.",
+      "h1": "Sales Tax Calculator",
+      "subheading": "Calculate sales tax forward from a price, or reverse it from a total — instantly and privately.",
+      "keywords": [
+        "sales tax calculator",
+        "reverse sales tax calculator",
+        "calculate tax on price",
+        "sales tax calculator online free"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a direction",
+          "text": "Choose Price → Total to add tax, or Total → Price to remove it."
+        },
+        {
+          "name": "Enter your amount and rate",
+          "text": "Input the price or total, plus the applicable tax rate."
+        },
+        {
+          "name": "View results instantly",
+          "text": "See the tax amount and resulting price update live."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is sales tax calculated?",
+          "answer": "Tax amount = price × (tax rate / 100). Total = price + tax amount."
+        },
+        {
+          "question": "How do I find the pre-tax price from a receipt total?",
+          "answer": "Use the Total → Price mode: pre-tax price = total / (1 + tax rate / 100)."
+        },
+        {
+          "question": "Does this include local and state tax combined?",
+          "answer": "Yes, enter your combined effective tax rate (state + local) for an accurate total."
+        }
+      ]
+    },
+    "bmi-calculator": {
+      "seoTitle": "BMI Calculator Online – Free, Metric & Imperial",
+      "metaDescription": "Calculate your Body Mass Index (BMI) using metric or imperial units, instantly in your browser. Free, private, with category breakdown.",
+      "h1": "BMI Calculator",
+      "subheading": "Calculate your Body Mass Index in metric or imperial units — instant results with a category breakdown.",
+      "keywords": [
+        "bmi calculator",
+        "body mass index calculator",
+        "bmi calculator metric imperial",
+        "calculate bmi online free"
+      ],
+      "howTo": [
+        {
+          "name": "Choose your unit system",
+          "text": "Select metric (cm/kg) or imperial (ft/in/lb)."
+        },
+        {
+          "name": "Enter height and weight",
+          "text": "Input your height and weight in the selected units."
+        },
+        {
+          "name": "View your BMI instantly",
+          "text": "See your BMI value and weight category update live."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is BMI calculated?",
+          "answer": "Metric: weight (kg) / height (m)². Imperial: weight (lb) / height (in)² × 703."
+        },
+        {
+          "question": "What are the BMI categories?",
+          "answer": "Under 18.5 is underweight, 18.5–24.9 is healthy weight, 25–29.9 is overweight, and 30+ is obese."
+        },
+        {
+          "question": "Is BMI a perfect health measure?",
+          "answer": "No, BMI doesn't account for muscle mass, bone density, or body composition. Consult a healthcare provider for a full assessment."
+        }
+      ]
+    },
+    "password-generator": {
+      "seoTitle": "Password Generator Online – Free, Secure & Instant",
+      "metaDescription": "Generate strong, random passwords with custom length and character sets, entirely in your browser. Free, private, no sign-up.",
+      "h1": "Password Generator",
+      "subheading": "Create strong, random passwords with custom length and character options — generated securely in your browser.",
+      "keywords": [
+        "password generator",
+        "random password generator",
+        "strong password generator",
+        "secure password maker"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a length",
+          "text": "Set the password length from 4 to 128 characters."
+        },
+        {
+          "name": "Pick character types",
+          "text": "Toggle uppercase, lowercase, numbers, and symbols."
+        },
+        {
+          "name": "Generate",
+          "text": "Click Generate to create a new random password."
+        },
+        {
+          "name": "Copy it",
+          "text": "Click the copy icon to copy the password to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is this password generator secure?",
+          "answer": "Yes. Passwords are generated using your browser's cryptographically secure random number generator (crypto.getRandomValues), not a weaker pseudo-random function."
+        },
+        {
+          "question": "Are my generated passwords sent anywhere?",
+          "answer": "No. Everything happens locally in your browser — passwords are never transmitted or stored on any server."
+        },
+        {
+          "question": "What makes a password strong?",
+          "answer": "Length matters most. A longer password with a mix of uppercase, lowercase, numbers, and symbols is significantly harder to crack than a short, simple one."
+        }
+      ]
+    },
+    "text-case-converter": {
+      "seoTitle": "Text Case Converter – UPPERCASE, lowercase, Title Case & More",
+      "metaDescription": "Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more — instantly in your browser.",
+      "h1": "Text Case Converter",
+      "subheading": "Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more formats instantly.",
+      "keywords": [
+        "text case converter",
+        "uppercase to lowercase converter",
+        "camel case converter",
+        "title case converter"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your text",
+          "text": "Type or paste the text you want to convert."
+        },
+        {
+          "name": "Pick a case format",
+          "text": "Click any case button — UPPERCASE, lowercase, Title Case, camelCase, and more."
+        },
+        {
+          "name": "View the result",
+          "text": "The converted text appears instantly below."
+        },
+        {
+          "name": "Copy the output",
+          "text": "Click the copy icon to copy the converted text."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What case formats are supported?",
+          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, and kebab-case."
+        },
+        {
+          "question": "Does this change my original text?",
+          "answer": "No, your input stays untouched — the converted result is shown separately so you can compare or convert again."
+        },
+        {
+          "question": "Is there a length limit?",
+          "answer": "No practical limit — conversion happens instantly in your browser, even for long text."
+        }
+      ]
+    },
+    "text-diff-checker": {
+      "seoTitle": "Text Diff Checker Online – Compare Two Texts Free",
+      "metaDescription": "Compare two blocks of text and see exactly what was added or removed, line by line — processed 100% locally in your browser.",
+      "h1": "Text Diff Checker",
+      "subheading": "Compare two blocks of text and see exactly what changed, line by line.",
+      "keywords": [
+        "text diff checker",
+        "compare text online",
+        "diff tool",
+        "text comparison tool"
+      ],
+      "howTo": [
+        {
+          "name": "Paste the original text",
+          "text": "Enter the original version in the first box."
+        },
+        {
+          "name": "Paste the changed text",
+          "text": "Enter the updated version in the second box."
+        },
+        {
+          "name": "Click Compare",
+          "text": "See added and removed lines highlighted instantly."
+        },
+        {
+          "name": "Review the summary",
+          "text": "Check the total lines added and removed at a glance."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is the difference calculated?",
+          "answer": "The tool compares the two texts line by line and highlights lines that were added (green) or removed (red)."
+        },
+        {
+          "question": "Can it compare code or JSON?",
+          "answer": "Yes, it works with any plain text, including code, JSON, or configuration files."
+        },
+        {
+          "question": "Is my text uploaded anywhere?",
+          "answer": "No, the comparison runs entirely in your browser — nothing is sent to a server."
+        }
+      ]
+    },
+    "age-calculator": {
+      "seoTitle": "Age Calculator Online – Free & Accurate, By Date of Birth",
+      "metaDescription": "Calculate your exact age in years, months, and days from your date of birth, plus days until your next birthday — instantly and privately.",
+      "h1": "Age Calculator",
+      "subheading": "Calculate your exact age in years, months, and days from your date of birth — instant results, no sign-up.",
+      "keywords": [
+        "age calculator",
+        "date of birth calculator",
+        "how old am i calculator",
+        "age in days calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your date of birth",
+          "text": "Select your birth date using the date picker."
+        },
+        {
+          "name": "Choose a reference date",
+          "text": "Defaults to today, or pick another date to calculate age as of that day."
+        },
+        {
+          "name": "View your age",
+          "text": "See your exact age in years, months, and days."
+        },
+        {
+          "name": "Check extra stats",
+          "text": "View total days lived and days until your next birthday."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is the age calculated?",
+          "answer": "The calculator counts full calendar years, months, and remaining days between the two dates — not just a simple day division."
+        },
+        {
+          "question": "Can I calculate age at a future or past date?",
+          "answer": "Yes, change the \"as of\" date to see what your age was or will be on any date."
+        },
+        {
+          "question": "Is my birth date stored anywhere?",
+          "answer": "No, all calculations happen locally in your browser and nothing is sent to a server."
+        }
+      ]
+    },
+    "unit-converter": {
+      "seoTitle": "Unit Converter Online – Length, Weight & Temperature",
+      "metaDescription": "Convert between length, weight, and temperature units instantly — free, accurate, and processed 100% locally in your browser.",
+      "h1": "Unit Converter",
+      "subheading": "Convert between length, weight, and temperature units instantly and accurately.",
+      "keywords": [
+        "unit converter",
+        "length converter",
+        "weight converter",
+        "temperature converter",
+        "metric to imperial converter"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a category",
+          "text": "Select Length, Weight, or Temperature."
+        },
+        {
+          "name": "Pick your units",
+          "text": "Choose the unit to convert from and the unit to convert to."
+        },
+        {
+          "name": "Enter a value",
+          "text": "Type the number you want to convert."
+        },
+        {
+          "name": "View the result",
+          "text": "See the converted value update instantly."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What units are supported?",
+          "answer": "Length (mm, cm, m, km, in, ft, yd, mi), weight (mg, g, kg, oz, lb), and temperature (Celsius, Fahrenheit, Kelvin)."
+        },
+        {
+          "question": "Is temperature converted correctly?",
+          "answer": "Yes, temperature uses proper conversion formulas, not simple multipliers, since Celsius, Fahrenheit, and Kelvin scales don't share a common zero point."
+        },
+        {
+          "question": "Can I swap the from/to units quickly?",
+          "answer": "Yes, use the swap button to instantly reverse the conversion direction."
+        }
+      ]
+    },
+    "image-cropper": {
+      "seoTitle": "Image Cropper Online – Free & Private, No Upload",
+      "metaDescription": "Crop any image directly in your browser by dragging a selection box — free, private, and processed 100% locally.",
+      "h1": "Image Cropper",
+      "subheading": "Crop any image by dragging a selection box, then download the result — processed 100% locally in your browser.",
+      "keywords": [
+        "image cropper",
+        "crop image online",
+        "photo cropper free",
+        "crop picture online"
+      ],
+      "howTo": [
+        {
+          "name": "Upload an image",
+          "text": "Drag and drop or select an image from your device."
+        },
+        {
+          "name": "Adjust the crop area",
+          "text": "Drag the selection box or its corners to define the crop area, or enter exact X/Y/width/height values."
+        },
+        {
+          "name": "Crop and download",
+          "text": "Click Crop & Download to save the cropped image as a PNG."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What image formats are supported?",
+          "answer": "You can upload JPG, PNG, WebP, and most common image formats. The cropped result is downloaded as a PNG."
+        },
+        {
+          "question": "Is my image uploaded to a server?",
+          "answer": "No, cropping happens entirely in your browser using the Canvas API — your image never leaves your device."
+        },
+        {
+          "question": "Can I set an exact crop size?",
+          "answer": "Yes, use the X, Y, Width, and Height fields to enter precise pixel values alongside the drag handles."
+        }
+      ]
+    },
+    "pdf-page-numberer": {
+      "seoTitle": "Add Page Numbers to PDF Online – Free & Private",
+      "metaDescription": "Add page numbers to every page of a PDF with your choice of position and format — processed 100% locally in your browser.",
+      "h1": "PDF Page Numberer",
+      "subheading": "Add page numbers to every page of a PDF, with your choice of position and format.",
+      "keywords": [
+        "add page numbers to pdf",
+        "pdf page numberer",
+        "number pdf pages online",
+        "insert page numbers pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF file you want to number."
+        },
+        {
+          "name": "Choose a position",
+          "text": "Pick where the page numbers should appear — top or bottom, left, center, or right."
+        },
+        {
+          "name": "Pick a format and starting number",
+          "text": "Choose a number format like \"1\" or \"Page 1\", and set the starting number."
+        },
+        {
+          "name": "Download the result",
+          "text": "Download the PDF with page numbers added to every page."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I start numbering from a number other than 1?",
+          "answer": "Yes, set any starting number — useful when a document continues from another file."
+        },
+        {
+          "question": "What number formats are available?",
+          "answer": "Choose from plain numbers (\"1\"), \"Page 1\", \"1 of N\", or \"- 1 -\" styles."
+        },
+        {
+          "question": "Is my PDF uploaded anywhere?",
+          "answer": "No, page numbers are added entirely in your browser using pdf-lib — your file is never uploaded to a server."
+        }
+      ]
+    },
+    "exif-stripper": {
+      "seoTitle": "EXIF & GPS Metadata Remover – Free & Private, No Upload",
+      "metaDescription": "View and strip EXIF metadata — camera model, GPS location, timestamp — from your photos before sharing them, entirely in your browser.",
+      "h1": "EXIF & GPS Metadata Remover",
+      "subheading": "See exactly what metadata is hidden in your photos, then strip it with one click before sharing.",
+      "keywords": [
+        "remove exif",
+        "strip photo metadata",
+        "delete gps from photo",
+        "photo privacy"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your photos",
+          "text": "Drag and drop one or more JPEG photos."
+        },
+        {
+          "name": "Review the metadata",
+          "text": "See camera model, lens, date, ISO, and GPS coordinates found in each photo."
+        },
+        {
+          "name": "Strip and download",
+          "text": "Click Strip & Download to get a clean copy with no metadata, or download all as a ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What metadata gets removed?",
+          "answer": "Camera make/model, lens info, capture date, ISO, and GPS coordinates — the entire EXIF block is dropped when the image is re-encoded."
+        },
+        {
+          "question": "Is my photo uploaded anywhere?",
+          "answer": "No, metadata is read and the image is re-encoded entirely in your browser — nothing is sent to a server."
+        },
+        {
+          "question": "Does stripping metadata reduce image quality?",
+          "answer": "The image is re-encoded at high quality (95%), so any difference is negligible for most uses."
+        }
+      ]
+    },
+    "zero-width-remover": {
+      "seoTitle": "Zero-Width Space & Invisible Character Remover – Free Online",
+      "metaDescription": "Find and remove zero-width spaces and other invisible Unicode characters hidden in pasted text, entirely in your browser.",
+      "h1": "Zero-Width Space & Invisible Character Cleaner",
+      "subheading": "Find and remove zero-width spaces and other invisible Unicode characters hidden in your text.",
+      "keywords": [
+        "remove zero width space",
+        "clean hidden unicode",
+        "invisible character remover"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your text",
+          "text": "Paste text that may contain hidden or invisible characters."
+        },
+        {
+          "name": "Review what was found",
+          "text": "See how many invisible characters were detected and where."
+        },
+        {
+          "name": "Copy the clean text",
+          "text": "Copy the cleaned text with all invisible characters removed."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where do invisible characters come from?",
+          "answer": "They're often introduced accidentally when copying text from word processors, tracking links, or messaging apps."
+        },
+        {
+          "question": "Which characters does this remove?",
+          "answer": "Zero-width spaces, zero-width joiners/non-joiners, byte-order marks, word joiners, soft hyphens, and stray bidirectional control characters."
+        },
+        {
+          "question": "Is my text sent anywhere?",
+          "answer": "No, cleaning happens entirely in your browser — nothing is uploaded."
+        }
+      ]
+    },
+    "hmac-generator": {
+      "seoTitle": "HMAC Generator Online – SHA-1/256/384/512, Free & Secure",
+      "metaDescription": "Generate a keyed-hash HMAC from a message and secret key using SHA-1, SHA-256, SHA-384, or SHA-512 — computed locally in your browser.",
+      "h1": "HMAC Keyed-Hash Generator",
+      "subheading": "Generate a keyed-hash HMAC from a message and secret key, computed locally in your browser.",
+      "keywords": [
+        "hmac generator",
+        "sha256 hmac",
+        "crypto signature"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your message",
+          "text": "Type or paste the message you want to sign."
+        },
+        {
+          "name": "Enter your secret key",
+          "text": "Type the secret key used to compute the HMAC."
+        },
+        {
+          "name": "Choose an algorithm",
+          "text": "Select SHA-1, SHA-256, SHA-384, or SHA-512."
+        },
+        {
+          "name": "Copy the HMAC",
+          "text": "The resulting hex-encoded HMAC updates instantly — copy it with one click."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is the HMAC computed?",
+          "answer": "Using your browser's native Web Crypto API (crypto.subtle), which securely signs the message with your key using the selected hash algorithm."
+        },
+        {
+          "question": "Is my secret key sent anywhere?",
+          "answer": "No, everything is computed locally in your browser — your key and message are never transmitted."
+        },
+        {
+          "question": "What's the difference between HMAC and a plain hash?",
+          "answer": "A plain hash has no secret key, so anyone can compute it. An HMAC combines a secret key with the message, letting you verify both integrity and authenticity."
+        }
+      ]
+    },
+    "json-to-typescript": {
+      "seoTitle": "JSON to TypeScript Converter – Interfaces & Zod Schemas, Free",
+      "metaDescription": "Convert JSON into TypeScript interfaces, type aliases, or Zod validation schemas instantly — processed 100% locally in your browser.",
+      "h1": "JSON to TypeScript & Zod Schema",
+      "subheading": "Convert JSON into TypeScript interfaces, type aliases, or Zod validation schemas instantly.",
+      "keywords": [
+        "json to typescript",
+        "json to zod",
+        "generate typescript types"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your JSON",
+          "text": "Paste or type a JSON object or array in the editor."
+        },
+        {
+          "name": "Choose your options",
+          "text": "Pick interface or type alias, toggle optional fields, and enable Zod schema generation if needed."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Copy the generated TypeScript code or download it as a .d.ts file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How are types inferred?",
+          "answer": "The tool walks your JSON structure and infers the corresponding TypeScript types — nested objects become their own interfaces, and arrays become typed lists."
+        },
+        {
+          "question": "Does this require the Zod library?",
+          "answer": "No, the Zod schema is generated as plain text code for you to copy into a project that already has Zod installed — this tool has no dependency on it."
+        },
+        {
+          "question": "Is my JSON uploaded anywhere?",
+          "answer": "No, type generation happens entirely in your browser."
+        }
+      ]
+    },
+    "json-to-yaml": {
+      "seoTitle": "JSON to YAML Converter Online – Free, Instant, Both Directions",
+      "metaDescription": "Convert JSON to YAML or YAML to JSON instantly, in either direction — processed 100% locally in your browser.",
+      "h1": "JSON ↔ YAML Converter",
+      "subheading": "Convert between JSON and YAML instantly, in either direction.",
+      "keywords": [
+        "json to yaml",
+        "yaml to json",
+        "convert yaml"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a direction",
+          "text": "Select JSON to YAML or YAML to JSON."
+        },
+        {
+          "name": "Paste your content",
+          "text": "Paste your JSON or YAML into the editor."
+        },
+        {
+          "name": "Copy or download the result",
+          "text": "Copy the converted output or download it as a file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is this a full YAML implementation?",
+          "answer": "It covers the practical subset of YAML most configuration files use — nested objects, block-style lists, strings, numbers, booleans, and null — rather than every edge case of the full spec."
+        },
+        {
+          "question": "Is my data uploaded anywhere?",
+          "answer": "No, conversion happens entirely in your browser."
+        },
+        {
+          "question": "Can I convert complex nested structures?",
+          "answer": "Yes, both directions handle deeply nested objects and arrays of objects."
+        }
+      ]
+    },
+    "sql-formatter": {
+      "seoTitle": "SQL Formatter Online – Beautify & Minify SQL Queries, Free",
+      "metaDescription": "Format messy SQL queries into readable, indented statements, or minify them to a single line — processed 100% locally in your browser.",
+      "h1": "SQL Query Formatter",
+      "subheading": "Format messy SQL queries into readable statements, or minify them to a single line.",
+      "keywords": [
+        "sql formatter",
+        "beautify sql",
+        "format sql query"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your SQL",
+          "text": "Paste any SQL query into the editor."
+        },
+        {
+          "name": "Format or minify",
+          "text": "Click Format to beautify it with proper indentation, or Minify to collapse it to one line."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Copy the formatted or minified SQL to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which SQL dialects are supported?",
+          "answer": "The formatter recognizes common keywords shared across MySQL, PostgreSQL, SQLite, and SQL Server — it formats based on keyword structure rather than validating dialect-specific syntax."
+        },
+        {
+          "question": "Does it validate my SQL?",
+          "answer": "No, this is a formatter, not a query validator — it won't catch syntax errors, only reformat the text."
+        },
+        {
+          "question": "Is my query uploaded anywhere?",
+          "answer": "No, formatting happens entirely in your browser."
+        }
+      ]
+    },
+    "json-to-csv": {
+      "seoTitle": "JSON to CSV Converter Online – Free, Instant, No Upload",
+      "metaDescription": "Convert a JSON array of objects into a CSV file, ready to open in Excel or Google Sheets — processed 100% locally in your browser.",
+      "h1": "JSON to CSV Converter",
+      "subheading": "Convert a JSON array of objects into a CSV file, ready to open in a spreadsheet.",
+      "keywords": [
+        "json to csv",
+        "convert json to excel",
+        "json array to csv"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your JSON",
+          "text": "Paste a JSON array of objects into the editor."
+        },
+        {
+          "name": "View the CSV output",
+          "text": "See the converted CSV appear instantly, with columns from your object keys."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Copy the CSV text or download it as a .csv file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What JSON format works best?",
+          "answer": "An array of flat objects with consistent keys, e.g. [{\"name\": \"A\", \"price\": 10}, ...] — this maps cleanly to spreadsheet rows and columns."
+        },
+        {
+          "question": "What happens with nested objects?",
+          "answer": "Deeply nested values are flattened or stringified where possible so they still fit into a CSV cell."
+        },
+        {
+          "question": "Is my data uploaded anywhere?",
+          "answer": "No, conversion happens entirely in your browser."
+        }
+      ]
+    },
+    "code-minifier": {
+      "seoTitle": "HTML & CSS Minifier Online – Free, Instant, No Upload",
+      "metaDescription": "Minify HTML or CSS by stripping comments and unnecessary whitespace — processed 100% locally in your browser.",
+      "h1": "HTML & CSS Minifier",
+      "subheading": "Strip comments and unnecessary whitespace from HTML or CSS to shrink file size.",
+      "keywords": [
+        "minify css",
+        "minify html",
+        "code compressor"
+      ],
+      "howTo": [
+        {
+          "name": "Choose HTML or CSS",
+          "text": "Select which type of code you want to minify."
+        },
+        {
+          "name": "Paste your code",
+          "text": "Paste your HTML or CSS into the editor."
+        },
+        {
+          "name": "Minify and copy",
+          "text": "Click Minify, then copy the compressed result — see how much size you saved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will minifying break my code?",
+          "answer": "No, only comments and safe whitespace are removed — content inside pre, textarea, script, and style tags for HTML, and string literals for CSS, is preserved untouched."
+        },
+        {
+          "question": "How much size does minifying save?",
+          "answer": "It varies by how much whitespace and commenting your original code has — the tool shows an exact before/after size comparison."
+        },
+        {
+          "question": "Is my code uploaded anywhere?",
+          "answer": "No, minification happens entirely in your browser."
+        }
+      ]
+    },
+    "html-entity-encoder": {
+      "seoTitle": "HTML Entity Encoder / Decoder – Free, Instant, No Upload",
+      "metaDescription": "Encode special characters into HTML entities, or decode HTML entities back to readable text — processed 100% locally in your browser.",
+      "h1": "HTML Entity Encoder / Decoder",
+      "subheading": "Encode special characters into HTML entities, or decode entities back to readable text.",
+      "keywords": [
+        "html entity encoder",
+        "decode html entities",
+        "escape html"
+      ],
+      "howTo": [
+        {
+          "name": "Choose encode or decode",
+          "text": "Select whether you want to encode text or decode HTML entities."
+        },
+        {
+          "name": "Paste your text",
+          "text": "Paste the text or HTML-entity-encoded string you want to convert."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Copy the encoded or decoded output to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Why encode HTML entities?",
+          "answer": "To safely display special characters like <, >, and & as literal text inside HTML, without the browser interpreting them as markup."
+        },
+        {
+          "question": "What entities can be decoded?",
+          "answer": "All named and numeric HTML entities your browser recognizes — decoding uses the browser's own HTML parser for complete, accurate coverage."
+        },
+        {
+          "question": "Is my text uploaded anywhere?",
+          "answer": "No, encoding and decoding happen entirely in your browser."
+        }
+      ]
+    },
+    "title-case-converter": {
+      "seoTitle": "Title Case Converter – APA, Chicago, MLA & AP Style, Free",
+      "metaDescription": "Capitalize titles and headlines correctly using APA, Chicago, MLA, or AP style rules — processed 100% locally in your browser.",
+      "h1": "Title Case & Headline Capitalizer",
+      "subheading": "Capitalize titles and headlines correctly using APA, Chicago, MLA, or AP style rules.",
+      "keywords": [
+        "title case converter",
+        "capitalize title",
+        "apa title case",
+        "chicago headline"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your title",
+          "text": "Type or paste the title or headline you want to capitalize."
+        },
+        {
+          "name": "Pick a style",
+          "text": "Choose APA, Chicago, MLA, or AP style."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Copy the correctly capitalized title to your clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What's the difference between the styles?",
+          "answer": "Each style guide has its own rules for which short words (articles, conjunctions, prepositions) stay lowercase — APA and Chicago capitalize longer prepositions that AP and MLA would lowercase, for example."
+        },
+        {
+          "question": "Is the first and last word always capitalized?",
+          "answer": "Yes, all four styles capitalize the first and last word of the title regardless of what part of speech it is."
+        },
+        {
+          "question": "Is my text uploaded anywhere?",
+          "answer": "No, capitalization happens entirely in your browser."
+        }
+      ]
+    },
+    "url-slug-generator": {
+      "seoTitle": "URL Slug Generator Online – SEO-Friendly, Free & Instant",
+      "metaDescription": "Turn any title or text into a clean, SEO-friendly URL slug — processed 100% locally in your browser.",
+      "h1": "SEO URL Slug Generator",
+      "subheading": "Turn any title or text into a clean, SEO-friendly URL slug instantly.",
+      "keywords": [
+        "slug generator",
+        "url slugify",
+        "seo friendly url maker"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your title",
+          "text": "Type or paste a blog post title or any text."
+        },
+        {
+          "name": "Adjust the options",
+          "text": "Set a maximum length and choose hyphen or underscore as the separator."
+        },
+        {
+          "name": "Copy the slug",
+          "text": "The URL-ready slug updates instantly — copy it with one click."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How are accented characters handled?",
+          "answer": "Accented and diacritic characters are converted to their closest ASCII equivalent (e.g. é becomes e) so the slug stays URL-safe."
+        },
+        {
+          "question": "What happens to special characters and spaces?",
+          "answer": "They're replaced with your chosen separator, and multiple consecutive separators are collapsed into one."
+        },
+        {
+          "question": "Is my text uploaded anywhere?",
+          "answer": "No, slug generation happens entirely in your browser."
+        }
+      ]
+    },
+    "opengraph-generator": {
+      "seoTitle": "OpenGraph & Meta Tag Generator – Live Preview, Free",
+      "metaDescription": "Generate OpenGraph and Twitter meta tags with a live preview of how your link will look on Google, Twitter, and Facebook.",
+      "h1": "OpenGraph & Meta Tag Generator",
+      "subheading": "Generate social share meta tags with a live preview of how your link will look when shared.",
+      "keywords": [
+        "opengraph generator",
+        "meta tag preview",
+        "social share card maker"
+      ],
+      "howTo": [
+        {
+          "name": "Fill in your details",
+          "text": "Enter your title, description, canonical URL, site name, image URL, and Twitter handle."
+        },
+        {
+          "name": "Check the live previews",
+          "text": "See instant previews of how your link will appear in Google Search, Twitter, and Facebook."
+        },
+        {
+          "name": "Copy the code",
+          "text": "Copy ready-to-paste HTML meta tags or a Next.js metadata object."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What are OpenGraph tags used for?",
+          "answer": "They control how your page appears when shared on social media and messaging apps — the title, description, and preview image."
+        },
+        {
+          "question": "Does this work with Next.js?",
+          "answer": "Yes, there's a dedicated button to copy a ready-to-paste Next.js metadata export object alongside the plain HTML meta tags."
+        },
+        {
+          "question": "Is my data uploaded anywhere?",
+          "answer": "No, the previews and generated code are built entirely in your browser."
+        }
+      ]
+    },
+    "duplicate-line-remover": {
+      "seoTitle": "Duplicate Line Remover & List Sorter – Free, Instant",
+      "metaDescription": "Remove duplicate lines from a list and sort it alphabetically or by length — processed 100% locally in your browser.",
+      "h1": "Duplicate Line Remover & List Sorter",
+      "subheading": "Remove duplicate lines from a list and sort it however you need.",
+      "keywords": [
+        "remove duplicate lines",
+        "deduplicate list",
+        "sort list online"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your list",
+          "text": "Paste a list with one item per line."
+        },
+        {
+          "name": "Set your options",
+          "text": "Toggle case-insensitive matching, whitespace trimming, and empty-line removal as needed."
+        },
+        {
+          "name": "Sort and copy",
+          "text": "Pick a sort order, then copy the cleaned list."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which line is kept when duplicates are found?",
+          "answer": "The first occurrence is kept, with its original casing preserved even in case-insensitive mode."
+        },
+        {
+          "question": "Can I sort without removing duplicates?",
+          "answer": "Yes, sorting and deduplication are independent options — use either one alone or together."
+        },
+        {
+          "question": "Is my list uploaded anywhere?",
+          "answer": "No, everything is processed entirely in your browser."
+        }
+      ]
+    },
+    "svg-optimizer": {
+      "seoTitle": "SVG Optimizer Online – Free, Instant, No Upload",
+      "metaDescription": "Optimize and clean SVG markup by removing comments, metadata, and unused IDs, and rounding path precision — processed 100% locally in your browser.",
+      "h1": "SVG Optimizer & Path Cleaner",
+      "subheading": "Clean and shrink SVG markup by removing comments, metadata, and unused IDs.",
+      "keywords": [
+        "svg optimizer",
+        "minify svg",
+        "clean svg paths"
+      ],
+      "howTo": [
+        {
+          "name": "Paste or upload your SVG",
+          "text": "Paste SVG markup directly, or upload an .svg file."
+        },
+        {
+          "name": "Choose your optimizations",
+          "text": "Toggle comment removal, metadata stripping, unused ID cleanup, and precision rounding."
+        },
+        {
+          "name": "Compare and export",
+          "text": "See the size saved and preview before/after, then copy or download the optimized SVG."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will optimizing change how my SVG looks?",
+          "answer": "No, all optimizations are visually lossless — only redundant markup like comments, unused IDs, and excess decimal precision are removed."
+        },
+        {
+          "question": "What does 'clean unused IDs' do?",
+          "answer": "It scans the SVG for id attributes that are never referenced elsewhere (via url(#id) or href) and removes them, since unreferenced IDs add size with no purpose."
+        },
+        {
+          "question": "Is my SVG uploaded anywhere?",
+          "answer": "No, optimization happens entirely in your browser."
+        }
+      ]
+    },
+    "screen-recorder": {
+      "seoTitle": "Free Screen Recorder Online – No Install, No Watermark",
+      "metaDescription": "Record your screen, a window, or a browser tab with optional microphone audio, directly in your browser — no install, no watermark, no time limit.",
+      "h1": "In-Browser Screen & Audio Recorder",
+      "subheading": "Record your screen, a window, or a browser tab with optional microphone audio — no install required.",
+      "keywords": [
+        "screen recorder online",
+        "record screen no install",
+        "free screen capture"
+      ],
+      "howTo": [
+        {
+          "name": "Choose your options",
+          "text": "Toggle microphone audio on if you want to narrate your recording."
+        },
+        {
+          "name": "Start recording",
+          "text": "Click Start Recording and pick a screen, window, or tab in your browser's picker."
+        },
+        {
+          "name": "Pause, resume, or stop",
+          "text": "Control the recording with pause/resume, then stop when you're done."
+        },
+        {
+          "name": "Preview and download",
+          "text": "Instantly preview the recording and download it as a video file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is there a time limit or watermark?",
+          "answer": "No, recordings have no artificial time limit and no watermark — this uses your browser's native recording API directly."
+        },
+        {
+          "question": "Is my recording uploaded anywhere?",
+          "answer": "No, recording and processing happen entirely on your device — nothing is sent to a server."
+        },
+        {
+          "question": "Can I record with audio?",
+          "answer": "Yes, you can include your microphone, and shared-tab audio is captured automatically when supported by your browser."
+        }
+      ]
+    },
+    "wcag-contrast-checker": {
+      "seoTitle": "WCAG Color Contrast Checker – Free, Accurate, Instant",
+      "metaDescription": "Check whether your text and background colors meet WCAG AA and AAA accessibility contrast requirements — processed 100% locally in your browser.",
+      "h1": "WCAG Color Contrast Checker",
+      "subheading": "Check whether your text and background colors meet WCAG accessibility contrast requirements.",
+      "keywords": [
+        "color contrast checker",
+        "wcag compliance",
+        "accessible colors"
+      ],
+      "howTo": [
+        {
+          "name": "Pick your colors",
+          "text": "Choose or type a foreground (text) color and a background color."
+        },
+        {
+          "name": "Check the ratio",
+          "text": "See the exact contrast ratio and whether it passes AA and AAA thresholds."
+        },
+        {
+          "name": "Preview legibility",
+          "text": "See live sample text rendered in your chosen colors at normal and large sizes."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is the contrast ratio calculated?",
+          "answer": "Using the official WCAG 2.x relative luminance formula, which gamma-corrects each color channel before weighting it by human luminance perception."
+        },
+        {
+          "question": "What's the difference between AA and AAA?",
+          "answer": "AA is the standard accessibility requirement (4.5:1 for normal text, 3:1 for large text); AAA is a stricter enhanced requirement (7:1 and 4.5:1 respectively)."
+        },
+        {
+          "question": "What counts as 'large text'?",
+          "answer": "Text that's 18pt or larger, or 14pt and bold, qualifies for the more lenient large-text thresholds."
+        }
+      ]
+    },
+    "aspect-ratio-calculator": {
+      "seoTitle": "Aspect Ratio Calculator Online – Free & Instant",
+      "metaDescription": "Calculate a scaled width or height that preserves your image or video's aspect ratio, with common ratio presets — instantly in your browser.",
+      "h1": "Aspect Ratio & Dimension Calculator",
+      "subheading": "Calculate a scaled width or height that preserves your original aspect ratio.",
+      "keywords": [
+        "aspect ratio calculator",
+        "16:9 calculator",
+        "image dimension scale"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your original dimensions",
+          "text": "Input the original width and height."
+        },
+        {
+          "name": "Enter a target dimension",
+          "text": "Enter either a target width or height — the other updates automatically to preserve the ratio."
+        },
+        {
+          "name": "Use a preset if needed",
+          "text": "Click a common ratio preset like 16:9 or 1:1 to apply it instantly."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is the simplified ratio calculated?",
+          "answer": "The width and height are divided by their greatest common divisor (GCD) to produce the simplest whole-number ratio, like 1920×1080 simplifying to 16:9."
+        },
+        {
+          "question": "Can I scale by height instead of width?",
+          "answer": "Yes, entering a target height calculates the matching width, and vice versa — only one is editable at a time to keep the ratio locked."
+        },
+        {
+          "question": "Is my data uploaded anywhere?",
+          "answer": "No, all calculations happen entirely in your browser."
+        }
+      ]
+    }
+  },
+  "commandMenu": {
+    "placeholder": "Search tools, formats, or tasks…",
+    "empty": "No results found.",
+    "groupTools": "Tools",
+    "groupCategories": "Categories",
+    "hint": "to search",
+    "close": "Close"
+  },
+  "privacyBadgeExtended": "Processed 100% locally in your browser via WebAssembly (Zero uploads)",
+  "recentTools": {
+    "heading": "Recently Used",
+    "clearAll": "Clear history"
+  },
+  "toolHistory": {
+    "heading": "Recent Results",
+    "empty": "Your completed results will appear here.",
+    "redownload": "Re-download",
+    "copy": "Copy",
+    "restore": "Restore Inputs",
+    "clear": "Clear Recent Data",
+    "cleared": "Cleared!",
+    "confirmClear": "Clear all recent results for this tool?"
+  },
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{count}m ago",
+    "hoursAgo": "{count}h ago",
+    "daysAgo": "{count}d ago"
+  }
+}

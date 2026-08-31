@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>EveryUtili</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <div class="ambient-glow" aria-hidden="true"></div>
+
+      <div class="popup-inner">
+        <div class="popup-header">
+          <img src="icons/icon-32.png" alt="" />
+          <span>EveryUtili</span>
+          <a class="site-link" href="https://everyutili.com" target="_blank" rel="noopener">Open ↗</a>
+        </div>
+
+        <div class="popup-search glass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input id="popup-search" type="text" placeholder="Search tools…" autocomplete="off" autofocus />
+          <button id="popup-clear" class="clear-btn" hidden aria-label="Clear search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div id="popup-pills" class="popup-pills"></div>
+
+        <div id="popup-list" class="popup-list"></div>
+        <div id="popup-empty" class="empty-state" hidden>No tools match your search.</div>
+        <div id="popup-toast" class="popup-toast" hidden>
+          <span class="spinner spinner-sm"></span>
+          <span id="popup-toast-label">Opening…</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="tools-data.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

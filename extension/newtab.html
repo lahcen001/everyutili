@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>New Tab — EveryUtili</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <div id="nav-overlay" class="nav-overlay" hidden>
+      <div class="nav-overlay-content">
+        <span class="spinner"></span>
+        <span id="nav-overlay-label">Opening…</span>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <span class="offline-badge"><span class="dot"></span>Works offline</span>
+      <div class="settings-shell">
+        <button type="button" id="settings-toggle" class="settings-toggle" aria-expanded="false" aria-controls="settings-panel" aria-label="Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"></path>
+          </svg>
+        </button>
+        <div id="settings-panel" class="settings-panel glass" hidden>
+          <div class="settings-row">
+            <span class="settings-label">Default search</span>
+            <div class="settings-choice" role="radiogroup" aria-label="Default search engine">
+              <button type="button" id="default-engine-tools" class="settings-choice-btn" data-value="tools" role="radio">EveryUtili</button>
+              <button type="button" id="default-engine-google" class="settings-choice-btn" data-value="google" role="radio">Google</button>
+            </div>
+          </div>
+          <div class="settings-row">
+            <span class="settings-label">Clock format</span>
+            <div class="settings-choice" role="radiogroup" aria-label="Clock format">
+              <button type="button" id="clock-auto" class="settings-choice-btn" data-value="auto" role="radio">Auto</button>
+              <button type="button" id="clock-12h" class="settings-choice-btn" data-value="12h" role="radio">12h</button>
+              <button type="button" id="clock-24h" class="settings-choice-btn" data-value="24h" role="radio">24h</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="newtab-page">
+      <div class="hero-stack">
+        <div id="clock" class="clock" aria-live="off">10:42 AM</div>
+        <div id="date" class="date-line">Monday, January 1</div>
+        <div id="greeting" class="greeting">Good morning</div>
+      </div>
+
+      <div class="search-shell">
+        <div class="search-bar glass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search tools or type to search Google…"
+            autocomplete="off"
+            autofocus
+          />
+          <div class="engine-switch" role="tablist" aria-label="Search engine">
+            <button type="button" id="engine-tools" class="engine-btn active" data-engine="tools" role="tab" aria-selected="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+              EveryUtili
+            </button>
+            <button type="button" id="engine-google" class="engine-btn" data-engine="google" role="tab" aria-selected="false">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.35 11.1H12v2.8h5.35c-.23 1.4-1.6 4.1-5.35 4.1-3.22 0-5.85-2.66-5.85-5.95S8.78 6.1 12 6.1c1.83 0 3.06.78 3.76 1.45l2.56-2.47C16.7 3.6 14.55 2.6 12 2.6 6.98 2.6 2.9 6.7 2.9 11.7s4.08 9.1 9.1 9.1c5.25 0 8.74-3.7 8.74-8.9 0-.6-.07-1.05-.15-1.5Z"/></svg>
+              Google
+            </button>
+          </div>
+        </div>
+
+        <div id="search-results" class="search-results" hidden></div>
+        <div id="recent-queries" class="recent-queries" hidden></div>
+
+        <div class="search-hints">
+          <span><kbd>↵</kbd> <span id="hint-enter">Open tool</span></span>
+          <span><kbd>↑</kbd><kbd>↓</kbd> Navigate</span>
+          <span><kbd>⇥</kbd> Switch engine</span>
+          <span><kbd>Esc</kbd> Clear</span>
+        </div>
+      </div>
+
+      <section id="quick-section" class="section" hidden>
+        <div class="section-head">
+          <span class="section-title">Quick access</span>
+        </div>
+        <div id="quick-grid" class="quick-grid"></div>
+      </section>
+
+      <div class="drawer">
+        <button type="button" id="drawer-toggle" class="drawer-toggle" aria-expanded="false" aria-controls="drawer-panel">
+          <span id="drawer-toggle-label">Browse all 60 tools</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div id="drawer-panel" class="drawer-panel">
+          <div class="drawer-panel-inner">
+            <div id="drawer-categories" class="drawer-categories"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="tools-data.js"></script>
+    <script src="newtab.js"></script>
+  </body>
+</html>

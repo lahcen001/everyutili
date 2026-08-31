@@ -1,0 +1,2703 @@
+{
+  "site": {
+    "name": "EveryUtili",
+    "tagline": "Alat gratis yang menghormati privasi Anda",
+    "heroDescription": "Konversi file, edit PDF, format kode, dan gunakan kalkulator — semua diproses secara lokal di browser Anda. Tanpa unggah, tanpa daftar, tanpa batasan.",
+    "featureInstant": "Instan, tanpa menunggu",
+    "featurePrivate": "File Anda tidak pernah meninggalkan perangkat Anda",
+    "featureNoSignup": "Tidak perlu mendaftar",
+    "footerCopyright": "EveryUtili. Semua pemrosesan terjadi secara lokal di browser Anda.",
+    "organizationDescription": "Rangkaian alat online yang mengutamakan privasi untuk konversi file, pengeditan PDF, alat pengembang, dan kalkulator.",
+    "metaTitleTemplate": "%s | EveryUtili",
+    "metaTitleDefault": "EveryUtili — Konverter File dan Kalkulator Online Gratis",
+    "metaDescription": "Alat online yang cepat, gratis, dan mengutamakan privasi: konverter gambar, utilitas PDF, alat pengembang, dan kalkulator. Semua berjalan secara lokal di browser Anda.",
+    "heroSearchPlaceholder": "Cari {count} alat — gambar, PDF, kode, keuangan…"
+  },
+  "nav": {
+    "viewAll": "Lihat semua",
+    "categoriesMenu": "Menu kategori"
+  },
+  "privacyBadge": "Diproses 100% secara lokal di browser Anda",
+  "breadcrumbs": {
+    "home": "Beranda"
+  },
+  "sections": {
+    "quickAnswer": "Jawaban Cepat",
+    "scorecard": "Perbandingan Format & Performa",
+    "howToUse": "Cara menggunakan alat ini",
+    "technicalComparison": "Perbandingan Teknis",
+    "faq": "Pertanyaan yang Sering Diajukan",
+    "relatedTools": "Alat Terkait"
+  },
+  "common": {
+    "copy": "Salin",
+    "copied": "Tersalin!",
+    "loadingTool": "Memuat alat…",
+    "searchPlaceholder": "Cari alat…",
+    "searchAriaLabel": "Cari alat",
+    "clearSearchAriaLabel": "Hapus pencarian",
+    "noToolsMatch": "Tidak ada alat yang cocok dengan “{query}”. Coba istilah pencarian lain.",
+    "categorySearchPlaceholder": "Cari di {category}…",
+    "notFoundTitle": "Halaman tidak ditemukan",
+    "notFoundCta": "Kembali ke beranda",
+    "usedRecently": "Digunakan"
+  },
+  "languageSwitcher": {
+    "label": "Bahasa"
+  },
+  "categories": {
+    "media": {
+      "label": "Konverter Media",
+      "description": "Konversi, kompres, dan ubah ukuran gambar serta video — sepenuhnya di browser Anda.",
+      "navLabel": "Media"
+    },
+    "document": {
+      "label": "Utilitas Dokumen",
+      "description": "Gabungkan, pisahkan, dan edit PDF tanpa mengunggah satu byte pun.",
+      "navLabel": "Dokumen"
+    },
+    "developer": {
+      "label": "Alat Pengembang",
+      "description": "Format, validasi, dan ubah kode serta data secara instan.",
+      "navLabel": "Developer"
+    },
+    "financial": {
+      "label": "Kalkulator Keuangan",
+      "description": "Kalkulator cepat dan akurat untuk keputusan gaji, pajak, dan anggaran.",
+      "navLabel": "Keuangan"
+    }
+  },
+  "tools": {
+    "jpg-to-png": {
+      "seoTitle": "Konversi JPG ke PNG Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi gambar JPG atau HEIC ke PNG secara instan di browser Anda. Tanpa unggah, tanpa watermark, tanpa daftar. Konversi massal dan unduh sebagai ZIP dalam hitungan detik.",
+      "h1": "Konverter JPG ke PNG",
+      "subheading": "Konversi gambar JPG dan HEIC menjadi file PNG berkualitas tinggi — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "jpg ke png",
+        "konversi jpg ke png",
+        "heic ke png",
+        "konverter gambar online",
+        "konverter jpg png gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file JPG/HEIC dari perangkat Anda."
+        },
+        {
+          "name": "Sesuaikan pengaturan",
+          "text": "Opsional, ubah ukuran atau sesuaikan kualitas output sebelum konversi."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi — pemrosesan terjadi sepenuhnya di browser Anda melalui Web Worker."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Unduh setiap PNG satu per satu atau semuanya sekaligus sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah konverter JPG ke PNG ini benar-benar gratis?",
+          "answer": "Ya. Tidak ada batasan, watermark, atau biaya tersembunyi. Semua konversi berjalan secara lokal di browser Anda."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke server?",
+          "answer": "Tidak. Alat ini menggunakan Canvas API dan Web Worker browser Anda untuk mengonversi gambar secara lokal — file Anda tidak pernah meninggalkan perangkat Anda."
+        },
+        {
+          "question": "Bisakah saya mengonversi file HEIC dari iPhone saya?",
+          "answer": "Ya, file HEIC didukung dan dikonversi secara otomatis ke format PNG standar."
+        },
+        {
+          "question": "Apakah ada batasan untuk konversi massal?",
+          "answer": "Tidak ada batasan buatan yang diterapkan — satu-satunya batasan adalah memori yang tersedia di perangkat Anda."
+        }
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Fitur",
+          "JPG",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Kompresi",
+            "values": [
+              "Dengan kehilangan data",
+              "Tanpa kehilangan data"
+            ]
+          },
+          {
+            "label": "Transparansi",
+            "values": [
+              "Tidak",
+              "Ya"
+            ]
+          },
+          {
+            "label": "Cocok untuk",
+            "values": [
+              "Foto",
+              "Grafik, logo, tangkapan layar"
+            ]
+          },
+          {
+            "label": "Ukuran file umum",
+            "values": [
+              "Lebih kecil",
+              "Lebih besar"
+            ]
+          }
+        ]
+      }
+    },
+    "merge-pdf": {
+      "seoTitle": "Gabungkan File PDF Online – 100% Gratis & Aman",
+      "metaDescription": "Gabungkan beberapa file PDF menjadi satu dokumen secara instan di browser Anda. Tanpa unggah, tanpa watermark — cepat, privat, dan gratis.",
+      "h1": "Gabungkan File PDF",
+      "subheading": "Gabungkan beberapa PDF menjadi satu dokumen — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "gabung pdf",
+        "gabungkan file pdf",
+        "penggabung pdf online",
+        "satukan pdf gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah file PDF",
+          "text": "Pilih dua atau lebih file PDF yang ingin Anda gabungkan."
+        },
+        {
+          "name": "Urutkan ulang halaman",
+          "text": "Seret untuk mengurutkan ulang file sesuai urutan yang Anda inginkan saat digabungkan."
+        },
+        {
+          "name": "Gabungkan secara lokal",
+          "text": "Klik Gabungkan — file Anda digabungkan langsung di browser Anda menggunakan pdf-lib."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Unduh PDF gabungan Anda secara instan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah data PDF saya privat?",
+          "answer": "Sepenuhnya. Penggabungan terjadi secara lokal menggunakan pdf-lib — tidak ada file yang pernah diunggah ke server."
+        },
+        {
+          "question": "Apakah ada batasan halaman atau ukuran file?",
+          "answer": "Tidak ada batasan buatan — performa hanya bergantung pada memori perangkat Anda."
+        },
+        {
+          "question": "Bisakah saya mengurutkan ulang halaman sebelum menggabungkan?",
+          "answer": "Ya, Anda dapat menyeret dan melepas file untuk mengontrol urutan halaman akhir."
+        }
+      ]
+    },
+    "json-formatter": {
+      "seoTitle": "Formatter & Validator JSON Online – Gratis & Instan",
+      "metaDescription": "Format, validasi, dan percantik JSON online dengan penyorotan kesalahan sintaks instan, tampilan pohon, dan ekspor CSV. 100% gratis, tanpa perlu mendaftar.",
+      "h1": "Formatter & Validator JSON",
+      "subheading": "Percantik, validasi, dan jelajahi JSON dengan penyorotan kesalahan instan dan tampilan pohon langsung.",
+      "keywords": [
+        "formatter json",
+        "validator json",
+        "pempercantik json",
+        "json ke csv",
+        "format json online"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel JSON Anda",
+          "text": "Tempel atau ketik JSON mentah Anda di editor."
+        },
+        {
+          "name": "Validasi otomatis",
+          "text": "Kesalahan sintaks disorot secara instan saat Anda mengetik."
+        },
+        {
+          "name": "Format & jelajahi",
+          "text": "Gunakan format otomatis atau jelajahi tampilan pohon interaktif."
+        },
+        {
+          "name": "Ekspor",
+          "text": "Salin JSON yang diformat atau konversikan ke CSV."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah alat ini mengirim data JSON saya ke suatu tempat?",
+          "answer": "Tidak. Semua penguraian, pemformatan, dan validasi terjadi secara lokal di browser Anda."
+        },
+        {
+          "question": "Bisakah saya mengonversi JSON ke CSV?",
+          "answer": "Ya, gunakan ekspor CSV bawaan untuk array JSON datar atau bersarang."
+        },
+        {
+          "question": "Apa yang terjadi jika JSON saya tidak valid?",
+          "answer": "Editor menyorot baris dan karakter tepat dari kesalahan sintaks secara real-time."
+        }
+      ]
+    },
+    "salary-to-hourly": {
+      "seoTitle": "Kalkulator Gaji ke Upah Per Jam – Konversi Gaji Tahunan Instan",
+      "metaDescription": "Konversi gaji tahunan Anda ke tarif per jam, harian, mingguan, atau bulanan secara instan. Kalkulator gaji gratis, akurat, dan privat.",
+      "h1": "Kalkulator Gaji ke Upah Per Jam",
+      "subheading": "Konversi gaji tahunan Anda menjadi tarif per jam, harian, mingguan, dan bulanan secara instan.",
+      "keywords": [
+        "kalkulator gaji ke upah per jam",
+        "gaji tahunan ke tarif per jam",
+        "konversi gaji ke upah per jam",
+        "kalkulator tarif per jam"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan gaji tahunan Anda",
+          "text": "Masukkan jumlah gaji tahunan kotor Anda."
+        },
+        {
+          "name": "Atur jam kerja",
+          "text": "Sesuaikan jam per minggu dan minggu per tahun jika berbeda dari default."
+        },
+        {
+          "name": "Lihat hasil secara instan",
+          "text": "Lihat tarif per jam, harian, mingguan, dan bulanan yang setara."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana tarif per jam dihitung dari gaji?",
+          "answer": "Gaji tahunan dibagi dengan (jam per minggu × minggu per tahun) untuk menentukan tarif per jam yang setara."
+        },
+        {
+          "question": "Apakah ini memperhitungkan pajak?",
+          "answer": "Tidak, ini hanya menghitung gaji kotor. Konsultasikan dengan profesional pajak untuk perkiraan pendapatan bersih."
+        },
+        {
+          "question": "Bisakah saya menyesuaikan jam kerja?",
+          "answer": "Ya, Anda dapat menyesuaikan jam per minggu dan minggu yang dibayar per tahun sesuai jadwal Anda."
+        }
+      ]
+    },
+    "heic-to-jpg": {
+      "seoTitle": "Konversi HEIC ke JPG Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi foto HEIC dan HEIF iPhone menjadi gambar JPG yang kompatibel secara universal secara instan di browser Anda. Tanpa unggah, tanpa watermark, gratis selamanya.",
+      "h1": "Konverter HEIC ke JPG",
+      "subheading": "Konversi foto HEIC dan HEIF dari iPhone Anda menjadi file JPG standar — diproses 100% secara lokal.",
+      "keywords": [
+        "heic ke jpg",
+        "konversi heic ke jpg",
+        "konverter foto iphone",
+        "heif ke jpg online",
+        "konverter heic gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah foto HEIC Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file HEIC/HEIF dari perangkat Anda."
+        },
+        {
+          "name": "Sesuaikan kualitas",
+          "text": "Opsional, sesuaikan kualitas output JPG menggunakan penggeser."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi — pemrosesan terjadi sepenuhnya di browser Anda, tanpa perlu unggah."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap JPG satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa saya perlu mengonversi HEIC ke JPG?",
+          "answer": "HEIC adalah format foto default Apple, tetapi banyak situs web, aplikasi, dan program Windows tidak mendukungnya. JPG berfungsi di mana saja."
+        },
+        {
+          "question": "Apakah foto saya diunggah ke suatu tempat?",
+          "answer": "Tidak. Konversi terjadi secara lokal di browser Anda — foto Anda tidak pernah meninggalkan perangkat Anda."
+        },
+        {
+          "question": "Apakah ini berfungsi dengan foto dari iPhone mana pun?",
+          "answer": "Ya, gambar HEIC atau HEIF apa pun yang diekspor dari iPhone atau iPad didukung, tergantung dukungan decoding gambar browser Anda."
+        },
+        {
+          "question": "Apakah saya akan kehilangan kualitas foto?",
+          "answer": "Anda mengontrol kualitas JPG dengan penggeser, untuk menyeimbangkan ukuran file dengan kualitas visual."
+        }
+      ]
+    },
+    "image-compressor": {
+      "seoTitle": "Kompres Gambar Online – Pengoptimal Gambar Gratis & Instan",
+      "metaDescription": "Kurangi ukuran file gambar tanpa kehilangan kualitas. Kompres gambar JPG, PNG, dan WebP secara instan di browser Anda — gratis, privat, tanpa unggah.",
+      "h1": "Kompresor Gambar",
+      "subheading": "Perkecil ukuran file gambar dengan kualitas yang dapat disesuaikan — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "kompresor gambar",
+        "kompres jpg online",
+        "kurangi ukuran file gambar",
+        "kompresor foto gratis",
+        "optimalkan gambar online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih gambar dari perangkat Anda."
+        },
+        {
+          "name": "Atur kualitas kompresi",
+          "text": "Sesuaikan penggeser kualitas untuk menyeimbangkan ukuran file dan kualitas visual."
+        },
+        {
+          "name": "Kompres secara lokal",
+          "text": "Klik Kompres semua — gambar Anda diproses langsung di browser Anda."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Simpan setiap gambar yang dikompres dan bandingkan ukuran file sebelum/sesudah."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Seberapa besar saya bisa mengurangi ukuran file gambar saya?",
+          "answer": "Penghematan umum berkisar dari 30% hingga 80% tergantung pada gambar asli dan pengaturan kualitas yang Anda pilih."
+        },
+        {
+          "question": "Apakah kompresi akan mengurangi kualitas gambar?",
+          "answer": "Beberapa kehilangan kualitas diperkirakan terjadi dengan kompresi lossy, tetapi pada kualitas 70-85% perbedaannya biasanya tidak terlihat."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke server?",
+          "answer": "Tidak, semua terjadi secara lokal menggunakan Canvas API — file Anda tidak pernah meninggalkan perangkat Anda."
+        }
+      ]
+    },
+    "image-resizer": {
+      "seoTitle": "Ubah Ukuran Gambar Online – Pengubah Ukuran Gratis & Instan",
+      "metaDescription": "Ubah ukuran gambar JPG, PNG, atau WebP ke dimensi piksel yang tepat secara instan di browser Anda. Gratis, privat, dengan kunci rasio aspek — tanpa unggah.",
+      "h1": "Pengubah Ukuran Gambar",
+      "subheading": "Ubah ukuran gambar ke dimensi piksel yang tepat dengan kunci rasio aspek opsional — diproses 100% secara lokal.",
+      "keywords": [
+        "pengubah ukuran gambar",
+        "ubah ukuran gambar online",
+        "ubah ukuran foto gratis",
+        "ubah dimensi gambar",
+        "ubah ukuran gambar piksel"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih gambar dari perangkat Anda."
+        },
+        {
+          "name": "Atur dimensi target",
+          "text": "Masukkan lebar dan tinggi dalam piksel, opsional mengunci rasio aspek."
+        },
+        {
+          "name": "Ubah ukuran secara lokal",
+          "text": "Klik Ubah ukuran semua — gambar Anda diproses langsung di browser Anda."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Simpan setiap gambar yang diubah ukurannya ke perangkat Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya mengubah ukuran beberapa gambar sekaligus?",
+          "answer": "Ya, pengubahan ukuran massal didukung — unggah sebanyak yang Anda inginkan."
+        },
+        {
+          "question": "Apakah mengubah ukuran akan mendistorsi gambar saya?",
+          "answer": "Aktifkan kunci rasio aspek untuk mencegah peregangan, atau nonaktifkan untuk dimensi kustom yang tepat."
+        },
+        {
+          "question": "Format gambar apa yang didukung?",
+          "answer": "JPG, PNG, dan sebagian besar format gambar umum lainnya yang didukung browser."
+        }
+      ]
+    },
+    "webp-converter": {
+      "seoTitle": "Konversi Gambar ke WebP Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi gambar JPG, PNG, atau GIF ke format WebP modern untuk ukuran file yang lebih kecil dan situs web yang lebih cepat. 100% gratis, diproses secara lokal di browser Anda.",
+      "h1": "Konverter Gambar ke WebP",
+      "subheading": "Konversi gambar JPG, PNG, dan GIF ke WebP untuk file yang lebih kecil dan pemuatan halaman yang lebih cepat.",
+      "keywords": [
+        "konverter webp",
+        "konversi jpg ke webp",
+        "png ke webp",
+        "gambar ke webp online",
+        "konverter webp gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file JPG, PNG, atau GIF."
+        },
+        {
+          "name": "Sesuaikan kualitas",
+          "text": "Sesuaikan kualitas kompresi WebP menggunakan penggeser."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — konversi terjadi sepenuhnya di browser Anda."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap gambar WebP atau unduh semuanya sebagai ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa mengonversi gambar ke WebP?",
+          "answer": "WebP biasanya menghasilkan file 25-35% lebih kecil daripada JPG atau PNG dengan kualitas visual yang serupa, meningkatkan kecepatan pemuatan halaman."
+        },
+        {
+          "question": "Apakah WebP didukung oleh semua browser?",
+          "answer": "Ya, semua browser modern (Chrome, Firefox, Safari, Edge) sepenuhnya mendukung gambar WebP."
+        },
+        {
+          "question": "Apakah alat ini mengunggah gambar saya ke suatu tempat?",
+          "answer": "Tidak, konversi terjadi secara lokal menggunakan Web Worker — gambar Anda tidak pernah meninggalkan perangkat Anda."
+        }
+      ]
+    },
+    "png-to-jpg": {
+      "seoTitle": "Konversi PNG ke JPG Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi gambar PNG ke JPG secara instan di browser Anda. Kurangi ukuran file, hapus transparansi, tanpa unggah atau watermark. Gratis selamanya.",
+      "h1": "Konverter PNG ke JPG",
+      "subheading": "Konversi gambar PNG menjadi file JPG yang ringkas — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "png ke jpg",
+        "konversi png ke jpg",
+        "konverter png ke jpeg",
+        "konverter gambar online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar PNG Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file PNG dari perangkat Anda."
+        },
+        {
+          "name": "Sesuaikan kualitas",
+          "text": "Atur kualitas output JPG menggunakan penggeser."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — pemrosesan terjadi sepenuhnya di browser Anda."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap JPG satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa yang terjadi pada transparansi saat mengonversi PNG ke JPG?",
+          "answer": "JPG tidak mendukung transparansi, jadi area transparan diisi dengan warna putih selama konversi."
+        },
+        {
+          "question": "Mengapa mengonversi PNG ke JPG?",
+          "answer": "File JPG biasanya jauh lebih kecil daripada PNG untuk gambar fotografis, menghemat penyimpanan dan bandwidth."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
+    "base64-image-encoder": {
+      "seoTitle": "Encoder & Decoder Gambar Base64 – Alat Online Gratis",
+      "metaDescription": "Konversi gambar ke URL data Base64 dan sebaliknya, secara instan di browser Anda. Sempurna untuk menyematkan gambar dalam CSS atau HTML. 100% gratis dan privat.",
+      "h1": "Encoder Gambar Base64",
+      "subheading": "Konversi gambar ke URL data Base64 dan dekode Base64 kembali ke gambar — sepenuhnya di browser Anda.",
+      "keywords": [
+        "encoder gambar base64",
+        "gambar ke base64",
+        "base64 ke gambar",
+        "konversi gambar ke string base64",
+        "generator url data"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih mode",
+          "text": "Beralih antara mengkode gambar atau mendekode string Base64."
+        },
+        {
+          "name": "Unggah atau tempel",
+          "text": "Unggah file gambar, atau tempel string Base64 / URL data."
+        },
+        {
+          "name": "Lihat hasilnya",
+          "text": "Lihat string Base64 yang dihasilkan atau pratinjau gambar yang didekode secara instan."
+        },
+        {
+          "name": "Salin atau unduh",
+          "text": "Salin output Base64, atau unduh gambar yang didekode."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Untuk apa URL data Base64 digunakan?",
+          "answer": "URL data Base64 memungkinkan Anda menyematkan gambar langsung dalam HTML atau CSS tanpa permintaan file terpisah."
+        },
+        {
+          "question": "Apakah encoding meningkatkan ukuran file?",
+          "answer": "Ya, encoding Base64 meningkatkan ukuran sekitar 33% dibandingkan dengan file biner asli."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke suatu tempat?",
+          "answer": "Tidak, encoding dan decoding keduanya terjadi secara lokal di browser Anda menggunakan FileReader API."
+        }
+      ]
+    },
+    "favicon-generator": {
+      "seoTitle": "Generator Favicon Online – Pembuat Favicon Multi-Ukuran Gratis",
+      "metaDescription": "Hasilkan set lengkap ukuran favicon (16, 32, 48, 180, 192, 512px) dari gambar apa pun, secara instan di browser Anda. Unduhan ZIP gratis, tanpa daftar.",
+      "h1": "Generator Favicon",
+      "subheading": "Unggah logo dan hasilkan setiap ukuran favicon standar sebagai ZIP siap pakai — diproses 100% secara lokal.",
+      "keywords": [
+        "generator favicon",
+        "pembuat favicon online",
+        "hasilkan favicon dari gambar",
+        "generator ikon apple touch",
+        "pembuat favicon gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah logo Anda",
+          "text": "Seret dan lepas logo persegi atau gambar — akan dipotong otomatis di bagian tengah."
+        },
+        {
+          "name": "Pratinjau ukuran",
+          "text": "Tinjau ukuran favicon yang dihasilkan dari 16px hingga 512px."
+        },
+        {
+          "name": "Hasilkan ZIP",
+          "text": "Klik Unduh untuk merender dan mengemas semua ukuran sebagai file PNG."
+        },
+        {
+          "name": "Tambahkan ke situs Anda",
+          "text": "Ekstrak ZIP dan referensikan file favicon di HTML head situs Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ukuran favicon apa yang dihasilkan?",
+          "answer": "PNG berukuran 16×16, 32×32, 48×48, 180×180 (ikon Apple touch), 192×192, dan 512×512 piksel."
+        },
+        {
+          "question": "Apakah gambar saya perlu berbentuk persegi?",
+          "answer": "Tidak, gambar yang tidak persegi secara otomatis dipotong di tengah menjadi persegi sebelum diubah ukurannya."
+        },
+        {
+          "question": "Apakah alat ini gratis digunakan?",
+          "answer": "Ya, sepenuhnya gratis tanpa batasan, watermark, atau perlu mendaftar."
+        }
+      ]
+    },
+    "qr-code-generator": {
+      "seoTitle": "Generator Kode QR Online – Gratis & Instan, Tanpa Daftar",
+      "metaDescription": "Hasilkan kode QR khusus dari teks atau URL apa pun secara instan di browser Anda. Pilih warna dan ukuran, lalu unduh sebagai PNG. 100% gratis dan privat.",
+      "h1": "Generator Kode QR",
+      "subheading": "Ubah teks, URL, atau pesan apa pun menjadi kode QR yang dapat diunduh — dihasilkan 100% secara lokal di browser Anda.",
+      "keywords": [
+        "generator kode qr",
+        "pembuat qr gratis",
+        "buat kode qr online",
+        "url ke kode qr",
+        "generator qr tanpa daftar"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan konten Anda",
+          "text": "Ketik atau tempel teks, URL, atau pesan yang ingin Anda kodekan."
+        },
+        {
+          "name": "Sesuaikan tampilan",
+          "text": "Sesuaikan ukuran dan pilih warna latar depan/belakang."
+        },
+        {
+          "name": "Pratinjau secara instan",
+          "text": "Kode QR Anda diperbarui secara langsung saat Anda mengetik."
+        },
+        {
+          "name": "Unduh PNG",
+          "text": "Klik Unduh untuk menyimpan gambar kode QR ke perangkat Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah kode QR yang dihasilkan di sini kedaluwarsa?",
+          "answer": "Tidak, kode QR dihasilkan sepenuhnya di sisi klien dan mengkodekan konten Anda secara langsung — tidak ada server atau kedaluwarsa."
+        },
+        {
+          "question": "Bisakah saya menggunakan ini untuk bisnis atau produk?",
+          "answer": "Ya, kode QR yang dihasilkan bebas digunakan untuk tujuan pribadi atau komersial apa pun."
+        },
+        {
+          "question": "Berapa jumlah maksimum teks yang bisa saya kodekan?",
+          "answer": "Kode QR dapat menampung hingga beberapa ribu karakter, meskipun konten yang lebih pendek dipindai lebih andal."
+        },
+        {
+          "question": "Apakah data saya dikirim ke server untuk menghasilkan kode?",
+          "answer": "Tidak, gambar kode QR dirender sepenuhnya di browser Anda — tidak ada yang ditransmisikan ke mana pun."
+        }
+      ]
+    },
+    "color-picker": {
+      "seoTitle": "Pemilih Warna Gambar Online – Dapatkan HEX, RGB & HSL Gratis",
+      "metaDescription": "Unggah gambar dan klik di mana saja untuk mengambil sampel warna piksel tepatnya sebagai HEX, RGB, dan HSL. Gratis, instan, dan diproses 100% secara lokal.",
+      "h1": "Pemilih Warna Gambar",
+      "subheading": "Klik di mana saja pada gambar yang diunggah untuk mengambil sampel warna piksel tepatnya — HEX, RGB, dan HSL secara instan.",
+      "keywords": [
+        "pemilih warna dari gambar",
+        "pemilih warna gambar online",
+        "pemilih warna hex",
+        "alat penetes online",
+        "dapatkan warna dari foto"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar",
+          "text": "Seret dan lepas atau pilih gambar dari perangkat Anda."
+        },
+        {
+          "name": "Klik untuk mengambil sampel",
+          "text": "Klik di mana saja pada gambar untuk membaca warna piksel tepatnya di bawahnya."
+        },
+        {
+          "name": "Lihat nilainya",
+          "text": "Lihat warna sampel sebagai HEX, RGB, dan HSL secara bersamaan."
+        },
+        {
+          "name": "Salin nilainya",
+          "text": "Klik ikon salin di sebelah format apa pun untuk menyalinnya ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Seberapa akurat warna sampel tersebut?",
+          "answer": "Alat ini membaca nilai piksel tepat dari data piksel mentah gambar melalui Canvas API, jadi sangat akurat per piksel."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke server?",
+          "answer": "Tidak, gambar dimuat dan diambil sampelnya sepenuhnya di dalam browser Anda menggunakan Canvas getImageData."
+        },
+        {
+          "question": "Format warna apa yang didukung?",
+          "answer": "HEX, RGB, dan HSL semuanya ditampilkan secara bersamaan untuk setiap piksel sampel."
+        }
+      ]
+    },
+    "split-pdf": {
+      "seoTitle": "Pisahkan PDF Online – 100% Gratis & Aman",
+      "metaDescription": "Pisahkan PDF menjadi halaman individual atau ekstrak rentang halaman khusus, secara instan di browser Anda. Tanpa unggah, tanpa watermark, sepenuhnya gratis.",
+      "h1": "Pisahkan File PDF",
+      "subheading": "Pisahkan PDF menjadi halaman terpisah atau ekstrak rentang tertentu — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "pisahkan pdf",
+        "pisahkan pdf online",
+        "ekstrak halaman pdf",
+        "pemisah pdf gratis",
+        "pisah halaman pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah PDF Anda",
+          "text": "Pilih file PDF yang ingin Anda pisahkan."
+        },
+        {
+          "name": "Pilih mode",
+          "text": "Pisahkan menjadi halaman individual, atau tentukan rentang halaman khusus untuk diekstrak."
+        },
+        {
+          "name": "Pisahkan secara lokal",
+          "text": "Klik Pisahkan — halaman dipisahkan langsung di browser Anda menggunakan pdf-lib."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Unduh satu PDF untuk rentang, atau ZIP dari PDF halaman individual."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya mengekstrak hanya beberapa halaman tertentu?",
+          "answer": "Ya, gunakan mode rentang halaman dan masukkan nilai seperti \"1-3, 5, 8-10\"."
+        },
+        {
+          "question": "Apakah PDF saya diunggah ke server?",
+          "answer": "Tidak, pemisahan terjadi sepenuhnya secara lokal menggunakan pdf-lib — file Anda tidak pernah meninggalkan perangkat Anda."
+        },
+        {
+          "question": "Apa yang saya dapatkan saat memisahkan menjadi semua halaman?",
+          "answer": "File ZIP yang berisi satu PDF per halaman, siap diunduh."
+        }
+      ]
+    },
+    "pdf-to-images": {
+      "seoTitle": "Konversi PDF ke Gambar Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi setiap halaman PDF menjadi gambar PNG resolusi tinggi secara instan di browser Anda. Unduh satu per satu atau sebagai ZIP. Gratis, tanpa unggah.",
+      "h1": "Konverter PDF ke Gambar",
+      "subheading": "Render setiap halaman PDF sebagai gambar PNG resolusi tinggi — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "pdf ke gambar",
+        "konverter pdf ke png",
+        "konversi pdf ke jpg",
+        "halaman pdf ke gambar online",
+        "ekstrak gambar dari pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah PDF Anda",
+          "text": "Pilih file PDF yang ingin Anda konversi menjadi gambar."
+        },
+        {
+          "name": "Rendering otomatis",
+          "text": "Setiap halaman dirender ke kanvas dengan resolusi tinggi menggunakan pdf.js."
+        },
+        {
+          "name": "Pratinjau halaman",
+          "text": "Jelajahi pratinjau thumbnail dari setiap halaman yang dirender."
+        },
+        {
+          "name": "Unduh",
+          "text": "Simpan halaman individual atau unduh semua halaman sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Dalam format gambar apa halaman diekspor?",
+          "answer": "Setiap halaman diekspor sebagai gambar PNG resolusi tinggi."
+        },
+        {
+          "question": "Apakah ini berfungsi dengan PDF yang dipindai?",
+          "answer": "Ya, halaman PDF apa pun — berbasis teks atau dipindai — dirender secara visual seperti tampilannya."
+        },
+        {
+          "question": "Apakah dokumen saya diunggah ke suatu tempat?",
+          "answer": "Tidak, rendering terjadi sepenuhnya di browser Anda menggunakan pustaka pdf.js — tidak ada yang diunggah."
+        }
+      ]
+    },
+    "images-to-pdf": {
+      "seoTitle": "Konversi Gambar ke PDF Online – 100% Gratis & Aman",
+      "metaDescription": "Gabungkan gambar JPG atau PNG menjadi satu dokumen PDF secara instan di browser Anda. Urutkan ulang halaman, tanpa unggah, tanpa watermark. Gratis selamanya.",
+      "h1": "Konverter Gambar ke PDF",
+      "subheading": "Gabungkan gambar JPG dan PNG menjadi satu dokumen PDF — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "gambar ke pdf",
+        "konverter jpg ke pdf",
+        "png ke pdf online",
+        "gabungkan gambar ke pdf",
+        "foto ke pdf gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar Anda",
+          "text": "Pilih satu atau lebih gambar JPG atau PNG."
+        },
+        {
+          "name": "Urutkan ulang halaman",
+          "text": "Seret untuk mengurutkan ulang gambar sesuai urutan yang Anda inginkan untuk muncul."
+        },
+        {
+          "name": "Buat PDF",
+          "text": "Klik Buat PDF — halaman dihasilkan langsung di browser Anda menggunakan pdf-lib."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Unduh file PDF gabungan Anda secara instan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya menggabungkan gambar JPG dan PNG dalam satu PDF?",
+          "answer": "Ya, Anda dapat mencampur file JPG dan PNG secara bebas — masing-masing disematkan pada resolusi aslinya."
+        },
+        {
+          "question": "Bisakah saya mengurutkan ulang gambar sebelum membuat PDF?",
+          "answer": "Ya, seret dan lepas thumbnail untuk mengatur urutan halaman yang tepat."
+        },
+        {
+          "question": "Apakah ada batasan berapa banyak gambar yang bisa saya tambahkan?",
+          "answer": "Tidak ada batasan buatan — performa hanya bergantung pada memori yang tersedia di perangkat Anda."
+        }
+      ]
+    },
+    "rotate-pdf": {
+      "seoTitle": "Putar PDF Online – 100% Gratis & Aman",
+      "metaDescription": "Putar semua halaman dalam PDF sebesar 90, 180, atau 270 derajat secara instan di browser Anda. Tanpa unggah, tanpa watermark, sepenuhnya gratis.",
+      "h1": "Putar Halaman PDF",
+      "subheading": "Putar setiap halaman PDF sebesar 90, 180, atau 270 derajat — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "putar pdf",
+        "putar pdf online",
+        "putar halaman pdf gratis",
+        "perbaiki orientasi pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah PDF Anda",
+          "text": "Pilih file PDF yang ingin Anda putar."
+        },
+        {
+          "name": "Pilih sudut",
+          "text": "Pilih rotasi 90°, 180°, atau 270°."
+        },
+        {
+          "name": "Putar secara lokal",
+          "text": "Klik Putar — transformasi terjadi langsung di browser Anda menggunakan pdf-lib."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Unduh PDF yang telah diputar secara instan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah ini memutar setiap halaman atau hanya satu?",
+          "answer": "Setiap halaman dalam dokumen diputar dengan sudut yang sama yang Anda pilih."
+        },
+        {
+          "question": "Akankah rotasi memengaruhi teks atau kualitas PDF?",
+          "answer": "Tidak, rotasi hanya mengubah metadata orientasi tampilan setiap halaman — konten dan kualitas tetap terjaga."
+        },
+        {
+          "question": "Apakah file saya diunggah ke server?",
+          "answer": "Tidak, rotasi terjadi sepenuhnya secara lokal menggunakan pdf-lib."
+        }
+      ]
+    },
+    "delete-pdf-pages": {
+      "seoTitle": "Hapus Halaman PDF Online – 100% Gratis & Aman",
+      "metaDescription": "Hapus halaman tertentu dari PDF secara instan di browser Anda. Pilih halaman atau rentang untuk dihapus, lalu unduh hasilnya. Gratis, tanpa unggah.",
+      "h1": "Hapus Halaman PDF",
+      "subheading": "Hapus halaman tertentu dari dokumen PDF — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "hapus halaman pdf",
+        "hilangkan halaman dari pdf",
+        "penghapus halaman pdf online",
+        "edit halaman pdf gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah PDF Anda",
+          "text": "Pilih file PDF yang ingin Anda edit."
+        },
+        {
+          "name": "Pilih halaman untuk dihapus",
+          "text": "Masukkan nomor halaman atau rentang, mis. \"2, 4-6\"."
+        },
+        {
+          "name": "Hapus secara lokal",
+          "text": "Klik Hapus Halaman — pengeditan terjadi langsung di browser Anda menggunakan pdf-lib."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Unduh PDF yang diedit dengan halaman terpilih yang dihapus."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya menghapus beberapa halaman yang tidak berurutan?",
+          "answer": "Ya, gunakan daftar yang dipisahkan koma dan rentang, seperti \"2, 4-6, 9\"."
+        },
+        {
+          "question": "Bisakah saya menghapus semua halaman?",
+          "answer": "Tidak, setidaknya satu halaman harus tetap ada dalam dokumen akhir."
+        },
+        {
+          "question": "Apakah PDF saya diunggah ke suatu tempat?",
+          "answer": "Tidak, semua pengeditan terjadi sepenuhnya secara lokal menggunakan pdf-lib di browser Anda."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "seoTitle": "Kompres PDF Online – Pengurang Ukuran PDF Gratis & Privat",
+      "metaDescription": "Kurangi ukuran file PDF dengan menghapus metadata dan mengoptimalkan struktur, secara instan di browser Anda. 100% gratis, privat, tanpa perlu unggah.",
+      "h1": "Kompres File PDF",
+      "subheading": "Perkecil ukuran file PDF dengan optimasi tanpa kehilangan data berbasis browser — diproses 100% secara lokal.",
+      "keywords": [
+        "kompres pdf",
+        "kurangi ukuran file pdf",
+        "kompresor pdf online",
+        "perkecil pdf gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah PDF Anda",
+          "text": "Pilih file PDF yang ingin Anda kompres."
+        },
+        {
+          "name": "Kompres secara lokal",
+          "text": "Klik Kompres — metadata dihapus dan struktur file dioptimalkan di browser Anda."
+        },
+        {
+          "name": "Bandingkan ukuran",
+          "text": "Lihat perbandingan ukuran file sebelum dan sesudah."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Unduh PDF yang dikompres secara instan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Seberapa kecil PDF saya akan menjadi?",
+          "answer": "Penghematan sangat bervariasi — biasanya 5-20% dari optimasi metadata dan struktur, karena kompresi ulang gambar yang sebenarnya memerlukan server atau codec berat."
+        },
+        {
+          "question": "Akankah kompresi memengaruhi kualitas atau konten?",
+          "answer": "Tidak, ini adalah optimasi tanpa kehilangan data — semua teks, gambar, dan pemformatan tetap tidak berubah."
+        },
+        {
+          "question": "Mengapa kompresi tidak seagresif beberapa alat desktop?",
+          "answer": "Pemrosesan hanya di browser tidak dapat mengkodekan ulang gambar tersemat dengan codec gambar berat tanpa ukuran unduhan yang signifikan, jadi penghematannya lebih sedikit dibandingkan alat sisi server."
+        }
+      ]
+    },
+    "word-counter": {
+      "seoTitle": "Penghitung Kata Online – Alat Gratis Penghitung Karakter & Kata",
+      "metaDescription": "Hitung kata, karakter, kalimat, dan paragraf secara instan saat Anda mengetik. Dapatkan estimasi waktu baca. Gratis, privat, dan berfungsi offline.",
+      "h1": "Penghitung Kata & Karakter",
+      "subheading": "Hitungan langsung kata, karakter, kalimat, dan paragraf dengan estimasi waktu baca — 100% privat.",
+      "keywords": [
+        "penghitung kata",
+        "penghitung karakter online",
+        "hitung kata gratis",
+        "kalkulator waktu baca",
+        "alat statistik teks"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel atau ketik teks Anda",
+          "text": "Masukkan teks secara langsung, atau tempel konten dari mana saja."
+        },
+        {
+          "name": "Lihat statistik langsung",
+          "text": "Hitungan kata, karakter, kalimat, dan paragraf diperbarui secara instan."
+        },
+        {
+          "name": "Periksa waktu baca",
+          "text": "Lihat estimasi waktu baca berdasarkan kecepatan baca rata-rata."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana waktu baca dihitung?",
+          "answer": "Waktu baca diperkirakan menggunakan kecepatan baca rata-rata 200 kata per menit."
+        },
+        {
+          "question": "Apakah alat ini menyimpan atau mengirim teks saya ke suatu tempat?",
+          "answer": "Tidak, semua penghitungan terjadi secara lokal di browser Anda saat Anda mengetik — tidak ada yang ditransmisikan."
+        },
+        {
+          "question": "Bagaimana kalimat dan paragraf dihitung?",
+          "answer": "Kalimat dideteksi oleh tanda baca akhir (. ! ?) dan paragraf oleh jeda baris."
+        }
+      ]
+    },
+    "base64-encoder-decoder": {
+      "seoTitle": "Encoder & Decoder Base64 Online – Gratis & Instan",
+      "metaDescription": "Kodekan teks ke Base64 atau dekode Base64 kembali ke teks biasa, secara instan di browser Anda. Gratis, privat, dan berfungsi sepenuhnya offline.",
+      "h1": "Encoder / Decoder Base64",
+      "subheading": "Kodekan dan dekode teks Base64 secara instan — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "encoder base64",
+        "decoder base64",
+        "kodekan teks ke base64",
+        "dekode base64 online",
+        "konverter base64 gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih mode",
+          "text": "Pilih Kodekan untuk mengubah teks biasa menjadi Base64, atau Dekode untuk kebalikannya."
+        },
+        {
+          "name": "Masukkan teks Anda",
+          "text": "Ketik atau tempel teks yang ingin Anda ubah."
+        },
+        {
+          "name": "Lihat hasilnya",
+          "text": "Output yang dikonversi diperbarui secara instan saat Anda mengetik."
+        },
+        {
+          "name": "Salin hasilnya",
+          "text": "Klik Salin untuk menyalin output ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Untuk apa encoding Base64 digunakan?",
+          "answer": "Base64 mengkodekan data biner atau teks menjadi karakter ASCII, umum digunakan untuk menyematkan data dalam URL, JSON, atau email."
+        },
+        {
+          "question": "Apakah teks saya dikirim ke server?",
+          "answer": "Tidak, encoding dan decoding keduanya terjadi secara lokal menggunakan fungsi btoa/atob bawaan browser Anda."
+        },
+        {
+          "question": "Apakah ini mendukung teks Unicode?",
+          "answer": "Ya, karakter non-ASCII seperti emoji dan huruf beraksen ditangani dengan benar."
+        }
+      ]
+    },
+    "url-encoder-decoder": {
+      "seoTitle": "Encoder & Decoder URL Online – Gratis & Instan",
+      "metaDescription": "Kodekan atau dekode URL dan string kueri secara instan di browser Anda. Alat encoding persentase gratis dan privat tanpa perlu mendaftar.",
+      "h1": "Encoder / Decoder URL",
+      "subheading": "Kodekan persentase atau dekode URL dan string kueri secara instan — diproses 100% secara lokal.",
+      "keywords": [
+        "encoder url",
+        "decoder url",
+        "encoding persentase online",
+        "alat encodeuricomponent",
+        "dekode url gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih mode",
+          "text": "Pilih Kodekan atau Dekode."
+        },
+        {
+          "name": "Masukkan teks Anda",
+          "text": "Ketik atau tempel URL, string kueri, atau teks apa pun."
+        },
+        {
+          "name": "Lihat hasilnya",
+          "text": "Output yang dikodekan atau didekode diperbarui secara instan."
+        },
+        {
+          "name": "Salin hasilnya",
+          "text": "Klik Salin untuk menyalin output ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kapan saya memerlukan encoding URL?",
+          "answer": "Encoding URL diperlukan saat karakter khusus (spasi, &, =, ?) muncul di parameter kueri atau segmen jalur."
+        },
+        {
+          "question": "Standar encoding apa yang digunakan ini?",
+          "answer": "Ini menggunakan fungsi native encodeURIComponent/decodeURIComponent browser (encoding persentase RFC 3986)."
+        },
+        {
+          "question": "Apakah data saya dikirim ke suatu tempat?",
+          "answer": "Tidak, semua encoding dan decoding terjadi secara lokal di browser Anda."
+        }
+      ]
+    },
+    "jwt-decoder": {
+      "seoTitle": "Decoder JWT Online – Gratis & Instan, Tanpa Daftar",
+      "metaDescription": "Dekode JSON Web Token (JWT) secara instan di browser Anda. Lihat header, payload, dan kedaluwarsa — tanpa verifikasi tanda tangan, tanpa panggilan server.",
+      "h1": "Decoder JWT",
+      "subheading": "Dekode header dan payload JWT secara instan — diproses 100% secara lokal, tanda tangan tidak pernah diverifikasi di sisi server.",
+      "keywords": [
+        "decoder jwt",
+        "dekode jwt online",
+        "decoder json web token",
+        "penguraian jwt gratis",
+        "debugger jwt"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel JWT Anda",
+          "text": "Tempel JSON Web Token ke dalam kolom input."
+        },
+        {
+          "name": "Decoding otomatis",
+          "text": "Header dan payload didekode dari Base64URL dan ditampilkan sebagai JSON yang diformat."
+        },
+        {
+          "name": "Periksa kedaluwarsa",
+          "text": "Jika ada klaim exp, status kedaluwarsanya disorot."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah alat ini memverifikasi tanda tangan JWT?",
+          "answer": "Tidak, alat ini hanya mendekode header dan payload — tidak memverifikasi tanda tangan. Jangan pernah mempercayai token yang didekode tanpa verifikasi sisi server."
+        },
+        {
+          "question": "Apakah token saya dikirim ke server?",
+          "answer": "Tidak, decoding terjadi sepenuhnya secara lokal di browser Anda menggunakan decoding Base64URL."
+        },
+        {
+          "question": "Apa arti klaim exp?",
+          "answer": "Klaim exp adalah timestamp Unix yang menunjukkan kapan token kedaluwarsa. Alat ini menyoroti apakah token sudah kedaluwarsa."
+        }
+      ]
+    },
+    "uuid-generator": {
+      "seoTitle": "Generator UUID Online – Generator Massal UUID v4 Gratis",
+      "metaDescription": "Hasilkan pengidentifikasi UUID v4 acak secara massal, secara instan di browser Anda. Salin satu per satu atau semuanya sekaligus. Gratis, privat, tanpa daftar.",
+      "h1": "Generator UUID",
+      "subheading": "Hasilkan satu atau ribuan pengidentifikasi UUID v4 acak secara instan — diproses 100% secara lokal.",
+      "keywords": [
+        "generator uuid",
+        "hasilkan uuid online",
+        "generator guid gratis",
+        "uuid v4 acak",
+        "generator uuid massal"
+      ],
+      "howTo": [
+        {
+          "name": "Atur jumlah",
+          "text": "Pilih berapa banyak UUID yang akan dihasilkan (hingga 500 sekaligus)."
+        },
+        {
+          "name": "Sesuaikan format",
+          "text": "Aktifkan atau nonaktifkan tanda hubung dan pemformatan huruf besar sesuai kebutuhan."
+        },
+        {
+          "name": "Hasilkan",
+          "text": "Klik Hasilkan untuk membuat batch UUID baru menggunakan crypto.randomUUID."
+        },
+        {
+          "name": "Salin",
+          "text": "Salin UUID individual atau semuanya sekaligus."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Versi UUID apa yang dihasilkan?",
+          "answer": "Alat ini menghasilkan UUID versi 4 (acak) menggunakan API native crypto.randomUUID browser."
+        },
+        {
+          "question": "Apakah UUID acak secara kriptografis?",
+          "answer": "Ya, mereka dihasilkan menggunakan generator angka acak yang aman secara kriptografis dari Web Crypto API."
+        },
+        {
+          "question": "Berapa banyak yang bisa saya hasilkan sekaligus?",
+          "answer": "Hingga 500 UUID per batch, dengan dukungan salin-semua instan."
+        }
+      ]
+    },
+    "hash-generator": {
+      "seoTitle": "Generator Hash Online – SHA-1, SHA-256, SHA-512 Gratis",
+      "metaDescription": "Hasilkan hash SHA-1, SHA-256, SHA-384, dan SHA-512 dari teks atau file secara instan di browser Anda menggunakan Web Crypto API. Gratis dan privat.",
+      "h1": "Generator Hash",
+      "subheading": "Hitung hash SHA-1, SHA-256, SHA-384, dan SHA-512 dari teks atau file — diproses 100% secara lokal.",
+      "keywords": [
+        "generator hash online",
+        "generator sha256",
+        "hash sha1 online",
+        "pemeriksa hash file",
+        "generator checksum gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih teks atau file",
+          "text": "Beralih antara hashing teks mentah atau file yang diunggah."
+        },
+        {
+          "name": "Masukkan input Anda",
+          "text": "Ketik teks atau seret & lepas file."
+        },
+        {
+          "name": "Lihat semua hash",
+          "text": "Digest SHA-1, SHA-256, SHA-384, dan SHA-512 dihitung secara instan."
+        },
+        {
+          "name": "Salin hash",
+          "text": "Klik ikon salin di sebelah hash mana pun untuk menyalinnya ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa MD5 tidak ditawarkan?",
+          "answer": "MD5 tidak tersedia di Web Crypto API native browser dan secara kriptografis rusak — gunakan SHA-256 atau SHA-512 sebagai gantinya."
+        },
+        {
+          "question": "Apakah file saya diunggah ke server?",
+          "answer": "Tidak, hashing terjadi sepenuhnya secara lokal menggunakan fungsi SubtleCrypto.digest dari Web Crypto API."
+        },
+        {
+          "question": "Untuk apa hash digunakan?",
+          "answer": "Hash digunakan untuk memverifikasi integritas file, mendeteksi duplikat, dan membuat sidik jari data dengan panjang tetap."
+        }
+      ]
+    },
+    "regex-tester": {
+      "seoTitle": "Penguji Regex Online – Debugger Ekspresi Reguler Gratis",
+      "metaDescription": "Uji ekspresi reguler terhadap teks sampel dengan penyorotan kecocokan langsung, flag, dan grup penangkap. Gratis, instan, dan sepenuhnya privat.",
+      "h1": "Penguji Regex",
+      "subheading": "Uji ekspresi reguler dengan penyorotan kecocokan langsung dan pemeriksaan grup penangkap — 100% lokal.",
+      "keywords": [
+        "penguji regex",
+        "penguji ekspresi reguler online",
+        "debugger regex gratis",
+        "uji pola regex",
+        "penyorot kecocokan regex"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan pola Anda",
+          "text": "Ketik pola ekspresi reguler."
+        },
+        {
+          "name": "Atur flag",
+          "text": "Aktifkan flag global, abaikan huruf besar/kecil, multiline, atau dot-all."
+        },
+        {
+          "name": "Tambahkan teks uji",
+          "text": "Tempel atau ketik teks yang ingin Anda uji dengan pola tersebut."
+        },
+        {
+          "name": "Tinjau kecocokan",
+          "text": "Kecocokan disorot secara langsung, dengan daftar lengkap kecocokan dan grup penangkap."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Varian regex apa yang digunakan?",
+          "answer": "Ini menggunakan mesin RegExp native JavaScript, sama seperti yang digunakan di browser dan Node.js."
+        },
+        {
+          "question": "Bisakah saya melihat grup penangkap?",
+          "answer": "Ya, grup penangkap dari setiap kecocokan tercantum di samping teks kecocokan lengkap."
+        },
+        {
+          "question": "Apakah teks uji saya dikirim ke suatu tempat?",
+          "answer": "Tidak, semua pencocokan terjadi secara instan dan lokal di browser Anda."
+        }
+      ]
+    },
+    "markdown-previewer": {
+      "seoTitle": "Pratinjau Markdown Online – Editor Markdown Langsung Gratis",
+      "metaDescription": "Tulis Markdown dan lihat pratinjau HTML yang disanitasi secara langsung secara instan di browser Anda. Gratis, privat, mendukung judul, daftar, kode, dan tautan.",
+      "h1": "Pratinjau Markdown",
+      "subheading": "Tulis Markdown dan pratinjau output HTML yang dirender secara langsung — 100% lokal, rendering yang disanitasi.",
+      "keywords": [
+        "pratinjau markdown",
+        "editor markdown online",
+        "pratinjau markdown langsung",
+        "markdown ke html gratis",
+        "editor md online"
+      ],
+      "howTo": [
+        {
+          "name": "Tulis Markdown",
+          "text": "Ketik atau tempel Markdown di panel editor kiri."
+        },
+        {
+          "name": "Pratinjau langsung",
+          "text": "Pratinjau HTML yang dirender diperbarui secara instan di sebelah kanan."
+        },
+        {
+          "name": "Gunakan sintaks standar",
+          "text": "Judul, daftar, tautan, blok kode, dan kutipan semuanya didukung."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah HTML yang dirender disanitasi?",
+          "answer": "Ya, semua HTML yang dirender disanitasi dengan DOMPurify untuk mencegah injeksi skrip sebelum ditampilkan."
+        },
+        {
+          "question": "Apakah konten Markdown saya dikirim ke suatu tempat?",
+          "answer": "Tidak, penguraian dan rendering keduanya terjadi sepenuhnya di browser Anda."
+        },
+        {
+          "question": "Sintaks Markdown apa yang didukung?",
+          "answer": "Markdown standar: judul, tebal/miring, daftar, tautan, gambar, kutipan, dan blok kode berpagar."
+        }
+      ]
+    },
+    "csv-to-json": {
+      "seoTitle": "Konverter CSV ke JSON Online – Gratis & Dua Arah",
+      "metaDescription": "Konversi CSV ke JSON atau JSON ke CSV secara instan di browser Anda. Menangani kolom bertanda kutip dan data bersarang. Gratis, privat, tanpa unggah.",
+      "h1": "Konverter CSV ke JSON",
+      "subheading": "Konversi antara format CSV dan JSON secara instan, dalam kedua arah — diproses 100% secara lokal.",
+      "keywords": [
+        "csv ke json",
+        "konverter json ke csv",
+        "konversi csv online",
+        "penguraian csv gratis",
+        "konverter csv json"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih arah",
+          "text": "Pilih CSV → JSON atau JSON → CSV."
+        },
+        {
+          "name": "Tempel data Anda",
+          "text": "Tempel baris CSV atau array JSON di panel input."
+        },
+        {
+          "name": "Lihat konversinya",
+          "text": "Output yang dikonversi diperbarui secara instan saat Anda mengetik."
+        },
+        {
+          "name": "Salin hasilnya",
+          "text": "Klik Salin untuk menyalin output yang dikonversi ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah ini menangani kolom CSV bertanda kutip dengan koma?",
+          "answer": "Ya, kolom bertanda kutip yang berisi koma, tanda kutip, atau baris baru diurai dengan benar."
+        },
+        {
+          "question": "Struktur JSON apa yang diharapkan untuk JSON ke CSV?",
+          "answer": "Array objek datar bekerja paling baik; objek bersarang secara otomatis diratakan dengan notasi titik."
+        },
+        {
+          "question": "Apakah data saya diunggah ke suatu tempat?",
+          "answer": "Tidak, semua penguraian dan konversi terjadi secara lokal di browser Anda."
+        }
+      ]
+    },
+    "lorem-ipsum-generator": {
+      "seoTitle": "Generator Lorem Ipsum Online – Teks Pengganti Gratis",
+      "metaDescription": "Hasilkan teks pengganti Lorem Ipsum berdasarkan kata, kalimat, atau paragraf, secara instan di browser Anda. Gratis, cepat, dan sepenuhnya dapat disesuaikan.",
+      "h1": "Generator Lorem Ipsum",
+      "subheading": "Hasilkan teks pengganti Lorem Ipsum berdasarkan kata, kalimat, atau paragraf — secara instan, 100% lokal.",
+      "keywords": [
+        "generator lorem ipsum",
+        "generator teks pengganti",
+        "generator teks dummy online",
+        "lorem ipsum gratis",
+        "generator teks pengisi"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih unit",
+          "text": "Pilih kata, kalimat, atau paragraf."
+        },
+        {
+          "name": "Atur jumlah",
+          "text": "Masukkan berapa banyak unit yang akan dihasilkan."
+        },
+        {
+          "name": "Hasilkan",
+          "text": "Klik Hasilkan untuk membuat teks pengganti baru."
+        },
+        {
+          "name": "Salin teksnya",
+          "text": "Klik Salin untuk menyalin teks yang dihasilkan ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Untuk apa Lorem Ipsum digunakan?",
+          "answer": "Lorem Ipsum adalah teks pengganti standar yang digunakan oleh desainer dan pengembang untuk mempratinjau tata letak sebelum konten sebenarnya siap."
+        },
+        {
+          "question": "Bisakah saya mulai dengan 'Lorem ipsum dolor sit amet' yang klasik?",
+          "answer": "Ya, aktifkan opsi \"Mulai dengan Lorem ipsum…\" untuk mulai dengan pembukaan tradisional."
+        },
+        {
+          "question": "Apakah ada batasan jumlah teks yang bisa saya hasilkan?",
+          "answer": "Anda dapat menghasilkan hingga 100 unit (kata, kalimat, atau paragraf) per klik."
+        }
+      ]
+    },
+    "percentage-calculator": {
+      "seoTitle": "Kalkulator Persentase Online – Gratis & Instan",
+      "metaDescription": "Hitung X% dari Y, berapa persen X dari Y, atau perubahan persentase antara dua angka, secara instan. Gratis, akurat, dan privat.",
+      "h1": "Kalkulator Persentase",
+      "subheading": "Hitung persentase, persentase-dari, dan perubahan persentase secara instan dengan tiga mode mudah.",
+      "keywords": [
+        "kalkulator persentase",
+        "kalkulator persen dari",
+        "kalkulator perubahan persentase",
+        "berapa persen x dari y"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih jenis perhitungan",
+          "text": "Pilih X% dari Y, X adalah berapa % dari Y, atau perubahan persentase."
+        },
+        {
+          "name": "Masukkan angka Anda",
+          "text": "Isi kolom input untuk perhitungan yang Anda pilih."
+        },
+        {
+          "name": "Lihat hasilnya secara instan",
+          "text": "Hasil diperbarui secara langsung saat Anda mengetik."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana cara menghitung X% dari Y?",
+          "answer": "Kalikan Y dengan (X dibagi 100). Misalnya, 20% dari 150 adalah 150 × 0,20 = 30."
+        },
+        {
+          "question": "Bagaimana perubahan persentase dihitung?",
+          "answer": "Perubahan persentase adalah ((nilai baru − nilai lama) / |nilai lama|) × 100."
+        },
+        {
+          "question": "Bisakah perubahan persentase negatif?",
+          "answer": "Ya, hasil negatif menunjukkan penurunan dari nilai asli."
+        }
+      ]
+    },
+    "discount-calculator": {
+      "seoTitle": "Kalkulator Diskon Online – Alat Gratis & Instan untuk Harga Jual",
+      "metaDescription": "Hitung harga jual akhir dan jumlah yang dihemat dari harga asli dan persentase diskon, secara instan. Gratis dan privat.",
+      "h1": "Kalkulator Diskon",
+      "subheading": "Hitung harga akhir dan penghematan dari persentase diskon apa pun — secara instan dan privat.",
+      "keywords": [
+        "kalkulator diskon",
+        "kalkulator harga jual",
+        "kalkulator persen diskon",
+        "hitung diskon online"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan harga asli",
+          "text": "Masukkan harga barang sebelum diskon apa pun."
+        },
+        {
+          "name": "Masukkan persentase diskon",
+          "text": "Masukkan tingkat diskon, mis. 25 untuk diskon 25%."
+        },
+        {
+          "name": "Lihat hasil secara instan",
+          "text": "Lihat jumlah yang dihemat dan harga akhir yang diperbarui secara langsung."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana harga diskon dihitung?",
+          "answer": "Harga akhir = harga asli − (harga asli × persentase diskon / 100)."
+        },
+        {
+          "question": "Bisakah saya menghitung diskon bertumpuk?",
+          "answer": "Alat ini menghitung satu diskon; untuk diskon bertumpuk, terapkan harga akhir sebagai harga asli berikutnya."
+        },
+        {
+          "question": "Apakah ini termasuk pajak penjualan?",
+          "answer": "Tidak, ini hanya menghitung diskon. Gunakan Kalkulator Pajak Penjualan untuk pajak di atas harga diskon."
+        }
+      ]
+    },
+    "tip-calculator": {
+      "seoTitle": "Kalkulator Tip Online – Gratis & Instan, Bagi Tagihan",
+      "metaDescription": "Hitung jumlah tip dan bagi total tagihan antara beberapa orang, secara instan di browser Anda. Gratis dan privat.",
+      "h1": "Kalkulator Tip",
+      "subheading": "Hitung tip Anda dan bagi tagihan dengan teman — hasil instan, tanpa iklan, tanpa daftar.",
+      "keywords": [
+        "kalkulator tip",
+        "kalkulator pembagi tagihan",
+        "berapa tip kalkulator",
+        "bagi tagihan online"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan jumlah tagihan",
+          "text": "Masukkan total tagihan sebelum tip."
+        },
+        {
+          "name": "Pilih persentase tip",
+          "text": "Pilih preset (10-25%) atau masukkan persentase khusus."
+        },
+        {
+          "name": "Atur jumlah orang",
+          "text": "Masukkan berapa banyak orang yang membagi tagihan."
+        },
+        {
+          "name": "Lihat hasil secara instan",
+          "text": "Lihat jumlah tip, total tagihan, dan jumlah yang harus dibayar per orang."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Berapa persentase tip standar?",
+          "answer": "Di AS, 15-20% adalah umum untuk layanan restoran yang baik, meskipun ini bervariasi menurut wilayah dan jenis layanan."
+        },
+        {
+          "question": "Bagaimana jumlah per orang dihitung?",
+          "answer": "Tagihan ditambah tip dibagi rata dengan jumlah orang yang dimasukkan."
+        },
+        {
+          "question": "Bisakah saya menggunakan persentase tip khusus?",
+          "answer": "Ya, masukkan persentase apa pun langsung di kolom input di samping preset."
+        }
+      ]
+    },
+    "loan-emi-calculator": {
+      "seoTitle": "Kalkulator Cicilan Pinjaman Online – Alat Gratis Pembayaran Bulanan",
+      "metaDescription": "Hitung pembayaran bulanan pinjaman Anda (cicilan), total bunga, dan jumlah pelunasan total secara instan. Gratis, akurat, dan privat.",
+      "h1": "Kalkulator Cicilan Pinjaman",
+      "subheading": "Hitung pembayaran bulanan pinjaman Anda, total bunga, dan pelunasan total — secara instan dan privat.",
+      "keywords": [
+        "kalkulator cicilan pinjaman",
+        "kalkulator pembayaran bulanan",
+        "kalkulator bunga pinjaman",
+        "kalkulator cicilan online gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan jumlah pinjaman",
+          "text": "Masukkan jumlah pokok yang Anda pinjam."
+        },
+        {
+          "name": "Masukkan tingkat bunga",
+          "text": "Masukkan tingkat bunga tahunan sebagai persentase."
+        },
+        {
+          "name": "Masukkan jangka waktu pinjaman",
+          "text": "Masukkan periode pelunasan dalam tahun."
+        },
+        {
+          "name": "Lihat hasil secara instan",
+          "text": "Lihat cicilan bulanan, total bunga, dan total pembayaran Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Rumus apa yang digunakan untuk menghitung cicilan?",
+          "answer": "Cicilan = [P × r × (1+r)^n] / [(1+r)^n − 1], di mana P adalah pokok, r adalah tingkat bunga bulanan, dan n adalah jumlah bulan."
+        },
+        {
+          "question": "Apakah ini memperhitungkan biaya atau asuransi?",
+          "answer": "Tidak, ini hanya menghitung pokok dan bunga. Biaya tambahan atau asuransi tidak disertakan."
+        },
+        {
+          "question": "Apakah ini cocok untuk KPR dan pinjaman mobil?",
+          "answer": "Ya, rumus pinjaman amortisasi standar berlaku sama untuk KPR, pinjaman mobil, dan pinjaman pribadi."
+        }
+      ]
+    },
+    "compound-interest-calculator": {
+      "seoTitle": "Kalkulator Bunga Majemuk Online – Gratis & Instan",
+      "metaDescription": "Hitung nilai masa depan investasi dengan bunga majemuk, pada frekuensi majemuk apa pun, secara instan. Gratis dan privat.",
+      "h1": "Kalkulator Bunga Majemuk",
+      "subheading": "Hitung nilai masa depan investasi Anda dengan bunga majemuk — secara instan dan privat.",
+      "keywords": [
+        "kalkulator bunga majemuk",
+        "kalkulator pertumbuhan investasi",
+        "kalkulator nilai masa depan",
+        "rumus bunga majemuk online"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan pokok Anda",
+          "text": "Masukkan jumlah awal yang Anda investasikan."
+        },
+        {
+          "name": "Masukkan tingkat bunga",
+          "text": "Masukkan tingkat bunga tahunan sebagai persentase."
+        },
+        {
+          "name": "Atur waktu dan frekuensi",
+          "text": "Masukkan jangka waktu investasi dalam tahun dan pilih frekuensi majemuk."
+        },
+        {
+          "name": "Lihat hasil secara instan",
+          "text": "Lihat nilai masa depan dan total bunga yang diperoleh."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Rumus apa yang digunakan ini?",
+          "answer": "A = P(1 + r/n)^(nt), di mana P adalah pokok, r adalah tingkat tahunan, n adalah frekuensi majemuk, dan t adalah waktu dalam tahun."
+        },
+        {
+          "question": "Bagaimana frekuensi majemuk memengaruhi pertumbuhan?",
+          "answer": "Pemajemukan yang lebih sering (misalnya harian vs tahunan) menghasilkan pengembalian yang sedikit lebih tinggi untuk tingkat nominal yang sama."
+        },
+        {
+          "question": "Apakah ini memperhitungkan kontribusi tambahan?",
+          "answer": "Tidak, ini menghitung pertumbuhan dari satu pokok awal tanpa kontribusi berulang."
+        }
+      ]
+    },
+    "sales-tax-calculator": {
+      "seoTitle": "Kalkulator Pajak Penjualan Online – Gratis & Instan, Kedua Arah",
+      "metaDescription": "Hitung pajak penjualan atas harga, atau hitung terbalik harga sebelum pajak dari total, secara instan di browser Anda. Gratis dan privat.",
+      "h1": "Kalkulator Pajak Penjualan",
+      "subheading": "Hitung pajak penjualan maju dari harga, atau balikkan dari total — secara instan dan privat.",
+      "keywords": [
+        "kalkulator pajak penjualan",
+        "kalkulator pajak penjualan terbalik",
+        "hitung pajak atas harga",
+        "kalkulator pajak penjualan online gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih arah",
+          "text": "Pilih Harga → Total untuk menambah pajak, atau Total → Harga untuk menghapusnya."
+        },
+        {
+          "name": "Masukkan jumlah dan tarif Anda",
+          "text": "Masukkan harga atau total, ditambah tarif pajak yang berlaku."
+        },
+        {
+          "name": "Lihat hasil secara instan",
+          "text": "Lihat jumlah pajak dan harga yang dihasilkan diperbarui secara langsung."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana pajak penjualan dihitung?",
+          "answer": "Jumlah pajak = harga × (tarif pajak / 100). Total = harga + jumlah pajak."
+        },
+        {
+          "question": "Bagaimana saya menemukan harga sebelum pajak dari total struk?",
+          "answer": "Gunakan mode Total → Harga: harga sebelum pajak = total / (1 + tarif pajak / 100)."
+        },
+        {
+          "question": "Apakah ini termasuk pajak lokal dan negara bagian gabungan?",
+          "answer": "Ya, masukkan tarif pajak efektif gabungan Anda (negara bagian + lokal) untuk total yang akurat."
+        }
+      ]
+    },
+    "bmi-calculator": {
+      "seoTitle": "Kalkulator BMI Online – Gratis, Metrik & Imperial",
+      "metaDescription": "Hitung Indeks Massa Tubuh (BMI) Anda menggunakan satuan metrik atau imperial, secara instan di browser Anda. Gratis, privat, dengan rincian kategori.",
+      "h1": "Kalkulator BMI",
+      "subheading": "Hitung Indeks Massa Tubuh Anda dalam satuan metrik atau imperial — hasil instan dengan rincian kategori.",
+      "keywords": [
+        "kalkulator bmi",
+        "kalkulator indeks massa tubuh",
+        "kalkulator bmi metrik imperial",
+        "hitung bmi online gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih sistem satuan Anda",
+          "text": "Pilih metrik (cm/kg) atau imperial (ft/in/lb)."
+        },
+        {
+          "name": "Masukkan tinggi dan berat badan",
+          "text": "Masukkan tinggi dan berat badan Anda dalam satuan yang dipilih."
+        },
+        {
+          "name": "Lihat BMI Anda secara instan",
+          "text": "Lihat nilai BMI dan kategori berat badan Anda diperbarui secara langsung."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana BMI dihitung?",
+          "answer": "Metrik: berat (kg) / tinggi (m)². Imperial: berat (lb) / tinggi (in)² × 703."
+        },
+        {
+          "question": "Apa saja kategori BMI?",
+          "answer": "Di bawah 18,5 adalah kekurangan berat badan, 18,5–24,9 adalah berat badan sehat, 25–29,9 adalah kelebihan berat badan, dan 30+ adalah obesitas."
+        },
+        {
+          "question": "Apakah BMI ukuran kesehatan yang sempurna?",
+          "answer": "Tidak, BMI tidak memperhitungkan massa otot, kepadatan tulang, atau komposisi tubuh. Konsultasikan dengan penyedia layanan kesehatan untuk penilaian lengkap."
+        }
+      ]
+    },
+    "age-calculator": {
+      "seoTitle": "Kalkulator Usia Online – Gratis & Akurat, Berdasarkan Tanggal Lahir",
+      "metaDescription": "Hitung usia pasti Anda dalam tahun, bulan, dan hari dari tanggal lahir Anda, plus hari menuju ulang tahun berikutnya — secara instan dan privat.",
+      "h1": "Kalkulator Usia",
+      "subheading": "Hitung usia pasti Anda dalam tahun, bulan, dan hari dari tanggal lahir Anda — hasil instan, tanpa daftar.",
+      "keywords": [
+        "kalkulator usia",
+        "kalkulator tanggal lahir",
+        "kalkulator berapa usia saya",
+        "kalkulator usia dalam hari"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan tanggal lahir Anda",
+          "text": "Pilih tanggal lahir Anda menggunakan pemilih tanggal."
+        },
+        {
+          "name": "Pilih tanggal acuan",
+          "text": "Default ke hari ini, atau pilih tanggal lain untuk menghitung usia pada hari itu."
+        },
+        {
+          "name": "Lihat usia Anda",
+          "text": "Lihat usia pasti Anda dalam tahun, bulan, dan hari."
+        },
+        {
+          "name": "Periksa statistik tambahan",
+          "text": "Lihat total hari yang telah dijalani dan hari menuju ulang tahun berikutnya."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana usia dihitung?",
+          "answer": "Kalkulator menghitung tahun, bulan, dan hari kalender penuh antara dua tanggal — bukan pembagian hari sederhana."
+        },
+        {
+          "question": "Bisakah saya menghitung usia pada tanggal masa depan atau masa lalu?",
+          "answer": "Ya, ubah tanggal \"acuan\" untuk melihat berapa usia Anda pada tanggal apa pun."
+        },
+        {
+          "question": "Apakah tanggal lahir saya disimpan di suatu tempat?",
+          "answer": "Tidak, semua perhitungan terjadi secara lokal di browser Anda dan tidak ada yang dikirim ke server."
+        }
+      ]
+    },
+    "text-diff-checker": {
+      "seoTitle": "Pemeriksa Perbedaan Teks Online – Bandingkan Dua Teks Gratis",
+      "metaDescription": "Bandingkan dua blok teks dan lihat persis apa yang ditambahkan atau dihapus, baris demi baris — diproses 100% secara lokal di browser Anda.",
+      "h1": "Pemeriksa Perbedaan Teks",
+      "subheading": "Bandingkan dua blok teks dan lihat persis apa yang berubah, baris demi baris.",
+      "keywords": [
+        "pemeriksa perbedaan teks",
+        "bandingkan teks online",
+        "alat diff teks",
+        "alat perbandingan teks"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel teks asli",
+          "text": "Masukkan versi asli di kotak pertama."
+        },
+        {
+          "name": "Tempel teks yang diubah",
+          "text": "Masukkan versi terbaru di kotak kedua."
+        },
+        {
+          "name": "Klik Bandingkan",
+          "text": "Lihat baris yang ditambahkan dan dihapus disorot secara instan."
+        },
+        {
+          "name": "Tinjau ringkasan",
+          "text": "Periksa total baris yang ditambahkan dan dihapus sekilas."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana perbedaan dihitung?",
+          "answer": "Alat ini membandingkan kedua teks baris demi baris dan menyoroti baris yang ditambahkan (hijau) atau dihapus (merah)."
+        },
+        {
+          "question": "Bisakah ini membandingkan kode atau JSON?",
+          "answer": "Ya, alat ini bekerja dengan teks biasa apa pun, termasuk kode, JSON, atau file konfigurasi."
+        },
+        {
+          "question": "Apakah teks saya diunggah ke suatu tempat?",
+          "answer": "Tidak, perbandingan berjalan sepenuhnya di browser Anda — tidak ada yang dikirim ke server."
+        }
+      ]
+    },
+    "pdf-page-numberer": {
+      "seoTitle": "Tambahkan Nomor Halaman ke PDF Online – Gratis & Privat",
+      "metaDescription": "Tambahkan nomor halaman ke setiap halaman PDF dengan posisi dan format pilihan Anda — diproses 100% secara lokal di browser Anda.",
+      "h1": "Penomor Halaman PDF",
+      "subheading": "Tambahkan nomor halaman ke setiap halaman PDF, dengan posisi dan format pilihan Anda.",
+      "keywords": [
+        "tambah nomor halaman ke pdf",
+        "penomor halaman pdf",
+        "beri nomor halaman pdf online",
+        "sisipkan nomor halaman pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah PDF Anda",
+          "text": "Pilih file PDF yang ingin Anda beri nomor."
+        },
+        {
+          "name": "Pilih posisi",
+          "text": "Pilih di mana nomor halaman harus muncul — atas atau bawah, kiri, tengah, atau kanan."
+        },
+        {
+          "name": "Pilih format dan nomor awal",
+          "text": "Pilih format nomor seperti \"1\" atau \"Halaman 1\", dan atur nomor awal."
+        },
+        {
+          "name": "Unduh hasilnya",
+          "text": "Unduh PDF dengan nomor halaman yang ditambahkan ke setiap halaman."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya mulai penomoran dari angka selain 1?",
+          "answer": "Ya, atur nomor awal apa pun — berguna saat dokumen melanjutkan dari file lain."
+        },
+        {
+          "question": "Format nomor apa saja yang tersedia?",
+          "answer": "Pilih dari angka biasa (\"1\"), \"Halaman 1\", \"1 dari N\", atau gaya \"- 1 -\"."
+        },
+        {
+          "question": "Apakah PDF saya diunggah ke suatu tempat?",
+          "answer": "Tidak, nomor halaman ditambahkan sepenuhnya di browser Anda menggunakan pdf-lib — file Anda tidak pernah diunggah ke server."
+        }
+      ]
+    },
+    "password-generator": {
+      "seoTitle": "Generator Kata Sandi Online – Gratis, Aman & Instan",
+      "metaDescription": "Buat kata sandi acak yang kuat dengan panjang dan jenis karakter yang dapat disesuaikan, langsung di browser Anda. Gratis dan privat, tanpa daftar.",
+      "h1": "Generator Kata Sandi",
+      "subheading": "Buat kata sandi acak yang kuat dengan panjang dan opsi karakter yang dapat disesuaikan — dibuat dengan aman di browser Anda.",
+      "keywords": [
+        "generator kata sandi",
+        "generator kata sandi acak",
+        "buat kata sandi kuat",
+        "generator kata sandi aman"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih panjang",
+          "text": "Atur panjang kata sandi antara 4 hingga 128 karakter."
+        },
+        {
+          "name": "Pilih jenis karakter",
+          "text": "Aktifkan huruf besar, huruf kecil, angka, dan simbol."
+        },
+        {
+          "name": "Buat",
+          "text": "Klik Buat untuk membuat kata sandi acak baru."
+        },
+        {
+          "name": "Salin",
+          "text": "Klik ikon salin untuk menyalin kata sandi ke clipboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah generator kata sandi ini aman?",
+          "answer": "Ya. Kata sandi dibuat menggunakan generator angka acak yang aman secara kriptografis dari browser Anda (crypto.getRandomValues), bukan fungsi pseudo-acak yang lebih lemah."
+        },
+        {
+          "question": "Apakah kata sandi yang dihasilkan dikirim ke suatu tempat?",
+          "answer": "Tidak. Semuanya terjadi secara lokal di browser Anda — kata sandi tidak pernah dikirim atau disimpan di server mana pun."
+        },
+        {
+          "question": "Apa yang membuat kata sandi kuat?",
+          "answer": "Panjang adalah yang paling penting. Kata sandi yang lebih panjang dengan kombinasi huruf besar, huruf kecil, angka, dan simbol jauh lebih sulit dibobol dibandingkan yang pendek dan sederhana."
+        }
+      ]
+    },
+    "image-cropper": {
+      "seoTitle": "Pemotong Gambar Online – Gratis & Privat, Tanpa Unggah",
+      "metaDescription": "Potong gambar apa pun langsung di browser Anda dengan menyeret kotak seleksi — gratis, privat, dan diproses 100% secara lokal.",
+      "h1": "Pemotong Gambar",
+      "subheading": "Potong gambar apa pun dengan menyeret kotak seleksi, lalu unduh hasilnya — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "pemotong gambar",
+        "potong gambar online",
+        "pemotong foto gratis",
+        "potong foto online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar",
+          "text": "Seret dan lepas atau pilih gambar dari perangkat Anda."
+        },
+        {
+          "name": "Sesuaikan area potong",
+          "text": "Seret kotak seleksi atau sudutnya untuk menentukan area potong, atau masukkan nilai X/Y/lebar/tinggi yang tepat."
+        },
+        {
+          "name": "Potong dan unduh",
+          "text": "Klik Potong & Unduh untuk menyimpan gambar yang dipotong sebagai PNG."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Format gambar apa yang didukung?",
+          "answer": "Anda dapat mengunggah JPG, PNG, WebP, dan sebagian besar format gambar umum. Hasil potongan diunduh sebagai PNG."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke server?",
+          "answer": "Tidak, pemotongan terjadi sepenuhnya di browser Anda menggunakan Canvas API — gambar Anda tidak pernah meninggalkan perangkat Anda."
+        },
+        {
+          "question": "Bisakah saya mengatur ukuran potong yang tepat?",
+          "answer": "Ya, gunakan kolom X, Y, Lebar, dan Tinggi untuk memasukkan nilai piksel yang tepat selain menyeret gagang."
+        }
+      ]
+    },
+    "text-case-converter": {
+      "seoTitle": "Konverter Huruf Besar/Kecil – HURUF BESAR, huruf kecil & Lainnya",
+      "metaDescription": "Ubah teks antara HURUF BESAR, huruf kecil, Setiap Kata Kapital, camelCase, snake_case, dan lainnya — secara instan di browser Anda.",
+      "h1": "Konverter Huruf Besar/Kecil",
+      "subheading": "Ubah teks antara HURUF BESAR, huruf kecil, Setiap Kata Kapital, camelCase, snake_case, dan format lainnya secara instan.",
+      "keywords": [
+        "konverter huruf besar kecil",
+        "ubah teks jadi huruf besar",
+        "konverter camel case",
+        "konverter setiap kata kapital"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel teks Anda",
+          "text": "Ketik atau tempel teks yang ingin Anda ubah."
+        },
+        {
+          "name": "Pilih format",
+          "text": "Klik tombol format apa pun — HURUF BESAR, huruf kecil, camelCase, dan lainnya."
+        },
+        {
+          "name": "Lihat hasilnya",
+          "text": "Teks yang diubah muncul secara instan di bawah."
+        },
+        {
+          "name": "Salin hasilnya",
+          "text": "Klik ikon salin untuk menyalin teks yang telah diubah."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Format apa saja yang didukung?",
+          "answer": "HURUF BESAR, huruf kecil, Setiap Kata Kapital, huruf kapital awal kalimat, camelCase, PascalCase, snake_case, dan kebab-case."
+        },
+        {
+          "question": "Apakah ini mengubah teks asli saya?",
+          "answer": "Tidak, input Anda tetap utuh — hasil yang diubah ditampilkan secara terpisah agar Anda dapat membandingkan atau mengubah lagi."
+        },
+        {
+          "question": "Apakah ada batas panjang?",
+          "answer": "Tidak ada batas praktis — konversi terjadi secara instan di browser Anda, bahkan untuk teks yang panjang."
+        }
+      ]
+    },
+    "unit-converter": {
+      "seoTitle": "Konverter Satuan Online – Panjang, Berat & Suhu",
+      "metaDescription": "Konversi antara satuan panjang, berat, dan suhu secara instan — gratis, akurat, dan diproses 100% secara lokal di browser Anda.",
+      "h1": "Konverter Satuan",
+      "subheading": "Konversi antara satuan panjang, berat, dan suhu secara instan dan akurat.",
+      "keywords": [
+        "konverter satuan",
+        "konverter panjang",
+        "konverter berat",
+        "konverter suhu",
+        "konverter metrik ke imperial"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih kategori",
+          "text": "Pilih Panjang, Berat, atau Suhu."
+        },
+        {
+          "name": "Pilih satuan Anda",
+          "text": "Pilih satuan asal dan satuan tujuan."
+        },
+        {
+          "name": "Masukkan nilai",
+          "text": "Ketik angka yang ingin Anda konversi."
+        },
+        {
+          "name": "Lihat hasilnya",
+          "text": "Lihat nilai yang dikonversi diperbarui secara instan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Satuan apa saja yang didukung?",
+          "answer": "Panjang (mm, cm, m, km, in, ft, yd, mi), berat (mg, g, kg, oz, lb), dan suhu (Celsius, Fahrenheit, Kelvin)."
+        },
+        {
+          "question": "Apakah suhu dikonversi dengan benar?",
+          "answer": "Ya, suhu menggunakan rumus konversi yang tepat, bukan pengali sederhana, karena skala Celsius, Fahrenheit, dan Kelvin tidak memiliki titik nol yang sama."
+        },
+        {
+          "question": "Bisakah saya menukar satuan asal/tujuan dengan cepat?",
+          "answer": "Ya, gunakan tombol tukar untuk membalik arah konversi secara instan."
+        }
+      ]
+    },
+    "exif-stripper": {
+      "seoTitle": "Penghapus Metadata EXIF & GPS – Gratis & Privat, Tanpa Unggah",
+      "metaDescription": "Lihat dan hapus metadata EXIF — model kamera, lokasi GPS, cap waktu — dari foto Anda sebelum membagikannya, sepenuhnya di browser Anda.",
+      "h1": "Penghapus Metadata EXIF & GPS",
+      "subheading": "Lihat persis metadata apa yang tersembunyi di foto Anda, lalu hapus dengan satu klik sebelum membagikannya.",
+      "keywords": [
+        "hapus exif",
+        "hapus metadata foto",
+        "hapus gps dari foto",
+        "privasi foto"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah foto Anda",
+          "text": "Seret dan lepas satu atau beberapa foto JPEG."
+        },
+        {
+          "name": "Tinjau metadata",
+          "text": "Lihat model kamera, lensa, tanggal, ISO, dan koordinat GPS yang ditemukan di setiap foto."
+        },
+        {
+          "name": "Hapus dan unduh",
+          "text": "Klik Hapus & Unduh untuk mendapatkan salinan bersih tanpa metadata, atau unduh semua sebagai ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Metadata apa saja yang dihapus?",
+          "answer": "Merek/model kamera, info lensa, tanggal pengambilan, ISO, dan koordinat GPS — seluruh blok EXIF dihapus saat gambar dienkode ulang."
+        },
+        {
+          "question": "Apakah foto saya diunggah ke suatu tempat?",
+          "answer": "Tidak, metadata dibaca dan gambar dienkode ulang sepenuhnya di browser Anda — tidak ada yang dikirim ke server."
+        },
+        {
+          "question": "Apakah menghapus metadata mengurangi kualitas gambar?",
+          "answer": "Gambar dienkode ulang dengan kualitas tinggi (95%), sehingga perbedaannya dapat diabaikan untuk sebagian besar penggunaan."
+        }
+      ]
+    },
+    "zero-width-remover": {
+      "seoTitle": "Penghapus Spasi Nol Lebar & Karakter Tak Terlihat – Gratis Online",
+      "metaDescription": "Temukan dan hapus spasi nol lebar serta karakter Unicode tak terlihat lainnya yang tersembunyi dalam teks yang ditempel, sepenuhnya di browser Anda.",
+      "h1": "Pembersih Spasi Nol Lebar & Karakter Tak Terlihat",
+      "subheading": "Temukan dan hapus spasi nol lebar serta karakter Unicode tak terlihat lainnya yang tersembunyi di teks Anda.",
+      "keywords": [
+        "hapus spasi nol lebar",
+        "bersihkan unicode tersembunyi",
+        "penghapus karakter tak terlihat"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel teks Anda",
+          "text": "Tempel teks yang mungkin mengandung karakter tersembunyi atau tak terlihat."
+        },
+        {
+          "name": "Tinjau hasil temuan",
+          "text": "Lihat berapa banyak karakter tak terlihat yang terdeteksi dan di mana letaknya."
+        },
+        {
+          "name": "Salin teks bersih",
+          "text": "Salin teks yang sudah dibersihkan dari semua karakter tak terlihat."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Dari mana asal karakter tak terlihat?",
+          "answer": "Karakter ini sering muncul secara tidak sengaja saat menyalin teks dari pengolah kata, tautan pelacak, atau aplikasi pesan."
+        },
+        {
+          "question": "Karakter apa saja yang dihapus alat ini?",
+          "answer": "Spasi nol lebar, zero-width joiner/non-joiner, byte-order mark, word joiner, tanda hubung lunak, dan karakter kontrol bidirectional yang tersisa."
+        },
+        {
+          "question": "Apakah teks saya dikirim ke suatu tempat?",
+          "answer": "Tidak, pembersihan berlangsung sepenuhnya di browser Anda — tidak ada yang diunggah."
+        }
+      ]
+    },
+    "hmac-generator": {
+      "seoTitle": "Generator HMAC Online – SHA-1/256/384/512, Gratis & Aman",
+      "metaDescription": "Buat hash HMAC berkunci dari pesan dan kunci rahasia menggunakan SHA-1, SHA-256, SHA-384, atau SHA-512 — dihitung secara lokal di browser Anda.",
+      "h1": "Generator Hash Berkunci HMAC",
+      "subheading": "Buat hash HMAC berkunci dari pesan dan kunci rahasia, dihitung secara lokal di browser Anda.",
+      "keywords": [
+        "generator hmac",
+        "hmac sha256",
+        "tanda tangan kripto"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan pesan Anda",
+          "text": "Ketik atau tempel pesan yang ingin Anda tanda tangani."
+        },
+        {
+          "name": "Masukkan kunci rahasia Anda",
+          "text": "Ketik kunci rahasia yang digunakan untuk menghitung HMAC."
+        },
+        {
+          "name": "Pilih algoritma",
+          "text": "Pilih SHA-1, SHA-256, SHA-384, atau SHA-512."
+        },
+        {
+          "name": "Salin HMAC",
+          "text": "HMAC hasil dalam format hex diperbarui secara instan — salin dengan satu klik."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana HMAC dihitung?",
+          "answer": "Menggunakan Web Crypto API bawaan browser Anda (crypto.subtle), yang menandatangani pesan dengan kunci Anda secara aman menggunakan algoritma hash yang dipilih."
+        },
+        {
+          "question": "Apakah kunci rahasia saya dikirim ke suatu tempat?",
+          "answer": "Tidak, semuanya dihitung secara lokal di browser Anda — kunci dan pesan Anda tidak pernah dikirimkan."
+        },
+        {
+          "question": "Apa perbedaan antara HMAC dan hash biasa?",
+          "answer": "Hash biasa tidak memiliki kunci rahasia, sehingga siapa pun dapat menghitungnya. HMAC menggabungkan kunci rahasia dengan pesan, memungkinkan Anda memverifikasi integritas sekaligus keasliannya."
+        }
+      ]
+    },
+    "json-to-typescript": {
+      "seoTitle": "Konverter JSON ke TypeScript – Interface & Skema Zod, Gratis",
+      "metaDescription": "Konversi JSON ke interface TypeScript, type alias, atau skema validasi Zod secara instan — diproses 100% secara lokal di browser Anda.",
+      "h1": "JSON ke TypeScript & Skema Zod",
+      "subheading": "Konversi JSON ke interface TypeScript, type alias, atau skema validasi Zod secara instan.",
+      "keywords": [
+        "json ke typescript",
+        "json ke zod",
+        "generate tipe typescript"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel JSON Anda",
+          "text": "Tempel atau ketik objek atau array JSON di editor."
+        },
+        {
+          "name": "Pilih opsi Anda",
+          "text": "Pilih interface atau type alias, aktifkan field opsional, dan aktifkan pembuatan skema Zod jika diperlukan."
+        },
+        {
+          "name": "Salin atau unduh",
+          "text": "Salin kode TypeScript yang dihasilkan atau unduh sebagai file .d.ts."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana tipe data disimpulkan?",
+          "answer": "Alat ini menelusuri struktur JSON Anda dan menyimpulkan tipe TypeScript yang sesuai — objek bersarang menjadi interface tersendiri, dan array menjadi daftar bertipe."
+        },
+        {
+          "question": "Apakah ini membutuhkan library Zod?",
+          "answer": "Tidak, skema Zod dihasilkan sebagai kode teks biasa untuk Anda salin ke proyek yang sudah menginstal Zod — alat ini tidak bergantung padanya."
+        },
+        {
+          "question": "Apakah JSON saya diunggah ke suatu tempat?",
+          "answer": "Tidak, pembuatan tipe berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "json-to-yaml": {
+      "seoTitle": "Konverter JSON ke YAML Online – Gratis, Instan, Dua Arah",
+      "metaDescription": "Konversi JSON ke YAML atau YAML ke JSON secara instan, dalam kedua arah — diproses 100% secara lokal di browser Anda.",
+      "h1": "Konverter JSON ↔ YAML",
+      "subheading": "Konversi antara JSON dan YAML secara instan, dalam kedua arah.",
+      "keywords": [
+        "json ke yaml",
+        "yaml ke json",
+        "konversi yaml"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih arah konversi",
+          "text": "Pilih JSON ke YAML atau YAML ke JSON."
+        },
+        {
+          "name": "Tempel konten Anda",
+          "text": "Tempel JSON atau YAML Anda di editor."
+        },
+        {
+          "name": "Salin atau unduh hasilnya",
+          "text": "Salin hasil konversi atau unduh sebagai file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah ini implementasi YAML yang lengkap?",
+          "answer": "Alat ini mencakup subset praktis YAML yang digunakan sebagian besar file konfigurasi — objek bersarang, daftar bergaya blok, string, angka, boolean, dan null — bukan setiap kasus khusus dari spesifikasi lengkap."
+        },
+        {
+          "question": "Apakah data saya diunggah ke suatu tempat?",
+          "answer": "Tidak, konversi berlangsung sepenuhnya di browser Anda."
+        },
+        {
+          "question": "Bisakah saya mengonversi struktur bersarang yang kompleks?",
+          "answer": "Ya, kedua arah mendukung objek yang sangat bersarang dan array berisi objek."
+        }
+      ]
+    },
+    "sql-formatter": {
+      "seoTitle": "Formatter SQL Online – Rapikan & Minifikasi Query SQL, Gratis",
+      "metaDescription": "Format query SQL yang berantakan menjadi pernyataan yang mudah dibaca dan berindentasi, atau minifikasi menjadi satu baris — diproses 100% secara lokal di browser Anda.",
+      "h1": "Formatter Query SQL",
+      "subheading": "Format query SQL yang berantakan menjadi pernyataan yang mudah dibaca, atau minifikasi menjadi satu baris.",
+      "keywords": [
+        "formatter sql",
+        "rapikan sql",
+        "format query sql"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel SQL Anda",
+          "text": "Tempel query SQL apa pun di editor."
+        },
+        {
+          "name": "Format atau minifikasi",
+          "text": "Klik Format untuk merapikannya dengan indentasi yang tepat, atau Minifikasi untuk menyingkatnya menjadi satu baris."
+        },
+        {
+          "name": "Salin hasilnya",
+          "text": "Salin SQL yang telah diformat atau diminifikasi ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Dialek SQL apa saja yang didukung?",
+          "answer": "Formatter ini mengenali kata kunci umum yang digunakan bersama oleh MySQL, PostgreSQL, SQLite, dan SQL Server — formatnya berdasarkan struktur kata kunci, bukan memvalidasi sintaks khusus dialek."
+        },
+        {
+          "question": "Apakah alat ini memvalidasi SQL saya?",
+          "answer": "Tidak, ini adalah formatter, bukan validator query — alat ini tidak akan menangkap kesalahan sintaks, hanya memformat ulang teksnya."
+        },
+        {
+          "question": "Apakah query saya diunggah ke suatu tempat?",
+          "answer": "Tidak, pemformatan berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "json-to-csv": {
+      "seoTitle": "Konverter JSON ke CSV Online – Gratis, Instan, Tanpa Unggah",
+      "metaDescription": "Konversi array objek JSON menjadi file CSV, siap dibuka di Excel atau Google Sheets — diproses 100% secara lokal di browser Anda.",
+      "h1": "Konverter JSON ke CSV",
+      "subheading": "Konversi array objek JSON menjadi file CSV, siap dibuka di spreadsheet.",
+      "keywords": [
+        "json ke csv",
+        "konversi json ke excel",
+        "array json ke csv"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel JSON Anda",
+          "text": "Tempel array objek JSON di editor."
+        },
+        {
+          "name": "Lihat hasil CSV",
+          "text": "Lihat CSV hasil konversi muncul secara instan, dengan kolom dari key objek Anda."
+        },
+        {
+          "name": "Salin atau unduh",
+          "text": "Salin teks CSV atau unduh sebagai file .csv."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Format JSON seperti apa yang paling cocok?",
+          "answer": "Array objek datar dengan key yang konsisten, misalnya [{\"name\": \"A\", \"price\": 10}, ...] — ini dipetakan secara rapi ke baris dan kolom spreadsheet."
+        },
+        {
+          "question": "Apa yang terjadi dengan objek bersarang?",
+          "answer": "Nilai yang sangat bersarang akan diratakan atau diubah menjadi string jika memungkinkan agar tetap muat dalam satu sel CSV."
+        },
+        {
+          "question": "Apakah data saya diunggah ke suatu tempat?",
+          "answer": "Tidak, konversi berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "code-minifier": {
+      "seoTitle": "Minifier HTML & CSS Online – Gratis, Instan, Tanpa Unggah",
+      "metaDescription": "Minifikasi HTML atau CSS dengan menghapus komentar dan spasi yang tidak perlu — diproses 100% secara lokal di browser Anda.",
+      "h1": "Minifier HTML & CSS",
+      "subheading": "Hapus komentar dan spasi yang tidak perlu dari HTML atau CSS untuk memperkecil ukuran file.",
+      "keywords": [
+        "minifikasi css",
+        "minifikasi html",
+        "kompresor kode"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih HTML atau CSS",
+          "text": "Pilih jenis kode yang ingin Anda minifikasi."
+        },
+        {
+          "name": "Tempel kode Anda",
+          "text": "Tempel HTML atau CSS Anda di editor."
+        },
+        {
+          "name": "Minifikasi dan salin",
+          "text": "Klik Minifikasi, lalu salin hasil yang telah dikompresi — lihat berapa banyak ukuran yang Anda hemat."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah minifikasi akan merusak kode saya?",
+          "answer": "Tidak, hanya komentar dan spasi yang aman yang dihapus — konten di dalam tag pre, textarea, script, dan style untuk HTML, serta string literal untuk CSS, tetap utuh."
+        },
+        {
+          "question": "Berapa banyak ukuran yang dihemat dengan minifikasi?",
+          "answer": "Ini bervariasi tergantung berapa banyak spasi dan komentar di kode asli Anda — alat ini menampilkan perbandingan ukuran sebelum/sesudah yang tepat."
+        },
+        {
+          "question": "Apakah kode saya diunggah ke suatu tempat?",
+          "answer": "Tidak, minifikasi berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "html-entity-encoder": {
+      "seoTitle": "Encoder / Decoder Entitas HTML – Gratis, Instan, Tanpa Unggah",
+      "metaDescription": "Kodekan karakter khusus menjadi entitas HTML, atau dekode entitas HTML kembali menjadi teks yang mudah dibaca — diproses 100% secara lokal di browser Anda.",
+      "h1": "Encoder / Decoder Entitas HTML",
+      "subheading": "Kodekan karakter khusus menjadi entitas HTML, atau dekode entitas kembali menjadi teks yang mudah dibaca.",
+      "keywords": [
+        "encoder entitas html",
+        "decode entitas html",
+        "escape html"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih encode atau decode",
+          "text": "Pilih apakah Anda ingin mengodekan teks atau mendekode entitas HTML."
+        },
+        {
+          "name": "Tempel teks Anda",
+          "text": "Tempel teks atau string berformat entitas HTML yang ingin Anda ubah."
+        },
+        {
+          "name": "Salin hasilnya",
+          "text": "Salin hasil encode atau decode ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa perlu mengodekan entitas HTML?",
+          "answer": "Untuk menampilkan karakter khusus seperti <, >, dan & sebagai teks literal di dalam HTML dengan aman, tanpa browser menerjemahkannya sebagai markup."
+        },
+        {
+          "question": "Entitas apa saja yang bisa didekode?",
+          "answer": "Semua entitas HTML bernama dan numerik yang dikenali browser Anda — proses decode menggunakan parser HTML bawaan browser untuk cakupan yang lengkap dan akurat."
+        },
+        {
+          "question": "Apakah teks saya diunggah ke suatu tempat?",
+          "answer": "Tidak, proses encode dan decode berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "title-case-converter": {
+      "seoTitle": "Konverter Title Case – Gaya APA, Chicago, MLA & AP, Gratis",
+      "metaDescription": "Kapitalisasi judul dan headline dengan benar menggunakan aturan gaya APA, Chicago, MLA, atau AP — diproses 100% secara lokal di browser Anda.",
+      "h1": "Kapitalisasi Title Case & Headline",
+      "subheading": "Kapitalisasi judul dan headline dengan benar menggunakan aturan gaya APA, Chicago, MLA, atau AP.",
+      "keywords": [
+        "konverter title case",
+        "kapitalisasi judul",
+        "title case apa",
+        "headline chicago"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel judul Anda",
+          "text": "Ketik atau tempel judul atau headline yang ingin Anda kapitalisasi."
+        },
+        {
+          "name": "Pilih gaya",
+          "text": "Pilih gaya APA, Chicago, MLA, atau AP."
+        },
+        {
+          "name": "Salin hasilnya",
+          "text": "Salin judul dengan kapitalisasi yang benar ke clipboard Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa perbedaan antar gaya ini?",
+          "answer": "Setiap panduan gaya memiliki aturan sendiri tentang kata pendek mana (artikel, konjungsi, preposisi) yang tetap huruf kecil — APA dan Chicago mengapitalisasi preposisi yang lebih panjang yang oleh AP dan MLA akan dibiarkan huruf kecil, misalnya."
+        },
+        {
+          "question": "Apakah kata pertama dan terakhir selalu dikapitalisasi?",
+          "answer": "Ya, keempat gaya mengapitalisasi kata pertama dan terakhir dari judul terlepas dari jenis katanya."
+        },
+        {
+          "question": "Apakah teks saya diunggah ke suatu tempat?",
+          "answer": "Tidak, kapitalisasi berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "url-slug-generator": {
+      "seoTitle": "Generator Slug URL Online – Ramah SEO, Gratis & Instan",
+      "metaDescription": "Ubah judul atau teks apa pun menjadi slug URL yang bersih dan ramah SEO — diproses 100% secara lokal di browser Anda.",
+      "h1": "Generator Slug URL SEO",
+      "subheading": "Ubah judul atau teks apa pun menjadi slug URL yang bersih dan ramah SEO secara instan.",
+      "keywords": [
+        "generator slug",
+        "slugify url",
+        "pembuat url ramah seo"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan judul Anda",
+          "text": "Ketik atau tempel judul postingan blog atau teks apa pun."
+        },
+        {
+          "name": "Sesuaikan opsi",
+          "text": "Atur panjang maksimum dan pilih tanda hubung atau garis bawah sebagai pemisah."
+        },
+        {
+          "name": "Salin slug",
+          "text": "Slug siap URL diperbarui secara instan — salin dengan satu klik."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana karakter beraksen ditangani?",
+          "answer": "Karakter beraksen dan diakritik diubah ke padanan ASCII terdekatnya (misalnya é menjadi e) agar slug tetap aman untuk URL."
+        },
+        {
+          "question": "Apa yang terjadi pada karakter khusus dan spasi?",
+          "answer": "Karakter-karakter ini diganti dengan pemisah pilihan Anda, dan beberapa pemisah berurutan digabungkan menjadi satu."
+        },
+        {
+          "question": "Apakah teks saya diunggah ke suatu tempat?",
+          "answer": "Tidak, pembuatan slug berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "opengraph-generator": {
+      "seoTitle": "Generator OpenGraph & Meta Tag – Pratinjau Langsung, Gratis",
+      "metaDescription": "Hasilkan meta tag OpenGraph dan Twitter dengan pratinjau langsung tentang bagaimana tautan Anda akan terlihat di Google, Twitter, dan Facebook.",
+      "h1": "Generator OpenGraph & Meta Tag",
+      "subheading": "Hasilkan meta tag untuk berbagi media sosial dengan pratinjau langsung tentang bagaimana tautan Anda akan terlihat saat dibagikan.",
+      "keywords": [
+        "generator opengraph",
+        "pratinjau meta tag",
+        "pembuat kartu berbagi sosial"
+      ],
+      "howTo": [
+        {
+          "name": "Isi detail Anda",
+          "text": "Masukkan judul, deskripsi, URL kanonis, nama situs, URL gambar, dan handle Twitter Anda."
+        },
+        {
+          "name": "Periksa pratinjau langsung",
+          "text": "Lihat pratinjau instan tentang bagaimana tautan Anda akan tampil di Google Search, Twitter, dan Facebook."
+        },
+        {
+          "name": "Salin kode",
+          "text": "Salin meta tag HTML siap tempel atau objek metadata Next.js."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Untuk apa tag OpenGraph digunakan?",
+          "answer": "Tag ini mengontrol bagaimana halaman Anda tampil saat dibagikan di media sosial dan aplikasi pesan — judul, deskripsi, dan gambar pratinjau."
+        },
+        {
+          "question": "Apakah ini berfungsi dengan Next.js?",
+          "answer": "Ya, ada tombol khusus untuk menyalin objek ekspor metadata Next.js siap tempel selain meta tag HTML biasa."
+        },
+        {
+          "question": "Apakah data saya diunggah ke suatu tempat?",
+          "answer": "Tidak, pratinjau dan kode yang dihasilkan sepenuhnya dibuat di browser Anda."
+        }
+      ]
+    },
+    "duplicate-line-remover": {
+      "seoTitle": "Penghapus Baris Duplikat & Pengurut Daftar – Gratis, Instan",
+      "metaDescription": "Hapus baris duplikat dari sebuah daftar dan urutkan secara alfabet atau berdasarkan panjang — diproses 100% secara lokal di browser Anda.",
+      "h1": "Penghapus Baris Duplikat & Pengurut Daftar",
+      "subheading": "Hapus baris duplikat dari sebuah daftar dan urutkan sesuai kebutuhan Anda.",
+      "keywords": [
+        "hapus baris duplikat",
+        "deduplikasi daftar",
+        "urutkan daftar online"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel daftar Anda",
+          "text": "Tempel daftar dengan satu item per baris."
+        },
+        {
+          "name": "Atur opsi Anda",
+          "text": "Aktifkan pencocokan tanpa membedakan huruf besar/kecil, pemangkasan spasi, dan penghapusan baris kosong sesuai kebutuhan."
+        },
+        {
+          "name": "Urutkan dan salin",
+          "text": "Pilih urutan pengurutan, lalu salin daftar yang telah dibersihkan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Baris mana yang dipertahankan ketika ditemukan duplikat?",
+          "answer": "Kemunculan pertama dipertahankan, dengan huruf besar/kecil aslinya tetap utuh bahkan dalam mode tanpa membedakan huruf besar/kecil."
+        },
+        {
+          "question": "Bisakah saya mengurutkan tanpa menghapus duplikat?",
+          "answer": "Ya, pengurutan dan deduplikasi adalah opsi yang independen — gunakan salah satunya saja atau keduanya bersamaan."
+        },
+        {
+          "question": "Apakah daftar saya diunggah ke suatu tempat?",
+          "answer": "Tidak, semuanya diproses sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "svg-optimizer": {
+      "seoTitle": "Pengoptimal SVG Online – Gratis, Instan, Tanpa Unggah",
+      "metaDescription": "Optimalkan dan bersihkan markup SVG dengan menghapus komentar, metadata, dan ID yang tidak terpakai, serta membulatkan presisi path — diproses 100% secara lokal di browser Anda.",
+      "h1": "Pengoptimal SVG & Pembersih Path",
+      "subheading": "Bersihkan dan perkecil markup SVG dengan menghapus komentar, metadata, dan ID yang tidak terpakai.",
+      "keywords": [
+        "pengoptimal svg",
+        "minifikasi svg",
+        "bersihkan path svg"
+      ],
+      "howTo": [
+        {
+          "name": "Tempel atau unggah SVG Anda",
+          "text": "Tempel markup SVG secara langsung, atau unggah file .svg."
+        },
+        {
+          "name": "Pilih optimisasi Anda",
+          "text": "Aktifkan penghapusan komentar, pembersihan metadata, pembersihan ID yang tidak terpakai, dan pembulatan presisi."
+        },
+        {
+          "name": "Bandingkan dan ekspor",
+          "text": "Lihat ukuran yang dihemat dan pratinjau sebelum/sesudah, lalu salin atau unduh SVG yang telah dioptimalkan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah optimisasi akan mengubah tampilan SVG saya?",
+          "answer": "Tidak, semua optimisasi tidak mengurangi kualitas visual — hanya markup yang berlebihan seperti komentar, ID yang tidak terpakai, dan presisi desimal yang berlebih yang dihapus."
+        },
+        {
+          "question": "Apa fungsi 'bersihkan ID yang tidak terpakai'?",
+          "answer": "Fitur ini memindai SVG untuk mencari atribut id yang tidak pernah dirujuk di tempat lain (melalui url(#id) atau href) dan menghapusnya, karena ID yang tidak dirujuk menambah ukuran tanpa tujuan."
+        },
+        {
+          "question": "Apakah SVG saya diunggah ke suatu tempat?",
+          "answer": "Tidak, optimisasi berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "screen-recorder": {
+      "seoTitle": "Perekam Layar Online Gratis – Tanpa Instalasi, Tanpa Watermark",
+      "metaDescription": "Rekam layar, jendela, atau tab browser Anda dengan audio mikrofon opsional, langsung di browser Anda — tanpa instalasi, tanpa watermark, tanpa batas waktu.",
+      "h1": "Perekam Layar & Audio di Browser",
+      "subheading": "Rekam layar, jendela, atau tab browser Anda dengan audio mikrofon opsional — tanpa instalasi diperlukan.",
+      "keywords": [
+        "perekam layar online",
+        "rekam layar tanpa instalasi",
+        "tangkapan layar gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih opsi Anda",
+          "text": "Aktifkan audio mikrofon jika Anda ingin menarasikan rekaman Anda."
+        },
+        {
+          "name": "Mulai rekam",
+          "text": "Klik Mulai Rekam dan pilih layar, jendela, atau tab di pemilih browser Anda."
+        },
+        {
+          "name": "Jeda, lanjutkan, atau hentikan",
+          "text": "Kendalikan rekaman dengan jeda/lanjutkan, lalu hentikan jika sudah selesai."
+        },
+        {
+          "name": "Pratinjau dan unduh",
+          "text": "Lihat pratinjau rekaman secara instan dan unduh sebagai file video."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah ada batas waktu atau watermark?",
+          "answer": "Tidak, rekaman tidak memiliki batas waktu buatan dan tidak ada watermark — alat ini menggunakan API perekaman bawaan browser Anda secara langsung."
+        },
+        {
+          "question": "Apakah rekaman saya diunggah ke suatu tempat?",
+          "answer": "Tidak, perekaman dan pemrosesan berlangsung sepenuhnya di perangkat Anda — tidak ada yang dikirim ke server."
+        },
+        {
+          "question": "Bisakah saya merekam dengan audio?",
+          "answer": "Ya, Anda dapat menyertakan mikrofon Anda, dan audio dari tab yang dibagikan ditangkap secara otomatis jika didukung oleh browser Anda."
+        }
+      ]
+    },
+    "wcag-contrast-checker": {
+      "seoTitle": "Pemeriksa Kontras Warna WCAG – Gratis, Akurat, Instan",
+      "metaDescription": "Periksa apakah warna teks dan latar belakang Anda memenuhi persyaratan kontras aksesibilitas WCAG AA dan AAA — diproses 100% secara lokal di browser Anda.",
+      "h1": "Pemeriksa Kontras Warna WCAG",
+      "subheading": "Periksa apakah warna teks dan latar belakang Anda memenuhi persyaratan kontras aksesibilitas WCAG.",
+      "keywords": [
+        "pemeriksa kontras warna",
+        "kepatuhan wcag",
+        "warna aksesibel"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih warna Anda",
+          "text": "Pilih atau ketik warna latar depan (teks) dan warna latar belakang."
+        },
+        {
+          "name": "Periksa rasionya",
+          "text": "Lihat rasio kontras yang tepat dan apakah memenuhi ambang batas AA dan AAA."
+        },
+        {
+          "name": "Pratinjau keterbacaan",
+          "text": "Lihat contoh teks langsung yang dirender dengan warna pilihan Anda dalam ukuran normal dan besar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana rasio kontras dihitung?",
+          "answer": "Menggunakan rumus luminansi relatif resmi WCAG 2.x, yang melakukan koreksi gamma pada setiap saluran warna sebelum memberi bobot berdasarkan persepsi luminansi manusia."
+        },
+        {
+          "question": "Apa perbedaan antara AA dan AAA?",
+          "answer": "AA adalah persyaratan aksesibilitas standar (4,5:1 untuk teks normal, 3:1 untuk teks besar); AAA adalah persyaratan yang lebih ketat dan ditingkatkan (masing-masing 7:1 dan 4,5:1)."
+        },
+        {
+          "question": "Apa yang dianggap sebagai 'teks besar'?",
+          "answer": "Teks berukuran 18pt atau lebih besar, atau 14pt dan tebal, memenuhi syarat untuk ambang batas teks besar yang lebih longgar."
+        }
+      ]
+    },
+    "aspect-ratio-calculator": {
+      "seoTitle": "Kalkulator Rasio Aspek Online – Gratis & Instan",
+      "metaDescription": "Hitung lebar atau tinggi berskala yang mempertahankan rasio aspek gambar atau video Anda, dengan preset rasio umum — secara instan di browser Anda.",
+      "h1": "Kalkulator Rasio Aspek & Dimensi",
+      "subheading": "Hitung lebar atau tinggi berskala yang mempertahankan rasio aspek asli Anda.",
+      "keywords": [
+        "kalkulator rasio aspek",
+        "kalkulator 16:9",
+        "skala dimensi gambar"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan dimensi asli Anda",
+          "text": "Masukkan lebar dan tinggi asli."
+        },
+        {
+          "name": "Masukkan dimensi target",
+          "text": "Masukkan lebar atau tinggi target — nilai lainnya akan diperbarui secara otomatis untuk mempertahankan rasio."
+        },
+        {
+          "name": "Gunakan preset jika diperlukan",
+          "text": "Klik preset rasio umum seperti 16:9 atau 1:1 untuk menerapkannya secara instan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana rasio yang disederhanakan dihitung?",
+          "answer": "Lebar dan tinggi dibagi dengan faktor persekutuan terbesar (FPB) untuk menghasilkan rasio bilangan bulat paling sederhana, seperti 1920×1080 yang disederhanakan menjadi 16:9."
+        },
+        {
+          "question": "Bisakah saya menskalakan berdasarkan tinggi, bukan lebar?",
+          "answer": "Ya, memasukkan tinggi target akan menghitung lebar yang sesuai, dan sebaliknya — hanya satu nilai yang dapat diedit pada satu waktu untuk menjaga rasio tetap terkunci."
+        },
+        {
+          "question": "Apakah data saya diunggah ke suatu tempat?",
+          "answer": "Tidak, semua perhitungan berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    }
+  },
+  "commandMenu": {
+    "placeholder": "Cari alat, format, atau tugas…",
+    "empty": "Tidak ada hasil yang ditemukan.",
+    "groupTools": "Alat",
+    "groupCategories": "Kategori",
+    "hint": "untuk mencari",
+    "close": "Tutup"
+  },
+  "privacyBadgeExtended": "Diproses 100% secara lokal di browser Anda melalui WebAssembly (tanpa unggah)",
+  "recentTools": {
+    "heading": "Baru Digunakan",
+    "clearAll": "Hapus riwayat"
+  },
+  "toolHistory": {
+    "heading": "Hasil Terbaru",
+    "empty": "Hasil yang telah selesai akan muncul di sini.",
+    "redownload": "Unduh ulang",
+    "copy": "Salin",
+    "restore": "Pulihkan Input",
+    "clear": "Hapus Data Terbaru",
+    "cleared": "Terhapus!",
+    "confirmClear": "Hapus semua hasil terbaru untuk alat ini?"
+  },
+  "time": {
+    "justNow": "Baru saja",
+    "minutesAgo": "{count} menit lalu",
+    "hoursAgo": "{count} jam lalu",
+    "daysAgo": "{count} hari lalu"
+  }
+}

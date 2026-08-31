@@ -1,0 +1,2703 @@
+{
+  "site": {
+    "name": "EveryUtili",
+    "tagline": "Ferramentas gratuitas que respeitam a sua privacidade",
+    "heroDescription": "Converta arquivos, edite PDFs, formate código e use calculadoras — tudo processado localmente no seu navegador. Sem envios, sem cadastro, sem limites.",
+    "featureInstant": "Instantâneo, sem espera",
+    "featurePrivate": "Seus arquivos nunca saem do seu dispositivo",
+    "featureNoSignup": "Não requer cadastro",
+    "footerCopyright": "EveryUtili. Todo o processamento ocorre localmente no seu navegador.",
+    "organizationDescription": "Conjunto de ferramentas online focado em privacidade para conversão de arquivos, edição de PDF, ferramentas de desenvolvimento e calculadoras.",
+    "metaTitleTemplate": "%s | EveryUtili",
+    "metaTitleDefault": "EveryUtili — Conversores de Arquivos e Calculadoras Online Gratuitos",
+    "metaDescription": "Ferramentas online rápidas, gratuitas e focadas em privacidade: conversores de imagem, utilitários de PDF, ferramentas de desenvolvimento e calculadoras. Tudo funciona localmente no seu navegador.",
+    "heroSearchPlaceholder": "Pesquise entre {count} ferramentas — imagem, PDF, código, finanças…"
+  },
+  "nav": {
+    "viewAll": "Ver tudo",
+    "categoriesMenu": "Menu de categorias"
+  },
+  "privacyBadge": "Processado 100% localmente no seu navegador",
+  "breadcrumbs": {
+    "home": "Início"
+  },
+  "sections": {
+    "quickAnswer": "Resposta Rápida",
+    "scorecard": "Comparativo de Formato e Desempenho",
+    "howToUse": "Como usar esta ferramenta",
+    "technicalComparison": "Comparação Técnica",
+    "faq": "Perguntas Frequentes",
+    "relatedTools": "Ferramentas Relacionadas"
+  },
+  "common": {
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "loadingTool": "Carregando ferramenta…",
+    "searchPlaceholder": "Pesquisar ferramentas…",
+    "searchAriaLabel": "Pesquisar ferramentas",
+    "clearSearchAriaLabel": "Limpar pesquisa",
+    "noToolsMatch": "Nenhuma ferramenta corresponde a “{query}”. Tente outro termo.",
+    "categorySearchPlaceholder": "Pesquisar em {category}…",
+    "notFoundTitle": "Página não encontrada",
+    "notFoundCta": "Ir para o início",
+    "usedRecently": "Usada"
+  },
+  "languageSwitcher": {
+    "label": "Idioma"
+  },
+  "categories": {
+    "media": {
+      "label": "Conversores de Mídia",
+      "description": "Converta, comprima e redimensione imagens e vídeos — tudo diretamente no seu navegador.",
+      "navLabel": "Mídia"
+    },
+    "document": {
+      "label": "Utilitários de Documentos",
+      "description": "Combine, divida e edite PDFs sem enviar um único byte.",
+      "navLabel": "Documentos"
+    },
+    "developer": {
+      "label": "Ferramentas de Desenvolvimento",
+      "description": "Formate, valide e transforme código e dados instantaneamente.",
+      "navLabel": "Desenvolvedor"
+    },
+    "financial": {
+      "label": "Calculadoras Financeiras",
+      "description": "Calculadoras rápidas e precisas para decisões de salário, impostos e orçamento.",
+      "navLabel": "Finanças"
+    }
+  },
+  "tools": {
+    "jpg-to-png": {
+      "seoTitle": "Converter JPG para PNG Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta imagens JPG ou HEIC para PNG instantaneamente no seu navegador. Sem envios, sem marcas d'água, sem cadastro. Converta em lote e baixe em ZIP em segundos.",
+      "h1": "Conversor de JPG para PNG",
+      "subheading": "Converta imagens JPG e HEIC em arquivos PNG de alta qualidade — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "jpg para png",
+        "converter jpg para png",
+        "heic para png",
+        "conversor de imagens online",
+        "conversor jpg png grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens",
+          "text": "Arraste e solte ou selecione um ou mais arquivos JPG/HEIC do seu dispositivo."
+        },
+        {
+          "name": "Ajuste as configurações",
+          "text": "Opcionalmente, redimensione ou ajuste a qualidade de saída antes de converter."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter — o processamento acontece inteiramente no seu navegador via um Web Worker."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Baixe cada PNG individualmente ou todos de uma vez como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Este conversor de JPG para PNG é realmente gratuito?",
+          "answer": "Sim. Não há limites, marcas d'água ou taxas ocultas. Todas as conversões são executadas localmente no seu navegador."
+        },
+        {
+          "question": "Minhas imagens são enviadas para um servidor?",
+          "answer": "Não. Esta ferramenta usa a API Canvas e Web Workers do seu navegador para converter imagens localmente — seus arquivos nunca saem do seu dispositivo."
+        },
+        {
+          "question": "Posso converter arquivos HEIC do meu iPhone?",
+          "answer": "Sim, arquivos HEIC são suportados e convertidos automaticamente para o formato PNG padrão."
+        },
+        {
+          "question": "Há um limite para conversões em lote?",
+          "answer": "Nenhum limite artificial é imposto — a única restrição é a memória disponível no seu dispositivo."
+        }
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Característica",
+          "JPG",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Compressão",
+            "values": [
+              "Com perdas",
+              "Sem perdas"
+            ]
+          },
+          {
+            "label": "Transparência",
+            "values": [
+              "Não",
+              "Sim"
+            ]
+          },
+          {
+            "label": "Ideal para",
+            "values": [
+              "Fotos",
+              "Gráficos, logotipos, capturas de tela"
+            ]
+          },
+          {
+            "label": "Tamanho de arquivo típico",
+            "values": [
+              "Menor",
+              "Maior"
+            ]
+          }
+        ]
+      }
+    },
+    "merge-pdf": {
+      "seoTitle": "Mesclar Arquivos PDF Online – 100% Grátis e Seguro",
+      "metaDescription": "Combine vários arquivos PDF em um único documento instantaneamente no seu navegador. Sem envios, sem marcas d'água — rápido, privado e gratuito.",
+      "h1": "Mesclar Arquivos PDF",
+      "subheading": "Combine vários PDFs em um único documento — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "mesclar pdf",
+        "combinar arquivos pdf",
+        "juntar pdf online",
+        "unir pdf grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie os arquivos PDF",
+          "text": "Selecione dois ou mais arquivos PDF que deseja combinar."
+        },
+        {
+          "name": "Reordene as páginas",
+          "text": "Arraste para reordenar os arquivos na sequência em que deseja mesclá-los."
+        },
+        {
+          "name": "Mescle localmente",
+          "text": "Clique em Mesclar — seus arquivos são combinados diretamente no seu navegador usando pdf-lib."
+        },
+        {
+          "name": "Baixe o resultado",
+          "text": "Baixe seu PDF mesclado instantaneamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Meus dados PDF são privados?",
+          "answer": "Completamente. A mesclagem acontece localmente usando pdf-lib — nenhum arquivo é enviado a um servidor."
+        },
+        {
+          "question": "Há um limite de páginas ou tamanho de arquivo?",
+          "answer": "Nenhum limite artificial — o desempenho depende apenas da memória do seu dispositivo."
+        },
+        {
+          "question": "Posso reordenar as páginas antes de mesclar?",
+          "answer": "Sim, você pode arrastar e soltar os arquivos para controlar a ordem final das páginas."
+        }
+      ]
+    },
+    "json-formatter": {
+      "seoTitle": "Formatador e Validador de JSON Online – Grátis e Instantâneo",
+      "metaDescription": "Formate, valide e embeleze JSON online com destaque instantâneo de erros de sintaxe, visualização em árvore e exportação para CSV. 100% grátis, sem cadastro.",
+      "h1": "Formatador e Validador de JSON",
+      "subheading": "Embeleze, valide e explore JSON com destaque instantâneo de erros e uma visualização em árvore ao vivo.",
+      "keywords": [
+        "formatador json",
+        "validador json",
+        "embelezador json",
+        "json para csv",
+        "formatar json online"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu JSON",
+          "text": "Cole ou digite seu JSON bruto no editor."
+        },
+        {
+          "name": "Validação automática",
+          "text": "Erros de sintaxe são destacados instantaneamente enquanto você digita."
+        },
+        {
+          "name": "Formate e explore",
+          "text": "Use a formatação automática ou navegue pela visualização em árvore interativa."
+        },
+        {
+          "name": "Exporte",
+          "text": "Copie o JSON formatado ou converta-o para CSV."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Esta ferramenta envia meus dados JSON para algum lugar?",
+          "answer": "Não. Toda a análise, formatação e validação acontecem localmente no seu navegador."
+        },
+        {
+          "question": "Posso converter JSON para CSV?",
+          "answer": "Sim, use a exportação CSV integrada para arrays JSON planos ou aninhados."
+        },
+        {
+          "question": "O que acontece se meu JSON for inválido?",
+          "answer": "O editor destaca a linha e o caractere exatos do erro de sintaxe em tempo real."
+        }
+      ]
+    },
+    "salary-to-hourly": {
+      "seoTitle": "Calculadora de Salário para Hora – Conversão Instantânea de Pagamento Anual",
+      "metaDescription": "Converta seu salário anual para uma taxa horária, diária, semanal ou mensal instantaneamente. Calculadora de salário gratuita, precisa e privada.",
+      "h1": "Calculadora de Salário para Hora",
+      "subheading": "Converta seu salário anual em taxas horária, diária, semanal e mensal instantaneamente.",
+      "keywords": [
+        "calculadora salário para hora",
+        "salário anual para taxa horária",
+        "converter salário em taxa horária",
+        "calculadora de taxa horária"
+      ],
+      "howTo": [
+        {
+          "name": "Insira seu salário anual",
+          "text": "Insira o valor do seu salário anual bruto."
+        },
+        {
+          "name": "Defina as horas de trabalho",
+          "text": "Ajuste as horas por semana e semanas por ano se diferentes do padrão."
+        },
+        {
+          "name": "Veja os resultados instantaneamente",
+          "text": "Veja sua taxa equivalente horária, diária, semanal e mensal."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como a taxa horária é calculada a partir do salário?",
+          "answer": "O salário anual é dividido por (horas por semana × semanas por ano) para determinar a taxa horária equivalente."
+        },
+        {
+          "question": "Isso considera os impostos?",
+          "answer": "Não, isso calcula apenas o pagamento bruto. Consulte um profissional tributário para estimativas de renda líquida."
+        },
+        {
+          "question": "Posso personalizar as horas de trabalho?",
+          "answer": "Sim, você pode ajustar as horas por semana e as semanas pagas por ano de acordo com sua agenda."
+        }
+      ]
+    },
+    "heic-to-jpg": {
+      "seoTitle": "Converter HEIC para JPG Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta fotos HEIC e HEIF do iPhone em imagens JPG universalmente compatíveis instantaneamente no seu navegador. Sem envios, sem marcas d'água, grátis para sempre.",
+      "h1": "Conversor de HEIC para JPG",
+      "subheading": "Converta fotos HEIC e HEIF do seu iPhone em arquivos JPG padrão — processado 100% localmente.",
+      "keywords": [
+        "heic para jpg",
+        "converter heic para jpg",
+        "conversor de fotos iphone",
+        "heif para jpg online",
+        "conversor heic grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas fotos HEIC",
+          "text": "Arraste e solte ou selecione um ou mais arquivos HEIC/HEIF do seu dispositivo."
+        },
+        {
+          "name": "Ajuste a qualidade",
+          "text": "Opcionalmente, ajuste a qualidade de saída JPG usando o controle deslizante."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter — o processamento acontece inteiramente no seu navegador, sem necessidade de upload."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada JPG individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que preciso converter HEIC para JPG?",
+          "answer": "HEIC é o formato de foto padrão da Apple, mas muitos sites, aplicativos e programas Windows não o suportam. JPG funciona em todo lugar."
+        },
+        {
+          "question": "Minhas fotos são enviadas para algum lugar?",
+          "answer": "Não. A conversão acontece localmente no seu navegador — suas fotos nunca saem do seu dispositivo."
+        },
+        {
+          "question": "Isso funciona com fotos de qualquer iPhone?",
+          "answer": "Sim, qualquer imagem HEIC ou HEIF exportada de um iPhone ou iPad é suportada, sujeita ao suporte de decodificação de imagem do seu navegador."
+        },
+        {
+          "question": "Vou perder qualidade de foto?",
+          "answer": "Você controla a qualidade JPG com um controle deslizante, para equilibrar o tamanho do arquivo com a qualidade visual."
+        }
+      ]
+    },
+    "image-compressor": {
+      "seoTitle": "Comprimir Imagens Online – Otimizador de Imagens Grátis e Instantâneo",
+      "metaDescription": "Reduza o tamanho do arquivo de imagem sem perder qualidade. Comprima imagens JPG, PNG e WebP instantaneamente no seu navegador — grátis, privado, sem envios.",
+      "h1": "Compressor de Imagens",
+      "subheading": "Reduza o tamanho dos arquivos de imagem com qualidade ajustável — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "compressor de imagens",
+        "comprimir jpg online",
+        "reduzir tamanho de imagem",
+        "compressor de fotos grátis",
+        "otimizar imagens online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens",
+          "text": "Arraste e solte ou selecione uma ou mais imagens do seu dispositivo."
+        },
+        {
+          "name": "Defina a qualidade de compressão",
+          "text": "Ajuste o controle deslizante de qualidade para equilibrar tamanho do arquivo e fidelidade visual."
+        },
+        {
+          "name": "Comprima localmente",
+          "text": "Clique em Comprimir tudo — suas imagens são processadas diretamente no seu navegador."
+        },
+        {
+          "name": "Baixe os resultados",
+          "text": "Salve cada imagem comprimida e compare o tamanho do arquivo antes/depois."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quanto posso reduzir o tamanho da minha imagem?",
+          "answer": "As economias típicas variam de 30% a 80%, dependendo da imagem original e da configuração de qualidade escolhida."
+        },
+        {
+          "question": "A compressão reduzirá a qualidade da imagem?",
+          "answer": "Alguma perda de qualidade é esperada com a compressão com perdas, mas em 70-85% de qualidade a diferença é geralmente imperceptível."
+        },
+        {
+          "question": "Minhas imagens são enviadas para um servidor?",
+          "answer": "Não, tudo acontece localmente usando a API Canvas — seus arquivos nunca saem do seu dispositivo."
+        }
+      ]
+    },
+    "image-resizer": {
+      "seoTitle": "Redimensionar Imagens Online – Redimensionador Grátis e Instantâneo",
+      "metaDescription": "Redimensione imagens JPG, PNG ou WebP para dimensões exatas em pixels instantaneamente no seu navegador. Grátis, privado, com bloqueio de proporção — sem envios.",
+      "h1": "Redimensionador de Imagens",
+      "subheading": "Redimensione imagens para dimensões exatas em pixels com bloqueio opcional de proporção — processado 100% localmente.",
+      "keywords": [
+        "redimensionador de imagens",
+        "redimensionar imagem online",
+        "redimensionar foto grátis",
+        "alterar dimensões de imagem",
+        "redimensionar imagem em pixels"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens",
+          "text": "Arraste e solte ou selecione uma ou mais imagens do seu dispositivo."
+        },
+        {
+          "name": "Defina as dimensões alvo",
+          "text": "Insira uma largura e altura em pixels, opcionalmente travando a proporção."
+        },
+        {
+          "name": "Redimensione localmente",
+          "text": "Clique em Redimensionar tudo — suas imagens são processadas diretamente no seu navegador."
+        },
+        {
+          "name": "Baixe os resultados",
+          "text": "Salve cada imagem redimensionada no seu dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso redimensionar várias imagens de uma vez?",
+          "answer": "Sim, o redimensionamento em lote é suportado — envie quantas imagens quiser."
+        },
+        {
+          "question": "O redimensionamento vai distorcer minha imagem?",
+          "answer": "Ative o bloqueio de proporção para evitar distorção, ou desative para dimensões personalizadas exatas."
+        },
+        {
+          "question": "Quais formatos de imagem são suportados?",
+          "answer": "JPG, PNG e a maioria dos outros formatos de imagem comuns suportados pelo navegador."
+        }
+      ]
+    },
+    "webp-converter": {
+      "seoTitle": "Converter Imagens para WebP Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta imagens JPG, PNG ou GIF para o formato moderno WebP para tamanhos de arquivo menores e sites mais rápidos. 100% grátis, processado localmente no seu navegador.",
+      "h1": "Conversor de Imagem para WebP",
+      "subheading": "Converta imagens JPG, PNG e GIF para WebP para arquivos menores e carregamentos de página mais rápidos.",
+      "keywords": [
+        "conversor webp",
+        "converter jpg para webp",
+        "png para webp",
+        "imagem para webp online",
+        "conversor webp grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens",
+          "text": "Arraste e solte ou selecione um ou mais arquivos JPG, PNG ou GIF."
+        },
+        {
+          "name": "Ajuste a qualidade",
+          "text": "Ajuste com precisão a qualidade de compressão WebP usando o controle deslizante."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — a conversão acontece inteiramente no seu navegador."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada imagem WebP ou baixe todas como um ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que converter imagens para WebP?",
+          "answer": "WebP normalmente produz arquivos 25-35% menores que JPG ou PNG com qualidade visual semelhante, melhorando a velocidade de carregamento da página."
+        },
+        {
+          "question": "WebP é suportado por todos os navegadores?",
+          "answer": "Sim, todos os navegadores modernos (Chrome, Firefox, Safari, Edge) suportam totalmente imagens WebP."
+        },
+        {
+          "question": "Esta ferramenta envia minhas imagens para algum lugar?",
+          "answer": "Não, a conversão acontece localmente usando um Web Worker — suas imagens nunca saem do seu dispositivo."
+        }
+      ]
+    },
+    "png-to-jpg": {
+      "seoTitle": "Converter PNG para JPG Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta imagens PNG para JPG instantaneamente no seu navegador. Reduza o tamanho do arquivo, remova a transparência, sem envios ou marcas d'água. Grátis para sempre.",
+      "h1": "Conversor de PNG para JPG",
+      "subheading": "Converta imagens PNG em arquivos JPG compactos — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "png para jpg",
+        "converter png para jpg",
+        "conversor png para jpeg",
+        "conversor de imagens online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens PNG",
+          "text": "Arraste e solte ou selecione um ou mais arquivos PNG do seu dispositivo."
+        },
+        {
+          "name": "Ajuste a qualidade",
+          "text": "Defina a qualidade de saída JPG usando o controle deslizante."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o processamento acontece inteiramente no seu navegador."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada JPG individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O que acontece com a transparência ao converter PNG para JPG?",
+          "answer": "JPG não suporta transparência, então as áreas transparentes são preenchidas com branco durante a conversão."
+        },
+        {
+          "question": "Por que converter PNG para JPG?",
+          "answer": "Arquivos JPG são normalmente muito menores que PNG para imagens fotográficas, economizando armazenamento e largura de banda."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
+    "base64-image-encoder": {
+      "seoTitle": "Codificador e Decodificador de Imagens Base64 – Ferramenta Online Grátis",
+      "metaDescription": "Converta imagens em URLs de dados Base64 e vice-versa, instantaneamente no seu navegador. Perfeito para incorporar imagens em CSS ou HTML. 100% grátis e privado.",
+      "h1": "Codificador de Imagens Base64",
+      "subheading": "Converta imagens em URLs de dados Base64 e decodifique Base64 de volta em imagens — tudo no seu navegador.",
+      "keywords": [
+        "codificador de imagem base64",
+        "imagem para base64",
+        "base64 para imagem",
+        "converter imagem em string base64",
+        "gerador de url de dados"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um modo",
+          "text": "Alterne entre codificar uma imagem ou decodificar uma string Base64."
+        },
+        {
+          "name": "Envie ou cole",
+          "text": "Envie um arquivo de imagem ou cole uma string Base64 / URL de dados."
+        },
+        {
+          "name": "Veja o resultado",
+          "text": "Veja a string Base64 gerada ou a pré-visualização da imagem decodificada instantaneamente."
+        },
+        {
+          "name": "Copie ou baixe",
+          "text": "Copie a saída Base64 ou baixe a imagem decodificada."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Para que serve uma URL de dados Base64?",
+          "answer": "URLs de dados Base64 permitem incorporar imagens diretamente em HTML ou CSS sem uma solicitação de arquivo separada."
+        },
+        {
+          "question": "A codificação aumenta o tamanho do arquivo?",
+          "answer": "Sim, a codificação Base64 aumenta o tamanho em aproximadamente 33% em comparação com o arquivo binário original."
+        },
+        {
+          "question": "Minha imagem é enviada para algum lugar?",
+          "answer": "Não, a codificação e decodificação acontecem localmente no seu navegador usando a API FileReader."
+        }
+      ]
+    },
+    "favicon-generator": {
+      "seoTitle": "Gerador de Favicon Online – Criador de Favicon Multi-Tamanho Grátis",
+      "metaDescription": "Gere um conjunto completo de tamanhos de favicon (16, 32, 48, 180, 192, 512px) a partir de qualquer imagem, instantaneamente no seu navegador. Download ZIP grátis, sem cadastro.",
+      "h1": "Gerador de Favicon",
+      "subheading": "Envie um logotipo e gere todos os tamanhos de favicon padrão como um ZIP pronto para uso — processado 100% localmente.",
+      "keywords": [
+        "gerador de favicon",
+        "criador de favicon online",
+        "gerar favicon a partir de imagem",
+        "gerador de ícone apple touch",
+        "criador de favicon grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu logotipo",
+          "text": "Arraste e solte um logotipo quadrado ou imagem — será cortado automaticamente no centro."
+        },
+        {
+          "name": "Pré-visualize os tamanhos",
+          "text": "Revise os tamanhos de favicon gerados, de 16px até 512px."
+        },
+        {
+          "name": "Gere o ZIP",
+          "text": "Clique em Baixar para renderizar e empacotar todos os tamanhos como arquivos PNG."
+        },
+        {
+          "name": "Adicione ao seu site",
+          "text": "Extraia o ZIP e referencie os arquivos de favicon no cabeçalho HTML do seu site."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais tamanhos de favicon são gerados?",
+          "answer": "PNGs de 16×16, 32×32, 48×48, 180×180 (ícone Apple touch), 192×192 e 512×512 pixels."
+        },
+        {
+          "question": "Minha imagem precisa ser quadrada?",
+          "answer": "Não, imagens não quadradas são automaticamente cortadas no centro em um quadrado antes de redimensionar."
+        },
+        {
+          "question": "Esta ferramenta é gratuita?",
+          "answer": "Sim, totalmente gratuita, sem limites, marcas d'água ou cadastro necessário."
+        }
+      ]
+    },
+    "qr-code-generator": {
+      "seoTitle": "Gerador de Código QR Online – Grátis e Instantâneo, Sem Cadastro",
+      "metaDescription": "Gere um código QR personalizado a partir de qualquer texto ou URL instantaneamente no seu navegador. Escolha cores e tamanho, depois baixe como PNG. 100% grátis e privado.",
+      "h1": "Gerador de Código QR",
+      "subheading": "Transforme qualquer texto, URL ou mensagem em um código QR para download — gerado 100% localmente no seu navegador.",
+      "keywords": [
+        "gerador de código qr",
+        "criador de qr grátis",
+        "criar código qr online",
+        "url para código qr",
+        "gerador de qr sem cadastro"
+      ],
+      "howTo": [
+        {
+          "name": "Insira seu conteúdo",
+          "text": "Digite ou cole o texto, URL ou mensagem que deseja codificar."
+        },
+        {
+          "name": "Personalize a aparência",
+          "text": "Ajuste o tamanho e escolha as cores de primeiro plano/fundo."
+        },
+        {
+          "name": "Pré-visualize instantaneamente",
+          "text": "Seu código QR se atualiza ao vivo enquanto você digita."
+        },
+        {
+          "name": "Baixe o PNG",
+          "text": "Clique em Baixar para salvar a imagem do código QR no seu dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Os códigos QR gerados aqui expiram?",
+          "answer": "Não, o código QR é gerado inteiramente no lado do cliente e codifica seu conteúdo diretamente — não há servidor ou expiração."
+        },
+        {
+          "question": "Posso usar isso para um negócio ou produto?",
+          "answer": "Sim, os códigos QR gerados são de uso livre para qualquer finalidade pessoal ou comercial."
+        },
+        {
+          "question": "Qual é a quantidade máxima de texto que posso codificar?",
+          "answer": "Códigos QR podem conter até alguns milhares de caracteres, embora conteúdo mais curto seja lido de forma mais confiável."
+        },
+        {
+          "question": "Meus dados são enviados a um servidor para gerar o código?",
+          "answer": "Não, a imagem do código QR é renderizada inteiramente no seu navegador — nada é transmitido para lugar nenhum."
+        }
+      ]
+    },
+    "color-picker": {
+      "seoTitle": "Seletor de Cor de Imagem Online – Obtenha HEX, RGB e HSL Grátis",
+      "metaDescription": "Envie uma imagem e clique em qualquer lugar para amostrar sua cor de pixel exata como HEX, RGB e HSL. Grátis, instantâneo e processado 100% localmente.",
+      "h1": "Seletor de Cor de Imagem",
+      "subheading": "Clique em qualquer lugar de uma imagem enviada para amostrar sua cor de pixel exata — HEX, RGB e HSL instantaneamente.",
+      "keywords": [
+        "seletor de cor de imagem",
+        "seletor de cor de imagem online",
+        "seletor de cor hex",
+        "conta-gotas online",
+        "obter cor de foto"
+      ],
+      "howTo": [
+        {
+          "name": "Envie uma imagem",
+          "text": "Arraste e solte ou selecione uma imagem do seu dispositivo."
+        },
+        {
+          "name": "Clique para amostrar",
+          "text": "Clique em qualquer lugar da imagem para ler a cor de pixel exata abaixo."
+        },
+        {
+          "name": "Veja os valores",
+          "text": "Veja a cor amostrada como HEX, RGB e HSL simultaneamente."
+        },
+        {
+          "name": "Copie o valor",
+          "text": "Clique no ícone de copiar ao lado de qualquer formato para copiá-lo para a área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quão precisa é a cor amostrada?",
+          "answer": "A ferramenta lê o valor exato do pixel a partir dos dados brutos de pixels da imagem via API Canvas, então é perfeita ao pixel."
+        },
+        {
+          "question": "Minha imagem é enviada para um servidor?",
+          "answer": "Não, a imagem é carregada e amostrada inteiramente dentro do seu navegador usando Canvas getImageData."
+        },
+        {
+          "question": "Quais formatos de cor são suportados?",
+          "answer": "HEX, RGB e HSL são todos exibidos simultaneamente para cada pixel amostrado."
+        }
+      ]
+    },
+    "split-pdf": {
+      "seoTitle": "Dividir PDF Online – 100% Grátis e Seguro",
+      "metaDescription": "Divida um PDF em páginas individuais ou extraia um intervalo de páginas personalizado, instantaneamente no seu navegador. Sem envios, sem marcas d'água, totalmente grátis.",
+      "h1": "Dividir Arquivos PDF",
+      "subheading": "Divida um PDF em páginas separadas ou extraia um intervalo específico — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "dividir pdf",
+        "dividir pdf online",
+        "extrair páginas pdf",
+        "divisor de pdf grátis",
+        "separar páginas pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu PDF",
+          "text": "Selecione o arquivo PDF que deseja dividir."
+        },
+        {
+          "name": "Escolha um modo",
+          "text": "Divida em páginas individuais ou especifique um intervalo de páginas personalizado para extrair."
+        },
+        {
+          "name": "Divida localmente",
+          "text": "Clique em Dividir — as páginas são separadas diretamente no seu navegador usando pdf-lib."
+        },
+        {
+          "name": "Baixe o resultado",
+          "text": "Baixe um único PDF para um intervalo, ou um ZIP de PDFs de páginas individuais."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso extrair apenas algumas páginas específicas?",
+          "answer": "Sim, use o modo de intervalo de páginas e insira valores como \"1-3, 5, 8-10\"."
+        },
+        {
+          "question": "Meu PDF é enviado para um servidor?",
+          "answer": "Não, a divisão acontece inteiramente localmente usando pdf-lib — seu arquivo nunca sai do seu dispositivo."
+        },
+        {
+          "question": "O que recebo ao dividir em todas as páginas?",
+          "answer": "Um arquivo ZIP contendo um PDF por página, pronto para download."
+        }
+      ]
+    },
+    "pdf-to-images": {
+      "seoTitle": "Converter PDF em Imagens Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta cada página de um PDF em imagens PNG de alta resolução instantaneamente no seu navegador. Baixe individualmente ou como ZIP. Grátis, sem envios.",
+      "h1": "Conversor de PDF para Imagens",
+      "subheading": "Renderize cada página do PDF como uma imagem PNG de alta resolução — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "pdf para imagens",
+        "conversor pdf para png",
+        "converter pdf para jpg",
+        "página pdf para imagem online",
+        "extrair imagens de pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu PDF",
+          "text": "Selecione o arquivo PDF que deseja converter em imagens."
+        },
+        {
+          "name": "Renderização automática",
+          "text": "Cada página é renderizada em um canvas em alta resolução usando pdf.js."
+        },
+        {
+          "name": "Pré-visualize as páginas",
+          "text": "Navegue pelas pré-visualizações em miniatura de cada página renderizada."
+        },
+        {
+          "name": "Baixe",
+          "text": "Salve páginas individuais ou baixe todas as páginas como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Em qual formato de imagem as páginas são exportadas?",
+          "answer": "Cada página é exportada como uma imagem PNG de alta resolução."
+        },
+        {
+          "question": "Isso funciona com PDFs digitalizados?",
+          "answer": "Sim, qualquer página PDF — baseada em texto ou digitalizada — é renderizada visualmente como aparece."
+        },
+        {
+          "question": "Meu documento é enviado para algum lugar?",
+          "answer": "Não, a renderização acontece inteiramente no seu navegador usando a biblioteca pdf.js — nada é enviado."
+        }
+      ]
+    },
+    "images-to-pdf": {
+      "seoTitle": "Converter Imagens em PDF Online – 100% Grátis e Seguro",
+      "metaDescription": "Combine imagens JPG ou PNG em um único documento PDF instantaneamente no seu navegador. Reordene páginas, sem envios, sem marcas d'água. Grátis para sempre.",
+      "h1": "Conversor de Imagens para PDF",
+      "subheading": "Combine imagens JPG e PNG em um único documento PDF — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "imagens para pdf",
+        "conversor jpg para pdf",
+        "png para pdf online",
+        "combinar imagens em pdf",
+        "foto para pdf grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens",
+          "text": "Selecione uma ou mais imagens JPG ou PNG."
+        },
+        {
+          "name": "Reordene as páginas",
+          "text": "Arraste para reordenar as imagens na sequência em que deseja que apareçam."
+        },
+        {
+          "name": "Crie o PDF",
+          "text": "Clique em Criar PDF — as páginas são geradas diretamente no seu navegador usando pdf-lib."
+        },
+        {
+          "name": "Baixe o resultado",
+          "text": "Baixe seu arquivo PDF combinado instantaneamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso combinar imagens JPG e PNG em um mesmo PDF?",
+          "answer": "Sim, você pode misturar arquivos JPG e PNG livremente — cada um é incorporado em sua resolução nativa."
+        },
+        {
+          "question": "Posso reordenar as imagens antes de criar o PDF?",
+          "answer": "Sim, arraste e solte as miniaturas para definir a ordem exata das páginas."
+        },
+        {
+          "question": "Há um limite para quantas imagens posso adicionar?",
+          "answer": "Nenhum limite artificial — o desempenho depende apenas da memória disponível no seu dispositivo."
+        }
+      ]
+    },
+    "rotate-pdf": {
+      "seoTitle": "Girar PDF Online – 100% Grátis e Seguro",
+      "metaDescription": "Gire todas as páginas de um PDF em 90, 180 ou 270 graus instantaneamente no seu navegador. Sem envios, sem marcas d'água, totalmente grátis.",
+      "h1": "Girar Páginas de PDF",
+      "subheading": "Gire cada página de um PDF em 90, 180 ou 270 graus — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "girar pdf",
+        "girar pdf online",
+        "girar páginas pdf grátis",
+        "corrigir orientação pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu PDF",
+          "text": "Selecione o arquivo PDF que deseja girar."
+        },
+        {
+          "name": "Escolha um ângulo",
+          "text": "Escolha uma rotação de 90°, 180° ou 270°."
+        },
+        {
+          "name": "Gire localmente",
+          "text": "Clique em Girar — a transformação acontece diretamente no seu navegador usando pdf-lib."
+        },
+        {
+          "name": "Baixe o resultado",
+          "text": "Baixe seu PDF girado instantaneamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Isso gira cada página ou apenas uma?",
+          "answer": "Cada página do documento é girada pelo mesmo ângulo que você selecionar."
+        },
+        {
+          "question": "A rotação afetará o texto ou a qualidade do PDF?",
+          "answer": "Não, a rotação apenas muda os metadados de orientação de exibição de cada página — o conteúdo e a qualidade são preservados."
+        },
+        {
+          "question": "Meu arquivo é enviado para um servidor?",
+          "answer": "Não, a rotação acontece inteiramente localmente usando pdf-lib."
+        }
+      ]
+    },
+    "delete-pdf-pages": {
+      "seoTitle": "Excluir Páginas de PDF Online – 100% Grátis e Seguro",
+      "metaDescription": "Remova páginas específicas de um PDF instantaneamente no seu navegador. Selecione páginas ou intervalos para excluir, depois baixe o resultado. Grátis, sem envios.",
+      "h1": "Excluir Páginas de PDF",
+      "subheading": "Remova páginas específicas de um documento PDF — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "excluir páginas pdf",
+        "remover páginas de pdf",
+        "removedor de páginas pdf online",
+        "editar páginas pdf grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu PDF",
+          "text": "Selecione o arquivo PDF que deseja editar."
+        },
+        {
+          "name": "Escolha as páginas a remover",
+          "text": "Insira números de página ou intervalos, ex.: \"2, 4-6\"."
+        },
+        {
+          "name": "Exclua localmente",
+          "text": "Clique em Excluir Páginas — a edição acontece diretamente no seu navegador usando pdf-lib."
+        },
+        {
+          "name": "Baixe o resultado",
+          "text": "Baixe o PDF editado com as páginas selecionadas removidas."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso remover várias páginas não consecutivas?",
+          "answer": "Sim, use uma lista separada por vírgulas e intervalos, como \"2, 4-6, 9\"."
+        },
+        {
+          "question": "Posso excluir todas as páginas?",
+          "answer": "Não, pelo menos uma página deve permanecer no documento final."
+        },
+        {
+          "question": "Meu PDF é enviado para algum lugar?",
+          "answer": "Não, todas as edições acontecem inteiramente localmente usando pdf-lib no seu navegador."
+        }
+      ]
+    },
+    "compress-pdf": {
+      "seoTitle": "Comprimir PDF Online – Redutor de Tamanho de PDF Grátis e Privado",
+      "metaDescription": "Reduza o tamanho do arquivo PDF removendo metadados e otimizando a estrutura, instantaneamente no seu navegador. 100% grátis, privado, sem envios necessários.",
+      "h1": "Comprimir Arquivos PDF",
+      "subheading": "Reduza o tamanho do arquivo PDF com otimização sem perdas baseada no navegador — processado 100% localmente.",
+      "keywords": [
+        "comprimir pdf",
+        "reduzir tamanho de pdf",
+        "compressor de pdf online",
+        "reduzir pdf grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu PDF",
+          "text": "Selecione o arquivo PDF que deseja comprimir."
+        },
+        {
+          "name": "Comprima localmente",
+          "text": "Clique em Comprimir — os metadados são removidos e a estrutura do arquivo é otimizada no seu navegador."
+        },
+        {
+          "name": "Compare os tamanhos",
+          "text": "Veja a comparação do tamanho do arquivo antes e depois."
+        },
+        {
+          "name": "Baixe o resultado",
+          "text": "Baixe seu PDF comprimido instantaneamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quanto menor ficará meu PDF?",
+          "answer": "As economias variam muito — normalmente 5-20% pela otimização de metadados e estrutura, já que a recompressão real de imagens requer um servidor ou codec pesado."
+        },
+        {
+          "question": "A compressão afetará a qualidade ou o conteúdo?",
+          "answer": "Não, esta é uma otimização sem perdas — todo o texto, imagens e formatação permanecem inalterados."
+        },
+        {
+          "question": "Por que a compressão não é tão agressiva quanto em algumas ferramentas de desktop?",
+          "answer": "O processamento apenas no navegador não pode recodificar imagens incorporadas com um codec de imagem pesado sem um tamanho de download significativo, então os ganhos são mais modestos que ferramentas do lado do servidor."
+        }
+      ]
+    },
+    "word-counter": {
+      "seoTitle": "Contador de Palavras Online – Ferramenta Grátis de Contagem de Caracteres e Palavras",
+      "metaDescription": "Conte palavras, caracteres, frases e parágrafos instantaneamente enquanto digita. Obtenha um tempo de leitura estimado. Grátis, privado e funciona offline.",
+      "h1": "Contador de Palavras e Caracteres",
+      "subheading": "Contagem ao vivo de palavras, caracteres, frases e parágrafos com tempo de leitura estimado — 100% privado.",
+      "keywords": [
+        "contador de palavras",
+        "contador de caracteres online",
+        "contar palavras grátis",
+        "calculadora de tempo de leitura",
+        "ferramenta de estatísticas de texto"
+      ],
+      "howTo": [
+        {
+          "name": "Cole ou digite seu texto",
+          "text": "Insira texto diretamente, ou cole conteúdo de qualquer lugar."
+        },
+        {
+          "name": "Veja as estatísticas ao vivo",
+          "text": "As contagens de palavras, caracteres, frases e parágrafos são atualizadas instantaneamente."
+        },
+        {
+          "name": "Verifique o tempo de leitura",
+          "text": "Veja um tempo de leitura estimado com base na velocidade média de leitura."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como o tempo de leitura é calculado?",
+          "answer": "O tempo de leitura é estimado usando uma velocidade média de leitura de 200 palavras por minuto."
+        },
+        {
+          "question": "Esta ferramenta armazena ou envia meu texto para algum lugar?",
+          "answer": "Não, toda a contagem acontece localmente no seu navegador enquanto você digita — nada é transmitido."
+        },
+        {
+          "question": "Como frases e parágrafos são contados?",
+          "answer": "Frases são detectadas por pontuação terminal (. ! ?) e parágrafos por quebras de linha."
+        }
+      ]
+    },
+    "base64-encoder-decoder": {
+      "seoTitle": "Codificador e Decodificador Base64 Online – Grátis e Instantâneo",
+      "metaDescription": "Codifique texto para Base64 ou decodifique Base64 de volta para texto simples, instantaneamente no seu navegador. Grátis, privado e funciona totalmente offline.",
+      "h1": "Codificador / Decodificador Base64",
+      "subheading": "Codifique e decodifique texto Base64 instantaneamente — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "codificador base64",
+        "decodificador base64",
+        "codificar texto para base64",
+        "decodificar base64 online",
+        "conversor base64 grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um modo",
+          "text": "Selecione Codificar para converter texto simples em Base64, ou Decodificar para o inverso."
+        },
+        {
+          "name": "Insira seu texto",
+          "text": "Digite ou cole o texto que deseja transformar."
+        },
+        {
+          "name": "Veja o resultado",
+          "text": "A saída convertida é atualizada instantaneamente enquanto você digita."
+        },
+        {
+          "name": "Copie o resultado",
+          "text": "Clique em Copiar para copiar a saída para a área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Para que serve a codificação Base64?",
+          "answer": "Base64 codifica dados binários ou de texto em caracteres ASCII, comumente usado para incorporar dados em URLs, JSON ou e-mails."
+        },
+        {
+          "question": "Meu texto é enviado para um servidor?",
+          "answer": "Não, a codificação e decodificação acontecem localmente usando as funções btoa/atob integradas do seu navegador."
+        },
+        {
+          "question": "Isso suporta texto Unicode?",
+          "answer": "Sim, caracteres não-ASCII como emojis e letras acentuadas são tratados corretamente."
+        }
+      ]
+    },
+    "url-encoder-decoder": {
+      "seoTitle": "Codificador e Decodificador de URL Online – Grátis e Instantâneo",
+      "metaDescription": "Codifique ou decodifique URLs e strings de consulta instantaneamente no seu navegador. Ferramenta gratuita e privada de codificação percentual, sem cadastro necessário.",
+      "h1": "Codificador / Decodificador de URL",
+      "subheading": "Codifique em percentual ou decodifique URLs e strings de consulta instantaneamente — processado 100% localmente.",
+      "keywords": [
+        "codificador de url",
+        "decodificador de url",
+        "codificação percentual online",
+        "ferramenta encodeuricomponent",
+        "decodificar url grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um modo",
+          "text": "Selecione Codificar ou Decodificar."
+        },
+        {
+          "name": "Insira seu texto",
+          "text": "Digite ou cole uma URL, string de consulta ou qualquer texto."
+        },
+        {
+          "name": "Veja o resultado",
+          "text": "A saída codificada ou decodificada é atualizada instantaneamente."
+        },
+        {
+          "name": "Copie o resultado",
+          "text": "Clique em Copiar para copiar a saída para a área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quando preciso de codificação de URL?",
+          "answer": "A codificação de URL é necessária quando caracteres especiais (espaços, &, =, ?) aparecem em parâmetros de consulta ou segmentos de caminho."
+        },
+        {
+          "question": "Qual padrão de codificação isso usa?",
+          "answer": "Isso usa as funções nativas encodeURIComponent/decodeURIComponent do navegador (codificação percentual RFC 3986)."
+        },
+        {
+          "question": "Meus dados são enviados para algum lugar?",
+          "answer": "Não, toda a codificação e decodificação acontece localmente no seu navegador."
+        }
+      ]
+    },
+    "jwt-decoder": {
+      "seoTitle": "Decodificador JWT Online – Grátis e Instantâneo, Sem Cadastro",
+      "metaDescription": "Decodifique JSON Web Tokens (JWT) instantaneamente no seu navegador. Veja cabeçalho, payload e expiração — sem verificação de assinatura, sem chamadas ao servidor.",
+      "h1": "Decodificador JWT",
+      "subheading": "Decodifique o cabeçalho e payload de um JWT instantaneamente — processado 100% localmente, assinatura nunca verificada no servidor.",
+      "keywords": [
+        "decodificador jwt",
+        "decodificar jwt online",
+        "decodificador json web token",
+        "analisador jwt grátis",
+        "depurador jwt"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu JWT",
+          "text": "Cole um JSON Web Token no campo de entrada."
+        },
+        {
+          "name": "Decodificação automática",
+          "text": "O cabeçalho e payload são decodificados de Base64URL e exibidos como JSON formatado."
+        },
+        {
+          "name": "Verifique a expiração",
+          "text": "Se uma claim exp estiver presente, seu status de expiração é destacado."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Esta ferramenta verifica a assinatura do JWT?",
+          "answer": "Não, esta ferramenta apenas decodifica o cabeçalho e payload — não verifica a assinatura. Nunca confie em um token decodificado sem verificação no servidor."
+        },
+        {
+          "question": "Meu token é enviado para um servidor?",
+          "answer": "Não, a decodificação acontece inteiramente localmente no seu navegador usando decodificação Base64URL."
+        },
+        {
+          "question": "O que significa a claim exp?",
+          "answer": "A claim exp é um timestamp Unix indicando quando o token expira. Esta ferramenta destaca se ele já expirou."
+        }
+      ]
+    },
+    "uuid-generator": {
+      "seoTitle": "Gerador de UUID Online – Gerador em Massa de UUID v4 Grátis",
+      "metaDescription": "Gere identificadores UUID v4 aleatórios em massa, instantaneamente no seu navegador. Copie individualmente ou todos de uma vez. Grátis, privado, sem cadastro.",
+      "h1": "Gerador de UUID",
+      "subheading": "Gere um ou milhares de identificadores UUID v4 aleatórios instantaneamente — processado 100% localmente.",
+      "keywords": [
+        "gerador de uuid",
+        "gerar uuid online",
+        "gerador de guid grátis",
+        "uuid v4 aleatório",
+        "gerador de uuid em massa"
+      ],
+      "howTo": [
+        {
+          "name": "Defina a quantidade",
+          "text": "Escolha quantos UUIDs gerar (até 500 de uma vez)."
+        },
+        {
+          "name": "Personalize o formato",
+          "text": "Alterne hifens e formatação em maiúsculas conforme necessário."
+        },
+        {
+          "name": "Gere",
+          "text": "Clique em Gerar para produzir um novo lote de UUIDs usando crypto.randomUUID."
+        },
+        {
+          "name": "Copie",
+          "text": "Copie um UUID individual ou todos de uma vez."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual versão de UUID é gerada?",
+          "answer": "Esta ferramenta gera UUIDs versão 4 (aleatórios) usando a API nativa crypto.randomUUID do navegador."
+        },
+        {
+          "question": "Os UUIDs são criptograficamente aleatórios?",
+          "answer": "Sim, eles são gerados usando o gerador de números aleatórios criptograficamente seguro da API Web Crypto."
+        },
+        {
+          "question": "Quantos posso gerar de uma vez?",
+          "answer": "Até 500 UUIDs por lote, com suporte instantâneo para copiar tudo."
+        }
+      ]
+    },
+    "hash-generator": {
+      "seoTitle": "Gerador de Hash Online – SHA-1, SHA-256, SHA-512 Grátis",
+      "metaDescription": "Gere hashes SHA-1, SHA-256, SHA-384 e SHA-512 de texto ou arquivos instantaneamente no seu navegador usando a API Web Crypto. Grátis e privado.",
+      "h1": "Gerador de Hash",
+      "subheading": "Calcule hashes SHA-1, SHA-256, SHA-384 e SHA-512 de texto ou arquivos — processado 100% localmente.",
+      "keywords": [
+        "gerador de hash online",
+        "gerador sha256",
+        "hash sha1 online",
+        "verificador de hash de arquivo",
+        "gerador de checksum grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha texto ou arquivo",
+          "text": "Alterne entre calcular o hash de texto bruto ou um arquivo enviado."
+        },
+        {
+          "name": "Insira sua entrada",
+          "text": "Digite texto ou arraste e solte um arquivo."
+        },
+        {
+          "name": "Veja todos os hashes",
+          "text": "Os digests SHA-1, SHA-256, SHA-384 e SHA-512 são calculados instantaneamente."
+        },
+        {
+          "name": "Copie um hash",
+          "text": "Clique no ícone de copiar ao lado de qualquer hash para copiá-lo para a área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que MD5 não é oferecido?",
+          "answer": "MD5 não está disponível na API Web Crypto nativa do navegador e é criptograficamente quebrado — use SHA-256 ou SHA-512 em vez disso."
+        },
+        {
+          "question": "Meu arquivo é enviado para um servidor?",
+          "answer": "Não, o hash acontece inteiramente localmente usando a função SubtleCrypto.digest da API Web Crypto."
+        },
+        {
+          "question": "Para que serve um hash?",
+          "answer": "Hashes são usados para verificar a integridade de arquivos, detectar duplicatas e criar impressões digitais de comprimento fixo dos dados."
+        }
+      ]
+    },
+    "regex-tester": {
+      "seoTitle": "Testador de Regex Online – Depurador de Expressões Regulares Grátis",
+      "metaDescription": "Teste expressões regulares contra texto de exemplo com destaque de correspondência ao vivo, flags e grupos de captura. Grátis, instantâneo e totalmente privado.",
+      "h1": "Testador de Regex",
+      "subheading": "Teste expressões regulares com destaque de correspondência ao vivo e inspeção de grupos de captura — 100% local.",
+      "keywords": [
+        "testador de regex",
+        "testador de expressão regular online",
+        "depurador de regex grátis",
+        "testar padrão regex",
+        "destaque de correspondência regex"
+      ],
+      "howTo": [
+        {
+          "name": "Insira seu padrão",
+          "text": "Digite um padrão de expressão regular."
+        },
+        {
+          "name": "Defina as flags",
+          "text": "Alterne as flags global, ignorar maiúsculas/minúsculas, multilinha ou dot-all."
+        },
+        {
+          "name": "Adicione o texto de teste",
+          "text": "Cole ou digite o texto contra o qual deseja testar o padrão."
+        },
+        {
+          "name": "Revise as correspondências",
+          "text": "As correspondências são destacadas ao vivo, com uma lista completa de correspondências e grupos de captura."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual variante de regex é usada?",
+          "answer": "Isso usa o motor RegExp nativo do JavaScript, o mesmo usado em navegadores e Node.js."
+        },
+        {
+          "question": "Posso ver os grupos de captura?",
+          "answer": "Sim, os grupos de captura de cada correspondência são listados junto ao texto completo da correspondência."
+        },
+        {
+          "question": "Meu texto de teste é enviado para algum lugar?",
+          "answer": "Não, toda a correspondência acontece instantaneamente e localmente no seu navegador."
+        }
+      ]
+    },
+    "markdown-previewer": {
+      "seoTitle": "Visualizador de Markdown Online – Editor Markdown ao Vivo Grátis",
+      "metaDescription": "Escreva Markdown e veja uma pré-visualização HTML sanitizada ao vivo instantaneamente no seu navegador. Grátis, privado, suporta títulos, listas, código e links.",
+      "h1": "Visualizador de Markdown",
+      "subheading": "Escreva Markdown e pré-visualize a saída HTML renderizada ao vivo — 100% local, renderização sanitizada.",
+      "keywords": [
+        "visualizador de markdown",
+        "editor markdown online",
+        "pré-visualização markdown ao vivo",
+        "markdown para html grátis",
+        "editor md online"
+      ],
+      "howTo": [
+        {
+          "name": "Escreva Markdown",
+          "text": "Digite ou cole Markdown no painel do editor à esquerda."
+        },
+        {
+          "name": "Pré-visualização ao vivo",
+          "text": "A pré-visualização HTML renderizada é atualizada instantaneamente à direita."
+        },
+        {
+          "name": "Use sintaxe padrão",
+          "text": "Títulos, listas, links, blocos de código e citações são todos suportados."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O HTML renderizado é sanitizado?",
+          "answer": "Sim, todo o HTML renderizado é sanitizado com DOMPurify para evitar injeção de scripts antes de ser exibido."
+        },
+        {
+          "question": "Meu conteúdo Markdown é enviado para algum lugar?",
+          "answer": "Não, a análise e renderização acontecem inteiramente no seu navegador."
+        },
+        {
+          "question": "Qual sintaxe Markdown é suportada?",
+          "answer": "Markdown padrão: títulos, negrito/itálico, listas, links, imagens, citações e blocos de código delimitados."
+        }
+      ]
+    },
+    "csv-to-json": {
+      "seoTitle": "Conversor de CSV para JSON Online – Grátis e Bidirecional",
+      "metaDescription": "Converta CSV para JSON ou JSON para CSV instantaneamente no seu navegador. Lida com campos entre aspas e dados aninhados. Grátis, privado, sem envios.",
+      "h1": "Conversor de CSV para JSON",
+      "subheading": "Converta entre formatos CSV e JSON instantaneamente, em ambas as direções — processado 100% localmente.",
+      "keywords": [
+        "csv para json",
+        "conversor json para csv",
+        "converter csv online",
+        "analisador csv grátis",
+        "conversor csv json"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha uma direção",
+          "text": "Selecione CSV → JSON ou JSON → CSV."
+        },
+        {
+          "name": "Cole seus dados",
+          "text": "Cole linhas CSV ou um array JSON no painel de entrada."
+        },
+        {
+          "name": "Veja a conversão",
+          "text": "A saída convertida é atualizada instantaneamente enquanto você digita."
+        },
+        {
+          "name": "Copie o resultado",
+          "text": "Clique em Copiar para copiar a saída convertida para a área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Isso lida com campos CSV entre aspas com vírgulas?",
+          "answer": "Sim, campos entre aspas contendo vírgulas, aspas ou quebras de linha são analisados corretamente."
+        },
+        {
+          "question": "Qual estrutura JSON é esperada para JSON para CSV?",
+          "answer": "Um array de objetos planos funciona melhor; objetos aninhados são automaticamente achatados com notação de ponto."
+        },
+        {
+          "question": "Meus dados são enviados para algum lugar?",
+          "answer": "Não, toda a análise e conversão acontecem localmente no seu navegador."
+        }
+      ]
+    },
+    "lorem-ipsum-generator": {
+      "seoTitle": "Gerador de Lorem Ipsum Online – Texto de Preenchimento Grátis",
+      "metaDescription": "Gere texto de preenchimento Lorem Ipsum por palavras, frases ou parágrafos, instantaneamente no seu navegador. Grátis, rápido e totalmente personalizável.",
+      "h1": "Gerador de Lorem Ipsum",
+      "subheading": "Gere texto de preenchimento Lorem Ipsum por palavras, frases ou parágrafos — instantaneamente, 100% localmente.",
+      "keywords": [
+        "gerador de lorem ipsum",
+        "gerador de texto de preenchimento",
+        "gerador de texto fictício online",
+        "lorem ipsum grátis",
+        "gerador de texto de preenchimento"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha uma unidade",
+          "text": "Selecione palavras, frases ou parágrafos."
+        },
+        {
+          "name": "Defina a quantidade",
+          "text": "Insira quantas unidades gerar."
+        },
+        {
+          "name": "Gere",
+          "text": "Clique em Gerar para produzir novo texto de preenchimento."
+        },
+        {
+          "name": "Copie o texto",
+          "text": "Clique em Copiar para copiar o texto gerado para a área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Para que serve o Lorem Ipsum?",
+          "answer": "Lorem Ipsum é o texto de preenchimento padrão usado por designers e desenvolvedores para pré-visualizar layouts antes que o conteúdo real esteja pronto."
+        },
+        {
+          "question": "Posso começar com o clássico 'Lorem ipsum dolor sit amet'?",
+          "answer": "Sim, ative a opção \"Começar com Lorem ipsum…\" para iniciar com a abertura tradicional."
+        },
+        {
+          "question": "Há um limite de quanto texto posso gerar?",
+          "answer": "Você pode gerar até 100 unidades (palavras, frases ou parágrafos) por clique."
+        }
+      ]
+    },
+    "percentage-calculator": {
+      "seoTitle": "Calculadora de Porcentagem Online – Grátis e Instantânea",
+      "metaDescription": "Calcule X% de Y, que porcentagem X representa de Y, ou a variação percentual entre dois números, instantaneamente. Grátis, precisa e privada.",
+      "h1": "Calculadora de Porcentagem",
+      "subheading": "Calcule porcentagens, porcentagem-de e variação percentual instantaneamente com três modos simples.",
+      "keywords": [
+        "calculadora de porcentagem",
+        "calculadora de porcentagem de",
+        "calculadora de variação percentual",
+        "que porcentagem é x de y"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um tipo de cálculo",
+          "text": "Escolha X% de Y, X é qual % de Y, ou variação percentual."
+        },
+        {
+          "name": "Insira seus números",
+          "text": "Preencha os campos de entrada para o cálculo escolhido."
+        },
+        {
+          "name": "Veja o resultado instantaneamente",
+          "text": "O resultado é atualizado ao vivo enquanto você digita."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como calculo X% de Y?",
+          "answer": "Multiplique Y por (X dividido por 100). Por exemplo, 20% de 150 é 150 × 0,20 = 30."
+        },
+        {
+          "question": "Como a variação percentual é calculada?",
+          "answer": "A variação percentual é ((valor novo − valor antigo) / |valor antigo|) × 100."
+        },
+        {
+          "question": "A variação percentual pode ser negativa?",
+          "answer": "Sim, um resultado negativo indica uma diminuição em relação ao valor original."
+        }
+      ]
+    },
+    "discount-calculator": {
+      "seoTitle": "Calculadora de Desconto Online – Ferramenta Grátis e Instantânea de Preço de Venda",
+      "metaDescription": "Calcule o preço final de venda e o valor economizado a partir de um preço original e uma porcentagem de desconto, instantaneamente. Grátis e privada.",
+      "h1": "Calculadora de Desconto",
+      "subheading": "Calcule o preço final e a economia a partir de qualquer porcentagem de desconto — instantaneamente e em privado.",
+      "keywords": [
+        "calculadora de desconto",
+        "calculadora de preço de venda",
+        "calculadora de porcentagem de desconto",
+        "calcular desconto online"
+      ],
+      "howTo": [
+        {
+          "name": "Insira o preço original",
+          "text": "Insira o preço do item antes de qualquer desconto."
+        },
+        {
+          "name": "Insira a porcentagem de desconto",
+          "text": "Insira a taxa de desconto, ex.: 25 para 25% de desconto."
+        },
+        {
+          "name": "Veja os resultados instantaneamente",
+          "text": "Veja o valor economizado e o preço final atualizados ao vivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como o preço com desconto é calculado?",
+          "answer": "Preço final = preço original − (preço original × porcentagem de desconto / 100)."
+        },
+        {
+          "question": "Posso calcular descontos acumulados?",
+          "answer": "Esta ferramenta calcula um único desconto; para descontos acumulados, aplique o preço final como o próximo preço original."
+        },
+        {
+          "question": "Isso inclui imposto sobre vendas?",
+          "answer": "Não, isso calcula apenas o desconto. Use a Calculadora de Imposto sobre Vendas para o imposto sobre o preço com desconto."
+        }
+      ]
+    },
+    "tip-calculator": {
+      "seoTitle": "Calculadora de Gorjeta Online – Grátis e Instantânea, Divida a Conta",
+      "metaDescription": "Calcule o valor da gorjeta e divida a conta total entre várias pessoas, instantaneamente no seu navegador. Grátis e privada.",
+      "h1": "Calculadora de Gorjeta",
+      "subheading": "Calcule sua gorjeta e divida a conta com amigos — resultados instantâneos, sem anúncios, sem cadastro.",
+      "keywords": [
+        "calculadora de gorjeta",
+        "calculadora de divisão de conta",
+        "quanto dar de gorjeta calculadora",
+        "dividir conta online"
+      ],
+      "howTo": [
+        {
+          "name": "Insira o valor da conta",
+          "text": "Insira o total da conta antes da gorjeta."
+        },
+        {
+          "name": "Escolha uma porcentagem de gorjeta",
+          "text": "Escolha uma predefinição (10-25%) ou insira uma porcentagem personalizada."
+        },
+        {
+          "name": "Defina o número de pessoas",
+          "text": "Insira quantas pessoas estão dividindo a conta."
+        },
+        {
+          "name": "Veja os resultados instantaneamente",
+          "text": "Veja o valor da gorjeta, a conta total e o valor devido por pessoa."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual é uma porcentagem de gorjeta padrão?",
+          "answer": "Nos EUA, 15-20% é típico para bom serviço em restaurantes, embora isso varie por região e tipo de serviço."
+        },
+        {
+          "question": "Como o valor por pessoa é calculado?",
+          "answer": "A conta mais a gorjeta é dividida igualmente pelo número de pessoas inserido."
+        },
+        {
+          "question": "Posso usar uma porcentagem de gorjeta personalizada?",
+          "answer": "Sim, insira qualquer porcentagem diretamente no campo de entrada ao lado das predefinições."
+        }
+      ]
+    },
+    "loan-emi-calculator": {
+      "seoTitle": "Calculadora de Parcela de Empréstimo Online – Ferramenta Grátis de Pagamento Mensal",
+      "metaDescription": "Calcule seu pagamento mensal de empréstimo (parcela), juros totais e valor total de reembolso instantaneamente. Grátis, precisa e privada.",
+      "h1": "Calculadora de Parcela de Empréstimo",
+      "subheading": "Calcule seu pagamento mensal de empréstimo, juros totais e reembolso total — instantaneamente e em privado.",
+      "keywords": [
+        "calculadora de parcela de empréstimo",
+        "calculadora de pagamento mensal",
+        "calculadora de juros de empréstimo",
+        "calculadora de parcela online grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Insira o valor do empréstimo",
+          "text": "Insira o valor principal que você está tomando emprestado."
+        },
+        {
+          "name": "Insira a taxa de juros",
+          "text": "Insira a taxa de juros anual como porcentagem."
+        },
+        {
+          "name": "Insira o prazo do empréstimo",
+          "text": "Insira o período de reembolso em anos."
+        },
+        {
+          "name": "Veja os resultados instantaneamente",
+          "text": "Veja sua parcela mensal, juros totais e pagamento total."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual fórmula é usada para calcular a parcela?",
+          "answer": "Parcela = [P × r × (1+r)^n] / [(1+r)^n − 1], onde P é o principal, r é a taxa de juros mensal e n é o número de meses."
+        },
+        {
+          "question": "Isso considera taxas ou seguros?",
+          "answer": "Não, isso calcula apenas principal e juros. Taxas adicionais ou seguros não estão incluídos."
+        },
+        {
+          "question": "Isso é adequado para hipotecas e financiamento de carros?",
+          "answer": "Sim, a fórmula padrão de empréstimo amortizável se aplica a hipotecas, financiamento de carros e empréstimos pessoais igualmente."
+        }
+      ]
+    },
+    "compound-interest-calculator": {
+      "seoTitle": "Calculadora de Juros Compostos Online – Grátis e Instantânea",
+      "metaDescription": "Calcule o valor futuro de um investimento com juros compostos, em qualquer frequência de capitalização, instantaneamente. Grátis e privada.",
+      "h1": "Calculadora de Juros Compostos",
+      "subheading": "Calcule o valor futuro do seu investimento com juros compostos — instantaneamente e em privado.",
+      "keywords": [
+        "calculadora de juros compostos",
+        "calculadora de crescimento de investimento",
+        "calculadora de valor futuro",
+        "fórmula de juros compostos online"
+      ],
+      "howTo": [
+        {
+          "name": "Insira seu principal",
+          "text": "Insira o valor inicial que você está investindo."
+        },
+        {
+          "name": "Insira a taxa de juros",
+          "text": "Insira a taxa de juros anual como porcentagem."
+        },
+        {
+          "name": "Defina o tempo e a frequência",
+          "text": "Insira o prazo do investimento em anos e escolha uma frequência de capitalização."
+        },
+        {
+          "name": "Veja os resultados instantaneamente",
+          "text": "Veja o valor futuro e os juros totais ganhos."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual fórmula isso usa?",
+          "answer": "A = P(1 + r/n)^(nt), onde P é o principal, r é a taxa anual, n é a frequência de capitalização e t é o tempo em anos."
+        },
+        {
+          "question": "Como a frequência de capitalização afeta o crescimento?",
+          "answer": "Capitalização mais frequente (ex.: diária vs anual) resulta em retornos ligeiramente maiores para a mesma taxa nominal."
+        },
+        {
+          "question": "Isso considera contribuições adicionais?",
+          "answer": "Não, isso calcula o crescimento a partir de um único principal inicial sem contribuições recorrentes."
+        }
+      ]
+    },
+    "sales-tax-calculator": {
+      "seoTitle": "Calculadora de Imposto sobre Vendas Online – Grátis e Instantânea, Ambas as Direções",
+      "metaDescription": "Calcule o imposto sobre vendas em um preço, ou calcule inversamente o preço antes do imposto a partir de um total, instantaneamente no seu navegador. Grátis e privada.",
+      "h1": "Calculadora de Imposto sobre Vendas",
+      "subheading": "Calcule o imposto sobre vendas para frente a partir de um preço, ou reverso a partir de um total — instantaneamente e em privado.",
+      "keywords": [
+        "calculadora de imposto sobre vendas",
+        "calculadora de imposto sobre vendas reversa",
+        "calcular imposto sobre preço",
+        "calculadora de imposto sobre vendas online grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha uma direção",
+          "text": "Escolha Preço → Total para adicionar imposto, ou Total → Preço para removê-lo."
+        },
+        {
+          "name": "Insira seu valor e taxa",
+          "text": "Insira o preço ou total, mais a taxa de imposto aplicável."
+        },
+        {
+          "name": "Veja os resultados instantaneamente",
+          "text": "Veja o valor do imposto e o preço resultante atualizados ao vivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como o imposto sobre vendas é calculado?",
+          "answer": "Valor do imposto = preço × (taxa de imposto / 100). Total = preço + valor do imposto."
+        },
+        {
+          "question": "Como encontro o preço antes do imposto a partir do total de um recibo?",
+          "answer": "Use o modo Total → Preço: preço antes do imposto = total / (1 + taxa de imposto / 100)."
+        },
+        {
+          "question": "Isso inclui imposto local e estadual combinados?",
+          "answer": "Sim, insira sua taxa de imposto efetiva combinada (estadual + local) para um total preciso."
+        }
+      ]
+    },
+    "bmi-calculator": {
+      "seoTitle": "Calculadora de IMC Online – Grátis, Métrico e Imperial",
+      "metaDescription": "Calcule seu Índice de Massa Corporal (IMC) usando unidades métricas ou imperiais, instantaneamente no seu navegador. Grátis, privado, com detalhamento por categoria.",
+      "h1": "Calculadora de IMC",
+      "subheading": "Calcule seu Índice de Massa Corporal em unidades métricas ou imperiais — resultados instantâneos com detalhamento por categoria.",
+      "keywords": [
+        "calculadora de imc",
+        "calculadora de índice de massa corporal",
+        "calculadora de imc métrico imperial",
+        "calcular imc online grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha seu sistema de unidades",
+          "text": "Selecione métrico (cm/kg) ou imperial (ft/in/lb)."
+        },
+        {
+          "name": "Insira altura e peso",
+          "text": "Insira sua altura e peso nas unidades selecionadas."
+        },
+        {
+          "name": "Veja seu IMC instantaneamente",
+          "text": "Veja seu valor de IMC e a categoria de peso atualizados ao vivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como o IMC é calculado?",
+          "answer": "Métrico: peso (kg) / altura (m)². Imperial: peso (lb) / altura (in)² × 703."
+        },
+        {
+          "question": "Quais são as categorias de IMC?",
+          "answer": "Abaixo de 18,5 é abaixo do peso, 18,5–24,9 é peso saudável, 25–29,9 é sobrepeso e 30+ é obesidade."
+        },
+        {
+          "question": "O IMC é uma medida de saúde perfeita?",
+          "answer": "Não, o IMC não considera massa muscular, densidade óssea ou composição corporal. Consulte um profissional de saúde para uma avaliação completa."
+        }
+      ]
+    },
+    "pdf-page-numberer": {
+      "seoTitle": "Adicionar Números de Página a PDF Online – Grátis e Privado",
+      "metaDescription": "Adicione números de página a cada página de um PDF com a posição e o formato de sua escolha — processado 100% localmente no seu navegador.",
+      "h1": "Numerador de Páginas PDF",
+      "subheading": "Adicione números de página a cada página de um PDF, com a posição e o formato de sua escolha.",
+      "keywords": [
+        "adicionar números de página a pdf",
+        "numerador de páginas pdf",
+        "numerar páginas pdf online",
+        "inserir números de página pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu PDF",
+          "text": "Selecione o arquivo PDF que deseja numerar."
+        },
+        {
+          "name": "Escolha uma posição",
+          "text": "Escolha onde os números de página devem aparecer — em cima ou embaixo, esquerda, centro ou direita."
+        },
+        {
+          "name": "Escolha um formato e número inicial",
+          "text": "Escolha um formato de número como \"1\" ou \"Página 1\", e defina o número inicial."
+        },
+        {
+          "name": "Baixe o resultado",
+          "text": "Baixe o PDF com números de página adicionados a cada página."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso começar a numerar a partir de um número diferente de 1?",
+          "answer": "Sim, defina qualquer número inicial — útil quando um documento continua de outro arquivo."
+        },
+        {
+          "question": "Quais formatos de número estão disponíveis?",
+          "answer": "Escolha entre números simples (\"1\"), \"Página 1\", \"1 de N\" ou o estilo \"- 1 -\"."
+        },
+        {
+          "question": "Meu PDF é enviado para algum lugar?",
+          "answer": "Não, os números de página são adicionados inteiramente no seu navegador usando pdf-lib — seu arquivo nunca é enviado para um servidor."
+        }
+      ]
+    },
+    "text-diff-checker": {
+      "seoTitle": "Comparador de Textos Online – Compare Dois Textos Grátis",
+      "metaDescription": "Compare dois blocos de texto e veja exatamente o que foi adicionado ou removido, linha por linha — processado 100% localmente no seu navegador.",
+      "h1": "Comparador de Textos",
+      "subheading": "Compare dois blocos de texto e veja exatamente o que mudou, linha por linha.",
+      "keywords": [
+        "comparador de textos",
+        "comparar texto online",
+        "ferramenta de diferença de texto",
+        "comparação de texto"
+      ],
+      "howTo": [
+        {
+          "name": "Cole o texto original",
+          "text": "Insira a versão original na primeira caixa."
+        },
+        {
+          "name": "Cole o texto alterado",
+          "text": "Insira a versão atualizada na segunda caixa."
+        },
+        {
+          "name": "Clique em Comparar",
+          "text": "Veja as linhas adicionadas e removidas destacadas instantaneamente."
+        },
+        {
+          "name": "Revise o resumo",
+          "text": "Confira o total de linhas adicionadas e removidas rapidamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como a diferença é calculada?",
+          "answer": "A ferramenta compara os dois textos linha por linha e destaca as linhas que foram adicionadas (verde) ou removidas (vermelho)."
+        },
+        {
+          "question": "Pode comparar código ou JSON?",
+          "answer": "Sim, funciona com qualquer texto simples, incluindo código, JSON ou arquivos de configuração."
+        },
+        {
+          "question": "Meu texto é enviado para algum lugar?",
+          "answer": "Não, a comparação acontece inteiramente no seu navegador — nada é enviado para um servidor."
+        }
+      ]
+    },
+    "image-cropper": {
+      "seoTitle": "Cortador de Imagens Online – Grátis e Privado, Sem Upload",
+      "metaDescription": "Corte qualquer imagem diretamente no seu navegador arrastando uma caixa de seleção — grátis, privado e processado 100% localmente.",
+      "h1": "Cortador de Imagens",
+      "subheading": "Corte qualquer imagem arrastando uma caixa de seleção e baixe o resultado — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "cortador de imagens",
+        "cortar imagem online",
+        "cortador de fotos grátis",
+        "cortar foto online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie uma imagem",
+          "text": "Arraste e solte ou selecione uma imagem do seu dispositivo."
+        },
+        {
+          "name": "Ajuste a área de corte",
+          "text": "Arraste a caixa de seleção ou seus cantos para definir a área de corte, ou insira valores exatos de X/Y/largura/altura."
+        },
+        {
+          "name": "Corte e baixe",
+          "text": "Clique em Cortar e Baixar para salvar a imagem cortada como PNG."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais formatos de imagem são suportados?",
+          "answer": "Você pode enviar JPG, PNG, WebP e a maioria dos formatos de imagem comuns. O resultado cortado é baixado como PNG."
+        },
+        {
+          "question": "Minha imagem é enviada para um servidor?",
+          "answer": "Não, o corte acontece inteiramente no seu navegador usando a API Canvas — sua imagem nunca sai do seu dispositivo."
+        },
+        {
+          "question": "Posso definir um tamanho de corte exato?",
+          "answer": "Sim, use os campos X, Y, Largura e Altura para inserir valores precisos em pixels junto com as alças de arraste."
+        }
+      ]
+    },
+    "age-calculator": {
+      "seoTitle": "Calculadora de Idade Online – Grátis e Precisa, Por Data de Nascimento",
+      "metaDescription": "Calcule sua idade exata em anos, meses e dias a partir da sua data de nascimento, além dos dias até o próximo aniversário — instantaneamente e em privado.",
+      "h1": "Calculadora de Idade",
+      "subheading": "Calcule sua idade exata em anos, meses e dias a partir da sua data de nascimento — resultados instantâneos, sem cadastro.",
+      "keywords": [
+        "calculadora de idade",
+        "calculadora de data de nascimento",
+        "quantos anos eu tenho calculadora",
+        "calculadora de idade em dias"
+      ],
+      "howTo": [
+        {
+          "name": "Insira sua data de nascimento",
+          "text": "Selecione sua data de nascimento usando o seletor de datas."
+        },
+        {
+          "name": "Escolha uma data de referência",
+          "text": "O padrão é hoje, ou escolha outra data para calcular a idade naquele dia."
+        },
+        {
+          "name": "Veja sua idade",
+          "text": "Veja sua idade exata em anos, meses e dias."
+        },
+        {
+          "name": "Confira estatísticas extras",
+          "text": "Veja o total de dias vividos e os dias até seu próximo aniversário."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como a idade é calculada?",
+          "answer": "A calculadora conta anos, meses e dias completos do calendário entre as duas datas — não é uma simples divisão de dias."
+        },
+        {
+          "question": "Posso calcular a idade em uma data futura ou passada?",
+          "answer": "Sim, altere a data \"de referência\" para ver qual era ou será sua idade em qualquer data."
+        },
+        {
+          "question": "Minha data de nascimento é armazenada em algum lugar?",
+          "answer": "Não, todos os cálculos acontecem localmente no seu navegador e nada é enviado para um servidor."
+        }
+      ]
+    },
+    "unit-converter": {
+      "seoTitle": "Conversor de Unidades Online – Comprimento, Peso e Temperatura",
+      "metaDescription": "Converta entre unidades de comprimento, peso e temperatura instantaneamente — grátis, preciso e processado 100% localmente no seu navegador.",
+      "h1": "Conversor de Unidades",
+      "subheading": "Converta entre unidades de comprimento, peso e temperatura instantaneamente e com precisão.",
+      "keywords": [
+        "conversor de unidades",
+        "conversor de comprimento",
+        "conversor de peso",
+        "conversor de temperatura",
+        "conversor métrico para imperial"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha uma categoria",
+          "text": "Selecione Comprimento, Peso ou Temperatura."
+        },
+        {
+          "name": "Escolha suas unidades",
+          "text": "Selecione a unidade de origem e a unidade de destino."
+        },
+        {
+          "name": "Insira um valor",
+          "text": "Digite o número que deseja converter."
+        },
+        {
+          "name": "Veja o resultado",
+          "text": "Veja o valor convertido atualizar instantaneamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais unidades são suportadas?",
+          "answer": "Comprimento (mm, cm, m, km, in, ft, yd, mi), peso (mg, g, kg, oz, lb) e temperatura (Celsius, Fahrenheit, Kelvin)."
+        },
+        {
+          "question": "A temperatura é convertida corretamente?",
+          "answer": "Sim, a temperatura usa fórmulas de conversão adequadas, não simples multiplicadores, já que as escalas Celsius, Fahrenheit e Kelvin não compartilham um ponto zero comum."
+        },
+        {
+          "question": "Posso trocar as unidades de origem e destino rapidamente?",
+          "answer": "Sim, use o botão de troca para inverter instantaneamente a direção da conversão."
+        }
+      ]
+    },
+    "password-generator": {
+      "seoTitle": "Gerador de Senhas Online – Grátis, Seguro e Instantâneo",
+      "metaDescription": "Gere senhas fortes e aleatórias com comprimento e caracteres personalizáveis, diretamente no seu navegador. Grátis e privado, sem cadastro.",
+      "h1": "Gerador de Senhas",
+      "subheading": "Crie senhas fortes e aleatórias com comprimento e tipos de caracteres personalizáveis — geradas com segurança no seu navegador.",
+      "keywords": [
+        "gerador de senhas",
+        "gerador de senha aleatória",
+        "criar senha segura",
+        "gerador de senha forte"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um comprimento",
+          "text": "Defina o comprimento da senha entre 4 e 128 caracteres."
+        },
+        {
+          "name": "Escolha os tipos de caracteres",
+          "text": "Ative maiúsculas, minúsculas, números e símbolos."
+        },
+        {
+          "name": "Gere",
+          "text": "Clique em Gerar para criar uma nova senha aleatória."
+        },
+        {
+          "name": "Copie-a",
+          "text": "Clique no ícone de copiar para copiar a senha para a área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Este gerador de senhas é seguro?",
+          "answer": "Sim. As senhas são geradas usando o gerador de números aleatórios criptograficamente seguro do seu navegador (crypto.getRandomValues), não uma função pseudoaleatória mais fraca."
+        },
+        {
+          "question": "Minhas senhas geradas são enviadas para algum lugar?",
+          "answer": "Não. Tudo acontece localmente no seu navegador — as senhas nunca são transmitidas ou armazenadas em nenhum servidor."
+        },
+        {
+          "question": "O que torna uma senha forte?",
+          "answer": "O comprimento é o mais importante. Uma senha mais longa com uma mistura de maiúsculas, minúsculas, números e símbolos é muito mais difícil de quebrar do que uma curta e simples."
+        }
+      ]
+    },
+    "text-case-converter": {
+      "seoTitle": "Conversor de Maiúsculas e Minúsculas – MAIÚSCULAS, minúsculas e Mais",
+      "metaDescription": "Converta texto entre MAIÚSCULAS, minúsculas, Formato de Título, camelCase, snake_case e mais — instantaneamente no seu navegador.",
+      "h1": "Conversor de Maiúsculas e Minúsculas",
+      "subheading": "Converta texto entre MAIÚSCULAS, minúsculas, Formato de Título, camelCase, snake_case e mais formatos instantaneamente.",
+      "keywords": [
+        "conversor de maiúsculas e minúsculas",
+        "converter texto para maiúsculas",
+        "conversor camel case",
+        "conversor formato de título"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu texto",
+          "text": "Digite ou cole o texto que deseja converter."
+        },
+        {
+          "name": "Escolha um formato",
+          "text": "Clique em qualquer botão de formato — MAIÚSCULAS, minúsculas, camelCase e mais."
+        },
+        {
+          "name": "Veja o resultado",
+          "text": "O texto convertido aparece instantaneamente abaixo."
+        },
+        {
+          "name": "Copie o resultado",
+          "text": "Clique no ícone de copiar para copiar o texto convertido."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais formatos de texto são suportados?",
+          "answer": "MAIÚSCULAS, minúsculas, Formato de Título, formato de frase, camelCase, PascalCase, snake_case e kebab-case."
+        },
+        {
+          "question": "Isso altera meu texto original?",
+          "answer": "Não, sua entrada permanece intacta — o resultado convertido é mostrado separadamente para que você possa comparar ou converter novamente."
+        },
+        {
+          "question": "Há um limite de comprimento?",
+          "answer": "Nenhum limite prático — a conversão acontece instantaneamente no seu navegador, mesmo para textos longos."
+        }
+      ]
+    },
+    "exif-stripper": {
+      "seoTitle": "Removedor de Metadados EXIF & GPS – Grátis e Privado, Sem Upload",
+      "metaDescription": "Veja e remova metadados EXIF — modelo da câmera, localização GPS, data e hora — das suas fotos antes de compartilhá-las, totalmente no seu navegador.",
+      "h1": "Removedor de Metadados EXIF & GPS",
+      "subheading": "Veja exatamente quais metadados estão ocultos nas suas fotos e remova-os com um clique antes de compartilhar.",
+      "keywords": [
+        "remover exif",
+        "apagar metadados de foto",
+        "remover gps de foto",
+        "privacidade de fotos"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas fotos",
+          "text": "Arraste e solte uma ou mais fotos JPEG."
+        },
+        {
+          "name": "Revise os metadados",
+          "text": "Veja o modelo da câmera, lente, data, ISO e coordenadas GPS encontrados em cada foto."
+        },
+        {
+          "name": "Remova e baixe",
+          "text": "Clique em Remover e Baixar para obter uma cópia limpa sem metadados, ou baixe tudo em um ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais metadados são removidos?",
+          "answer": "Marca/modelo da câmera, informações da lente, data de captura, ISO e coordenadas GPS — todo o bloco EXIF é descartado quando a imagem é recodificada."
+        },
+        {
+          "question": "Minha foto é enviada para algum lugar?",
+          "answer": "Não, os metadados são lidos e a imagem é recodificada totalmente no seu navegador — nada é enviado a um servidor."
+        },
+        {
+          "question": "Remover os metadados reduz a qualidade da imagem?",
+          "answer": "A imagem é recodificada em alta qualidade (95%), então qualquer diferença é insignificante para a maioria dos usos."
+        }
+      ]
+    },
+    "zero-width-remover": {
+      "seoTitle": "Removedor de Espaços de Largura Zero & Caracteres Invisíveis – Grátis Online",
+      "metaDescription": "Encontre e remova espaços de largura zero e outros caracteres Unicode invisíveis ocultos em texto colado, totalmente no seu navegador.",
+      "h1": "Limpador de Espaços de Largura Zero & Caracteres Invisíveis",
+      "subheading": "Encontre e remova espaços de largura zero e outros caracteres Unicode invisíveis ocultos no seu texto.",
+      "keywords": [
+        "remover espaço de largura zero",
+        "limpar unicode oculto",
+        "removedor de caracteres invisíveis"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu texto",
+          "text": "Cole um texto que possa conter caracteres ocultos ou invisíveis."
+        },
+        {
+          "name": "Revise o que foi encontrado",
+          "text": "Veja quantos caracteres invisíveis foram detectados e onde."
+        },
+        {
+          "name": "Copie o texto limpo",
+          "text": "Copie o texto limpo, sem nenhum caractere invisível."
+        }
+      ],
+      "faq": [
+        {
+          "question": "De onde vêm os caracteres invisíveis?",
+          "answer": "Geralmente são introduzidos acidentalmente ao copiar texto de editores de texto, links de rastreamento ou aplicativos de mensagens."
+        },
+        {
+          "question": "Quais caracteres essa ferramenta remove?",
+          "answer": "Espaços de largura zero, joiners/non-joiners de largura zero, marcas de ordem de byte, word joiners, hífens suaves e caracteres de controle bidirecional perdidos."
+        },
+        {
+          "question": "Meu texto é enviado para algum lugar?",
+          "answer": "Não, a limpeza acontece totalmente no seu navegador — nada é enviado."
+        }
+      ]
+    },
+    "hmac-generator": {
+      "seoTitle": "Gerador de HMAC Online – SHA-1/256/384/512, Grátis e Seguro",
+      "metaDescription": "Gere um hash HMAC com chave a partir de uma mensagem e uma chave secreta usando SHA-1, SHA-256, SHA-384 ou SHA-512 — calculado localmente no seu navegador.",
+      "h1": "Gerador de HMAC",
+      "subheading": "Gere um hash HMAC com chave a partir de uma mensagem e uma chave secreta, calculado localmente no seu navegador.",
+      "keywords": [
+        "gerador hmac",
+        "hmac sha256",
+        "assinatura criptográfica"
+      ],
+      "howTo": [
+        {
+          "name": "Digite sua mensagem",
+          "text": "Digite ou cole a mensagem que deseja assinar."
+        },
+        {
+          "name": "Digite sua chave secreta",
+          "text": "Digite a chave secreta usada para calcular o HMAC."
+        },
+        {
+          "name": "Escolha um algoritmo",
+          "text": "Selecione SHA-1, SHA-256, SHA-384 ou SHA-512."
+        },
+        {
+          "name": "Copie o HMAC",
+          "text": "O HMAC resultante, codificado em hexadecimal, é atualizado instantaneamente — copie-o com um clique."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como o HMAC é calculado?",
+          "answer": "Usando a API Web Crypto nativa do seu navegador (crypto.subtle), que assina a mensagem com sua chave de forma segura usando o algoritmo de hash selecionado."
+        },
+        {
+          "question": "Minha chave secreta é enviada para algum lugar?",
+          "answer": "Não, tudo é calculado localmente no seu navegador — sua chave e sua mensagem nunca são transmitidas."
+        },
+        {
+          "question": "Qual a diferença entre HMAC e um hash simples?",
+          "answer": "Um hash simples não tem chave secreta, então qualquer pessoa pode calculá-lo. Um HMAC combina uma chave secreta com a mensagem, permitindo verificar tanto a integridade quanto a autenticidade."
+        }
+      ]
+    },
+    "json-to-typescript": {
+      "seoTitle": "Conversor de JSON para TypeScript – Interfaces & Esquemas Zod, Grátis",
+      "metaDescription": "Converta JSON em interfaces TypeScript, aliases de tipo ou esquemas de validação Zod instantaneamente — processado 100% localmente no seu navegador.",
+      "h1": "JSON para TypeScript & Esquema Zod",
+      "subheading": "Converta JSON em interfaces TypeScript, aliases de tipo ou esquemas de validação Zod instantaneamente.",
+      "keywords": [
+        "json para typescript",
+        "json para zod",
+        "gerar tipos typescript"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu JSON",
+          "text": "Cole ou digite um objeto ou array JSON no editor."
+        },
+        {
+          "name": "Escolha suas opções",
+          "text": "Escolha entre interface ou type alias, ative campos opcionais e habilite a geração de esquema Zod se necessário."
+        },
+        {
+          "name": "Copie ou baixe",
+          "text": "Copie o código TypeScript gerado ou baixe-o como um arquivo .d.ts."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como os tipos são inferidos?",
+          "answer": "A ferramenta percorre a estrutura do seu JSON e infere os tipos TypeScript correspondentes — objetos aninhados viram interfaces próprias, e arrays viram listas tipadas."
+        },
+        {
+          "question": "Isso exige a biblioteca Zod?",
+          "answer": "Não, o esquema Zod é gerado como código de texto simples para você colar em um projeto que já tenha o Zod instalado — esta ferramenta não depende dele."
+        },
+        {
+          "question": "Meu JSON é enviado para algum lugar?",
+          "answer": "Não, a geração de tipos acontece totalmente no seu navegador."
+        }
+      ]
+    },
+    "json-to-yaml": {
+      "seoTitle": "Conversor de JSON para YAML Online – Grátis, Instantâneo, Nas Duas Direções",
+      "metaDescription": "Converta JSON para YAML ou YAML para JSON instantaneamente, em qualquer direção — processado 100% localmente no seu navegador.",
+      "h1": "Conversor JSON ↔ YAML",
+      "subheading": "Converta entre JSON e YAML instantaneamente, em qualquer direção.",
+      "keywords": [
+        "json para yaml",
+        "yaml para json",
+        "converter yaml"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha uma direção",
+          "text": "Selecione JSON para YAML ou YAML para JSON."
+        },
+        {
+          "name": "Cole seu conteúdo",
+          "text": "Cole seu JSON ou YAML no editor."
+        },
+        {
+          "name": "Copie ou baixe o resultado",
+          "text": "Copie o resultado convertido ou baixe-o como arquivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Esta é uma implementação completa de YAML?",
+          "answer": "Ela cobre o subconjunto prático de YAML usado pela maioria dos arquivos de configuração — objetos aninhados, listas em estilo de bloco, strings, números, booleanos e null — em vez de cada caso extremo da especificação completa."
+        },
+        {
+          "question": "Meus dados são enviados para algum lugar?",
+          "answer": "Não, a conversão acontece totalmente no seu navegador."
+        },
+        {
+          "question": "Posso converter estruturas aninhadas complexas?",
+          "answer": "Sim, ambas as direções lidam com objetos profundamente aninhados e arrays de objetos."
+        }
+      ]
+    },
+    "sql-formatter": {
+      "seoTitle": "Formatador de SQL Online – Formate & Minifique Consultas SQL, Grátis",
+      "metaDescription": "Formate consultas SQL bagunçadas em instruções legíveis e indentadas, ou minifique-as em uma única linha — processado 100% localmente no seu navegador.",
+      "h1": "Formatador de Consultas SQL",
+      "subheading": "Formate consultas SQL bagunçadas em instruções legíveis, ou minifique-as em uma única linha.",
+      "keywords": [
+        "formatador sql",
+        "embelezar sql",
+        "formatar consulta sql"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu SQL",
+          "text": "Cole qualquer consulta SQL no editor."
+        },
+        {
+          "name": "Formate ou minifique",
+          "text": "Clique em Formatar para embelezá-la com indentação adequada, ou em Minificar para reduzi-la a uma linha."
+        },
+        {
+          "name": "Copie o resultado",
+          "text": "Copie o SQL formatado ou minificado para sua área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais dialetos SQL são suportados?",
+          "answer": "O formatador reconhece palavras-chave comuns compartilhadas entre MySQL, PostgreSQL, SQLite e SQL Server — ele formata com base na estrutura das palavras-chave, em vez de validar sintaxe específica de cada dialeto."
+        },
+        {
+          "question": "Isso valida meu SQL?",
+          "answer": "Não, esta é uma ferramenta de formatação, não um validador de consultas — ela não detecta erros de sintaxe, apenas reformata o texto."
+        },
+        {
+          "question": "Minha consulta é enviada para algum lugar?",
+          "answer": "Não, a formatação acontece totalmente no seu navegador."
+        }
+      ]
+    },
+    "json-to-csv": {
+      "seoTitle": "Conversor de JSON para CSV Online – Grátis, Instantâneo, Sem Upload",
+      "metaDescription": "Converta um array JSON de objetos em um arquivo CSV, pronto para abrir no Excel ou Google Sheets — processado 100% localmente no seu navegador.",
+      "h1": "Conversor de JSON para CSV",
+      "subheading": "Converta um array JSON de objetos em um arquivo CSV, pronto para abrir em uma planilha.",
+      "keywords": [
+        "json para csv",
+        "converter json para excel",
+        "array json para csv"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu JSON",
+          "text": "Cole um array JSON de objetos no editor."
+        },
+        {
+          "name": "Veja o resultado em CSV",
+          "text": "Veja o CSV convertido aparecer instantaneamente, com colunas baseadas nas chaves dos seus objetos."
+        },
+        {
+          "name": "Copie ou baixe",
+          "text": "Copie o texto CSV ou baixe-o como arquivo .csv."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual formato de JSON funciona melhor?",
+          "answer": "Um array de objetos simples com chaves consistentes, por exemplo [{\"name\": \"A\", \"price\": 10}, ...] — isso mapeia de forma limpa para linhas e colunas de planilha."
+        },
+        {
+          "question": "O que acontece com objetos aninhados?",
+          "answer": "Valores profundamente aninhados são achatados ou convertidos em texto quando possível, para ainda caberem em uma célula CSV."
+        },
+        {
+          "question": "Meus dados são enviados para algum lugar?",
+          "answer": "Não, a conversão acontece totalmente no seu navegador."
+        }
+      ]
+    },
+    "code-minifier": {
+      "seoTitle": "Minificador de HTML & CSS Online – Grátis, Instantâneo, Sem Upload",
+      "metaDescription": "Minifique HTML ou CSS removendo comentários e espaços em branco desnecessários — processado 100% localmente no seu navegador.",
+      "h1": "Minificador de HTML & CSS",
+      "subheading": "Remova comentários e espaços em branco desnecessários de HTML ou CSS para reduzir o tamanho do arquivo.",
+      "keywords": [
+        "minificar css",
+        "minificar html",
+        "compressor de código"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha HTML ou CSS",
+          "text": "Selecione o tipo de código que deseja minificar."
+        },
+        {
+          "name": "Cole seu código",
+          "text": "Cole seu HTML ou CSS no editor."
+        },
+        {
+          "name": "Minifique e copie",
+          "text": "Clique em Minificar e copie o resultado comprimido — veja quanto espaço você economizou."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Minificar vai quebrar meu código?",
+          "answer": "Não, apenas comentários e espaços em branco seguros são removidos — o conteúdo dentro das tags pre, textarea, script e style em HTML, e strings literais em CSS, permanece intacto."
+        },
+        {
+          "question": "Quanto espaço a minificação economiza?",
+          "answer": "Isso varia conforme a quantidade de espaços em branco e comentários no seu código original — a ferramenta mostra uma comparação exata de tamanho antes/depois."
+        },
+        {
+          "question": "Meu código é enviado para algum lugar?",
+          "answer": "Não, a minificação acontece totalmente no seu navegador."
+        }
+      ]
+    },
+    "html-entity-encoder": {
+      "seoTitle": "Codificador / Decodificador de Entidades HTML – Grátis, Instantâneo, Sem Upload",
+      "metaDescription": "Codifique caracteres especiais em entidades HTML, ou decodifique entidades HTML de volta para texto legível — processado 100% localmente no seu navegador.",
+      "h1": "Codificador / Decodificador de Entidades HTML",
+      "subheading": "Codifique caracteres especiais em entidades HTML, ou decodifique entidades de volta para texto legível.",
+      "keywords": [
+        "codificador de entidades html",
+        "decodificar entidades html",
+        "escapar html"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha codificar ou decodificar",
+          "text": "Selecione se deseja codificar texto ou decodificar entidades HTML."
+        },
+        {
+          "name": "Cole seu texto",
+          "text": "Cole o texto ou a string codificada em entidades HTML que deseja converter."
+        },
+        {
+          "name": "Copie o resultado",
+          "text": "Copie o resultado codificado ou decodificado para sua área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que codificar entidades HTML?",
+          "answer": "Para exibir com segurança caracteres especiais como <, > e & como texto literal dentro de HTML, sem que o navegador os interprete como marcação."
+        },
+        {
+          "question": "Quais entidades podem ser decodificadas?",
+          "answer": "Todas as entidades HTML nomeadas e numéricas que seu navegador reconhece — a decodificação usa o próprio analisador HTML do navegador para uma cobertura completa e precisa."
+        },
+        {
+          "question": "Meu texto é enviado para algum lugar?",
+          "answer": "Não, a codificação e a decodificação acontecem totalmente no seu navegador."
+        }
+      ]
+    },
+    "title-case-converter": {
+      "seoTitle": "Conversor de Title Case – Estilos APA, Chicago, MLA & AP, Grátis",
+      "metaDescription": "Capitalize títulos e manchetes corretamente usando as regras de estilo APA, Chicago, MLA ou AP — processado 100% localmente no seu navegador.",
+      "h1": "Capitalizador de Títulos & Manchetes",
+      "subheading": "Capitalize títulos e manchetes corretamente usando as regras de estilo APA, Chicago, MLA ou AP.",
+      "keywords": [
+        "conversor title case",
+        "capitalizar título",
+        "title case apa",
+        "manchete chicago"
+      ],
+      "howTo": [
+        {
+          "name": "Cole seu título",
+          "text": "Digite ou cole o título ou manchete que deseja capitalizar."
+        },
+        {
+          "name": "Escolha um estilo",
+          "text": "Selecione o estilo APA, Chicago, MLA ou AP."
+        },
+        {
+          "name": "Copie o resultado",
+          "text": "Copie o título corretamente capitalizado para sua área de transferência."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual a diferença entre os estilos?",
+          "answer": "Cada guia de estilo tem suas próprias regras sobre quais palavras curtas (artigos, conjunções, preposições) permanecem em minúsculas — APA e Chicago capitalizam preposições mais longas que AP e MLA deixariam em minúsculas, por exemplo."
+        },
+        {
+          "question": "A primeira e a última palavra são sempre capitalizadas?",
+          "answer": "Sim, os quatro estilos capitalizam a primeira e a última palavra do título, independentemente da classe gramatical."
+        },
+        {
+          "question": "Meu texto é enviado para algum lugar?",
+          "answer": "Não, a capitalização acontece totalmente no seu navegador."
+        }
+      ]
+    },
+    "url-slug-generator": {
+      "seoTitle": "Gerador de Slug de URL Online – Compatível com SEO, Grátis e Instantâneo",
+      "metaDescription": "Transforme qualquer título ou texto em um slug de URL limpo e compatível com SEO — processado 100% localmente no seu navegador.",
+      "h1": "Gerador de Slug de URL para SEO",
+      "subheading": "Transforme qualquer título ou texto em um slug de URL limpo e compatível com SEO instantaneamente.",
+      "keywords": [
+        "gerador de slug",
+        "slugify url",
+        "criador de url amigável para seo"
+      ],
+      "howTo": [
+        {
+          "name": "Digite seu título",
+          "text": "Digite ou cole o título de um post de blog ou qualquer texto."
+        },
+        {
+          "name": "Ajuste as opções",
+          "text": "Defina um comprimento máximo e escolha hífen ou sublinhado como separador."
+        },
+        {
+          "name": "Copie o slug",
+          "text": "O slug pronto para URL é atualizado instantaneamente — copie-o com um clique."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como caracteres acentuados são tratados?",
+          "answer": "Caracteres acentuados e diacríticos são convertidos para seu equivalente ASCII mais próximo (por exemplo, é vira e), para que o slug permaneça seguro para URLs."
+        },
+        {
+          "question": "O que acontece com caracteres especiais e espaços?",
+          "answer": "Eles são substituídos pelo separador escolhido, e vários separadores consecutivos são reduzidos a um só."
+        },
+        {
+          "question": "Meu texto é enviado para algum lugar?",
+          "answer": "Não, a geração do slug acontece totalmente no seu navegador."
+        }
+      ]
+    },
+    "opengraph-generator": {
+      "seoTitle": "Gerador de OpenGraph & Meta Tags – Prévia ao Vivo, Grátis",
+      "metaDescription": "Gere meta tags OpenGraph e do Twitter com uma prévia ao vivo de como seu link vai aparecer no Google, Twitter e Facebook.",
+      "h1": "Gerador de OpenGraph & Meta Tags",
+      "subheading": "Gere meta tags para compartilhamento social com uma prévia ao vivo de como seu link vai aparecer quando compartilhado.",
+      "keywords": [
+        "gerador opengraph",
+        "prévia de meta tags",
+        "criador de card de compartilhamento social"
+      ],
+      "howTo": [
+        {
+          "name": "Preencha os detalhes",
+          "text": "Insira seu título, descrição, URL canônica, nome do site, URL da imagem e usuário do Twitter."
+        },
+        {
+          "name": "Confira as prévias ao vivo",
+          "text": "Veja prévias instantâneas de como seu link vai aparecer na Busca Google, no Twitter e no Facebook."
+        },
+        {
+          "name": "Copie o código",
+          "text": "Copie as meta tags HTML prontas para colar ou um objeto de metadata do Next.js."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Para que servem as tags OpenGraph?",
+          "answer": "Elas controlam como sua página aparece ao ser compartilhada em redes sociais e aplicativos de mensagens — o título, a descrição e a imagem de prévia."
+        },
+        {
+          "question": "Isso funciona com Next.js?",
+          "answer": "Sim, há um botão dedicado para copiar um objeto de exportação de metadata do Next.js pronto para colar, além das meta tags HTML simples."
+        },
+        {
+          "question": "Meus dados são enviados para algum lugar?",
+          "answer": "Não, as prévias e o código gerado são criados totalmente no seu navegador."
+        }
+      ]
+    },
+    "duplicate-line-remover": {
+      "seoTitle": "Removedor de Linhas Duplicadas & Ordenador de Listas – Grátis, Instantâneo",
+      "metaDescription": "Remova linhas duplicadas de uma lista e ordene-a alfabeticamente ou por comprimento — processado 100% localmente no seu navegador.",
+      "h1": "Removedor de Linhas Duplicadas & Ordenador de Listas",
+      "subheading": "Remova linhas duplicadas de uma lista e ordene-a da forma que precisar.",
+      "keywords": [
+        "remover linhas duplicadas",
+        "deduplicar lista",
+        "ordenar lista online"
+      ],
+      "howTo": [
+        {
+          "name": "Cole sua lista",
+          "text": "Cole uma lista com um item por linha."
+        },
+        {
+          "name": "Defina suas opções",
+          "text": "Ative correspondência sem diferenciar maiúsculas/minúsculas, remoção de espaços e remoção de linhas vazias conforme necessário."
+        },
+        {
+          "name": "Ordene e copie",
+          "text": "Escolha uma ordem de classificação e copie a lista limpa."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual linha é mantida quando duplicatas são encontradas?",
+          "answer": "A primeira ocorrência é mantida, com sua capitalização original preservada mesmo no modo sem diferenciação de maiúsculas/minúsculas."
+        },
+        {
+          "question": "Posso ordenar sem remover duplicatas?",
+          "answer": "Sim, ordenação e deduplicação são opções independentes — use uma delas isoladamente ou as duas juntas."
+        },
+        {
+          "question": "Minha lista é enviada para algum lugar?",
+          "answer": "Não, tudo é processado totalmente no seu navegador."
+        }
+      ]
+    },
+    "svg-optimizer": {
+      "seoTitle": "Otimizador de SVG Online – Grátis, Instantâneo, Sem Upload",
+      "metaDescription": "Otimize e limpe marcação SVG removendo comentários, metadados e IDs não usados, e arredondando a precisão dos paths — processado 100% localmente no seu navegador.",
+      "h1": "Otimizador de SVG & Limpador de Paths",
+      "subheading": "Limpe e reduza a marcação SVG removendo comentários, metadados e IDs não usados.",
+      "keywords": [
+        "otimizador de svg",
+        "minificar svg",
+        "limpar paths de svg"
+      ],
+      "howTo": [
+        {
+          "name": "Cole ou envie seu SVG",
+          "text": "Cole a marcação SVG diretamente, ou envie um arquivo .svg."
+        },
+        {
+          "name": "Escolha suas otimizações",
+          "text": "Ative remoção de comentários, limpeza de metadados, remoção de IDs não usados e arredondamento de precisão."
+        },
+        {
+          "name": "Compare e exporte",
+          "text": "Veja o espaço economizado e uma prévia antes/depois, depois copie ou baixe o SVG otimizado."
+        }
+      ],
+      "faq": [
+        {
+          "question": "A otimização muda a aparência do meu SVG?",
+          "answer": "Não, todas as otimizações são visualmente sem perdas — apenas marcação redundante, como comentários, IDs não usados e precisão decimal excessiva, é removida."
+        },
+        {
+          "question": "O que faz 'limpar IDs não usados'?",
+          "answer": "Ele varre o SVG em busca de atributos id que nunca são referenciados em outro lugar (via url(#id) ou href) e os remove, já que IDs não referenciados aumentam o tamanho sem nenhuma utilidade."
+        },
+        {
+          "question": "Meu SVG é enviado para algum lugar?",
+          "answer": "Não, a otimização acontece totalmente no seu navegador."
+        }
+      ]
+    },
+    "screen-recorder": {
+      "seoTitle": "Gravador de Tela Online Grátis – Sem Instalação, Sem Marca d'Água",
+      "metaDescription": "Grave sua tela, uma janela ou uma aba do navegador com áudio de microfone opcional, diretamente no seu navegador — sem instalação, sem marca d'água, sem limite de tempo.",
+      "h1": "Gravador de Tela & Áudio no Navegador",
+      "subheading": "Grave sua tela, uma janela ou uma aba do navegador com áudio de microfone opcional — sem necessidade de instalação.",
+      "keywords": [
+        "gravador de tela online",
+        "gravar tela sem instalar",
+        "captura de tela grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha suas opções",
+          "text": "Ative o áudio do microfone se quiser narrar sua gravação."
+        },
+        {
+          "name": "Inicie a gravação",
+          "text": "Clique em Iniciar Gravação e escolha uma tela, janela ou aba no seletor do seu navegador."
+        },
+        {
+          "name": "Pause, retome ou pare",
+          "text": "Controle a gravação com pausar/retomar, e pare quando terminar."
+        },
+        {
+          "name": "Visualize e baixe",
+          "text": "Visualize a gravação instantaneamente e baixe-a como arquivo de vídeo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Há limite de tempo ou marca d'água?",
+          "answer": "Não, as gravações não têm limite de tempo artificial nem marca d'água — isso usa diretamente a API de gravação nativa do seu navegador."
+        },
+        {
+          "question": "Minha gravação é enviada para algum lugar?",
+          "answer": "Não, a gravação e o processamento acontecem totalmente no seu dispositivo — nada é enviado a um servidor."
+        },
+        {
+          "question": "Posso gravar com áudio?",
+          "answer": "Sim, você pode incluir seu microfone, e o áudio da aba compartilhada é capturado automaticamente quando suportado pelo seu navegador."
+        }
+      ]
+    },
+    "wcag-contrast-checker": {
+      "seoTitle": "Verificador de Contraste de Cores WCAG – Grátis, Preciso, Instantâneo",
+      "metaDescription": "Verifique se suas cores de texto e fundo atendem aos requisitos de contraste de acessibilidade WCAG AA e AAA — processado 100% localmente no seu navegador.",
+      "h1": "Verificador de Contraste de Cores WCAG",
+      "subheading": "Verifique se suas cores de texto e fundo atendem aos requisitos de contraste de acessibilidade WCAG.",
+      "keywords": [
+        "verificador de contraste de cores",
+        "conformidade wcag",
+        "cores acessíveis"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha suas cores",
+          "text": "Selecione ou digite uma cor de primeiro plano (texto) e uma cor de fundo."
+        },
+        {
+          "name": "Verifique a proporção",
+          "text": "Veja a proporção exata de contraste e se ela passa nos limites AA e AAA."
+        },
+        {
+          "name": "Visualize a legibilidade",
+          "text": "Veja um texto de exemplo ao vivo renderizado nas cores escolhidas em tamanhos normal e grande."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como a proporção de contraste é calculada?",
+          "answer": "Usando a fórmula oficial de luminância relativa da WCAG 2.x, que aplica correção gama a cada canal de cor antes de ponderá-lo pela percepção humana de luminância."
+        },
+        {
+          "question": "Qual a diferença entre AA e AAA?",
+          "answer": "AA é o requisito padrão de acessibilidade (4,5:1 para texto normal, 3:1 para texto grande); AAA é um requisito aprimorado mais rigoroso (7:1 e 4,5:1, respectivamente)."
+        },
+        {
+          "question": "O que conta como 'texto grande'?",
+          "answer": "Textos com 18pt ou mais, ou 14pt em negrito, se qualificam para os limites mais flexíveis de texto grande."
+        }
+      ]
+    },
+    "aspect-ratio-calculator": {
+      "seoTitle": "Calculadora de Proporção de Aspecto Online – Grátis & Instantânea",
+      "metaDescription": "Calcule uma largura ou altura escalada que preserve a proporção de aspecto da sua imagem ou vídeo, com predefinições de proporções comuns — instantaneamente no seu navegador.",
+      "h1": "Calculadora de Proporção de Aspecto & Dimensões",
+      "subheading": "Calcule uma largura ou altura escalada que preserve a proporção de aspecto original.",
+      "keywords": [
+        "calculadora de proporção de aspecto",
+        "calculadora 16:9",
+        "escala de dimensão de imagem"
+      ],
+      "howTo": [
+        {
+          "name": "Insira suas dimensões originais",
+          "text": "Informe a largura e a altura originais."
+        },
+        {
+          "name": "Insira uma dimensão desejada",
+          "text": "Informe uma largura ou altura desejada — a outra é atualizada automaticamente para preservar a proporção."
+        },
+        {
+          "name": "Use uma predefinição se precisar",
+          "text": "Clique em uma predefinição de proporção comum, como 16:9 ou 1:1, para aplicá-la instantaneamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como a proporção simplificada é calculada?",
+          "answer": "A largura e a altura são divididas pelo maior divisor comum (MDC) para produzir a proporção mais simples em números inteiros, como 1920×1080 simplificando para 16:9."
+        },
+        {
+          "question": "Posso escalar pela altura em vez da largura?",
+          "answer": "Sim, informar uma altura desejada calcula a largura correspondente, e vice-versa — apenas um campo é editável por vez para manter a proporção travada."
+        },
+        {
+          "question": "Meus dados são enviados para algum lugar?",
+          "answer": "Não, todos os cálculos acontecem totalmente no seu navegador."
+        }
+      ]
+    }
+  },
+  "commandMenu": {
+    "placeholder": "Pesquise ferramentas, formatos ou tarefas…",
+    "empty": "Nenhum resultado encontrado.",
+    "groupTools": "Ferramentas",
+    "groupCategories": "Categorias",
+    "hint": "para pesquisar",
+    "close": "Fechar"
+  },
+  "privacyBadgeExtended": "Processado 100% localmente no seu navegador via WebAssembly (sem envios)",
+  "recentTools": {
+    "heading": "Usados Recentemente",
+    "clearAll": "Limpar histórico"
+  },
+  "toolHistory": {
+    "heading": "Resultados Recentes",
+    "empty": "Seus resultados concluídos aparecerão aqui.",
+    "redownload": "Baixar novamente",
+    "copy": "Copiar",
+    "restore": "Restaurar Entradas",
+    "clear": "Limpar Dados Recentes",
+    "cleared": "Limpo!",
+    "confirmClear": "Limpar todos os resultados recentes desta ferramenta?"
+  },
+  "time": {
+    "justNow": "Agora mesmo",
+    "minutesAgo": "há {count} min",
+    "hoursAgo": "há {count} h",
+    "daysAgo": "há {count} d"
+  }
+}

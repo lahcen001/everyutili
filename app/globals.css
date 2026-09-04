@@ -119,32 +119,53 @@ body {
  * pointer-events: none keeps it from intercepting clicks; z-index: -1 keeps
  * it behind body's own background color, which still shows through the
  * gaps between the gradient blobs.
+ *
+ * Mounted once in the root layout, so this runs continuously on every page
+ * of the site for as long as the tab is open — the drift MUST be genuinely
+ * free (compositor-only), not something the browser keeps repainting.
+ * Animating `background-position` (the old approach) is NOT compositor-only:
+ * it forces a repaint of the gradient every frame, and three color-mix()
+ * radial-gradient layers on a full-viewport fixed element made that a real,
+ * continuous CPU cost site-wide. Fixed by keeping the gradient itself static
+ * (painted once) and animating `transform: translate()` on an oversized
+ * inner layer instead — transform is one of the two properties (with
+ * opacity) browsers can animate purely on the compositor thread, with no
+ * per-frame repaint.
  */
 .bg-site-gradient {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-site-gradient::before {
+  content: "";
+  position: absolute;
+  /* 40% oversized in every direction so the translate drift below never
+     exposes an edge. */
+  inset: -20%;
   background:
     radial-gradient(ellipse 55% 45% at 12% 8%, color-mix(in oklab, var(--primary) 22%, transparent), transparent 70%),
     radial-gradient(ellipse 50% 45% at 88% 15%, color-mix(in oklab, var(--accent-foreground) 16%, transparent), transparent 70%),
     radial-gradient(ellipse 60% 50% at 50% 100%, color-mix(in oklab, var(--primary) 14%, transparent), transparent 70%);
-  background-size: 200% 200%;
   animation: site-gradient-drift 20s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes site-gradient-drift {
   0%,
   100% {
-    background-position: 0% 0%, 100% 0%, 50% 100%;
+    transform: translate3d(0, 0, 0);
   }
   50% {
-    background-position: 10% 10%, 90% 20%, 45% 90%;
+    transform: translate3d(2%, 3%, 0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bg-site-gradient {
+  .bg-site-gradient::before {
     animation: none;
   }
 }

@@ -137,6 +137,21 @@ button {
 /* Gradient shimmer text                                                */
 /* -------------------------------------------------------------------- */
 
+/*
+ * Not currently applied to any element anywhere in this extension. Left
+ * unused rather than deleted in case a future hero-text treatment wants it —
+ * but if you do apply this class, know that animating `background-position`
+ * on a `background-clip: text` element forces a full text-shape repaint
+ * every single frame for as long as the element is visible (not a cheap,
+ * compositor-only animation). That exact pattern caused a real CPU/fan
+ * issue on the main site's ambient gradient (see app/globals.css's
+ * .bg-site-gradient comment) — this extension's own idle-CPU issue was a
+ * different bug (an eagerly-rendered, always-in-DOM drawer full of
+ * backdrop-filter elements — see setDrawerOpen in newtab.js), but this rule
+ * uses the same risky technique and should be converted to a
+ * transform-driven animation (on a wrapping, non-clipped element) before
+ * it's ever actually used.
+ */
 .shimmer-text {
   background: linear-gradient(90deg, var(--text-primary) 0%, var(--primary) 50%, var(--text-primary) 100%);
   background-size: 200% auto;

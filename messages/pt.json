@@ -511,6 +511,310 @@
         }
       ]
     },
+    "svg-to-png": {
+      "seoTitle": "Converter SVG para PNG Online – Grátis e Instantâneo",
+      "metaDescription": "Rasterize ícones e ilustrações SVG para PNG instantaneamente no seu navegador. Defina qualquer largura de saída, transparência preservada. Sem envios, grátis para sempre.",
+      "h1": "Conversor de SVG para PNG",
+      "subheading": "Rasterize arquivos SVG em imagens PNG nítidas em qualquer tamanho — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "svg para png",
+        "converter svg para png",
+        "conversor svg para png",
+        "rasterizar svg online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seus arquivos SVG",
+          "text": "Arraste e solte ou selecione um ou mais arquivos SVG do seu dispositivo."
+        },
+        {
+          "name": "Defina a largura de saída",
+          "text": "Escolha uma largura em pixels — a altura se ajusta automaticamente para manter a proporção do SVG."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o SVG é rasterizado inteiramente no seu navegador no tamanho exato definido."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada PNG individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O PNG vai ficar borrado se meu SVG não tiver tamanho fixo?",
+          "answer": "Não — esta ferramenta sempre renderiza novamente o SVG na largura exata escolhida, então SVGs de ícones sem atributos de largura/altura saem nítidos, sem serem ampliados e borrados."
+        },
+        {
+          "question": "A transparência é preservada?",
+          "answer": "Sim, PNG suporta transparência, então quaisquer áreas transparentes do seu SVG permanecem transparentes no resultado."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
+    "svg-to-jpg": {
+      "seoTitle": "Converter SVG para JPG Online – Grátis e Instantâneo",
+      "metaDescription": "Rasterize ícones e ilustrações SVG para JPG instantaneamente no seu navegador. Defina qualquer largura e qualidade de saída. Sem envios, grátis para sempre.",
+      "h1": "Conversor de SVG para JPG",
+      "subheading": "Rasterize arquivos SVG em imagens JPG compactas em qualquer tamanho — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "svg para jpg",
+        "converter svg para jpg",
+        "conversor svg para jpeg",
+        "rasterizar svg online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seus arquivos SVG",
+          "text": "Arraste e solte ou selecione um ou mais arquivos SVG do seu dispositivo."
+        },
+        {
+          "name": "Defina largura e qualidade",
+          "text": "Escolha uma largura em pixels e a qualidade do JPG — a altura se ajusta automaticamente para manter a proporção do SVG."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o SVG é rasterizado inteiramente no seu navegador no tamanho exato definido."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada JPG individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O que acontece com as áreas transparentes?",
+          "answer": "JPG não suporta transparência, então quaisquer partes transparentes do seu SVG são preenchidas com branco."
+        },
+        {
+          "question": "O JPG vai ficar borrado se meu SVG não tiver tamanho fixo?",
+          "answer": "Não — esta ferramenta sempre renderiza novamente o SVG na largura exata escolhida, então SVGs de ícones sem atributos de largura/altura saem nítidos, sem serem ampliados e borrados."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
+    "svg-to-webp": {
+      "seoTitle": "Converter SVG para WebP Online – Grátis e Instantâneo",
+      "metaDescription": "Rasterize ícones e ilustrações SVG para WebP instantaneamente no seu navegador. Defina qualquer largura de saída, transparência preservada. Sem envios, grátis para sempre.",
+      "h1": "Conversor de SVG para WebP",
+      "subheading": "Rasterize arquivos SVG em imagens WebP compactas em qualquer tamanho — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "svg para webp",
+        "converter svg para webp",
+        "conversor svg para webp",
+        "rasterizar svg online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seus arquivos SVG",
+          "text": "Arraste e solte ou selecione um ou mais arquivos SVG do seu dispositivo."
+        },
+        {
+          "name": "Defina largura e qualidade",
+          "text": "Escolha uma largura em pixels e a qualidade do WebP — a altura se ajusta automaticamente para manter a proporção do SVG."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o SVG é rasterizado inteiramente no seu navegador no tamanho exato definido."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada WebP individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "A transparência é preservada?",
+          "answer": "Sim, WebP suporta transparência, então quaisquer áreas transparentes do seu SVG permanecem transparentes no resultado."
+        },
+        {
+          "question": "O WebP vai ficar borrado se meu SVG não tiver tamanho fixo?",
+          "answer": "Não — esta ferramenta sempre renderiza novamente o SVG na largura exata escolhida, então SVGs de ícones sem atributos de largura/altura saem nítidos, sem serem ampliados e borrados."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
+    "png-to-webp": {
+      "seoTitle": "Converter PNG para WebP Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta imagens PNG para WebP instantaneamente no seu navegador. Arquivos menores, transparência preservada, sem envios ou marcas d'água. Grátis para sempre.",
+      "h1": "Conversor de PNG para WebP",
+      "subheading": "Converta imagens PNG em arquivos WebP compactos — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "png para webp",
+        "converter png para webp",
+        "conversor png para webp",
+        "conversor de imagens online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens PNG",
+          "text": "Arraste e solte ou selecione um ou mais arquivos PNG do seu dispositivo."
+        },
+        {
+          "name": "Ajuste a qualidade",
+          "text": "Defina a qualidade de saída WebP usando o controle deslizante."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o processamento acontece inteiramente no seu navegador."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada WebP individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "A transparência é preservada?",
+          "answer": "Sim, WebP suporta transparência assim como PNG, então as áreas transparentes permanecem intactas durante a conversão."
+        },
+        {
+          "question": "Por que converter PNG para WebP?",
+          "answer": "Arquivos WebP costumam ser 25–35% menores que PNG com a mesma qualidade visual, economizando armazenamento e largura de banda."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
+    "webp-to-png": {
+      "seoTitle": "Converter WebP para PNG Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta imagens WebP para PNG instantaneamente no seu navegador. Compatibilidade universal, transparência preservada, sem envios ou marcas d'água. Grátis para sempre.",
+      "h1": "Conversor de WebP para PNG",
+      "subheading": "Converta imagens WebP em arquivos PNG universalmente compatíveis — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "webp para png",
+        "converter webp para png",
+        "conversor webp para png",
+        "conversor de imagens online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens WebP",
+          "text": "Arraste e solte ou selecione um ou mais arquivos WebP do seu dispositivo."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o processamento acontece inteiramente no seu navegador."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada PNG individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que converter WebP para PNG?",
+          "answer": "Alguns softwares mais antigos, clientes de e-mail e editores de imagem não suportam WebP — converter para PNG garante que o arquivo abra em qualquer lugar."
+        },
+        {
+          "question": "A transparência é preservada?",
+          "answer": "Sim, PNG suporta transparência assim como WebP, então as áreas transparentes permanecem intactas durante a conversão."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
+    "webp-to-jpg": {
+      "seoTitle": "Converter WebP para JPG Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta imagens WebP para JPG instantaneamente no seu navegador. Compatibilidade universal, sem envios ou marcas d'água. Grátis para sempre.",
+      "h1": "Conversor de WebP para JPG",
+      "subheading": "Converta imagens WebP em arquivos JPG universalmente compatíveis — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "webp para jpg",
+        "converter webp para jpg",
+        "conversor webp para jpeg",
+        "conversor de imagens online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens WebP",
+          "text": "Arraste e solte ou selecione um ou mais arquivos WebP do seu dispositivo."
+        },
+        {
+          "name": "Ajuste a qualidade",
+          "text": "Defina a qualidade de saída JPG usando o controle deslizante."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o processamento acontece inteiramente no seu navegador."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada JPG individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que converter WebP para JPG?",
+          "answer": "Alguns softwares mais antigos, câmeras e fluxos de impressão não suportam WebP — converter para JPG garante compatibilidade em qualquer lugar."
+        },
+        {
+          "question": "O que acontece com a transparência?",
+          "answer": "JPG não suporta transparência, então as áreas transparentes são preenchidas com branco durante a conversão."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
+    "jpg-to-webp": {
+      "seoTitle": "Converter JPG para WebP Online – 100% Grátis e Seguro",
+      "metaDescription": "Converta imagens JPG para WebP instantaneamente no seu navegador. Arquivos menores, mesma qualidade, sem envios ou marcas d'água. Grátis para sempre.",
+      "h1": "Conversor de JPG para WebP",
+      "subheading": "Converta imagens JPG em arquivos WebP compactos — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "jpg para webp",
+        "converter jpg para webp",
+        "conversor jpeg para webp",
+        "conversor de imagens online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens JPG",
+          "text": "Arraste e solte ou selecione um ou mais arquivos JPG do seu dispositivo."
+        },
+        {
+          "name": "Ajuste a qualidade",
+          "text": "Defina a qualidade de saída WebP usando o controle deslizante."
+        },
+        {
+          "name": "Converta localmente",
+          "text": "Clique em Converter tudo — o processamento acontece inteiramente no seu navegador."
+        },
+        {
+          "name": "Baixe seus arquivos",
+          "text": "Salve cada WebP individualmente ou baixe todos como um arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que converter JPG para WebP?",
+          "answer": "Arquivos WebP costumam ser 25–35% menores que JPG com a mesma qualidade visual, economizando armazenamento e largura de banda."
+        },
+        {
+          "question": "A qualidade da imagem vai piorar?",
+          "answer": "Na qualidade padrão, a diferença costuma ser imperceptível — você pode aumentar o controle de qualidade para um resultado ainda mais próximo do original."
+        },
+        {
+          "question": "Esta conversão é privada?",
+          "answer": "Sim, tudo acontece localmente no seu navegador — nenhum arquivo é enviado."
+        }
+      ]
+    },
     "base64-image-encoder": {
       "seoTitle": "Codificador e Decodificador de Imagens Base64 – Ferramenta Online Grátis",
       "metaDescription": "Converta imagens em URLs de dados Base64 e vice-versa, instantaneamente no seu navegador. Perfeito para incorporar imagens em CSS ou HTML. 100% grátis e privado.",
@@ -2667,6 +2971,535 @@
         {
           "question": "Meus dados são enviados para algum lugar?",
           "answer": "Não, todos os cálculos acontecem totalmente no seu navegador."
+        }
+      ]
+    },
+    "screen-studio": {
+      "seoTitle": "Gravador de Tela com Webcam – Grátis, Sem Marca d'Água",
+      "metaDescription": "Grave sua tela com uma webcam em picture-in-picture opcional e áudio do microfone, diretamente no seu navegador. Visualizador de áudio ao vivo, pausar/retomar, sem instalação.",
+      "h1": "Gravador de Tela & Webcam Studio",
+      "subheading": "Grave sua tela com uma sobreposição de webcam em picture-in-picture e áudio do microfone — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "gravador de tela com webcam",
+        "gravação com sobreposição de webcam",
+        "gravador screen studio",
+        "gravação de tela picture in picture"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha suas fontes",
+          "text": "Ative ou desative o áudio do microfone e a webcam em picture-in-picture."
+        },
+        {
+          "name": "Inicie a gravação",
+          "text": "Clique em Iniciar Gravação e escolha uma tela, janela ou aba no seletor do seu navegador."
+        },
+        {
+          "name": "Acompanhe o visualizador ao vivo",
+          "text": "Uma barra de nível de áudio mostra a entrada do seu microfone durante a gravação."
+        },
+        {
+          "name": "Pare e baixe",
+          "text": "Visualize a gravação composta e baixe-a como arquivo de vídeo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "A sobreposição da webcam deixa a gravação mais lenta?",
+          "answer": "Não, a webcam e a tela são combinadas em tempo real em um canvas usando a GPU do seu dispositivo — não há uma etapa de renderização separada."
+        },
+        {
+          "question": "Minha gravação é enviada para algum lugar?",
+          "answer": "Não, a gravação, a composição e a codificação acontecem inteiramente no seu dispositivo — nada é enviado a um servidor."
+        },
+        {
+          "question": "Posso reposicionar o círculo da webcam?",
+          "answer": "Por enquanto a webcam aparece como um círculo fixo no canto inferior direito, dimensionado para não atrapalhar a maior parte do conteúdo."
+        }
+      ]
+    },
+    "screen-to-gif": {
+      "seoTitle": "Gravador de Tela para GIF Animado – Grátis, Sem Envio",
+      "metaDescription": "Grave sua tela e exporte diretamente como GIF animado, tudo no seu navegador. Escolha taxa de quadros e duração — sem instalação, sem marca d'água.",
+      "h1": "Tela para GIF Animado",
+      "subheading": "Grave sua tela e exporte como GIF animado — codificado 100% localmente no seu navegador.",
+      "keywords": [
+        "gravador de tela para gif",
+        "gravar tela como gif",
+        "captura de tela em gif",
+        "converter gravação de tela em gif"
+      ],
+      "howTo": [
+        {
+          "name": "Defina taxa de quadros e duração",
+          "text": "Escolha uma taxa de quadros (5–15 fps) e uma duração máxima de gravação."
+        },
+        {
+          "name": "Inicie a gravação",
+          "text": "Clique em Iniciar Gravação e escolha uma tela, janela ou aba para capturar."
+        },
+        {
+          "name": "Pare e codifique",
+          "text": "A gravação para automaticamente ao atingir a duração máxima, ou clique em Parar — então o GIF é codificado localmente."
+        },
+        {
+          "name": "Visualize e baixe",
+          "text": "Visualize o GIF animado e baixe-o."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que há uma duração máxima de gravação?",
+          "answer": "GIFs animados armazenam cada quadro de forma menos compacta que os codecs de vídeo, então o tamanho do arquivo e o tempo de codificação crescem rapidamente — limitar a duração mantém as exportações rápidas e gerenciáveis."
+        },
+        {
+          "question": "Por que uma taxa de quadros mais baixa gera um arquivo menor?",
+          "answer": "Menos quadros significam menos dados para codificar e armazenar, ao custo de um movimento menos suave — 8–10 fps é um bom equilíbrio para a maioria das gravações de tela."
+        },
+        {
+          "question": "Isso é enviado para algum lugar?",
+          "answer": "Não, a captura de tela e a codificação do GIF acontecem inteiramente no seu dispositivo."
+        }
+      ]
+    },
+    "audio-recorder": {
+      "seoTitle": "Gravador de Voz e Memorandos de Áudio Online – Grátis e Privado",
+      "metaDescription": "Grave memorandos de voz e clipes de áudio diretamente no seu navegador com um medidor de nível ao vivo. Grave várias gravações, reproduza e baixe — sem envio, sem cadastro.",
+      "h1": "Gravador de Voz & Memorandos de Áudio",
+      "subheading": "Grave memorandos de voz com um medidor de nível de áudio ao vivo — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "gravador de voz online",
+        "gravador de memorandos de áudio",
+        "gravar áudio no navegador",
+        "gravador de microfone grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Permita o acesso ao microfone",
+          "text": "Clique em Iniciar Gravação e permita o acesso ao microfone quando seu navegador solicitar."
+        },
+        {
+          "name": "Acompanhe o medidor de nível",
+          "text": "Um visualizador de áudio ao vivo mostra o nível de entrada durante a gravação."
+        },
+        {
+          "name": "Pause, retome ou pare",
+          "text": "Controle a gravação e pare para salvá-la como uma gravação."
+        },
+        {
+          "name": "Grave mais tomadas",
+          "text": "Grave quantas tomadas quiser em uma sessão, depois reproduza, baixe ou exclua cada uma."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso gravar várias tomadas?",
+          "answer": "Sim, cada gravação é salva como uma tomada separada na sua sessão para que você possa comparar, baixar ou excluí-las individualmente."
+        },
+        {
+          "question": "Em qual formato de áudio o arquivo é baixado?",
+          "answer": "As gravações são baixadas como arquivo de áudio WebM usando o codificador Opus nativo do seu navegador — tamanho de arquivo pequeno com boa qualidade de voz."
+        },
+        {
+          "question": "Minha gravação é enviada para algum lugar?",
+          "answer": "Não, a gravação acontece inteiramente no seu dispositivo — nada é enviado a um servidor."
+        }
+      ]
+    },
+    "screenshot-beautifier": {
+      "seoTitle": "Embelezador de Screenshots & Moldura de Mockup – Ferramenta Online Grátis",
+      "metaDescription": "Adicione uma moldura de janela macOS ou Windows, espaçamento, cantos arredondados, sombra e fundo a qualquer screenshot — instantaneamente no seu navegador. Exporte em PNG ou WebP em até 4x.",
+      "h1": "Embelezador de Screenshots & Moldura de Mockup",
+      "subheading": "Emoldure seus screenshots com barras de janela realistas, espaçamento e fundos — renderizado 100% localmente no seu navegador.",
+      "keywords": [
+        "embelezador de screenshot",
+        "gerador de mockup de screenshot",
+        "moldura de janela macos para screenshot",
+        "embelezar screenshot online"
+      ],
+      "howTo": [
+        {
+          "name": "Adicione seu screenshot",
+          "text": "Arraste e solte uma imagem, clique para procurar, ou cole diretamente com Ctrl+V."
+        },
+        {
+          "name": "Escolha um tema de janela",
+          "text": "Escolha macOS, Windows 11, vidro (glass), ou nenhuma moldura de janela."
+        },
+        {
+          "name": "Ajuste espaçamento, cantos e sombra",
+          "text": "Ajuste com precisão o espaçamento, o raio dos cantos e a profundidade da sombra com os controles deslizantes."
+        },
+        {
+          "name": "Exporte",
+          "text": "Escolha PNG ou WebP e uma escala de exportação de até 4x, depois baixe."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais escalas de exportação estão disponíveis?",
+          "answer": "Você pode exportar em resolução 1x, 2x ou 4x — escalas maiores são ideais para telas retina e impressão."
+        },
+        {
+          "question": "Isso envia meu screenshot para algum lugar?",
+          "answer": "Não, toda a composição é renderizada em um canvas HTML5 no seu navegador — nada é enviado."
+        },
+        {
+          "question": "Posso colar um screenshot diretamente da área de transferência?",
+          "answer": "Sim, depois de copiar um screenshot basta pressionar Ctrl+V (ou Cmd+V no Mac) em qualquer lugar da página."
+        }
+      ]
+    },
+    "image-annotator": {
+      "seoTitle": "Anotador de Imagens & Pixelização para Redação – Ferramenta Online Grátis",
+      "metaDescription": "Anote screenshots com setas, caixas, texto e marcadores numerados, ou oculte informações sensíveis com um pincel de pixelização — tudo no seu navegador.",
+      "h1": "Anotador de Imagens & Pixelização para Redação",
+      "subheading": "Marque imagens com setas, formas, texto e marcadores numerados, ou oculte detalhes privados com pixelização — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "ferramenta de anotação de imagens",
+        "anotador de screenshot",
+        "pixelizar imagem online",
+        "ocultar informações em imagem",
+        "borrar dados sensíveis em screenshot"
+      ],
+      "howTo": [
+        {
+          "name": "Adicione sua imagem",
+          "text": "Arraste e solte uma imagem, clique para procurar, ou cole diretamente com Ctrl+V."
+        },
+        {
+          "name": "Escolha uma ferramenta",
+          "text": "Escolha seta, retângulo, texto, contador numerado, caneta livre ou o pincel de pixelização para ocultar informações."
+        },
+        {
+          "name": "Desenhe no canvas",
+          "text": "Clique e arraste para desenhar formas, ou clique uma vez para posicionar texto e contadores."
+        },
+        {
+          "name": "Desfaça, refaça e exporte",
+          "text": "Ajuste com desfazer/refazer conforme necessário, depois exporte um PNG limpo e finalizado."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como funciona a ferramenta de pixelização?",
+          "answer": "Arraste sobre qualquer área para pixelizá-la permanentemente em um tamanho de bloco fixo — ideal para ocultar e-mails, nomes ou outros detalhes sensíveis antes de compartilhar um screenshot."
+        },
+        {
+          "question": "Posso desfazer um erro?",
+          "answer": "Sim, use Desfazer/Refazer (ou Ctrl+Z / Ctrl+Shift+Z) para navegar para trás e para frente no histórico de anotações."
+        },
+        {
+          "question": "Minha imagem é enviada para algum lugar?",
+          "answer": "Não, todo o desenho e a redação acontecem em um canvas HTML5 no seu navegador — nada é enviado."
+        }
+      ]
+    },
+    "image-filters": {
+      "seoTitle": "Filtros de Imagem em Canvas & Correção de Cor – Ferramenta Online Grátis",
+      "metaDescription": "Ajuste brilho, contraste, saturação, matiz e mais, ou aplique visuais predefinidos com um clique, como Vívido, P&B e Vintage — instantaneamente no seu navegador.",
+      "h1": "Filtros de Imagem em Canvas & Correção de Cor",
+      "subheading": "Ajuste com precisão brilho, contraste, saturação e cor, ou aplique um visual predefinido — renderizado 100% localmente no seu navegador.",
+      "keywords": [
+        "editor de filtros de imagem online",
+        "ferramenta de correção de cor de fotos",
+        "ajustar brilho contraste online",
+        "filtro de foto vintage online"
+      ],
+      "howTo": [
+        {
+          "name": "Envie sua imagem",
+          "text": "Arraste e solte uma imagem, clique para procurar, ou cole diretamente com Ctrl+V."
+        },
+        {
+          "name": "Escolha um predefinido ou ajuste manualmente",
+          "text": "Aplique um visual com um clique, ou ajuste com precisão brilho, contraste, saturação, matiz e mais."
+        },
+        {
+          "name": "Visualize ao vivo",
+          "text": "Veja as alterações aplicadas instantaneamente no canvas ao ajustar cada controle deslizante."
+        },
+        {
+          "name": "Exporte",
+          "text": "Baixe a imagem filtrada como PNG ou WebP em resolução total."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais visuais predefinidos estão disponíveis?",
+          "answer": "Vívido, preto e branco, vintage/sépia, frio e quente — cada um ajusta vários controles de uma vez, que você ainda pode refinar depois."
+        },
+        {
+          "question": "Isso reduz a qualidade da imagem?",
+          "answer": "Não, os filtros são aplicados na resolução original completa e exportados sem perdas (PNG) ou em alta qualidade (WebP)."
+        },
+        {
+          "question": "Minha imagem é enviada para algum lugar?",
+          "answer": "Não, todo filtro é aplicado em um canvas HTML5 no seu navegador — nada é enviado."
+        }
+      ]
+    },
+    "watermark-maker": {
+      "seoTitle": "Marca d'Água em Lote para Imagens – Ferramenta Online Grátis",
+      "metaDescription": "Adicione uma marca d'água de texto ou logo a várias imagens de uma vez, com posição, opacidade e tamanho personalizados — processado localmente, baixe tudo como ZIP.",
+      "h1": "Marca d'Água em Lote para Imagens",
+      "subheading": "Aplique uma marca d'água de texto ou logo a várias imagens de uma vez — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "marca d'água em lote para imagens",
+        "adicionar marca d'água online grátis",
+        "ferramenta de marca d'água com logo",
+        "marca d'água em massa para imagens"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas imagens",
+          "text": "Arraste e solte uma ou mais imagens para aplicar a marca d'água."
+        },
+        {
+          "name": "Configure sua marca d'água",
+          "text": "Digite um texto ou envie um logo, depois ajuste sua posição, tamanho e opacidade."
+        },
+        {
+          "name": "Aplique a todas",
+          "text": "Clique em Aplicar a todas para adicionar a marca d'água em cada imagem da fila, no seu navegador."
+        },
+        {
+          "name": "Baixe",
+          "text": "Baixe cada resultado individualmente ou como um único arquivo ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso usar um logo em vez de texto?",
+          "answer": "Sim, envie qualquer imagem como sua marca d'água e ajuste sua escala e opacidade de forma independente das marcas d'água de texto."
+        },
+        {
+          "question": "Quantas imagens posso marcar de uma vez?",
+          "answer": "Não há limite artificial — o tamanho do lote é limitado apenas pela memória do seu dispositivo."
+        },
+        {
+          "question": "Minhas imagens são enviadas para algum lugar?",
+          "answer": "Não, cada imagem recebe a marca d'água localmente em um canvas no seu navegador — nada é enviado."
+        }
+      ]
+    },
+    "image-collage": {
+      "seoTitle": "Criador de Colagens & Grade de Fotos – Ferramenta Online Grátis",
+      "metaDescription": "Combine várias fotos em uma colagem em grade com espaçamento, arredondamento de cantos e cor de fundo ajustáveis — instantaneamente no seu navegador.",
+      "h1": "Criador de Colagens & Grade de Fotos",
+      "subheading": "Organize várias fotos em uma colagem em grade — composta 100% localmente no seu navegador.",
+      "keywords": [
+        "criador de colagem de fotos online",
+        "criador de grade de fotos",
+        "combinar fotos em uma imagem",
+        "criador de colagem grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Envie suas fotos",
+          "text": "Arraste e solte as imagens que deseja incluir na sua colagem."
+        },
+        {
+          "name": "Escolha um layout de grade",
+          "text": "Escolha um layout predefinido — de uma simples grade 2x2 a arranjos maiores com várias fotos."
+        },
+        {
+          "name": "Reordene e estilize",
+          "text": "Arraste para reordenar qual foto vai em qual célula, depois ajuste espaçamento, raio dos cantos e cor de fundo."
+        },
+        {
+          "name": "Exporte",
+          "text": "Baixe sua colagem finalizada como PNG ou WebP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso controlar qual foto fica em qual lugar?",
+          "answer": "Sim, arraste as miniaturas das fotos para reordená-las — a grade é atualizada ao vivo conforme a ordem escolhida."
+        },
+        {
+          "question": "Quais layouts de grade estão disponíveis?",
+          "answer": "Vários predefinidos estão disponíveis, de divisões simples com 2 fotos a grades 3x3 e layouts mistos de células grandes e pequenas."
+        },
+        {
+          "question": "Minhas fotos são enviadas para algum lugar?",
+          "answer": "Não, toda a colagem é composta em um canvas HTML5 no seu navegador — nada é enviado."
+        }
+      ]
+    },
+    "video-trimmer": {
+      "seoTitle": "Cortador de Vídeo Online – Grátis, Sem Marca d'Água",
+      "metaDescription": "Corte vídeos MP4, WebM ou MOV com uma linha do tempo visual e marcações de tempo exatas — tudo no seu navegador. Sem envio, sem marca d'água.",
+      "h1": "Cortador de Vídeo",
+      "subheading": "Corte seu vídeo exatamente no trecho que você precisa — cortado 100% localmente no seu navegador.",
+      "keywords": [
+        "cortador de vídeo online",
+        "cortar vídeo online grátis",
+        "cortar vídeo sem marca d'água",
+        "cortador de vídeo no navegador"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu vídeo",
+          "text": "Arraste e solte um arquivo MP4, WebM ou MOV."
+        },
+        {
+          "name": "Defina o intervalo de corte",
+          "text": "Arraste as alças da linha do tempo ou digite marcações exatas de início/fim."
+        },
+        {
+          "name": "Visualize a seleção",
+          "text": "Reproduza em loop apenas o intervalo selecionado antes de exportar."
+        },
+        {
+          "name": "Corte e baixe",
+          "text": "Clique em Cortar e Exportar, depois baixe o clipe resultante."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais formatos de vídeo são suportados?",
+          "answer": "Você pode enviar arquivos MP4, WebM ou MOV — o resultado cortado é baixado como vídeo WebM."
+        },
+        {
+          "question": "Há um limite de duração?",
+          "answer": "Não há limite artificial — a velocidade do corte e o uso de memória dependem do seu dispositivo e da duração do vídeo original."
+        },
+        {
+          "question": "Meu vídeo é enviado para algum lugar?",
+          "answer": "Não, o corte acontece inteiramente no seu dispositivo, regravando localmente o intervalo selecionado — nada é enviado."
+        }
+      ]
+    },
+    "video-to-gif": {
+      "seoTitle": "Conversor de Vídeo para GIF – Grátis, Sem Marca d'Água",
+      "metaDescription": "Converta um trecho de qualquer vídeo MP4, WebM ou MOV em um GIF animado, com taxa de quadros e tamanho ajustáveis — tudo no seu navegador.",
+      "h1": "Conversor de Vídeo para GIF",
+      "subheading": "Transforme qualquer trecho de vídeo em um GIF animado — codificado 100% localmente no seu navegador.",
+      "keywords": [
+        "conversor de vídeo para gif",
+        "converter mp4 para gif online",
+        "mp4 para gif grátis",
+        "criar gif a partir de vídeo"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu vídeo",
+          "text": "Arraste e solte um arquivo MP4, WebM ou MOV."
+        },
+        {
+          "name": "Selecione seu trecho",
+          "text": "Defina o tempo de início e fim da seção que você quer transformar em GIF."
+        },
+        {
+          "name": "Escolha taxa de quadros e tamanho",
+          "text": "Escolha uma taxa de quadros de saída e a largura máxima para controlar o tamanho do arquivo."
+        },
+        {
+          "name": "Converta e baixe",
+          "text": "Converta localmente, depois visualize e baixe seu GIF animado."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Por que meu GIF tem uma opção de largura máxima?",
+          "answer": "GIFs na resolução total do vídeo ficam enormes muito rápido — reduzir para 320–640px mantém o tamanho do arquivo e o tempo de codificação razoáveis, sem perder nitidez."
+        },
+        {
+          "question": "Posso converter apenas parte de um vídeo?",
+          "answer": "Sim, defina um tempo de início e fim para converter apenas o trecho que você quer, em vez do vídeo inteiro."
+        },
+        {
+          "question": "Meu vídeo é enviado para algum lugar?",
+          "answer": "Não, a extração de quadros e a codificação do GIF acontecem inteiramente no seu dispositivo."
+        }
+      ]
+    },
+    "video-audio-remover": {
+      "seoTitle": "Silenciador de Vídeo & Extrator de Áudio – Ferramenta Online Grátis",
+      "metaDescription": "Silencie a faixa de áudio de um vídeo, ou extraia apenas o áudio como um arquivo separado — tudo no seu navegador. Sem envio, sem marca d'água.",
+      "h1": "Silenciador de Vídeo & Extrator de Áudio",
+      "subheading": "Remova o áudio de um vídeo ou extraia-o como um arquivo próprio — processado 100% localmente no seu navegador.",
+      "keywords": [
+        "remover áudio de vídeo online",
+        "silenciar vídeo online grátis",
+        "extrair áudio de vídeo",
+        "conversor de vídeo para áudio"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu vídeo",
+          "text": "Arraste e solte um arquivo MP4, WebM ou MOV."
+        },
+        {
+          "name": "Escolha silenciar ou extrair",
+          "text": "Escolha entre gerar um vídeo silencioso ou extrair apenas a faixa de áudio."
+        },
+        {
+          "name": "Processe localmente",
+          "text": "A reprodução acontece uma vez no seu navegador enquanto o novo arquivo é gerado."
+        },
+        {
+          "name": "Baixe",
+          "text": "Visualize o resultado, depois baixe o vídeo silenciado ou o arquivo de áudio extraído."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual é a diferença entre silenciar e extrair?",
+          "answer": "Silenciar mantém o vídeo completo, mas remove o som; extrair descarta o vídeo e salva apenas a faixa de áudio como um arquivo próprio."
+        },
+        {
+          "question": "Em qual formato o áudio extraído é salvo?",
+          "answer": "O áudio extraído é baixado como arquivo de áudio WebM usando o codificador Opus nativo do seu navegador."
+        },
+        {
+          "question": "Meu vídeo é enviado para algum lugar?",
+          "answer": "Não, tanto o silenciamento quanto a extração de áudio acontecem inteiramente no seu dispositivo — nada é enviado a um servidor."
+        }
+      ]
+    },
+    "video-speed": {
+      "seoTitle": "Controlador de Velocidade de Vídeo – Câmera Lenta e Acelerado, Grátis",
+      "metaDescription": "Diminua ou aumente a velocidade de qualquer vídeo de 0.25x a 4x, visualize instantaneamente e exporte o resultado — tudo no seu navegador. Sem envio, sem marca d'água.",
+      "h1": "Controlador de Velocidade de Vídeo",
+      "subheading": "Diminua a velocidade do seu vídeo para um efeito dramático, ou acelere-o para economizar tempo — renderizado 100% localmente no seu navegador.",
+      "keywords": [
+        "alterador de velocidade de vídeo online",
+        "vídeo em câmera lenta online grátis",
+        "acelerar vídeo online",
+        "conversor de vídeo acelerado"
+      ],
+      "howTo": [
+        {
+          "name": "Envie seu vídeo",
+          "text": "Arraste e solte um arquivo MP4, WebM ou MOV."
+        },
+        {
+          "name": "Escolha uma velocidade",
+          "text": "Escolha um predefinido de 0.25x em câmera lenta até 4x acelerado, ou defina um valor personalizado."
+        },
+        {
+          "name": "Visualize instantaneamente",
+          "text": "O vídeo é reproduzido na nova velocidade imediatamente, antes de você exportar qualquer coisa."
+        },
+        {
+          "name": "Exporte e baixe",
+          "text": "Renderize o resultado acelerado ou desacelerado e baixe-o."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O áudio permanece sincronizado?",
+          "answer": "Sim, em faixas de velocidade típicas o áudio é reamostrado junto com o vídeo para que tom e sincronia se mantenham; em velocidades extremas o clipe exportado pode ficar sem áudio."
+        },
+        {
+          "question": "Qual faixa de velocidade é suportada?",
+          "answer": "De 0.25x (câmera lenta) até 4x (acelerado), com predefinidos comuns e uma opção personalizada entre eles."
+        },
+        {
+          "question": "Meu vídeo é enviado para algum lugar?",
+          "answer": "Não, as mudanças de velocidade são renderizadas inteiramente no seu dispositivo, regravando a reprodução localmente — nada é enviado."
         }
       ]
     }

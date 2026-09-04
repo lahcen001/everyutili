@@ -48,7 +48,20 @@ self.onmessage = async (event: MessageEvent<ImageConvertRequest>) => {
   const { id, file, format, quality, maxWidth, exactWidth, exactHeight } = event.data;
 
   try {
-    const bitmap = await createImageBitmap(file);
+    // For an exact target size (the resizer, and SVG rasterization where the
+    // source has no fixed pixel dimensions), decode directly at that
+    // resolution via createImageBitmap's own resize options rather than
+    // decoding at the source's default size and scaling afterward — for a
+    // vector source (SVG) this re-rasterizes crisply at the target size
+    // instead of upscaling a blurry small bitmap.
+    const bitmap =
+      exactWidth && exactHeight
+        ? await createImageBitmap(file, {
+            resizeWidth: exactWidth,
+            resizeHeight: exactHeight,
+            resizeQuality: "high",
+          })
+        : await createImageBitmap(file);
 
     let { width, height } = bitmap;
     if (exactWidth && exactHeight) {

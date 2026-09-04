@@ -511,6 +511,310 @@
         }
       ]
     },
+    "svg-to-png": {
+      "seoTitle": "Konversi SVG ke PNG Online – Gratis & Instan",
+      "metaDescription": "Rasterisasi ikon dan ilustrasi SVG ke PNG secara instan di browser Anda. Atur lebar output apa pun, transparansi tetap terjaga. Tanpa unggah, gratis selamanya.",
+      "h1": "Konverter SVG ke PNG",
+      "subheading": "Rasterisasi file SVG menjadi gambar PNG tajam dengan ukuran berapa pun — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "svg ke png",
+        "konversi svg ke png",
+        "konverter svg ke png",
+        "rasterisasi svg online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah file SVG Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file SVG dari perangkat Anda."
+        },
+        {
+          "name": "Atur lebar output",
+          "text": "Pilih lebar dalam piksel — tinggi akan menyesuaikan secara otomatis mengikuti rasio aspek SVG."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — SVG dirasterisasi sepenuhnya di browser Anda pada ukuran persis yang Anda tentukan."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap PNG satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah PNG akan terlihat buram jika SVG saya tidak memiliki ukuran tetap?",
+          "answer": "Tidak — alat ini selalu merender ulang SVG pada lebar persis yang Anda pilih, sehingga SVG berupa ikon tanpa atribut lebar/tinggi tetap terlihat tajam, bukan diperbesar dan buram."
+        },
+        {
+          "question": "Apakah transparansi tetap terjaga?",
+          "answer": "Ya, PNG mendukung transparansi, sehingga area transparan pada SVG Anda tetap transparan pada hasilnya."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
+    "svg-to-jpg": {
+      "seoTitle": "Konversi SVG ke JPG Online – Gratis & Instan",
+      "metaDescription": "Rasterisasi ikon dan ilustrasi SVG ke JPG secara instan di browser Anda. Atur lebar output dan kualitas apa pun. Tanpa unggah, gratis selamanya.",
+      "h1": "Konverter SVG ke JPG",
+      "subheading": "Rasterisasi file SVG menjadi gambar JPG ringkas dengan ukuran berapa pun — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "svg ke jpg",
+        "konversi svg ke jpg",
+        "konverter svg ke jpeg",
+        "rasterisasi svg online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah file SVG Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file SVG dari perangkat Anda."
+        },
+        {
+          "name": "Atur lebar dan kualitas",
+          "text": "Pilih lebar dalam piksel dan kualitas JPG — tinggi akan menyesuaikan secara otomatis mengikuti rasio aspek SVG."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — SVG dirasterisasi sepenuhnya di browser Anda pada ukuran persis yang Anda tentukan."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap JPG satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa yang terjadi pada area transparan?",
+          "answer": "JPG tidak mendukung transparansi, jadi bagian transparan pada SVG Anda akan diisi dengan warna putih."
+        },
+        {
+          "question": "Apakah JPG akan terlihat buram jika SVG saya tidak memiliki ukuran tetap?",
+          "answer": "Tidak — alat ini selalu merender ulang SVG pada lebar persis yang Anda pilih, sehingga SVG berupa ikon tanpa atribut lebar/tinggi tetap terlihat tajam, bukan diperbesar dan buram."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
+    "svg-to-webp": {
+      "seoTitle": "Konversi SVG ke WebP Online – Gratis & Instan",
+      "metaDescription": "Rasterisasi ikon dan ilustrasi SVG ke WebP secara instan di browser Anda. Atur lebar output apa pun, transparansi tetap terjaga. Tanpa unggah, gratis selamanya.",
+      "h1": "Konverter SVG ke WebP",
+      "subheading": "Rasterisasi file SVG menjadi gambar WebP ringkas dengan ukuran berapa pun — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "svg ke webp",
+        "konversi svg ke webp",
+        "konverter svg ke webp",
+        "rasterisasi svg online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah file SVG Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file SVG dari perangkat Anda."
+        },
+        {
+          "name": "Atur lebar dan kualitas",
+          "text": "Pilih lebar dalam piksel dan kualitas WebP — tinggi akan menyesuaikan secara otomatis mengikuti rasio aspek SVG."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — SVG dirasterisasi sepenuhnya di browser Anda pada ukuran persis yang Anda tentukan."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap WebP satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah transparansi tetap terjaga?",
+          "answer": "Ya, WebP mendukung transparansi, sehingga area transparan pada SVG Anda tetap transparan pada hasilnya."
+        },
+        {
+          "question": "Apakah WebP akan terlihat buram jika SVG saya tidak memiliki ukuran tetap?",
+          "answer": "Tidak — alat ini selalu merender ulang SVG pada lebar persis yang Anda pilih, sehingga SVG berupa ikon tanpa atribut lebar/tinggi tetap terlihat tajam, bukan diperbesar dan buram."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
+    "png-to-webp": {
+      "seoTitle": "Konversi PNG ke WebP Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi gambar PNG ke WebP secara instan di browser Anda. Ukuran file lebih kecil, transparansi tetap terjaga, tanpa unggah atau watermark. Gratis selamanya.",
+      "h1": "Konverter PNG ke WebP",
+      "subheading": "Konversi gambar PNG menjadi file WebP yang ringkas — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "png ke webp",
+        "konversi png ke webp",
+        "konverter png ke webp",
+        "konverter gambar online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar PNG Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file PNG dari perangkat Anda."
+        },
+        {
+          "name": "Sesuaikan kualitas",
+          "text": "Atur kualitas output WebP menggunakan penggeser."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — pemrosesan terjadi sepenuhnya di browser Anda."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap WebP satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah transparansi tetap terjaga?",
+          "answer": "Ya, WebP mendukung transparansi sama seperti PNG, sehingga area transparan tetap utuh selama konversi."
+        },
+        {
+          "question": "Mengapa mengonversi PNG ke WebP?",
+          "answer": "File WebP biasanya 25-35% lebih kecil daripada PNG dengan kualitas visual yang sama, menghemat penyimpanan dan bandwidth."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
+    "webp-to-png": {
+      "seoTitle": "Konversi WebP ke PNG Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi gambar WebP ke PNG secara instan di browser Anda. Kompatibilitas universal, transparansi tetap terjaga, tanpa unggah atau watermark. Gratis selamanya.",
+      "h1": "Konverter WebP ke PNG",
+      "subheading": "Konversi gambar WebP menjadi file PNG yang kompatibel secara universal — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "webp ke png",
+        "konversi webp ke png",
+        "konverter webp ke png",
+        "konverter gambar online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar WebP Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file WebP dari perangkat Anda."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — pemrosesan terjadi sepenuhnya di browser Anda."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap PNG satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa mengonversi WebP ke PNG?",
+          "answer": "Beberapa perangkat lunak lama, klien email, dan editor gambar tidak mendukung WebP — mengonversi ke PNG memastikan file dapat dibuka di mana saja."
+        },
+        {
+          "question": "Apakah transparansi tetap terjaga?",
+          "answer": "Ya, PNG mendukung transparansi sama seperti WebP, sehingga area transparan tetap utuh selama konversi."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
+    "webp-to-jpg": {
+      "seoTitle": "Konversi WebP ke JPG Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi gambar WebP ke JPG secara instan di browser Anda. Kompatibilitas universal, tanpa unggah atau watermark. Gratis selamanya.",
+      "h1": "Konverter WebP ke JPG",
+      "subheading": "Konversi gambar WebP menjadi file JPG yang kompatibel secara universal — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "webp ke jpg",
+        "konversi webp ke jpg",
+        "konverter webp ke jpeg",
+        "konverter gambar online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar WebP Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file WebP dari perangkat Anda."
+        },
+        {
+          "name": "Sesuaikan kualitas",
+          "text": "Atur kualitas output JPG menggunakan penggeser."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — pemrosesan terjadi sepenuhnya di browser Anda."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap JPG satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa mengonversi WebP ke JPG?",
+          "answer": "Beberapa perangkat lunak lama, kamera, dan alur kerja percetakan tidak mendukung WebP — mengonversi ke JPG memastikan kompatibilitas di mana saja."
+        },
+        {
+          "question": "Apa yang terjadi pada transparansi?",
+          "answer": "JPG tidak mendukung transparansi, jadi area transparan akan diisi dengan warna putih selama konversi."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
+    "jpg-to-webp": {
+      "seoTitle": "Konversi JPG ke WebP Online – 100% Gratis & Aman",
+      "metaDescription": "Konversi gambar JPG ke WebP secara instan di browser Anda. Ukuran file lebih kecil, kualitas tetap sama, tanpa unggah atau watermark. Gratis selamanya.",
+      "h1": "Konverter JPG ke WebP",
+      "subheading": "Konversi gambar JPG menjadi file WebP yang ringkas — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "jpg ke webp",
+        "konversi jpg ke webp",
+        "konverter jpeg ke webp",
+        "konverter gambar online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar JPG Anda",
+          "text": "Seret dan lepas atau pilih satu atau lebih file JPG dari perangkat Anda."
+        },
+        {
+          "name": "Sesuaikan kualitas",
+          "text": "Atur kualitas output WebP menggunakan penggeser."
+        },
+        {
+          "name": "Konversi secara lokal",
+          "text": "Klik Konversi semua — pemrosesan terjadi sepenuhnya di browser Anda."
+        },
+        {
+          "name": "Unduh file Anda",
+          "text": "Simpan setiap WebP satu per satu atau unduh semuanya sebagai file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa mengonversi JPG ke WebP?",
+          "answer": "File WebP biasanya 25-35% lebih kecil daripada JPG dengan kualitas visual yang sama, menghemat penyimpanan dan bandwidth."
+        },
+        {
+          "question": "Apakah kualitas gambar akan menurun?",
+          "answer": "Pada pengaturan kualitas default, perbedaannya biasanya tidak terlihat — Anda dapat menaikkan penggeser kualitas untuk hasil yang lebih mendekati aslinya."
+        },
+        {
+          "question": "Apakah konversi ini privat?",
+          "answer": "Ya, semuanya terjadi secara lokal di browser Anda — tidak ada file yang pernah diunggah."
+        }
+      ]
+    },
     "base64-image-encoder": {
       "seoTitle": "Encoder & Decoder Gambar Base64 – Alat Online Gratis",
       "metaDescription": "Konversi gambar ke URL data Base64 dan sebaliknya, secara instan di browser Anda. Sempurna untuk menyematkan gambar dalam CSS atau HTML. 100% gratis dan privat.",
@@ -2667,6 +2971,535 @@
         {
           "question": "Apakah data saya diunggah ke suatu tempat?",
           "answer": "Tidak, semua perhitungan berlangsung sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "screen-studio": {
+      "seoTitle": "Perekam Studio Layar & Webcam – Gratis, Tanpa Watermark",
+      "metaDescription": "Rekam layar Anda dengan overlay webcam picture-in-picture opsional dan audio mikrofon, langsung di browser Anda. Visualizer audio langsung, jeda/lanjutkan, tanpa instalasi.",
+      "h1": "Perekam Studio Layar & Webcam",
+      "subheading": "Rekam layar Anda dengan overlay webcam picture-in-picture dan audio mikrofon — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "perekam layar dengan webcam",
+        "rekaman overlay webcam",
+        "perekam studio layar",
+        "rekaman layar picture in picture"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih sumber Anda",
+          "text": "Aktifkan atau nonaktifkan audio mikrofon dan overlay webcam picture-in-picture."
+        },
+        {
+          "name": "Mulai rekam",
+          "text": "Klik Mulai Rekam dan pilih layar, jendela, atau tab di pemilih browser Anda."
+        },
+        {
+          "name": "Perhatikan visualizer langsung",
+          "text": "Bilah level audio menampilkan input mikrofon Anda selama perekaman."
+        },
+        {
+          "name": "Hentikan dan unduh",
+          "text": "Pratinjau rekaman gabungan dan unduh sebagai file video."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah overlay webcam memperlambat perekaman?",
+          "answer": "Tidak, webcam dan layar digabungkan bersama di kanvas secara real-time menggunakan GPU perangkat Anda — tidak ada proses rendering terpisah."
+        },
+        {
+          "question": "Apakah rekaman saya diunggah ke suatu tempat?",
+          "answer": "Tidak, perekaman, penggabungan, dan pengodean semuanya berlangsung sepenuhnya di perangkat Anda — tidak ada yang dikirim ke server."
+        },
+        {
+          "question": "Bisakah saya mengubah posisi lingkaran webcam?",
+          "answer": "Saat ini webcam muncul sebagai lingkaran tetap di sudut kanan bawah, dengan ukuran yang tidak mengganggu sebagian besar konten."
+        }
+      ]
+    },
+    "screen-to-gif": {
+      "seoTitle": "Perekam Layar ke GIF Animasi – Gratis, Tanpa Unggah",
+      "metaDescription": "Rekam layar Anda dan ekspor langsung sebagai GIF animasi, sepenuhnya di browser Anda. Pilih frame rate dan durasi — tanpa instalasi, tanpa watermark.",
+      "h1": "Layar ke GIF Animasi",
+      "subheading": "Rekam layar Anda dan ekspor sebagai GIF animasi — dienkode 100% secara lokal di browser Anda.",
+      "keywords": [
+        "perekam layar ke gif",
+        "rekam layar sebagai gif",
+        "tangkapan layar gif",
+        "konversi rekaman layar ke gif"
+      ],
+      "howTo": [
+        {
+          "name": "Atur frame rate dan durasi",
+          "text": "Pilih frame rate (5–15 fps) dan panjang rekaman maksimum."
+        },
+        {
+          "name": "Mulai rekam",
+          "text": "Klik Mulai Rekam dan pilih layar, jendela, atau tab untuk ditangkap."
+        },
+        {
+          "name": "Hentikan dan enkode",
+          "text": "Rekaman berhenti otomatis pada durasi maksimum, atau klik Hentikan — lalu GIF dienkode secara lokal."
+        },
+        {
+          "name": "Pratinjau dan unduh",
+          "text": "Pratinjau GIF animasi dan unduh."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa ada durasi rekaman maksimum?",
+          "answer": "GIF animasi menyimpan setiap frame hampir tanpa kompresi dibandingkan codec video, sehingga ukuran file dan waktu pengodean cepat membengkak — batas durasi menjaga ekspor tetap cepat dan mudah dikelola."
+        },
+        {
+          "question": "Mengapa frame rate yang lebih rendah menghasilkan file yang lebih kecil?",
+          "answer": "Frame yang lebih sedikit berarti lebih sedikit data untuk dienkode dan disimpan, dengan konsekuensi gerakan yang kurang halus — 8–10 fps adalah keseimbangan yang baik untuk sebagian besar rekaman layar."
+        },
+        {
+          "question": "Apakah ini diunggah ke suatu tempat?",
+          "answer": "Tidak, penangkapan layar dan pengodean GIF keduanya berlangsung sepenuhnya di perangkat Anda."
+        }
+      ]
+    },
+    "audio-recorder": {
+      "seoTitle": "Perekam Memo Suara & Audio Online – Gratis, Privat",
+      "metaDescription": "Rekam memo suara dan klip audio langsung di browser Anda dengan meter level langsung. Rekam beberapa take, putar kembali, dan unduh — tanpa unggah, tanpa akun.",
+      "h1": "Perekam Memo Suara & Audio",
+      "subheading": "Rekam memo suara dengan meter level audio langsung — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "perekam suara online",
+        "perekam memo audio",
+        "rekam audio di browser",
+        "perekam mikrofon gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Izinkan akses mikrofon",
+          "text": "Klik Mulai Rekam dan izinkan akses mikrofon saat browser Anda memintanya."
+        },
+        {
+          "name": "Perhatikan meter level",
+          "text": "Visualizer audio langsung menampilkan level input Anda selama perekaman."
+        },
+        {
+          "name": "Jeda, lanjutkan, atau hentikan",
+          "text": "Kendalikan rekaman, lalu hentikan untuk menyimpannya sebagai take."
+        },
+        {
+          "name": "Rekam lebih banyak take",
+          "text": "Rekam sebanyak yang Anda mau dalam satu sesi, lalu putar, unduh, atau hapus masing-masing."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya merekam beberapa take?",
+          "answer": "Ya, setiap rekaman disimpan sebagai take terpisah dalam sesi Anda sehingga Anda bisa membandingkan, mengunduh, atau menghapusnya satu per satu."
+        },
+        {
+          "question": "Format audio apa yang diunduh?",
+          "answer": "Rekaman diunduh sebagai file audio WebM menggunakan encoder Opus bawaan browser Anda — ukuran file kecil dengan kualitas suara yang baik."
+        },
+        {
+          "question": "Apakah rekaman saya diunggah ke suatu tempat?",
+          "answer": "Tidak, perekaman berlangsung sepenuhnya di perangkat Anda — tidak ada yang dikirim ke server."
+        }
+      ]
+    },
+    "screenshot-beautifier": {
+      "seoTitle": "Pempercantik Screenshot & Mockup Bingkai – Alat Online Gratis",
+      "metaDescription": "Tambahkan bingkai jendela macOS atau Windows, padding, sudut membulat, bayangan, dan latar belakang ke screenshot apa pun — langsung di browser Anda. Ekspor PNG atau WebP hingga 4x.",
+      "h1": "Pempercantik Screenshot & Mockup Bingkai",
+      "subheading": "Bingkai screenshot Anda dengan tampilan jendela yang realistis, padding, dan latar belakang — dirender 100% secara lokal di browser Anda.",
+      "keywords": [
+        "pempercantik screenshot",
+        "pembuat mockup screenshot",
+        "bingkai jendela macos screenshot",
+        "percantik screenshot online"
+      ],
+      "howTo": [
+        {
+          "name": "Tambahkan screenshot Anda",
+          "text": "Seret dan lepas gambar, klik untuk menelusuri, atau tempel langsung dengan Ctrl+V."
+        },
+        {
+          "name": "Pilih tema jendela",
+          "text": "Pilih macOS, Windows 11, kaca, atau tanpa bingkai jendela sama sekali."
+        },
+        {
+          "name": "Sesuaikan padding, sudut, dan bayangan",
+          "text": "Sesuaikan padding, radius sudut, dan kedalaman bayangan dengan penggeser."
+        },
+        {
+          "name": "Ekspor",
+          "text": "Pilih PNG atau WebP dan skala ekspor hingga 4x, lalu unduh."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Skala ekspor apa saja yang tersedia?",
+          "answer": "Anda dapat mengekspor dengan resolusi 1x, 2x, atau 4x — skala yang lebih tinggi ideal untuk layar retina dan cetak."
+        },
+        {
+          "question": "Apakah ini mengunggah screenshot saya ke suatu tempat?",
+          "answer": "Tidak, seluruh komposisi dirender di kanvas HTML5 di browser Anda — tidak ada yang diunggah."
+        },
+        {
+          "question": "Bisakah saya menempelkan screenshot langsung dari clipboard?",
+          "answer": "Ya, setelah menyalin screenshot, cukup tekan Ctrl+V (atau Cmd+V di Mac) di mana saja pada halaman."
+        }
+      ]
+    },
+    "image-annotator": {
+      "seoTitle": "Anotasi Gambar & Redaksi Pixelate – Alat Online Gratis",
+      "metaDescription": "Beri anotasi pada screenshot dengan panah, kotak, teks, dan lencana bernomor, atau samarkan informasi sensitif dengan kuas pixelate — sepenuhnya di browser Anda.",
+      "h1": "Anotasi Gambar & Redaksi Pixelate",
+      "subheading": "Tandai gambar dengan panah, bentuk, teks, dan lencana bernomor, atau samarkan detail pribadi dengan piksel — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "alat anotasi gambar",
+        "anotasi screenshot",
+        "pixelate gambar online",
+        "redaksi gambar online",
+        "blur info sensitif screenshot"
+      ],
+      "howTo": [
+        {
+          "name": "Tambahkan gambar Anda",
+          "text": "Seret dan lepas gambar, klik untuk menelusuri, atau tempel langsung dengan Ctrl+V."
+        },
+        {
+          "name": "Pilih alat",
+          "text": "Pilih panah, persegi panjang, teks, penghitung bernomor, pena bebas, atau kuas redaksi pixelate."
+        },
+        {
+          "name": "Gambar di kanvas",
+          "text": "Klik dan seret untuk menggambar bentuk, atau klik sekali untuk menempatkan teks dan penghitung."
+        },
+        {
+          "name": "Urungkan, ulangi, dan ekspor",
+          "text": "Sesuaikan dengan urungkan/ulangi sesuai kebutuhan, lalu ekspor PNG yang bersih dan rata."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana cara kerja alat pixelate?",
+          "answer": "Seret di atas area mana pun untuk mem-pixelate-kannya secara permanen dengan ukuran blok tetap — ideal untuk menyamarkan email, nama, atau detail sensitif lainnya sebelum membagikan screenshot."
+        },
+        {
+          "question": "Bisakah saya mengurungkan kesalahan?",
+          "answer": "Ya, gunakan Urungkan/Ulangi (atau Ctrl+Z / Ctrl+Shift+Z) untuk melangkah maju dan mundur melalui riwayat anotasi Anda."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke suatu tempat?",
+          "answer": "Tidak, semua penggambaran dan redaksi terjadi di kanvas HTML5 di browser Anda — tidak ada yang diunggah."
+        }
+      ]
+    },
+    "image-filters": {
+      "seoTitle": "Filter Gambar Kanvas & Color Grading – Alat Online Gratis",
+      "metaDescription": "Sesuaikan kecerahan, kontras, saturasi, hue, dan lainnya, atau terapkan tampilan preset sekali klik seperti Vivid, B&W, dan Vintage — langsung di browser Anda.",
+      "h1": "Filter Gambar Kanvas & Color Grading",
+      "subheading": "Sesuaikan kecerahan, kontras, saturasi, dan warna dengan presisi, atau terapkan tampilan preset — dirender 100% secara lokal di browser Anda.",
+      "keywords": [
+        "editor filter gambar online",
+        "alat color grading foto",
+        "sesuaikan kecerahan kontras online",
+        "filter foto vintage online"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar Anda",
+          "text": "Seret dan lepas gambar, klik untuk menelusuri, atau tempel langsung dengan Ctrl+V."
+        },
+        {
+          "name": "Pilih preset atau sesuaikan manual",
+          "text": "Terapkan tampilan sekali klik, atau sesuaikan kecerahan, kontras, saturasi, hue, dan lainnya dengan presisi."
+        },
+        {
+          "name": "Pratinjau langsung",
+          "text": "Lihat perubahan Anda diterapkan secara instan di kanvas saat Anda menyesuaikan setiap penggeser."
+        },
+        {
+          "name": "Ekspor",
+          "text": "Unduh gambar yang telah difilter sebagai PNG atau WebP dengan resolusi penuh."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Tampilan preset apa saja yang tersedia?",
+          "answer": "Vivid, hitam & putih, vintage/sepia, dingin, dan hangat — masing-masing mengatur beberapa penggeser sekaligus, yang tetap dapat Anda sesuaikan lebih lanjut."
+        },
+        {
+          "question": "Apakah ini mengurangi kualitas gambar?",
+          "answer": "Tidak, filter diterapkan pada resolusi asli penuh dan diekspor tanpa kehilangan kualitas (PNG) atau dengan kualitas tinggi (WebP)."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke suatu tempat?",
+          "answer": "Tidak, setiap filter diterapkan di kanvas HTML5 di browser Anda — tidak ada yang diunggah."
+        }
+      ]
+    },
+    "watermark-maker": {
+      "seoTitle": "Pemberi Watermark Gambar Massal – Alat Online Gratis",
+      "metaDescription": "Tambahkan watermark teks atau logo ke beberapa gambar sekaligus, dengan posisi, opasitas, dan ukuran kustom — diproses secara lokal, unduh semua sebagai ZIP.",
+      "h1": "Pemberi Watermark Gambar Massal",
+      "subheading": "Terapkan watermark teks atau logo ke banyak gambar sekaligus — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "watermark gambar massal",
+        "tambah watermark online gratis",
+        "alat watermark logo",
+        "watermark gambar dalam jumlah besar"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah gambar Anda",
+          "text": "Seret dan lepas satu atau lebih gambar untuk diberi watermark."
+        },
+        {
+          "name": "Atur watermark Anda",
+          "text": "Ketik teks atau unggah logo, lalu sesuaikan posisi, ukuran, dan opasitasnya."
+        },
+        {
+          "name": "Terapkan ke semua",
+          "text": "Klik Terapkan ke semua untuk memberi watermark pada setiap gambar dalam antrean di browser Anda."
+        },
+        {
+          "name": "Unduh",
+          "text": "Unduh setiap hasil satu per satu atau sebagai satu file ZIP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya menggunakan logo, bukan teks?",
+          "answer": "Ya, unggah gambar apa pun sebagai watermark Anda dan sesuaikan skala serta opasitasnya secara independen dari watermark teks."
+        },
+        {
+          "question": "Berapa banyak gambar yang bisa saya beri watermark sekaligus?",
+          "answer": "Tidak ada batas buatan — ukuran batch hanya dibatasi oleh memori perangkat Anda."
+        },
+        {
+          "question": "Apakah gambar saya diunggah ke suatu tempat?",
+          "answer": "Tidak, setiap gambar diberi watermark secara lokal di kanvas di browser Anda — tidak ada yang diunggah."
+        }
+      ]
+    },
+    "image-collage": {
+      "seoTitle": "Pembuat Kolase & Grid Foto – Alat Online Gratis",
+      "metaDescription": "Gabungkan beberapa foto menjadi kolase grid dengan spasi, sudut membulat, dan warna latar belakang yang dapat disesuaikan — langsung di browser Anda.",
+      "h1": "Pembuat Kolase & Grid Foto",
+      "subheading": "Susun beberapa foto menjadi kolase grid — disusun 100% secara lokal di browser Anda.",
+      "keywords": [
+        "pembuat kolase foto online",
+        "pembuat grid gambar",
+        "gabungkan foto menjadi satu gambar",
+        "pembuat kolase gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah foto Anda",
+          "text": "Seret dan lepas gambar yang ingin Anda sertakan dalam kolase."
+        },
+        {
+          "name": "Pilih tata letak grid",
+          "text": "Pilih tata letak preset — dari grid 2x2 sederhana hingga susunan multi-foto yang lebih besar."
+        },
+        {
+          "name": "Urutkan ulang dan atur gaya",
+          "text": "Seret untuk mengatur ulang foto mana yang masuk ke sel mana, lalu sesuaikan spasi, radius sudut, dan warna latar belakang."
+        },
+        {
+          "name": "Ekspor",
+          "text": "Unduh kolase jadi Anda sebagai PNG atau WebP."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya mengontrol foto mana yang ada di mana?",
+          "answer": "Ya, seret thumbnail foto untuk mengurutkan ulang — grid diperbarui secara langsung sesuai urutan pilihan Anda."
+        },
+        {
+          "question": "Tata letak grid apa saja yang tersedia?",
+          "answer": "Beberapa preset tersedia, mulai dari pembagian 2 foto sederhana hingga grid 3x3 dan tata letak campuran besar/kecil."
+        },
+        {
+          "question": "Apakah foto saya diunggah ke suatu tempat?",
+          "answer": "Tidak, seluruh kolase disusun di kanvas HTML5 di browser Anda — tidak ada yang diunggah."
+        }
+      ]
+    },
+    "video-trimmer": {
+      "seoTitle": "Pemotong & Pemangkas Video Online – Gratis, Tanpa Watermark",
+      "metaDescription": "Pangkas dan potong video MP4, WebM, atau MOV dengan timeline visual dan stempel waktu yang tepat — sepenuhnya di browser Anda. Tanpa unggah, tanpa watermark.",
+      "h1": "Pemangkas & Pemotong Video",
+      "subheading": "Potong video Anda persis menjadi klip yang Anda butuhkan — dipangkas 100% secara lokal di browser Anda.",
+      "keywords": [
+        "pemangkas video online",
+        "potong video online gratis",
+        "pangkas video tanpa watermark",
+        "pemotong video browser"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah video Anda",
+          "text": "Seret dan lepas file MP4, WebM, atau MOV."
+        },
+        {
+          "name": "Atur rentang pemangkasan Anda",
+          "text": "Seret pegangan timeline atau ketik stempel waktu awal/akhir yang tepat."
+        },
+        {
+          "name": "Pratinjau pilihan",
+          "text": "Putar ulang secara loop hanya untuk rentang yang Anda pilih sebelum mengekspor."
+        },
+        {
+          "name": "Pangkas dan unduh",
+          "text": "Klik Pangkas & Ekspor, lalu unduh klip hasilnya."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Format video apa yang didukung?",
+          "answer": "Anda dapat mengunggah file MP4, WebM, atau MOV — hasil pangkasan diunduh sebagai video WebM."
+        },
+        {
+          "question": "Apakah ada batas panjang?",
+          "answer": "Tidak ada batas buatan — kecepatan pemangkasan dan penggunaan memori bergantung pada perangkat dan panjang video sumber Anda."
+        },
+        {
+          "question": "Apakah video saya diunggah ke suatu tempat?",
+          "answer": "Tidak, pemangkasan berlangsung sepenuhnya di perangkat Anda dengan merekam ulang rentang yang dipilih secara lokal — tidak ada yang diunggah."
+        }
+      ]
+    },
+    "video-to-gif": {
+      "seoTitle": "Konverter Video ke GIF – Gratis, Tanpa Watermark",
+      "metaDescription": "Konversi klip dari video MP4, WebM, atau MOV apa pun menjadi GIF animasi, dengan frame rate dan ukuran yang dapat disesuaikan — sepenuhnya di browser Anda.",
+      "h1": "Konverter Video ke GIF",
+      "subheading": "Ubah klip video apa pun menjadi GIF animasi — dienkode 100% secara lokal di browser Anda.",
+      "keywords": [
+        "konverter video ke gif",
+        "konversi mp4 ke gif online",
+        "mp4 ke gif gratis",
+        "buat gif dari video"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah video Anda",
+          "text": "Seret dan lepas file MP4, WebM, atau MOV."
+        },
+        {
+          "name": "Pilih klip Anda",
+          "text": "Atur waktu awal dan akhir untuk bagian yang Anda inginkan sebagai GIF."
+        },
+        {
+          "name": "Pilih frame rate dan ukuran",
+          "text": "Pilih frame rate keluaran dan lebar maksimum untuk mengontrol ukuran file."
+        },
+        {
+          "name": "Konversi dan unduh",
+          "text": "Konversi secara lokal, lalu pratinjau dan unduh GIF animasi Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mengapa GIF saya memiliki opsi lebar maksimum?",
+          "answer": "GIF pada resolusi video penuh dengan cepat menjadi sangat besar — memperkecil ke 320–640px menjaga ukuran file dan waktu pengodean tetap wajar sambil tetap terlihat tajam."
+        },
+        {
+          "question": "Bisakah saya mengonversi hanya sebagian video?",
+          "answer": "Ya, atur waktu awal dan akhir untuk mengonversi hanya klip yang Anda inginkan, bukan seluruh video."
+        },
+        {
+          "question": "Apakah video saya diunggah ke suatu tempat?",
+          "answer": "Tidak, ekstraksi frame dan pengodean GIF keduanya berlangsung sepenuhnya di perangkat Anda."
+        }
+      ]
+    },
+    "video-audio-remover": {
+      "seoTitle": "Peredam Video & Pengekstrak Audio – Alat Online Gratis",
+      "metaDescription": "Bisukan trek audio video, atau ekstrak audionya saja sebagai file tersendiri — sepenuhnya di browser Anda. Tanpa unggah, tanpa watermark.",
+      "h1": "Peredam Video & Pengekstrak Audio",
+      "subheading": "Hapus audio video atau keluarkan sebagai file tersendiri — diproses 100% secara lokal di browser Anda.",
+      "keywords": [
+        "hapus audio dari video online",
+        "bisukan video online gratis",
+        "ekstrak audio dari video",
+        "konverter video ke audio"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah video Anda",
+          "text": "Seret dan lepas file MP4, WebM, atau MOV."
+        },
+        {
+          "name": "Pilih bisukan atau ekstrak",
+          "text": "Pilih apakah akan menghasilkan video bisu atau mengeluarkan trek audio saja."
+        },
+        {
+          "name": "Proses secara lokal",
+          "text": "Pemutaran berjalan sekali melalui browser Anda saat file baru dibuat."
+        },
+        {
+          "name": "Unduh",
+          "text": "Pratinjau hasilnya, lalu unduh video yang dibisukan atau file audio yang diekstrak."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa perbedaan antara membisukan dan mengekstrak?",
+          "answer": "Membisukan mempertahankan video penuh tetapi menghapus suaranya; mengekstrak membuang video dan hanya menyimpan trek audio sebagai file tersendiri."
+        },
+        {
+          "question": "Format file apa yang digunakan untuk audio yang diekstrak?",
+          "answer": "Audio yang diekstrak diunduh sebagai file audio WebM menggunakan encoder Opus bawaan browser Anda."
+        },
+        {
+          "question": "Apakah video saya diunggah ke suatu tempat?",
+          "answer": "Tidak, baik membisukan maupun mengekstrak audio berlangsung sepenuhnya di perangkat Anda — tidak ada yang dikirim ke server."
+        }
+      ]
+    },
+    "video-speed": {
+      "seoTitle": "Pengontrol Kecepatan Video – Slow Motion & Percepat, Gratis",
+      "metaDescription": "Perlambat atau percepat video apa pun dari 0.25x hingga 4x, pratinjau secara instan, dan ekspor hasilnya — sepenuhnya di browser Anda. Tanpa unggah, tanpa watermark.",
+      "h1": "Pengontrol Kecepatan Video",
+      "subheading": "Perlambat video Anda untuk efek dramatis, atau percepat untuk menghemat waktu — dirender 100% secara lokal di browser Anda.",
+      "keywords": [
+        "pengubah kecepatan video online",
+        "video slow motion online gratis",
+        "percepat video online",
+        "konverter video fast forward"
+      ],
+      "howTo": [
+        {
+          "name": "Unggah video Anda",
+          "text": "Seret dan lepas file MP4, WebM, atau MOV."
+        },
+        {
+          "name": "Pilih kecepatan",
+          "text": "Pilih preset dari slow motion 0.25x hingga fast forward 4x, atau atur nilai kustom."
+        },
+        {
+          "name": "Pratinjau secara instan",
+          "text": "Video langsung diputar pada kecepatan baru, sebelum Anda mengekspor apa pun."
+        },
+        {
+          "name": "Ekspor dan unduh",
+          "text": "Render hasil yang dipercepat atau diperlambat dan unduh."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah audio tetap sinkron?",
+          "answer": "Ya, untuk rentang kecepatan umum, audio di-resample bersama video sehingga pitch dan waktu tetap sinkron; pada kecepatan ekstrem klip yang diekspor mungkin tanpa suara."
+        },
+        {
+          "question": "Rentang kecepatan apa yang didukung?",
+          "answer": "Dari 0.25x (slow motion) hingga 4x (fast forward), dengan preset umum dan opsi kustom di antaranya."
+        },
+        {
+          "question": "Apakah video saya diunggah ke suatu tempat?",
+          "answer": "Tidak, perubahan kecepatan dirender sepenuhnya di perangkat Anda dengan merekam ulang pemutaran secara lokal — tidak ada yang diunggah."
         }
       ]
     }

@@ -14,6 +14,10 @@
   const GOOGLE_PREFIX = /^g\s+/i;
   const NAV_TIMEOUT_MS = 8000;
 
+  // Whether the "browse all tools" drawer has ever been opened (and its
+  // ~80-tool, backdrop-blurred DOM built) this page load — see setDrawerOpen.
+  let drawerRendered = false;
+
   function toolUrl(tool) {
     return `${SITE_URL}/${LOCALE}/tools/${tool.category}/${tool.slug}`;
   }
@@ -132,7 +136,10 @@
       const next = isPinned ? pins.filter((s) => s !== slug) : [...pins, slug].slice(-MAX_PINS);
       safeSet(PINS_KEY, next);
       renderQuickShelf();
-      renderDrawer();
+      // Only re-render the drawer if it's already been built (lazily, on
+      // first open) — otherwise this would force the ~80-tool DOM/blur
+      // build to happen on page load again the moment anything gets pinned.
+      if (drawerRendered) renderDrawer();
     });
   }
 
@@ -432,6 +439,17 @@
 
   function setDrawerOpen(open) {
     drawerOpen = open;
+    // Build the drawer's DOM lazily, on first open, not at page load. Every
+    // row carries `.glass` (a 20px backdrop-filter), so eagerly rendering
+    // all ~80 tools meant ~80 simultaneous blur compositing layers sitting
+    // in the DOM on every single new tab — collapsed to 0 height via
+    // grid-template-rows, but still laid out and painted, not display:none —
+    // which kept GPU/CPU usage elevated even while the new tab sat idle and
+    // the drawer was never opened.
+    if (open && !drawerRendered) {
+      renderDrawer();
+      drawerRendered = true;
+    }
     drawerToggle.setAttribute("aria-expanded", String(open));
     drawerPanel.classList.toggle("open", open);
     drawerLabel.textContent = open ? "Hide all tools" : `Browse all ${EVERYUTILI_TOOLS.length} tools`;
@@ -773,7 +791,7 @@
     selectRadioGroup(clockFormatButtons, settings.clockFormat);
   });
 
-  renderDrawer();
+  drawerLabel.textContent = `Browse all ${EVERYUTILI_TOOLS.length} tools`;
   renderQuickShelf();
   searchInput.focus();
 })();

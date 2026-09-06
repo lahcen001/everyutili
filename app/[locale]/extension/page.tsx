@@ -1,39 +1,22 @@
 import type { Metadata } from "next";
-import { Download, Globe, Puzzle, Search, ShieldCheck, Sparkles } from "lucide-react";
+import { ExternalLink, Globe, Puzzle, Search, ShieldCheck, Sparkles } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://everyutili.com";
+const CHROME_STORE_URL =
+  "https://chromewebstore.google.com/detail/plidfaahplllkmlhnnnbmkokkocfcgpc";
 
 export const metadata: Metadata = {
   title: "Chrome Extension — EveryUtili",
   description:
-    "Replace Chrome's New Tab with instant access to 79+ free, privacy-first tools. Download the EveryUtili extension and load it in seconds.",
+    "Replace Chrome's New Tab with instant access to 79+ free, privacy-first tools. Get the EveryUtili extension from the Chrome Web Store.",
   alternates: {
     canonical: `${SITE_URL}/en/extension`,
   },
 };
-
-const STEPS = [
-  {
-    title: "Download the extension",
-    body: "Click the button above to download everyutili-extension.zip, then unzip it anywhere on your computer.",
-  },
-  {
-    title: "Open chrome://extensions",
-    body: "Type chrome://extensions into your address bar and press Enter, or find it under Chrome's menu → More Tools → Extensions.",
-  },
-  {
-    title: "Turn on Developer mode",
-    body: "Flip the “Developer mode” switch in the top-right corner of the extensions page.",
-  },
-  {
-    title: "Load unpacked",
-    body: "Click “Load unpacked” and select the unzipped everyutili-extension folder. That's it — your New Tab is now EveryUtili.",
-  },
-];
 
 const FEATURES = [
   {
@@ -70,9 +53,10 @@ export default function ExtensionPage() {
 
         <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
           <Button asChild size="lg">
-            <a href="/downloads/everyutili-extension.zip" download>
-              <Download className="h-4 w-4" />
-              Download for Chrome
+            <a href={CHROME_STORE_URL} target="_blank" rel="noopener noreferrer">
+              <Puzzle className="h-4 w-4" />
+              Add to Chrome — Free
+              <ExternalLink className="h-3.5 w-3.5" />
             </a>
           </Button>
           <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
@@ -92,28 +76,7 @@ export default function ExtensionPage() {
         ))}
       </div>
 
-      <div className="mt-16">
-        <h2 className="text-xl font-bold tracking-tight">How to install</h2>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Not on the Chrome Web Store yet — install it directly in under a minute.
-        </p>
-
-        <ol className="mt-6 space-y-4">
-          {STEPS.map((step, i) => (
-            <li key={step.title} className="flex gap-4">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground">
-                {i + 1}
-              </span>
-              <div>
-                <p className="font-medium">{step.title}</p>
-                <p className="mt-0.5 text-sm text-muted-foreground">{step.body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </div>
-
-      <p className="mt-12 text-center text-xs text-muted-foreground">
+      <p className="mt-16 text-center text-xs text-muted-foreground">
         The extension only stores your recent/pinned tools locally in Chrome — see the{" "}
         <Link href="/privacy" className="text-primary hover:underline">
           Privacy Policy

@@ -1,12 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { Menu } from "lucide-react";
+import { Menu, Puzzle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import { CATEGORIES } from "@/config/tools";
+
+const CHROME_STORE_URL =
+  "https://chromewebstore.google.com/detail/plidfaahplllkmlhnnnbmkokkocfcgpc";
 
 /**
  * Category navigation for narrower viewports, where the full-width inline
@@ -68,6 +71,18 @@ export function MobileNav() {
               {t(`${category}.label`)}
             </Link>
           ))}
+          <div className="my-1 border-t border-border" />
+          <a
+            href={CHROME_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-muted"
+          >
+            <Puzzle className="h-4 w-4" />
+            Add to Chrome
+          </a>
         </div>
       )}
     </div>

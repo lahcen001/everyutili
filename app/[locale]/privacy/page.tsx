@@ -27,7 +27,7 @@ const SECTIONS = [
   },
   {
     title: "Cookies and analytics",
-    body: "everyutili.com does not use tracking cookies or third-party analytics that identify you personally. Standard, privacy-respecting server logs (for uptime and abuse prevention) may be kept briefly, as is normal for any website.",
+    body: "everyutili.com uses Google Analytics to understand aggregate traffic — which pages are visited and how often — so we can improve the site. It's configured with IP anonymization and Google's ad-personalization signals turned off, so it does not build advertising profiles or share your data with Google's ad network. Analytics never sees the files you convert, edit, or generate — that processing happens entirely in your browser and is never sent anywhere, analytics included. You can block this with a browser extension (e.g. an ad blocker or Google's own opt-out add-on) with no loss of functionality on the site. Standard, privacy-respecting server logs (for uptime and abuse prevention) may also be kept briefly, as is normal for any website.",
   },
   {
     title: "Contact",

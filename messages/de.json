@@ -3525,7 +3525,8 @@
     "restore": "Eingaben Wiederherstellen",
     "clear": "Letzte Daten Löschen",
     "cleared": "Gelöscht!",
-    "confirmClear": "Alle letzten Ergebnisse für dieses Tool löschen?"
+    "confirmClear": "Alle letzten Ergebnisse für dieses Tool löschen?",
+    "sendTo": "Senden an..."
   },
   "time": {
     "justNow": "Gerade eben",

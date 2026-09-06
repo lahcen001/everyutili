@@ -3525,7 +3525,8 @@
     "restore": "恢复输入",
     "clear": "清除最近数据",
     "cleared": "已清除！",
-    "confirmClear": "清除此工具的所有最近结果？"
+    "confirmClear": "清除此工具的所有最近结果？",
+    "sendTo": "发送到..."
   },
   "time": {
     "justNow": "刚刚",

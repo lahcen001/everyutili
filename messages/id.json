@@ -3525,7 +3525,8 @@
     "restore": "Pulihkan Input",
     "clear": "Hapus Data Terbaru",
     "cleared": "Terhapus!",
-    "confirmClear": "Hapus semua hasil terbaru untuk alat ini?"
+    "confirmClear": "Hapus semua hasil terbaru untuk alat ini?",
+    "sendTo": "Kirim ke..."
   },
   "time": {
     "justNow": "Baru saja",

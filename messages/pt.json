@@ -3525,7 +3525,8 @@
     "restore": "Restaurar Entradas",
     "clear": "Limpar Dados Recentes",
     "cleared": "Limpo!",
-    "confirmClear": "Limpar todos os resultados recentes desta ferramenta?"
+    "confirmClear": "Limpar todos os resultados recentes desta ferramenta?",
+    "sendTo": "Enviar para..."
   },
   "time": {
     "justNow": "Agora mesmo",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode, CSSProperties } from "react";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import {
   Geist,
   Geist_Mono,
@@ -79,6 +80,7 @@ const SCRIPT_FONT_VARIABLES: Partial<Record<Locale, string>> = {
 };
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://everyutili.com";
+const GA_MEASUREMENT_ID = "G-K0JYTRXWWX";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -159,6 +161,31 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+        {/*
+          Google Analytics (GA4). Loaded via next/script's afterInteractive
+          strategy so it never blocks first paint/LCP. Configured with
+          anonymize_ip + both Google-signals flags off — still records
+          pageviews/visits, but doesn't store full IPs or feed Google's ad
+          network, keeping this as close as possible to the site's
+          privacy-first positioning (see app/[locale]/privacy/page.tsx,
+          which discloses this).
+        */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              anonymize_ip: true,
+              allow_google_signals: false,
+              allow_ad_personalization_signals: false
+            });
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         <AmbientBackground />

@@ -10,7 +10,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://everyutili.com";
 export const metadata: Metadata = {
   title: "Chrome Extension — EveryUtili",
   description:
-    "Replace Chrome's New Tab with instant access to 60+ free, privacy-first tools. Download the EveryUtili extension and load it in seconds.",
+    "Replace Chrome's New Tab with instant access to 79+ free, privacy-first tools. Download the EveryUtili extension and load it in seconds.",
   alternates: {
     canonical: `${SITE_URL}/en/extension`,
   },
@@ -39,7 +39,7 @@ const FEATURES = [
   {
     icon: Search,
     title: "Instant tool search",
-    body: "Every new tab opens straight into a searchable grid of all 60+ tools — no bookmarks needed.",
+    body: "Every new tab opens straight into a searchable grid of all 79+ tools — no bookmarks needed.",
   },
   {
     icon: Sparkles,

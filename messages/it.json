@@ -3525,7 +3525,8 @@
     "restore": "Ripristina Input",
     "clear": "Cancella Dati Recenti",
     "cleared": "Cancellato!",
-    "confirmClear": "Cancellare tutti i risultati recenti di questo strumento?"
+    "confirmClear": "Cancellare tutti i risultati recenti di questo strumento?",
+    "sendTo": "Invia a..."
   },
   "time": {
     "justNow": "Proprio ora",

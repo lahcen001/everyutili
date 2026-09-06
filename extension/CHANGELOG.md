@@ -3,6 +3,12 @@
 All notable changes to the EveryUtili Chrome extension are documented here.
 Bump `manifest.json`'s `version` field alongside each entry.
 
+## 1.1.1
+
+- Fixed a Chrome Web Store upload rejection: `manifest.json`'s `description`
+  was 176 characters, exceeding the store's 132-character limit. Shortened
+  to 124 characters and corrected the stale "60+ tools" wording to "79+".
+
 ## 1.1.0
 
 - Added click-loading feedback: opening a tool or Google search now shows an

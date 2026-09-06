@@ -13,6 +13,7 @@ import {
 } from "@/lib/storage/toolHistoryDb";
 import { downloadBlob } from "@/lib/downloadBlob";
 import { formatRelativeTime } from "@/lib/formatRelativeTime";
+import { SendToMenu } from "@/components/tools/shared/SendToMenu";
 
 export interface ToolHistoryListHandle {
   /** Call after saving a new result so the list refreshes without a full remount. */
@@ -178,6 +179,13 @@ export const ToolHistoryList = React.forwardRef<ToolHistoryListHandle, ToolHisto
                       >
                         <Download className="h-4 w-4" />
                       </button>
+                    )}
+                    {item.blob && (
+                      <SendToMenu
+                        fromSlug={toolSlug}
+                        blob={item.blob}
+                        fileName={sanitizeFileName(item.title)}
+                      />
                     )}
                     {item.data && (
                       <button

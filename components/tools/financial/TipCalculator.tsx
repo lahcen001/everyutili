@@ -27,6 +27,14 @@ export default function TipCalculator() {
   const total = bill + tipAmount;
   const perPerson = people > 0 ? total / people : total;
 
+  // perPerson is the exact mathematical average; rounding it to the nearest
+  // cent for display can make perPerson × people land a cent or two off
+  // from the displayed total when the split isn't even (e.g. $47.63 ÷ 3).
+  // Flag that instead of silently redistributing pennies across people.
+  const roundedPerPersonTotal = Math.round(perPerson * 100) / 100 * people;
+  const hasRoundingGap =
+    people > 1 && Math.abs(roundedPerPersonTotal - total) >= 0.005;
+
   const handleSave = async () => {
     await saveToolResult("tip-calculator", {
       title: `Tip: ${formatCurrency(tipAmount)} on ${formatCurrency(bill)}`,
@@ -103,6 +111,13 @@ export default function TipCalculator() {
           <p className="mt-1 text-2xl font-bold tabular-nums text-primary">{formatCurrency(perPerson)}</p>
         </Card>
       </div>
+
+      {hasRoundingGap && (
+        <p className="text-center text-xs text-muted-foreground">
+          Rounded to the nearest cent — {people} × {formatCurrency(perPerson)} may be a cent or two off
+          from the total. One person can cover the difference.
+        </p>
+      )}
 
       <Button size="sm" variant="outline" onClick={handleSave}>
         <Save className="h-3.5 w-3.5" /> Save result

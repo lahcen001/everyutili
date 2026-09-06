@@ -8,6 +8,7 @@ import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useTrackTool } from "@/hooks/useTrackTool";
+import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
 import { downloadBlob } from "@/lib/downloadBlob";
@@ -58,6 +59,10 @@ export default function FaviconGenerator() {
     setPreviewUrl(nextPreviewUrl);
     setFileName(file.name);
   };
+
+  // Picks up a "Send to..." handoff from another tool via ?from=<id>,
+  // feeding it through the same path as a manual drop.
+  useIncomingHandoff((file) => handleFiles([file]));
 
   React.useEffect(() => {
     return () => {

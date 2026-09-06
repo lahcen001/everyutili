@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { useTrackTool } from "@/hooks/useTrackTool";
+import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
 import { formatBytes } from "@/lib/format";
@@ -40,6 +41,10 @@ export default function Base64ImageEncoder() {
     };
     reader.readAsDataURL(file);
   };
+
+  // Picks up a "Send to..." handoff from another tool via ?from=<id>,
+  // feeding it through the same path as a manual drop.
+  useIncomingHandoff((file) => handleFiles([file]));
 
   const decodedPreview = React.useMemo(() => {
     const trimmed = decodeInput.trim();

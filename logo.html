@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EveryUtili — Chrome Web Store Graphic Generator</title>
+  <style>
+    :root {
+      --bg: #0b0d13;
+      --card: #131722;
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #f3f4f6;
+      --indigo: #635bff;
+      --emerald: #10b981;
+      --amber: #f59e0b;
+      --rose: #f43f5e;
+      --muted: #9ca3af;
+    }
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: #06070a;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 30px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    h1 { margin: 0 0 10px 0; font-size: 26px; }
+    p { color: var(--muted); margin: 0; font-size: 15px; }
+    .asset-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .asset-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .asset-title { font-weight: 600; font-size: 17px; }
+    .badge {
+      background: rgba(99, 102, 241, 0.15);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .canvas-wrap {
+      background: #000;
+      border-radius: 8px;
+      overflow-x: auto;
+      display: flex;
+      justify-content: center;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    canvas {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+    .btn {
+      background: var(--indigo);
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #4f46e5; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>EveryUtili — Chrome Web Store Graphics Generator</h1>
+    <p>Client-side HTML5 canvas renderer. Generates all exact-dimension assets required by the Chrome Web Store, using the same wrench mark as everyutili.com.</p>
+  </header>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div class="asset-title">1. Official Store Icon <span class="badge">128 × 128 px</span></div>
+      <button class="btn" onclick="downloadCanvas('canvas-icon', 'icon-128.png')">Download icon-128.png</button>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="canvas-icon" width="128" height="128"></canvas>
+    </div>
+  </div>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div class="asset-title">2. Small Promo Tile <span class="badge">440 × 280 px</span></div>
+      <button class="btn" onclick="downloadCanvas('canvas-promo', 'promo-tile-440x280.png')">Download promo-tile-440x280.png</button>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="canvas-promo" width="440" height="280"></canvas>
+    </div>
+  </div>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div class="asset-title">3. Screenshot 1 — Zen New Tab Experience <span class="badge">1280 × 800 px</span></div>
+      <button class="btn" onclick="downloadCanvas('canvas-ss1', 'screenshot-1-newtab.png')">Download screenshot-1.png</button>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="canvas-ss1" width="1280" height="800"></canvas>
+    </div>
+  </div>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div class="asset-title">4. Screenshot 2 — Smart Dual-Engine Search <span class="badge">1280 × 800 px</span></div>
+      <button class="btn" onclick="downloadCanvas('canvas-ss2', 'screenshot-2-search.png')">Download screenshot-2.png</button>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="canvas-ss2" width="1280" height="800"></canvas>
+    </div>
+  </div>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div class="asset-title">5. Screenshot 3 — Complete 79+ Offline Tools Suite <span class="badge">1280 × 800 px</span></div>
+      <button class="btn" onclick="downloadCanvas('canvas-ss3', 'screenshot-3-tools.png')">Download screenshot-3.png</button>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="canvas-ss3" width="1280" height="800"></canvas>
+    </div>
+  </div>
+
+  <div class="asset-card">
+    <div class="asset-header">
+      <div class="asset-title">6. Marquee Promo Tile <span class="badge">1400 × 560 px</span></div>
+      <button class="btn" onclick="downloadCanvas('canvas-marquee', 'marquee-promo-1400x560.png')">Download marquee-1400x560.png</button>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="canvas-marquee" width="1400" height="560"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+  function downloadCanvas(id, filename) {
+    const canvas = document.getElementById(id);
+    const link = document.createElement('a');
+    link.download = filename;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  }
+
+  // Exact wrench glyph path used site-wide (lucide-react "wrench", also the
+  // real favicon/extension icon) drawn in a 24x24 box, so this generator's
+  // logo mark matches everyutili.com exactly rather than an invented shape.
+  const WRENCH_PATH = new Path2D(
+    'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z'
+  );
+
+  /**
+   * Draws the real EveryUtili logo mark: a rounded indigo square with the
+   * wrench glyph centered inside, at (x, y) top-left with the given box
+   * size. Matches components/layout/SiteHeader.tsx's bg-primary + Wrench
+   * treatment (--primary: #635BFF) so every asset uses one consistent mark.
+   */
+  function drawLogoMark(ctx, x, y, size, radius) {
+    ctx.save();
+    ctx.translate(x, y);
+
+    ctx.fillStyle = '#635BFF';
+    ctx.beginPath();
+    ctx.roundRect(0, 0, size, size, radius ?? size * 0.28);
+    ctx.fill();
+
+    // Wrench path is authored in a 24x24 box — scale + inset to sit inside
+    // the square with even padding, matching the header's proportions.
+    const pad = size * 0.24;
+    const inner = size - pad * 2;
+    const scale = inner / 24;
+    ctx.translate(pad, pad);
+    ctx.scale(scale, scale);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fill(WRENCH_PATH);
+
+    ctx.restore();
+  }
+
+  function drawWordmark(ctx, x, y, fontPx, color) {
+    ctx.fillStyle = color ?? '#FFFFFF';
+    ctx.font = `700 ${fontPx}px system-ui, -apple-system, sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText('EveryUtili', x, y);
+  }
+
+  function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+    const words = text.split(' ');
+    let line = '';
+    for (let n = 0; n < words.length; n++) {
+      const testLine = line + words[n] + ' ';
+      const metrics = ctx.measureText(testLine);
+      const testWidth = metrics.width;
+      if (testWidth > maxWidth && n > 0) {
+        ctx.fillText(line, x, y);
+        line = words[n] + ' ';
+        y += lineHeight;
+      } else {
+        line = testLine;
+      }
+    }
+    ctx.fillText(line, x, y);
+  }
+
+  function pillBadge(ctx, x, y, w, h, r, fill, stroke) {
+    ctx.beginPath();
+    ctx.roundRect(x, y, w, h, r);
+    ctx.fillStyle = fill;
+    ctx.fill();
+    if (stroke) {
+      ctx.strokeStyle = stroke;
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+  }
+
+  // ------------------------------------------------------------------
+  // 1. Store Icon (128x128)
+  // ------------------------------------------------------------------
+  (function drawIcon() {
+    const c = document.getElementById('canvas-icon');
+    const ctx = c.getContext('2d');
+
+    // Chrome masks store icons into a rounded square itself, so this canvas
+    // stays transparent outside the mark — no separate background square —
+    // per spec's "16px transparent padding margin to fit Chrome's rounded
+    // store mask".
+    ctx.clearRect(0, 0, 128, 128);
+
+    // Soft ambient glow behind the mark for depth.
+    const g = ctx.createRadialGradient(64, 64, 10, 64, 64, 70);
+    g.addColorStop(0, 'rgba(99, 91, 255, 0.35)');
+    g.addColorStop(1, 'rgba(99, 91, 255, 0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, 128, 128);
+
+    // 16px margin on every side -> 96x96 mark, centered.
+    drawLogoMark(ctx, 16, 16, 96, 24);
+  })();
+
+  // ------------------------------------------------------------------
+  // 2. Small Promo Tile (440x280)
+  // ------------------------------------------------------------------
+  (function drawPromo() {
+    const c = document.getElementById('canvas-promo');
+    const ctx = c.getContext('2d');
+
+    ctx.fillStyle = '#0B0D13';
+    ctx.beginPath();
+    ctx.roundRect(0, 0, 440, 280, 0);
+    ctx.fill();
+
+    const g = ctx.createRadialGradient(220, 50, 10, 220, 50, 220);
+    g.addColorStop(0, 'rgba(99, 91, 255, 0.28)');
+    g.addColorStop(1, 'transparent');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, 440, 280);
+
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(0.5, 0.5, 439, 279);
+
+    // Logo mark
+    drawLogoMark(ctx, 178, 26, 44, 12);
+
+    // Badge
+    ctx.font = '600 11px system-ui';
+    const badgeText = '⚡ 100% PRIVATE & OFFLINE';
+    const badgeW = ctx.measureText(badgeText).width + 32;
+    pillBadge(ctx, 220 - badgeW / 2, 82, badgeW, 26, 13, 'rgba(16, 185, 129, 0.15)', 'rgba(16, 185, 129, 0.35)');
+    ctx.fillStyle = '#34D399';
+    ctx.textAlign = 'center';
+    ctx.fillText(badgeText, 220, 99);
+
+    // Measure first so the (left-aligned) wordmark draws once, correctly centered.
+    ctx.font = '700 28px system-ui, -apple-system, sans-serif';
+    const wmW = ctx.measureText('EveryUtili').width;
+    drawWordmark(ctx, 220 - wmW / 2, 140, 28, '#FFFFFF');
+
+    ctx.fillStyle = '#9CA3AF';
+    ctx.font = '14px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('Minimal New Tab & Dual Search Hub', 220, 166);
+
+    // Feature chips
+    const tags = ['79+ Utilities', 'Client-Side Only', 'Google Quick-Search'];
+    ctx.font = '500 12px system-ui';
+    const gap = 10;
+    const widths = tags.map((t) => ctx.measureText(t).width + 28);
+    const totalW = widths.reduce((a, b) => a + b, 0) + gap * (tags.length - 1);
+    let x = 220 - totalW / 2;
+    tags.forEach((tag, i) => {
+      const w = widths[i];
+      pillBadge(ctx, x, 190, w, 30, 8, 'rgba(255,255,255,0.05)', 'rgba(255,255,255,0.1)');
+      ctx.fillStyle = '#F3F4F6';
+      ctx.textAlign = 'center';
+      ctx.fillText(tag, x + w / 2, 209);
+      x += w + gap;
+    });
+
+    // CTA
+    pillBadge(ctx, 140, 234, 160, 34, 8, '#635BFF');
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = '600 13px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('Add to Chrome — Free', 220, 256);
+  })();
+
+  // ------------------------------------------------------------------
+  // Shared screenshot chrome: top nav bar with logo + wordmark + status pill
+  // ------------------------------------------------------------------
+  function drawScreenshotBase(id) {
+    const c = document.getElementById(id);
+    const ctx = c.getContext('2d');
+
+    ctx.fillStyle = '#0B0D13';
+    ctx.fillRect(0, 0, 1280, 800);
+
+    const g = ctx.createRadialGradient(640, 90, 20, 640, 90, 520);
+    g.addColorStop(0, 'rgba(99, 91, 255, 0.16)');
+    g.addColorStop(1, 'transparent');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, 1280, 800);
+
+    // Top nav bar
+    ctx.fillStyle = 'rgba(255,255,255,0.03)';
+    ctx.fillRect(0, 0, 1280, 64);
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.beginPath();
+    ctx.moveTo(0, 64);
+    ctx.lineTo(1280, 64);
+    ctx.stroke();
+
+    drawLogoMark(ctx, 48, 16, 32, 9);
+    drawWordmark(ctx, 90, 38, 18, '#FFFFFF');
+
+    // Right status pill
+    ctx.font = '600 12px system-ui';
+    const pillText = '● 100% Client-Side';
+    const pillW = ctx.measureText(pillText).width + 30;
+    pillBadge(ctx, 1220 - pillW, 18, pillW, 28, 14, 'rgba(16, 185, 129, 0.15)');
+    ctx.fillStyle = '#34D399';
+    ctx.textAlign = 'center';
+    ctx.fillText(pillText, 1220 - pillW / 2, 36);
+    ctx.textAlign = 'left';
+
+    return ctx;
+  }
+
+  // ------------------------------------------------------------------
+  // 3. Screenshot 1 — Zen New Tab Experience
+  // ------------------------------------------------------------------
+  (function drawSS1() {
+    const ctx = drawScreenshotBase('canvas-ss1');
+
+    // Privacy badge above clock
+    ctx.font = '600 12px system-ui';
+    const pBadge = '⚡ 100% Local Browser Execution';
+    const pW = ctx.measureText(pBadge).width + 32;
+    ctx.textAlign = 'center';
+    pillBadge(ctx, 640 - pW / 2, 130, pW, 28, 14, 'rgba(255,255,255,0.04)', 'rgba(255,255,255,0.1)');
+    ctx.fillStyle = '#D1D5DB';
+    ctx.fillText(pBadge, 640, 148);
+
+    // Clock
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = 'bold 88px system-ui';
+    ctx.fillText('10:42 AM', 640, 280);
+
+    // Date
+    ctx.fillStyle = '#9CA3AF';
+    ctx.font = '18px system-ui';
+    ctx.fillText('Friday, September 4', 640, 316);
+
+    // Search bar
+    pillBadge(ctx, 340, 370, 600, 60, 30, 'rgba(255, 255, 255, 0.04)', 'rgba(99, 91, 255, 0.4)');
+
+    ctx.fillStyle = '#6B7280';
+    ctx.font = '16px system-ui';
+    ctx.textAlign = 'left';
+    ctx.fillText('Search 79+ tools or type to search Google…', 390, 406);
+
+    ctx.textAlign = 'center';
+    pillBadge(ctx, 878, 385, 44, 28, 6, 'rgba(255, 255, 255, 0.08)');
+    ctx.fillStyle = '#9CA3AF';
+    ctx.font = '600 12px system-ui';
+    ctx.fillText('⌘K', 900, 404);
+
+    // Quick access shelf
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#9CA3AF';
+    ctx.font = '600 13px system-ui';
+    ctx.fillText('QUICK ACCESS', 340, 485);
+
+    const tools = [
+      { name: 'Split PDF', cat: 'Docs', color: '#F43F5E' },
+      { name: 'Image Compressor', cat: 'Media', color: '#635BFF' },
+      { name: 'JSON Formatter', cat: 'Dev', color: '#10B981' },
+      { name: 'Loan EMI Calc', cat: 'Finance', color: '#F59E0B' },
+    ];
+
+    let x = 340;
+    tools.forEach((t) => {
+      pillBadge(ctx, x, 505, 138, 90, 12, 'rgba(255, 255, 255, 0.03)', 'rgba(255, 255, 255, 0.08)');
+
+      ctx.fillStyle = t.color;
+      ctx.font = 'bold 11px system-ui';
+      ctx.fillText(t.cat.toUpperCase(), x + 16, 532);
+
+      ctx.fillStyle = '#F3F4F6';
+      ctx.font = '600 14px system-ui';
+      ctx.fillText(t.name, x + 16, 560);
+      x += 154;
+    });
+  })();
+
+  // ------------------------------------------------------------------
+  // 4. Screenshot 2 — Smart Dual-Engine Search
+  // ------------------------------------------------------------------
+  (function drawSS2() {
+    const ctx = drawScreenshotBase('canvas-ss2');
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = 'bold 36px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('Instant Universal Search', 640, 180);
+
+    pillBadge(ctx, 340, 230, 600, 60, 16, 'rgba(255, 255, 255, 0.06)', '#635BFF');
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = '18px system-ui';
+    ctx.textAlign = 'left';
+    ctx.fillText('pdf', 380, 266);
+
+    ctx.fillStyle = '#635BFF';
+    ctx.fillRect(412, 248, 2, 24);
+
+    ctx.font = '600 12px system-ui';
+    const enginePill = '⚡ Tools  |  🌐 Google';
+    const engW = ctx.measureText(enginePill).width + 36;
+    pillBadge(ctx, 900 - engW, 242, engW, 36, 18, 'rgba(99, 91, 255, 0.2)');
+    ctx.fillStyle = '#B4B0FF';
+    ctx.textAlign = 'center';
+    ctx.fillText(enginePill, 900 - engW / 2, 265);
+
+    // Dropdown panel
+    pillBadge(ctx, 340, 305, 600, 360, 16, '#131722', 'rgba(255, 255, 255, 0.12)');
+
+    const results = [
+      { title: 'Split PDF Visual Canvas', desc: 'Select, reorder, and extract pages visually.', badge: 'Document' },
+      { title: 'Merge PDF Documents', desc: 'Combine multiple PDFs into a single file.', badge: 'Document' },
+      { title: 'Delete PDF Pages', desc: 'Strip unwanted pages with interactive thumbnails.', badge: 'Document' },
+      { title: 'Search "pdf" on Google', desc: 'Press Enter ↵ to launch Google search in new tab', badge: 'Google Web' },
+    ];
+
+    let y = 330;
+    results.forEach((r, idx) => {
+      if (idx === 0) {
+        pillBadge(ctx, 355, y - 5, 570, 70, 10, 'rgba(99, 91, 255, 0.15)');
+      }
+
+      ctx.textAlign = 'left';
+      ctx.fillStyle = '#FFFFFF';
+      ctx.font = '600 16px system-ui';
+      ctx.fillText(r.title, 375, y + 24);
+
+      ctx.fillStyle = '#9CA3AF';
+      ctx.font = '13px system-ui';
+      ctx.fillText(r.desc, 375, y + 48);
+
+      ctx.font = '600 11px system-ui';
+      const bw = ctx.measureText(r.badge).width + 24;
+      ctx.fillStyle = idx === 3 ? '#3B82F6' : 'rgba(255, 255, 255, 0.1)';
+      ctx.beginPath();
+      ctx.roundRect(910 - bw, y + 14, bw, 24, 6);
+      ctx.fill();
+      ctx.fillStyle = '#FFFFFF';
+      ctx.textAlign = 'center';
+      ctx.fillText(r.badge, 910 - bw / 2, y + 30);
+
+      y += 80;
+    });
+  })();
+
+  // ------------------------------------------------------------------
+  // 5. Screenshot 3 — Complete 79+ Offline Tools Suite (Bento grid)
+  // ------------------------------------------------------------------
+  (function drawSS3() {
+    const ctx = drawScreenshotBase('canvas-ss3');
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = 'bold 36px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillText('79+ Client-Side Utilities in Your Browser', 640, 150);
+
+    ctx.fillStyle = '#9CA3AF';
+    ctx.font = '16px system-ui';
+    ctx.fillText('Zero file uploads • Zero telemetry • 100% offline execution', 640, 185);
+
+    const cards = [
+      { cat: 'Media Converters', desc: 'Image Compressor, WebP, Resizer, SVG Optimizer, EXIF Stripper', col: '#635BFF' },
+      { cat: 'Document Utilities', desc: 'Split PDF, Merge PDF, Rotate, Delete Pages, Images to PDF', col: '#F43F5E' },
+      { cat: 'Developer Tools', desc: 'JSON Formatter, TS/Zod Generator, YAML, SQL Formatter, Diff', col: '#10B981' },
+      { cat: 'Financial Calculators', desc: 'Loan EMI, Compound Interest, Salary to Hourly, Discount', col: '#F59E0B' },
+    ];
+
+    const positions = [
+      { x: 180, y: 240, w: 430, h: 220 },
+      { x: 650, y: 240, w: 430, h: 220 },
+      { x: 180, y: 490, w: 430, h: 220 },
+      { x: 650, y: 490, w: 430, h: 220 },
+    ];
+
+    cards.forEach((c, idx) => {
+      const pos = positions[idx];
+      pillBadge(ctx, pos.x, pos.y, pos.w, pos.h, 16, '#131722', 'rgba(255, 255, 255, 0.08)');
+
+      ctx.fillStyle = c.col;
+      ctx.beginPath();
+      ctx.arc(pos.x + 40, pos.y + 45, 14, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.textAlign = 'left';
+      ctx.fillStyle = '#FFFFFF';
+      ctx.font = 'bold 20px system-ui';
+      ctx.fillText(c.cat, pos.x + 70, pos.y + 52);
+
+      ctx.fillStyle = '#9CA3AF';
+      ctx.font = '15px system-ui';
+      wrapText(ctx, c.desc, pos.x + 35, pos.y + 110, pos.w - 70, 24);
+    });
+  })();
+
+  // ------------------------------------------------------------------
+  // 6. Marquee Promo Tile (1400x560)
+  // ------------------------------------------------------------------
+  (function drawMarquee() {
+    const c = document.getElementById('canvas-marquee');
+    const ctx = c.getContext('2d');
+
+    ctx.fillStyle = '#0B0D13';
+    ctx.fillRect(0, 0, 1400, 560);
+
+    const g1 = ctx.createRadialGradient(250, 280, 20, 250, 280, 400);
+    g1.addColorStop(0, 'rgba(99, 91, 255, 0.25)');
+    g1.addColorStop(1, 'transparent');
+    ctx.fillStyle = g1;
+    ctx.fillRect(0, 0, 1400, 560);
+
+    const g2 = ctx.createRadialGradient(1150, 280, 20, 1150, 280, 400);
+    g2.addColorStop(0, 'rgba(16, 185, 129, 0.2)');
+    g2.addColorStop(1, 'transparent');
+    ctx.fillStyle = g2;
+    ctx.fillRect(0, 0, 1400, 560);
+
+    ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(20, 20, 1360, 520);
+
+    // Logo mark above badge, centered on the text column
+    drawLogoMark(ctx, 640, 70, 60, 16);
+
+    ctx.font = '600 13px system-ui';
+    const badgeText = '⚡ MINIMAL ZEN WORKSPACE';
+    const bw = ctx.measureText(badgeText).width + 32;
+    ctx.textAlign = 'center';
+    pillBadge(ctx, 700 - bw / 2, 150, bw, 34, 17, 'rgba(99, 91, 255, 0.15)', 'rgba(99, 91, 255, 0.4)');
+    ctx.fillStyle = '#B4B0FF';
+    ctx.fillText(badgeText, 700, 172);
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = 'bold 56px system-ui';
+    ctx.fillText('EveryUtili New Tab', 700, 250);
+
+    ctx.fillStyle = '#9CA3AF';
+    ctx.font = '22px system-ui';
+    ctx.fillText('Dual Google Search + 79 Private Offline Utilities', 700, 296);
+
+    const items = ['100% Client-Side', 'Zero File Uploads', 'Instant Keyboard Search', 'Zero Ads'];
+    ctx.font = '600 15px system-ui';
+    const gap = 16;
+    const widths = items.map((t) => ctx.measureText(t).width + 40);
+    const totalW = widths.reduce((a, b) => a + b, 0) + gap * (items.length - 1);
+    let x = 700 - totalW / 2;
+    items.forEach((item, i) => {
+      const w = widths[i];
+      pillBadge(ctx, x, 366, w, 48, 12, '#131722', 'rgba(255, 255, 255, 0.1)');
+      ctx.fillStyle = '#F3F4F6';
+      ctx.fillText(item, x + w / 2, 396);
+      x += w + gap;
+    });
+
+    pillBadge(ctx, 570, 452, 260, 52, 12, '#635BFF');
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = 'bold 16px system-ui';
+    ctx.fillText('Get Extension for Chrome', 700, 484);
+  })();
+</script>
+</body>
+</html>

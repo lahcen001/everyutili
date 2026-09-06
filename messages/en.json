@@ -3525,7 +3525,8 @@
     "restore": "Restore Inputs",
     "clear": "Clear Recent Data",
     "cleared": "Cleared!",
-    "confirmClear": "Clear all recent results for this tool?"
+    "confirmClear": "Clear all recent results for this tool?",
+    "sendTo": "Send to..."
   },
   "time": {
     "justNow": "Just now",

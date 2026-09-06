@@ -7,6 +7,7 @@ import { DropZone } from "@/components/tool-shell/DropZone";
 import { CopyButton } from "@/components/tool-shell/CopyButton";
 import { Card } from "@/components/ui/card";
 import { useTrackTool } from "@/hooks/useTrackTool";
+import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
 import {
   ToolHistoryList,
@@ -74,6 +75,10 @@ export default function ColorPicker() {
     setHasImage(true);
     setSampled(null);
   };
+
+  // Picks up a "Send to..." handoff from another tool via ?from=<id>,
+  // feeding it through the same path as a manual drop.
+  useIncomingHandoff((file) => handleFiles([file]));
 
   const handleClick = async (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;

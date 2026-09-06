@@ -7,6 +7,7 @@ import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useTrackTool } from "@/hooks/useTrackTool";
+import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
 import { formatBytes } from "@/lib/format";
@@ -98,6 +99,11 @@ export default function ImageCompressor() {
       .map((file) => ({ id: crypto.randomUUID(), file, status: "pending" }));
     setQueue((prev) => [...prev, ...items]);
   };
+
+  // Picks up a "Send to..." handoff from another tool (e.g. Screenshot
+  // Beautifier's output opened here via ?from=<id>) and feeds it through
+  // the exact same path as a manual drop.
+  useIncomingHandoff((file) => handleFiles([file]));
 
   const removeItem = (id: string) => setQueue((prev) => prev.filter((item) => item.id !== id));
 

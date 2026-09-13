@@ -1,0 +1,179 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "Ersetzt den neuen Tab durch Sofortsuche über 79+ kostenlose, private Tools: Konverter, PDF, Rechner, Entwicklertools."
+  },
+  "offlineBadge": {
+    "message": "Funktioniert offline"
+  },
+  "settingsAriaLabel": {
+    "message": "Einstellungen"
+  },
+  "settingsDefaultSearch": {
+    "message": "Standardsuche"
+  },
+  "settingsClockFormat": {
+    "message": "Uhrzeitformat"
+  },
+  "clockAuto": {
+    "message": "Auto"
+  },
+  "clock12h": {
+    "message": "12h"
+  },
+  "clock24h": {
+    "message": "24h"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+  "searchPlaceholderDefault": {
+    "message": "Tools durchsuchen oder Google-Suche eingeben…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "Google durchsuchen…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "Tools durchsuchen…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "Suche löschen"
+  },
+  "hintOpenTool": {
+    "message": "Tool öffnen"
+  },
+  "hintSearchGoogle": {
+    "message": "Google durchsuchen"
+  },
+  "hintNavigate": {
+    "message": "Navigieren"
+  },
+  "hintSwitchEngine": {
+    "message": "Suchmaschine wechseln"
+  },
+  "hintClear": {
+    "message": "Löschen"
+  },
+  "quickAccessTitle": {
+    "message": "Schnellzugriff"
+  },
+  "browseAllTools": {
+    "message": "Alle $COUNT$ Tools ansehen",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "Alle Tools ausblenden"
+  },
+  "categoryAll": {
+    "message": "Alle"
+  },
+  "categoryMedia": {
+    "message": "Medien"
+  },
+  "categoryDocument": {
+    "message": "Dokumente"
+  },
+  "categoryDeveloper": {
+    "message": "Entwicklung"
+  },
+  "categoryFinancial": {
+    "message": "Finanzen"
+  },
+  "greetingNight": {
+    "message": "Gute Nacht"
+  },
+  "greetingMorning": {
+    "message": "Guten Morgen"
+  },
+  "greetingAfternoon": {
+    "message": "Guten Tag"
+  },
+  "greetingEvening": {
+    "message": "Guten Abend"
+  },
+  "openingTool": {
+    "message": "$NAME$ wird geöffnet…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "Wird noch geöffnet… Verbindung prüfen"
+  },
+  "searchingGoogle": {
+    "message": "Google-Suche läuft…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "Suche läuft noch… Verbindung prüfen"
+  },
+  "pinTool": {
+    "message": "$NAME$ anheften",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "$NAME$ lösen",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "$NAME$ aus den zuletzt verwendeten entfernen",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "noToolsMatch": {
+    "message": "Keine Tools stimmen mit Ihrer Suche überein."
+  },
+  "searchGoogleFor": {
+    "message": "\"$QUERY$\" bei Google suchen",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "Öffnet sich in diesem Tab"
+  },
+  "popupOpenSite": {
+    "message": "Öffnen ↗"
+  },
+  "popupOpeningTool": {
+    "message": "$NAME$ wird geöffnet…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

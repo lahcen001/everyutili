@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useVirtualizer } from "@tanstack/react-virtual";
 import { ChevronRight, Search, Copy, Check, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -128,36 +129,72 @@ function RowActions({ path, copyValue }: RowActionsProps) {
   );
 }
 
-interface TreeNodeProps {
+// ---------------------------------------------------------------------
+// Flattening: @tanstack/react-virtual windows a flat list, not a nested
+// component tree, so the recursive JSON structure is flattened into a flat
+// array of visible rows first (one entry per rendered row, in document
+// order) — only rows that survive expansion state actually get flattened,
+// so a collapsed subtree of any size costs nothing. Re-flattened whenever
+// data/expansion/search changes, not on every render.
+// ---------------------------------------------------------------------
+
+interface FlatRow {
+  key: string;
   label: string;
   value: unknown;
   depth: number;
   path: string;
+  isObject: boolean;
+  isOpen: boolean;
+  hasMatch: boolean;
+}
+
+function flattenTree(
+  label: string,
+  value: unknown,
+  depth: number,
+  path: string,
+  searchTerm: string,
+  manualOpen: Map<string, boolean>,
+  out: FlatRow[]
+): void {
+  const entries = getEntries(value);
+  const isObject = entries !== null;
+  const hasMatch = searchTerm ? subtreeHasMatch(searchTerm, label, value) : true;
+
+  const defaultOpen = depth < 1;
+  const searchForcedOpen = searchTerm.length > 0 && hasMatch && isObject;
+  const open = manualOpen.has(path) ? manualOpen.get(path)! : searchForcedOpen || defaultOpen;
+
+  out.push({ key: path, label, value, depth, path, isObject, isOpen: open, hasMatch });
+
+  if (isObject && open) {
+    for (const [k, v] of entries) {
+      const childPath = Array.isArray(value) ? appendArrayIndex(path, Number(k)) : appendObjectKey(path, k);
+      flattenTree(k, v, depth + 1, childPath, searchTerm, manualOpen, out);
+    }
+  }
+}
+
+interface TreeRowProps {
+  row: FlatRow;
+  onToggle: (path: string) => void;
   searchTerm: string;
 }
 
-const TreeNode = React.memo(function TreeNode({ label, value, depth, path, searchTerm }: TreeNodeProps) {
-  const entries = getEntries(value);
-  const isObject = entries !== null;
-
-  const hasMatch = React.useMemo(
-    () => (searchTerm ? subtreeHasMatch(searchTerm, label, value) : true),
-    [searchTerm, label, value]
-  );
-
-  const [manualOpen, setManualOpen] = React.useState<boolean | null>(null);
-  const defaultOpen = depth < 1;
-  const searchForcedOpen = searchTerm.length > 0 && hasMatch && isObject;
-  const open = manualOpen ?? (searchForcedOpen || defaultOpen);
+const TreeRow = React.memo(function TreeRow({ row, onToggle, searchTerm }: TreeRowProps) {
+  const { label, value, depth, path, isObject, isOpen, hasMatch } = row;
+  const indent = 8 + depth * 12;
 
   if (!isObject) {
     const label_ = typeLabel(value);
     return (
       <div
         className={cn(
-          "group flex items-start gap-1 py-0.5 pl-5 font-mono text-xs",
+          "group flex items-start gap-1 py-0.5 font-mono text-xs",
           searchTerm && !hasMatch && "opacity-35"
         )}
+        style={{ paddingLeft: indent + 12 }}
       >
         <span className="text-muted-foreground">{highlight(label, searchTerm)}:</span>
         <span className={valueColor(value)}>{highlight(JSON.stringify(value), searchTerm)}</span>
@@ -169,39 +206,63 @@ const TreeNode = React.memo(function TreeNode({ label, value, depth, path, searc
     );
   }
 
+  const entries = getEntries(value)!;
   const preview = Array.isArray(value) ? `Array(${entries.length})` : `Object(${entries.length})`;
 
   return (
-    <div className={cn(searchTerm && !hasMatch && "opacity-35")}>
-      <div className="group flex items-center gap-1 py-0.5 font-mono text-xs hover:bg-muted/60 rounded">
-        <button onClick={() => setManualOpen(!open)} className="flex items-center gap-1">
-          <ChevronRight className={cn("h-3 w-3 transition-transform", open && "rotate-90")} />
-          <span className="text-muted-foreground">{highlight(label, searchTerm)}:</span>
-          <span className="text-muted-foreground/70">{preview}</span>
-        </button>
-        <RowActions path={path} copyValue={value} />
-      </div>
-      {open && (
-        <div className="ml-3 border-l border-border pl-2">
-          {entries.map(([k, v]) => (
-            <TreeNode
-              key={k}
-              label={k}
-              value={v}
-              depth={depth + 1}
-              path={Array.isArray(value) ? appendArrayIndex(path, Number(k)) : appendObjectKey(path, k)}
-              searchTerm={searchTerm}
-            />
-          ))}
-        </div>
+    <div
+      className={cn(
+        "group flex items-center gap-1 rounded py-0.5 font-mono text-xs hover:bg-muted/60",
+        searchTerm && !hasMatch && "opacity-35"
       )}
+      style={{ paddingLeft: indent }}
+    >
+      <button onClick={() => onToggle(path)} className="flex items-center gap-1">
+        <ChevronRight className={cn("h-3 w-3 transition-transform", isOpen && "rotate-90")} />
+        <span className="text-muted-foreground">{highlight(label, searchTerm)}:</span>
+        <span className="text-muted-foreground/70">{preview}</span>
+      </button>
+      <RowActions path={path} copyValue={value} />
     </div>
   );
 });
 
+const ROW_HEIGHT_ESTIMATE = 22;
+const VIRTUALIZE_THRESHOLD = 150;
+
 export function JsonTreeViewer({ data, className }: JsonTreeViewerProps) {
   const [search, setSearch] = React.useState("");
+  const [manualOpen, setManualOpen] = React.useState<Map<string, boolean>>(new Map());
   const normalizedSearch = search.trim().toLowerCase();
+  const scrollRef = React.useRef<HTMLDivElement>(null);
+
+  const rows = React.useMemo(() => {
+    const out: FlatRow[] = [];
+    flattenTree("root", data, 0, "data", normalizedSearch, manualOpen, out);
+    return out;
+  }, [data, normalizedSearch, manualOpen]);
+
+  const toggle = React.useCallback((path: string) => {
+    setManualOpen((prev) => {
+      const next = new Map(prev);
+      const currentlyOpen = prev.has(path) ? prev.get(path)! : true;
+      next.set(path, !currentlyOpen);
+      return next;
+    });
+  }, []);
+
+  const virtualizer = useVirtualizer({
+    count: rows.length,
+    getScrollElement: () => scrollRef.current,
+    estimateSize: () => ROW_HEIGHT_ESTIMATE,
+    overscan: 12,
+  });
+
+  // Below the threshold, skip virtualization entirely and render every row
+  // directly — avoids the absolute-positioned wrapper's slight layout cost
+  // for the common case (small/medium JSON) where it buys nothing.
+  const shouldVirtualize = rows.length > VIRTUALIZE_THRESHOLD;
+  const virtualItems = shouldVirtualize ? virtualizer.getVirtualItems() : null;
 
   return (
     <div className={cn("rounded-lg border border-border bg-muted/20", className)}>
@@ -213,6 +274,11 @@ export function JsonTreeViewer({ data, className }: JsonTreeViewerProps) {
           placeholder="Search keys or values…"
           className="h-6 flex-1 bg-transparent text-xs outline-none placeholder:text-muted-foreground/60"
         />
+        {rows.length > VIRTUALIZE_THRESHOLD && (
+          <span className="shrink-0 text-[10px] text-muted-foreground/60">
+            {rows.length.toLocaleString()} rows
+          </span>
+        )}
         {search && (
           <button
             onClick={() => setSearch("")}
@@ -224,8 +290,32 @@ export function JsonTreeViewer({ data, className }: JsonTreeViewerProps) {
           </button>
         )}
       </div>
-      <div className="max-h-[420px] overflow-auto p-3">
-        <TreeNode label="root" value={data} depth={0} path="data" searchTerm={normalizedSearch} />
+
+      <div ref={scrollRef} className="max-h-[420px] overflow-auto p-3">
+        {shouldVirtualize && virtualItems ? (
+          <div style={{ height: virtualizer.getTotalSize(), position: "relative" }}>
+            {virtualItems.map((virtualRow) => (
+              <div
+                key={virtualRow.key}
+                ref={virtualizer.measureElement}
+                data-index={virtualRow.index}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  transform: `translateY(${virtualRow.start}px)`,
+                }}
+              >
+                <TreeRow row={rows[virtualRow.index]} onToggle={toggle} searchTerm={normalizedSearch} />
+              </div>
+            ))}
+          </div>
+        ) : (
+          rows.map((row) => (
+            <TreeRow key={row.key} row={row} onToggle={toggle} searchTerm={normalizedSearch} />
+          ))
+        )}
       </div>
     </div>
   );

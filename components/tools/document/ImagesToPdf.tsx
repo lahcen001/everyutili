@@ -14,6 +14,7 @@ import {
   ImagesToPdfGrid,
   type ImagesToPdfGridHandle,
   type ImagesToPdfImage,
+  type PageOrientation,
 } from "@/components/tools/document/ImagesToPdfGrid";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
@@ -110,6 +111,8 @@ export default function ImagesToPdf() {
     try {
       const order = gridRef.current?.getOrder() ?? items.map((item) => item.id);
       const rotations = gridRef.current?.getRotations() ?? {};
+      const orientations = gridRef.current?.getOrientations() ?? {};
+      const marginOverrides = gridRef.current?.getMarginOverrides() ?? {};
       const itemsById = new Map(items.map((item) => [item.id, item]));
 
       const pdf = await PDFDocument.create();
@@ -118,6 +121,8 @@ export default function ImagesToPdf() {
         const item = itemsById.get(id);
         if (!item) continue;
         const rotation = rotations[id] ?? 0;
+        const orientation: PageOrientation = orientations[id] ?? "auto";
+        const itemMargin = marginOverrides[id] ?? margin;
 
         let width: number;
         let height: number;
@@ -137,8 +142,40 @@ export default function ImagesToPdf() {
           height = embedded.height;
         }
 
-        const page = pdf.addPage([width + margin * 2, height + margin * 2]);
-        page.drawImage(embedded, { x: margin, y: margin, width, height });
+        // "auto" fits the page to the (rotated) image's own aspect ratio, as
+        // before. A forced orientation instead fits the image inside a page
+        // shaped for that orientation, centered, with letterboxing rather
+        // than stretching — the page's long/short sides swap to match
+        // whichever of width/height should be larger.
+        let pageWidth = width;
+        let pageHeight = height;
+        let drawWidth = width;
+        let drawHeight = height;
+        let drawX = itemMargin;
+        let drawY = itemMargin;
+
+        if (orientation !== "auto") {
+          const contentWidth = width;
+          const contentHeight = height;
+          const wantsLandscape = orientation === "landscape";
+          const isLandscape = contentWidth >= contentHeight;
+          if (wantsLandscape !== isLandscape) {
+            // Swap the page's content-box dimensions so the page shape
+            // matches the requested orientation instead of the image's own.
+            const swapped = Math.max(contentWidth, contentHeight);
+            const short = Math.min(contentWidth, contentHeight);
+            pageWidth = wantsLandscape ? swapped : short;
+            pageHeight = wantsLandscape ? short : swapped;
+            const scale = Math.min(pageWidth / contentWidth, pageHeight / contentHeight);
+            drawWidth = contentWidth * scale;
+            drawHeight = contentHeight * scale;
+            drawX = itemMargin + (pageWidth - drawWidth) / 2;
+            drawY = itemMargin + (pageHeight - drawHeight) / 2;
+          }
+        }
+
+        const page = pdf.addPage([pageWidth + itemMargin * 2, pageHeight + itemMargin * 2]);
+        page.drawImage(embedded, { x: drawX, y: drawY, width: drawWidth, height: drawHeight });
       }
 
       const pdfBytes = await pdf.save();

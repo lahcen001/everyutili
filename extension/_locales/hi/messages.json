@@ -1,0 +1,189 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "न्यू टैब को बदलें और 79+ मुफ़्त, प्राइवेसी-फर्स्ट टूल्स में तुरंत खोजें: कन्वर्टर, PDF टूल्स, कैलकुलेटर, डेवलपर यूटिलिटीज़।"
+  },
+
+  "offlineBadge": {
+    "message": "ऑफ़लाइन भी काम करता है"
+  },
+  "settingsAriaLabel": {
+    "message": "सेटिंग्स"
+  },
+  "settingsDefaultSearch": {
+    "message": "डिफ़ॉल्ट खोज"
+  },
+  "settingsClockFormat": {
+    "message": "घड़ी फ़ॉर्मेट"
+  },
+  "clockAuto": {
+    "message": "ऑटो"
+  },
+  "clock12h": {
+    "message": "12h"
+  },
+  "clock24h": {
+    "message": "24h"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+
+  "searchPlaceholderDefault": {
+    "message": "टूल्स खोजें या Google पर खोजने के लिए टाइप करें…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "Google पर खोजें…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "टूल्स खोजें…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "खोज साफ़ करें"
+  },
+
+  "hintOpenTool": {
+    "message": "टूल खोलें"
+  },
+  "hintSearchGoogle": {
+    "message": "Google पर खोजें"
+  },
+  "hintNavigate": {
+    "message": "नेविगेट करें"
+  },
+  "hintSwitchEngine": {
+    "message": "इंजन बदलें"
+  },
+  "hintClear": {
+    "message": "साफ़ करें"
+  },
+
+  "quickAccessTitle": {
+    "message": "क्विक एक्सेस"
+  },
+  "browseAllTools": {
+    "message": "सभी $COUNT$ टूल्स देखें",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "सभी टूल्स छिपाएँ"
+  },
+
+  "categoryAll": {
+    "message": "सभी"
+  },
+  "categoryMedia": {
+    "message": "मीडिया"
+  },
+  "categoryDocument": {
+    "message": "दस्तावेज़"
+  },
+  "categoryDeveloper": {
+    "message": "डेवलपर"
+  },
+  "categoryFinancial": {
+    "message": "वित्त"
+  },
+
+  "greetingNight": {
+    "message": "शुभ रात्रि"
+  },
+  "greetingMorning": {
+    "message": "सुप्रभात"
+  },
+  "greetingAfternoon": {
+    "message": "नमस्कार"
+  },
+  "greetingEvening": {
+    "message": "शुभ संध्या"
+  },
+
+  "openingTool": {
+    "message": "$NAME$ खोला जा रहा है…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "अभी भी खोला जा रहा है… अपना कनेक्शन जांचें"
+  },
+  "searchingGoogle": {
+    "message": "Google पर खोजा जा रहा है…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "अभी भी खोजा जा रहा है… अपना कनेक्शन जांचें"
+  },
+
+  "pinTool": {
+    "message": "$NAME$ पिन करें",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "$NAME$ अनपिन करें",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "$NAME$ को हाल में इस्तेमाल से हटाएँ",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+
+  "noToolsMatch": {
+    "message": "आपकी खोज से कोई टूल मेल नहीं खाता।"
+  },
+  "searchGoogleFor": {
+    "message": "\"$QUERY$\" के लिए Google पर खोजें",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "इसी टैब में खुलता है"
+  },
+
+  "popupOpenSite": {
+    "message": "खोलें ↗"
+  },
+  "popupOpeningTool": {
+    "message": "$NAME$ खोला जा रहा है…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

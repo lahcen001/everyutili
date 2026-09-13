@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Download, ImageDown, Loader2, X } from "lucide-react";
+import { Download, ImageDown, Loader2, Maximize2, X } from "lucide-react";
 
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,10 @@ import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
 import { ImageComparisonSlider } from "@/components/tools/media/ImageComparisonSlider";
+import {
+  ImageDeepInspector,
+  type ImageInspectorItem,
+} from "@/components/shared/inspectors/ImageDeepInspector";
 import type { ImageConvertRequest, ImageConvertResponse } from "@/workers/image-converter.worker";
 
 const EXTENSION_BY_MIME: Record<string, string> = {
@@ -43,6 +47,8 @@ export default function ImageCompressor() {
   const [previewUrls, setPreviewUrls] = React.useState<Map<string, PreviewUrls>>(new Map());
   const workerRef = React.useRef<Worker | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
+  const [inspectorOpen, setInspectorOpen] = React.useState(false);
+  const [inspectorIndex, setInspectorIndex] = React.useState(0);
 
   React.useEffect(() => {
     workerRef.current = new Worker(
@@ -174,6 +180,31 @@ export default function ImageCompressor() {
     downloadBlob(item.resultBlob, `${baseName}-compressed.${ext}`);
   };
 
+  const doneItems = queue.filter(
+    (item): item is QueueItem & { resultBlob: Blob } =>
+      item.status === "done" && Boolean(item.resultBlob) && previewUrls.has(item.id)
+  );
+
+  const inspectorItems: ImageInspectorItem[] = doneItems.map((item) => {
+    const preview = previewUrls.get(item.id)!;
+    return {
+      id: item.id,
+      name: item.file.name,
+      originalUrl: preview.originalUrl,
+      processedUrl: preview.processedUrl,
+      originalBytes: item.file.size,
+      processedBytes: item.resultBlob.size,
+      mimeType: item.resultBlob.type,
+    };
+  });
+
+  const openInspectorFor = (id: string) => {
+    const index = doneItems.findIndex((item) => item.id === id);
+    if (index === -1) return;
+    setInspectorIndex(index);
+    setInspectorOpen(true);
+  };
+
   return (
     <div className="space-y-6">
       <DropZone
@@ -236,6 +267,9 @@ export default function ImageCompressor() {
                           ({percent}% smaller)
                         </p>
                       </div>
+                      <Button size="sm" variant="outline" onClick={() => openInspectorFor(item.id)}>
+                        <Maximize2 className="h-3.5 w-3.5" /> Compare
+                      </Button>
                       <Button size="sm" variant="outline" onClick={() => downloadItem(item)}>
                         <Download className="h-3.5 w-3.5" /> Save
                       </Button>
@@ -287,6 +321,14 @@ export default function ImageCompressor() {
       )}
 
       <ToolHistoryList ref={historyRef} toolSlug="image-compressor" />
+
+      <ImageDeepInspector
+        open={inspectorOpen}
+        onOpenChange={setInspectorOpen}
+        items={inspectorItems}
+        activeIndex={inspectorIndex}
+        onActiveIndexChange={setInspectorIndex}
+      />
     </div>
   );
 }

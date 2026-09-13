@@ -3502,6 +3502,358 @@
           "answer": "Nein, Geschwindigkeitsänderungen werden komplett auf Ihrem Gerät durch lokales Neu-Aufzeichnen der Wiedergabe gerendert – nichts wird hochgeladen."
         }
       ]
+    },
+    "mortgage-calculator": {
+      "seoTitle": "Mortgage Calculator Online – Free & Instant Monthly Payment Estimate",
+      "metaDescription": "Calculate your estimated monthly mortgage payment including principal, interest, property tax, and home insurance, instantly in your browser.",
+      "h1": "Mortgage Calculator",
+      "subheading": "Estimate your monthly mortgage payment — principal, interest, tax, and insurance — instant results, no sign-up.",
+      "keywords": [
+        "mortgage calculator",
+        "monthly mortgage payment calculator",
+        "home loan calculator",
+        "mortgage payment estimator",
+        "free mortgage calculator online"
+      ],
+      "howTo": [
+        {
+          "name": "Enter the home price",
+          "text": "Input the total purchase price of the home."
+        },
+        {
+          "name": "Enter your down payment",
+          "text": "Set how much you'll pay upfront."
+        },
+        {
+          "name": "Set the rate and term",
+          "text": "Enter your annual interest rate and loan term in years."
+        },
+        {
+          "name": "Add tax and insurance",
+          "text": "Include estimated annual property tax and home insurance for a full monthly payment."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What's included in the monthly payment?",
+          "answer": "Principal and interest on the loan, plus estimated monthly property tax and home insurance."
+        },
+        {
+          "question": "Does this include PMI?",
+          "answer": "No, private mortgage insurance isn't included — add it to the insurance field if it applies to your loan."
+        },
+        {
+          "question": "Is this an exact quote from a lender?",
+          "answer": "No, this is an estimate. Actual rates and terms depend on your lender, credit, and location."
+        }
+      ]
+    },
+    "simple-interest-calculator": {
+      "seoTitle": "Simple Interest Calculator Online – Free & Instant",
+      "metaDescription": "Calculate simple interest on a principal amount over time, instantly in your browser. Free and private.",
+      "h1": "Simple Interest Calculator",
+      "subheading": "Calculate simple interest on a principal amount — instant results, no ads, no sign-up.",
+      "keywords": [
+        "simple interest calculator",
+        "interest calculator online",
+        "principal interest calculator",
+        "simple interest formula calculator",
+        "free interest calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter the principal",
+          "text": "Input the starting amount of money."
+        },
+        {
+          "name": "Set the interest rate",
+          "text": "Enter the annual interest rate as a percentage."
+        },
+        {
+          "name": "Set the time period",
+          "text": "Enter how many years the interest accrues for."
+        },
+        {
+          "name": "View results instantly",
+          "text": "See the interest earned and the total amount."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What's the difference between simple and compound interest?",
+          "answer": "Simple interest is calculated only on the original principal, while compound interest is calculated on the principal plus previously accrued interest."
+        },
+        {
+          "question": "What's the formula used?",
+          "answer": "Interest = Principal × Rate × Time, where rate is the annual rate as a decimal."
+        },
+        {
+          "question": "Can I use this for loans?",
+          "answer": "Yes, simple interest is common for short-term loans and some savings accounts."
+        }
+      ]
+    },
+    "gpa-calculator": {
+      "seoTitle": "GPA Calculator Online – Free & Instant Grade Point Average",
+      "metaDescription": "Calculate your grade point average from course grades and credit hours, instantly in your browser. Free and private.",
+      "h1": "GPA Calculator",
+      "subheading": "Calculate your grade point average from course grades and credits — instant results, no sign-up.",
+      "keywords": [
+        "gpa calculator",
+        "grade point average calculator",
+        "college gpa calculator",
+        "semester gpa calculator",
+        "free gpa calculator online"
+      ],
+      "howTo": [
+        {
+          "name": "Add your courses",
+          "text": "Enter each course name, or leave the default labels."
+        },
+        {
+          "name": "Select each grade",
+          "text": "Choose the letter grade you received for each course."
+        },
+        {
+          "name": "Enter credit hours",
+          "text": "Input the credit hours for each course."
+        },
+        {
+          "name": "View your GPA",
+          "text": "See your calculated GPA update instantly as you edit."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What grading scale is used?",
+          "answer": "A standard 4.0 scale with plus/minus grades (A+ through F), the most common scale at US colleges."
+        },
+        {
+          "question": "Does this calculate cumulative GPA?",
+          "answer": "It calculates the weighted average for the courses you enter — add all your courses across semesters for a cumulative GPA."
+        },
+        {
+          "question": "Can I remove a course?",
+          "answer": "Yes, click the trash icon next to any course row to remove it."
+        }
+      ]
+    },
+    "currency-converter": {
+      "seoTitle": "Currency Converter Online – Free & Instant Exchange Rate Estimate",
+      "metaDescription": "Convert between major world currencies using fixed reference exchange rates, instantly in your browser. Free and private.",
+      "h1": "Currency Converter",
+      "subheading": "Convert between major world currencies — instant estimates, no sign-up, no tracking.",
+      "keywords": [
+        "currency converter",
+        "exchange rate calculator",
+        "convert currency online",
+        "usd to eur converter",
+        "free currency converter"
+      ],
+      "howTo": [
+        {
+          "name": "Enter an amount",
+          "text": "Input the amount you want to convert."
+        },
+        {
+          "name": "Choose the source currency",
+          "text": "Select which currency you're converting from."
+        },
+        {
+          "name": "Choose the target currency",
+          "text": "Select which currency you're converting to."
+        },
+        {
+          "name": "View the converted amount",
+          "text": "See the converted value and the exchange rate used."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Are these live exchange rates?",
+          "answer": "No, this tool uses a fixed rate snapshot for quick estimates. For live rates, check a financial data provider or your bank."
+        },
+        {
+          "question": "Why doesn't this fetch live rates?",
+          "answer": "This site runs 100% locally in your browser with no network requests, so rates are a periodically updated snapshot instead of a live feed."
+        },
+        {
+          "question": "Which currencies are supported?",
+          "answer": "20 major world currencies including USD, EUR, GBP, JPY, and more."
+        }
+      ]
+    },
+    "body-fat-calculator": {
+      "seoTitle": "Body Fat Calculator Online – Free & Instant Navy Method Estimate",
+      "metaDescription": "Estimate your body fat percentage using the U.S. Navy circumference method, instantly in your browser. Free and private.",
+      "h1": "Body Fat Calculator",
+      "subheading": "Estimate your body fat percentage using simple body measurements — instant results, no sign-up.",
+      "keywords": [
+        "body fat calculator",
+        "body fat percentage calculator",
+        "navy body fat calculator",
+        "body fat estimator online",
+        "free body fat calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Select your sex",
+          "text": "Choose male or female — the formula differs slightly."
+        },
+        {
+          "name": "Enter your measurements",
+          "text": "Input height, neck, waist (and hip for female) in inches."
+        },
+        {
+          "name": "View your estimate",
+          "text": "See your estimated body fat percentage and category."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How accurate is this estimate?",
+          "answer": "It uses the widely-used U.S. Navy circumference method, which is a reasonable estimate but less precise than clinical methods like DEXA scans."
+        },
+        {
+          "question": "What units does this use?",
+          "answer": "All measurements are in inches. Convert from centimeters by dividing by 2.54 if needed."
+        },
+        {
+          "question": "Why does the formula differ by sex?",
+          "answer": "Body fat distribution differs between men and women, so the Navy method uses separate formulas for each."
+        }
+      ]
+    },
+    "date-difference-calculator": {
+      "seoTitle": "Date Difference Calculator Online – Free & Instant Days Between Dates",
+      "metaDescription": "Calculate the exact number of days, weeks, months, and business days between two dates, instantly in your browser.",
+      "h1": "Date Difference Calculator",
+      "subheading": "Calculate the exact time between two dates — days, weeks, months, and business days, instantly.",
+      "keywords": [
+        "date difference calculator",
+        "days between dates calculator",
+        "date calculator online",
+        "business days calculator",
+        "free date calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter the start date",
+          "text": "Pick the first date."
+        },
+        {
+          "name": "Enter the end date",
+          "text": "Pick the second date — order doesn't matter."
+        },
+        {
+          "name": "View the difference",
+          "text": "See the difference in years, months, days, weeks, and business days."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does this count business days?",
+          "answer": "Yes, business days excludes Saturdays and Sundays but doesn't account for public holidays."
+        },
+        {
+          "question": "Does the order of dates matter?",
+          "answer": "No, enter either date as start or end — the calculator always shows the absolute difference."
+        },
+        {
+          "question": "Can I calculate a future date difference?",
+          "answer": "Yes, both dates can be in the past, present, or future."
+        }
+      ]
+    },
+    "investment-return-calculator": {
+      "seoTitle": "Investment Return Calculator Online – Free & Instant Growth Projection",
+      "metaDescription": "Project your investment growth with an initial amount, monthly contributions, and expected return rate, instantly in your browser.",
+      "h1": "Investment Return Calculator",
+      "subheading": "Project your investment growth with monthly contributions — instant results, no sign-up.",
+      "keywords": [
+        "investment return calculator",
+        "investment growth calculator",
+        "monthly contribution calculator",
+        "compound investment calculator",
+        "free investment calculator online"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your initial investment",
+          "text": "Input how much you're starting with."
+        },
+        {
+          "name": "Set your monthly contribution",
+          "text": "Enter how much you'll add each month."
+        },
+        {
+          "name": "Set the expected return rate",
+          "text": "Enter your expected average annual return."
+        },
+        {
+          "name": "View your projection",
+          "text": "See the projected future value and growth chart over your time horizon."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is the return compounded?",
+          "answer": "Monthly, with contributions added at the end of each month, compounding along with the balance."
+        },
+        {
+          "question": "Is this a guaranteed return?",
+          "answer": "No, this is a projection based on the return rate you enter — actual investment returns vary and are never guaranteed."
+        },
+        {
+          "question": "Can I model a lump sum with no contributions?",
+          "answer": "Yes, set monthly contribution to $0 to see pure compound growth on your initial investment."
+        }
+      ]
+    },
+    "paycheck-calculator": {
+      "seoTitle": "Paycheck Calculator Online – Free & Instant Net Pay Estimate",
+      "metaDescription": "Estimate your net take-home pay per paycheck from your annual salary, pay frequency, and tax rate, instantly in your browser.",
+      "h1": "Paycheck Calculator",
+      "subheading": "Estimate your net take-home pay per paycheck — instant results, no sign-up.",
+      "keywords": [
+        "paycheck calculator",
+        "salary paycheck calculator",
+        "net pay calculator",
+        "take home pay calculator",
+        "free paycheck calculator online"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your annual salary",
+          "text": "Input your gross annual salary."
+        },
+        {
+          "name": "Choose your pay frequency",
+          "text": "Select weekly, biweekly, semi-monthly, or monthly."
+        },
+        {
+          "name": "Add deductions and tax rate",
+          "text": "Enter pre-tax deductions and your effective tax rate."
+        },
+        {
+          "name": "View your net pay",
+          "text": "See your estimated net pay per paycheck and per year."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does this calculate exact federal and state taxes?",
+          "answer": "No, it uses a single effective tax rate you set rather than real tax brackets — use it for quick estimates, not exact payroll figures."
+        },
+        {
+          "question": "What counts as a pre-tax deduction?",
+          "answer": "Things like 401(k) contributions or pre-tax health insurance premiums that reduce your taxable income."
+        },
+        {
+          "question": "What pay frequencies are supported?",
+          "answer": "Weekly (52/year), biweekly (26/year), semi-monthly (24/year), and monthly (12/year)."
+        }
+      ]
     }
   },
   "commandMenu": {

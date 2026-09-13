@@ -2,19 +2,48 @@
   "use strict";
 
   const SITE_URL = "https://everyutili.com";
-  const LOCALE = "en";
   const RECENTS_KEY = "everyutili_recent_visits";
   const PINS_KEY = "everyutili_pinned_slugs";
   const MAX_RECENTS = 8;
   const MAX_PINS = 12;
 
+  // ---------------------------------------------------------- i18n
+  // See newtab.js for the full rationale — same pattern, kept in sync.
+  const SITE_LOCALES = ["en", "es", "fr", "de", "pt", "ar", "ja", "hi", "zh-CN", "ru", "it", "id"];
+
+  function tr(key, substitutions) {
+    return chrome.i18n.getMessage(key, substitutions) || key;
+  }
+
+  function resolveSiteLocale() {
+    const uiLang = chrome.i18n.getUILanguage();
+    if (SITE_LOCALES.includes(uiLang)) return uiLang;
+    const base = uiLang.split("-")[0];
+    if (base === "zh") return uiLang.toLowerCase() === "zh-tw" ? "en" : "zh-CN";
+    if (SITE_LOCALES.includes(base)) return base;
+    return "en";
+  }
+
+  const SITE_LOCALE = resolveSiteLocale();
+
   function toolUrl(tool) {
-    return `${SITE_URL}/${LOCALE}/tools/${tool.category}/${tool.slug}`;
+    return `${SITE_URL}/${SITE_LOCALE}/tools/${tool.category}/${tool.slug}`;
   }
 
   function iconSvg(category) {
     const path = EVERYUTILI_CATEGORY_ICONS[category] || "";
     return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;
+  }
+
+  const CATEGORY_LABEL_KEYS = {
+    media: "categoryMedia",
+    document: "categoryDocument",
+    developer: "categoryDeveloper",
+    financial: "categoryFinancial",
+  };
+
+  function categoryLabel(slug) {
+    return CATEGORY_LABEL_KEYS[slug] ? tr(CATEGORY_LABEL_KEYS[slug]) : slug;
   }
 
   function pinIconSvg() {
@@ -116,7 +145,7 @@
 
   function openTool(tool, sourceEl) {
     setItemOpening(sourceEl);
-    showToast(`Opening ${tool.name}…`);
+    showToast(tr("popupOpeningTool", [tool.name]));
     recordVisit(tool.slug);
     chrome.tabs.create({ url: toolUrl(tool) });
   }
@@ -134,15 +163,15 @@
   const clearBtn = document.getElementById("popup-clear");
 
   function renderPills() {
-    const pills = [{ slug: "all", label: "All" }, ...EVERYUTILI_CATEGORIES];
+    const slugs = ["all", ...EVERYUTILI_CATEGORIES.map((c) => c.slug)];
     pillsEl.innerHTML = "";
-    for (const cat of pills) {
+    for (const slug of slugs) {
       const btn = document.createElement("button");
-      btn.className = "pill" + (state.category === cat.slug ? " active" : "");
-      btn.dataset.category = cat.slug;
-      btn.textContent = cat.label;
+      btn.className = "pill" + (state.category === slug ? " active" : "");
+      btn.dataset.category = slug;
+      btn.textContent = slug === "all" ? tr("categoryAll") : categoryLabel(slug);
       btn.addEventListener("click", () => {
-        state.category = cat.slug;
+        state.category = slug;
         renderPills();
         renderList();
       });
@@ -158,7 +187,7 @@
     const pinBtn = document.createElement("button");
     pinBtn.type = "button";
     pinBtn.className = "card-action pin-btn pin-btn-sm" + (isPinned ? " active" : "");
-    pinBtn.setAttribute("aria-label", isPinned ? `Unpin ${tool.name}` : `Pin ${tool.name}`);
+    pinBtn.setAttribute("aria-label", isPinned ? tr("unpinTool", [tool.name]) : tr("pinTool", [tool.name]));
     pinBtn.innerHTML = pinIconSvg();
     pinBtn.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -181,13 +210,23 @@
       const pinnedSet = new Set(pins);
 
       const q = state.query.trim().toLowerCase();
-      let list = EVERYUTILI_TOOLS.filter((t) => {
-        const matchesCategory = state.category === "all" || t.category === state.category;
-        const matchesQuery = !q || t.name.toLowerCase().includes(q) || t.slug.includes(q);
-        return matchesCategory && matchesQuery;
-      });
+      const inCategory = (t) => state.category === "all" || t.category === state.category;
 
-      // Pinned tools float to the top of the (filtered) list, in pin order.
+      // Same fuzzy/keyword scorer as the new tab search (search.js) so a
+      // query like "convert to jpg" finds "PNG to JPG" here too, instead of
+      // requiring an exact name/slug substring.
+      let list;
+      if (!q) {
+        list = EVERYUTILI_TOOLS.filter(inCategory);
+      } else {
+        list = EVERYUTILI_TOOLS.filter(inCategory)
+          .map((t) => ({ tool: t, score: EveryUtiliSearch.scoreMatch(t, q) }))
+          .filter((r) => r.score > 0)
+          .sort((a, b) => b.score - a.score || b.tool.priority - a.tool.priority)
+          .map((r) => r.tool);
+      }
+
+      // Pinned tools float to the top of the (filtered/ranked) list, in pin order.
       list = [
         ...list.filter((t) => pinnedSet.has(t.slug)),
         ...list.filter((t) => !pinnedSet.has(t.slug)),
@@ -222,6 +261,16 @@
     renderList();
   });
 
+  // ---------------------------------------------------------- init
+
+  function applyStaticI18n() {
+    document.getElementById("popup-open-site").textContent = tr("popupOpenSite");
+    searchInput.placeholder = tr("searchPlaceholderPopup");
+    clearBtn.setAttribute("aria-label", tr("clearSearchAriaLabel"));
+    emptyEl.textContent = tr("noToolsMatch");
+  }
+
+  applyStaticI18n();
   renderPills();
   renderList();
   searchInput.focus();

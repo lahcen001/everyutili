@@ -1,0 +1,189 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "新しいタブを79種類以上の無料・プライバシー重視ツールの瞬間検索に置き換えます。変換ツール、PDFツール、計算機、開発者向けユーティリティなど。"
+  },
+
+  "offlineBadge": {
+    "message": "オフラインでも使用可能"
+  },
+  "settingsAriaLabel": {
+    "message": "設定"
+  },
+  "settingsDefaultSearch": {
+    "message": "デフォルトの検索エンジン"
+  },
+  "settingsClockFormat": {
+    "message": "時計の表示形式"
+  },
+  "clockAuto": {
+    "message": "自動"
+  },
+  "clock12h": {
+    "message": "12時間表示"
+  },
+  "clock24h": {
+    "message": "24時間表示"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+
+  "searchPlaceholderDefault": {
+    "message": "ツールを検索、またはGoogle検索ワードを入力…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "Googleで検索…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "ツールを検索…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "検索をクリア"
+  },
+
+  "hintOpenTool": {
+    "message": "ツールを開く"
+  },
+  "hintSearchGoogle": {
+    "message": "Googleで検索"
+  },
+  "hintNavigate": {
+    "message": "移動"
+  },
+  "hintSwitchEngine": {
+    "message": "検索エンジンを切り替え"
+  },
+  "hintClear": {
+    "message": "クリア"
+  },
+
+  "quickAccessTitle": {
+    "message": "クイックアクセス"
+  },
+  "browseAllTools": {
+    "message": "すべてのツールを見る（$COUNT$種類）",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "すべてのツールを非表示"
+  },
+
+  "categoryAll": {
+    "message": "すべて"
+  },
+  "categoryMedia": {
+    "message": "メディア"
+  },
+  "categoryDocument": {
+    "message": "ドキュメント"
+  },
+  "categoryDeveloper": {
+    "message": "開発者向け"
+  },
+  "categoryFinancial": {
+    "message": "金融"
+  },
+
+  "greetingNight": {
+    "message": "こんばんは"
+  },
+  "greetingMorning": {
+    "message": "おはようございます"
+  },
+  "greetingAfternoon": {
+    "message": "こんにちは"
+  },
+  "greetingEvening": {
+    "message": "こんばんは"
+  },
+
+  "openingTool": {
+    "message": "$NAME$を開いています…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "まだ開いています…接続を確認してください"
+  },
+  "searchingGoogle": {
+    "message": "Googleで検索しています…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "まだ検索しています…接続を確認してください"
+  },
+
+  "pinTool": {
+    "message": "$NAME$をピン留め",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "$NAME$のピン留めを解除",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "$NAME$を最近使ったツールから削除",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+
+  "noToolsMatch": {
+    "message": "一致するツールが見つかりません。"
+  },
+  "searchGoogleFor": {
+    "message": "「$QUERY$」をGoogleで検索",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "このタブで開きます"
+  },
+
+  "popupOpenSite": {
+    "message": "開く ↗"
+  },
+  "popupOpeningTool": {
+    "message": "$NAME$を開いています…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

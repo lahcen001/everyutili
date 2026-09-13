@@ -2,7 +2,9 @@
 
 import * as React from "react";
 import { Reorder, useDragControls, type DragControls } from "framer-motion";
-import { RotateCw, Trash2, GripVertical } from "lucide-react";
+import { RotateCw, Trash2, GripVertical, RectangleHorizontal, RectangleVertical } from "lucide-react";
+
+import { cn } from "@/lib/utils";
 
 export interface ImagesToPdfImage {
   id: string;
@@ -10,9 +12,15 @@ export interface ImagesToPdfImage {
   previewUrl: string;
 }
 
+/** "auto" fits the page to the (rotated) image's own aspect ratio, as before. */
+export type PageOrientation = "auto" | "portrait" | "landscape";
+
 export interface ImagesToPdfGridHandle {
   getOrder: () => string[];
   getRotations: () => Record<string, number>;
+  getOrientations: () => Record<string, PageOrientation>;
+  /** Per-image margin overrides, in PDF points; an id absent here falls back to the tool's global margin. */
+  getMarginOverrides: () => Record<string, number>;
 }
 
 interface ImagesToPdfGridProps {
@@ -20,7 +28,12 @@ interface ImagesToPdfGridProps {
   /** Page margin in PDF points, mirrored here purely for the WYSIWYG padding preview. */
   marginPreview: number;
   onRemove: (id: string) => void;
-  onChange?: (state: { order: string[]; rotations: Record<string, number> }) => void;
+  onChange?: (state: {
+    order: string[];
+    rotations: Record<string, number>;
+    orientations: Record<string, PageOrientation>;
+    marginOverrides: Record<string, number>;
+  }) => void;
 }
 
 const MAX_PREVIEW_PADDING = 24;
@@ -29,6 +42,8 @@ export const ImagesToPdfGrid = React.forwardRef<ImagesToPdfGridHandle, ImagesToP
   function ImagesToPdfGrid({ images, marginPreview, onRemove, onChange }, ref) {
     const [order, setOrder] = React.useState<string[]>(() => images.map((img) => img.id));
     const [rotations, setRotations] = React.useState<Record<string, number>>({});
+    const [orientations, setOrientations] = React.useState<Record<string, PageOrientation>>({});
+    const [marginOverrides, setMarginOverrides] = React.useState<Record<string, number>>({});
 
     const prevIdsRef = React.useRef<string[]>(images.map((img) => img.id));
 
@@ -53,17 +68,36 @@ export const ImagesToPdfGrid = React.forwardRef<ImagesToPdfGridHandle, ImagesToP
         }
         return next;
       });
+      setOrientations((prev) => {
+        const next: Record<string, PageOrientation> = {};
+        for (const id of currentIds) {
+          if (prev[id] !== undefined) next[id] = prev[id];
+        }
+        return next;
+      });
+      setMarginOverrides((prev) => {
+        const next: Record<string, number> = {};
+        for (const id of currentIds) {
+          if (prev[id] !== undefined) next[id] = prev[id];
+        }
+        return next;
+      });
     }, [images]);
 
-    const state = React.useMemo(() => ({ order, rotations }), [order, rotations]);
+    const state = React.useMemo(
+      () => ({ order, rotations, orientations, marginOverrides }),
+      [order, rotations, orientations, marginOverrides]
+    );
 
     React.useImperativeHandle(
       ref,
       () => ({
         getOrder: () => order,
         getRotations: () => rotations,
+        getOrientations: () => orientations,
+        getMarginOverrides: () => marginOverrides,
       }),
-      [order, rotations]
+      [order, rotations, orientations, marginOverrides]
     );
 
     React.useEffect(() => {
@@ -77,13 +111,32 @@ export const ImagesToPdfGrid = React.forwardRef<ImagesToPdfGridHandle, ImagesToP
       }));
     };
 
+    const cycleOrientation = (id: string) => {
+      setOrientations((prev) => {
+        const current = prev[id] ?? "auto";
+        const next: PageOrientation =
+          current === "auto" ? "portrait" : current === "portrait" ? "landscape" : "auto";
+        return { ...prev, [id]: next };
+      });
+    };
+
+    const setImageMargin = (id: string, value: number | null) => {
+      setMarginOverrides((prev) => {
+        if (value === null) {
+          if (!(id in prev)) return prev;
+          const next = { ...prev };
+          delete next[id];
+          return next;
+        }
+        return { ...prev, [id]: value };
+      });
+    };
+
     const imagesById = React.useMemo(() => {
       const map = new Map<string, ImagesToPdfImage>();
       images.forEach((img) => map.set(img.id, img));
       return map;
     }, [images]);
-
-    const previewPadding = Math.min(marginPreview, MAX_PREVIEW_PADDING);
 
     return (
       <div className="max-h-[60vh] overflow-y-auto rounded-lg border border-border bg-background p-3">
@@ -103,8 +156,12 @@ export const ImagesToPdfGrid = React.forwardRef<ImagesToPdfGridHandle, ImagesToP
                 position={index + 1}
                 image={image}
                 rotation={rotations[id] ?? 0}
-                previewPadding={previewPadding}
+                orientation={orientations[id] ?? "auto"}
+                marginOverride={marginOverrides[id]}
+                globalMargin={marginPreview}
                 onRotate={() => rotateImage(id)}
+                onCycleOrientation={() => cycleOrientation(id)}
+                onSetMargin={(value) => setImageMargin(id, value)}
                 onDelete={() => onRemove(id)}
               />
             );
@@ -120,12 +177,28 @@ interface ImageCardProps {
   position: number;
   image: ImagesToPdfImage;
   rotation: number;
-  previewPadding: number;
+  orientation: PageOrientation;
+  marginOverride: number | undefined;
+  globalMargin: number;
   onRotate: () => void;
+  onCycleOrientation: () => void;
+  onSetMargin: (value: number | null) => void;
   onDelete: () => void;
 }
 
-function ImageCard({ id, position, image, rotation, previewPadding, onRotate, onDelete }: ImageCardProps) {
+function ImageCard({
+  id,
+  position,
+  image,
+  rotation,
+  orientation,
+  marginOverride,
+  globalMargin,
+  onRotate,
+  onCycleOrientation,
+  onSetMargin,
+  onDelete,
+}: ImageCardProps) {
   const dragControls = useDragControls();
 
   return (
@@ -135,8 +208,12 @@ function ImageCard({ id, position, image, rotation, previewPadding, onRotate, on
         position={position}
         image={image}
         rotation={rotation}
-        previewPadding={previewPadding}
+        orientation={orientation}
+        marginOverride={marginOverride}
+        globalMargin={globalMargin}
         onRotate={onRotate}
+        onCycleOrientation={onCycleOrientation}
+        onSetMargin={onSetMargin}
         onDelete={onDelete}
       />
     </Reorder.Item>
@@ -148,24 +225,51 @@ interface ImageCardInnerProps {
   position: number;
   image: ImagesToPdfImage;
   rotation: number;
-  previewPadding: number;
+  orientation: PageOrientation;
+  marginOverride: number | undefined;
+  globalMargin: number;
   onRotate: () => void;
+  onCycleOrientation: () => void;
+  onSetMargin: (value: number | null) => void;
   onDelete: () => void;
 }
+
+const ORIENTATION_ICON: Record<PageOrientation, React.ElementType> = {
+  auto: RectangleVertical,
+  portrait: RectangleVertical,
+  landscape: RectangleHorizontal,
+};
+
+const ORIENTATION_LABEL: Record<PageOrientation, string> = {
+  auto: "Auto",
+  portrait: "Portrait",
+  landscape: "Landscape",
+};
 
 function ImageCardInner({
   dragControls,
   position,
   image,
   rotation,
-  previewPadding,
+  orientation,
+  marginOverride,
+  globalMargin,
   onRotate,
+  onCycleOrientation,
+  onSetMargin,
   onDelete,
 }: ImageCardInnerProps) {
+  const effectiveMargin = marginOverride ?? globalMargin;
+  const previewPadding = Math.min(effectiveMargin, MAX_PREVIEW_PADDING);
+  const OrientationIcon = ORIENTATION_ICON[orientation];
+
   return (
     <div className="group relative overflow-hidden rounded-lg border-2 border-border bg-card transition-colors hover:border-primary/50">
       <div
-        className="flex aspect-[3/4] items-center justify-center overflow-hidden bg-muted transition-[padding]"
+        className={cn(
+          "flex items-center justify-center overflow-hidden bg-muted transition-[padding]",
+          orientation === "landscape" ? "aspect-[4/3]" : "aspect-[3/4]"
+        )}
         style={{ padding: previewPadding }}
       >
         <img
@@ -192,6 +296,33 @@ function ImageCardInner({
           {rotation}°
         </span>
       )}
+
+      <div className="absolute inset-x-1.5 bottom-8 z-20 flex items-center justify-between gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+        <button
+          type="button"
+          onClick={onCycleOrientation}
+          aria-label={`Page orientation: ${ORIENTATION_LABEL[orientation]}`}
+          title={`Page orientation: ${ORIENTATION_LABEL[orientation]} (click to change)`}
+          className="flex h-6 items-center gap-1 rounded-md bg-background/90 px-1.5 text-[10px] font-medium text-muted-foreground shadow-sm hover:bg-muted hover:text-foreground"
+        >
+          <OrientationIcon className="h-3 w-3" />
+          {ORIENTATION_LABEL[orientation]}
+        </button>
+        <label
+          className="flex h-6 items-center gap-1 rounded-md bg-background/90 px-1.5 text-[10px] font-medium text-muted-foreground shadow-sm"
+          title="Per-image margin override (pt)"
+        >
+          <input
+            type="number"
+            min={0}
+            max={200}
+            value={effectiveMargin}
+            onChange={(e) => onSetMargin(Math.max(0, Number(e.target.value) || 0))}
+            className="w-9 bg-transparent text-right outline-none"
+          />
+          pt
+        </label>
+      </div>
 
       <div className="absolute right-1.5 top-1.5 z-20 flex flex-col gap-1 opacity-0 transition-opacity group-hover:opacity-100">
         <button

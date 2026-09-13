@@ -1,0 +1,189 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "Replace New Tab with instant search across 79+ free, privacy-first tools: converters, PDF tools, calculators, dev utilities."
+  },
+
+  "offlineBadge": {
+    "message": "Works offline"
+  },
+  "settingsAriaLabel": {
+    "message": "Settings"
+  },
+  "settingsDefaultSearch": {
+    "message": "Default search"
+  },
+  "settingsClockFormat": {
+    "message": "Clock format"
+  },
+  "clockAuto": {
+    "message": "Auto"
+  },
+  "clock12h": {
+    "message": "12h"
+  },
+  "clock24h": {
+    "message": "24h"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+
+  "searchPlaceholderDefault": {
+    "message": "Search tools or type to search Google…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "Search Google…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "Search tools…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "Clear search"
+  },
+
+  "hintOpenTool": {
+    "message": "Open tool"
+  },
+  "hintSearchGoogle": {
+    "message": "Search Google"
+  },
+  "hintNavigate": {
+    "message": "Navigate"
+  },
+  "hintSwitchEngine": {
+    "message": "Switch engine"
+  },
+  "hintClear": {
+    "message": "Clear"
+  },
+
+  "quickAccessTitle": {
+    "message": "Quick access"
+  },
+  "browseAllTools": {
+    "message": "Browse all $COUNT$ tools",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "Hide all tools"
+  },
+
+  "categoryAll": {
+    "message": "All"
+  },
+  "categoryMedia": {
+    "message": "Media"
+  },
+  "categoryDocument": {
+    "message": "Documents"
+  },
+  "categoryDeveloper": {
+    "message": "Developer"
+  },
+  "categoryFinancial": {
+    "message": "Finance"
+  },
+
+  "greetingNight": {
+    "message": "Good night"
+  },
+  "greetingMorning": {
+    "message": "Good morning"
+  },
+  "greetingAfternoon": {
+    "message": "Good afternoon"
+  },
+  "greetingEvening": {
+    "message": "Good evening"
+  },
+
+  "openingTool": {
+    "message": "Opening $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "Still opening… check your connection"
+  },
+  "searchingGoogle": {
+    "message": "Searching Google…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "Still searching… check your connection"
+  },
+
+  "pinTool": {
+    "message": "Pin $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "Unpin $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "Remove $NAME$ from recents",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+
+  "noToolsMatch": {
+    "message": "No tools match your search."
+  },
+  "searchGoogleFor": {
+    "message": "Search Google for \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "Opens in this tab"
+  },
+
+  "popupOpenSite": {
+    "message": "Open ↗"
+  },
+  "popupOpeningTool": {
+    "message": "Opening $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

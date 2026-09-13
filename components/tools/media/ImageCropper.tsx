@@ -77,6 +77,16 @@ export default function ImageCropper() {
   const dragRef = React.useRef<DragMode | null>(null);
   const stageRef = React.useRef<HTMLDivElement>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
+  const imageUrlRef = React.useRef<string | null>(null);
+
+  // Revoke on unmount — handleFiles/removeImage below cover the
+  // replace/manual-remove paths, so this only ever fires if the user
+  // navigates away with an image still loaded.
+  React.useEffect(() => {
+    return () => {
+      if (imageUrlRef.current) URL.revokeObjectURL(imageUrlRef.current);
+    };
+  }, []);
 
   const handleFiles = async (files: File[]) => {
     const file = files.find((f) => f.type.startsWith("image/"));
@@ -84,10 +94,17 @@ export default function ImageCropper() {
     setError(null);
     try {
       const bitmap = await createImageBitmap(file);
-      const url = URL.createObjectURL(file);
       const naturalWidth = bitmap.width;
       const naturalHeight = bitmap.height;
       bitmap.close();
+
+      // Revoke the previous preview URL (if any) before creating the new
+      // one — loading a second image without clicking "remove" first used
+      // to leak the first image's object URL indefinitely.
+      if (imageUrlRef.current) URL.revokeObjectURL(imageUrlRef.current);
+      const url = URL.createObjectURL(file);
+      imageUrlRef.current = url;
+
       setImage({ file, url, naturalWidth, naturalHeight });
       setCrop({
         x: Math.round(naturalWidth * 0.1),
@@ -105,7 +122,10 @@ export default function ImageCropper() {
   useIncomingHandoff((file) => handleFiles([file]));
 
   const removeImage = () => {
-    if (image) URL.revokeObjectURL(image.url);
+    if (imageUrlRef.current) {
+      URL.revokeObjectURL(imageUrlRef.current);
+      imageUrlRef.current = null;
+    }
     setImage(null);
     setCrop(null);
     setError(null);

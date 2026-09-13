@@ -2,7 +2,6 @@
   "use strict";
 
   const SITE_URL = "https://everyutili.com";
-  const LOCALE = "en";
   const RECENTS_KEY = "everyutili_recent_visits";
   const PINS_KEY = "everyutili_pinned_slugs";
   const QUERIES_KEY = "everyutili_recent_queries";
@@ -18,8 +17,37 @@
   // ~80-tool, backdrop-blurred DOM built) this page load — see setDrawerOpen.
   let drawerRendered = false;
 
+  // ---------------------------------------------------------- i18n
+  //
+  // chrome.i18n.getMessage reads extension/_locales/<lang>/messages.json,
+  // auto-selected by Chrome's own UI language (no per-page detection code
+  // needed). tr() is a thin wrapper so call sites read like a normal i18n
+  // call (named tr, not t, since `t` is this file's usual loop variable for
+  // a single tool object — e.g. `EVERYUTILI_TOOLS.map((t) => ...)`); no
+  // collision either way since a shadowed `t` never itself gets called as a
+  // function, but a distinct name keeps it unambiguous while skimming code.
+  // SITE_LOCALES maps the UI language down to one of the 12 locale
+  // segments everyutili.com actually serves (e.g. "en-US" -> "en"), falling
+  // back to English for any language the site doesn't have a translation for.
+  const SITE_LOCALES = ["en", "es", "fr", "de", "pt", "ar", "ja", "hi", "zh-CN", "ru", "it", "id"];
+
+  function tr(key, substitutions) {
+    return chrome.i18n.getMessage(key, substitutions) || key;
+  }
+
+  function resolveSiteLocale() {
+    const uiLang = chrome.i18n.getUILanguage(); // e.g. "en-US", "zh-CN", "pt-BR"
+    if (SITE_LOCALES.includes(uiLang)) return uiLang;
+    const base = uiLang.split("-")[0];
+    if (base === "zh") return uiLang.toLowerCase() === "zh-tw" ? "en" : "zh-CN";
+    if (SITE_LOCALES.includes(base)) return base;
+    return "en";
+  }
+
+  const SITE_LOCALE = resolveSiteLocale();
+
   function toolUrl(tool) {
-    return `${SITE_URL}/${LOCALE}/tools/${tool.category}/${tool.slug}`;
+    return `${SITE_URL}/${SITE_LOCALE}/tools/${tool.category}/${tool.slug}`;
   }
 
   function toolBySlug(slug) {
@@ -31,9 +59,15 @@
     return `<svg class="${extraClass || ""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;
   }
 
+  const CATEGORY_LABEL_KEYS = {
+    media: "categoryMedia",
+    document: "categoryDocument",
+    developer: "categoryDeveloper",
+    financial: "categoryFinancial",
+  };
+
   function categoryLabel(slug) {
-    const cat = EVERYUTILI_CATEGORIES.find((c) => c.slug === slug);
-    return cat ? cat.label : slug;
+    return CATEGORY_LABEL_KEYS[slug] ? tr(CATEGORY_LABEL_KEYS[slug]) : slug;
   }
 
   function escapeHtml(str) {
@@ -188,14 +222,14 @@
 
   function openTool(tool, sourceEl) {
     setCardOpening(sourceEl);
-    showNavOverlay(`Opening ${tool.name}…`, "Still opening… check your connection");
+    showNavOverlay(tr("openingTool", [tool.name]), tr("stillOpeningCheckConnection"));
     recordVisit(tool.slug);
     window.location.href = toolUrl(tool);
   }
 
   function openGoogle(query, sourceEl) {
     setCardOpening(sourceEl);
-    showNavOverlay("Searching Google…", "Still searching… check your connection");
+    showNavOverlay(tr("searchingGoogle"), tr("stillSearchingCheckConnection"));
     window.location.href = googleSearchUrl(query);
   }
 
@@ -224,7 +258,14 @@
     });
 
     const hour = now.getHours();
-    greetingEl.textContent = hour < 5 ? "Good night" : hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
+    greetingEl.textContent =
+      hour < 5
+        ? tr("greetingNight")
+        : hour < 12
+          ? tr("greetingMorning")
+          : hour < 18
+            ? tr("greetingAfternoon")
+            : tr("greetingEvening");
   }
   tick();
   setInterval(tick, 1000 * 15);
@@ -348,7 +389,7 @@
           const pinBtn = document.createElement("button");
           pinBtn.type = "button";
           pinBtn.className = "card-action pin-btn" + (isPinned ? " active" : "");
-          pinBtn.setAttribute("aria-label", isPinned ? `Unpin ${tool.name}` : `Pin ${tool.name}`);
+          pinBtn.setAttribute("aria-label", isPinned ? tr("unpinTool", [tool.name]) : tr("pinTool", [tool.name]));
           pinBtn.innerHTML = pinIconSvg();
           pinBtn.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -365,7 +406,7 @@
             const removeBtn = document.createElement("button");
             removeBtn.type = "button";
             removeBtn.className = "card-action remove-btn";
-            removeBtn.setAttribute("aria-label", `Remove ${tool.name} from recents`);
+            removeBtn.setAttribute("aria-label", tr("removeFromRecents", [tool.name]));
             removeBtn.innerHTML = removeIconSvg();
             removeBtn.addEventListener("click", (e) => {
               e.stopPropagation();
@@ -396,7 +437,7 @@
         block.innerHTML = `
           <div class="drawer-cat-head">
             <span class="dot" style="background: var(--cat-${cat.slug})"></span>
-            <h3>${cat.label}</h3>
+            <h3>${escapeHtml(categoryLabel(cat.slug))}</h3>
             <span class="count">${tools.length}</span>
           </div>
         `;
@@ -412,7 +453,7 @@
           const pinBtn = document.createElement("button");
           pinBtn.type = "button";
           pinBtn.className = "card-action pin-btn pin-btn-sm" + (isPinned ? " active" : "");
-          pinBtn.setAttribute("aria-label", isPinned ? `Unpin ${tool.name}` : `Pin ${tool.name}`);
+          pinBtn.setAttribute("aria-label", isPinned ? tr("unpinTool", [tool.name]) : tr("pinTool", [tool.name]));
           pinBtn.innerHTML = pinIconSvg();
           pinBtn.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -452,7 +493,9 @@
     }
     drawerToggle.setAttribute("aria-expanded", String(open));
     drawerPanel.classList.toggle("open", open);
-    drawerLabel.textContent = open ? "Hide all tools" : `Browse all ${EVERYUTILI_TOOLS.length} tools`;
+    drawerLabel.textContent = open
+      ? tr("hideAllTools")
+      : tr("browseAllTools", [String(EVERYUTILI_TOOLS.length)]);
   }
 
   drawerToggle.addEventListener("click", () => setDrawerOpen(!drawerOpen));
@@ -477,10 +520,10 @@
     engineToolsBtn.setAttribute("aria-selected", String(engine === "tools"));
     engineGoogleBtn.classList.toggle("active", engine === "google");
     engineGoogleBtn.setAttribute("aria-selected", String(engine === "google"));
-    hintEnter.textContent = engine === "google" ? "Search Google" : "Open tool";
+    hintEnter.textContent = engine === "google" ? tr("hintSearchGoogle") : tr("hintOpenTool");
     searchInput.placeholder = engine === "google"
-      ? "Search Google…"
-      : "Search tools or type to search Google…";
+      ? tr("searchPlaceholderGoogle")
+      : tr("searchPlaceholderDefault");
     runSearch(searchInput.value);
   }
 
@@ -489,74 +532,8 @@
 
   // ---------------------------------------------------------- fuzzy search
 
-  // Small hand-written Levenshtein distance — only ever called against a
-  // tool's short name (a handful of words) for up to 60 tools, so an O(n*m)
-  // DP table is more than fast enough without needing a library.
-  function levenshtein(a, b) {
-    const m = a.length;
-    const n = b.length;
-    if (m === 0) return n;
-    if (n === 0) return m;
-
-    let prevRow = new Array(n + 1);
-    let currRow = new Array(n + 1);
-    for (let j = 0; j <= n; j++) prevRow[j] = j;
-
-    for (let i = 1; i <= m; i++) {
-      currRow[0] = i;
-      for (let j = 1; j <= n; j++) {
-        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
-        currRow[j] = Math.min(currRow[j - 1] + 1, prevRow[j] + 1, prevRow[j - 1] + cost);
-      }
-      [prevRow, currRow] = [currRow, prevRow];
-    }
-    return prevRow[n];
-  }
-
-  function initials(name) {
-    return name
-      .split(/[\s/&-]+/)
-      .filter(Boolean)
-      .map((word) => word[0])
-      .join("")
-      .toLowerCase();
-  }
-
-  function scoreMatch(tool, query) {
-    const name = tool.name.toLowerCase();
-    const slug = tool.slug.toLowerCase();
-
-    if (name.startsWith(query)) return 5;
-    if (name.includes(query)) return 4;
-    if (slug.includes(query)) return 3;
-
-    if (query.length <= 4) {
-      if (initials(tool.name) === query) return 3.5;
-      if (initials(tool.name).startsWith(query)) return 2.5;
-    }
-
-    // Fuzzy fallback: only worth trying for reasonably short queries, and
-    // only when nothing above already matched — avoids wasting cycles
-    // scoring all 60 tools on every keystroke. Compares the whole query
-    // against the whole name (catches "jpeg to png" -> "jpg to png") AND,
-    // for a single-word query, against each individual word of the name
-    // (catches "jpeg" -> the "jpg" in "JPG to PNG") — whichever is closer.
-    if (query.length >= 3 && query.length <= 24) {
-      let best = levenshtein(query, name);
-
-      if (!query.includes(" ")) {
-        for (const word of name.split(/\s+/)) {
-          const dist = levenshtein(query, word);
-          if (dist < best) best = dist;
-        }
-      }
-
-      const maxAllowed = query.length <= 5 ? 1 : query.length <= 10 ? 2 : 3;
-      if (best <= maxAllowed) return 2 - best * 0.2;
-    }
-
-    return 0;
-  }
+  // levenshtein/initials/scoreMatch live in search.js (shared with popup.js).
+  const { scoreMatch } = window.EveryUtiliSearch;
 
   const resultsEl = document.getElementById("search-results");
   const recentQueriesEl = document.getElementById("recent-queries");
@@ -638,7 +615,7 @@
 
   function renderResults() {
     if (currentResults.length === 0) {
-      resultsEl.innerHTML = `<div class="results-empty">No tools match your search.</div>`;
+      resultsEl.innerHTML = `<div class="results-empty">${escapeHtml(tr("noToolsMatch"))}</div>`;
       return;
     }
 
@@ -656,8 +633,8 @@
           <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M21.35 11.1H12v2.8h5.35c-.23 1.4-1.6 4.1-5.35 4.1-3.22 0-5.85-2.66-5.85-5.95S8.78 6.1 12 6.1c1.83 0 3.06.78 3.76 1.45l2.56-2.47C16.7 3.6 14.55 2.6 12 2.6 6.98 2.6 2.9 6.7 2.9 11.7s4.08 9.1 9.1 9.1c5.25 0 8.74-3.7 8.74-8.9 0-.6-.07-1.05-.15-1.5Z"/></svg>
         </span>
         <span class="result-row-text">
-          <span class="name">Search Google for "${escapeHtml(query)}"</span>
-          <span class="tagline">Opens in this tab</span>
+          <span class="name">${escapeHtml(tr("searchGoogleFor", [query]))}</span>
+          <span class="tagline">${escapeHtml(tr("opensInThisTab"))}</span>
         </span>
       `;
       resultsEl.appendChild(row);
@@ -782,6 +759,33 @@
 
   // ---------------------------------------------------------- init
 
+  // Every static-markup string in newtab.html (the English fallback text
+  // baked into the HTML so the page never shows blank while JS parses)
+  // gets swapped for chrome.i18n's message in the user's Chrome UI language.
+  function applyStaticI18n() {
+    document.getElementById("offline-badge-label").textContent = tr("offlineBadge");
+    settingsToggle.setAttribute("aria-label", tr("settingsAriaLabel"));
+    document.getElementById("settings-default-search-label").textContent = tr("settingsDefaultSearch");
+    document.getElementById("settings-default-search-group").setAttribute("aria-label", tr("settingsDefaultSearch"));
+    document.getElementById("settings-clock-format-label").textContent = tr("settingsClockFormat");
+    document.getElementById("settings-clock-format-group").setAttribute("aria-label", tr("settingsClockFormat"));
+    defaultEngineButtons.tools.textContent = tr("engineEveryUtili");
+    defaultEngineButtons.google.textContent = tr("engineGoogle");
+    clockFormatButtons.auto.textContent = tr("clockAuto");
+    clockFormatButtons["12h"].textContent = tr("clock12h");
+    clockFormatButtons["24h"].textContent = tr("clock24h");
+
+    document.getElementById("engine-tools-label").textContent = tr("engineEveryUtili");
+    document.getElementById("engine-google-label").textContent = tr("engineGoogle");
+    document.getElementById("engine-switch").setAttribute("aria-label", tr("hintSwitchEngine"));
+    document.getElementById("hint-navigate").textContent = tr("hintNavigate");
+    document.getElementById("hint-switch-engine").textContent = tr("hintSwitchEngine");
+    document.getElementById("hint-clear").textContent = tr("hintClear");
+    document.getElementById("quick-access-title").textContent = tr("quickAccessTitle");
+  }
+
+  applyStaticI18n();
+
   getSettings((settings) => {
     engine = settings.defaultEngine;
     setEngine(engine);
@@ -791,7 +795,7 @@
     selectRadioGroup(clockFormatButtons, settings.clockFormat);
   });
 
-  drawerLabel.textContent = `Browse all ${EVERYUTILI_TOOLS.length} tools`;
+  drawerLabel.textContent = tr("browseAllTools", [String(EVERYUTILI_TOOLS.length)]);
   renderQuickShelf();
   searchInput.focus();
 })();

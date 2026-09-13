@@ -1,0 +1,179 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "Заменяет новую вкладку поиском по 79+ бесплатным приватным инструментам: конвертеры, PDF, калькуляторы, инструменты разработки."
+  },
+  "offlineBadge": {
+    "message": "Работает офлайн"
+  },
+  "settingsAriaLabel": {
+    "message": "Настройки"
+  },
+  "settingsDefaultSearch": {
+    "message": "Поиск по умолчанию"
+  },
+  "settingsClockFormat": {
+    "message": "Формат часов"
+  },
+  "clockAuto": {
+    "message": "Авто"
+  },
+  "clock12h": {
+    "message": "12ч"
+  },
+  "clock24h": {
+    "message": "24ч"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+  "searchPlaceholderDefault": {
+    "message": "Поиск инструментов или запрос для Google…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "Поиск в Google…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "Поиск инструментов…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "Очистить поиск"
+  },
+  "hintOpenTool": {
+    "message": "Открыть инструмент"
+  },
+  "hintSearchGoogle": {
+    "message": "Искать в Google"
+  },
+  "hintNavigate": {
+    "message": "Навигация"
+  },
+  "hintSwitchEngine": {
+    "message": "Сменить поисковик"
+  },
+  "hintClear": {
+    "message": "Очистить"
+  },
+  "quickAccessTitle": {
+    "message": "Быстрый доступ"
+  },
+  "browseAllTools": {
+    "message": "Все инструменты ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "Скрыть все инструменты"
+  },
+  "categoryAll": {
+    "message": "Все"
+  },
+  "categoryMedia": {
+    "message": "Медиа"
+  },
+  "categoryDocument": {
+    "message": "Документы"
+  },
+  "categoryDeveloper": {
+    "message": "Разработка"
+  },
+  "categoryFinancial": {
+    "message": "Финансы"
+  },
+  "greetingNight": {
+    "message": "Доброй ночи"
+  },
+  "greetingMorning": {
+    "message": "Доброе утро"
+  },
+  "greetingAfternoon": {
+    "message": "Добрый день"
+  },
+  "greetingEvening": {
+    "message": "Добрый вечер"
+  },
+  "openingTool": {
+    "message": "Открывается $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "Всё ещё открывается… проверьте подключение"
+  },
+  "searchingGoogle": {
+    "message": "Поиск в Google…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "Поиск занимает много времени… проверьте подключение"
+  },
+  "pinTool": {
+    "message": "Закрепить $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "Открепить $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "Удалить $NAME$ из недавних",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "noToolsMatch": {
+    "message": "Ничего не найдено по вашему запросу."
+  },
+  "searchGoogleFor": {
+    "message": "Искать в Google «$QUERY$»",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "Откроется в этой вкладке"
+  },
+  "popupOpenSite": {
+    "message": "Открыть ↗"
+  },
+  "popupOpeningTool": {
+    "message": "Открывается $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

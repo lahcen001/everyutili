@@ -98,7 +98,7 @@ export function CommandMenu() {
               <Command.Input
                 autoFocus
                 placeholder={t("placeholder")}
-                className="h-12 w-full bg-transparent text-sm outline-none placeholder:text-muted-foreground"
+                className="h-12 w-full border-0 bg-transparent text-sm outline-none ring-0 placeholder:text-muted-foreground focus:border-0 focus:outline-none focus:ring-0 focus:shadow-none"
               />
             </div>
             <Command.List className="max-h-80 overflow-y-auto p-2">

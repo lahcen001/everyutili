@@ -1,0 +1,179 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "Ganti Tab Baru dengan pencarian instan ke 79+ alat gratis privat: konverter, alat PDF, kalkulator, utilitas developer."
+  },
+  "offlineBadge": {
+    "message": "Berfungsi offline"
+  },
+  "settingsAriaLabel": {
+    "message": "Pengaturan"
+  },
+  "settingsDefaultSearch": {
+    "message": "Pencarian default"
+  },
+  "settingsClockFormat": {
+    "message": "Format jam"
+  },
+  "clockAuto": {
+    "message": "Otomatis"
+  },
+  "clock12h": {
+    "message": "12 jam"
+  },
+  "clock24h": {
+    "message": "24 jam"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+  "searchPlaceholderDefault": {
+    "message": "Cari alat atau ketik untuk mencari di Google…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "Cari di Google…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "Cari alat…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "Hapus pencarian"
+  },
+  "hintOpenTool": {
+    "message": "Buka alat"
+  },
+  "hintSearchGoogle": {
+    "message": "Cari di Google"
+  },
+  "hintNavigate": {
+    "message": "Navigasi"
+  },
+  "hintSwitchEngine": {
+    "message": "Ganti mesin pencari"
+  },
+  "hintClear": {
+    "message": "Hapus"
+  },
+  "quickAccessTitle": {
+    "message": "Akses cepat"
+  },
+  "browseAllTools": {
+    "message": "Lihat semua $COUNT$ alat",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "Sembunyikan semua alat"
+  },
+  "categoryAll": {
+    "message": "Semua"
+  },
+  "categoryMedia": {
+    "message": "Media"
+  },
+  "categoryDocument": {
+    "message": "Dokumen"
+  },
+  "categoryDeveloper": {
+    "message": "Developer"
+  },
+  "categoryFinancial": {
+    "message": "Keuangan"
+  },
+  "greetingNight": {
+    "message": "Selamat malam"
+  },
+  "greetingMorning": {
+    "message": "Selamat pagi"
+  },
+  "greetingAfternoon": {
+    "message": "Selamat siang"
+  },
+  "greetingEvening": {
+    "message": "Selamat sore"
+  },
+  "openingTool": {
+    "message": "Membuka $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "Masih membuka… periksa koneksi Anda"
+  },
+  "searchingGoogle": {
+    "message": "Mencari di Google…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "Masih mencari… periksa koneksi Anda"
+  },
+  "pinTool": {
+    "message": "Sematkan $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "Lepas sematan $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "Hapus $NAME$ dari terbaru",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "noToolsMatch": {
+    "message": "Tidak ada alat yang cocok dengan pencarian Anda."
+  },
+  "searchGoogleFor": {
+    "message": "Cari \"$QUERY$\" di Google",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "Terbuka di tab ini"
+  },
+  "popupOpenSite": {
+    "message": "Buka ↗"
+  },
+  "popupOpeningTool": {
+    "message": "Membuka $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

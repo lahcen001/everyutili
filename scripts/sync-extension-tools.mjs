@@ -9,6 +9,7 @@ import path from "node:path";
 
 const rootDir = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const src = readFileSync(path.join(rootDir, "config/tools.ts"), "utf-8");
+const messages = JSON.parse(readFileSync(path.join(rootDir, "messages/en.json"), "utf-8"));
 
 const marker = "export const TOOLS: ToolConfig[] = ";
 const markerIdx = src.indexOf(marker);
@@ -63,13 +64,21 @@ function extractNum(obj, field) {
 }
 
 const tools = objs
-  .map((obj) => ({
-    slug: extractField(obj, "slug"),
-    category: extractField(obj, "category"),
-    name: extractField(obj, "shortName"),
-    tagline: extractField(obj, "name"),
-    priority: extractNum(obj, "priority"),
-  }))
+  .map((obj) => {
+    const slug = extractField(obj, "slug");
+    return {
+      slug,
+      category: extractField(obj, "category"),
+      name: extractField(obj, "shortName"),
+      tagline: extractField(obj, "name"),
+      priority: extractNum(obj, "priority"),
+      // Search keywords are authored per-tool in messages/en.json (see that
+      // file's doc comment) rather than in config/tools.ts, so the website's
+      // ⌘K palette and the extension's search both read from one source
+      // instead of drifting apart.
+      keywords: messages.tools?.[slug]?.keywords ?? [],
+    };
+  })
   .filter((t) => t.slug && t.category && t.name !== null)
   .sort((a, b) => b.priority - a.priority);
 
@@ -83,7 +92,7 @@ lines.push("const EVERYUTILI_TOOLS = [");
 for (const t of tools) {
   const tagline = t.tagline && t.tagline !== t.name ? t.tagline : `${t.name} — free & private`;
   lines.push(
-    `  { slug: ${JSON.stringify(t.slug)}, category: ${JSON.stringify(t.category)}, name: ${JSON.stringify(t.name)}, tagline: ${JSON.stringify(tagline)}, priority: ${t.priority} },`
+    `  { slug: ${JSON.stringify(t.slug)}, category: ${JSON.stringify(t.category)}, name: ${JSON.stringify(t.name)}, tagline: ${JSON.stringify(tagline)}, priority: ${t.priority}, keywords: ${JSON.stringify(t.keywords)} },`
   );
 }
 lines.push("];");

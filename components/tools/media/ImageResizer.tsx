@@ -125,6 +125,11 @@ export default function ImageResizer() {
       bitmap.close();
       setTargetWidth(naturalWidth);
       setTargetHeight(naturalHeight);
+      // Revoke any previous preview URL first — reachable more than once
+      // per mount (e.g. the queue is cleared via removeItem, then a new
+      // image is loaded), so without this the prior preview's object URL
+      // leaked indefinitely instead of only being cleaned up on unmount.
+      if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
       const url = URL.createObjectURL(imageFiles[0]);
       previewUrlRef.current = url;
       setPreview({ url, naturalWidth, naturalHeight });

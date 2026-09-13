@@ -1,0 +1,179 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "Substitui a Nova Guia por busca instantânea em 79+ ferramentas grátis e privadas: conversores, PDF, calculadoras, dev."
+  },
+  "offlineBadge": {
+    "message": "Funciona offline"
+  },
+  "settingsAriaLabel": {
+    "message": "Configurações"
+  },
+  "settingsDefaultSearch": {
+    "message": "Busca padrão"
+  },
+  "settingsClockFormat": {
+    "message": "Formato do relógio"
+  },
+  "clockAuto": {
+    "message": "Automático"
+  },
+  "clock12h": {
+    "message": "12h"
+  },
+  "clock24h": {
+    "message": "24h"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+  "searchPlaceholderDefault": {
+    "message": "Pesquisar ferramentas ou buscar no Google…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "Pesquisar no Google…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "Pesquisar ferramentas…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "Limpar pesquisa"
+  },
+  "hintOpenTool": {
+    "message": "Abrir ferramenta"
+  },
+  "hintSearchGoogle": {
+    "message": "Pesquisar no Google"
+  },
+  "hintNavigate": {
+    "message": "Navegar"
+  },
+  "hintSwitchEngine": {
+    "message": "Trocar mecanismo"
+  },
+  "hintClear": {
+    "message": "Limpar"
+  },
+  "quickAccessTitle": {
+    "message": "Acesso rápido"
+  },
+  "browseAllTools": {
+    "message": "Ver todas as $COUNT$ ferramentas",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "Ocultar todas as ferramentas"
+  },
+  "categoryAll": {
+    "message": "Todas"
+  },
+  "categoryMedia": {
+    "message": "Mídia"
+  },
+  "categoryDocument": {
+    "message": "Documentos"
+  },
+  "categoryDeveloper": {
+    "message": "Desenvolvedor"
+  },
+  "categoryFinancial": {
+    "message": "Finanças"
+  },
+  "greetingNight": {
+    "message": "Boa noite"
+  },
+  "greetingMorning": {
+    "message": "Bom dia"
+  },
+  "greetingAfternoon": {
+    "message": "Boa tarde"
+  },
+  "greetingEvening": {
+    "message": "Boa noite"
+  },
+  "openingTool": {
+    "message": "Abrindo $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "Ainda abrindo… verifique sua conexão"
+  },
+  "searchingGoogle": {
+    "message": "Pesquisando no Google…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "Ainda pesquisando… verifique sua conexão"
+  },
+  "pinTool": {
+    "message": "Fixar $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "Desafixar $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "Remover $NAME$ dos recentes",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "noToolsMatch": {
+    "message": "Nenhuma ferramenta encontrada para sua busca."
+  },
+  "searchGoogleFor": {
+    "message": "Pesquisar no Google por \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "Abre nesta aba"
+  },
+  "popupOpenSite": {
+    "message": "Abrir ↗"
+  },
+  "popupOpeningTool": {
+    "message": "Abrindo $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

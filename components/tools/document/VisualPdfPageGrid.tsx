@@ -10,12 +10,13 @@ import {
   CheckSquare,
   Square,
   SquareStack,
-  X,
   Check,
   Loader2,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { renderPageToUrl } from "@/lib/pdf/renderPageToUrl";
+import { PdfPageInspectorModal } from "@/components/shared/inspectors/PdfPageInspectorModal";
 
 export interface VisualPdfPageGridState {
   /** Original 1-based page numbers, in the user's current (possibly reordered) order. */
@@ -40,27 +41,11 @@ interface VisualPdfPageGridProps {
 
 interface PageEntry {
   pageNumber: number;
-  dataUrl: string | null;
+  /** An object URL (not a data: URL) — revoked when replaced/removed/unmounted, see thumbnailUrlsRef. */
+  thumbnailUrl: string | null;
 }
 
 const THUMBNAIL_SCALE = 0.5;
-const PREVIEW_SCALE = 2;
-
-async function renderPageToDataUrl(
-  pdf: import("pdfjs-dist").PDFDocumentProxy,
-  pageNumber: number,
-  scale: number
-): Promise<string> {
-  const page = await pdf.getPage(pageNumber);
-  const viewport = page.getViewport({ scale });
-  const canvas = document.createElement("canvas");
-  canvas.width = viewport.width;
-  canvas.height = viewport.height;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) throw new Error("Could not acquire canvas context");
-  await page.render({ canvas, canvasContext: ctx, viewport }).promise;
-  return canvas.toDataURL("image/png");
-}
 
 export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, VisualPdfPageGridProps>(
   function VisualPdfPageGrid({ file, onChange }, ref) {
@@ -72,12 +57,20 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
     const [isLoading, setIsLoading] = React.useState(true);
     const [error, setError] = React.useState<string | null>(null);
     const [lastClicked, setLastClicked] = React.useState<number | null>(null);
-    const [previewPage, setPreviewPage] = React.useState<number | null>(null);
-    const [previewUrl, setPreviewUrl] = React.useState<string | null>(null);
-    const [previewLoading, setPreviewLoading] = React.useState(false);
+    const [inspectorOpen, setInspectorOpen] = React.useState(false);
+    const [inspectorIndex, setInspectorIndex] = React.useState(0);
     const [activeTouchMenu, setActiveTouchMenu] = React.useState<number | null>(null);
 
     const renderingRef = React.useRef<Set<number>>(new Set());
+    // Every currently-live thumbnail object URL, keyed by page number — the
+    // single source of truth for revocation (on re-render with a new file,
+    // on a page being removed from the order, and on unmount).
+    const thumbnailUrlsRef = React.useRef<Map<number, string>>(new Map());
+
+    function revokeAllThumbnails() {
+      for (const url of thumbnailUrlsRef.current.values()) URL.revokeObjectURL(url);
+      thumbnailUrlsRef.current.clear();
+    }
 
     React.useEffect(() => {
       let cancelled = false;
@@ -85,6 +78,10 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
       (async () => {
         setIsLoading(true);
         setError(null);
+        // A new `file` means the previously rendered thumbnails (if any)
+        // belong to a document we're about to discard — revoke them before
+        // resetting state, not just on unmount.
+        revokeAllThumbnails();
         try {
           const pdfjsLib = await import("pdfjs-dist");
           pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
@@ -98,7 +95,7 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
 
           const initialOrder = Array.from({ length: pdf.numPages }, (_, i) => i + 1);
           setPdfDoc(pdf);
-          setPages(initialOrder.map((pageNumber) => ({ pageNumber, dataUrl: null })));
+          setPages(initialOrder.map((pageNumber) => ({ pageNumber, thumbnailUrl: null })));
           setOrder(initialOrder);
           setSelected(new Set());
           setRotations({});
@@ -116,15 +113,26 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
       };
     }, [file]);
 
+    // Unmount-only cleanup, reading via refs so it always sees the latest
+    // URLs without needing them in its dependency array (an empty-deps
+    // effect whose cleanup closes over stale state would otherwise revoke
+    // nothing, or the wrong thing).
+    React.useEffect(() => {
+      return () => {
+        revokeAllThumbnails();
+      };
+    }, []);
+
     const requestThumbnail = React.useCallback(
       (pageNumber: number) => {
         if (!pdfDoc || renderingRef.current.has(pageNumber)) return;
         renderingRef.current.add(pageNumber);
 
-        renderPageToDataUrl(pdfDoc, pageNumber, THUMBNAIL_SCALE)
-          .then((dataUrl) => {
+        renderPageToUrl(pdfDoc, pageNumber, THUMBNAIL_SCALE)
+          .then((url) => {
+            thumbnailUrlsRef.current.set(pageNumber, url);
             setPages((prev) =>
-              prev.map((p) => (p.pageNumber === pageNumber ? { ...p, dataUrl } : p))
+              prev.map((p) => (p.pageNumber === pageNumber ? { ...p, thumbnailUrl: url } : p))
             );
           })
           .catch(() => {
@@ -187,6 +195,14 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
     };
 
     const deletePageFromOrder = (pageNumber: number) => {
+      // A removed page's thumbnail URL has no other owner — revoke it now
+      // rather than only on unmount/file-change, or it leaks for the rest
+      // of the session every time a page is deleted from the grid.
+      const url = thumbnailUrlsRef.current.get(pageNumber);
+      if (url) {
+        URL.revokeObjectURL(url);
+        thumbnailUrlsRef.current.delete(pageNumber);
+      }
       setOrder((prev) => prev.filter((p) => p !== pageNumber));
       setPages((prev) => prev.filter((p) => p.pageNumber !== pageNumber));
       setSelected((prev) => {
@@ -197,20 +213,31 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
       });
     };
 
-    const openPreview = (pageNumber: number) => {
-      setPreviewPage(pageNumber);
-      setPreviewUrl(null);
-      if (!pdfDoc) return;
-      setPreviewLoading(true);
-      renderPageToDataUrl(pdfDoc, pageNumber, PREVIEW_SCALE)
-        .then((dataUrl) => setPreviewUrl(dataUrl))
-        .catch(() => setPreviewUrl(null))
-        .finally(() => setPreviewLoading(false));
+    const openInspectorFor = (pageNumber: number) => {
+      const index = order.indexOf(pageNumber);
+      if (index === -1) return;
+      setInspectorIndex(index);
+      setInspectorOpen(true);
+    };
+
+    const inspectorDelete = (pageNumber: number) => {
+      deletePageFromOrder(pageNumber);
+      setInspectorOpen(false);
     };
 
     const pagesByNumber = React.useMemo(() => {
       const map = new Map<number, PageEntry>();
       pages.forEach((p) => map.set(p.pageNumber, p));
+      return map;
+    }, [pages]);
+
+    // Derived from render-safe state (not thumbnailUrlsRef, which the
+    // compiler forbids reading during render) for the inspector's filmstrip.
+    const thumbnailUrlByPage = React.useMemo(() => {
+      const map = new Map<number, string>();
+      pages.forEach((p) => {
+        if (p.thumbnailUrl) map.set(p.pageNumber, p.thumbnailUrl);
+      });
       return map;
     }, [pages]);
 
@@ -250,7 +277,7 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
                 onToggle={(shiftKey) => togglePage(pageNumber, shiftKey)}
                 onRotate={() => rotatePage(pageNumber)}
                 onDelete={() => deletePageFromOrder(pageNumber)}
-                onPreview={() => openPreview(pageNumber)}
+                onPreview={() => openInspectorFor(pageNumber)}
                 requestThumbnail={requestThumbnail}
                 touchMenuOpen={activeTouchMenu === pageNumber}
                 onToggleTouchMenu={() =>
@@ -276,38 +303,21 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
           </span>
         </div>
 
-        {previewPage !== null && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
-            onClick={() => setPreviewPage(null)}
-          >
-            <div
-              className="relative max-h-[90vh] max-w-[90vw] overflow-auto rounded-xl border border-border bg-card p-4"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                onClick={() => setPreviewPage(null)}
-                className="absolute right-3 top-3 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground"
-                aria-label="Close preview"
-              >
-                <X className="h-4 w-4" />
-              </button>
-              <p className="mb-2 text-sm font-medium">Page {previewPage}</p>
-              {previewLoading || !previewUrl ? (
-                <div className="flex h-64 w-48 items-center justify-center">
-                  <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
-                </div>
-              ) : (
-                <img
-                  src={previewUrl}
-                  alt={`Page ${previewPage} preview`}
-                  className="max-h-[75vh] bg-white"
-                  style={{ transform: `rotate(${rotations[previewPage] ?? 0}deg)` }}
-                />
-              )}
-            </div>
-          </div>
-        )}
+        <PdfPageInspectorModal
+          open={inspectorOpen}
+          onOpenChange={setInspectorOpen}
+          pdfDoc={pdfDoc}
+          fileName={file.name}
+          order={order}
+          activeIndex={inspectorIndex}
+          onActiveIndexChange={setInspectorIndex}
+          selected={selected}
+          rotations={rotations}
+          onToggleSelected={(pageNumber) => togglePage(pageNumber, false)}
+          onRotate={rotatePage}
+          onDelete={inspectorDelete}
+          thumbnailUrlByPage={thumbnailUrlByPage}
+        />
       </div>
     );
   }
@@ -347,7 +357,7 @@ function PageCard({
 
   React.useEffect(() => {
     const node = cardRef.current;
-    if (!node || entry?.dataUrl) return;
+    if (!node || entry?.thumbnailUrl) return;
 
     const observer = new IntersectionObserver(
       (observerEntries) => {
@@ -361,7 +371,7 @@ function PageCard({
     );
     observer.observe(node);
     return () => observer.disconnect();
-  }, [entry?.dataUrl, pageNumber, requestThumbnail]);
+  }, [entry?.thumbnailUrl, pageNumber, requestThumbnail]);
 
   return (
     <Reorder.Item
@@ -434,9 +444,9 @@ function PageCardInner({
         className="block w-full text-left"
       >
         <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden bg-muted">
-          {entry?.dataUrl ? (
+          {entry?.thumbnailUrl ? (
             <img
-              src={entry.dataUrl}
+              src={entry.thumbnailUrl}
               alt={`Page ${pageNumber}`}
               className="h-full w-full object-contain bg-white"
               style={{ transform: `rotate(${rotation}deg)` }}

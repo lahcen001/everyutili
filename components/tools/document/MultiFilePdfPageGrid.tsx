@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Reorder, useDragControls, type DragControls } from "framer-motion";
 import { RotateCw, Trash2, GripVertical, FileText, Loader2 } from "lucide-react";
+import { renderPageToUrl } from "@/lib/pdf/renderPageToUrl";
 
 export interface MultiFilePdfPageId {
   fileIndex: number;
@@ -23,7 +24,7 @@ interface PageEntry {
   key: string;
   fileIndex: number;
   pageNumber: number;
-  dataUrl: string | null;
+  thumbnailUrl: string | null;
 }
 
 interface FileLoadState {
@@ -52,22 +53,6 @@ function pageKey(fileIndex: number, pageNumber: number): string {
   return `${fileIndex}:${pageNumber}`;
 }
 
-async function renderPageToDataUrl(
-  pdf: import("pdfjs-dist").PDFDocumentProxy,
-  pageNumber: number,
-  scale: number
-): Promise<string> {
-  const page = await pdf.getPage(pageNumber);
-  const viewport = page.getViewport({ scale });
-  const canvas = document.createElement("canvas");
-  canvas.width = viewport.width;
-  canvas.height = viewport.height;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) throw new Error("Could not acquire canvas context");
-  await page.render({ canvas, canvasContext: ctx, viewport }).promise;
-  return canvas.toDataURL("image/png");
-}
-
 export const MultiFilePdfPageGrid = React.forwardRef<
   MultiFilePdfPageGridHandle,
   MultiFilePdfPageGridProps
@@ -79,11 +64,18 @@ export const MultiFilePdfPageGrid = React.forwardRef<
   const [isLoading, setIsLoading] = React.useState(true);
 
   const renderingRef = React.useRef<Set<string>>(new Set());
+  const thumbnailUrlsRef = React.useRef<Map<string, string>>(new Map());
+
+  const revokeAllThumbnails = React.useCallback(() => {
+    for (const url of thumbnailUrlsRef.current.values()) URL.revokeObjectURL(url);
+    thumbnailUrlsRef.current.clear();
+  }, []);
 
   React.useEffect(() => {
     let cancelled = false;
 
     (async () => {
+      revokeAllThumbnails();
       setIsLoading(true);
       const pdfjsLib = await import("pdfjs-dist");
       pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
@@ -111,7 +103,7 @@ export const MultiFilePdfPageGrid = React.forwardRef<
               key: pageKey(fileIndex, pageNumber),
               fileIndex,
               pageNumber,
-              dataUrl: null,
+              thumbnailUrl: null,
             });
           }
         } catch (e) {
@@ -137,7 +129,13 @@ export const MultiFilePdfPageGrid = React.forwardRef<
     return () => {
       cancelled = true;
     };
-  }, [files]);
+  }, [files, revokeAllThumbnails]);
+
+  React.useEffect(() => {
+    return () => {
+      revokeAllThumbnails();
+    };
+  }, [revokeAllThumbnails]);
 
   const pdfDocByFileIndex = React.useMemo(() => {
     const map = new Map<number, import("pdfjs-dist").PDFDocumentProxy>();
@@ -154,9 +152,10 @@ export const MultiFilePdfPageGrid = React.forwardRef<
       if (!pdfDoc) return;
       renderingRef.current.add(key);
 
-      renderPageToDataUrl(pdfDoc, pageNumber, THUMBNAIL_SCALE)
-        .then((dataUrl) => {
-          setPages((prev) => prev.map((p) => (p.key === key ? { ...p, dataUrl } : p)));
+      renderPageToUrl(pdfDoc, pageNumber, THUMBNAIL_SCALE)
+        .then((thumbnailUrl) => {
+          thumbnailUrlsRef.current.set(key, thumbnailUrl);
+          setPages((prev) => prev.map((p) => (p.key === key ? { ...p, thumbnailUrl } : p)));
         })
         .catch(() => {
           renderingRef.current.delete(key);
@@ -195,6 +194,11 @@ export const MultiFilePdfPageGrid = React.forwardRef<
   };
 
   const deletePageFromOrder = (key: string) => {
+    const url = thumbnailUrlsRef.current.get(key);
+    if (url) {
+      URL.revokeObjectURL(url);
+      thumbnailUrlsRef.current.delete(key);
+    }
     setOrder((prev) => prev.filter((k) => k !== key));
     setPages((prev) => prev.filter((p) => p.key !== key));
     setRotations((prev) => {
@@ -311,7 +315,7 @@ function PageCard({
 
   React.useEffect(() => {
     const node = cardRef.current;
-    if (!node || entry?.dataUrl) return;
+    if (!node || entry?.thumbnailUrl) return;
 
     const observer = new IntersectionObserver(
       (observerEntries) => {
@@ -325,7 +329,7 @@ function PageCard({
     );
     observer.observe(node);
     return () => observer.disconnect();
-  }, [entry?.dataUrl, pageKey, fileIndex, pageNumber, requestThumbnail]);
+  }, [entry?.thumbnailUrl, pageKey, fileIndex, pageNumber, requestThumbnail]);
 
   return (
     <Reorder.Item value={pageKey} dragListener={false} dragControls={dragControls} as="div" className="list-none">
@@ -376,9 +380,9 @@ function PageCardInner({
       className="group relative overflow-hidden rounded-lg border-2 border-border bg-card transition-colors hover:border-primary/50"
     >
       <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden bg-muted">
-        {entry?.dataUrl ? (
+        {entry?.thumbnailUrl ? (
           <img
-            src={entry.dataUrl}
+            src={entry.thumbnailUrl}
             alt={`${fileName} page ${pageNumber}`}
             className="h-full w-full object-contain bg-white"
             style={{ transform: `rotate(${rotation}deg)` }}

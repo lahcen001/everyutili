@@ -1,0 +1,179 @@
+{
+  "extName": {
+    "message": "EveryUtili"
+  },
+  "extShortName": {
+    "message": "EveryUtili"
+  },
+  "extDescription": {
+    "message": "استبدل التبويب الجديد ببحث فوري عبر أكثر من 79 أداة مجانية خاصة: محولات، أدوات PDF، آلات حاسبة، أدوات مطورين."
+  },
+  "offlineBadge": {
+    "message": "يعمل بلا اتصال"
+  },
+  "settingsAriaLabel": {
+    "message": "الإعدادات"
+  },
+  "settingsDefaultSearch": {
+    "message": "محرك البحث الافتراضي"
+  },
+  "settingsClockFormat": {
+    "message": "تنسيق الساعة"
+  },
+  "clockAuto": {
+    "message": "تلقائي"
+  },
+  "clock12h": {
+    "message": "12 ساعة"
+  },
+  "clock24h": {
+    "message": "24 ساعة"
+  },
+  "engineEveryUtili": {
+    "message": "EveryUtili"
+  },
+  "engineGoogle": {
+    "message": "Google"
+  },
+  "searchPlaceholderDefault": {
+    "message": "ابحث عن أداة أو اكتب للبحث في Google…"
+  },
+  "searchPlaceholderGoogle": {
+    "message": "ابحث في Google…"
+  },
+  "searchPlaceholderPopup": {
+    "message": "ابحث عن أدوات…"
+  },
+  "clearSearchAriaLabel": {
+    "message": "مسح البحث"
+  },
+  "hintOpenTool": {
+    "message": "فتح الأداة"
+  },
+  "hintSearchGoogle": {
+    "message": "بحث في Google"
+  },
+  "hintNavigate": {
+    "message": "تنقّل"
+  },
+  "hintSwitchEngine": {
+    "message": "تبديل محرك البحث"
+  },
+  "hintClear": {
+    "message": "مسح"
+  },
+  "quickAccessTitle": {
+    "message": "الوصول السريع"
+  },
+  "browseAllTools": {
+    "message": "تصفّح كل الأدوات ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "79"
+      }
+    }
+  },
+  "hideAllTools": {
+    "message": "إخفاء كل الأدوات"
+  },
+  "categoryAll": {
+    "message": "الكل"
+  },
+  "categoryMedia": {
+    "message": "الوسائط"
+  },
+  "categoryDocument": {
+    "message": "المستندات"
+  },
+  "categoryDeveloper": {
+    "message": "المطورون"
+  },
+  "categoryFinancial": {
+    "message": "المالية"
+  },
+  "greetingNight": {
+    "message": "تصبح على خير"
+  },
+  "greetingMorning": {
+    "message": "صباح الخير"
+  },
+  "greetingAfternoon": {
+    "message": "طاب يومك"
+  },
+  "greetingEvening": {
+    "message": "مساء الخير"
+  },
+  "openingTool": {
+    "message": "جارٍ فتح $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "stillOpeningCheckConnection": {
+    "message": "لا يزال قيد الفتح… تحقّق من اتصالك"
+  },
+  "searchingGoogle": {
+    "message": "جارٍ البحث في Google…"
+  },
+  "stillSearchingCheckConnection": {
+    "message": "لا يزال البحث جاريًا… تحقّق من اتصالك"
+  },
+  "pinTool": {
+    "message": "تثبيت $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "unpinTool": {
+    "message": "إلغاء تثبيت $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "removeFromRecents": {
+    "message": "إزالة $NAME$ من العناصر الأخيرة",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  },
+  "noToolsMatch": {
+    "message": "لا توجد أدوات مطابقة لبحثك."
+  },
+  "searchGoogleFor": {
+    "message": "ابحث في Google عن \"$QUERY$\"",
+    "placeholders": {
+      "query": {
+        "content": "$1",
+        "example": "pdf"
+      }
+    }
+  },
+  "opensInThisTab": {
+    "message": "يفتح في هذا التبويب"
+  },
+  "popupOpenSite": {
+    "message": "فتح ↗"
+  },
+  "popupOpeningTool": {
+    "message": "جارٍ فتح $NAME$…",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "JPG to PNG"
+      }
+    }
+  }
+}

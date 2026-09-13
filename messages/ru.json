@@ -114,6 +114,22 @@
         {
           "question": "Есть ли ограничение на пакетную конвертацию?",
           "answer": "Искусственных ограничений нет — единственное ограничение — доступная память вашего устройства."
+        },
+        {
+          "question": "Will converting JPG to PNG make the file larger?",
+          "answer": "Usually yes. PNG uses lossless compression, so a photo with lots of detail or gradients often becomes several times larger than the original JPG. If file size matters more than lossless quality, stick with JPG or try WebP instead."
+        },
+        {
+          "question": "Does converting JPG to PNG add transparency?",
+          "answer": "No. JPG has no alpha channel, so the PNG output is fully opaque with no transparent pixels. To make parts of an image transparent you'd need a background remover tool first."
+        },
+        {
+          "question": "What's the maximum image size this tool can handle?",
+          "answer": "It depends on your device's available memory, since conversion happens in your browser rather than on a server. Very large images (tens of megapixels) may slow down or fail on low-memory devices, but typical photos convert in a second or two."
+        },
+        {
+          "question": "Can I convert multiple JPG files to PNG at once?",
+          "answer": "Yes, you can select or drag in several JPG or HEIC files and each one is converted and downloaded as its own PNG."
         }
       ],
       "comparisonTable": {
@@ -195,6 +211,22 @@
         {
           "question": "Могу ли я изменить порядок страниц перед объединением?",
           "answer": "Да, вы можете перетаскивать файлы, чтобы контролировать итоговый порядок страниц."
+        },
+        {
+          "question": "Can I merge password-protected PDFs?",
+          "answer": "No. Encrypted or password-protected PDFs can't currently be opened by the merge tool since decryption isn't supported. Remove the password using the file's original application first, then merge."
+        },
+        {
+          "question": "What happens if one of my PDFs is corrupted?",
+          "answer": "If a file can't be parsed, the tool will show an error for that specific file rather than silently skipping it. Try opening and re-saving the corrupted file in another PDF viewer before merging."
+        },
+        {
+          "question": "Will merging preserve bookmarks, forms, and links?",
+          "answer": "Page content, images, and text are preserved, but interactive elements like form fields, bookmarks, and internal links from the source files may not carry over into the merged output."
+        },
+        {
+          "question": "What is the merged file named?",
+          "answer": "The combined PDF downloads as merged.pdf by default. You can rename it after download like any other file on your device."
         }
       ]
     },
@@ -240,6 +272,22 @@
         {
           "question": "Что происходит, если мой JSON недействителен?",
           "answer": "Редактор подсвечивает точную строку и символ синтаксической ошибки в реальном времени."
+        },
+        {
+          "question": "Does the tree view let me collapse and expand nested objects?",
+          "answer": "Yes, click the arrow next to any object or array to collapse or expand that branch of the tree."
+        },
+        {
+          "question": "Can it sort object keys alphabetically?",
+          "answer": "No, keys are displayed in the same order they appear in your original JSON — there's no alphabetical sort option."
+        },
+        {
+          "question": "Does it support JSON with comments or trailing commas?",
+          "answer": "No, this follows strict JSON syntax — comments and trailing commas (sometimes allowed in JSON5 or JSONC) will cause a parse error."
+        },
+        {
+          "question": "What's the difference between beautify and minify here?",
+          "answer": "Beautify adds indentation and line breaks for readability; minify strips all unnecessary whitespace to produce the smallest possible output — both represent the same underlying data."
         }
       ]
     },
@@ -280,6 +328,22 @@
         {
           "question": "Могу ли я настроить рабочие часы?",
           "answer": "Да, вы можете скорректировать часы в неделю и оплачиваемые недели в году в соответствии с вашим графиком."
+        },
+        {
+          "question": "How do you calculate daily and weekly rates?",
+          "answer": "Daily rate is your hourly rate multiplied by hours worked per day (derived from hours per week ÷ 5); weekly rate is hourly rate times hours per week."
+        },
+        {
+          "question": "What if I work part-time?",
+          "answer": "Adjust the hours per week field to your actual schedule — the calculator recalculates all rates from that number."
+        },
+        {
+          "question": "Does this account for overtime pay?",
+          "answer": "No, it assumes a flat rate across all hours entered. For overtime-adjusted pay, calculate regular and overtime hours separately."
+        },
+        {
+          "question": "Why does monthly pay not equal weekly pay times 4?",
+          "answer": "Monthly pay is annual salary divided by 12, not weekly pay times 4, since most months have slightly more than 4 weeks."
         }
       ],
       "comparisonTable": {
@@ -366,6 +430,22 @@
         {
           "question": "Потеряю ли я качество фото?",
           "answer": "Вы контролируете качество JPG с помощью ползунка, чтобы сбалансировать размер файла и визуальное качество."
+        },
+        {
+          "question": "What's the difference between HEIC and HEIF?",
+          "answer": "HEIC is Apple's specific implementation of the HEIF (High Efficiency Image Format) container — the terms are often used interchangeably, and this tool accepts both file extensions."
+        },
+        {
+          "question": "Does the converted JPG include the original photo's orientation?",
+          "answer": "The conversion process doesn't read or transfer EXIF orientation data, so double-check the output — if your photo appears rotated, you may need to rotate it manually afterward."
+        },
+        {
+          "question": "Can I convert Live Photos from my iPhone?",
+          "answer": "Only the still HEIC image is converted — the paired video portion of a Live Photo isn't processed or included."
+        },
+        {
+          "question": "Why does my browser show a blank preview for HEIC files before converting?",
+          "answer": "Most desktop browsers can't natively render HEIC images in an `<img>` tag, so you may see a blank or broken thumbnail until the file is actually converted."
         }
       ],
       "comparisonTable": {
@@ -448,6 +528,22 @@
         {
           "question": "Загружаются ли мои изображения на сервер?",
           "answer": "Нет, всё происходит локально с использованием Canvas API — ваши файлы никогда не покидают устройство."
+        },
+        {
+          "question": "What compression method does this tool use?",
+          "answer": "It re-encodes your image using your browser's built-in canvas image encoder at an adjustable quality level — no external compression library is used."
+        },
+        {
+          "question": "Should I compress a PNG or a JPG for smaller file size?",
+          "answer": "JPG compression is lossy and generally shrinks photos much more than PNG, which is lossless — for photos, converting to JPG first typically saves more space than compressing a PNG."
+        },
+        {
+          "question": "Does compressing an image multiple times keep degrading it?",
+          "answer": "Yes, since JPG compression is lossy, re-compressing an already-compressed JPG repeatedly will introduce additional quality loss each time."
+        },
+        {
+          "question": "What's a good quality setting to use?",
+          "answer": "70-85% is a common sweet spot that noticeably reduces file size while keeping visible quality loss minimal — lower it further if file size matters more than appearance."
         }
       ]
     },
@@ -493,6 +589,22 @@
         {
           "question": "Какие форматы изображений поддерживаются?",
           "answer": "JPG, PNG и большинство других распространённых форматов изображений, поддерживаемых браузером."
+        },
+        {
+          "question": "What happens if I only set a width or only a height?",
+          "answer": "With \"Lock aspect ratio\" enabled, changing one dimension automatically recalculates the other to preserve the original proportions — with it unchecked, only the dimension you change is updated."
+        },
+        {
+          "question": "Can I resize an image to be larger than the original?",
+          "answer": "Yes, there's no upper limit — you can enter dimensions larger than the source image, though upscaling beyond the original resolution can make the result look soft or pixelated."
+        },
+        {
+          "question": "Does resizing change the file format?",
+          "answer": "No, the output keeps the same format as your source image — resizing only changes the pixel dimensions."
+        },
+        {
+          "question": "Can I resize to a specific file size instead of pixel dimensions?",
+          "answer": "No, this tool only resizes by pixel dimensions or percentage — for a specific file size target, use the Image Compressor afterward."
         }
       ]
     },
@@ -538,6 +650,22 @@
         {
           "question": "Загружает ли этот инструмент мои изображения куда-либо?",
           "answer": "Нет, конвертация происходит локально с использованием Web Worker — ваши изображения никогда не покидают устройство."
+        },
+        {
+          "question": "Does this tool support animated GIFs?",
+          "answer": "GIF files are accepted, but only a single frame is converted — animation isn't preserved in the WebP output."
+        },
+        {
+          "question": "How much smaller are WebP files compared to JPG or PNG?",
+          "answer": "WebP typically produces files 25-35% smaller than an equivalent-quality JPG and can be significantly smaller than PNG for photographic content, though exact savings vary by image."
+        },
+        {
+          "question": "Can I control the WebP compression quality?",
+          "answer": "Yes, a quality slider lets you balance file size against visual quality before converting."
+        },
+        {
+          "question": "Does WebP support transparency like PNG?",
+          "answer": "Yes, WebP supports an alpha channel, and transparency from a PNG source is preserved in the WebP output."
         }
       ]
     },
@@ -582,6 +710,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "What color fills in where my PNG was transparent?",
+          "answer": "Since JPG has no transparency support, transparent and semi-transparent pixels are flattened onto a solid background, typically white, before the JPG is saved. If you need to choose a different background color, check whether the tool exposes that option before converting."
+        },
+        {
+          "question": "Will text or line art in my PNG look blurry as a JPG?",
+          "answer": "It can. JPG's compression is tuned for photographic gradients, and it tends to introduce soft artifacts around sharp edges like text or hard-edged graphics. For crisp graphics, PNG or WebP usually holds up better."
+        },
+        {
+          "question": "Does converting to JPG remove the color profile from my PNG?",
+          "answer": "The conversion re-encodes pixel data through the canvas, which normalizes color to standard sRGB. If your PNG carried a wide-gamut or custom ICC profile, that specific profile isn't preserved in the JPG output."
+        },
+        {
+          "question": "Why is my converted JPG file bigger than expected?",
+          "answer": "The quality slider defaults to 90%, which favors visual fidelity over file size. Lower the quality setting for a smaller file, or run the result through the image compressor for further savings."
         }
       ],
       "comparisonTable": {
@@ -663,6 +807,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "What size PNG do I get if my SVG doesn't specify dimensions?",
+          "answer": "The tool falls back to a default rendering size or the SVG's viewBox proportions. To guarantee a specific output size, set the width and height fields in the tool before converting rather than relying on the SVG's own metadata."
+        },
+        {
+          "question": "Can I export at a specific pixel size like 512x512 for an app icon?",
+          "answer": "Yes, you can specify exact output dimensions before converting, and the SVG is rendered fresh at that resolution rather than scaled up from a smaller raster, so edges stay sharp."
+        },
+        {
+          "question": "Does the PNG preserve gradients and filters from my SVG?",
+          "answer": "Most standard SVG gradients, opacity, and common filter effects render correctly since the browser's native SVG rendering engine handles them. Highly complex or non-standard filter chains may render slightly differently than in a dedicated vector editor."
+        },
+        {
+          "question": "Why does text in my SVG look different after converting to PNG?",
+          "answer": "If the SVG references a font that isn't installed on your device or embedded in the file, your browser substitutes a fallback font when rendering. Embedding the font or converting text to outlines in your SVG source avoids this."
         }
       ],
       "comparisonTable": {
@@ -744,6 +904,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "Why would I choose JPG output instead of PNG for an SVG?",
+          "answer": "JPG makes sense when your SVG has no transparency and you want a smaller file, such as for a photo-like illustration or a background graphic. For icons, logos, or anything with transparent areas, PNG is usually the better choice."
+        },
+        {
+          "question": "What background color does my SVG get if it has transparent regions?",
+          "answer": "Transparent areas are filled with a solid background, typically white, since JPG cannot store an alpha channel. Check the tool for a background color option if you need something other than white."
+        },
+        {
+          "question": "Can I set the output resolution before converting?",
+          "answer": "Yes, specifying width and height renders the SVG fresh at that pixel size rather than upscaling a smaller image, which keeps curves and text smooth."
+        },
+        {
+          "question": "Will fine details in my SVG survive JPG compression?",
+          "answer": "Thin lines and small text can soften slightly due to JPG's lossy compression, especially at lower quality settings. If your SVG is mostly line art or text, PNG will preserve it more crisply."
         }
       ],
       "comparisonTable": {
@@ -825,6 +1001,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "Why convert SVG to WebP instead of PNG?",
+          "answer": "WebP typically produces a noticeably smaller file than PNG at similar visual quality while still supporting full transparency, making it a good choice for web use when you don't need a vector format."
+        },
+        {
+          "question": "Does WebP output keep my SVG's transparent background?",
+          "answer": "Yes, WebP supports an alpha channel just like PNG, so transparent and semi-transparent areas in your SVG are preserved rather than filled in."
+        },
+        {
+          "question": "Does this use lossless or lossy WebP compression?",
+          "answer": "It uses lossy WebP compression with an adjustable quality slider — higher quality preserves more detail at a larger file size, but there's no dedicated lossless mode."
+        },
+        {
+          "question": "What resolution should I render my SVG at for icons?",
+          "answer": "For UI icons, render at the exact pixel size you'll display them (such as 24x24 or 48x48) or at 2x that size for high-DPI screens, since WebP is a raster format and won't scale further without quality loss."
         }
       ],
       "comparisonTable": {
@@ -906,6 +1098,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "Will I lose transparency converting PNG to WebP?",
+          "answer": "No, WebP supports transparency, so any transparent areas in your PNG are preserved in the output."
+        },
+        {
+          "question": "How much smaller will my WebP file be than the original PNG?",
+          "answer": "This varies by image content, but WebP often produces noticeably smaller files than PNG, especially for photographic or gradient-heavy images."
+        },
+        {
+          "question": "Should I use lossless or lossy WebP for icons and logos?",
+          "answer": "This tool only offers lossy WebP encoding with an adjustable quality slider — there's no dedicated lossless mode, so use a high quality setting for sharp-edged graphics like icons and logos."
+        },
+        {
+          "question": "Is WebP a safe format to use for a website today?",
+          "answer": "Yes, WebP is supported by all current major browsers and has been for several years, making it safe for general web use."
         }
       ],
       "comparisonTable": {
@@ -983,6 +1191,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "Does converting an animated WebP to PNG keep the animation?",
+          "answer": "No, PNG doesn't support animation, so only a single static frame is produced from an animated WebP source."
+        },
+        {
+          "question": "Why convert WebP back to PNG if WebP is smaller?",
+          "answer": "PNG has broader compatibility with older software and design tools that don't support WebP, and it's lossless, which matters for images you plan to edit further."
+        },
+        {
+          "question": "Does the PNG lose any quality compared to the WebP source?",
+          "answer": "If the source WebP was lossy, that quality loss is already baked in — converting to PNG won't restore detail, but it won't lose any further quality since PNG encoding itself is lossless."
+        },
+        {
+          "question": "Will the PNG file be much larger than the WebP?",
+          "answer": "Usually yes — PNG's lossless compression generally produces larger files than WebP for the same image, especially for photos."
         }
       ],
       "comparisonTable": {
@@ -1064,6 +1288,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "What happens to an animated WebP when converted to JPG?",
+          "answer": "Only a single static frame is converted — JPG doesn't support animation, so the rest of the frames are discarded."
+        },
+        {
+          "question": "Why would I need to convert WebP to JPG?",
+          "answer": "JPG has near-universal compatibility with older tools, printers, and platforms that may not fully support WebP."
+        },
+        {
+          "question": "Does converting to JPG fill transparent WebP areas with a color?",
+          "answer": "Yes, since JPG doesn't support transparency, any transparent regions are typically filled with a solid background (usually white) during conversion."
+        },
+        {
+          "question": "Will converting WebP to JPG reduce image quality further?",
+          "answer": "Yes, JPG re-encoding is lossy, so converting an already-lossy WebP to JPG adds another round of compression artifacts on top of the original."
         }
       ],
       "comparisonTable": {
@@ -1145,6 +1385,22 @@
         {
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
+        },
+        {
+          "question": "How much smaller will my WebP be compared to the original JPG?",
+          "answer": "Typically 25-35% smaller at a similar visual quality, though actual savings depend on the image's content and the quality setting you choose."
+        },
+        {
+          "question": "Can I adjust the compression quality when converting?",
+          "answer": "Yes, a quality slider controls the tradeoff between file size and visual fidelity."
+        },
+        {
+          "question": "Does converting JPG to WebP add a transparency channel?",
+          "answer": "No, JPG has no transparency data to begin with, so the WebP output is fully opaque, same as the source."
+        },
+        {
+          "question": "Is WebP a lossy or lossless format?",
+          "answer": "WebP supports both, but this tool's conversion is lossy only, controlled by the quality slider — there's no lossless output option here."
         }
       ],
       "comparisonTable": {
@@ -1227,6 +1483,22 @@
         {
           "question": "Загружается ли моё изображение куда-либо?",
           "answer": "Нет, кодирование и декодирование происходят локально в вашем браузере с использованием FileReader API."
+        },
+        {
+          "question": "How much bigger does a Base64-encoded image get?",
+          "answer": "Roughly 33% larger than the original binary file, since Base64 encodes every 3 bytes as 4 characters."
+        },
+        {
+          "question": "What's the difference between the raw Base64 string and a data URL?",
+          "answer": "A data URL wraps the Base64 string with a `data:image/png;base64,` prefix that tells a browser how to interpret it directly — the raw string alone is just the encoded bytes."
+        },
+        {
+          "question": "Can I decode a Base64 string back into a downloadable image file?",
+          "answer": "Yes, switch to the decode tab, paste your Base64 string or data URL, and download the resulting image file directly."
+        },
+        {
+          "question": "Why would I embed an image as Base64 instead of linking to a file?",
+          "answer": "Embedding avoids a separate network request, which is useful for small icons in CSS/HTML or inline email images, though it increases the size of the containing file."
         }
       ]
     },
@@ -1272,6 +1544,22 @@
         {
           "question": "Этот инструмент бесплатный?",
           "answer": "Да, полностью бесплатный без ограничений, водяных знаков или необходимости регистрации."
+        },
+        {
+          "question": "What files are included in the downloaded ZIP?",
+          "answer": "Six PNG files at standard favicon sizes: 16×16, 32×32, 48×48, 180×180 (Apple touch icon), 192×192, and 512×512 pixels."
+        },
+        {
+          "question": "Do I need to add any HTML to use the generated favicons?",
+          "answer": "Yes, this tool generates only the image files — you'll need to add your own `<link rel=\"icon\">` and `<link rel=\"apple-touch-icon\">` tags in your site's HTML pointing to the appropriate files."
+        },
+        {
+          "question": "Can I use a PNG with transparency as my source logo?",
+          "answer": "Yes, transparency in your source image is preserved across all the generated favicon sizes."
+        },
+        {
+          "question": "Will a low-resolution source image produce blurry favicons?",
+          "answer": "Yes, since favicons are generated by scaling your source image, a small or low-resolution source will look soft at larger sizes like 512×512 — start with a high-resolution square image for best results."
         }
       ]
     },
@@ -1321,6 +1609,22 @@
         {
           "question": "Отправляются ли мои данные на сервер для создания кода?",
           "answer": "Нет, изображение QR-кода полностью рендерится в вашем браузере — ничего никуда не передаётся."
+        },
+        {
+          "question": "What error correction level does the QR code use?",
+          "answer": "A fixed medium (M) error correction level is used, which balances scan reliability with a reasonably compact code pattern."
+        },
+        {
+          "question": "Can I change the QR code's color or add a logo?",
+          "answer": "You can customize the foreground and background colors using the color pickers or presets. Adding a center logo isn't currently supported."
+        },
+        {
+          "question": "What file formats can I download the QR code in?",
+          "answer": "QR codes are exported as PNG. There's no SVG export option currently."
+        },
+        {
+          "question": "Why won't my QR code scan?",
+          "answer": "Common causes include too little contrast between foreground and background colors, a logo overlay that's too large and covers essential pattern data, or printing the code too small for the amount of encoded text."
         }
       ]
     },
@@ -1366,6 +1670,22 @@
         {
           "question": "Какие форматы цвета поддерживаются?",
           "answer": "HEX, RGB и HSL отображаются одновременно для каждого выбранного пикселя."
+        },
+        {
+          "question": "Can I zoom in to pick an exact pixel on a small detail?",
+          "answer": "There's no built-in zoom or magnifier — clicking samples exactly the pixel under your cursor at the image's displayed size, so zoom your browser or use a larger preview for very small details."
+        },
+        {
+          "question": "Does this tool save a history of colors I've picked?",
+          "answer": "Many versions of this kind of tool keep a palette or history of recently sampled colors during your session so you can compare or reuse them without re-sampling."
+        },
+        {
+          "question": "Why does the picked color look slightly different from what I expected?",
+          "answer": "Image compression artifacts, especially in JPGs, can shift pixel colors slightly from the original intended color, and your monitor's calibration also affects how colors appear versus their stored values."
+        },
+        {
+          "question": "Can I copy the color value directly to use in CSS?",
+          "answer": "Yes, the HEX and RGB values shown can be copied and pasted directly into CSS, and HSL is provided as well for cases where adjusting lightness or saturation independently is easier."
         }
       ]
     },
@@ -1411,6 +1731,22 @@
         {
           "question": "Что я получу при разделении на все страницы?",
           "answer": "ZIP-файл, содержащий один PDF на страницу, готовый к скачиванию."
+        },
+        {
+          "question": "How are the split files delivered?",
+          "answer": "Extracting a single page range downloads one PDF file directly; splitting into every individual page packages all the resulting files into a single ZIP download instead."
+        },
+        {
+          "question": "Can I split an encrypted or password-protected PDF?",
+          "answer": "No, password-protected PDFs cannot currently be opened by the tool. Remove the password in the original application before splitting."
+        },
+        {
+          "question": "What are the split files named?",
+          "answer": "Individual pages are named using the original filename with the page number appended, such as document_page-1.pdf, making it easy to identify each page after extraction."
+        },
+        {
+          "question": "Does splitting reduce the quality of my pages?",
+          "answer": "No. Splitting only separates existing pages into new PDF files without re-rendering or recompressing content, so text, images, and quality remain exactly as in the source file."
         }
       ]
     },
@@ -1456,6 +1792,22 @@
         {
           "question": "Загружается ли мой документ куда-либо?",
           "answer": "Нет, рендеринг происходит полностью в вашем браузере с использованием библиотеки pdf.js — ничего не загружается."
+        },
+        {
+          "question": "What resolution are the exported images?",
+          "answer": "Pages are rendered at a high scale factor for sharp output, well above standard screen resolution, so text and fine details stay legible even when zoomed in."
+        },
+        {
+          "question": "Can I export as JPG instead of PNG?",
+          "answer": "Currently pages are exported as PNG only, which preserves sharp text and lines without lossy compression artifacts. There's no JPG output option at this time."
+        },
+        {
+          "question": "How are multiple pages downloaded?",
+          "answer": "For a multi-page PDF, all rendered page images are bundled into a single ZIP file rather than downloading one by one."
+        },
+        {
+          "question": "Will very large or high-page-count PDFs slow down my browser?",
+          "answer": "Rendering happens page by page in your browser, so PDFs with hundreds of pages or very large embedded images can take noticeably longer and use more memory than a short document."
         }
       ],
       "comparisonTable": {
@@ -1538,6 +1890,22 @@
         {
           "question": "Есть ли ограничение на количество добавляемых изображений?",
           "answer": "Искусственных ограничений нет — производительность зависит только от доступной памяти вашего устройства."
+        },
+        {
+          "question": "Does each image become its own page?",
+          "answer": "Yes. Every image you add is placed on its own page in the resulting PDF, in the order you arrange them."
+        },
+        {
+          "question": "What page size and orientation does the PDF use?",
+          "answer": "Each page is sized to match its source image's dimensions and orientation, so a mix of portrait and landscape photos will produce a PDF with differently sized pages rather than being forced onto a uniform page size."
+        },
+        {
+          "question": "Will my images be recompressed or lose quality?",
+          "answer": "Images are embedded into the PDF at their original resolution and quality without additional recompression, so the output can be large if your source photos are high-resolution."
+        },
+        {
+          "question": "Can I use HEIC or WebP images?",
+          "answer": "No, only JPG and PNG files are currently supported. Convert HEIC or WebP images to JPG or PNG first, for example with this site's image converter tools."
         }
       ],
       "comparisonTable": {
@@ -1619,6 +1987,22 @@
         {
           "question": "Загружается ли мой файл на сервер?",
           "answer": "Нет, поворот происходит полностью локально с помощью pdf-lib."
+        },
+        {
+          "question": "Can I rotate individual pages differently?",
+          "answer": "Yes, each page can be rotated independently in the visual grid — \"Rotate all\" and \"Rotate selected\" buttons are just shortcuts for applying rotation to many pages at once."
+        },
+        {
+          "question": "Does rotating change the file size significantly?",
+          "answer": "Rotation itself just updates each page's orientation value, but the file is rebuilt and re-saved in the process, so the output size can shift slightly from the original — usually not significantly."
+        },
+        {
+          "question": "Can I rotate a password-protected PDF?",
+          "answer": "No, encrypted PDFs can't currently be opened by the tool. You'll need to remove the password first using the file's original application."
+        },
+        {
+          "question": "What is the rotated file named when downloaded?",
+          "answer": "The output keeps a name based on your original file, such as document_rotated.pdf, so you can tell it apart from the source."
         }
       ]
     },
@@ -1663,6 +2047,22 @@
         {
           "question": "Загружается ли мой PDF куда-либо?",
           "answer": "Нет, все правки происходят полностью локально с помощью pdf-lib в вашем браузере."
+        },
+        {
+          "question": "How do I specify which pages to delete?",
+          "answer": "You can enter individual page numbers, comma-separated lists, or ranges like 2-5, and combine them, for example 1,3,7-9, to remove several pages in one pass."
+        },
+        {
+          "question": "Can I delete pages from an encrypted PDF?",
+          "answer": "No, password-protected PDFs can't currently be opened by the tool since decryption isn't supported."
+        },
+        {
+          "question": "Does deleting pages affect the quality of the remaining pages?",
+          "answer": "No. The remaining pages are copied over unchanged; only the specified pages are removed, so there's no re-rendering or recompression of the pages you keep."
+        },
+        {
+          "question": "What happens if I enter an invalid page number?",
+          "answer": "If you specify a page number outside the document's range, the tool will flag it as invalid rather than silently ignoring it, so you can correct the input before deleting."
         }
       ]
     },
@@ -1707,6 +2107,22 @@
         {
           "question": "Почему сжатие не такое агрессивное, как в некоторых настольных инструментах?",
           "answer": "Обработка только в браузере не может перекодировать встроенные изображения тяжёлым кодеком изображений без значительного размера загрузки, поэтому выигрыш скромнее, чем у серверных инструментов."
+        },
+        {
+          "question": "Can I compress a password-protected PDF?",
+          "answer": "No, encrypted PDFs can't currently be opened by the compressor. Remove the password in the original application first."
+        },
+        {
+          "question": "Why does compressing a scanned PDF barely reduce its size?",
+          "answer": "Scanned PDFs are usually made of one large image per page that's already compressed by the scanner, so this tool's lossless optimization of PDF structure and embedded fonts has little left to trim compared with text-based PDFs."
+        },
+        {
+          "question": "Does compression remove any content from my PDF?",
+          "answer": "No. Compression optimizes the internal PDF structure, such as removing duplicate objects and streamlining fonts, without deleting pages, text, or images."
+        },
+        {
+          "question": "What is the compressed file named?",
+          "answer": "The output downloads with a suffix added to your original filename, such as document_compressed.pdf, so you can distinguish it from the source file."
         }
       ]
     },
@@ -1748,6 +2164,22 @@
         {
           "question": "Как считаются предложения и абзацы?",
           "answer": "Предложения определяются по конечной пунктуации (. ! ?), а абзацы — по разрывам строк."
+        },
+        {
+          "question": "Does the counter support languages without spaces, like Chinese or Japanese?",
+          "answer": "Word counting relies on spaces and punctuation to separate words, so it's designed for space-delimited languages; character count remains accurate for any language, but word count may be less meaningful for languages like Chinese or Japanese."
+        },
+        {
+          "question": "Is there a limit to how much text I can paste in?",
+          "answer": "There's no hard cap enforced by the tool, but since counting runs live in your browser as you type, extremely large documents (tens of thousands of words) may make updates feel less instant."
+        },
+        {
+          "question": "Does the character count include spaces?",
+          "answer": "The tool shows both character count with spaces and without, so you can see either figure depending on what you need, such as matching a strict character limit for a form or platform."
+        },
+        {
+          "question": "Can I count words in a specific selection instead of the whole text?",
+          "answer": "No, the counter currently tallies the entire contents of the text box rather than a highlighted selection. Paste only the portion you want counted if you need a partial count."
         }
       ]
     },
@@ -1793,6 +2225,22 @@
         {
           "question": "Поддерживает ли это текст Unicode?",
           "answer": "Да, символы не ASCII, такие как эмодзи и буквы с диакритическими знаками, обрабатываются правильно."
+        },
+        {
+          "question": "Can I encode or decode files, not just text?",
+          "answer": "No, this tool works on typed or pasted text only — for encoding image files to Base64, use the dedicated Base64 Image Encoder tool instead."
+        },
+        {
+          "question": "Why does decoding sometimes fail with an error?",
+          "answer": "Decoding fails if the input isn't valid Base64 — for example, it contains characters outside the Base64 alphabet or has incorrect padding."
+        },
+        {
+          "question": "Does this support URL-safe Base64?",
+          "answer": "No, it uses standard Base64 encoding — URL-safe Base64 (which swaps `+`/`/` for `-`/`_`) isn't a separate mode here."
+        },
+        {
+          "question": "Why does encoded text look longer than the original?",
+          "answer": "Base64 encodes every 3 bytes of input as 4 characters of output, so encoded text is roughly 33% larger than the original."
         }
       ]
     },
@@ -1838,6 +2286,22 @@
         {
           "question": "Отправляются ли мои данные куда-либо?",
           "answer": "Нет, всё кодирование и декодирование происходит локально в вашем браузере."
+        },
+        {
+          "question": "What's the difference between encodeURIComponent and encodeURI?",
+          "answer": "This tool uses encodeURIComponent-style encoding, which escapes a wider set of characters (including `&`, `=`, `/`) — suitable for encoding individual query parameter values rather than a full URL."
+        },
+        {
+          "question": "How are spaces encoded?",
+          "answer": "Spaces are encoded as %20, matching standard percent-encoding rather than the `+` convention used in HTML form submissions."
+        },
+        {
+          "question": "Can I encode an entire URL including the query string?",
+          "answer": "You can encode any text you paste in, but encoding a full URL this way will also escape characters like `:` and `/` that you likely want to keep — it's built for encoding individual values, not whole URLs."
+        },
+        {
+          "question": "Why does decoding fail on my input?",
+          "answer": "Decoding fails if the text contains a `%` not followed by two valid hex digits, which happens with malformed or already-partially-decoded input."
         }
       ]
     },
@@ -1879,6 +2343,22 @@
         {
           "question": "Что означает претензия exp?",
           "answer": "Претензия exp — это временная метка Unix, указывающая, когда истекает срок действия токена. Этот инструмент выделяет, истёк ли он уже."
+        },
+        {
+          "question": "Can I use this to check if a token is expired?",
+          "answer": "You can inspect the exp claim after decoding to see if the timestamp is in the past, but the tool doesn't automatically validate expiry against the current time for you."
+        },
+        {
+          "question": "What algorithm does the header show?",
+          "answer": "The decoded header includes the alg field, such as HS256 or RS256, indicating what algorithm the token was signed with — this is metadata only and isn't used to verify anything here."
+        },
+        {
+          "question": "Can I decode a malformed or truncated JWT?",
+          "answer": "No, the token must have three dot-separated Base64URL segments (header, payload, signature); if a segment is missing or not valid Base64URL, decoding will fail."
+        },
+        {
+          "question": "Are custom claims in the payload displayed?",
+          "answer": "Yes, all claims in the payload are shown, both registered claims like iss and sub and any custom claims your application added."
         }
       ]
     },
@@ -1924,6 +2404,22 @@
         {
           "question": "Сколько я могу создать за раз?",
           "answer": "До 500 UUID за партию, с мгновенной поддержкой копирования всех сразу."
+        },
+        {
+          "question": "Can I generate UUIDs in a specific format, like uppercase or without hyphens?",
+          "answer": "Yes, you can toggle uppercase letters and choose whether hyphens are included in the output."
+        },
+        {
+          "question": "Are the generated UUIDs guaranteed to be unique?",
+          "answer": "UUID v4 relies on 122 random bits, making collisions astronomically unlikely in practice, though no random generator can offer a mathematical uniqueness guarantee."
+        },
+        {
+          "question": "Can I copy all generated UUIDs at once?",
+          "answer": "Yes, there's a copy-all option that puts every generated UUID on the clipboard as a newline-separated list."
+        },
+        {
+          "question": "Why do all UUIDs start with a similar pattern?",
+          "answer": "UUID v4 always has a fixed '4' in the version position and one of a few fixed bits in the variant position, so every UUID shares that structural pattern even though the rest is random."
         }
       ]
     },
@@ -1969,6 +2465,22 @@
         {
           "question": "Для чего используется хэш?",
           "answer": "Хэши используются для проверки целостности файлов, обнаружения дубликатов и создания отпечатков данных фиксированной длины."
+        },
+        {
+          "question": "Which hashing algorithms are available?",
+          "answer": "SHA-1, SHA-256, SHA-384, and SHA-512 are supported, all computed via the browser's built-in Web Crypto API."
+        },
+        {
+          "question": "Can I hash a file instead of typed text?",
+          "answer": "Yes, you can upload a file and the tool computes its hash directly from the file bytes, which is useful for verifying download integrity against a published checksum."
+        },
+        {
+          "question": "Why do two slightly different inputs produce completely different hashes?",
+          "answer": "This is the avalanche effect — cryptographic hash functions are designed so that even a one-character change produces a wholly different, unpredictable output."
+        },
+        {
+          "question": "Can I use SHA-1 for security purposes?",
+          "answer": "SHA-1 is available for compatibility with legacy checksums, but it's considered cryptographically broken for security use; SHA-256 or higher is recommended for anything security-sensitive."
         }
       ]
     },
@@ -2014,6 +2526,22 @@
         {
           "question": "Отправляется ли мой тестовый текст куда-либо?",
           "answer": "Нет, всё сопоставление происходит мгновенно и локально в вашем браузере."
+        },
+        {
+          "question": "Can I test regex flags like global or case-insensitive?",
+          "answer": "Yes, toggle checkboxes let you enable global, case-insensitive, multiline, and dotAll flags, and matches update live as you change them."
+        },
+        {
+          "question": "Does it support named capture groups?",
+          "answer": "Named groups aren't displayed separately — only numbered capture groups are shown alongside each match."
+        },
+        {
+          "question": "Why does my regex work here but not in another language?",
+          "answer": "This tool uses JavaScript's regex engine, which has some syntax differences from other languages (like PCRE or Python's re module) — features like lookbehind support and flag names can vary."
+        },
+        {
+          "question": "Can I test replacement strings, not just matches?",
+          "answer": "No, this tool only highlights matches within your test string — it doesn't include a find-and-replace preview."
         }
       ]
     },
@@ -2055,6 +2583,22 @@
         {
           "question": "Какой синтаксис Markdown поддерживается?",
           "answer": "Стандартный Markdown: заголовки, жирный/курсив, списки, ссылки, изображения, цитаты и блоки кода с разделителями."
+        },
+        {
+          "question": "Does it support GitHub Flavored Markdown features like tables and task lists?",
+          "answer": "Basic tables render correctly, but task-list checkboxes aren't specially styled — they'll appear as plain text rather than interactive checkboxes."
+        },
+        {
+          "question": "Can I export the rendered output as HTML?",
+          "answer": "No, there's no HTML export option — you can save the raw Markdown to your history, but not a rendered HTML file."
+        },
+        {
+          "question": "Does it support syntax highlighting in code blocks?",
+          "answer": "No, code blocks are rendered with monospace styling but without language-aware syntax highlighting."
+        },
+        {
+          "question": "Can I write raw HTML inside my Markdown?",
+          "answer": "Yes, standard Markdown parsers pass through raw HTML tags, so any HTML you include renders alongside your Markdown content."
         }
       ]
     },
@@ -2100,6 +2644,22 @@
         {
           "question": "Загружаются ли мои данные куда-либо?",
           "answer": "Нет, весь анализ и конвертация происходят локально в вашем браузере."
+        },
+        {
+          "question": "Can I choose a custom delimiter instead of a comma?",
+          "answer": "No, parsing is fixed to comma-separated values — semicolon or tab-delimited files won't parse correctly as-is."
+        },
+        {
+          "question": "Does it detect column headers automatically?",
+          "answer": "Yes, the first row is always treated as the column headers — there's no option to treat all rows as data instead."
+        },
+        {
+          "question": "What happens if rows have a different number of columns?",
+          "answer": "Rows with fewer columns than the header will have missing fields in the resulting JSON objects, and extra columns beyond the header may be dropped or misaligned."
+        },
+        {
+          "question": "Are numbers and booleans converted to their proper JSON types?",
+          "answer": "Check the output carefully — CSV values are text by nature, and whether numeric-looking strings are converted to JSON numbers depends on the parser's type inference, not a setting you control."
         }
       ],
       "comparisonTable": {
@@ -2182,6 +2742,22 @@
         {
           "question": "Есть ли ограничение на объём текста, который я могу создать?",
           "answer": "Вы можете создать до 100 единиц (слов, предложений или абзацев) за один клик."
+        },
+        {
+          "question": "Can I generate HTML-wrapped paragraphs?",
+          "answer": "No, output is plain text paragraphs — there's no option to wrap them in `<p>` tags automatically."
+        },
+        {
+          "question": "Does the word count stay exact when generating by paragraph?",
+          "answer": "Word count is approximate when generating by paragraph or sentence, since paragraph structure takes priority over hitting an exact word total."
+        },
+        {
+          "question": "Is the generated text always in Latin?",
+          "answer": "Yes, this generates classic Latin-style lorem ipsum text — there's no alternate placeholder text style or language option."
+        },
+        {
+          "question": "Can I generate a single heading-style phrase instead of full paragraphs?",
+          "answer": "Set the count to a small number of words to get a short phrase suitable for a heading, since there's no dedicated heading mode."
         }
       ]
     },
@@ -2222,6 +2798,22 @@
         {
           "question": "Может ли процентное изменение быть отрицательным?",
           "answer": "Да, отрицательный результат указывает на уменьшение по сравнению с исходным значением."
+        },
+        {
+          "question": "What's the difference between 'percentage of' and 'percentage change'?",
+          "answer": "Percentage of finds a portion of a value (e.g. 20% of 50); percentage change measures how much a value increased or decreased between two numbers."
+        },
+        {
+          "question": "How do I find what percentage one number is of another?",
+          "answer": "Use the 'X is what % of Y' mode — enter both numbers and the calculator divides and converts to a percentage automatically."
+        },
+        {
+          "question": "Can I calculate percentages greater than 100%?",
+          "answer": "Yes, there's no upper limit — useful for growth rates or markups that exceed the original value."
+        },
+        {
+          "question": "Does rounding affect the result?",
+          "answer": "Results are shown to two decimal places for readability, but the underlying calculation uses full precision."
         }
       ]
     },
@@ -2262,6 +2854,22 @@
         {
           "question": "Включает ли это налог с продаж?",
           "answer": "Нет, это вычисляет только скидку. Используйте Калькулятор Налога с Продаж для налога поверх цены со скидкой."
+        },
+        {
+          "question": "How do stacked discounts work?",
+          "answer": "Each discount is applied sequentially to the reduced price from the previous step, not added together — two 10% discounts equal roughly 19% off, not 20%."
+        },
+        {
+          "question": "What's the difference between markup and discount?",
+          "answer": "A discount reduces a price by a percentage; a markup increases a cost by a percentage to set a selling price — this tool only calculates discounts."
+        },
+        {
+          "question": "Can I calculate the original price from a sale price?",
+          "answer": "This calculator works forward from the original price — to reverse it, divide the sale price by (1 − discount as a decimal)."
+        },
+        {
+          "question": "Is the savings amount shown in currency or percentage?",
+          "answer": "Both — the tool shows the dollar amount saved alongside the final discounted price."
         }
       ]
     },
@@ -2306,6 +2914,22 @@
         {
           "question": "Могу ли я использовать пользовательский процент чаевых?",
           "answer": "Да, введите любой процент прямо в поле ввода рядом с предустановками."
+        },
+        {
+          "question": "How do I split a bill unevenly between people?",
+          "answer": "This calculator splits evenly by default; for uneven splits, calculate each person's portion of the bill separately before entering it."
+        },
+        {
+          "question": "Should I tip on the pre-tax or post-tax amount?",
+          "answer": "Conventions vary — many guides suggest tipping on the pre-tax subtotal, though tipping on the total is also common and accepted."
+        },
+        {
+          "question": "Why is my per-person total slightly different when I multiply it back?",
+          "answer": "The per-person amount is rounded to the nearest cent for display, so multiplying it by the number of people can be a cent or two off from the exact total — the tool flags this when it happens."
+        },
+        {
+          "question": "Can I use this for takeout or delivery tipping?",
+          "answer": "Yes, enter the order total as the bill amount and set whatever tip percentage feels appropriate for the service."
         }
       ]
     },
@@ -2350,6 +2974,22 @@
         {
           "question": "Подходит ли это для ипотеки и автокредитов?",
           "answer": "Да, стандартная формула амортизирующего кредита применяется одинаково к ипотеке, автокредитам и личным займам."
+        },
+        {
+          "question": "What does EMI stand for?",
+          "answer": "Equated Monthly Installment — a fixed payment amount made every month that covers both principal and interest over the loan term."
+        },
+        {
+          "question": "Why does more of my early payments go to interest?",
+          "answer": "Interest is calculated on the remaining balance each month, which is highest at the start of the loan, so early payments are interest-heavy even though the total payment stays fixed."
+        },
+        {
+          "question": "Can I see a full payment-by-payment breakdown?",
+          "answer": "Yes, expand the amortization schedule below the results to see principal, interest, and remaining balance for every month of the loan."
+        },
+        {
+          "question": "What happens if I enter a 0% interest rate?",
+          "answer": "The calculator switches to a simple even split of the loan amount across the number of months, with no interest added."
         }
       ]
     },
@@ -2394,6 +3034,22 @@
         {
           "question": "Учитываются ли дополнительные взносы?",
           "answer": "Нет, это вычисляет рост из одной начальной основной суммы без периодических взносов."
+        },
+        {
+          "question": "What's the difference between compounding frequency options?",
+          "answer": "More frequent compounding (daily vs annually) applies interest to your balance more often, producing slightly higher returns for the same nominal rate over time."
+        },
+        {
+          "question": "Does this include monthly contributions?",
+          "answer": "No, this calculator models a single initial principal growing on its own — use the Investment Return Calculator for a version that includes monthly contributions."
+        },
+        {
+          "question": "How accurate is the growth chart?",
+          "answer": "The chart plots the exact compound interest formula at yearly intervals — it's a precise projection assuming a constant rate, not a market forecast."
+        },
+        {
+          "question": "What's a realistic annual rate to use?",
+          "answer": "This varies widely by investment type — the tool doesn't assume a specific rate, so enter whatever rate matches your actual account or expected return."
         }
       ]
     },
@@ -2434,6 +3090,22 @@
         {
           "question": "Включает ли это комбинированный местный и государственный налог?",
           "answer": "Да, введите вашу комбинированную эффективную налоговую ставку (государственную + местную) для точного итога."
+        },
+        {
+          "question": "How do I calculate the tax amount alone?",
+          "answer": "The tool shows the tax amount as a separate line from the pre-tax price and total, so you can see exactly how much tax was added."
+        },
+        {
+          "question": "Can I use this for VAT instead of sales tax?",
+          "answer": "Yes, the math is identical — enter your VAT rate as the tax percentage and it works the same way."
+        },
+        {
+          "question": "Why do sales tax rates vary by location?",
+          "answer": "Sales tax is set at the state, county, and sometimes city level in many countries, so combined rates differ by where a purchase is made — enter your local combined rate."
+        },
+        {
+          "question": "Does reverse mode work for any tax rate?",
+          "answer": "Yes, enter the total (tax-included) amount and the tax rate, and the calculator backs out the original pre-tax price."
         }
       ]
     },
@@ -2474,6 +3146,22 @@
         {
           "question": "Является ли ИМТ идеальным показателем здоровья?",
           "answer": "Нет, ИМТ не учитывает мышечную массу, плотность костей или состав тела. Обратитесь к медицинскому работнику для полной оценки."
+        },
+        {
+          "question": "Does BMI differ for men and women?",
+          "answer": "The BMI formula itself is the same for everyone — it doesn't adjust for sex, which is part of why it's considered a rough screening tool rather than a precise health measure."
+        },
+        {
+          "question": "What's a healthy BMI range?",
+          "answer": "18.5 to 24.9 is generally classified as a healthy weight range for adults, though this can vary by individual factors like muscle mass and body frame."
+        },
+        {
+          "question": "Can I switch between metric and imperial units?",
+          "answer": "Yes, use the unit toggle to switch between centimeters/kilograms and feet-inches/pounds — your BMI recalculates instantly."
+        },
+        {
+          "question": "Is BMI accurate for athletes?",
+          "answer": "Not always — BMI doesn't distinguish muscle from fat, so muscular individuals can show a higher BMI despite having low body fat."
         }
       ]
     },
@@ -2518,6 +3206,22 @@
         {
           "question": "Сохраняется ли моя дата рождения где-либо?",
           "answer": "Нет, все вычисления происходят локально в вашем браузере, и ничего не отправляется на сервер."
+        },
+        {
+          "question": "Does this account for leap years?",
+          "answer": "Yes, the calculation uses actual calendar dates, so leap years are automatically factored into total days and the days-until-next-birthday count."
+        },
+        {
+          "question": "Can I calculate someone else's age, not just my own?",
+          "answer": "Yes, enter any birth date — the tool isn't limited to your own date of birth."
+        },
+        {
+          "question": "What does 'total months' include?",
+          "answer": "It's your full age converted into a single number of months, combining the years and months shown above it."
+        },
+        {
+          "question": "Why would I calculate age as of a past date?",
+          "answer": "Useful for figuring out how old someone was at a specific historical event or document date, not just their current age."
         }
       ]
     },
@@ -2562,6 +3266,22 @@
         {
           "question": "Загружается ли мой текст куда-либо?",
           "answer": "Нет, сравнение выполняется полностью в вашем браузере — ничего не отправляется на сервер."
+        },
+        {
+          "question": "Can I switch between line-level and word-level diffing?",
+          "answer": "No, comparison is line-level only — there's no word-level or character-level diff mode."
+        },
+        {
+          "question": "Does it ignore whitespace differences?",
+          "answer": "No, there's no option to ignore whitespace — differences in spacing or indentation will show up as changes."
+        },
+        {
+          "question": "Can I see the diff as a unified patch?",
+          "answer": "No, results are shown as a highlighted side-by-side or inline line list, not a unified-diff/patch-style text format."
+        },
+        {
+          "question": "Does it handle very large text blocks?",
+          "answer": "Yes, but very large inputs (many thousands of lines) may take longer to compute and render, since diffing runs entirely in your browser."
         }
       ]
     },
@@ -2606,6 +3326,22 @@
         {
           "question": "Загружается ли мой PDF куда-либо?",
           "answer": "Нет, номера страниц добавляются полностью в вашем браузере с использованием pdf-lib — ваш файл никогда не загружается на сервер."
+        },
+        {
+          "question": "Can I skip numbering on the first page, like a cover page?",
+          "answer": "No, every page gets a number — there's no option to exclude a specific page like a cover page from numbering. You can set the starting number, but that changes what number the first page displays, not whether it's numbered."
+        },
+        {
+          "question": "Can I add page numbers to an encrypted PDF?",
+          "answer": "No, password-protected PDFs can't currently be opened by the tool. Remove the password in the original application before adding page numbers."
+        },
+        {
+          "question": "Will page numbers overlap existing content near the page edges?",
+          "answer": "Page numbers are placed in the margin area you select (such as bottom center or bottom right), but if your document already has content very close to that margin, the added number can visually overlap it."
+        },
+        {
+          "question": "Can I customize the font size or color of the page numbers?",
+          "answer": "The tool currently applies a standard font size and color for page numbers; there's no option to customize typography, only position, starting number, and number format."
         }
       ]
     },
@@ -2650,6 +3386,22 @@
         {
           "question": "Что делает пароль надёжным?",
           "answer": "Длина имеет наибольшее значение. Более длинный пароль с сочетанием заглавных, строчных букв, цифр и символов гораздо труднее взломать, чем короткий и простой."
+        },
+        {
+          "question": "Can I exclude ambiguous characters like 0, O, l, and 1?",
+          "answer": "No, there's no option to exclude visually similar characters — all characters from your selected categories (uppercase, lowercase, numbers, symbols) are equally eligible."
+        },
+        {
+          "question": "What's the maximum password length I can generate?",
+          "answer": "You can generate passwords well beyond typical requirements, though most sites cap accepted lengths, so check the target system's limit before using a very long one."
+        },
+        {
+          "question": "Does it guarantee at least one character from each selected category?",
+          "answer": "No, characters are picked uniformly at random from the combined set of selected categories, so it's statistically likely but not guaranteed that every category appears in a given password."
+        },
+        {
+          "question": "Is it better to use a long passphrase or a random password?",
+          "answer": "Both can be strong — a long random password packs more entropy per character, while a passphrase of several random words is easier to type and remember; this tool is built for the random-character approach."
         }
       ]
     },
@@ -2690,6 +3442,22 @@
         {
           "question": "Могу ли я задать точный размер обрезки?",
           "answer": "Да, используйте поля X, Y, Ширина и Высота, чтобы ввести точные значения в пикселях в дополнение к перетаскиваемым маркерам."
+        },
+        {
+          "question": "Can I crop to a specific aspect ratio like 16:9 or 1:1?",
+          "answer": "Cropping is freeform — drag to select any rectangle, or enter exact X/Y/width/height values. There are no fixed aspect-ratio presets or a ratio lock."
+        },
+        {
+          "question": "Can I rotate the image before cropping?",
+          "answer": "No, this tool only crops a rectangular region — it doesn't include a rotation control. Rotate the image first with another tool if you need to straighten it."
+        },
+        {
+          "question": "What happens if I crop outside the image boundaries?",
+          "answer": "The crop selection is typically constrained to stay within the original image dimensions, so you can't select an area beyond the edges of your uploaded photo."
+        },
+        {
+          "question": "Can I enter exact pixel dimensions for the crop area?",
+          "answer": "Yes, alongside dragging the crop handles, you can type exact X, Y, width, and height values for precise pixel-accurate crops."
         }
       ]
     },
@@ -2734,6 +3502,22 @@
         {
           "question": "Есть ли ограничение по длине?",
           "answer": "Практического ограничения нет — преобразование происходит мгновенно в вашем браузере, даже для длинного текста."
+        },
+        {
+          "question": "How does it decide word boundaries when converting from camelCase or snake_case?",
+          "answer": "It splits on case transitions, underscores, hyphens, and spaces to detect word boundaries before reassembling into the target case format."
+        },
+        {
+          "question": "Does it preserve acronyms when converting case?",
+          "answer": "Acronyms are treated like any other run of letters and will be reformatted to match the target case (e.g. lowercase in kebab-case), not preserved as-is."
+        },
+        {
+          "question": "Can I convert multiple lines at once?",
+          "answer": "Yes, the whole text block you paste in is converted as one unit, so multiple lines convert together."
+        },
+        {
+          "question": "What case types are supported?",
+          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, and kebab-case are all available."
         }
       ]
     },
@@ -2779,6 +3563,22 @@
         {
           "question": "Могу ли я быстро поменять местами единицы?",
           "answer": "Да, используйте кнопку обмена, чтобы мгновенно изменить направление конвертации."
+        },
+        {
+          "question": "How precise are the conversions?",
+          "answer": "Conversions use standard, internationally recognized conversion factors and display results to a practical number of decimal places."
+        },
+        {
+          "question": "Why does temperature conversion work differently from length and weight?",
+          "answer": "Temperature scales (Celsius, Fahrenheit, Kelvin) have different zero points, so converting requires an offset formula rather than a simple multiplication ratio like length or weight."
+        },
+        {
+          "question": "Can I convert between imperial and metric in both directions?",
+          "answer": "Yes, every unit works both as a source and target — select any two units and convert either way."
+        },
+        {
+          "question": "Are the length units based on international or US definitions?",
+          "answer": "Standard international definitions are used (e.g. exactly 2.54 cm per inch), consistent with common engineering and scientific references."
         }
       ]
     },
@@ -2819,6 +3619,22 @@
         {
           "question": "Снижает ли удаление метаданных качество изображения?",
           "answer": "Изображение перекодируется в высоком качестве (95%), поэтому разница незаметна для большинства случаев использования."
+        },
+        {
+          "question": "Can I selectively remove just GPS data and keep other metadata?",
+          "answer": "No, stripping is all-or-nothing — the tool removes all metadata (GPS, camera, lens, date, ISO) at once by re-encoding the image, rather than letting you choose individual fields to keep."
+        },
+        {
+          "question": "Which metadata fields are commonly found in phone photos?",
+          "answer": "Common fields include camera make and model, capture date and time, GPS coordinates, orientation, and sometimes the software used to edit the photo. Not every photo contains all of these."
+        },
+        {
+          "question": "Does removing EXIF data affect how the photo displays or its orientation?",
+          "answer": "The tool preserves visible orientation by applying rotation to the actual pixels rather than relying on the orientation tag, so the photo displays correctly even after the tag is removed."
+        },
+        {
+          "question": "Do I need to view the metadata before stripping it?",
+          "answer": "No, viewing the extracted fields is optional — you can strip metadata immediately without reviewing what's there first."
         }
       ]
     },
@@ -2858,6 +3674,22 @@
         {
           "question": "Отправляется ли мой текст куда-либо?",
           "answer": "Нет, очистка происходит полностью в вашем браузере — ничего не загружается."
+        },
+        {
+          "question": "Does it detect characters I can't normally see in a text editor?",
+          "answer": "Yes, it scans for zero-width spaces, joiners, and other invisible Unicode characters that render as nothing in most editors."
+        },
+        {
+          "question": "Can it show me a count of how many invisible characters were found?",
+          "answer": "Yes, the tool reports exactly how many invisible characters were found and removed from your text."
+        },
+        {
+          "question": "Will this remove legitimate formatting characters like non-breaking spaces?",
+          "answer": "Only zero-width and other genuinely invisible characters are targeted — verify the specific character set covered if you rely on non-breaking spaces for layout, since removal behavior depends on which characters are flagged."
+        },
+        {
+          "question": "Why would invisible characters break my code or CMS content?",
+          "answer": "Zero-width characters can silently break string comparisons, search functionality, and copy-pasted code — since they're invisible, they're difficult to spot without a tool like this."
         }
       ]
     },
@@ -2901,6 +3733,22 @@
         {
           "question": "В чём разница между HMAC и обычным хешем?",
           "answer": "У обычного хеша нет секретного ключа, поэтому вычислить его может кто угодно. HMAC объединяет секретный ключ с сообщением, позволяя проверить как целостность, так и подлинность."
+        },
+        {
+          "question": "Which hash algorithms can I use for the HMAC?",
+          "answer": "HMAC can be computed with SHA-1, SHA-256, SHA-384, or SHA-512 as the underlying hash function, matching what's available in the Web Crypto API."
+        },
+        {
+          "question": "Can the secret key be any text, or does it need to be hex?",
+          "answer": "The secret is always treated as plain text and UTF-8 encoded before use — there's no hex or Base64 key-encoding mode, so enter the key exactly as plain text."
+        },
+        {
+          "question": "Why would I use HMAC instead of just hashing the message?",
+          "answer": "A plain hash proves the message wasn't altered but anyone can compute it; HMAC also requires knowledge of a shared secret key, so it proves the message came from someone who holds that key."
+        },
+        {
+          "question": "Can this verify an HMAC signature I received, like a webhook signature?",
+          "answer": "Yes, you can recompute the HMAC from the message and secret and compare it to the received signature manually, though the tool doesn't automate the comparison for you."
         }
       ]
     },
@@ -2940,6 +3788,22 @@
         {
           "question": "Загружается ли мой JSON куда-либо?",
           "answer": "Нет, генерация типов происходит полностью в вашем браузере."
+        },
+        {
+          "question": "How does it handle arrays with mixed element types?",
+          "answer": "It infers a type from the array's elements — for mixed types, expect a union type or a broader type that covers the variety present, since JSON itself doesn't declare a single element type."
+        },
+        {
+          "question": "Are optional and nullable fields detected?",
+          "answer": "Optional/nullable handling depends on your sample JSON — a field that's `null` in your input is typed accordingly, but the generator can only infer from the one JSON sample you provide, not from multiple variations."
+        },
+        {
+          "question": "Can I generate a type alias instead of an interface?",
+          "answer": "Yes, a toggle lets you switch between generating a TypeScript `interface` or a `type` alias."
+        },
+        {
+          "question": "Does the Zod schema output include validation like min/max?",
+          "answer": "No, the generated Zod schema only reflects the basic type shape (string, number, optional, etc.) — it doesn't add constraints like min/max length or numeric ranges."
         }
       ],
       "comparisonTable": {
@@ -3016,6 +3880,22 @@
         {
           "question": "Могу ли я конвертировать сложные вложенные структуры?",
           "answer": "Да, оба направления поддерживают глубоко вложенные объекты и массивы объектов."
+        },
+        {
+          "question": "How does it represent JSON null values in YAML?",
+          "answer": "JSON null values are written as the literal `null` in the YAML output, matching standard YAML convention."
+        },
+        {
+          "question": "Are YAML anchors and aliases supported when converting back to JSON?",
+          "answer": "No, anchors (&) and aliases (*) aren't recognized by the parser — pasted YAML using them won't convert correctly."
+        },
+        {
+          "question": "Does indentation matter when pasting YAML in?",
+          "answer": "Yes, the parser reads structure from indentation levels, so inconsistent or incorrect indentation in pasted YAML can produce an incorrect or failed conversion."
+        },
+        {
+          "question": "Can it round-trip YAML comments?",
+          "answer": "No, comments (lines or trailing text starting with #) are stripped when parsing YAML back to JSON — JSON itself has no comment syntax to preserve them in."
         }
       ],
       "comparisonTable": {
@@ -3092,6 +3972,22 @@
         {
           "question": "Загружается ли мой запрос куда-либо?",
           "answer": "Нет, форматирование происходит полностью в вашем браузере."
+        },
+        {
+          "question": "Can I choose indentation style, like tabs vs spaces?",
+          "answer": "No, formatting always uses a fixed 2-space indentation with no option to switch to tabs or a different width."
+        },
+        {
+          "question": "Does it uppercase SQL keywords automatically?",
+          "answer": "Yes, SQL keywords are automatically converted to uppercase as part of formatting, and this isn't optional."
+        },
+        {
+          "question": "Can it format complex queries with subqueries and joins?",
+          "answer": "Yes, the formatter handles nested subqueries and multi-table joins, indenting each clause for readability."
+        },
+        {
+          "question": "What happens if my SQL has a syntax error?",
+          "answer": "The formatter works on tokens and whitespace rather than fully parsing SQL grammar, so it will still attempt to format invalid SQL rather than reject it outright — always double-check the output against your intended query."
         }
       ]
     },
@@ -3131,6 +4027,22 @@
         {
           "question": "Загружаются ли мои данные куда-либо?",
           "answer": "Нет, конвертация происходит полностью в вашем браузере."
+        },
+        {
+          "question": "Can I choose which fields get exported as columns?",
+          "answer": "No, all fields present across your JSON objects are automatically included as columns — there's no field-selection option."
+        },
+        {
+          "question": "How are commas or quotes inside values handled?",
+          "answer": "Values containing commas, quotes, or newlines are automatically wrapped in quotes and escaped per standard CSV formatting rules."
+        },
+        {
+          "question": "Does column order match the order of keys in my JSON?",
+          "answer": "Columns are generally derived from the keys found across your JSON objects — for consistent column order, ensure your JSON objects have keys in the same order."
+        },
+        {
+          "question": "Can I download the result directly as a .csv file?",
+          "answer": "Yes, a dedicated download button saves the converted output as a .csv file."
         }
       ],
       "comparisonTable": {
@@ -3207,6 +4119,22 @@
         {
           "question": "Загружается ли мой код куда-либо?",
           "answer": "Нет, минификация происходит полностью в вашем браузере."
+        },
+        {
+          "question": "Does it minify JavaScript as well as HTML and CSS?",
+          "answer": "No, only HTML and CSS minification modes are available — there's no JavaScript minifier."
+        },
+        {
+          "question": "Are HTML comments always removed?",
+          "answer": "Yes, HTML comments are stripped automatically during minification with no option to preserve them."
+        },
+        {
+          "question": "Does minifying CSS remove unused rules?",
+          "answer": "No, CSS minification only removes comments and unnecessary whitespace/formatting — it doesn't analyze your HTML to detect and remove unused selectors."
+        },
+        {
+          "question": "Can I reverse minification to get readable code back?",
+          "answer": "No, minification is one-directional and doesn't preserve original formatting or variable names to reconstruct — keep a copy of your original code if you'll need to edit it later."
         }
       ]
     },
@@ -3246,6 +4174,22 @@
         {
           "question": "Отправляется ли мой текст куда-либо?",
           "answer": "Нет, кодирование и декодирование происходят полностью в вашем браузере."
+        },
+        {
+          "question": "Does it encode all non-ASCII characters or just special ones?",
+          "answer": "By default it targets characters with reserved meaning in HTML, like <, >, &, and quotes; there's a separate option to encode all non-ASCII characters as numeric entities if you need that."
+        },
+        {
+          "question": "What's the difference between named and numeric entities?",
+          "answer": "Named entities like &amp; are more readable, while numeric entities like &#38; work for any Unicode code point, including ones without a defined name — this tool can output either."
+        },
+        {
+          "question": "Why do I need to encode characters like & in HTML attributes?",
+          "answer": "Unencoded & or quote characters inside attribute values can break the HTML parser or be misread as marking the start of an entity, so encoding keeps the attribute value intact."
+        },
+        {
+          "question": "Can decoding handle entities without a trailing semicolon?",
+          "answer": "Most browsers tolerate some named entities without a semicolon, but this decoder expects well-formed entities ending in a semicolon for reliable results."
         }
       ]
     },
@@ -3286,6 +4230,22 @@
         {
           "question": "Отправляется ли мой текст куда-либо?",
           "answer": "Нет, оформление заглавных букв происходит полностью в вашем браузере."
+        },
+        {
+          "question": "How does it decide which small words to lowercase?",
+          "answer": "It uses style-specific rules (AP, APA, Chicago, or MLA) that define which short articles, conjunctions, and prepositions stay lowercase unless they start or end the title."
+        },
+        {
+          "question": "Does it handle hyphenated words correctly?",
+          "answer": "Hyphenated words are capitalized as a single token rather than capitalizing each part after the hyphen separately — so \"well-known\" becomes \"Well-known\", not \"Well-Known\"."
+        },
+        {
+          "question": "Can it capitalize titles with subtitles separated by a colon?",
+          "answer": "Yes, text is processed as a continuous string, so both the title and subtitle portions get title-cased consistently."
+        },
+        {
+          "question": "Does it preserve intentional stylized capitalization, like brand names?",
+          "answer": "No, every word is reformatted according to the selected style's rules, so stylized capitalization (like \"eBay\" or \"iPhone\") will be normalized rather than preserved."
         }
       ]
     },
@@ -3325,6 +4285,22 @@
         {
           "question": "Отправляется ли мой текст куда-либо?",
           "answer": "Нет, генерация слага происходит полностью в вашем браузере."
+        },
+        {
+          "question": "Does it enforce a maximum slug length?",
+          "answer": "There's no built-in maximum length — very long titles produce correspondingly long slugs, so trim manually if you need a shorter URL."
+        },
+        {
+          "question": "Can I choose hyphens or underscores as the separator?",
+          "answer": "Yes, a toggle lets you choose between hyphens and underscores as the word separator."
+        },
+        {
+          "question": "Does it remove stop words like 'a' or 'the'?",
+          "answer": "No, it only strips special characters and normalizes accented letters — common words like \"a\" or \"the\" are kept in the slug."
+        },
+        {
+          "question": "What happens to numbers in the title?",
+          "answer": "Numbers are preserved as-is in the generated slug, since they're already URL-safe characters."
         }
       ]
     },
@@ -3364,6 +4340,22 @@
         {
           "question": "Загружаются ли мои данные куда-либо?",
           "answer": "Нет, предпросмотр и сгенерированный код создаются полностью в вашем браузере."
+        },
+        {
+          "question": "What image dimensions should I use for the OpenGraph image?",
+          "answer": "1200×630 pixels is the widely recommended size for OpenGraph images, giving a good display across Facebook, LinkedIn, and most other platforms."
+        },
+        {
+          "question": "Does this generate Twitter Card tags too?",
+          "answer": "Check the generated output — many OpenGraph generators include matching Twitter Card meta tags alongside the standard `og:` tags for broader platform support."
+        },
+        {
+          "question": "Can I preview how the link looks on different platforms?",
+          "answer": "The tool shows a preview of the card based on your entered tags, though actual rendering can vary slightly by platform since each service applies its own layout rules."
+        },
+        {
+          "question": "Why isn't my site showing the updated preview after I changed the tags?",
+          "answer": "Social platforms cache link previews — you'll typically need to use that platform's own debugging/cache-refresh tool (like Facebook's Sharing Debugger) to force it to re-read your updated tags."
         }
       ]
     },
@@ -3403,6 +4395,22 @@
         {
           "question": "Загружается ли мой список куда-либо?",
           "answer": "Нет, всё обрабатывается полностью в вашем браузере."
+        },
+        {
+          "question": "Is duplicate detection case-sensitive?",
+          "answer": "There's a case-insensitive toggle — by default it may treat \"Apple\" and \"apple\" as different lines unless you enable case-insensitive comparison."
+        },
+        {
+          "question": "Does it ignore leading or trailing whitespace when comparing lines?",
+          "answer": "Check how your lines are compared — trimming behavior affects whether lines that differ only in surrounding whitespace are treated as duplicates."
+        },
+        {
+          "question": "What sorting options are available besides alphabetical?",
+          "answer": "You can sort A→Z, Z→A, by line length, or leave the original order unchanged — there's no separate numeric-value sort mode."
+        },
+        {
+          "question": "Can I remove blank lines at the same time?",
+          "answer": "Yes, a separate \"remove empty lines\" option works independently of duplicate removal."
         }
       ]
     },
@@ -3442,6 +4450,22 @@
         {
           "question": "Загружается ли мой SVG куда-либо?",
           "answer": "Нет, оптимизация происходит полностью в вашем браузере."
+        },
+        {
+          "question": "What specific things does the optimizer clean up?",
+          "answer": "It removes comments, strips metadata/title/description elements, cleans up unused ID attributes, and rounds numeric precision in path and shape coordinates — it doesn't simplify path geometry itself."
+        },
+        {
+          "question": "Will optimizing break animations or JavaScript that references my SVG's IDs?",
+          "answer": "IDs that are actually referenced (via url() or href) are preserved — only genuinely unused IDs are removed, but double-check any external JavaScript that references IDs indirectly."
+        },
+        {
+          "question": "How much smaller does an SVG typically get after optimizing?",
+          "answer": "This varies widely depending on how much unnecessary markup, comments, and excess decimal precision the original file contains — hand-exported SVGs from design tools often shrink noticeably more than already-clean ones."
+        },
+        {
+          "question": "Can I paste raw SVG markup instead of uploading a file?",
+          "answer": "Yes, you can either paste SVG code directly into the text area or upload an .svg file."
         }
       ]
     },
@@ -3485,6 +4509,22 @@
         {
           "question": "Могу ли я записывать со звуком?",
           "answer": "Да, вы можете включить микрофон, а звук из общей вкладки захватывается автоматически, если это поддерживается вашим браузером."
+        },
+        {
+          "question": "What video format does the recording download as?",
+          "answer": "Recordings are saved as WebM, using VP8 or VP9 video with Opus audio depending on what your browser supports."
+        },
+        {
+          "question": "Can I record just one browser tab instead of my whole screen?",
+          "answer": "Yes, but the choice between full screen, a window, or a specific tab comes from your browser's own native screen-sharing picker, not a setting inside this tool."
+        },
+        {
+          "question": "Why does my browser ask for permission every time I record?",
+          "answer": "Browsers require explicit screen-capture permission each session for privacy — this tool has no way to remember or bypass that browser-level prompt."
+        },
+        {
+          "question": "Does system audio get captured along with my microphone?",
+          "answer": "Yes, if you share audio in your browser's screen-share prompt, system/tab audio is captured separately from your microphone (when microphone capture is also enabled), and both are combined in the recording."
         }
       ]
     },
@@ -3524,6 +4564,22 @@
         {
           "question": "Что считается «крупным текстом»?",
           "answer": "Текст размером от 18pt или от 14pt жирным шрифтом подпадает под более мягкие пороги для крупного текста."
+        },
+        {
+          "question": "Does this tool check contrast for UI elements, not just text?",
+          "answer": "No, it checks the four standard text-contrast thresholds (AA and AAA, normal and large text) only — it doesn't check the separate 3:1 ratio WCAG requires for non-text UI components and graphical objects."
+        },
+        {
+          "question": "Can I enter colors as HEX, RGB, or color names?",
+          "answer": "Most versions accept HEX codes and RGB values directly; check the input field for which formats are supported before typing in a color name."
+        },
+        {
+          "question": "Why did my colors pass AA but fail AAA?",
+          "answer": "AAA requires a stricter 7:1 ratio for normal text compared to AA's 4.5:1, so a color pair with moderate contrast can satisfy the more lenient AA standard while falling short of AAA."
+        },
+        {
+          "question": "What's the difference between AA and AAA compliance?",
+          "answer": "AA is the standard minimum most sites aim for (4.5:1 for normal text); AAA is a stricter, optional level (7:1) recommended for content aimed at users with low vision."
         }
       ]
     },
@@ -3563,6 +4619,22 @@
         {
           "question": "Загружаются ли мои данные куда-либо?",
           "answer": "Нет, все вычисления происходят полностью в вашем браузере."
+        },
+        {
+          "question": "What does the simplified ratio (e.g. 16:9) mean?",
+          "answer": "It's your width and height reduced to the smallest whole numbers that keep the same proportion, using their greatest common divisor."
+        },
+        {
+          "question": "Can I lock the ratio and enter a target width to find the height?",
+          "answer": "Yes, entering either dimension automatically scales the other to preserve the original aspect ratio."
+        },
+        {
+          "question": "Is this useful for video and screen resolutions too?",
+          "answer": "Yes, it works for any width/height pair — video frames, monitor resolutions, print dimensions, and image crops all use the same ratio math."
+        },
+        {
+          "question": "What's the difference between aspect ratio and resolution?",
+          "answer": "Resolution is the exact pixel dimensions (e.g. 1920×1080); aspect ratio is the proportional relationship between width and height (e.g. 16:9), which many different resolutions can share."
         }
       ]
     },
@@ -3607,6 +4679,22 @@
         {
           "question": "Могу ли я изменить положение кружка веб-камеры?",
           "answer": "Сейчас веб-камера отображается как фиксированный кружок в правом нижнем углу, размер которого подобран так, чтобы не мешать большей части контента."
+        },
+        {
+          "question": "Can I resize or move the webcam overlay after starting the recording?",
+          "answer": "No, the webcam overlay appears as a fixed-size circle in the bottom-right corner — its position and size aren't adjustable, only whether it's shown or hidden."
+        },
+        {
+          "question": "What happens if I don't have a webcam connected?",
+          "answer": "The tool will prompt for webcam access, and if none is available or permission is denied, you can typically still record your screen without the picture-in-picture overlay."
+        },
+        {
+          "question": "What format is the final recording saved in?",
+          "answer": "Like other browser-based recording tools here, output is typically saved as a WebM video file, combining your screen, webcam, and microphone into a single track."
+        },
+        {
+          "question": "Can I record with the webcam overlay but without a screen share?",
+          "answer": "This tool is built around combining screen and webcam together, so if you only want a webcam recording, the standalone audio or a simple webcam-only capture would be a better fit."
         }
       ]
     },
@@ -3651,6 +4739,22 @@
         {
           "question": "Загружается ли это куда-либо?",
           "answer": "Нет, захват экрана и кодирование GIF полностью происходят на вашем устройстве."
+        },
+        {
+          "question": "Can I trim the recording before exporting as GIF?",
+          "answer": "No, the entire recording from start to stop is encoded as the GIF — there's no post-recording trim step, so stop recording when you've captured what you need."
+        },
+        {
+          "question": "Can I loop the GIF or does it play once?",
+          "answer": "Animated GIFs loop by default in virtually all browsers and apps that display them, so your exported file will replay automatically without any extra setting needed."
+        },
+        {
+          "question": "Why does my GIF look like it has fewer colors than my screen?",
+          "answer": "The GIF format is limited to a palette of 256 colors per frame, so smooth gradients or photo-like content can show visible banding compared to the original screen recording."
+        },
+        {
+          "question": "Does the recording include my microphone audio?",
+          "answer": "No, GIF is an image-only format with no audio track, so any microphone or system audio isn't captured or included in the output."
         }
       ],
       "comparisonTable": {
@@ -3732,6 +4836,22 @@
         {
           "question": "Загружается ли моя запись куда-либо?",
           "answer": "Нет, запись полностью происходит на вашем устройстве — ничего не отправляется на сервер."
+        },
+        {
+          "question": "Can I pause and resume a recording instead of starting over?",
+          "answer": "Yes, dedicated pause and resume buttons let you pause mid-recording and continue in the same session without starting a new file."
+        },
+        {
+          "question": "Does the live level meter affect recording quality?",
+          "answer": "No, the level meter is just a visual indicator of input volume to help you check your microphone is working and not clipping; it doesn't alter the captured audio itself."
+        },
+        {
+          "question": "Can I trim silence from the beginning or end of my recording?",
+          "answer": "This tool is focused on capture rather than editing, so trimming isn't typically included. You'd want to use a dedicated audio or video trimmer afterward if you need to cut dead air."
+        },
+        {
+          "question": "What audio format is the recording saved as?",
+          "answer": "Recordings use WebM with Opus audio when your browser supports it, falling back to MP4/M4A otherwise — the exact format depends on your browser's capabilities."
         }
       ]
     },
@@ -3776,6 +4896,22 @@
         {
           "question": "Могу ли я вставить скриншот прямо из буфера обмена?",
           "answer": "Да, скопировав скриншот, просто нажмите Ctrl+V (или Cmd+V на Mac) в любом месте страницы."
+        },
+        {
+          "question": "Can I adjust the padding and corner rounding independently?",
+          "answer": "Yes, padding and corner radius each have their own slider, so you can adjust the background margin and the rounded-corner amount separately."
+        },
+        {
+          "question": "Does the browser window frame match real browser chrome?",
+          "answer": "The window chrome is a stylized mockup meant to look like a generic browser or OS window rather than an exact pixel-for-pixel replica of any specific browser or operating system version."
+        },
+        {
+          "question": "What image formats can I export the finished mockup as?",
+          "answer": "Export typically includes PNG for lossless quality, which suits screenshots with text and UI elements better than a lossy format like JPG."
+        },
+        {
+          "question": "Can I add a custom background instead of a solid color or gradient?",
+          "answer": "No, backgrounds are chosen from a set of preset solid colors and gradients — there's no option to upload a custom background image."
         }
       ]
     },
@@ -3821,6 +4957,22 @@
         {
           "question": "Загружается ли моё изображение куда-либо?",
           "answer": "Нет, всё рисование и скрытие данных происходит на canvas HTML5 в вашем браузере — ничего не загружается."
+        },
+        {
+          "question": "Can I adjust the pixelation strength for redacted areas?",
+          "answer": "No, the pixel block size is fixed — you can control the size and position of the redacted region by dragging, but not how coarse the pixelation itself is."
+        },
+        {
+          "question": "Is pixelated content truly unrecoverable, or could it be reversed?",
+          "answer": "Pixelation applied directly to the image pixels, as this tool does, permanently discards the original detail in that area, unlike a blur or an overlay that could theoretically be removed to reveal what's underneath."
+        },
+        {
+          "question": "What annotation shapes and tools are available besides arrows and text?",
+          "answer": "Typical options include rectangles, circles, freehand drawing, and numbered badges for step-by-step callouts, in addition to arrows and text labels."
+        },
+        {
+          "question": "Can I change the color and thickness of my annotations?",
+          "answer": "Yes, most annotation tools let you pick a color and adjust line thickness or font size before or after placing a shape or text element."
         }
       ]
     },
@@ -3865,6 +5017,22 @@
         {
           "question": "Загружается ли моё изображение куда-либо?",
           "answer": "Нет, каждый фильтр применяется на canvas HTML5 в вашем браузере — ничего не загружается."
+        },
+        {
+          "question": "Can I apply a filter to just part of the image?",
+          "answer": "No, filters are applied to the entire image — there's no selection or masking tool to target just a region."
+        },
+        {
+          "question": "Can I combine multiple filters, like a preset look plus manual brightness adjustment?",
+          "answer": "Yes, applying a preset sets starting values for all the adjustment sliders, which you can then fine-tune further manually on top of the preset."
+        },
+        {
+          "question": "Does this tool support RAW camera files?",
+          "answer": "No, it works with standard web image formats your browser can display — RAW camera formats (like .CR2 or .NEF) aren't supported."
+        },
+        {
+          "question": "Can I reset all filters back to the original image?",
+          "answer": "Yes, a Reset button restores every adjustment to its neutral, unfiltered state."
         }
       ]
     },
@@ -3909,6 +5077,22 @@
         {
           "question": "Загружаются ли мои изображения куда-либо?",
           "answer": "Нет, каждое изображение обрабатывается локально на canvas в вашем браузере — ничего не загружается."
+        },
+        {
+          "question": "Can I rotate or tile the watermark across the whole image?",
+          "answer": "No, the watermark is placed once at a fixed position (one of nine corner/edge/center options) — there's no rotation or repeating tile pattern."
+        },
+        {
+          "question": "What image formats can I use for a logo watermark?",
+          "answer": "PNG is recommended for logo watermarks since its transparency support lets the logo blend naturally over each photo rather than appearing as an opaque box."
+        },
+        {
+          "question": "Does the watermark scale automatically for images of different sizes?",
+          "answer": "If you set the watermark size as a percentage rather than fixed pixels, it scales proportionally across a batch of differently sized images so it looks consistent on each one."
+        },
+        {
+          "question": "Can I apply the same watermark to multiple images at once?",
+          "answer": "Yes, upload multiple images and use \"Apply to all\" to add the same watermark settings to every image in the queue in one pass."
         }
       ]
     },
@@ -3953,6 +5137,22 @@
         {
           "question": "Загружаются ли мои фото куда-либо?",
           "answer": "Нет, весь коллаж собирается на canvas HTML5 в вашем браузере — ничего не загружается."
+        },
+        {
+          "question": "Can I export the collage at a specific resolution for printing?",
+          "answer": "No, the collage is always rendered at a fixed canvas size — there's no custom resolution option, though you can choose PNG or WebP as the output format."
+        },
+        {
+          "question": "What happens if my photos have different aspect ratios?",
+          "answer": "Photos are typically cropped to fit each grid cell's proportions, so parts of a non-matching aspect ratio image may be trimmed off the edges to fill the cell cleanly."
+        },
+        {
+          "question": "How many photos can I include in one collage?",
+          "answer": "This depends on the grid layouts offered, which typically range from 2-photo layouts up to larger grids like 3x3 or more; check the layout picker for the maximum available."
+        },
+        {
+          "question": "Can I adjust the spacing between photos in the grid?",
+          "answer": "Yes, a spacing/gap control adjusts the gutter between photos in the collage layout."
         }
       ]
     },
@@ -3997,6 +5197,22 @@
         {
           "question": "Загружается ли моё видео куда-либо?",
           "answer": "Нет, обрезка полностью происходит на вашем устройстве путём локальной перезаписи выбранного диапазона — ничего не загружается."
+        },
+        {
+          "question": "Does trimming re-encode the whole video or just cut it?",
+          "answer": "It re-encodes — the video is played and captured frame-by-frame onto a canvas rather than doing a fast container-level cut, so trimming always produces a freshly encoded WebM file."
+        },
+        {
+          "question": "Can I preview the exact trim points before exporting?",
+          "answer": "Yes, drag the start and end handles on the timeline to preview exactly where your trim begins and ends before exporting."
+        },
+        {
+          "question": "Will trimming change my video's resolution or frame rate?",
+          "answer": "The output is captured at a fixed 30fps regardless of your source video's original frame rate, though resolution is preserved from the source."
+        },
+        {
+          "question": "Can I make multiple trims from one video, like cutting out several clips?",
+          "answer": "Yes, after exporting one trim you can adjust the start/end points again and export another clip from the same source video without re-uploading."
         }
       ]
     },
@@ -4041,6 +5257,22 @@
         {
           "question": "Загружается ли моё видео куда-либо?",
           "answer": "Нет, извлечение кадров и кодирование GIF полностью происходят на вашем устройстве."
+        },
+        {
+          "question": "Can I add captions or crop the video before converting to GIF?",
+          "answer": "No, this tool converts the full video frame as-is — there's no captioning or cropping step before GIF conversion."
+        },
+        {
+          "question": "Why does my GIF look choppier than the source video?",
+          "answer": "GIF encoding typically uses a lower frame rate and a limited 256-color palette compared to video, which can make motion look less smooth and colors less accurate than the original."
+        },
+        {
+          "question": "What's the largest video file I can convert?",
+          "answer": "There's no hard file-size limit enforced by the tool, but very large or long videos require more memory and processing time since everything runs in your browser."
+        },
+        {
+          "question": "Does the GIF include the video's audio?",
+          "answer": "No, the GIF format doesn't support audio at all, so any sound in the source video is dropped."
         }
       ],
       "comparisonTable": {
@@ -4122,6 +5354,22 @@
         {
           "question": "Загружается ли моё видео куда-либо?",
           "answer": "Нет, и отключение звука, и извлечение аудио полностью происходят на вашем устройстве — ничего не отправляется на сервер."
+        },
+        {
+          "question": "What happens to the video quality when I extract just the audio?",
+          "answer": "Extracting audio only produces an audio file — the video track isn't affected or re-encoded in that mode."
+        },
+        {
+          "question": "Does muting a video re-encode the video track?",
+          "answer": "Yes, muting works by re-encoding every frame through canvas capture rather than simply stripping the audio track from the original file, so the video is re-compressed as WebM."
+        },
+        {
+          "question": "Can I extract audio from a video that has multiple audio tracks?",
+          "answer": "The tool extracts whatever audio track your browser exposes as the video's default — it isn't designed to let you pick among multiple separate audio tracks."
+        },
+        {
+          "question": "What if my video has no audio track at all?",
+          "answer": "Extract mode will show an error since there's no audio to extract; mute mode still works and simply produces a silent re-encoded copy."
         }
       ]
     },
@@ -4166,6 +5414,22 @@
         {
           "question": "Загружается ли моё видео куда-либо?",
           "answer": "Нет, изменение скорости полностью рендерится на вашем устройстве путём локальной перезаписи воспроизведения — ничего не загружается."
+        },
+        {
+          "question": "Does changing speed also change the pitch of the audio?",
+          "answer": "This tool doesn't apply any pitch correction itself — whether pitch changes with speed depends on your browser's default playback behavior."
+        },
+        {
+          "question": "Can I speed up just part of a video and keep the rest normal?",
+          "answer": "No, the speed adjustment applies uniformly to the entire video — there's no way to vary speed across different sections."
+        },
+        {
+          "question": "Does changing video speed affect the file's frame rate?",
+          "answer": "The output is always captured at a fixed 30fps regardless of the speed multiplier or your source video's original frame rate."
+        },
+        {
+          "question": "Will slowing down a video significantly increase its file size?",
+          "answer": "Yes, slowing down a video means capturing more output frames for the same content, which generally increases the resulting file size compared to normal speed."
         }
       ]
     },
@@ -4211,6 +5475,22 @@
         {
           "question": "Is this an exact quote from a lender?",
           "answer": "No, this is an estimate. Actual rates and terms depend on your lender, credit, and location."
+        },
+        {
+          "question": "How does the down payment affect my payment?",
+          "answer": "A larger down payment reduces your loan principal, which lowers both your monthly principal-and-interest payment and total interest paid over the loan."
+        },
+        {
+          "question": "Can I model different loan terms like 15 vs 30 years?",
+          "answer": "Yes, adjust the loan term slider — shorter terms have higher monthly payments but significantly less total interest paid."
+        },
+        {
+          "question": "What if my property tax or insurance isn't known yet?",
+          "answer": "Use a reasonable estimate based on your area or ask your lender/agent — you can adjust both fields anytime and the payment recalculates instantly."
+        },
+        {
+          "question": "Does this account for HOA fees?",
+          "answer": "No, HOA fees aren't included — add them manually to the estimated monthly payment if your property has one."
         }
       ]
     },
@@ -4256,6 +5536,22 @@
         {
           "question": "Can I use this for loans?",
           "answer": "Yes, simple interest is common for short-term loans and some savings accounts."
+        },
+        {
+          "question": "When is simple interest used instead of compound?",
+          "answer": "Simple interest is common for short-term loans, car loans, and some bonds, where interest doesn't compound on itself over the term."
+        },
+        {
+          "question": "Does the interest rate need to be annual?",
+          "answer": "Yes, this calculator expects an annual rate — if you have a monthly rate, multiply it by 12 first."
+        },
+        {
+          "question": "Can I calculate interest for partial years?",
+          "answer": "Yes, enter a decimal value for time — 0.5 represents 6 months, 1.5 represents 18 months, and so on."
+        },
+        {
+          "question": "How much more does compound interest earn over the same period?",
+          "answer": "It depends on the rate, time, and compounding frequency — check the Compound Interest Calculator with the same principal and rate to compare directly."
         }
       ]
     },
@@ -4301,6 +5597,22 @@
         {
           "question": "Can I remove a course?",
           "answer": "Yes, click the trash icon next to any course row to remove it."
+        },
+        {
+          "question": "What if my school uses a different grading scale?",
+          "answer": "This tool uses a standard 4.0 scale — if your institution uses a different scale (e.g. 5.0), the calculated GPA won't directly match your official transcript."
+        },
+        {
+          "question": "Can I add more than three courses?",
+          "answer": "Yes, click 'Add course' to add as many rows as you need — there's no fixed limit."
+        },
+        {
+          "question": "How are credit hours weighted in the calculation?",
+          "answer": "Each course's grade points are multiplied by its credit hours before summing, so a 4-credit course affects your GPA twice as much as a 2-credit course."
+        },
+        {
+          "question": "Does a 0-credit course affect my GPA?",
+          "answer": "No, courses with 0 credits are excluded from the calculation entirely since they contribute no weight to the average."
         }
       ]
     },
@@ -4346,6 +5658,22 @@
         {
           "question": "Which currencies are supported?",
           "answer": "20 major world currencies including USD, EUR, GBP, JPY, and more."
+        },
+        {
+          "question": "How often are the rates updated?",
+          "answer": "The rates are a fixed snapshot bundled with the tool, not updated automatically — check the date shown in the disclaimer to see when they were last set."
+        },
+        {
+          "question": "Can I swap the from/to currencies quickly?",
+          "answer": "Yes, use the swap button between the two currency fields to instantly reverse the conversion direction."
+        },
+        {
+          "question": "Is this suitable for large financial transactions?",
+          "answer": "No — for anything beyond a rough estimate, check live rates from your bank or a financial data provider, since actual market rates fluctuate constantly."
+        },
+        {
+          "question": "Why might the actual bank rate differ from this estimate?",
+          "answer": "Banks and exchange services typically add a margin or fee on top of the market rate, so the rate you receive is usually less favorable than the raw market rate shown here."
         }
       ]
     },
@@ -4387,6 +5715,22 @@
         {
           "question": "Why does the formula differ by sex?",
           "answer": "Body fat distribution differs between men and women, so the Navy method uses separate formulas for each."
+        },
+        {
+          "question": "Where exactly should I measure my waist and neck?",
+          "answer": "Measure your neck just below the larynx, and your waist at the narrowest point (or at navel level if using the standard protocol) — measure snugly but without compressing the skin."
+        },
+        {
+          "question": "Why is a hip measurement only needed for females?",
+          "answer": "The U.S. Navy formula for women includes hip circumference because body fat distribution patterns differ by sex, while the male formula only needs waist and neck."
+        },
+        {
+          "question": "How does this compare to a DEXA scan or caliper test?",
+          "answer": "The circumference method is quick and equipment-free but generally less precise than clinical methods like DEXA scans or skinfold calipers performed by a professional."
+        },
+        {
+          "question": "Can I track my body fat percentage over time with this?",
+          "answer": "Yes, re-measure periodically and save each result — since it's the same method each time, relative changes over time tend to be more meaningful than any single absolute reading."
         }
       ]
     },
@@ -4428,6 +5772,22 @@
         {
           "question": "Can I calculate a future date difference?",
           "answer": "Yes, both dates can be in the past, present, or future."
+        },
+        {
+          "question": "What counts as a business day?",
+          "answer": "Any day that isn't a Saturday or Sunday — this calculator doesn't exclude public holidays, since those vary by country and region."
+        },
+        {
+          "question": "Can I calculate the difference between two dates in different years?",
+          "answer": "Yes, there's no limit on the date range — the calculator works across any span of years."
+        },
+        {
+          "question": "Why do total months and (years × 12 + months) sometimes look different?",
+          "answer": "They should always match — total months is calculated directly as years times 12 plus the remaining months shown in the breakdown."
+        },
+        {
+          "question": "Does this handle time zones?",
+          "answer": "No, dates are treated as calendar days without time-of-day or time zone consideration, which is standard for whole-day difference calculations."
         }
       ]
     },
@@ -4473,6 +5833,22 @@
         {
           "question": "Can I model a lump sum with no contributions?",
           "answer": "Yes, set monthly contribution to $0 to see pure compound growth on your initial investment."
+        },
+        {
+          "question": "When are monthly contributions added — start or end of month?",
+          "answer": "Contributions are added at the end of each month, after that month's growth is applied to the existing balance."
+        },
+        {
+          "question": "What return rate should I use for a realistic projection?",
+          "answer": "This depends entirely on your investment type and risk tolerance — the tool doesn't assume a specific rate, so use a rate consistent with your actual investment strategy or historical benchmarks you trust."
+        },
+        {
+          "question": "Can I model irregular contributions?",
+          "answer": "No, this calculator assumes a fixed monthly contribution amount throughout the entire time horizon."
+        },
+        {
+          "question": "Does the projection account for investment fees or taxes?",
+          "answer": "No, the projected return is gross — fees, taxes, and other costs aren't subtracted from the results shown."
         }
       ]
     },
@@ -4518,6 +5894,22 @@
         {
           "question": "What pay frequencies are supported?",
           "answer": "Weekly (52/year), biweekly (26/year), semi-monthly (24/year), and monthly (12/year)."
+        },
+        {
+          "question": "Why use an effective tax rate instead of exact tax brackets?",
+          "answer": "Real payroll tax calculations depend on filing status, state, and multiple bracket thresholds — this tool intentionally uses one simplified rate for a quick estimate rather than approximating complex, jurisdiction-specific tax logic."
+        },
+        {
+          "question": "What's the difference between gross and net pay here?",
+          "answer": "Gross pay is your salary divided by pay periods before any deductions; net pay is what's left after pre-tax deductions and estimated taxes are subtracted."
+        },
+        {
+          "question": "How do I estimate my effective tax rate?",
+          "answer": "Divide your total expected annual tax (federal, state, and FICA combined) by your gross annual income — your last pay stub or tax return is a good reference point."
+        },
+        {
+          "question": "Does semi-monthly mean the same as biweekly?",
+          "answer": "No — semi-monthly is 24 pay periods a year (twice a month, e.g. the 1st and 15th), while biweekly is 26 pay periods (every two weeks), which changes the amount per paycheck even for the same annual salary."
         }
       ]
     }

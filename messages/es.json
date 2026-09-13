@@ -281,7 +281,44 @@
           "question": "¿Puedo personalizar las horas de trabajo?",
           "answer": "Sí, puedes ajustar las horas por semana y las semanas pagadas por año según tu horario."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Annual salary",
+          "Hourly rate"
+        ],
+        "rows": [
+          {
+            "label": "Best for",
+            "values": [
+              "Full-time comparison, budgeting",
+              "Contract/freelance quoting"
+            ]
+          },
+          {
+            "label": "Overtime clarity",
+            "values": [
+              "Implicit",
+              "Explicit per hour"
+            ]
+          },
+          {
+            "label": "Varies with hours worked",
+            "values": [
+              "No",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Job offers, W-2 employment",
+              "Freelance/contract negotiation"
+            ]
+          }
+        ]
+      }
     },
     "heic-to-jpg": {
       "seoTitle": "Convertir HEIC a JPG Online – 100% Gratis y Seguro",
@@ -330,7 +367,44 @@
           "question": "¿Perderé calidad de foto?",
           "answer": "Controlas la calidad JPG con un control deslizante, para equilibrar el tamaño del archivo con la calidad visual."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "HEIC",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy (more efficient)",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Compatibility",
+            "values": [
+              "Apple devices mainly",
+              "Universal"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "iPhone photo storage",
+              "Sharing, web, editing"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "image-compressor": {
       "seoTitle": "Comprimir Imágenes Online – Optimizador de Imágenes Gratis e Instantáneo",
@@ -509,7 +583,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PNG",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossless",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Graphics, logos, screenshots",
+              "Photos"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "Smaller"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-png": {
       "seoTitle": "Convertir SVG a PNG Online – Gratis e Instantáneo",
@@ -553,7 +664,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, responsive UI",
+              "Photos, fixed-size images"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-jpg": {
       "seoTitle": "Convertir SVG a JPG Online – Gratis e Instantáneo",
@@ -597,7 +745,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, illustrations",
+              "Photos, universal sharing"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-webp": {
       "seoTitle": "Convertir SVG a WebP Online – Gratis e Instantáneo",
@@ -641,7 +826,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, illustrations",
+              "Optimized raster web images"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "png-to-webp": {
       "seoTitle": "Convertir PNG a WebP Online – 100% Gratis y Seguro",
@@ -685,7 +907,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PNG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossless",
+              "Lossy or lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Universal compatibility",
+              "Faster-loading web pages"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "26% smaller on average"
+            ]
+          }
+        ]
+      }
     },
     "webp-to-png": {
       "seoTitle": "Convertir WebP a PNG Online – 100% Gratis y Seguro",
@@ -725,7 +984,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "WebP",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy or lossless",
+              "Lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Web performance",
+              "Universal editing/printing tools"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "webp-to-jpg": {
       "seoTitle": "Convertir WebP a JPG Online – 100% Gratis y Seguro",
@@ -769,7 +1065,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "WebP",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy or lossless",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Modern web browsers",
+              "Universal compatibility"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "jpg-to-webp": {
       "seoTitle": "Convertir JPG a WebP Online – 100% Gratis y Seguro",
@@ -813,7 +1146,44 @@
           "question": "¿Esta conversión es privada?",
           "answer": "Sí, todo ocurre localmente en tu navegador — ningún archivo se sube nunca."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JPG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy",
+              "Lossy or lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "No",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Universal compatibility",
+              "Smaller web images"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "25-35% smaller"
+            ]
+          }
+        ]
+      }
     },
     "base64-image-encoder": {
       "seoTitle": "Codificador y Decodificador de Imágenes Base64 – Herramienta Online Gratis",
@@ -1087,7 +1457,44 @@
           "question": "¿Se sube mi documento a algún lugar?",
           "answer": "No, el renderizado ocurre completamente en tu navegador usando la biblioteca pdf.js — nada se sube."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PDF",
+          "Images (PNG/JPG)"
+        ],
+        "rows": [
+          {
+            "label": "Editability",
+            "values": [
+              "Fixed layout, searchable text",
+              "Pixel data only"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Documents, printing, sharing",
+              "Previews, thumbnails, web embeds"
+            ]
+          },
+          {
+            "label": "File count",
+            "values": [
+              "One file, multiple pages",
+              "One file per page"
+            ]
+          },
+          {
+            "label": "Text selection",
+            "values": [
+              "Yes (if not scanned)",
+              "No"
+            ]
+          }
+        ]
+      }
     },
     "images-to-pdf": {
       "seoTitle": "Convertir Imágenes a PDF Online – 100% Gratis y Seguro",
@@ -1132,7 +1539,44 @@
           "question": "¿Hay un límite en cuántas imágenes puedo añadir?",
           "answer": "No hay límite artificial — el rendimiento depende solo de la memoria disponible en tu dispositivo."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Images (JPG/PNG)",
+          "PDF"
+        ],
+        "rows": [
+          {
+            "label": "File count",
+            "values": [
+              "One file per image",
+              "One file, multiple pages"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Individual photos, editing",
+              "Sharing, printing, archiving"
+            ]
+          },
+          {
+            "label": "Portability",
+            "values": [
+              "Format varies by viewer",
+              "Consistent across all devices"
+            ]
+          },
+          {
+            "label": "Page order",
+            "values": [
+              "Not applicable",
+              "Fixed, sequential"
+            ]
+          }
+        ]
+      }
     },
     "rotate-pdf": {
       "seoTitle": "Rotar PDF Online – 100% Gratis y Seguro",
@@ -1657,7 +2101,44 @@
           "question": "¿Se suben mis datos a algún lugar?",
           "answer": "No, todo el análisis y la conversión ocurren localmente en tu navegador."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "CSV",
+          "JSON"
+        ],
+        "rows": [
+          {
+            "label": "Structure",
+            "values": [
+              "Flat, tabular rows",
+              "Nested key-value objects"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Spreadsheets, tabular data",
+              "APIs, config files, nested data"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Simple, compact",
+              "Structured, self-describing"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Excel, databases exports",
+              "Web apps, data interchange"
+            ]
+          }
+        ]
+      }
     },
     "lorem-ipsum-generator": {
       "seoTitle": "Generador de Lorem Ipsum Online – Texto de Relleno Gratis",
@@ -2694,7 +3175,44 @@
           "question": "¿Se sube mi JSON a algún lugar?",
           "answer": "No, la generación de tipos ocurre completamente en tu navegador."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "TypeScript"
+        ],
+        "rows": [
+          {
+            "label": "Purpose",
+            "values": [
+              "Data format",
+              "Type definitions"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Storing/transmitting data",
+              "Compile-time type safety"
+            ]
+          },
+          {
+            "label": "Validation",
+            "values": [
+              "Runtime only",
+              "Compile-time checks"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "API payloads, config",
+              "Typed code against API shapes"
+            ]
+          }
+        ]
+      }
     },
     "json-to-csv": {
       "seoTitle": "Conversor de JSON a CSV Online – Gratis, Instantáneo, Sin Subir Archivos",
@@ -2733,7 +3251,44 @@
           "question": "¿Se suben mis datos a algún lugar?",
           "answer": "No, la conversión ocurre completamente en tu navegador."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "CSV"
+        ],
+        "rows": [
+          {
+            "label": "Structure",
+            "values": [
+              "Nested key-value objects",
+              "Flat, tabular rows"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "APIs, config files, nested data",
+              "Spreadsheets, tabular data"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Structured, self-describing",
+              "Simple, compact"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Web apps, data interchange",
+              "Excel, databases imports"
+            ]
+          }
+        ]
+      }
     },
     "title-case-converter": {
       "seoTitle": "Conversor de Título Capitalizado – Estilo APA, Chicago, MLA y AP, Gratis",
@@ -2855,7 +3410,44 @@
           "question": "¿Puedo convertir estructuras anidadas complejas?",
           "answer": "Sí, ambas direcciones manejan objetos profundamente anidados y arrays de objetos."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "YAML"
+        ],
+        "rows": [
+          {
+            "label": "Syntax",
+            "values": [
+              "Braces and brackets",
+              "Indentation-based"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "APIs, data interchange",
+              "Config files, DevOps tooling"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Compact but verbose",
+              "Human-friendly, less clutter"
+            ]
+          },
+          {
+            "label": "Comments",
+            "values": [
+              "Not supported",
+              "Supported (#)"
+            ]
+          }
+        ]
+      }
     },
     "aspect-ratio-calculator": {
       "seoTitle": "Calculadora de Relación de Aspecto Online – Gratis e Instantánea",
@@ -3060,7 +3652,44 @@
           "question": "¿Se sube esto a algún lugar?",
           "answer": "No, tanto la captura de pantalla como la codificación del GIF ocurren completamente en tu dispositivo."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Screen recording (video)",
+          "GIF"
+        ],
+        "rows": [
+          {
+            "label": "Audio",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Color depth",
+            "values": [
+              "Millions of colors",
+              "256 colors max"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Tutorials with narration",
+              "Quick shareable demos"
+            ]
+          },
+          {
+            "label": "Autoplay everywhere",
+            "values": [
+              "Needs a player",
+              "Plays inline in chat/docs"
+            ]
+          }
+        ]
+      }
     },
     "audio-recorder": {
       "seoTitle": "Grabador de Voz y Notas de Audio Online – Gratis y Privado",
@@ -3413,7 +4042,44 @@
           "question": "¿Se sube mi video a algún lugar?",
           "answer": "No, tanto la extracción de fotogramas como la codificación del GIF ocurren completamente en tu dispositivo."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Video (MP4)",
+          "GIF"
+        ],
+        "rows": [
+          {
+            "label": "Audio",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Color depth",
+            "values": [
+              "Millions of colors",
+              "256 colors max"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Full playback with sound",
+              "Short looping clips, memes"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller for same duration",
+              "Larger for same duration"
+            ]
+          }
+        ]
+      }
     },
     "video-audio-remover": {
       "seoTitle": "Silenciador de Video y Extractor de Audio – Herramienta Online Gratis",

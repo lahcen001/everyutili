@@ -281,7 +281,44 @@
           "question": "Могу ли я настроить рабочие часы?",
           "answer": "Да, вы можете скорректировать часы в неделю и оплачиваемые недели в году в соответствии с вашим графиком."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Annual salary",
+          "Hourly rate"
+        ],
+        "rows": [
+          {
+            "label": "Best for",
+            "values": [
+              "Full-time comparison, budgeting",
+              "Contract/freelance quoting"
+            ]
+          },
+          {
+            "label": "Overtime clarity",
+            "values": [
+              "Implicit",
+              "Explicit per hour"
+            ]
+          },
+          {
+            "label": "Varies with hours worked",
+            "values": [
+              "No",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Job offers, W-2 employment",
+              "Freelance/contract negotiation"
+            ]
+          }
+        ]
+      }
     },
     "heic-to-jpg": {
       "seoTitle": "Конвертировать HEIC в JPG Онлайн – 100% Бесплатно и Безопасно",
@@ -330,7 +367,44 @@
           "question": "Потеряю ли я качество фото?",
           "answer": "Вы контролируете качество JPG с помощью ползунка, чтобы сбалансировать размер файла и визуальное качество."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "HEIC",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy (more efficient)",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Compatibility",
+            "values": [
+              "Apple devices mainly",
+              "Universal"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "iPhone photo storage",
+              "Sharing, web, editing"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "image-compressor": {
       "seoTitle": "Сжать Изображения Онлайн – Бесплатный и Мгновенный Оптимизатор Изображений",
@@ -509,7 +583,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PNG",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossless",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Graphics, logos, screenshots",
+              "Photos"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "Smaller"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-png": {
       "seoTitle": "Конвертировать SVG в PNG Онлайн – Бесплатно и Мгновенно",
@@ -553,7 +664,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, responsive UI",
+              "Photos, fixed-size images"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-jpg": {
       "seoTitle": "Конвертировать SVG в JPG Онлайн – Бесплатно и Мгновенно",
@@ -597,7 +745,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, illustrations",
+              "Photos, universal sharing"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-webp": {
       "seoTitle": "Конвертировать SVG в WebP Онлайн – Бесплатно и Мгновенно",
@@ -641,7 +826,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, illustrations",
+              "Optimized raster web images"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "png-to-webp": {
       "seoTitle": "Конвертировать PNG в WebP Онлайн – 100% Бесплатно и Безопасно",
@@ -685,7 +907,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PNG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossless",
+              "Lossy or lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Universal compatibility",
+              "Faster-loading web pages"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "26% smaller on average"
+            ]
+          }
+        ]
+      }
     },
     "webp-to-png": {
       "seoTitle": "Конвертировать WebP в PNG Онлайн – 100% Бесплатно и Безопасно",
@@ -725,7 +984,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "WebP",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy or lossless",
+              "Lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Web performance",
+              "Universal editing/printing tools"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "webp-to-jpg": {
       "seoTitle": "Конвертировать WebP в JPG Онлайн – 100% Бесплатно и Безопасно",
@@ -769,7 +1065,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "WebP",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy or lossless",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Modern web browsers",
+              "Universal compatibility"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "jpg-to-webp": {
       "seoTitle": "Конвертировать JPG в WebP Онлайн – 100% Бесплатно и Безопасно",
@@ -813,7 +1146,44 @@
           "question": "Приватна ли эта конвертация?",
           "answer": "Да, всё происходит локально в вашем браузере — ни один файл никогда не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JPG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy",
+              "Lossy or lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "No",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Universal compatibility",
+              "Smaller web images"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "25-35% smaller"
+            ]
+          }
+        ]
+      }
     },
     "base64-image-encoder": {
       "seoTitle": "Кодировщик и Декодировщик Изображений Base64 – Бесплатный Онлайн-Инструмент",
@@ -1087,7 +1457,44 @@
           "question": "Загружается ли мой документ куда-либо?",
           "answer": "Нет, рендеринг происходит полностью в вашем браузере с использованием библиотеки pdf.js — ничего не загружается."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PDF",
+          "Images (PNG/JPG)"
+        ],
+        "rows": [
+          {
+            "label": "Editability",
+            "values": [
+              "Fixed layout, searchable text",
+              "Pixel data only"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Documents, printing, sharing",
+              "Previews, thumbnails, web embeds"
+            ]
+          },
+          {
+            "label": "File count",
+            "values": [
+              "One file, multiple pages",
+              "One file per page"
+            ]
+          },
+          {
+            "label": "Text selection",
+            "values": [
+              "Yes (if not scanned)",
+              "No"
+            ]
+          }
+        ]
+      }
     },
     "images-to-pdf": {
       "seoTitle": "Конвертировать Изображения в PDF Онлайн – 100% Бесплатно и Безопасно",
@@ -1132,7 +1539,44 @@
           "question": "Есть ли ограничение на количество добавляемых изображений?",
           "answer": "Искусственных ограничений нет — производительность зависит только от доступной памяти вашего устройства."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Images (JPG/PNG)",
+          "PDF"
+        ],
+        "rows": [
+          {
+            "label": "File count",
+            "values": [
+              "One file per image",
+              "One file, multiple pages"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Individual photos, editing",
+              "Sharing, printing, archiving"
+            ]
+          },
+          {
+            "label": "Portability",
+            "values": [
+              "Format varies by viewer",
+              "Consistent across all devices"
+            ]
+          },
+          {
+            "label": "Page order",
+            "values": [
+              "Not applicable",
+              "Fixed, sequential"
+            ]
+          }
+        ]
+      }
     },
     "rotate-pdf": {
       "seoTitle": "Повернуть PDF Онлайн – 100% Бесплатно и Безопасно",
@@ -1657,7 +2101,44 @@
           "question": "Загружаются ли мои данные куда-либо?",
           "answer": "Нет, весь анализ и конвертация происходят локально в вашем браузере."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "CSV",
+          "JSON"
+        ],
+        "rows": [
+          {
+            "label": "Structure",
+            "values": [
+              "Flat, tabular rows",
+              "Nested key-value objects"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Spreadsheets, tabular data",
+              "APIs, config files, nested data"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Simple, compact",
+              "Structured, self-describing"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Excel, databases exports",
+              "Web apps, data interchange"
+            ]
+          }
+        ]
+      }
     },
     "lorem-ipsum-generator": {
       "seoTitle": "Генератор Lorem Ipsum Онлайн – Бесплатный Текст-Заполнитель",
@@ -2460,7 +2941,44 @@
           "question": "Загружается ли мой JSON куда-либо?",
           "answer": "Нет, генерация типов происходит полностью в вашем браузере."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "TypeScript"
+        ],
+        "rows": [
+          {
+            "label": "Purpose",
+            "values": [
+              "Data format",
+              "Type definitions"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Storing/transmitting data",
+              "Compile-time type safety"
+            ]
+          },
+          {
+            "label": "Validation",
+            "values": [
+              "Runtime only",
+              "Compile-time checks"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "API payloads, config",
+              "Typed code against API shapes"
+            ]
+          }
+        ]
+      }
     },
     "json-to-yaml": {
       "seoTitle": "Конвертер JSON в YAML Онлайн – Бесплатно, Мгновенно, в Обе Стороны",
@@ -2499,7 +3017,44 @@
           "question": "Могу ли я конвертировать сложные вложенные структуры?",
           "answer": "Да, оба направления поддерживают глубоко вложенные объекты и массивы объектов."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "YAML"
+        ],
+        "rows": [
+          {
+            "label": "Syntax",
+            "values": [
+              "Braces and brackets",
+              "Indentation-based"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "APIs, data interchange",
+              "Config files, DevOps tooling"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Compact but verbose",
+              "Human-friendly, less clutter"
+            ]
+          },
+          {
+            "label": "Comments",
+            "values": [
+              "Not supported",
+              "Supported (#)"
+            ]
+          }
+        ]
+      }
     },
     "sql-formatter": {
       "seoTitle": "Форматировщик SQL Онлайн – Форматирование и Минификация SQL-запросов, Бесплатно",
@@ -2577,7 +3132,44 @@
           "question": "Загружаются ли мои данные куда-либо?",
           "answer": "Нет, конвертация происходит полностью в вашем браузере."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "CSV"
+        ],
+        "rows": [
+          {
+            "label": "Structure",
+            "values": [
+              "Nested key-value objects",
+              "Flat, tabular rows"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "APIs, config files, nested data",
+              "Spreadsheets, tabular data"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Structured, self-describing",
+              "Simple, compact"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Web apps, data interchange",
+              "Excel, databases imports"
+            ]
+          }
+        ]
+      }
     },
     "code-minifier": {
       "seoTitle": "Минификатор HTML и CSS Онлайн – Бесплатно, Мгновенно, Без Загрузки",
@@ -3060,7 +3652,44 @@
           "question": "Загружается ли это куда-либо?",
           "answer": "Нет, захват экрана и кодирование GIF полностью происходят на вашем устройстве."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Screen recording (video)",
+          "GIF"
+        ],
+        "rows": [
+          {
+            "label": "Audio",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Color depth",
+            "values": [
+              "Millions of colors",
+              "256 colors max"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Tutorials with narration",
+              "Quick shareable demos"
+            ]
+          },
+          {
+            "label": "Autoplay everywhere",
+            "values": [
+              "Needs a player",
+              "Plays inline in chat/docs"
+            ]
+          }
+        ]
+      }
     },
     "audio-recorder": {
       "seoTitle": "Запись Голоса и Аудиозаметок Онлайн – Бесплатно и Приватно",
@@ -3413,7 +4042,44 @@
           "question": "Загружается ли моё видео куда-либо?",
           "answer": "Нет, извлечение кадров и кодирование GIF полностью происходят на вашем устройстве."
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Video (MP4)",
+          "GIF"
+        ],
+        "rows": [
+          {
+            "label": "Audio",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Color depth",
+            "values": [
+              "Millions of colors",
+              "256 colors max"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Full playback with sound",
+              "Short looping clips, memes"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller for same duration",
+              "Larger for same duration"
+            ]
+          }
+        ]
+      }
     },
     "video-audio-remover": {
       "seoTitle": "Удаление Звука из Видео и Извлечение Аудио – Бесплатный Онлайн-Инструмент",

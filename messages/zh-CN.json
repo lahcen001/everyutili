@@ -281,7 +281,44 @@
           "question": "我可以自定义工作时间吗？",
           "answer": "可以，您可以根据自己的日程调整每周工作小时数和每年带薪周数。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Annual salary",
+          "Hourly rate"
+        ],
+        "rows": [
+          {
+            "label": "Best for",
+            "values": [
+              "Full-time comparison, budgeting",
+              "Contract/freelance quoting"
+            ]
+          },
+          {
+            "label": "Overtime clarity",
+            "values": [
+              "Implicit",
+              "Explicit per hour"
+            ]
+          },
+          {
+            "label": "Varies with hours worked",
+            "values": [
+              "No",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Job offers, W-2 employment",
+              "Freelance/contract negotiation"
+            ]
+          }
+        ]
+      }
     },
     "heic-to-jpg": {
       "seoTitle": "在线将HEIC转换为JPG – 100%免费安全",
@@ -330,7 +367,44 @@
           "question": "我会损失照片质量吗？",
           "answer": "您可以通过滑块控制JPG质量，以平衡文件大小和视觉质量。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "HEIC",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy (more efficient)",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Compatibility",
+            "values": [
+              "Apple devices mainly",
+              "Universal"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "iPhone photo storage",
+              "Sharing, web, editing"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "image-compressor": {
       "seoTitle": "在线压缩图片 – 免费即时图片优化工具",
@@ -509,7 +583,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PNG",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossless",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Graphics, logos, screenshots",
+              "Photos"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "Smaller"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-png": {
       "seoTitle": "在线将SVG转换为PNG – 免费且即时",
@@ -553,7 +664,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, responsive UI",
+              "Photos, fixed-size images"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-jpg": {
       "seoTitle": "在线将SVG转换为JPG – 免费且即时",
@@ -597,7 +745,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, illustrations",
+              "Photos, universal sharing"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "svg-to-webp": {
       "seoTitle": "在线将SVG转换为WebP – 免费且即时",
@@ -641,7 +826,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "SVG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Scalability",
+            "values": [
+              "Infinite (vector)",
+              "Fixed resolution (raster)"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Icons, logos, illustrations",
+              "Optimized raster web images"
+            ]
+          },
+          {
+            "label": "Editability",
+            "values": [
+              "Editable as code/paths",
+              "Pixel data only"
+            ]
+          }
+        ]
+      }
     },
     "png-to-webp": {
       "seoTitle": "在线将PNG转换为WebP – 100%免费安全",
@@ -685,7 +907,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PNG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossless",
+              "Lossy or lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Universal compatibility",
+              "Faster-loading web pages"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "26% smaller on average"
+            ]
+          }
+        ]
+      }
     },
     "webp-to-png": {
       "seoTitle": "在线将WebP转换为PNG – 100%免费安全",
@@ -725,7 +984,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "WebP",
+          "PNG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy or lossless",
+              "Lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Web performance",
+              "Universal editing/printing tools"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "webp-to-jpg": {
       "seoTitle": "在线将WebP转换为JPG – 100%免费安全",
@@ -769,7 +1065,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "WebP",
+          "JPG"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy or lossless",
+              "Lossy"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Modern web browsers",
+              "Universal compatibility"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller",
+              "Larger"
+            ]
+          }
+        ]
+      }
     },
     "jpg-to-webp": {
       "seoTitle": "在线将JPG转换为WebP – 100%免费安全",
@@ -813,7 +1146,44 @@
           "question": "此转换是私密的吗？",
           "answer": "是的，一切都在您的浏览器中本地进行 — 文件永远不会上传。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JPG",
+          "WebP"
+        ],
+        "rows": [
+          {
+            "label": "Compression",
+            "values": [
+              "Lossy",
+              "Lossy or lossless"
+            ]
+          },
+          {
+            "label": "Transparency",
+            "values": [
+              "No",
+              "Yes"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Universal compatibility",
+              "Smaller web images"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Larger",
+              "25-35% smaller"
+            ]
+          }
+        ]
+      }
     },
     "base64-image-encoder": {
       "seoTitle": "Base64图片编码器和解码器 – 免费在线工具",
@@ -1087,7 +1457,44 @@
           "question": "我的文档会上传到任何地方吗？",
           "answer": "不会，渲染使用pdf.js库完全在您的浏览器中进行 — 不会上传任何内容。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "PDF",
+          "Images (PNG/JPG)"
+        ],
+        "rows": [
+          {
+            "label": "Editability",
+            "values": [
+              "Fixed layout, searchable text",
+              "Pixel data only"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Documents, printing, sharing",
+              "Previews, thumbnails, web embeds"
+            ]
+          },
+          {
+            "label": "File count",
+            "values": [
+              "One file, multiple pages",
+              "One file per page"
+            ]
+          },
+          {
+            "label": "Text selection",
+            "values": [
+              "Yes (if not scanned)",
+              "No"
+            ]
+          }
+        ]
+      }
     },
     "images-to-pdf": {
       "seoTitle": "在线将图片转换为PDF – 100%免费安全",
@@ -1132,7 +1539,44 @@
           "question": "我可以添加多少图片有限制吗？",
           "answer": "没有人为限制 — 性能仅取决于您设备的可用内存。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Images (JPG/PNG)",
+          "PDF"
+        ],
+        "rows": [
+          {
+            "label": "File count",
+            "values": [
+              "One file per image",
+              "One file, multiple pages"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Individual photos, editing",
+              "Sharing, printing, archiving"
+            ]
+          },
+          {
+            "label": "Portability",
+            "values": [
+              "Format varies by viewer",
+              "Consistent across all devices"
+            ]
+          },
+          {
+            "label": "Page order",
+            "values": [
+              "Not applicable",
+              "Fixed, sequential"
+            ]
+          }
+        ]
+      }
     },
     "rotate-pdf": {
       "seoTitle": "在线旋转PDF – 100%免费安全",
@@ -1657,7 +2101,44 @@
           "question": "我的数据会上传到任何地方吗？",
           "answer": "不会，所有解析和转换都在您的浏览器中本地进行。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "CSV",
+          "JSON"
+        ],
+        "rows": [
+          {
+            "label": "Structure",
+            "values": [
+              "Flat, tabular rows",
+              "Nested key-value objects"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Spreadsheets, tabular data",
+              "APIs, config files, nested data"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Simple, compact",
+              "Structured, self-describing"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Excel, databases exports",
+              "Web apps, data interchange"
+            ]
+          }
+        ]
+      }
     },
     "lorem-ipsum-generator": {
       "seoTitle": "在线Lorem Ipsum生成器 – 免费占位符文本",
@@ -2460,7 +2941,44 @@
           "question": "我的JSON会被上传吗？",
           "answer": "不会，类型生成完全在您的浏览器中进行。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "TypeScript"
+        ],
+        "rows": [
+          {
+            "label": "Purpose",
+            "values": [
+              "Data format",
+              "Type definitions"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Storing/transmitting data",
+              "Compile-time type safety"
+            ]
+          },
+          {
+            "label": "Validation",
+            "values": [
+              "Runtime only",
+              "Compile-time checks"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "API payloads, config",
+              "Typed code against API shapes"
+            ]
+          }
+        ]
+      }
     },
     "json-to-yaml": {
       "seoTitle": "JSON转YAML在线工具 – 免费即时，双向互转",
@@ -2499,7 +3017,44 @@
           "question": "可以转换复杂的嵌套结构吗？",
           "answer": "可以，两个转换方向都支持深度嵌套的对象和对象数组。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "YAML"
+        ],
+        "rows": [
+          {
+            "label": "Syntax",
+            "values": [
+              "Braces and brackets",
+              "Indentation-based"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "APIs, data interchange",
+              "Config files, DevOps tooling"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Compact but verbose",
+              "Human-friendly, less clutter"
+            ]
+          },
+          {
+            "label": "Comments",
+            "values": [
+              "Not supported",
+              "Supported (#)"
+            ]
+          }
+        ]
+      }
     },
     "sql-formatter": {
       "seoTitle": "SQL格式化在线工具 – 美化与压缩SQL查询，免费",
@@ -2577,7 +3132,44 @@
           "question": "我的数据会被上传吗？",
           "answer": "不会，转换过程完全在您的浏览器中进行。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "JSON",
+          "CSV"
+        ],
+        "rows": [
+          {
+            "label": "Structure",
+            "values": [
+              "Nested key-value objects",
+              "Flat, tabular rows"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "APIs, config files, nested data",
+              "Spreadsheets, tabular data"
+            ]
+          },
+          {
+            "label": "Readability",
+            "values": [
+              "Structured, self-describing",
+              "Simple, compact"
+            ]
+          },
+          {
+            "label": "Common use",
+            "values": [
+              "Web apps, data interchange",
+              "Excel, databases imports"
+            ]
+          }
+        ]
+      }
     },
     "code-minifier": {
       "seoTitle": "HTML与CSS压缩工具 – 免费即时，无需上传",
@@ -3060,7 +3652,44 @@
           "question": "这会被上传到任何地方吗？",
           "answer": "不会，屏幕捕捉和GIF编码全部在您的设备上完成。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Screen recording (video)",
+          "GIF"
+        ],
+        "rows": [
+          {
+            "label": "Audio",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Color depth",
+            "values": [
+              "Millions of colors",
+              "256 colors max"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Tutorials with narration",
+              "Quick shareable demos"
+            ]
+          },
+          {
+            "label": "Autoplay everywhere",
+            "values": [
+              "Needs a player",
+              "Plays inline in chat/docs"
+            ]
+          }
+        ]
+      }
     },
     "audio-recorder": {
       "seoTitle": "在线语音与音频备忘录录制工具 – 免费、私密",
@@ -3413,7 +4042,44 @@
           "question": "我的视频会被上传吗？",
           "answer": "不会，帧提取和GIF编码全部在您的设备上完成。"
         }
-      ]
+      ],
+      "comparisonTable": {
+        "columns": [
+          "Feature",
+          "Video (MP4)",
+          "GIF"
+        ],
+        "rows": [
+          {
+            "label": "Audio",
+            "values": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "label": "Color depth",
+            "values": [
+              "Millions of colors",
+              "256 colors max"
+            ]
+          },
+          {
+            "label": "Best for",
+            "values": [
+              "Full playback with sound",
+              "Short looping clips, memes"
+            ]
+          },
+          {
+            "label": "Typical file size",
+            "values": [
+              "Smaller for same duration",
+              "Larger for same duration"
+            ]
+          }
+        ]
+      }
     },
     "video-audio-remover": {
       "seoTitle": "视频静音与音频提取工具 – 免费在线工具",

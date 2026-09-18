@@ -101,4 +101,18 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "video-to-gif": () => import("@/components/tools/media/VideoToGif"),
   "video-audio-remover": () => import("@/components/tools/media/VideoAudioRemover"),
   "video-speed": () => import("@/components/tools/media/VideoSpeed"),
+
+  // Random & Decision
+  "team-generator": () => import("@/components/tools/random-decision/TeamGenerator"),
+  "wheel-spinner": () => import("@/components/tools/random-decision/WheelSpinner"),
+  "random-name-picker": () => import("@/components/tools/random-decision/RandomNamePicker"),
+  "random-number-generator": () =>
+    import("@/components/tools/random-decision/RandomNumberGenerator"),
+  "yes-no-decision-maker": () =>
+    import("@/components/tools/random-decision/YesNoDecisionMaker"),
+  "coin-flip": () => import("@/components/tools/random-decision/CoinFlip"),
+  "dice-roller": () => import("@/components/tools/random-decision/DiceRoller"),
+  "list-shuffler": () => import("@/components/tools/random-decision/ListShuffler"),
+  "bracket-generator": () => import("@/components/tools/random-decision/BracketGenerator"),
+  "raffle-picker": () => import("@/components/tools/random-decision/RafflePicker"),
 };

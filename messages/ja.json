@@ -65,6 +65,11 @@
       "label": "金融計算機",
       "description": "給与、税金、予算に関する判断のための高速で正確な計算機。",
       "navLabel": "金融"
+    },
+    "random-decision": {
+      "label": "Random & Decision Tools",
+      "description": "Spin, flip, roll, and pick your way to a decision — team generators, wheels, and random pickers, all offline.",
+      "navLabel": "Random"
     }
   },
   "tools": {
@@ -5910,6 +5915,633 @@
         {
           "question": "Does semi-monthly mean the same as biweekly?",
           "answer": "No — semi-monthly is 24 pay periods a year (twice a month, e.g. the 1st and 15th), while biweekly is 26 pay periods (every two weeks), which changes the amount per paycheck even for the same annual salary."
+        }
+      ]
+    },
+    "team-generator": {
+      "seoTitle": "Team Generator – Split a List into Random Teams",
+      "metaDescription": "Paste a list of names and split them into random, balanced teams or groups — processed 100% locally in your browser.",
+      "h1": "Team Generator",
+      "subheading": "Split a list of names into random teams or groups — processed 100% locally in your browser.",
+      "keywords": [
+        "team generator",
+        "random team generator",
+        "group generator",
+        "split into teams",
+        "random group maker",
+        "team randomizer",
+        "class group generator"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your names",
+          "text": "Enter one name per line in the text box."
+        },
+        {
+          "name": "Choose how to split",
+          "text": "Pick either a fixed number of teams or a fixed number of people per team."
+        },
+        {
+          "name": "Generate teams",
+          "text": "Click Generate teams to randomly shuffle everyone into balanced groups."
+        },
+        {
+          "name": "Copy or save",
+          "text": "Copy the team list or save it to your history for later."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How are teams balanced?",
+          "answer": "Names are shuffled randomly, then dealt out one at a time across teams in round-robin order, so team sizes differ by at most one person."
+        },
+        {
+          "question": "Can I split by team size instead of team count?",
+          "answer": "Yes, switch to \"People per team\" mode and set your desired group size — the number of teams is calculated automatically."
+        },
+        {
+          "question": "Is my list uploaded anywhere?",
+          "answer": "No, everything runs locally in your browser — your names are never sent anywhere."
+        },
+        {
+          "question": "What happens if the names don't divide evenly?",
+          "answer": "Extra people are distributed one at a time to the earliest teams, so team sizes never differ by more than one."
+        },
+        {
+          "question": "Can I regenerate if I don't like the split?",
+          "answer": "Yes, click Generate teams again for a fresh random shuffle — there's no limit on how many times you can regenerate."
+        },
+        {
+          "question": "Does it remove duplicate names?",
+          "answer": "No, if the same name appears twice in your list, it's treated as two separate entries and may end up on different teams."
+        },
+        {
+          "question": "Can I save the generated teams for later?",
+          "answer": "Yes, click Save to add the result to your local history, which also lets you restore the original name list afterward."
+        }
+      ]
+    },
+    "wheel-spinner": {
+      "seoTitle": "Random Wheel Spinner – Spin to Pick an Answer",
+      "metaDescription": "Enter your own options and spin a random wheel to pick one — great for decisions, giveaways, and classroom picks. 100% free, no sign-up.",
+      "h1": "Random Wheel Spinner",
+      "subheading": "Enter your own options, spin the wheel, and land on a random winner.",
+      "keywords": [
+        "wheel spinner",
+        "random wheel",
+        "spin the wheel",
+        "decision wheel",
+        "wheel of names",
+        "random picker wheel",
+        "spinning wheel generator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your options",
+          "text": "Type each wheel entry on its own line."
+        },
+        {
+          "name": "Spin the wheel",
+          "text": "Click Spin the wheel and watch it spin down to a random result."
+        },
+        {
+          "name": "See your result",
+          "text": "The wheel stops on one entry, shown below as the winner."
+        },
+        {
+          "name": "Save or spin again",
+          "text": "Save the result to your history, or spin again for a new outcome."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the spin actually random?",
+          "answer": "Yes, the winning entry is chosen with a random number generator before the animation starts — the spin animation always lands on that pre-selected result."
+        },
+        {
+          "question": "How many entries can the wheel hold?",
+          "answer": "There's no fixed limit, but wheels with many entries have thinner wedges and smaller text, so it works best with a couple dozen entries or fewer for readability."
+        },
+        {
+          "question": "Can the same entry appear more than once for extra weight?",
+          "answer": "Yes, listing an entry multiple times gives it a proportionally larger share of the wheel and a higher chance of being selected."
+        },
+        {
+          "question": "Do I need at least a certain number of entries to spin?",
+          "answer": "Yes, at least 2 entries are required — the spin button stays disabled until you have two or more."
+        },
+        {
+          "question": "Can I edit the list after spinning?",
+          "answer": "Yes, edit the textarea at any time — the wheel updates immediately to reflect your changes for the next spin."
+        },
+        {
+          "question": "Does the wheel remember past results?",
+          "answer": "Only if you click Save after a spin, which adds that result to your local history — otherwise each spin's result isn't kept once you spin again."
+        },
+        {
+          "question": "Why does the wheel sometimes land near a wedge edge?",
+          "answer": "A small random offset within the winning wedge is applied so the pointer doesn't always stop at the exact center, making each spin look more natural."
+        }
+      ]
+    },
+    "random-name-picker": {
+      "seoTitle": "Random Name Picker – Pick One or More Names Instantly",
+      "metaDescription": "Paste a list of names and randomly pick one or several winners — perfect for raffles, giveaways, and classroom calls. 100% free and private.",
+      "h1": "Random Name Picker",
+      "subheading": "Paste a list of names and randomly pick one or more — processed 100% locally in your browser.",
+      "keywords": [
+        "random name picker",
+        "name picker wheel",
+        "random name generator",
+        "pick a random name",
+        "raffle name picker",
+        "random student picker",
+        "name draw tool"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your names",
+          "text": "Enter one name per line in the text box."
+        },
+        {
+          "name": "Choose how many to pick",
+          "text": "Set the number of names you want randomly selected."
+        },
+        {
+          "name": "Pick randomly",
+          "text": "Click Pick randomly to instantly draw the result."
+        },
+        {
+          "name": "Save your result",
+          "text": "Copy the picked names or save them to your history."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can the same name be picked twice?",
+          "answer": "No, picking is without replacement — each pick removes that entry from the current draw, so a name can't be selected twice in the same pick."
+        },
+        {
+          "question": "What does \"remove picked names from the list\" do?",
+          "answer": "When enabled, names you've already picked are removed from the textarea itself, so a follow-up pick only draws from the remaining names."
+        },
+        {
+          "question": "What if I pick more names than are in my list?",
+          "answer": "At most all of the names in your list will be picked — you can't select more names than you've entered."
+        },
+        {
+          "question": "Is this good for classroom cold-calling?",
+          "answer": "Yes, paste your class roster and pick one name at a time, optionally removing each picked student so no one is called twice."
+        },
+        {
+          "question": "Does duplicate name text affect the odds?",
+          "answer": "Yes, if a name appears multiple times in your list, it effectively has a higher chance of being picked, similar to extra raffle tickets."
+        },
+        {
+          "question": "Are my names stored anywhere?",
+          "answer": "No, everything happens locally in your browser tab — nothing is uploaded or transmitted."
+        },
+        {
+          "question": "Can I save multiple picks over time?",
+          "answer": "Yes, each time you click Save, that pick is added as a new entry to your local history, which you can review or restore from later."
+        }
+      ]
+    },
+    "random-number-generator": {
+      "seoTitle": "Random Number Generator – Custom Range, Instant Results",
+      "metaDescription": "Generate one or many random numbers in any range, with or without duplicates — free, instant, and 100% private.",
+      "h1": "Random Number Generator",
+      "subheading": "Generate random numbers within any range you choose — instantly and privately.",
+      "keywords": [
+        "random number generator",
+        "random number picker",
+        "number generator online",
+        "random integer generator",
+        "lottery number generator",
+        "random number wheel"
+      ],
+      "howTo": [
+        {
+          "name": "Set your range",
+          "text": "Enter a minimum and maximum value."
+        },
+        {
+          "name": "Choose how many numbers",
+          "text": "Set how many random numbers to generate at once."
+        },
+        {
+          "name": "Generate",
+          "text": "Click Generate to produce your random number(s)."
+        },
+        {
+          "name": "Copy the result",
+          "text": "Copy the numbers or save them to your history."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can the minimum be larger than the maximum?",
+          "answer": "Yes, the tool automatically treats the smaller and larger values as the range bounds regardless of which field you type them into."
+        },
+        {
+          "question": "What happens if I disallow duplicates but ask for too many numbers?",
+          "answer": "You'll see a warning and the Generate button is disabled, since your range doesn't contain enough unique numbers to fulfill the request without repeats."
+        },
+        {
+          "question": "Is this suitable for a real lottery or raffle draw?",
+          "answer": "It's suitable for casual and low-stakes draws — for regulated or official drawings, check whether your jurisdiction requires a certified random number source."
+        },
+        {
+          "question": "How many numbers can I generate at once?",
+          "answer": "Up to 1,000 numbers can be generated in a single batch."
+        },
+        {
+          "question": "Does \"allow duplicates\" affect performance?",
+          "answer": "No, both modes generate instantly — duplicates just means each number is picked independently rather than removed from a shrinking pool."
+        },
+        {
+          "question": "Can I generate negative numbers?",
+          "answer": "Yes, enter a negative minimum (or negative maximum) and the range works the same way with negative values included."
+        },
+        {
+          "question": "Can I copy all the generated numbers at once?",
+          "answer": "Yes, the copy button copies every generated number as a single comma-separated list."
+        }
+      ]
+    },
+    "yes-no-decision-maker": {
+      "seoTitle": "Yes or No Decision Maker – Instant Random Answer",
+      "metaDescription": "Can't decide? Get an instant random yes or no answer — free, no sign-up, processed entirely in your browser.",
+      "h1": "Yes or No Decision Maker",
+      "subheading": "Get an instant random yes or no answer for any question you're stuck on.",
+      "keywords": [
+        "yes or no generator",
+        "random yes no",
+        "decision maker",
+        "should i or not",
+        "yes no wheel",
+        "random decision generator",
+        "coin flip decision"
+      ],
+      "howTo": [
+        {
+          "name": "Type your question (optional)",
+          "text": "Enter what you're deciding on, just for your own reference."
+        },
+        {
+          "name": "Ask the decision maker",
+          "text": "Click the button to get an instant random Yes or No."
+        },
+        {
+          "name": "See your answer",
+          "text": "The result appears in the circle above the button."
+        },
+        {
+          "name": "Save if you'd like",
+          "text": "Save the decision to your history along with your question."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the answer truly 50/50?",
+          "answer": "Yes, each answer is chosen with an unweighted random draw, giving Yes and No an equal chance every time."
+        },
+        {
+          "question": "Do I have to type a question?",
+          "answer": "No, the question field is optional — it's only there to help you remember what you were deciding on, and doesn't affect the random result."
+        },
+        {
+          "question": "Can I get a different answer if I don't like it?",
+          "answer": "Yes, click the button again for a fresh independent random answer — there's no memory of previous results affecting the next one."
+        },
+        {
+          "question": "Is my question stored or sent anywhere?",
+          "answer": "No, it stays in your browser and is only included in your local history if you explicitly click Save."
+        },
+        {
+          "question": "Why is there a short delay before the answer appears?",
+          "answer": "A brief animation plays for about half a second before revealing the answer, purely for visual effect — the result itself is already determined instantly."
+        },
+        {
+          "question": "Can I use this for more than two options?",
+          "answer": "No, this tool is specifically binary (yes/no) — use the Wheel Spinner or Random Name Picker for choosing between more than two options."
+        },
+        {
+          "question": "Does it keep a running tally of yes vs no answers?",
+          "answer": "No, only the current answer is shown — for a running tally, check your saved history instead."
+        }
+      ]
+    },
+    "coin-flip": {
+      "seoTitle": "Coin Flip – Free Online Heads or Tails",
+      "metaDescription": "Flip a virtual coin online — instant heads or tails with a running tally. Free, no sign-up, processed entirely in your browser.",
+      "h1": "Coin Flip",
+      "subheading": "Flip a virtual coin and keep a running tally of heads and tails.",
+      "keywords": [
+        "coin flip",
+        "flip a coin",
+        "heads or tails",
+        "online coin toss",
+        "virtual coin flip",
+        "random coin flip",
+        "coin toss generator"
+      ],
+      "howTo": [
+        {
+          "name": "Flip the coin",
+          "text": "Click Flip the coin to get a random heads or tails result."
+        },
+        {
+          "name": "Watch the animation",
+          "text": "The coin spins briefly before landing on its result."
+        },
+        {
+          "name": "Track your flips",
+          "text": "Each flip is added to a running tally shown below the coin."
+        },
+        {
+          "name": "Save or reset",
+          "text": "Save a result to your history, or reset the tally to start fresh."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the coin flip fair (50/50)?",
+          "answer": "Yes, each flip is an independent, unweighted random choice between heads and tails."
+        },
+        {
+          "question": "Does it remember my flip history between visits?",
+          "answer": "No, the running tally only persists for your current session — reloading the page resets it. Individual flips you Save are kept separately in your local history."
+        },
+        {
+          "question": "How many times can I flip?",
+          "answer": "There's no limit — flip as many times as you like, and the tally keeps counting up."
+        },
+        {
+          "question": "Can I flip multiple coins at once?",
+          "answer": "No, this tool flips one coin per click — for multiple simultaneous random picks, try the Dice Roller or Random Number Generator instead."
+        },
+        {
+          "question": "What does the tally show exactly?",
+          "answer": "It shows the total count of heads, total count of tails, and the overall number of flips since your last reset."
+        },
+        {
+          "question": "Can I clear the tally without reloading the page?",
+          "answer": "Yes, a \"Reset tally\" link appears once you've flipped at least once, which clears the count and flip history."
+        },
+        {
+          "question": "Is this suitable for settling a real bet?",
+          "answer": "It's suitable for casual, friendly use — for anything with real stakes, a physical coin or a verifiable random source may be more appropriate."
+        }
+      ]
+    },
+    "dice-roller": {
+      "seoTitle": "Dice Roller – Roll Virtual Dice Online (d4 to d20)",
+      "metaDescription": "Roll one or more virtual dice — d4, d6, d8, d10, d12, or d20 — with instant totals. Free, no sign-up, 100% private.",
+      "h1": "Dice Roller",
+      "subheading": "Roll virtual dice of any common size, with an instant total and roll history.",
+      "keywords": [
+        "dice roller",
+        "roll dice online",
+        "virtual dice",
+        "d20 roller",
+        "d6 dice roller",
+        "random dice generator",
+        "tabletop dice roller"
+      ],
+      "howTo": [
+        {
+          "name": "Pick your die size",
+          "text": "Choose from d4, d6, d8, d10, d12, or d20."
+        },
+        {
+          "name": "Set how many dice",
+          "text": "Enter the number of dice to roll at once."
+        },
+        {
+          "name": "Roll",
+          "text": "Click Roll to get your random results and total."
+        },
+        {
+          "name": "Review or save",
+          "text": "Check recent rolls below, or save a roll to your history."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What die sizes are supported?",
+          "answer": "d4, d6, d8, d10, d12, and d20 — the standard set used in most tabletop games."
+        },
+        {
+          "question": "How many dice can I roll at once?",
+          "answer": "Up to 20 dice in a single roll."
+        },
+        {
+          "question": "Is each die roll independent?",
+          "answer": "Yes, every die in a roll is generated independently, so results aren't influenced by the other dice in the same roll."
+        },
+        {
+          "question": "Does it keep a history of my rolls?",
+          "answer": "Yes, your most recent rolls are listed below the dice, showing each individual value and the total for that roll."
+        },
+        {
+          "question": "Can I roll dice of different sizes in one roll?",
+          "answer": "No, all dice in a single roll use the same size — roll separately if you need to mix sizes, like 2d6 plus 1d20."
+        },
+        {
+          "question": "Is this suitable for tabletop RPGs like D&D?",
+          "answer": "Yes, the standard polyhedral die sizes used in tabletop RPGs are all supported."
+        },
+        {
+          "question": "Can I clear my roll history?",
+          "answer": "Yes, a Clear button next to the recent rolls list removes them from view."
+        }
+      ]
+    },
+    "list-shuffler": {
+      "seoTitle": "Random List Shuffler – Shuffle Any List Online",
+      "metaDescription": "Paste a list and instantly shuffle it into random order — free, no sign-up, processed entirely in your browser.",
+      "h1": "Random List Shuffler",
+      "subheading": "Paste any list and shuffle it into a random order instantly.",
+      "keywords": [
+        "list shuffler",
+        "randomize list",
+        "shuffle list online",
+        "random order generator",
+        "list randomizer",
+        "shuffle names online"
+      ],
+      "howTo": [
+        {
+          "name": "Paste your list",
+          "text": "Enter one item per line in the text box."
+        },
+        {
+          "name": "Shuffle",
+          "text": "Click Shuffle to randomize the order."
+        },
+        {
+          "name": "Review the result",
+          "text": "The shuffled list appears numbered below."
+        },
+        {
+          "name": "Copy or save",
+          "text": "Copy the new order, or save it to your history."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What shuffle algorithm is used?",
+          "answer": "A Fisher-Yates shuffle, which gives every possible ordering an equal, unbiased probability of occurring."
+        },
+        {
+          "question": "Does shuffling remove duplicate items?",
+          "answer": "No, this tool only reorders your list — it doesn't remove duplicates. Use the Duplicate Line Remover first if you need both."
+        },
+        {
+          "question": "How is this different from the Team Generator?",
+          "answer": "List Shuffler only reorders your items into a random sequence; Team Generator additionally splits the shuffled list into separate groups or teams."
+        },
+        {
+          "question": "Can I shuffle the same list again for a different order?",
+          "answer": "Yes, click Shuffle again — each shuffle is independent, so you'll typically get a different order each time."
+        },
+        {
+          "question": "Is there a limit to how many items I can shuffle?",
+          "answer": "No hard limit is enforced, though extremely large lists (thousands of lines) may take a moment longer since everything runs in your browser."
+        },
+        {
+          "question": "Does it preserve blank lines or extra spacing?",
+          "answer": "No, blank lines are removed and each item is trimmed of leading/trailing whitespace before shuffling."
+        },
+        {
+          "question": "Can I restore my original unshuffled list?",
+          "answer": "If you saved before shuffling, restoring that history entry brings back your original input — otherwise, re-type or re-paste it manually."
+        }
+      ]
+    },
+    "bracket-generator": {
+      "seoTitle": "Bracket Generator – Random Tournament Bracket Maker",
+      "metaDescription": "Paste a list of names or teams and generate a randomized single-elimination bracket — free, instant, no sign-up.",
+      "h1": "Bracket Generator",
+      "subheading": "Turn a list of entrants into a randomized single-elimination tournament bracket.",
+      "keywords": [
+        "bracket generator",
+        "tournament bracket maker",
+        "random bracket generator",
+        "single elimination bracket",
+        "team bracket generator",
+        "match generator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your entrants",
+          "text": "Type one name or team per line."
+        },
+        {
+          "name": "Generate the bracket",
+          "text": "Click Generate bracket to create randomized round 1 matchups."
+        },
+        {
+          "name": "Review the matchups",
+          "text": "Each match pairing is shown in order."
+        },
+        {
+          "name": "Copy or save",
+          "text": "Copy the matchups or save them to your history."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How are matchups decided?",
+          "answer": "Entrants are shuffled randomly first, then paired sequentially into matches — so seeding is entirely random, not based on any ranking."
+        },
+        {
+          "question": "What happens if my entrant count isn't a power of two?",
+          "answer": "The bracket is padded with byes up to the next power of two (e.g. 6 entrants become an 8-slot bracket with 2 byes), and any entrant matched against a bye automatically advances."
+        },
+        {
+          "question": "Does this generate later rounds too?",
+          "answer": "No, only round 1 matchups are generated — you'll need to record round 1 winners and generate later rounds separately as the tournament progresses."
+        },
+        {
+          "question": "Can I seed entrants manually instead of randomly?",
+          "answer": "No, this tool only supports fully random seeding — for manual seeding, arrange matchups yourself after generating."
+        },
+        {
+          "question": "Is there a graphical bracket diagram?",
+          "answer": "No, matchups are shown as a simple numbered list rather than a visual bracket tree."
+        },
+        {
+          "question": "How many entrants can I include?",
+          "answer": "There's no hard limit, though very large entrant lists produce a correspondingly long match list to scroll through."
+        },
+        {
+          "question": "Can I regenerate the bracket with a new random draw?",
+          "answer": "Yes, click Generate bracket again for a completely fresh random pairing."
+        }
+      ]
+    },
+    "raffle-picker": {
+      "seoTitle": "Raffle & Giveaway Picker – Draw Random Winners",
+      "metaDescription": "Draw one or more random raffle winners from a list of entries, with support for weighted entries — free, instant, no sign-up.",
+      "h1": "Raffle & Giveaway Picker",
+      "subheading": "Draw random winners from a list of raffle or giveaway entries.",
+      "keywords": [
+        "raffle picker",
+        "giveaway winner picker",
+        "random winner generator",
+        "raffle draw online",
+        "giveaway picker tool",
+        "random draw generator",
+        "prize winner picker"
+      ],
+      "howTo": [
+        {
+          "name": "Add your entries",
+          "text": "Type one entry per line — repeat a name to give it more tickets."
+        },
+        {
+          "name": "Set the number of winners",
+          "text": "Choose how many winners to draw."
+        },
+        {
+          "name": "Draw winners",
+          "text": "Click Draw winners to run the random drawing."
+        },
+        {
+          "name": "Save the results",
+          "text": "Copy the winners or save them to your history."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I give someone extra chances of winning?",
+          "answer": "List their name multiple times — each repeated line acts as an extra ticket, proportionally increasing their odds."
+        },
+        {
+          "question": "Can the same entry win more than once in one drawing?",
+          "answer": "No, drawing is without replacement, so once an entry (one ticket) is drawn as a winner, that specific ticket can't be drawn again in the same round."
+        },
+        {
+          "question": "If I list someone 3 times and they win, are all 3 of their tickets removed?",
+          "answer": "No, only the one winning ticket is removed — their other tickets remain in the pool if you draw additional winners in the same round."
+        },
+        {
+          "question": "What's the difference between this and the Random Name Picker?",
+          "answer": "This tool is built around a ticket/entry model that naturally supports weighting via repeated entries and a drawing animation, while Name Picker treats every name as an equal single entry."
+        },
+        {
+          "question": "How many winners can I draw at once?",
+          "answer": "Up to the total number of entries you've listed — you can't draw more winners than there are tickets."
+        },
+        {
+          "question": "Is my entry list private?",
+          "answer": "Yes, everything runs locally in your browser and is never uploaded anywhere."
+        },
+        {
+          "question": "Is this suitable for a legally regulated raffle?",
+          "answer": "It's suitable for casual and informal giveaways — check your local regulations for anything requiring a certified or audited drawing process."
         }
       ]
     }

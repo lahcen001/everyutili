@@ -1,14 +1,16 @@
 "use client";
 
 import * as React from "react";
-import { UserCheck, Save } from "lucide-react";
+import { UserCheck, Save, Maximize2 } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { CopyButton } from "@/components/tool-shell/CopyButton";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { Confetti } from "@/components/tools/random-decision/Confetti";
 
 function parseNames(input: string): string[] {
   return input
@@ -34,6 +36,8 @@ export default function RandomNamePicker() {
   const [pickCount, setPickCount] = React.useState(1);
   const [picked, setPicked] = React.useState<string[] | null>(null);
   const [removeAfterPick, setRemoveAfterPick] = React.useState(false);
+  const [celebrate, setCelebrate] = React.useState(0);
+  const [fullscreen, setFullscreen] = React.useState(false);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const names = React.useMemo(() => parseNames(input), [input]);
@@ -41,6 +45,7 @@ export default function RandomNamePicker() {
   const pick = () => {
     const result = pickRandom(names, Math.min(pickCount, names.length));
     setPicked(result);
+    setCelebrate((c) => c + 1);
     if (removeAfterPick) {
       // Remove exactly the picked entries (handles duplicate names in the
       // list correctly, unlike a plain value-based filter).
@@ -67,6 +72,57 @@ export default function RandomNamePicker() {
   const restoreResult = (item: ToolHistoryItem) => {
     if (item.data) setInput(item.data);
   };
+
+  const resultBlock = (isFullscreen: boolean) => (
+    <div className="relative space-y-3 p-6">
+      <Confetti fire={celebrate} />
+      {picked && picked.length > 0 ? (
+        <div
+          className={
+            isFullscreen
+              ? "flex flex-wrap justify-center gap-4"
+              : "flex flex-wrap justify-center gap-2"
+          }
+        >
+          {picked.map((name, i) => (
+            <span
+              key={i}
+              className={
+                isFullscreen
+                  ? "rounded-full border border-primary bg-primary/10 px-8 py-4 text-3xl font-bold text-primary"
+                  : "rounded-full border border-primary bg-primary/10 px-4 py-2 text-lg font-semibold text-primary"
+              }
+            >
+              {name}
+            </span>
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-sm text-muted-foreground">Pick a name to see it here.</p>
+      )}
+      <div className="flex flex-wrap justify-center gap-2">
+        <Button onClick={pick} disabled={names.length === 0}>
+          <UserCheck className="h-4 w-4" />
+          Pick randomly
+        </Button>
+        {picked && picked.length > 0 && (
+          <>
+            <CopyButton value={picked.join(", ")} size="sm" variant="outline" />
+            <Button size="sm" variant="outline" onClick={handleSave}>
+              <Save className="h-3.5 w-3.5" />
+              Save
+            </Button>
+          </>
+        )}
+        {!isFullscreen && (
+          <Button size="sm" variant="outline" onClick={() => setFullscreen(true)} disabled={names.length === 0}>
+            <Maximize2 className="h-3.5 w-3.5" />
+            Fullscreen
+          </Button>
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <div className="space-y-6">
@@ -105,34 +161,16 @@ export default function RandomNamePicker() {
             Remove picked names from the list
           </label>
         </div>
-
-        <Button onClick={pick} disabled={names.length === 0}>
-          <UserCheck className="h-4 w-4" />
-          Pick randomly
-        </Button>
       </Card>
 
-      {picked && picked.length > 0 && (
-        <Card className="space-y-3 p-6">
-          <div className="flex flex-wrap justify-center gap-2">
-            {picked.map((name, i) => (
-              <span
-                key={i}
-                className="rounded-full border border-primary bg-primary/10 px-4 py-2 text-lg font-semibold text-primary"
-              >
-                {name}
-              </span>
-            ))}
-          </div>
-          <div className="flex justify-center gap-2">
-            <CopyButton value={picked.join(", ")} size="sm" variant="outline" />
-            <Button size="sm" variant="outline" onClick={handleSave}>
-              <Save className="h-3.5 w-3.5" />
-              Save
-            </Button>
-          </div>
-        </Card>
-      )}
+      <Card className="overflow-hidden">{resultBlock(false)}</Card>
+
+      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
+        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
+          <DialogTitle className="sr-only">Random name picker — fullscreen</DialogTitle>
+          {resultBlock(true)}
+        </DialogContent>
+      </Dialog>
 
       <ToolHistoryList ref={historyRef} toolSlug="random-name-picker" onRestore={restoreResult} />
     </div>

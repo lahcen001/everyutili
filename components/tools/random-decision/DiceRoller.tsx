@@ -1,14 +1,16 @@
 "use client";
 
 import * as React from "react";
-import { Dices, Save, X } from "lucide-react";
+import { Dices, Save, X, Maximize2 } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { Confetti } from "@/components/tools/random-decision/Confetti";
 
 const DIE_SIZES = [4, 6, 8, 10, 12, 20] as const;
 type DieSize = (typeof DIE_SIZES)[number];
@@ -26,6 +28,8 @@ export default function DiceRoller() {
   const [rolling, setRolling] = React.useState(false);
   const [current, setCurrent] = React.useState<Roll | null>(null);
   const [rolls, setRolls] = React.useState<Roll[]>([]);
+  const [celebrate, setCelebrate] = React.useState(0);
+  const [fullscreen, setFullscreen] = React.useState(false);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const roll = () => {
@@ -37,6 +41,7 @@ export default function DiceRoller() {
       setCurrent(result);
       setRolls((prev) => [result, ...prev].slice(0, 20));
       setRolling(false);
+      setCelebrate((c) => c + 1);
     }, 400);
   };
 
@@ -48,6 +53,60 @@ export default function DiceRoller() {
     });
     historyRef.current?.refresh();
   };
+
+  const diceBlock = (isFullscreen: boolean) => (
+    <div className="relative space-y-4 p-6">
+      <Confetti fire={celebrate} />
+      <div
+        className={cn(
+          "flex flex-wrap justify-center gap-3 rounded-lg border border-border bg-muted/20 p-6",
+          isFullscreen && "gap-4 p-10"
+        )}
+      >
+        {current ? (
+          current.values.map((v, i) => (
+            <div
+              key={i}
+              className={cn(
+                "flex items-center justify-center rounded-lg border-2 border-primary bg-background font-bold text-primary shadow-sm transition-transform",
+                isFullscreen ? "h-24 w-24 text-4xl" : "h-14 w-14 text-xl",
+                rolling && "animate-bounce"
+              )}
+            >
+              {v}
+            </div>
+          ))
+        ) : (
+          <p className="text-sm text-muted-foreground">Roll to see your results</p>
+        )}
+      </div>
+
+      {current && (
+        <p className={cn("text-center font-medium", isFullscreen ? "text-xl" : "text-sm")}>
+          Total: <span className={cn("text-primary", isFullscreen ? "text-2xl" : "text-lg")}>{current.total}</span>
+        </p>
+      )}
+
+      <div className="flex flex-wrap justify-center gap-2">
+        <Button onClick={roll} disabled={rolling}>
+          <Dices className="h-4 w-4" />
+          {rolling ? "Rolling…" : `Roll ${count}d${sides}`}
+        </Button>
+        {current && (
+          <Button variant="outline" onClick={handleSave}>
+            <Save className="h-4 w-4" />
+            Save
+          </Button>
+        )}
+        {!isFullscreen && (
+          <Button variant="outline" onClick={() => setFullscreen(true)}>
+            <Maximize2 className="h-4 w-4" />
+            Fullscreen
+          </Button>
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <div className="space-y-6">
@@ -83,44 +142,16 @@ export default function DiceRoller() {
             />
           </label>
         </div>
-
-        <div className="flex flex-wrap justify-center gap-3 rounded-lg border border-border bg-muted/20 p-6">
-          {current ? (
-            current.values.map((v, i) => (
-              <div
-                key={i}
-                className={cn(
-                  "flex h-14 w-14 items-center justify-center rounded-lg border-2 border-primary bg-background text-xl font-bold text-primary shadow-sm transition-transform",
-                  rolling && "animate-bounce"
-                )}
-              >
-                {v}
-              </div>
-            ))
-          ) : (
-            <p className="text-sm text-muted-foreground">Roll to see your results</p>
-          )}
-        </div>
-
-        {current && (
-          <p className="text-center text-sm font-medium">
-            Total: <span className="text-lg text-primary">{current.total}</span>
-          </p>
-        )}
-
-        <div className="flex justify-center gap-2">
-          <Button onClick={roll} disabled={rolling}>
-            <Dices className="h-4 w-4" />
-            {rolling ? "Rolling…" : `Roll ${count}d${sides}`}
-          </Button>
-          {current && (
-            <Button variant="outline" onClick={handleSave}>
-              <Save className="h-4 w-4" />
-              Save
-            </Button>
-          )}
-        </div>
       </Card>
+
+      <Card className="overflow-hidden">{diceBlock(false)}</Card>
+
+      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
+        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
+          <DialogTitle className="sr-only">Dice roller — fullscreen</DialogTitle>
+          {diceBlock(true)}
+        </DialogContent>
+      </Dialog>
 
       {rolls.length > 0 && (
         <Card className="space-y-2 p-4">

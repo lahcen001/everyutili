@@ -1,14 +1,16 @@
 "use client";
 
 import * as React from "react";
-import { Ticket, Save } from "lucide-react";
+import { Ticket, Save, Maximize2 } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { CopyButton } from "@/components/tool-shell/CopyButton";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { Confetti } from "@/components/tools/random-decision/Confetti";
 
 function parseEntries(input: string): string[] {
   return input
@@ -36,6 +38,8 @@ export default function RafflePicker() {
   const [winnerCount, setWinnerCount] = React.useState(1);
   const [drawing, setDrawing] = React.useState(false);
   const [winners, setWinners] = React.useState<string[] | null>(null);
+  const [celebrate, setCelebrate] = React.useState(0);
+  const [fullscreen, setFullscreen] = React.useState(false);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const entries = React.useMemo(() => parseEntries(input), [input]);
@@ -48,6 +52,7 @@ export default function RafflePicker() {
     window.setTimeout(() => {
       setWinners(drawWinners(entries, Math.min(winnerCount, entries.length)));
       setDrawing(false);
+      setCelebrate((c) => c + 1);
     }, 900);
   };
 
@@ -63,6 +68,68 @@ export default function RafflePicker() {
   const restoreResult = (item: ToolHistoryItem) => {
     if (item.data) setInput(item.data);
   };
+
+  const resultBlock = (isFullscreen: boolean) => (
+    <div className="relative space-y-3 p-6">
+      <Confetti fire={celebrate} />
+      {drawing ? (
+        <div className="flex items-center justify-center gap-2 py-8 text-muted-foreground">
+          <Ticket className="h-5 w-5 animate-bounce" />
+          Shuffling the tickets…
+        </div>
+      ) : winners && winners.length > 0 ? (
+        <div
+          className={
+            isFullscreen
+              ? "flex flex-wrap justify-center gap-4"
+              : "flex flex-wrap justify-center gap-2"
+          }
+        >
+          {winners.map((name, i) => (
+            <span
+              key={i}
+              className={
+                isFullscreen
+                  ? "flex items-center gap-2 rounded-full border border-primary bg-primary/10 px-8 py-4 text-3xl font-bold text-primary"
+                  : "flex items-center gap-1.5 rounded-full border border-primary bg-primary/10 px-4 py-2 text-lg font-semibold text-primary"
+              }
+            >
+              <Ticket className={isFullscreen ? "h-6 w-6" : "h-4 w-4"} />
+              {name}
+            </span>
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-sm text-muted-foreground">Draw winners to see them here.</p>
+      )}
+      <div className="flex flex-wrap justify-center gap-2">
+        <Button onClick={draw} disabled={drawing || entries.length === 0}>
+          <Ticket className="h-4 w-4" />
+          {drawing ? "Drawing…" : "Draw winners"}
+        </Button>
+        {winners && winners.length > 0 && !drawing && (
+          <>
+            <CopyButton value={winners.join(", ")} size="sm" variant="outline" />
+            <Button size="sm" variant="outline" onClick={handleSave}>
+              <Save className="h-3.5 w-3.5" />
+              Save
+            </Button>
+          </>
+        )}
+        {!isFullscreen && (
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={() => setFullscreen(true)}
+            disabled={entries.length === 0}
+          >
+            <Maximize2 className="h-3.5 w-3.5" />
+            Fullscreen
+          </Button>
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <div className="space-y-6">
@@ -93,44 +160,16 @@ export default function RafflePicker() {
             className="w-16 rounded-md border border-border bg-background px-2 py-1 text-sm"
           />
         </label>
-
-        <Button onClick={draw} disabled={drawing || entries.length === 0}>
-          <Ticket className="h-4 w-4" />
-          {drawing ? "Drawing…" : "Draw winners"}
-        </Button>
       </Card>
 
-      {drawing && (
-        <Card className="flex items-center justify-center p-8">
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <Ticket className="h-5 w-5 animate-bounce" />
-            Shuffling the tickets…
-          </div>
-        </Card>
-      )}
+      <Card className="overflow-hidden">{resultBlock(false)}</Card>
 
-      {winners && !drawing && (
-        <Card className="space-y-3 p-6">
-          <div className="flex flex-wrap justify-center gap-2">
-            {winners.map((name, i) => (
-              <span
-                key={i}
-                className="flex items-center gap-1.5 rounded-full border border-primary bg-primary/10 px-4 py-2 text-lg font-semibold text-primary"
-              >
-                <Ticket className="h-4 w-4" />
-                {name}
-              </span>
-            ))}
-          </div>
-          <div className="flex justify-center gap-2">
-            <CopyButton value={winners.join(", ")} size="sm" variant="outline" />
-            <Button size="sm" variant="outline" onClick={handleSave}>
-              <Save className="h-3.5 w-3.5" />
-              Save
-            </Button>
-          </div>
-        </Card>
-      )}
+      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
+        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
+          <DialogTitle className="sr-only">Raffle picker — fullscreen</DialogTitle>
+          {resultBlock(true)}
+        </DialogContent>
+      </Dialog>
 
       <ToolHistoryList ref={historyRef} toolSlug="raffle-picker" onRestore={restoreResult} />
     </div>

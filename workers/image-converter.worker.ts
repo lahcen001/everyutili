@@ -15,6 +15,8 @@ export interface ImageConvertRequest {
   /** Exact output dimensions (e.g. for the resizer, which lets the user set width/height directly). Takes priority over maxWidth. */
   exactWidth?: number;
   exactHeight?: number;
+  /** CSS color painted behind the image when the output is JPEG (which has no alpha channel). Defaults to white. */
+  background?: string;
 }
 
 export interface ImageConvertSuccess {
@@ -45,7 +47,7 @@ const EXTENSION_BY_MIME: Record<string, string> = {
 };
 
 self.onmessage = async (event: MessageEvent<ImageConvertRequest>) => {
-  const { id, file, format, quality, maxWidth, exactWidth, exactHeight } = event.data;
+  const { id, file, format, quality, maxWidth, exactWidth, exactHeight, background } = event.data;
 
   try {
     // For an exact target size (the resizer, and SVG rasterization where the
@@ -77,10 +79,17 @@ self.onmessage = async (event: MessageEvent<ImageConvertRequest>) => {
     const ctx = canvas.getContext("2d");
     if (!ctx) throw new Error("Could not acquire canvas context");
 
+    const outputMime = format === "auto" ? file.type || "image/png" : MIME_BY_FORMAT[format];
+
+    // JPEG can't store transparency; without a fill, transparent pixels encode as black.
+    if (outputMime === "image/jpeg") {
+      ctx.fillStyle = background ?? "#ffffff";
+      ctx.fillRect(0, 0, width, height);
+    }
+
     ctx.drawImage(bitmap, 0, 0, width, height);
     bitmap.close();
 
-    const outputMime = format === "auto" ? file.type || "image/png" : MIME_BY_FORMAT[format];
     const blob = await canvas.convertToBlob({
       type: outputMime,
       quality: outputMime === "image/png" ? undefined : quality,

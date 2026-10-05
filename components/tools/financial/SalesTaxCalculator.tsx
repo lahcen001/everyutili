@@ -19,14 +19,19 @@ export default function SalesTaxCalculator() {
   useTrackTool("sales-tax-calculator");
   const [preTaxPrice, setPreTaxPrice] = React.useState(100);
   const [taxRate, setTaxRate] = React.useState(8.25);
+  const [quantity, setQuantity] = React.useState(1);
+  const [discountPct, setDiscountPct] = React.useState(0);
 
   const [totalPrice, setTotalPrice] = React.useState(108.25);
   const [reverseTaxRate, setReverseTaxRate] = React.useState(8.25);
 
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
-  const taxAmount = preTaxPrice * (taxRate / 100);
-  const total = preTaxPrice + taxAmount;
+  const subtotal = preTaxPrice * Math.max(quantity, 0);
+  const discountAmount = subtotal * (Math.min(Math.max(discountPct, 0), 100) / 100);
+  const taxable = subtotal - discountAmount;
+  const taxAmount = taxable * (taxRate / 100);
+  const total = taxable + taxAmount;
 
   const reversePreTax = totalPrice / (1 + reverseTaxRate / 100);
   const reverseTaxAmount = totalPrice - reversePreTax;
@@ -39,7 +44,7 @@ export default function SalesTaxCalculator() {
   const handleSaveForward = () =>
     saveResult(
       `Total: ${formatCurrency(total)}`,
-      `${formatCurrency(preTaxPrice)} + ${taxRate}% tax = ${formatCurrency(taxAmount)} tax`
+      `${quantity} × ${formatCurrency(preTaxPrice)}${discountPct ? ` − ${discountPct}%` : ""} + ${taxRate}% tax = ${formatCurrency(taxAmount)} tax`
     );
   const handleSaveReverse = () =>
     saveResult(
@@ -57,7 +62,15 @@ export default function SalesTaxCalculator() {
 
         <TabsContent value="forward" className="space-y-6">
           <Card className="space-y-4 p-6">
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <label className="space-y-1.5">
+                <span className="text-sm font-medium">Quantity</span>
+                <input type="number" min={1} value={quantity} onChange={(e) => setQuantity(Math.max(0, Math.floor(Number(e.target.value)) || 0))} className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+              </label>
+              <label className="space-y-1.5">
+                <span className="text-sm font-medium">Discount before tax (%)</span>
+                <input type="number" min={0} max={100} value={discountPct} onChange={(e) => setDiscountPct(Number(e.target.value) || 0)} className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
+              </label>
               <label className="space-y-1.5">
                 <span className="text-sm font-medium">Price before tax ($)</span>
                 <input
@@ -81,7 +94,11 @@ export default function SalesTaxCalculator() {
               </label>
             </div>
           </Card>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-3">
+            <Card className="p-5 text-center">
+              <p className="text-sm text-muted-foreground">Subtotal{discountAmount > 0 ? ` (−${formatCurrency(discountAmount)})` : ""}</p>
+              <p className="mt-1 text-2xl font-bold tabular-nums">{formatCurrency(taxable)}</p>
+            </Card>
             <Card className="p-5 text-center">
               <p className="text-sm text-muted-foreground">Tax amount</p>
               <p className="mt-1 text-2xl font-bold tabular-nums">{formatCurrency(taxAmount)}</p>

@@ -42,6 +42,7 @@ export default function ImageConverter() {
 
   const [queue, setQueue] = React.useState<QueueItem[]>([]);
   const [isProcessing, setIsProcessing] = React.useState(false);
+  const [background, setBackground] = React.useState("#ffffff");
   const workerRef = React.useRef<Worker | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
@@ -54,7 +55,7 @@ export default function ImageConverter() {
 
   const handleFiles = (files: File[]) => {
     const items: QueueItem[] = files
-      .filter((f) => f.type.startsWith("image/") || /\.hei[cf]$/i.test(f.name))
+      .filter((f) => f.type.startsWith("image/"))
       .map((file) => ({ id: crypto.randomUUID(), file, status: "pending" }));
     setQueue((prev) => [...prev, ...items]);
   };
@@ -94,6 +95,7 @@ export default function ImageConverter() {
           format: preset.format,
           quality: preset.quality,
           maxWidth: preset.maxWidth,
+          background,
         };
         worker.postMessage(request);
       });
@@ -104,7 +106,7 @@ export default function ImageConverter() {
           if (result.status === "success") {
             return { ...q, status: "done", resultBlob: result.blob, resultName: result.fileName };
           }
-          return { ...q, status: "error", error: result.message };
+          return { ...q, status: "error", error: /\.hei[cf]$/i.test(q.file.name) ? "HEIC isn't supported here — use the HEIC to JPG tool first." : result.message };
         })
       );
 
@@ -159,8 +161,8 @@ export default function ImageConverter() {
     <div className="space-y-6">
       <DropZone
         onFiles={handleFiles}
-        accept="image/*,.heic,.heif"
-        label="Drag & drop JPG or HEIC images here, or click to browse"
+        accept="image/*"
+        label="Drag & drop images here, or click to browse"
         hint="Batch conversion supported — no file limit"
       />
 
@@ -204,6 +206,15 @@ export default function ImageConverter() {
               </div>
             )}
 
+            {preset.format === "jpeg" && (
+              <label className="flex items-center gap-2 text-sm">
+                <span className="font-medium">Background</span>
+                <input type="color" value={background} onChange={(e) => setBackground(e.target.value)} aria-label="Background colour for transparent areas" className="h-8 w-10 cursor-pointer rounded border border-border bg-transparent p-0" />
+                <span className="text-xs text-muted-foreground">fills transparent areas</span>
+              </label>
+            )}
+            {preset.format === "png" && <p className="text-xs text-muted-foreground">PNG is lossless — there is no quality setting.</p>}
+
             <div className="ml-auto flex gap-2">
               <Button onClick={convertAll} disabled={isProcessing}>
                 {isProcessing ? (
@@ -234,6 +245,7 @@ export default function ImageConverter() {
                   <p className="truncate text-sm font-medium">{item.file.name}</p>
                   <p className="text-xs text-muted-foreground">
                     {formatBytes(item.file.size)}
+                    {item.resultBlob && ` → ${formatBytes(item.resultBlob.size)} (${item.resultBlob.size <= item.file.size ? "" : "+"}${Math.round(((item.resultBlob.size - item.file.size) / Math.max(item.file.size, 1)) * 100)}%)`}
                     {item.status === "error" && (
                       <span className="ml-2 text-destructive">{item.error}</span>
                     )}

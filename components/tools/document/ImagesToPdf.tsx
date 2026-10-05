@@ -18,6 +18,8 @@ import {
 } from "@/components/tools/document/ImagesToPdfGrid";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
+import { readJpegOrientation } from "@/lib/exif";
+import { fitImageToPage } from "@/lib/pdf/layout";
 
 const MARGIN_PRESETS = [
   { label: "None", value: 0 },
@@ -26,18 +28,50 @@ const MARGIN_PRESETS = [
   { label: "Large", value: 54 },
 ] as const;
 
+// Page sizes in PDF points, portrait. "fit" sizes each page to its image instead.
+const PAGE_SIZES = {
+  fit: null,
+  a4: [595.28, 841.89],
+  letter: [612, 792],
+  a5: [419.53, 595.28],
+} as const;
+type PageSizeKey = keyof typeof PAGE_SIZES;
+
+const PAGE_SIZE_LABELS: Record<PageSizeKey, string> = {
+  fit: "Fit to image",
+  a4: "A4",
+  letter: "US Letter",
+  a5: "A5",
+};
+
+const ACCEPTED_TYPES = ["image/jpeg", "image/png", "image/webp", "image/gif", "image/bmp"];
+
+interface PreparedImage {
+  bytes: ArrayBuffer;
+  width: number;
+  height: number;
+  isPng: boolean;
+}
+
 /**
- * pdf-lib has no "rotate raster image" op, so a rotated page would only rotate
- * the page box, not the pixels drawn onto it. To get an actually-rotated
- * image in the output, the source bitmap is first redrawn onto an offscreen
- * canvas at the target angle, then that canvas is re-exported to bytes and
- * embedded as a fresh (already-rotated) image.
+ * pdf-lib can only embed JPEG/PNG bytes as-is, and it ignores EXIF orientation (a phone photo
+ * would appear sideways). So an image is passed through a canvas whenever it needs rotating, has
+ * an EXIF orientation, or isn't JPEG/PNG (WebP/GIF/BMP). Untouched JPEG/PNG files are embedded
+ * byte-for-byte so there is no quality loss. Canvas output is JPEG for JPEG/BMP sources and PNG
+ * otherwise, which keeps transparency.
  */
-async function rotateImageBytes(
-  file: File,
-  rotation: number
-): Promise<{ bytes: ArrayBuffer; width: number; height: number; isPng: boolean }> {
-  const isPng = file.type === "image/png";
+async function prepareImage(file: File, rotation: number): Promise<PreparedImage> {
+  const original = await file.arrayBuffer();
+  const isJpeg = file.type === "image/jpeg";
+  const isPngSource = file.type === "image/png";
+  const exifOrientation = isJpeg ? readJpegOrientation(original) : 1;
+
+  if (rotation === 0 && exifOrientation === 1 && (isJpeg || isPngSource)) {
+    return { bytes: original, width: 0, height: 0, isPng: isPngSource };
+  }
+
+  const outputPng = file.type !== "image/jpeg" && file.type !== "image/bmp";
+  // createImageBitmap applies EXIF orientation by default, so only the user's rotation is added here.
   const bitmap = await createImageBitmap(file);
   const swapDimensions = rotation === 90 || rotation === 270;
   const width = swapDimensions ? bitmap.height : bitmap.width;
@@ -49,30 +83,34 @@ async function rotateImageBytes(
   const ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("Could not acquire canvas context");
 
+  if (!outputPng) {
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, width, height);
+  }
   ctx.translate(width / 2, height / 2);
   ctx.rotate((rotation * Math.PI) / 180);
   ctx.drawImage(bitmap, -bitmap.width / 2, -bitmap.height / 2);
   bitmap.close();
 
   const blob = await new Promise<Blob | null>((resolve) =>
-    canvas.toBlob(resolve, isPng ? "image/png" : "image/jpeg", 0.92)
+    canvas.toBlob(resolve, outputPng ? "image/png" : "image/jpeg", 0.92)
   );
-  if (!blob) throw new Error("Failed to render rotated image.");
-  const bytes = await blob.arrayBuffer();
-  return { bytes, width, height, isPng };
+  if (!blob) throw new Error("Failed to render image.");
+  return { bytes: await blob.arrayBuffer(), width, height, isPng: outputPng };
 }
 
 export default function ImagesToPdf() {
   useTrackTool("images-to-pdf");
   const [items, setItems] = React.useState<ImagesToPdfImage[]>([]);
   const [margin, setMargin] = React.useState<number>(0);
+  const [pageSize, setPageSize] = React.useState<PageSizeKey>("a4");
   const [isBuilding, setIsBuilding] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
   const gridRef = React.useRef<ImagesToPdfGridHandle>(null);
 
   const handleFiles = (files: File[]) => {
-    const imageFiles = files.filter((f) => f.type === "image/jpeg" || f.type === "image/png");
+    const imageFiles = files.filter((f) => ACCEPTED_TYPES.includes(f.type));
     setItems((prev) => [
       ...prev,
       ...imageFiles.map((file) => ({ id: crypto.randomUUID(), file, previewUrl: URL.createObjectURL(file) })),
@@ -124,29 +162,21 @@ export default function ImagesToPdf() {
         const orientation: PageOrientation = orientations[id] ?? "auto";
         const itemMargin = marginOverrides[id] ?? margin;
 
-        let width: number;
-        let height: number;
-        let embedded;
-        if (rotation !== 0) {
-          const rotated = await rotateImageBytes(item.file, rotation);
-          embedded = rotated.isPng
-            ? await pdf.embedPng(rotated.bytes)
-            : await pdf.embedJpg(rotated.bytes);
-          width = rotated.width;
-          height = rotated.height;
-        } else {
-          const bytes = await item.file.arrayBuffer();
-          embedded =
-            item.file.type === "image/png" ? await pdf.embedPng(bytes) : await pdf.embedJpg(bytes);
-          width = embedded.width;
-          height = embedded.height;
+        const prepared = await prepareImage(item.file, rotation);
+        const embedded = prepared.isPng ? await pdf.embedPng(prepared.bytes) : await pdf.embedJpg(prepared.bytes);
+        const width = prepared.width || embedded.width;
+        const height = prepared.height || embedded.height;
+
+        const fixedSize = PAGE_SIZES[pageSize];
+        if (fixedSize) {
+          const layout = fitImageToPage(width, height, fixedSize, orientation, itemMargin);
+          const page = pdf.addPage([layout.pageWidth, layout.pageHeight]);
+          page.drawImage(embedded, { x: layout.x, y: layout.y, width: layout.width, height: layout.height });
+          continue;
         }
 
-        // "auto" fits the page to the (rotated) image's own aspect ratio, as
-        // before. A forced orientation instead fits the image inside a page
-        // shaped for that orientation, centered, with letterboxing rather
-        // than stretching — the page's long/short sides swap to match
-        // whichever of width/height should be larger.
+        // "Fit to image": the page takes the image's own size (plus margin). A forced orientation
+        // letterboxes the image inside a page shaped for that orientation instead of stretching it.
         let pageWidth = width;
         let pageHeight = height;
         let drawWidth = width;
@@ -155,20 +185,16 @@ export default function ImagesToPdf() {
         let drawY = itemMargin;
 
         if (orientation !== "auto") {
-          const contentWidth = width;
-          const contentHeight = height;
           const wantsLandscape = orientation === "landscape";
-          const isLandscape = contentWidth >= contentHeight;
+          const isLandscape = width >= height;
           if (wantsLandscape !== isLandscape) {
-            // Swap the page's content-box dimensions so the page shape
-            // matches the requested orientation instead of the image's own.
-            const swapped = Math.max(contentWidth, contentHeight);
-            const short = Math.min(contentWidth, contentHeight);
-            pageWidth = wantsLandscape ? swapped : short;
-            pageHeight = wantsLandscape ? short : swapped;
-            const scale = Math.min(pageWidth / contentWidth, pageHeight / contentHeight);
-            drawWidth = contentWidth * scale;
-            drawHeight = contentHeight * scale;
+            const long = Math.max(width, height);
+            const short = Math.min(width, height);
+            pageWidth = wantsLandscape ? long : short;
+            pageHeight = wantsLandscape ? short : long;
+            const scale = Math.min(pageWidth / width, pageHeight / height);
+            drawWidth = width * scale;
+            drawHeight = height * scale;
             drawX = itemMargin + (pageWidth - drawWidth) / 2;
             drawY = itemMargin + (pageHeight - drawHeight) / 2;
           }
@@ -199,9 +225,9 @@ export default function ImagesToPdf() {
     <div className="space-y-6">
       <DropZone
         onFiles={handleFiles}
-        accept="image/jpeg,image/png"
-        label="Drag & drop JPG or PNG images here, or click to browse"
-        hint="Drag thumbnails to reorder, rotate, and set a page margin before creating the PDF"
+        accept="image/jpeg,image/png,image/webp,image/gif,image/bmp"
+        label="Drag & drop images here, or click to browse"
+        hint="JPG, PNG, WebP, GIF or BMP — reorder, rotate, and pick a page size before creating the PDF"
       />
 
       {error && (
@@ -213,6 +239,21 @@ export default function ImagesToPdf() {
       {items.length > 0 && (
         <>
           <Card className="flex flex-wrap items-center gap-3 p-4">
+            <span className="text-sm font-medium">Page size</span>
+            <div className="flex overflow-hidden rounded-lg border border-border">
+              {(Object.keys(PAGE_SIZES) as PageSizeKey[]).map((key) => (
+                <button
+                  key={key}
+                  onClick={() => setPageSize(key)}
+                  aria-pressed={pageSize === key}
+                  className={`px-3 py-1.5 text-sm font-medium transition-colors ${
+                    pageSize === key ? "bg-primary text-primary-foreground" : "hover:bg-muted"
+                  }`}
+                >
+                  {PAGE_SIZE_LABELS[key]}
+                </button>
+              ))}
+            </div>
             <span className="text-sm font-medium">Page margin</span>
             <div className="flex overflow-hidden rounded-lg border border-border">
               {MARGIN_PRESETS.map((preset) => (

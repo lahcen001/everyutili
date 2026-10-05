@@ -31,6 +31,8 @@ export interface VisualPdfPageGridHandle {
   getState: () => VisualPdfPageGridState;
   /** Optional bulk-update escape hatch so a parent can apply rotation changes (e.g. "rotate all", "rotate selected") on top of the grid's own per-card rotate button. */
   applyRotations?: (updater: (prev: Record<number, number>) => Record<number, number>) => void;
+  /** Replaces the selection with these original page numbers (e.g. from a typed range). */
+  setSelection?: (pages: number[]) => void;
 }
 
 interface VisualPdfPageGridProps {
@@ -152,6 +154,7 @@ export const VisualPdfPageGrid = React.forwardRef<VisualPdfPageGridHandle, Visua
       () => ({
         getState: () => state,
         applyRotations: (updater) => setRotations(updater),
+        setSelection: (pagesToSelect) => setSelected(new Set(pagesToSelect)),
       }),
       [state]
     );

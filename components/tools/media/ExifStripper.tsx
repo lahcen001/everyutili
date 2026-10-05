@@ -13,7 +13,8 @@ import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
-import { parseExif, formatGpsCoordinates, type ExifData } from "@/lib/exif";
+import { parseExif, formatGpsCoordinates, readJpegOrientation, type ExifData } from "@/lib/exif";
+import { detectImageKind, stripMetadata, type StripOptions } from "@/lib/imageMeta";
 
 interface QueueItem {
   id: string;
@@ -21,27 +22,23 @@ interface QueueItem {
   exif: ExifData | null;
   status: "pending" | "processing" | "done" | "error";
   resultBlob?: Blob;
+  removed?: string[];
   error?: string;
 }
 
-async function stripImage(file: File): Promise<Blob> {
-  const bitmap = await createImageBitmap(file);
-  const canvas = document.createElement("canvas");
-  canvas.width = bitmap.width;
-  canvas.height = bitmap.height;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) throw new Error("Could not acquire canvas context");
-  ctx.drawImage(bitmap, 0, 0);
-  bitmap.close();
+const MIME: Record<string, string> = { jpeg: "image/jpeg", png: "image/png", webp: "image/webp" };
+const EXT: Record<string, string> = { jpeg: "jpg", png: "png", webp: "webp" };
 
-  return new Promise((resolve, reject) => {
-    canvas.toBlob(
-      (blob) => (blob ? resolve(blob) : reject(new Error("Failed to encode cleaned image"))),
-      "image/jpeg",
-      0.95
-    );
-  });
+/** Lossless: the pixel data is copied unchanged, only metadata is removed. */
+async function stripImage(file: File, opts: StripOptions): Promise<{ blob: Blob; removed: string[]; ext: string }> {
+  const buffer = await file.arrayBuffer();
+  const bytes = new Uint8Array(buffer);
+  const result = stripMetadata(bytes, opts, detectImageKind(bytes) === "jpeg" ? readJpegOrientation(buffer) : 1);
+  if (!result) throw new Error("This doesn't look like a JPEG, PNG or WebP image.");
+  return { blob: new Blob([result.bytes as BlobPart], { type: MIME[result.kind] }), removed: result.removed, ext: EXT[result.kind] };
 }
+
+const f_isJpeg = (f: File) => f.type === "image/jpeg";
 
 function cameraSummary(exif: ExifData | null): string {
   if (!exif) return "No EXIF data";
@@ -50,25 +47,28 @@ function cameraSummary(exif: ExifData | null): string {
   return "EXIF data present";
 }
 
-function cleanFileName(name: string): string {
+function cleanFileName(name: string, blob?: Blob): string {
   const baseName = name.replace(/\.[^/.]+$/, "");
-  return `${baseName}-clean.jpg`;
+  const ext = blob?.type === "image/png" ? "png" : blob?.type === "image/webp" ? "webp" : blob?.type === "image/jpeg" ? "jpg" : (name.match(/\.([^.]+)$/)?.[1] ?? "jpg");
+  return `${baseName}-clean.${ext}`;
 }
 
 export default function ExifStripper() {
   useTrackTool("exif-stripper");
   const [queue, setQueue] = React.useState<QueueItem[]>([]);
   const [isProcessing, setIsProcessing] = React.useState(false);
+  const [keepIcc, setKeepIcc] = React.useState(true);
+  const [keepOrientation, setKeepOrientation] = React.useState(true);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const handleFiles = async (files: File[]) => {
-    const jpegFiles = files.filter((f) => f.type === "image/jpeg");
+    const jpegFiles = files.filter((f) => ["image/jpeg", "image/png", "image/webp"].includes(f.type));
     const items: QueueItem[] = await Promise.all(
       jpegFiles.map(async (file) => {
         let exif: ExifData | null = null;
         try {
           const buffer = await file.arrayBuffer();
-          exif = parseExif(buffer);
+          exif = f_isJpeg(file) ? parseExif(buffer) : null;
         } catch {
           exif = null;
         }
@@ -87,13 +87,13 @@ export default function ExifStripper() {
   const stripItem = async (item: QueueItem): Promise<Blob> => {
     setQueue((prev) => prev.map((q) => (q.id === item.id ? { ...q, status: "processing" } : q)));
     try {
-      const blob = await stripImage(item.file);
+      const { blob, removed } = await stripImage(item.file, { keepIcc, keepOrientation });
       setQueue((prev) =>
-        prev.map((q) => (q.id === item.id ? { ...q, status: "done", resultBlob: blob } : q))
+        prev.map((q) => (q.id === item.id ? { ...q, status: "done", resultBlob: blob, removed } : q))
       );
 
       await saveToolResult("exif-stripper", {
-        title: cleanFileName(item.file.name),
+        title: cleanFileName(item.file.name, blob),
         summary: `${cameraSummary(item.exif)} · ${formatBytes(blob.size)}`,
         blob,
       });
@@ -114,13 +114,13 @@ export default function ExifStripper() {
 
   const downloadItem = async (item: QueueItem) => {
     if (item.resultBlob) {
-      downloadBlob(item.resultBlob, cleanFileName(item.file.name));
+      downloadBlob(item.resultBlob, cleanFileName(item.file.name, item.resultBlob));
       return;
     }
     setIsProcessing(true);
     try {
       const blob = await stripItem(item);
-      downloadBlob(blob, cleanFileName(item.file.name));
+      downloadBlob(blob, cleanFileName(item.file.name, blob));
     } catch {
       // error already reflected in queue item state
     } finally {
@@ -135,7 +135,7 @@ export default function ExifStripper() {
       for (const item of queue) {
         if (item.status === "error") continue;
         const blob = item.resultBlob ?? (await stripItem(item));
-        zip.file(cleanFileName(item.file.name), blob);
+        zip.file(cleanFileName(item.file.name, blob), blob);
       }
       const zipBlob = await zip.generateAsync({ type: "blob" });
       downloadBlob(zipBlob, "clean-images.zip");
@@ -151,9 +151,9 @@ export default function ExifStripper() {
     <div className="space-y-6">
       <DropZone
         onFiles={handleFiles}
-        accept="image/jpeg"
-        label="Drag & drop JPEG photos here, or click to browse"
-        hint="Reads EXIF metadata locally, then strips it from a clean re-encoded copy"
+        accept="image/jpeg,image/png,image/webp"
+        label="Drag & drop JPG, PNG or WebP photos here, or click to browse"
+        hint="Removes metadata without re-compressing — the picture itself is not touched"
       />
 
       {hasItems && (
@@ -162,6 +162,12 @@ export default function ExifStripper() {
             <p className="text-sm text-muted-foreground">
               {queue.length} image{queue.length === 1 ? "" : "s"} queued
             </p>
+            <label className="flex items-center gap-1.5 text-sm">
+              <input type="checkbox" checked={keepOrientation} onChange={(e) => setKeepOrientation(e.target.checked)} className="h-4 w-4 rounded border-border" /> Keep photo rotation (JPG)
+            </label>
+            <label className="flex items-center gap-1.5 text-sm">
+              <input type="checkbox" checked={keepIcc} onChange={(e) => setKeepIcc(e.target.checked)} className="h-4 w-4 rounded border-border" /> Keep colour profile
+            </label>
             <Button className="ml-auto" onClick={stripAllAndZip} disabled={isProcessing}>
               {isProcessing ? (
                 <>
@@ -182,7 +188,13 @@ export default function ExifStripper() {
                   <Camera className="mt-0.5 h-5 w-5 shrink-0 text-muted-foreground" />
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-sm font-medium">{item.file.name}</p>
-                    <p className="text-xs text-muted-foreground">{formatBytes(item.file.size)}</p>
+                    <p className="text-xs text-muted-foreground">
+                      {formatBytes(item.file.size)}
+                      {item.resultBlob && ` → ${formatBytes(item.resultBlob.size)}`}
+                    </p>
+                    {item.removed && (
+                      <p className="mt-0.5 text-xs text-emerald-600 dark:text-emerald-400">{item.removed.length ? `Removed: ${item.removed.join(", ")}` : "Nothing to remove — this file had no metadata."}</p>
+                    )}
                   </div>
                   {item.status === "processing" && (
                     <Loader2 className="h-4 w-4 shrink-0 animate-spin text-primary" />
@@ -247,7 +259,7 @@ export default function ExifStripper() {
                     </dl>
                   ) : (
                     <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                      <ShieldCheck className="h-3.5 w-3.5" /> No EXIF metadata found
+                      <ShieldCheck className="h-3.5 w-3.5" /> No camera (EXIF) metadata found
                     </p>
                   )}
                 </div>

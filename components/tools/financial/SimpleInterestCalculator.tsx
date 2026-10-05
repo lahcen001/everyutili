@@ -24,6 +24,11 @@ export default function SimpleInterestCalculator() {
 
   const interest = principal * (annualRate / 100) * years;
   const total = principal + interest;
+  const rows = Array.from({ length: Math.ceil(years) }, (_, i) => {
+    const t = Math.min(i + 1, years);
+    const accrued = principal * (annualRate / 100) * t;
+    return { label: t === i + 1 ? `Year ${i + 1}` : `Year ${i + 1} (partial, ${t - i} y)`, yearly: principal * (annualRate / 100) * (t - i), accrued, balance: principal + accrued };
+  });
 
   const handleSave = async () => {
     await saveToolResult("simple-interest-calculator", {
@@ -81,6 +86,32 @@ export default function SimpleInterestCalculator() {
           <p className="mt-1 text-2xl font-bold tabular-nums">{formatCurrency(total)}</p>
         </Card>
       </div>
+
+      {rows.length > 0 && (
+        <Card className="overflow-x-auto p-4">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-border text-left text-xs text-muted-foreground">
+                <th className="py-2 font-medium">Period</th>
+                <th className="py-2 text-right font-medium">Interest this year</th>
+                <th className="py-2 text-right font-medium">Total interest</th>
+                <th className="py-2 text-right font-medium">Balance</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr key={r.label} className="border-b border-border/60">
+                  <td className="py-1.5">{r.label}</td>
+                  <td className="py-1.5 text-right tabular-nums">{formatCurrency(r.yearly)}</td>
+                  <td className="py-1.5 text-right tabular-nums">{formatCurrency(r.accrued)}</td>
+                  <td className="py-1.5 text-right tabular-nums">{formatCurrency(r.balance)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="mt-2 text-xs text-muted-foreground">Simple interest is the same every year because it is only charged on the original principal — it does not compound.</p>
+        </Card>
+      )}
 
       <Button size="sm" variant="outline" onClick={handleSave}>
         <Save className="h-3.5 w-3.5" /> Save result

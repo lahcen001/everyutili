@@ -17,19 +17,23 @@ import {
 } from "@/components/tools/document/VisualPdfPageGrid";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
+import { addRotation } from "@/lib/pdf/rotation";
+import { parsePageRanges } from "@/lib/pdf/ranges";
+import { friendlyPdfError, isPdfFile } from "@/lib/pdf/errors";
 
 export default function DeletePdfPages() {
   useTrackTool("delete-pdf-pages");
   const [file, setFile] = React.useState<File | null>(null);
   const [pageCount, setPageCount] = React.useState(0);
   const [gridState, setGridState] = React.useState<VisualPdfPageGridState | null>(null);
+  const [rangeText, setRangeText] = React.useState("");
   const [isProcessing, setIsProcessing] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
   const gridRef = React.useRef<VisualPdfPageGridHandle>(null);
 
   const handleFiles = async (files: File[]) => {
-    const pdfFile = files.find((f) => f.type === "application/pdf");
+    const pdfFile = files.find((f) => isPdfFile(f));
     if (!pdfFile) return;
     setError(null);
     try {
@@ -38,8 +42,8 @@ export default function DeletePdfPages() {
       setFile(pdfFile);
       setPageCount(pdf.getPageCount());
       setGridState(null);
-    } catch {
-      setError("Could not read this PDF file. It may be corrupted or password-protected.");
+    } catch (e) {
+      setError(friendlyPdfError(e, "Could not read this PDF file. It may be corrupted."));
     }
   };
 
@@ -53,6 +57,22 @@ export default function DeletePdfPages() {
   const selectedCount = gridState?.selected.size ?? 0;
   const orderCount = gridState?.order.length ?? pageCount;
   const remainingCount = orderCount - selectedCount;
+
+  const applyTypedRange = () => {
+    const parsed = parsePageRanges(rangeText, pageCount);
+    if (parsed.error || rangeText.trim() === "") {
+      setError(parsed.error ?? "Enter the pages to delete, for example 2, 5-7, 10-.");
+      return;
+    }
+    setError(null);
+    gridRef.current?.setSelection?.(parsed.pages);
+  };
+
+  const invertSelection = () => {
+    const state = gridRef.current?.getState() ?? gridState;
+    if (!state) return;
+    gridRef.current?.setSelection?.(state.order.filter((p) => !state.selected.has(p)));
+  };
 
   const deletePages = async () => {
     const state = gridRef.current?.getState() ?? gridState;
@@ -75,7 +95,7 @@ export default function DeletePdfPages() {
       copiedPages.forEach((page, i) => {
         const rotationDeg = state.rotations[keptPages[i]] ?? 0;
         if (rotationDeg !== 0) {
-          page.setRotation(degrees((page.getRotation().angle + rotationDeg) % 360));
+          page.setRotation(degrees(addRotation(page.getRotation().angle, rotationDeg)));
         }
         outPdf.addPage(page);
       });
@@ -93,7 +113,7 @@ export default function DeletePdfPages() {
       });
       historyRef.current?.refresh();
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to delete pages.");
+      setError(friendlyPdfError(e, "Failed to delete pages."));
     } finally {
       setIsProcessing(false);
     }
@@ -106,7 +126,7 @@ export default function DeletePdfPages() {
         accept="application/pdf"
         multiple={false}
         label="Drag & drop a PDF here, or click to browse"
-        hint="Remove specific pages and download the result"
+        hint="Click pages to remove — or type a range like 2, 5-7, 10- — then download the result"
       />
 
       {error && (
@@ -140,6 +160,26 @@ export default function DeletePdfPages() {
                 {selectedCount} page{selectedCount === 1 ? "" : "s"} will be removed ·{" "}
                 {remainingCount} remaining
               </span>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <input
+                value={rangeText}
+                onChange={(e) => setRangeText(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && applyTypedRange()}
+                placeholder="Type pages, e.g. 2, 5-7, 10-"
+                aria-label="Pages to delete"
+                className="h-9 min-w-[14rem] flex-1 rounded-lg border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-primary"
+              />
+              <Button size="sm" variant="outline" onClick={applyTypedRange}>
+                Select these pages
+              </Button>
+              <Button size="sm" variant="ghost" onClick={() => gridRef.current?.setSelection?.([])} disabled={selectedCount === 0}>
+                Clear selection
+              </Button>
+              <Button size="sm" variant="ghost" onClick={invertSelection}>
+                Invert selection
+              </Button>
             </div>
 
             <VisualPdfPageGrid ref={gridRef} file={file} onChange={setGridState} />

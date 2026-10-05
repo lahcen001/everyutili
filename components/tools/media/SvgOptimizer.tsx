@@ -38,6 +38,11 @@ const DEFAULT_OPTIONS: OptimizeOptions = {
   precision: 2,
 };
 
+// SVG loaded through <img> never executes scripts, unlike injecting it as HTML.
+function svgDataUrl(svg: string): string {
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
 function byteSize(text: string): number {
   return new Blob([text]).size;
 }
@@ -286,19 +291,15 @@ export default function SvgOptimizer() {
             <Card className="space-y-2 p-4">
               <p className="text-xs font-medium text-muted-foreground">Original</p>
               <div className="flex max-h-64 items-center justify-center overflow-hidden rounded-lg border border-border bg-muted/20 p-3">
-                <div
-                  className="max-h-full max-w-full [&_svg]:max-h-56 [&_svg]:max-w-full"
-                  dangerouslySetInnerHTML={{ __html: input }}
-                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={svgDataUrl(input)} alt="Original SVG preview" className="max-h-56 max-w-full" />
               </div>
             </Card>
             <Card className="space-y-2 p-4">
               <p className="text-xs font-medium text-muted-foreground">Optimized</p>
               <div className="flex max-h-64 items-center justify-center overflow-hidden rounded-lg border border-border bg-muted/20 p-3">
-                <div
-                  className="max-h-full max-w-full [&_svg]:max-h-56 [&_svg]:max-w-full"
-                  dangerouslySetInnerHTML={{ __html: output }}
-                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={svgDataUrl(output)} alt="Optimized SVG preview" className="max-h-56 max-w-full" />
               </div>
             </Card>
           </div>

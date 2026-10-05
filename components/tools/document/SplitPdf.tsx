@@ -18,12 +18,28 @@ import {
 } from "@/components/tools/document/VisualPdfPageGrid";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
+import { addRotation } from "@/lib/pdf/rotation";
+import { friendlyPdfError, isPdfFile } from "@/lib/pdf/errors";
+import { chunkPages, describePages, parsePageRangeGroups } from "@/lib/pdf/ranges";
+import { cn } from "@/lib/utils";
+
+type SplitMode = "all" | "range" | "ranges" | "every";
+
+const MODES: { id: SplitMode; label: string }[] = [
+  { id: "all", label: "Every page" },
+  { id: "ranges", label: "Page ranges" },
+  { id: "every", label: "Every N pages" },
+  { id: "range", label: "Pick pages visually" },
+];
 
 export default function SplitPdf() {
   useTrackTool("split-pdf");
   const [file, setFile] = React.useState<File | null>(null);
   const [pageCount, setPageCount] = React.useState(0);
-  const [mode, setMode] = React.useState<"all" | "range">("all");
+  const [mode, setMode] = React.useState<SplitMode>("all");
+  const [rangeText, setRangeText] = React.useState("");
+  const [separateFiles, setSeparateFiles] = React.useState(true);
+  const [everyN, setEveryN] = React.useState(2);
   const [gridState, setGridState] = React.useState<VisualPdfPageGridState | null>(null);
   const [isSplitting, setIsSplitting] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
@@ -31,7 +47,7 @@ export default function SplitPdf() {
   const gridRef = React.useRef<VisualPdfPageGridHandle>(null);
 
   const handleFiles = async (files: File[]) => {
-    const pdfFile = files.find((f) => f.type === "application/pdf");
+    const pdfFile = files.find((f) => isPdfFile(f));
     if (!pdfFile) return;
     setError(null);
     try {
@@ -40,8 +56,8 @@ export default function SplitPdf() {
       setFile(pdfFile);
       setPageCount(pdf.getPageCount());
       setGridState(null);
-    } catch {
-      setError("Could not read this PDF file. It may be corrupted or password-protected.");
+    } catch (e) {
+      setError(friendlyPdfError(e, "Could not read this PDF file. It may be corrupted."));
     }
   };
 
@@ -57,6 +73,50 @@ export default function SplitPdf() {
     return gridState.order.filter((pageNumber) => gridState.selected.has(pageNumber));
   }, [gridState]);
 
+  const typedPlan = (() => {
+    if (mode === "ranges") {
+      const parsed = parsePageRangeGroups(rangeText, pageCount);
+      if (parsed.error) return { groups: [] as number[][], error: rangeText.trim() === "" ? undefined : parsed.error };
+      const groups = separateFiles ? parsed.groups : [[...new Set(parsed.groups.flat())].sort((a, b) => a - b)];
+      return { groups, error: undefined };
+    }
+    if (mode === "every") {
+      if (!Number.isInteger(everyN) || everyN < 1) return { groups: [] as number[][], error: "Enter a whole number of pages, 1 or more." };
+      return { groups: chunkPages(pageCount, everyN), error: undefined };
+    }
+    return { groups: [] as number[][], error: undefined };
+  })();
+
+  const saveGroups = async (srcPdf: PDFDocument, groups: number[][], baseName: string) => {
+    const build = async (pages: number[]) => {
+      const out = await PDFDocument.create();
+      const copied = await out.copyPages(srcPdf, pages.map((p) => p - 1));
+      copied.forEach((page) => out.addPage(page));
+      return out.save();
+    };
+    if (groups.length === 1) {
+      const blob = new Blob([new Uint8Array(await build(groups[0]))], { type: "application/pdf" });
+      const outName = `${baseName}-pages-${describePages(groups[0])}.pdf`;
+      downloadBlob(blob, outName);
+      await saveToolResult("split-pdf", { title: outName, summary: `${groups[0].length} page${groups[0].length === 1 ? "" : "s"} extracted · ${formatBytes(blob.size)}`, blob });
+    } else {
+      const zip = new JSZip();
+      const used = new Set<string>();
+      for (const pages of groups) {
+        let name = `${baseName}-pages-${describePages(pages)}`;
+        let n = 2;
+        while (used.has(name)) name = `${baseName}-pages-${describePages(pages)} (${n++})`;
+        used.add(name);
+        zip.file(`${name}.pdf`, await build(pages));
+      }
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+      const outName = `${baseName}-split.zip`;
+      downloadBlob(zipBlob, outName);
+      await saveToolResult("split-pdf", { title: outName, summary: `${groups.length} files · ${formatBytes(zipBlob.size)}`, blob: zipBlob });
+    }
+    historyRef.current?.refresh();
+  };
+
   const splitPdf = async () => {
     if (!file) return;
     setIsSplitting(true);
@@ -64,6 +124,14 @@ export default function SplitPdf() {
     try {
       const bytes = await file.arrayBuffer();
       const srcPdf = await PDFDocument.load(bytes);
+      if (mode === "ranges" || mode === "every") {
+        if (typedPlan.groups.length === 0) {
+          setError(typedPlan.error ?? "Enter the pages to extract, for example 1-3, 5, 8-.");
+          return;
+        }
+        await saveGroups(srcPdf, typedPlan.groups, file.name.replace(/\.pdf$/i, ""));
+        return;
+      }
       const state = mode === "range" ? gridRef.current?.getState() ?? gridState : null;
       const targetPages =
         mode === "all"
@@ -89,13 +157,13 @@ export default function SplitPdf() {
         pages.forEach((page, i) => {
           const rotationDeg = state?.rotations[targetPages[i]] ?? 0;
           if (rotationDeg !== 0) {
-            page.setRotation(degrees((page.getRotation().angle + rotationDeg) % 360));
+            page.setRotation(degrees(addRotation(page.getRotation().angle, rotationDeg)));
           }
           outPdf.addPage(page);
         });
         const outBytes = await outPdf.save();
         const blob = new Blob([new Uint8Array(outBytes)], { type: "application/pdf" });
-        const outName = `${baseName}-pages-${targetPages[0]}-${targetPages[targetPages.length - 1]}.pdf`;
+        const outName = `${baseName}-pages-${describePages([...targetPages].sort((a, b) => a - b))}.pdf`;
         downloadBlob(blob, outName);
 
         await saveToolResult("split-pdf", {
@@ -125,7 +193,7 @@ export default function SplitPdf() {
         historyRef.current?.refresh();
       }
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to split PDF.");
+      setError(friendlyPdfError(e, "Failed to split PDF."));
     } finally {
       setIsSplitting(false);
     }
@@ -138,11 +206,11 @@ export default function SplitPdf() {
         accept="application/pdf"
         multiple={false}
         label="Drag & drop a PDF here, or click to browse"
-        hint="Split into individual pages or extract a custom page range"
+        hint="Split into single pages, typed ranges, every N pages, or pick pages visually"
       />
 
       {error && (
-        <div className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+        <div role="alert" className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
           {error}
         </div>
       )}
@@ -166,24 +234,58 @@ export default function SplitPdf() {
           </Card>
 
           <Card className="space-y-4 p-4">
-            <div className="flex overflow-hidden rounded-lg border border-border w-fit">
-              <button
-                onClick={() => setMode("all")}
-                className={`px-3 py-1.5 text-sm font-medium transition-colors ${
-                  mode === "all" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
-                }`}
-              >
-                Split into all pages
-              </button>
-              <button
-                onClick={() => setMode("range")}
-                className={`px-3 py-1.5 text-sm font-medium transition-colors ${
-                  mode === "range" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
-                }`}
-              >
-                Extract page range
-              </button>
+            <div className="flex flex-wrap overflow-hidden rounded-lg border border-border w-fit" role="group" aria-label="Split method">
+              {MODES.map((m) => (
+                <button
+                  key={m.id}
+                  onClick={() => setMode(m.id)}
+                  aria-pressed={mode === m.id}
+                  className={cn("px-3 py-1.5 text-sm font-medium transition-colors", mode === m.id ? "bg-primary text-primary-foreground" : "hover:bg-muted")}
+                >
+                  {m.label}
+                </button>
+              ))}
             </div>
+
+            {mode === "ranges" && (
+              <div className="space-y-2">
+                <label className="block space-y-1.5">
+                  <span className="text-sm font-medium">Pages to extract</span>
+                  <input
+                    value={rangeText}
+                    onChange={(e) => setRangeText(e.target.value)}
+                    placeholder="e.g. 1-3, 5, 8-"
+                    className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </label>
+                <label className="flex items-center gap-2 text-sm">
+                  <input type="checkbox" checked={separateFiles} onChange={(e) => setSeparateFiles(e.target.checked)} className="h-4 w-4 rounded border-border" />
+                  Make a separate PDF for each range
+                </label>
+                <p className={cn("text-xs", typedPlan.error ? "text-destructive" : "text-muted-foreground")}>
+                  {typedPlan.error ?? (typedPlan.groups.length > 0 ? `${typedPlan.groups.length} file${typedPlan.groups.length === 1 ? "" : "s"} — "8-" means page 8 to the end.` : `This PDF has ${pageCount} pages. "8-" means page 8 to the end.`)}
+                </p>
+              </div>
+            )}
+
+            {mode === "every" && (
+              <div className="space-y-2">
+                <label className="flex items-center gap-2 text-sm">
+                  <span className="font-medium">Pages per file</span>
+                  <input
+                    type="number"
+                    min={1}
+                    max={Math.max(1, pageCount)}
+                    value={everyN}
+                    onChange={(e) => setEveryN(Math.floor(Number(e.target.value)))}
+                    className="w-24 rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </label>
+                <p className={cn("text-xs", typedPlan.error ? "text-destructive" : "text-muted-foreground")}>
+                  {typedPlan.error ?? `${typedPlan.groups.length} file${typedPlan.groups.length === 1 ? "" : "s"} from ${pageCount} pages.`}
+                </p>
+              </div>
+            )}
 
             {mode === "range" && (
               <div className="space-y-1.5">
@@ -199,7 +301,7 @@ export default function SplitPdf() {
 
             <Button
               onClick={splitPdf}
-              disabled={isSplitting || (mode === "range" && selectedPages.length === 0)}
+              disabled={isSplitting || (mode === "range" && selectedPages.length === 0) || ((mode === "ranges" || mode === "every") && typedPlan.groups.length === 0)}
             >
               {isSplitting ? (
                 <>

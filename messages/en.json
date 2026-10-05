@@ -40,7 +40,10 @@
     "categorySearchPlaceholder": "Search {category}…",
     "notFoundTitle": "Page not found",
     "notFoundCta": "Go home",
-    "usedRecently": "Used"
+    "usedRecently": "Used",
+    "errorTitle": "Something went wrong",
+    "errorBody": "This tool hit an unexpected error. Your files were not uploaded anywhere.",
+    "errorRetry": "Try again"
   },
   "languageSwitcher": {
     "label": "Language"
@@ -74,10 +77,10 @@
   },
   "tools": {
     "jpg-to-png": {
-      "seoTitle": "Convert JPG to PNG Online – 100% Free & Secure",
-      "metaDescription": "Convert JPG or HEIC images to PNG instantly in your browser. No uploads, no watermarks, no sign-up. Batch convert and download as ZIP in seconds.",
-      "h1": "JPG to PNG Converter",
-      "subheading": "Convert JPG and HEIC images to high-quality PNG files — processed 100% locally in your browser.",
+      "seoTitle": "Convert Images to PNG Online – 100% Free & Secure",
+      "metaDescription": "Convert JPG, WebP and other images to PNG, JPG or WebP instantly in your browser. Set quality and a background colour, see the size change. No uploads or watermarks.",
+      "h1": "Image Converter",
+      "subheading": "Convert JPG, PNG and WebP images between formats — processed 100% locally in your browser.",
       "keywords": [
         "jpg to png",
         "convert jpg to png",
@@ -85,24 +88,26 @@
         "image converter online",
         "free jpg png converter",
         "convert to png",
-        "png converter"
+        "png converter",
+        "webp to png",
+        "image format converter"
       ],
       "howTo": [
         {
           "name": "Upload your images",
-          "text": "Drag and drop or select one or more JPG/HEIC files from your device."
+          "text": "Drag and drop or select one or more image files from your device."
         },
         {
-          "name": "Adjust settings",
-          "text": "Optionally resize or adjust the output quality before converting."
+          "name": "Choose the output",
+          "text": "Pick PNG, JPG or WebP, then set the quality and, for JPG, the background colour for transparent areas."
         },
         {
           "name": "Convert locally",
-          "text": "Click Convert — processing happens entirely in your browser via a Web Worker."
+          "text": "Click Convert all — every image is converted in your browser and its new size is shown."
         },
         {
           "name": "Download your files",
-          "text": "Download each PNG individually or grab them all at once as a ZIP file."
+          "text": "Save each file individually or grab them all at once as a ZIP."
         }
       ],
       "faq": [
@@ -116,7 +121,7 @@
         },
         {
           "question": "Can I convert HEIC files from my iPhone?",
-          "answer": "Yes, HEIC files are supported and converted to standard PNG format automatically."
+          "answer": "Not in this tool — browsers can't decode HEIC directly. Use the HEIC to JPG converter first, then bring the result here if you need another format."
         },
         {
           "question": "Is there a limit on batch conversions?",
@@ -135,8 +140,8 @@
           "answer": "It depends on your device's available memory, since conversion happens in your browser rather than on a server. Very large images (tens of megapixels) may slow down or fail on low-memory devices, but typical photos convert in a second or two."
         },
         {
-          "question": "Can I convert multiple JPG files to PNG at once?",
-          "answer": "Yes, you can select or drag in several JPG or HEIC files and each one is converted and downloaded as its own PNG."
+          "question": "Can I convert multiple files at once?",
+          "answer": "Yes, select or drag in several images and each is converted to its own file; you can download them one by one or as a ZIP."
         }
       ],
       "comparisonTable": {
@@ -178,62 +183,63 @@
       }
     },
     "merge-pdf": {
-      "seoTitle": "Merge PDF Files Online – 100% Free & Secure",
-      "metaDescription": "Combine multiple PDF files into a single document instantly in your browser. No uploads, no watermarks — fast, private, and free.",
+      "seoTitle": "Merge PDF Files Online – Reorder, Pick Pages, Free & Private",
+      "metaDescription": "Combine PDF files into one document in your browser. Reorder files, use only the pages you need from each, and arrange pages visually. No uploads, no watermarks, free.",
       "h1": "Merge PDF Files",
-      "subheading": "Combine multiple PDFs into one document — processed 100% locally in your browser.",
+      "subheading": "Combine PDFs into one — reorder files, choose pages from each, and arrange pages visually — processed 100% locally in your browser.",
       "keywords": [
         "merge pdf",
         "combine pdf files",
-        "pdf merger online",
-        "join pdf files free"
+        "join pdf",
+        "merge pdf online free",
+        "combine pdfs into one"
       ],
       "howTo": [
         {
-          "name": "Upload PDF files",
-          "text": "Select two or more PDF files you want to combine."
+          "name": "Add your PDFs",
+          "text": "Select two or more PDF files."
         },
         {
-          "name": "Reorder pages",
-          "text": "Drag to reorder files in the sequence you want them merged."
+          "name": "Order the files",
+          "text": "Move files up or down, and optionally enter which pages to use from each, such as 1-3, 7."
         },
         {
-          "name": "Merge locally",
-          "text": "Click Merge — your files are combined directly in your browser using pdf-lib."
+          "name": "Arrange the pages",
+          "text": "In the page grid, drag pages to interleave files, remove pages or rotate them."
         },
         {
-          "name": "Download the result",
-          "text": "Download your merged PDF instantly."
+          "name": "Merge and download",
+          "text": "Click Merge & Download PDF."
         }
       ],
       "faq": [
         {
+          "question": "Can I use only some pages of each file?",
+          "answer": "Yes. Type a range such as 1-3, 7 or 5- under \"Only use pages\" for a file; leave it blank to use every page."
+        },
+        {
+          "question": "How do I change the order?",
+          "answer": "Use the arrows to move whole files up or down. In the page grid you can also drag individual pages to interleave files, remove pages or rotate them."
+        },
+        {
           "question": "Is my PDF data private?",
-          "answer": "Completely. Merging happens locally using pdf-lib — no file is ever uploaded to a server."
-        },
-        {
-          "question": "Is there a page or file size limit?",
-          "answer": "No artificial limits — performance depends only on your device's memory."
-        },
-        {
-          "question": "Can I reorder pages before merging?",
-          "answer": "Yes, you can drag and drop files to control the final page order."
+          "answer": "Yes. Merging happens locally in your browser — no file is uploaded to a server."
         },
         {
           "question": "Can I merge password-protected PDFs?",
-          "answer": "No. Encrypted or password-protected PDFs can't currently be opened by the merge tool since decryption isn't supported. Remove the password using the file's original application first, then merge."
+          "answer": "No. Encrypted PDFs can't be opened. The tool names the file that is protected; remove its password first and add it again."
         },
         {
-          "question": "What happens if one of my PDFs is corrupted?",
-          "answer": "If a file can't be parsed, the tool will show an error for that specific file rather than silently skipping it. Try opening and re-saving the corrupted file in another PDF viewer before merging."
+          "question": "What if one file is damaged?",
+          "answer": "The tool reports the problem instead of silently skipping the file. Try opening and re-saving it in another PDF viewer first."
         },
         {
-          "question": "Will merging preserve bookmarks, forms, and links?",
-          "answer": "Page content, images, and text are preserved, but interactive elements like form fields, bookmarks, and internal links from the source files may not carry over into the merged output."
+          "question": "Are bookmarks, forms and links kept?",
+          "answer": "Page content, images and text are kept, but interactive elements such as form fields, bookmarks and internal links may not carry over into the merged file."
         },
         {
-          "question": "What is the merged file named?",
-          "answer": "The combined PDF downloads as merged.pdf by default. You can rename it after download like any other file on your device."
+          "question": "Is there a size limit, and what is the file called?",
+          "answer": "There is no artificial limit — it depends on your device's memory. The result downloads as merged.pdf."
         }
       ]
     },
@@ -300,16 +306,18 @@
     },
     "salary-to-hourly": {
       "seoTitle": "Salary to Hourly Calculator – Convert Annual Pay Instantly",
-      "metaDescription": "Convert your annual salary to an hourly, daily, weekly, or monthly rate instantly. Free, accurate, and private salary calculator.",
+      "metaDescription": "Convert annual salary to hourly pay or hourly to annual, with paid vacation, holidays, unpaid weeks off and overtime. Free and private.",
       "h1": "Salary to Hourly Calculator",
-      "subheading": "Convert your annual salary into hourly, daily, weekly, and monthly rates instantly.",
+      "subheading": "Convert salary to hourly pay and back, with paid time off, holidays and overtime built in.",
       "keywords": [
         "salary to hourly calculator",
         "annual salary to hourly rate",
         "convert salary to hourly wage",
         "hourly rate calculator",
         "convert to hourly wage",
-        "hourly wage converter"
+        "hourly wage converter",
+        "hourly to salary calculator",
+        "overtime pay calculator"
       ],
       "howTo": [
         {
@@ -348,11 +356,15 @@
         },
         {
           "question": "Does this account for overtime pay?",
-          "answer": "No, it assumes a flat rate across all hours entered. For overtime-adjusted pay, calculate regular and overtime hours separately."
+          "answer": "Yes. Open Time off & overtime to add overtime hours per week and a multiplier (1.5 is time and a half). For an hourly rate they are added to your annual pay; for a salary they are used to work out the base hourly rate."
         },
         {
           "question": "Why does monthly pay not equal weekly pay times 4?",
           "answer": "Monthly pay is annual salary divided by 12, not weekly pay times 4, since most months have slightly more than 4 weeks."
+        },
+        {
+          "question": "Can I convert hourly pay to an annual salary?",
+          "answer": "Yes. Switch to I know my hourly rate, enter the rate and your weekly hours, and the annual, monthly, biweekly and weekly amounts are calculated, including overtime and unpaid weeks off."
         }
       ],
       "comparisonTable": {
@@ -683,7 +695,7 @@
     },
     "png-to-jpg": {
       "seoTitle": "Convert PNG to JPG Online – 100% Free & Secure",
-      "metaDescription": "Convert PNG images to JPG instantly in your browser. Reduce file size, remove transparency, no uploads or watermarks. Free forever.",
+      "metaDescription": "Convert PNG images to JPG instantly in your browser. Choose the background colour for transparent areas, set quality and resize — no uploads or watermarks.",
       "h1": "PNG to JPG Converter",
       "subheading": "Convert PNG images to compact JPG files — processed 100% locally in your browser.",
       "keywords": [
@@ -715,7 +727,7 @@
       "faq": [
         {
           "question": "What happens to transparency when converting PNG to JPG?",
-          "answer": "JPG doesn't support transparency, so transparent areas are filled with white during conversion."
+          "answer": "JPG doesn't support transparency, so transparent areas are filled with a background colour. It is white by default and you can pick any colour before converting."
         },
         {
           "question": "Why convert PNG to JPG?",
@@ -727,7 +739,7 @@
         },
         {
           "question": "What color fills in where my PNG was transparent?",
-          "answer": "Since JPG has no transparency support, transparent and semi-transparent pixels are flattened onto a solid background, typically white, before the JPG is saved. If you need to choose a different background color, check whether the tool exposes that option before converting."
+          "answer": "White by default. Use the Background control to choose black, grey or any custom colour; transparent and semi-transparent pixels are blended onto it before saving."
         },
         {
           "question": "Will text or line art in my PNG look blurry as a JPG?",
@@ -782,7 +794,7 @@
     },
     "svg-to-png": {
       "seoTitle": "Convert SVG to PNG Online – Free & Instant",
-      "metaDescription": "Rasterize SVG icons and illustrations to PNG instantly in your browser. Set any output width, transparency preserved. No uploads, free forever.",
+      "metaDescription": "Rasterize SVG icons and illustrations to PNG instantly in your browser. Set any output width, transparency preserved, with a live preview — no uploads.",
       "h1": "SVG to PNG Converter",
       "subheading": "Rasterize SVG files to crisp PNG images at any size — processed 100% locally in your browser.",
       "keywords": [
@@ -881,7 +893,7 @@
     },
     "svg-to-jpg": {
       "seoTitle": "Convert SVG to JPG Online – Free & Instant",
-      "metaDescription": "Rasterize SVG icons and illustrations to JPG instantly in your browser. Set any output width and quality. No uploads, free forever.",
+      "metaDescription": "Rasterize SVG icons and illustrations to JPG instantly in your browser. Set the width, quality and background colour — no uploads, free forever.",
       "h1": "SVG to JPG Converter",
       "subheading": "Rasterize SVG files to compact JPG images at any size — processed 100% locally in your browser.",
       "keywords": [
@@ -913,7 +925,7 @@
       "faq": [
         {
           "question": "What happens to transparent areas?",
-          "answer": "JPG doesn't support transparency, so any transparent parts of your SVG are filled with white."
+          "answer": "JPG doesn't support transparency, so transparent parts of your SVG are filled with a background colour — white by default, or any colour you pick."
         },
         {
           "question": "Will the JPG look blurry if my SVG has no fixed size?",
@@ -929,7 +941,7 @@
         },
         {
           "question": "What background color does my SVG get if it has transparent regions?",
-          "answer": "Transparent areas are filled with a solid background, typically white, since JPG cannot store an alpha channel. Check the tool for a background color option if you need something other than white."
+          "answer": "White by default. Choose black, grey or a custom colour with the Background control before converting, since JPG cannot store an alpha channel."
         },
         {
           "question": "Can I set the output resolution before converting?",
@@ -980,7 +992,7 @@
     },
     "svg-to-webp": {
       "seoTitle": "Convert SVG to WebP Online – Free & Instant",
-      "metaDescription": "Rasterize SVG icons and illustrations to WebP instantly in your browser. Set any output width, transparency preserved. No uploads, free forever.",
+      "metaDescription": "Rasterize SVG icons and illustrations to WebP instantly in your browser. Set the width and quality, transparency preserved — no uploads, free forever.",
       "h1": "SVG to WebP Converter",
       "subheading": "Rasterize SVG files to compact WebP images at any size — processed 100% locally in your browser.",
       "keywords": [
@@ -1079,7 +1091,7 @@
     },
     "png-to-webp": {
       "seoTitle": "Convert PNG to WebP Online – 100% Free & Secure",
-      "metaDescription": "Convert PNG images to WebP instantly in your browser. Smaller files, transparency preserved, no uploads or watermarks. Free forever.",
+      "metaDescription": "Convert PNG images to WebP instantly in your browser. Smaller files with transparency preserved, adjustable quality, before/after preview — no uploads.",
       "h1": "PNG to WebP Converter",
       "subheading": "Convert PNG images to compact WebP files — processed 100% locally in your browser.",
       "keywords": [
@@ -1178,7 +1190,7 @@
     },
     "webp-to-png": {
       "seoTitle": "Convert WebP to PNG Online – 100% Free & Secure",
-      "metaDescription": "Convert WebP images to PNG instantly in your browser. Universal compatibility, transparency preserved, no uploads or watermarks. Free forever.",
+      "metaDescription": "Convert WebP images to PNG instantly in your browser. Transparency preserved, optional width limit, before/after size — no uploads or watermarks.",
       "h1": "WebP to PNG Converter",
       "subheading": "Convert WebP images to universally compatible PNG files — processed 100% locally in your browser.",
       "keywords": [
@@ -1273,7 +1285,7 @@
     },
     "webp-to-jpg": {
       "seoTitle": "Convert WebP to JPG Online – 100% Free & Secure",
-      "metaDescription": "Convert WebP images to JPG instantly in your browser. Universal compatibility, no uploads or watermarks. Free forever.",
+      "metaDescription": "Convert WebP images to JPG instantly in your browser. Choose the background colour for transparent areas, set quality and resize — no uploads or watermarks.",
       "h1": "WebP to JPG Converter",
       "subheading": "Convert WebP images to universally compatible JPG files — processed 100% locally in your browser.",
       "keywords": [
@@ -1309,7 +1321,7 @@
         },
         {
           "question": "What happens to transparency?",
-          "answer": "JPG doesn't support transparency, so transparent areas are filled with white during conversion."
+          "answer": "JPG doesn't support transparency, so transparent areas are filled with a background colour — white by default, or any colour you choose before converting."
         },
         {
           "question": "Is this conversion private?",
@@ -1325,7 +1337,7 @@
         },
         {
           "question": "Does converting to JPG fill transparent WebP areas with a color?",
-          "answer": "Yes, since JPG doesn't support transparency, any transparent regions are typically filled with a solid background (usually white) during conversion."
+          "answer": "Yes. Transparent regions are filled with the Background colour (white by default), which you can change before converting."
         },
         {
           "question": "Will converting WebP to JPG reduce image quality further?",
@@ -1372,7 +1384,7 @@
     },
     "jpg-to-webp": {
       "seoTitle": "Convert JPG to WebP Online – 100% Free & Secure",
-      "metaDescription": "Convert JPG images to WebP instantly in your browser. Smaller files, same quality, no uploads or watermarks. Free forever.",
+      "metaDescription": "Convert JPG images to WebP instantly in your browser. Adjustable quality, optional width limit and a before/after size comparison — no uploads.",
       "h1": "JPG to WebP Converter",
       "subheading": "Convert JPG images to compact WebP files — processed 100% locally in your browser.",
       "keywords": [
@@ -1471,15 +1483,17 @@
     },
     "base64-image-encoder": {
       "seoTitle": "Base64 Image Encoder & Decoder – Free Online Tool",
-      "metaDescription": "Convert images to Base64 data URLs and back again, instantly in your browser. Perfect for embedding images in CSS or HTML. 100% free and private.",
+      "metaDescription": "Convert images to Base64 as a data URI, raw string, <img> tag, CSS or Markdown, and decode Base64 back to an image with the correct file type. Free and private.",
       "h1": "Base64 Image Encoder",
-      "subheading": "Convert images to Base64 data URLs and decode Base64 back to images — entirely in your browser.",
+      "subheading": "Turn images into Base64 data URIs and ready-to-paste snippets, or decode Base64 back to an image — entirely in your browser.",
       "keywords": [
         "base64 image encoder",
         "image to base64",
         "base64 to image",
         "convert image to base64 string",
-        "data url generator"
+        "data url generator",
+        "image to css base64",
+        "data uri img tag"
       ],
       "howTo": [
         {
@@ -1518,29 +1532,35 @@
         },
         {
           "question": "What's the difference between the raw Base64 string and a data URL?",
-          "answer": "A data URL wraps the Base64 string with a `data:image/png;base64,` prefix that tells a browser how to interpret it directly — the raw string alone is just the encoded bytes."
+          "answer": "A data URL adds a prefix such as data:image/png;base64, that tells the browser the file type, so it can be used directly as an image source. Raw Base64 is only the encoded characters. Choose either output format in the tool."
         },
         {
           "question": "Can I decode a Base64 string back into a downloadable image file?",
-          "answer": "Yes, switch to the decode tab, paste your Base64 string or data URL, and download the resulting image file directly."
+          "answer": "Yes. Paste the Base64 or data URL on the decode tab; the real file type is detected from the data, a preview is shown, and you can download it with the right extension."
         },
         {
           "question": "Why would I embed an image as Base64 instead of linking to a file?",
           "answer": "Embedding avoids a separate network request, which is useful for small icons in CSS/HTML or inline email images, though it increases the size of the containing file."
+        },
+        {
+          "question": "Can it give me an <img> tag or CSS?",
+          "answer": "Yes. Choose <img> tag, CSS background or Markdown to copy a ready-to-paste snippet that already includes the data URI and, for <img>, the image's width and height."
         }
       ]
     },
     "favicon-generator": {
       "seoTitle": "Favicon Generator Online – Free Multi-Size Favicon Maker",
-      "metaDescription": "Generate a complete set of favicon sizes (16, 32, 48, 180, 192, 512px) from any image, instantly in your browser. Free ZIP download, no sign-up.",
+      "metaDescription": "Generate favicon.ico, PNG icons (16–512 px), apple-touch-icon, a web manifest and the HTML tags from any image. Fill or fit, padding, rounded corners. Free ZIP, no sign-up.",
       "h1": "Favicon Generator",
-      "subheading": "Upload a logo and generate every standard favicon size as a ready-to-use ZIP — processed 100% locally.",
+      "subheading": "Upload a logo and get favicon.ico, every PNG size, the apple-touch icon, a manifest and the HTML tags — processed 100% locally.",
       "keywords": [
         "favicon generator",
         "favicon maker online",
         "generate favicon from image",
         "apple touch icon generator",
-        "free favicon creator"
+        "free favicon creator",
+        "favicon.ico generator",
+        "web app manifest generator"
       ],
       "howTo": [
         {
@@ -1563,11 +1583,11 @@
       "faq": [
         {
           "question": "What favicon sizes are generated?",
-          "answer": "16×16, 32×32, 48×48, 180×180 (Apple touch icon), 192×192, and 512×512 pixel PNGs."
+          "answer": "favicon.ico (16, 32 and 48 px inside one file), PNGs at 16, 32 and 48 px, a 180 px apple-touch-icon, and 192 px and 512 px icons for Android and PWAs."
         },
         {
           "question": "Does my image need to be square?",
-          "answer": "No, non-square images are automatically center-cropped to a square before resizing."
+          "answer": "No. Choose Fill to crop to a centred square, or Fit to keep the whole image with transparent or coloured margins. Non-square images default to Fit."
         },
         {
           "question": "Is this tool free to use?",
@@ -1575,11 +1595,11 @@
         },
         {
           "question": "What files are included in the downloaded ZIP?",
-          "answer": "Six PNG files at standard favicon sizes: 16×16, 32×32, 48×48, 180×180 (Apple touch icon), 192×192, and 512×512 pixels."
+          "answer": "favicon.ico, favicon-16x16.png, favicon-32x32.png, favicon-48x48.png, apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png, site.webmanifest and favicon-snippet.html."
         },
         {
           "question": "Do I need to add any HTML to use the generated favicons?",
-          "answer": "Yes, this tool generates only the image files — you'll need to add your own `<link rel=\"icon\">` and `<link rel=\"apple-touch-icon\">` tags in your site's HTML pointing to the appropriate files."
+          "answer": "Yes — copy the tags shown in the tool (also saved as favicon-snippet.html) into your page's head and upload every file in the ZIP to your site's root."
         },
         {
           "question": "Can I use a PNG with transparency as my source logo?",
@@ -1588,37 +1608,44 @@
         {
           "question": "Will a low-resolution source image produce blurry favicons?",
           "answer": "Yes, since favicons are generated by scaling your source image, a small or low-resolution source will look soft at larger sizes like 512×512 — start with a high-resolution square image for best results."
+        },
+        {
+          "question": "Can I add padding, a background or rounded corners?",
+          "answer": "Yes. Set padding around the logo, choose a solid background instead of transparency, and round the corners up to a full circle. The preview shows the 16, 32, 48 and 180 px icons live."
         }
       ]
     },
     "qr-code-generator": {
       "seoTitle": "QR Code Generator Online – Free & Instant, No Sign-Up",
-      "metaDescription": "Generate a custom QR code from any text or URL instantly in your browser. Choose colors and size, then download as PNG. 100% free and private.",
+      "metaDescription": "Create QR codes for links, text, Wi-Fi, email, phone, SMS and contact cards. Choose error correction, colours and a centre logo, and download PNG or SVG. Free and private.",
       "h1": "QR Code Generator",
-      "subheading": "Turn any text, URL, or message into a downloadable QR code — generated 100% locally in your browser.",
+      "subheading": "Make QR codes for links, Wi-Fi, contacts and more, with error correction, a logo and PNG or SVG download — generated 100% locally.",
       "keywords": [
         "qr code generator",
         "free qr code maker",
         "create qr code online",
         "url to qr code",
-        "qr code generator no sign up"
+        "qr code generator no sign up",
+        "wifi qr code generator",
+        "vcard qr code",
+        "qr code svg"
       ],
       "howTo": [
         {
-          "name": "Enter your content",
-          "text": "Type or paste the text, URL, or message you want to encode."
+          "name": "Choose what it contains",
+          "text": "Pick Link, Text, Wi-Fi, Email, Phone, SMS or Contact and fill in the fields."
         },
         {
           "name": "Customize appearance",
-          "text": "Adjust the size and pick foreground/background colors."
+          "text": "Set the colours, border, error-correction level and an optional logo in the centre."
         },
         {
-          "name": "Preview instantly",
-          "text": "Your QR code updates live as you type."
+          "name": "Check the preview",
+          "text": "The code updates as you type, with a warning if the colours are too faint or inverted to scan reliably."
         },
         {
-          "name": "Download the PNG",
-          "text": "Click Download to save the QR code image to your device."
+          "name": "Download",
+          "text": "Save a PNG at your chosen size, or an SVG that stays sharp at any size."
         }
       ],
       "faq": [
@@ -1640,19 +1667,23 @@
         },
         {
           "question": "What error correction level does the QR code use?",
-          "answer": "A fixed medium (M) error correction level is used, which balances scan reliability with a reasonably compact code pattern."
+          "answer": "Medium (15%) by default. You can choose Low, Medium, Quartile or High; higher levels survive more damage but need a denser code. Adding a logo automatically uses High (30%)."
         },
         {
           "question": "Can I change the QR code's color or add a logo?",
-          "answer": "You can customize the foreground and background colors using the color pickers or presets. Adding a center logo isn't currently supported."
+          "answer": "Yes. Pick any foreground and background colours and upload a logo to place in the centre. Keep the logo small and test the code with a phone before printing."
         },
         {
           "question": "What file formats can I download the QR code in?",
-          "answer": "QR codes are exported as PNG. There's no SVG export option currently."
+          "answer": "PNG at a size you choose (128–2048 px) and SVG, which is vector and stays sharp at any size."
         },
         {
           "question": "Why won't my QR code scan?",
           "answer": "Common causes include too little contrast between foreground and background colors, a logo overlay that's too large and covers essential pattern data, or printing the code too small for the amount of encoded text."
+        },
+        {
+          "question": "How do I make a QR code that connects to Wi-Fi?",
+          "answer": "Choose the Wi-Fi tab, enter the network name, password and security type. Scanning the code with a phone offers to join the network without typing the password."
         }
       ]
     },
@@ -1718,16 +1749,16 @@
       ]
     },
     "split-pdf": {
-      "seoTitle": "Split PDF Online – 100% Free & Secure",
-      "metaDescription": "Split a PDF into individual pages or extract a custom page range, instantly in your browser. No uploads, no watermarks, completely free.",
+      "seoTitle": "Split PDF Online – By Range, Every N Pages or Single Pages, Free",
+      "metaDescription": "Split a PDF into single pages, typed ranges like 1-3, 5, 8-, every N pages, or pick pages visually — in your browser. No uploads, no watermarks, completely free.",
       "h1": "Split PDF Files",
-      "subheading": "Split a PDF into separate pages or extract a specific range — processed 100% locally in your browser.",
+      "subheading": "Split a PDF by page ranges, every N pages or single pages — or pick pages visually — processed 100% locally in your browser.",
       "keywords": [
         "split pdf",
-        "split pdf online",
-        "extract pdf pages",
-        "pdf splitter free",
-        "separate pdf pages"
+        "extract pages from pdf",
+        "split pdf by page range",
+        "separate pdf pages",
+        "pdf splitter online"
       ],
       "howTo": [
         {
@@ -1735,376 +1766,298 @@
           "text": "Select the PDF file you want to split."
         },
         {
-          "name": "Choose a mode",
-          "text": "Split into individual pages, or specify a custom page range to extract."
+          "name": "Choose how to split",
+          "text": "Pick every page, page ranges, every N pages, or select pages visually from thumbnails."
         },
         {
-          "name": "Split locally",
-          "text": "Click Split — pages are separated directly in your browser using pdf-lib."
+          "name": "Check the plan",
+          "text": "The tool shows how many files you will get before you start."
         },
         {
-          "name": "Download the result",
-          "text": "Download a single PDF for a range, or a ZIP of individual page PDFs."
+          "name": "Download",
+          "text": "Click Split & Download — you get one PDF, or a ZIP when several files are made."
         }
       ],
       "faq": [
         {
-          "question": "Can I extract just a few specific pages?",
-          "answer": "Yes, use the page range mode and enter values like \"1-3, 5, 8-10\"."
+          "question": "How do I extract specific pages?",
+          "answer": "Choose Page ranges and type something like \"1-3, 5, 8-\" — \"8-\" means page 8 to the end. Tick \"Make a separate PDF for each range\" for one file per range, or leave it off for a single PDF containing all those pages."
         },
         {
-          "question": "Is my PDF uploaded to a server?",
-          "answer": "No, splitting happens entirely locally using pdf-lib — your file never leaves your device."
+          "question": "Can I split a PDF into equal parts?",
+          "answer": "Yes. With Every N pages, a 10-page PDF split every 4 pages gives files of 4, 4 and 2 pages."
         },
         {
-          "question": "What do I get when splitting into all pages?",
-          "answer": "A ZIP file containing one PDF per page, ready to download."
+          "question": "Can I choose pages by looking at them?",
+          "answer": "Yes. Pick pages visually shows a thumbnail of every page; click the pages you want, and rotate any that need it."
         },
         {
-          "question": "How are the split files delivered?",
-          "answer": "Extracting a single page range downloads one PDF file directly; splitting into every individual page packages all the resulting files into a single ZIP download instead."
+          "question": "How are the files delivered and named?",
+          "answer": "One file downloads directly; several are bundled in a ZIP. Names combine the original file name with the pages, for example report-pages-1-3.pdf and report-pages-5.pdf."
         },
         {
-          "question": "Can I split an encrypted or password-protected PDF?",
-          "answer": "No, password-protected PDFs cannot currently be opened by the tool. Remove the password in the original application before splitting."
+          "question": "Can I split a password-protected PDF?",
+          "answer": "No. Encrypted PDFs can't be opened, and the tool tells you so. Remove the password in the original application first."
         },
         {
-          "question": "What are the split files named?",
-          "answer": "Individual pages are named using the original filename with the page number appended, such as document_page-1.pdf, making it easy to identify each page after extraction."
+          "question": "Does splitting reduce quality?",
+          "answer": "No. Pages are copied, not re-rendered or recompressed, so text and images stay exactly as they were. Interactive elements such as form fields, bookmarks and links may not carry over into the new files."
         },
         {
-          "question": "Does splitting reduce the quality of my pages?",
-          "answer": "No. Splitting only separates existing pages into new PDF files without re-rendering or recompressing content, so text, images, and quality remain exactly as in the source file."
+          "question": "Is my PDF uploaded anywhere?",
+          "answer": "No, splitting happens entirely in your browser."
         }
       ]
     },
     "pdf-to-images": {
-      "seoTitle": "Convert PDF to Images Online – 100% Free & Secure",
-      "metaDescription": "Convert every page of a PDF into high-resolution PNG images instantly in your browser. Download individually or as a ZIP. Free, no uploads.",
+      "seoTitle": "PDF to Image Converter – PNG, JPG or WebP up to 300 DPI, Free",
+      "metaDescription": "Convert PDF pages to PNG, JPG or WebP images in your browser. Choose resolution up to 300 DPI and the pages you need, then download singly or as a ZIP. Free, no uploads.",
       "h1": "PDF to Images Converter",
-      "subheading": "Render every PDF page as a high-resolution PNG image — processed 100% locally in your browser.",
+      "subheading": "Turn PDF pages into PNG, JPG or WebP images — pick the resolution and the pages — processed 100% locally in your browser.",
       "keywords": [
-        "pdf to images",
-        "pdf to png converter",
-        "convert pdf to jpg",
-        "pdf page to image online",
-        "extract images from pdf",
-        "convert to jpg",
-        "convert to png",
-        "jpg converter"
+        "pdf to png",
+        "pdf to jpg",
+        "pdf to image",
+        "convert pdf pages to images",
+        "pdf to webp"
       ],
       "howTo": [
         {
           "name": "Upload your PDF",
-          "text": "Select the PDF file you want to convert to images."
+          "text": "Select the PDF you want to convert."
         },
         {
-          "name": "Automatic rendering",
-          "text": "Each page is rendered to a canvas at high resolution using pdf.js."
+          "name": "Choose format, resolution and pages",
+          "text": "Pick PNG, JPG or WebP, a resolution from 72 to 300 DPI, and optionally a page range."
         },
         {
-          "name": "Preview the pages",
-          "text": "Browse thumbnail previews of every rendered page."
+          "name": "Render the pages",
+          "text": "Click Render pages and watch the progress; thumbnails appear as each page finishes."
         },
         {
-          "name": "Download",
-          "text": "Save individual pages or download all pages as a ZIP file."
+          "name": "Save your images",
+          "text": "Download single pages or all of them as a ZIP."
         }
       ],
       "faq": [
         {
-          "question": "What image format are the pages exported as?",
-          "answer": "Each page is exported as a high-resolution PNG image."
+          "question": "Which formats and resolutions are available?",
+          "answer": "PNG, JPG and WebP at 72, 96, 150, 200 or 300 DPI. JPG and WebP also have a quality slider. 150 DPI suits screens; 300 DPI suits printing."
         },
         {
-          "question": "Does this work with scanned PDFs?",
-          "answer": "Yes, any PDF page — text-based or scanned — is rendered visually as it appears."
+          "question": "Can I convert only some pages?",
+          "answer": "Yes. Type a range such as 1-3, 7, 10- in the Pages box; leave it blank for every page."
+        },
+        {
+          "question": "Does it work with scanned PDFs?",
+          "answer": "Yes. Every page is rendered exactly as it looks, whether it contains text or a scanned picture."
+        },
+        {
+          "question": "Why is the background white in JPG?",
+          "answer": "JPG can't store transparency, so pages are rendered on a white background. Use PNG or WebP to keep transparency."
+        },
+        {
+          "question": "Will a large PDF slow my browser down?",
+          "answer": "Pages are rendered one at a time with a progress counter, but every image is kept in memory. For hundreds of pages, render a smaller range or a lower resolution. Extremely large pages are limited to 8,000 pixels on their longest side."
+        },
+        {
+          "question": "How are the images downloaded and named?",
+          "answer": "Download each page on its own, or all pages as one ZIP. Files use the PDF's name and a page number, for example report-page-03.png."
         },
         {
           "question": "Is my document uploaded anywhere?",
-          "answer": "No, rendering happens entirely in your browser using the pdf.js library — nothing is uploaded."
-        },
-        {
-          "question": "What resolution are the exported images?",
-          "answer": "Pages are rendered at a high scale factor for sharp output, well above standard screen resolution, so text and fine details stay legible even when zoomed in."
-        },
-        {
-          "question": "Can I export as JPG instead of PNG?",
-          "answer": "Currently pages are exported as PNG only, which preserves sharp text and lines without lossy compression artifacts. There's no JPG output option at this time."
-        },
-        {
-          "question": "How are multiple pages downloaded?",
-          "answer": "For a multi-page PDF, all rendered page images are bundled into a single ZIP file rather than downloading one by one."
-        },
-        {
-          "question": "Will very large or high-page-count PDFs slow down my browser?",
-          "answer": "Rendering happens page by page in your browser, so PDFs with hundreds of pages or very large embedded images can take noticeably longer and use more memory than a short document."
+          "answer": "No, rendering happens entirely in your browser."
         }
-      ],
-      "comparisonTable": {
-        "columns": [
-          "Feature",
-          "PDF",
-          "Images (PNG/JPG)"
-        ],
-        "rows": [
-          {
-            "label": "Editability",
-            "values": [
-              "Fixed layout, searchable text",
-              "Pixel data only"
-            ]
-          },
-          {
-            "label": "Best for",
-            "values": [
-              "Documents, printing, sharing",
-              "Previews, thumbnails, web embeds"
-            ]
-          },
-          {
-            "label": "File count",
-            "values": [
-              "One file, multiple pages",
-              "One file per page"
-            ]
-          },
-          {
-            "label": "Text selection",
-            "values": [
-              "Yes (if not scanned)",
-              "No"
-            ]
-          }
-        ]
-      }
+      ]
     },
     "images-to-pdf": {
       "seoTitle": "Convert Images to PDF Online – 100% Free & Secure",
-      "metaDescription": "Combine JPG or PNG images into a single PDF document instantly in your browser. Reorder pages, no uploads, no watermarks. Free forever.",
+      "metaDescription": "Combine JPG, PNG, WebP, GIF or BMP images into one PDF in your browser. Pick A4, Letter or A5 pages, reorder and rotate, no uploads or watermarks. Free forever.",
       "h1": "Images to PDF Converter",
-      "subheading": "Combine JPG and PNG images into a single PDF document — processed 100% locally in your browser.",
+      "subheading": "Combine images into a single PDF with your choice of page size — processed 100% locally in your browser.",
       "keywords": [
         "images to pdf",
-        "jpg to pdf converter",
-        "png to pdf online",
+        "jpg to pdf",
+        "png to pdf",
         "combine images into pdf",
-        "photo to pdf free",
-        "convert to pdf",
-        "pdf converter",
-        "photos to pdf"
+        "photos to pdf a4"
       ],
       "howTo": [
         {
-          "name": "Upload your images",
-          "text": "Select one or more JPG or PNG images."
+          "name": "Add your images",
+          "text": "Select JPG, PNG, WebP, GIF or BMP images — as many as you like."
         },
         {
-          "name": "Reorder pages",
-          "text": "Drag to reorder images in the sequence you want them to appear."
+          "name": "Arrange the pages",
+          "text": "Drag thumbnails into order and rotate any image that needs it."
         },
         {
-          "name": "Build the PDF",
-          "text": "Click Create PDF — pages are generated directly in your browser using pdf-lib."
+          "name": "Pick a page size",
+          "text": "Choose A4, US Letter, A5, or Fit to image, then set a margin."
         },
         {
-          "name": "Download the result",
-          "text": "Download your combined PDF file instantly."
+          "name": "Create and download",
+          "text": "Click Create & Download PDF to get one file with one image per page."
         }
       ],
       "faq": [
         {
-          "question": "Can I combine both JPG and PNG images in one PDF?",
-          "answer": "Yes, you can mix JPG and PNG files freely — each is embedded at its native resolution."
+          "question": "Which image formats can I use?",
+          "answer": "JPG, PNG, WebP, GIF and BMP. JPG and PNG are embedded untouched; WebP, GIF and BMP are converted first (PNG keeps transparency, BMP becomes JPEG)."
         },
         {
-          "question": "Can I reorder the images before creating the PDF?",
-          "answer": "Yes, drag and drop the thumbnails to set the exact page order."
+          "question": "What page sizes are available?",
+          "answer": "A4, US Letter, A5, or Fit to image. On a fixed size each image is scaled to fit inside the margins and centered. Orientation follows each image by default, and you can force portrait or landscape per image."
         },
         {
-          "question": "Is there a limit on how many images I can add?",
-          "answer": "No artificial limit — performance depends only on your device's available memory."
+          "question": "Why use A4 instead of Fit to image?",
+          "answer": "Fit to image makes every page exactly as large as its picture, so a 4000-pixel photo becomes a huge page. A4 or Letter gives a normal, printable document."
         },
         {
-          "question": "Does each image become its own page?",
-          "answer": "Yes. Every image you add is placed on its own page in the resulting PDF, in the order you arrange them."
+          "question": "My phone photos are sideways — will that happen in the PDF?",
+          "answer": "No. The camera's rotation information (EXIF orientation) is read and applied, so photos come out upright."
         },
         {
-          "question": "What page size and orientation does the PDF use?",
-          "answer": "Each page is sized to match its source image's dimensions and orientation, so a mix of portrait and landscape photos will produce a PDF with differently sized pages rather than being forced onto a uniform page size."
+          "question": "Will my images lose quality?",
+          "answer": "JPG and PNG files that need no changes are embedded byte-for-byte. Images you rotate or that need converting are re-encoded: JPEG at high quality, PNG losslessly."
         },
         {
-          "question": "Will my images be recompressed or lose quality?",
-          "answer": "Images are embedded into the PDF at their original resolution and quality without additional recompression, so the output can be large if your source photos are high-resolution."
+          "question": "Can I use HEIC photos?",
+          "answer": "Not directly — convert them to JPG first with this site's HEIC to JPG tool, then add them here."
         },
         {
-          "question": "Can I use HEIC or WebP images?",
-          "answer": "No, only JPG and PNG files are currently supported. Convert HEIC or WebP images to JPG or PNG first, for example with this site's image converter tools."
+          "question": "Is there a limit on the number of images, and are they uploaded?",
+          "answer": "Nothing is uploaded; everything runs in your browser. There is no fixed limit — it depends on your device's memory."
         }
-      ],
-      "comparisonTable": {
-        "columns": [
-          "Feature",
-          "Images (JPG/PNG)",
-          "PDF"
-        ],
-        "rows": [
-          {
-            "label": "File count",
-            "values": [
-              "One file per image",
-              "One file, multiple pages"
-            ]
-          },
-          {
-            "label": "Best for",
-            "values": [
-              "Individual photos, editing",
-              "Sharing, printing, archiving"
-            ]
-          },
-          {
-            "label": "Portability",
-            "values": [
-              "Format varies by viewer",
-              "Consistent across all devices"
-            ]
-          },
-          {
-            "label": "Page order",
-            "values": [
-              "Not applicable",
-              "Fixed, sequential"
-            ]
-          }
-        ]
-      }
+      ]
     },
     "rotate-pdf": {
-      "seoTitle": "Rotate PDF Online – 100% Free & Secure",
-      "metaDescription": "Rotate all pages in a PDF by 90, 180, or 270 degrees instantly in your browser. No uploads, no watermarks, completely free.",
+      "seoTitle": "Rotate PDF Pages Online – All, Odd/Even or Selected, Free",
+      "metaDescription": "Rotate PDF pages in your browser: all pages, odd or even pages, or a selection — clockwise or counter-clockwise by 90° or 180°. No uploads, completely free.",
       "h1": "Rotate PDF Pages",
-      "subheading": "Rotate every page in a PDF by 90, 180, or 270 degrees — processed 100% locally in your browser.",
+      "subheading": "Rotate single pages, all pages, odd or even pages, or a selection — clockwise or counter-clockwise — processed 100% locally in your browser.",
       "keywords": [
         "rotate pdf",
+        "rotate pdf pages",
         "rotate pdf online",
-        "rotate pdf pages free",
-        "fix pdf orientation"
+        "flip pdf page",
+        "rotate pdf counter-clockwise"
       ],
       "howTo": [
         {
           "name": "Upload your PDF",
-          "text": "Select the PDF file you want to rotate."
+          "text": "Select the PDF you want to rotate."
         },
         {
-          "name": "Choose an angle",
-          "text": "Pick 90°, 180°, or 270° rotation."
+          "name": "Choose what to rotate",
+          "text": "Use a page's own rotate button, or the quick actions for all, odd, even or selected pages."
         },
         {
-          "name": "Rotate locally",
-          "text": "Click Rotate — the transformation happens directly in your browser using pdf-lib."
+          "name": "Check the thumbnails",
+          "text": "Every page shows its new orientation before you download."
         },
         {
-          "name": "Download the result",
-          "text": "Download your rotated PDF instantly."
+          "name": "Download",
+          "text": "Click Rotate & Download to save the PDF."
         }
       ],
       "faq": [
         {
-          "question": "Does this rotate every page or just one?",
-          "answer": "Every page in the document is rotated by the same angle you select."
+          "question": "Can I rotate only some pages?",
+          "answer": "Yes. Rotate pages one by one, select several and rotate them together, or rotate all odd or all even pages."
         },
         {
-          "question": "Will rotating affect the PDF's text or quality?",
-          "answer": "No, rotation only changes each page's display orientation metadata — content and quality are preserved."
+          "question": "Can I rotate counter-clockwise?",
+          "answer": "Yes. Every quick action comes in clockwise 90°, counter-clockwise 90° and 180° versions, and there is a Reset all button."
         },
         {
-          "question": "Is my file uploaded to a server?",
-          "answer": "No, rotation happens entirely locally using pdf-lib."
+          "question": "Will rotating affect the text or quality?",
+          "answer": "No. Only each page's rotation value changes, so content isn't re-rendered or recompressed."
         },
         {
-          "question": "Can I rotate individual pages differently?",
-          "answer": "Yes, each page can be rotated independently in the visual grid — \"Rotate all\" and \"Rotate selected\" buttons are just shortcuts for applying rotation to many pages at once."
+          "question": "What about pages that are already rotated?",
+          "answer": "Your rotation is added to the page's existing one — for example a page rotated 270° that you rotate 90° clockwise ends up upright."
         },
         {
-          "question": "Does rotating change the file size significantly?",
-          "answer": "Rotation itself just updates each page's orientation value, but the file is rebuilt and re-saved in the process, so the output size can shift slightly from the original — usually not significantly."
+          "question": "Does the file size change?",
+          "answer": "Barely. The file is rebuilt when saved, so the size can shift slightly."
         },
         {
           "question": "Can I rotate a password-protected PDF?",
-          "answer": "No, encrypted PDFs can't currently be opened by the tool. You'll need to remove the password first using the file's original application."
+          "answer": "No. Encrypted PDFs can't be opened, and the tool tells you so. Remove the password first."
         },
         {
-          "question": "What is the rotated file named when downloaded?",
-          "answer": "The output keeps a name based on your original file, such as document_rotated.pdf, so you can tell it apart from the source."
+          "question": "Is my file uploaded, and what is the result called?",
+          "answer": "Nothing is uploaded. The result downloads with -rotated added to your file name."
         }
       ]
     },
     "delete-pdf-pages": {
-      "seoTitle": "Delete PDF Pages Online – 100% Free & Secure",
-      "metaDescription": "Remove specific pages from a PDF instantly in your browser. Select pages or ranges to delete, then download the result. Free, no uploads.",
+      "seoTitle": "Delete Pages from PDF Online – Click or Type a Range, Free",
+      "metaDescription": "Delete pages from a PDF in your browser: click pages or type ranges like 2, 5-7, 10-, invert the selection, then download. No uploads, completely free.",
       "h1": "Delete PDF Pages",
-      "subheading": "Remove specific pages from a PDF document — processed 100% locally in your browser.",
+      "subheading": "Remove pages from a PDF by clicking them or typing a range — processed 100% locally in your browser.",
       "keywords": [
         "delete pdf pages",
         "remove pages from pdf",
-        "pdf page remover online",
-        "edit pdf pages free"
+        "delete pages from pdf online",
+        "pdf page remover",
+        "remove pdf pages free"
       ],
       "howTo": [
         {
           "name": "Upload your PDF",
-          "text": "Select the PDF file you want to edit."
+          "text": "Select the PDF you want to edit."
         },
         {
-          "name": "Choose pages to remove",
-          "text": "Enter page numbers or ranges, e.g. \"2, 4-6\"."
+          "name": "Choose the pages",
+          "text": "Click thumbnails to select pages, or type a range such as 2, 5-7, 10- and press Select these pages."
         },
         {
-          "name": "Delete locally",
-          "text": "Click Delete Pages — the edit happens directly in your browser using pdf-lib."
+          "name": "Review",
+          "text": "Selected pages are marked and the number of remaining pages is shown. Use Invert selection or Clear selection to adjust."
         },
         {
-          "name": "Download the result",
-          "text": "Download the edited PDF with the selected pages removed."
+          "name": "Download",
+          "text": "Click Delete & Download to save the PDF without those pages."
         }
       ],
       "faq": [
         {
-          "question": "Can I remove multiple non-consecutive pages?",
-          "answer": "Yes, use a comma-separated list and ranges, such as \"2, 4-6, 9\"."
+          "question": "Can I remove pages that aren't next to each other?",
+          "answer": "Yes. Type a list and ranges such as 2, 5-7, 10-, or click any pages you like."
         },
         {
-          "question": "Can I delete all pages?",
-          "answer": "No, at least one page must remain in the final document."
+          "question": "How does typing a range work?",
+          "answer": "Separate pages with commas and use a dash for ranges; \"10-\" means page 10 to the end. Page numbers that don't exist are flagged with a message instead of being ignored."
         },
         {
-          "question": "Is my PDF uploaded anywhere?",
-          "answer": "No, all edits happen entirely locally using pdf-lib in your browser."
+          "question": "Can I keep certain pages instead of deleting them?",
+          "answer": "Yes. Select the pages you want to keep, then click Invert selection so everything else is marked for deletion."
         },
         {
-          "question": "How do I specify which pages to delete?",
-          "answer": "You can enter individual page numbers, comma-separated lists, or ranges like 2-5, and combine them, for example 1,3,7-9, to remove several pages in one pass."
+          "question": "Can I delete every page?",
+          "answer": "No. At least one page must remain."
         },
         {
-          "question": "Can I delete pages from an encrypted PDF?",
-          "answer": "No, password-protected PDFs can't currently be opened by the tool since decryption isn't supported."
+          "question": "Does deleting affect the quality of the other pages?",
+          "answer": "No. Remaining pages are copied unchanged, without re-rendering or recompression. Interactive elements such as links and bookmarks may not carry over."
         },
         {
-          "question": "Does deleting pages affect the quality of the remaining pages?",
-          "answer": "No. The remaining pages are copied over unchanged; only the specified pages are removed, so there's no re-rendering or recompression of the pages you keep."
+          "question": "Can I delete pages from a password-protected PDF?",
+          "answer": "No. Encrypted PDFs can't be opened, and the tool tells you so. Remove the password first."
         },
         {
-          "question": "What happens if I enter an invalid page number?",
-          "answer": "If you specify a page number outside the document's range, the tool will flag it as invalid rather than silently ignoring it, so you can correct the input before deleting."
+          "question": "Is my original file changed or uploaded?",
+          "answer": "Neither. Nothing is uploaded, and you download a new file — your original is untouched."
         }
       ]
     },
     "compress-pdf": {
       "seoTitle": "Compress PDF Online – Free & Private PDF Size Reducer",
-      "metaDescription": "Reduce PDF file size by stripping metadata and optimizing structure, instantly in your browser. 100% free, private, no uploads required.",
+      "metaDescription": "Reduce PDF file size in your browser with three levels — lossless, balanced, or strong — and compare before and after sizes. 100% free, private, no uploads required.",
       "h1": "Compress PDF Files",
-      "subheading": "Shrink PDF file size with lossless, browser-based optimization — processed 100% locally.",
+      "subheading": "Shrink your PDF with three compression levels and see the exact before-and-after size — processed 100% locally.",
       "keywords": [
         "compress pdf",
         "reduce pdf file size",
@@ -2117,60 +2070,62 @@
           "text": "Select the PDF file you want to compress."
         },
         {
-          "name": "Compress locally",
-          "text": "Click Compress — metadata is stripped and the file structure is optimized in your browser."
+          "name": "Choose a level",
+          "text": "Lossless keeps text selectable; Balanced and Strong re-render pages as images for much bigger savings."
         },
         {
-          "name": "Compare sizes",
-          "text": "See the before and after file size comparison."
+          "name": "Compress and compare",
+          "text": "Click Compress and see the exact before and after file size."
         },
         {
-          "name": "Download the result",
-          "text": "Download your compressed PDF instantly."
+          "name": "Download if it's smaller",
+          "text": "Download the compressed PDF — the tool only offers it when it is actually smaller than your original."
         }
       ],
       "faq": [
         {
           "question": "How much smaller will my PDF be?",
-          "answer": "Savings vary widely — typically 5-20% from metadata and structural optimization, since true image re-compression needs a server or heavy codec."
+          "answer": "It depends on the level and the content. Lossless usually saves little (often 0–20%). Balanced and Strong can shrink scanned or image-heavy PDFs dramatically, while text-only PDFs may not shrink at all because turning text into images can make them larger."
         },
         {
-          "question": "Will compression affect quality or content?",
-          "answer": "No, this is a lossless optimization — all text, images, and formatting remain unchanged."
+          "question": "Will compression affect quality?",
+          "answer": "Lossless does not change anything. Balanced (150 DPI) and Strong (100 DPI, lower JPEG quality) re-render every page as an image, so text becomes slightly softer."
         },
         {
-          "question": "Why isn't compression as aggressive as some desktop tools?",
-          "answer": "Browser-only processing can't re-encode embedded images with a heavy image codec without significant download size, so gains are more modest than server-side tools."
+          "question": "Why can't I select text after Balanced or Strong?",
+          "answer": "Those levels replace each page with a picture of the page, which is what makes the file small. Use Lossless if you need to keep selectable, searchable text."
+        },
+        {
+          "question": "What if the result is bigger than my original?",
+          "answer": "The tool shows the size change and only offers a download when the file got smaller. Otherwise your original is the better file."
         },
         {
           "question": "Can I compress a password-protected PDF?",
-          "answer": "No, encrypted PDFs can't currently be opened by the compressor. Remove the password in the original application first."
+          "answer": "No, encrypted PDFs can't be opened by the compressor. Remove the password in the original application first — the tool will tell you if a file is protected."
         },
         {
-          "question": "Why does compressing a scanned PDF barely reduce its size?",
-          "answer": "Scanned PDFs are usually made of one large image per page that's already compressed by the scanner, so this tool's lossless optimization of PDF structure and embedded fonts has little left to trim compared with text-based PDFs."
+          "question": "Why does a scanned PDF shrink so much more?",
+          "answer": "A scan is usually one large image per page at 300 DPI or more. Re-rendering at 150 or 100 DPI removes most of those pixels."
         },
         {
-          "question": "Does compression remove any content from my PDF?",
-          "answer": "No. Compression optimizes the internal PDF structure, such as removing duplicate objects and streamlining fonts, without deleting pages, text, or images."
-        },
-        {
-          "question": "What is the compressed file named?",
-          "answer": "The output downloads with a suffix added to your original filename, such as document_compressed.pdf, so you can distinguish it from the source file."
+          "question": "Is my file uploaded anywhere, and why is a big file slow?",
+          "answer": "Nothing is uploaded — everything runs in your browser. Balanced and Strong render one page at a time, so long documents take longer; a progress counter shows where it is."
         }
       ]
     },
     "word-counter": {
       "seoTitle": "Word Counter Online – Free Character & Word Count Tool",
-      "metaDescription": "Count words, characters, sentences, and paragraphs instantly as you type. Get an estimated reading time. Free, private, and works offline.",
+      "metaDescription": "Count words, characters, sentences and paragraphs as you type. See reading and speaking time, your most-used words, keyword density and character limits for tweets, SEO titles and more. Free and private.",
       "h1": "Word & Character Counter",
-      "subheading": "Live word, character, sentence, and paragraph counts with estimated reading time — 100% private.",
+      "subheading": "Live word, character, sentence and paragraph counts, reading and speaking time, top words, keyword density and character-limit checks — 100% private.",
       "keywords": [
         "word counter",
         "character counter online",
         "count words free",
         "reading time calculator",
-        "text statistics tool"
+        "text statistics tool",
+        "keyword density checker",
+        "character limit checker"
       ],
       "howTo": [
         {
@@ -2184,12 +2139,16 @@
         {
           "name": "Check reading time",
           "text": "See an estimated reading time based on average reading speed."
+        },
+        {
+          "name": "Check limits and keywords",
+          "text": "Pick a limit such as a tweet or SEO title to see how many characters are left, and type a keyword to see how often it appears."
         }
       ],
       "faq": [
         {
           "question": "How is reading time calculated?",
-          "answer": "Reading time is estimated using an average reading speed of 200 words per minute."
+          "answer": "Reading time assumes about 238 words per minute and speaking time about 150 words per minute — typical averages for adult silent reading and spoken presentations."
         },
         {
           "question": "Does this tool store or send my text anywhere?",
@@ -2201,7 +2160,7 @@
         },
         {
           "question": "Does the counter support languages without spaces, like Chinese or Japanese?",
-          "answer": "Word counting relies on spaces and punctuation to separate words, so it's designed for space-delimited languages; character count remains accurate for any language, but word count may be less meaningful for languages like Chinese or Japanese."
+          "answer": "Yes. Chinese, Japanese, Thai and other languages written without spaces are split into words with your browser's built-in word segmenter, so word counts are close to what a dictionary-aware count gives. Character counts are always exact."
         },
         {
           "question": "Is there a limit to how much text I can paste in?",
@@ -2214,20 +2173,30 @@
         {
           "question": "Can I count words in a specific selection instead of the whole text?",
           "answer": "No, the counter currently tallies the entire contents of the text box rather than a highlighted selection. Paste only the portion you want counted if you need a partial count."
+        },
+        {
+          "question": "Which character limits can I check?",
+          "answer": "Presets cover an X / Twitter post (280), SEO title (60), meta description (160), SMS (160), LinkedIn post (3,000) and Instagram caption (2,200), or you can enter your own limit. The bar turns amber near the limit and red once you go over."
+        },
+        {
+          "question": "What is keyword density?",
+          "answer": "Keyword density is how often a word or phrase appears as a share of all words. Type one into the keyword box to see its count and percentage; for SEO a focus keyword is often used around 1–2% of the time."
         }
       ]
     },
     "base64-encoder-decoder": {
       "seoTitle": "Base64 Encoder & Decoder Online – Free & Instant",
-      "metaDescription": "Encode text to Base64 or decode Base64 back to plain text, instantly in your browser. Free, private, and works entirely offline.",
+      "metaDescription": "Encode text or files to Base64 and decode Base64 back to text or files. Supports UTF-8, URL-safe Base64, data URIs and image preview. Free, private and offline.",
       "h1": "Base64 Encoder / Decoder",
-      "subheading": "Encode and decode Base64 text instantly — processed 100% locally in your browser.",
+      "subheading": "Encode and decode Base64 text and files, with UTF-8, URL-safe and data: URI support — processed 100% locally in your browser.",
       "keywords": [
         "base64 encoder",
         "base64 decoder",
         "encode text to base64",
         "decode base64 online",
-        "base64 converter free"
+        "base64 converter free",
+        "base64 file converter",
+        "data uri generator"
       ],
       "howTo": [
         {
@@ -2258,11 +2227,11 @@
         },
         {
           "question": "Does this support Unicode text?",
-          "answer": "Yes, non-ASCII characters like emoji and accented letters are correctly handled."
+          "answer": "Yes. Text is converted with UTF-8, so emoji, accented letters and non-Latin scripts encode and decode correctly."
         },
         {
           "question": "Can I encode or decode files, not just text?",
-          "answer": "No, this tool works on typed or pasted text only — for encoding image files to Base64, use the dedicated Base64 Image Encoder tool instead."
+          "answer": "Yes. Use the file button to encode any file or image, and when decoded Base64 is not text the tool detects the file type, previews images and lets you download the file with the right extension."
         },
         {
           "question": "Why does decoding sometimes fail with an error?",
@@ -2270,25 +2239,31 @@
         },
         {
           "question": "Does this support URL-safe Base64?",
-          "answer": "No, it uses standard Base64 encoding — URL-safe Base64 (which swaps `+`/`/` for `-`/`_`) isn't a separate mode here."
+          "answer": "Yes. Tick URL-safe to use - and _ instead of + and /, and No padding to drop the = signs. Decoding accepts both standard and URL-safe Base64 automatically."
         },
         {
           "question": "Why does encoded text look longer than the original?",
           "answer": "Base64 encodes every 3 bytes of input as 4 characters of output, so encoded text is roughly 33% larger than the original."
+        },
+        {
+          "question": "Can it output a data: URI?",
+          "answer": "Yes. Tick As data: URI when encoding and the result is wrapped as data:<type>;base64,… ready to paste into HTML or CSS. Decoding accepts data: URIs as well."
         }
       ]
     },
     "url-encoder-decoder": {
       "seoTitle": "URL Encoder & Decoder Online – Free & Instant",
-      "metaDescription": "Encode or decode URLs and query strings instantly in your browser. Free, private percent-encoding tool with no sign-up required.",
+      "metaDescription": "Encode or decode URLs and query strings with Component, Full URL or form (+) modes, and break a URL into its parts and parameters. Free, private, no sign-up.",
       "h1": "URL Encoder / Decoder",
-      "subheading": "Percent-encode or decode URLs and query strings instantly — processed 100% locally.",
+      "subheading": "Percent-encode or decode text and URLs in three modes, and see a URL's parts and query parameters — 100% local.",
       "keywords": [
         "url encoder",
         "url decoder",
         "percent encoding online",
         "encodeuricomponent tool",
-        "decode url free"
+        "decode url free",
+        "url parser",
+        "query string decoder"
       ],
       "howTo": [
         {
@@ -2323,11 +2298,11 @@
         },
         {
           "question": "What's the difference between encodeURIComponent and encodeURI?",
-          "answer": "This tool uses encodeURIComponent-style encoding, which escapes a wider set of characters (including `&`, `=`, `/`) — suitable for encoding individual query parameter values rather than a full URL."
+          "answer": "Component mode (encodeURIComponent) encodes everything including / ? & = #, which is right for a single value. Full URL mode (encodeURI) keeps those characters so the URL still works. Form mode is Component with spaces written as +."
         },
         {
           "question": "How are spaces encoded?",
-          "answer": "Spaces are encoded as %20, matching standard percent-encoding rather than the `+` convention used in HTML form submissions."
+          "answer": "As %20 in Component and Full URL modes, and as + in Form mode (application/x-www-form-urlencoded). Decoding in Form mode turns + back into a space."
         },
         {
           "question": "Can I encode an entire URL including the query string?",
@@ -2336,6 +2311,10 @@
         {
           "question": "Why does decoding fail on my input?",
           "answer": "Decoding fails if the text contains a `%` not followed by two valid hex digits, which happens with malformed or already-partially-decoded input."
+        },
+        {
+          "question": "Can it show the parts of a URL?",
+          "answer": "Yes. When the text is a full URL it is split into protocol, host, path, query and fragment, and every query parameter is listed with its decoded value."
         }
       ]
     },
@@ -2397,16 +2376,18 @@
       ]
     },
     "uuid-generator": {
-      "seoTitle": "UUID Generator Online – Free Bulk UUID v4 Generator",
-      "metaDescription": "Generate random UUID v4 identifiers in bulk, instantly in your browser. Copy individually or all at once. Free, private, no sign-up.",
+      "seoTitle": "UUID Generator Online – Free v4, v7 and v1 UUIDs, Bulk",
+      "metaDescription": "Generate UUID v4, v7 or v1 identifiers in bulk, in standard, no-hyphen, braces, URN or Base64 formats, and validate existing UUIDs. Free, private, no sign-up.",
       "h1": "UUID Generator",
-      "subheading": "Generate one or thousands of random UUID v4 identifiers instantly — processed 100% locally.",
+      "subheading": "Generate v4, v7 and v1 UUIDs in several formats, download them, and validate or inspect any UUID — 100% local.",
       "keywords": [
         "uuid generator",
         "generate uuid online",
         "guid generator free",
         "random uuid v4",
-        "bulk uuid generator"
+        "bulk uuid generator",
+        "uuid v7 generator",
+        "uuid validator"
       ],
       "howTo": [
         {
@@ -2454,6 +2435,14 @@
         {
           "question": "Why do all UUIDs start with a similar pattern?",
           "answer": "UUID v4 always has a fixed '4' in the version position and one of a few fixed bits in the variant position, so every UUID shares that structural pattern even though the rest is random."
+        },
+        {
+          "question": "Which UUID version should I use?",
+          "answer": "Use v4 (random) for general identifiers. Use v7 for database keys, because it starts with a timestamp and sorts by creation time. v1 is timestamp-based and is mainly kept for compatibility."
+        },
+        {
+          "question": "Can I check whether a UUID is valid?",
+          "answer": "Yes. Paste any UUID in the validator; it accepts hyphens, braces or urn:uuid:, tells you the version and variant, and shows the embedded creation time for v1 and v7."
         }
       ]
     },
@@ -2799,27 +2788,29 @@
     },
     "percentage-calculator": {
       "seoTitle": "Percentage Calculator Online – Free & Instant",
-      "metaDescription": "Calculate X% of Y, what percent X is of Y, or percentage change between two numbers, instantly. Free, accurate, and private.",
+      "metaDescription": "Six percentage calculators in one: X% of Y, what percent X is of Y, percentage change, increase or decrease by a percent, find the whole, and the value before a change. Free and private.",
       "h1": "Percentage Calculator",
-      "subheading": "Calculate percentages, percentage-of, and percentage change instantly with three easy modes.",
+      "subheading": "Six calculators in one — percent of, what percent, percentage change, increase or decrease, find the whole, and the original value.",
       "keywords": [
         "percentage calculator",
         "percent of calculator",
         "percentage change calculator",
-        "what percent is x of y"
+        "what percent is x of y",
+        "percent increase calculator",
+        "reverse percentage calculator"
       ],
       "howTo": [
         {
           "name": "Pick a calculation type",
-          "text": "Choose X% of Y, X is what % of Y, or percentage change."
+          "text": "Choose one of six tabs, such as X% of Y, percentage change, or increase / decrease by a percent."
         },
         {
           "name": "Enter your numbers",
-          "text": "Fill in the input fields for your chosen calculation."
+          "text": "Type the values. Empty or invalid boxes never silently count as zero, and dividing by zero shows a clear message."
         },
         {
-          "name": "View the result instantly",
-          "text": "The result updates live as you type."
+          "name": "Read and save the result",
+          "text": "The result updates instantly with the formula used; save it to your history if you want to keep it."
         }
       ],
       "faq": [
@@ -2850,19 +2841,29 @@
         {
           "question": "Does rounding affect the result?",
           "answer": "Results are shown to two decimal places for readability, but the underlying calculation uses full precision."
+        },
+        {
+          "question": "How do I find the original number before a percentage change?",
+          "answer": "Use the Before a change tab: enter the final value, the percent and whether it was an increase or decrease. The original is the result divided by (1 ± percent ÷ 100) — note that +20% followed by −20% does not return to the start."
+        },
+        {
+          "question": "What happens when I divide by zero?",
+          "answer": "Calculations that would divide by zero, such as percentage change from 0, show a clear message instead of a misleading number."
         }
       ]
     },
     "discount-calculator": {
       "seoTitle": "Discount Calculator Online – Free & Instant Sale Price Tool",
-      "metaDescription": "Calculate the final sale price and amount saved from an original price and discount percentage, instantly. Free and private.",
+      "metaDescription": "Calculate the final price after one or several stacked discounts, find the percent off between two prices, or work back to the original price. Free and private.",
       "h1": "Discount Calculator",
-      "subheading": "Calculate the final price and savings from any discount percentage — instantly and privately.",
+      "subheading": "Stack discounts, add tax, find the percent off between two prices, or reverse a sale price.",
       "keywords": [
         "discount calculator",
         "sale price calculator",
         "percent off calculator",
-        "calculate discount online"
+        "calculate discount online",
+        "stacked discount calculator",
+        "percent off between two prices"
       ],
       "howTo": [
         {
@@ -2885,7 +2886,7 @@
         },
         {
           "question": "Can I calculate stacked discounts?",
-          "answer": "This tool calculates a single discount; for stacked discounts, apply the final price as the next original price."
+          "answer": "Yes. Add up to five discounts; each is applied to the price left after the one before, and the tool shows the combined percentage off."
         },
         {
           "question": "Does this include sales tax?",
@@ -2893,7 +2894,7 @@
         },
         {
           "question": "How do stacked discounts work?",
-          "answer": "Each discount is applied sequentially to the reduced price from the previous step, not added together — two 10% discounts equal roughly 19% off, not 20%."
+          "answer": "They multiply rather than add, so 20% off followed by 10% off is 28% off in total, not 30%."
         },
         {
           "question": "What's the difference between markup and discount?",
@@ -2906,6 +2907,10 @@
         {
           "question": "Is the savings amount shown in currency or percentage?",
           "answer": "Both — the tool shows the dollar amount saved alongside the final discounted price."
+        },
+        {
+          "question": "Can I find the percent off from two prices?",
+          "answer": "Yes. Use the Find % off tab: enter the original and sale prices and it shows the discount percentage and the amount saved."
         }
       ]
     },
@@ -3091,9 +3096,9 @@
     },
     "sales-tax-calculator": {
       "seoTitle": "Sales Tax Calculator Online – Free & Instant, Both Directions",
-      "metaDescription": "Calculate sales tax on a price, or reverse-calculate the pre-tax price from a total, instantly in your browser. Free and private.",
+      "metaDescription": "Calculate sales tax forward from a price or reverse it from a total, with quantity and a pre-tax discount. Free and private.",
       "h1": "Sales Tax Calculator",
-      "subheading": "Calculate sales tax forward from a price, or reverse it from a total — instantly and privately.",
+      "subheading": "Add sales tax to a price or work backwards from a total, with quantity and a discount before tax.",
       "keywords": [
         "sales tax calculator",
         "reverse sales tax calculator",
@@ -3142,6 +3147,10 @@
         {
           "question": "Does reverse mode work for any tax rate?",
           "answer": "Yes, enter the total (tax-included) amount and the tax rate, and the calculator backs out the original pre-tax price."
+        },
+        {
+          "question": "Can I apply a discount before tax?",
+          "answer": "Yes. Enter a discount percentage and a quantity; the discount is taken off the subtotal first and the tax is calculated on the discounted amount."
         }
       ]
     },
@@ -3560,14 +3569,15 @@
     },
     "pdf-page-numberer": {
       "seoTitle": "Add Page Numbers to PDF Online – Free & Private",
-      "metaDescription": "Add page numbers to every page of a PDF with your choice of position and format — processed 100% locally in your browser.",
+      "metaDescription": "Add page numbers to a PDF with your choice of position, format, numerals, font size, color and page range — processed 100% locally in your browser.",
       "h1": "PDF Page Numberer",
-      "subheading": "Add page numbers to every page of a PDF, with your choice of position and format.",
+      "subheading": "Add page numbers to a PDF — pick the position, style, size, color, and which pages get numbered.",
       "keywords": [
         "add page numbers to pdf",
         "pdf page numberer",
         "number pdf pages online",
-        "insert page numbers pdf"
+        "insert page numbers pdf",
+        "roman numeral page numbers pdf"
       ],
       "howTo": [
         {
@@ -3575,16 +3585,16 @@
           "text": "Select the PDF file you want to number."
         },
         {
-          "name": "Choose a position",
-          "text": "Pick where the page numbers should appear — top or bottom, left, center, or right."
+          "name": "Choose where and how",
+          "text": "Pick a position, a format such as \"Page 1\" or \"1 of N\", number style (1, i, I), and a starting number."
         },
         {
-          "name": "Pick a format and starting number",
-          "text": "Choose a number format like \"1\" or \"Page 1\", and set the starting number."
+          "name": "Style and select pages",
+          "text": "Set font size, color and margin, then choose which pages to number or skip the cover."
         },
         {
           "name": "Download the result",
-          "text": "Download the PDF with page numbers added to every page."
+          "text": "Download the PDF with page numbers added."
         }
       ],
       "faq": [
@@ -3593,41 +3603,538 @@
           "answer": "Yes, set any starting number — useful when a document continues from another file."
         },
         {
-          "question": "What number formats are available?",
-          "answer": "Choose from plain numbers (\"1\"), \"Page 1\", \"1 of N\", or \"- 1 -\" styles."
+          "question": "What formats and number styles are available?",
+          "answer": "Formats: \"1\", \"Page 1\", \"1 of N\" and \"- 1 -\". Number styles: 1, 2, 3, lowercase roman (i, ii, iii) or uppercase roman (I, II, III)."
+        },
+        {
+          "question": "Can I skip the cover page?",
+          "answer": "Yes, tick Skip the first page. It still counts toward the sequence, so the second page shows 2 (or the matching number if you set a different start)."
+        },
+        {
+          "question": "Can I number only some pages?",
+          "answer": "Yes. Enter a range such as 2-10, 12 or 5- to number only those pages; leave it blank to number every page."
+        },
+        {
+          "question": "Can I change the font size, color or margin?",
+          "answer": "Yes — set the font size (4–72 pt), the text color, and the distance from the page edge. The font is Helvetica."
+        },
+        {
+          "question": "What about pages that are rotated?",
+          "answer": "Numbers are placed according to how each page is displayed, so \"bottom center\" stays at the visual bottom center even on pages with a 90°, 180° or 270° rotation."
+        },
+        {
+          "question": "Can I number an encrypted PDF, and is my file uploaded?",
+          "answer": "Password-protected PDFs can't be opened — remove the password first and the tool will tell you if a file is protected. Nothing is uploaded; numbering happens entirely in your browser."
+        }
+      ]
+    },
+    "pdf-maker": {
+      "seoTitle": "PDF Maker – Word, Excel, CSV, Text & HTML to PDF, Free",
+      "metaDescription": "Turn Word, Excel, CSV, Markdown, HTML or plain text into a PDF in your browser. Pick a style, paper size and margins, add headers and page numbers, and preview every page — no upload.",
+      "h1": "PDF Maker — Word, Excel, Text & HTML to PDF",
+      "subheading": "Convert documents and spreadsheets to PDF with a style, paper size and live page preview — processed 100% locally in your browser.",
+      "keywords": [
+        "word to pdf",
+        "excel to pdf",
+        "csv to pdf",
+        "html to pdf",
+        "text to pdf",
+        "markdown to pdf",
+        "pdf maker online"
+      ],
+      "howTo": [
+        {
+          "name": "Add your content",
+          "text": "Upload a Word, Excel, CSV, JSON, Markdown, HTML or text file — or write or paste your content directly."
+        },
+        {
+          "name": "Choose a style and page",
+          "text": "Pick one of six styles, a paper size (A4, Letter, Legal, A5), orientation and margins, and add a header, footer and page numbers."
+        },
+        {
+          "name": "Check the page preview",
+          "text": "See the exact pages before you download. Pages break between paragraphs, table rows and list items — never through them."
+        },
+        {
+          "name": "Download or print",
+          "text": "Click Download PDF, or use Print / Save as PDF to keep selectable text."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Will my PDF look exactly like the original Word or Excel file?",
+          "answer": "No. The tool renders your content — text, headings, lists, tables and images — in the style you choose, but it does not copy the original's exact page layout, fonts or headers. For pixel-exact output, export to PDF from Word or Excel itself."
+        },
+        {
+          "question": "What is the difference between Download PDF and Print / Save as PDF?",
+          "answer": "Download PDF turns each page into an image: it looks identical everywhere, but the text can't be selected. Print / Save as PDF opens your browser's print dialog, and choosing \"Save as PDF\" there keeps selectable, searchable text."
+        },
+        {
+          "question": "Which files can I convert?",
+          "answer": "Word (.docx), Excel and OpenDocument spreadsheets (.xlsx, .xls, .xlsm, .ods), CSV, TSV, JSON, Markdown, HTML and plain text. Older .doc files must be re-saved as .docx first."
+        },
+        {
+          "question": "How are pages split?",
+          "answer": "The document is measured first, and a new page starts only between paragraphs, table rows and list items, so lines and rows are never cut in half and a heading never ends a page. Only a single block taller than a page, such as a very long code block, can be split."
+        },
+        {
+          "question": "Can I convert a wide spreadsheet?",
+          "answer": "Yes. Switch to landscape or lower the text size. Each sheet becomes a table, and very long sheets are limited to their first 3,000 rows so the PDF stays usable."
+        },
+        {
+          "question": "Does it work with Arabic, Chinese, Japanese and other scripts?",
+          "answer": "Yes. Your browser draws the text, so any script your device has fonts for works in both PDF routes."
+        },
+        {
+          "question": "Is my file uploaded anywhere?",
+          "answer": "No, everything happens in your browser. Long documents take longer because each page is rendered one at a time, and a progress counter shows where it is."
+        }
+      ]
+    },
+    "spreadsheet-converter": {
+      "seoTitle": "Spreadsheet Converter – Excel, CSV, JSON, ODS & HTML, Free",
+      "metaDescription": "Convert between Excel (.xlsx, .xls), OpenDocument, CSV, TSV, JSON, HTML tables and Markdown in your browser. Pick sheets, set delimiters and combine files — no upload.",
+      "h1": "Spreadsheet Converter — Excel, CSV, JSON & More",
+      "subheading": "Convert spreadsheets between Excel, CSV, TSV, JSON, ODS, HTML and Markdown — choose sheets, delimiters and headers, processed 100% locally.",
+      "keywords": [
+        "excel to csv",
+        "csv to excel",
+        "excel to json",
+        "json to excel",
+        "xlsx converter",
+        "csv to json",
+        "spreadsheet converter online"
+      ],
+      "howTo": [
+        {
+          "name": "Add your files",
+          "text": "Drop one or more Excel, OpenDocument, CSV, TSV, JSON or HTML-table files."
+        },
+        {
+          "name": "Set the input options",
+          "text": "Choose which sheets to convert, whether the first row is a header, and the CSV delimiter (auto-detected) — or keep values as text to preserve leading zeros."
+        },
+        {
+          "name": "Pick the output format",
+          "text": "Choose Excel, ODS, CSV, TSV, JSON, an HTML table or a Markdown table, with delimiter and header options."
+        },
+        {
+          "name": "Convert and download",
+          "text": "Click Convert & Download. Several sheets in a text format download together as a zip."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which formats can I convert between?",
+          "answer": "In: .xlsx, .xls, .xlsm, .xlsb, .ods, CSV, TSV, JSON and HTML tables. Out: Excel (.xlsx, .xls), OpenDocument (.ods), CSV, TSV, JSON, HTML tables and Markdown tables."
+        },
+        {
+          "question": "Does it handle CSV fields with commas, quotes or line breaks?",
+          "answer": "Yes. Quoted fields such as \"Smith, John\" are read correctly. The delimiter (comma, semicolon, tab or pipe) is detected automatically, and you can choose it manually."
+        },
+        {
+          "question": "How do I keep leading zeros in IDs and phone numbers?",
+          "answer": "Tick \"Keep CSV values as text\". Otherwise values like 007 are read as the number 7, the way Excel does."
+        },
+        {
+          "question": "What happens with workbooks that have several sheets?",
+          "answer": "You choose which sheets to convert. Excel and ODS output combines them into one workbook; CSV, TSV, JSON, HTML and Markdown produce one file per sheet, delivered as a zip."
+        },
+        {
+          "question": "Why do accented or non-Latin letters look wrong when I open the CSV in Excel?",
+          "answer": "Excel often needs a UTF-8 byte-order mark. Tick \"Add UTF-8 BOM\" when exporting CSV or TSV."
+        },
+        {
+          "question": "Are formulas, colors and charts kept?",
+          "answer": "No. Conversion carries cell values only, so formulas become their results, and formatting, colors and charts are not preserved."
+        },
+        {
+          "question": "Is my data uploaded anywhere?",
+          "answer": "No, the conversion happens entirely in your browser."
+        }
+      ]
+    },
+    "word-maker": {
+      "seoTitle": "Word Document Maker with Templates – Markdown & Text to DOCX",
+      "metaDescription": "Create a Word document from Markdown, plain text or HTML. Choose a style, paper size and margins, add a header, footer and page numbers, and see a live preview. Free, no upload.",
+      "h1": "Word Document Maker with Templates",
+      "subheading": "Write in Markdown, plain text or HTML, pick a style, and download a real .docx — with a live preview, built in your browser.",
+      "keywords": [
+        "markdown to word",
+        "text to docx",
+        "html to word",
+        "word document maker",
+        "create docx online",
+        "word templates online"
+      ],
+      "howTo": [
+        {
+          "name": "Write or paste your content",
+          "text": "Type Markdown, plain text or HTML — or open a .md, .txt or .html file."
+        },
+        {
+          "name": "Pick a style",
+          "text": "Choose one of six styles; the live preview updates instantly."
+        },
+        {
+          "name": "Set up the page",
+          "text": "Choose paper size, orientation and margins, and add a header, footer and page numbers."
+        },
+        {
+          "name": "Download the .docx",
+          "text": "Click Download .docx and open it in Word, Pages, Google Docs or LibreOffice."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What formatting is kept?",
+          "answer": "Headings 1–6, bold, italic, inline code, links, bulleted and numbered lists with nesting, tables, quotes, code blocks and horizontal rules."
+        },
+        {
+          "question": "What are the styles?",
+          "answer": "Clean, Formal, Modern, Academic, Compact and Report. They are real Word styles, so you can adjust fonts and spacing in Word afterwards."
+        },
+        {
+          "question": "Can I add images?",
+          "answer": "Not yet. Pictures in pasted HTML are skipped and the tool tells you how many. Use the PDF Maker if you need pictures."
+        },
+        {
+          "question": "Will it open in Word, Pages and Google Docs?",
+          "answer": "Yes, the result is a standard .docx file that opens in Microsoft Word, Apple Pages, Google Docs and LibreOffice."
+        },
+        {
+          "question": "Can I add page numbers, a header and a footer?",
+          "answer": "Yes. Turn on page numbers and type header or footer text; they appear on every page."
+        },
+        {
+          "question": "Is the preview exact?",
+          "answer": "It shows your content in the chosen style at the real page width, but Word decides the final page breaks when it opens the file."
+        },
+        {
+          "question": "Is my text uploaded anywhere?",
+          "answer": "No, the document is created entirely in your browser."
+        }
+      ]
+    },
+    "spreadsheet-studio": {
+      "seoTitle": "Spreadsheet Editor, Cleaner & Merger – Excel & CSV Online, Free",
+      "metaDescription": "Open Excel, CSV or JSON files and edit cells, sort, search, remove duplicates and empty rows, reorder columns, merge files and sheets, then export. Free, private, no upload.",
+      "h1": "Spreadsheet Editor, Cleaner & Merger",
+      "subheading": "View, search, edit and clean spreadsheets, merge several files into one, and export to Excel, CSV, JSON and more — all in your browser.",
+      "keywords": [
+        "online spreadsheet editor",
+        "remove duplicates excel",
+        "merge excel files",
+        "clean csv online",
+        "excel viewer online",
+        "edit csv online"
+      ],
+      "howTo": [
+        {
+          "name": "Open your files",
+          "text": "Drop one or more Excel, ODS, CSV, TSV or JSON files; every sheet opens as a tab."
+        },
+        {
+          "name": "Explore and edit",
+          "text": "Search rows, click a column header to sort, and double-click any cell to edit it."
+        },
+        {
+          "name": "Clean it up",
+          "text": "Remove duplicate or empty rows, trim spaces, and rename, reorder or delete columns. Undo any step."
+        },
+        {
+          "name": "Merge and export",
+          "text": "Merge sheets into one if you like, then export to Excel, CSV, JSON, HTML or Markdown."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How large a file can I open?",
+          "answer": "The table is virtualized, so files with hundreds of thousands of rows scroll smoothly. The real limit is your device's memory."
+        },
+        {
+          "question": "How does duplicate removal work?",
+          "answer": "Rows count as duplicates when the columns you tick match; leave none ticked to compare every column. You can ignore upper/lower case and extra spaces, and the first copy is kept."
+        },
+        {
+          "question": "Can I undo changes?",
+          "answer": "Yes. Undo steps back through your last 20 changes, including sorts, deletions and edits."
+        },
+        {
+          "question": "How do merging and splitting work?",
+          "answer": "Merging stacks sheets into one, matching columns by name and leaving missing cells blank. To split, export all sheets as CSV, JSON or another text format and each sheet downloads as its own file in a zip."
+        },
+        {
+          "question": "Are formulas and formatting kept?",
+          "answer": "No. The studio works with cell values, so formulas become their results, and colors, formatting and charts are not preserved."
+        },
+        {
+          "question": "Are my edits saved?",
+          "answer": "Not anywhere — nothing leaves your browser, and closing the page discards your changes. Export when you are done."
+        },
+        {
+          "question": "Is my data uploaded anywhere?",
+          "answer": "No, everything is processed locally in your browser."
+        }
+      ]
+    },
+    "word-converter": {
+      "seoTitle": "Word to HTML, Markdown & Text Converter – DOCX, Free",
+      "metaDescription": "Convert a Word (.docx) document to clean HTML, Markdown or plain text in your browser, with images embedded and a live preview. Free and private — no upload.",
+      "h1": "Word to HTML, Markdown & Text Converter",
+      "subheading": "Turn a Word document into clean HTML, Markdown or plain text — with a live preview, processed 100% locally in your browser.",
+      "keywords": [
+        "word to html",
+        "docx to markdown",
+        "docx to text",
+        "convert word to html",
+        "extract text from word"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your Word file",
+          "text": "Drop a .docx file onto the page."
+        },
+        {
+          "name": "Choose the output",
+          "text": "Switch between HTML, Markdown and plain text. HTML shows a live preview or the raw code."
+        },
+        {
+          "name": "Tune the result",
+          "text": "Include or leave out images, or wrap the HTML as a complete page."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Copy the result to your clipboard or download it as an .html, .md or .txt file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What formatting is kept in HTML and Markdown?",
+          "answer": "Headings, paragraphs, bold and italic, links, bulleted and numbered lists (including nested ones), tables and images."
+        },
+        {
+          "question": "What happens to images?",
+          "answer": "They are embedded in the HTML and Markdown as data URLs, so the output is one self-contained file. Untick \"Include images\" to leave them out and keep the file small."
+        },
+        {
+          "question": "Can I convert old .doc files?",
+          "answer": "No, only .docx. Open an older .doc file in Word or LibreOffice and save it as .docx first."
+        },
+        {
+          "question": "What are the formatting notices?",
+          "answer": "They are non-fatal warnings about Word styles that have no direct HTML equivalent. The rest of the document converts normally."
+        },
+        {
+          "question": "What is not preserved?",
+          "answer": "Exact page layout, page breaks, headers and footers, comments and tracked changes. The converter keeps content and structure, not the printed appearance."
+        },
+        {
+          "question": "Can I get just the plain text?",
+          "answer": "Yes. Use the Plain text tab; the word and character counts are shown above it."
+        },
+        {
+          "question": "Is my document uploaded anywhere?",
+          "answer": "No, the conversion happens entirely in your browser."
+        }
+      ]
+    },
+    "watermark-pdf": {
+      "seoTitle": "Add Watermark to PDF Online – Text or Image, Free & Private",
+      "metaDescription": "Stamp a text or image watermark on a PDF: choose position, size, opacity and rotation, repeat it across the page, and pick which pages. Live preview, no upload.",
+      "h1": "Add Watermark to PDF",
+      "subheading": "Add a text or image watermark to some or all pages of a PDF, with a live preview — processed 100% locally in your browser.",
+      "keywords": [
+        "add watermark to pdf",
+        "pdf watermark online",
+        "stamp pdf",
+        "confidential watermark pdf",
+        "logo on pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF you want to watermark; page 1 appears as a preview."
+        },
+        {
+          "name": "Design the watermark",
+          "text": "Type text and pick a color, or upload a logo or image. Set the size, opacity and rotation."
+        },
+        {
+          "name": "Place it",
+          "text": "Choose one of nine positions or repeat it across the page, and choose which pages get it."
+        },
+        {
+          "name": "Download",
+          "text": "Check the preview, then click Add Watermark & Download."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I use text and images?",
+          "answer": "Both. Text works in any language, and images work best as PNGs with a transparent background."
+        },
+        {
+          "question": "Can the watermark repeat across the whole page?",
+          "answer": "Yes. Tick \"Repeat across the whole page\" to tile it diagonally, which suits marks like DRAFT or CONFIDENTIAL."
+        },
+        {
+          "question": "Can I watermark only some pages?",
+          "answer": "Yes. Type a range such as 2-5, 9 in the Pages box; leave it blank to mark every page."
+        },
+        {
+          "question": "Does it work on pages that are rotated?",
+          "answer": "Yes. Positions follow how each page is displayed, so \"bottom right\" is the visual bottom right even on a rotated page."
+        },
+        {
+          "question": "Does it change or recompress my pages?",
+          "answer": "No. Your original pages are left as they are and the watermark is added on top."
+        },
+        {
+          "question": "Is a watermark a security feature?",
+          "answer": "No. It is a visible mark added on top of the page, and someone with PDF editing tools could remove it. Use it to label documents, not to protect them."
         },
         {
           "question": "Is my PDF uploaded anywhere?",
-          "answer": "No, page numbers are added entirely in your browser using pdf-lib — your file is never uploaded to a server."
+          "answer": "No, everything happens in your browser."
+        }
+      ]
+    },
+    "pdf-to-text": {
+      "seoTitle": "PDF to Text Converter – Extract Text from PDF, Free & Private",
+      "metaDescription": "Extract the text from a PDF in your browser: choose pages, keep page markers, join wrapped lines into paragraphs, then copy or download as .txt. No upload.",
+      "h1": "PDF to Text Converter",
+      "subheading": "Extract the text from a PDF, page by page — copy it or download a .txt — processed 100% locally in your browser.",
+      "keywords": [
+        "pdf to text",
+        "extract text from pdf",
+        "pdf text extractor",
+        "copy text from pdf",
+        "pdf to txt"
+      ],
+      "howTo": [
+        {
+          "name": "Upload your PDF",
+          "text": "Select the PDF you want to read."
         },
         {
-          "question": "Can I skip numbering on the first page, like a cover page?",
-          "answer": "No, every page gets a number — there's no option to exclude a specific page like a cover page from numbering. You can set the starting number, but that changes what number the first page displays, not whether it's numbered."
+          "name": "Choose pages and options",
+          "text": "Pick a page range, whether to mark page starts, and whether to join wrapped lines into paragraphs."
         },
         {
-          "question": "Can I add page numbers to an encrypted PDF?",
-          "answer": "No, password-protected PDFs can't currently be opened by the tool. Remove the password in the original application before adding page numbers."
+          "name": "Extract the text",
+          "text": "Click Extract text and watch the progress page by page."
         },
         {
-          "question": "Will page numbers overlap existing content near the page edges?",
-          "answer": "Page numbers are placed in the margin area you select (such as bottom center or bottom right), but if your document already has content very close to that margin, the added number can visually overlap it."
+          "name": "Copy or download",
+          "text": "Copy the text or download it as a .txt file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does it work on scanned PDFs?",
+          "answer": "No. A scan is a picture of a page with no text in it, so there is nothing to extract. The tool tells you when a PDF looks like a scan; reading it would need OCR, which this tool doesn't do."
         },
         {
-          "question": "Can I customize the font size or color of the page numbers?",
-          "answer": "The tool currently applies a standard font size and color for page numbers; there's no option to customize typography, only position, starting number, and number format."
+          "question": "What do the options do?",
+          "answer": "\"Mark where each page starts\" adds a --- Page N --- line. \"Join wrapped lines into paragraphs\" merges lines that were wrapped by the page width and repairs words split by a hyphen at the end of a line."
+        },
+        {
+          "question": "Is the layout preserved?",
+          "answer": "The text is rebuilt line by line in reading order. Tables come out as lines of text, and multi-column pages can interleave their columns."
+        },
+        {
+          "question": "Can I extract just a few pages?",
+          "answer": "Yes. Type a range such as 1-5, 9 in the Pages box."
+        },
+        {
+          "question": "Does it work for other languages?",
+          "answer": "Yes, for any script, as long as the PDF contains real text. Right-to-left text is returned in the order stored in the PDF, so check it if the result looks reversed."
+        },
+        {
+          "question": "Can I extract text from a password-protected PDF?",
+          "answer": "No. Encrypted PDFs can't be opened. Remove the password first."
+        },
+        {
+          "question": "Is my PDF uploaded anywhere?",
+          "answer": "No, the text is read entirely in your browser."
+        }
+      ]
+    },
+    "powerpoint-maker": {
+      "seoTitle": "Free PowerPoint Maker with Templates – Create PPTX Online",
+      "metaDescription": "Build a PowerPoint presentation in your browser: pick a template, edit slides with a live preview, import Markdown or text, and download a real .pptx — no sign-up, no upload.",
+      "h1": "PowerPoint Maker with Templates",
+      "subheading": "Pick a template, edit your slides with a live preview, and download a real .pptx file — built entirely in your browser.",
+      "keywords": [
+        "powerpoint maker online",
+        "create pptx online free",
+        "presentation maker with templates",
+        "markdown to powerpoint",
+        "text to powerpoint",
+        "free ppt maker no sign up"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a template",
+          "text": "Pick one of the designed templates and a 16:9 or 4:3 slide size — every slide updates instantly."
+        },
+        {
+          "name": "Add your content",
+          "text": "Edit the starter slides, or import Markdown or plain text to generate a whole deck at once."
+        },
+        {
+          "name": "Refine each slide",
+          "text": "Select a slide to change its layout, title, and bullet points, or add, duplicate, delete, and reorder slides."
+        },
+        {
+          "name": "Download the .pptx",
+          "text": "Click Download to get a real PowerPoint file you can open in PowerPoint, Keynote, or Google Slides."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What templates are available?",
+          "answer": "Eight designed templates — Classic, Midnight, Sunrise, Forest, Ocean, Slate, Rose, and Mono — each with its own colors and font. Switching templates restyles every slide at once."
+        },
+        {
+          "question": "Can I import Markdown or plain text?",
+          "answer": "Yes. With Markdown, each heading starts a new slide and the paragraphs and bullets beneath it become its content. With plain text, blank lines separate slides and the first line of each block becomes the title."
+        },
+        {
+          "question": "What slide layouts can I use?",
+          "answer": "Three layouts: Title (a full-color opening slide with a subtitle), Section (a bold divider slide), and Content (a title with bullet points). The first imported slide automatically becomes a title slide."
+        },
+        {
+          "question": "Is my content uploaded anywhere?",
+          "answer": "No, the presentation is built entirely in your browser — nothing you type or upload is sent to a server."
+        },
+        {
+          "question": "Will it open in PowerPoint, Keynote, and Google Slides?",
+          "answer": "Yes, the download is a standard .pptx file. Templates use fonts that ship with PowerPoint (Calibri, Georgia, Arial, Trebuchet MS); if a viewer doesn't have one, it substitutes a similar font."
+        },
+        {
+          "question": "Can I add images, charts, or animations?",
+          "answer": "Not yet — this tool focuses on text slides with professional templates. Open the downloaded file in PowerPoint, Keynote, or Google Slides to add images, charts, or transitions."
+        },
+        {
+          "question": "What happened to the Markdown to PowerPoint and Text to PowerPoint tools?",
+          "answer": "They were merged into this tool, which accepts both Markdown and plain text and adds templates, a live preview, and per-slide editing. The old links redirect here automatically."
         }
       ]
     },
     "exif-stripper": {
       "seoTitle": "EXIF & GPS Metadata Remover – Free & Private, No Upload",
-      "metaDescription": "View and strip EXIF metadata — camera model, GPS location, timestamp — from your photos before sharing them, entirely in your browser.",
+      "metaDescription": "Remove EXIF, GPS, XMP and other hidden metadata from JPG, PNG and WebP photos without re-compressing them. Free, private, no upload.",
       "h1": "EXIF & GPS Metadata Remover",
-      "subheading": "See exactly what metadata is hidden in your photos, then strip it with one click before sharing.",
+      "subheading": "See the metadata hidden in your photos, then remove it losslessly — JPG, PNG and WebP — before sharing.",
       "keywords": [
         "remove exif",
         "strip photo metadata",
         "delete gps from photo",
-        "photo privacy"
+        "photo privacy",
+        "lossless metadata remover",
+        "remove metadata png webp"
       ],
       "howTo": [
         {
@@ -3646,19 +4153,19 @@
       "faq": [
         {
           "question": "What metadata gets removed?",
-          "answer": "Camera make/model, lens info, capture date, ISO, and GPS coordinates — the entire EXIF block is dropped when the image is re-encoded."
+          "answer": "EXIF (camera make and model, lens, capture date, ISO, GPS coordinates), XMP, IPTC / Photoshop data, comments and other embedded app data from JPG; text notes, EXIF and modification time from PNG; and EXIF and XMP from WebP. The tool lists what it removed for each file."
         },
         {
           "question": "Is my photo uploaded anywhere?",
-          "answer": "No, metadata is read and the image is re-encoded entirely in your browser — nothing is sent to a server."
+          "answer": "No. The file is read and rewritten entirely in your browser — nothing is sent to a server."
         },
         {
           "question": "Does stripping metadata reduce image quality?",
-          "answer": "The image is re-encoded at high quality (95%), so any difference is negligible for most uses."
+          "answer": "No. The picture data is copied byte for byte and only the metadata is dropped, so there is no re-compression and no quality loss."
         },
         {
           "question": "Can I selectively remove just GPS data and keep other metadata?",
-          "answer": "No, stripping is all-or-nothing — the tool removes all metadata (GPS, camera, lens, date, ISO) at once by re-encoding the image, rather than letting you choose individual fields to keep."
+          "answer": "Not field by field — metadata is removed as a whole. You can choose to keep the rotation flag (JPG) and the colour profile, which don't identify you."
         },
         {
           "question": "Which metadata fields are commonly found in phone photos?",
@@ -3666,7 +4173,7 @@
         },
         {
           "question": "Does removing EXIF data affect how the photo displays or its orientation?",
-          "answer": "The tool preserves visible orientation by applying rotation to the actual pixels rather than relying on the orientation tag, so the photo displays correctly even after the tag is removed."
+          "answer": "Rotation is stored in EXIF, so by default the tool keeps just the rotation flag for JPGs so a portrait photo doesn't turn sideways. Untick it to remove that too."
         },
         {
           "question": "Do I need to view the metadata before stripping it?",
@@ -3731,13 +4238,15 @@
     },
     "hmac-generator": {
       "seoTitle": "HMAC Generator Online – SHA-1/256/384/512, Free & Secure",
-      "metaDescription": "Generate a keyed-hash HMAC from a message and secret key using SHA-1, SHA-256, SHA-384, or SHA-512 — computed locally in your browser.",
+      "metaDescription": "Generate an HMAC with SHA-1, SHA-256, SHA-384 or SHA-512 as hex, Base64 or Base64URL, use a hex key, and verify a received signature. Computed locally in your browser.",
       "h1": "HMAC Keyed-Hash Generator",
-      "subheading": "Generate a keyed-hash HMAC from a message and secret key, computed locally in your browser.",
+      "subheading": "Generate an HMAC in hex or Base64 and verify a received signature, computed locally in your browser.",
       "keywords": [
         "hmac generator",
         "sha256 hmac",
-        "crypto signature"
+        "crypto signature",
+        "hmac verify",
+        "hmac base64"
       ],
       "howTo": [
         {
@@ -3775,16 +4284,16 @@
           "answer": "HMAC can be computed with SHA-1, SHA-256, SHA-384, or SHA-512 as the underlying hash function, matching what's available in the Web Crypto API."
         },
         {
-          "question": "Can the secret key be any text, or does it need to be hex?",
-          "answer": "The secret is always treated as plain text and UTF-8 encoded before use — there's no hex or Base64 key-encoding mode, so enter the key exactly as plain text."
-        },
-        {
           "question": "Why would I use HMAC instead of just hashing the message?",
           "answer": "A plain hash proves the message wasn't altered but anyone can compute it; HMAC also requires knowledge of a shared secret key, so it proves the message came from someone who holds that key."
         },
         {
-          "question": "Can this verify an HMAC signature I received, like a webhook signature?",
-          "answer": "Yes, you can recompute the HMAC from the message and secret and compare it to the received signature manually, though the tool doesn't automate the comparison for you."
+          "question": "How do I verify a signature I received?",
+          "answer": "Paste the HMAC into Verify a signature (hex, Base64 or Base64URL). The tool compares it to the one it computes for your message and key and tells you whether they match."
+        },
+        {
+          "question": "Can I use a hex or binary key?",
+          "answer": "Tick Key is hex to enter the key as pairs of hex digits instead of plain text."
         }
       ]
     },
@@ -5479,6 +5988,66 @@
         }
       ]
     },
+    "iptv-player": {
+      "seoTitle": "Free IPTV Live TV Player – Watch Online, No Install",
+      "metaDescription": "Browse thousands of free live TV channels from around the world and watch instantly in your browser. Search by country, category, or name — no account, no install.",
+      "h1": "Free IPTV Live TV Player",
+      "subheading": "Search and watch thousands of free live TV channels from around the world, streamed directly in your browser.",
+      "keywords": [
+        "iptv player online",
+        "free live tv online",
+        "watch tv online free",
+        "iptv channel list"
+      ],
+      "howTo": [
+        {
+          "name": "Browse or search",
+          "text": "Search by channel name, or filter by country and category to narrow thousands of channels."
+        },
+        {
+          "name": "Pick a channel",
+          "text": "Click any channel in the list to start loading its live stream."
+        },
+        {
+          "name": "Watch instantly",
+          "text": "The stream plays directly in the built-in player — no install or plugin required."
+        },
+        {
+          "name": "Save favorites",
+          "text": "Star channels you watch often so you can filter straight to them next time."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where do these channels come from?",
+          "answer": "The directory and streams are sourced live from iptv-org, a large community-maintained list of publicly available channels — this tool is just a browser-based player on top of it, not the host of any stream."
+        },
+        {
+          "question": "Why do some channels fail to play?",
+          "answer": "These are community-sourced, unofficial streams, so individual links can go offline, move, or be geo-restricted at any time — try another channel if one doesn't load."
+        },
+        {
+          "question": "Is this legal to use?",
+          "answer": "Availability and legality of any given channel depend on your region and that broadcaster's own distribution rights — this tool only lists what iptv-org publishes and doesn't host, modify, or guarantee any stream."
+        },
+        {
+          "question": "Do I need an account or subscription?",
+          "answer": "No, browsing and watching are completely free with no account, sign-up, or install required."
+        },
+        {
+          "question": "Are my favorites saved anywhere?",
+          "answer": "Favorites are stored only in your browser's local storage on this device — they aren't uploaded or synced to an account."
+        },
+        {
+          "question": "Can I watch on mobile?",
+          "answer": "Yes, the player works in any modern mobile browser, though playback quality and channel availability still depend on each stream's own source."
+        },
+        {
+          "question": "Why are some channels missing compared to the full iptv-org list?",
+          "answer": "This tool filters out channels that are closed, flagged as adult content, or whose stream requires custom headers a browser can't send — so every channel shown here should be directly playable."
+        }
+      ]
+    },
     "mortgage-calculator": {
       "seoTitle": "Mortgage Calculator Online – Free & Instant Monthly Payment Estimate",
       "metaDescription": "Calculate your estimated monthly mortgage payment including principal, interest, property tax, and home insurance, instantly in your browser.",
@@ -5542,9 +6111,9 @@
     },
     "simple-interest-calculator": {
       "seoTitle": "Simple Interest Calculator Online – Free & Instant",
-      "metaDescription": "Calculate simple interest on a principal amount over time, instantly in your browser. Free and private.",
+      "metaDescription": "Calculate simple interest, total amount and a year-by-year schedule for any principal, rate and time. Free and private.",
       "h1": "Simple Interest Calculator",
-      "subheading": "Calculate simple interest on a principal amount — instant results, no ads, no sign-up.",
+      "subheading": "Calculate simple interest and see it year by year.",
       "keywords": [
         "simple interest calculator",
         "interest calculator online",
@@ -5598,20 +6167,26 @@
         {
           "question": "How much more does compound interest earn over the same period?",
           "answer": "It depends on the rate, time, and compounding frequency — check the Compound Interest Calculator with the same principal and rate to compare directly."
+        },
+        {
+          "question": "Does it show a year-by-year schedule?",
+          "answer": "Yes. A table lists the interest earned each year, the total interest so far and the balance, with a partial final year when the time is not a whole number."
         }
       ]
     },
     "gpa-calculator": {
       "seoTitle": "GPA Calculator Online – Free & Instant Grade Point Average",
-      "metaDescription": "Calculate your grade point average from course grades and credit hours, instantly in your browser. Free and private.",
+      "metaDescription": "Calculate your GPA with plus/minus grades including D−, honors and AP weighting, a 4.0 or 4.3 scale, cumulative GPA and a goal planner. Free and private.",
       "h1": "GPA Calculator",
-      "subheading": "Calculate your grade point average from course grades and credits — instant results, no sign-up.",
+      "subheading": "Calculate unweighted and weighted GPA, combine it with your previous GPA, and see what you need next term.",
       "keywords": [
         "gpa calculator",
         "grade point average calculator",
         "college gpa calculator",
         "semester gpa calculator",
-        "free gpa calculator online"
+        "free gpa calculator online",
+        "weighted gpa calculator",
+        "cumulative gpa calculator"
       ],
       "howTo": [
         {
@@ -5659,6 +6234,14 @@
         {
           "question": "Does a 0-credit course affect my GPA?",
           "answer": "No, courses with 0 credits are excluded from the calculation entirely since they contribute no weight to the average."
+        },
+        {
+          "question": "How does weighted GPA work?",
+          "answer": "Mark a course as Honors (+0.5) or AP / IB (+1.0) and the weighted GPA adds that bonus to each passing grade. An F stays at zero. The unweighted GPA is shown next to it."
+        },
+        {
+          "question": "How do I calculate my cumulative GPA or a target?",
+          "answer": "Enter your previous cumulative GPA and credits to see the new cumulative GPA. Enter a target GPA and next term's credits to see the GPA you need to reach it."
         }
       ]
     },
@@ -5899,39 +6482,36 @@
       ]
     },
     "paycheck-calculator": {
-      "seoTitle": "Paycheck Calculator Online – Free & Instant Net Pay Estimate",
-      "metaDescription": "Estimate your net take-home pay per paycheck from your annual salary, pay frequency, and tax rate, instantly in your browser.",
+      "seoTitle": "Paycheck Calculator Online – Free US Take-Home Pay Estimate",
+      "metaDescription": "Estimate your US take-home pay with 2026 federal tax brackets, Social Security, Medicare, 401(k), benefits and state tax. Free, private estimate — no sign-up.",
       "h1": "Paycheck Calculator",
-      "subheading": "Estimate your net take-home pay per paycheck — instant results, no sign-up.",
+      "subheading": "Estimate your net pay per paycheck using 2026 US federal tax brackets, FICA, 401(k), benefits and a state rate you choose.",
       "keywords": [
         "paycheck calculator",
         "salary paycheck calculator",
         "net pay calculator",
         "take home pay calculator",
-        "free paycheck calculator online"
+        "free paycheck calculator online",
+        "2026 tax brackets"
       ],
       "howTo": [
         {
-          "name": "Enter your annual salary",
-          "text": "Input your gross annual salary."
+          "name": "Enter your pay",
+          "text": "Set your annual salary and choose weekly, biweekly, semi-monthly or monthly pay."
         },
         {
-          "name": "Choose your pay frequency",
-          "text": "Select weekly, biweekly, semi-monthly, or monthly."
+          "name": "Choose filing status and deductions",
+          "text": "Pick single, married filing jointly or head of household, then set your 401(k) percentage, benefits, state tax rate and any post-tax deductions."
         },
         {
-          "name": "Add deductions and tax rate",
-          "text": "Enter pre-tax deductions and your effective tax rate."
-        },
-        {
-          "name": "View your net pay",
-          "text": "See your estimated net pay per paycheck and per year."
+          "name": "Read the breakdown",
+          "text": "See take-home pay per paycheck and per year, a line-by-line table of where your pay goes, and a chart of the split."
         }
       ],
       "faq": [
         {
           "question": "Does this calculate exact federal and state taxes?",
-          "answer": "No, it uses a single effective tax rate you set rather than real tax brackets — use it for quick estimates, not exact payroll figures."
+          "answer": "Federal income tax uses the real 2026 progressive brackets and standard deduction for your filing status. State tax is a single flat rate that you enter, because state rules vary widely, so treat the result as an estimate rather than an exact payroll figure."
         },
         {
           "question": "What counts as a pre-tax deduction?",
@@ -5942,20 +6522,24 @@
           "answer": "Weekly (52/year), biweekly (26/year), semi-monthly (24/year), and monthly (12/year)."
         },
         {
-          "question": "Why use an effective tax rate instead of exact tax brackets?",
-          "answer": "Real payroll tax calculations depend on filing status, state, and multiple bracket thresholds — this tool intentionally uses one simplified rate for a quick estimate rather than approximating complex, jurisdiction-specific tax logic."
+          "question": "Why is my real paycheck different from this estimate?",
+          "answer": "This tool uses the standard deduction and does not include W-4 credits, other income, local taxes or your employer's exact withholding method. Use it for planning and compare it with your pay stub."
         },
         {
           "question": "What's the difference between gross and net pay here?",
           "answer": "Gross pay is your salary divided by pay periods before any deductions; net pay is what's left after pre-tax deductions and estimated taxes are subtracted."
         },
         {
-          "question": "How do I estimate my effective tax rate?",
-          "answer": "Divide your total expected annual tax (federal, state, and FICA combined) by your gross annual income — your last pay stub or tax return is a good reference point."
+          "question": "How do I choose a state tax rate?",
+          "answer": "Enter your state's typical effective income tax rate (use 0 for states without income tax). Your last pay stub or your state revenue department's tables are a good starting point."
         },
         {
           "question": "Does semi-monthly mean the same as biweekly?",
           "answer": "No — semi-monthly is 24 pay periods a year (twice a month, e.g. the 1st and 15th), while biweekly is 26 pay periods (every two weeks), which changes the amount per paycheck even for the same annual salary."
+        },
+        {
+          "question": "Which tax year and limits does it use?",
+          "answer": "It uses 2026 US figures from the IRS: the federal brackets and standard deductions, the Social Security wage base of $184,500, and the $24,500 limit on 401(k) deferrals. Medicare is 1.45%, plus an extra 0.9% on pay above $200,000."
         }
       ]
     },
@@ -6320,7 +6904,7 @@
         },
         {
           "question": "Can I flip multiple coins at once?",
-          "answer": "No, this tool flips one coin per click — for multiple simultaneous random picks, try the Dice Roller or Random Number Generator instead."
+          "answer": "Yes. Set the Coins box to any number from 1 to 10 and every coin is flipped together; each result is added to the tally."
         },
         {
           "question": "What does the tally show exactly?",

@@ -70,6 +70,14 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "text-diff-checker": () => import("@/components/tools/developer/TextDiffChecker"),
   "image-cropper": () => import("@/components/tools/media/ImageCropper"),
   "pdf-page-numberer": () => import("@/components/tools/document/PdfPageNumberer"),
+  "pdf-maker": () => import("@/components/tools/document/PdfMaker"),
+  "spreadsheet-converter": () => import("@/components/tools/document/SpreadsheetConverter"),
+  "word-maker": () => import("@/components/tools/document/WordMaker"),
+  "spreadsheet-studio": () => import("@/components/tools/document/SpreadsheetStudio"),
+  "word-converter": () => import("@/components/tools/document/WordConverter"),
+  "watermark-pdf": () => import("@/components/tools/document/WatermarkPdf"),
+  "pdf-to-text": () => import("@/components/tools/document/PdfToText"),
+  "powerpoint-maker": () => import("@/components/tools/document/PowerPointMaker"),
   "exif-stripper": () => import("@/components/tools/media/ExifStripper"),
   "zero-width-remover": () => import("@/components/tools/developer/ZeroWidthRemover"),
   "hmac-generator": () => import("@/components/tools/developer/HmacGenerator"),
@@ -90,6 +98,7 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
 
   // Media Capture & Creative Studio Suite
   "screen-studio": () => import("@/components/tools/media/ScreenStudio"),
+  "iptv-player": () => import("@/components/tools/media/IptvPlayer"),
   "screen-to-gif": () => import("@/components/tools/media/ScreenToGif"),
   "audio-recorder": () => import("@/components/tools/media/AudioRecorder"),
   "screenshot-beautifier": () => import("@/components/tools/media/ScreenshotBeautifier"),

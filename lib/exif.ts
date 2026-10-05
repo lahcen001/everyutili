@@ -244,3 +244,36 @@ export function formatGpsCoordinates(gps: ExifGpsCoordinates): string {
   const lonLabel = gps.longitude >= 0 ? "E" : "W";
   return `${Math.abs(gps.latitude).toFixed(6)}° ${latLabel}, ${Math.abs(gps.longitude).toFixed(6)}° ${lonLabel}`;
 }
+
+/** EXIF orientation (1–8) of a JPEG, or 1 if absent/unreadable. Values above 1 mean the pixels must be rotated/flipped for display. */
+export function readJpegOrientation(buffer: ArrayBuffer): number {
+  try {
+    const view = new DataView(buffer);
+    if (view.byteLength < 4 || view.getUint16(0) !== 0xffd8) return 1;
+    let offset = 2;
+    while (offset + 4 <= view.byteLength) {
+      if (view.getUint8(offset) !== 0xff) return 1;
+      const marker = view.getUint8(offset + 1);
+      if (marker === 0xda) return 1;
+      const size = view.getUint16(offset + 2);
+      if (marker === 0xe1 && view.getUint32(offset + 4) === 0x45786966) {
+        const tiff = offset + 10;
+        const little = view.getUint16(tiff) === 0x4949;
+        const ifd = tiff + view.getUint32(tiff + 4, little);
+        const count = view.getUint16(ifd, little);
+        for (let i = 0; i < count; i++) {
+          const entry = ifd + 2 + i * 12;
+          if (view.getUint16(entry, little) === 0x0112) {
+            const value = view.getUint16(entry + 8, little);
+            return value >= 1 && value <= 8 ? value : 1;
+          }
+        }
+        return 1;
+      }
+      offset += 2 + size;
+    }
+  } catch {
+    // Truncated or malformed EXIF: treat as upright.
+  }
+  return 1;
+}

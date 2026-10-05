@@ -16,7 +16,8 @@ type Side = "heads" | "tails";
 
 export default function CoinFlip() {
   useTrackTool("coin-flip");
-  const [result, setResult] = React.useState<Side | null>(null);
+  const [coins, setCoins] = React.useState(1);
+  const [result, setResult] = React.useState<Side[] | null>(null);
   const [flipping, setFlipping] = React.useState(false);
   const [history, setHistory] = React.useState<Side[]>([]);
   const [celebrate, setCelebrate] = React.useState(0);
@@ -31,10 +32,10 @@ export default function CoinFlip() {
   const flip = () => {
     if (flipping) return;
     setFlipping(true);
-    const outcome: Side = Math.random() < 0.5 ? "heads" : "tails";
+    const outcome: Side[] = Array.from({ length: coins }, () => (Math.random() < 0.5 ? "heads" : "tails"));
     window.setTimeout(() => {
       setResult(outcome);
-      setHistory((prev) => [...prev, outcome]);
+      setHistory((prev) => [...prev, ...outcome]);
       setFlipping(false);
       setCelebrate((c) => c + 1);
     }, 600);
@@ -47,8 +48,9 @@ export default function CoinFlip() {
 
   const handleSave = async () => {
     if (!result) return;
+    const heads = result.filter((r) => r === "heads").length;
     await saveToolResult("coin-flip", {
-      title: result === "heads" ? "Heads" : "Tails",
+      title: result.length === 1 ? (result[0] === "heads" ? "Heads" : "Tails") : `${heads} heads, ${result.length - heads} tails`,
       summary: `${tally.heads} heads, ${tally.tails} tails over ${history.length} flip${history.length === 1 ? "" : "s"}`,
     });
     historyRef.current?.refresh();
@@ -57,15 +59,29 @@ export default function CoinFlip() {
   const coinBlock = (isFullscreen: boolean) => (
     <div className="relative flex flex-col items-center gap-6 p-8">
       <Confetti fire={celebrate} />
-      <div
-        className={cn(
-          "flex items-center justify-center rounded-full border-4 border-primary bg-primary/10 font-bold uppercase tracking-wide text-primary shadow-lg transition-transform duration-300",
-          isFullscreen ? "h-56 w-56 text-3xl" : "h-32 w-32 text-lg",
-          flipping && "animate-spin"
-        )}
-      >
-        {flipping ? <Coins className={isFullscreen ? "h-16 w-16" : "h-10 w-10"} /> : (result ?? "Flip")}
+      <div className="flex max-w-full flex-wrap items-center justify-center gap-3">
+        {Array.from({ length: coins }, (_, i) => {
+          const side = result?.[i];
+          const big = coins === 1;
+          return (
+            <div
+              key={i}
+              className={cn(
+                "flex items-center justify-center rounded-full border-4 border-primary bg-primary/10 font-bold uppercase tracking-wide text-primary shadow-lg transition-transform duration-300",
+                big ? (isFullscreen ? "h-56 w-56 text-3xl" : "h-32 w-32 text-lg") : isFullscreen ? "h-24 w-24 text-base" : "h-16 w-16 text-xs",
+                flipping && "animate-spin"
+              )}
+            >
+              {flipping ? <Coins className={big ? (isFullscreen ? "h-16 w-16" : "h-10 w-10") : "h-6 w-6"} /> : (side ?? (big ? "Flip" : ""))}
+            </div>
+          );
+        })}
       </div>
+
+      <label className="flex items-center gap-2 text-sm">
+        Coins
+        <input type="number" min={1} max={10} value={coins} onChange={(e) => { setCoins(Math.min(10, Math.max(1, Math.floor(Number(e.target.value)) || 1))); setResult(null); }} className="h-9 w-16 rounded-lg border border-border bg-background px-2 text-sm" aria-label="Number of coins" />
+      </label>
 
       <div className="flex flex-wrap justify-center gap-2">
         <Button onClick={flip} disabled={flipping}>

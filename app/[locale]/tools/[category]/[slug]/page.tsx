@@ -10,6 +10,7 @@ import { routing } from "@/i18n/routing";
 import { getLocalizedTool } from "@/lib/tool-content";
 import { generateToolMetadata, generateToolJsonLd } from "@/lib/seo";
 import { ToolLayout } from "@/components/tool-shell/ToolLayout";
+import { ToolErrorBoundary } from "@/components/tool-shell/ToolErrorBoundary";
 import { QuickAnswer } from "@/components/seo/QuickAnswer";
 import { HowToSection } from "@/components/seo/HowToSection";
 import { FaqSection } from "@/components/seo/FaqSection";
@@ -109,7 +110,9 @@ export default async function ToolPage({ params }: ToolPageProps) {
         ]}
         aboveTool={<QuickAnswer locale={locale} answer={content.quickAnswer} />}
       >
-        <ToolComponent />
+        <ToolErrorBoundary>
+          <ToolComponent />
+        </ToolErrorBoundary>
       </ToolLayout>
 
       <HowToSection steps={content.howTo} />

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { PDFDocument, degrees } from "pdf-lib";
-import { Loader2, RotateCw, X } from "lucide-react";
+import { Loader2, RotateCcw, RotateCw, X } from "lucide-react";
 
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,8 @@ import {
 } from "@/components/tools/document/VisualPdfPageGrid";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
+import { addRotation, normalizeAngle } from "@/lib/pdf/rotation";
+import { friendlyPdfError, isPdfFile } from "@/lib/pdf/errors";
 
 export default function RotatePdf() {
   useTrackTool("rotate-pdf");
@@ -29,7 +31,7 @@ export default function RotatePdf() {
   const gridRef = React.useRef<VisualPdfPageGridHandle>(null);
 
   const handleFiles = async (files: File[]) => {
-    const pdfFile = files.find((f) => f.type === "application/pdf");
+    const pdfFile = files.find((f) => isPdfFile(f));
     if (!pdfFile) return;
     setError(null);
     try {
@@ -38,8 +40,8 @@ export default function RotatePdf() {
       setFile(pdfFile);
       setPageCount(pdf.getPageCount());
       setGridState(null);
-    } catch {
-      setError("Could not read this PDF file. It may be corrupted or password-protected.");
+    } catch (e) {
+      setError(friendlyPdfError(e, "Could not read this PDF file. It may be corrupted."));
     }
   };
 
@@ -52,24 +54,22 @@ export default function RotatePdf() {
 
   const selectedCount = gridState?.selected.size ?? 0;
 
-  const rotateAllClockwise = () => {
+  const rotatePages = (pages: Iterable<number>, delta: number) => {
+    const targets = new Set(pages);
     gridRef.current?.applyRotations?.((prev) => {
       const next = { ...prev };
-      for (const pageNumber of gridState?.order ?? []) {
-        next[pageNumber] = ((next[pageNumber] ?? 0) + 90) % 360;
-      }
+      for (const pageNumber of targets) next[pageNumber] = normalizeAngle((next[pageNumber] ?? 0) + delta);
       return next;
     });
   };
 
-  const rotateSelected180 = () => {
-    gridRef.current?.applyRotations?.((prev) => {
-      const next = { ...prev };
-      for (const pageNumber of gridState?.selected ?? []) {
-        next[pageNumber] = ((next[pageNumber] ?? 0) + 180) % 360;
-      }
-      return next;
-    });
+  const allPages = gridState?.order ?? [];
+  const oddPages = allPages.filter((p) => p % 2 === 1);
+  const evenPages = allPages.filter((p) => p % 2 === 0);
+  const selectedPages = gridState ? [...gridState.selected] : [];
+
+  const resetRotations = () => {
+    gridRef.current?.applyRotations?.(() => ({}));
   };
 
   const rotatePdf = async () => {
@@ -88,7 +88,7 @@ export default function RotatePdf() {
       copiedPages.forEach((page, i) => {
         const rotationDeg = state.rotations[state.order[i]] ?? 0;
         if (rotationDeg !== 0) {
-          page.setRotation(degrees((page.getRotation().angle + rotationDeg) % 360));
+          page.setRotation(degrees(addRotation(page.getRotation().angle, rotationDeg)));
         }
         outPdf.addPage(page);
       });
@@ -106,7 +106,7 @@ export default function RotatePdf() {
       });
       historyRef.current?.refresh();
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to rotate PDF.");
+      setError(friendlyPdfError(e, "Failed to rotate PDF."));
     } finally {
       setIsRotating(false);
     }
@@ -119,7 +119,7 @@ export default function RotatePdf() {
         accept="application/pdf"
         multiple={false}
         label="Drag & drop a PDF here, or click to browse"
-        hint="Rotate individual pages, or use the quick actions below"
+        hint="Rotate single pages, all pages, odd or even pages, or a selection — clockwise or counter-clockwise"
       />
 
       {error && (
@@ -146,22 +146,46 @@ export default function RotatePdf() {
             </button>
           </Card>
 
-          <Card className="flex flex-wrap items-center gap-2 p-4">
-            <span className="text-sm font-medium">Quick actions</span>
-            <Button size="sm" variant="outline" onClick={rotateAllClockwise} disabled={pageCount === 0}>
-              <RotateCw className="h-3.5 w-3.5" /> Rotate All Clockwise
-            </Button>
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={rotateSelected180}
-              disabled={selectedCount === 0}
-            >
-              <RotateCw className="h-3.5 w-3.5" /> Rotate Selected 180°
-            </Button>
-            <span className="ml-auto text-xs text-muted-foreground">
-              {selectedCount} page{selectedCount === 1 ? "" : "s"} selected
-            </span>
+          <Card className="space-y-3 p-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="w-28 text-sm font-medium">All pages</span>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(allPages, 90)} disabled={pageCount === 0}>
+                <RotateCw className="h-3.5 w-3.5" /> 90° clockwise
+              </Button>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(allPages, -90)} disabled={pageCount === 0}>
+                <RotateCcw className="h-3.5 w-3.5" /> 90° counter-clockwise
+              </Button>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(allPages, 180)} disabled={pageCount === 0}>
+                180°
+              </Button>
+              <Button size="sm" variant="ghost" onClick={resetRotations} disabled={pageCount === 0}>
+                Reset all
+              </Button>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="w-28 text-sm font-medium">Odd / even</span>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(oddPages, 90)} disabled={oddPages.length === 0}>
+                Odd pages ↻
+              </Button>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(evenPages, 90)} disabled={evenPages.length === 0}>
+                Even pages ↻
+              </Button>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="w-28 text-sm font-medium">Selected</span>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(selectedPages, 90)} disabled={selectedCount === 0}>
+                <RotateCw className="h-3.5 w-3.5" /> 90° clockwise
+              </Button>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(selectedPages, -90)} disabled={selectedCount === 0}>
+                <RotateCcw className="h-3.5 w-3.5" /> 90° counter-clockwise
+              </Button>
+              <Button size="sm" variant="outline" onClick={() => rotatePages(selectedPages, 180)} disabled={selectedCount === 0}>
+                180°
+              </Button>
+              <span className="ml-auto text-xs text-muted-foreground">
+                {selectedCount} page{selectedCount === 1 ? "" : "s"} selected
+              </span>
+            </div>
           </Card>
 
           <Card className="space-y-4 p-4">

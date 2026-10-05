@@ -30,11 +30,6 @@ export function buildWebApplicationSchema(
       priceCurrency: "USD",
     },
     description: content.metaDescription,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      ratingCount: "1284",
-    },
   };
 }
 

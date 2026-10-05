@@ -78,6 +78,16 @@ import {
   Trophy,
   Ticket,
   CircleDot,
+  Tv,
+  Table2,
+  Sheet,
+  Combine,
+  Split,
+  Columns3,
+  FileDiff,
+  Presentation,
+  FileText,
+  FileOutput,
 } from "lucide-react";
 
 export const CATEGORIES = [
@@ -778,6 +788,98 @@ export const TOOLS: ToolConfig[] = [
   },
 
   // ---------------------------------------------------------------------
+  // Document — Office conversions (new)
+  // ---------------------------------------------------------------------
+  {
+    slug: "pdf-maker",
+    category: "document",
+    icon: FileOutput,
+    name: "PDF Maker — Word, Excel, Text & HTML to PDF",
+    shortName: "PDF Maker",
+    relatedSlugs: ["word-maker", "spreadsheet-converter"],
+    ssr: false,
+    priority: 0.92,
+    changeFrequency: "weekly",
+  },
+  {
+    slug: "spreadsheet-converter",
+    category: "document",
+    icon: FileSpreadsheet,
+    name: "Spreadsheet Converter — Excel, CSV, JSON & More",
+    shortName: "Spreadsheet Converter",
+    relatedSlugs: ["spreadsheet-studio", "pdf-maker"],
+    ssr: false,
+    priority: 0.9,
+    changeFrequency: "weekly",
+  },
+  {
+    slug: "word-maker",
+    category: "document",
+    icon: FileText,
+    name: "Word Document Maker with Templates",
+    shortName: "Word Maker",
+    relatedSlugs: ["word-converter", "pdf-maker"],
+    ssr: false,
+    priority: 0.86,
+    changeFrequency: "weekly",
+  },
+  {
+    slug: "spreadsheet-studio",
+    category: "document",
+    icon: Sheet,
+    name: "Spreadsheet Editor, Cleaner & Merger",
+    shortName: "Spreadsheet Studio",
+    relatedSlugs: ["spreadsheet-converter", "pdf-maker"],
+    ssr: false,
+    priority: 0.84,
+    changeFrequency: "weekly",
+  },
+  {
+    slug: "word-converter",
+    category: "document",
+    icon: FileCode2,
+    name: "Word to HTML, Markdown & Text Converter",
+    shortName: "Word Converter",
+    relatedSlugs: ["word-maker", "pdf-maker"],
+    ssr: false,
+    priority: 0.82,
+    changeFrequency: "weekly",
+  },
+  {
+    slug: "watermark-pdf",
+    category: "document",
+    icon: Stamp,
+    name: "Add Watermark to PDF",
+    shortName: "PDF Watermark",
+    relatedSlugs: ["pdf-page-numberer", "merge-pdf"],
+    ssr: false,
+    priority: 0.8,
+    changeFrequency: "weekly",
+  },
+  {
+    slug: "pdf-to-text",
+    category: "document",
+    icon: FileType2,
+    name: "PDF to Text Converter",
+    shortName: "PDF to Text",
+    relatedSlugs: ["pdf-maker", "word-converter"],
+    ssr: false,
+    priority: 0.8,
+    changeFrequency: "weekly",
+  },
+  {
+    slug: "powerpoint-maker",
+    category: "document",
+    icon: Presentation,
+    name: "PowerPoint Maker with Templates",
+    shortName: "PowerPoint Maker",
+    relatedSlugs: ["word-maker", "pdf-maker"],
+    ssr: false,
+    priority: 0.86,
+    changeFrequency: "weekly",
+  },
+
+  // ---------------------------------------------------------------------
   // Privacy & Security (new)
   // ---------------------------------------------------------------------
   {
@@ -1093,6 +1195,17 @@ export const TOOLS: ToolConfig[] = [
     ssr: false,
     priority: 0.76,
     changeFrequency: "weekly",
+  },
+  {
+    slug: "iptv-player",
+    category: "media",
+    icon: Tv,
+    name: "Free IPTV Live TV Player",
+    shortName: "IPTV Player",
+    relatedSlugs: ["screen-studio", "video-trimmer"],
+    ssr: false,
+    priority: 0.78,
+    changeFrequency: "daily",
   },
 
   // ---------------------------------------------------------------------

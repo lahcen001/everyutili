@@ -10,7 +10,8 @@
     "zip:extension": "node scripts/zip-extension.mjs",
     "sync:extension-tools": "node scripts/sync-extension-tools.mjs",
     "predev": "node scripts/zip-extension.mjs",
-    "prebuild": "node scripts/zip-extension.mjs"
+    "prebuild": "node scripts/zip-extension.mjs",
+    "test": "vitest run"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
@@ -25,35 +26,45 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
+    "docx": "^9.8.1",
     "dompurify": "^3.4.14",
     "framer-motion": "^13.1.1",
+    "hls.js": "^1.7.3",
+    "html2canvas": "^1.4.1",
     "idb-keyval": "^6.3.0",
+    "jspdf": "^4.2.1",
     "jszip": "^3.10.1",
     "lucide-react": "^1.35.0",
+    "mammoth": "^1.13.0",
     "marked": "^18.0.11",
     "next": "16.3.3",
     "next-intl": "^4.14.1",
     "next-themes": "^0.4.6",
     "pdf-lib": "^1.17.1",
     "pdfjs-dist": "^6.2.108",
+    "pptxgenjs": "^4.0.1",
     "qrcode": "^1.5.4",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "tailwind-merge": "^3.6.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
     "zustand": "^5.0.15"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.122.0",
     "@tailwindcss/postcss": "^4",
     "@types/dompurify": "^3.0.5",
-    "@types/node": "^20",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^22.20.5",
     "@types/qrcode": "^1.5.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.3",
+    "jsdom": "^29.1.1",
     "tailwindcss": "^4",
     "tsx": "^4.23.12",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^5.0.3"
   }
 }

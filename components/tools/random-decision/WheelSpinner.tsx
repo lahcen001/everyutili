@@ -459,7 +459,7 @@ export default function WheelSpinner() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-5 overflow-hidden bg-background/80 p-6 text-center backdrop-blur-md"
+                className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-5 overflow-hidden bg-background/90 p-6 text-center backdrop-blur-md"
                 role="dialog"
                 aria-label="Winner"
               >
@@ -468,7 +468,7 @@ export default function WheelSpinner() {
                   aria-hidden
                   className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[170%] -translate-x-1/2 -translate-y-1/2"
                   style={{
-                    background: `repeating-conic-gradient(from 0deg, ${winner.color}55 0deg 8deg, transparent 8deg 22deg)`,
+                    background: `repeating-conic-gradient(from 0deg, ${winner.color}33 0deg 8deg, transparent 8deg 22deg)`,
                     maskImage: "radial-gradient(circle, black 0%, transparent 62%)",
                     WebkitMaskImage: "radial-gradient(circle, black 0%, transparent 62%)",
                   }}
@@ -502,19 +502,26 @@ export default function WheelSpinner() {
                   The winner is
                 </motion.p>
 
-                <motion.h2
+                <motion.div
                   initial={{ scale: 0.2, opacity: 0, y: 30 }}
-                  animate={{ scale: [0.2, 1.18, 1], opacity: 1, y: 0 }}
+                  animate={{ scale: [0.2, 1.12, 1], opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.5, times: [0, 0.65, 1], ease: "easeOut" }}
-                  className="relative max-w-full break-words px-4 font-black leading-tight tracking-tight"
+                  className="relative max-w-full rounded-3xl border-4 border-white px-8 py-5 shadow-2xl sm:px-12 sm:py-7"
                   style={{
-                    fontSize: `clamp(2.6rem, ${isFs ? "11vw" : "9vw"}, ${isFs ? "9rem" : "6.5rem"})`,
-                    color: winner.color,
-                    textShadow: `0 6px 40px ${winner.color}88, 0 2px 0 rgba(0,0,0,0.12)`,
+                    background: `linear-gradient(135deg, ${winner.color}, color-mix(in oklab, ${winner.color} 65%, #000))`,
+                    boxShadow: `0 20px 60px ${winner.color}88`,
                   }}
                 >
-                  {winner.name}
-                </motion.h2>
+                  <h2
+                    className="break-words font-black leading-tight tracking-tight text-white"
+                    style={{
+                      fontSize: `clamp(2.4rem, ${isFs ? "10vw" : "8vw"}, ${isFs ? "8rem" : "5.5rem"})`,
+                      textShadow: "0 3px 0 rgba(0,0,0,0.35), 0 6px 24px rgba(0,0,0,0.35)",
+                    }}
+                  >
+                    {winner.name}
+                  </h2>
+                </motion.div>
 
                 <motion.div
                   initial={{ opacity: 0, y: 16 }}

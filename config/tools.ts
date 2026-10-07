@@ -1310,6 +1310,7 @@ export const TOOLS: ToolConfig[] = [
     shortName: "IPTV Player",
     relatedSlugs: ["screen-studio", "video-trimmer"],
     ssr: false,
+    layout: "workspace",
     priority: 0.78,
     changeFrequency: "daily",
   },

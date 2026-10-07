@@ -1,29 +1,26 @@
 "use client";
 
 import * as React from "react";
-import { RotateCw, Save, Maximize2 } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Eraser, Maximize2, Minimize2, RotateCw, Save, Shuffle, Trophy, UserMinus, X } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
 import { Confetti } from "@/components/tools/random-decision/Confetti";
 
-const WHEEL_COLORS = [
-  "#7c74ff",
-  "#f59e0b",
-  "#10b981",
-  "#ef4444",
-  "#3b82f6",
-  "#ec4899",
-  "#14b8a6",
-  "#a855f7",
+const PALETTES: { id: string; label: string; colors: string[] }[] = [
+  { id: "vibrant", label: "Vibrant", colors: ["#7c74ff", "#f59e0b", "#10b981", "#ef4444", "#3b82f6", "#ec4899", "#14b8a6", "#a855f7"] },
+  { id: "ocean", label: "Ocean", colors: ["#0ea5e9", "#2563eb", "#06b6d4", "#4f46e5", "#0891b2", "#3b82f6", "#0d9488", "#6366f1"] },
+  { id: "sunset", label: "Sunset", colors: ["#f97316", "#ef4444", "#f59e0b", "#e11d48", "#fb7185", "#d946ef", "#ea580c", "#be123c"] },
+  { id: "candy", label: "Candy", colors: ["#f472b6", "#a78bfa", "#38bdf8", "#34d399", "#fbbf24", "#fb7185", "#818cf8", "#2dd4bf"] },
+  { id: "forest", label: "Forest", colors: ["#16a34a", "#15803d", "#65a30d", "#0f766e", "#4d7c0f", "#059669", "#047857", "#84cc16"] },
 ];
 
-const SPIN_DURATION_MS = 4000;
+const SPIN_DURATION_MS = 6000;
 
 function parseEntries(input: string): string[] {
   return input
@@ -32,83 +29,166 @@ function parseEntries(input: string): string[] {
     .filter(Boolean);
 }
 
-function polarToCartesian(center: number, angleDeg: number, radius: number): { x: number; y: number } {
-  const angleRad = ((angleDeg - 90) * Math.PI) / 180;
-  return { x: center + radius * Math.cos(angleRad), y: center + radius * Math.sin(angleRad) };
+function polar(center: number, angleDeg: number, radius: number): { x: number; y: number } {
+  const rad = ((angleDeg - 90) * Math.PI) / 180;
+  return { x: center + radius * Math.cos(rad), y: center + radius * Math.sin(rad) };
 }
 
-function wedgePath(center: number, radius: number, startAngle: number, endAngle: number): string {
-  const start = polarToCartesian(center, startAngle, radius);
-  const end = polarToCartesian(center, endAngle, radius);
-  const largeArc = endAngle - startAngle > 180 ? 1 : 0;
-  return `M ${center} ${center} L ${start.x} ${start.y} A ${radius} ${radius} 0 ${largeArc} 1 ${end.x} ${end.y} Z`;
+function wedgePath(center: number, radius: number, start: number, end: number): string {
+  if (end - start >= 359.999) {
+    return `M ${center - radius} ${center} a ${radius} ${radius} 0 1 0 ${radius * 2} 0 a ${radius} ${radius} 0 1 0 ${-radius * 2} 0 Z`;
+  }
+  const a = polar(center, start, radius);
+  const b = polar(center, end, radius);
+  return `M ${center} ${center} L ${a.x} ${a.y} A ${radius} ${radius} 0 ${end - start > 180 ? 1 : 0} 1 ${b.x} ${b.y} Z`;
 }
 
 interface WheelProps {
   entries: string[];
+  colors: string[];
   size: number;
   rotation: number;
   spinning: boolean;
+  svgRef: React.RefObject<SVGSVGElement | null>;
+  pointerRef: React.RefObject<SVGGElement | null>;
+  onSpin: () => void;
+  canSpin: boolean;
 }
 
-function Wheel({ entries, size, rotation, spinning }: WheelProps) {
+function Wheel({ entries, colors, size, rotation, spinning, svgRef, pointerRef, onSpin, canSpin }: WheelProps) {
   const center = size / 2;
-  const radius = size / 2 - 4;
-  const wedgeAngle = entries.length > 0 ? 360 / entries.length : 0;
-  const fontSize = Math.max(11, Math.round(size / 22));
+  const rim = Math.max(10, size * 0.045);
+  const radius = center - rim - 2;
+  const n = entries.length;
+  const wedge = n > 0 ? 360 / n : 0;
+  const fontSize = Math.max(11, Math.min(size / 15, (radius * 0.9 * Math.sin((Math.PI / Math.max(n, 2)) * 0.85)) * 1.15, size / 17));
+  const maxChars = Math.max(4, Math.floor((radius * 0.62) / (fontSize * 0.56)));
+  const bulbs = 28;
+  const hub = size * 0.17;
 
   return (
-    <div className="relative" style={{ width: size, height: size }}>
-      <div
-        className="absolute left-1/2 top-0 z-10 h-0 w-0 -translate-x-1/2 -translate-y-1"
-        style={{
-          borderLeft: "10px solid transparent",
-          borderRight: "10px solid transparent",
-          borderTop: "16px solid var(--color-foreground, #111)",
-        }}
-      />
+    <div className="relative shrink-0" style={{ width: size, height: size }}>
+      <style>{`@keyframes wheel-bulb{0%,100%{opacity:1}50%{opacity:.25}}`}</style>
+      {/* soft glow under the wheel */}
+      <div className="absolute inset-0 rounded-full bg-primary/30 blur-3xl" style={{ opacity: spinning ? 0.9 : 0.45, transition: "opacity .6s" }} aria-hidden />
+
+      {/* rotating wedges */}
       <svg
+        ref={svgRef}
+        className="absolute inset-0"
         width={size}
         height={size}
         viewBox={`0 0 ${size} ${size}`}
         style={{
           transform: `rotate(${rotation}deg)`,
-          transition: spinning
-            ? `transform ${SPIN_DURATION_MS}ms cubic-bezier(0.17, 0.67, 0.12, 0.99)`
-            : undefined,
+          transition: spinning ? `transform ${SPIN_DURATION_MS}ms cubic-bezier(0.1, 0.55, 0.12, 1)` : undefined,
         }}
+        aria-label="Wheel"
       >
-        {entries.length === 0 ? (
+        <defs>
+          {colors.map((c, i) => (
+            <radialGradient key={i} id={`wg-${i}`} gradientUnits="userSpaceOnUse" cx={center} cy={center} r={radius}>
+              <stop offset="0%" stopColor={c} stopOpacity="0.75" />
+              <stop offset="55%" stopColor={c} />
+              <stop offset="100%" stopColor={c} stopOpacity="0.92" />
+            </radialGradient>
+          ))}
+          <radialGradient id="wheel-shade" gradientUnits="userSpaceOnUse" cx={center} cy={center} r={radius}>
+            <stop offset="70%" stopColor="#000" stopOpacity="0" />
+            <stop offset="100%" stopColor="#000" stopOpacity="0.28" />
+          </radialGradient>
+        </defs>
+        {n === 0 ? (
           <circle cx={center} cy={center} r={radius} fill="var(--color-muted, #e5e7eb)" />
         ) : (
-          entries.map((entry, i) => {
-            const startAngle = i * wedgeAngle;
-            const endAngle = startAngle + wedgeAngle;
-            const labelAngle = startAngle + wedgeAngle / 2;
-            const labelPos = polarToCartesian(center, labelAngle, radius * 0.65);
-            return (
-              <g key={i}>
-                <path
-                  d={wedgePath(center, radius, startAngle, endAngle)}
-                  fill={WHEEL_COLORS[i % WHEEL_COLORS.length]}
-                />
-                <text
-                  x={labelPos.x}
-                  y={labelPos.y}
-                  fill="#fff"
-                  fontSize={fontSize}
-                  fontWeight={600}
-                  textAnchor="middle"
-                  dominantBaseline="middle"
-                  transform={`rotate(${labelAngle}, ${labelPos.x}, ${labelPos.y})`}
-                >
-                  {entry.length > 14 ? `${entry.slice(0, 13)}…` : entry}
-                </text>
-              </g>
-            );
-          })
+          <>
+            {entries.map((entry, i) => {
+              const start = i * wedge;
+              const labelAngle = start + wedge / 2;
+              const label = entry.length > maxChars ? `${entry.slice(0, maxChars - 1)}…` : entry;
+              return (
+                <g key={i}>
+                  <path d={wedgePath(center, radius, start, start + wedge)} fill={`url(#wg-${i % colors.length})`} stroke="rgba(255,255,255,0.55)" strokeWidth={n > 1 ? 1.5 : 0} />
+                  <text
+                    x={center + radius * 0.92}
+                    y={center}
+                    transform={`rotate(${labelAngle - 90} ${center} ${center})`}
+                    fill="#fff"
+                    fontSize={fontSize}
+                    fontWeight={700}
+                    textAnchor="end"
+                    dominantBaseline="central"
+                    style={{ paintOrder: "stroke", stroke: "rgba(0,0,0,0.28)", strokeWidth: 2.5, strokeLinejoin: "round" }}
+                  >
+                    {label}
+                  </text>
+                </g>
+              );
+            })}
+            <circle cx={center} cy={center} r={radius} fill="url(#wheel-shade)" pointerEvents="none" />
+          </>
         )}
       </svg>
+
+      {/* static rim, bulbs, pointer */}
+      <svg className="pointer-events-none absolute inset-0" width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden>
+        <defs>
+          <linearGradient id="rim-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#fde68a" />
+            <stop offset="45%" stopColor="#f59e0b" />
+            <stop offset="100%" stopColor="#b45309" />
+          </linearGradient>
+          <linearGradient id="pin-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#fb7185" />
+            <stop offset="100%" stopColor="#be123c" />
+          </linearGradient>
+          <filter id="pin-shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="2" stdDeviation="2.5" floodColor="#000" floodOpacity="0.45" />
+          </filter>
+        </defs>
+        <circle cx={center} cy={center} r={center - rim / 2} fill="none" stroke="url(#rim-grad)" strokeWidth={rim} />
+        <circle cx={center} cy={center} r={center - rim - 1} fill="none" stroke="rgba(0,0,0,0.25)" strokeWidth={2} />
+        {Array.from({ length: bulbs }, (_, i) => {
+          const p = polar(center, (i * 360) / bulbs, center - rim / 2);
+          return (
+            <circle
+              key={i}
+              cx={p.x}
+              cy={p.y}
+              r={rim * 0.24}
+              fill={i % 2 === 0 ? "#fffbeb" : "#fef3c7"}
+              style={{
+                filter: "drop-shadow(0 0 3px #fde047)",
+                animation: spinning ? `wheel-bulb 0.5s ${i % 2 ? "0s" : "0.25s"} infinite` : undefined,
+              }}
+            />
+          );
+        })}
+        <g ref={pointerRef} style={{ transformOrigin: `${center}px ${rim + 6}px`, transformBox: "view-box" }} filter="url(#pin-shadow)">
+          <path
+            d={`M ${center - size * 0.04} ${rim * 0.15} L ${center + size * 0.04} ${rim * 0.15} L ${center} ${rim + size * 0.085} Z`}
+            fill="url(#pin-grad)"
+            stroke="#fff"
+            strokeWidth={2}
+            strokeLinejoin="round"
+          />
+          <circle cx={center} cy={rim * 0.15 + size * 0.012} r={size * 0.011} fill="#fff" opacity="0.9" />
+        </g>
+      </svg>
+
+      {/* centre hub = spin button */}
+      <button
+        type="button"
+        onClick={onSpin}
+        disabled={!canSpin}
+        aria-label={spinning ? "Spinning" : "Spin the wheel"}
+        className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-white bg-gradient-to-b from-primary to-primary/70 text-primary-foreground shadow-xl outline-none transition-transform hover:scale-105 focus-visible:ring-4 focus-visible:ring-primary/40 active:scale-95 disabled:cursor-not-allowed disabled:opacity-80 disabled:hover:scale-100"
+        style={{ width: hub, height: hub }}
+      >
+        <span className="font-extrabold uppercase tracking-wider" style={{ fontSize: Math.max(10, hub * 0.27) }}>
+          {spinning ? <RotateCw className="animate-spin" style={{ width: hub * 0.42, height: hub * 0.42 }} /> : "Spin"}
+        </span>
+      </button>
     </div>
   );
 }
@@ -116,111 +196,353 @@ function Wheel({ entries, size, rotation, spinning }: WheelProps) {
 export default function WheelSpinner() {
   useTrackTool("wheel-spinner");
   const [input, setInput] = React.useState("Pizza\nSushi\nTacos\nBurgers\nSalad\nPasta");
+  const [paletteId, setPaletteId] = React.useState("vibrant");
+  const [removeWinner, setRemoveWinner] = React.useState(false);
   const [rotation, setRotation] = React.useState(0);
   const [spinning, setSpinning] = React.useState(false);
-  const [winner, setWinner] = React.useState<string | null>(null);
+  const [winner, setWinner] = React.useState<{ name: string; color: string; index: number } | null>(null);
+  const [showWinner, setShowWinner] = React.useState(false);
   const [celebrate, setCelebrate] = React.useState(0);
+  const [past, setPast] = React.useState<string[]>([]);
   const [fullscreen, setFullscreen] = React.useState(false);
+  const [pseudoFs, setPseudoFs] = React.useState(false);
+  const [size, setSize] = React.useState(340);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
+  const stageRef = React.useRef<HTMLDivElement>(null);
+  const areaRef = React.useRef<HTMLDivElement>(null);
+  const svgRef = React.useRef<SVGSVGElement>(null);
+  const pointerRef = React.useRef<SVGGElement>(null);
+  const timer = React.useRef<number | null>(null);
 
   const entries = React.useMemo(() => parseEntries(input), [input]);
+  const colors = (PALETTES.find((p) => p.id === paletteId) ?? PALETTES[0]).colors;
   const wedgeAngle = entries.length > 0 ? 360 / entries.length : 0;
+  const canSpin = !spinning && entries.length >= 2;
+  const isFs = fullscreen || pseudoFs;
 
-  const spin = () => {
-    if (spinning || entries.length < 2) return;
+  // fit the wheel to its area
+  React.useEffect(() => {
+    const el = areaRef.current;
+    if (!el) return;
+    const measure = () => {
+      const w = el.clientWidth;
+      const h = el.clientHeight;
+      setSize(Math.max(220, Math.floor(Math.min(w, h) - 16)));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [isFs]);
+
+  // real browser fullscreen, kept in sync with the Esc key
+  React.useEffect(() => {
+    const onChange = () => setFullscreen(document.fullscreenElement === stageRef.current);
+    document.addEventListener("fullscreenchange", onChange);
+    return () => document.removeEventListener("fullscreenchange", onChange);
+  }, []);
+  React.useEffect(() => {
+    if (!pseudoFs) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setPseudoFs(false);
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [pseudoFs]);
+
+  const toggleFullscreen = async () => {
+    if (isFs) {
+      if (document.fullscreenElement) await document.exitFullscreen().catch(() => {});
+      setPseudoFs(false);
+      return;
+    }
+    const el = stageRef.current;
+    if (el?.requestFullscreen) {
+      try {
+        await el.requestFullscreen();
+        return;
+      } catch {
+        /* fall through to the in-page fullscreen */
+      }
+    }
+    setPseudoFs(true);
+  };
+
+  // pointer "tick" as each wedge passes under it
+  React.useEffect(() => {
+    if (!spinning) return;
+    let frame = 0;
+    let last = -1;
+    const loop = () => {
+      const svg = svgRef.current;
+      if (svg && wedgeAngle > 0) {
+        const m = new DOMMatrixReadOnly(getComputedStyle(svg).transform);
+        const angle = (Math.atan2(m.b, m.a) * 180) / Math.PI;
+        const under = Math.floor((((360 - angle) % 360) + 360) % 360 / wedgeAngle);
+        if (last !== -1 && under !== last) {
+          pointerRef.current?.animate([{ transform: "rotate(-24deg)" }, { transform: "rotate(0deg)" }], { duration: 150, easing: "ease-out" });
+        }
+        last = under;
+      }
+      frame = requestAnimationFrame(loop);
+    };
+    frame = requestAnimationFrame(loop);
+    return () => cancelAnimationFrame(frame);
+  }, [spinning, wedgeAngle]);
+
+  React.useEffect(() => () => {
+    if (timer.current) window.clearTimeout(timer.current);
+  }, []);
+
+  const spin = (list: string[] = entries) => {
+    if (spinning || list.length < 2) return;
+    const angle = 360 / list.length;
     setSpinning(true);
+    setShowWinner(false);
     setWinner(null);
 
-    const winnerIndex = Math.floor(Math.random() * entries.length);
-    // The wheel's 0deg mark (top, pointer position) starts at the first
-    // wedge's center. To land the chosen wedge under the pointer, rotate so
-    // that wedge's center ends up at the top, plus several full spins for
-    // visual effect and a small random jitter within the wedge so it
-    // doesn't always land dead-center.
-    const wedgeCenter = winnerIndex * wedgeAngle + wedgeAngle / 2;
-    const jitter = (Math.random() - 0.5) * wedgeAngle * 0.6;
-    const extraSpins = 5 * 360;
-    const targetRotation = rotation + extraSpins + (360 - wedgeCenter - jitter);
+    const index = Math.floor(Math.random() * list.length);
+    // Put the chosen wedge's centre under the pointer (top). `rotation % 360`
+    // is stripped first so repeated spins always land on the chosen entry.
+    const jitter = (Math.random() - 0.5) * angle * 0.6;
+    const base = rotation - (((rotation % 360) + 360) % 360);
+    const target = base + (6 + Math.floor(Math.random() * 3)) * 360 + (360 - (index * angle + angle / 2) - jitter);
+    setRotation(target);
 
-    setRotation(targetRotation);
-    window.setTimeout(() => {
+    timer.current = window.setTimeout(() => {
       setSpinning(false);
-      setWinner(entries[winnerIndex]);
+      setWinner({ name: list[index], color: colors[index % colors.length], index });
+      setShowWinner(true);
+      setPast((p) => [list[index], ...p].slice(0, 8));
       setCelebrate((c) => c + 1);
-    }, SPIN_DURATION_MS);
+    }, SPIN_DURATION_MS + 100);
+  };
+
+  const spinAgain = (remove: boolean) => {
+    if (remove && winner) {
+      const next = entries.filter((_, i) => i !== winner.index);
+      setInput(next.join("\n"));
+      setShowWinner(false);
+      if (next.length >= 2) window.setTimeout(() => spin(next), 250);
+      return;
+    }
+    setShowWinner(false);
+    window.setTimeout(() => spin(), 150);
   };
 
   const handleSave = async () => {
     if (!winner) return;
     await saveToolResult("wheel-spinner", {
-      title: winner,
+      title: winner.name,
       summary: `Spun from ${entries.length} options: ${entries.join(", ")}`,
     });
     historyRef.current?.refresh();
   };
 
-  const wheelBlock = (isFullscreen: boolean) => (
-    <div className="relative flex flex-col items-center gap-6 p-8">
-      <Confetti fire={celebrate} />
-      <Wheel entries={entries} size={isFullscreen ? 420 : 280} rotation={rotation} spinning={spinning} />
-
-      <p
-        aria-hidden={!(winner && !spinning)}
-        className={cn(
-          "min-h-7 text-lg font-semibold text-primary transition-opacity",
-          winner && !spinning ? "opacity-100" : "opacity-0"
-        )}
-      >
-        {winner ? `🎉 ${winner}` : " "}
-      </p>
-
-      <div className="flex flex-wrap justify-center gap-2">
-        <Button onClick={spin} disabled={spinning || entries.length < 2}>
-          <RotateCw className={cn("h-4 w-4", spinning && "animate-spin")} />
-          {spinning ? "Spinning…" : "Spin the wheel"}
-        </Button>
-        {winner && !spinning && (
-          <Button variant="outline" onClick={handleSave}>
-            <Save className="h-4 w-4" />
-            Save
-          </Button>
-        )}
-        {!isFullscreen && (
-          <Button variant="outline" onClick={() => setFullscreen(true)} disabled={entries.length < 2}>
-            <Maximize2 className="h-4 w-4" />
-            Fullscreen
-          </Button>
-        )}
-      </div>
-    </div>
-  );
+  const shuffle = () => {
+    const a = [...entries];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    setInput(a.join("\n"));
+  };
 
   return (
     <div className="space-y-6">
-      <Card className="space-y-3 p-4">
-        <label className="block space-y-1.5">
-          <span className="text-sm font-medium">Wheel entries</span>
-          <textarea
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            rows={6}
-            placeholder="One entry per line…"
-            className="w-full resize-none rounded-lg border border-border bg-background p-3 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-        </label>
-        <p className="text-xs text-muted-foreground">
-          {entries.length} entr{entries.length === 1 ? "y" : "ies"} — at least 2 needed to spin
-        </p>
-      </Card>
+      <div className="grid gap-5 lg:grid-cols-[21rem_minmax(0,1fr)] lg:items-start">
+        <Card className="space-y-4 p-4">
+          <label className="block space-y-1.5">
+            <span className="text-sm font-medium">Wheel entries</span>
+            <textarea
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              rows={9}
+              placeholder="One entry per line…"
+              className="w-full resize-y rounded-lg border border-border bg-background p-3 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </label>
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-xs text-muted-foreground">
+              {entries.length} entr{entries.length === 1 ? "y" : "ies"}
+              {entries.length < 2 && " — at least 2 needed"}
+            </p>
+            <div className="flex gap-1.5">
+              <Button size="sm" variant="outline" onClick={shuffle} disabled={entries.length < 2 || spinning}>
+                <Shuffle className="h-3.5 w-3.5" /> Shuffle
+              </Button>
+              <Button size="sm" variant="outline" onClick={() => setInput("")} disabled={!input || spinning}>
+                <Eraser className="h-3.5 w-3.5" /> Clear
+              </Button>
+            </div>
+          </div>
 
-      <Card className="overflow-hidden">{wheelBlock(false)}</Card>
+          <div className="space-y-1.5">
+            <p className="text-xs font-medium text-muted-foreground">Colours</p>
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Colour palette">
+              {PALETTES.map((p) => (
+                <button
+                  key={p.id}
+                  type="button"
+                  onClick={() => setPaletteId(p.id)}
+                  aria-pressed={paletteId === p.id}
+                  aria-label={p.label}
+                  title={p.label}
+                  className={cn("flex h-8 w-14 overflow-hidden rounded-lg border-2 transition-transform hover:scale-105", paletteId === p.id ? "border-foreground" : "border-transparent")}
+                >
+                  {p.colors.slice(0, 5).map((c) => (
+                    <span key={c} className="h-full flex-1" style={{ backgroundColor: c }} />
+                  ))}
+                </button>
+              ))}
+            </div>
+          </div>
 
-      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
-        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
-          <DialogTitle className="sr-only">Wheel spinner — fullscreen</DialogTitle>
-          {wheelBlock(true)}
-        </DialogContent>
-      </Dialog>
+          <label className="flex cursor-pointer items-center gap-2 text-sm">
+            <input type="checkbox" checked={removeWinner} onChange={(e) => setRemoveWinner(e.target.checked)} className="h-4 w-4 accent-primary" />
+            Offer to remove each winner
+          </label>
+
+          {past.length > 0 && (
+            <div className="space-y-1.5">
+              <p className="text-xs font-medium text-muted-foreground">Previous winners</p>
+              <div className="flex flex-wrap gap-1.5">
+                {past.map((w, i) => (
+                  <span key={i} className="rounded-full bg-muted px-2.5 py-1 text-xs">
+                    {w}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </Card>
+
+        <div
+          ref={stageRef}
+          className={cn(
+            "relative flex flex-col overflow-hidden border border-border bg-gradient-to-br from-primary/10 via-background to-fuchsia-500/10",
+            isFs ? "h-screen w-screen rounded-none border-0 bg-background" : "rounded-2xl",
+            pseudoFs && "fixed inset-0 z-[100]"
+          )}
+        >
+          <div className="flex items-center justify-between gap-2 px-4 pt-3">
+            <p className="text-xs font-medium text-muted-foreground">Click the centre or press Spin</p>
+            <Button size="sm" variant="outline" onClick={toggleFullscreen} aria-label={isFs ? "Exit fullscreen" : "Fullscreen"}>
+              {isFs ? <Minimize2 className="h-3.5 w-3.5" /> : <Maximize2 className="h-3.5 w-3.5" />}
+              {isFs ? "Exit" : "Fullscreen"}
+            </Button>
+          </div>
+
+          <div ref={areaRef} className={cn("flex items-center justify-center p-2", isFs ? "min-h-0 flex-1" : "h-[min(92vw,620px)]")}>
+            <Wheel entries={entries} colors={colors} size={size} rotation={rotation} spinning={spinning} svgRef={svgRef} pointerRef={pointerRef} onSpin={() => spin()} canSpin={canSpin} />
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-2 px-4 pb-4">
+            <Button size="lg" onClick={() => spin()} disabled={!canSpin} className="min-w-40 text-base">
+              <RotateCw className={cn("h-4 w-4", spinning && "animate-spin")} />
+              {spinning ? "Spinning…" : "Spin the wheel"}
+            </Button>
+            {winner && !spinning && !showWinner && (
+              <Button variant="outline" onClick={() => setShowWinner(true)}>
+                <Trophy className="h-4 w-4" /> {winner.name}
+              </Button>
+            )}
+          </div>
+
+          <AnimatePresence>
+            {showWinner && winner && (
+              <motion.div
+                key="winner"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-5 overflow-hidden bg-background/80 p-6 text-center backdrop-blur-md"
+                role="dialog"
+                aria-label="Winner"
+              >
+                {/* rotating sunburst */}
+                <motion.div
+                  aria-hidden
+                  className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[170%] -translate-x-1/2 -translate-y-1/2"
+                  style={{
+                    background: `repeating-conic-gradient(from 0deg, ${winner.color}55 0deg 8deg, transparent 8deg 22deg)`,
+                    maskImage: "radial-gradient(circle, black 0%, transparent 62%)",
+                    WebkitMaskImage: "radial-gradient(circle, black 0%, transparent 62%)",
+                  }}
+                  animate={{ rotate: 360 }}
+                  transition={{ repeat: Infinity, duration: 22, ease: "linear" }}
+                />
+                <motion.div
+                  aria-hidden
+                  className="pointer-events-none absolute left-1/2 top-1/2 h-[60%] w-[60%] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
+                  style={{ backgroundColor: winner.color }}
+                  animate={{ opacity: [0.25, 0.5, 0.25], scale: [0.9, 1.1, 0.9] }}
+                  transition={{ repeat: Infinity, duration: 2.6, ease: "easeInOut" }}
+                />
+
+                <motion.div
+                  initial={{ scale: 0, rotate: -25 }}
+                  animate={{ scale: 1, rotate: 0 }}
+                  transition={{ type: "spring", stiffness: 260, damping: 14, delay: 0.1 }}
+                  className="relative flex h-20 w-20 items-center justify-center rounded-full text-white shadow-2xl sm:h-28 sm:w-28"
+                  style={{ background: `linear-gradient(135deg, #fde68a, #f59e0b)` }}
+                >
+                  <Trophy className="h-10 w-10 text-amber-900 sm:h-14 sm:w-14" />
+                </motion.div>
+
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.35 }}
+                  className="relative text-sm font-bold uppercase tracking-[0.4em] text-muted-foreground sm:text-base"
+                >
+                  The winner is
+                </motion.p>
+
+                <motion.h2
+                  initial={{ scale: 0.2, opacity: 0, y: 30 }}
+                  animate={{ scale: [0.2, 1.18, 1], opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.5, times: [0, 0.65, 1], ease: "easeOut" }}
+                  className="relative max-w-full break-words px-4 font-black leading-tight tracking-tight"
+                  style={{
+                    fontSize: `clamp(2.6rem, ${isFs ? "11vw" : "9vw"}, ${isFs ? "9rem" : "6.5rem"})`,
+                    color: winner.color,
+                    textShadow: `0 6px 40px ${winner.color}88, 0 2px 0 rgba(0,0,0,0.12)`,
+                  }}
+                >
+                  {winner.name}
+                </motion.h2>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.1 }}
+                  className="relative flex flex-wrap items-center justify-center gap-2"
+                >
+                  <Button size="lg" onClick={() => spinAgain(false)}>
+                    <RotateCw className="h-4 w-4" /> Spin again
+                  </Button>
+                  {removeWinner && entries.length > 2 && (
+                    <Button size="lg" variant="outline" onClick={() => spinAgain(true)}>
+                      <UserMinus className="h-4 w-4" /> Remove &amp; spin
+                    </Button>
+                  )}
+                  <Button size="lg" variant="outline" onClick={handleSave}>
+                    <Save className="h-4 w-4" /> Save
+                  </Button>
+                  <Button size="lg" variant="ghost" onClick={() => setShowWinner(false)} aria-label="Close">
+                    <X className="h-4 w-4" /> Close
+                  </Button>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+          <Confetti fire={celebrate} big className="z-30" />
+        </div>
+      </div>
 
       <ToolHistoryList ref={historyRef} toolSlug="wheel-spinner" />
     </div>

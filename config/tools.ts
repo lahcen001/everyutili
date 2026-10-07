@@ -1326,6 +1326,7 @@ export const TOOLS: ToolConfig[] = [
     shortName: "Wheel Spinner",
     relatedSlugs: ["random-name-picker", "yes-no-decision-maker"],
     ssr: false,
+    layout: "workspace",
     priority: 0.72,
     changeFrequency: "monthly",
   },

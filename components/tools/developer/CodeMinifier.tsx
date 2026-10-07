@@ -1,213 +1,176 @@
 "use client";
 
 import * as React from "react";
-import { Minimize, Save } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CopyButton } from "@/components/tool-shell/CopyButton";
-import { formatBytes } from "@/lib/format";
+import { ConverterWorkspace } from "@/components/tools/developer/workspace/ConverterWorkspace";
+import { ToolbarToggle } from "@/components/tools/developer/workspace/Workspace";
 import { useTrackTool } from "@/hooks/useTrackTool";
-import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
-import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { formatBytes } from "@/lib/format";
+import { beautifyCss, gzipSize, minifyCss, minifyHtml, minifyJs, minifyJson, minifySvg } from "@/lib/minify";
+import { cn } from "@/lib/utils";
 
-type Mode = "html" | "css";
+type Mode = "html" | "css" | "js" | "json" | "svg";
 
-const SAMPLE_HTML = `<!DOCTYPE html>
+const MODES: { id: Mode; label: string; language: string; ext: string; mime: string }[] = [
+  { id: "html", label: "HTML", language: "html", ext: "html", mime: "text/html" },
+  { id: "css", label: "CSS", language: "css", ext: "css", mime: "text/css" },
+  { id: "js", label: "JavaScript", language: "javascript", ext: "js", mime: "text/javascript" },
+  { id: "json", label: "JSON", language: "json", ext: "json", mime: "application/json" },
+  { id: "svg", label: "SVG", language: "xml", ext: "svg", mime: "image/svg+xml" },
+];
+
+const SAMPLES: Record<Mode, string> = {
+  html: `<!DOCTYPE html>
 <html>
   <head>
     <!-- page title -->
     <title>Demo</title>
+    <style>
+      body { margin: 0 ; font-family: sans-serif }
+    </style>
   </head>
   <body>
-    <p>Hello   world</p>
+    <p>Hello   <b>big</b> <i>world</i></p>
     <pre>  keep   this   spacing  </pre>
   </body>
-</html>`;
-
-const SAMPLE_CSS = `/* base styles */
+</html>`,
+  css: `/* base styles */
 body {
   margin: 0 ;
   padding : 0;
   font-family: sans-serif ;
 }
 
-.card {
+.card > a :hover {
   color: #333 ;
+  width: calc(100% - 2rem);
   content: " / " ;
-}`;
-
-function minifyCss(css: string): string {
-  let result = "";
-  let i = 0;
-  const n = css.length;
-
-  while (i < n) {
-    const ch = css[i];
-
-    if (ch === "/" && css[i + 1] === "*") {
-      const end = css.indexOf("*/", i + 2);
-      i = end === -1 ? n : end + 2;
-      continue;
-    }
-
-    if (ch === '"' || ch === "'") {
-      let j = i + 1;
-      while (j < n && css[j] !== ch) {
-        if (css[j] === "\\") j++;
-        j++;
-      }
-      j = Math.min(j + 1, n);
-      result += css.slice(i, j);
-      i = j;
-      continue;
-    }
-
-    result += ch;
-    i++;
-  }
-
-  return result
-    .replace(/\s+/g, " ")
-    .replace(/\s*([{}:;,])\s*/g, "$1")
-    .replace(/;}/g, "}")
-    .trim();
+}`,
+  js: `// add two numbers
+function add(firstNumber, secondNumber) {
+  const total = firstNumber + secondNumber;
+  return total;
 }
 
-function minifyHtml(html: string): string {
-  let stripped = "";
-  let i = 0;
-  const n = html.length;
+console.log("Sum:", add(2, 3));`,
+  json: `{
+  "name": "EveryUtili",
+  "tags": [ "fast", "private" ],
+  "nested": { "a": 1, "b": null }
+}`,
+  svg: `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- circle -->
+  <metadata>made in an editor</metadata>
+  <circle cx="12" cy="12" r="10" fill="none" stroke="#000" stroke-width="2"/>
+</svg>`,
+};
 
-  while (i < n) {
-    if (html[i] === "<" && html[i + 1] === "!" && html[i + 2] === "-" && html[i + 3] === "-") {
-      const end = html.indexOf("-->", i + 4);
-      i = end === -1 ? n : end + 3;
-      continue;
-    }
-    stripped += html[i];
-    i++;
-  }
-
-  const segments: { text: string; preserve: boolean }[] = [];
-  let cursor = 0;
-  const tagPattern = /<(pre|textarea|script|style)\b[^>]*>[\s\S]*?<\/\1>/gi;
-  let match: RegExpExecArray | null;
-
-  while ((match = tagPattern.exec(stripped)) !== null) {
-    if (match.index > cursor) {
-      segments.push({ text: stripped.slice(cursor, match.index), preserve: false });
-    }
-    segments.push({ text: match[0], preserve: true });
-    cursor = match.index + match[0].length;
-  }
-  if (cursor < stripped.length) {
-    segments.push({ text: stripped.slice(cursor), preserve: false });
-  }
-
-  return segments
-    .map((seg) => {
-      if (seg.preserve) return seg.text;
-      return seg.text
-        .replace(/>\s+</g, "><")
-        .split("\n")
-        .map((line) => line.trim())
-        .filter((line) => line.length > 0)
-        .join("\n")
-        .replace(/\n+/g, "\n");
-    })
-    .join("")
-    .trim();
-}
-
-function tagLabel(mode: Mode): string {
-  return mode === "html" ? "HTML" : "CSS";
-}
+type JsOutcome = { ok: true; text: string } | { ok: false; message: string; line?: number; column?: number };
 
 export default function CodeMinifier() {
   useTrackTool("code-minifier");
   const [mode, setMode] = React.useState<Mode>("html");
-  const [htmlInput, setHtmlInput] = React.useState(SAMPLE_HTML);
-  const [cssInput, setCssInput] = React.useState(SAMPLE_CSS);
-  const historyRef = React.useRef<ToolHistoryListHandle>(null);
+  const [input, setInput] = React.useState(SAMPLES.html);
+  const [keepComments, setKeepComments] = React.useState(false);
+  const [beautify, setBeautify] = React.useState(false);
+  const [js, setJs] = React.useState<{ input: string; result: JsOutcome } | null>(null);
+  const [gzip, setGzip] = React.useState<{ text: string; size: number | null } | null>(null);
 
-  const input = mode === "html" ? htmlInput : cssInput;
-  const setInput = mode === "html" ? setHtmlInput : setCssInput;
+  const info = MODES.find((m) => m.id === mode)!;
+  const canBeautify = mode === "css" || mode === "json";
+  const beautifying = canBeautify && beautify;
 
-  const output = React.useMemo(
-    () => (mode === "html" ? minifyHtml(htmlInput) : minifyCss(cssInput)),
-    [mode, htmlInput, cssInput]
-  );
-
-  const beforeBytes = new Blob([input]).size;
-  const afterBytes = new Blob([output]).size;
-  const savedPct = beforeBytes > 0 ? Math.max(0, Math.round((1 - afterBytes / beforeBytes) * 100)) : 0;
-
-  const saveResult = async () => {
-    if (!output) return;
-    await saveToolResult("code-minifier", {
-      title: `Minified ${tagLabel(mode)}`,
-      summary: `${formatBytes(beforeBytes)} → ${formatBytes(afterBytes)}`,
-      data: output,
+  React.useEffect(() => {
+    if (mode !== "js" || input.trim() === "") return;
+    let cancelled = false;
+    void minifyJs(input).then((result) => {
+      if (!cancelled) setJs({ input, result });
     });
-    historyRef.current?.refresh();
-  };
+    return () => {
+      cancelled = true;
+    };
+  }, [mode, input]);
 
-  const restoreResult = (item: ToolHistoryItem) => {
-    if (item.data) setInput(item.data);
+  const result = React.useMemo<{ text: string; error: { message: string; line?: number; column?: number } | null; pending: boolean }>(() => {
+    if (input.trim() === "") return { text: "", error: null, pending: false };
+    switch (mode) {
+      case "html":
+        return { text: minifyHtml(input, { keepComments }), error: null, pending: false };
+      case "css":
+        return { text: beautifying ? beautifyCss(input) : minifyCss(input, { keepComments }), error: null, pending: false };
+      case "svg":
+        return { text: minifySvg(input), error: null, pending: false };
+      case "json": {
+        const r = minifyJson(input, beautifying);
+        return r.ok ? { text: r.text, error: null, pending: false } : { text: "", error: r, pending: false };
+      }
+      case "js": {
+        if (!js || js.input !== input) return { text: "", error: null, pending: true };
+        return js.result.ok ? { text: js.result.text, error: null, pending: false } : { text: "", error: js.result, pending: false };
+      }
+    }
+  }, [input, mode, keepComments, beautifying, js]);
+
+  React.useEffect(() => {
+    if (!result.text) return;
+    let cancelled = false;
+    void gzipSize(result.text).then((size) => {
+      if (!cancelled) setGzip({ text: result.text, size });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [result.text]);
+
+  const inBytes = new Blob([input]).size;
+  const outBytes = new Blob([result.text]).size;
+  const saved = inBytes > 0 && result.text ? Math.round((1 - outBytes / inBytes) * 100) : 0;
+  const gz = gzip && gzip.text === result.text ? gzip.size : null;
+
+  const switchMode = (next: Mode) => {
+    if (next === mode) return;
+    setMode(next);
+    setInput(SAMPLES[next]);
+    setBeautify(false);
   };
 
   return (
-    <div className="space-y-6">
-      <Tabs value={mode} onValueChange={(v) => setMode(v as Mode)}>
-        <TabsList>
-          <TabsTrigger value="html">HTML</TabsTrigger>
-          <TabsTrigger value="css">CSS</TabsTrigger>
-        </TabsList>
-        <TabsContent value="html" />
-        <TabsContent value="css" />
-      </Tabs>
-
-      <Card className="flex flex-wrap items-center gap-3 p-3">
-        <span className="flex items-center gap-1 text-sm text-muted-foreground">
-          <Minimize className="h-4 w-4" /> Minified automatically as you type
-        </span>
-        <Badge variant="success" className="ml-auto">
-          Saved {savedPct}% ({formatBytes(beforeBytes)} → {formatBytes(afterBytes)})
-        </Badge>
-      </Card>
-
-      <div className="grid gap-4 lg:grid-cols-2">
-        <Card className="space-y-2 p-4">
-          <p className="text-sm font-medium">{tagLabel(mode)} input</p>
-          <textarea
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            rows={16}
-            spellCheck={false}
-            className="w-full resize-none rounded-lg border border-border bg-background p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-        </Card>
-
-        <Card className="space-y-2 p-4">
-          <p className="text-sm font-medium">Minified output</p>
-          <pre className="h-[calc(16*1.35rem+1.5rem)] min-h-[300px] overflow-auto rounded-lg border border-border bg-muted/20 p-3 font-mono text-xs">
-            {output || "—"}
-          </pre>
-          <div className="flex flex-wrap gap-2">
-            <CopyButton value={output} variant="secondary" disabled={!output}>
-              Copy result
-            </CopyButton>
-            <Button size="sm" variant="outline" onClick={saveResult} disabled={!output}>
-              <Save className="h-3.5 w-3.5" /> Save result
-            </Button>
+    <ConverterWorkspace
+      slug="code-minifier"
+      input={input}
+      onInput={setInput}
+      inputLanguage={info.language}
+      outputLanguage={info.language}
+      output={result.text}
+      error={result.error}
+      inputTitle={`${info.label} input`}
+      outputTitle={beautifying ? `Beautified ${info.label}` : `Minified ${info.label}`}
+      historyTitle={`${info.label} ${beautifying ? "beautified" : "minified"}`}
+      onSample={() => setInput(SAMPLES[mode])}
+      fileAccept={`.${info.ext},text/plain`}
+      download={{ name: `${beautifying ? "pretty" : "min"}.${info.ext}`, mime: info.mime }}
+      emptyMessage={result.pending ? "Minifying…" : "Paste code to minify it."}
+      stats={
+        result.text && !beautifying ? (
+          <span className={cn(saved > 0 && "font-medium text-emerald-600 dark:text-emerald-400")}>
+            {formatBytes(inBytes)} → {formatBytes(outBytes)} ({saved}% smaller){gz !== null && ` · gzip ≈ ${formatBytes(gz)}`}
+          </span>
+        ) : null
+      }
+      options={
+        <>
+          <div className="flex overflow-hidden rounded-md border border-border" role="group" aria-label="Language">
+            {MODES.map((m) => (
+              <button key={m.id} onClick={() => switchMode(m.id)} aria-pressed={mode === m.id} className={cn("h-8 px-3 text-sm font-medium transition-colors", mode === m.id ? "bg-primary text-primary-foreground" : "hover:bg-muted")}>
+                {m.label}
+              </button>
+            ))}
           </div>
-        </Card>
-      </div>
-
-      <ToolHistoryList ref={historyRef} toolSlug="code-minifier" onRestore={restoreResult} />
-    </div>
+          {(mode === "html" || mode === "css") && !beautifying && <ToolbarToggle label="Keep comments" checked={keepComments} onChange={setKeepComments} />}
+          {canBeautify && <ToolbarToggle label="Beautify instead" checked={beautify} onChange={setBeautify} />}
+        </>
+      }
+    />
   );
 }

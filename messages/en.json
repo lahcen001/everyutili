@@ -245,32 +245,35 @@
     },
     "json-formatter": {
       "seoTitle": "JSON Formatter & Validator Online – Free & Instant",
-      "metaDescription": "Format, validate, and beautify JSON online with instant syntax error highlighting, tree view, and CSV export. 100% free, no sign-up required.",
+      "metaDescription": "Format, validate, minify and explore JSON in a full-screen editor with exact error line and column, tree, table and JSONPath views, key sorting, repair and big-number safety. Free and private.",
       "h1": "JSON Formatter & Validator",
-      "subheading": "Beautify, validate, and explore JSON with instant error highlighting and a live tree view.",
+      "subheading": "A full-screen JSON editor: format, validate, repair, sort keys, and explore as a tree, table or JSONPath query — 100% local.",
       "keywords": [
         "json formatter",
         "json validator",
         "json beautifier",
         "json to csv",
-        "format json online"
+        "format json online",
+        "json validator online",
+        "jsonpath tester",
+        "json repair"
       ],
       "howTo": [
         {
-          "name": "Paste your JSON",
-          "text": "Paste or type your raw JSON into the editor."
+          "name": "Paste or drop your JSON",
+          "text": "Type, paste, open a file or drag a .json file onto the editor."
         },
         {
-          "name": "Auto-validate",
-          "text": "Syntax errors are highlighted instantly as you type."
+          "name": "Check the status bar",
+          "text": "It shows Valid JSON or the exact line and column of the first error — click it to jump there."
         },
         {
-          "name": "Format & explore",
-          "text": "Use auto-fix formatting or browse the interactive tree view."
+          "name": "Format, repair or explore",
+          "text": "Format or minify with 2, 4 or tab indentation, sort keys, repair relaxed JSON, then switch the right pane between Formatted, Tree, Table and Query."
         },
         {
-          "name": "Export",
-          "text": "Copy the formatted JSON or convert it to CSV."
+          "name": "Copy, download or save",
+          "text": "Copy the result, download formatted.json, or save a snippet to your history."
         }
       ],
       "faq": [
@@ -280,27 +283,31 @@
         },
         {
           "question": "Can I convert JSON to CSV?",
-          "answer": "Yes, use the built-in CSV export for flat or nested JSON arrays."
+          "answer": "Use the Table view to browse an array of objects as rows and columns. For a CSV file, open the JSON to CSV tool, which has delimiter, flattening and Excel options."
         },
         {
           "question": "What happens if my JSON is invalid?",
-          "answer": "The editor highlights the exact line and character of the syntax error in real time."
+          "answer": "The status bar names the problem and shows its line and column, the editor underlines the spot, and clicking the message jumps the cursor there. If the problem is relaxed syntax such as comments or trailing commas, a Repair button fixes it."
         },
         {
           "question": "Does the tree view let me collapse and expand nested objects?",
-          "answer": "Yes, click the arrow next to any object or array to collapse or expand that branch of the tree."
+          "answer": "Yes. Click any arrow, or use Expand all, Collapse all and the Depth selector. You can also search keys and values, step through matches, and copy any path or value."
         },
         {
           "question": "Can it sort object keys alphabetically?",
-          "answer": "No, keys are displayed in the same order they appear in your original JSON — there's no alphabetical sort option."
+          "answer": "Yes. Tick Sort keys and Format or the Formatted view orders every object's keys A to Z, at every level."
         },
         {
           "question": "Does it support JSON with comments or trailing commas?",
-          "answer": "No, this follows strict JSON syntax — comments and trailing commas (sometimes allowed in JSON5 or JSONC) will cause a parse error."
+          "answer": "The validator follows strict JSON, so it flags them — but one click on Repair removes comments and trailing commas, quotes bare property names, turns single quotes into double quotes and fixes Python-style True, False and None."
         },
         {
           "question": "What's the difference between beautify and minify here?",
-          "answer": "Beautify adds indentation and line breaks for readability; minify strips all unnecessary whitespace to produce the smallest possible output — both represent the same underlying data."
+          "answer": "Format (beautify) adds indentation and line breaks for readability; Minify strips all unnecessary whitespace. Both keep very large numbers such as 12345678901234567890 exactly as written."
+        },
+        {
+          "question": "Can I query the data with JSONPath?",
+          "answer": "Yes. Open the Query tab and enter an expression such as $.users[*].name, $..price or $.items[-1] to list every match with its path."
         }
       ]
     },
@@ -2306,7 +2313,7 @@
         },
         {
           "question": "Can I encode an entire URL including the query string?",
-          "answer": "You can encode any text you paste in, but encoding a full URL this way will also escape characters like `:` and `/` that you likely want to keep — it's built for encoding individual values, not whole URLs."
+          "answer": "Yes. Choose Full URL mode, which keeps the characters that give a URL its structure (: / ? & = #) and only escapes unsafe ones. Component mode would escape those too, which is right for a single value but not a whole URL."
         },
         {
           "question": "Why does decoding fail on my input?",
@@ -2320,34 +2327,40 @@
     },
     "jwt-decoder": {
       "seoTitle": "JWT Decoder Online – Free & Instant, No Sign-Up",
-      "metaDescription": "Decode JSON Web Tokens (JWT) instantly in your browser. View header, payload, and expiry — no signature verification, no server calls.",
+      "metaDescription": "Decode a JWT and verify its signature (HS, RS, PS and ES algorithms) in your browser. Colour-coded parts, human-readable expiry, clear warnings, and nothing uploaded or saved.",
       "h1": "JWT Decoder",
-      "subheading": "Decode a JWT's header and payload instantly — processed 100% locally, signature never verified server-side.",
+      "subheading": "Decode a JWT, read its claims in plain language, and verify the signature with your secret or public key — 100% local, never stored.",
       "keywords": [
         "jwt decoder",
         "decode jwt online",
         "json web token decoder",
         "jwt parser free",
-        "jwt debugger"
+        "jwt debugger",
+        "jwt verify signature",
+        "jwt expiry checker"
       ],
       "howTo": [
         {
           "name": "Paste your JWT",
-          "text": "Paste a JSON Web Token into the input field."
+          "text": "Paste the token — a leading \"Bearer \" is fine."
         },
         {
-          "name": "Automatic decoding",
-          "text": "The header and payload are decoded from Base64URL and shown as formatted JSON."
+          "name": "Read the decoded parts",
+          "text": "The header and payload appear as JSON, with the token colour-coded and exp, nbf and iat shown as readable dates."
         },
         {
-          "name": "Check expiry",
-          "text": "If an exp claim is present, its expiration status is highlighted."
+          "name": "Check the time claims",
+          "text": "See whether the token is expired or not yet valid, with a live countdown."
+        },
+        {
+          "name": "Verify the signature",
+          "text": "Enter the shared secret (HS) or paste the public key as PEM or JWK (RS, PS, ES) and press Verify."
         }
       ],
       "faq": [
         {
           "question": "Does this tool verify the JWT signature?",
-          "answer": "No, this tool only decodes the header and payload — it does not verify the signature. Never trust a decoded token without server-side verification."
+          "answer": "Yes, when you ask it to. Enter the secret for HS256/384/512, or a public key (PEM or JWK) for RS, PS and ES algorithms, and press Verify. Until you do, the page clearly says the signature is not verified — decoding alone proves nothing."
         },
         {
           "question": "Is my token sent to a server?",
@@ -2355,11 +2368,11 @@
         },
         {
           "question": "What does the exp claim mean?",
-          "answer": "The exp claim is a Unix timestamp indicating when the token expires. This tool highlights whether it has already expired."
+          "answer": "exp is a Unix timestamp for when the token expires. The tool shows it as a date with a live “in 2 hours” or “3 days ago” countdown."
         },
         {
           "question": "Can I use this to check if a token is expired?",
-          "answer": "You can inspect the exp claim after decoding to see if the timestamp is in the past, but the tool doesn't automatically validate expiry against the current time for you."
+          "answer": "Yes. The badges show Expired, Not valid yet (nbf) or Not expired. These only describe the time claims, not whether the token is genuine."
         },
         {
           "question": "What algorithm does the header show?",
@@ -2367,11 +2380,15 @@
         },
         {
           "question": "Can I decode a malformed or truncated JWT?",
-          "answer": "No, the token must have three dot-separated Base64URL segments (header, payload, signature); if a segment is missing or not valid Base64URL, decoding will fail."
+          "answer": "No. A signed JWT has three dot-separated Base64URL parts that decode to JSON; the tool tells you which part is wrong. Encrypted tokens (JWE, five parts) cannot be decoded here."
         },
         {
           "question": "Are custom claims in the payload displayed?",
           "answer": "Yes, all claims in the payload are shown, both registered claims like iss and sub and any custom claims your application added."
+        },
+        {
+          "question": "Are my tokens or keys stored anywhere?",
+          "answer": "No. Everything happens in your browser and, unlike most tools here, tokens and keys are never saved to your history."
         }
       ]
     },
@@ -2448,38 +2465,41 @@
     },
     "hash-generator": {
       "seoTitle": "Hash Generator Online – SHA-1, SHA-256, SHA-512 Free",
-      "metaDescription": "Generate SHA-1, SHA-256, SHA-384, and SHA-512 hashes of text or files instantly in your browser using the Web Crypto API. Free and private.",
+      "metaDescription": "Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512 and CRC32 hashes of text or files, compare with an expected checksum, and copy as hex or Base64. Free and private.",
       "h1": "Hash Generator",
-      "subheading": "Compute SHA-1, SHA-256, SHA-384, and SHA-512 hashes of text or files — processed 100% locally.",
+      "subheading": "Generate MD5, SHA and CRC32 hashes of text or files and verify a checksum — processed 100% locally.",
       "keywords": [
         "hash generator online",
         "sha256 generator",
         "sha1 hash online",
         "file hash checker",
-        "checksum generator free"
+        "checksum generator free",
+        "md5 generator",
+        "file checksum verify",
+        "crc32 calculator"
       ],
       "howTo": [
         {
-          "name": "Choose text or file",
-          "text": "Switch between hashing raw text or an uploaded file."
+          "name": "Enter text or drop a file",
+          "text": "Type text — hashes update as you type — or drop any file."
         },
         {
-          "name": "Enter your input",
-          "text": "Type text or drag & drop a file."
+          "name": "Choose algorithms",
+          "text": "Tick MD5, SHA-1, SHA-256, SHA-384, SHA-512 and CRC32 as needed."
         },
         {
-          "name": "View all hashes",
-          "text": "SHA-1, SHA-256, SHA-384, and SHA-512 digests are computed instantly."
+          "name": "Read the hashes",
+          "text": "Each full hash is shown; switch to uppercase or Base64 if you need it."
         },
         {
-          "name": "Copy a hash",
-          "text": "Click the copy icon next to any hash to copy it to your clipboard."
+          "name": "Verify a download",
+          "text": "Paste the checksum from the download page and the tool tells you whether it matches."
         }
       ],
       "faq": [
         {
-          "question": "Why is MD5 not offered?",
-          "answer": "MD5 isn't available in the browser's native Web Crypto API and is cryptographically broken — use SHA-256 or SHA-512 instead."
+          "question": "Why is MD5 labelled legacy?",
+          "answer": "MD5 and SHA-1 are cryptographically broken, so don't use them for security. They are included because many sites still publish MD5 or SHA-1 checksums for downloads."
         },
         {
           "question": "Is my file uploaded to a server?",
@@ -2491,11 +2511,11 @@
         },
         {
           "question": "Which hashing algorithms are available?",
-          "answer": "SHA-1, SHA-256, SHA-384, and SHA-512 are supported, all computed via the browser's built-in Web Crypto API."
+          "answer": "MD5, SHA-1, SHA-256, SHA-384, SHA-512 and CRC32. SHA uses your browser's Web Crypto API; MD5 and CRC32 are calculated by the tool itself."
         },
         {
           "question": "Can I hash a file instead of typed text?",
-          "answer": "Yes, you can upload a file and the tool computes its hash directly from the file bytes, which is useful for verifying download integrity against a published checksum."
+          "answer": "Yes, drop a file and its checksum is computed from the file bytes locally. SHA hashing needs the whole file in memory, so files over 1 GB are limited to MD5 and CRC32."
         },
         {
           "question": "Why do two slightly different inputs produce completely different hashes?",
@@ -2503,38 +2523,45 @@
         },
         {
           "question": "Can I use SHA-1 for security purposes?",
-          "answer": "SHA-1 is available for compatibility with legacy checksums, but it's considered cryptographically broken for security use; SHA-256 or higher is recommended for anything security-sensitive."
+          "answer": "No. SHA-1 is available for compatibility with older checksums, but collisions can be produced, so use SHA-256 or stronger."
+        },
+        {
+          "question": "How do I check a downloaded file against its published checksum?",
+          "answer": "Drop the file, paste the published value in Compare with a checksum, and a green Match message appears if it equals any of the selected hashes. Hex and Base64 are both understood."
         }
       ]
     },
     "regex-tester": {
       "seoTitle": "Regex Tester Online – Free Regular Expression Debugger",
-      "metaDescription": "Test regular expressions against sample text with live match highlighting, flags, and capture groups. Free, instant, and fully private.",
+      "metaDescription": "Test JavaScript regular expressions with live highlighting, capture group and named group positions, replace and split modes, a plain-English explanation, a cheat sheet and common patterns. Free and private.",
       "h1": "Regex Tester",
-      "subheading": "Test regular expressions with live match highlighting and capture group inspection — 100% local.",
+      "subheading": "Test regular expressions with live highlighting, groups, replace and split, a pattern explainer and a library of common patterns — 100% local.",
       "keywords": [
         "regex tester",
         "regular expression tester online",
         "regex debugger free",
         "test regex pattern",
-        "regex match highlighter"
+        "regex match highlighter",
+        "regex explainer",
+        "regex replace tester",
+        "regex cheat sheet"
       ],
       "howTo": [
         {
           "name": "Enter your pattern",
-          "text": "Type a regular expression pattern."
+          "text": "Type it between the slashes, or load one from Common patterns."
         },
         {
           "name": "Set flags",
-          "text": "Toggle global, ignore case, multiline, or dot-all flags."
+          "text": "Toggle g, i, m, s, u, y and d — the Global flag really controls whether every match is found."
         },
         {
           "name": "Add test text",
-          "text": "Paste or type the text you want to test the pattern against."
+          "text": "Matches are highlighted in the editor as you type; capture groups are shown in a second colour."
         },
         {
-          "name": "Review matches",
-          "text": "Matches are highlighted live, with a full list of matches and capture groups."
+          "name": "Explore the result",
+          "text": "Use Matches, Replace, Split, Explain and Cheat sheet to inspect groups, preview a replacement, split text or read what each part of the pattern does."
         }
       ],
       "faq": [
@@ -2552,33 +2579,39 @@
         },
         {
           "question": "Can I test regex flags like global or case-insensitive?",
-          "answer": "Yes, toggle checkboxes let you enable global, case-insensitive, multiline, and dotAll flags, and matches update live as you change them."
+          "answer": "Yes. Toggle g, i, m, s, u, y and d. Without g only the first match is found, and the status bar reminds you."
         },
         {
           "question": "Does it support named capture groups?",
-          "answer": "Named groups aren't displayed separately — only numbered capture groups are shown alongside each match."
+          "answer": "Yes. Named groups are listed by name, with the start and end position of each group when the d flag is on."
         },
         {
           "question": "Why does my regex work here but not in another language?",
-          "answer": "This tool uses JavaScript's regex engine, which has some syntax differences from other languages (like PCRE or Python's re module) — features like lookbehind support and flag names can vary."
+          "answer": "This tool uses JavaScript's regex engine. PCRE, Python and others differ in syntax such as lookbehind support, possessive quantifiers and named group syntax, so check your language's flavour."
         },
         {
           "question": "Can I test replacement strings, not just matches?",
-          "answer": "No, this tool only highlights matches within your test string — it doesn't include a find-and-replace preview."
+          "answer": "Yes. Open the Replace tab, enter a replacement such as $2-$1 or $<name>, and see the result live. The Split tab shows how the pattern splits the text."
+        },
+        {
+          "question": "What happens if my pattern takes too long?",
+          "answer": "The pattern runs in a background worker. If it takes over 1.5 seconds (usually catastrophic backtracking from nested quantifiers such as (a+)+), it is stopped and you get a clear message instead of a frozen tab."
         }
       ]
     },
     "markdown-previewer": {
       "seoTitle": "Markdown Previewer Online – Free Live Markdown Editor",
-      "metaDescription": "Write Markdown and see a live, sanitized HTML preview instantly in your browser. Free, private, supports headings, lists, code, and links.",
+      "metaDescription": "Write Markdown with a live, scroll-synced preview. GitHub-style tables, task lists and code blocks, an HTML source view, and export to .md or .html. Sanitized and private.",
       "h1": "Markdown Previewer",
-      "subheading": "Write Markdown and preview the rendered HTML output live — 100% local, sanitized rendering.",
+      "subheading": "Write Markdown with a live, scroll-synced preview and export to .md or .html — sanitized and 100% local.",
       "keywords": [
         "markdown previewer",
         "markdown editor online",
         "live markdown preview",
         "markdown to html free",
-        "md editor online"
+        "md editor online",
+        "markdown to html",
+        "gfm preview"
       ],
       "howTo": [
         {
@@ -2609,11 +2642,11 @@
         },
         {
           "question": "Does it support GitHub Flavored Markdown features like tables and task lists?",
-          "answer": "Basic tables render correctly, but task-list checkboxes aren't specially styled — they'll appear as plain text rather than interactive checkboxes."
+          "answer": "Yes. Tables, task-list checkboxes, strikethrough and fenced code blocks render with proper styling."
         },
         {
           "question": "Can I export the rendered output as HTML?",
-          "answer": "No, there's no HTML export option — you can save the raw Markdown to your history, but not a rendered HTML file."
+          "answer": "Yes. Copy HTML copies the markup, the HTML tab shows it, and the .html button downloads a complete, styled web page. The .md button downloads your Markdown."
         },
         {
           "question": "Does it support syntax highlighting in code blocks?",
@@ -2621,15 +2654,19 @@
         },
         {
           "question": "Can I write raw HTML inside my Markdown?",
-          "answer": "Yes, standard Markdown parsers pass through raw HTML tags, so any HTML you include renders alongside your Markdown content."
+          "answer": "Yes, but it is sanitized: scripts, event handlers and other unsafe markup are removed before the preview is shown."
+        },
+        {
+          "question": "Does the preview follow my scrolling?",
+          "answer": "Yes. With Sync scroll on, scrolling the editor scrolls the preview to the matching position."
         }
       ]
     },
     "csv-to-json": {
       "seoTitle": "CSV to JSON Converter Online – Free & Bidirectional",
-      "metaDescription": "Convert CSV to JSON or JSON to CSV instantly in your browser. Handles quoted fields and nested data. Free, private, no uploads.",
+      "metaDescription": "Convert CSV to JSON and JSON to CSV in a full-screen editor with delimiter auto-detect, header and type options, trimming, null handling and a table preview. Free and private.",
       "h1": "CSV to JSON Converter",
-      "subheading": "Convert between CSV and JSON formats instantly, in both directions — processed 100% locally.",
+      "subheading": "Convert CSV to JSON and back, with delimiter detection, type detection and a table preview — 100% local.",
       "keywords": [
         "csv to json",
         "json to csv converter",
@@ -2637,7 +2674,9 @@
         "csv parser free",
         "csv json converter",
         "convert to json",
-        "json converter"
+        "json converter",
+        "tsv to json",
+        "csv parser online"
       ],
       "howTo": [
         {
@@ -2660,11 +2699,11 @@
       "faq": [
         {
           "question": "Does this handle quoted CSV fields with commas?",
-          "answer": "Yes, quoted fields containing commas, quotes, or newlines are parsed correctly."
+          "answer": "Yes. It uses a full RFC 4180 parser, so quoted fields containing commas, doubled quotes and even line breaks stay in one cell."
         },
         {
           "question": "What JSON structure is expected for JSON to CSV?",
-          "answer": "An array of flat objects works best; nested objects are automatically flattened with dot notation."
+          "answer": "An array of objects works best; nested objects are flattened with dot notation."
         },
         {
           "question": "Is my data uploaded anywhere?",
@@ -2672,19 +2711,19 @@
         },
         {
           "question": "Can I choose a custom delimiter instead of a comma?",
-          "answer": "No, parsing is fixed to comma-separated values — semicolon or tab-delimited files won't parse correctly as-is."
+          "answer": "Yes. The delimiter is auto-detected (comma, semicolon, tab or pipe) and you can also pick one yourself."
         },
         {
           "question": "Does it detect column headers automatically?",
-          "answer": "Yes, the first row is always treated as the column headers — there's no option to treat all rows as data instead."
+          "answer": "The first row is used as the header by default. Untick Header row to treat every row as data with columns named column_1, column_2 and so on. Empty or repeated headers are renamed and you are told."
         },
         {
           "question": "What happens if rows have a different number of columns?",
-          "answer": "Rows with fewer columns than the header will have missing fields in the resulting JSON objects, and extra columns beyond the header may be dropped or misaligned."
+          "answer": "Short rows are padded with empty values and the status bar warns how many rows had a different number of fields."
         },
         {
           "question": "Are numbers and booleans converted to their proper JSON types?",
-          "answer": "Check the output carefully — CSV values are text by nature, and whether numeric-looking strings are converted to JSON numbers depends on the parser's type inference, not a setting you control."
+          "answer": "Yes, when Detect types is on: 12 becomes a number and true or false become booleans. Values with leading zeros (007) and numbers over 15 digits stay text so nothing is lost. Turn the option off to keep everything as strings."
         }
       ],
       "comparisonTable": {
@@ -2727,15 +2766,16 @@
     },
     "lorem-ipsum-generator": {
       "seoTitle": "Lorem Ipsum Generator Online – Free Placeholder Text",
-      "metaDescription": "Generate Lorem Ipsum placeholder text by words, sentences, or paragraphs, instantly in your browser. Free, fast, and fully customizable.",
+      "metaDescription": "Generate Lorem Ipsum by paragraphs, sentences or words (up to 5,000), as plain text, HTML paragraphs or a list, with word and character counts. Free and private.",
       "h1": "Lorem Ipsum Generator",
-      "subheading": "Generate placeholder Lorem Ipsum text by words, sentences, or paragraphs — instantly, 100% locally.",
+      "subheading": "Generate Lorem Ipsum by paragraphs, sentences or words — as text, HTML or a list.",
       "keywords": [
         "lorem ipsum generator",
         "placeholder text generator",
         "dummy text generator online",
         "lorem ipsum free",
-        "filler text generator"
+        "filler text generator",
+        "lorem ipsum html"
       ],
       "howTo": [
         {
@@ -2766,15 +2806,15 @@
         },
         {
           "question": "Is there a limit to how much text I can generate?",
-          "answer": "You can generate up to 100 units (words, sentences, or paragraphs) per click."
+          "answer": "Up to 100 paragraphs, 500 sentences or 5,000 words per click."
         },
         {
           "question": "Can I generate HTML-wrapped paragraphs?",
-          "answer": "No, output is plain text paragraphs — there's no option to wrap them in `<p>` tags automatically."
+          "answer": "Yes. Choose HTML <p> tags for one paragraph tag per block, or HTML list for a <ul> with one <li> per item."
         },
         {
           "question": "Does the word count stay exact when generating by paragraph?",
-          "answer": "Word count is approximate when generating by paragraph or sentence, since paragraph structure takes priority over hitting an exact word total."
+          "answer": "Paragraphs have a natural length (about four to seven sentences), so their word count is approximate. Generate by words for an exact count — the status bar always shows the real totals."
         },
         {
           "question": "Is the generated text always in Latin?",
@@ -3212,31 +3252,33 @@
     },
     "password-generator": {
       "seoTitle": "Password Generator Online – Free, Secure & Instant",
-      "metaDescription": "Generate strong, random passwords with custom length and character sets, entirely in your browser. Free, private, no sign-up.",
+      "metaDescription": "Generate strong random passwords or EFF-wordlist passphrases with real entropy and crack-time estimates, length up to 128, look-alike exclusion and batch mode. Private — nothing is stored.",
       "h1": "Password Generator",
-      "subheading": "Create strong, random passwords with custom length and character options — generated securely in your browser.",
+      "subheading": "Create strong passwords and passphrases with live entropy and crack-time estimates — generated securely in your browser and never stored.",
       "keywords": [
         "password generator",
         "random password generator",
         "strong password generator",
-        "secure password maker"
+        "secure password maker",
+        "passphrase generator",
+        "password entropy"
       ],
       "howTo": [
         {
-          "name": "Choose a length",
-          "text": "Set the password length from 4 to 128 characters."
+          "name": "Choose password or passphrase",
+          "text": "Pick a random character password or a memorable word passphrase."
         },
         {
-          "name": "Pick character types",
-          "text": "Toggle uppercase, lowercase, numbers, and symbols."
+          "name": "Set the options",
+          "text": "Choose the length and character types, avoid look-alikes, or set the number of words and separator."
         },
         {
-          "name": "Generate",
-          "text": "Click Generate to create a new random password."
+          "name": "Check the strength",
+          "text": "See the entropy in bits and an estimate of how long a fast attack would take."
         },
         {
           "name": "Copy it",
-          "text": "Click the copy icon to copy the password to your clipboard."
+          "text": "Copy one result, or generate up to 20 at once and copy them all."
         }
       ],
       "faq": [
@@ -3250,11 +3292,11 @@
         },
         {
           "question": "What makes a password strong?",
-          "answer": "Length matters most. A longer password with a mix of uppercase, lowercase, numbers, and symbols is significantly harder to crack than a short, simple one."
+          "answer": "Unpredictability. The entropy figure measures it: every extra character, or every extra word in a passphrase, multiplies the work an attacker needs. Aim for 80 bits or more for important accounts."
         },
         {
           "question": "Can I exclude ambiguous characters like 0, O, l, and 1?",
-          "answer": "No, there's no option to exclude visually similar characters — all characters from your selected categories (uppercase, lowercase, numbers, symbols) are equally eligible."
+          "answer": "Yes. Tick Avoid look-alikes to leave out 0 O 1 l I and similar characters, and you can type your own allowed symbols."
         },
         {
           "question": "What's the maximum password length I can generate?",
@@ -3262,24 +3304,35 @@
         },
         {
           "question": "Does it guarantee at least one character from each selected category?",
-          "answer": "No, characters are picked uniformly at random from the combined set of selected categories, so it's statistically likely but not guaranteed that every category appears in a given password."
+          "answer": "Yes. Every selected type is guaranteed to appear at least once, and the characters are then shuffled so the positions are unpredictable."
         },
         {
           "question": "Is it better to use a long passphrase or a random password?",
           "answer": "Both can be strong — a long random password packs more entropy per character, while a passphrase of several random words is easier to type and remember; this tool is built for the random-character approach."
+        },
+        {
+          "question": "Are the passwords biased or stored?",
+          "answer": "No. They use your browser's secure random generator with rejection sampling, so every character is equally likely, and they are never saved to your history or sent anywhere."
+        },
+        {
+          "question": "What is passphrase mode?",
+          "answer": "It joins random words from the EFF short wordlist (1,296 words). Each word adds about 10 bits, so a 6-word passphrase is roughly 62 bits and easy to remember and type."
         }
       ]
     },
     "text-case-converter": {
       "seoTitle": "Text Case Converter – UPPERCASE, lowercase, Title Case & More",
-      "metaDescription": "Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more — instantly in your browser.",
+      "metaDescription": "Convert text to UPPER, lower, Capitalized, Sentence, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case, path/case and more — live, Unicode-aware, per line. Free and private.",
       "h1": "Text Case Converter",
-      "subheading": "Convert text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more formats instantly.",
+      "subheading": "Convert text between 14 case styles live — Unicode-aware, per line, and ideal for identifiers.",
       "keywords": [
         "text case converter",
         "uppercase to lowercase converter",
         "camel case converter",
-        "title case converter"
+        "title case converter",
+        "constant case",
+        "pascal case converter",
+        "camelcase converter"
       ],
       "howTo": [
         {
@@ -3302,11 +3355,11 @@
       "faq": [
         {
           "question": "What case formats are supported?",
-          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, and kebab-case."
+          "answer": "UPPER CASE, lower case, Capitalized Case, Sentence case, aLtErNaTiNg, iNVERSE, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case and path/case."
         },
         {
           "question": "Does this change my original text?",
-          "answer": "No, your input stays untouched — the converted result is shown separately so you can compare or convert again."
+          "answer": "No. Your input stays on the left and the converted text appears on the right, updating live as you switch styles."
         },
         {
           "question": "Is there a length limit?",
@@ -3314,55 +3367,58 @@
         },
         {
           "question": "How does it decide word boundaries when converting from camelCase or snake_case?",
-          "answer": "It splits on case transitions, underscores, hyphens, and spaces to detect word boundaries before reassembling into the target case format."
+          "answer": "It splits on spaces, punctuation, underscores and hyphens, at lowercase-to-uppercase changes, and between an acronym and the next word, so getHTTPResponse becomes get, HTTP, Response."
         },
         {
           "question": "Does it preserve acronyms when converting case?",
-          "answer": "Acronyms are treated like any other run of letters and will be reformatted to match the target case (e.g. lowercase in kebab-case), not preserved as-is."
+          "answer": "In identifier styles an acronym is treated as a word, so HTTP becomes http in snake_case and Http in PascalCase. UPPER CASE and CONSTANT_CASE keep it uppercase."
         },
         {
           "question": "Can I convert multiple lines at once?",
-          "answer": "Yes, the whole text block you paste in is converted as one unit, so multiple lines convert together."
+          "answer": "Yes. Identifier styles (camelCase, snake_case and so on) convert each line separately, and you can tick Each line separately for the other styles too."
         },
         {
-          "question": "What case types are supported?",
-          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, and kebab-case are all available."
+          "question": "Does it work with accented and non-Latin letters?",
+          "answer": "Yes. Case changes use full Unicode rules, so é, ñ, ü and Cyrillic or Greek letters convert correctly."
         }
       ]
     },
     "text-diff-checker": {
       "seoTitle": "Text Diff Checker Online – Compare Two Texts Free",
-      "metaDescription": "Compare two blocks of text and see exactly what was added or removed, line by line — processed 100% locally in your browser.",
+      "metaDescription": "Compare two texts side by side or inline with word-level highlighting, ignore whitespace and case options, a unified patch export and file upload. Free and private.",
       "h1": "Text Diff Checker",
-      "subheading": "Compare two blocks of text and see exactly what changed, line by line.",
+      "subheading": "Compare two texts side by side or inline with word-level highlights and patch export — 100% local.",
       "keywords": [
         "text diff checker",
         "compare text online",
         "diff tool",
-        "text comparison tool"
+        "text comparison tool",
+        "diff checker",
+        "compare text files",
+        "unified diff"
       ],
       "howTo": [
         {
-          "name": "Paste the original text",
-          "text": "Enter the original version in the first box."
+          "name": "Paste or open both texts",
+          "text": "Type or paste on either side, or use Open original and Open changed."
         },
         {
-          "name": "Paste the changed text",
-          "text": "Enter the updated version in the second box."
+          "name": "Choose how to compare",
+          "text": "Switch between side-by-side and inline, and tick ignore whitespace or ignore case."
         },
         {
-          "name": "Click Compare",
-          "text": "See added and removed lines highlighted instantly."
+          "name": "Review the changes",
+          "text": "Added and removed lines are coloured, changed words are highlighted inside each line, and the status bar counts them."
         },
         {
-          "name": "Review the summary",
-          "text": "Check the total lines added and removed at a glance."
+          "name": "Export",
+          "text": "Copy or download the differences as a standard unified patch."
         }
       ],
       "faq": [
         {
           "question": "How is the difference calculated?",
-          "answer": "The tool compares the two texts line by line and highlights lines that were added (green) or removed (red)."
+          "answer": "Texts are compared with a Myers diff, line by line, then changed lines are compared word by word so you see exactly what moved inside a line."
         },
         {
           "question": "Can it compare code or JSON?",
@@ -3374,19 +3430,23 @@
         },
         {
           "question": "Can I switch between line-level and word-level diffing?",
-          "answer": "No, comparison is line-level only — there's no word-level or character-level diff mode."
+          "answer": "The editor always highlights changed words within a changed line. Use Side by side or Inline to change the layout."
         },
         {
           "question": "Does it ignore whitespace differences?",
-          "answer": "No, there's no option to ignore whitespace — differences in spacing or indentation will show up as changes."
+          "answer": "Yes — tick Ignore whitespace (and Ignore case) and those changes are no longer counted or shown."
         },
         {
           "question": "Can I see the diff as a unified patch?",
-          "answer": "No, results are shown as a highlighted side-by-side or inline line list, not a unified-diff/patch-style text format."
+          "answer": "Yes. Copy patch or Patch downloads a standard unified diff with three lines of context, ready for git apply or patch."
         },
         {
           "question": "Does it handle very large text blocks?",
-          "answer": "Yes, but very large inputs (many thousands of lines) may take longer to compute and render, since diffing runs entirely in your browser."
+          "answer": "Yes. It uses an efficient diff algorithm rather than a full comparison table, so tens of thousands of lines are fine, though the editor itself may be slower with very large files."
+        },
+        {
+          "question": "Can I edit the text after comparing?",
+          "answer": "Yes. Both sides stay editable and the comparison updates as you type. Swap exchanges the two sides."
         }
       ]
     },
@@ -4183,13 +4243,15 @@
     },
     "zero-width-remover": {
       "seoTitle": "Zero-Width Space & Invisible Character Remover – Free Online",
-      "metaDescription": "Find and remove zero-width spaces and other invisible Unicode characters hidden in pasted text, entirely in your browser.",
+      "metaDescription": "Find and remove zero-width spaces, bidi marks, soft hyphens, tag characters and other invisible Unicode, see exactly where they are, and keep emoji and Persian text intact. Free and private.",
       "h1": "Zero-Width Space & Invisible Character Cleaner",
-      "subheading": "Find and remove zero-width spaces and other invisible Unicode characters hidden in your text.",
+      "subheading": "Find and remove invisible Unicode characters, see where they hide, and keep emoji and non-Latin text intact.",
       "keywords": [
         "remove zero width space",
         "clean hidden unicode",
-        "invisible character remover"
+        "invisible character remover",
+        "hidden characters detector",
+        "remove bidi characters"
       ],
       "howTo": [
         {
@@ -4212,7 +4274,7 @@
         },
         {
           "question": "Which characters does this remove?",
-          "answer": "Zero-width spaces, zero-width joiners/non-joiners, byte-order marks, word joiners, soft hyphens, and stray bidirectional control characters."
+          "answer": "Zero-width spaces, no-break and word joiners, the BOM, soft hyphens, text-direction marks, invisible math operators, filler characters, Unicode tag characters and control characters. Unusual spaces such as the no-break space become a normal space. Each group has its own switch."
         },
         {
           "question": "Is my text sent anywhere?",
@@ -4220,7 +4282,7 @@
         },
         {
           "question": "Does it detect characters I can't normally see in a text editor?",
-          "answer": "Yes, it scans for zero-width spaces, joiners, and other invisible Unicode characters that render as nothing in most editors."
+          "answer": "Yes. Reveal hidden shows every invisible character as a badge like ⟦U+200B⟧ in your text, and the Report tab lists each one with its position and name."
         },
         {
           "question": "Can it show me a count of how many invisible characters were found?",
@@ -4228,11 +4290,15 @@
         },
         {
           "question": "Will this remove legitimate formatting characters like non-breaking spaces?",
-          "answer": "Only zero-width and other genuinely invisible characters are targeted — verify the specific character set covered if you rely on non-breaking spaces for layout, since removal behavior depends on which characters are flagged."
+          "answer": "Non-breaking and other unusual spaces are replaced with a normal space by default; untick that group to keep them. Zero-width joiners and variation selectors are kept by default because emoji and Persian, Arabic and Indic text depend on them."
         },
         {
           "question": "Why would invisible characters break my code or CMS content?",
           "answer": "Zero-width characters can silently break string comparisons, search functionality, and copy-pasted code — since they're invisible, they're difficult to spot without a tool like this."
+        },
+        {
+          "question": "Why are joiners kept by default?",
+          "answer": "The zero-width joiner builds emoji such as family and flag sequences, and the non-joiner is part of correct spelling in Persian and several other scripts. Removing them would break those texts, so you have to opt in."
         }
       ]
     },
@@ -4299,15 +4365,16 @@
     },
     "json-to-typescript": {
       "seoTitle": "JSON to TypeScript Converter – Interfaces & Zod Schemas, Free",
-      "metaDescription": "Convert JSON into TypeScript interfaces, type aliases, or Zod validation schemas instantly — processed 100% locally in your browser.",
+      "metaDescription": "Generate TypeScript interfaces, type aliases or Zod schemas from JSON in a full-screen editor. Detects optional fields and union types across array items. Free and private.",
       "h1": "JSON to TypeScript & Zod Schema",
-      "subheading": "Convert JSON into TypeScript interfaces, type aliases, or Zod validation schemas instantly.",
+      "subheading": "Generate TypeScript interfaces, type aliases and Zod schemas from JSON, with optional fields and unions detected for you.",
       "keywords": [
         "json to typescript",
         "json to zod",
         "generate typescript types",
         "convert to typescript",
-        "typescript converter"
+        "typescript converter",
+        "generate interfaces from json"
       ],
       "howTo": [
         {
@@ -4338,11 +4405,11 @@
         },
         {
           "question": "How does it handle arrays with mixed element types?",
-          "answer": "It infers a type from the array's elements — for mixed types, expect a union type or a broader type that covers the variety present, since JSON itself doesn't declare a single element type."
+          "answer": "Items are merged into one type: numbers and strings become number | string, objects with different keys become one interface, and keys missing from some items are marked optional."
         },
         {
           "question": "Are optional and nullable fields detected?",
-          "answer": "Optional/nullable handling depends on your sample JSON — a field that's `null` in your input is typed accordingly, but the generator can only infer from the one JSON sample you provide, not from multiple variations."
+          "answer": "Yes. A key missing from some objects in an array becomes optional (?), and a value that is sometimes null becomes a union such as string | null. Tick All optional to mark every field optional."
         },
         {
           "question": "Can I generate a type alias instead of an interface?",
@@ -4350,7 +4417,11 @@
         },
         {
           "question": "Does the Zod schema output include validation like min/max?",
-          "answer": "No, the generated Zod schema only reflects the basic type shape (string, number, optional, etc.) — it doesn't add constraints like min/max length or numeric ranges."
+          "answer": "No — the schema reflects the shape only (types, optional, nullable, unions), plus an import line and an inferred type. Add .min(), .email() and similar rules yourself."
+        },
+        {
+          "question": "Can I rename the root type or add export and readonly?",
+          "answer": "Yes. The toolbar sets the root type name and toggles export, readonly and all-optional."
         }
       ],
       "comparisonTable": {
@@ -4393,15 +4464,16 @@
     },
     "json-to-yaml": {
       "seoTitle": "JSON to YAML Converter Online – Free, Instant, Both Directions",
-      "metaDescription": "Convert JSON to YAML or YAML to JSON instantly, in either direction — processed 100% locally in your browser.",
+      "metaDescription": "Convert JSON to YAML and YAML to JSON in a full-screen editor. Handles anchors, aliases, multiline strings, comments and multiple documents, with exact error positions. Free and private.",
       "h1": "JSON ↔ YAML Converter",
-      "subheading": "Convert between JSON and YAML instantly, in either direction.",
+      "subheading": "Convert between JSON and YAML in a full-screen editor — anchors, multiline strings and multi-document files included.",
       "keywords": [
         "json to yaml",
         "yaml to json",
         "convert yaml",
         "convert to yaml",
-        "yaml converter"
+        "yaml converter",
+        "yaml validator"
       ],
       "howTo": [
         {
@@ -4420,7 +4492,7 @@
       "faq": [
         {
           "question": "Is this a full YAML implementation?",
-          "answer": "It covers the practical subset of YAML most configuration files use — nested objects, block-style lists, strings, numbers, booleans, and null — rather than every edge case of the full spec."
+          "answer": "It uses a complete YAML 1.2 parser (the open-source `yaml` library), so nested structures, block and flow styles, multiline strings, anchors and aliases and multiple documents all convert correctly."
         },
         {
           "question": "Is my data uploaded anywhere?",
@@ -4436,15 +4508,19 @@
         },
         {
           "question": "Are YAML anchors and aliases supported when converting back to JSON?",
-          "answer": "No, anchors (&) and aliases (*) aren't recognized by the parser — pasted YAML using them won't convert correctly."
+          "answer": "Yes. Aliases are expanded to their full values, and merge keys written as <<: *name are merged into the mapping."
         },
         {
           "question": "Does indentation matter when pasting YAML in?",
-          "answer": "Yes, the parser reads structure from indentation levels, so inconsistent or incorrect indentation in pasted YAML can produce an incorrect or failed conversion."
+          "answer": "Yes, YAML structure comes from indentation. If it is inconsistent the status bar shows the line and column of the problem so you can fix it."
         },
         {
           "question": "Can it round-trip YAML comments?",
-          "answer": "No, comments (lines or trailing text starting with #) are stripped when parsing YAML back to JSON — JSON itself has no comment syntax to preserve them in."
+          "answer": "No. Comments are dropped when YAML is parsed, and JSON has no way to store them."
+        },
+        {
+          "question": "What happens with a YAML file that has several documents?",
+          "answer": "Documents separated by --- are converted to a JSON array with one entry per document."
         }
       ],
       "comparisonTable": {
@@ -4487,13 +4563,15 @@
     },
     "sql-formatter": {
       "seoTitle": "SQL Formatter Online – Beautify & Minify SQL Queries, Free",
-      "metaDescription": "Format messy SQL queries into readable, indented statements, or minify them to a single line — processed 100% locally in your browser.",
+      "metaDescription": "Format SQL for PostgreSQL, MySQL, SQL Server, BigQuery, Snowflake and more, with keyword case, indent and comma-first options. Comments are kept; minify safely. Free and private.",
       "h1": "SQL Query Formatter",
-      "subheading": "Format messy SQL queries into readable statements, or minify them to a single line.",
+      "subheading": "Format SQL for 16 dialects with options for keyword case, indent and comma placement — comments preserved, 100% local.",
       "keywords": [
         "sql formatter",
         "beautify sql",
-        "format sql query"
+        "format sql query",
+        "postgresql formatter",
+        "sql beautifier"
       ],
       "howTo": [
         {
@@ -4512,11 +4590,11 @@
       "faq": [
         {
           "question": "Which SQL dialects are supported?",
-          "answer": "The formatter recognizes common keywords shared across MySQL, PostgreSQL, SQLite, and SQL Server — it formats based on keyword structure rather than validating dialect-specific syntax."
+          "answer": "Standard SQL, PostgreSQL, MySQL, MariaDB, SQLite, SQL Server (T-SQL), Oracle PL/SQL, BigQuery, Snowflake, Redshift, Spark, Hive, Trino, DB2, DuckDB and ClickHouse. Pick yours so quoting and keywords are understood."
         },
         {
           "question": "Does it validate my SQL?",
-          "answer": "No, this is a formatter, not a query validator — it won't catch syntax errors, only reformat the text."
+          "answer": "It parses the query to format it, so serious syntax problems such as an unclosed bracket are reported with their line and column. It is not a full validator — it can't know your tables or columns."
         },
         {
           "question": "Is my query uploaded anywhere?",
@@ -4524,11 +4602,11 @@
         },
         {
           "question": "Can I choose indentation style, like tabs vs spaces?",
-          "answer": "No, formatting always uses a fixed 2-space indentation with no option to switch to tabs or a different width."
+          "answer": "Yes: 2 spaces, 4 spaces or tabs."
         },
         {
           "question": "Does it uppercase SQL keywords automatically?",
-          "answer": "Yes, SQL keywords are automatically converted to uppercase as part of formatting, and this isn't optional."
+          "answer": "By default, but you can choose UPPER, lower or As typed."
         },
         {
           "question": "Can it format complex queries with subqueries and joins?",
@@ -4536,21 +4614,27 @@
         },
         {
           "question": "What happens if my SQL has a syntax error?",
-          "answer": "The formatter works on tokens and whitespace rather than fully parsing SQL grammar, so it will still attempt to format invalid SQL rather than reject it outright — always double-check the output against your intended query."
+          "answer": "Formatting stops, the status bar shows the line and column, and the editor underlines the spot. Minify still works on any text."
+        },
+        {
+          "question": "Are my comments kept?",
+          "answer": "Yes. Line comments (--) and block comments (/* */) are preserved when formatting. Minify removes them, but never touches string literals or quoted identifiers."
         }
       ]
     },
     "json-to-csv": {
       "seoTitle": "JSON to CSV Converter Online – Free, Instant, No Upload",
-      "metaDescription": "Convert a JSON array of objects into a CSV file, ready to open in Excel or Google Sheets — processed 100% locally in your browser.",
+      "metaDescription": "Convert a JSON array to CSV with your choice of delimiter, flattened or JSON nested values, joined arrays, quote-all, Excel BOM and formula protection, plus a table preview. Free and private.",
       "h1": "JSON to CSV Converter",
-      "subheading": "Convert a JSON array of objects into a CSV file, ready to open in a spreadsheet.",
+      "subheading": "Convert JSON to CSV with delimiter, nesting, arrays, Excel and formula-safety options, and a table preview.",
       "keywords": [
         "json to csv",
         "convert json to excel",
         "json array to csv",
         "convert to csv",
-        "csv converter"
+        "csv converter",
+        "json to excel",
+        "json to tsv"
       ],
       "howTo": [
         {
@@ -4573,7 +4657,7 @@
         },
         {
           "question": "What happens with nested objects?",
-          "answer": "Deeply nested values are flattened or stringified where possible so they still fit into a CSV cell."
+          "answer": "With Flatten objects on, nested keys become dotted columns such as team.name. Turn it off to keep nested values as JSON text in a single cell. Arrays are written as JSON, or joined with semicolons when you tick Join arrays."
         },
         {
           "question": "Is my data uploaded anywhere?",
@@ -4581,19 +4665,23 @@
         },
         {
           "question": "Can I choose which fields get exported as columns?",
-          "answer": "No, all fields present across your JSON objects are automatically included as columns — there's no field-selection option."
+          "answer": "Every key found in any object becomes a column. To drop some, delete them from the JSON first."
         },
         {
           "question": "How are commas or quotes inside values handled?",
-          "answer": "Values containing commas, quotes, or newlines are automatically wrapped in quotes and escaped per standard CSV formatting rules."
+          "answer": "Values containing the delimiter, quotes, line breaks or leading and trailing spaces are wrapped in quotes with inner quotes doubled, following RFC 4180. Quote all forces quotes everywhere."
         },
         {
           "question": "Does column order match the order of keys in my JSON?",
-          "answer": "Columns are generally derived from the keys found across your JSON objects — for consistent column order, ensure your JSON objects have keys in the same order."
+          "answer": "Columns follow the order in which keys first appear across the objects, so keep keys in a consistent order for predictable columns."
         },
         {
           "question": "Can I download the result directly as a .csv file?",
           "answer": "Yes, a dedicated download button saves the converted output as a .csv file."
+        },
+        {
+          "question": "Will Excel open the file correctly?",
+          "answer": "Tick Excel BOM to add a byte-order mark so accents display properly, choose Semicolon if your region uses it, and tick Formula guard to stop values starting with = + - or @ from being run as formulas."
         }
       ],
       "comparisonTable": {
@@ -4636,32 +4724,39 @@
     },
     "code-minifier": {
       "seoTitle": "HTML & CSS Minifier Online – Free, Instant, No Upload",
-      "metaDescription": "Minify HTML or CSS by stripping comments and unnecessary whitespace — processed 100% locally in your browser.",
+      "metaDescription": "Minify HTML, CSS, JavaScript, JSON and SVG in the browser and see exact size savings plus gzip size. Beautify CSS and JSON too. Free, private, no upload.",
       "h1": "HTML & CSS Minifier",
-      "subheading": "Strip comments and unnecessary whitespace from HTML or CSS to shrink file size.",
+      "subheading": "Minify HTML, CSS, JavaScript, JSON and SVG — with before/after size and gzip estimate, 100% local.",
       "keywords": [
         "minify css",
         "minify html",
-        "code compressor"
+        "code compressor",
+        "javascript minifier",
+        "svg minifier",
+        "css beautifier"
       ],
       "howTo": [
         {
-          "name": "Choose HTML or CSS",
-          "text": "Select which type of code you want to minify."
+          "name": "Choose a language",
+          "text": "Pick HTML, CSS, JavaScript, JSON or SVG."
         },
         {
-          "name": "Paste your code",
-          "text": "Paste your HTML or CSS into the editor."
+          "name": "Paste or drop your code",
+          "text": "Type, paste or open a file — the result updates as you go."
         },
         {
-          "name": "Minify and copy",
-          "text": "Click Minify, then copy the compressed result — see how much size you saved."
+          "name": "Check the savings",
+          "text": "The status bar shows the size before and after, and an estimate of the gzip size."
+        },
+        {
+          "name": "Copy or download",
+          "text": "Copy the result or download it as a file."
         }
       ],
       "faq": [
         {
           "question": "Will minifying break my code?",
-          "answer": "No, only comments and safe whitespace are removed — content inside pre, textarea, script, and style tags for HTML, and string literals for CSS, is preserved untouched."
+          "answer": "The minifiers are careful: strings, url() values, <pre> and <textarea> content are left untouched, CSS selectors like `a :hover` keep their meaning, and calc() keeps its spaces. JavaScript uses the Terser minifier. Always test the result."
         },
         {
           "question": "How much size does minifying save?",
@@ -4673,11 +4768,11 @@
         },
         {
           "question": "Does it minify JavaScript as well as HTML and CSS?",
-          "answer": "No, only HTML and CSS minification modes are available — there's no JavaScript minifier."
+          "answer": "Yes. JavaScript is minified with Terser (compression and variable renaming), and JSON and SVG are supported too."
         },
         {
           "question": "Are HTML comments always removed?",
-          "answer": "Yes, HTML comments are stripped automatically during minification with no option to preserve them."
+          "answer": "They are removed by default, except IE conditional comments. Tick Keep comments to preserve them in HTML and CSS."
         },
         {
           "question": "Does minifying CSS remove unused rules?",
@@ -4685,19 +4780,24 @@
         },
         {
           "question": "Can I reverse minification to get readable code back?",
-          "answer": "No, minification is one-directional and doesn't preserve original formatting or variable names to reconstruct — keep a copy of your original code if you'll need to edit it later."
+          "answer": "For CSS and JSON, tick Beautify instead to format them again. Minified HTML and JavaScript lose their original formatting, and JavaScript loses its variable names, so keep your source files."
+        },
+        {
+          "question": "What does the gzip figure mean?",
+          "answer": "It is the size the minified text would be after gzip compression, which is what most servers send over the network, so it is closer to the real download size."
         }
       ]
     },
     "html-entity-encoder": {
       "seoTitle": "HTML Entity Encoder / Decoder – Free, Instant, No Upload",
-      "metaDescription": "Encode special characters into HTML entities, or decode HTML entities back to readable text — processed 100% locally in your browser.",
+      "metaDescription": "Encode text to HTML entities or decode entities back — named, decimal or hex, minimal or all characters — with a searchable entity reference. Free, private, no DOM tricks.",
       "h1": "HTML Entity Encoder / Decoder",
-      "subheading": "Encode special characters into HTML entities, or decode entities back to readable text.",
+      "subheading": "Encode and decode HTML entities with named, decimal or hex styles and a searchable reference.",
       "keywords": [
         "html entity encoder",
         "decode html entities",
-        "escape html"
+        "escape html",
+        "html entities list"
       ],
       "howTo": [
         {
@@ -4720,7 +4820,7 @@
         },
         {
           "question": "What entities can be decoded?",
-          "answer": "All named and numeric HTML entities your browser recognizes — decoding uses the browser's own HTML parser for complete, accurate coverage."
+          "answer": "Named entities from the built-in table of about 250 common ones (such as &copy;, &mdash; and &eacute;), plus any decimal (&#169;) or hex (&#xA9;) numeric entity. Unknown names are left unchanged."
         },
         {
           "question": "Is my text uploaded anywhere?",
@@ -4728,7 +4828,7 @@
         },
         {
           "question": "Does it encode all non-ASCII characters or just special ones?",
-          "answer": "By default it targets characters with reserved meaning in HTML, like <, >, &, and quotes; there's a separate option to encode all non-ASCII characters as numeric entities if you need that."
+          "answer": "You choose: only & < > \" ', those plus every non-ASCII character, or every character. Non-ASCII characters use a named entity when one exists, otherwise a number."
         },
         {
           "question": "What's the difference between named and numeric entities?",
@@ -4740,15 +4840,19 @@
         },
         {
           "question": "Can decoding handle entities without a trailing semicolon?",
-          "answer": "Most browsers tolerate some named entities without a semicolon, but this decoder expects well-formed entities ending in a semicolon for reliable results."
+          "answer": "No. Only well-formed entities that end in a semicolon are decoded, so text such as AT&T or &amp stays as typed."
+        },
+        {
+          "question": "Is there a list of entities?",
+          "answer": "Yes. The Entity reference tab lists every entity the tool knows, searchable by name or by pasting the character, with a copy button for each."
         }
       ]
     },
     "title-case-converter": {
       "seoTitle": "Title Case Converter – APA, Chicago, MLA & AP Style, Free",
-      "metaDescription": "Capitalize titles and headlines correctly using APA, Chicago, MLA, or AP style rules — processed 100% locally in your browser.",
+      "metaDescription": "Convert headlines to title case using AP, APA, Chicago/MLA or capitalize-every-word rules, keeping acronyms and brands like NASA and iPhone, line by line. Free and private.",
       "h1": "Title Case & Headline Capitalizer",
-      "subheading": "Capitalize titles and headlines correctly using APA, Chicago, MLA, or AP style rules.",
+      "subheading": "Capitalize headlines using AP, APA or Chicago / MLA rules — acronyms and brand names kept, one headline per line.",
       "keywords": [
         "title case converter",
         "capitalize title",
@@ -4772,11 +4876,11 @@
       "faq": [
         {
           "question": "What's the difference between the styles?",
-          "answer": "Each style guide has its own rules for which short words (articles, conjunctions, prepositions) stay lowercase — APA and Chicago capitalize longer prepositions that AP and MLA would lowercase, for example."
+          "answer": "AP lowercases articles, conjunctions and prepositions of three letters or fewer. APA lowercases minor words of three letters or fewer. Chicago and MLA lowercase all prepositions, whatever their length. Every word capitalizes everything. Chicago and MLA agree on most titles, so they share one option."
         },
         {
           "question": "Is the first and last word always capitalized?",
-          "answer": "Yes, all four styles capitalize the first and last word of the title regardless of what part of speech it is."
+          "answer": "Yes. The first and last word, and the first word after a colon or dash, are always capitalized."
         },
         {
           "question": "Is my text uploaded anywhere?",
@@ -4784,11 +4888,11 @@
         },
         {
           "question": "How does it decide which small words to lowercase?",
-          "answer": "It uses style-specific rules (AP, APA, Chicago, or MLA) that define which short articles, conjunctions, and prepositions stay lowercase unless they start or end the title."
+          "answer": "Each style has its own lists of minor words (articles, conjunctions and prepositions), shown in the style's tooltip. Everything else is capitalized."
         },
         {
           "question": "Does it handle hyphenated words correctly?",
-          "answer": "Hyphenated words are capitalized as a single token rather than capitalizing each part after the hyphen separately — so \"well-known\" becomes \"Well-known\", not \"Well-Known\"."
+          "answer": "Yes. Each part of a hyphenated word is capitalized, so well-known becomes Well-Known."
         },
         {
           "question": "Can it capitalize titles with subtitles separated by a colon?",
@@ -4796,19 +4900,21 @@
         },
         {
           "question": "Does it preserve intentional stylized capitalization, like brand names?",
-          "answer": "No, every word is reformatted according to the selected style's rules, so stylized capitalization (like \"eBay\" or \"iPhone\") will be normalized rather than preserved."
+          "answer": "Yes, by default. Words that are all caps (NASA) or have inner capitals (iPhone, eBay) are left as they are. Untick Keep acronyms & brands to reformat them too."
         }
       ]
     },
     "url-slug-generator": {
       "seoTitle": "URL Slug Generator Online – SEO-Friendly, Free & Instant",
-      "metaDescription": "Turn any title or text into a clean, SEO-friendly URL slug — processed 100% locally in your browser.",
+      "metaDescription": "Turn titles into clean URL slugs with transliteration of accents, Cyrillic, Greek and Arabic, optional Unicode slugs, stop-word removal, max length and bulk conversion. Free and private.",
       "h1": "SEO URL Slug Generator",
-      "subheading": "Turn any title or text into a clean, SEO-friendly URL slug instantly.",
+      "subheading": "Turn titles into clean, SEO-friendly URL slugs — transliteration, stop words, max length and bulk conversion.",
       "keywords": [
         "slug generator",
         "url slugify",
-        "seo friendly url maker"
+        "seo friendly url maker",
+        "slugify",
+        "bulk slug generator"
       ],
       "howTo": [
         {
@@ -4827,7 +4933,7 @@
       "faq": [
         {
           "question": "How are accented characters handled?",
-          "answer": "Accented and diacritic characters are converted to their closest ASCII equivalent (e.g. é becomes e) so the slug stays URL-safe."
+          "answer": "They are transliterated to plain letters: é becomes e, ß becomes ss, æ becomes ae, and Cyrillic, Greek and Arabic letters become their Latin equivalents. Tick Keep non-Latin letters to keep letters from any script instead."
         },
         {
           "question": "What happens to special characters and spaces?",
@@ -4839,31 +4945,42 @@
         },
         {
           "question": "Does it enforce a maximum slug length?",
-          "answer": "There's no built-in maximum length — very long titles produce correspondingly long slugs, so trim manually if you need a shorter URL."
+          "answer": "Optionally. Set Max length and the slug is cut at a whole word where possible. Leave it empty for no limit."
         },
         {
           "question": "Can I choose hyphens or underscores as the separator?",
-          "answer": "Yes, a toggle lets you choose between hyphens and underscores as the word separator."
+          "answer": "Yes: hyphen, underscore, dot or none."
         },
         {
           "question": "Does it remove stop words like 'a' or 'the'?",
-          "answer": "No, it only strips special characters and normalizes accented letters — common words like \"a\" or \"the\" are kept in the slug."
+          "answer": "Optionally. Tick Drop stop words to remove common words such as a, the, of and and (a slug never ends up empty because of it)."
         },
         {
           "question": "What happens to numbers in the title?",
-          "answer": "Numbers are preserved as-is in the generated slug, since they're already URL-safe characters."
+          "answer": "Numbers are kept as they are. Symbols such as & and % are turned into words (and, percent)."
+        },
+        {
+          "question": "Can I make many slugs at once?",
+          "answer": "Yes. Put one title per line and every line gets its own slug. A prefix such as https://site.com/blog can be added to each one."
+        },
+        {
+          "question": "What about languages like Chinese or Japanese?",
+          "answer": "They cannot be transliterated reliably, so those characters would be dropped. Tick Keep non-Latin letters to keep them — modern browsers and search engines handle Unicode URLs."
         }
       ]
     },
     "opengraph-generator": {
       "seoTitle": "OpenGraph & Meta Tag Generator – Live Preview, Free",
-      "metaDescription": "Generate OpenGraph and Twitter meta tags with a live preview of how your link will look on Google, Twitter, and Facebook.",
+      "metaDescription": "Generate Open Graph and Twitter Card meta tags with live Google, X, Facebook, LinkedIn and Slack previews, length counters, image checks and a Next.js metadata export. Free and private.",
       "h1": "OpenGraph & Meta Tag Generator",
-      "subheading": "Generate social share meta tags with a live preview of how your link will look when shared.",
+      "subheading": "Generate social share meta tags with live previews for Google, X, Facebook, LinkedIn and Slack, plus length counters and image checks.",
       "keywords": [
         "opengraph generator",
         "meta tag preview",
-        "social share card maker"
+        "social share card maker",
+        "twitter card generator",
+        "meta tags generator",
+        "og image checker"
       ],
       "howTo": [
         {
@@ -4886,7 +5003,7 @@
         },
         {
           "question": "Does this work with Next.js?",
-          "answer": "Yes, there's a dedicated button to copy a ready-to-paste Next.js metadata export object alongside the plain HTML meta tags."
+          "answer": "Yes. A ready-to-paste Next.js metadata export is generated next to the plain HTML tags, with all values safely escaped."
         },
         {
           "question": "Is my data uploaded anywhere?",
@@ -4898,27 +5015,33 @@
         },
         {
           "question": "Does this generate Twitter Card tags too?",
-          "answer": "Check the generated output — many OpenGraph generators include matching Twitter Card meta tags alongside the standard `og:` tags for broader platform support."
+          "answer": "Yes. It writes twitter:card (large image or summary), title, description, image, alt text, site and creator."
         },
         {
           "question": "Can I preview how the link looks on different platforms?",
-          "answer": "The tool shows a preview of the card based on your entered tags, though actual rendering can vary slightly by platform since each service applies its own layout rules."
+          "answer": "Yes. Tabs show Google search, X / Twitter (large or small card), Facebook / LinkedIn and Slack / Discord previews. Real rendering can differ slightly by platform."
         },
         {
           "question": "Why isn't my site showing the updated preview after I changed the tags?",
           "answer": "Social platforms cache link previews — you'll typically need to use that platform's own debugging/cache-refresh tool (like Facebook's Sharing Debugger) to force it to re-read your updated tags."
+        },
+        {
+          "question": "Are my values escaped in the output?",
+          "answer": "Yes. Quotes, ampersands and angle brackets are escaped in the HTML tags, and quotes and backslashes in the Next.js code, so the output can't break your markup. Tags with no value are left out."
         }
       ]
     },
     "duplicate-line-remover": {
       "seoTitle": "Duplicate Line Remover & List Sorter – Free, Instant",
-      "metaDescription": "Remove duplicate lines from a list and sort it alphabetically or by length — processed 100% locally in your browser.",
+      "metaDescription": "Remove duplicate lines, show only duplicates or unique lines, count occurrences, and sort naturally, by length, reversed or shuffled — with live stats. Free and private.",
       "h1": "Duplicate Line Remover & List Sorter",
-      "subheading": "Remove duplicate lines from a list and sort it however you need.",
+      "subheading": "Remove duplicate lines, find duplicates, count occurrences and sort — with live statistics.",
       "keywords": [
         "remove duplicate lines",
         "deduplicate list",
-        "sort list online"
+        "sort list online",
+        "find duplicate lines",
+        "sort lines online"
       ],
       "howTo": [
         {
@@ -4949,19 +5072,23 @@
         },
         {
           "question": "Is duplicate detection case-sensitive?",
-          "answer": "There's a case-insensitive toggle — by default it may treat \"Apple\" and \"apple\" as different lines unless you enable case-insensitive comparison."
+          "answer": "Not by default: Ignore case is on. Untick it to treat Apple and apple as different lines. The first occurrence keeps its original casing."
         },
         {
           "question": "Does it ignore leading or trailing whitespace when comparing lines?",
-          "answer": "Check how your lines are compared — trimming behavior affects whether lines that differ only in surrounding whitespace are treated as duplicates."
+          "answer": "Yes, when Trim spaces is on, lines that differ only in surrounding spaces count as the same."
         },
         {
           "question": "What sorting options are available besides alphabetical?",
-          "answer": "You can sort A→Z, Z→A, by line length, or leave the original order unchanged — there's no separate numeric-value sort mode."
+          "answer": "A to Z, Z to A, natural (item2 before item10), natural descending, shortest first, longest first, reverse order and shuffle."
         },
         {
           "question": "Can I remove blank lines at the same time?",
-          "answer": "Yes, a separate \"remove empty lines\" option works independently of duplicate removal."
+          "answer": "Yes. Drop empty lines works alongside the other options, and the status bar reports how many were removed."
+        },
+        {
+          "question": "Can I see only the duplicates, or count them?",
+          "answer": "Yes. Mode lets you show only lines that appear more than once, keep only lines that appear exactly once, or list each line with how many times it occurs."
         }
       ]
     },

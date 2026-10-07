@@ -1,172 +1,181 @@
 "use client";
 
 import * as React from "react";
-import { GitCompareArrows, Save } from "lucide-react";
+import dynamic from "next/dynamic";
+import { useTheme } from "next-themes";
+import { ArrowLeftRight, Download, Eraser, FileUp, Save } from "lucide-react";
+import type { DiffOnMount } from "@monaco-editor/react";
 
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { useTrackTool } from "@/hooks/useTrackTool";
-import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
+import { CopyButton } from "@/components/tool-shell/CopyButton";
+import { ToolbarButton, ToolbarSelect, ToolbarSeparator, ToolbarToggle, Workspace } from "@/components/tools/developer/workspace/Workspace";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { useTrackTool } from "@/hooks/useTrackTool";
+import { diffStats, unifiedPatch } from "@/lib/diffText";
+import { downloadBlob } from "@/lib/downloadBlob";
+import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
 
-type DiffOp = "equal" | "added" | "removed";
+const DiffEditor = dynamic(() => import("@monaco-editor/react").then((m) => m.DiffEditor), {
+  ssr: false,
+  loading: () => <div className="flex h-full min-h-48 items-center justify-center text-sm text-muted-foreground">Loading editor…</div>,
+});
 
-interface DiffLine {
-  op: DiffOp;
-  text: string;
+const SAMPLE_A = `function greet(name) {
+  console.log("Hello, " + name);
+  return true;
 }
 
-function diffLines(original: string[], changed: string[]): DiffLine[] {
-  const n = original.length;
-  const m = changed.length;
-  const lcs: number[][] = Array.from({ length: n + 1 }, () => new Array<number>(m + 1).fill(0));
-
-  for (let i = n - 1; i >= 0; i--) {
-    for (let j = m - 1; j >= 0; j--) {
-      lcs[i][j] =
-        original[i] === changed[j] ? lcs[i + 1][j + 1] + 1 : Math.max(lcs[i + 1][j], lcs[i][j + 1]);
-    }
-  }
-
-  const result: DiffLine[] = [];
-  let i = 0;
-  let j = 0;
-  while (i < n && j < m) {
-    if (original[i] === changed[j]) {
-      result.push({ op: "equal", text: original[i] });
-      i++;
-      j++;
-    } else if (lcs[i + 1][j] >= lcs[i][j + 1]) {
-      result.push({ op: "removed", text: original[i] });
-      i++;
-    } else {
-      result.push({ op: "added", text: changed[j] });
-      j++;
-    }
-  }
-  while (i < n) {
-    result.push({ op: "removed", text: original[i] });
-    i++;
-  }
-  while (j < m) {
-    result.push({ op: "added", text: changed[j] });
-    j++;
-  }
-  return result;
+const users = ["ada", "grace", "linus"];
+users.forEach(greet);
+`;
+const SAMPLE_B = `function greet(name, punctuation = "!") {
+  console.log(\`Hello, \${name}\${punctuation}\`);
+  return true;
 }
 
-const DIFF_LINE_CLASS: Record<DiffOp, string> = {
-  equal: "bg-transparent",
-  added: "bg-emerald-500/15 text-emerald-700 dark:text-emerald-400",
-  removed: "bg-destructive/15 text-destructive",
-};
+const users = ["ada", "grace", "linus", "margaret"];
+users.forEach((u) => greet(u));
+`;
 
-const DIFF_LINE_PREFIX: Record<DiffOp, string> = {
-  equal: " ",
-  added: "+",
-  removed: "-",
-};
-
-interface StoredDiff {
-  original: string;
-  changed: string;
-}
+const LANGUAGES = [
+  { value: "plaintext", label: "Plain text" },
+  { value: "javascript", label: "JavaScript" },
+  { value: "typescript", label: "TypeScript" },
+  { value: "json", label: "JSON" },
+  { value: "html", label: "HTML" },
+  { value: "css", label: "CSS" },
+  { value: "markdown", label: "Markdown" },
+  { value: "yaml", label: "YAML" },
+  { value: "sql", label: "SQL" },
+  { value: "python", label: "Python" },
+];
 
 export default function TextDiffChecker() {
   useTrackTool("text-diff-checker");
-  const [original, setOriginal] = React.useState("");
-  const [changed, setChanged] = React.useState("");
-  const [diff, setDiff] = React.useState<DiffLine[] | null>(null);
+  const { resolvedTheme } = useTheme();
+  const [original, setOriginal] = React.useState(SAMPLE_A);
+  const [modified, setModified] = React.useState(SAMPLE_B);
+  const [sideBySide, setSideBySide] = React.useState(true);
+  const [ignoreWhitespace, setIgnoreWhitespace] = React.useState(false);
+  const [ignoreCase, setIgnoreCase] = React.useState(false);
+  const [wrap, setWrap] = React.useState(false);
+  const [language, setLanguage] = React.useState("javascript");
+  const originalFile = React.useRef<HTMLInputElement>(null);
+  const modifiedFile = React.useRef<HTMLInputElement>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
-  const stats = React.useMemo(() => {
-    if (!diff) return { added: 0, removed: 0 };
-    return diff.reduce(
-      (acc, line) => {
-        if (line.op === "added") acc.added++;
-        if (line.op === "removed") acc.removed++;
-        return acc;
-      },
-      { added: 0, removed: 0 }
-    );
-  }, [diff]);
+  const opts = { ignoreWhitespace, ignoreCase };
+  const stats = React.useMemo(() => diffStats(original, modified, { ignoreWhitespace, ignoreCase }), [original, modified, ignoreWhitespace, ignoreCase]);
+  const patch = React.useMemo(() => (stats.identical ? "" : unifiedPatch(original, modified, { ignoreWhitespace, ignoreCase })), [stats.identical, original, modified, ignoreWhitespace, ignoreCase]);
 
-  const compare = async () => {
-    const result = diffLines(original.split("\n"), changed.split("\n"));
-    setDiff(result);
-
-    const added = result.filter((l) => l.op === "added").length;
-    const removed = result.filter((l) => l.op === "removed").length;
-
-    await saveToolResult("text-diff-checker", {
-      title: `${added} added, ${removed} removed`,
-      summary: `${original.length.toLocaleString()} vs ${changed.length.toLocaleString()} characters`,
-      data: JSON.stringify({ original, changed }),
-    });
-    historyRef.current?.refresh();
+  const handleMount: DiffOnMount = (editor) => {
+    editor.getOriginalEditor().onDidChangeModelContent(() => setOriginal(editor.getOriginalEditor().getValue()));
+    editor.getModifiedEditor().onDidChangeModelContent(() => setModified(editor.getModifiedEditor().getValue()));
   };
 
-  const restoreResult = (item: ToolHistoryItem) => {
-    if (!item.data) return;
+  const openInto = async (file: File | undefined, set: (v: string) => void) => {
+    if (file) set(await file.text());
+  };
+  const save = async () => {
+    await saveToolResult("text-diff-checker", { title: stats.identical ? "Identical texts" : `+${stats.added} −${stats.removed} lines`, summary: `${original.length.toLocaleString()} → ${modified.length.toLocaleString()} characters`, data: JSON.stringify({ original, modified }) });
+    historyRef.current?.refresh();
+  };
+  const restore = (item: ToolHistoryItem) => {
     try {
-      const parsed = JSON.parse(item.data) as StoredDiff;
-      setOriginal(parsed.original);
-      setChanged(parsed.changed);
-      setDiff(null);
+      const s = JSON.parse(item.data ?? "") as { original: string; modified: string };
+      setOriginal(s.original);
+      setModified(s.modified);
     } catch {
-      // Ignore malformed stored data.
+      /* not a saved diff */
     }
   };
 
-  return (
-    <div className="space-y-6">
-      <div className="grid gap-4 sm:grid-cols-2">
-        <Card className="space-y-2 p-4">
-          <p className="text-sm font-medium">Original text</p>
-          <textarea
-            value={original}
-            onChange={(e) => setOriginal(e.target.value)}
-            rows={10}
-            className="w-full resize-none rounded-lg border border-border bg-background p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-        </Card>
-        <Card className="space-y-2 p-4">
-          <p className="text-sm font-medium">Changed text</p>
-          <textarea
-            value={changed}
-            onChange={(e) => setChanged(e.target.value)}
-            rows={10}
-            className="w-full resize-none rounded-lg border border-border bg-background p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-        </Card>
+  const toolbar = (
+    <>
+      <ToolbarButton icon={<ArrowLeftRight className="h-3.5 w-3.5" />} onClick={() => { setOriginal(modified); setModified(original); }}>
+        Swap
+      </ToolbarButton>
+      <ToolbarButton icon={<FileUp className="h-3.5 w-3.5" />} onClick={() => originalFile.current?.click()}>
+        Open original
+      </ToolbarButton>
+      <ToolbarButton icon={<FileUp className="h-3.5 w-3.5" />} onClick={() => modifiedFile.current?.click()}>
+        Open changed
+      </ToolbarButton>
+      <input ref={originalFile} type="file" className="hidden" onChange={(e) => { void openInto(e.target.files?.[0], setOriginal); e.target.value = ""; }} />
+      <input ref={modifiedFile} type="file" className="hidden" onChange={(e) => { void openInto(e.target.files?.[0], setModified); e.target.value = ""; }} />
+      <ToolbarButton icon={<Eraser className="h-3.5 w-3.5" />} onClick={() => { setOriginal(""); setModified(""); }} disabled={!original && !modified}>
+        Clear
+      </ToolbarButton>
+      <ToolbarSeparator />
+      <ToolbarToggle label="Side by side" checked={sideBySide} onChange={setSideBySide} />
+      <ToolbarToggle label="Ignore whitespace" checked={ignoreWhitespace} onChange={setIgnoreWhitespace} />
+      <ToolbarToggle label="Ignore case" checked={ignoreCase} onChange={setIgnoreCase} />
+      <ToolbarToggle label="Wrap" checked={wrap} onChange={setWrap} />
+      <ToolbarSelect label="Language" value={language} onChange={setLanguage} options={LANGUAGES} />
+      <div className="ml-auto flex items-center gap-2">
+        <CopyButton value={patch} size="sm" variant="outline" disabled={!patch}>
+          Copy patch
+        </CopyButton>
+        <ToolbarButton icon={<Download className="h-3.5 w-3.5" />} onClick={() => downloadBlob(new Blob([patch], { type: "text/x-diff" }), "changes.patch")} disabled={!patch}>
+          Patch
+        </ToolbarButton>
+        <ToolbarButton icon={<Save className="h-3.5 w-3.5" />} onClick={save} disabled={!original && !modified}>
+          Save
+        </ToolbarButton>
       </div>
+    </>
+  );
 
-      <Button onClick={compare} disabled={!original && !changed}>
-        <GitCompareArrows className="h-4 w-4" /> Compare
-      </Button>
-
-      {diff && (
-        <Card className="space-y-3 p-4">
-          <div className="flex items-center justify-between">
-            <p className="text-sm font-medium">
-              {stats.added} line{stats.added === 1 ? "" : "s"} added, {stats.removed} line
-              {stats.removed === 1 ? "" : "s"} removed
-            </p>
-            <Button size="sm" variant="outline" onClick={compare}>
-              <Save className="h-3.5 w-3.5" /> Save result
-            </Button>
-          </div>
-          <div className="max-h-96 overflow-auto rounded-lg border border-border bg-muted/20 p-3 font-mono text-xs">
-            {diff.map((line, i) => (
-              <div key={i} className={`whitespace-pre-wrap px-1 ${DIFF_LINE_CLASS[line.op]}`}>
-                {DIFF_LINE_PREFIX[line.op]} {line.text}
-              </div>
-            ))}
-          </div>
-        </Card>
+  const status = (
+    <>
+      {stats.identical ? (
+        <span className="font-medium text-emerald-600 dark:text-emerald-400">{original === "" && modified === "" ? "Paste or type text on both sides" : "No differences"}</span>
+      ) : (
+        <>
+          <span className="font-medium text-emerald-600 dark:text-emerald-400">+{stats.added.toLocaleString()} added</span>
+          <span className="font-medium text-destructive">−{stats.removed.toLocaleString()} removed</span>
+          <span>{stats.unchanged.toLocaleString()} unchanged lines</span>
+        </>
       )}
+      <span>Both sides are editable — type or paste directly.</span>
+    </>
+  );
 
-      <ToolHistoryList ref={historyRef} toolSlug="text-diff-checker" onRestore={restoreResult} />
+  return (
+    <div className="space-y-4">
+      <Workspace toolbar={toolbar} status={status}>
+        <div className="grid h-full grid-rows-[auto_1fr] gap-2">
+          {sideBySide && (
+            <div className="grid grid-cols-2 gap-3 px-1 text-xs font-medium text-muted-foreground">
+              <span>Original</span>
+              <span>Changed</span>
+            </div>
+          )}
+          <div className="min-h-0 overflow-hidden rounded-lg border border-border">
+            <DiffEditor
+              height="100%"
+              original={original}
+              modified={modified}
+              language={language}
+              theme={resolvedTheme === "dark" ? "vs-dark" : "vs"}
+              onMount={handleMount}
+              options={{
+                renderSideBySide: sideBySide,
+                ignoreTrimWhitespace: ignoreWhitespace,
+                originalEditable: true,
+                automaticLayout: true,
+                minimap: { enabled: false },
+                fontSize: 13,
+                scrollBeyondLastLine: false,
+                wordWrap: wrap ? "on" : "off",
+                renderOverviewRuler: true,
+                enableSplitViewResizing: true,
+                fixedOverflowWidgets: true,
+              }}
+            />
+          </div>
+        </div>
+      </Workspace>
+      <ToolHistoryList ref={historyRef} toolSlug="text-diff-checker" onRestore={restore} />
     </div>
   );
 }

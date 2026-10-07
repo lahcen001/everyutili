@@ -172,14 +172,14 @@ export default function Base64EncoderDecoder() {
               </button>
             </div>
           ) : (
-            <textarea value={input} onChange={(e) => setInput(e.target.value)} rows={10} placeholder={mode === "encode" ? "Enter text to encode…" : "Paste Base64 or a data: URI to decode…"} aria-label="Input" className={fieldClass} />
+            <textarea value={input} onChange={(e) => setInput(e.target.value)} rows={18} placeholder={mode === "encode" ? "Enter text to encode…" : "Paste Base64 or a data: URI to decode…"} aria-label="Input" className={fieldClass} />
           )}
         </Card>
 
         <Card className="space-y-2 p-4">
           <p className="text-sm font-medium">{mode === "encode" ? "Base64" : output.kind === "binary" ? "Decoded file" : "Plain text"}</p>
           {output.kind === "error" ? (
-            <div role="alert" className="flex h-[196px] items-center justify-center rounded-lg border border-destructive/30 bg-destructive/10 px-3 text-center text-sm text-destructive">
+            <div role="alert" className="flex h-[364px] items-center justify-center rounded-lg border border-destructive/30 bg-destructive/10 px-3 text-center text-sm text-destructive">
               {output.message}
             </div>
           ) : output.kind === "binary" ? (
@@ -196,7 +196,7 @@ export default function Base64EncoderDecoder() {
               </Button>
             </div>
           ) : (
-            <textarea readOnly value={outputText} rows={10} aria-label="Output" className={cn(fieldClass, "bg-muted/20")} />
+            <textarea readOnly value={outputText} rows={18} aria-label="Output" className={cn(fieldClass, "bg-muted/20")} />
           )}
           {output.kind === "text" && <p className="text-xs text-muted-foreground">{formatBytes(output.size)} decoded as UTF-8 text.</p>}
           {output.kind === "encoded" && <p className="text-xs text-muted-foreground">{outputText.length.toLocaleString()} characters.</p>}

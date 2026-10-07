@@ -245,62 +245,69 @@
     },
     "json-formatter": {
       "seoTitle": "Formatador e Validador de JSON Online – Grátis e Instantâneo",
-      "metaDescription": "Formate, valide e embeleze JSON online com destaque instantâneo de erros de sintaxe, visualização em árvore e exportação para CSV. 100% grátis, sem cadastro.",
+      "metaDescription": "Formate, valide, minifique e explore JSON em um editor em tela cheia, com linha e coluna exatas do erro, visões em árvore, tabela e JSONPath, ordenação de chaves, reparo e segurança com números grandes. Grátis e privado.",
       "h1": "Formatador e Validador de JSON",
-      "subheading": "Embeleze, valide e explore JSON com destaque instantâneo de erros e uma visualização em árvore ao vivo.",
+      "subheading": "Um editor de JSON em tela cheia: formate, valide, repare, ordene chaves e explore em árvore, tabela ou consulta JSONPath — 100% local.",
       "keywords": [
-        "formatador json",
-        "validador json",
-        "embelezador json",
+        "formatador de json",
+        "validador de json",
+        "embelezador de json",
         "json para csv",
-        "formatar json online"
+        "formatar json online",
+        "validar json online",
+        "testar jsonpath",
+        "reparar json"
       ],
       "howTo": [
         {
-          "name": "Cole seu JSON",
-          "text": "Cole ou digite seu JSON bruto no editor."
+          "name": "Cole ou arraste seu JSON",
+          "text": "Digite, cole, abra um arquivo ou arraste um arquivo .json para o editor."
         },
         {
-          "name": "Validação automática",
-          "text": "Erros de sintaxe são destacados instantaneamente enquanto você digita."
+          "name": "Confira a barra de status",
+          "text": "Ela mostra JSON válido ou a linha e a coluna exatas do primeiro erro — clique para ir direto até lá."
         },
         {
-          "name": "Formate e explore",
-          "text": "Use a formatação automática ou navegue pela visualização em árvore interativa."
+          "name": "Formate, repare ou explore",
+          "text": "Formate ou minifique com indentação de 2, 4 espaços ou tabulação, ordene as chaves, repare JSON flexível e alterne o painel direito entre Formatado, Árvore, Tabela e Consulta."
         },
         {
-          "name": "Exporte",
-          "text": "Copie o JSON formatado ou converta-o para CSV."
+          "name": "Copie, baixe ou salve",
+          "text": "Copie o resultado, baixe o formatted.json ou salve um trecho no seu histórico."
         }
       ],
       "faq": [
         {
-          "question": "Esta ferramenta envia os meus dados JSON para algum lugar?",
+          "question": "Esta ferramenta envia meus dados JSON para algum lugar?",
           "answer": "Não. Toda a análise, formatação e validação acontece localmente no seu navegador."
         },
         {
           "question": "Posso converter JSON para CSV?",
-          "answer": "Sim, utilize a exportação CSV integrada para arrays JSON planos ou aninhados."
+          "answer": "Use a visão em Tabela para ver um array de objetos como linhas e colunas. Para obter um arquivo CSV, abra a ferramenta de JSON para CSV, que tem opções de delimitador, achatamento e Excel."
         },
         {
-          "question": "O que acontece se o meu JSON for inválido?",
-          "answer": "O editor destaca em tempo real a linha e o carácter exatos do erro de sintaxe."
+          "question": "O que acontece se meu JSON for inválido?",
+          "answer": "A barra de status indica o problema e mostra a linha e a coluna, o editor sublinha o ponto exato e, ao clicar na mensagem, o cursor vai até lá. Se o problema for sintaxe flexível, como comentários ou vírgulas finais, o botão Reparar resolve."
         },
         {
-          "question": "A vista em árvore permite colapsar e expandir objetos aninhados?",
-          "answer": "Sim, clique na seta ao lado de qualquer objeto ou array para colapsar ou expandir esse ramo da árvore."
+          "question": "A visão em árvore permite recolher e expandir objetos aninhados?",
+          "answer": "Sim. Clique em qualquer seta ou use Expandir tudo, Recolher tudo e o seletor de Profundidade. Você também pode pesquisar chaves e valores, percorrer as correspondências e copiar qualquer caminho ou valor."
         },
         {
-          "question": "Consegue ordenar as chaves dos objetos alfabeticamente?",
-          "answer": "Não, as chaves são apresentadas pela mesma ordem em que aparecem no seu JSON original — não existe opção de ordenação alfabética."
+          "question": "Ele consegue ordenar as chaves dos objetos em ordem alfabética?",
+          "answer": "Sim. Marque Ordenar chaves e, ao Formatar ou na visão Formatado, as chaves de todos os objetos ficam de A a Z, em todos os níveis."
         },
         {
-          "question": "Suporta JSON com comentários ou vírgulas finais?",
-          "answer": "Não, esta ferramenta segue a sintaxe JSON estrita — comentários e vírgulas finais (por vezes permitidos em JSON5 ou JSONC) causarão um erro de análise."
+          "question": "Ele aceita JSON com comentários ou vírgulas finais?",
+          "answer": "O validador segue o JSON estrito e, por isso, aponta esses casos — mas um clique em Reparar remove comentários e vírgulas finais, coloca aspas em nomes de propriedade sem aspas, troca aspas simples por aspas duplas e corrige os True, False e None no estilo Python."
         },
         {
           "question": "Qual é a diferença entre embelezar e minificar aqui?",
-          "answer": "Embelezar adiciona indentação e quebras de linha para facilitar a leitura; minificar remove todos os espaços em branco desnecessários para produzir o resultado mais pequeno possível — ambos representam os mesmos dados subjacentes."
+          "answer": "Formatar (embelezar) adiciona indentação e quebras de linha para facilitar a leitura; Minificar remove todo espaço em branco desnecessário. Ambos mantêm números muito grandes, como 12345678901234567890, exatamente como foram escritos."
+        },
+        {
+          "question": "Posso consultar os dados com JSONPath?",
+          "answer": "Sim. Abra a aba Consulta e digite uma expressão como $.users[*].name, $..price ou $.items[-1] para listar cada correspondência com o seu caminho."
         }
       ]
     },
@@ -2250,9 +2257,9 @@
     },
     "url-encoder-decoder": {
       "seoTitle": "Codificador e Decodificador de URL Online – Grátis e Instantâneo",
-      "metaDescription": "Codifique ou decodifique URLs e query strings nos modos Componente, URL completa ou formulário (+), e divida uma URL em partes e parâmetros. Grátis, privado e sem cadastro.",
+      "metaDescription": "Codifique ou decodifique URLs e query strings nos modos Componente, URL completa ou formulário (+), e divida uma URL em suas partes e parâmetros. Grátis, privado e sem cadastro.",
       "h1": "Codificador / Decodificador de URL",
-      "subheading": "Codifique ou decodifique texto e URLs com percent-encoding em três modos e veja as partes e os parâmetros de consulta de uma URL — 100% local.",
+      "subheading": "Codifique ou decodifique textos e URLs com percent-encoding em três modos e veja as partes de uma URL e seus parâmetros de consulta — 100% local.",
       "keywords": [
         "codificador de url",
         "decodificador de url",
@@ -2282,12 +2289,12 @@
       ],
       "faq": [
         {
-          "question": "Quando preciso de codificação de URL?",
-          "answer": "A codificação de URL é necessária quando caracteres especiais (espaços, &, =, ?) aparecem em parâmetros de consulta ou em segmentos de caminho."
+          "question": "Quando preciso codificar uma URL?",
+          "answer": "A codificação de URL é necessária quando caracteres especiais (espaços, &, =, ?) aparecem em parâmetros de consulta ou em segmentos do caminho."
         },
         {
-          "question": "Qual padrão de codificação ela usa?",
-          "answer": "Ela usa as funções nativas encodeURIComponent/decodeURIComponent do navegador (percent-encoding da RFC 3986)."
+          "question": "Qual padrão de codificação isto usa?",
+          "answer": "Usa as funções nativas encodeURIComponent/decodeURIComponent do navegador (percent-encoding da RFC 3986)."
         },
         {
           "question": "Meus dados são enviados para algum lugar?",
@@ -2295,80 +2302,90 @@
         },
         {
           "question": "Qual é a diferença entre encodeURIComponent e encodeURI?",
-          "answer": "O modo Componente (encodeURIComponent) codifica tudo, inclusive / ? & = #, o que é ideal para um único valor. O modo URL completa (encodeURI) mantém esses caracteres para que a URL continue funcionando. O modo Formulário é o Componente com espaços escritos como +."
+          "answer": "O modo Componente (encodeURIComponent) codifica tudo, inclusive / ? & = #, o que é correto para um único valor. O modo URL completa (encodeURI) mantém esses caracteres para que a URL continue funcionando. O modo Formulário é o Componente com os espaços escritos como +."
         },
         {
           "question": "Como os espaços são codificados?",
-          "answer": "Como %20 nos modos Componente e URL completa, e como + no modo Formulário (application/x-www-form-urlencoded). Decodificar no modo Formulário transforma + de volta em espaço."
+          "answer": "Como %20 nos modos Componente e URL completa, e como + no modo Formulário (application/x-www-form-urlencoded). A decodificação no modo Formulário transforma + de volta em espaço."
         },
         {
           "question": "Posso codificar uma URL inteira, incluindo a query string?",
-          "answer": "Você pode codificar qualquer texto que colar, mas codificar uma URL completa dessa forma também escapa caracteres como `:` e `/` que você provavelmente quer manter — a ferramenta foi feita para codificar valores individuais, não URLs inteiras."
+          "answer": "Sim. Escolha o modo URL completa, que mantém os caracteres que dão estrutura a uma URL (: / ? & = #) e escapa apenas os inseguros. O modo Componente escaparia esses também, o que é correto para um único valor, mas não para uma URL inteira."
         },
         {
-          "question": "Por que a decodificação falha com a minha entrada?",
-          "answer": "A decodificação falha se o texto contiver um `%` que não seja seguido por dois dígitos hexadecimais válidos, o que acontece com entradas malformadas ou já parcialmente decodificadas."
+          "question": "Por que a decodificação falha na minha entrada?",
+          "answer": "A decodificação falha se o texto contém um `%` que não é seguido por dois dígitos hexadecimais válidos, o que acontece com entradas malformadas ou já parcialmente decodificadas."
         },
         {
-          "question": "Ela consegue mostrar as partes de uma URL?",
-          "answer": "Sim. Quando o texto é uma URL completa, ela é dividida em protocolo, host, caminho, consulta e fragmento, e cada parâmetro de consulta é listado com seu valor decodificado."
+          "question": "Ele consegue mostrar as partes de uma URL?",
+          "answer": "Sim. Quando o texto é uma URL completa, ele é dividido em protocolo, host, caminho, consulta e fragmento, e cada parâmetro de consulta é listado com seu valor decodificado."
         }
       ]
     },
     "jwt-decoder": {
-      "seoTitle": "Decodificador JWT Online – Grátis e Instantâneo, Sem Cadastro",
-      "metaDescription": "Decodifique JSON Web Tokens (JWT) instantaneamente no seu navegador. Veja cabeçalho, payload e expiração — sem verificação de assinatura, sem chamadas ao servidor.",
-      "h1": "Decodificador JWT",
-      "subheading": "Decodifique o cabeçalho e payload de um JWT instantaneamente — processado 100% localmente, assinatura nunca verificada no servidor.",
+      "seoTitle": "Decodificador de JWT Online – Grátis e Instantâneo, Sem Cadastro",
+      "metaDescription": "Decodifique um JWT e verifique a assinatura (algoritmos HS, RS, PS e ES) no seu navegador. Partes coloridas, expiração legível, avisos claros e nada é enviado nem salvo.",
+      "h1": "Decodificador de JWT",
+      "subheading": "Decodifique um JWT, leia suas claims em linguagem simples e verifique a assinatura com seu segredo ou chave pública — 100% local, nunca armazenado.",
       "keywords": [
-        "decodificador jwt",
+        "decodificador de jwt",
         "decodificar jwt online",
-        "decodificador json web token",
-        "analisador jwt grátis",
-        "depurador jwt"
+        "decodificador de json web token",
+        "analisador de jwt grátis",
+        "depurador de jwt",
+        "verificar assinatura jwt",
+        "verificar expiração do jwt"
       ],
       "howTo": [
         {
           "name": "Cole seu JWT",
-          "text": "Cole um JSON Web Token no campo de entrada."
+          "text": "Cole o token — um \"Bearer \" no início não é problema."
         },
         {
-          "name": "Decodificação automática",
-          "text": "O cabeçalho e payload são decodificados de Base64URL e exibidos como JSON formatado."
+          "name": "Leia as partes decodificadas",
+          "text": "O cabeçalho e o payload aparecem como JSON, com o token colorido por partes e exp, nbf e iat exibidos como datas legíveis."
         },
         {
-          "name": "Verifique a expiração",
-          "text": "Se uma claim exp estiver presente, seu status de expiração é destacado."
+          "name": "Confira as claims de tempo",
+          "text": "Veja se o token está expirado ou ainda não é válido, com uma contagem regressiva ao vivo."
+        },
+        {
+          "name": "Verifique a assinatura",
+          "text": "Digite o segredo compartilhado (HS) ou cole a chave pública em PEM ou JWK (RS, PS, ES) e clique em Verificar."
         }
       ],
       "faq": [
         {
           "question": "Esta ferramenta verifica a assinatura do JWT?",
-          "answer": "Não, esta ferramenta apenas descodifica o cabeçalho e o payload — não verifica a assinatura. Nunca confie num token descodificado sem verificação do lado do servidor."
+          "answer": "Sim, quando você pede. Informe o segredo para HS256/384/512 ou uma chave pública (PEM ou JWK) para os algoritmos RS, PS e ES e clique em Verificar. Até lá, a página informa claramente que a assinatura não foi verificada — só decodificar não prova nada."
         },
         {
-          "question": "O meu token é enviado para um servidor?",
-          "answer": "Não, a descodificação acontece inteiramente localmente no seu navegador utilizando descodificação Base64URL."
+          "question": "Meu token é enviado para um servidor?",
+          "answer": "Não, a decodificação acontece inteiramente de forma local no seu navegador, usando decodificação Base64URL."
         },
         {
-          "question": "O que significa a declaração exp?",
-          "answer": "A declaração exp é um timestamp Unix que indica quando o token expira. Esta ferramenta destaca se já expirou."
+          "question": "O que significa a claim exp?",
+          "answer": "exp é um timestamp Unix que indica quando o token expira. A ferramenta o exibe como uma data, com uma contagem regressiva ao vivo como “em 2 horas” ou “há 3 dias”."
         },
         {
           "question": "Posso usar isto para verificar se um token expirou?",
-          "answer": "Pode inspecionar a declaração exp depois de descodificar para ver se o timestamp já passou, mas a ferramenta não valida automaticamente a expiração em relação à hora atual."
+          "answer": "Sim. Os selos mostram Expirado, Ainda não válido (nbf) ou Não expirado. Eles descrevem apenas as claims de tempo, não se o token é autêntico."
         },
         {
-          "question": "Que algoritmo o cabeçalho mostra?",
-          "answer": "O cabeçalho descodificado inclui o campo alg, como HS256 ou RS256, indicando com que algoritmo o token foi assinado — isto é apenas metadados e não é utilizado para verificar nada aqui."
+          "question": "Qual algoritmo o cabeçalho mostra?",
+          "answer": "O cabeçalho decodificado inclui o campo alg, como HS256 ou RS256, indicando com qual algoritmo o token foi assinado — são apenas metadados e não são usados para verificar nada aqui."
         },
         {
-          "question": "Posso descodificar um JWT malformado ou truncado?",
-          "answer": "Não, o token tem de ter três segmentos Base64URL separados por pontos (cabeçalho, payload, assinatura); se um segmento estiver em falta ou não for Base64URL válido, a descodificação falhará."
+          "question": "Posso decodificar um JWT malformado ou truncado?",
+          "answer": "Não. Um JWT assinado tem três partes Base64URL separadas por pontos que se decodificam em JSON; a ferramenta indica qual parte está errada. Tokens criptografados (JWE, cinco partes) não podem ser decodificados aqui."
         },
         {
-          "question": "As declarações personalizadas no payload são apresentadas?",
-          "answer": "Sim, todas as declarações no payload são apresentadas, tanto as declarações registadas como iss e sub, como quaisquer declarações personalizadas que a sua aplicação tenha adicionado."
+          "question": "As claims personalizadas do payload são exibidas?",
+          "answer": "Sim, todas as claims do payload são exibidas, tanto as registradas, como iss e sub, quanto as personalizadas adicionadas pela sua aplicação."
+        },
+        {
+          "question": "Meus tokens ou chaves são armazenados em algum lugar?",
+          "answer": "Não. Tudo acontece no seu navegador e, ao contrário da maioria das ferramentas daqui, tokens e chaves nunca são salvos no seu histórico."
         }
       ]
     },
@@ -2445,207 +2462,231 @@
     },
     "hash-generator": {
       "seoTitle": "Gerador de Hash Online – SHA-1, SHA-256, SHA-512 Grátis",
-      "metaDescription": "Gere hashes SHA-1, SHA-256, SHA-384 e SHA-512 de texto ou arquivos instantaneamente no seu navegador usando a API Web Crypto. Grátis e privado.",
+      "metaDescription": "Gere hashes MD5, SHA-1, SHA-256, SHA-384, SHA-512 e CRC32 de textos ou arquivos, compare com um checksum esperado e copie em hexadecimal ou Base64. Grátis e privado.",
       "h1": "Gerador de Hash",
-      "subheading": "Calcule hashes SHA-1, SHA-256, SHA-384 e SHA-512 de texto ou arquivos — processado 100% localmente.",
+      "subheading": "Gere hashes MD5, SHA e CRC32 de textos ou arquivos e verifique um checksum — processado 100% localmente.",
       "keywords": [
         "gerador de hash online",
-        "gerador sha256",
+        "gerador de sha256",
         "hash sha1 online",
         "verificador de hash de arquivo",
-        "gerador de checksum grátis"
+        "gerador de checksum grátis",
+        "gerador de md5",
+        "verificar checksum de arquivo",
+        "calculadora de crc32"
       ],
       "howTo": [
         {
-          "name": "Escolha texto ou arquivo",
-          "text": "Alterne entre calcular o hash de texto bruto ou um arquivo enviado."
+          "name": "Digite um texto ou arraste um arquivo",
+          "text": "Digite um texto — os hashes são atualizados enquanto você digita — ou arraste qualquer arquivo."
         },
         {
-          "name": "Insira sua entrada",
-          "text": "Digite texto ou arraste e solte um arquivo."
+          "name": "Escolha os algoritmos",
+          "text": "Marque MD5, SHA-1, SHA-256, SHA-384, SHA-512 e CRC32 conforme a necessidade."
         },
         {
-          "name": "Veja todos os hashes",
-          "text": "Os digests SHA-1, SHA-256, SHA-384 e SHA-512 são calculados instantaneamente."
+          "name": "Leia os hashes",
+          "text": "Cada hash completo é exibido; alterne para maiúsculas ou Base64 se precisar."
         },
         {
-          "name": "Copie um hash",
-          "text": "Clique no ícone de copiar ao lado de qualquer hash para copiá-lo para a área de transferência."
+          "name": "Verifique um download",
+          "text": "Cole o checksum da página de download e a ferramenta informa se ele confere."
         }
       ],
       "faq": [
         {
-          "question": "Porque é que o MD5 não é oferecido?",
-          "answer": "O MD5 não está disponível na Web Crypto API nativa do navegador e está criptograficamente comprometido — utilize SHA-256 ou SHA-512."
+          "question": "Por que o MD5 é rotulado como legado?",
+          "answer": "MD5 e SHA-1 estão criptograficamente quebrados, então não os use para segurança. Eles estão incluídos porque muitos sites ainda publicam checksums MD5 ou SHA-1 para downloads."
         },
         {
-          "question": "O meu ficheiro é enviado para um servidor?",
-          "answer": "Não, o hashing acontece inteiramente localmente utilizando a função SubtleCrypto.digest da Web Crypto API."
+          "question": "Meu arquivo é enviado para um servidor?",
+          "answer": "Não, o cálculo do hash acontece inteiramente de forma local, usando a função SubtleCrypto.digest da Web Crypto API."
         },
         {
-          "question": "Para que é utilizado um hash?",
-          "answer": "Os hashes são utilizados para verificar a integridade de ficheiros, detetar duplicados e criar impressões digitais de comprimento fixo dos dados."
+          "question": "Para que serve um hash?",
+          "answer": "Hashes são usados para verificar a integridade de arquivos, detectar duplicatas e criar impressões digitais de tamanho fixo dos dados."
         },
         {
-          "question": "Que algoritmos de hashing estão disponíveis?",
-          "answer": "SHA-1, SHA-256, SHA-384 e SHA-512 são suportados, todos calculados através da Web Crypto API incorporada no navegador."
+          "question": "Quais algoritmos de hash estão disponíveis?",
+          "answer": "MD5, SHA-1, SHA-256, SHA-384, SHA-512 e CRC32. O SHA usa a Web Crypto API do seu navegador; MD5 e CRC32 são calculados pela própria ferramenta."
         },
         {
-          "question": "Posso calcular o hash de um ficheiro em vez de texto escrito?",
-          "answer": "Sim, pode carregar um ficheiro e a ferramenta calcula o seu hash diretamente a partir dos bytes do ficheiro, o que é útil para verificar a integridade de uma transferência em relação a uma soma de verificação publicada."
+          "question": "Posso gerar o hash de um arquivo em vez de um texto digitado?",
+          "answer": "Sim, arraste um arquivo e o checksum é calculado localmente a partir dos bytes dele. O hash SHA exige o arquivo inteiro na memória, então arquivos acima de 1 GB ficam limitados a MD5 e CRC32."
         },
         {
-          "question": "Porque é que duas entradas ligeiramente diferentes produzem hashes completamente diferentes?",
-          "answer": "Isto é o efeito de avalanche — as funções de hash criptográficas são concebidas de forma que mesmo uma alteração de um caráter produza um resultado totalmente diferente e imprevisível."
+          "question": "Por que duas entradas levemente diferentes produzem hashes completamente diferentes?",
+          "answer": "Isso é o efeito avalanche — as funções de hash criptográficas são projetadas para que até a mudança de um único caractere gere uma saída totalmente diferente e imprevisível."
         },
         {
-          "question": "Posso usar o SHA-1 para fins de segurança?",
-          "answer": "O SHA-1 está disponível para compatibilidade com somas de verificação antigas, mas é considerado criptograficamente comprometido para uso de segurança; recomenda-se o SHA-256 ou superior para qualquer coisa sensível à segurança."
+          "question": "Posso usar SHA-1 para fins de segurança?",
+          "answer": "Não. O SHA-1 está disponível por compatibilidade com checksums antigos, mas é possível produzir colisões, então use SHA-256 ou superior."
+        },
+        {
+          "question": "Como confiro um arquivo baixado com o checksum publicado?",
+          "answer": "Arraste o arquivo, cole o valor publicado em Comparar com um checksum e aparecerá uma mensagem verde de Confere se ele for igual a qualquer um dos hashes selecionados. Hexadecimal e Base64 são ambos reconhecidos."
         }
       ]
     },
     "regex-tester": {
       "seoTitle": "Testador de Regex Online – Depurador de Expressões Regulares Grátis",
-      "metaDescription": "Teste expressões regulares contra texto de exemplo com destaque de correspondência ao vivo, flags e grupos de captura. Grátis, instantâneo e totalmente privado.",
+      "metaDescription": "Teste expressões regulares JavaScript com destaque em tempo real, posições de grupos de captura e grupos nomeados, modos de substituição e divisão, explicação em linguagem simples, guia rápido e padrões comuns. Grátis e privado.",
       "h1": "Testador de Regex",
-      "subheading": "Teste expressões regulares com destaque de correspondência ao vivo e inspeção de grupos de captura — 100% local.",
+      "subheading": "Teste expressões regulares com destaque em tempo real, grupos, substituição e divisão, explicador de padrões e uma biblioteca de padrões comuns — 100% local.",
       "keywords": [
         "testador de regex",
-        "testador de expressão regular online",
+        "testar expressão regular online",
         "depurador de regex grátis",
         "testar padrão regex",
-        "destaque de correspondência regex"
+        "destacar correspondências regex",
+        "explicador de regex",
+        "testar substituição regex",
+        "guia rápido de regex"
       ],
       "howTo": [
         {
-          "name": "Insira seu padrão",
-          "text": "Digite um padrão de expressão regular."
+          "name": "Digite seu padrão",
+          "text": "Digite-o entre as barras ou carregue um em Padrões comuns."
         },
         {
           "name": "Defina as flags",
-          "text": "Alterne as flags global, ignorar maiúsculas/minúsculas, multilinha ou dot-all."
+          "text": "Ative g, i, m, s, u, y e d — a flag Global controla se todas as correspondências são encontradas."
         },
         {
           "name": "Adicione o texto de teste",
-          "text": "Cole ou digite o texto contra o qual deseja testar o padrão."
+          "text": "As correspondências são destacadas no editor enquanto você digita; os grupos de captura aparecem em uma segunda cor."
         },
         {
-          "name": "Revise as correspondências",
-          "text": "As correspondências são destacadas ao vivo, com uma lista completa de correspondências e grupos de captura."
+          "name": "Explore o resultado",
+          "text": "Use Correspondências, Substituir, Dividir, Explicar e Guia rápido para inspecionar grupos, visualizar uma substituição, dividir o texto ou entender o que cada parte do padrão faz."
         }
       ],
       "faq": [
         {
-          "question": "Que variante de regex é utilizada?",
-          "answer": "Isto utiliza o motor RegExp nativo do JavaScript, o mesmo utilizado em navegadores e no Node.js."
+          "question": "Qual variante de regex é usada?",
+          "answer": "Ele usa o mecanismo nativo RegExp do JavaScript, o mesmo usado nos navegadores e no Node.js."
         },
         {
-          "question": "Posso ver os grupos de captura?",
-          "answer": "Sim, os grupos de captura de cada correspondência são listados ao lado do texto completo da correspondência."
+          "question": "Consigo ver os grupos de captura?",
+          "answer": "Sim, os grupos de captura de cada correspondência são listados junto com o texto completo da correspondência."
         },
         {
-          "question": "O meu texto de teste é enviado para algum lugar?",
+          "question": "Meu texto de teste é enviado para algum lugar?",
           "answer": "Não, toda a correspondência acontece instantaneamente e localmente no seu navegador."
         },
         {
-          "question": "Posso testar flags de regex como global ou sem distinção entre maiúsculas e minúsculas?",
-          "answer": "Sim, as caixas de verificação permitem ativar as flags global, sem distinção entre maiúsculas e minúsculas, multilinha e dotAll, e as correspondências atualizam-se em tempo real à medida que as altera."
+          "question": "Posso testar flags de regex como global ou sem diferenciar maiúsculas de minúsculas?",
+          "answer": "Sim. Ative g, i, m, s, u, y e d. Sem g, apenas a primeira correspondência é encontrada, e a barra de status avisa você."
         },
         {
-          "question": "Suporta grupos de captura nomeados?",
-          "answer": "Os grupos nomeados não são apresentados separadamente — apenas os grupos de captura numerados são mostrados ao lado de cada correspondência."
+          "question": "Ele suporta grupos de captura nomeados?",
+          "answer": "Sim. Os grupos nomeados são listados pelo nome, com a posição inicial e final de cada grupo quando a flag d está ativada."
         },
         {
-          "question": "Porque é que a minha regex funciona aqui mas não noutra linguagem?",
-          "answer": "Esta ferramenta utiliza o motor de regex do JavaScript, que tem algumas diferenças de sintaxe em relação a outras linguagens (como PCRE ou o módulo re do Python) — funcionalidades como o suporte a lookbehind e os nomes das flags podem variar."
+          "question": "Por que minha regex funciona aqui, mas não em outra linguagem?",
+          "answer": "Esta ferramenta usa o mecanismo de regex do JavaScript. PCRE, Python e outros diferem na sintaxe, como no suporte a lookbehind, quantificadores possessivos e sintaxe de grupos nomeados, então confira a variante da sua linguagem."
         },
         {
-          "question": "Posso testar strings de substituição, não apenas correspondências?",
-          "answer": "Não, esta ferramenta apenas destaca as correspondências dentro do seu texto de teste — não inclui uma pré-visualização de localizar e substituir."
+          "question": "Posso testar strings de substituição, e não só correspondências?",
+          "answer": "Sim. Abra a aba Substituir, digite uma substituição como $2-$1 ou $<name> e veja o resultado em tempo real. A aba Dividir mostra como o padrão divide o texto."
+        },
+        {
+          "question": "O que acontece se o meu padrão demorar demais?",
+          "answer": "O padrão é executado em um worker em segundo plano. Se levar mais de 1,5 segundo (geralmente por backtracking catastrófico causado por quantificadores aninhados como (a+)+), ele é interrompido e você recebe uma mensagem clara em vez de uma aba travada."
         }
       ]
     },
     "markdown-previewer": {
-      "seoTitle": "Visualizador de Markdown Online – Editor Markdown ao Vivo Grátis",
-      "metaDescription": "Escreva Markdown e veja uma pré-visualização HTML sanitizada ao vivo instantaneamente no seu navegador. Grátis, privado, suporta títulos, listas, código e links.",
+      "seoTitle": "Visualizador de Markdown Online – Editor de Markdown ao Vivo Grátis",
+      "metaDescription": "Escreva Markdown com pré-visualização ao vivo e rolagem sincronizada. Tabelas, listas de tarefas e blocos de código no estilo GitHub, visão do código-fonte HTML e exportação para .md ou .html. Sanitizado e privado.",
       "h1": "Visualizador de Markdown",
-      "subheading": "Escreva Markdown e pré-visualize a saída HTML renderizada ao vivo — 100% local, renderização sanitizada.",
+      "subheading": "Escreva Markdown com pré-visualização ao vivo e rolagem sincronizada e exporte para .md ou .html — sanitizado e 100% local.",
       "keywords": [
         "visualizador de markdown",
-        "editor markdown online",
-        "pré-visualização markdown ao vivo",
+        "editor de markdown online",
+        "pré-visualização de markdown ao vivo",
         "markdown para html grátis",
-        "editor md online"
+        "editor md online",
+        "markdown para html",
+        "pré-visualização gfm"
       ],
       "howTo": [
         {
-          "name": "Escreva Markdown",
+          "name": "Escreva em Markdown",
           "text": "Digite ou cole Markdown no painel do editor à esquerda."
         },
         {
           "name": "Pré-visualização ao vivo",
-          "text": "A pré-visualização HTML renderizada é atualizada instantaneamente à direita."
+          "text": "A pré-visualização do HTML renderizado é atualizada instantaneamente à direita."
         },
         {
-          "name": "Use sintaxe padrão",
+          "name": "Use a sintaxe padrão",
           "text": "Títulos, listas, links, blocos de código e citações são todos suportados."
         }
       ],
       "faq": [
         {
-          "question": "O HTML renderizado é higienizado?",
-          "answer": "Sim, todo o HTML renderizado é higienizado com o DOMPurify para prevenir injeção de scripts antes de ser apresentado."
+          "question": "O HTML renderizado é sanitizado?",
+          "answer": "Sim, todo o HTML renderizado é sanitizado com o DOMPurify para evitar injeção de scripts antes de ser exibido."
         },
         {
-          "question": "O meu conteúdo em Markdown é enviado para algum lugar?",
-          "answer": "Não, tanto a análise como a renderização acontecem inteiramente no seu navegador."
+          "question": "Meu conteúdo Markdown é enviado para algum lugar?",
+          "answer": "Não, a análise e a renderização acontecem inteiramente no seu navegador."
         },
         {
-          "question": "Que sintaxe de Markdown é suportada?",
-          "answer": "Markdown padrão: títulos, negrito/itálico, listas, ligações, imagens, citações em bloco e blocos de código delimitados."
+          "question": "Qual sintaxe de Markdown é suportada?",
+          "answer": "Markdown padrão: títulos, negrito e itálico, listas, links, imagens, citações e blocos de código delimitados."
         },
         {
-          "question": "Suporta funcionalidades do GitHub Flavored Markdown, como tabelas e listas de tarefas?",
-          "answer": "As tabelas básicas renderizam corretamente, mas as caixas de verificação das listas de tarefas não têm um estilo especial — aparecem como texto simples em vez de caixas de verificação interativas."
+          "question": "Ele suporta recursos do GitHub Flavored Markdown, como tabelas e listas de tarefas?",
+          "answer": "Sim. Tabelas, caixas de seleção de listas de tarefas, tachado e blocos de código delimitados são renderizados com o estilo adequado."
         },
         {
           "question": "Posso exportar o resultado renderizado como HTML?",
-          "answer": "Não, não há opção de exportação em HTML — pode guardar o Markdown em bruto no seu histórico, mas não um ficheiro HTML renderizado."
+          "answer": "Sim. Copiar HTML copia a marcação, a aba HTML a exibe e o botão .html baixa uma página web completa e estilizada. O botão .md baixa o seu Markdown."
         },
         {
-          "question": "Suporta destaque de sintaxe em blocos de código?",
-          "answer": "Não, os blocos de código são renderizados com estilo monoespaçado, mas sem destaque de sintaxe adaptado à linguagem."
+          "question": "Ele suporta realce de sintaxe em blocos de código?",
+          "answer": "Não, os blocos de código são renderizados com estilo monoespaçado, mas sem realce de sintaxe específico para cada linguagem."
         },
         {
-          "question": "Posso escrever HTML em bruto dentro do meu Markdown?",
-          "answer": "Sim, os analisadores de Markdown padrão passam as tags HTML em bruto, por isso qualquer HTML que incluir é renderizado juntamente com o seu conteúdo em Markdown."
+          "question": "Posso escrever HTML puro dentro do meu Markdown?",
+          "answer": "Sim, mas ele é sanitizado: scripts, manipuladores de eventos e outras marcações inseguras são removidos antes de a pré-visualização ser exibida."
+        },
+        {
+          "question": "A pré-visualização acompanha a minha rolagem?",
+          "answer": "Sim. Com Sincronizar rolagem ativado, ao rolar o editor, a pré-visualização rola até a posição correspondente."
         }
       ]
     },
     "csv-to-json": {
       "seoTitle": "Conversor de CSV para JSON Online – Grátis e Bidirecional",
-      "metaDescription": "Converta CSV para JSON ou JSON para CSV instantaneamente no seu navegador. Lida com campos entre aspas e dados aninhados. Grátis, privado, sem envios.",
+      "metaDescription": "Converta CSV para JSON e JSON para CSV em um editor em tela cheia, com detecção automática de delimitador, opções de cabeçalho e tipos, remoção de espaços, tratamento de nulos e pré-visualização em tabela. Grátis e privado.",
       "h1": "Conversor de CSV para JSON",
-      "subheading": "Converta entre formatos CSV e JSON instantaneamente, em ambas as direções — processado 100% localmente.",
+      "subheading": "Converta CSV em JSON e vice-versa, com detecção de delimitador, detecção de tipos e pré-visualização em tabela — 100% local.",
       "keywords": [
         "csv para json",
-        "conversor json para csv",
+        "conversor de json para csv",
         "converter csv online",
-        "analisador csv grátis",
-        "conversor csv json"
+        "analisador de csv grátis",
+        "conversor csv json",
+        "converter para json",
+        "conversor de json",
+        "tsv para json",
+        "analisador de csv online"
       ],
       "howTo": [
         {
-          "name": "Escolha uma direção",
+          "name": "Escolha o sentido",
           "text": "Selecione CSV → JSON ou JSON → CSV."
         },
         {
           "name": "Cole seus dados",
-          "text": "Cole linhas CSV ou um array JSON no painel de entrada."
+          "text": "Cole linhas de CSV ou um array JSON no painel de entrada."
         },
         {
           "name": "Veja a conversão",
-          "text": "A saída convertida é atualizada instantaneamente enquanto você digita."
+          "text": "A saída convertida é atualizada na hora conforme você digita."
         },
         {
           "name": "Copie o resultado",
@@ -2654,37 +2695,37 @@
       ],
       "faq": [
         {
-          "question": "Isto lida com campos CSV entre aspas com vírgulas?",
-          "answer": "Sim, os campos entre aspas que contêm vírgulas, aspas ou quebras de linha são analisados corretamente."
+          "question": "Ele lida com campos CSV entre aspas que contêm vírgulas?",
+          "answer": "Sim. Ele usa um analisador completo da RFC 4180, então campos entre aspas com vírgulas, aspas duplicadas e até quebras de linha permanecem em uma única célula."
         },
         {
-          "question": "Que estrutura JSON é esperada para JSON para CSV?",
-          "answer": "Um array de objetos planos funciona melhor; os objetos aninhados são automaticamente achatados com notação de ponto."
+          "question": "Qual estrutura de JSON é esperada para converter JSON em CSV?",
+          "answer": "Um array de objetos funciona melhor; objetos aninhados são achatados com notação de ponto."
         },
         {
-          "question": "Os meus dados são enviados para algum lugar?",
+          "question": "Meus dados são enviados para algum lugar?",
           "answer": "Não, toda a análise e conversão acontece localmente no seu navegador."
         },
         {
-          "question": "Posso escolher um delimitador personalizado em vez de uma vírgula?",
-          "answer": "Não, a análise está fixada a valores separados por vírgulas — ficheiros delimitados por ponto e vírgula ou tabulação não serão analisados corretamente tal como estão."
+          "question": "Posso escolher um delimitador personalizado em vez da vírgula?",
+          "answer": "Sim. O delimitador é detectado automaticamente (vírgula, ponto e vírgula, tabulação ou barra vertical) e você também pode escolher um manualmente."
         },
         {
-          "question": "Deteta automaticamente os cabeçalhos das colunas?",
-          "answer": "Sim, a primeira linha é sempre tratada como os cabeçalhos das colunas — não há opção para tratar todas as linhas como dados."
+          "question": "Ele detecta os cabeçalhos das colunas automaticamente?",
+          "answer": "Por padrão, a primeira linha é usada como cabeçalho. Desmarque Linha de cabeçalho para tratar todas as linhas como dados, com colunas chamadas column_1, column_2 e assim por diante. Cabeçalhos vazios ou repetidos são renomeados e você é avisado."
         },
         {
-          "question": "O que acontece se as linhas tiverem um número diferente de colunas?",
-          "answer": "As linhas com menos colunas do que o cabeçalho terão campos em falta nos objetos JSON resultantes, e colunas extra além do cabeçalho podem ser descartadas ou desalinhadas."
+          "question": "O que acontece se as linhas tiverem números diferentes de colunas?",
+          "answer": "As linhas mais curtas são completadas com valores vazios e a barra de status avisa quantas linhas tinham um número diferente de campos."
         },
         {
-          "question": "Os números e booleanos são convertidos para os seus tipos JSON adequados?",
-          "answer": "Verifique o resultado com atenção — os valores CSV são texto por natureza, e se strings com aparência numérica são convertidas para números JSON depende da inferência de tipo do analisador, não de uma definição que controle."
+          "question": "Números e booleanos são convertidos para os tipos JSON corretos?",
+          "answer": "Sim, com Detectar tipos ativado: 12 vira número e true ou false viram booleanos. Valores com zeros à esquerda (007) e números com mais de 15 dígitos permanecem como texto para que nada se perca. Desative a opção para manter tudo como strings."
         }
       ],
       "comparisonTable": {
         "columns": [
-          "Característica",
+          "Recurso",
           "CSV",
           "JSON"
         ],
@@ -2692,15 +2733,15 @@
           {
             "label": "Estrutura",
             "values": [
-              "Linhas planas, tabulares",
-              "Objetos aninhados de chave-valor"
+              "Linhas tabulares simples",
+              "Objetos aninhados de chave e valor"
             ]
           },
           {
             "label": "Ideal para",
             "values": [
-              "Folhas de cálculo, dados tabulares",
-              "APIs, ficheiros de configuração, dados aninhados"
+              "Planilhas, dados tabulares",
+              "APIs, arquivos de configuração, dados aninhados"
             ]
           },
           {
@@ -2713,7 +2754,7 @@
           {
             "label": "Uso comum",
             "values": [
-              "Exportações do Excel, bases de dados",
+              "Exportações do Excel e de bancos de dados",
               "Aplicações web, troca de dados"
             ]
           }
@@ -2722,15 +2763,16 @@
     },
     "lorem-ipsum-generator": {
       "seoTitle": "Gerador de Lorem Ipsum Online – Texto de Preenchimento Grátis",
-      "metaDescription": "Gere texto de preenchimento Lorem Ipsum por palavras, frases ou parágrafos, instantaneamente no seu navegador. Grátis, rápido e totalmente personalizável.",
+      "metaDescription": "Gere Lorem Ipsum por parágrafos, frases ou palavras (até 5.000), como texto simples, parágrafos HTML ou lista, com contagem de palavras e caracteres. Grátis e privado.",
       "h1": "Gerador de Lorem Ipsum",
-      "subheading": "Gere texto de preenchimento Lorem Ipsum por palavras, frases ou parágrafos — instantaneamente, 100% localmente.",
+      "subheading": "Gere Lorem Ipsum por parágrafos, frases ou palavras — como texto, HTML ou lista.",
       "keywords": [
         "gerador de lorem ipsum",
         "gerador de texto de preenchimento",
         "gerador de texto fictício online",
         "lorem ipsum grátis",
-        "gerador de texto de preenchimento"
+        "gerador de texto placeholder",
+        "lorem ipsum html"
       ],
       "howTo": [
         {
@@ -2739,11 +2781,11 @@
         },
         {
           "name": "Defina a quantidade",
-          "text": "Insira quantas unidades gerar."
+          "text": "Informe quantas unidades gerar."
         },
         {
           "name": "Gere",
-          "text": "Clique em Gerar para produzir novo texto de preenchimento."
+          "text": "Clique em Gerar para produzir um novo texto de preenchimento."
         },
         {
           "name": "Copie o texto",
@@ -2752,32 +2794,32 @@
       ],
       "faq": [
         {
-          "question": "Para que é utilizado o Lorem Ipsum?",
-          "answer": "O Lorem Ipsum é o texto de preenchimento padrão utilizado por designers e programadores para pré-visualizar layouts antes de o conteúdo real estar pronto."
+          "question": "Para que serve o Lorem Ipsum?",
+          "answer": "Lorem Ipsum é o texto de preenchimento padrão usado por designers e desenvolvedores para visualizar layouts antes de o conteúdo real estar pronto."
         },
         {
           "question": "Posso começar com o clássico 'Lorem ipsum dolor sit amet'?",
-          "answer": "Sim, ative a opção \"Começar com Lorem ipsum…\" para começar com a abertura tradicional."
+          "answer": "Sim, ative a opção \"Começar com Lorem ipsum…\" para iniciar com a abertura tradicional."
         },
         {
-          "question": "Existe um limite para a quantidade de texto que posso gerar?",
-          "answer": "Pode gerar até 100 unidades (palavras, frases ou parágrafos) por clique."
+          "question": "Existe um limite de quanto texto posso gerar?",
+          "answer": "Até 100 parágrafos, 500 frases ou 5.000 palavras por clique."
         },
         {
           "question": "Posso gerar parágrafos envolvidos em HTML?",
-          "answer": "Não, o resultado é em parágrafos de texto simples — não há opção para os envolver automaticamente em tags `<p>`."
+          "answer": "Sim. Escolha Tags HTML <p> para uma tag de parágrafo por bloco ou Lista HTML para uma <ul> com um <li> por item."
         },
         {
-          "question": "A contagem de palavras mantém-se exata ao gerar por parágrafo?",
-          "answer": "A contagem de palavras é aproximada ao gerar por parágrafo ou frase, uma vez que a estrutura do parágrafo tem prioridade sobre atingir um total exato de palavras."
+          "question": "A contagem de palavras continua exata ao gerar por parágrafo?",
+          "answer": "Os parágrafos têm um tamanho natural (cerca de quatro a sete frases), então a contagem de palavras é aproximada. Gere por palavras para obter uma contagem exata — a barra de status sempre mostra os totais reais."
         },
         {
-          "question": "O texto gerado está sempre em latim?",
-          "answer": "Sim, isto gera o clássico texto lorem ipsum em estilo latino — não há um estilo alternativo de texto de preenchimento nem opção de idioma."
+          "question": "O texto gerado é sempre em latim?",
+          "answer": "Sim, ele gera o clássico texto lorem ipsum em estilo latino — não há outro estilo de texto de preenchimento nem opção de idioma."
         },
         {
-          "question": "Posso gerar uma única frase de estilo título em vez de parágrafos completos?",
-          "answer": "Defina a contagem para um pequeno número de palavras para obter uma frase curta adequada para um título, uma vez que não existe um modo dedicado para títulos."
+          "question": "Posso gerar uma única frase curta no estilo de título em vez de parágrafos completos?",
+          "answer": "Defina a quantidade como um número pequeno de palavras para obter uma frase curta adequada a um título, já que não existe um modo específico para títulos."
         }
       ]
     },
@@ -3762,62 +3804,69 @@
       ]
     },
     "text-diff-checker": {
-      "seoTitle": "Comparador de Textos Online – Compare Dois Textos Grátis",
-      "metaDescription": "Compare dois blocos de texto e veja exatamente o que foi adicionado ou removido, linha por linha — processado 100% localmente no seu navegador.",
-      "h1": "Comparador de Textos",
-      "subheading": "Compare dois blocos de texto e veja exatamente o que mudou, linha por linha.",
+      "seoTitle": "Comparador de Texto Online – Compare Dois Textos Grátis",
+      "metaDescription": "Compare dois textos lado a lado ou em linha, com destaque por palavra, opções de ignorar espaços em branco e maiúsculas, exportação de patch unificado e upload de arquivos. Grátis e privado.",
+      "h1": "Comparador de Texto",
+      "subheading": "Compare dois textos lado a lado ou em linha, com destaque por palavra e exportação de patch — 100% local.",
       "keywords": [
-        "comparador de textos",
-        "comparar texto online",
-        "ferramenta de diferença de texto",
-        "comparação de texto"
+        "comparador de texto",
+        "comparar textos online",
+        "ferramenta diff",
+        "ferramenta de comparação de texto",
+        "verificador de diferenças",
+        "comparar arquivos de texto",
+        "diff unificado"
       ],
       "howTo": [
         {
-          "name": "Cole o texto original",
-          "text": "Insira a versão original na primeira caixa."
+          "name": "Cole ou abra os dois textos",
+          "text": "Digite ou cole em qualquer um dos lados, ou use Abrir original e Abrir alterado."
         },
         {
-          "name": "Cole o texto alterado",
-          "text": "Insira a versão atualizada na segunda caixa."
+          "name": "Escolha como comparar",
+          "text": "Alterne entre lado a lado e em linha e marque ignorar espaços em branco ou ignorar maiúsculas e minúsculas."
         },
         {
-          "name": "Clique em Comparar",
-          "text": "Veja as linhas adicionadas e removidas destacadas instantaneamente."
+          "name": "Revise as alterações",
+          "text": "As linhas adicionadas e removidas ficam coloridas, as palavras alteradas são destacadas dentro de cada linha e a barra de status as contabiliza."
         },
         {
-          "name": "Revise o resumo",
-          "text": "Confira o total de linhas adicionadas e removidas rapidamente."
+          "name": "Exporte",
+          "text": "Copie ou baixe as diferenças como um patch unificado padrão."
         }
       ],
       "faq": [
         {
-          "question": "Como é calculada a diferença?",
-          "answer": "A ferramenta compara os dois textos linha a linha e destaca as linhas que foram adicionadas (verde) ou removidas (vermelho)."
+          "question": "Como a diferença é calculada?",
+          "answer": "Os textos são comparados com um diff de Myers, linha por linha, e depois as linhas alteradas são comparadas palavra por palavra para você ver exatamente o que mudou dentro de uma linha."
         },
         {
-          "question": "Consegue comparar código ou JSON?",
-          "answer": "Sim, funciona com qualquer texto simples, incluindo código, JSON ou ficheiros de configuração."
+          "question": "Ele consegue comparar código ou JSON?",
+          "answer": "Sim, funciona com qualquer texto simples, incluindo código, JSON ou arquivos de configuração."
         },
         {
-          "question": "O meu texto é enviado para algum lugar?",
-          "answer": "Não, a comparação é executada inteiramente no seu navegador — nada é enviado para um servidor."
+          "question": "Meu texto é enviado para algum lugar?",
+          "answer": "Não, a comparação roda inteiramente no seu navegador — nada é enviado a um servidor."
         },
         {
-          "question": "Posso alternar entre comparação ao nível da linha e ao nível da palavra?",
-          "answer": "Não, a comparação é apenas ao nível da linha — não existe um modo de diferenças ao nível da palavra ou do carácter."
+          "question": "Posso alternar entre diff por linha e por palavra?",
+          "answer": "O editor sempre destaca as palavras alteradas dentro de uma linha alterada. Use Lado a lado ou Em linha para mudar o layout."
         },
         {
-          "question": "Ignora diferenças de espaços em branco?",
-          "answer": "Não, não há opção para ignorar espaços em branco — as diferenças de espaçamento ou indentação aparecerão como alterações."
+          "question": "Ele ignora diferenças de espaços em branco?",
+          "answer": "Sim — marque Ignorar espaços em branco (e Ignorar maiúsculas e minúsculas) e essas alterações deixam de ser contadas ou exibidas."
         },
         {
-          "question": "Posso ver a diferença como um patch unificado?",
-          "answer": "Não, os resultados são apresentados como uma lista de linhas lado a lado ou inline destacada, e não num formato de texto do tipo diff/patch unificado."
+          "question": "Posso ver o diff como um patch unificado?",
+          "answer": "Sim. Copiar patch ou Patch baixa um diff unificado padrão com três linhas de contexto, pronto para git apply ou patch."
         },
         {
-          "question": "Consegue lidar com blocos de texto muito grandes?",
-          "answer": "Sim, mas entradas muito grandes (muitos milhares de linhas) podem demorar mais tempo a calcular e apresentar, uma vez que a comparação é executada inteiramente no seu navegador."
+          "question": "Ele lida com blocos de texto muito grandes?",
+          "answer": "Sim. Ele usa um algoritmo de diff eficiente em vez de uma tabela de comparação completa, então dezenas de milhares de linhas não são problema, embora o próprio editor possa ficar mais lento com arquivos muito grandes."
+        },
+        {
+          "question": "Posso editar o texto depois de comparar?",
+          "answer": "Sim. Os dois lados continuam editáveis e a comparação é atualizada conforme você digita. Trocar inverte os dois lados."
         }
       ]
     },
@@ -4000,121 +4049,134 @@
     },
     "password-generator": {
       "seoTitle": "Gerador de Senhas Online – Grátis, Seguro e Instantâneo",
-      "metaDescription": "Gere senhas fortes e aleatórias com comprimento e caracteres personalizáveis, diretamente no seu navegador. Grátis e privado, sem cadastro.",
+      "metaDescription": "Gere senhas aleatórias fortes ou frases-senha com a lista de palavras da EFF, com entropia real e estimativas de tempo para quebra, tamanho de até 128, exclusão de caracteres parecidos e modo em lote. Privado — nada é armazenado.",
       "h1": "Gerador de Senhas",
-      "subheading": "Crie senhas fortes e aleatórias com comprimento e tipos de caracteres personalizáveis — geradas com segurança no seu navegador.",
+      "subheading": "Crie senhas e frases-senha fortes com entropia e estimativas de tempo para quebra ao vivo — geradas com segurança no seu navegador e nunca armazenadas.",
       "keywords": [
         "gerador de senhas",
         "gerador de senha aleatória",
+        "gerador de senha forte",
         "criar senha segura",
-        "gerador de senha forte"
+        "gerador de frase-senha",
+        "entropia de senha"
       ],
       "howTo": [
         {
-          "name": "Escolha um comprimento",
-          "text": "Defina o comprimento da senha entre 4 e 128 caracteres."
+          "name": "Escolha senha ou frase-senha",
+          "text": "Escolha uma senha de caracteres aleatórios ou uma frase-senha de palavras fáceis de memorizar."
         },
         {
-          "name": "Escolha os tipos de caracteres",
-          "text": "Ative maiúsculas, minúsculas, números e símbolos."
+          "name": "Defina as opções",
+          "text": "Escolha o tamanho e os tipos de caracteres, evite caracteres parecidos ou defina o número de palavras e o separador."
         },
         {
-          "name": "Gere",
-          "text": "Clique em Gerar para criar uma nova senha aleatória."
+          "name": "Confira a força",
+          "text": "Veja a entropia em bits e uma estimativa de quanto tempo um ataque rápido levaria."
         },
         {
-          "name": "Copie-a",
-          "text": "Clique no ícone de copiar para copiar a senha para a área de transferência."
+          "name": "Copie",
+          "text": "Copie um resultado ou gere até 20 de uma vez e copie todos."
         }
       ],
       "faq": [
         {
-          "question": "Este gerador de palavras-passe é seguro?",
-          "answer": "Sim. As palavras-passe são geradas utilizando o gerador de números aleatórios criptograficamente seguro do seu navegador (crypto.getRandomValues), e não uma função pseudo-aleatória mais fraca."
+          "question": "Este gerador de senhas é seguro?",
+          "answer": "Sim. As senhas são geradas com o gerador de números aleatórios criptograficamente seguro do seu navegador (crypto.getRandomValues), e não com uma função pseudoaleatória mais fraca."
         },
         {
-          "question": "As minhas palavras-passe geradas são enviadas para algum lugar?",
-          "answer": "Não. Tudo acontece localmente no seu navegador — as palavras-passe nunca são transmitidas nem armazenadas em nenhum servidor."
+          "question": "As senhas geradas são enviadas para algum lugar?",
+          "answer": "Não. Tudo acontece localmente no seu navegador — as senhas nunca são transmitidas nem armazenadas em nenhum servidor."
         },
         {
-          "question": "O que torna uma palavra-passe forte?",
-          "answer": "O comprimento é o que mais importa. Uma palavra-passe mais longa com uma mistura de maiúsculas, minúsculas, números e símbolos é significativamente mais difícil de decifrar do que uma curta e simples."
+          "question": "O que torna uma senha forte?",
+          "answer": "A imprevisibilidade. O valor de entropia a mede: cada caractere extra, ou cada palavra extra em uma frase-senha, multiplica o trabalho necessário para um atacante. Procure ter 80 bits ou mais para contas importantes."
         },
         {
-          "question": "Posso excluir carateres ambíguos como 0, O, l e 1?",
-          "answer": "Não, não há opção para excluir carateres visualmente semelhantes — todos os carateres das categorias selecionadas (maiúsculas, minúsculas, números, símbolos) são igualmente elegíveis."
+          "question": "Posso excluir caracteres ambíguos como 0, O, l e 1?",
+          "answer": "Sim. Marque Evitar caracteres parecidos para deixar de fora 0 O 1 l I e caracteres semelhantes, e você também pode digitar seus próprios símbolos permitidos."
         },
         {
-          "question": "Qual é o comprimento máximo de palavra-passe que posso gerar?",
-          "answer": "Pode gerar palavras-passe bem além dos requisitos típicos, embora a maioria dos sites limite os comprimentos aceites, por isso verifique o limite do sistema de destino antes de usar uma muito longa."
+          "question": "Qual é o tamanho máximo de senha que posso gerar?",
+          "answer": "Você pode gerar senhas bem acima do que normalmente se exige, mas a maioria dos sites limita o tamanho aceito, então confira o limite do sistema de destino antes de usar uma senha muito longa."
         },
         {
-          "question": "Garante pelo menos um carácter de cada categoria selecionada?",
-          "answer": "Não, os carateres são escolhidos de forma uniformemente aleatória a partir do conjunto combinado das categorias selecionadas, por isso é estatisticamente provável, mas não garantido, que todas as categorias apareçam numa determinada palavra-passe."
+          "question": "Ele garante pelo menos um caractere de cada categoria selecionada?",
+          "answer": "Sim. Cada tipo selecionado aparece pelo menos uma vez, e depois os caracteres são embaralhados para que as posições sejam imprevisíveis."
         },
         {
-          "question": "É melhor usar uma frase-passe longa ou uma palavra-passe aleatória?",
-          "answer": "Ambas podem ser fortes — uma palavra-passe aleatória longa contém mais entropia por carácter, enquanto uma frase-passe de várias palavras aleatórias é mais fácil de escrever e memorizar; esta ferramenta foi criada para a abordagem de carateres aleatórios."
+          "question": "É melhor usar uma frase-senha longa ou uma senha aleatória?",
+          "answer": "As duas podem ser fortes — uma senha aleatória longa concentra mais entropia por caractere, enquanto uma frase-senha com várias palavras aleatórias é mais fácil de digitar e de lembrar; esta ferramenta foi criada para a abordagem de caracteres aleatórios."
+        },
+        {
+          "question": "As senhas têm viés ou são armazenadas?",
+          "answer": "Não. Elas usam o gerador aleatório seguro do seu navegador com amostragem por rejeição, então todos os caracteres têm a mesma probabilidade, e nunca são salvas no seu histórico nem enviadas a lugar nenhum."
+        },
+        {
+          "question": "O que é o modo frase-senha?",
+          "answer": "Ele une palavras aleatórias da lista curta da EFF (1.296 palavras). Cada palavra adiciona cerca de 10 bits, então uma frase-senha de 6 palavras tem aproximadamente 62 bits e é fácil de lembrar e digitar."
         }
       ]
     },
     "text-case-converter": {
-      "seoTitle": "Conversor de Maiúsculas e Minúsculas – MAIÚSCULAS, minúsculas e Mais",
-      "metaDescription": "Converta texto entre MAIÚSCULAS, minúsculas, Formato de Título, camelCase, snake_case e mais — instantaneamente no seu navegador.",
+      "seoTitle": "Conversor de Maiúsculas e Minúsculas – MAIÚSCULAS, minúsculas, Title Case e Mais",
+      "metaDescription": "Converta texto para MAIÚSCULAS, minúsculas, Capitalizado, Frase, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case, path/case e mais — ao vivo, compatível com Unicode, por linha. Grátis e privado.",
       "h1": "Conversor de Maiúsculas e Minúsculas",
-      "subheading": "Converta texto entre MAIÚSCULAS, minúsculas, Formato de Título, camelCase, snake_case e mais formatos instantaneamente.",
+      "subheading": "Converta texto entre 14 estilos de caixa ao vivo — compatível com Unicode, por linha e ideal para identificadores.",
       "keywords": [
         "conversor de maiúsculas e minúsculas",
-        "converter texto para maiúsculas",
+        "converter maiúsculas para minúsculas",
         "conversor camel case",
-        "conversor formato de título"
+        "conversor de title case",
+        "constant case",
+        "conversor pascal case",
+        "conversor de camelcase"
       ],
       "howTo": [
         {
           "name": "Cole seu texto",
-          "text": "Digite ou cole o texto que deseja converter."
+          "text": "Digite ou cole o texto que você quer converter."
         },
         {
-          "name": "Escolha um formato",
-          "text": "Clique em qualquer botão de formato — MAIÚSCULAS, minúsculas, camelCase e mais."
+          "name": "Escolha um formato de caixa",
+          "text": "Clique em qualquer botão de caixa — MAIÚSCULAS, minúsculas, Title Case, camelCase e mais."
         },
         {
           "name": "Veja o resultado",
-          "text": "O texto convertido aparece instantaneamente abaixo."
+          "text": "O texto convertido aparece instantaneamente logo abaixo."
         },
         {
-          "name": "Copie o resultado",
+          "name": "Copie a saída",
           "text": "Clique no ícone de copiar para copiar o texto convertido."
         }
       ],
       "faq": [
         {
-          "question": "Que formatos de maiúsculas/minúsculas são suportados?",
-          "answer": "MAIÚSCULAS, minúsculas, Formato de Título, Formato de Frase, camelCase, PascalCase, snake_case e kebab-case."
+          "question": "Quais formatos de caixa são suportados?",
+          "answer": "MAIÚSCULAS, minúsculas, Capitalizado, Frase, aLtErNaDo, iNVERTIDO, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case e path/case."
         },
         {
-          "question": "Isto altera o meu texto original?",
-          "answer": "Não, a sua entrada permanece intocada — o resultado convertido é apresentado separadamente, para que possa comparar ou converter novamente."
+          "question": "Isso altera o meu texto original?",
+          "answer": "Não. Sua entrada fica à esquerda e o texto convertido aparece à direita, atualizando ao vivo conforme você troca de estilo."
         },
         {
-          "question": "Existe um limite de comprimento?",
-          "answer": "Não há um limite prático — a conversão acontece instantaneamente no seu navegador, mesmo para texto longo."
+          "question": "Existe um limite de tamanho?",
+          "answer": "Não há limite prático — a conversão acontece instantaneamente no seu navegador, mesmo com textos longos."
         },
         {
-          "question": "Como decide os limites das palavras ao converter a partir de camelCase ou snake_case?",
-          "answer": "Divide o texto nas transições de maiúsculas/minúsculas, sublinhados, hífenes e espaços para detetar os limites das palavras antes de reconstruir no formato de destino."
+          "question": "Como ele decide os limites entre palavras ao converter de camelCase ou snake_case?",
+          "answer": "Ele separa em espaços, pontuação, sublinhados e hifens, nas mudanças de minúscula para maiúscula e entre uma sigla e a palavra seguinte, então getHTTPResponse vira get, HTTP, Response."
         },
         {
-          "question": "Preserva as siglas ao converter o formato?",
-          "answer": "As siglas são tratadas como qualquer outra sequência de letras e serão reformatadas para corresponder ao formato de destino (por exemplo, minúsculas em kebab-case), e não preservadas tal como estão."
+          "question": "Ele preserva siglas ao converter a caixa?",
+          "answer": "Nos estilos de identificador, uma sigla é tratada como uma palavra, então HTTP vira http em snake_case e Http em PascalCase. MAIÚSCULAS e CONSTANT_CASE a mantêm em maiúsculas."
         },
         {
           "question": "Posso converter várias linhas de uma vez?",
-          "answer": "Sim, todo o bloco de texto que colar é convertido como uma única unidade, por isso várias linhas são convertidas em conjunto."
+          "answer": "Sim. Os estilos de identificador (camelCase, snake_case e assim por diante) convertem cada linha separadamente, e você pode marcar Cada linha separadamente para os outros estilos também."
         },
         {
-          "question": "Que tipos de formato de maiúsculas/minúsculas são suportados?",
-          "answer": "MAIÚSCULAS, minúsculas, Formato de Título, Formato de Frase, camelCase, PascalCase, snake_case e kebab-case estão todos disponíveis."
+          "question": "Funciona com letras acentuadas e não latinas?",
+          "answer": "Sim. As mudanças de caixa usam as regras completas do Unicode, então é, ñ, ü e letras cirílicas ou gregas são convertidas corretamente."
         }
       ]
     },
@@ -4177,23 +4239,25 @@
       ]
     },
     "zero-width-remover": {
-      "seoTitle": "Removedor de Espaços de Largura Zero & Caracteres Invisíveis – Grátis Online",
-      "metaDescription": "Encontre e remova espaços de largura zero e outros caracteres Unicode invisíveis ocultos em texto colado, totalmente no seu navegador.",
-      "h1": "Limpador de Espaços de Largura Zero & Caracteres Invisíveis",
-      "subheading": "Encontre e remova espaços de largura zero e outros caracteres Unicode invisíveis ocultos no seu texto.",
+      "seoTitle": "Removedor de Espaço de Largura Zero e Caracteres Invisíveis – Grátis Online",
+      "metaDescription": "Encontre e remova espaços de largura zero, marcas bidi, hifens suaves, caracteres de tag e outros Unicode invisíveis, veja exatamente onde estão e preserve emojis e textos em persa. Grátis e privado.",
+      "h1": "Limpador de Espaço de Largura Zero e Caracteres Invisíveis",
+      "subheading": "Encontre e remova caracteres Unicode invisíveis, veja onde eles se escondem e preserve emojis e textos não latinos.",
       "keywords": [
         "remover espaço de largura zero",
         "limpar unicode oculto",
-        "removedor de caracteres invisíveis"
+        "removedor de caracteres invisíveis",
+        "detector de caracteres ocultos",
+        "remover caracteres bidi"
       ],
       "howTo": [
         {
           "name": "Cole seu texto",
-          "text": "Cole um texto que possa conter caracteres ocultos ou invisíveis."
+          "text": "Cole o texto que pode conter caracteres ocultos ou invisíveis."
         },
         {
           "name": "Revise o que foi encontrado",
-          "text": "Veja quantos caracteres invisíveis foram detectados e onde."
+          "text": "Veja quantos caracteres invisíveis foram detectados e onde estão."
         },
         {
           "name": "Copie o texto limpo",
@@ -4202,32 +4266,36 @@
       ],
       "faq": [
         {
-          "question": "De onde vêm os carateres invisíveis?",
-          "answer": "São frequentemente introduzidos acidentalmente ao copiar texto de processadores de texto, ligações de rastreio ou aplicações de mensagens."
+          "question": "De onde vêm os caracteres invisíveis?",
+          "answer": "Eles costumam ser introduzidos sem querer ao copiar texto de processadores de texto, links de rastreamento ou aplicativos de mensagens."
         },
         {
-          "question": "Que carateres esta ferramenta remove?",
-          "answer": "Espaços de largura zero, junções/não junções de largura zero, marcas de ordem de bytes, junções de palavras, hífenes suaves e carateres de controlo bidirecional perdidos."
+          "question": "Quais caracteres isto remove?",
+          "answer": "Espaços de largura zero, juntadores de palavras e sem quebra, o BOM, hifens suaves, marcas de direção do texto, operadores matemáticos invisíveis, caracteres de preenchimento, caracteres de tag Unicode e caracteres de controle. Espaços incomuns, como o espaço sem quebra, viram um espaço normal. Cada grupo tem seu próprio interruptor."
         },
         {
-          "question": "O meu texto é enviado para algum lugar?",
+          "question": "Meu texto é enviado para algum lugar?",
           "answer": "Não, a limpeza acontece inteiramente no seu navegador — nada é enviado."
         },
         {
-          "question": "Deteta carateres que normalmente não consigo ver num editor de texto?",
-          "answer": "Sim, procura espaços de largura zero, junções e outros carateres Unicode invisíveis que não são renderizados na maioria dos editores."
+          "question": "Ele detecta caracteres que normalmente não consigo ver em um editor de texto?",
+          "answer": "Sim. Revelar ocultos mostra cada caractere invisível como um selo do tipo ⟦U+200B⟧ no seu texto, e a aba Relatório lista cada um com sua posição e nome."
         },
         {
-          "question": "Consegue mostrar-me uma contagem de quantos carateres invisíveis foram encontrados?",
-          "answer": "Sim, a ferramenta indica exatamente quantos carateres invisíveis foram encontrados e removidos do seu texto."
+          "question": "Ele consegue mostrar quantos caracteres invisíveis foram encontrados?",
+          "answer": "Sim, a ferramenta informa exatamente quantos caracteres invisíveis foram encontrados e removidos do seu texto."
         },
         {
-          "question": "Isto vai remover carateres de formatação legítimos, como espaços não separáveis?",
-          "answer": "Apenas os carateres de largura zero e outros genuinamente invisíveis são visados — verifique o conjunto específico de carateres abrangidos se depender de espaços não separáveis para o layout, uma vez que o comportamento de remoção depende de quais carateres são sinalizados."
+          "question": "Isso vai remover caracteres de formatação legítimos, como espaços sem quebra?",
+          "answer": "Espaços sem quebra e outros espaços incomuns são substituídos por um espaço normal por padrão; desmarque esse grupo para mantê-los. Os juntadores de largura zero e os seletores de variação são mantidos por padrão porque emojis e textos em persa, árabe e em escritas indianas dependem deles."
         },
         {
-          "question": "Porque é que carateres invisíveis podem quebrar o meu código ou conteúdo de CMS?",
-          "answer": "Os carateres de largura zero podem silenciosamente quebrar comparações de strings, funcionalidades de pesquisa e código copiado e colado — como são invisíveis, são difíceis de detetar sem uma ferramenta como esta."
+          "question": "Por que caracteres invisíveis poderiam quebrar meu código ou conteúdo de CMS?",
+          "answer": "Caracteres de largura zero podem quebrar silenciosamente comparações de strings, buscas e códigos copiados e colados — como são invisíveis, é difícil percebê-los sem uma ferramenta como esta."
+        },
+        {
+          "question": "Por que os juntadores são mantidos por padrão?",
+          "answer": "O juntador de largura zero forma emojis como as sequências de família e de bandeira, e o separador de largura zero faz parte da grafia correta em persa e em várias outras escritas. Removê-los quebraria esses textos, então é preciso ativar a remoção manualmente."
         }
       ]
     },
@@ -4293,14 +4361,17 @@
       ]
     },
     "json-to-typescript": {
-      "seoTitle": "Conversor de JSON para TypeScript – Interfaces & Esquemas Zod, Grátis",
-      "metaDescription": "Converta JSON em interfaces TypeScript, aliases de tipo ou esquemas de validação Zod instantaneamente — processado 100% localmente no seu navegador.",
-      "h1": "JSON para TypeScript & Esquema Zod",
-      "subheading": "Converta JSON em interfaces TypeScript, aliases de tipo ou esquemas de validação Zod instantaneamente.",
+      "seoTitle": "Conversor de JSON para TypeScript – Interfaces e Esquemas Zod, Grátis",
+      "metaDescription": "Gere interfaces TypeScript, type aliases ou esquemas Zod a partir de JSON em um editor em tela cheia. Detecta campos opcionais e tipos união entre os itens de um array. Grátis e privado.",
+      "h1": "JSON para TypeScript e Esquema Zod",
+      "subheading": "Gere interfaces TypeScript, type aliases e esquemas Zod a partir de JSON, com campos opcionais e uniões detectados automaticamente.",
       "keywords": [
         "json para typescript",
         "json para zod",
-        "gerar tipos typescript"
+        "gerar tipos typescript",
+        "converter para typescript",
+        "conversor de typescript",
+        "gerar interfaces a partir de json"
       ],
       "howTo": [
         {
@@ -4309,46 +4380,50 @@
         },
         {
           "name": "Escolha suas opções",
-          "text": "Escolha entre interface ou type alias, ative campos opcionais e habilite a geração de esquema Zod se necessário."
+          "text": "Escolha entre interface ou type alias, ative os campos opcionais e habilite a geração de esquema Zod se precisar."
         },
         {
           "name": "Copie ou baixe",
-          "text": "Copie o código TypeScript gerado ou baixe-o como um arquivo .d.ts."
+          "text": "Copie o código TypeScript gerado ou baixe-o como arquivo .d.ts."
         }
       ],
       "faq": [
         {
-          "question": "Como são inferidos os tipos?",
-          "answer": "A ferramenta percorre a sua estrutura JSON e infere os tipos TypeScript correspondentes — os objetos aninhados tornam-se as suas próprias interfaces, e os arrays tornam-se listas tipadas."
+          "question": "Como os tipos são inferidos?",
+          "answer": "A ferramenta percorre a estrutura do seu JSON e infere os tipos TypeScript correspondentes — objetos aninhados viram suas próprias interfaces, e arrays viram listas tipadas."
         },
         {
-          "question": "Isto requer a biblioteca Zod?",
-          "answer": "Não, o esquema Zod é gerado como código de texto simples para copiar para um projeto que já tenha o Zod instalado — esta ferramenta não depende dele."
+          "question": "Isso exige a biblioteca Zod?",
+          "answer": "Não, o esquema Zod é gerado como código em texto simples para você copiar em um projeto que já tenha o Zod instalado — esta ferramenta não depende dele."
         },
         {
-          "question": "O meu JSON é enviado para algum lugar?",
+          "question": "Meu JSON é enviado para algum lugar?",
           "answer": "Não, a geração de tipos acontece inteiramente no seu navegador."
         },
         {
-          "question": "Como lida com arrays com tipos de elementos mistos?",
-          "answer": "Infere um tipo a partir dos elementos do array — para tipos mistos, espere um tipo união ou um tipo mais amplo que cubra a variedade presente, uma vez que o próprio JSON não declara um único tipo de elemento."
+          "question": "Como ele trata arrays com elementos de tipos diferentes?",
+          "answer": "Os itens são unificados em um único tipo: números e strings viram number | string, objetos com chaves diferentes viram uma só interface, e chaves ausentes em alguns itens são marcadas como opcionais."
         },
         {
-          "question": "Os campos opcionais e anuláveis são detetados?",
-          "answer": "O tratamento de campos opcionais/anuláveis depende do seu exemplo de JSON — um campo que seja `null` na sua entrada é tipado em conformidade, mas o gerador só consegue inferir a partir da única amostra de JSON que fornece, não de várias variações."
+          "question": "Campos opcionais e anuláveis são detectados?",
+          "answer": "Sim. Uma chave ausente em alguns objetos de um array se torna opcional (?), e um valor que às vezes é null vira uma união como string | null. Marque Tudo opcional para tornar todos os campos opcionais."
         },
         {
-          "question": "Posso gerar um alias de tipo em vez de uma interface?",
-          "answer": "Sim, um alternador permite mudar entre gerar uma `interface` TypeScript ou um alias `type`."
+          "question": "Posso gerar um type alias em vez de uma interface?",
+          "answer": "Sim, uma opção permite alternar entre gerar uma `interface` ou um type alias `type` do TypeScript."
         },
         {
-          "question": "O resultado do esquema Zod inclui validação como min/max?",
-          "answer": "Não, o esquema Zod gerado apenas reflete a forma básica do tipo (string, número, opcional, etc.) — não adiciona restrições como comprimento mínimo/máximo ou intervalos numéricos."
+          "question": "A saída do esquema Zod inclui validações como mínimo e máximo?",
+          "answer": "Não — o esquema reflete apenas a forma (tipos, opcional, anulável, uniões), além de uma linha de importação e de um tipo inferido. Adicione .min(), .email() e regras semelhantes por conta própria."
+        },
+        {
+          "question": "Posso renomear o tipo raiz ou adicionar export e readonly?",
+          "answer": "Sim. A barra de ferramentas define o nome do tipo raiz e ativa export, readonly e todos opcionais."
         }
       ],
       "comparisonTable": {
         "columns": [
-          "Característica",
+          "Recurso",
           "JSON",
           "TypeScript"
         ],
@@ -4357,20 +4432,20 @@
             "label": "Finalidade",
             "values": [
               "Formato de dados",
-              "Definições de tipo"
+              "Definições de tipos"
             ]
           },
           {
             "label": "Ideal para",
             "values": [
-              "Armazenar/transmitir dados",
+              "Armazenar e transmitir dados",
               "Segurança de tipos em tempo de compilação"
             ]
           },
           {
             "label": "Validação",
             "values": [
-              "Apenas em tempo de execução",
+              "Somente em tempo de execução",
               "Verificações em tempo de compilação"
             ]
           },
@@ -4378,25 +4453,28 @@
             "label": "Uso comum",
             "values": [
               "Payloads de API, configuração",
-              "Código tipado sobre formas de API"
+              "Código tipado conforme o formato da API"
             ]
           }
         ]
       }
     },
     "json-to-yaml": {
-      "seoTitle": "Conversor de JSON para YAML Online – Grátis, Instantâneo, Nas Duas Direções",
-      "metaDescription": "Converta JSON para YAML ou YAML para JSON instantaneamente, em qualquer direção — processado 100% localmente no seu navegador.",
+      "seoTitle": "Conversor de JSON para YAML Online – Grátis, Instantâneo e nos Dois Sentidos",
+      "metaDescription": "Converta JSON para YAML e YAML para JSON em um editor em tela cheia. Suporta âncoras, aliases, textos multilinha, comentários e vários documentos, com posição exata dos erros. Grátis e privado.",
       "h1": "Conversor JSON ↔ YAML",
-      "subheading": "Converta entre JSON e YAML instantaneamente, em qualquer direção.",
+      "subheading": "Converta entre JSON e YAML em um editor em tela cheia — com âncoras, textos multilinha e arquivos com vários documentos.",
       "keywords": [
         "json para yaml",
         "yaml para json",
-        "converter yaml"
+        "converter yaml",
+        "converter para yaml",
+        "conversor de yaml",
+        "validador de yaml"
       ],
       "howTo": [
         {
-          "name": "Escolha uma direção",
+          "name": "Escolha o sentido",
           "text": "Selecione JSON para YAML ou YAML para JSON."
         },
         {
@@ -4405,42 +4483,46 @@
         },
         {
           "name": "Copie ou baixe o resultado",
-          "text": "Copie o resultado convertido ou baixe-o como arquivo."
+          "text": "Copie a saída convertida ou baixe-a como arquivo."
         }
       ],
       "faq": [
         {
-          "question": "Isto é uma implementação completa de YAML?",
-          "answer": "Abrange o subconjunto prático de YAML que a maioria dos ficheiros de configuração utiliza — objetos aninhados, listas em estilo de bloco, strings, números, booleanos e nulo — em vez de todos os casos limite da especificação completa."
+          "question": "Esta é uma implementação completa de YAML?",
+          "answer": "Ela usa um analisador YAML 1.2 completo (a biblioteca de código aberto `yaml`), então estruturas aninhadas, estilos de bloco e de fluxo, textos multilinha, âncoras e aliases e vários documentos são convertidos corretamente."
         },
         {
-          "question": "Os meus dados são enviados para algum lugar?",
+          "question": "Meus dados são enviados para algum lugar?",
           "answer": "Não, a conversão acontece inteiramente no seu navegador."
         },
         {
           "question": "Posso converter estruturas aninhadas complexas?",
-          "answer": "Sim, ambas as direções lidam com objetos profundamente aninhados e arrays de objetos."
+          "answer": "Sim, os dois sentidos lidam com objetos muito aninhados e arrays de objetos."
         },
         {
-          "question": "Como representa os valores nulos de JSON em YAML?",
-          "answer": "Os valores nulos de JSON são escritos como o literal `null` no resultado YAML, seguindo a convenção padrão do YAML."
+          "question": "Como os valores null do JSON são representados em YAML?",
+          "answer": "Os valores null do JSON são escritos como o literal `null` na saída YAML, seguindo a convenção padrão do YAML."
         },
         {
-          "question": "As âncoras e aliases de YAML são suportados ao converter de volta para JSON?",
-          "answer": "Não, as âncoras (&) e aliases (*) não são reconhecidos pelo analisador — o YAML colado que os utilize não será convertido corretamente."
+          "question": "Âncoras e aliases do YAML são suportados na conversão de volta para JSON?",
+          "answer": "Sim. Os aliases são expandidos para seus valores completos, e as chaves de mesclagem escritas como <<: *name são mescladas no mapeamento."
         },
         {
-          "question": "A indentação importa ao colar YAML?",
-          "answer": "Sim, o analisador lê a estrutura a partir dos níveis de indentação, por isso uma indentação inconsistente ou incorreta no YAML colado pode produzir uma conversão incorreta ou falhada."
+          "question": "A indentação importa ao colar um YAML?",
+          "answer": "Sim, a estrutura do YAML vem da indentação. Se ela estiver inconsistente, a barra de status mostra a linha e a coluna do problema para você corrigir."
         },
         {
-          "question": "Consegue manter os comentários do YAML numa ida e volta?",
-          "answer": "Não, os comentários (linhas ou texto final começado por #) são removidos ao analisar YAML de volta para JSON — o próprio JSON não tem sintaxe de comentários para os preservar."
+          "question": "Ele preserva os comentários do YAML na conversão?",
+          "answer": "Não. Os comentários são descartados quando o YAML é analisado, e o JSON não tem como armazená-los."
+        },
+        {
+          "question": "O que acontece com um arquivo YAML que tem vários documentos?",
+          "answer": "Os documentos separados por --- são convertidos em um array JSON com uma entrada por documento."
         }
       ],
       "comparisonTable": {
         "columns": [
-          "Característica",
+          "Recurso",
           "JSON",
           "YAML"
         ],
@@ -4448,7 +4530,7 @@
           {
             "label": "Sintaxe",
             "values": [
-              "Chavetas e parênteses retos",
+              "Chaves e colchetes",
               "Baseada em indentação"
             ]
           },
@@ -4456,35 +4538,37 @@
             "label": "Ideal para",
             "values": [
               "APIs, troca de dados",
-              "Ficheiros de configuração, ferramentas DevOps"
+              "Arquivos de configuração, ferramentas de DevOps"
             ]
           },
           {
             "label": "Legibilidade",
             "values": [
-              "Compacto mas verboso",
-              "Amigável para humanos, menos desordem"
+              "Compacto, porém verboso",
+              "Amigável para pessoas, com menos ruído"
             ]
           },
           {
             "label": "Comentários",
             "values": [
-              "Não suportado",
-              "Suportado (#)"
+              "Não suportados",
+              "Suportados (#)"
             ]
           }
         ]
       }
     },
     "sql-formatter": {
-      "seoTitle": "Formatador de SQL Online – Formate & Minifique Consultas SQL, Grátis",
-      "metaDescription": "Formate consultas SQL bagunçadas em instruções legíveis e indentadas, ou minifique-as em uma única linha — processado 100% localmente no seu navegador.",
+      "seoTitle": "Formatador de SQL Online – Embeleze e Minifique Consultas SQL, Grátis",
+      "metaDescription": "Formate SQL para PostgreSQL, MySQL, SQL Server, BigQuery, Snowflake e mais, com opções de caixa das palavras-chave, indentação e vírgula no início. Comentários são mantidos; minifique com segurança. Grátis e privado.",
       "h1": "Formatador de Consultas SQL",
-      "subheading": "Formate consultas SQL bagunçadas em instruções legíveis, ou minifique-as em uma única linha.",
+      "subheading": "Formate SQL para 16 dialetos com opções de caixa das palavras-chave, indentação e posição das vírgulas — comentários preservados, 100% local.",
       "keywords": [
-        "formatador sql",
+        "formatador de sql",
         "embelezar sql",
-        "formatar consulta sql"
+        "formatar consulta sql",
+        "formatador de postgresql",
+        "beautifier de sql"
       ],
       "howTo": [
         {
@@ -4493,53 +4577,61 @@
         },
         {
           "name": "Formate ou minifique",
-          "text": "Clique em Formatar para embelezá-la com indentação adequada, ou em Minificar para reduzi-la a uma linha."
+          "text": "Clique em Formatar para embelezá-la com a indentação adequada ou em Minificar para reduzi-la a uma única linha."
         },
         {
           "name": "Copie o resultado",
-          "text": "Copie o SQL formatado ou minificado para sua área de transferência."
+          "text": "Copie o SQL formatado ou minificado para a área de transferência."
         }
       ],
       "faq": [
         {
-          "question": "Que dialetos de SQL são suportados?",
-          "answer": "O formatador reconhece palavras-chave comuns partilhadas entre MySQL, PostgreSQL, SQLite e SQL Server — formata com base na estrutura de palavras-chave em vez de validar sintaxe específica de dialeto."
+          "question": "Quais dialetos de SQL são suportados?",
+          "answer": "SQL padrão, PostgreSQL, MySQL, MariaDB, SQLite, SQL Server (T-SQL), Oracle PL/SQL, BigQuery, Snowflake, Redshift, Spark, Hive, Trino, DB2, DuckDB e ClickHouse. Escolha o seu para que aspas e palavras-chave sejam interpretadas corretamente."
         },
         {
-          "question": "Isto valida o meu SQL?",
-          "answer": "Não, isto é um formatador, não um validador de consultas — não deteta erros de sintaxe, apenas reformata o texto."
+          "question": "Ele valida o meu SQL?",
+          "answer": "Ele analisa a consulta para formatá-la, então problemas graves de sintaxe, como um parêntese não fechado, são informados com a linha e a coluna. Não é um validador completo — ele não conhece as suas tabelas nem colunas."
         },
         {
-          "question": "A minha consulta é enviada para algum lugar?",
+          "question": "Minha consulta é enviada para algum lugar?",
           "answer": "Não, a formatação acontece inteiramente no seu navegador."
         },
         {
-          "question": "Posso escolher o estilo de indentação, como tabulações versus espaços?",
-          "answer": "Não, a formatação utiliza sempre uma indentação fixa de 2 espaços, sem opção para mudar para tabulações ou uma largura diferente."
+          "question": "Posso escolher o estilo de indentação, como tabulações ou espaços?",
+          "answer": "Sim: 2 espaços, 4 espaços ou tabulações."
         },
         {
-          "question": "Coloca automaticamente as palavras-chave SQL em maiúsculas?",
-          "answer": "Sim, as palavras-chave SQL são automaticamente convertidas para maiúsculas como parte da formatação, e isto não é opcional."
+          "question": "Ele coloca as palavras-chave do SQL em maiúsculas automaticamente?",
+          "answer": "Por padrão, sim, mas você pode escolher MAIÚSCULAS, minúsculas ou Como digitado."
         },
         {
-          "question": "Consegue formatar consultas complexas com subconsultas e joins?",
-          "answer": "Sim, o formatador lida com subconsultas aninhadas e joins de várias tabelas, indentando cada cláusula para facilitar a leitura."
+          "question": "Ele consegue formatar consultas complexas com subconsultas e joins?",
+          "answer": "Sim, o formatador lida com subconsultas aninhadas e joins entre várias tabelas, indentando cada cláusula para facilitar a leitura."
         },
         {
           "question": "O que acontece se o meu SQL tiver um erro de sintaxe?",
-          "answer": "O formatador trabalha com tokens e espaços em branco em vez de analisar totalmente a gramática SQL, por isso ainda vai tentar formatar SQL inválido em vez de o rejeitar por completo — verifique sempre o resultado em relação à consulta pretendida."
+          "answer": "A formatação é interrompida, a barra de status mostra a linha e a coluna e o editor sublinha o ponto do erro. Minificar continua funcionando com qualquer texto."
+        },
+        {
+          "question": "Meus comentários são mantidos?",
+          "answer": "Sim. Comentários de linha (--) e de bloco (/* */) são preservados na formatação. Minificar os remove, mas nunca altera literais de texto nem identificadores entre aspas."
         }
       ]
     },
     "json-to-csv": {
-      "seoTitle": "Conversor de JSON para CSV Online – Grátis, Instantâneo, Sem Upload",
-      "metaDescription": "Converta um array JSON de objetos em um arquivo CSV, pronto para abrir no Excel ou Google Sheets — processado 100% localmente no seu navegador.",
+      "seoTitle": "Conversor de JSON para CSV Online – Grátis, Instantâneo e Sem Upload",
+      "metaDescription": "Converta um array JSON em CSV escolhendo o delimitador, valores aninhados achatados ou em JSON, arrays unidos, aspas em tudo, BOM para Excel e proteção contra fórmulas, com pré-visualização em tabela. Grátis e privado.",
       "h1": "Conversor de JSON para CSV",
-      "subheading": "Converta um array JSON de objetos em um arquivo CSV, pronto para abrir em uma planilha.",
+      "subheading": "Converta JSON em CSV com opções de delimitador, aninhamento, arrays, Excel e proteção contra fórmulas, além de pré-visualização em tabela.",
       "keywords": [
         "json para csv",
         "converter json para excel",
-        "array json para csv"
+        "array json para csv",
+        "converter para csv",
+        "conversor de csv",
+        "json para excel",
+        "json para tsv"
       ],
       "howTo": [
         {
@@ -4547,8 +4639,8 @@
           "text": "Cole um array JSON de objetos no editor."
         },
         {
-          "name": "Veja o resultado em CSV",
-          "text": "Veja o CSV convertido aparecer instantaneamente, com colunas baseadas nas chaves dos seus objetos."
+          "name": "Veja a saída em CSV",
+          "text": "Veja o CSV convertido aparecer na hora, com colunas criadas a partir das chaves dos seus objetos."
         },
         {
           "name": "Copie ou baixe",
@@ -4557,37 +4649,41 @@
       ],
       "faq": [
         {
-          "question": "Que formato de JSON funciona melhor?",
-          "answer": "Um array de objetos planos com chaves consistentes, por exemplo [{\"name\": \"A\", \"price\": 10}, ...] — isto mapeia-se de forma limpa para linhas e colunas de folha de cálculo."
+          "question": "Qual formato de JSON funciona melhor?",
+          "answer": "Um array de objetos simples com chaves consistentes, por exemplo [{\"name\": \"A\", \"price\": 10}, ...] — isso se traduz bem em linhas e colunas de planilha."
         },
         {
           "question": "O que acontece com objetos aninhados?",
-          "answer": "Os valores profundamente aninhados são achatados ou convertidos em strings sempre que possível, para que ainda caibam numa célula CSV."
+          "answer": "Com Achatar objetos ativado, as chaves aninhadas viram colunas com pontos, como team.name. Desative para manter os valores aninhados como texto JSON em uma única célula. Os arrays são gravados como JSON ou unidos por ponto e vírgula quando você marca Unir arrays."
         },
         {
-          "question": "Os meus dados são enviados para algum lugar?",
+          "question": "Meus dados são enviados para algum lugar?",
           "answer": "Não, a conversão acontece inteiramente no seu navegador."
         },
         {
           "question": "Posso escolher quais campos são exportados como colunas?",
-          "answer": "Não, todos os campos presentes nos seus objetos JSON são automaticamente incluídos como colunas — não há opção de seleção de campos."
+          "answer": "Cada chave encontrada em qualquer objeto vira uma coluna. Para descartar algumas, apague-as do JSON antes."
         },
         {
-          "question": "Como são tratadas as vírgulas ou aspas dentro dos valores?",
-          "answer": "Os valores que contêm vírgulas, aspas ou quebras de linha são automaticamente envolvidos em aspas e escapados de acordo com as regras de formatação CSV padrão."
+          "question": "Como vírgulas ou aspas dentro dos valores são tratadas?",
+          "answer": "Valores que contêm o delimitador, aspas, quebras de linha ou espaços no início e no fim são colocados entre aspas, com as aspas internas duplicadas, conforme a RFC 4180. Aspas em tudo força aspas em todos os valores."
         },
         {
-          "question": "A ordem das colunas corresponde à ordem das chaves no meu JSON?",
-          "answer": "As colunas são geralmente derivadas das chaves encontradas nos seus objetos JSON — para uma ordem de colunas consistente, certifique-se de que os seus objetos JSON têm as chaves pela mesma ordem."
+          "question": "A ordem das colunas segue a ordem das chaves no meu JSON?",
+          "answer": "As colunas seguem a ordem em que as chaves aparecem pela primeira vez nos objetos, então mantenha as chaves em uma ordem consistente para ter colunas previsíveis."
         },
         {
-          "question": "Posso transferir o resultado diretamente como um ficheiro .csv?",
-          "answer": "Sim, um botão de transferência dedicado guarda o resultado convertido como um ficheiro .csv."
+          "question": "Posso baixar o resultado diretamente como arquivo .csv?",
+          "answer": "Sim, um botão de download dedicado salva a saída convertida como arquivo .csv."
+        },
+        {
+          "question": "O Excel vai abrir o arquivo corretamente?",
+          "answer": "Marque BOM para Excel para adicionar uma marca de ordem de bytes e exibir os acentos corretamente, escolha Ponto e vírgula se a sua região o utiliza e marque Proteção de fórmulas para impedir que valores iniciados por = + - ou @ sejam executados como fórmulas."
         }
       ],
       "comparisonTable": {
         "columns": [
-          "Característica",
+          "Recurso",
           "JSON",
           "CSV"
         ],
@@ -4595,15 +4691,15 @@
           {
             "label": "Estrutura",
             "values": [
-              "Objetos aninhados de chave-valor",
-              "Linhas planas, tabulares"
+              "Objetos aninhados de chave e valor",
+              "Linhas tabulares simples"
             ]
           },
           {
             "label": "Ideal para",
             "values": [
-              "APIs, ficheiros de configuração, dados aninhados",
-              "Folhas de cálculo, dados tabulares"
+              "APIs, arquivos de configuração, dados aninhados",
+              "Planilhas, dados tabulares"
             ]
           },
           {
@@ -4617,187 +4713,205 @@
             "label": "Uso comum",
             "values": [
               "Aplicações web, troca de dados",
-              "Importações para Excel, bases de dados"
+              "Importações para Excel e bancos de dados"
             ]
           }
         ]
       }
     },
     "code-minifier": {
-      "seoTitle": "Minificador de HTML & CSS Online – Grátis, Instantâneo, Sem Upload",
-      "metaDescription": "Minifique HTML ou CSS removendo comentários e espaços em branco desnecessários — processado 100% localmente no seu navegador.",
-      "h1": "Minificador de HTML & CSS",
-      "subheading": "Remova comentários e espaços em branco desnecessários de HTML ou CSS para reduzir o tamanho do arquivo.",
+      "seoTitle": "Minificador de HTML e CSS Online – Grátis, Instantâneo e Sem Upload",
+      "metaDescription": "Minifique HTML, CSS, JavaScript, JSON e SVG no navegador e veja a economia exata de tamanho, além do tamanho em gzip. Também embeleza CSS e JSON. Grátis, privado e sem upload.",
+      "h1": "Minificador de HTML e CSS",
+      "subheading": "Minifique HTML, CSS, JavaScript, JSON e SVG — com tamanho antes e depois e estimativa em gzip, 100% local.",
       "keywords": [
         "minificar css",
         "minificar html",
-        "compressor de código"
+        "compressor de código",
+        "minificador de javascript",
+        "minificador de svg",
+        "embelezador de css"
       ],
       "howTo": [
         {
-          "name": "Escolha HTML ou CSS",
-          "text": "Selecione o tipo de código que deseja minificar."
+          "name": "Escolha uma linguagem",
+          "text": "Selecione HTML, CSS, JavaScript, JSON ou SVG."
         },
         {
-          "name": "Cole seu código",
-          "text": "Cole seu HTML ou CSS no editor."
+          "name": "Cole ou arraste seu código",
+          "text": "Digite, cole ou abra um arquivo — o resultado é atualizado conforme você avança."
         },
         {
-          "name": "Minifique e copie",
-          "text": "Clique em Minificar e copie o resultado comprimido — veja quanto espaço você economizou."
+          "name": "Confira a economia",
+          "text": "A barra de status mostra o tamanho antes e depois e uma estimativa do tamanho em gzip."
+        },
+        {
+          "name": "Copie ou baixe",
+          "text": "Copie o resultado ou baixe-o como arquivo."
         }
       ],
       "faq": [
         {
           "question": "Minificar vai quebrar o meu código?",
-          "answer": "Não, apenas comentários e espaços em branco seguros são removidos — o conteúdo dentro de tags pre, textarea, script e style para HTML, e os literais de string para CSS, é preservado sem alterações."
+          "answer": "Os minificadores são cuidadosos: strings, valores de url() e o conteúdo de <pre> e <textarea> ficam intactos, seletores CSS como `a :hover` mantêm o significado e calc() preserva seus espaços. O JavaScript usa o minificador Terser. Sempre teste o resultado."
         },
         {
-          "question": "Quanto tamanho a minificação poupa?",
-          "answer": "Varia consoante a quantidade de espaços em branco e comentários que o seu código original tem — a ferramenta mostra uma comparação exata de tamanho antes/depois."
+          "question": "Quanto tamanho a minificação economiza?",
+          "answer": "Depende de quanto espaço em branco e comentário o seu código original tem — a ferramenta mostra uma comparação exata do tamanho antes e depois."
         },
         {
-          "question": "O meu código é enviado para algum lugar?",
+          "question": "Meu código é enviado para algum lugar?",
           "answer": "Não, a minificação acontece inteiramente no seu navegador."
         },
         {
-          "question": "Minifica JavaScript além de HTML e CSS?",
-          "answer": "Não, apenas os modos de minificação HTML e CSS estão disponíveis — não há minificador de JavaScript."
+          "question": "Ele minifica JavaScript além de HTML e CSS?",
+          "answer": "Sim. O JavaScript é minificado com o Terser (compressão e renomeação de variáveis), e JSON e SVG também são suportados."
         },
         {
           "question": "Os comentários HTML são sempre removidos?",
-          "answer": "Sim, os comentários HTML são removidos automaticamente durante a minificação, sem opção para os preservar."
+          "answer": "Por padrão, sim, exceto os comentários condicionais do IE. Marque Manter comentários para preservá-los em HTML e CSS."
         },
         {
           "question": "Minificar CSS remove regras não utilizadas?",
-          "answer": "Não, a minificação de CSS apenas remove comentários e espaços em branco/formatação desnecessários — não analisa o seu HTML para detetar e remover seletores não utilizados."
+          "answer": "Não, a minificação de CSS remove apenas comentários e espaços em branco e formatação desnecessários — ela não analisa o seu HTML para detectar e remover seletores sem uso."
         },
         {
-          "question": "Posso reverter a minificação para obter código legível de volta?",
-          "answer": "Não, a minificação é unidirecional e não preserva a formatação original nem os nomes de variáveis para reconstrução — mantenha uma cópia do seu código original se precisar de o editar mais tarde."
+          "question": "Posso reverter a minificação para recuperar um código legível?",
+          "answer": "Para CSS e JSON, marque Embelezar para formatá-los novamente. HTML e JavaScript minificados perdem a formatação original, e o JavaScript perde os nomes das variáveis, então guarde seus arquivos-fonte."
+        },
+        {
+          "question": "O que significa o valor de gzip?",
+          "answer": "É o tamanho que o texto minificado teria após a compressão gzip, que é o que a maioria dos servidores envia pela rede, portanto fica mais próximo do tamanho real do download."
         }
       ]
     },
     "html-entity-encoder": {
-      "seoTitle": "Codificador / Decodificador de Entidades HTML – Grátis, Instantâneo, Sem Upload",
-      "metaDescription": "Codifique caracteres especiais em entidades HTML, ou decodifique entidades HTML de volta para texto legível — processado 100% localmente no seu navegador.",
+      "seoTitle": "Codificador / Decodificador de Entidades HTML – Grátis, Instantâneo e Sem Upload",
+      "metaDescription": "Codifique texto em entidades HTML ou decodifique entidades de volta — nomeadas, decimais ou hexadecimais, mínimas ou para todos os caracteres — com uma referência de entidades pesquisável. Grátis, privado e sem truques de DOM.",
       "h1": "Codificador / Decodificador de Entidades HTML",
-      "subheading": "Codifique caracteres especiais em entidades HTML, ou decodifique entidades de volta para texto legível.",
+      "subheading": "Codifique e decodifique entidades HTML nos estilos nomeado, decimal ou hexadecimal, com uma referência pesquisável.",
       "keywords": [
         "codificador de entidades html",
         "decodificar entidades html",
-        "escapar html"
+        "escapar html",
+        "lista de entidades html"
       ],
       "howTo": [
         {
           "name": "Escolha codificar ou decodificar",
-          "text": "Selecione se deseja codificar texto ou decodificar entidades HTML."
+          "text": "Selecione se você quer codificar texto ou decodificar entidades HTML."
         },
         {
           "name": "Cole seu texto",
-          "text": "Cole o texto ou a string codificada em entidades HTML que deseja converter."
+          "text": "Cole o texto ou a string codificada com entidades HTML que você quer converter."
         },
         {
           "name": "Copie o resultado",
-          "text": "Copie o resultado codificado ou decodificado para sua área de transferência."
+          "text": "Copie a saída codificada ou decodificada para a área de transferência."
         }
       ],
       "faq": [
         {
-          "question": "Porque codificar entidades HTML?",
-          "answer": "Para apresentar de forma segura carateres especiais como <, > e & como texto literal dentro de HTML, sem que o navegador os interprete como marcação."
+          "question": "Por que codificar entidades HTML?",
+          "answer": "Para exibir com segurança caracteres especiais como <, > e & como texto literal dentro do HTML, sem que o navegador os interprete como marcação."
         },
         {
-          "question": "Que entidades podem ser descodificadas?",
-          "answer": "Todas as entidades HTML nomeadas e numéricas que o seu navegador reconhece — a descodificação utiliza o próprio analisador HTML do navegador para uma cobertura completa e precisa."
+          "question": "Quais entidades podem ser decodificadas?",
+          "answer": "Entidades nomeadas da tabela interna com cerca de 250 das mais comuns (como &copy;, &mdash; e &eacute;), além de qualquer entidade numérica decimal (&#169;) ou hexadecimal (&#xA9;). Nomes desconhecidos são mantidos sem alteração."
         },
         {
-          "question": "O meu texto é enviado para algum lugar?",
-          "answer": "Não, a codificação e descodificação acontecem inteiramente no seu navegador."
+          "question": "Meu texto é enviado para algum lugar?",
+          "answer": "Não, a codificação e a decodificação acontecem inteiramente no seu navegador."
         },
         {
-          "question": "Codifica todos os carateres não ASCII ou apenas os especiais?",
-          "answer": "Por predefinição, visa carateres com significado reservado em HTML, como <, >, & e aspas; existe uma opção separada para codificar todos os carateres não ASCII como entidades numéricas, se precisar disso."
+          "question": "Ele codifica todos os caracteres não ASCII ou apenas os especiais?",
+          "answer": "Você escolhe: apenas & < > \" ', esses mais todos os caracteres não ASCII, ou todos os caracteres. Caracteres não ASCII usam uma entidade nomeada quando ela existe e, caso contrário, um número."
         },
         {
           "question": "Qual é a diferença entre entidades nomeadas e numéricas?",
-          "answer": "As entidades nomeadas como &amp; são mais legíveis, enquanto as entidades numéricas como &#38; funcionam para qualquer ponto de código Unicode, incluindo os que não têm um nome definido — esta ferramenta pode produzir ambas."
+          "answer": "Entidades nomeadas como &amp; são mais legíveis, enquanto entidades numéricas como &#38; funcionam para qualquer ponto de código Unicode, inclusive os que não têm nome definido — esta ferramenta pode gerar ambas."
         },
         {
-          "question": "Porque preciso de codificar carateres como & em atributos HTML?",
-          "answer": "Carateres & ou aspas não codificados dentro de valores de atributos podem quebrar o analisador HTML ou ser mal interpretados como o início de uma entidade, por isso codificar mantém o valor do atributo intacto."
+          "question": "Por que preciso codificar caracteres como & em atributos HTML?",
+          "answer": "Um & ou aspas sem codificação dentro de valores de atributo pode quebrar o analisador de HTML ou ser interpretado como o início de uma entidade, então a codificação mantém o valor do atributo intacto."
         },
         {
-          "question": "A descodificação consegue lidar com entidades sem ponto e vírgula final?",
-          "answer": "A maioria dos navegadores tolera algumas entidades nomeadas sem ponto e vírgula, mas este descodificador espera entidades bem formadas que terminem em ponto e vírgula para resultados fiáveis."
+          "question": "A decodificação funciona com entidades sem ponto e vírgula final?",
+          "answer": "Não. Apenas entidades bem formadas que terminam com ponto e vírgula são decodificadas, então textos como AT&T ou &amp permanecem como foram digitados."
+        },
+        {
+          "question": "Existe uma lista de entidades?",
+          "answer": "Sim. A aba Referência de entidades lista todas as entidades que a ferramenta conhece, com busca por nome ou colando o caractere, e um botão de copiar para cada uma."
         }
       ]
     },
     "title-case-converter": {
-      "seoTitle": "Conversor de Title Case – Estilos APA, Chicago, MLA & AP, Grátis",
-      "metaDescription": "Capitalize títulos e manchetes corretamente usando as regras de estilo APA, Chicago, MLA ou AP — processado 100% localmente no seu navegador.",
-      "h1": "Capitalizador de Títulos & Manchetes",
-      "subheading": "Capitalize títulos e manchetes corretamente usando as regras de estilo APA, Chicago, MLA ou AP.",
+      "seoTitle": "Conversor de Title Case – Estilos APA, Chicago, MLA e AP, Grátis",
+      "metaDescription": "Converta títulos para title case usando as regras AP, APA, Chicago/MLA ou capitalizando todas as palavras, mantendo siglas e marcas como NASA e iPhone, linha por linha. Grátis e privado.",
+      "h1": "Title Case e Capitalizador de Títulos",
+      "subheading": "Capitalize títulos usando as regras AP, APA ou Chicago / MLA — siglas e nomes de marcas preservados, um título por linha.",
       "keywords": [
-        "conversor title case",
+        "conversor de title case",
         "capitalizar título",
         "title case apa",
-        "manchete chicago"
+        "título estilo chicago"
       ],
       "howTo": [
         {
           "name": "Cole seu título",
-          "text": "Digite ou cole o título ou manchete que deseja capitalizar."
+          "text": "Digite ou cole o título ou manchete que você quer capitalizar."
         },
         {
           "name": "Escolha um estilo",
-          "text": "Selecione o estilo APA, Chicago, MLA ou AP."
+          "text": "Escolha o estilo APA, Chicago, MLA ou AP."
         },
         {
           "name": "Copie o resultado",
-          "text": "Copie o título corretamente capitalizado para sua área de transferência."
+          "text": "Copie o título corretamente capitalizado para a área de transferência."
         }
       ],
       "faq": [
         {
           "question": "Qual é a diferença entre os estilos?",
-          "answer": "Cada guia de estilo tem as suas próprias regras sobre quais palavras curtas (artigos, conjunções, preposições) permanecem em minúsculas — o APA e o Chicago colocam em maiúscula preposições mais longas que o AP e o MLA colocariam em minúscula, por exemplo."
+          "answer": "O AP coloca em minúscula artigos, conjunções e preposições de três letras ou menos. O APA coloca em minúscula as palavras secundárias de três letras ou menos. O Chicago e o MLA colocam em minúscula todas as preposições, independentemente do tamanho. Todas as palavras capitaliza tudo. Chicago e MLA concordam na maioria dos títulos, por isso compartilham uma única opção."
         },
         {
-          "question": "A primeira e a última palavra são sempre colocadas em maiúscula?",
-          "answer": "Sim, todos os quatro estilos colocam em maiúscula a primeira e a última palavra do título, independentemente da classe gramatical."
+          "question": "A primeira e a última palavra são sempre capitalizadas?",
+          "answer": "Sim. A primeira e a última palavra, e a primeira palavra depois de dois-pontos ou travessão, são sempre capitalizadas."
         },
         {
-          "question": "O meu texto é enviado para algum lugar?",
+          "question": "Meu texto é enviado para algum lugar?",
           "answer": "Não, a capitalização acontece inteiramente no seu navegador."
         },
         {
-          "question": "Como decide quais palavras pequenas colocar em minúscula?",
-          "answer": "Utiliza regras específicas de estilo (AP, APA, Chicago ou MLA) que definem quais artigos, conjunções e preposições curtas permanecem em minúscula, a menos que iniciem ou terminem o título."
+          "question": "Como ele decide quais palavras pequenas ficam em minúscula?",
+          "answer": "Cada estilo tem suas próprias listas de palavras secundárias (artigos, conjunções e preposições), exibidas na dica do estilo. Todo o resto é capitalizado."
         },
         {
-          "question": "Lida corretamente com palavras hifenizadas?",
-          "answer": "As palavras hifenizadas são colocadas em maiúscula como um único elemento, em vez de colocar em maiúscula cada parte após o hífen separadamente — por isso \"well-known\" torna-se \"Well-known\", não \"Well-Known\"."
+          "question": "Ele trata corretamente palavras com hífen?",
+          "answer": "Sim. Cada parte de uma palavra com hífen é capitalizada, então well-known vira Well-Known."
         },
         {
-          "question": "Consegue colocar em maiúscula títulos com subtítulos separados por dois pontos?",
-          "answer": "Sim, o texto é processado como uma string contínua, por isso tanto a parte do título como a do subtítulo recebem a capitalização de título de forma consistente."
+          "question": "Ele consegue capitalizar títulos com subtítulos separados por dois-pontos?",
+          "answer": "Sim, o texto é processado como uma sequência contínua, então tanto o título quanto o subtítulo recebem title case de forma consistente."
         },
         {
-          "question": "Preserva capitalização estilizada intencional, como nomes de marcas?",
-          "answer": "Não, cada palavra é reformatada de acordo com as regras do estilo selecionado, por isso a capitalização estilizada (como \"eBay\" ou \"iPhone\") será normalizada em vez de preservada."
+          "question": "Ele preserva capitalizações estilizadas intencionais, como nomes de marcas?",
+          "answer": "Sim, por padrão. Palavras totalmente em maiúsculas (NASA) ou com maiúsculas internas (iPhone, eBay) são mantidas como estão. Desmarque Manter siglas e marcas para reformatá-las também."
         }
       ]
     },
     "url-slug-generator": {
-      "seoTitle": "Gerador de Slug de URL Online – Compatível com SEO, Grátis e Instantâneo",
-      "metaDescription": "Transforme qualquer título ou texto em um slug de URL limpo e compatível com SEO — processado 100% localmente no seu navegador.",
+      "seoTitle": "Gerador de Slug de URL Online – Amigável para SEO, Grátis e Instantâneo",
+      "metaDescription": "Transforme títulos em slugs de URL limpos, com transliteração de acentos, cirílico, grego e árabe, slugs Unicode opcionais, remoção de stop words, tamanho máximo e conversão em massa. Grátis e privado.",
       "h1": "Gerador de Slug de URL para SEO",
-      "subheading": "Transforme qualquer título ou texto em um slug de URL limpo e compatível com SEO instantaneamente.",
+      "subheading": "Transforme títulos em slugs de URL limpos e amigáveis para SEO — transliteração, stop words, tamanho máximo e conversão em massa.",
       "keywords": [
         "gerador de slug",
-        "slugify url",
-        "criador de url amigável para seo"
+        "slugify de url",
+        "criador de url amigável para seo",
+        "slugify",
+        "gerador de slug em massa"
       ],
       "howTo": [
         {
@@ -4806,108 +4920,125 @@
         },
         {
           "name": "Ajuste as opções",
-          "text": "Defina um comprimento máximo e escolha hífen ou sublinhado como separador."
+          "text": "Defina um tamanho máximo e escolha hífen ou sublinhado como separador."
         },
         {
           "name": "Copie o slug",
-          "text": "O slug pronto para URL é atualizado instantaneamente — copie-o com um clique."
+          "text": "O slug pronto para URL é atualizado instantaneamente — copie com um clique."
         }
       ],
       "faq": [
         {
-          "question": "Como são tratados os carateres acentuados?",
-          "answer": "Os carateres acentuados e diacríticos são convertidos para o seu equivalente ASCII mais próximo (por exemplo, é torna-se e), para que o slug se mantenha seguro para URL."
+          "question": "Como os caracteres acentuados são tratados?",
+          "answer": "Eles são transliterados para letras simples: é vira e, ß vira ss, æ vira ae, e letras cirílicas, gregas e árabes viram seus equivalentes latinos. Marque Manter letras não latinas para preservar letras de qualquer alfabeto."
         },
         {
-          "question": "O que acontece aos carateres especiais e espaços?",
-          "answer": "São substituídos pelo separador escolhido, e múltiplos separadores consecutivos são reduzidos a um só."
+          "question": "O que acontece com caracteres especiais e espaços?",
+          "answer": "Eles são substituídos pelo separador escolhido, e vários separadores consecutivos são reduzidos a um só."
         },
         {
-          "question": "O meu texto é enviado para algum lugar?",
+          "question": "Meu texto é enviado para algum lugar?",
           "answer": "Não, a geração de slugs acontece inteiramente no seu navegador."
         },
         {
-          "question": "Impõe um comprimento máximo de slug?",
-          "answer": "Não há um comprimento máximo incorporado — títulos muito longos produzem slugs correspondentemente longos, por isso corte manualmente se precisar de um URL mais curto."
+          "question": "Ele impõe um tamanho máximo para o slug?",
+          "answer": "Opcionalmente. Defina o Tamanho máximo e o slug é cortado em uma palavra inteira sempre que possível. Deixe vazio para não ter limite."
         },
         {
-          "question": "Posso escolher hífenes ou sublinhados como separador?",
-          "answer": "Sim, um alternador permite escolher entre hífenes e sublinhados como separador de palavras."
+          "question": "Posso escolher hífen ou sublinhado como separador?",
+          "answer": "Sim: hífen, sublinhado, ponto ou nenhum."
         },
         {
-          "question": "Remove palavras vazias como 'a' ou 'o'?",
-          "answer": "Não, apenas remove carateres especiais e normaliza letras acentuadas — palavras comuns como \"a\" ou \"o\" são mantidas no slug."
+          "question": "Ele remove stop words como 'a' ou 'o'?",
+          "answer": "Opcionalmente. Marque Remover stop words para eliminar palavras comuns como a, o, de e e (o slug nunca fica vazio por causa disso)."
         },
         {
-          "question": "O que acontece aos números no título?",
-          "answer": "Os números são preservados tal como estão no slug gerado, uma vez que já são carateres seguros para URL."
+          "question": "O que acontece com os números do título?",
+          "answer": "Os números são mantidos como estão. Símbolos como & e % são transformados em palavras (and, percent)."
+        },
+        {
+          "question": "Posso gerar vários slugs de uma vez?",
+          "answer": "Sim. Coloque um título por linha e cada linha recebe o seu próprio slug. Um prefixo como https://site.com/blog pode ser adicionado a cada um."
+        },
+        {
+          "question": "E idiomas como chinês ou japonês?",
+          "answer": "Eles não podem ser transliterados de forma confiável, então esses caracteres seriam descartados. Marque Manter letras não latinas para preservá-los — navegadores modernos e mecanismos de busca lidam com URLs em Unicode."
         }
       ]
     },
     "opengraph-generator": {
-      "seoTitle": "Gerador de OpenGraph & Meta Tags – Prévia ao Vivo, Grátis",
-      "metaDescription": "Gere meta tags OpenGraph e do Twitter com uma prévia ao vivo de como seu link vai aparecer no Google, Twitter e Facebook.",
-      "h1": "Gerador de OpenGraph & Meta Tags",
-      "subheading": "Gere meta tags para compartilhamento social com uma prévia ao vivo de como seu link vai aparecer quando compartilhado.",
+      "seoTitle": "Gerador de OpenGraph e Meta Tags – Pré-visualização ao Vivo, Grátis",
+      "metaDescription": "Gere meta tags Open Graph e Twitter Card com pré-visualizações ao vivo para Google, X, Facebook, LinkedIn e Slack, contadores de tamanho, verificação de imagem e exportação de metadata para Next.js. Grátis e privado.",
+      "h1": "Gerador de OpenGraph e Meta Tags",
+      "subheading": "Gere meta tags de compartilhamento social com pré-visualizações ao vivo para Google, X, Facebook, LinkedIn e Slack, além de contadores de tamanho e verificação de imagem.",
       "keywords": [
-        "gerador opengraph",
-        "prévia de meta tags",
-        "criador de card de compartilhamento social"
+        "gerador de opengraph",
+        "pré-visualização de meta tags",
+        "criador de cartões de compartilhamento social",
+        "gerador de twitter card",
+        "gerador de meta tags",
+        "verificador de imagem og"
       ],
       "howTo": [
         {
-          "name": "Preencha os detalhes",
-          "text": "Insira seu título, descrição, URL canônica, nome do site, URL da imagem e usuário do Twitter."
+          "name": "Preencha seus dados",
+          "text": "Informe o título, a descrição, a URL canônica, o nome do site, a URL da imagem e o usuário do Twitter."
         },
         {
-          "name": "Confira as prévias ao vivo",
-          "text": "Veja prévias instantâneas de como seu link vai aparecer na Busca Google, no Twitter e no Facebook."
+          "name": "Confira as pré-visualizações ao vivo",
+          "text": "Veja pré-visualizações instantâneas de como o seu link vai aparecer na Pesquisa Google, no Twitter e no Facebook."
         },
         {
           "name": "Copie o código",
-          "text": "Copie as meta tags HTML prontas para colar ou um objeto de metadata do Next.js."
+          "text": "Copie meta tags HTML prontas para colar ou um objeto de metadata do Next.js."
         }
       ],
       "faq": [
         {
-          "question": "Para que são utilizadas as etiquetas OpenGraph?",
-          "answer": "Controlam como a sua página aparece quando partilhada em redes sociais e aplicações de mensagens — o título, a descrição e a imagem de pré-visualização."
+          "question": "Para que servem as tags OpenGraph?",
+          "answer": "Elas controlam como a sua página aparece quando é compartilhada em redes sociais e aplicativos de mensagens — o título, a descrição e a imagem de pré-visualização."
         },
         {
-          "question": "Isto funciona com o Next.js?",
-          "answer": "Sim, existe um botão dedicado para copiar um objeto de exportação de metadados do Next.js pronto a colar, além das etiquetas meta HTML simples."
+          "question": "Isso funciona com Next.js?",
+          "answer": "Sim. Uma exportação de metadata do Next.js pronta para colar é gerada ao lado das tags HTML simples, com todos os valores escapados com segurança."
         },
         {
-          "question": "Os meus dados são enviados para algum lugar?",
+          "question": "Meus dados são enviados para algum lugar?",
           "answer": "Não, as pré-visualizações e o código gerado são criados inteiramente no seu navegador."
         },
         {
-          "question": "Que dimensões de imagem devo usar para a imagem OpenGraph?",
-          "answer": "1200×630 pixels é o tamanho amplamente recomendado para imagens OpenGraph, proporcionando uma boa apresentação no Facebook, LinkedIn e na maioria das outras plataformas."
+          "question": "Quais dimensões de imagem devo usar para a imagem OpenGraph?",
+          "answer": "1200×630 pixels é o tamanho amplamente recomendado para imagens OpenGraph, com boa exibição no Facebook, no LinkedIn e na maioria das outras plataformas."
         },
         {
-          "question": "Isto também gera etiquetas Twitter Card?",
-          "answer": "Verifique o resultado gerado — muitos geradores de OpenGraph incluem etiquetas meta Twitter Card correspondentes, juntamente com as etiquetas `og:` padrão, para um suporte mais amplo de plataformas."
+          "question": "Isso gera tags de Twitter Card também?",
+          "answer": "Sim. Ele escreve twitter:card (imagem grande ou resumo), título, descrição, imagem, texto alternativo, site e criador."
         },
         {
-          "question": "Posso pré-visualizar como a ligação aparece em diferentes plataformas?",
-          "answer": "A ferramenta mostra uma pré-visualização do cartão com base nas etiquetas que introduziu, embora a apresentação real possa variar ligeiramente consoante a plataforma, já que cada serviço aplica as suas próprias regras de layout."
+          "question": "Posso pré-visualizar como o link aparece em diferentes plataformas?",
+          "answer": "Sim. As abas mostram pré-visualizações da pesquisa do Google, do X / Twitter (cartão grande ou pequeno), do Facebook / LinkedIn e do Slack / Discord. A renderização real pode variar um pouco de acordo com a plataforma."
         },
         {
-          "question": "Porque é que o meu site não mostra a pré-visualização atualizada depois de alterar as etiquetas?",
-          "answer": "As plataformas sociais colocam as pré-visualizações de ligações em cache — normalmente terá de usar a própria ferramenta de depuração/atualização de cache dessa plataforma (como o Sharing Debugger do Facebook) para forçá-la a ler novamente as suas etiquetas atualizadas."
+          "question": "Por que meu site não mostra a pré-visualização atualizada depois que mudei as tags?",
+          "answer": "As plataformas sociais guardam as pré-visualizações de links em cache — normalmente é preciso usar a ferramenta de depuração ou de atualização de cache da própria plataforma (como o Depurador de Compartilhamento do Facebook) para forçá-la a ler novamente as suas tags atualizadas."
+        },
+        {
+          "question": "Meus valores são escapados na saída?",
+          "answer": "Sim. Aspas, e comerciais e sinais de menor e maior são escapados nas tags HTML, e aspas e barras invertidas no código do Next.js, para que a saída não quebre a sua marcação. Tags sem valor são omitidas."
         }
       ]
     },
     "duplicate-line-remover": {
-      "seoTitle": "Removedor de Linhas Duplicadas & Ordenador de Listas – Grátis, Instantâneo",
-      "metaDescription": "Remova linhas duplicadas de uma lista e ordene-a alfabeticamente ou por comprimento — processado 100% localmente no seu navegador.",
-      "h1": "Removedor de Linhas Duplicadas & Ordenador de Listas",
-      "subheading": "Remova linhas duplicadas de uma lista e ordene-a da forma que precisar.",
+      "seoTitle": "Removedor de Linhas Duplicadas e Ordenador de Listas – Grátis e Instantâneo",
+      "metaDescription": "Remova linhas duplicadas, mostre apenas duplicadas ou únicas, conte ocorrências e ordene de forma natural, por tamanho, invertida ou embaralhada — com estatísticas ao vivo. Grátis e privado.",
+      "h1": "Removedor de Linhas Duplicadas e Ordenador de Listas",
+      "subheading": "Remova linhas duplicadas, encontre duplicatas, conte ocorrências e ordene — com estatísticas ao vivo.",
       "keywords": [
         "remover linhas duplicadas",
-        "deduplicar lista",
-        "ordenar lista online"
+        "remover duplicados de lista",
+        "ordenar lista online",
+        "encontrar linhas duplicadas",
+        "ordenar linhas online"
       ],
       "howTo": [
         {
@@ -4916,41 +5047,45 @@
         },
         {
           "name": "Defina suas opções",
-          "text": "Ative correspondência sem diferenciar maiúsculas/minúsculas, remoção de espaços e remoção de linhas vazias conforme necessário."
+          "text": "Ative a comparação sem diferenciar maiúsculas de minúsculas, a remoção de espaços nas pontas e a remoção de linhas vazias conforme a necessidade."
         },
         {
           "name": "Ordene e copie",
-          "text": "Escolha uma ordem de classificação e copie a lista limpa."
+          "text": "Escolha uma ordem de classificação e depois copie a lista limpa."
         }
       ],
       "faq": [
         {
-          "question": "Que linha é mantida quando são encontrados duplicados?",
-          "answer": "A primeira ocorrência é mantida, com a sua capitalização original preservada mesmo no modo sem distinção entre maiúsculas e minúsculas."
+          "question": "Qual linha é mantida quando duplicatas são encontradas?",
+          "answer": "A primeira ocorrência é mantida, com a caixa original preservada, mesmo no modo que ignora maiúsculas e minúsculas."
         },
         {
-          "question": "Posso ordenar sem remover duplicados?",
-          "answer": "Sim, a ordenação e a remoção de duplicados são opções independentes — utilize qualquer uma isoladamente ou em conjunto."
+          "question": "Posso ordenar sem remover duplicatas?",
+          "answer": "Sim, ordenar e remover duplicatas são opções independentes — use uma delas isoladamente ou as duas juntas."
         },
         {
-          "question": "A minha lista é enviada para algum lugar?",
+          "question": "Minha lista é enviada para algum lugar?",
           "answer": "Não, tudo é processado inteiramente no seu navegador."
         },
         {
-          "question": "A deteção de duplicados diferencia maiúsculas de minúsculas?",
-          "answer": "Existe um alternador para ignorar maiúsculas/minúsculas — por predefinição, pode tratar \"Apple\" e \"apple\" como linhas diferentes, a menos que ative a comparação sem distinção entre maiúsculas e minúsculas."
+          "question": "A detecção de duplicatas diferencia maiúsculas de minúsculas?",
+          "answer": "Não por padrão: Ignorar maiúsculas e minúsculas vem ativado. Desmarque-o para tratar Apple e apple como linhas diferentes. A primeira ocorrência mantém a caixa original."
         },
         {
-          "question": "Ignora espaços em branco iniciais ou finais ao comparar linhas?",
-          "answer": "Verifique como as suas linhas são comparadas — o comportamento de corte afeta se linhas que diferem apenas no espaço em branco circundante são tratadas como duplicados."
+          "question": "Ele ignora espaços no início ou no fim ao comparar linhas?",
+          "answer": "Sim, com Remover espaços das pontas ativado, linhas que diferem apenas pelos espaços ao redor contam como iguais."
         },
         {
-          "question": "Que opções de ordenação estão disponíveis além da alfabética?",
-          "answer": "Pode ordenar A→Z, Z→A, por comprimento de linha, ou deixar a ordem original inalterada — não há um modo separado de ordenação por valor numérico."
+          "question": "Quais opções de ordenação existem além da alfabética?",
+          "answer": "De A a Z, de Z a A, natural (item2 antes de item10), natural decrescente, mais curtas primeiro, mais longas primeiro, ordem inversa e embaralhar."
         },
         {
           "question": "Posso remover linhas em branco ao mesmo tempo?",
-          "answer": "Sim, uma opção separada \"remover linhas vazias\" funciona de forma independente da remoção de duplicados."
+          "answer": "Sim. Descartar linhas vazias funciona junto com as outras opções, e a barra de status informa quantas foram removidas."
+        },
+        {
+          "question": "Posso ver apenas as duplicatas ou contá-las?",
+          "answer": "Sim. O Modo permite mostrar apenas as linhas que aparecem mais de uma vez, manter apenas as que aparecem exatamente uma vez ou listar cada linha com o número de vezes que ela ocorre."
         }
       ]
     },

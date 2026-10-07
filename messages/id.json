@@ -244,63 +244,70 @@
       ]
     },
     "json-formatter": {
-      "seoTitle": "Formatter & Validator JSON Online – Gratis & Instan",
-      "metaDescription": "Format, validasi, dan percantik JSON online dengan penyorotan kesalahan sintaks instan, tampilan pohon, dan ekspor CSV. 100% gratis, tanpa perlu mendaftar.",
-      "h1": "Formatter & Validator JSON",
-      "subheading": "Percantik, validasi, dan jelajahi JSON dengan penyorotan kesalahan instan dan tampilan pohon langsung.",
+      "seoTitle": "Pemformat & Validator JSON Online – Gratis & Instan",
+      "metaDescription": "Format, validasi, minify, dan jelajahi JSON di editor layar penuh dengan baris dan kolom error yang tepat, tampilan pohon, tabel, dan JSONPath, pengurutan kunci, perbaikan otomatis, dan dukungan angka besar. Gratis dan privat.",
+      "h1": "Pemformat & Validator JSON",
+      "subheading": "Editor JSON layar penuh: format, validasi, perbaiki, urutkan kunci, dan jelajahi sebagai pohon, tabel, atau kueri JSONPath — 100% lokal.",
       "keywords": [
-        "formatter json",
+        "format json",
         "validator json",
-        "pempercantik json",
+        "json beautifier",
         "json ke csv",
-        "format json online"
+        "format json online",
+        "validasi json online",
+        "uji jsonpath",
+        "perbaiki json"
       ],
       "howTo": [
         {
-          "name": "Tempel JSON Anda",
-          "text": "Tempel atau ketik JSON mentah Anda di editor."
+          "name": "Tempel atau jatuhkan JSON Anda",
+          "text": "Ketik, tempel, buka file, atau seret file .json ke editor."
         },
         {
-          "name": "Validasi otomatis",
-          "text": "Kesalahan sintaks disorot secara instan saat Anda mengetik."
+          "name": "Periksa bilah status",
+          "text": "Bilah ini menampilkan JSON Valid atau baris dan kolom tepat dari error pertama — klik untuk langsung menuju ke sana."
         },
         {
-          "name": "Format & jelajahi",
-          "text": "Gunakan format otomatis atau jelajahi tampilan pohon interaktif."
+          "name": "Format, perbaiki, atau jelajahi",
+          "text": "Format atau minify dengan indentasi 2, 4, atau tab, urutkan kunci, perbaiki JSON longgar, lalu ganti panel kanan antara Terformat, Pohon, Tabel, dan Kueri."
         },
         {
-          "name": "Ekspor",
-          "text": "Salin JSON yang diformat atau konversikan ke CSV."
+          "name": "Salin, unduh, atau simpan",
+          "text": "Salin hasilnya, unduh formatted.json, atau simpan cuplikan ke riwayat Anda."
         }
       ],
       "faq": [
         {
-          "question": "Apakah alat ini mengirim data JSON saya ke suatu tempat?",
-          "answer": "Tidak. Semua proses parsing, pemformatan, dan validasi dilakukan secara lokal di browser Anda."
+          "question": "Apakah alat ini mengirim data JSON saya ke mana pun?",
+          "answer": "Tidak. Semua proses parsing, pemformatan, dan validasi berlangsung secara lokal di browser Anda."
         },
         {
           "question": "Bisakah saya mengonversi JSON ke CSV?",
-          "answer": "Ya, gunakan fitur ekspor CSV bawaan untuk array JSON datar (flat) maupun bertingkat (nested)."
+          "answer": "Gunakan tampilan Tabel untuk melihat array objek sebagai baris dan kolom. Untuk file CSV, buka alat JSON ke CSV yang memiliki opsi pemisah, perataan, dan Excel."
         },
         {
           "question": "Apa yang terjadi jika JSON saya tidak valid?",
-          "answer": "Editor akan menyorot baris dan karakter yang tepat dari kesalahan sintaks secara real-time."
+          "answer": "Bilah status menyebutkan masalahnya beserta baris dan kolomnya, editor menggarisbawahi lokasinya, dan mengklik pesan tersebut memindahkan kursor ke sana. Jika masalahnya berupa sintaks longgar seperti komentar atau koma di akhir, tombol Perbaiki akan menanganinya."
         },
         {
-          "question": "Apakah tampilan pohon (tree view) memungkinkan saya menciutkan dan memperluas objek bertingkat?",
-          "answer": "Ya, klik panah di sebelah objek atau array mana pun untuk menciutkan atau memperluas cabang pohon tersebut."
+          "question": "Apakah tampilan pohon memungkinkan saya menciutkan dan memperluas objek bersarang?",
+          "answer": "Ya. Klik panah mana pun, atau gunakan Perluas semua, Ciutkan semua, dan pemilih Kedalaman. Anda juga bisa mencari kunci dan nilai, berpindah antar hasil yang cocok, dan menyalin jalur atau nilai apa pun."
         },
         {
-          "question": "Bisakah alat ini mengurutkan kunci objek secara alfabetis?",
-          "answer": "Tidak, kunci ditampilkan dalam urutan yang sama seperti pada JSON asli Anda — tidak ada opsi pengurutan alfabetis."
+          "question": "Bisakah kunci objek diurutkan secara alfabetis?",
+          "answer": "Ya. Centang Urutkan kunci, lalu Format atau tampilan Terformat akan mengurutkan kunci setiap objek dari A ke Z di semua tingkat."
         },
         {
-          "question": "Apakah alat ini mendukung JSON dengan komentar atau koma di akhir (trailing comma)?",
-          "answer": "Tidak, alat ini mengikuti sintaks JSON yang ketat — komentar dan koma di akhir (yang terkadang diperbolehkan dalam JSON5 atau JSONC) akan menyebabkan kesalahan parsing."
+          "question": "Apakah mendukung JSON dengan komentar atau koma di akhir?",
+          "answer": "Validator mengikuti JSON yang ketat sehingga akan menandainya — tetapi sekali klik pada Perbaiki akan menghapus komentar dan koma di akhir, memberi tanda kutip pada nama properti tanpa kutip, mengubah tanda kutip tunggal menjadi ganda, dan memperbaiki True, False, dan None gaya Python."
         },
         {
-          "question": "Apa perbedaan antara beautify dan minify di sini?",
-          "answer": "Beautify menambahkan indentasi dan pemisah baris agar mudah dibaca; minify menghapus semua spasi yang tidak perlu untuk menghasilkan output sekecil mungkin — keduanya merepresentasikan data yang sama."
+          "question": "Apa perbedaan beautify dan minify di sini?",
+          "answer": "Format (beautify) menambahkan indentasi dan jeda baris agar mudah dibaca; Minify menghapus semua spasi yang tidak perlu. Keduanya mempertahankan angka yang sangat besar seperti 12345678901234567890 persis seperti tertulis."
+        },
+        {
+          "question": "Bisakah saya membuat kueri data dengan JSONPath?",
+          "answer": "Ya. Buka tab Kueri dan masukkan ekspresi seperti $.users[*].name, $..price, atau $.items[-1] untuk menampilkan setiap hasil yang cocok beserta jalurnya."
         }
       ]
     },
@@ -2249,13 +2256,13 @@
       ]
     },
     "url-encoder-decoder": {
-      "seoTitle": "Encoder & Decoder URL Online – Gratis & Instan",
-      "metaDescription": "Enkode atau dekode URL dan query string dengan mode Component, URL Lengkap, atau form (+), dan pecah URL menjadi bagian dan parameternya. Gratis, privat, tanpa pendaftaran.",
-      "h1": "Encoder / Decoder URL",
-      "subheading": "Enkode atau dekode persen untuk teks dan URL dalam tiga mode, dan lihat bagian-bagian URL serta parameter query-nya — 100% lokal.",
+      "seoTitle": "Enkoder & Dekoder URL Online – Gratis & Instan",
+      "metaDescription": "Enkode atau dekode URL dan query string dengan mode Komponen, URL Lengkap, atau form (+), dan pecah URL menjadi bagian dan parameternya. Gratis, privat, tanpa daftar.",
+      "h1": "Enkoder / Dekoder URL",
+      "subheading": "Enkode persen atau dekode teks dan URL dalam tiga mode, dan lihat bagian serta parameter query URL — 100% lokal.",
       "keywords": [
-        "encoder url",
-        "decoder url",
+        "enkoder url",
+        "dekoder url",
         "percent encoding online",
         "alat encodeuricomponent",
         "dekode url gratis",
@@ -2273,102 +2280,112 @@
         },
         {
           "name": "Lihat hasilnya",
-          "text": "Hasil enkode atau dekode diperbarui seketika."
+          "text": "Keluaran hasil enkode atau dekode diperbarui seketika."
         },
         {
           "name": "Salin hasilnya",
-          "text": "Klik Salin untuk menyalin hasilnya ke clipboard Anda."
+          "text": "Klik Salin untuk menyalin keluaran ke clipboard Anda."
         }
       ],
       "faq": [
         {
           "question": "Kapan saya memerlukan enkode URL?",
-          "answer": "Enkode URL diperlukan ketika karakter khusus (spasi, &, =, ?) muncul dalam parameter query atau segmen path."
+          "answer": "Enkode URL diperlukan saat karakter khusus (spasi, &, =, ?) muncul di parameter query atau segmen path."
         },
         {
           "question": "Standar enkode apa yang digunakan?",
-          "answer": "Alat ini memakai fungsi encodeURIComponent/decodeURIComponent bawaan browser (percent-encoding RFC 3986)."
+          "answer": "Alat ini memakai fungsi bawaan browser encodeURIComponent/decodeURIComponent (percent-encoding RFC 3986)."
         },
         {
           "question": "Apakah data saya dikirim ke mana pun?",
-          "answer": "Tidak, seluruh proses enkode dan dekode berlangsung secara lokal di browser Anda."
+          "answer": "Tidak, semua enkode dan dekode berlangsung secara lokal di browser Anda."
         },
         {
           "question": "Apa perbedaan encodeURIComponent dan encodeURI?",
-          "answer": "Mode Component (encodeURIComponent) mengenkode semuanya termasuk / ? & = #, yang tepat untuk satu nilai. Mode URL Lengkap (encodeURI) mempertahankan karakter tersebut agar URL tetap berfungsi. Mode Form adalah Component dengan spasi ditulis sebagai +."
+          "answer": "Mode Komponen (encodeURIComponent) mengenkode semuanya termasuk / ? & = #, yang tepat untuk satu nilai. Mode URL Lengkap (encodeURI) mempertahankan karakter tersebut agar URL tetap berfungsi. Mode Form adalah Komponen dengan spasi ditulis sebagai +."
         },
         {
           "question": "Bagaimana spasi dienkode?",
-          "answer": "Sebagai %20 pada mode Component dan URL Lengkap, dan sebagai + pada mode Form (application/x-www-form-urlencoded). Dekode pada mode Form mengubah + kembali menjadi spasi."
+          "answer": "Sebagai %20 pada mode Komponen dan URL Lengkap, dan sebagai + pada mode Form (application/x-www-form-urlencoded). Dekode di mode Form mengubah + kembali menjadi spasi."
         },
         {
           "question": "Bisakah saya mengenkode seluruh URL termasuk query string?",
-          "answer": "Anda bisa mengenkode teks apa pun yang ditempel, tetapi mengenkode URL lengkap dengan cara ini juga akan meng-escape karakter seperti `:` dan `/` yang kemungkinan ingin Anda pertahankan — alat ini dibuat untuk mengenkode nilai individual, bukan seluruh URL."
+          "answer": "Ya. Pilih mode URL Lengkap, yang mempertahankan karakter pembentuk struktur URL (: / ? & = #) dan hanya meng-escape yang tidak aman. Mode Komponen akan meng-escape karakter itu juga, yang tepat untuk satu nilai tetapi tidak untuk URL utuh."
         },
         {
-          "question": "Mengapa dekode gagal pada input saya?",
-          "answer": "Dekode gagal jika teks berisi `%` yang tidak diikuti dua digit heksadesimal yang valid, yang terjadi pada input yang rusak atau sudah sebagian didekode."
+          "question": "Mengapa dekode gagal pada masukan saya?",
+          "answer": "Dekode gagal jika teks mengandung `%` yang tidak diikuti dua digit hex yang valid, yang terjadi pada masukan yang rusak atau sudah sebagian didekode."
         },
         {
           "question": "Bisakah alat ini menampilkan bagian-bagian URL?",
-          "answer": "Ya. Ketika teks berupa URL lengkap, URL dipecah menjadi protokol, host, path, query, dan fragmen, dan setiap parameter query ditampilkan beserta nilainya yang sudah didekode."
+          "answer": "Ya. Jika teksnya adalah URL lengkap, URL dipecah menjadi protokol, host, path, query, dan fragmen, dan setiap parameter query dicantumkan beserta nilainya yang sudah didekode."
         }
       ]
     },
     "jwt-decoder": {
-      "seoTitle": "Decoder JWT Online – Gratis & Instan, Tanpa Daftar",
-      "metaDescription": "Dekode JSON Web Token (JWT) secara instan di browser Anda. Lihat header, payload, dan kedaluwarsa — tanpa verifikasi tanda tangan, tanpa panggilan server.",
-      "h1": "Decoder JWT",
-      "subheading": "Dekode header dan payload JWT secara instan — diproses 100% secara lokal, tanda tangan tidak pernah diverifikasi di sisi server.",
+      "seoTitle": "Dekoder JWT Online – Gratis & Instan, Tanpa Daftar",
+      "metaDescription": "Dekode JWT dan verifikasi tanda tangannya (algoritma HS, RS, PS, dan ES) di browser Anda. Bagian berkode warna, masa berlaku yang mudah dibaca, peringatan jelas, dan tidak ada yang diunggah atau disimpan.",
+      "h1": "Dekoder JWT",
+      "subheading": "Dekode JWT, baca klaimnya dalam bahasa yang mudah dipahami, dan verifikasi tanda tangan dengan secret atau kunci publik Anda — 100% lokal, tidak pernah disimpan.",
       "keywords": [
-        "decoder jwt",
+        "dekoder jwt",
         "dekode jwt online",
-        "decoder json web token",
-        "penguraian jwt gratis",
-        "debugger jwt"
+        "dekoder json web token",
+        "parser jwt gratis",
+        "debugger jwt",
+        "verifikasi tanda tangan jwt",
+        "cek kedaluwarsa jwt"
       ],
       "howTo": [
         {
           "name": "Tempel JWT Anda",
-          "text": "Tempel JSON Web Token ke dalam kolom input."
+          "text": "Tempel token — awalan \"Bearer \" tidak masalah."
         },
         {
-          "name": "Decoding otomatis",
-          "text": "Header dan payload didekode dari Base64URL dan ditampilkan sebagai JSON yang diformat."
+          "name": "Baca bagian yang didekode",
+          "text": "Header dan payload muncul sebagai JSON, dengan token berkode warna serta exp, nbf, dan iat ditampilkan sebagai tanggal yang mudah dibaca."
         },
         {
-          "name": "Periksa kedaluwarsa",
-          "text": "Jika ada klaim exp, status kedaluwarsanya disorot."
+          "name": "Periksa klaim waktu",
+          "text": "Lihat apakah token sudah kedaluwarsa atau belum berlaku, lengkap dengan hitung mundur langsung."
+        },
+        {
+          "name": "Verifikasi tanda tangan",
+          "text": "Masukkan secret bersama (HS) atau tempel kunci publik sebagai PEM atau JWK (RS, PS, ES) lalu tekan Verifikasi."
         }
       ],
       "faq": [
         {
           "question": "Apakah alat ini memverifikasi tanda tangan JWT?",
-          "answer": "Tidak, alat ini hanya mendekode header dan payload — tidak memverifikasi tanda tangan. Jangan pernah mempercayai token yang didekode tanpa verifikasi sisi server."
+          "answer": "Ya, jika Anda memintanya. Masukkan secret untuk HS256/384/512, atau kunci publik (PEM atau JWK) untuk algoritma RS, PS, dan ES, lalu tekan Verifikasi. Sebelum itu, halaman dengan jelas menyatakan bahwa tanda tangan belum diverifikasi — mendekode saja tidak membuktikan apa pun."
         },
         {
           "question": "Apakah token saya dikirim ke server?",
-          "answer": "Tidak, decoding terjadi sepenuhnya secara lokal di browser Anda menggunakan decoding Base64URL."
+          "answer": "Tidak, dekode berlangsung sepenuhnya secara lokal di browser Anda menggunakan dekode Base64URL."
         },
         {
           "question": "Apa arti klaim exp?",
-          "answer": "Klaim exp adalah stempel waktu Unix yang menunjukkan kapan token kedaluwarsa. Alat ini menyoroti apakah token sudah kedaluwarsa."
+          "answer": "exp adalah timestamp Unix yang menunjukkan kapan token kedaluwarsa. Alat ini menampilkannya sebagai tanggal dengan hitung mundur langsung seperti “dalam 2 jam” atau “3 hari lalu”."
         },
         {
-          "question": "Bisakah saya menggunakan ini untuk memeriksa apakah token sudah kedaluwarsa?",
-          "answer": "Anda dapat memeriksa klaim exp setelah decoding untuk melihat apakah stempel waktu tersebut sudah lewat, tetapi alat ini tidak secara otomatis memvalidasi kedaluwarsa terhadap waktu saat ini untuk Anda."
+          "question": "Bisakah saya memakai ini untuk memeriksa apakah token sudah kedaluwarsa?",
+          "answer": "Ya. Lencana menampilkan Kedaluwarsa, Belum berlaku (nbf), atau Belum kedaluwarsa. Lencana ini hanya menggambarkan klaim waktu, bukan apakah token tersebut asli."
         },
         {
-          "question": "Algoritma apa yang ditampilkan pada header?",
-          "answer": "Header yang didekode menyertakan field alg, seperti HS256 atau RS256, yang menunjukkan algoritma apa yang digunakan untuk menandatangani token — ini hanya metadata dan tidak digunakan untuk memverifikasi apa pun di sini."
+          "question": "Algoritma apa yang ditampilkan header?",
+          "answer": "Header yang didekode berisi field alg, seperti HS256 atau RS256, yang menunjukkan algoritma penandatanganan token — ini hanya metadata dan tidak dipakai untuk memverifikasi apa pun di sini."
         },
         {
-          "question": "Bisakah saya mendekode JWT yang salah format atau terpotong?",
-          "answer": "Tidak, token harus memiliki tiga segmen Base64URL yang dipisahkan titik (header, payload, signature); jika ada segmen yang hilang atau bukan Base64URL yang valid, decoding akan gagal."
+          "question": "Bisakah saya mendekode JWT yang rusak atau terpotong?",
+          "answer": "Tidak. JWT bertanda tangan memiliki tiga bagian Base64URL yang dipisah titik dan terdekode menjadi JSON; alat ini memberi tahu bagian mana yang salah. Token terenkripsi (JWE, lima bagian) tidak dapat didekode di sini."
         },
         {
-          "question": "Apakah klaim kustom dalam payload ditampilkan?",
-          "answer": "Ya, semua klaim dalam payload ditampilkan, baik klaim terdaftar seperti iss dan sub maupun klaim kustom apa pun yang ditambahkan aplikasi Anda."
+          "question": "Apakah klaim kustom di payload ditampilkan?",
+          "answer": "Ya, semua klaim di payload ditampilkan, baik klaim terdaftar seperti iss dan sub maupun klaim kustom apa pun yang ditambahkan aplikasi Anda."
+        },
+        {
+          "question": "Apakah token atau kunci saya disimpan di suatu tempat?",
+          "answer": "Tidak. Semuanya berlangsung di browser Anda dan, tidak seperti kebanyakan alat lain di sini, token dan kunci tidak pernah disimpan ke riwayat Anda."
         }
       ]
     },
@@ -2444,151 +2461,167 @@
       ]
     },
     "hash-generator": {
-      "seoTitle": "Generator Hash Online – SHA-1, SHA-256, SHA-512 Gratis",
-      "metaDescription": "Hasilkan hash SHA-1, SHA-256, SHA-384, dan SHA-512 dari teks atau file secara instan di browser Anda menggunakan Web Crypto API. Gratis dan privat.",
-      "h1": "Generator Hash",
-      "subheading": "Hitung hash SHA-1, SHA-256, SHA-384, dan SHA-512 dari teks atau file — diproses 100% secara lokal.",
+      "seoTitle": "Pembuat Hash Online – SHA-1, SHA-256, SHA-512 Gratis",
+      "metaDescription": "Buat hash MD5, SHA-1, SHA-256, SHA-384, SHA-512, dan CRC32 dari teks atau file, bandingkan dengan checksum yang diharapkan, dan salin sebagai hex atau Base64. Gratis dan privat.",
+      "h1": "Pembuat Hash",
+      "subheading": "Buat hash MD5, SHA, dan CRC32 dari teks atau file dan verifikasi checksum — diproses 100% secara lokal.",
       "keywords": [
-        "generator hash online",
+        "pembuat hash online",
         "generator sha256",
         "hash sha1 online",
         "pemeriksa hash file",
-        "generator checksum gratis"
+        "pembuat checksum gratis",
+        "generator md5",
+        "verifikasi checksum file",
+        "kalkulator crc32"
       ],
       "howTo": [
         {
-          "name": "Pilih teks atau file",
-          "text": "Beralih antara hashing teks mentah atau file yang diunggah."
+          "name": "Masukkan teks atau jatuhkan file",
+          "text": "Ketik teks — hash diperbarui saat Anda mengetik — atau jatuhkan file apa pun."
         },
         {
-          "name": "Masukkan input Anda",
-          "text": "Ketik teks atau seret & lepas file."
+          "name": "Pilih algoritma",
+          "text": "Centang MD5, SHA-1, SHA-256, SHA-384, SHA-512, dan CRC32 sesuai kebutuhan."
         },
         {
-          "name": "Lihat semua hash",
-          "text": "Digest SHA-1, SHA-256, SHA-384, dan SHA-512 dihitung secara instan."
+          "name": "Baca hash",
+          "text": "Setiap hash lengkap ditampilkan; beralih ke huruf kapital atau Base64 jika diperlukan."
         },
         {
-          "name": "Salin hash",
-          "text": "Klik ikon salin di sebelah hash mana pun untuk menyalinnya ke clipboard Anda."
+          "name": "Verifikasi unduhan",
+          "text": "Tempel checksum dari halaman unduhan dan alat ini memberi tahu apakah cocok."
         }
       ],
       "faq": [
         {
-          "question": "Mengapa MD5 tidak ditawarkan?",
-          "answer": "MD5 tidak tersedia dalam Web Crypto API native browser dan secara kriptografis sudah rentan (broken) — gunakan SHA-256 atau SHA-512 sebagai gantinya."
+          "question": "Mengapa MD5 diberi label legacy?",
+          "answer": "MD5 dan SHA-1 sudah rusak secara kriptografis, jadi jangan gunakan untuk keamanan. Keduanya disertakan karena banyak situs masih menerbitkan checksum MD5 atau SHA-1 untuk unduhan."
         },
         {
           "question": "Apakah file saya diunggah ke server?",
-          "answer": "Tidak, hashing terjadi sepenuhnya secara lokal menggunakan fungsi SubtleCrypto.digest dari Web Crypto API."
+          "answer": "Tidak, proses hashing berlangsung sepenuhnya secara lokal menggunakan fungsi SubtleCrypto.digest dari Web Crypto API."
         },
         {
           "question": "Untuk apa hash digunakan?",
-          "answer": "Hash digunakan untuk memverifikasi integritas file, mendeteksi duplikat, dan membuat sidik jari data dengan panjang tetap."
+          "answer": "Hash dipakai untuk memverifikasi integritas file, mendeteksi duplikat, dan membuat sidik jari data dengan panjang tetap."
         },
         {
           "question": "Algoritma hashing apa saja yang tersedia?",
-          "answer": "SHA-1, SHA-256, SHA-384, dan SHA-512 didukung, semuanya dihitung melalui Web Crypto API bawaan browser."
+          "answer": "MD5, SHA-1, SHA-256, SHA-384, SHA-512, dan CRC32. SHA memakai Web Crypto API browser Anda; MD5 dan CRC32 dihitung oleh alat ini sendiri."
         },
         {
-          "question": "Bisakah saya melakukan hash pada file, bukan hanya teks yang diketik?",
-          "answer": "Ya, Anda dapat mengunggah file dan alat ini menghitung hash-nya langsung dari byte file, yang berguna untuk memverifikasi integritas unduhan terhadap checksum yang dipublikasikan."
+          "question": "Bisakah saya melakukan hash pada file, bukan teks yang diketik?",
+          "answer": "Ya, jatuhkan file dan checksum-nya dihitung dari byte file secara lokal. Hashing SHA memerlukan seluruh file di memori, jadi file di atas 1 GB dibatasi pada MD5 dan CRC32."
         },
         {
-          "question": "Mengapa dua input yang sedikit berbeda menghasilkan hash yang sepenuhnya berbeda?",
-          "answer": "Ini disebut avalanche effect — fungsi hash kriptografis dirancang sedemikian rupa sehingga bahkan perubahan satu karakter menghasilkan output yang sepenuhnya berbeda dan tidak dapat diprediksi."
+          "question": "Mengapa dua masukan yang sedikit berbeda menghasilkan hash yang sama sekali berbeda?",
+          "answer": "Ini disebut efek longsor (avalanche effect) — fungsi hash kriptografis dirancang agar perubahan satu karakter saja menghasilkan keluaran yang sepenuhnya berbeda dan tak dapat diprediksi."
         },
         {
-          "question": "Bisakah saya menggunakan SHA-1 untuk tujuan keamanan?",
-          "answer": "SHA-1 tersedia untuk kompatibilitas dengan checksum lama, tetapi dianggap sudah rentan secara kriptografis untuk penggunaan keamanan; SHA-256 atau lebih tinggi direkomendasikan untuk apa pun yang sensitif terhadap keamanan."
+          "question": "Bisakah saya memakai SHA-1 untuk keperluan keamanan?",
+          "answer": "Tidak. SHA-1 tersedia demi kompatibilitas dengan checksum lama, tetapi tabrakan (collision) dapat dibuat, jadi gunakan SHA-256 atau yang lebih kuat."
+        },
+        {
+          "question": "Bagaimana cara memeriksa file unduhan terhadap checksum yang dipublikasikan?",
+          "answer": "Jatuhkan file, tempel nilai yang dipublikasikan di Bandingkan dengan checksum, dan pesan Cocok berwarna hijau muncul jika sama dengan salah satu hash yang dipilih. Hex dan Base64 sama-sama dipahami."
         }
       ]
     },
     "regex-tester": {
-      "seoTitle": "Penguji Regex Online – Debugger Ekspresi Reguler Gratis",
-      "metaDescription": "Uji ekspresi reguler terhadap teks sampel dengan penyorotan kecocokan langsung, flag, dan grup penangkap. Gratis, instan, dan sepenuhnya privat.",
+      "seoTitle": "Penguji Regex Online – Debugger Regular Expression Gratis",
+      "metaDescription": "Uji regular expression JavaScript dengan penyorotan langsung, posisi grup tangkapan dan grup bernama, mode ganti dan pisah, penjelasan dalam bahasa sehari-hari, cheat sheet, dan pola umum. Gratis dan privat.",
       "h1": "Penguji Regex",
-      "subheading": "Uji ekspresi reguler dengan penyorotan kecocokan langsung dan pemeriksaan grup penangkap — 100% lokal.",
+      "subheading": "Uji regular expression dengan penyorotan langsung, grup, ganti dan pisah, penjelas pola, dan pustaka pola umum — 100% lokal.",
       "keywords": [
         "penguji regex",
-        "penguji ekspresi reguler online",
+        "penguji regular expression online",
         "debugger regex gratis",
         "uji pola regex",
-        "penyorot kecocokan regex"
+        "penyorot kecocokan regex",
+        "penjelas regex",
+        "uji ganti regex",
+        "cheat sheet regex"
       ],
       "howTo": [
         {
           "name": "Masukkan pola Anda",
-          "text": "Ketik pola ekspresi reguler."
+          "text": "Ketik di antara garis miring, atau muat salah satu dari Pola umum."
         },
         {
           "name": "Atur flag",
-          "text": "Aktifkan flag global, abaikan huruf besar/kecil, multiline, atau dot-all."
+          "text": "Aktifkan g, i, m, s, u, y, dan d — flag Global menentukan apakah semua kecocokan ditemukan."
         },
         {
           "name": "Tambahkan teks uji",
-          "text": "Tempel atau ketik teks yang ingin Anda uji dengan pola tersebut."
+          "text": "Kecocokan disorot di editor saat Anda mengetik; grup tangkapan ditampilkan dengan warna kedua."
         },
         {
-          "name": "Tinjau kecocokan",
-          "text": "Kecocokan disorot secara langsung, dengan daftar lengkap kecocokan dan grup penangkap."
+          "name": "Jelajahi hasilnya",
+          "text": "Gunakan Kecocokan, Ganti, Pisah, Jelaskan, dan Cheat sheet untuk memeriksa grup, melihat pratinjau penggantian, memisahkan teks, atau membaca fungsi setiap bagian pola."
         }
       ],
       "faq": [
         {
           "question": "Varian regex apa yang digunakan?",
-          "answer": "Alat ini menggunakan mesin RegExp native JavaScript, yang sama dengan yang digunakan di browser dan Node.js."
+          "answer": "Alat ini memakai mesin RegExp bawaan JavaScript, yang sama dengan yang digunakan di browser dan Node.js."
         },
         {
-          "question": "Bisakah saya melihat capture group?",
-          "answer": "Ya, capture group dari setiap kecocokan (match) ditampilkan di samping teks hasil kecocokan penuh."
+          "question": "Bisakah saya melihat grup tangkapan?",
+          "answer": "Ya, grup tangkapan dari setiap kecocokan ditampilkan bersama teks kecocokan lengkapnya."
         },
         {
-          "question": "Apakah teks uji saya dikirim ke suatu tempat?",
-          "answer": "Tidak, semua pencocokan terjadi secara instan dan lokal di browser Anda."
+          "question": "Apakah teks uji saya dikirim ke mana pun?",
+          "answer": "Tidak, semua pencocokan berlangsung seketika dan secara lokal di browser Anda."
         },
         {
-          "question": "Bisakah saya menguji flag regex seperti global atau case-insensitive?",
-          "answer": "Ya, kotak centang memungkinkan Anda mengaktifkan flag global, case-insensitive, multiline, dan dotAll, dan hasil kecocokan diperbarui secara langsung saat Anda mengubahnya."
+          "question": "Bisakah saya menguji flag regex seperti global atau tidak peka huruf besar-kecil?",
+          "answer": "Ya. Aktifkan g, i, m, s, u, y, dan d. Tanpa g hanya kecocokan pertama yang ditemukan, dan bilah status mengingatkan Anda."
         },
         {
-          "question": "Apakah ini mendukung named capture group?",
-          "answer": "Named group tidak ditampilkan secara terpisah — hanya capture group bernomor yang ditampilkan di samping setiap kecocokan."
+          "question": "Apakah mendukung grup tangkapan bernama?",
+          "answer": "Ya. Grup bernama ditampilkan berdasarkan namanya, dengan posisi awal dan akhir setiap grup saat flag d aktif."
         },
         {
           "question": "Mengapa regex saya berfungsi di sini tetapi tidak di bahasa lain?",
-          "answer": "Alat ini menggunakan mesin regex JavaScript, yang memiliki beberapa perbedaan sintaks dari bahasa lain (seperti PCRE atau modul re Python) — fitur seperti dukungan lookbehind dan nama flag dapat bervariasi."
+          "answer": "Alat ini memakai mesin regex JavaScript. PCRE, Python, dan lainnya berbeda dalam sintaks seperti dukungan lookbehind, kuantifier possessive, dan sintaks grup bernama, jadi periksa varian di bahasa Anda."
         },
         {
           "question": "Bisakah saya menguji string pengganti, bukan hanya kecocokan?",
-          "answer": "Tidak, alat ini hanya menyorot kecocokan dalam string uji Anda — tidak menyertakan pratinjau cari-dan-ganti."
+          "answer": "Ya. Buka tab Ganti, masukkan pengganti seperti $2-$1 atau $<name>, dan lihat hasilnya secara langsung. Tab Pisah menunjukkan bagaimana pola memisahkan teks."
+        },
+        {
+          "question": "Apa yang terjadi jika pola saya memakan waktu terlalu lama?",
+          "answer": "Pola dijalankan di worker latar belakang. Jika memakan waktu lebih dari 1,5 detik (biasanya karena backtracking katastrofik dari kuantifier bersarang seperti (a+)+), prosesnya dihentikan dan Anda mendapat pesan yang jelas, bukan tab yang membeku."
         }
       ]
     },
     "markdown-previewer": {
       "seoTitle": "Pratinjau Markdown Online – Editor Markdown Langsung Gratis",
-      "metaDescription": "Tulis Markdown dan lihat pratinjau HTML yang disanitasi secara langsung secara instan di browser Anda. Gratis, privat, mendukung judul, daftar, kode, dan tautan.",
+      "metaDescription": "Tulis Markdown dengan pratinjau langsung yang sinkron saat digulir. Tabel gaya GitHub, daftar tugas, dan blok kode, tampilan sumber HTML, serta ekspor ke .md atau .html. Disanitasi dan privat.",
       "h1": "Pratinjau Markdown",
-      "subheading": "Tulis Markdown dan pratinjau output HTML yang dirender secara langsung — 100% lokal, rendering yang disanitasi.",
+      "subheading": "Tulis Markdown dengan pratinjau langsung yang sinkron saat digulir dan ekspor ke .md atau .html — disanitasi dan 100% lokal.",
       "keywords": [
         "pratinjau markdown",
         "editor markdown online",
         "pratinjau markdown langsung",
         "markdown ke html gratis",
-        "editor md online"
+        "editor md online",
+        "markdown ke html",
+        "pratinjau gfm"
       ],
       "howTo": [
         {
           "name": "Tulis Markdown",
-          "text": "Ketik atau tempel Markdown di panel editor kiri."
+          "text": "Ketik atau tempel Markdown di panel editor sebelah kiri."
         },
         {
           "name": "Pratinjau langsung",
-          "text": "Pratinjau HTML yang dirender diperbarui secara instan di sebelah kanan."
+          "text": "Pratinjau HTML yang dirender diperbarui seketika di sebelah kanan."
         },
         {
           "name": "Gunakan sintaks standar",
-          "text": "Judul, daftar, tautan, blok kode, dan kutipan semuanya didukung."
+          "text": "Judul, daftar, tautan, blok kode, dan kutipan blok semuanya didukung."
         }
       ],
       "faq": [
@@ -2597,89 +2630,97 @@
           "answer": "Ya, semua HTML yang dirender disanitasi dengan DOMPurify untuk mencegah injeksi skrip sebelum ditampilkan."
         },
         {
-          "question": "Apakah konten Markdown saya dikirim ke suatu tempat?",
-          "answer": "Tidak, parsing dan rendering keduanya terjadi sepenuhnya di browser Anda."
+          "question": "Apakah konten Markdown saya dikirim ke mana pun?",
+          "answer": "Tidak, parsing dan rendering sama-sama berlangsung sepenuhnya di browser Anda."
         },
         {
           "question": "Sintaks Markdown apa yang didukung?",
-          "answer": "Markdown standar: heading, tebal/miring, daftar, tautan, gambar, blockquote, dan blok kode berpagar (fenced code block)."
+          "answer": "Markdown standar: judul, tebal/miring, daftar, tautan, gambar, kutipan blok, dan blok kode berpagar."
         },
         {
-          "question": "Apakah ini mendukung fitur GitHub Flavored Markdown seperti tabel dan daftar tugas?",
-          "answer": "Tabel dasar dirender dengan benar, tetapi kotak centang daftar tugas tidak diberi gaya khusus — akan muncul sebagai teks biasa, bukan kotak centang interaktif."
+          "question": "Apakah mendukung fitur GitHub Flavored Markdown seperti tabel dan daftar tugas?",
+          "answer": "Ya. Tabel, kotak centang daftar tugas, teks coret, dan blok kode berpagar dirender dengan gaya yang sesuai."
         },
         {
           "question": "Bisakah saya mengekspor hasil render sebagai HTML?",
-          "answer": "Tidak, tidak ada opsi ekspor HTML — Anda dapat menyimpan Markdown mentah ke riwayat Anda, tetapi bukan file HTML yang dirender."
+          "answer": "Ya. Salin HTML menyalin markup-nya, tab HTML menampilkannya, dan tombol .html mengunduh halaman web lengkap yang sudah bergaya. Tombol .md mengunduh Markdown Anda."
         },
         {
-          "question": "Apakah ini mendukung penyorotan sintaks dalam blok kode?",
-          "answer": "Tidak, blok kode dirender dengan gaya monospace tetapi tanpa penyorotan sintaks yang sadar bahasa pemrograman."
+          "question": "Apakah mendukung penyorotan sintaks di blok kode?",
+          "answer": "Tidak, blok kode dirender dengan gaya monospace tetapi tanpa penyorotan sintaks sesuai bahasa."
         },
         {
-          "question": "Bisakah saya menulis HTML mentah di dalam Markdown saya?",
-          "answer": "Ya, parser Markdown standar meneruskan tag HTML mentah, sehingga HTML apa pun yang Anda sertakan akan dirender bersama konten Markdown Anda."
+          "question": "Bisakah saya menulis HTML mentah di dalam Markdown?",
+          "answer": "Ya, tetapi akan disanitasi: skrip, event handler, dan markup tidak aman lainnya dihapus sebelum pratinjau ditampilkan."
+        },
+        {
+          "question": "Apakah pratinjau mengikuti gulir saya?",
+          "answer": "Ya. Dengan Sinkron gulir aktif, menggulir editor akan menggulir pratinjau ke posisi yang sesuai."
         }
       ]
     },
     "csv-to-json": {
       "seoTitle": "Konverter CSV ke JSON Online – Gratis & Dua Arah",
-      "metaDescription": "Konversi CSV ke JSON atau JSON ke CSV secara instan di browser Anda. Menangani kolom bertanda kutip dan data bersarang. Gratis, privat, tanpa unggah.",
+      "metaDescription": "Konversi CSV ke JSON dan JSON ke CSV di editor layar penuh dengan deteksi otomatis pemisah, opsi header dan tipe, pemangkasan spasi, penanganan null, dan pratinjau tabel. Gratis dan privat.",
       "h1": "Konverter CSV ke JSON",
-      "subheading": "Konversi antara format CSV dan JSON secara instan, dalam kedua arah — diproses 100% secara lokal.",
+      "subheading": "Konversi CSV ke JSON dan sebaliknya, dengan deteksi pemisah, deteksi tipe, dan pratinjau tabel — 100% lokal.",
       "keywords": [
         "csv ke json",
         "konverter json ke csv",
-        "konversi csv online",
-        "penguraian csv gratis",
-        "konverter csv json"
+        "ubah csv online",
+        "parser csv gratis",
+        "konverter csv json",
+        "ubah ke json",
+        "konverter json",
+        "tsv ke json",
+        "parser csv online"
       ],
       "howTo": [
         {
-          "name": "Pilih arah",
+          "name": "Pilih arah konversi",
           "text": "Pilih CSV → JSON atau JSON → CSV."
         },
         {
           "name": "Tempel data Anda",
-          "text": "Tempel baris CSV atau array JSON di panel input."
+          "text": "Tempel baris CSV atau array JSON ke panel masukan."
         },
         {
-          "name": "Lihat konversinya",
-          "text": "Output yang dikonversi diperbarui secara instan saat Anda mengetik."
+          "name": "Lihat hasil konversi",
+          "text": "Keluaran hasil konversi diperbarui seketika saat Anda mengetik."
         },
         {
           "name": "Salin hasilnya",
-          "text": "Klik Salin untuk menyalin output yang dikonversi ke clipboard Anda."
+          "text": "Klik Salin untuk menyalin hasil konversi ke clipboard Anda."
         }
       ],
       "faq": [
         {
-          "question": "Apakah ini menangani field CSV yang dikutip dengan koma?",
-          "answer": "Ya, field yang dikutip yang mengandung koma, tanda kutip, atau baris baru diproses dengan benar."
+          "question": "Apakah ini menangani field CSV berkutip yang berisi koma?",
+          "answer": "Ya. Alat ini memakai parser RFC 4180 lengkap, sehingga field berkutip yang berisi koma, kutip ganda, bahkan jeda baris tetap berada dalam satu sel."
         },
         {
           "question": "Struktur JSON apa yang diharapkan untuk JSON ke CSV?",
-          "answer": "Array objek datar (flat) bekerja paling baik; objek bertingkat (nested) otomatis diratakan dengan notasi titik."
+          "answer": "Array objek paling cocok; objek bersarang diratakan dengan notasi titik."
         },
         {
-          "question": "Apakah data saya diunggah ke suatu tempat?",
-          "answer": "Tidak, semua parsing dan konversi terjadi secara lokal di browser Anda."
+          "question": "Apakah data saya diunggah ke mana pun?",
+          "answer": "Tidak, semua proses parsing dan konversi berlangsung secara lokal di browser Anda."
         },
         {
           "question": "Bisakah saya memilih pemisah khusus selain koma?",
-          "answer": "Tidak, parsing ditetapkan untuk nilai yang dipisahkan koma — file yang dipisahkan titik koma atau tab tidak akan diproses dengan benar apa adanya."
+          "answer": "Ya. Pemisah dideteksi otomatis (koma, titik koma, tab, atau pipa) dan Anda juga bisa memilihnya sendiri."
         },
         {
-          "question": "Apakah ini mendeteksi header kolom secara otomatis?",
-          "answer": "Ya, baris pertama selalu diperlakukan sebagai header kolom — tidak ada opsi untuk memperlakukan semua baris sebagai data."
+          "question": "Apakah header kolom terdeteksi secara otomatis?",
+          "answer": "Secara default baris pertama dipakai sebagai header. Hapus centang Baris header untuk memperlakukan setiap baris sebagai data dengan kolom bernama column_1, column_2, dan seterusnya. Header kosong atau berulang diganti namanya dan Anda diberi tahu."
         },
         {
-          "question": "Apa yang terjadi jika baris memiliki jumlah kolom yang berbeda?",
-          "answer": "Baris dengan kolom lebih sedikit dari header akan memiliki field yang hilang dalam objek JSON hasil, dan kolom tambahan di luar header mungkin dibuang atau tidak sejajar."
+          "question": "Apa yang terjadi jika baris memiliki jumlah kolom berbeda?",
+          "answer": "Baris yang lebih pendek diisi dengan nilai kosong dan bilah status memperingatkan berapa banyak baris yang jumlah field-nya berbeda."
         },
         {
           "question": "Apakah angka dan boolean dikonversi ke tipe JSON yang tepat?",
-          "answer": "Periksa output dengan saksama — nilai CSV secara alami adalah teks, dan apakah string yang terlihat seperti angka dikonversi menjadi angka JSON tergantung pada inferensi tipe parser, bukan pengaturan yang Anda kontrol."
+          "answer": "Ya, saat Deteksi tipe aktif: 12 menjadi angka dan true atau false menjadi boolean. Nilai dengan nol di depan (007) dan angka lebih dari 15 digit tetap berupa teks agar tidak ada yang hilang. Matikan opsi ini untuk mempertahankan semuanya sebagai string."
         }
       ],
       "comparisonTable": {
@@ -2692,28 +2733,28 @@
           {
             "label": "Struktur",
             "values": [
-              "Baris tabular datar",
-              "Objek key-value bertingkat"
+              "Baris tabular yang datar",
+              "Objek key-value bersarang"
             ]
           },
           {
-            "label": "Paling cocok untuk",
+            "label": "Terbaik untuk",
             "values": [
               "Spreadsheet, data tabular",
-              "API, file konfigurasi, data bertingkat"
+              "API, file konfigurasi, data bersarang"
             ]
           },
           {
             "label": "Keterbacaan",
             "values": [
               "Sederhana, ringkas",
-              "Terstruktur, mendeskripsikan diri sendiri"
+              "Terstruktur, menjelaskan diri sendiri"
             ]
           },
           {
             "label": "Penggunaan umum",
             "values": [
-              "Ekspor Excel, database",
+              "Ekspor dari Excel dan database",
               "Aplikasi web, pertukaran data"
             ]
           }
@@ -2721,29 +2762,30 @@
       }
     },
     "lorem-ipsum-generator": {
-      "seoTitle": "Generator Lorem Ipsum Online – Teks Pengganti Gratis",
-      "metaDescription": "Hasilkan teks pengganti Lorem Ipsum berdasarkan kata, kalimat, atau paragraf, secara instan di browser Anda. Gratis, cepat, dan sepenuhnya dapat disesuaikan.",
+      "seoTitle": "Generator Lorem Ipsum Online – Teks Placeholder Gratis",
+      "metaDescription": "Buat Lorem Ipsum per paragraf, kalimat, atau kata (hingga 5.000), sebagai teks biasa, paragraf HTML, atau daftar, lengkap dengan jumlah kata dan karakter. Gratis dan privat.",
       "h1": "Generator Lorem Ipsum",
-      "subheading": "Hasilkan teks pengganti Lorem Ipsum berdasarkan kata, kalimat, atau paragraf — secara instan, 100% lokal.",
+      "subheading": "Buat Lorem Ipsum per paragraf, kalimat, atau kata — sebagai teks, HTML, atau daftar.",
       "keywords": [
         "generator lorem ipsum",
-        "generator teks pengganti",
+        "generator teks placeholder",
         "generator teks dummy online",
         "lorem ipsum gratis",
-        "generator teks pengisi"
+        "generator teks pengisi",
+        "lorem ipsum html"
       ],
       "howTo": [
         {
-          "name": "Pilih unit",
+          "name": "Pilih satuan",
           "text": "Pilih kata, kalimat, atau paragraf."
         },
         {
-          "name": "Atur jumlah",
-          "text": "Masukkan berapa banyak unit yang akan dihasilkan."
+          "name": "Atur jumlahnya",
+          "text": "Masukkan berapa banyak satuan yang ingin dibuat."
         },
         {
-          "name": "Hasilkan",
-          "text": "Klik Hasilkan untuk membuat teks pengganti baru."
+          "name": "Buat",
+          "text": "Klik Buat untuk menghasilkan teks placeholder baru."
         },
         {
           "name": "Salin teksnya",
@@ -2753,31 +2795,31 @@
       "faq": [
         {
           "question": "Untuk apa Lorem Ipsum digunakan?",
-          "answer": "Lorem Ipsum adalah teks placeholder standar yang digunakan oleh desainer dan developer untuk mempratinjau tata letak sebelum konten asli siap."
+          "answer": "Lorem Ipsum adalah teks placeholder standar yang dipakai desainer dan developer untuk melihat pratinjau tata letak sebelum konten asli siap."
         },
         {
-          "question": "Bisakah saya memulai dengan 'Lorem ipsum dolor sit amet' klasik?",
+          "question": "Bisakah saya memulai dengan kalimat klasik 'Lorem ipsum dolor sit amet'?",
           "answer": "Ya, aktifkan opsi \"Mulai dengan Lorem ipsum…\" untuk memulai dengan pembuka tradisional."
         },
         {
-          "question": "Apakah ada batasan jumlah teks yang bisa saya hasilkan?",
-          "answer": "Anda dapat menghasilkan hingga 100 unit (kata, kalimat, atau paragraf) per klik."
+          "question": "Apakah ada batas jumlah teks yang bisa dibuat?",
+          "answer": "Hingga 100 paragraf, 500 kalimat, atau 5.000 kata per klik."
         },
         {
-          "question": "Bisakah saya menghasilkan paragraf yang dibungkus HTML?",
-          "answer": "Tidak, output berupa paragraf teks biasa — tidak ada opsi untuk membungkusnya secara otomatis dalam tag `<p>`."
+          "question": "Bisakah saya membuat paragraf yang dibungkus HTML?",
+          "answer": "Ya. Pilih Tag HTML <p> untuk satu tag paragraf per blok, atau Daftar HTML untuk <ul> dengan satu <li> per item."
         },
         {
-          "question": "Apakah jumlah kata tetap tepat saat menghasilkan berdasarkan paragraf?",
-          "answer": "Jumlah kata bersifat perkiraan saat menghasilkan berdasarkan paragraf atau kalimat, karena struktur paragraf lebih diutamakan daripada mencapai total kata yang tepat."
+          "question": "Apakah jumlah kata tetap tepat saat membuat per paragraf?",
+          "answer": "Paragraf memiliki panjang alami (sekitar empat sampai tujuh kalimat), jadi jumlah katanya perkiraan. Buat per kata untuk jumlah yang tepat — bilah status selalu menampilkan total sebenarnya."
         },
         {
-          "question": "Apakah teks yang dihasilkan selalu dalam bahasa Latin?",
-          "answer": "Ya, alat ini menghasilkan teks lorem ipsum bergaya Latin klasik — tidak ada opsi gaya teks placeholder alternatif atau bahasa lain."
+          "question": "Apakah teks yang dihasilkan selalu berbahasa Latin?",
+          "answer": "Ya, alat ini menghasilkan teks lorem ipsum klasik bergaya Latin — tidak ada gaya teks placeholder atau opsi bahasa lain."
         },
         {
-          "question": "Bisakah saya menghasilkan satu frasa bergaya heading, bukan paragraf penuh?",
-          "answer": "Atur jumlah ke angka kata yang kecil untuk mendapatkan frasa pendek yang cocok untuk heading, karena tidak ada mode heading khusus."
+          "question": "Bisakah saya membuat satu frasa bergaya judul, bukan paragraf penuh?",
+          "answer": "Atur jumlah ke beberapa kata saja untuk mendapatkan frasa pendek yang cocok sebagai judul, karena tidak ada mode judul khusus."
         }
       ]
     },
@@ -3267,61 +3309,68 @@
     },
     "text-diff-checker": {
       "seoTitle": "Pemeriksa Perbedaan Teks Online – Bandingkan Dua Teks Gratis",
-      "metaDescription": "Bandingkan dua blok teks dan lihat persis apa yang ditambahkan atau dihapus, baris demi baris — diproses 100% secara lokal di browser Anda.",
+      "metaDescription": "Bandingkan dua teks berdampingan atau sebaris dengan penyorotan tingkat kata, opsi abaikan spasi dan huruf besar-kecil, ekspor patch unified, dan unggah file. Gratis dan privat.",
       "h1": "Pemeriksa Perbedaan Teks",
-      "subheading": "Bandingkan dua blok teks dan lihat persis apa yang berubah, baris demi baris.",
+      "subheading": "Bandingkan dua teks berdampingan atau sebaris dengan sorotan tingkat kata dan ekspor patch — 100% lokal.",
       "keywords": [
         "pemeriksa perbedaan teks",
         "bandingkan teks online",
-        "alat diff teks",
-        "alat perbandingan teks"
+        "alat diff",
+        "alat perbandingan teks",
+        "diff checker",
+        "bandingkan file teks",
+        "unified diff"
       ],
       "howTo": [
         {
-          "name": "Tempel teks asli",
-          "text": "Masukkan versi asli di kotak pertama."
+          "name": "Tempel atau buka kedua teks",
+          "text": "Ketik atau tempel di salah satu sisi, atau gunakan Buka asli dan Buka perubahan."
         },
         {
-          "name": "Tempel teks yang diubah",
-          "text": "Masukkan versi terbaru di kotak kedua."
+          "name": "Pilih cara membandingkan",
+          "text": "Beralih antara berdampingan dan sebaris, lalu centang abaikan spasi atau abaikan huruf besar-kecil."
         },
         {
-          "name": "Klik Bandingkan",
-          "text": "Lihat baris yang ditambahkan dan dihapus disorot secara instan."
+          "name": "Tinjau perubahan",
+          "text": "Baris yang ditambah dan dihapus diberi warna, kata yang berubah disorot di dalam setiap baris, dan bilah status menghitungnya."
         },
         {
-          "name": "Tinjau ringkasan",
-          "text": "Periksa total baris yang ditambahkan dan dihapus sekilas."
+          "name": "Ekspor",
+          "text": "Salin atau unduh perbedaannya sebagai patch unified standar."
         }
       ],
       "faq": [
         {
           "question": "Bagaimana perbedaan dihitung?",
-          "answer": "Alat ini membandingkan kedua teks baris demi baris dan menyoroti baris yang ditambahkan (hijau) atau dihapus (merah)."
+          "answer": "Teks dibandingkan dengan Myers diff, baris demi baris, lalu baris yang berubah dibandingkan kata demi kata sehingga Anda melihat persis apa yang berubah di dalam sebuah baris."
         },
         {
-          "question": "Bisakah ini membandingkan kode atau JSON?",
-          "answer": "Ya, ini bekerja dengan teks biasa apa pun, termasuk kode, JSON, atau file konfigurasi."
+          "question": "Bisakah alat ini membandingkan kode atau JSON?",
+          "answer": "Ya, alat ini bekerja dengan teks biasa apa pun, termasuk kode, JSON, atau file konfigurasi."
         },
         {
-          "question": "Apakah teks saya diunggah ke suatu tempat?",
+          "question": "Apakah teks saya diunggah ke mana pun?",
           "answer": "Tidak, perbandingan berjalan sepenuhnya di browser Anda — tidak ada yang dikirim ke server."
         },
         {
-          "question": "Bisakah saya beralih antara diff level baris dan level kata?",
-          "answer": "Tidak, perbandingan hanya pada level baris — tidak ada mode diff level kata atau level karakter."
+          "question": "Bisakah saya beralih antara diff tingkat baris dan tingkat kata?",
+          "answer": "Editor selalu menyorot kata yang berubah di dalam baris yang berubah. Gunakan Berdampingan atau Sebaris untuk mengubah tata letak."
         },
         {
-          "question": "Apakah ini mengabaikan perbedaan spasi?",
-          "answer": "Tidak, tidak ada opsi untuk mengabaikan spasi — perbedaan dalam spasi atau indentasi akan muncul sebagai perubahan."
+          "question": "Apakah alat ini mengabaikan perbedaan spasi?",
+          "answer": "Ya — centang Abaikan spasi (dan Abaikan huruf besar-kecil) dan perubahan tersebut tidak lagi dihitung atau ditampilkan."
         },
         {
-          "question": "Bisakah saya melihat diff sebagai unified patch?",
-          "answer": "Tidak, hasil ditampilkan sebagai daftar baris berdampingan atau inline yang disorot, bukan format teks bergaya unified-diff/patch."
+          "question": "Bisakah saya melihat diff sebagai patch unified?",
+          "answer": "Ya. Salin patch atau Patch mengunduh unified diff standar dengan tiga baris konteks, siap untuk git apply atau patch."
         },
         {
-          "question": "Apakah ini menangani blok teks yang sangat besar?",
-          "answer": "Ya, tetapi input yang sangat besar (ribuan baris) mungkin memerlukan waktu lebih lama untuk dihitung dan dirender, karena diffing berjalan sepenuhnya di browser Anda."
+          "question": "Apakah alat ini menangani blok teks yang sangat besar?",
+          "answer": "Ya. Alat ini memakai algoritma diff yang efisien, bukan tabel perbandingan penuh, sehingga puluhan ribu baris tidak masalah, meskipun editornya sendiri mungkin lebih lambat pada file yang sangat besar."
+        },
+        {
+          "question": "Bisakah saya mengedit teks setelah membandingkan?",
+          "answer": "Ya. Kedua sisi tetap dapat diedit dan perbandingan diperbarui saat Anda mengetik. Tukar menukar kedua sisi."
         }
       ]
     },
@@ -3387,62 +3436,72 @@
       ]
     },
     "password-generator": {
-      "seoTitle": "Generator Kata Sandi Online – Gratis, Aman & Instan",
-      "metaDescription": "Buat kata sandi acak yang kuat dengan panjang dan jenis karakter yang dapat disesuaikan, langsung di browser Anda. Gratis dan privat, tanpa daftar.",
-      "h1": "Generator Kata Sandi",
-      "subheading": "Buat kata sandi acak yang kuat dengan panjang dan opsi karakter yang dapat disesuaikan — dibuat dengan aman di browser Anda.",
+      "seoTitle": "Pembuat Kata Sandi Online – Gratis, Aman & Instan",
+      "metaDescription": "Buat kata sandi acak yang kuat atau passphrase dari daftar kata EFF dengan entropi nyata dan perkiraan waktu pembobolan, panjang hingga 128, pengecualian karakter mirip, dan mode batch. Privat — tidak ada yang disimpan.",
+      "h1": "Pembuat Kata Sandi",
+      "subheading": "Buat kata sandi dan passphrase yang kuat dengan entropi langsung dan perkiraan waktu pembobolan — dibuat dengan aman di browser Anda dan tidak pernah disimpan.",
       "keywords": [
-        "generator kata sandi",
-        "generator kata sandi acak",
-        "buat kata sandi kuat",
-        "generator kata sandi aman"
+        "pembuat kata sandi",
+        "generator password acak",
+        "generator password kuat",
+        "buat password aman",
+        "generator passphrase",
+        "entropi password"
       ],
       "howTo": [
         {
-          "name": "Pilih panjang",
-          "text": "Atur panjang kata sandi antara 4 hingga 128 karakter."
+          "name": "Pilih kata sandi atau passphrase",
+          "text": "Pilih kata sandi karakter acak atau passphrase berupa kata yang mudah diingat."
         },
         {
-          "name": "Pilih jenis karakter",
-          "text": "Aktifkan huruf besar, huruf kecil, angka, dan simbol."
+          "name": "Atur opsinya",
+          "text": "Pilih panjang dan jenis karakter, hindari karakter yang mirip, atau atur jumlah kata dan pemisahnya."
         },
         {
-          "name": "Buat",
-          "text": "Klik Buat untuk membuat kata sandi acak baru."
+          "name": "Periksa kekuatannya",
+          "text": "Lihat entropi dalam bit dan perkiraan berapa lama serangan cepat akan berlangsung."
         },
         {
           "name": "Salin",
-          "text": "Klik ikon salin untuk menyalin kata sandi ke clipboard."
+          "text": "Salin satu hasil, atau buat hingga 20 sekaligus dan salin semuanya."
         }
       ],
       "faq": [
         {
-          "question": "Apakah generator kata sandi ini aman?",
-          "answer": "Ya. Kata sandi dihasilkan menggunakan generator angka acak yang aman secara kriptografis milik browser Anda (crypto.getRandomValues), bukan fungsi pseudo-random yang lebih lemah."
+          "question": "Apakah pembuat kata sandi ini aman?",
+          "answer": "Ya. Kata sandi dibuat menggunakan generator angka acak yang aman secara kriptografis di browser Anda (crypto.getRandomValues), bukan fungsi pseudo-acak yang lebih lemah."
         },
         {
-          "question": "Apakah kata sandi yang saya hasilkan dikirim ke suatu tempat?",
-          "answer": "Tidak. Semuanya terjadi secara lokal di browser Anda — kata sandi tidak pernah dikirimkan atau disimpan di server mana pun."
+          "question": "Apakah kata sandi yang dibuat dikirim ke mana pun?",
+          "answer": "Tidak. Semuanya berlangsung secara lokal di browser Anda — kata sandi tidak pernah dikirim atau disimpan di server mana pun."
         },
         {
           "question": "Apa yang membuat kata sandi kuat?",
-          "answer": "Panjang adalah faktor terpenting. Kata sandi yang lebih panjang dengan kombinasi huruf besar, huruf kecil, angka, dan simbol jauh lebih sulit dibobol daripada kata sandi pendek dan sederhana."
+          "answer": "Ketidakterdugaan. Angka entropi mengukurnya: setiap karakter tambahan, atau setiap kata tambahan dalam passphrase, melipatgandakan usaha yang dibutuhkan penyerang. Targetkan 80 bit atau lebih untuk akun penting."
         },
         {
-          "question": "Bisakah saya mengecualikan karakter yang ambigu seperti 0, O, l, dan 1?",
-          "answer": "Tidak, tidak ada opsi untuk mengecualikan karakter yang mirip secara visual — semua karakter dari kategori yang Anda pilih (huruf besar, huruf kecil, angka, simbol) memiliki peluang yang sama untuk dipilih."
+          "question": "Bisakah saya mengecualikan karakter ambigu seperti 0, O, l, dan 1?",
+          "answer": "Ya. Centang Hindari karakter mirip untuk membuang 0 O 1 l I dan karakter serupa, dan Anda juga bisa mengetik simbol yang diizinkan sendiri."
         },
         {
-          "question": "Berapa panjang kata sandi maksimum yang bisa saya hasilkan?",
-          "answer": "Anda dapat menghasilkan kata sandi yang jauh melebihi persyaratan umum, meskipun sebagian besar situs membatasi panjang yang diterima, jadi periksa batas sistem target sebelum menggunakan kata sandi yang sangat panjang."
+          "question": "Berapa panjang maksimum kata sandi yang bisa dibuat?",
+          "answer": "Anda dapat membuat kata sandi yang jauh melebihi kebutuhan umum, tetapi kebanyakan situs membatasi panjang yang diterima, jadi periksa batas sistem tujuan sebelum memakai yang sangat panjang."
         },
         {
-          "question": "Apakah ini menjamin setidaknya satu karakter dari setiap kategori yang dipilih?",
-          "answer": "Tidak, karakter dipilih secara acak merata dari gabungan kategori yang dipilih, sehingga secara statistik kemungkinan besar tetapi tidak dijamin bahwa setiap kategori muncul dalam kata sandi tertentu."
+          "question": "Apakah dijamin ada minimal satu karakter dari setiap kategori yang dipilih?",
+          "answer": "Ya. Setiap jenis yang dipilih dijamin muncul setidaknya sekali, lalu karakter diacak sehingga posisinya tidak dapat diprediksi."
         },
         {
-          "question": "Apakah lebih baik menggunakan frasa sandi panjang atau kata sandi acak?",
-          "answer": "Keduanya bisa kuat — kata sandi acak yang panjang memiliki entropi lebih banyak per karakter, sementara frasa sandi dari beberapa kata acak lebih mudah diketik dan diingat; alat ini dibuat untuk pendekatan karakter acak."
+          "question": "Lebih baik memakai passphrase panjang atau kata sandi acak?",
+          "answer": "Keduanya bisa kuat — kata sandi acak yang panjang menyimpan lebih banyak entropi per karakter, sedangkan passphrase dari beberapa kata acak lebih mudah diketik dan diingat; alat ini dirancang untuk pendekatan karakter acak."
+        },
+        {
+          "question": "Apakah kata sandinya bias atau disimpan?",
+          "answer": "Tidak. Kata sandi dibuat dengan generator acak aman browser Anda dengan rejection sampling, sehingga setiap karakter memiliki peluang yang sama, dan tidak pernah disimpan ke riwayat atau dikirim ke mana pun."
+        },
+        {
+          "question": "Apa itu mode passphrase?",
+          "answer": "Mode ini menggabungkan kata acak dari daftar kata pendek EFF (1.296 kata). Setiap kata menambah sekitar 10 bit, sehingga passphrase 6 kata kira-kira 62 bit dan mudah diingat serta diketik."
         }
       ]
     },
@@ -3503,62 +3562,65 @@
       ]
     },
     "text-case-converter": {
-      "seoTitle": "Konverter Huruf Besar/Kecil – HURUF BESAR, huruf kecil & Lainnya",
-      "metaDescription": "Ubah teks antara HURUF BESAR, huruf kecil, Setiap Kata Kapital, camelCase, snake_case, dan lainnya — secara instan di browser Anda.",
-      "h1": "Konverter Huruf Besar/Kecil",
-      "subheading": "Ubah teks antara HURUF BESAR, huruf kecil, Setiap Kata Kapital, camelCase, snake_case, dan format lainnya secara instan.",
+      "seoTitle": "Konverter Huruf Teks – HURUF BESAR, huruf kecil, Title Case & Lainnya",
+      "metaDescription": "Ubah teks ke HURUF BESAR, huruf kecil, Kapital, Kalimat, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case, path/case, dan lainnya — langsung, mendukung Unicode, per baris. Gratis dan privat.",
+      "h1": "Konverter Huruf Teks",
+      "subheading": "Ubah teks antar 14 gaya huruf secara langsung — mendukung Unicode, per baris, dan ideal untuk pengenal kode.",
       "keywords": [
-        "konverter huruf besar kecil",
-        "ubah teks jadi huruf besar",
+        "konverter huruf teks",
+        "ubah huruf besar ke kecil",
         "konverter camel case",
-        "konverter setiap kata kapital"
+        "konverter title case",
+        "constant case",
+        "konverter pascal case",
+        "konverter camelcase"
       ],
       "howTo": [
         {
           "name": "Tempel teks Anda",
-          "text": "Ketik atau tempel teks yang ingin Anda ubah."
+          "text": "Ketik atau tempel teks yang ingin diubah."
         },
         {
-          "name": "Pilih format",
-          "text": "Klik tombol format apa pun — HURUF BESAR, huruf kecil, camelCase, dan lainnya."
+          "name": "Pilih format huruf",
+          "text": "Klik tombol huruf mana pun — HURUF BESAR, huruf kecil, Title Case, camelCase, dan lainnya."
         },
         {
           "name": "Lihat hasilnya",
-          "text": "Teks yang diubah muncul secara instan di bawah."
+          "text": "Teks hasil konversi muncul seketika di bawah."
         },
         {
-          "name": "Salin hasilnya",
-          "text": "Klik ikon salin untuk menyalin teks yang telah diubah."
+          "name": "Salin keluaran",
+          "text": "Klik ikon salin untuk menyalin teks hasil konversi."
         }
       ],
       "faq": [
         {
           "question": "Format huruf apa saja yang didukung?",
-          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, dan kebab-case."
+          "answer": "UPPER CASE, lower case, Capitalized Case, Sentence case, aLtErNaTiNg, iNVERSE, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case, dan path/case."
         },
         {
           "question": "Apakah ini mengubah teks asli saya?",
-          "answer": "Tidak, input Anda tetap tidak berubah — hasil konversi ditampilkan secara terpisah sehingga Anda dapat membandingkan atau mengonversi lagi."
+          "answer": "Tidak. Masukan Anda tetap di sebelah kiri dan teks hasil konversi muncul di sebelah kanan, diperbarui langsung saat Anda berganti gaya."
         },
         {
-          "question": "Apakah ada batasan panjang?",
-          "answer": "Tidak ada batasan praktis — konversi terjadi secara instan di browser Anda, bahkan untuk teks yang panjang."
+          "question": "Apakah ada batas panjang?",
+          "answer": "Tidak ada batas praktis — konversi berlangsung seketika di browser Anda, bahkan untuk teks yang panjang."
         },
         {
-          "question": "Bagaimana cara ini menentukan batas kata saat mengonversi dari camelCase atau snake_case?",
-          "answer": "Alat ini memisahkan berdasarkan transisi huruf besar-kecil, garis bawah, tanda hubung, dan spasi untuk mendeteksi batas kata sebelum menyusunnya kembali ke format huruf target."
+          "question": "Bagaimana alat ini menentukan batas kata saat mengonversi dari camelCase atau snake_case?",
+          "answer": "Alat ini memisahkan pada spasi, tanda baca, garis bawah, dan tanda hubung, pada perubahan huruf kecil ke huruf besar, serta antara akronim dan kata berikutnya, sehingga getHTTPResponse menjadi get, HTTP, Response."
         },
         {
-          "question": "Apakah ini mempertahankan akronim saat mengonversi huruf?",
-          "answer": "Akronim diperlakukan sama seperti rangkaian huruf lainnya dan akan diformat ulang sesuai format target (misalnya huruf kecil dalam kebab-case), bukan dipertahankan apa adanya."
+          "question": "Apakah akronim dipertahankan saat mengubah huruf?",
+          "answer": "Pada gaya pengenal, akronim diperlakukan sebagai kata, jadi HTTP menjadi http di snake_case dan Http di PascalCase. UPPER CASE dan CONSTANT_CASE tetap mempertahankannya dalam huruf besar."
         },
         {
           "question": "Bisakah saya mengonversi beberapa baris sekaligus?",
-          "answer": "Ya, seluruh blok teks yang Anda tempel dikonversi sebagai satu kesatuan, sehingga beberapa baris dikonversi bersamaan."
+          "answer": "Ya. Gaya pengenal (camelCase, snake_case, dan sebagainya) mengonversi setiap baris secara terpisah, dan Anda juga bisa mencentang Setiap baris terpisah untuk gaya lainnya."
         },
         {
-          "question": "Jenis huruf apa saja yang didukung?",
-          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case, dan kebab-case semuanya tersedia."
+          "question": "Apakah berfungsi dengan huruf beraksen dan non-Latin?",
+          "answer": "Ya. Perubahan huruf memakai aturan Unicode lengkap, sehingga é, ñ, ü, serta huruf Kiril atau Yunani terkonversi dengan benar."
         }
       ]
     },
@@ -4177,14 +4239,16 @@
       ]
     },
     "zero-width-remover": {
-      "seoTitle": "Penghapus Spasi Nol Lebar & Karakter Tak Terlihat – Gratis Online",
-      "metaDescription": "Temukan dan hapus spasi nol lebar serta karakter Unicode tak terlihat lainnya yang tersembunyi dalam teks yang ditempel, sepenuhnya di browser Anda.",
-      "h1": "Pembersih Spasi Nol Lebar & Karakter Tak Terlihat",
-      "subheading": "Temukan dan hapus spasi nol lebar serta karakter Unicode tak terlihat lainnya yang tersembunyi di teks Anda.",
+      "seoTitle": "Penghapus Spasi Lebar Nol & Karakter Tak Terlihat – Gratis Online",
+      "metaDescription": "Temukan dan hapus spasi lebar nol, tanda bidi, soft hyphen, karakter tag, dan Unicode tak terlihat lainnya, lihat persis di mana letaknya, dan pertahankan emoji serta teks Persia tetap utuh. Gratis dan privat.",
+      "h1": "Pembersih Spasi Lebar Nol & Karakter Tak Terlihat",
+      "subheading": "Temukan dan hapus karakter Unicode tak terlihat, lihat di mana mereka bersembunyi, dan pertahankan emoji serta teks non-Latin tetap utuh.",
       "keywords": [
-        "hapus spasi nol lebar",
+        "hapus spasi lebar nol",
         "bersihkan unicode tersembunyi",
-        "penghapus karakter tak terlihat"
+        "penghapus karakter tak terlihat",
+        "pendeteksi karakter tersembunyi",
+        "hapus karakter bidi"
       ],
       "howTo": [
         {
@@ -4192,42 +4256,46 @@
           "text": "Tempel teks yang mungkin mengandung karakter tersembunyi atau tak terlihat."
         },
         {
-          "name": "Tinjau hasil temuan",
+          "name": "Tinjau yang ditemukan",
           "text": "Lihat berapa banyak karakter tak terlihat yang terdeteksi dan di mana letaknya."
         },
         {
-          "name": "Salin teks bersih",
+          "name": "Salin teks yang bersih",
           "text": "Salin teks yang sudah dibersihkan dari semua karakter tak terlihat."
         }
       ],
       "faq": [
         {
           "question": "Dari mana karakter tak terlihat berasal?",
-          "answer": "Karakter tersebut sering muncul secara tidak sengaja saat menyalin teks dari pengolah kata, tautan pelacakan, atau aplikasi pesan."
+          "answer": "Karakter ini sering masuk tanpa sengaja saat menyalin teks dari pengolah kata, tautan pelacak, atau aplikasi pesan."
         },
         {
-          "question": "Karakter apa saja yang dihapus alat ini?",
-          "answer": "Spasi berlebar nol (zero-width space), joiner/non-joiner berlebar nol, byte-order mark, word joiner, soft hyphen, dan karakter kontrol bidirectional yang tersasar."
+          "question": "Karakter apa saja yang dihapus oleh alat ini?",
+          "answer": "Spasi lebar nol, no-break dan word joiner, BOM, soft hyphen, tanda arah teks, operator matematika tak terlihat, karakter pengisi, karakter tag Unicode, dan karakter kontrol. Spasi tak biasa seperti no-break space diubah menjadi spasi normal. Setiap kelompok memiliki sakelarnya sendiri."
         },
         {
-          "question": "Apakah teks saya dikirim ke suatu tempat?",
-          "answer": "Tidak, pembersihan terjadi sepenuhnya di browser Anda — tidak ada yang diunggah."
+          "question": "Apakah teks saya dikirim ke mana pun?",
+          "answer": "Tidak, pembersihan berlangsung sepenuhnya di browser Anda — tidak ada yang diunggah."
         },
         {
-          "question": "Apakah ini mendeteksi karakter yang biasanya tidak terlihat di editor teks?",
-          "answer": "Ya, alat ini memindai spasi berlebar nol, joiner, dan karakter Unicode tak terlihat lainnya yang dirender sebagai kosong di sebagian besar editor."
+          "question": "Apakah alat ini mendeteksi karakter yang biasanya tidak terlihat di editor teks?",
+          "answer": "Ya. Tampilkan tersembunyi memperlihatkan setiap karakter tak terlihat sebagai lencana seperti ⟦U+200B⟧ di teks Anda, dan tab Laporan mencantumkan masing-masing beserta posisi dan namanya."
         },
         {
           "question": "Bisakah alat ini menunjukkan jumlah karakter tak terlihat yang ditemukan?",
-          "answer": "Ya, alat ini melaporkan dengan tepat berapa banyak karakter tak terlihat yang ditemukan dan dihapus dari teks Anda."
+          "answer": "Ya, alat ini melaporkan persis berapa banyak karakter tak terlihat yang ditemukan dan dihapus dari teks Anda."
         },
         {
-          "question": "Apakah ini akan menghapus karakter pemformatan yang sah seperti spasi tanpa jeda (non-breaking space)?",
-          "answer": "Hanya karakter berlebar nol dan karakter lain yang benar-benar tak terlihat yang menjadi target — verifikasi kumpulan karakter spesifik yang dicakup jika Anda mengandalkan spasi tanpa jeda untuk tata letak, karena perilaku penghapusan tergantung pada karakter mana yang ditandai."
+          "question": "Apakah ini akan menghapus karakter pemformatan yang sah seperti non-breaking space?",
+          "answer": "Spasi non-breaking dan spasi tak biasa lainnya diganti dengan spasi normal secara default; hapus centang kelompok itu untuk mempertahankannya. Zero-width joiner dan variation selector dipertahankan secara default karena emoji serta teks Persia, Arab, dan India bergantung padanya."
         },
         {
-          "question": "Mengapa karakter tak terlihat dapat merusak kode atau konten CMS saya?",
-          "answer": "Karakter berlebar nol dapat secara diam-diam merusak perbandingan string, fungsi pencarian, dan kode hasil salin-tempel — karena tak terlihat, karakter ini sulit dideteksi tanpa alat seperti ini."
+          "question": "Mengapa karakter tak terlihat bisa merusak kode atau konten CMS saya?",
+          "answer": "Karakter lebar nol dapat diam-diam merusak perbandingan string, fungsi pencarian, dan kode hasil salin-tempel — karena tak terlihat, sulit dikenali tanpa alat seperti ini."
+        },
+        {
+          "question": "Mengapa joiner dipertahankan secara default?",
+          "answer": "Zero-width joiner membentuk emoji seperti urutan keluarga dan bendera, dan non-joiner merupakan bagian dari ejaan yang benar dalam bahasa Persia dan beberapa aksara lain. Menghapusnya akan merusak teks tersebut, jadi Anda harus mengaktifkannya sendiri."
         }
       ]
     },
@@ -4294,13 +4362,16 @@
     },
     "json-to-typescript": {
       "seoTitle": "Konverter JSON ke TypeScript – Interface & Skema Zod, Gratis",
-      "metaDescription": "Konversi JSON ke interface TypeScript, type alias, atau skema validasi Zod secara instan — diproses 100% secara lokal di browser Anda.",
+      "metaDescription": "Buat interface TypeScript, type alias, atau skema Zod dari JSON di editor layar penuh. Mendeteksi field opsional dan tipe union di seluruh item array. Gratis dan privat.",
       "h1": "JSON ke TypeScript & Skema Zod",
-      "subheading": "Konversi JSON ke interface TypeScript, type alias, atau skema validasi Zod secara instan.",
+      "subheading": "Buat interface TypeScript, type alias, dan skema Zod dari JSON, dengan field opsional dan union yang terdeteksi otomatis.",
       "keywords": [
         "json ke typescript",
         "json ke zod",
-        "generate tipe typescript"
+        "buat tipe typescript",
+        "ubah ke typescript",
+        "konverter typescript",
+        "buat interface dari json"
       ],
       "howTo": [
         {
@@ -4309,7 +4380,7 @@
         },
         {
           "name": "Pilih opsi Anda",
-          "text": "Pilih interface atau type alias, aktifkan field opsional, dan aktifkan pembuatan skema Zod jika diperlukan."
+          "text": "Pilih interface atau type alias, aktifkan field opsional, dan nyalakan pembuatan skema Zod jika perlu."
         },
         {
           "name": "Salin atau unduh",
@@ -4318,32 +4389,36 @@
       ],
       "faq": [
         {
-          "question": "Bagaimana tipe data disimpulkan?",
-          "answer": "Alat ini menelusuri struktur JSON Anda dan menyimpulkan tipe TypeScript yang sesuai — objek bertingkat menjadi interface tersendiri, dan array menjadi daftar bertipe."
+          "question": "Bagaimana tipe disimpulkan?",
+          "answer": "Alat ini menelusuri struktur JSON Anda dan menyimpulkan tipe TypeScript yang sesuai — objek bersarang menjadi interface tersendiri, dan array menjadi daftar bertipe."
         },
         {
           "question": "Apakah ini memerlukan pustaka Zod?",
-          "answer": "Tidak, skema Zod dihasilkan sebagai kode teks biasa untuk Anda salin ke proyek yang sudah memiliki Zod terpasang — alat ini tidak memiliki dependensi terhadapnya."
+          "answer": "Tidak, skema Zod dihasilkan sebagai kode teks biasa untuk Anda salin ke proyek yang sudah memasang Zod — alat ini tidak bergantung padanya."
         },
         {
-          "question": "Apakah JSON saya diunggah ke suatu tempat?",
-          "answer": "Tidak, pembuatan tipe terjadi sepenuhnya di browser Anda."
+          "question": "Apakah JSON saya diunggah ke mana pun?",
+          "answer": "Tidak, pembuatan tipe berlangsung sepenuhnya di browser Anda."
         },
         {
-          "question": "Bagaimana ini menangani array dengan tipe elemen campuran?",
-          "answer": "Alat ini menyimpulkan tipe dari elemen array — untuk tipe campuran, harapkan tipe union atau tipe yang lebih luas yang mencakup variasi yang ada, karena JSON sendiri tidak mendeklarasikan satu tipe elemen tunggal."
+          "question": "Bagaimana penanganan array dengan tipe elemen campuran?",
+          "answer": "Item digabung menjadi satu tipe: angka dan string menjadi number | string, objek dengan kunci berbeda menjadi satu interface, dan kunci yang tidak ada di sebagian item ditandai opsional."
         },
         {
           "question": "Apakah field opsional dan nullable terdeteksi?",
-          "answer": "Penanganan opsional/nullable tergantung pada sampel JSON Anda — field yang bernilai `null` dalam input Anda akan diberi tipe sesuai itu, tetapi generator hanya dapat menyimpulkan dari satu sampel JSON yang Anda berikan, bukan dari beberapa variasi."
+          "answer": "Ya. Kunci yang tidak ada di sebagian objek dalam array menjadi opsional (?), dan nilai yang kadang null menjadi union seperti string | null. Centang Semua opsional untuk menandai setiap field sebagai opsional."
         },
         {
-          "question": "Bisakah saya menghasilkan type alias alih-alih interface?",
-          "answer": "Ya, tombol pengalih memungkinkan Anda beralih antara menghasilkan `interface` TypeScript atau alias `type`."
+          "question": "Bisakah saya membuat type alias alih-alih interface?",
+          "answer": "Ya, sebuah tombol pengalih memungkinkan Anda beralih antara membuat `interface` TypeScript atau type alias `type`."
         },
         {
-          "question": "Apakah output skema Zod menyertakan validasi seperti min/max?",
-          "answer": "Tidak, skema Zod yang dihasilkan hanya mencerminkan bentuk tipe dasar (string, number, optional, dll.) — tidak menambahkan batasan seperti panjang min/max atau rentang numerik."
+          "question": "Apakah keluaran skema Zod menyertakan validasi seperti min/max?",
+          "answer": "Tidak — skema hanya mencerminkan bentuk data (tipe, opsional, nullable, union), ditambah baris import dan tipe turunan. Tambahkan aturan seperti .min() dan .email() sendiri."
+        },
+        {
+          "question": "Bisakah saya mengganti nama tipe root atau menambahkan export dan readonly?",
+          "answer": "Ya. Bilah alat mengatur nama tipe root dan mengaktifkan export, readonly, dan semua-opsional."
         }
       ],
       "comparisonTable": {
@@ -4361,7 +4436,7 @@
             ]
           },
           {
-            "label": "Paling cocok untuk",
+            "label": "Terbaik untuk",
             "values": [
               "Menyimpan/mengirim data",
               "Keamanan tipe saat kompilasi"
@@ -4386,13 +4461,16 @@
     },
     "json-to-yaml": {
       "seoTitle": "Konverter JSON ke YAML Online – Gratis, Instan, Dua Arah",
-      "metaDescription": "Konversi JSON ke YAML atau YAML ke JSON secara instan, dalam kedua arah — diproses 100% secara lokal di browser Anda.",
+      "metaDescription": "Konversi JSON ke YAML dan YAML ke JSON di editor layar penuh. Mendukung anchor, alias, string multibaris, komentar, dan banyak dokumen, dengan posisi error yang tepat. Gratis dan privat.",
       "h1": "Konverter JSON ↔ YAML",
-      "subheading": "Konversi antara JSON dan YAML secara instan, dalam kedua arah.",
+      "subheading": "Konversi antara JSON dan YAML di editor layar penuh — termasuk anchor, string multibaris, dan file multi-dokumen.",
       "keywords": [
         "json ke yaml",
         "yaml ke json",
-        "konversi yaml"
+        "konversi yaml",
+        "ubah ke yaml",
+        "konverter yaml",
+        "validator yaml"
       ],
       "howTo": [
         {
@@ -4401,7 +4479,7 @@
         },
         {
           "name": "Tempel konten Anda",
-          "text": "Tempel JSON atau YAML Anda di editor."
+          "text": "Tempel JSON atau YAML Anda ke editor."
         },
         {
           "name": "Salin atau unduh hasilnya",
@@ -4411,31 +4489,35 @@
       "faq": [
         {
           "question": "Apakah ini implementasi YAML yang lengkap?",
-          "answer": "Ini mencakup subset praktis YAML yang digunakan sebagian besar file konfigurasi — objek bertingkat, daftar bergaya blok, string, angka, boolean, dan null — bukan setiap kasus khusus dari spesifikasi lengkap."
+          "answer": "Alat ini memakai parser YAML 1.2 yang lengkap (pustaka sumber terbuka `yaml`), sehingga struktur bersarang, gaya blok dan flow, string multibaris, anchor dan alias, serta banyak dokumen semuanya terkonversi dengan benar."
         },
         {
-          "question": "Apakah data saya diunggah ke suatu tempat?",
-          "answer": "Tidak, konversi terjadi sepenuhnya di browser Anda."
+          "question": "Apakah data saya diunggah ke mana pun?",
+          "answer": "Tidak, konversi berlangsung sepenuhnya di browser Anda."
         },
         {
-          "question": "Bisakah saya mengonversi struktur bertingkat yang kompleks?",
-          "answer": "Ya, kedua arah menangani objek bertingkat dalam dan array objek."
+          "question": "Bisakah saya mengonversi struktur bersarang yang kompleks?",
+          "answer": "Ya, kedua arah mampu menangani objek yang sangat bersarang dan array berisi objek."
         },
         {
-          "question": "Bagaimana ini merepresentasikan nilai null JSON dalam YAML?",
-          "answer": "Nilai null JSON ditulis sebagai literal `null` dalam output YAML, sesuai konvensi YAML standar."
+          "question": "Bagaimana nilai null JSON direpresentasikan di YAML?",
+          "answer": "Nilai null JSON ditulis sebagai literal `null` pada keluaran YAML, sesuai konvensi YAML standar."
         },
         {
-          "question": "Apakah anchor dan alias YAML didukung saat mengonversi kembali ke JSON?",
-          "answer": "Tidak, anchor (&) dan alias (*) tidak dikenali oleh parser — YAML yang ditempel menggunakan ini tidak akan dikonversi dengan benar."
+          "question": "Apakah anchor dan alias YAML didukung saat dikonversi kembali ke JSON?",
+          "answer": "Ya. Alias diperluas menjadi nilai lengkapnya, dan merge key yang ditulis sebagai <<: *name digabungkan ke dalam mapping."
         },
         {
-          "question": "Apakah indentasi berpengaruh saat menempel YAML?",
-          "answer": "Ya, parser membaca struktur dari level indentasi, sehingga indentasi yang tidak konsisten atau salah dalam YAML yang ditempel dapat menghasilkan konversi yang salah atau gagal."
+          "question": "Apakah indentasi penting saat menempelkan YAML?",
+          "answer": "Ya, struktur YAML berasal dari indentasi. Jika tidak konsisten, bilah status menampilkan baris dan kolom masalahnya agar Anda bisa memperbaikinya."
         },
         {
-          "question": "Bisakah ini mempertahankan komentar YAML secara round-trip?",
-          "answer": "Tidak, komentar (baris atau teks di akhir yang dimulai dengan #) dihapus saat mengurai YAML kembali ke JSON — JSON sendiri tidak memiliki sintaks komentar untuk mempertahankannya."
+          "question": "Apakah komentar YAML bisa dipertahankan bolak-balik?",
+          "answer": "Tidak. Komentar dibuang saat YAML di-parse, dan JSON tidak punya cara untuk menyimpannya."
+        },
+        {
+          "question": "Apa yang terjadi dengan file YAML yang berisi beberapa dokumen?",
+          "answer": "Dokumen yang dipisahkan oleh --- dikonversi menjadi array JSON dengan satu entri per dokumen."
         }
       ],
       "comparisonTable": {
@@ -4448,22 +4530,22 @@
           {
             "label": "Sintaks",
             "values": [
-              "Kurung kurawal dan siku",
+              "Kurung kurawal dan kurung siku",
               "Berbasis indentasi"
             ]
           },
           {
-            "label": "Paling cocok untuk",
+            "label": "Terbaik untuk",
             "values": [
               "API, pertukaran data",
-              "File konfigurasi, tooling DevOps"
+              "File konfigurasi, perkakas DevOps"
             ]
           },
           {
             "label": "Keterbacaan",
             "values": [
-              "Ringkas tetapi verbose",
-              "Ramah manusia, lebih rapi"
+              "Ringkas tetapi bertele-tele",
+              "Ramah dibaca manusia, lebih bersih"
             ]
           },
           {
@@ -4477,78 +4559,88 @@
       }
     },
     "sql-formatter": {
-      "seoTitle": "Formatter SQL Online – Rapikan & Minifikasi Query SQL, Gratis",
-      "metaDescription": "Format query SQL yang berantakan menjadi pernyataan yang mudah dibaca dan berindentasi, atau minifikasi menjadi satu baris — diproses 100% secara lokal di browser Anda.",
-      "h1": "Formatter Query SQL",
-      "subheading": "Format query SQL yang berantakan menjadi pernyataan yang mudah dibaca, atau minifikasi menjadi satu baris.",
+      "seoTitle": "Pemformat SQL Online – Rapikan & Minify Kueri SQL, Gratis",
+      "metaDescription": "Format SQL untuk PostgreSQL, MySQL, SQL Server, BigQuery, Snowflake, dan lainnya, dengan opsi huruf kapital kata kunci, indentasi, dan koma di depan. Komentar dipertahankan; minify dengan aman. Gratis dan privat.",
+      "h1": "Pemformat Kueri SQL",
+      "subheading": "Format SQL untuk 16 dialek dengan opsi huruf kata kunci, indentasi, dan penempatan koma — komentar tetap utuh, 100% lokal.",
       "keywords": [
-        "formatter sql",
+        "format sql",
         "rapikan sql",
-        "format query sql"
+        "format kueri sql",
+        "format postgresql",
+        "sql beautifier"
       ],
       "howTo": [
         {
           "name": "Tempel SQL Anda",
-          "text": "Tempel query SQL apa pun di editor."
+          "text": "Tempel kueri SQL apa pun ke editor."
         },
         {
-          "name": "Format atau minifikasi",
-          "text": "Klik Format untuk merapikannya dengan indentasi yang tepat, atau Minifikasi untuk menyingkatnya menjadi satu baris."
+          "name": "Format atau minify",
+          "text": "Klik Format untuk merapikannya dengan indentasi yang tepat, atau Minify untuk meringkasnya menjadi satu baris."
         },
         {
           "name": "Salin hasilnya",
-          "text": "Salin SQL yang telah diformat atau diminifikasi ke clipboard Anda."
+          "text": "Salin SQL yang sudah diformat atau di-minify ke clipboard Anda."
         }
       ],
       "faq": [
         {
           "question": "Dialek SQL apa saja yang didukung?",
-          "answer": "Formatter ini mengenali kata kunci umum yang digunakan bersama di MySQL, PostgreSQL, SQLite, dan SQL Server — alat ini memformat berdasarkan struktur kata kunci, bukan memvalidasi sintaks khusus dialek."
+          "answer": "SQL standar, PostgreSQL, MySQL, MariaDB, SQLite, SQL Server (T-SQL), Oracle PL/SQL, BigQuery, Snowflake, Redshift, Spark, Hive, Trino, DB2, DuckDB, dan ClickHouse. Pilih dialek Anda agar tanda kutip dan kata kunci dipahami dengan benar."
         },
         {
-          "question": "Apakah ini memvalidasi SQL saya?",
-          "answer": "Tidak, ini adalah formatter, bukan validator query — alat ini tidak akan menangkap kesalahan sintaks, hanya memformat ulang teksnya."
+          "question": "Apakah alat ini memvalidasi SQL saya?",
+          "answer": "Alat ini mem-parse kueri untuk memformatnya, sehingga masalah sintaks serius seperti kurung yang tidak ditutup dilaporkan beserta baris dan kolomnya. Ini bukan validator lengkap — alat ini tidak mengetahui tabel atau kolom Anda."
         },
         {
-          "question": "Apakah query saya diunggah ke suatu tempat?",
-          "answer": "Tidak, pemformatan terjadi sepenuhnya di browser Anda."
+          "question": "Apakah kueri saya diunggah ke mana pun?",
+          "answer": "Tidak, pemformatan berlangsung sepenuhnya di browser Anda."
         },
         {
-          "question": "Bisakah saya memilih gaya indentasi, seperti tab vs spasi?",
-          "answer": "Tidak, pemformatan selalu menggunakan indentasi 2 spasi tetap tanpa opsi untuk beralih ke tab atau lebar yang berbeda."
+          "question": "Bisakah saya memilih gaya indentasi, seperti tab atau spasi?",
+          "answer": "Ya: 2 spasi, 4 spasi, atau tab."
         },
         {
-          "question": "Apakah ini secara otomatis mengubah kata kunci SQL menjadi huruf besar?",
-          "answer": "Ya, kata kunci SQL secara otomatis dikonversi menjadi huruf besar sebagai bagian dari pemformatan, dan ini tidak bersifat opsional."
+          "question": "Apakah kata kunci SQL otomatis diubah menjadi huruf kapital?",
+          "answer": "Secara default ya, tetapi Anda bisa memilih KAPITAL, huruf kecil, atau Sesuai ketikan."
         },
         {
-          "question": "Bisakah alat ini memformat query kompleks dengan subquery dan join?",
-          "answer": "Ya, formatter menangani subquery bertingkat dan join multi-tabel, memberi indentasi pada setiap klausa agar mudah dibaca."
+          "question": "Bisakah alat ini memformat kueri kompleks dengan subkueri dan join?",
+          "answer": "Ya, pemformat ini menangani subkueri bersarang dan join multi-tabel, dengan indentasi pada setiap klausa agar mudah dibaca."
         },
         {
-          "question": "Apa yang terjadi jika SQL saya memiliki kesalahan sintaks?",
-          "answer": "Formatter bekerja pada token dan spasi, bukan mengurai penuh tata bahasa SQL, sehingga tetap akan mencoba memformat SQL yang tidak valid alih-alih menolaknya sepenuhnya — selalu periksa kembali output terhadap query yang Anda maksudkan."
+          "question": "Apa yang terjadi jika SQL saya memiliki error sintaks?",
+          "answer": "Pemformatan berhenti, bilah status menampilkan baris dan kolomnya, dan editor menggarisbawahi lokasinya. Minify tetap berfungsi pada teks apa pun."
+        },
+        {
+          "question": "Apakah komentar saya dipertahankan?",
+          "answer": "Ya. Komentar baris (--) dan komentar blok (/* */) dipertahankan saat memformat. Minify menghapusnya, tetapi tidak pernah menyentuh literal string atau pengenal yang diberi tanda kutip."
         }
       ]
     },
     "json-to-csv": {
       "seoTitle": "Konverter JSON ke CSV Online – Gratis, Instan, Tanpa Unggah",
-      "metaDescription": "Konversi array objek JSON menjadi file CSV, siap dibuka di Excel atau Google Sheets — diproses 100% secara lokal di browser Anda.",
+      "metaDescription": "Konversi array JSON ke CSV dengan pilihan pemisah, nilai bersarang diratakan atau tetap JSON, array digabung, kutip semua, BOM Excel, dan perlindungan rumus, plus pratinjau tabel. Gratis dan privat.",
       "h1": "Konverter JSON ke CSV",
-      "subheading": "Konversi array objek JSON menjadi file CSV, siap dibuka di spreadsheet.",
+      "subheading": "Konversi JSON ke CSV dengan opsi pemisah, struktur bersarang, array, Excel, dan keamanan rumus, serta pratinjau tabel.",
       "keywords": [
         "json ke csv",
-        "konversi json ke excel",
-        "array json ke csv"
+        "ubah json ke excel",
+        "array json ke csv",
+        "ubah ke csv",
+        "konverter csv",
+        "json ke excel",
+        "json ke tsv"
       ],
       "howTo": [
         {
           "name": "Tempel JSON Anda",
-          "text": "Tempel array objek JSON di editor."
+          "text": "Tempel array objek JSON ke editor."
         },
         {
-          "name": "Lihat hasil CSV",
-          "text": "Lihat CSV hasil konversi muncul secara instan, dengan kolom dari key objek Anda."
+          "name": "Lihat keluaran CSV",
+          "text": "Lihat CSV hasil konversi muncul seketika, dengan kolom yang berasal dari kunci objek Anda."
         },
         {
           "name": "Salin atau unduh",
@@ -4557,32 +4649,36 @@
       ],
       "faq": [
         {
-          "question": "Format JSON apa yang bekerja paling baik?",
-          "answer": "Array objek datar dengan kunci yang konsisten, misalnya [{\"name\": \"A\", \"price\": 10}, ...] — ini dipetakan dengan rapi ke baris dan kolom spreadsheet."
+          "question": "Format JSON apa yang paling cocok?",
+          "answer": "Array objek datar dengan kunci yang konsisten, misalnya [{\"name\": \"A\", \"price\": 10}, ...] — format ini terpetakan dengan rapi ke baris dan kolom spreadsheet."
         },
         {
-          "question": "Apa yang terjadi dengan objek bertingkat?",
-          "answer": "Nilai yang bertingkat dalam diratakan atau diubah menjadi string jika memungkinkan sehingga tetap muat dalam sel CSV."
+          "question": "Apa yang terjadi dengan objek bersarang?",
+          "answer": "Dengan Ratakan objek aktif, kunci bersarang menjadi kolom bertitik seperti team.name. Matikan untuk mempertahankan nilai bersarang sebagai teks JSON dalam satu sel. Array ditulis sebagai JSON, atau digabung dengan titik koma saat Anda mencentang Gabungkan array."
         },
         {
-          "question": "Apakah data saya diunggah ke suatu tempat?",
-          "answer": "Tidak, konversi terjadi sepenuhnya di browser Anda."
+          "question": "Apakah data saya diunggah ke mana pun?",
+          "answer": "Tidak, konversi berlangsung sepenuhnya di browser Anda."
         },
         {
           "question": "Bisakah saya memilih field mana yang diekspor sebagai kolom?",
-          "answer": "Tidak, semua field yang ada di seluruh objek JSON Anda secara otomatis disertakan sebagai kolom — tidak ada opsi pemilihan field."
+          "answer": "Setiap kunci yang ditemukan di objek mana pun menjadi kolom. Untuk membuang sebagian, hapus dulu dari JSON."
         },
         {
           "question": "Bagaimana koma atau tanda kutip di dalam nilai ditangani?",
-          "answer": "Nilai yang mengandung koma, tanda kutip, atau baris baru secara otomatis dibungkus dengan tanda kutip dan di-escape sesuai aturan pemformatan CSV standar."
+          "answer": "Nilai yang berisi pemisah, tanda kutip, jeda baris, atau spasi di awal dan akhir dibungkus dengan tanda kutip dan kutip di dalamnya digandakan, sesuai RFC 4180. Kutip semua memaksa tanda kutip di mana-mana."
         },
         {
-          "question": "Apakah urutan kolom sesuai dengan urutan kunci dalam JSON saya?",
-          "answer": "Kolom umumnya diturunkan dari kunci yang ditemukan di seluruh objek JSON Anda — untuk urutan kolom yang konsisten, pastikan objek JSON Anda memiliki kunci dalam urutan yang sama."
+          "question": "Apakah urutan kolom sesuai dengan urutan kunci di JSON saya?",
+          "answer": "Kolom mengikuti urutan kemunculan pertama kunci di seluruh objek, jadi jaga urutan kunci tetap konsisten agar kolomnya dapat diprediksi."
         },
         {
           "question": "Bisakah saya mengunduh hasilnya langsung sebagai file .csv?",
-          "answer": "Ya, tombol unduh khusus menyimpan output hasil konversi sebagai file .csv."
+          "answer": "Ya, tombol unduh khusus menyimpan hasil konversi sebagai file .csv."
+        },
+        {
+          "question": "Apakah Excel akan membuka file dengan benar?",
+          "answer": "Centang BOM Excel untuk menambahkan byte-order mark agar karakter beraksen tampil dengan benar, pilih Titik koma jika wilayah Anda memakainya, dan centang Pelindung rumus agar nilai yang diawali = + - atau @ tidak dijalankan sebagai rumus."
         }
       ],
       "comparisonTable": {
@@ -4595,21 +4691,21 @@
           {
             "label": "Struktur",
             "values": [
-              "Objek key-value bertingkat",
-              "Baris tabular datar"
+              "Objek key-value bersarang",
+              "Baris tabular yang datar"
             ]
           },
           {
-            "label": "Paling cocok untuk",
+            "label": "Terbaik untuk",
             "values": [
-              "API, file konfigurasi, data bertingkat",
+              "API, file konfigurasi, data bersarang",
               "Spreadsheet, data tabular"
             ]
           },
           {
             "label": "Keterbacaan",
             "values": [
-              "Terstruktur, mendeskripsikan diri sendiri",
+              "Terstruktur, menjelaskan diri sendiri",
               "Sederhana, ringkas"
             ]
           },
@@ -4617,7 +4713,7 @@
             "label": "Penggunaan umum",
             "values": [
               "Aplikasi web, pertukaran data",
-              "Impor Excel, database"
+              "Impor ke Excel dan database"
             ]
           }
         ]
@@ -4625,129 +4721,145 @@
     },
     "code-minifier": {
       "seoTitle": "Minifier HTML & CSS Online – Gratis, Instan, Tanpa Unggah",
-      "metaDescription": "Minifikasi HTML atau CSS dengan menghapus komentar dan spasi yang tidak perlu — diproses 100% secara lokal di browser Anda.",
+      "metaDescription": "Minify HTML, CSS, JavaScript, JSON, dan SVG di browser dan lihat penghematan ukuran yang tepat plus ukuran gzip. Rapikan CSS dan JSON juga. Gratis, privat, tanpa unggah.",
       "h1": "Minifier HTML & CSS",
-      "subheading": "Hapus komentar dan spasi yang tidak perlu dari HTML atau CSS untuk memperkecil ukuran file.",
+      "subheading": "Minify HTML, CSS, JavaScript, JSON, dan SVG — dengan ukuran sebelum/sesudah dan perkiraan gzip, 100% lokal.",
       "keywords": [
-        "minifikasi css",
-        "minifikasi html",
-        "kompresor kode"
+        "minify css",
+        "minify html",
+        "kompresor kode",
+        "minifier javascript",
+        "minifier svg",
+        "css beautifier"
       ],
       "howTo": [
         {
-          "name": "Pilih HTML atau CSS",
-          "text": "Pilih jenis kode yang ingin Anda minifikasi."
+          "name": "Pilih bahasa",
+          "text": "Pilih HTML, CSS, JavaScript, JSON, atau SVG."
         },
         {
-          "name": "Tempel kode Anda",
-          "text": "Tempel HTML atau CSS Anda di editor."
+          "name": "Tempel atau jatuhkan kode Anda",
+          "text": "Ketik, tempel, atau buka file — hasil diperbarui seiring Anda bekerja."
         },
         {
-          "name": "Minifikasi dan salin",
-          "text": "Klik Minifikasi, lalu salin hasil yang telah dikompresi — lihat berapa banyak ukuran yang Anda hemat."
+          "name": "Periksa penghematan",
+          "text": "Bilah status menampilkan ukuran sebelum dan sesudah, serta perkiraan ukuran gzip."
+        },
+        {
+          "name": "Salin atau unduh",
+          "text": "Salin hasilnya atau unduh sebagai file."
         }
       ],
       "faq": [
         {
-          "question": "Apakah minifikasi akan merusak kode saya?",
-          "answer": "Tidak, hanya komentar dan spasi yang aman yang dihapus — konten di dalam tag pre, textarea, script, dan style untuk HTML, serta literal string untuk CSS, tetap dipertahankan tanpa perubahan."
+          "question": "Apakah minify akan merusak kode saya?",
+          "answer": "Minifier ini berhati-hati: string, nilai url(), serta isi <pre> dan <textarea> dibiarkan utuh, selektor CSS seperti `a :hover` tetap bermakna sama, dan calc() mempertahankan spasinya. JavaScript menggunakan minifier Terser. Selalu uji hasilnya."
         },
         {
-          "question": "Berapa banyak ukuran yang dihemat oleh minifikasi?",
-          "answer": "Ini bervariasi tergantung seberapa banyak spasi dan komentar yang ada di kode asli Anda — alat ini menampilkan perbandingan ukuran sebelum/sesudah yang tepat."
+          "question": "Berapa banyak ukuran yang dihemat oleh minify?",
+          "answer": "Tergantung seberapa banyak spasi dan komentar di kode asli Anda — alat ini menampilkan perbandingan ukuran sebelum/sesudah yang tepat."
         },
         {
-          "question": "Apakah kode saya diunggah ke suatu tempat?",
-          "answer": "Tidak, minifikasi terjadi sepenuhnya di browser Anda."
+          "question": "Apakah kode saya diunggah ke mana pun?",
+          "answer": "Tidak, proses minify berlangsung sepenuhnya di browser Anda."
         },
         {
-          "question": "Apakah ini juga meminifikasi JavaScript selain HTML dan CSS?",
-          "answer": "Tidak, hanya mode minifikasi HTML dan CSS yang tersedia — tidak ada minifier JavaScript."
+          "question": "Apakah alat ini juga me-minify JavaScript selain HTML dan CSS?",
+          "answer": "Ya. JavaScript di-minify dengan Terser (kompresi dan penggantian nama variabel), dan JSON serta SVG juga didukung."
         },
         {
           "question": "Apakah komentar HTML selalu dihapus?",
-          "answer": "Ya, komentar HTML dihapus secara otomatis selama minifikasi tanpa opsi untuk mempertahankannya."
+          "answer": "Secara default dihapus, kecuali komentar kondisional IE. Centang Pertahankan komentar untuk menyimpannya di HTML dan CSS."
         },
         {
-          "question": "Apakah minifikasi CSS menghapus aturan yang tidak digunakan?",
-          "answer": "Tidak, minifikasi CSS hanya menghapus komentar dan spasi/pemformatan yang tidak perlu — alat ini tidak menganalisis HTML Anda untuk mendeteksi dan menghapus selector yang tidak digunakan."
+          "question": "Apakah minify CSS menghapus aturan yang tidak terpakai?",
+          "answer": "Tidak, minify CSS hanya menghapus komentar serta spasi/pemformatan yang tidak perlu — alat ini tidak menganalisis HTML Anda untuk mendeteksi dan menghapus selektor yang tidak terpakai."
         },
         {
-          "question": "Bisakah saya membalikkan minifikasi untuk mendapatkan kembali kode yang mudah dibaca?",
-          "answer": "Tidak, minifikasi bersifat satu arah dan tidak mempertahankan pemformatan asli atau nama variabel untuk direkonstruksi — simpan salinan kode asli Anda jika Anda perlu mengeditnya nanti."
+          "question": "Bisakah saya membalikkan minify untuk mendapatkan kembali kode yang mudah dibaca?",
+          "answer": "Untuk CSS dan JSON, centang Rapikan sebagai gantinya untuk memformatnya kembali. HTML dan JavaScript yang sudah di-minify kehilangan format aslinya, dan JavaScript kehilangan nama variabelnya, jadi simpan file sumber Anda."
+        },
+        {
+          "question": "Apa arti angka gzip?",
+          "answer": "Itu adalah ukuran teks hasil minify setelah kompresi gzip, yang dikirim oleh sebagian besar server melalui jaringan, sehingga lebih mendekati ukuran unduhan yang sebenarnya."
         }
       ]
     },
     "html-entity-encoder": {
-      "seoTitle": "Encoder / Decoder Entitas HTML – Gratis, Instan, Tanpa Unggah",
-      "metaDescription": "Kodekan karakter khusus menjadi entitas HTML, atau dekode entitas HTML kembali menjadi teks yang mudah dibaca — diproses 100% secara lokal di browser Anda.",
-      "h1": "Encoder / Decoder Entitas HTML",
-      "subheading": "Kodekan karakter khusus menjadi entitas HTML, atau dekode entitas kembali menjadi teks yang mudah dibaca.",
+      "seoTitle": "Enkoder / Dekoder Entitas HTML – Gratis, Instan, Tanpa Unggah",
+      "metaDescription": "Enkode teks ke entitas HTML atau dekode kembali — bernama, desimal, atau hex, minimal atau semua karakter — dengan referensi entitas yang bisa dicari. Gratis, privat, tanpa trik DOM.",
+      "h1": "Enkoder / Dekoder Entitas HTML",
+      "subheading": "Enkode dan dekode entitas HTML dengan gaya bernama, desimal, atau hex dan referensi yang bisa dicari.",
       "keywords": [
-        "encoder entitas html",
-        "decode entitas html",
-        "escape html"
+        "enkoder entitas html",
+        "dekode entitas html",
+        "escape html",
+        "daftar entitas html"
       ],
       "howTo": [
         {
-          "name": "Pilih encode atau decode",
-          "text": "Pilih apakah Anda ingin mengodekan teks atau mendekode entitas HTML."
+          "name": "Pilih enkode atau dekode",
+          "text": "Pilih apakah Anda ingin mengenkode teks atau mendekode entitas HTML."
         },
         {
           "name": "Tempel teks Anda",
-          "text": "Tempel teks atau string berformat entitas HTML yang ingin Anda ubah."
+          "text": "Tempel teks atau string berenkode entitas HTML yang ingin dikonversi."
         },
         {
           "name": "Salin hasilnya",
-          "text": "Salin hasil encode atau decode ke clipboard Anda."
+          "text": "Salin keluaran hasil enkode atau dekode ke clipboard Anda."
         }
       ],
       "faq": [
         {
-          "question": "Mengapa mengkodekan entitas HTML?",
-          "answer": "Untuk menampilkan karakter khusus seperti <, >, dan & secara aman sebagai teks literal di dalam HTML, tanpa browser menafsirkannya sebagai markup."
+          "question": "Mengapa perlu mengenkode entitas HTML?",
+          "answer": "Untuk menampilkan karakter khusus seperti <, >, dan & dengan aman sebagai teks literal di dalam HTML, tanpa ditafsirkan browser sebagai markup."
         },
         {
           "question": "Entitas apa saja yang bisa didekode?",
-          "answer": "Semua entitas HTML bernama dan numerik yang dikenali browser Anda — decoding menggunakan parser HTML browser itu sendiri untuk cakupan yang lengkap dan akurat."
+          "answer": "Entitas bernama dari tabel bawaan berisi sekitar 250 entitas umum (seperti &copy;, &mdash;, dan &eacute;), ditambah entitas numerik desimal (&#169;) atau hex (&#xA9;) apa pun. Nama yang tidak dikenal dibiarkan tidak berubah."
         },
         {
-          "question": "Apakah teks saya diunggah ke suatu tempat?",
-          "answer": "Tidak, encoding dan decoding terjadi sepenuhnya di browser Anda."
+          "question": "Apakah teks saya diunggah ke mana pun?",
+          "answer": "Tidak, enkode dan dekode berlangsung sepenuhnya di browser Anda."
         },
         {
-          "question": "Apakah ini mengkodekan semua karakter non-ASCII atau hanya karakter khusus?",
-          "answer": "Secara default, alat ini menargetkan karakter dengan makna khusus dalam HTML, seperti <, >, &, dan tanda kutip; ada opsi terpisah untuk mengkodekan semua karakter non-ASCII sebagai entitas numerik jika Anda membutuhkannya."
+          "question": "Apakah alat ini mengenkode semua karakter non-ASCII atau hanya yang khusus?",
+          "answer": "Anda yang memilih: hanya & < > \" ', karakter tersebut plus setiap karakter non-ASCII, atau setiap karakter. Karakter non-ASCII memakai entitas bernama jika ada, jika tidak memakai angka."
         },
         {
-          "question": "Apa perbedaan antara entitas bernama dan numerik?",
-          "answer": "Entitas bernama seperti &amp; lebih mudah dibaca, sedangkan entitas numerik seperti &#38; bekerja untuk titik kode Unicode apa pun, termasuk yang tidak memiliki nama yang ditentukan — alat ini dapat menghasilkan keduanya."
+          "question": "Apa perbedaan entitas bernama dan numerik?",
+          "answer": "Entitas bernama seperti &amp; lebih mudah dibaca, sedangkan entitas numerik seperti &#38; bekerja untuk titik kode Unicode apa pun, termasuk yang tidak punya nama — alat ini dapat menghasilkan keduanya."
         },
         {
-          "question": "Mengapa saya perlu mengkodekan karakter seperti & dalam atribut HTML?",
-          "answer": "Karakter & atau tanda kutip yang tidak dikodekan di dalam nilai atribut dapat merusak parser HTML atau salah dibaca sebagai penanda awal entitas, sehingga encoding menjaga nilai atribut tetap utuh."
+          "question": "Mengapa saya perlu mengenkode karakter seperti & di atribut HTML?",
+          "answer": "Karakter & atau tanda kutip yang tidak dienkode di dalam nilai atribut bisa merusak parser HTML atau disalahartikan sebagai awal sebuah entitas, jadi enkode menjaga nilai atribut tetap utuh."
         },
         {
-          "question": "Bisakah decoding menangani entitas tanpa titik koma di akhir?",
-          "answer": "Sebagian besar browser mentoleransi beberapa entitas bernama tanpa titik koma, tetapi decoder ini mengharapkan entitas yang berformat baik dan diakhiri titik koma untuk hasil yang andal."
+          "question": "Bisakah dekode menangani entitas tanpa titik koma di akhir?",
+          "answer": "Tidak. Hanya entitas yang terbentuk dengan benar dan diakhiri titik koma yang didekode, sehingga teks seperti AT&T atau &amp tetap seperti yang diketik."
+        },
+        {
+          "question": "Apakah ada daftar entitas?",
+          "answer": "Ya. Tab Referensi entitas mencantumkan setiap entitas yang dikenal alat ini, bisa dicari berdasarkan nama atau dengan menempelkan karakternya, dengan tombol salin untuk masing-masing."
         }
       ]
     },
     "title-case-converter": {
       "seoTitle": "Konverter Title Case – Gaya APA, Chicago, MLA & AP, Gratis",
-      "metaDescription": "Kapitalisasi judul dan headline dengan benar menggunakan aturan gaya APA, Chicago, MLA, atau AP — diproses 100% secara lokal di browser Anda.",
-      "h1": "Kapitalisasi Title Case & Headline",
-      "subheading": "Kapitalisasi judul dan headline dengan benar menggunakan aturan gaya APA, Chicago, MLA, atau AP.",
+      "metaDescription": "Ubah judul menjadi title case dengan aturan AP, APA, Chicago/MLA, atau kapitalisasi setiap kata, dengan akronim dan merek seperti NASA dan iPhone tetap terjaga, baris demi baris. Gratis dan privat.",
+      "h1": "Title Case & Kapitalisasi Judul",
+      "subheading": "Kapitalisasi judul dengan aturan AP, APA, atau Chicago / MLA — akronim dan nama merek tetap terjaga, satu judul per baris.",
       "keywords": [
         "konverter title case",
         "kapitalisasi judul",
         "title case apa",
-        "headline chicago"
+        "judul gaya chicago"
       ],
       "howTo": [
         {
           "name": "Tempel judul Anda",
-          "text": "Ketik atau tempel judul atau headline yang ingin Anda kapitalisasi."
+          "text": "Ketik atau tempel judul yang ingin dikapitalisasi."
         },
         {
           "name": "Pilih gaya",
@@ -4760,49 +4872,51 @@
       ],
       "faq": [
         {
-          "question": "Apa perbedaan antara gaya-gaya ini?",
-          "answer": "Setiap panduan gaya memiliki aturannya sendiri tentang kata pendek mana (kata sandang, konjungsi, preposisi) yang tetap huruf kecil — misalnya, APA dan Chicago menggunakan huruf besar untuk preposisi panjang yang oleh AP dan MLA akan dibuat huruf kecil."
+          "question": "Apa perbedaan antar gaya?",
+          "answer": "AP menuliskan artikel, konjungsi, dan preposisi sepanjang tiga huruf atau kurang dengan huruf kecil. APA menuliskan kata minor sepanjang tiga huruf atau kurang dengan huruf kecil. Chicago dan MLA menuliskan semua preposisi dengan huruf kecil, berapa pun panjangnya. Setiap kata mengkapitalisasi semuanya. Chicago dan MLA sepakat pada sebagian besar judul, jadi keduanya berbagi satu opsi."
         },
         {
           "question": "Apakah kata pertama dan terakhir selalu dikapitalisasi?",
-          "answer": "Ya, keempat gaya mengapitalisasi kata pertama dan terakhir judul terlepas dari jenis kata apa pun itu."
+          "answer": "Ya. Kata pertama dan terakhir, serta kata pertama setelah titik dua atau tanda pisah, selalu dikapitalisasi."
         },
         {
-          "question": "Apakah teks saya diunggah ke suatu tempat?",
-          "answer": "Tidak, kapitalisasi terjadi sepenuhnya di browser Anda."
+          "question": "Apakah teks saya diunggah ke mana pun?",
+          "answer": "Tidak, kapitalisasi berlangsung sepenuhnya di browser Anda."
         },
         {
-          "question": "Bagaimana ini menentukan kata kecil mana yang dibuat huruf kecil?",
-          "answer": "Alat ini menggunakan aturan khusus gaya (AP, APA, Chicago, atau MLA) yang menentukan kata sandang, konjungsi, dan preposisi pendek mana yang tetap huruf kecil kecuali berada di awal atau akhir judul."
+          "question": "Bagaimana alat ini menentukan kata kecil mana yang ditulis huruf kecil?",
+          "answer": "Setiap gaya memiliki daftar kata minornya sendiri (artikel, konjungsi, dan preposisi), yang ditampilkan di tooltip gaya tersebut. Semua yang lain dikapitalisasi."
         },
         {
-          "question": "Apakah ini menangani kata bertanda hubung dengan benar?",
-          "answer": "Kata bertanda hubung dikapitalisasi sebagai satu token, bukan mengapitalisasi setiap bagian setelah tanda hubung secara terpisah — jadi \"well-known\" menjadi \"Well-known\", bukan \"Well-Known\"."
+          "question": "Apakah kata bertanda hubung ditangani dengan benar?",
+          "answer": "Ya. Setiap bagian kata bertanda hubung dikapitalisasi, sehingga well-known menjadi Well-Known."
         },
         {
-          "question": "Bisakah ini mengapitalisasi judul dengan subjudul yang dipisahkan titik dua?",
-          "answer": "Ya, teks diproses sebagai string berkelanjutan, sehingga bagian judul dan subjudul sama-sama mendapatkan kapitalisasi title-case secara konsisten."
+          "question": "Bisakah alat ini mengkapitalisasi judul dengan subjudul yang dipisahkan titik dua?",
+          "answer": "Ya, teks diproses sebagai satu rangkaian berkelanjutan, sehingga bagian judul dan subjudul sama-sama diberi title case secara konsisten."
         },
         {
-          "question": "Apakah ini mempertahankan kapitalisasi bergaya khusus yang disengaja, seperti nama merek?",
-          "answer": "Tidak, setiap kata diformat ulang sesuai aturan gaya yang dipilih, sehingga kapitalisasi bergaya (seperti \"eBay\" atau \"iPhone\") akan dinormalkan, bukan dipertahankan."
+          "question": "Apakah kapitalisasi bergaya yang disengaja, seperti nama merek, dipertahankan?",
+          "answer": "Ya, secara default. Kata yang seluruhnya huruf besar (NASA) atau memiliki huruf kapital di tengah (iPhone, eBay) dibiarkan apa adanya. Hapus centang Pertahankan akronim & merek untuk memformat ulang keduanya juga."
         }
       ]
     },
     "url-slug-generator": {
-      "seoTitle": "Generator Slug URL Online – Ramah SEO, Gratis & Instan",
-      "metaDescription": "Ubah judul atau teks apa pun menjadi slug URL yang bersih dan ramah SEO — diproses 100% secara lokal di browser Anda.",
-      "h1": "Generator Slug URL SEO",
-      "subheading": "Ubah judul atau teks apa pun menjadi slug URL yang bersih dan ramah SEO secara instan.",
+      "seoTitle": "Pembuat Slug URL Online – Ramah SEO, Gratis & Instan",
+      "metaDescription": "Ubah judul menjadi slug URL yang bersih dengan transliterasi huruf beraksen, Kiril, Yunani, dan Arab, slug Unicode opsional, penghapusan stop word, panjang maksimum, dan konversi massal. Gratis dan privat.",
+      "h1": "Pembuat Slug URL untuk SEO",
+      "subheading": "Ubah judul menjadi slug URL yang bersih dan ramah SEO — transliterasi, stop word, panjang maksimum, dan konversi massal.",
       "keywords": [
-        "generator slug",
+        "pembuat slug",
         "slugify url",
-        "pembuat url ramah seo"
+        "pembuat url ramah seo",
+        "slugify",
+        "pembuat slug massal"
       ],
       "howTo": [
         {
           "name": "Masukkan judul Anda",
-          "text": "Ketik atau tempel judul postingan blog atau teks apa pun."
+          "text": "Ketik atau tempel judul artikel blog atau teks apa pun."
         },
         {
           "name": "Sesuaikan opsi",
@@ -4810,49 +4924,60 @@
         },
         {
           "name": "Salin slug",
-          "text": "Slug siap URL diperbarui secara instan — salin dengan satu klik."
+          "text": "Slug siap-URL diperbarui seketika — salin dengan satu klik."
         }
       ],
       "faq": [
         {
           "question": "Bagaimana karakter beraksen ditangani?",
-          "answer": "Karakter beraksen dan diakritik dikonversi ke padanan ASCII terdekatnya (misalnya é menjadi e) sehingga slug tetap aman untuk URL."
+          "answer": "Karakter ditransliterasi menjadi huruf biasa: é menjadi e, ß menjadi ss, æ menjadi ae, dan huruf Kiril, Yunani, serta Arab menjadi padanan Latinnya. Centang Pertahankan huruf non-Latin untuk mempertahankan huruf dari aksara apa pun."
         },
         {
-          "question": "Apa yang terjadi pada karakter khusus dan spasi?",
-          "answer": "Karakter tersebut diganti dengan pemisah pilihan Anda, dan beberapa pemisah berurutan digabungkan menjadi satu."
+          "question": "Apa yang terjadi dengan karakter khusus dan spasi?",
+          "answer": "Semuanya diganti dengan pemisah pilihan Anda, dan beberapa pemisah berurutan digabung menjadi satu."
         },
         {
-          "question": "Apakah teks saya diunggah ke suatu tempat?",
-          "answer": "Tidak, pembuatan slug terjadi sepenuhnya di browser Anda."
+          "question": "Apakah teks saya diunggah ke mana pun?",
+          "answer": "Tidak, pembuatan slug berlangsung sepenuhnya di browser Anda."
         },
         {
-          "question": "Apakah ini menerapkan panjang maksimum slug?",
-          "answer": "Tidak ada panjang maksimum bawaan — judul yang sangat panjang menghasilkan slug yang sepadan panjangnya, jadi potong secara manual jika Anda memerlukan URL yang lebih pendek."
+          "question": "Apakah ada batas panjang slug maksimum?",
+          "answer": "Opsional. Atur Panjang maks dan slug dipotong pada batas kata utuh jika memungkinkan. Biarkan kosong untuk tanpa batas."
         },
         {
           "question": "Bisakah saya memilih tanda hubung atau garis bawah sebagai pemisah?",
-          "answer": "Ya, tombol pengalih memungkinkan Anda memilih antara tanda hubung dan garis bawah sebagai pemisah kata."
+          "answer": "Ya: tanda hubung, garis bawah, titik, atau tanpa pemisah."
         },
         {
-          "question": "Apakah ini menghapus stop word seperti 'a' atau 'the'?",
-          "answer": "Tidak, alat ini hanya menghapus karakter khusus dan menormalkan huruf beraksen — kata umum seperti \"a\" atau \"the\" tetap ada dalam slug."
+          "question": "Apakah stop word seperti 'dan' atau 'yang' dihapus?",
+          "answer": "Opsional. Centang Buang stop word untuk menghapus kata umum seperti a, the, of, dan and (slug tidak akan pernah menjadi kosong karenanya)."
         },
         {
-          "question": "Apa yang terjadi pada angka dalam judul?",
-          "answer": "Angka dipertahankan apa adanya dalam slug yang dihasilkan, karena angka sudah merupakan karakter yang aman untuk URL."
+          "question": "Apa yang terjadi dengan angka di dalam judul?",
+          "answer": "Angka dipertahankan apa adanya. Simbol seperti & dan % diubah menjadi kata (and, percent)."
+        },
+        {
+          "question": "Bisakah saya membuat banyak slug sekaligus?",
+          "answer": "Ya. Tulis satu judul per baris dan setiap baris mendapat slug sendiri. Awalan seperti https://site.com/blog bisa ditambahkan ke masing-masing."
+        },
+        {
+          "question": "Bagaimana dengan bahasa seperti Mandarin atau Jepang?",
+          "answer": "Karakter tersebut tidak dapat ditransliterasi dengan andal, sehingga akan dibuang. Centang Pertahankan huruf non-Latin untuk mempertahankannya — browser modern dan mesin pencari mampu menangani URL Unicode."
         }
       ]
     },
     "opengraph-generator": {
       "seoTitle": "Generator OpenGraph & Meta Tag – Pratinjau Langsung, Gratis",
-      "metaDescription": "Hasilkan meta tag OpenGraph dan Twitter dengan pratinjau langsung tentang bagaimana tautan Anda akan terlihat di Google, Twitter, dan Facebook.",
+      "metaDescription": "Buat meta tag Open Graph dan Twitter Card dengan pratinjau langsung Google, X, Facebook, LinkedIn, dan Slack, penghitung panjang, pemeriksaan gambar, dan ekspor metadata Next.js. Gratis dan privat.",
       "h1": "Generator OpenGraph & Meta Tag",
-      "subheading": "Hasilkan meta tag untuk berbagi media sosial dengan pratinjau langsung tentang bagaimana tautan Anda akan terlihat saat dibagikan.",
+      "subheading": "Buat meta tag untuk berbagi di media sosial dengan pratinjau langsung untuk Google, X, Facebook, LinkedIn, dan Slack, plus penghitung panjang dan pemeriksaan gambar.",
       "keywords": [
         "generator opengraph",
         "pratinjau meta tag",
-        "pembuat kartu berbagi sosial"
+        "pembuat kartu berbagi sosial",
+        "generator twitter card",
+        "generator meta tag",
+        "pemeriksa gambar og"
       ],
       "howTo": [
         {
@@ -4861,53 +4986,59 @@
         },
         {
           "name": "Periksa pratinjau langsung",
-          "text": "Lihat pratinjau instan tentang bagaimana tautan Anda akan tampil di Google Search, Twitter, dan Facebook."
+          "text": "Lihat pratinjau instan tentang tampilan tautan Anda di Google Search, Twitter, dan Facebook."
         },
         {
-          "name": "Salin kode",
+          "name": "Salin kodenya",
           "text": "Salin meta tag HTML siap tempel atau objek metadata Next.js."
         }
       ],
       "faq": [
         {
           "question": "Untuk apa tag OpenGraph digunakan?",
-          "answer": "Tag ini mengontrol bagaimana halaman Anda muncul saat dibagikan di media sosial dan aplikasi pesan — judul, deskripsi, dan gambar pratinjau."
+          "answer": "Tag ini mengatur tampilan halaman Anda saat dibagikan di media sosial dan aplikasi pesan — judul, deskripsi, dan gambar pratinjau."
         },
         {
-          "question": "Apakah ini bekerja dengan Next.js?",
-          "answer": "Ya, ada tombol khusus untuk menyalin objek ekspor metadata Next.js yang siap tempel di samping tag meta HTML biasa."
+          "question": "Apakah ini berfungsi dengan Next.js?",
+          "answer": "Ya. Ekspor metadata Next.js siap tempel dihasilkan di samping tag HTML biasa, dengan semua nilai di-escape secara aman."
         },
         {
-          "question": "Apakah data saya diunggah ke suatu tempat?",
+          "question": "Apakah data saya diunggah ke mana pun?",
           "answer": "Tidak, pratinjau dan kode yang dihasilkan dibuat sepenuhnya di browser Anda."
         },
         {
-          "question": "Dimensi gambar apa yang harus saya gunakan untuk gambar OpenGraph?",
-          "answer": "1200×630 piksel adalah ukuran yang secara luas direkomendasikan untuk gambar OpenGraph, memberikan tampilan yang baik di Facebook, LinkedIn, dan sebagian besar platform lainnya."
+          "question": "Ukuran gambar apa yang sebaiknya dipakai untuk gambar OpenGraph?",
+          "answer": "1200×630 piksel adalah ukuran yang paling banyak direkomendasikan untuk gambar OpenGraph, memberikan tampilan yang baik di Facebook, LinkedIn, dan sebagian besar platform lainnya."
         },
         {
-          "question": "Apakah ini juga menghasilkan tag Twitter Card?",
-          "answer": "Periksa output yang dihasilkan — banyak generator OpenGraph menyertakan tag meta Twitter Card yang sesuai di samping tag `og:` standar untuk dukungan platform yang lebih luas."
+          "question": "Apakah ini juga membuat tag Twitter Card?",
+          "answer": "Ya. Alat ini menulis twitter:card (gambar besar atau ringkasan), judul, deskripsi, gambar, teks alt, site, dan creator."
         },
         {
-          "question": "Bisakah saya mempratinjau bagaimana tautan terlihat di berbagai platform?",
-          "answer": "Alat ini menampilkan pratinjau kartu berdasarkan tag yang Anda masukkan, meskipun rendering sebenarnya dapat sedikit bervariasi tergantung platform karena setiap layanan menerapkan aturan tata letaknya sendiri."
+          "question": "Bisakah saya melihat pratinjau tampilan tautan di berbagai platform?",
+          "answer": "Ya. Tab menampilkan pratinjau pencarian Google, X / Twitter (kartu besar atau kecil), Facebook / LinkedIn, dan Slack / Discord. Tampilan sebenarnya bisa sedikit berbeda di tiap platform."
         },
         {
-          "question": "Mengapa situs saya tidak menampilkan pratinjau yang diperbarui setelah saya mengubah tag?",
-          "answer": "Platform media sosial menyimpan cache pratinjau tautan — Anda biasanya perlu menggunakan alat debugging/penyegaran cache milik platform tersebut (seperti Sharing Debugger milik Facebook) untuk memaksanya membaca ulang tag Anda yang diperbarui."
+          "question": "Mengapa situs saya tidak menampilkan pratinjau terbaru setelah saya mengubah tag?",
+          "answer": "Platform sosial menyimpan cache pratinjau tautan — biasanya Anda perlu memakai alat debug/penyegaran cache milik platform tersebut (seperti Sharing Debugger Facebook) agar tag terbaru Anda dibaca ulang."
+        },
+        {
+          "question": "Apakah nilai saya di-escape pada keluaran?",
+          "answer": "Ya. Tanda kutip, ampersand, dan kurung sudut di-escape pada tag HTML, serta tanda kutip dan backslash pada kode Next.js, sehingga keluaran tidak bisa merusak markup Anda. Tag tanpa nilai dihilangkan."
         }
       ]
     },
     "duplicate-line-remover": {
       "seoTitle": "Penghapus Baris Duplikat & Pengurut Daftar – Gratis, Instan",
-      "metaDescription": "Hapus baris duplikat dari sebuah daftar dan urutkan secara alfabet atau berdasarkan panjang — diproses 100% secara lokal di browser Anda.",
+      "metaDescription": "Hapus baris duplikat, tampilkan hanya duplikat atau baris unik, hitung kemunculan, dan urutkan secara alami, berdasarkan panjang, terbalik, atau diacak — dengan statistik langsung. Gratis dan privat.",
       "h1": "Penghapus Baris Duplikat & Pengurut Daftar",
-      "subheading": "Hapus baris duplikat dari sebuah daftar dan urutkan sesuai kebutuhan Anda.",
+      "subheading": "Hapus baris duplikat, temukan duplikat, hitung kemunculan, dan urutkan — dengan statistik langsung.",
       "keywords": [
         "hapus baris duplikat",
-        "deduplikasi daftar",
-        "urutkan daftar online"
+        "hapus duplikat daftar",
+        "urutkan daftar online",
+        "cari baris duplikat",
+        "urutkan baris online"
       ],
       "howTo": [
         {
@@ -4916,41 +5047,45 @@
         },
         {
           "name": "Atur opsi Anda",
-          "text": "Aktifkan pencocokan tanpa membedakan huruf besar/kecil, pemangkasan spasi, dan penghapusan baris kosong sesuai kebutuhan."
+          "text": "Aktifkan pencocokan tak peka huruf besar-kecil, pemangkasan spasi, dan penghapusan baris kosong sesuai kebutuhan."
         },
         {
           "name": "Urutkan dan salin",
-          "text": "Pilih urutan pengurutan, lalu salin daftar yang telah dibersihkan."
+          "text": "Pilih urutan pengurutan, lalu salin daftar yang sudah bersih."
         }
       ],
       "faq": [
         {
-          "question": "Baris mana yang dipertahankan saat ditemukan duplikat?",
-          "answer": "Kemunculan pertama dipertahankan, dengan huruf besar/kecil aslinya tetap dipertahankan bahkan dalam mode tidak peka huruf besar/kecil (case-insensitive)."
+          "question": "Baris mana yang dipertahankan saat duplikat ditemukan?",
+          "answer": "Kemunculan pertama dipertahankan, dengan huruf aslinya tetap terjaga bahkan dalam mode tak peka huruf besar-kecil."
         },
         {
           "question": "Bisakah saya mengurutkan tanpa menghapus duplikat?",
-          "answer": "Ya, pengurutan dan penghapusan duplikat adalah opsi independen — gunakan salah satu saja atau keduanya bersamaan."
+          "answer": "Ya, pengurutan dan penghapusan duplikat adalah opsi yang independen — gunakan salah satunya saja atau keduanya bersamaan."
         },
         {
-          "question": "Apakah daftar saya diunggah ke suatu tempat?",
+          "question": "Apakah daftar saya diunggah ke mana pun?",
           "answer": "Tidak, semuanya diproses sepenuhnya di browser Anda."
         },
         {
-          "question": "Apakah deteksi duplikat peka terhadap huruf besar/kecil?",
-          "answer": "Ada tombol pengalih tidak peka huruf besar/kecil — secara default alat ini mungkin memperlakukan \"Apple\" dan \"apple\" sebagai baris berbeda kecuali Anda mengaktifkan perbandingan tidak peka huruf besar/kecil."
+          "question": "Apakah deteksi duplikat peka huruf besar-kecil?",
+          "answer": "Secara default tidak: Abaikan huruf besar-kecil aktif. Hapus centangnya untuk memperlakukan Apple dan apple sebagai baris berbeda. Kemunculan pertama mempertahankan huruf aslinya."
         },
         {
-          "question": "Apakah ini mengabaikan spasi di awal atau akhir saat membandingkan baris?",
-          "answer": "Periksa bagaimana baris Anda dibandingkan — perilaku pemangkasan (trimming) memengaruhi apakah baris yang hanya berbeda pada spasi di sekitarnya dianggap sebagai duplikat."
+          "question": "Apakah spasi di awal atau akhir diabaikan saat membandingkan baris?",
+          "answer": "Ya, saat Pangkas spasi aktif, baris yang hanya berbeda pada spasi di sekelilingnya dianggap sama."
         },
         {
-          "question": "Opsi pengurutan apa saja yang tersedia selain alfabetis?",
-          "answer": "Anda dapat mengurutkan A→Z, Z→A, berdasarkan panjang baris, atau membiarkan urutan asli tidak berubah — tidak ada mode pengurutan nilai numerik terpisah."
+          "question": "Opsi pengurutan apa yang tersedia selain alfabetis?",
+          "answer": "A ke Z, Z ke A, natural (item2 sebelum item10), natural menurun, terpendek dahulu, terpanjang dahulu, urutan terbalik, dan acak."
         },
         {
-          "question": "Bisakah saya menghapus baris kosong pada saat yang sama?",
-          "answer": "Ya, opsi \"hapus baris kosong\" terpisah bekerja secara independen dari penghapusan duplikat."
+          "question": "Bisakah saya menghapus baris kosong sekaligus?",
+          "answer": "Ya. Buang baris kosong bekerja bersama opsi lain, dan bilah status melaporkan berapa banyak yang dihapus."
+        },
+        {
+          "question": "Bisakah saya melihat hanya duplikatnya, atau menghitungnya?",
+          "answer": "Ya. Mode memungkinkan Anda menampilkan hanya baris yang muncul lebih dari sekali, mempertahankan hanya baris yang muncul tepat sekali, atau mencantumkan setiap baris beserta berapa kali kemunculannya."
         }
       ]
     },

@@ -81,17 +81,17 @@ export default function UrlEncoderDecoder() {
       <div className="grid gap-4 lg:grid-cols-2">
         <Card className="space-y-2 p-4">
           <p className="text-sm font-medium">{mode === "encode" ? "Raw text / URL" : "Encoded text"}</p>
-          <textarea value={input} onChange={(e) => setInput(e.target.value)} rows={8} aria-label="Input" className="w-full resize-none rounded-lg border border-border bg-background p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-primary" />
+          <textarea value={input} onChange={(e) => setInput(e.target.value)} rows={16} aria-label="Input" className="w-full resize-none rounded-lg border border-border bg-background p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-primary" />
         </Card>
 
         <Card className="space-y-2 p-4">
           <p className="text-sm font-medium">{mode === "encode" ? "Encoded" : "Decoded"}</p>
           {error ? (
-            <div role="alert" className="flex h-[156px] items-center justify-center rounded-lg border border-destructive/30 bg-destructive/10 px-3 text-center text-sm text-destructive">
+            <div role="alert" className="flex h-[320px] items-center justify-center rounded-lg border border-destructive/30 bg-destructive/10 px-3 text-center text-sm text-destructive">
               {error}
             </div>
           ) : (
-            <textarea readOnly value={result} rows={8} aria-label="Output" className="w-full resize-none rounded-lg border border-border bg-muted/20 p-3 font-mono text-xs focus:outline-none" />
+            <textarea readOnly value={result} rows={16} aria-label="Output" className="w-full resize-none rounded-lg border border-border bg-muted/20 p-3 font-mono text-xs focus:outline-none" />
           )}
           <div className="flex flex-wrap gap-2">
             <CopyButton value={result} variant="secondary" disabled={!result}>

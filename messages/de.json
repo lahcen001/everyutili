@@ -244,63 +244,70 @@
       ]
     },
     "json-formatter": {
-      "seoTitle": "JSON-Formatierer & Validator online – kostenlos & sofort",
-      "metaDescription": "Formatieren, validieren und verschönern Sie JSON online mit sofortiger Syntaxfehler-Hervorhebung, Baumansicht und CSV-Export. 100% kostenlos, keine Anmeldung erforderlich.",
-      "h1": "JSON-Formatierer & Validator",
-      "subheading": "Verschönern, validieren und erkunden Sie JSON mit sofortiger Fehlerhervorhebung und einer Live-Baumansicht.",
+      "seoTitle": "JSON Formatter & Validator Online – Kostenlos & sofort",
+      "metaDescription": "JSON formatieren, validieren, minifizieren und erkunden in einem Vollbild-Editor: exakte Fehlerzeile und -spalte, Baum-, Tabellen- und JSONPath-Ansicht, Schlüssel sortieren, Reparatur und sichere Big-Number-Verarbeitung. Kostenlos und privat.",
+      "h1": "JSON Formatter & Validator",
+      "subheading": "Ein Vollbild-JSON-Editor: formatieren, validieren, reparieren, Schlüssel sortieren und als Baum, Tabelle oder JSONPath-Abfrage erkunden – 100 % lokal.",
       "keywords": [
-        "json formatierer",
-        "json validator",
-        "json verschönerer",
-        "json zu csv",
-        "json online formatieren"
+        "JSON Formatter",
+        "JSON Validator",
+        "JSON verschönern",
+        "JSON in CSV umwandeln",
+        "JSON online formatieren",
+        "JSON online prüfen",
+        "JSONPath testen",
+        "JSON reparieren"
       ],
       "howTo": [
         {
-          "name": "JSON einfügen",
-          "text": "Fügen Sie Ihr rohes JSON in den Editor ein oder geben Sie es ein."
+          "name": "JSON einfügen oder ablegen",
+          "text": "Tippen Sie den Text ein, fügen Sie ihn ein, öffnen Sie eine Datei oder ziehen Sie eine .json-Datei in den Editor."
         },
         {
-          "name": "Automatische Validierung",
-          "text": "Syntaxfehler werden sofort während der Eingabe hervorgehoben."
+          "name": "Statusleiste prüfen",
+          "text": "Sie zeigt „Valid JSON“ oder die genaue Zeile und Spalte des ersten Fehlers – ein Klick springt direkt dorthin."
         },
         {
-          "name": "Formatieren & erkunden",
-          "text": "Nutzen Sie die automatische Formatierung oder durchsuchen Sie die interaktive Baumansicht."
+          "name": "Formatieren, reparieren oder erkunden",
+          "text": "Formatieren oder minifizieren Sie mit 2, 4 Leerzeichen oder Tab, sortieren Sie Schlüssel, reparieren Sie lockeres JSON und wechseln Sie im rechten Bereich zwischen Formatiert, Baum, Tabelle und Abfrage."
         },
         {
-          "name": "Exportieren",
-          "text": "Kopieren Sie das formatierte JSON oder wandeln Sie es in CSV um."
+          "name": "Kopieren, herunterladen oder speichern",
+          "text": "Kopieren Sie das Ergebnis, laden Sie formatted.json herunter oder speichern Sie einen Schnipsel in Ihrem Verlauf."
         }
       ],
       "faq": [
         {
           "question": "Sendet dieses Tool meine JSON-Daten irgendwohin?",
-          "answer": "Nein. Das gesamte Parsen, Formatieren und Validieren erfolgt lokal in Ihrem Browser."
+          "answer": "Nein. Das gesamte Parsen, Formatieren und Validieren findet lokal in Ihrem Browser statt."
         },
         {
           "question": "Kann ich JSON in CSV umwandeln?",
-          "answer": "Ja, nutzen Sie den integrierten CSV-Export für flache oder verschachtelte JSON-Arrays."
+          "answer": "In der Tabellenansicht durchsuchen Sie ein Array von Objekten als Zeilen und Spalten. Für eine CSV-Datei öffnen Sie das Tool „JSON zu CSV“ mit Optionen für Trennzeichen, Abflachen und Excel."
         },
         {
           "question": "Was passiert, wenn mein JSON ungültig ist?",
-          "answer": "Der Editor hebt in Echtzeit genau die Zeile und Stelle hervor, an der der Syntaxfehler auftritt."
+          "answer": "Die Statusleiste benennt das Problem und zeigt Zeile und Spalte an, der Editor unterstreicht die Stelle, und ein Klick auf die Meldung setzt den Cursor dorthin. Handelt es sich um lockere Syntax wie Kommentare oder nachgestellte Kommas, behebt die Schaltfläche „Reparieren“ das Problem."
         },
         {
           "question": "Kann ich in der Baumansicht verschachtelte Objekte ein- und ausklappen?",
-          "answer": "Ja, klicken Sie auf den Pfeil neben einem Objekt oder Array, um diesen Zweig des Baums ein- oder auszuklappen."
+          "answer": "Ja. Klicken Sie auf einen beliebigen Pfeil oder nutzen Sie „Alle ausklappen“, „Alle einklappen“ und die Tiefenauswahl. Außerdem können Sie Schlüssel und Werte durchsuchen, durch Treffer navigieren und jeden Pfad oder Wert kopieren."
         },
         {
-          "question": "Kann das Tool Objektschlüssel alphabetisch sortieren?",
-          "answer": "Nein, die Schlüssel werden in der gleichen Reihenfolge angezeigt, in der sie in Ihrem ursprünglichen JSON erscheinen – es gibt keine Option zur alphabetischen Sortierung."
+          "question": "Kann ich Objektschlüssel alphabetisch sortieren?",
+          "answer": "Ja. Aktivieren Sie „Schlüssel sortieren“, dann ordnet „Formatieren“ bzw. die formatierte Ansicht die Schlüssel jedes Objekts von A bis Z – auf jeder Ebene."
         },
         {
-          "question": "Unterstützt das Tool JSON mit Kommentaren oder abschließenden Kommas?",
-          "answer": "Nein, dieses Tool folgt der strikten JSON-Syntax – Kommentare und abschließende Kommas (die in JSON5 oder JSONC teilweise erlaubt sind) führen zu einem Parsing-Fehler."
+          "question": "Unterstützt es JSON mit Kommentaren oder nachgestellten Kommas?",
+          "answer": "Der Validator folgt dem strikten JSON-Standard und markiert sie als Fehler – mit einem Klick auf „Reparieren“ werden jedoch Kommentare und nachgestellte Kommas entfernt, nicht in Anführungszeichen gesetzte Eigenschaftsnamen quotiert, einfache in doppelte Anführungszeichen umgewandelt und Python-typische Werte wie True, False und None korrigiert."
         },
         {
-          "question": "Was ist der Unterschied zwischen Beautify und Minify hier?",
-          "answer": "Beautify fügt Einrückungen und Zeilenumbrüche zur besseren Lesbarkeit hinzu; Minify entfernt alle unnötigen Leerzeichen, um eine möglichst kleine Ausgabe zu erzeugen – beide repräsentieren dieselben zugrunde liegenden Daten."
+          "question": "Was ist hier der Unterschied zwischen Verschönern und Minifizieren?",
+          "answer": "„Formatieren“ (Verschönern) fügt Einrückungen und Zeilenumbrüche für bessere Lesbarkeit hinzu; „Minifizieren“ entfernt alle überflüssigen Leerzeichen. Beide lassen sehr große Zahlen wie 12345678901234567890 exakt so, wie sie geschrieben sind."
+        },
+        {
+          "question": "Kann ich die Daten mit JSONPath abfragen?",
+          "answer": "Ja. Öffnen Sie den Tab „Abfrage“ und geben Sie einen Ausdruck wie $.users[*].name, $..price oder $.items[-1] ein, um alle Treffer samt Pfad aufzulisten."
         }
       ]
     },
@@ -2250,9 +2257,9 @@
     },
     "url-encoder-decoder": {
       "seoTitle": "URL Encoder & Decoder Online – Kostenlos & sofort",
-      "metaDescription": "Kodiere oder dekodiere URLs und Query-Strings in den Modi Komponente, Vollständige URL oder Formular (+) und zerlege eine URL in ihre Bestandteile und Parameter. Kostenlos, privat, ohne Anmeldung.",
+      "metaDescription": "URLs und Query-Strings kodieren oder dekodieren – mit den Modi Komponente, Vollständige URL oder Formular (+) – und eine URL in ihre Bestandteile und Parameter zerlegen. Kostenlos, privat, ohne Anmeldung.",
       "h1": "URL Encoder / Decoder",
-      "subheading": "Text und URLs in drei Modi per Prozentkodierung kodieren oder dekodieren und die Bestandteile und Query-Parameter einer URL ansehen – 100 % lokal.",
+      "subheading": "Text und URLs in drei Modi prozentkodieren oder dekodieren und die Bestandteile sowie Query-Parameter einer URL ansehen – 100 % lokal.",
       "keywords": [
         "URL Encoder",
         "URL Decoder",
@@ -2260,24 +2267,24 @@
         "encodeURIComponent Tool",
         "URL kostenlos dekodieren",
         "URL Parser",
-        "Query-String Decoder"
+        "Query-String dekodieren"
       ],
       "howTo": [
         {
           "name": "Modus wählen",
-          "text": "Wähle Kodieren oder Dekodieren."
+          "text": "Wählen Sie „Kodieren“ oder „Dekodieren“."
         },
         {
           "name": "Text eingeben",
-          "text": "Tippe eine URL, einen Query-String oder beliebigen Text ein oder füge ihn ein."
+          "text": "Tippen oder fügen Sie eine URL, einen Query-String oder beliebigen Text ein."
         },
         {
           "name": "Ergebnis ansehen",
-          "text": "Die kodierte oder dekodierte Ausgabe wird sofort aktualisiert."
+          "text": "Die kodierte oder dekodierte Ausgabe aktualisiert sich sofort."
         },
         {
           "name": "Ergebnis kopieren",
-          "text": "Klicke auf Kopieren, um die Ausgabe in die Zwischenablage zu kopieren."
+          "text": "Klicken Sie auf „Kopieren“, um die Ausgabe in die Zwischenablage zu übernehmen."
         }
       ],
       "faq": [
@@ -2286,89 +2293,99 @@
           "answer": "URL-Kodierung ist nötig, wenn Sonderzeichen (Leerzeichen, &, =, ?) in Query-Parametern oder Pfadsegmenten vorkommen."
         },
         {
-          "question": "Welchen Kodierungsstandard verwendet das Tool?",
-          "answer": "Es nutzt die nativen Browserfunktionen encodeURIComponent/decodeURIComponent (Prozentkodierung nach RFC 3986)."
+          "question": "Welcher Kodierungsstandard wird verwendet?",
+          "answer": "Es werden die nativen Browserfunktionen encodeURIComponent/decodeURIComponent verwendet (Prozentkodierung nach RFC 3986)."
         },
         {
           "question": "Werden meine Daten irgendwohin gesendet?",
-          "answer": "Nein, das gesamte Kodieren und Dekodieren erfolgt lokal in deinem Browser."
+          "answer": "Nein, das gesamte Kodieren und Dekodieren geschieht lokal in Ihrem Browser."
         },
         {
           "question": "Was ist der Unterschied zwischen encodeURIComponent und encodeURI?",
-          "answer": "Der Komponenten-Modus (encodeURIComponent) kodiert alles einschließlich / ? & = #, was für einen einzelnen Wert richtig ist. Der Modus Vollständige URL (encodeURI) behält diese Zeichen bei, damit die URL weiterhin funktioniert. Der Formular-Modus ist der Komponenten-Modus, bei dem Leerzeichen als + geschrieben werden."
+          "answer": "Der Modus „Komponente“ (encodeURIComponent) kodiert alles einschließlich / ? & = #, was für einen einzelnen Wert richtig ist. Der Modus „Vollständige URL“ (encodeURI) behält diese Zeichen bei, sodass die URL weiterhin funktioniert. Der Formular-Modus entspricht „Komponente“, wobei Leerzeichen als + geschrieben werden."
         },
         {
           "question": "Wie werden Leerzeichen kodiert?",
-          "answer": "Als %20 in den Modi Komponente und Vollständige URL und als + im Formular-Modus (application/x-www-form-urlencoded). Beim Dekodieren im Formular-Modus wird + wieder in ein Leerzeichen umgewandelt."
+          "answer": "Als %20 in den Modi „Komponente“ und „Vollständige URL“ und als + im Formular-Modus (application/x-www-form-urlencoded). Beim Dekodieren im Formular-Modus wird + wieder zu einem Leerzeichen."
         },
         {
           "question": "Kann ich eine ganze URL einschließlich Query-String kodieren?",
-          "answer": "Du kannst jeden eingefügten Text kodieren, aber beim Kodieren einer vollständigen URL auf diese Weise werden auch Zeichen wie `:` und `/` maskiert, die du wahrscheinlich behalten möchtest – es ist für das Kodieren einzelner Werte gedacht, nicht ganzer URLs."
+          "answer": "Ja. Wählen Sie den Modus „Vollständige URL“, der die Zeichen beibehält, die einer URL ihre Struktur geben (: / ? & = #), und nur unsichere maskiert. Der Modus „Komponente“ würde auch diese maskieren, was für einen einzelnen Wert richtig ist, nicht aber für eine ganze URL."
         },
         {
           "question": "Warum schlägt das Dekodieren bei meiner Eingabe fehl?",
-          "answer": "Das Dekodieren schlägt fehl, wenn der Text ein `%` enthält, auf das nicht zwei gültige Hexadezimalziffern folgen. Das kommt bei fehlerhafter oder bereits teilweise dekodierter Eingabe vor."
+          "answer": "Das Dekodieren schlägt fehl, wenn der Text ein `%` enthält, auf das nicht zwei gültige Hexadezimalziffern folgen – das passiert bei fehlerhafter oder bereits teilweise dekodierter Eingabe."
         },
         {
           "question": "Kann es die Bestandteile einer URL anzeigen?",
-          "answer": "Ja. Ist der Text eine vollständige URL, wird sie in Protokoll, Host, Pfad, Query und Fragment zerlegt, und jeder Query-Parameter wird mit seinem dekodierten Wert aufgelistet."
+          "answer": "Ja. Ist der Text eine vollständige URL, wird er in Protokoll, Host, Pfad, Query und Fragment zerlegt, und jeder Query-Parameter wird mit seinem dekodierten Wert aufgelistet."
         }
       ]
     },
     "jwt-decoder": {
-      "seoTitle": "JWT-Decoder online – kostenlos & sofort, keine Anmeldung",
-      "metaDescription": "Dekodieren Sie JSON Web Tokens (JWT) sofort in Ihrem Browser. Sehen Sie Header, Payload und Ablauf — keine Signaturprüfung, keine Serveraufrufe.",
-      "h1": "JWT-Decoder",
-      "subheading": "Dekodieren Sie Header und Payload eines JWT sofort — 100% lokal verarbeitet, Signatur wird nie serverseitig geprüft.",
+      "seoTitle": "JWT Decoder Online – Kostenlos & sofort, ohne Anmeldung",
+      "metaDescription": "Einen JWT dekodieren und seine Signatur (Algorithmen HS, RS, PS und ES) direkt im Browser prüfen. Farblich markierte Teile, lesbares Ablaufdatum, klare Warnungen – nichts wird hochgeladen oder gespeichert.",
+      "h1": "JWT Decoder",
+      "subheading": "Einen JWT dekodieren, seine Claims in verständlicher Sprache lesen und die Signatur mit Ihrem Secret oder öffentlichen Schlüssel prüfen – 100 % lokal, nie gespeichert.",
       "keywords": [
-        "jwt decoder",
-        "jwt online dekodieren",
-        "json web token decoder",
-        "kostenloser jwt parser",
-        "jwt debugger"
+        "JWT Decoder",
+        "JWT online dekodieren",
+        "JSON Web Token Decoder",
+        "JWT Parser kostenlos",
+        "JWT Debugger",
+        "JWT Signatur prüfen",
+        "JWT Ablauf prüfen"
       ],
       "howTo": [
         {
           "name": "JWT einfügen",
-          "text": "Fügen Sie ein JSON Web Token in das Eingabefeld ein."
+          "text": "Fügen Sie das Token ein – ein vorangestelltes „Bearer “ ist in Ordnung."
         },
         {
-          "name": "Automatische Dekodierung",
-          "text": "Header und Payload werden aus Base64URL dekodiert und als formatiertes JSON angezeigt."
+          "name": "Dekodierte Teile lesen",
+          "text": "Header und Payload erscheinen als JSON, das Token ist farblich markiert, und exp, nbf und iat werden als lesbare Datumsangaben angezeigt."
         },
         {
-          "name": "Ablauf prüfen",
-          "text": "Falls ein exp-Claim vorhanden ist, wird dessen Ablaufstatus hervorgehoben."
+          "name": "Zeit-Claims prüfen",
+          "text": "Sehen Sie, ob das Token abgelaufen oder noch nicht gültig ist – mit Live-Countdown."
+        },
+        {
+          "name": "Signatur prüfen",
+          "text": "Geben Sie das gemeinsame Secret (HS) ein oder fügen Sie den öffentlichen Schlüssel als PEM oder JWK ein (RS, PS, ES) und klicken Sie auf „Prüfen“."
         }
       ],
       "faq": [
         {
-          "question": "Überprüft dieses Tool die JWT-Signatur?",
-          "answer": "Nein, dieses Tool dekodiert nur den Header und die Payload — es überprüft die Signatur nicht. Vertrauen Sie einem dekodierten Token niemals ohne serverseitige Verifizierung."
+          "question": "Prüft dieses Tool die JWT-Signatur?",
+          "answer": "Ja, wenn Sie es verlangen. Geben Sie das Secret für HS256/384/512 oder einen öffentlichen Schlüssel (PEM oder JWK) für die Algorithmen RS, PS und ES ein und klicken Sie auf „Prüfen“. Bis dahin weist die Seite deutlich darauf hin, dass die Signatur nicht geprüft ist – Dekodieren allein beweist nichts."
         },
         {
           "question": "Wird mein Token an einen Server gesendet?",
-          "answer": "Nein, die Dekodierung erfolgt vollständig lokal in Ihrem Browser mittels Base64URL-Dekodierung."
+          "answer": "Nein, das Dekodieren findet vollständig lokal in Ihrem Browser per Base64URL-Dekodierung statt."
         },
         {
           "question": "Was bedeutet der Claim exp?",
-          "answer": "Der Claim exp ist ein Unix-Zeitstempel, der angibt, wann das Token abläuft. Dieses Tool hebt hervor, ob es bereits abgelaufen ist."
+          "answer": "exp ist ein Unix-Zeitstempel dafür, wann das Token abläuft. Das Tool zeigt ihn als Datum mit einem Live-Countdown wie „in 2 Stunden“ oder „vor 3 Tagen“ an."
         },
         {
           "question": "Kann ich damit prüfen, ob ein Token abgelaufen ist?",
-          "answer": "Sie können den Claim exp nach der Dekodierung überprüfen, um zu sehen, ob der Zeitstempel in der Vergangenheit liegt, aber das Tool validiert den Ablauf nicht automatisch gegen die aktuelle Zeit für Sie."
+          "answer": "Ja. Die Badges zeigen „Abgelaufen“, „Noch nicht gültig“ (nbf) oder „Nicht abgelaufen“. Sie beschreiben nur die Zeit-Claims, nicht, ob das Token echt ist."
         },
         {
           "question": "Welchen Algorithmus zeigt der Header an?",
-          "answer": "Der dekodierte Header enthält das Feld alg, zum Beispiel HS256 oder RS256, das angibt, mit welchem Algorithmus das Token signiert wurde — dies sind lediglich Metadaten und werden hier nicht zur Verifizierung verwendet."
+          "answer": "Der dekodierte Header enthält das Feld alg, etwa HS256 oder RS256, das angibt, mit welchem Algorithmus das Token signiert wurde – das sind reine Metadaten, die hier nicht zur Prüfung verwendet werden."
         },
         {
-          "question": "Kann ich ein fehlerhaftes oder abgeschnittenes JWT dekodieren?",
-          "answer": "Nein, das Token muss aus drei durch Punkte getrennten Base64URL-Segmenten bestehen (Header, Payload, Signatur); fehlt ein Segment oder ist es kein gültiges Base64URL, schlägt die Dekodierung fehl."
+          "question": "Kann ich einen fehlerhaften oder abgeschnittenen JWT dekodieren?",
+          "answer": "Nein. Ein signierter JWT besteht aus drei durch Punkte getrennten Base64URL-Teilen, die sich zu JSON dekodieren lassen; das Tool sagt Ihnen, welcher Teil fehlerhaft ist. Verschlüsselte Token (JWE, fünf Teile) lassen sich hier nicht dekodieren."
         },
         {
-          "question": "Werden benutzerdefinierte Claims in der Payload angezeigt?",
-          "answer": "Ja, alle Claims in der Payload werden angezeigt, sowohl registrierte Claims wie iss und sub als auch jegliche benutzerdefinierte Claims, die Ihre Anwendung hinzugefügt hat."
+          "question": "Werden benutzerdefinierte Claims im Payload angezeigt?",
+          "answer": "Ja, alle Claims im Payload werden angezeigt – sowohl registrierte Claims wie iss und sub als auch beliebige benutzerdefinierte Claims Ihrer Anwendung."
+        },
+        {
+          "question": "Werden meine Token oder Schlüssel irgendwo gespeichert?",
+          "answer": "Nein. Alles geschieht in Ihrem Browser, und anders als bei den meisten Tools hier werden Token und Schlüssel nie in Ihrem Verlauf gespeichert."
         }
       ]
     },
@@ -2444,147 +2461,163 @@
       ]
     },
     "hash-generator": {
-      "seoTitle": "Hash-Generator online – SHA-1, SHA-256, SHA-512 kostenlos",
-      "metaDescription": "Erstellen Sie SHA-1-, SHA-256-, SHA-384- und SHA-512-Hashes von Text oder Dateien sofort in Ihrem Browser mit der Web-Crypto-API. Kostenlos und privat.",
-      "h1": "Hash-Generator",
-      "subheading": "Berechnen Sie SHA-1-, SHA-256-, SHA-384- und SHA-512-Hashes von Text oder Dateien — 100% lokal verarbeitet.",
+      "seoTitle": "Hash Generator Online – SHA-1, SHA-256, SHA-512 kostenlos",
+      "metaDescription": "MD5-, SHA-1-, SHA-256-, SHA-384-, SHA-512- und CRC32-Hashes von Text oder Dateien erzeugen, mit einer erwarteten Prüfsumme vergleichen und als Hex oder Base64 kopieren. Kostenlos und privat.",
+      "h1": "Hash Generator",
+      "subheading": "MD5-, SHA- und CRC32-Hashes von Text oder Dateien erzeugen und eine Prüfsumme verifizieren – zu 100 % lokal verarbeitet.",
       "keywords": [
-        "hash generator online",
-        "sha256 generator",
-        "sha1 hash online",
-        "datei hash prüfer",
-        "kostenloser checksum generator"
+        "Hash Generator online",
+        "SHA256 Generator",
+        "SHA1 Hash online",
+        "Datei-Hash prüfen",
+        "Prüfsumme erzeugen kostenlos",
+        "MD5 Generator",
+        "Dateiprüfsumme verifizieren",
+        "CRC32 Rechner"
       ],
       "howTo": [
         {
-          "name": "Text oder Datei wählen",
-          "text": "Wechseln Sie zwischen dem Hashen von Rohtext oder einer hochgeladenen Datei."
+          "name": "Text eingeben oder Datei ablegen",
+          "text": "Tippen Sie Text ein – die Hashes aktualisieren sich beim Tippen – oder legen Sie eine beliebige Datei ab."
         },
         {
-          "name": "Eingabe eingeben",
-          "text": "Geben Sie Text ein oder ziehen Sie eine Datei per Drag-and-Drop."
+          "name": "Algorithmen wählen",
+          "text": "Aktivieren Sie nach Bedarf MD5, SHA-1, SHA-256, SHA-384, SHA-512 und CRC32."
         },
         {
-          "name": "Alle Hashes ansehen",
-          "text": "SHA-1-, SHA-256-, SHA-384- und SHA-512-Digests werden sofort berechnet."
+          "name": "Hashes ablesen",
+          "text": "Jeder vollständige Hash wird angezeigt; wechseln Sie bei Bedarf auf Großbuchstaben oder Base64."
         },
         {
-          "name": "Hash kopieren",
-          "text": "Klicken Sie auf das Kopiersymbol neben einem beliebigen Hash, um ihn in die Zwischenablage zu kopieren."
+          "name": "Download verifizieren",
+          "text": "Fügen Sie die Prüfsumme von der Download-Seite ein, und das Tool sagt Ihnen, ob sie übereinstimmt."
         }
       ],
       "faq": [
         {
-          "question": "Warum wird MD5 nicht angeboten?",
-          "answer": "MD5 ist in der nativen Web Crypto API des Browsers nicht verfügbar und gilt als kryptografisch gebrochen — verwenden Sie stattdessen SHA-256 oder SHA-512."
+          "question": "Warum ist MD5 als veraltet gekennzeichnet?",
+          "answer": "MD5 und SHA-1 sind kryptografisch gebrochen, verwenden Sie sie daher nicht für Sicherheitszwecke. Sie sind enthalten, weil viele Websites für Downloads weiterhin MD5- oder SHA-1-Prüfsummen veröffentlichen."
         },
         {
           "question": "Wird meine Datei auf einen Server hochgeladen?",
-          "answer": "Nein, das Hashing erfolgt vollständig lokal mit der SubtleCrypto.digest-Funktion der Web Crypto API."
+          "answer": "Nein, das Hashen findet vollständig lokal mit der Funktion SubtleCrypto.digest der Web Crypto API statt."
         },
         {
           "question": "Wofür wird ein Hash verwendet?",
-          "answer": "Hashes werden verwendet, um die Dateiintegrität zu überprüfen, Duplikate zu erkennen und feste Fingerabdrücke von Daten zu erstellen."
+          "answer": "Hashes dienen dazu, die Integrität von Dateien zu prüfen, Duplikate zu erkennen und Fingerabdrücke fester Länge von Daten zu erzeugen."
         },
         {
-          "question": "Welche Hashing-Algorithmen stehen zur Verfügung?",
-          "answer": "SHA-1, SHA-256, SHA-384 und SHA-512 werden unterstützt, alle berechnet über die integrierte Web Crypto API des Browsers."
+          "question": "Welche Hash-Algorithmen stehen zur Verfügung?",
+          "answer": "MD5, SHA-1, SHA-256, SHA-384, SHA-512 und CRC32. SHA nutzt die Web Crypto API Ihres Browsers; MD5 und CRC32 berechnet das Tool selbst."
         },
         {
-          "question": "Kann ich eine Datei anstelle von eingegebenem Text hashen?",
-          "answer": "Ja, Sie können eine Datei hochladen, und das Tool berechnet den Hash direkt aus den Datei-Bytes, was nützlich ist, um die Integrität eines Downloads anhand einer veröffentlichten Prüfsumme zu überprüfen."
+          "question": "Kann ich eine Datei statt eingetippten Text hashen?",
+          "answer": "Ja, legen Sie eine Datei ab, und ihre Prüfsumme wird lokal aus den Datei-Bytes berechnet. SHA-Hashing benötigt die gesamte Datei im Arbeitsspeicher, daher sind Dateien über 1 GB auf MD5 und CRC32 beschränkt."
         },
         {
-          "question": "Warum erzeugen zwei leicht unterschiedliche Eingaben völlig unterschiedliche Hashes?",
-          "answer": "Das ist der Lawineneffekt — kryptografische Hash-Funktionen sind so konzipiert, dass selbst eine Änderung um ein einzelnes Zeichen ein vollständig anderes, unvorhersehbares Ergebnis erzeugt."
+          "question": "Warum erzeugen zwei leicht unterschiedliche Eingaben völlig verschiedene Hashes?",
+          "answer": "Das ist der Lawineneffekt – kryptografische Hashfunktionen sind so konstruiert, dass schon die Änderung eines einzigen Zeichens eine völlig andere, unvorhersehbare Ausgabe erzeugt."
         },
         {
           "question": "Kann ich SHA-1 für Sicherheitszwecke verwenden?",
-          "answer": "SHA-1 ist zur Kompatibilität mit älteren Prüfsummen verfügbar, gilt jedoch für sicherheitsrelevante Zwecke als kryptografisch gebrochen; für alles Sicherheitsrelevante wird SHA-256 oder höher empfohlen."
+          "answer": "Nein. SHA-1 ist für die Kompatibilität mit älteren Prüfsummen verfügbar, aber es lassen sich Kollisionen erzeugen – verwenden Sie daher SHA-256 oder stärker."
+        },
+        {
+          "question": "Wie prüfe ich eine heruntergeladene Datei gegen ihre veröffentlichte Prüfsumme?",
+          "answer": "Legen Sie die Datei ab und fügen Sie den veröffentlichten Wert unter „Mit Prüfsumme vergleichen“ ein; stimmt er mit einem der ausgewählten Hashes überein, erscheint eine grüne Meldung „Übereinstimmung“. Hex und Base64 werden beide verstanden."
         }
       ]
     },
     "regex-tester": {
-      "seoTitle": "Regex-Tester online – kostenloser Debugger für reguläre Ausdrücke",
-      "metaDescription": "Testen Sie reguläre Ausdrücke anhand von Beispieltext mit Live-Treffer-Hervorhebung, Flags und Erfassungsgruppen. Kostenlos, sofort und vollständig privat.",
-      "h1": "Regex-Tester",
-      "subheading": "Testen Sie reguläre Ausdrücke mit Live-Treffer-Hervorhebung und Erfassungsgruppen-Prüfung — 100% lokal.",
+      "seoTitle": "Regex Tester Online – Kostenloser Debugger für reguläre Ausdrücke",
+      "metaDescription": "JavaScript-Regex testen mit Live-Hervorhebung, Positionen von Capture-Gruppen und benannten Gruppen, Ersetzen- und Split-Modus, verständlicher Erklärung, Spickzettel und gängigen Mustern. Kostenlos und privat.",
+      "h1": "Regex Tester",
+      "subheading": "Reguläre Ausdrücke testen – mit Live-Hervorhebung, Gruppen, Ersetzen und Split, Muster-Erklärung und einer Bibliothek gängiger Muster – 100 % lokal.",
       "keywords": [
-        "regex tester",
-        "regulärer ausdruck tester online",
-        "kostenloser regex debugger",
-        "regex muster testen",
-        "regex treffer hervorheben"
+        "Regex Tester",
+        "Regulären Ausdruck online testen",
+        "Regex Debugger kostenlos",
+        "Regex-Muster testen",
+        "Regex Treffer hervorheben",
+        "Regex erklären",
+        "Regex Ersetzen testen",
+        "Regex Spickzettel"
       ],
       "howTo": [
         {
           "name": "Muster eingeben",
-          "text": "Geben Sie ein Muster für reguläre Ausdrücke ein."
+          "text": "Tippen Sie es zwischen die Schrägstriche oder laden Sie eines aus „Gängige Muster“."
         },
         {
-          "name": "Flags festlegen",
-          "text": "Aktivieren Sie global, Groß-/Kleinschreibung ignorieren, mehrzeilig oder dot-all Flags."
+          "name": "Flags setzen",
+          "text": "Schalten Sie g, i, m, s, u, y und d um – das Flag „Global“ steuert tatsächlich, ob jeder Treffer gefunden wird."
         },
         {
           "name": "Testtext hinzufügen",
-          "text": "Fügen Sie den Text ein oder geben Sie ihn ein, gegen den Sie das Muster testen möchten."
+          "text": "Treffer werden beim Tippen im Editor hervorgehoben; Capture-Gruppen erscheinen in einer zweiten Farbe."
         },
         {
-          "name": "Treffer prüfen",
-          "text": "Treffer werden live hervorgehoben, mit einer vollständigen Liste der Treffer und Erfassungsgruppen."
+          "name": "Ergebnis erkunden",
+          "text": "Mit „Treffer“, „Ersetzen“, „Split“, „Erklären“ und „Spickzettel“ prüfen Sie Gruppen, sehen eine Ersetzung vorab, teilen Text auf oder lesen, was jeder Teil des Musters bewirkt."
         }
       ],
       "faq": [
         {
           "question": "Welche Regex-Variante wird verwendet?",
-          "answer": "Dieses Tool nutzt die native RegExp-Engine von JavaScript, dieselbe wie in Browsern und Node.js."
+          "answer": "Es wird die native RegExp-Engine von JavaScript genutzt – dieselbe wie in Browsern und Node.js."
         },
         {
-          "question": "Kann ich Capture-Groups sehen?",
-          "answer": "Ja, die Capture-Groups jedes Treffers werden neben dem vollständigen Treffertext aufgelistet."
+          "question": "Kann ich Capture-Gruppen sehen?",
+          "answer": "Ja, die Capture-Gruppen jedes Treffers werden neben dem vollständigen Treffertext aufgelistet."
         },
         {
           "question": "Wird mein Testtext irgendwohin gesendet?",
-          "answer": "Nein, das gesamte Matching läuft sofort und lokal in Ihrem Browser ab."
+          "answer": "Nein, das gesamte Abgleichen geschieht sofort und lokal in Ihrem Browser."
         },
         {
           "question": "Kann ich Regex-Flags wie global oder Groß-/Kleinschreibung ignorieren testen?",
-          "answer": "Ja, über Checkboxen können Sie die Flags global, case-insensitive, multiline und dotAll aktivieren, und die Treffer aktualisieren sich live, während Sie sie ändern."
+          "answer": "Ja. Schalten Sie g, i, m, s, u, y und d um. Ohne g wird nur der erste Treffer gefunden, worauf die Statusleiste hinweist."
         },
         {
-          "question": "Unterstützt es benannte Capture-Groups?",
-          "answer": "Benannte Gruppen werden nicht separat angezeigt — nur nummerierte Capture-Groups werden neben jedem Treffer dargestellt."
+          "question": "Unterstützt es benannte Capture-Gruppen?",
+          "answer": "Ja. Benannte Gruppen werden mit ihrem Namen aufgelistet, bei aktivem d-Flag zusätzlich mit Start- und Endposition jeder Gruppe."
         },
         {
           "question": "Warum funktioniert mein Regex hier, aber nicht in einer anderen Sprache?",
-          "answer": "Dieses Tool nutzt die Regex-Engine von JavaScript, die sich in der Syntax von anderen Sprachen unterscheidet (wie PCRE oder Pythons re-Modul) — Funktionen wie Lookbehind-Unterstützung und Flag-Namen können variieren."
+          "answer": "Dieses Tool nutzt die Regex-Engine von JavaScript. PCRE, Python und andere unterscheiden sich in der Syntax, etwa bei Lookbehind-Unterstützung, possessiven Quantifizierern und der Syntax benannter Gruppen – prüfen Sie daher die Variante Ihrer Sprache."
         },
         {
-          "question": "Kann ich Ersetzungs-Strings testen, nicht nur Treffer?",
-          "answer": "Nein, dieses Tool hebt nur Treffer innerhalb Ihres Testtexts hervor — es enthält keine Suchen-und-Ersetzen-Vorschau."
+          "question": "Kann ich auch Ersetzungsstrings testen, nicht nur Treffer?",
+          "answer": "Ja. Öffnen Sie den Tab „Ersetzen“, geben Sie eine Ersetzung wie $2-$1 oder $<name> ein und sehen Sie das Ergebnis live. Der Tab „Split“ zeigt, wie das Muster den Text aufteilt."
+        },
+        {
+          "question": "Was passiert, wenn mein Muster zu lange braucht?",
+          "answer": "Das Muster läuft in einem Hintergrund-Worker. Dauert es länger als 1,5 Sekunden (meist katastrophales Backtracking durch verschachtelte Quantifizierer wie (a+)+), wird es gestoppt, und Sie erhalten eine klare Meldung statt eines eingefrorenen Tabs."
         }
       ]
     },
     "markdown-previewer": {
-      "seoTitle": "Markdown-Vorschau online – kostenloser Live-Markdown-Editor",
-      "metaDescription": "Schreiben Sie Markdown und sehen Sie sofort eine bereinigte HTML-Live-Vorschau in Ihrem Browser. Kostenlos, privat, unterstützt Überschriften, Listen, Code und Links.",
-      "h1": "Markdown-Vorschau",
-      "subheading": "Schreiben Sie Markdown und sehen Sie die gerenderte HTML-Ausgabe live in der Vorschau — 100% lokal, bereinigtes Rendering.",
+      "seoTitle": "Markdown Previewer Online – Kostenloser Live-Markdown-Editor",
+      "metaDescription": "Markdown schreiben mit Live-Vorschau und synchronem Scrollen. Tabellen, Aufgabenlisten und Codeblöcke im GitHub-Stil, HTML-Quellansicht sowie Export als .md oder .html. Bereinigt und privat.",
+      "h1": "Markdown Previewer",
+      "subheading": "Markdown schreiben mit Live-Vorschau und synchronem Scrollen, Export als .md oder .html – bereinigt und 100 % lokal.",
       "keywords": [
-        "markdown vorschau",
-        "markdown editor online",
-        "live markdown vorschau",
-        "markdown zu html kostenlos",
-        "md editor online"
+        "Markdown Previewer",
+        "Markdown Editor online",
+        "Markdown Live-Vorschau",
+        "Markdown in HTML kostenlos",
+        "MD Editor online",
+        "Markdown in HTML umwandeln",
+        "GFM Vorschau"
       ],
       "howTo": [
         {
           "name": "Markdown schreiben",
-          "text": "Geben Sie Markdown im linken Editorbereich ein oder fügen Sie es ein."
+          "text": "Tippen oder fügen Sie Markdown im linken Editorbereich ein."
         },
         {
           "name": "Live-Vorschau",
-          "text": "Die gerenderte HTML-Vorschau aktualisiert sich sofort rechts."
+          "text": "Die gerenderte HTML-Vorschau aktualisiert sich rechts sofort."
         },
         {
           "name": "Standardsyntax verwenden",
@@ -2594,50 +2627,58 @@
       "faq": [
         {
           "question": "Wird das gerenderte HTML bereinigt?",
-          "answer": "Ja, das gesamte gerenderte HTML wird mit DOMPurify bereinigt, um Script-Injection zu verhindern, bevor es angezeigt wird."
+          "answer": "Ja, sämtliches gerenderte HTML wird vor der Anzeige mit DOMPurify bereinigt, um Skript-Einschleusung zu verhindern."
         },
         {
           "question": "Wird mein Markdown-Inhalt irgendwohin gesendet?",
-          "answer": "Nein, sowohl das Parsen als auch das Rendern finden vollständig in Ihrem Browser statt."
+          "answer": "Nein, Parsen und Rendern finden beide vollständig in Ihrem Browser statt."
         },
         {
           "question": "Welche Markdown-Syntax wird unterstützt?",
-          "answer": "Standard-Markdown: Überschriften, Fett-/Kursivschrift, Listen, Links, Bilder, Blockzitate und Code-Blöcke mit Umrandung."
+          "answer": "Standard-Markdown: Überschriften, fett/kursiv, Listen, Links, Bilder, Zitate und eingezäunte Codeblöcke."
         },
         {
-          "question": "Unterstützt es GitHub-Flavored-Markdown-Funktionen wie Tabellen und Aufgabenlisten?",
-          "answer": "Einfache Tabellen werden korrekt dargestellt, aber Checkboxen von Aufgabenlisten werden nicht speziell gestylt — sie erscheinen als reiner Text statt als interaktive Checkboxen."
+          "question": "Unterstützt es Funktionen von GitHub Flavored Markdown wie Tabellen und Aufgabenlisten?",
+          "answer": "Ja. Tabellen, Aufgabenlisten-Kontrollkästchen, Durchstreichungen und eingezäunte Codeblöcke werden mit passender Darstellung gerendert."
         },
         {
           "question": "Kann ich die gerenderte Ausgabe als HTML exportieren?",
-          "answer": "Nein, es gibt keine HTML-Exportoption — Sie können das rohe Markdown in Ihrem Verlauf speichern, aber keine gerenderte HTML-Datei."
+          "answer": "Ja. „HTML kopieren“ kopiert das Markup, der Tab „HTML“ zeigt es an, und die Schaltfläche „.html“ lädt eine vollständige, gestaltete Webseite herunter. Die Schaltfläche „.md“ lädt Ihr Markdown herunter."
         },
         {
-          "question": "Unterstützt es Syntax-Highlighting in Code-Blöcken?",
-          "answer": "Nein, Code-Blöcke werden mit Monospace-Formatierung dargestellt, aber ohne sprachbewusstes Syntax-Highlighting."
+          "question": "Unterstützt es Syntaxhervorhebung in Codeblöcken?",
+          "answer": "Nein, Codeblöcke werden in Festbreitenschrift dargestellt, aber ohne sprachspezifische Syntaxhervorhebung."
         },
         {
-          "question": "Kann ich rohes HTML innerhalb meines Markdowns schreiben?",
-          "answer": "Ja, Standard-Markdown-Parser lassen rohe HTML-Tags durch, sodass jedes enthaltene HTML zusammen mit Ihrem Markdown-Inhalt gerendert wird."
+          "question": "Kann ich rohes HTML in mein Markdown schreiben?",
+          "answer": "Ja, aber es wird bereinigt: Skripte, Event-Handler und anderes unsicheres Markup werden entfernt, bevor die Vorschau angezeigt wird."
+        },
+        {
+          "question": "Folgt die Vorschau meinem Scrollen?",
+          "answer": "Ja. Bei aktiviertem „Scrollen synchronisieren“ scrollt die Vorschau beim Scrollen im Editor an die entsprechende Position."
         }
       ]
     },
     "csv-to-json": {
-      "seoTitle": "CSV-zu-JSON-Konverter online – kostenlos & bidirektional",
-      "metaDescription": "Wandeln Sie CSV in JSON oder JSON in CSV sofort in Ihrem Browser um. Verarbeitet zitierte Felder und verschachtelte Daten. Kostenlos, privat, kein Upload.",
-      "h1": "CSV-zu-JSON-Konverter",
-      "subheading": "Wandeln Sie sofort zwischen CSV- und JSON-Formaten um, in beide Richtungen — 100% lokal verarbeitet.",
+      "seoTitle": "CSV zu JSON Konverter Online – Kostenlos & in beide Richtungen",
+      "metaDescription": "CSV in JSON und JSON in CSV umwandeln – im Vollbild-Editor mit automatischer Trennzeichenerkennung, Optionen für Kopfzeile und Typen, Trimmen, Umgang mit Null-Werten und Tabellenvorschau. Kostenlos und privat.",
+      "h1": "CSV zu JSON Konverter",
+      "subheading": "CSV in JSON umwandeln und zurück – mit Trennzeichen- und Typerkennung sowie Tabellenvorschau – 100 % lokal.",
       "keywords": [
-        "csv zu json",
-        "json zu csv konverter",
-        "csv online umwandeln",
-        "kostenloser csv parser",
-        "csv json konverter"
+        "CSV in JSON umwandeln",
+        "JSON in CSV Konverter",
+        "CSV online konvertieren",
+        "CSV Parser kostenlos",
+        "CSV JSON Konverter",
+        "in JSON konvertieren",
+        "JSON Konverter",
+        "TSV in JSON umwandeln",
+        "CSV Parser online"
       ],
       "howTo": [
         {
           "name": "Richtung wählen",
-          "text": "Wählen Sie CSV → JSON oder JSON → CSV."
+          "text": "Wählen Sie „CSV → JSON“ oder „JSON → CSV“."
         },
         {
           "name": "Daten einfügen",
@@ -2645,41 +2686,41 @@
         },
         {
           "name": "Umwandlung ansehen",
-          "text": "Die umgewandelte Ausgabe aktualisiert sich sofort während der Eingabe."
+          "text": "Die umgewandelte Ausgabe aktualisiert sich sofort beim Tippen."
         },
         {
           "name": "Ergebnis kopieren",
-          "text": "Klicken Sie auf Kopieren, um die umgewandelte Ausgabe in die Zwischenablage zu kopieren."
+          "text": "Klicken Sie auf „Kopieren“, um die umgewandelte Ausgabe in die Zwischenablage zu übernehmen."
         }
       ],
       "faq": [
         {
-          "question": "Werden zitierte CSV-Felder mit Kommas korrekt verarbeitet?",
-          "answer": "Ja, zitierte Felder, die Kommas, Anführungszeichen oder Zeilenumbrüche enthalten, werden korrekt geparst."
+          "question": "Kommt das Tool mit CSV-Feldern in Anführungszeichen zurecht, die Kommas enthalten?",
+          "answer": "Ja. Es verwendet einen vollständigen RFC-4180-Parser, sodass Felder in Anführungszeichen mit Kommas, verdoppelten Anführungszeichen und sogar Zeilenumbrüchen in einer Zelle bleiben."
         },
         {
           "question": "Welche JSON-Struktur wird für JSON zu CSV erwartet?",
-          "answer": "Ein Array flacher Objekte funktioniert am besten; verschachtelte Objekte werden automatisch mit Punktnotation abgeflacht."
+          "answer": "Ein Array von Objekten funktioniert am besten; verschachtelte Objekte werden mit Punktnotation abgeflacht."
         },
         {
           "question": "Werden meine Daten irgendwohin hochgeladen?",
-          "answer": "Nein, das gesamte Parsen und Konvertieren erfolgt lokal in Ihrem Browser."
+          "answer": "Nein, das gesamte Parsen und Umwandeln findet lokal in Ihrem Browser statt."
         },
         {
-          "question": "Kann ich statt eines Kommas ein anderes Trennzeichen wählen?",
-          "answer": "Nein, das Parsen ist fest auf kommagetrennte Werte eingestellt — semikolon- oder tabgetrennte Dateien werden so nicht korrekt geparst."
+          "question": "Kann ich ein eigenes Trennzeichen statt des Kommas wählen?",
+          "answer": "Ja. Das Trennzeichen wird automatisch erkannt (Komma, Semikolon, Tab oder senkrechter Strich), und Sie können auch selbst eines auswählen."
         },
         {
           "question": "Erkennt es Spaltenüberschriften automatisch?",
-          "answer": "Ja, die erste Zeile wird immer als Spaltenüberschrift behandelt — es gibt keine Option, alle Zeilen stattdessen als Daten zu behandeln."
+          "answer": "Standardmäßig wird die erste Zeile als Kopfzeile verwendet. Deaktivieren Sie „Kopfzeile“, um jede Zeile als Daten zu behandeln, mit Spalten namens column_1, column_2 usw. Leere oder doppelte Überschriften werden umbenannt, und Sie werden darauf hingewiesen."
         },
         {
-          "question": "Was passiert, wenn Zeilen eine unterschiedliche Anzahl von Spalten haben?",
-          "answer": "Zeilen mit weniger Spalten als die Kopfzeile haben fehlende Felder in den resultierenden JSON-Objekten, und zusätzliche Spalten über die Kopfzeile hinaus können verworfen oder falsch zugeordnet werden."
+          "question": "Was passiert, wenn Zeilen unterschiedlich viele Spalten haben?",
+          "answer": "Zu kurze Zeilen werden mit leeren Werten aufgefüllt, und die Statusleiste warnt, wie viele Zeilen eine abweichende Anzahl von Feldern hatten."
         },
         {
           "question": "Werden Zahlen und Booleans in die passenden JSON-Typen umgewandelt?",
-          "answer": "Prüfen Sie die Ausgabe sorgfältig — CSV-Werte sind von Natur aus Text, und ob zahlenähnliche Strings in JSON-Zahlen umgewandelt werden, hängt von der Typ-Erkennung des Parsers ab, nicht von einer Einstellung, die Sie steuern können."
+          "answer": "Ja, wenn „Typen erkennen“ aktiv ist: 12 wird zur Zahl, true oder false werden zu Booleans. Werte mit führenden Nullen (007) und Zahlen mit mehr als 15 Stellen bleiben Text, damit nichts verloren geht. Schalten Sie die Option aus, um alles als Strings zu behalten."
         }
       ],
       "comparisonTable": {
@@ -2697,7 +2738,7 @@
             ]
           },
           {
-            "label": "Am besten geeignet für",
+            "label": "Ideal für",
             "values": [
               "Tabellenkalkulationen, tabellarische Daten",
               "APIs, Konfigurationsdateien, verschachtelte Daten"
@@ -2714,23 +2755,24 @@
             "label": "Typische Verwendung",
             "values": [
               "Excel, Datenbank-Exporte",
-              "Webanwendungen, Datenaustausch"
+              "Web-Apps, Datenaustausch"
             ]
           }
         ]
       }
     },
     "lorem-ipsum-generator": {
-      "seoTitle": "Lorem-Ipsum-Generator online – kostenloser Platzhaltertext",
-      "metaDescription": "Erstellen Sie Lorem-Ipsum-Platzhaltertext nach Wörtern, Sätzen oder Absätzen, sofort in Ihrem Browser. Kostenlos, schnell und vollständig anpassbar.",
+      "seoTitle": "Lorem-Ipsum-Generator Online – Kostenloser Platzhaltertext",
+      "metaDescription": "Lorem Ipsum nach Absätzen, Sätzen oder Wörtern (bis zu 5.000) erzeugen – als reinen Text, HTML-Absätze oder Liste, mit Wort- und Zeichenzähler. Kostenlos und privat.",
       "h1": "Lorem-Ipsum-Generator",
-      "subheading": "Erstellen Sie Lorem-Ipsum-Platzhaltertext nach Wörtern, Sätzen oder Absätzen — sofort, 100% lokal.",
+      "subheading": "Lorem Ipsum nach Absätzen, Sätzen oder Wörtern erzeugen – als Text, HTML oder Liste.",
       "keywords": [
-        "lorem ipsum generator",
-        "platzhaltertext generator",
-        "dummy text generator online",
-        "lorem ipsum kostenlos",
-        "füllertext generator"
+        "Lorem Ipsum Generator",
+        "Platzhaltertext Generator",
+        "Blindtext Generator online",
+        "Lorem Ipsum kostenlos",
+        "Füllertext erzeugen",
+        "Lorem Ipsum HTML"
       ],
       "howTo": [
         {
@@ -2739,45 +2781,45 @@
         },
         {
           "name": "Anzahl festlegen",
-          "text": "Geben Sie ein, wie viele Einheiten generiert werden sollen."
+          "text": "Geben Sie ein, wie viele Einheiten erzeugt werden sollen."
         },
         {
-          "name": "Generieren",
-          "text": "Klicken Sie auf Generieren, um neuen Platzhaltertext zu erstellen."
+          "name": "Erzeugen",
+          "text": "Klicken Sie auf „Erzeugen“, um frischen Platzhaltertext zu erstellen."
         },
         {
           "name": "Text kopieren",
-          "text": "Klicken Sie auf Kopieren, um den generierten Text in die Zwischenablage zu kopieren."
+          "text": "Klicken Sie auf „Kopieren“, um den erzeugten Text in die Zwischenablage zu übernehmen."
         }
       ],
       "faq": [
         {
           "question": "Wofür wird Lorem Ipsum verwendet?",
-          "answer": "Lorem Ipsum ist ein standardisierter Platzhaltertext, den Designer und Entwickler nutzen, um Layouts zu prüfen, bevor der echte Inhalt fertig ist."
+          "answer": "Lorem Ipsum ist ein gängiger Platzhaltertext, mit dem Designer und Entwickler Layouts ansehen, bevor die echten Inhalte fertig sind."
         },
         {
-          "question": "Kann ich mit dem klassischen \"Lorem ipsum dolor sit amet\" beginnen?",
-          "answer": "Ja, aktivieren Sie die Option \"Mit Lorem ipsum… beginnen\", um mit dem traditionellen Anfang zu starten."
+          "question": "Kann ich mit dem klassischen „Lorem ipsum dolor sit amet“ beginnen?",
+          "answer": "Ja, aktivieren Sie die Option „Mit Lorem ipsum beginnen …“, um mit dem traditionellen Anfang zu starten."
         },
         {
-          "question": "Gibt es eine Grenze, wie viel Text ich generieren kann?",
-          "answer": "Sie können pro Klick bis zu 100 Einheiten (Wörter, Sätze oder Absätze) generieren."
+          "question": "Gibt es eine Obergrenze für die Textmenge?",
+          "answer": "Bis zu 100 Absätze, 500 Sätze oder 5.000 Wörter pro Klick."
         },
         {
-          "question": "Kann ich HTML-umschlossene Absätze generieren?",
-          "answer": "Nein, die Ausgabe besteht aus reinen Textabsätzen — es gibt keine Option, sie automatisch in `<p>`-Tags einzuschließen."
+          "question": "Kann ich Absätze mit HTML-Umrandung erzeugen?",
+          "answer": "Ja. Wählen Sie „HTML <p>-Tags“ für ein Absatz-Tag pro Block oder „HTML-Liste“ für ein <ul> mit je einem <li> pro Eintrag."
         },
         {
-          "question": "Bleibt die Wortanzahl exakt, wenn ich nach Absatz generiere?",
-          "answer": "Die Wortanzahl ist bei der Generierung nach Absatz oder Satz ungefähr, da die Absatzstruktur Vorrang vor dem Erreichen einer exakten Wortgesamtzahl hat."
+          "question": "Bleibt die Wortzahl exakt, wenn ich nach Absätzen erzeuge?",
+          "answer": "Absätze haben eine natürliche Länge (etwa vier bis sieben Sätze), daher ist ihre Wortzahl nur ungefähr. Erzeugen Sie nach Wörtern, um eine exakte Anzahl zu erhalten – die Statusleiste zeigt immer die tatsächlichen Summen."
         },
         {
-          "question": "Ist der generierte Text immer auf Latein?",
-          "answer": "Ja, dieses Tool generiert klassischen lateinisch anmutenden Lorem-Ipsum-Text — es gibt keinen alternativen Platzhaltertextstil oder eine Sprachoption."
+          "question": "Ist der erzeugte Text immer lateinisch?",
+          "answer": "Ja, es wird klassischer Lorem-Ipsum-Text im lateinischen Stil erzeugt – einen anderen Platzhaltertext-Stil oder eine Sprachoption gibt es nicht."
         },
         {
-          "question": "Kann ich statt vollständiger Absätze eine einzelne überschriftartige Phrase generieren?",
-          "answer": "Stellen Sie die Anzahl auf eine kleine Wortzahl ein, um eine kurze, für eine Überschrift geeignete Phrase zu erhalten, da es keinen speziellen Überschriftenmodus gibt."
+          "question": "Kann ich statt ganzer Absätze eine einzelne überschriftartige Wortgruppe erzeugen?",
+          "answer": "Stellen Sie die Anzahl auf wenige Wörter ein, um eine kurze, als Überschrift geeignete Wortgruppe zu erhalten, da es keinen eigenen Überschriften-Modus gibt."
         }
       ]
     },
@@ -3762,62 +3804,69 @@
       ]
     },
     "text-diff-checker": {
-      "seoTitle": "Text-Diff-Checker online – Zwei Texte kostenlos vergleichen",
-      "metaDescription": "Vergleichen Sie zwei Textblöcke und sehen Sie genau, was zeilenweise hinzugefügt oder entfernt wurde — 100% lokal in Ihrem Browser verarbeitet.",
+      "seoTitle": "Text-Diff-Checker Online – Zwei Texte kostenlos vergleichen",
+      "metaDescription": "Zwei Texte nebeneinander oder inline vergleichen – mit wortgenauer Hervorhebung, Optionen zum Ignorieren von Leerraum und Groß-/Kleinschreibung, Export als Unified Patch und Datei-Upload. Kostenlos und privat.",
       "h1": "Text-Diff-Checker",
-      "subheading": "Vergleichen Sie zwei Textblöcke und sehen Sie genau, was sich zeilenweise geändert hat.",
+      "subheading": "Zwei Texte nebeneinander oder inline vergleichen – mit wortgenauer Hervorhebung und Patch-Export – 100 % lokal.",
       "keywords": [
-        "text diff checker",
-        "text online vergleichen",
-        "diff tool",
-        "textvergleich tool"
+        "Text Diff Checker",
+        "Texte online vergleichen",
+        "Diff Tool",
+        "Textvergleich Tool",
+        "Diff Checker",
+        "Textdateien vergleichen",
+        "Unified Diff"
       ],
       "howTo": [
         {
-          "name": "Originaltext einfügen",
-          "text": "Geben Sie die Originalversion in das erste Feld ein."
+          "name": "Beide Texte einfügen oder öffnen",
+          "text": "Tippen oder fügen Sie auf beiden Seiten Text ein, oder nutzen Sie „Original öffnen“ und „Geänderte Version öffnen“."
         },
         {
-          "name": "Geänderten Text einfügen",
-          "text": "Geben Sie die aktualisierte Version in das zweite Feld ein."
+          "name": "Vergleichsart wählen",
+          "text": "Wechseln Sie zwischen „Nebeneinander“ und „Inline“ und aktivieren Sie bei Bedarf „Leerraum ignorieren“ oder „Groß-/Kleinschreibung ignorieren“."
         },
         {
-          "name": "Auf Vergleichen klicken",
-          "text": "Sehen Sie hinzugefügte und entfernte Zeilen sofort hervorgehoben."
+          "name": "Änderungen prüfen",
+          "text": "Hinzugefügte und entfernte Zeilen sind farbig markiert, geänderte Wörter werden innerhalb jeder Zeile hervorgehoben, und die Statusleiste zählt sie."
         },
         {
-          "name": "Zusammenfassung prüfen",
-          "text": "Sehen Sie die Gesamtzahl hinzugefügter und entfernter Zeilen auf einen Blick."
+          "name": "Exportieren",
+          "text": "Kopieren oder laden Sie die Unterschiede als standardmäßigen Unified Patch herunter."
         }
       ],
       "faq": [
         {
           "question": "Wie wird der Unterschied berechnet?",
-          "answer": "Das Tool vergleicht die beiden Texte Zeile für Zeile und hebt hinzugefügte (grün) oder entfernte (rot) Zeilen hervor."
+          "answer": "Die Texte werden zeilenweise mit einem Myers-Diff verglichen, anschließend werden geänderte Zeilen Wort für Wort verglichen, sodass Sie genau sehen, was sich innerhalb einer Zeile verändert hat."
         },
         {
           "question": "Kann es Code oder JSON vergleichen?",
-          "answer": "Ja, es funktioniert mit jedem Klartext, einschließlich Code, JSON oder Konfigurationsdateien."
+          "answer": "Ja, es funktioniert mit jedem reinen Text, einschließlich Code, JSON oder Konfigurationsdateien."
         },
         {
           "question": "Wird mein Text irgendwohin hochgeladen?",
-          "answer": "Nein, der Vergleich läuft vollständig in Ihrem Browser — es wird nichts an einen Server gesendet."
+          "answer": "Nein, der Vergleich läuft vollständig in Ihrem Browser – es wird nichts an einen Server gesendet."
         },
         {
-          "question": "Kann ich zwischen Zeilen- und Wortvergleich wechseln?",
-          "answer": "Nein, der Vergleich erfolgt ausschließlich auf Zeilenebene — es gibt keinen Wort- oder Zeichenvergleichsmodus."
+          "question": "Kann ich zwischen zeilen- und wortgenauem Diff wechseln?",
+          "answer": "Der Editor hebt innerhalb einer geänderten Zeile immer die geänderten Wörter hervor. Mit „Nebeneinander“ oder „Inline“ ändern Sie das Layout."
         },
         {
-          "question": "Werden Leerzeichenunterschiede ignoriert?",
-          "answer": "Nein, es gibt keine Option, Leerzeichen zu ignorieren — Unterschiede bei Abständen oder Einrückungen werden als Änderungen angezeigt."
+          "question": "Ignoriert es Leerraum-Unterschiede?",
+          "answer": "Ja – aktivieren Sie „Leerraum ignorieren“ (und „Groß-/Kleinschreibung ignorieren“), dann werden diese Änderungen nicht mehr gezählt oder angezeigt."
         },
         {
-          "question": "Kann ich die Unterschiede als vereinheitlichten Patch sehen?",
-          "answer": "Nein, die Ergebnisse werden als hervorgehobene Side-by-Side- oder Inline-Zeilenliste angezeigt, nicht im unified-diff/Patch-Textformat."
+          "question": "Kann ich den Diff als Unified Patch sehen?",
+          "answer": "Ja. „Patch kopieren“ oder „Patch“ lädt einen standardmäßigen Unified Diff mit drei Kontextzeilen herunter, bereit für git apply oder patch."
         },
         {
-          "question": "Kann es sehr große Textblöcke verarbeiten?",
-          "answer": "Ja, aber sehr große Eingaben (viele Tausend Zeilen) können länger zur Berechnung und Darstellung benötigen, da der Vergleich vollständig in Ihrem Browser läuft."
+          "question": "Kommt es mit sehr großen Textblöcken zurecht?",
+          "answer": "Ja. Es nutzt einen effizienten Diff-Algorithmus statt einer vollständigen Vergleichstabelle, sodass Zehntausende Zeilen kein Problem sind – der Editor selbst kann bei sehr großen Dateien allerdings langsamer werden."
+        },
+        {
+          "question": "Kann ich den Text nach dem Vergleich bearbeiten?",
+          "answer": "Ja. Beide Seiten bleiben bearbeitbar, und der Vergleich aktualisiert sich beim Tippen. „Tauschen“ vertauscht die beiden Seiten."
         }
       ]
     },
@@ -3999,122 +4048,135 @@
       ]
     },
     "password-generator": {
-      "seoTitle": "Passwort-Generator online – kostenlos, sicher & sofort",
-      "metaDescription": "Erstellen Sie starke, zufällige Passwörter mit individueller Länge und Zeichensätzen, direkt in Ihrem Browser. Kostenlos und privat.",
+      "seoTitle": "Passwort-Generator Online – Kostenlos, sicher & sofort",
+      "metaDescription": "Starke Zufallspasswörter oder Passphrasen aus der EFF-Wortliste erzeugen – mit echter Entropie und Schätzung der Knackzeit, Länge bis 128, Ausschluss verwechselbarer Zeichen und Stapelmodus. Privat – nichts wird gespeichert.",
       "h1": "Passwort-Generator",
-      "subheading": "Erstellen Sie starke, zufällige Passwörter mit individueller Länge und Zeichenoptionen — sicher in Ihrem Browser generiert.",
+      "subheading": "Erstellen Sie starke Passwörter und Passphrasen mit Live-Entropie und Knackzeit-Schätzung – sicher in Ihrem Browser erzeugt und nie gespeichert.",
       "keywords": [
-        "passwort generator",
-        "zufälliges passwort generator",
-        "sicheres passwort erstellen",
-        "passwort generator online"
+        "Passwort Generator",
+        "Zufälliges Passwort erstellen",
+        "Starkes Passwort generieren",
+        "Sicheres Passwort erstellen",
+        "Passphrase Generator",
+        "Passwort Entropie"
       ],
       "howTo": [
         {
-          "name": "Länge wählen",
-          "text": "Legen Sie die Passwortlänge zwischen 4 und 128 Zeichen fest."
+          "name": "Passwort oder Passphrase wählen",
+          "text": "Wählen Sie ein Passwort aus zufälligen Zeichen oder eine einprägsame Passphrase aus Wörtern."
         },
         {
-          "name": "Zeichentypen auswählen",
-          "text": "Aktivieren Sie Großbuchstaben, Kleinbuchstaben, Zahlen und Sonderzeichen."
+          "name": "Optionen festlegen",
+          "text": "Wählen Sie Länge und Zeichenarten, vermeiden Sie verwechselbare Zeichen oder legen Sie Wortanzahl und Trennzeichen fest."
         },
         {
-          "name": "Generieren",
-          "text": "Klicken Sie auf Generieren, um ein neues zufälliges Passwort zu erstellen."
+          "name": "Stärke prüfen",
+          "text": "Sehen Sie die Entropie in Bit und eine Schätzung, wie lange ein schneller Angriff dauern würde."
         },
         {
           "name": "Kopieren",
-          "text": "Klicken Sie auf das Kopiersymbol, um das Passwort in die Zwischenablage zu kopieren."
+          "text": "Kopieren Sie ein Ergebnis oder erzeugen Sie bis zu 20 auf einmal und kopieren Sie alle."
         }
       ],
       "faq": [
         {
-          "question": "Ist dieser Passwortgenerator sicher?",
+          "question": "Ist dieser Passwort-Generator sicher?",
           "answer": "Ja. Passwörter werden mit dem kryptografisch sicheren Zufallszahlengenerator Ihres Browsers (crypto.getRandomValues) erzeugt, nicht mit einer schwächeren Pseudozufallsfunktion."
         },
         {
-          "question": "Werden meine generierten Passwörter irgendwohin gesendet?",
-          "answer": "Nein. Alles läuft lokal in Ihrem Browser ab — Passwörter werden niemals übertragen oder auf einem Server gespeichert."
+          "question": "Werden meine erzeugten Passwörter irgendwohin gesendet?",
+          "answer": "Nein. Alles geschieht lokal in Ihrem Browser – Passwörter werden nie übertragen oder auf einem Server gespeichert."
         },
         {
           "question": "Was macht ein Passwort stark?",
-          "answer": "Die Länge zählt am meisten. Ein längeres Passwort mit einer Mischung aus Groß- und Kleinbuchstaben, Zahlen und Symbolen ist deutlich schwerer zu knacken als ein kurzes, einfaches."
+          "answer": "Unvorhersehbarkeit. Die Entropie-Angabe misst sie: Jedes zusätzliche Zeichen, bei einer Passphrase jedes zusätzliche Wort, vervielfacht den Aufwand eines Angreifers. Streben Sie für wichtige Konten 80 Bit oder mehr an."
         },
         {
           "question": "Kann ich mehrdeutige Zeichen wie 0, O, l und 1 ausschließen?",
-          "answer": "Nein, es gibt keine Option, um optisch ähnliche Zeichen auszuschließen — alle Zeichen aus Ihren gewählten Kategorien (Großbuchstaben, Kleinbuchstaben, Zahlen, Symbole) sind gleichermaßen möglich."
+          "answer": "Ja. Aktivieren Sie „Verwechselbare Zeichen vermeiden“, um 0 O 1 l I und ähnliche Zeichen wegzulassen, und Sie können eigene erlaubte Sonderzeichen eintippen."
         },
         {
-          "question": "Was ist die maximale Passwortlänge, die ich generieren kann?",
-          "answer": "Sie können Passwörter deutlich über den üblichen Anforderungen hinaus generieren, allerdings begrenzen die meisten Websites die akzeptierte Länge — prüfen Sie also das Limit des Zielsystems, bevor Sie ein sehr langes Passwort verwenden."
+          "question": "Welche maximale Passwortlänge kann ich erzeugen?",
+          "answer": "Sie können Passwörter weit über die üblichen Anforderungen hinaus erzeugen. Die meisten Websites begrenzen jedoch die akzeptierte Länge, prüfen Sie daher das Limit des Zielsystems, bevor Sie ein sehr langes verwenden."
         },
         {
-          "question": "Wird garantiert, dass mindestens ein Zeichen aus jeder gewählten Kategorie enthalten ist?",
-          "answer": "Nein, Zeichen werden gleichmäßig zufällig aus der kombinierten Menge der gewählten Kategorien ausgewählt, sodass es statistisch wahrscheinlich, aber nicht garantiert ist, dass jede Kategorie in einem gegebenen Passwort vorkommt."
+          "question": "Ist garantiert, dass aus jeder gewählten Kategorie mindestens ein Zeichen vorkommt?",
+          "answer": "Ja. Jede ausgewählte Zeichenart kommt garantiert mindestens einmal vor, und die Zeichen werden anschließend gemischt, sodass die Positionen unvorhersehbar sind."
         },
         {
-          "question": "Ist es besser, eine lange Passphrase oder ein zufälliges Passwort zu verwenden?",
-          "answer": "Beides kann stark sein — ein langes zufälliges Passwort bietet mehr Entropie pro Zeichen, während eine Passphrase aus mehreren zufälligen Wörtern leichter zu tippen und zu merken ist; dieses Tool ist für den Ansatz mit zufälligen Zeichen konzipiert."
+          "question": "Ist eine lange Passphrase oder ein zufälliges Passwort besser?",
+          "answer": "Beides kann stark sein – ein langes Zufallspasswort enthält mehr Entropie pro Zeichen, während eine Passphrase aus mehreren zufälligen Wörtern leichter zu tippen und zu merken ist; dieses Tool ist auf den Ansatz mit zufälligen Zeichen ausgelegt."
+        },
+        {
+          "question": "Sind die Passwörter verzerrt oder werden sie gespeichert?",
+          "answer": "Nein. Sie nutzen den sicheren Zufallsgenerator Ihres Browsers mit Rejection Sampling, sodass jedes Zeichen gleich wahrscheinlich ist, und sie werden weder in Ihrem Verlauf gespeichert noch irgendwohin gesendet."
+        },
+        {
+          "question": "Was ist der Passphrasen-Modus?",
+          "answer": "Er verbindet zufällige Wörter aus der kurzen EFF-Wortliste (1.296 Wörter). Jedes Wort bringt etwa 10 Bit, sodass eine Passphrase mit 6 Wörtern rund 62 Bit hat und sich leicht merken und tippen lässt."
         }
       ]
     },
     "text-case-converter": {
-      "seoTitle": "Text-Groß-/Kleinschreibung-Konverter – GROSSBUCHSTABEN, Kleinbuchstaben & mehr",
-      "metaDescription": "Konvertieren Sie Text zwischen GROSSBUCHSTABEN, Kleinbuchstaben, Titelschreibung, camelCase, snake_case und mehr — sofort in Ihrem Browser.",
-      "h1": "Text-Groß-/Kleinschreibung-Konverter",
-      "subheading": "Konvertieren Sie Text zwischen GROSSBUCHSTABEN, Kleinbuchstaben, Titelschreibung, camelCase, snake_case und weiteren Formaten sofort.",
+      "seoTitle": "Groß-/Kleinschreibung umwandeln – GROSSBUCHSTABEN, Kleinbuchstaben, Title Case & mehr",
+      "metaDescription": "Text in GROSS, klein, Capitalized, Satzanfang, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case, path/case und mehr umwandeln – live, Unicode-fähig, zeilenweise. Kostenlos und privat.",
+      "h1": "Groß-/Kleinschreibung umwandeln",
+      "subheading": "Text live zwischen 14 Schreibweisen umwandeln – Unicode-fähig, zeilenweise und ideal für Bezeichner.",
       "keywords": [
-        "text groß klein konverter",
-        "großbuchstaben umwandeln",
-        "camel case konverter",
-        "titelschreibung konverter"
+        "Groß- und Kleinschreibung umwandeln",
+        "Großbuchstaben in Kleinbuchstaben umwandeln",
+        "camelCase Konverter",
+        "Title Case Konverter",
+        "Constant Case",
+        "PascalCase Konverter",
+        "Text in Großbuchstaben umwandeln"
       ],
       "howTo": [
         {
           "name": "Text einfügen",
-          "text": "Geben Sie den Text ein oder fügen Sie ihn ein, den Sie umwandeln möchten."
+          "text": "Tippen oder fügen Sie den Text ein, den Sie umwandeln möchten."
         },
         {
-          "name": "Format wählen",
-          "text": "Klicken Sie auf einen beliebigen Format-Button — GROSSBUCHSTABEN, Kleinbuchstaben, camelCase und mehr."
+          "name": "Schreibweise wählen",
+          "text": "Klicken Sie auf eine beliebige Schaltfläche – GROSSBUCHSTABEN, Kleinbuchstaben, Title Case, camelCase und mehr."
         },
         {
           "name": "Ergebnis ansehen",
           "text": "Der umgewandelte Text erscheint sofort darunter."
         },
         {
-          "name": "Ergebnis kopieren",
-          "text": "Klicken Sie auf das Kopiersymbol, um den umgewandelten Text zu kopieren."
+          "name": "Ausgabe kopieren",
+          "text": "Klicken Sie auf das Kopieren-Symbol, um den umgewandelten Text zu kopieren."
         }
       ],
       "faq": [
         {
           "question": "Welche Schreibweisen werden unterstützt?",
-          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case und kebab-case."
+          "answer": "UPPER CASE, lower case, Capitalized Case, Sentence case, aLtErNaTiNg, iNVERSE, camelCase, PascalCase, snake_case, CONSTANT_CASE, kebab-case, Train-Case, dot.case und path/case."
         },
         {
-          "question": "Wird mein Originaltext verändert?",
-          "answer": "Nein, Ihre Eingabe bleibt unverändert — das umgewandelte Ergebnis wird separat angezeigt, sodass Sie vergleichen oder erneut umwandeln können."
+          "question": "Verändert das meinen Originaltext?",
+          "answer": "Nein. Ihre Eingabe bleibt links stehen, und der umgewandelte Text erscheint rechts und aktualisiert sich live, wenn Sie die Schreibweise wechseln."
         },
         {
           "question": "Gibt es eine Längenbegrenzung?",
-          "answer": "Keine praktische Begrenzung — die Umwandlung erfolgt sofort in Ihrem Browser, auch bei langem Text."
+          "answer": "Keine praktische – die Umwandlung geschieht sofort in Ihrem Browser, auch bei langen Texten."
         },
         {
-          "question": "Wie werden Wortgrenzen bei der Umwandlung von camelCase oder snake_case erkannt?",
-          "answer": "Wortgrenzen werden anhand von Groß-/Kleinschreibungswechseln, Unterstrichen, Bindestrichen und Leerzeichen erkannt, bevor der Text im Zielformat neu zusammengesetzt wird."
+          "question": "Wie legt das Tool Wortgrenzen fest, wenn von camelCase oder snake_case umgewandelt wird?",
+          "answer": "Es trennt an Leerzeichen, Satzzeichen, Unterstrichen und Bindestrichen, bei Wechseln von Klein- zu Großbuchstaben sowie zwischen einem Akronym und dem nächsten Wort – aus getHTTPResponse wird also get, HTTP, Response."
         },
         {
-          "question": "Bleiben Akronyme bei der Umwandlung der Schreibweise erhalten?",
-          "answer": "Akronyme werden wie jede andere Buchstabenfolge behandelt und an das Zielformat angepasst (z. B. Kleinschreibung bei kebab-case), nicht unverändert beibehalten."
+          "question": "Bleiben Akronyme bei der Umwandlung erhalten?",
+          "answer": "In Bezeichner-Stilen wird ein Akronym wie ein Wort behandelt, sodass aus HTTP in snake_case http und in PascalCase Http wird. UPPER CASE und CONSTANT_CASE behalten es in Großbuchstaben."
         },
         {
           "question": "Kann ich mehrere Zeilen auf einmal umwandeln?",
-          "answer": "Ja, der gesamte eingefügte Textblock wird als eine Einheit umgewandelt, sodass mehrere Zeilen gemeinsam konvertiert werden."
+          "answer": "Ja. Bezeichner-Stile (camelCase, snake_case usw.) wandeln jede Zeile einzeln um, und mit „Jede Zeile einzeln“ können Sie das auch für die anderen Stile aktivieren."
         },
         {
-          "question": "Welche Schreibweisen werden unterstützt?",
-          "answer": "UPPERCASE, lowercase, Title Case, Sentence case, camelCase, PascalCase, snake_case und kebab-case sind alle verfügbar."
+          "question": "Funktioniert es mit Buchstaben mit Akzenten und nicht-lateinischen Buchstaben?",
+          "answer": "Ja. Die Umwandlung folgt den vollständigen Unicode-Regeln, sodass é, ñ, ü sowie kyrillische oder griechische Buchstaben korrekt umgewandelt werden."
         }
       ]
     },
@@ -4177,14 +4239,16 @@
       ]
     },
     "zero-width-remover": {
-      "seoTitle": "Nullbreite-Leerzeichen & unsichtbare Zeichen entfernen – kostenlos online",
-      "metaDescription": "Finden und entfernen Sie Nullbreite-Leerzeichen und andere unsichtbare Unicode-Zeichen in eingefügtem Text, komplett in Ihrem Browser.",
-      "h1": "Nullbreite-Leerzeichen- & Unsichtbare-Zeichen-Bereiniger",
-      "subheading": "Finden und entfernen Sie Nullbreite-Leerzeichen und andere unsichtbare Unicode-Zeichen in Ihrem Text.",
+      "seoTitle": "Zero-Width-Space & unsichtbare Zeichen entfernen – Kostenlos online",
+      "metaDescription": "Zero-Width-Spaces, Bidi-Markierungen, weiche Trennstriche, Tag-Zeichen und andere unsichtbare Unicode-Zeichen finden und entfernen, genau sehen, wo sie sitzen, und Emojis sowie persischen Text unversehrt lassen. Kostenlos und privat.",
+      "h1": "Zero-Width-Space & unsichtbare Zeichen bereinigen",
+      "subheading": "Unsichtbare Unicode-Zeichen finden und entfernen, sehen, wo sie sich verstecken, und Emojis sowie nicht-lateinischen Text unversehrt lassen.",
       "keywords": [
-        "nullbreite leerzeichen entfernen",
-        "verstecktes unicode bereinigen",
-        "unsichtbare zeichen entferner"
+        "Zero-Width-Space entfernen",
+        "Versteckte Unicode-Zeichen bereinigen",
+        "Unsichtbare Zeichen entfernen",
+        "Versteckte Zeichen finden",
+        "Bidi-Zeichen entfernen"
       ],
       "howTo": [
         {
@@ -4192,42 +4256,46 @@
           "text": "Fügen Sie Text ein, der versteckte oder unsichtbare Zeichen enthalten könnte."
         },
         {
-          "name": "Ergebnis prüfen",
-          "text": "Sehen Sie, wie viele unsichtbare Zeichen gefunden wurden und wo."
+          "name": "Fundstellen prüfen",
+          "text": "Sehen Sie, wie viele unsichtbare Zeichen erkannt wurden und wo."
         },
         {
           "name": "Bereinigten Text kopieren",
-          "text": "Kopieren Sie den bereinigten Text ohne unsichtbare Zeichen."
+          "text": "Kopieren Sie den bereinigten Text, aus dem alle unsichtbaren Zeichen entfernt wurden."
         }
       ],
       "faq": [
         {
           "question": "Woher kommen unsichtbare Zeichen?",
-          "answer": "Sie werden oft versehentlich eingefügt, wenn Text aus Textverarbeitungsprogrammen kopiert wird, bei Tracking-Links oder in Messaging-Apps."
+          "answer": "Sie schleichen sich oft unbeabsichtigt ein, wenn Text aus Textverarbeitungen, Tracking-Links oder Messengern kopiert wird."
         },
         {
           "question": "Welche Zeichen entfernt dieses Tool?",
-          "answer": "Zero-Width-Spaces, Zero-Width-Joiner/Non-Joiner, Byte-Order-Marks, Word-Joiner, weiche Trennzeichen und vereinzelte bidirektionale Steuerzeichen."
+          "answer": "Zero-Width-Spaces, geschützte Verbinder und Word Joiner, das BOM, weiche Trennstriche, Textrichtungsmarkierungen, unsichtbare mathematische Operatoren, Füllzeichen, Unicode-Tag-Zeichen und Steuerzeichen. Ungewöhnliche Leerzeichen wie das geschützte Leerzeichen werden zu einem normalen Leerzeichen. Jede Gruppe hat einen eigenen Schalter."
         },
         {
           "question": "Wird mein Text irgendwohin gesendet?",
-          "answer": "Nein, die Bereinigung erfolgt vollständig in Ihrem Browser — es wird nichts hochgeladen."
+          "answer": "Nein, die Bereinigung geschieht vollständig in Ihrem Browser – es wird nichts hochgeladen."
         },
         {
-          "question": "Erkennt es Zeichen, die ich in einem Texteditor normalerweise nicht sehen kann?",
-          "answer": "Ja, es durchsucht den Text nach Zero-Width-Spaces, Joinern und anderen unsichtbaren Unicode-Zeichen, die in den meisten Editoren als nichts dargestellt werden."
+          "question": "Erkennt es Zeichen, die ich in einem Texteditor normalerweise nicht sehe?",
+          "answer": "Ja. „Versteckte anzeigen“ zeigt jedes unsichtbare Zeichen als Badge wie ⟦U+200B⟧ in Ihrem Text, und der Tab „Bericht“ listet jedes mit Position und Name auf."
         },
         {
-          "question": "Kann es mir anzeigen, wie viele unsichtbare Zeichen gefunden wurden?",
+          "question": "Kann es mir die Anzahl der gefundenen unsichtbaren Zeichen anzeigen?",
           "answer": "Ja, das Tool meldet genau, wie viele unsichtbare Zeichen in Ihrem Text gefunden und entfernt wurden."
         },
         {
-          "question": "Werden dabei auch legitime Formatierungszeichen wie geschützte Leerzeichen entfernt?",
-          "answer": "Es werden nur Zero-Width- und andere wirklich unsichtbare Zeichen erfasst — prüfen Sie den genauen erfassten Zeichensatz, falls Sie sich für das Layout auf geschützte Leerzeichen verlassen, da das Entfernungsverhalten davon abhängt, welche Zeichen markiert werden."
+          "question": "Entfernt es auch legitime Formatierungszeichen wie geschützte Leerzeichen?",
+          "answer": "Geschützte und andere ungewöhnliche Leerzeichen werden standardmäßig durch ein normales Leerzeichen ersetzt; deaktivieren Sie diese Gruppe, um sie zu behalten. Zero-Width-Joiner und Variationsselektoren bleiben standardmäßig erhalten, da Emojis sowie persischer, arabischer und indischer Text von ihnen abhängen."
         },
         {
-          "question": "Warum können unsichtbare Zeichen meinen Code oder CMS-Inhalt beschädigen?",
-          "answer": "Zero-Width-Zeichen können Zeichenkettenvergleiche, Suchfunktionen und kopierten Code unbemerkt stören — da sie unsichtbar sind, lassen sie sich ohne ein Tool wie dieses nur schwer aufspüren."
+          "question": "Warum können unsichtbare Zeichen meinen Code oder CMS-Inhalt beeinträchtigen?",
+          "answer": "Zero-Width-Zeichen können unbemerkt Stringvergleiche, die Suchfunktion und per Copy-and-paste eingefügten Code beeinträchtigen – da sie unsichtbar sind, lassen sie sich ohne ein Tool wie dieses schwer aufspüren."
+        },
+        {
+          "question": "Warum bleiben Joiner standardmäßig erhalten?",
+          "answer": "Der Zero-Width-Joiner setzt Emojis wie Familien- und Flaggensequenzen zusammen, und der Non-Joiner gehört zur korrekten Schreibweise im Persischen und in mehreren anderen Schriften. Ihr Entfernen würde diese Texte zerstören, deshalb müssen Sie es ausdrücklich aktivieren."
         }
       ]
     },
@@ -4294,13 +4362,16 @@
     },
     "json-to-typescript": {
       "seoTitle": "JSON zu TypeScript Konverter – Interfaces & Zod-Schemas, kostenlos",
-      "metaDescription": "Konvertieren Sie JSON sofort in TypeScript-Interfaces, Type-Aliases oder Zod-Validierungsschemas – 100% lokal in Ihrem Browser verarbeitet.",
+      "metaDescription": "TypeScript-Interfaces, Typ-Aliase oder Zod-Schemas aus JSON erzeugen – in einem Vollbild-Editor. Erkennt optionale Felder und Union-Typen über Array-Elemente hinweg. Kostenlos und privat.",
       "h1": "JSON zu TypeScript & Zod-Schema",
-      "subheading": "Konvertieren Sie JSON sofort in TypeScript-Interfaces, Type-Aliases oder Zod-Validierungsschemas.",
+      "subheading": "Erzeugen Sie TypeScript-Interfaces, Typ-Aliase und Zod-Schemas aus JSON – optionale Felder und Unions werden automatisch erkannt.",
       "keywords": [
-        "json zu typescript",
-        "json zu zod",
-        "typescript typen generieren"
+        "JSON in TypeScript umwandeln",
+        "JSON zu Zod",
+        "TypeScript-Typen generieren",
+        "in TypeScript konvertieren",
+        "TypeScript Konverter",
+        "Interfaces aus JSON generieren"
       ],
       "howTo": [
         {
@@ -4309,41 +4380,45 @@
         },
         {
           "name": "Optionen wählen",
-          "text": "Wählen Sie Interface oder Type-Alias, schalten Sie optionale Felder um und aktivieren Sie bei Bedarf die Zod-Schema-Generierung."
+          "text": "Wählen Sie Interface oder Typ-Alias, schalten Sie optionale Felder um und aktivieren Sie bei Bedarf die Zod-Schema-Generierung."
         },
         {
           "name": "Kopieren oder herunterladen",
-          "text": "Kopieren Sie den generierten TypeScript-Code oder laden Sie ihn als .d.ts-Datei herunter."
+          "text": "Kopieren Sie den erzeugten TypeScript-Code oder laden Sie ihn als .d.ts-Datei herunter."
         }
       ],
       "faq": [
         {
           "question": "Wie werden die Typen abgeleitet?",
-          "answer": "Das Tool durchläuft Ihre JSON-Struktur und leitet die entsprechenden TypeScript-Typen ab — verschachtelte Objekte werden zu eigenen Interfaces, und Arrays werden zu typisierten Listen."
+          "answer": "Das Tool durchläuft Ihre JSON-Struktur und leitet die passenden TypeScript-Typen ab – verschachtelte Objekte werden zu eigenen Interfaces, Arrays zu typisierten Listen."
         },
         {
-          "question": "Ist die Zod-Bibliothek dafür erforderlich?",
-          "answer": "Nein, das Zod-Schema wird als reiner Text-Code generiert, den Sie in ein Projekt kopieren können, in dem Zod bereits installiert ist — dieses Tool hat keine Abhängigkeit davon."
+          "question": "Benötigt das die Zod-Bibliothek?",
+          "answer": "Nein, das Zod-Schema wird als reiner Quelltext erzeugt, den Sie in ein Projekt kopieren, in dem Zod bereits installiert ist – das Tool selbst hat keine Abhängigkeit davon."
         },
         {
           "question": "Wird mein JSON irgendwohin hochgeladen?",
-          "answer": "Nein, die Typgenerierung erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, die Typgenerierung findet vollständig in Ihrem Browser statt."
         },
         {
-          "question": "Wie geht es mit Arrays um, die gemischte Elementtypen enthalten?",
-          "answer": "Es leitet einen Typ aus den Array-Elementen ab — bei gemischten Typen ist mit einem Union-Typ oder einem breiteren Typ zu rechnen, der die vorhandene Vielfalt abdeckt, da JSON selbst keinen einheitlichen Elementtyp deklariert."
+          "question": "Wie geht das Tool mit Arrays mit gemischten Elementtypen um?",
+          "answer": "Die Elemente werden zu einem Typ zusammengeführt: Zahlen und Strings werden zu number | string, Objekte mit unterschiedlichen Schlüsseln zu einem Interface, und Schlüssel, die in manchen Elementen fehlen, werden als optional markiert."
         },
         {
-          "question": "Werden optionale und nullbare Felder erkannt?",
-          "answer": "Die Behandlung von optionalen/nullbaren Feldern hängt von Ihrem JSON-Beispiel ab — ein Feld, das in Ihrer Eingabe `null` ist, wird entsprechend typisiert, aber der Generator kann nur aus dem einen bereitgestellten JSON-Beispiel ableiten, nicht aus mehreren Varianten."
+          "question": "Werden optionale und nullable Felder erkannt?",
+          "answer": "Ja. Ein Schlüssel, der in einigen Objekten eines Arrays fehlt, wird optional (?), und ein Wert, der manchmal null ist, wird zu einer Union wie string | null. Mit „Alle optional“ markieren Sie jedes Feld als optional."
         },
         {
-          "question": "Kann ich statt eines Interfaces einen Type-Alias generieren?",
-          "answer": "Ja, ein Umschalter lässt Sie zwischen der Generierung eines TypeScript-`interface` oder eines `type`-Alias wählen."
+          "question": "Kann ich statt eines Interfaces einen Typ-Alias erzeugen?",
+          "answer": "Ja, mit einem Schalter wechseln Sie zwischen der Erzeugung eines TypeScript-`interface` oder eines `type`-Alias."
         },
         {
-          "question": "Enthält die generierte Zod-Schema-Ausgabe Validierungen wie min/max?",
-          "answer": "Nein, das generierte Zod-Schema spiegelt nur die grundlegende Typform wider (string, number, optional usw.) — es fügt keine Einschränkungen wie Mindest-/Höchstlänge oder numerische Bereiche hinzu."
+          "question": "Enthält die Zod-Schema-Ausgabe Validierungen wie min/max?",
+          "answer": "Nein – das Schema bildet nur die Form ab (Typen, optional, nullable, Unions) sowie eine Import-Zeile und einen abgeleiteten Typ. Regeln wie .min() oder .email() ergänzen Sie selbst."
+        },
+        {
+          "question": "Kann ich den Namen des Root-Typs ändern oder export und readonly hinzufügen?",
+          "answer": "Ja. In der Symbolleiste legen Sie den Namen des Root-Typs fest und schalten export, readonly und „alles optional“ um."
         }
       ],
       "comparisonTable": {
@@ -4361,9 +4436,9 @@
             ]
           },
           {
-            "label": "Am besten für",
+            "label": "Ideal für",
             "values": [
-              "Speichern/Übertragen von Daten",
+              "Daten speichern/übertragen",
               "Typsicherheit zur Kompilierzeit"
             ]
           },
@@ -4378,26 +4453,29 @@
             "label": "Typische Verwendung",
             "values": [
               "API-Payloads, Konfiguration",
-              "Typisierter Code gegen API-Strukturen"
+              "Typisierter Code für API-Strukturen"
             ]
           }
         ]
       }
     },
     "json-to-yaml": {
-      "seoTitle": "JSON zu YAML Konverter online – kostenlos, sofort, beide Richtungen",
-      "metaDescription": "Konvertieren Sie JSON zu YAML oder YAML zu JSON sofort in beide Richtungen – 100% lokal in Ihrem Browser verarbeitet.",
+      "seoTitle": "JSON zu YAML Konverter Online – Kostenlos, sofort, in beide Richtungen",
+      "metaDescription": "JSON in YAML und YAML in JSON umwandeln – in einem Vollbild-Editor. Unterstützt Anker, Aliase, mehrzeilige Strings, Kommentare und mehrere Dokumente, mit exakten Fehlerpositionen. Kostenlos und privat.",
       "h1": "JSON ↔ YAML Konverter",
-      "subheading": "Konvertieren Sie zwischen JSON und YAML sofort in beide Richtungen.",
+      "subheading": "Zwischen JSON und YAML umwandeln – im Vollbild-Editor, inklusive Ankern, mehrzeiligen Strings und Dateien mit mehreren Dokumenten.",
       "keywords": [
-        "json zu yaml",
-        "yaml zu json",
-        "yaml konvertieren"
+        "JSON in YAML umwandeln",
+        "YAML in JSON umwandeln",
+        "YAML konvertieren",
+        "in YAML konvertieren",
+        "YAML Konverter",
+        "YAML Validator"
       ],
       "howTo": [
         {
           "name": "Richtung wählen",
-          "text": "Wählen Sie JSON zu YAML oder YAML zu JSON."
+          "text": "Wählen Sie „JSON zu YAML“ oder „YAML zu JSON“."
         },
         {
           "name": "Inhalt einfügen",
@@ -4405,37 +4483,41 @@
         },
         {
           "name": "Ergebnis kopieren oder herunterladen",
-          "text": "Kopieren Sie das konvertierte Ergebnis oder laden Sie es als Datei herunter."
+          "text": "Kopieren Sie die umgewandelte Ausgabe oder laden Sie sie als Datei herunter."
         }
       ],
       "faq": [
         {
-          "question": "Ist dies eine vollständige YAML-Implementierung?",
-          "answer": "Es deckt die praktische Teilmenge von YAML ab, die die meisten Konfigurationsdateien nutzen — verschachtelte Objekte, blockartige Listen, Zeichenketten, Zahlen, Wahrheitswerte und null — statt jeden Grenzfall der vollständigen Spezifikation."
+          "question": "Ist das eine vollständige YAML-Implementierung?",
+          "answer": "Es verwendet einen vollständigen YAML-1.2-Parser (die Open-Source-Bibliothek `yaml`), sodass verschachtelte Strukturen, Block- und Flow-Stil, mehrzeilige Strings, Anker und Aliase sowie mehrere Dokumente korrekt umgewandelt werden."
         },
         {
           "question": "Werden meine Daten irgendwohin hochgeladen?",
-          "answer": "Nein, die Umwandlung erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, die Umwandlung findet vollständig in Ihrem Browser statt."
         },
         {
           "question": "Kann ich komplexe verschachtelte Strukturen umwandeln?",
-          "answer": "Ja, beide Richtungen verarbeiten tief verschachtelte Objekte und Arrays von Objekten."
+          "answer": "Ja, beide Richtungen verarbeiten tief verschachtelte Objekte und Arrays aus Objekten."
         },
         {
           "question": "Wie werden JSON-null-Werte in YAML dargestellt?",
-          "answer": "JSON-null-Werte werden als literales `null` in der YAML-Ausgabe geschrieben, entsprechend der gängigen YAML-Konvention."
+          "answer": "JSON-null-Werte werden in der YAML-Ausgabe als Literal `null` geschrieben, gemäß der üblichen YAML-Konvention."
         },
         {
-          "question": "Werden YAML-Anker und -Aliase beim Zurückkonvertieren in JSON unterstützt?",
-          "answer": "Nein, Anker (&) und Aliase (*) werden vom Parser nicht erkannt — eingefügtes YAML, das diese verwendet, wird nicht korrekt umgewandelt."
+          "question": "Werden YAML-Anker und -Aliase bei der Rückumwandlung in JSON unterstützt?",
+          "answer": "Ja. Aliase werden zu ihren vollständigen Werten aufgelöst, und als <<: *name geschriebene Merge-Keys werden in das Mapping zusammengeführt."
         },
         {
           "question": "Spielt die Einrückung beim Einfügen von YAML eine Rolle?",
-          "answer": "Ja, der Parser liest die Struktur anhand der Einrückungsebenen, sodass eine inkonsistente oder fehlerhafte Einrückung im eingefügten YAML zu einer fehlerhaften oder gescheiterten Umwandlung führen kann."
+          "answer": "Ja, die YAML-Struktur ergibt sich aus der Einrückung. Ist sie uneinheitlich, zeigt die Statusleiste Zeile und Spalte des Problems an, damit Sie es beheben können."
         },
         {
-          "question": "Kann es YAML-Kommentare verlustfrei erhalten (Round-Trip)?",
-          "answer": "Nein, Kommentare (Zeilen oder nachgestellter Text, der mit # beginnt) werden beim Umwandeln von YAML zurück in JSON entfernt — JSON selbst hat keine Kommentarsyntax, um sie zu erhalten."
+          "question": "Bleiben YAML-Kommentare bei einer Hin-und-zurück-Umwandlung erhalten?",
+          "answer": "Nein. Kommentare gehen beim Parsen von YAML verloren, und JSON hat keine Möglichkeit, sie zu speichern."
+        },
+        {
+          "question": "Was passiert bei einer YAML-Datei mit mehreren Dokumenten?",
+          "answer": "Durch --- getrennte Dokumente werden in ein JSON-Array mit einem Eintrag pro Dokument umgewandelt."
         }
       ],
       "comparisonTable": {
@@ -4453,7 +4535,7 @@
             ]
           },
           {
-            "label": "Am besten für",
+            "label": "Ideal für",
             "values": [
               "APIs, Datenaustausch",
               "Konfigurationsdateien, DevOps-Tools"
@@ -4462,8 +4544,8 @@
           {
             "label": "Lesbarkeit",
             "values": [
-              "Kompakt, aber umständlich",
-              "Übersichtlich, weniger visueller Ballast"
+              "Kompakt, aber ausführlich",
+              "Menschenfreundlich, weniger Ballast"
             ]
           },
           {
@@ -4477,14 +4559,16 @@
       }
     },
     "sql-formatter": {
-      "seoTitle": "SQL-Formatierer online – SQL-Abfragen formatieren & minifizieren, kostenlos",
-      "metaDescription": "Formatieren Sie unübersichtliche SQL-Abfragen in lesbare, eingerückte Anweisungen oder minifizieren Sie sie auf eine Zeile – 100% lokal in Ihrem Browser verarbeitet.",
-      "h1": "SQL-Abfragen-Formatierer",
-      "subheading": "Formatieren Sie unübersichtliche SQL-Abfragen in lesbare Anweisungen oder minifizieren Sie sie auf eine Zeile.",
+      "seoTitle": "SQL Formatter Online – SQL-Abfragen verschönern & minifizieren, kostenlos",
+      "metaDescription": "SQL für PostgreSQL, MySQL, SQL Server, BigQuery, Snowflake und mehr formatieren – mit Optionen für Schreibweise der Schlüsselwörter, Einrückung und Kommas am Zeilenanfang. Kommentare bleiben erhalten; sicher minifizieren. Kostenlos und privat.",
+      "h1": "SQL-Abfragen formatieren",
+      "subheading": "SQL für 16 Dialekte formatieren – mit Optionen für Schlüsselwort-Schreibweise, Einrückung und Komma-Platzierung, Kommentare bleiben erhalten, 100 % lokal.",
       "keywords": [
-        "sql formatierer",
-        "sql verschönern",
-        "sql abfrage formatieren"
+        "SQL Formatter",
+        "SQL verschönern",
+        "SQL-Abfrage formatieren",
+        "PostgreSQL Formatter",
+        "SQL Beautifier"
       ],
       "howTo": [
         {
@@ -4493,62 +4577,70 @@
         },
         {
           "name": "Formatieren oder minifizieren",
-          "text": "Klicken Sie auf „Formatieren“, um sie mit korrekter Einrückung zu verschönern, oder auf „Minifizieren“, um sie auf eine Zeile zu reduzieren."
+          "text": "Klicken Sie auf „Formatieren“, um sie mit sauberer Einrückung zu verschönern, oder auf „Minifizieren“, um sie auf eine Zeile zu reduzieren."
         },
         {
           "name": "Ergebnis kopieren",
-          "text": "Kopieren Sie das formatierte oder minifizierte SQL in Ihre Zwischenablage."
+          "text": "Kopieren Sie das formatierte oder minifizierte SQL in die Zwischenablage."
         }
       ],
       "faq": [
         {
           "question": "Welche SQL-Dialekte werden unterstützt?",
-          "answer": "Der Formatierer erkennt gängige Schlüsselwörter, die MySQL, PostgreSQL, SQLite und SQL Server gemeinsam haben — er formatiert basierend auf der Schlüsselwortstruktur, ohne dialektspezifische Syntax zu validieren."
+          "answer": "Standard-SQL, PostgreSQL, MySQL, MariaDB, SQLite, SQL Server (T-SQL), Oracle PL/SQL, BigQuery, Snowflake, Redshift, Spark, Hive, Trino, DB2, DuckDB und ClickHouse. Wählen Sie Ihren Dialekt, damit Quoting und Schlüsselwörter richtig verstanden werden."
         },
         {
           "question": "Validiert es mein SQL?",
-          "answer": "Nein, dies ist ein Formatierer, kein Abfrage-Validator — er erkennt keine Syntaxfehler, sondern formatiert nur den Text neu."
+          "answer": "Es parst die Abfrage, um sie zu formatieren, daher werden schwerwiegende Syntaxprobleme wie eine nicht geschlossene Klammer mit Zeile und Spalte gemeldet. Ein vollständiger Validator ist es nicht – es kennt Ihre Tabellen oder Spalten nicht."
         },
         {
           "question": "Wird meine Abfrage irgendwohin hochgeladen?",
-          "answer": "Nein, die Formatierung erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, die Formatierung findet vollständig in Ihrem Browser statt."
         },
         {
-          "question": "Kann ich den Einrückungsstil wählen, z. B. Tabs statt Leerzeichen?",
-          "answer": "Nein, die Formatierung verwendet immer eine feste 2-Leerzeichen-Einrückung, ohne Option, auf Tabs oder eine andere Breite umzuschalten."
+          "question": "Kann ich den Einrückungsstil wählen, etwa Tabs oder Leerzeichen?",
+          "answer": "Ja: 2 Leerzeichen, 4 Leerzeichen oder Tabs."
         },
         {
-          "question": "Werden SQL-Schlüsselwörter automatisch großgeschrieben?",
-          "answer": "Ja, SQL-Schlüsselwörter werden im Rahmen der Formatierung automatisch in Großbuchstaben umgewandelt, und das ist nicht optional."
+          "question": "Schreibt es SQL-Schlüsselwörter automatisch groß?",
+          "answer": "Standardmäßig ja, Sie können aber auch GROSS, klein oder „Wie eingegeben“ wählen."
         },
         {
           "question": "Kann es komplexe Abfragen mit Unterabfragen und Joins formatieren?",
-          "answer": "Ja, der Formatierer verarbeitet verschachtelte Unterabfragen und Joins über mehrere Tabellen und rückt jede Klausel zur besseren Lesbarkeit ein."
+          "answer": "Ja, der Formatter verarbeitet verschachtelte Unterabfragen und Joins über mehrere Tabellen und rückt jede Klausel zur besseren Lesbarkeit ein."
         },
         {
           "question": "Was passiert, wenn mein SQL einen Syntaxfehler enthält?",
-          "answer": "Der Formatierer arbeitet mit Tokens und Leerraum, statt die SQL-Grammatik vollständig zu parsen, und versucht daher trotzdem, ungültiges SQL zu formatieren, statt es rundweg abzulehnen — prüfen Sie die Ausgabe immer gegen Ihre beabsichtigte Abfrage."
+          "answer": "Die Formatierung bricht ab, die Statusleiste zeigt Zeile und Spalte an, und der Editor unterstreicht die Stelle. Das Minifizieren funktioniert weiterhin mit jedem Text."
+        },
+        {
+          "question": "Bleiben meine Kommentare erhalten?",
+          "answer": "Ja. Zeilenkommentare (--) und Blockkommentare (/* */) bleiben beim Formatieren erhalten. Das Minifizieren entfernt sie, berührt aber niemals String-Literale oder quotierte Bezeichner."
         }
       ]
     },
     "json-to-csv": {
-      "seoTitle": "JSON zu CSV Konverter online – kostenlos, sofort, kein Upload",
-      "metaDescription": "Konvertieren Sie ein JSON-Array von Objekten in eine CSV-Datei, bereit zum Öffnen in Excel oder Google Sheets – 100% lokal in Ihrem Browser verarbeitet.",
+      "seoTitle": "JSON zu CSV Konverter Online – Kostenlos, sofort, ohne Upload",
+      "metaDescription": "Ein JSON-Array in CSV umwandeln – mit wählbarem Trennzeichen, abgeflachten oder verschachtelten JSON-Werten, zusammengeführten Arrays, Anführungszeichen für alles, Excel-BOM und Formelschutz sowie Tabellenvorschau. Kostenlos und privat.",
       "h1": "JSON zu CSV Konverter",
-      "subheading": "Konvertieren Sie ein JSON-Array von Objekten in eine CSV-Datei, bereit zum Öffnen in einer Tabellenkalkulation.",
+      "subheading": "JSON in CSV umwandeln – mit Optionen für Trennzeichen, Verschachtelung, Arrays, Excel und Formelschutz sowie einer Tabellenvorschau.",
       "keywords": [
-        "json zu csv",
-        "json in excel konvertieren",
-        "json array zu csv"
+        "JSON in CSV umwandeln",
+        "JSON in Excel umwandeln",
+        "JSON-Array in CSV",
+        "in CSV konvertieren",
+        "CSV Konverter",
+        "JSON nach Excel",
+        "JSON in TSV umwandeln"
       ],
       "howTo": [
         {
           "name": "JSON einfügen",
-          "text": "Fügen Sie ein JSON-Array von Objekten in den Editor ein."
+          "text": "Fügen Sie ein JSON-Array aus Objekten in den Editor ein."
         },
         {
           "name": "CSV-Ausgabe ansehen",
-          "text": "Sehen Sie die konvertierte CSV-Datei sofort erscheinen, mit Spalten aus Ihren Objektschlüsseln."
+          "text": "Das umgewandelte CSV erscheint sofort, mit Spalten aus Ihren Objektschlüsseln."
         },
         {
           "name": "Kopieren oder herunterladen",
@@ -4558,31 +4650,35 @@
       "faq": [
         {
           "question": "Welches JSON-Format funktioniert am besten?",
-          "answer": "Ein Array aus flachen Objekten mit konsistenten Schlüsseln, z. B. [{\"name\": \"A\", \"price\": 10}, ...] — das lässt sich sauber auf Tabellenzeilen und -spalten abbilden."
+          "answer": "Ein Array flacher Objekte mit einheitlichen Schlüsseln, z. B. [{\"name\": \"A\", \"price\": 10}, ...] – das lässt sich sauber auf Tabellenzeilen und -spalten abbilden."
         },
         {
-          "question": "Was passiert bei verschachtelten Objekten?",
-          "answer": "Tief verschachtelte Werte werden nach Möglichkeit abgeflacht oder in Text umgewandelt, damit sie trotzdem in eine CSV-Zelle passen."
+          "question": "Was passiert mit verschachtelten Objekten?",
+          "answer": "Ist „Objekte abflachen“ aktiv, werden verschachtelte Schlüssel zu Spalten mit Punktnotation wie team.name. Schalten Sie die Option aus, bleiben verschachtelte Werte als JSON-Text in einer einzelnen Zelle. Arrays werden als JSON geschrieben oder mit Semikolons verbunden, wenn Sie „Arrays verbinden“ aktivieren."
         },
         {
           "question": "Werden meine Daten irgendwohin hochgeladen?",
-          "answer": "Nein, die Konvertierung erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, die Umwandlung findet vollständig in Ihrem Browser statt."
         },
         {
           "question": "Kann ich auswählen, welche Felder als Spalten exportiert werden?",
-          "answer": "Nein, alle Felder, die in Ihren JSON-Objekten vorkommen, werden automatisch als Spalten übernommen — es gibt keine Option zur Feldauswahl."
+          "answer": "Jeder Schlüssel, der in irgendeinem Objekt vorkommt, wird zu einer Spalte. Um Spalten wegzulassen, löschen Sie sie vorher aus dem JSON."
         },
         {
           "question": "Wie werden Kommas oder Anführungszeichen innerhalb von Werten behandelt?",
-          "answer": "Werte mit Kommas, Anführungszeichen oder Zeilenumbrüchen werden automatisch in Anführungszeichen gesetzt und gemäß den CSV-Standardregeln maskiert."
+          "answer": "Werte mit dem Trennzeichen, Anführungszeichen, Zeilenumbrüchen oder führenden und nachgestellten Leerzeichen werden gemäß RFC 4180 in Anführungszeichen gesetzt, wobei innere Anführungszeichen verdoppelt werden. „Alles quoten“ erzwingt Anführungszeichen überall."
         },
         {
           "question": "Entspricht die Spaltenreihenfolge der Reihenfolge der Schlüssel in meinem JSON?",
-          "answer": "Die Spalten werden im Allgemeinen aus den Schlüsseln abgeleitet, die in Ihren JSON-Objekten vorkommen — für eine konsistente Spaltenreihenfolge sollten die Schlüssel in Ihren JSON-Objekten in derselben Reihenfolge stehen."
+          "answer": "Die Spalten folgen der Reihenfolge, in der Schlüssel in den Objekten zum ersten Mal auftauchen. Halten Sie die Schlüssel daher in einer einheitlichen Reihenfolge, damit die Spalten vorhersehbar sind."
         },
         {
           "question": "Kann ich das Ergebnis direkt als .csv-Datei herunterladen?",
-          "answer": "Ja, über eine eigene Download-Schaltfläche speichern Sie das konvertierte Ergebnis als .csv-Datei."
+          "answer": "Ja, eine eigene Download-Schaltfläche speichert die umgewandelte Ausgabe als .csv-Datei."
+        },
+        {
+          "question": "Öffnet Excel die Datei korrekt?",
+          "answer": "Aktivieren Sie „Excel-BOM“, um eine Byte-Order-Mark hinzuzufügen, damit Umlaute und Akzente richtig angezeigt werden, wählen Sie „Semikolon“, wenn Ihre Region es verwendet, und aktivieren Sie „Formelschutz“, damit Werte, die mit = + - oder @ beginnen, nicht als Formeln ausgeführt werden."
         }
       ],
       "comparisonTable": {
@@ -4600,7 +4696,7 @@
             ]
           },
           {
-            "label": "Am besten geeignet für",
+            "label": "Ideal für",
             "values": [
               "APIs, Konfigurationsdateien, verschachtelte Daten",
               "Tabellenkalkulationen, tabellarische Daten"
@@ -4609,200 +4705,218 @@
           {
             "label": "Lesbarkeit",
             "values": [
-              "Strukturiert, selbsterklärend",
+              "Strukturiert, selbstbeschreibend",
               "Einfach, kompakt"
             ]
           },
           {
-            "label": "Typische Nutzung",
+            "label": "Typische Verwendung",
             "values": [
-              "Webanwendungen, Datenaustausch",
-              "Excel, Datenbankimporte"
+              "Web-Apps, Datenaustausch",
+              "Excel, Datenbank-Importe"
             ]
           }
         ]
       }
     },
     "code-minifier": {
-      "seoTitle": "HTML- & CSS-Minifizierer online – kostenlos, sofort, kein Upload",
-      "metaDescription": "Minifizieren Sie HTML oder CSS, indem Kommentare und unnötige Leerzeichen entfernt werden – 100% lokal in Ihrem Browser verarbeitet.",
-      "h1": "HTML- & CSS-Minifizierer",
-      "subheading": "Entfernen Sie Kommentare und unnötige Leerzeichen aus HTML oder CSS, um die Dateigröße zu verringern.",
+      "seoTitle": "HTML & CSS Minifier Online – Kostenlos, sofort, ohne Upload",
+      "metaDescription": "HTML, CSS, JavaScript, JSON und SVG direkt im Browser minifizieren und die exakte Größenersparnis samt gzip-Größe sehen. CSS und JSON lassen sich auch verschönern. Kostenlos, privat, ohne Upload.",
+      "h1": "HTML & CSS Minifier",
+      "subheading": "HTML, CSS, JavaScript, JSON und SVG minifizieren – mit Größe vorher/nachher und gzip-Schätzung, 100 % lokal.",
       "keywords": [
-        "css minifizieren",
-        "html minifizieren",
-        "code komprimierer"
+        "CSS minifizieren",
+        "HTML minifizieren",
+        "Code komprimieren",
+        "JavaScript Minifier",
+        "SVG Minifier",
+        "CSS verschönern"
       ],
       "howTo": [
         {
-          "name": "HTML oder CSS wählen",
-          "text": "Wählen Sie, welchen Code-Typ Sie minifizieren möchten."
+          "name": "Sprache wählen",
+          "text": "Wählen Sie HTML, CSS, JavaScript, JSON oder SVG."
         },
         {
-          "name": "Code einfügen",
-          "text": "Fügen Sie Ihr HTML oder CSS in den Editor ein."
+          "name": "Code einfügen oder ablegen",
+          "text": "Tippen Sie, fügen Sie ein oder öffnen Sie eine Datei – das Ergebnis aktualisiert sich laufend."
         },
         {
-          "name": "Minifizieren und kopieren",
-          "text": "Klicken Sie auf „Minifizieren“ und kopieren Sie dann das komprimierte Ergebnis – sehen Sie, wie viel Platz Sie gespart haben."
+          "name": "Ersparnis prüfen",
+          "text": "Die Statusleiste zeigt die Größe vorher und nachher sowie eine Schätzung der gzip-Größe."
+        },
+        {
+          "name": "Kopieren oder herunterladen",
+          "text": "Kopieren Sie das Ergebnis oder laden Sie es als Datei herunter."
         }
       ],
       "faq": [
         {
           "question": "Kann das Minifizieren meinen Code kaputt machen?",
-          "answer": "Nein, es werden nur Kommentare und unbedenkliche Leerzeichen entfernt — der Inhalt innerhalb von pre-, textarea-, script- und style-Tags bei HTML sowie String-Literale bei CSS bleiben unangetastet."
+          "answer": "Die Minifier arbeiten vorsichtig: Strings, url()-Werte sowie <pre>- und <textarea>-Inhalte bleiben unangetastet, CSS-Selektoren wie `a :hover` behalten ihre Bedeutung, und calc() behält seine Leerzeichen. JavaScript wird mit dem Terser-Minifier verarbeitet. Testen Sie das Ergebnis immer."
         },
         {
           "question": "Wie viel Größe spart das Minifizieren?",
-          "answer": "Das hängt davon ab, wie viele Leerzeichen und Kommentare Ihr Originalcode enthält — das Tool zeigt einen genauen Größenvergleich vorher/nachher."
+          "answer": "Das hängt davon ab, wie viele Leerzeichen und Kommentare Ihr Originalcode enthält – das Tool zeigt einen exakten Größenvergleich vorher/nachher."
         },
         {
           "question": "Wird mein Code irgendwohin hochgeladen?",
-          "answer": "Nein, das Minifizieren erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, das Minifizieren findet vollständig in Ihrem Browser statt."
         },
         {
-          "question": "Minifiziert das Tool auch JavaScript, nicht nur HTML und CSS?",
-          "answer": "Nein, es sind nur die Minifizierungsmodi für HTML und CSS verfügbar — es gibt keinen JavaScript-Minifizierer."
+          "question": "Minifiziert es auch JavaScript und nicht nur HTML und CSS?",
+          "answer": "Ja. JavaScript wird mit Terser minifiziert (Komprimierung und Umbenennung von Variablen), außerdem werden JSON und SVG unterstützt."
         },
         {
           "question": "Werden HTML-Kommentare immer entfernt?",
-          "answer": "Ja, HTML-Kommentare werden beim Minifizieren automatisch entfernt, ohne Option, sie zu erhalten."
+          "answer": "Standardmäßig ja, außer bedingten IE-Kommentaren. Aktivieren Sie „Kommentare behalten“, um sie in HTML und CSS zu erhalten."
         },
         {
           "question": "Entfernt das Minifizieren von CSS ungenutzte Regeln?",
-          "answer": "Nein, die CSS-Minifizierung entfernt nur Kommentare und unnötige Leerzeichen/Formatierung — sie analysiert Ihr HTML nicht, um ungenutzte Selektoren zu erkennen und zu entfernen."
+          "answer": "Nein, die CSS-Minifizierung entfernt nur Kommentare sowie überflüssige Leerzeichen und Formatierung – Ihr HTML wird nicht analysiert, um ungenutzte Selektoren zu finden und zu entfernen."
         },
         {
-          "question": "Kann ich die Minifizierung rückgängig machen, um lesbaren Code zurückzubekommen?",
-          "answer": "Nein, die Minifizierung ist einseitig und erhält weder die ursprüngliche Formatierung noch Variablennamen zur Rekonstruktion — bewahren Sie eine Kopie Ihres Originalcodes auf, falls Sie ihn später noch bearbeiten möchten."
+          "question": "Kann ich das Minifizieren rückgängig machen, um lesbaren Code zurückzubekommen?",
+          "answer": "Bei CSS und JSON aktivieren Sie stattdessen „Verschönern“, um sie wieder zu formatieren. Minifiziertes HTML und JavaScript verlieren ihre ursprüngliche Formatierung, JavaScript außerdem seine Variablennamen – bewahren Sie daher Ihre Quelldateien auf."
+        },
+        {
+          "question": "Was bedeutet die gzip-Angabe?",
+          "answer": "Sie gibt die Größe an, die der minifizierte Text nach der gzip-Komprimierung hätte, wie sie die meisten Server über das Netzwerk senden – sie kommt der tatsächlichen Download-Größe also näher."
         }
       ]
     },
     "html-entity-encoder": {
-      "seoTitle": "HTML-Entity-Encoder / -Decoder – kostenlos, sofort, kein Upload",
-      "metaDescription": "Codieren Sie Sonderzeichen in HTML-Entities oder decodieren Sie HTML-Entities zurück in lesbaren Text – 100% lokal in Ihrem Browser verarbeitet.",
+      "seoTitle": "HTML-Entity-Encoder / -Decoder – Kostenlos, sofort, ohne Upload",
+      "metaDescription": "Text in HTML-Entities kodieren oder Entities zurückdekodieren – benannt, dezimal oder hexadezimal, minimal oder alle Zeichen – mit durchsuchbarer Entity-Referenz. Kostenlos, privat, ohne DOM-Tricks.",
       "h1": "HTML-Entity-Encoder / -Decoder",
-      "subheading": "Codieren Sie Sonderzeichen in HTML-Entities oder decodieren Sie Entities zurück in lesbaren Text.",
+      "subheading": "HTML-Entities kodieren und dekodieren – benannt, dezimal oder hexadezimal – mit durchsuchbarer Referenz.",
       "keywords": [
-        "html entity encoder",
-        "html entities decodieren",
-        "html escapen"
+        "HTML Entity Encoder",
+        "HTML-Entities dekodieren",
+        "HTML escapen",
+        "HTML-Entities Liste"
       ],
       "howTo": [
         {
-          "name": "Codieren oder decodieren wählen",
-          "text": "Wählen Sie, ob Sie Text codieren oder HTML-Entities decodieren möchten."
+          "name": "Kodieren oder Dekodieren wählen",
+          "text": "Wählen Sie, ob Sie Text kodieren oder HTML-Entities dekodieren möchten."
         },
         {
           "name": "Text einfügen",
-          "text": "Fügen Sie den Text oder den HTML-Entity-codierten String ein, den Sie umwandeln möchten."
+          "text": "Fügen Sie den Text oder die mit HTML-Entities kodierte Zeichenfolge ein, die Sie umwandeln möchten."
         },
         {
           "name": "Ergebnis kopieren",
-          "text": "Kopieren Sie die codierte oder decodierte Ausgabe in Ihre Zwischenablage."
+          "text": "Kopieren Sie die kodierte oder dekodierte Ausgabe in die Zwischenablage."
         }
       ],
       "faq": [
         {
-          "question": "Warum HTML-Entitäten kodieren?",
-          "answer": "Um Sonderzeichen wie <, > und & sicher als reinen Text innerhalb von HTML anzuzeigen, ohne dass der Browser sie als Markup interpretiert."
+          "question": "Warum HTML-Entities kodieren?",
+          "answer": "Um Sonderzeichen wie <, > und & sicher als Klartext in HTML anzuzeigen, ohne dass der Browser sie als Markup interpretiert."
         },
         {
-          "question": "Welche Entitäten können dekodiert werden?",
-          "answer": "Alle benannten und numerischen HTML-Entitäten, die Ihr Browser erkennt — die Dekodierung nutzt den eigenen HTML-Parser des Browsers für vollständige, präzise Abdeckung."
+          "question": "Welche Entities lassen sich dekodieren?",
+          "answer": "Benannte Entities aus der eingebauten Tabelle mit etwa 250 gängigen (wie &copy;, &mdash; und &eacute;) sowie jede dezimale (&#169;) oder hexadezimale (&#xA9;) numerische Entity. Unbekannte Namen bleiben unverändert."
         },
         {
           "question": "Wird mein Text irgendwohin hochgeladen?",
-          "answer": "Nein, das Kodieren und Dekodieren erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, Kodieren und Dekodieren geschehen vollständig in Ihrem Browser."
         },
         {
-          "question": "Werden alle Nicht-ASCII-Zeichen kodiert oder nur bestimmte?",
-          "answer": "Standardmäßig werden Zeichen mit reservierter Bedeutung in HTML anvisiert, wie <, >, & und Anführungszeichen; es gibt eine separate Option, um bei Bedarf alle Nicht-ASCII-Zeichen als numerische Entitäten zu kodieren."
+          "question": "Kodiert es alle Nicht-ASCII-Zeichen oder nur Sonderzeichen?",
+          "answer": "Sie entscheiden: nur & < > \" ', diese plus jedes Nicht-ASCII-Zeichen oder jedes Zeichen. Nicht-ASCII-Zeichen verwenden eine benannte Entity, falls es eine gibt, sonst eine Zahl."
         },
         {
-          "question": "Was ist der Unterschied zwischen benannten und numerischen Entitäten?",
-          "answer": "Benannte Entitäten wie &amp; sind besser lesbar, während numerische Entitäten wie &#38; für jeden Unicode-Codepunkt funktionieren, auch für solche ohne definierten Namen — dieses Tool kann beide Formen ausgeben."
+          "question": "Was ist der Unterschied zwischen benannten und numerischen Entities?",
+          "answer": "Benannte Entities wie &amp; sind besser lesbar, während numerische Entities wie &#38; für jeden Unicode-Codepoint funktionieren, auch für solche ohne definierten Namen – dieses Tool kann beides ausgeben."
         },
         {
           "question": "Warum muss ich Zeichen wie & in HTML-Attributen kodieren?",
-          "answer": "Unkodierte &- oder Anführungszeichen innerhalb von Attributwerten können den HTML-Parser stören oder fälschlich als Beginn einer Entität interpretiert werden, daher hält die Kodierung den Attributwert intakt."
+          "answer": "Unkodierte & oder Anführungszeichen in Attributwerten können den HTML-Parser aus dem Tritt bringen oder als Beginn einer Entity missverstanden werden – durch das Kodieren bleibt der Attributwert intakt."
         },
         {
-          "question": "Kann die Dekodierung Entitäten ohne abschließendes Semikolon verarbeiten?",
-          "answer": "Die meisten Browser akzeptieren manche benannten Entitäten auch ohne Semikolon, aber dieser Decoder erwartet für zuverlässige Ergebnisse wohlgeformte Entitäten mit abschließendem Semikolon."
+          "question": "Kann das Dekodieren Entities ohne abschließendes Semikolon verarbeiten?",
+          "answer": "Nein. Nur wohlgeformte Entities mit abschließendem Semikolon werden dekodiert, sodass Text wie AT&T oder &amp unverändert bleibt."
+        },
+        {
+          "question": "Gibt es eine Liste der Entities?",
+          "answer": "Ja. Der Tab „Entity-Referenz“ listet jede dem Tool bekannte Entity auf, durchsuchbar nach Name oder durch Einfügen des Zeichens, mit einer Kopieren-Schaltfläche für jede."
         }
       ]
     },
     "title-case-converter": {
-      "seoTitle": "Title-Case-Konverter – APA, Chicago, MLA & AP Style, kostenlos",
-      "metaDescription": "Großschreibung von Titeln und Überschriften korrekt nach APA-, Chicago-, MLA- oder AP-Style-Regeln – 100% lokal in Ihrem Browser verarbeitet.",
-      "h1": "Title-Case- & Überschriften-Großschreiber",
-      "subheading": "Schreiben Sie Titel und Überschriften korrekt nach APA-, Chicago-, MLA- oder AP-Style-Regeln groß.",
+      "seoTitle": "Title Case Konverter – APA, Chicago, MLA & AP Style, kostenlos",
+      "metaDescription": "Überschriften nach den Regeln von AP, APA, Chicago/MLA oder mit jedem Wort groß in Title Case umwandeln – Akronyme und Marken wie NASA und iPhone bleiben erhalten, zeilenweise. Kostenlos und privat.",
+      "h1": "Title Case & Überschriften-Großschreibung",
+      "subheading": "Überschriften nach AP-, APA- oder Chicago-/MLA-Regeln großschreiben – Akronyme und Markennamen bleiben erhalten, eine Überschrift pro Zeile.",
       "keywords": [
-        "title case konverter",
-        "titel großschreiben",
-        "apa title case",
-        "chicago überschrift"
+        "Title Case Konverter",
+        "Titel großschreiben",
+        "APA Title Case",
+        "Chicago Überschriften"
       ],
       "howTo": [
         {
           "name": "Titel einfügen",
-          "text": "Geben Sie den Titel oder die Überschrift ein, die Sie großschreiben möchten."
+          "text": "Tippen oder fügen Sie den Titel oder die Überschrift ein, die Sie großschreiben möchten."
         },
         {
           "name": "Stil wählen",
-          "text": "Wählen Sie APA-, Chicago-, MLA- oder AP-Style."
+          "text": "Wählen Sie den Stil APA, Chicago, MLA oder AP."
         },
         {
           "name": "Ergebnis kopieren",
-          "text": "Kopieren Sie den korrekt großgeschriebenen Titel in Ihre Zwischenablage."
+          "text": "Kopieren Sie den korrekt großgeschriebenen Titel in die Zwischenablage."
         }
       ],
       "faq": [
         {
           "question": "Was ist der Unterschied zwischen den Stilen?",
-          "answer": "Jeder Styleguide hat eigene Regeln dafür, welche kurzen Wörter (Artikel, Konjunktionen, Präpositionen) kleingeschrieben bleiben — APA und Chicago schreiben beispielsweise längere Präpositionen groß, die AP und MLA kleinschreiben würden."
+          "answer": "AP schreibt Artikel, Konjunktionen und Präpositionen mit höchstens drei Buchstaben klein. APA schreibt Nebenwörter mit höchstens drei Buchstaben klein. Chicago und MLA schreiben alle Präpositionen klein, egal wie lang sie sind. „Jedes Wort“ schreibt alles groß. Chicago und MLA stimmen bei den meisten Titeln überein und teilen sich daher eine Option."
         },
         {
-          "question": "Werden das erste und letzte Wort immer großgeschrieben?",
-          "answer": "Ja, alle vier Stile schreiben das erste und letzte Wort des Titels groß, unabhängig von der Wortart."
+          "question": "Wird das erste und das letzte Wort immer großgeschrieben?",
+          "answer": "Ja. Das erste und das letzte Wort sowie das erste Wort nach einem Doppelpunkt oder Gedankenstrich werden immer großgeschrieben."
         },
         {
           "question": "Wird mein Text irgendwohin hochgeladen?",
-          "answer": "Nein, die Großschreibung erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, die Großschreibung geschieht vollständig in Ihrem Browser."
         },
         {
           "question": "Wie entscheidet das Tool, welche kleinen Wörter kleingeschrieben werden?",
-          "answer": "Es nutzt stilspezifische Regeln (AP, APA, Chicago oder MLA), die festlegen, welche kurzen Artikel, Konjunktionen und Präpositionen kleingeschrieben bleiben, sofern sie nicht am Anfang oder Ende des Titels stehen."
+          "answer": "Jeder Stil hat eigene Listen von Nebenwörtern (Artikel, Konjunktionen und Präpositionen), die im Tooltip des Stils angezeigt werden. Alles andere wird großgeschrieben."
         },
         {
-          "question": "Werden Bindestrich-Wörter korrekt behandelt?",
-          "answer": "Wörter mit Bindestrich werden als ein einzelnes Token großgeschrieben, statt jeden Teil nach dem Bindestrich einzeln großzuschreiben — aus \"well-known\" wird also \"Well-known\", nicht \"Well-Known\"."
+          "question": "Kommt es mit Wörtern mit Bindestrich richtig zurecht?",
+          "answer": "Ja. Jeder Teil eines Wortes mit Bindestrich wird großgeschrieben, aus well-known wird also Well-Known."
         },
         {
-          "question": "Kann das Tool Titel mit durch Doppelpunkt getrennten Untertiteln großschreiben?",
-          "answer": "Ja, der Text wird als durchgehende Zeichenkette verarbeitet, sodass sowohl Titel als auch Untertitel konsistent in Title Case gesetzt werden."
+          "question": "Kann es Titel mit durch Doppelpunkt getrennten Untertiteln großschreiben?",
+          "answer": "Ja, der Text wird als zusammenhängende Zeichenfolge verarbeitet, sodass sowohl Titel als auch Untertitel einheitlich in Title Case umgewandelt werden."
         },
         {
-          "question": "Bleibt eine bewusst stilisierte Großschreibung wie bei Markennamen erhalten?",
-          "answer": "Nein, jedes Wort wird gemäß den Regeln des gewählten Stils neu formatiert, sodass stilisierte Großschreibung (wie \"eBay\" oder \"iPhone\") vereinheitlicht statt beibehalten wird."
+          "question": "Bleibt gewollte stilisierte Großschreibung erhalten, etwa bei Markennamen?",
+          "answer": "Ja, standardmäßig. Wörter in Großbuchstaben (NASA) oder mit Großbuchstaben im Wort (iPhone, eBay) bleiben unverändert. Deaktivieren Sie „Akronyme & Marken beibehalten“, um auch sie umzuformatieren."
         }
       ]
     },
     "url-slug-generator": {
-      "seoTitle": "URL-Slug-Generator online – SEO-freundlich, kostenlos & sofort",
-      "metaDescription": "Verwandeln Sie jeden Titel oder Text in einen sauberen, SEO-freundlichen URL-Slug – 100% lokal in Ihrem Browser verarbeitet.",
+      "seoTitle": "URL-Slug-Generator Online – SEO-freundlich, kostenlos & sofort",
+      "metaDescription": "Titel in saubere URL-Slugs umwandeln – mit Transliteration von Akzenten, Kyrillisch, Griechisch und Arabisch, optionalen Unicode-Slugs, Entfernen von Stoppwörtern, maximaler Länge und Stapelumwandlung. Kostenlos und privat.",
       "h1": "SEO-URL-Slug-Generator",
-      "subheading": "Verwandeln Sie jeden Titel oder Text sofort in einen sauberen, SEO-freundlichen URL-Slug.",
+      "subheading": "Titel in saubere, SEO-freundliche URL-Slugs umwandeln – mit Transliteration, Stoppwörtern, maximaler Länge und Stapelumwandlung.",
       "keywords": [
-        "slug generator",
-        "url slugify",
-        "seo-freundliche url erstellen"
+        "Slug Generator",
+        "URL Slug erstellen",
+        "SEO-freundliche URL erstellen",
+        "Slugify",
+        "Slugs im Stapel erzeugen"
       ],
       "howTo": [
         {
           "name": "Titel eingeben",
-          "text": "Geben Sie einen Blogpost-Titel oder beliebigen Text ein."
+          "text": "Tippen oder fügen Sie einen Blogartikel-Titel oder beliebigen Text ein."
         },
         {
           "name": "Optionen anpassen",
@@ -4810,104 +4924,121 @@
         },
         {
           "name": "Slug kopieren",
-          "text": "Der URL-taugliche Slug wird sofort aktualisiert – kopieren Sie ihn mit einem Klick."
+          "text": "Der URL-fertige Slug aktualisiert sich sofort – kopieren Sie ihn mit einem Klick."
         }
       ],
       "faq": [
         {
           "question": "Wie werden Zeichen mit Akzenten behandelt?",
-          "answer": "Zeichen mit Akzenten und diakritischen Zeichen werden in ihr nächstliegendes ASCII-Äquivalent umgewandelt (z. B. wird é zu e), damit der Slug URL-sicher bleibt."
+          "answer": "Sie werden in einfache Buchstaben transliteriert: é wird zu e, ß zu ss, æ zu ae, und kyrillische, griechische und arabische Buchstaben werden zu ihren lateinischen Entsprechungen. Aktivieren Sie „Nicht-lateinische Buchstaben behalten“, um stattdessen Buchstaben jeder Schrift zu erhalten."
         },
         {
           "question": "Was passiert mit Sonderzeichen und Leerzeichen?",
-          "answer": "Sie werden durch Ihr gewähltes Trennzeichen ersetzt, und mehrere aufeinanderfolgende Trennzeichen werden zu einem zusammengefasst."
+          "answer": "Sie werden durch das gewählte Trennzeichen ersetzt, und mehrere aufeinanderfolgende Trennzeichen werden zu einem zusammengefasst."
         },
         {
           "question": "Wird mein Text irgendwohin hochgeladen?",
-          "answer": "Nein, die Slug-Erzeugung erfolgt vollständig in Ihrem Browser."
+          "answer": "Nein, die Slug-Erzeugung findet vollständig in Ihrem Browser statt."
         },
         {
-          "question": "Gibt es eine maximale Slug-Länge?",
-          "answer": "Es gibt keine eingebaute Höchstlänge — sehr lange Titel erzeugen entsprechend lange Slugs, kürzen Sie sie bei Bedarf also manuell für eine kürzere URL."
+          "question": "Wird eine maximale Slug-Länge erzwungen?",
+          "answer": "Optional. Legen Sie „Maximale Länge“ fest, und der Slug wird nach Möglichkeit an einer Wortgrenze gekürzt. Lassen Sie das Feld leer, gilt keine Begrenzung."
         },
         {
-          "question": "Kann ich zwischen Bindestrichen und Unterstrichen als Trennzeichen wählen?",
-          "answer": "Ja, ein Umschalter lässt Sie zwischen Bindestrichen und Unterstrichen als Worttrennzeichen wählen."
+          "question": "Kann ich Bindestriche oder Unterstriche als Trennzeichen wählen?",
+          "answer": "Ja: Bindestrich, Unterstrich, Punkt oder keines."
         },
         {
-          "question": "Werden Füllwörter wie 'a' oder 'the' entfernt?",
-          "answer": "Nein, es werden nur Sonderzeichen entfernt und akzentuierte Buchstaben normalisiert — gängige Wörter wie \"a\" oder \"the\" bleiben im Slug erhalten."
+          "question": "Entfernt es Stoppwörter wie „der“ oder „und“?",
+          "answer": "Optional. Aktivieren Sie „Stoppwörter entfernen“, um häufige Wörter wie a, the, of und and zu entfernen (ein Slug wird dadurch nie leer)."
         },
         {
           "question": "Was passiert mit Zahlen im Titel?",
-          "answer": "Zahlen bleiben im erzeugten Slug unverändert erhalten, da sie bereits URL-sichere Zeichen sind."
+          "answer": "Zahlen bleiben unverändert. Symbole wie & und % werden in Wörter umgewandelt (and, percent)."
+        },
+        {
+          "question": "Kann ich viele Slugs auf einmal erstellen?",
+          "answer": "Ja. Geben Sie pro Zeile einen Titel ein, und jede Zeile erhält ihren eigenen Slug. Ein Präfix wie https://site.com/blog lässt sich jedem davon voranstellen."
+        },
+        {
+          "question": "Wie sieht es mit Sprachen wie Chinesisch oder Japanisch aus?",
+          "answer": "Sie lassen sich nicht zuverlässig transliterieren, daher würden diese Zeichen entfallen. Aktivieren Sie „Nicht-lateinische Buchstaben behalten“, um sie zu erhalten – moderne Browser und Suchmaschinen kommen mit Unicode-URLs zurecht."
         }
       ]
     },
     "opengraph-generator": {
-      "seoTitle": "OpenGraph- & Meta-Tag-Generator – Live-Vorschau, kostenlos",
-      "metaDescription": "Generieren Sie OpenGraph- und Twitter-Meta-Tags mit einer Live-Vorschau, wie Ihr Link bei Google, Twitter und Facebook aussehen wird.",
-      "h1": "OpenGraph- & Meta-Tag-Generator",
-      "subheading": "Generieren Sie Social-Share-Meta-Tags mit einer Live-Vorschau, wie Ihr Link beim Teilen aussehen wird.",
+      "seoTitle": "OpenGraph & Meta-Tag-Generator – Live-Vorschau, kostenlos",
+      "metaDescription": "Open-Graph- und Twitter-Card-Meta-Tags erzeugen – mit Live-Vorschau für Google, X, Facebook, LinkedIn und Slack, Längenzählern, Bildprüfung und Next.js-Metadata-Export. Kostenlos und privat.",
+      "h1": "OpenGraph & Meta-Tag-Generator",
+      "subheading": "Meta-Tags für das Teilen in sozialen Netzwerken erzeugen – mit Live-Vorschau für Google, X, Facebook, LinkedIn und Slack sowie Längenzählern und Bildprüfung.",
       "keywords": [
-        "opengraph generator",
-        "meta tag vorschau",
-        "social share card erstellen"
+        "OpenGraph Generator",
+        "Meta-Tag Vorschau",
+        "Social-Media-Vorschaukarte erstellen",
+        "Twitter Card Generator",
+        "Meta-Tags Generator",
+        "OG-Bild prüfen"
       ],
       "howTo": [
         {
           "name": "Angaben ausfüllen",
-          "text": "Geben Sie Titel, Beschreibung, kanonische URL, Seitenname, Bild-URL und Twitter-Handle ein."
+          "text": "Geben Sie Titel, Beschreibung, kanonische URL, Website-Namen, Bild-URL und Twitter-Handle ein."
         },
         {
-          "name": "Live-Vorschauen prüfen",
-          "text": "Sehen Sie sofortige Vorschauen, wie Ihr Link in der Google-Suche, auf Twitter und Facebook erscheinen wird."
+          "name": "Live-Vorschau prüfen",
+          "text": "Sehen Sie sofort, wie Ihr Link in der Google-Suche, auf Twitter und auf Facebook erscheint."
         },
         {
           "name": "Code kopieren",
-          "text": "Kopieren Sie fertige HTML-Meta-Tags oder ein Next.js-Metadata-Objekt zum direkten Einfügen."
+          "text": "Kopieren Sie einsatzbereite HTML-Meta-Tags oder ein Next.js-Metadata-Objekt."
         }
       ],
       "faq": [
         {
           "question": "Wofür werden OpenGraph-Tags verwendet?",
-          "answer": "Sie steuern, wie Ihre Seite beim Teilen in sozialen Medien und Messaging-Apps erscheint — Titel, Beschreibung und Vorschaubild."
+          "answer": "Sie steuern, wie Ihre Seite beim Teilen in sozialen Medien und Messengern erscheint – Titel, Beschreibung und Vorschaubild."
         },
         {
           "question": "Funktioniert das mit Next.js?",
-          "answer": "Ja, es gibt eine eigene Schaltfläche, um ein fertiges, einfügebereites Next.js-Metadaten-Exportobjekt neben den einfachen HTML-Meta-Tags zu kopieren."
+          "answer": "Ja. Neben den reinen HTML-Tags wird ein einsatzbereiter Next.js-Metadata-Export erzeugt, bei dem alle Werte sicher maskiert sind."
         },
         {
           "question": "Werden meine Daten irgendwohin hochgeladen?",
-          "answer": "Nein, die Vorschauen und der generierte Code werden vollständig in Ihrem Browser erstellt."
+          "answer": "Nein, die Vorschauen und der erzeugte Code entstehen vollständig in Ihrem Browser."
         },
         {
-          "question": "Welche Bildabmessungen sollte ich für das OpenGraph-Bild verwenden?",
-          "answer": "1200×630 Pixel ist die allgemein empfohlene Größe für OpenGraph-Bilder und sorgt für eine gute Darstellung auf Facebook, LinkedIn und den meisten anderen Plattformen."
+          "question": "Welche Bildmaße sollte ich für das OpenGraph-Bild verwenden?",
+          "answer": "1200×630 Pixel ist die weithin empfohlene Größe für OpenGraph-Bilder und sorgt für eine gute Darstellung auf Facebook, LinkedIn und den meisten anderen Plattformen."
         },
         {
-          "question": "Werden dabei auch Twitter-Card-Tags erzeugt?",
-          "answer": "Prüfen Sie die erzeugte Ausgabe — viele OpenGraph-Generatoren fügen passende Twitter-Card-Meta-Tags neben den Standard-`og:`-Tags hinzu, um eine breitere Plattformunterstützung zu bieten."
+          "question": "Erzeugt das auch Twitter-Card-Tags?",
+          "answer": "Ja. Es schreibt twitter:card (großes Bild oder Zusammenfassung), Titel, Beschreibung, Bild, Alternativtext, Site und Creator."
         },
         {
-          "question": "Kann ich eine Vorschau sehen, wie der Link auf verschiedenen Plattformen aussieht?",
-          "answer": "Das Tool zeigt eine Vorschau der Karte basierend auf Ihren eingegebenen Tags, auch wenn die tatsächliche Darstellung je nach Plattform leicht abweichen kann, da jeder Dienst seine eigenen Layoutregeln anwendet."
+          "question": "Kann ich die Darstellung des Links auf verschiedenen Plattformen vorab ansehen?",
+          "answer": "Ja. Tabs zeigen Vorschauen für die Google-Suche, X / Twitter (große oder kleine Karte), Facebook / LinkedIn und Slack / Discord. Die tatsächliche Darstellung kann je nach Plattform leicht abweichen."
         },
         {
-          "question": "Warum zeigt meine Seite nach der Änderung der Tags nicht die aktualisierte Vorschau?",
-          "answer": "Soziale Plattformen cachen Link-Vorschauen — in der Regel müssen Sie das eigene Debugging-/Cache-Aktualisierungstool der jeweiligen Plattform (wie den Sharing Debugger von Facebook) nutzen, damit sie Ihre aktualisierten Tags neu einliest."
+          "question": "Warum zeigt meine Website nach der Änderung der Tags nicht die aktualisierte Vorschau?",
+          "answer": "Soziale Plattformen speichern Link-Vorschauen im Cache – in der Regel müssen Sie das eigene Debug- bzw. Cache-Aktualisierungs-Tool der Plattform nutzen (etwa den Sharing Debugger von Facebook), damit Ihre aktualisierten Tags neu eingelesen werden."
+        },
+        {
+          "question": "Werden meine Werte in der Ausgabe maskiert?",
+          "answer": "Ja. Anführungszeichen, kaufmännische Und-Zeichen und spitze Klammern werden in den HTML-Tags maskiert, Anführungszeichen und Backslashes im Next.js-Code, sodass die Ausgabe Ihr Markup nicht beschädigen kann. Tags ohne Wert werden weggelassen."
         }
       ]
     },
     "duplicate-line-remover": {
-      "seoTitle": "Duplikate-Zeilen-Entferner & Listen-Sortierer – kostenlos, sofort",
-      "metaDescription": "Entfernen Sie doppelte Zeilen aus einer Liste und sortieren Sie sie alphabetisch oder nach Länge – 100% lokal in Ihrem Browser verarbeitet.",
-      "h1": "Duplikate-Zeilen-Entferner & Listen-Sortierer",
-      "subheading": "Entfernen Sie doppelte Zeilen aus einer Liste und sortieren Sie sie ganz nach Bedarf.",
+      "seoTitle": "Doppelte Zeilen entfernen & Liste sortieren – Kostenlos, sofort",
+      "metaDescription": "Doppelte Zeilen entfernen, nur Duplikate oder nur einmalige Zeilen anzeigen, Vorkommen zählen und natürlich, nach Länge, umgekehrt oder zufällig sortieren – mit Live-Statistik. Kostenlos und privat.",
+      "h1": "Doppelte Zeilen entfernen & Liste sortieren",
+      "subheading": "Doppelte Zeilen entfernen, Duplikate finden, Vorkommen zählen und sortieren – mit Live-Statistik.",
       "keywords": [
-        "doppelte zeilen entfernen",
-        "liste deduplizieren",
-        "liste online sortieren"
+        "Doppelte Zeilen entfernen",
+        "Liste bereinigen Duplikate",
+        "Liste online sortieren",
+        "Doppelte Zeilen finden",
+        "Zeilen online sortieren"
       ],
       "howTo": [
         {
@@ -4916,7 +5047,7 @@
         },
         {
           "name": "Optionen festlegen",
-          "text": "Aktivieren Sie bei Bedarf Groß-/Kleinschreibung ignorieren, Leerzeichen trimmen und leere Zeilen entfernen."
+          "text": "Schalten Sie nach Bedarf den Vergleich ohne Beachtung der Groß-/Kleinschreibung, das Entfernen von Leerzeichen am Rand und das Löschen leerer Zeilen um."
         },
         {
           "name": "Sortieren und kopieren",
@@ -4925,32 +5056,36 @@
       ],
       "faq": [
         {
-          "question": "Welche Zeile wird beibehalten, wenn Duplikate gefunden werden?",
-          "answer": "Das erste Vorkommen wird beibehalten, wobei die ursprüngliche Groß-/Kleinschreibung auch im Modus ohne Berücksichtigung der Groß-/Kleinschreibung erhalten bleibt."
+          "question": "Welche Zeile bleibt erhalten, wenn Duplikate gefunden werden?",
+          "answer": "Das erste Vorkommen bleibt erhalten, wobei seine ursprüngliche Schreibweise auch im Modus ohne Beachtung der Groß-/Kleinschreibung bewahrt wird."
         },
         {
           "question": "Kann ich sortieren, ohne Duplikate zu entfernen?",
-          "answer": "Ja, Sortierung und Duplikatentfernung sind unabhängige Optionen — nutzen Sie eine davon einzeln oder beide zusammen."
+          "answer": "Ja, Sortieren und Entfernen von Duplikaten sind voneinander unabhängige Optionen – nutzen Sie eine allein oder beide zusammen."
         },
         {
           "question": "Wird meine Liste irgendwohin hochgeladen?",
           "answer": "Nein, alles wird vollständig in Ihrem Browser verarbeitet."
         },
         {
-          "question": "Wird bei der Duplikaterkennung zwischen Groß- und Kleinschreibung unterschieden?",
-          "answer": "Es gibt einen Umschalter für die Nicht-Beachtung der Groß-/Kleinschreibung — standardmäßig werden \"Apple\" und \"apple\" möglicherweise als unterschiedliche Zeilen behandelt, sofern Sie den entsprechenden Vergleich nicht aktivieren."
+          "question": "Beachtet die Duplikaterkennung die Groß-/Kleinschreibung?",
+          "answer": "Standardmäßig nicht: „Groß-/Kleinschreibung ignorieren“ ist aktiv. Deaktivieren Sie es, um Apple und apple als verschiedene Zeilen zu behandeln. Das erste Vorkommen behält seine ursprüngliche Schreibweise."
         },
         {
-          "question": "Werden führende oder nachgestellte Leerzeichen beim Vergleich von Zeilen ignoriert?",
-          "answer": "Prüfen Sie, wie Ihre Zeilen verglichen werden — das Trimm-Verhalten beeinflusst, ob Zeilen, die sich nur durch umgebende Leerzeichen unterscheiden, als Duplikate gelten."
+          "question": "Ignoriert es führende oder nachgestellte Leerzeichen beim Vergleich von Zeilen?",
+          "answer": "Ja, wenn „Leerzeichen entfernen“ aktiv ist, gelten Zeilen, die sich nur in umgebenden Leerzeichen unterscheiden, als gleich."
         },
         {
           "question": "Welche Sortieroptionen gibt es außer alphabetisch?",
-          "answer": "Sie können A→Z, Z→A, nach Zeilenlänge sortieren oder die Originalreihenfolge beibehalten — einen separaten numerischen Sortiermodus gibt es nicht."
+          "answer": "A bis Z, Z bis A, natürlich (item2 vor item10), natürlich absteigend, kürzeste zuerst, längste zuerst, umgekehrte Reihenfolge und Zufallsmischung."
         },
         {
-          "question": "Kann ich gleichzeitig leere Zeilen entfernen?",
-          "answer": "Ja, eine separate Option \"leere Zeilen entfernen\" funktioniert unabhängig von der Duplikatentfernung."
+          "question": "Kann ich gleichzeitig Leerzeilen entfernen?",
+          "answer": "Ja. „Leere Zeilen löschen“ funktioniert zusammen mit den anderen Optionen, und die Statusleiste meldet, wie viele entfernt wurden."
+        },
+        {
+          "question": "Kann ich nur die Duplikate sehen oder sie zählen?",
+          "answer": "Ja. Mit „Modus“ zeigen Sie nur Zeilen an, die mehr als einmal vorkommen, behalten nur Zeilen, die genau einmal vorkommen, oder listen jede Zeile mit der Anzahl ihrer Vorkommen auf."
         }
       ]
     },

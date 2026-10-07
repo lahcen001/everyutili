@@ -109,6 +109,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
           { label: tool.name },
         ]}
         aboveTool={<QuickAnswer locale={locale} answer={content.quickAnswer} />}
+        wide={tool.layout === "workspace"}
       >
         <ToolErrorBoundary>
           <ToolComponent />

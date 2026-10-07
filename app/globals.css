@@ -269,3 +269,8 @@ body {
     }
   }
 }
+
+/* Regex tester: match highlights inside the Monaco test-string editor */
+.regex-match-a { background: color-mix(in srgb, var(--primary) 28%, transparent); border-radius: 2px; box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 55%, transparent); }
+.regex-match-b { background: color-mix(in srgb, #f59e0b 30%, transparent); border-radius: 2px; box-shadow: 0 0 0 1px color-mix(in srgb, #f59e0b 60%, transparent); }
+.regex-group { background: color-mix(in srgb, #10b981 35%, transparent); border-radius: 2px; }

@@ -1,147 +1,96 @@
 "use client";
 
 import * as React from "react";
-import dynamic from "next/dynamic";
-import { AlertCircle, CheckCircle2, Download, Save } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { CopyButton } from "@/components/tool-shell/CopyButton";
-import { downloadBlob } from "@/lib/downloadBlob";
-import { jsonToCsv } from "@/lib/jsonToCsv";
+import { ConverterWorkspace } from "@/components/tools/developer/workspace/ConverterWorkspace";
+import { DataTable } from "@/components/tools/developer/workspace/DataTable";
+import { ToolbarSelect, ToolbarToggle } from "@/components/tools/developer/workspace/Workspace";
 import { useTrackTool } from "@/hooks/useTrackTool";
-import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
-import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
-
-const MonacoEditor = dynamic(() => import("@monaco-editor/react"), {
-  ssr: false,
-  loading: () => (
-    <div className="flex h-[420px] items-center justify-center text-sm text-muted-foreground">
-      Loading editor…
-    </div>
-  ),
-});
+import { parseCsv } from "@/lib/csv";
+import { parseJsonAst } from "@/lib/json";
+import { jsonToCsv } from "@/lib/jsonToCsv";
+import { cn } from "@/lib/utils";
 
 const SAMPLE = JSON.stringify(
   [
-    { name: "Ada Lovelace", role: "Engineer", city: "London" },
-    { name: "Grace Hopper", role: "Admiral", city: "New York" },
+    { id: 1, name: "Grace Hopper", team: { name: "Compilers", size: 12 }, skills: ["COBOL", "Math"], note: 'Says "hello, world"' },
+    { id: 2, name: "Linus Torvalds", team: { name: "Kernel", size: 40 }, skills: ["C", "Git"], note: "Line one\nLine two" },
+    { id: 3, name: "Margaret Hamilton", team: { name: "Apollo", size: 7 }, skills: [], note: "" },
   ],
   null,
   2
 );
-
-interface ConvertResult {
-  csv: string;
-  rowCount: number;
-  error: string | null;
-}
-
-function convert(raw: string): ConvertResult {
-  try {
-    const parsed = JSON.parse(raw);
-    const csv = jsonToCsv(parsed);
-    const rowCount = Array.isArray(parsed) ? parsed.length : 1;
-    return { csv, rowCount, error: null };
-  } catch (e) {
-    return { csv: "", rowCount: 0, error: e instanceof Error ? e.message : "Invalid JSON" };
-  }
-}
+const DELIMITERS = [
+  { value: ",", label: "Comma" },
+  { value: ";", label: "Semicolon" },
+  { value: "\t", label: "Tab" },
+  { value: "|", label: "Pipe" },
+];
 
 export default function JsonToCsvConverter() {
   useTrackTool("json-to-csv");
-  const [input, setInput] = React.useState(SAMPLE);
-  const historyRef = React.useRef<ToolHistoryListHandle>(null);
+  const [raw, setRaw] = React.useState(SAMPLE);
+  const [delimiter, setDelimiter] = React.useState(",");
+  const [header, setHeader] = React.useState(true);
+  const [flatten, setFlatten] = React.useState(true);
+  const [joinArrays, setJoinArrays] = React.useState(false);
+  const [quoteAll, setQuoteAll] = React.useState(false);
+  const [bom, setBom] = React.useState(false);
+  const [formulaGuard, setFormulaGuard] = React.useState(false);
+  const [view, setView] = React.useState<"text" | "table">("text");
 
-  const { csv, rowCount, error } = React.useMemo(() => convert(input), [input]);
+  const result = React.useMemo(() => {
+    if (raw.trim() === "") return { csv: "", error: null, rows: 0, columns: 0 };
+    const parsed = parseJsonAst(raw);
+    if (!parsed.ok) return { csv: "", error: { message: parsed.error.message, line: parsed.error.line, column: parsed.error.column }, rows: 0, columns: 0 };
+    const value = JSON.parse(raw) as unknown;
+    const csv = jsonToCsv(value, { delimiter, header, flatten, arrays: joinArrays ? "join" : "json", quoteAll, bom, formulaGuard });
+    return { csv, error: null, rows: Array.isArray(value) ? value.length : 1, columns: 0 };
+  }, [raw, delimiter, header, flatten, joinArrays, quoteAll, bom, formulaGuard]);
 
-  const saveResult = async () => {
-    if (!csv) return;
-    await saveToolResult("json-to-csv", {
-      title: `${rowCount} row${rowCount === 1 ? "" : "s"} exported`,
-      summary: `${csv.length.toLocaleString()} characters`,
-      data: csv,
-    });
-    historyRef.current?.refresh();
-  };
-
-  const downloadCsv = () => {
-    if (!csv) return;
-    downloadBlob(new Blob([csv], { type: "text/csv" }), "converted.csv");
-  };
-
-  const restoreResult = (item: ToolHistoryItem) => {
-    if (item.data) setInput(item.data);
-  };
+  const table = React.useMemo(() => {
+    if (view !== "table" || !result.csv) return null;
+    const p = parseCsv(result.csv.replace(/^﻿/, ""), { delimiter: delimiter as ",", header, inferTypes: false });
+    return p.ok ? p.data : null;
+  }, [view, result.csv, delimiter, header]);
 
   return (
-    <div className="space-y-6">
-      <Card className="flex flex-wrap items-center gap-2 p-3">
-        <p className="text-sm text-muted-foreground">
-          Paste a JSON array of objects (or a single object) to convert to CSV.
-        </p>
-        <div className="ml-auto flex items-center gap-2 text-sm">
-          {error ? (
-            <span className="flex items-center gap-1 text-destructive">
-              <AlertCircle className="h-4 w-4" /> Invalid JSON
-            </span>
-          ) : (
-            <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400">
-              <CheckCircle2 className="h-4 w-4" /> Valid JSON
-            </span>
-          )}
+    <ConverterWorkspace
+      slug="json-to-csv"
+      input={raw}
+      onInput={setRaw}
+      inputLanguage="json"
+      outputLanguage="plaintext"
+      output={result.csv}
+      error={result.error}
+      inputTitle="JSON input"
+      outputTitle={
+        <div className="flex gap-0.5" role="tablist" aria-label="Output view">
+          {(["text", "table"] as const).map((v) => (
+            <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)} className={cn("rounded px-2.5 py-1 text-xs font-medium transition-colors", view === v ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-muted hover:text-foreground")}>
+              {v === "text" ? "CSV text" : "Table"}
+            </button>
+          ))}
         </div>
-      </Card>
-
-      {error && (
-        <div className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
-          {error}
-        </div>
-      )}
-
-      <div className="grid gap-4 lg:grid-cols-2">
-        <Card className="overflow-hidden p-0">
-          <MonacoEditor
-            height="420px"
-            defaultLanguage="json"
-            value={input}
-            onChange={(value) => setInput(value ?? "")}
-            theme="vs-dark"
-            options={{
-              minimap: { enabled: false },
-              fontSize: 13,
-              scrollBeyondLastLine: false,
-              automaticLayout: true,
-            }}
-          />
-        </Card>
-
-        <Card className="space-y-2 p-4">
-          <p className="text-sm font-medium">CSV output</p>
-          {!error && csv ? (
-            <pre className="h-[370px] overflow-auto rounded-lg border border-border bg-muted/20 p-3 font-mono text-xs">
-              {csv}
-            </pre>
-          ) : (
-            <div className="flex h-[370px] items-center justify-center rounded-lg border border-border text-sm text-muted-foreground">
-              {error ? "Fix JSON errors to convert" : "No tabular data to export"}
-            </div>
-          )}
-          <div className="flex flex-wrap gap-2">
-            <CopyButton value={csv} variant="secondary" disabled={!csv}>
-              Copy CSV
-            </CopyButton>
-            <Button size="sm" variant="outline" onClick={downloadCsv} disabled={!csv}>
-              <Download className="h-3.5 w-3.5" /> Download .csv
-            </Button>
-            <Button size="sm" variant="outline" onClick={saveResult} disabled={!csv}>
-              <Save className="h-3.5 w-3.5" /> Save result
-            </Button>
-          </div>
-        </Card>
-      </div>
-
-      <ToolHistoryList ref={historyRef} toolSlug="json-to-csv" onRestore={restoreResult} />
-    </div>
+      }
+      historyTitle="JSON → CSV"
+      onSample={() => setRaw(SAMPLE)}
+      fileAccept=".json,application/json,text/plain"
+      download={{ name: "data.csv", mime: "text/csv;charset=utf-8" }}
+      emptyMessage="Paste a JSON array of objects to convert it to CSV."
+      stats={result.error ? null : <span>{result.rows.toLocaleString()} row{result.rows === 1 ? "" : "s"}</span>}
+      outputView={view === "table" && table ? <DataTable columns={table.columns} rows={table.rows} /> : undefined}
+      options={
+        <>
+          <ToolbarSelect label="Delimiter" value={delimiter} onChange={setDelimiter} options={DELIMITERS} />
+          <ToolbarToggle label="Header row" checked={header} onChange={setHeader} />
+          <ToolbarToggle label="Flatten objects" checked={flatten} onChange={setFlatten} />
+          <ToolbarToggle label="Join arrays" checked={joinArrays} onChange={setJoinArrays} />
+          <ToolbarToggle label="Quote all" checked={quoteAll} onChange={setQuoteAll} />
+          <ToolbarToggle label="Excel BOM" checked={bom} onChange={setBom} />
+          <ToolbarToggle label="Formula guard" checked={formulaGuard} onChange={setFormulaGuard} />
+        </>
+      }
+    />
   );
 }

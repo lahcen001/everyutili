@@ -1,177 +1,141 @@
 "use client";
 
 import * as React from "react";
-import { ArrowLeftRight, FileJson2, Save } from "lucide-react";
+import { ArrowLeftRight } from "lucide-react";
 
-import { CopyButton } from "@/components/tool-shell/CopyButton";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { jsonToCsv } from "@/lib/jsonToCsv";
+import { ConverterWorkspace } from "@/components/tools/developer/workspace/ConverterWorkspace";
+import { DataTable } from "@/components/tools/developer/workspace/DataTable";
+import { ToolbarButton, ToolbarSelect, ToolbarToggle } from "@/components/tools/developer/workspace/Workspace";
 import { useTrackTool } from "@/hooks/useTrackTool";
-import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
-import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { csvToJsonText, delimiterName, type CsvOptions } from "@/lib/csv";
+import { parseJsonAst } from "@/lib/json";
+import { jsonToCsv } from "@/lib/jsonToCsv";
+import { cn } from "@/lib/utils";
 
 type Mode = "csv-to-json" | "json-to-csv";
 
-const SAMPLE_CSV = `name,role,city\nAda Lovelace,Engineer,London\nGrace Hopper,Admiral,New York`;
+const SAMPLE_CSV = `id,name,team,joined,active,note
+1,"Hopper, Grace",Compilers,1952-03-01,true,"Said ""hello"""
+2,Linus Torvalds,Kernel,1991-08-25,true,"Line one
+Line two"
+3,Margaret Hamilton,Apollo,1965-01-01,false,
+`;
 const SAMPLE_JSON = JSON.stringify(
   [
-    { name: "Ada Lovelace", role: "Engineer", city: "London" },
-    { name: "Grace Hopper", role: "Admiral", city: "New York" },
+    { id: 1, name: "Hopper, Grace", team: "Compilers", active: true },
+    { id: 2, name: "Linus Torvalds", team: "Kernel", active: true },
   ],
   null,
   2
 );
-
-function parseCsvLine(line: string): string[] {
-  const cells: string[] = [];
-  let current = "";
-  let inQuotes = false;
-  for (let i = 0; i < line.length; i++) {
-    const char = line[i];
-    if (inQuotes) {
-      if (char === '"' && line[i + 1] === '"') {
-        current += '"';
-        i++;
-      } else if (char === '"') {
-        inQuotes = false;
-      } else {
-        current += char;
-      }
-    } else if (char === '"') {
-      inQuotes = true;
-    } else if (char === ",") {
-      cells.push(current);
-      current = "";
-    } else {
-      current += char;
-    }
-  }
-  cells.push(current);
-  return cells;
-}
-
-function csvToJson(csv: string): { result: string; error: string | null } {
-  try {
-    const lines = csv.trim().split(/\r?\n/).filter((l) => l.length > 0);
-    if (lines.length === 0) return { result: "[]", error: null };
-    const headers = parseCsvLine(lines[0]);
-    const rows = lines.slice(1).map((line) => {
-      const cells = parseCsvLine(line);
-      return Object.fromEntries(headers.map((h, i) => [h, cells[i] ?? ""]));
-    });
-    return { result: JSON.stringify(rows, null, 2), error: null };
-  } catch (e) {
-    return { result: "", error: e instanceof Error ? e.message : "Failed to parse CSV" };
-  }
-}
-
-function jsonToCsvSafe(json: string): { result: string; error: string | null } {
-  try {
-    const parsed = JSON.parse(json);
-    return { result: jsonToCsv(parsed), error: null };
-  } catch (e) {
-    return { result: "", error: e instanceof Error ? e.message : "Invalid JSON" };
-  }
-}
+const DELIMITERS = [
+  { value: "auto", label: "Auto-detect" },
+  { value: ",", label: "Comma" },
+  { value: ";", label: "Semicolon" },
+  { value: "\t", label: "Tab" },
+  { value: "|", label: "Pipe" },
+];
 
 export default function CsvToJson() {
   useTrackTool("csv-to-json");
   const [mode, setMode] = React.useState<Mode>("csv-to-json");
   const [input, setInput] = React.useState(SAMPLE_CSV);
-  const historyRef = React.useRef<ToolHistoryListHandle>(null);
+  const [delimiter, setDelimiter] = React.useState("auto");
+  const [header, setHeader] = React.useState(true);
+  const [trim, setTrim] = React.useState(false);
+  const [inferTypes, setInferTypes] = React.useState(true);
+  const [emptyAsNull, setEmptyAsNull] = React.useState(false);
+  const [asObjects, setAsObjects] = React.useState(true);
+  const [view, setView] = React.useState<"json" | "table">("json");
 
-  const { result, error } = React.useMemo(
-    () => (mode === "csv-to-json" ? csvToJson(input) : jsonToCsvSafe(input)),
-    [mode, input]
-  );
+  const toJson = mode === "csv-to-json";
 
-  const swap = () => {
-    const next = mode === "csv-to-json" ? "json-to-csv" : "csv-to-json";
+  const result = React.useMemo(() => {
+    if (input.trim() === "") return { text: "", error: null, info: null as string | null, warnings: [] as string[], table: null as null | { columns: string[]; rows: unknown[][] } };
+    if (toJson) {
+      const r = csvToJsonText(input, { delimiter: delimiter as CsvOptions["delimiter"], header, trim, inferTypes, emptyAsNull, asObjects });
+      if (!r.ok) return { text: "", error: { message: r.message }, info: null, warnings: [], table: null };
+      return { text: r.text, error: null, info: `${r.parsed.rows.length.toLocaleString()} rows · ${r.parsed.columns.length} columns · ${delimiterName(r.parsed.delimiter)}`, warnings: r.parsed.warnings, table: { columns: r.parsed.columns, rows: r.parsed.rows } };
+    }
+    const parsed = parseJsonAst(input);
+    if (!parsed.ok) return { text: "", error: { message: parsed.error.message, line: parsed.error.line, column: parsed.error.column }, info: null, warnings: [], table: null };
+    return { text: jsonToCsv(JSON.parse(input)), error: null, info: null, warnings: [], table: null };
+  }, [input, toJson, delimiter, header, trim, inferTypes, emptyAsNull, asObjects]);
+
+  const switchMode = (next: Mode) => {
+    if (next === mode) return;
     setMode(next);
-    setInput(result || (next === "csv-to-json" ? SAMPLE_CSV : SAMPLE_JSON));
+    setInput(next === "csv-to-json" ? SAMPLE_CSV : SAMPLE_JSON);
   };
-
-  const saveResult = async () => {
-    if (!result) return;
-    await saveToolResult("csv-to-json", {
-      title: mode === "csv-to-json" ? "Converted to JSON" : "Converted to CSV",
-      summary: `${result.length.toLocaleString()} chars`,
-      data: result,
-    });
-    historyRef.current?.refresh();
-  };
-
-  const restoreResult = (item: ToolHistoryItem) => {
-    if (item.data) setInput(item.data);
+  const swap = () => {
+    if (result.error || !result.text) return;
+    setInput(result.text);
+    setMode(toJson ? "json-to-csv" : "csv-to-json");
   };
 
   return (
-    <div className="space-y-6">
-      <Card className="flex flex-wrap items-center gap-3 p-3">
-        <div className="flex overflow-hidden rounded-lg border border-border">
-          <button
-            onClick={() => setMode("csv-to-json")}
-            className={`px-3 py-1.5 text-sm font-medium transition-colors ${
-              mode === "csv-to-json" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
-            }`}
-          >
-            CSV → JSON
-          </button>
-          <button
-            onClick={() => setMode("json-to-csv")}
-            className={`px-3 py-1.5 text-sm font-medium transition-colors ${
-              mode === "json-to-csv" ? "bg-primary text-primary-foreground" : "hover:bg-muted"
-            }`}
-          >
-            JSON → CSV
-          </button>
-        </div>
-        <Button size="sm" variant="outline" onClick={swap}>
-          <ArrowLeftRight className="h-3.5 w-3.5" /> Swap
-        </Button>
-      </Card>
-
-      <div className="grid gap-4 lg:grid-cols-2">
-        <Card className="space-y-2 p-4">
-          <p className="text-sm font-medium">{mode === "csv-to-json" ? "CSV input" : "JSON input"}</p>
-          <textarea
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            rows={14}
-            className="w-full resize-none rounded-lg border border-border bg-background p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-        </Card>
-
-        <Card className="space-y-2 p-4">
-          <p className="flex items-center gap-2 text-sm font-medium">
-            <FileJson2 className="h-4 w-4 text-muted-foreground" />
-            {mode === "csv-to-json" ? "JSON output" : "CSV output"}
-          </p>
-          {error ? (
-            <div className="flex h-[300px] items-center justify-center rounded-lg border border-destructive/30 bg-destructive/10 px-3 text-sm text-destructive">
-              {error}
-            </div>
-          ) : (
-            <textarea
-              readOnly
-              value={result}
-              rows={14}
-              className="w-full resize-none rounded-lg border border-border bg-muted/20 p-3 font-mono text-xs focus:outline-none"
-            />
-          )}
-          <div className="flex flex-wrap gap-2">
-            <CopyButton value={result} variant="secondary" disabled={!result}>
-              Copy result
-            </CopyButton>
-            <Button size="sm" variant="outline" onClick={saveResult} disabled={!result}>
-              <Save className="h-3.5 w-3.5" /> Save result
-            </Button>
+    <ConverterWorkspace
+      slug="csv-to-json"
+      input={input}
+      onInput={setInput}
+      inputLanguage={toJson ? "plaintext" : "json"}
+      outputLanguage={toJson ? "json" : "plaintext"}
+      output={result.text}
+      error={result.error}
+      inputTitle={toJson ? "CSV input" : "JSON input"}
+      outputTitle={
+        toJson ? (
+          <div className="flex gap-0.5" role="tablist" aria-label="Output view">
+            {(["json", "table"] as const).map((v) => (
+              <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)} className={cn("rounded px-2.5 py-1 text-xs font-medium transition-colors", view === v ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-muted hover:text-foreground")}>
+                {v === "json" ? "JSON" : "Table"}
+              </button>
+            ))}
           </div>
-        </Card>
-      </div>
-
-      <ToolHistoryList ref={historyRef} toolSlug="csv-to-json" onRestore={restoreResult} />
-    </div>
+        ) : (
+          "CSV output"
+        )
+      }
+      historyTitle={toJson ? "CSV → JSON" : "JSON → CSV"}
+      onSample={() => setInput(toJson ? SAMPLE_CSV : SAMPLE_JSON)}
+      fileAccept={toJson ? ".csv,.tsv,.txt,text/csv,text/plain" : ".json,application/json,text/plain"}
+      download={{ name: toJson ? "data.json" : "data.csv", mime: toJson ? "application/json" : "text/csv;charset=utf-8" }}
+      emptyMessage="Paste CSV or JSON on the left to convert it."
+      stats={
+        <>
+          {result.info && <span>{result.info}</span>}
+          {result.warnings.length > 0 && (
+            <span className="text-amber-600 dark:text-amber-400" title={result.warnings.join("\n")}>
+              ⚠ {result.warnings[0]}
+            </span>
+          )}
+        </>
+      }
+      outputView={toJson && view === "table" && result.table ? <DataTable columns={result.table.columns} rows={result.table.rows} /> : undefined}
+      options={
+        <>
+          <div className="flex overflow-hidden rounded-md border border-border" role="group" aria-label="Direction">
+            {(["csv-to-json", "json-to-csv"] as const).map((m) => (
+              <button key={m} onClick={() => switchMode(m)} aria-pressed={mode === m} className={cn("h-8 px-3 text-sm font-medium transition-colors", mode === m ? "bg-primary text-primary-foreground" : "hover:bg-muted")}>
+                {m === "csv-to-json" ? "CSV → JSON" : "JSON → CSV"}
+              </button>
+            ))}
+          </div>
+          <ToolbarButton icon={<ArrowLeftRight className="h-3.5 w-3.5" />} onClick={swap} disabled={!!result.error || !result.text}>
+            Swap
+          </ToolbarButton>
+          {toJson && (
+            <>
+              <ToolbarSelect label="Delimiter" value={delimiter} onChange={setDelimiter} options={DELIMITERS} />
+              <ToolbarToggle label="Header row" checked={header} onChange={setHeader} />
+              <ToolbarToggle label="Detect types" checked={inferTypes} onChange={setInferTypes} />
+              <ToolbarToggle label="Trim" checked={trim} onChange={setTrim} />
+              <ToolbarToggle label="Empty → null" checked={emptyAsNull} onChange={setEmptyAsNull} />
+              <ToolbarToggle label="Objects" checked={asObjects} onChange={setAsObjects} />
+            </>
+          )}
+        </>
+      }
+    />
   );
 }

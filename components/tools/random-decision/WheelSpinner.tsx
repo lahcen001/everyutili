@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Eraser, Maximize2, Minimize2, RotateCw, Save, Shuffle, Trophy, UserMinus, X } from "lucide-react";
+import { Eraser, ImagePlus, Maximize2, Minimize2, RotateCw, Save, Shuffle, Trophy, UserMinus, X } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -21,6 +21,28 @@ const PALETTES: { id: string; label: string; colors: string[] }[] = [
 ];
 
 const SPIN_DURATION_MS = 6000;
+const LOGO_KEY = "everyutili_wheel_logo";
+
+/** Reads an image file and returns a PNG data URL scaled to fit 320px, keeping transparency. */
+async function fileToLogo(file: File): Promise<string> {
+  const url = URL.createObjectURL(file);
+  try {
+    const img = new Image();
+    img.src = url;
+    await img.decode();
+    const max = 320;
+    const w = img.naturalWidth || max;
+    const h = img.naturalHeight || max;
+    const scale = Math.min(1, max / Math.max(w, h));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.max(1, Math.round(w * scale));
+    canvas.height = Math.max(1, Math.round(h * scale));
+    canvas.getContext("2d")?.drawImage(img, 0, 0, canvas.width, canvas.height);
+    return canvas.toDataURL("image/png");
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
 
 function parseEntries(input: string): string[] {
   return input
@@ -53,9 +75,11 @@ interface WheelProps {
   pointerRef: React.RefObject<SVGGElement | null>;
   onSpin: () => void;
   canSpin: boolean;
+  logo: string | null;
+  hubScale: number;
 }
 
-function Wheel({ entries, colors, size, rotation, spinning, svgRef, pointerRef, onSpin, canSpin }: WheelProps) {
+function Wheel({ entries, colors, size, rotation, spinning, svgRef, pointerRef, onSpin, canSpin, logo, hubScale }: WheelProps) {
   const center = size / 2;
   const rim = Math.max(10, size * 0.045);
   const radius = center - rim - 2;
@@ -64,7 +88,7 @@ function Wheel({ entries, colors, size, rotation, spinning, svgRef, pointerRef, 
   const fontSize = Math.max(11, Math.min(size / 15, (radius * 0.9 * Math.sin((Math.PI / Math.max(n, 2)) * 0.85)) * 1.15, size / 17));
   const maxChars = Math.max(4, Math.floor((radius * 0.62) / (fontSize * 0.56)));
   const bulbs = 28;
-  const hub = size * 0.17;
+  const hub = size * hubScale;
 
   return (
     <div className="relative shrink-0" style={{ width: size, height: size }}>
@@ -182,12 +206,20 @@ function Wheel({ entries, colors, size, rotation, spinning, svgRef, pointerRef, 
         onClick={onSpin}
         disabled={!canSpin}
         aria-label={spinning ? "Spinning" : "Spin the wheel"}
-        className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-4 border-white bg-gradient-to-b from-primary to-primary/70 text-primary-foreground shadow-xl outline-none transition-transform hover:scale-105 focus-visible:ring-4 focus-visible:ring-primary/40 active:scale-95 disabled:cursor-not-allowed disabled:opacity-80 disabled:hover:scale-100"
+        className={cn(
+          "absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full border-4 border-white text-primary-foreground shadow-xl outline-none transition-transform hover:scale-105 focus-visible:ring-4 focus-visible:ring-primary/40 active:scale-95 disabled:cursor-not-allowed disabled:hover:scale-100",
+          logo ? "bg-white" : "bg-gradient-to-b from-primary to-primary/70 disabled:opacity-80"
+        )}
         style={{ width: hub, height: hub }}
       >
-        <span className="font-extrabold uppercase tracking-wider" style={{ fontSize: Math.max(10, hub * 0.27) }}>
-          {spinning ? <RotateCw className="animate-spin" style={{ width: hub * 0.42, height: hub * 0.42 }} /> : "Spin"}
-        </span>
+        {logo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={logo} alt="" draggable={false} className="h-full w-full object-contain p-[10%]" />
+        ) : (
+          <span className="font-extrabold uppercase tracking-wider" style={{ fontSize: Math.max(10, hub * 0.27) }}>
+            {spinning ? <RotateCw className="animate-spin" style={{ width: hub * 0.42, height: hub * 0.42 }} /> : "Spin"}
+          </span>
+        )}
       </button>
     </div>
   );
@@ -207,6 +239,15 @@ export default function WheelSpinner() {
   const [fullscreen, setFullscreen] = React.useState(false);
   const [pseudoFs, setPseudoFs] = React.useState(false);
   const [size, setSize] = React.useState(340);
+  const [logo, setLogo] = React.useState<string | null>(() => {
+    try {
+      return typeof window === "undefined" ? null : localStorage.getItem(LOGO_KEY);
+    } catch {
+      return null;
+    }
+  });
+  const [hubScale, setHubScale] = React.useState(0.2);
+  const [logoError, setLogoError] = React.useState<string | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
   const stageRef = React.useRef<HTMLDivElement>(null);
   const areaRef = React.useRef<HTMLDivElement>(null);
@@ -341,6 +382,34 @@ export default function WheelSpinner() {
     historyRef.current?.refresh();
   };
 
+  const chooseLogo = async (file: File | undefined) => {
+    if (!file) return;
+    if (!file.type.startsWith("image/")) {
+      setLogoError("Please choose an image file (PNG, JPG, SVG, WebP).");
+      return;
+    }
+    try {
+      const data = await fileToLogo(file);
+      setLogo(data);
+      setLogoError(null);
+      try {
+        localStorage.setItem(LOGO_KEY, data);
+      } catch {
+        /* storage unavailable: the logo still works for this visit */
+      }
+    } catch {
+      setLogoError("Could not read that image.");
+    }
+  };
+  const removeLogo = () => {
+    setLogo(null);
+    try {
+      localStorage.removeItem(LOGO_KEY);
+    } catch {
+      /* ignore */
+    }
+  };
+
   const shuffle = () => {
     const a = [...entries];
     for (let i = a.length - 1; i > 0; i--) {
@@ -400,6 +469,39 @@ export default function WheelSpinner() {
             </div>
           </div>
 
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-muted-foreground">Centre logo</p>
+            <div className="flex items-center gap-3">
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-border bg-white">
+                {logo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={logo} alt="Your logo" className="h-full w-full object-contain p-1.5" />
+                ) : (
+                  <ImagePlus className="h-5 w-5 text-muted-foreground" />
+                )}
+              </span>
+              <div className="flex flex-wrap gap-1.5">
+                <label className="inline-flex h-8 cursor-pointer items-center gap-1.5 rounded-lg border border-border bg-background px-3 text-sm font-medium hover:bg-muted">
+                  <ImagePlus className="h-3.5 w-3.5" /> {logo ? "Change" : "Add your logo"}
+                  <input type="file" accept="image/*" className="hidden" onChange={(e) => { void chooseLogo(e.target.files?.[0]); e.target.value = ""; }} />
+                </label>
+                {logo && (
+                  <Button size="sm" variant="ghost" onClick={removeLogo}>
+                    <X className="h-3.5 w-3.5" /> Remove
+                  </Button>
+                )}
+              </div>
+            </div>
+            {logo && (
+              <label className="flex items-center gap-2 text-xs text-muted-foreground">
+                Logo size
+                <input type="range" min={12} max={32} value={Math.round(hubScale * 100)} onChange={(e) => setHubScale(Number(e.target.value) / 100)} className="flex-1 accent-primary" aria-label="Logo size" />
+              </label>
+            )}
+            {logoError && <p role="alert" className="text-xs text-destructive">{logoError}</p>}
+            <p className="text-[11px] text-muted-foreground">Stays on this device only. Click the logo to spin.</p>
+          </div>
+
           <label className="flex cursor-pointer items-center gap-2 text-sm">
             <input type="checkbox" checked={removeWinner} onChange={(e) => setRemoveWinner(e.target.checked)} className="h-4 w-4 accent-primary" />
             Offer to remove each winner
@@ -436,7 +538,7 @@ export default function WheelSpinner() {
           </div>
 
           <div ref={areaRef} className={cn("flex items-center justify-center p-2", isFs ? "min-h-0 flex-1" : "h-[min(92vw,620px)]")}>
-            <Wheel entries={entries} colors={colors} size={size} rotation={rotation} spinning={spinning} svgRef={svgRef} pointerRef={pointerRef} onSpin={() => spin()} canSpin={canSpin} />
+            <Wheel entries={entries} colors={colors} size={size} rotation={rotation} spinning={spinning} svgRef={svgRef} pointerRef={pointerRef} onSpin={() => spin()} canSpin={canSpin} logo={logo} hubScale={hubScale} />
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 px-4 pb-4">

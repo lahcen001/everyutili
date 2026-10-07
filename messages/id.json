@@ -76,8 +76,8 @@
       "navLabel": "Acak"
     },
     "focus-study": {
-      "label": "Alat Fokus & Belajar",
-      "description": "Timer Pomodoro, suara fokus, kartu flash, dan perencana untuk berkonsentrasi, mengulang materi, dan membangun kebiasaan belajar yang lebih baik — semuanya privat, di browser Anda.",
+      "label": "Fokus & Relaksasi",
+      "description": "Timer Pomodoro, suara fokus, kartu belajar, dan perencana untuk berkonsentrasi — plus istirahat peregangan, latihan pernapasan, dan mini game singkat untuk mengisi ulang tenaga di sela sesi.",
       "navLabel": "Fokus"
     }
   },
@@ -8014,6 +8014,326 @@
         {
           "question": "Apakah cocok dengan timer Pomodoro?",
           "answer": "Keduanya cocok dipadukan: tambahkan kebiasaan seperti Dua sesi fokus dan centang setelah timer Anda selesai."
+        }
+      ]
+    },
+    "stretch-break": {
+      "seoTitle": "Peregangan di Meja Kerja – Rutinitas Peregangan Terpandu Gratis untuk Kerja & Belajar",
+      "metaDescription": "Istirahat peregangan terpandu dengan timer untuk setiap gerakan: reset meja kerja, leher dan bahu, pergelangan dan tangan, serta istirahat mata 20-20-20. Gratis, privat, tanpa daftar.",
+      "h1": "Istirahat Peregangan Terpandu",
+      "subheading": "Lemaskan tubuh setelah duduk lama dengan peregangan bertahap berwaktu untuk leher, bahu, pergelangan tangan, dan mata.",
+      "keywords": [
+        "peregangan di meja kerja",
+        "timer istirahat peregangan",
+        "peregangan kantor",
+        "rutinitas peregangan saat belajar",
+        "peregangan leher dan bahu",
+        "peregangan pergelangan tangan untuk mengetik",
+        "aturan mata 20-20-20",
+        "istirahat peregangan terpandu"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih rutinitas",
+          "text": "Pilih Reset meja kerja untuk peregangan menyeluruh, Leher & bahu, Pergelangan & tangan, atau Istirahat mata 20-20-20."
+        },
+        {
+          "name": "Ikuti setiap langkah",
+          "text": "Layar menampilkan gerakan, petunjuk singkat, dan lingkaran hitung mundur. Bunyi lonceng lembut menandakan saatnya berganti gerakan."
+        },
+        {
+          "name": "Jeda atau lewati",
+          "text": "Tekan Jeda jika butuh sejenak, atau gunakan tanda panah untuk kembali atau maju."
+        },
+        {
+          "name": "Jadikan kebiasaan",
+          "text": "Setiap rutinitas yang selesai menambah hitungan istirahat hari ini. Cobalah satu rutinitas setiap dua sesi Pomodoro."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Seberapa sering saya perlu peregangan saat belajar atau bekerja?",
+          "answer": "Istirahat singkat setiap 30 sampai 60 menit adalah aturan yang baik. Bergerak satu atau dua menit saja sudah membantu leher, punggung, dan mata, serta membuat Anda lebih fokus saat kembali bekerja."
+        },
+        {
+          "question": "Apakah saya butuh peralatan atau ruang khusus?",
+          "answer": "Tidak. Semua gerakan bisa dilakukan sambil duduk di meja atau berdiri di sampingnya. Kenakan pakaian apa pun yang nyaman."
+        },
+        {
+          "question": "Apa itu aturan 20-20-20?",
+          "answer": "Setiap 20 menit, lihat benda sejauh sekitar 20 kaki (6 meter) selama minimal 20 detik. Cara ini mengistirahatkan otot di dalam mata dan mengurangi ketegangan akibat layar."
+        },
+        {
+          "question": "Apakah peregangan aman untuk semua orang?",
+          "answer": "Peregangan seharusnya terasa seperti tarikan ringan, bukan nyeri. Berhentilah jika ada yang sakit. Jika Anda memiliki cedera atau kondisi medis, tanyakan dulu kepada dokter atau fisioterapis. Alat ini hanya informasi kesehatan umum, bukan saran medis."
+        },
+        {
+          "question": "Bisakah dipakai bersama timer Pomodoro?",
+          "answer": "Bisa. Banyak orang memakai istirahat singkat setelah sesi fokus untuk satu rutinitas selama satu menit. Buka Timer Pomodoro di tab lain dan beralih di antara keduanya."
+        },
+        {
+          "question": "Apakah ada data yang disimpan atau diunggah?",
+          "answer": "Hanya jumlah istirahat yang Anda selesaikan setiap hari yang disimpan, di browser pada perangkat ini. Tidak ada yang diunggah."
+        },
+        {
+          "question": "Apakah bisa dipakai dalam layar penuh?",
+          "answer": "Bisa. Tekan Layar penuh untuk mendapatkan teks besar dan timer besar, praktis di tablet atau layar kedua."
+        }
+      ]
+    },
+    "breathing-exercise": {
+      "seoTitle": "Timer Latihan Pernapasan – Alat Relaksasi Gratis Box Breathing & 4-7-8",
+      "metaDescription": "Timer pernapasan terpandu dengan lingkaran animasi: box breathing, 4-7-8, koheren 5-5, dan embusan panjang. Tenangkan diri di sela sesi belajar. Gratis dan privat.",
+      "h1": "Latihan Pernapasan & Timer Relaksasi",
+      "subheading": "Ikuti lingkaran untuk menarik napas, menahan, dan mengembuskan dengan ritme stabil — untuk menenangkan diri, mengembalikan fokus, atau bersantai sebelum tidur.",
+      "keywords": [
+        "latihan pernapasan",
+        "box breathing",
+        "pernapasan 4-7-8",
+        "timer pernapasan",
+        "latihan relaksasi",
+        "aplikasi pernapasan untuk menenangkan diri",
+        "latihan pernapasan untuk kecemasan",
+        "latihan pernapasan terpandu online"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih pola",
+          "text": "Box breathing stabil dan fokus, 4-7-8 sangat menenangkan, Koheren 5-5 lembut dan seimbang, dan Embusan panjang membantu melepas ketegangan."
+        },
+        {
+          "name": "Pilih durasi",
+          "text": "Pilih 1, 3, 5, atau 10 menit."
+        },
+        {
+          "name": "Tekan Mulai",
+          "text": "Tarik napas saat lingkaran membesar, tahan saat tertulis Tahan, dan embuskan saat lingkaran mengecil. Angka menunjukkan sisa detik di setiap langkah."
+        },
+        {
+          "name": "Selesai dengan bunyi lonceng",
+          "text": "Saat waktu habis, lonceng lembut berbunyi. Atur ulang atau pilih pola lain kapan saja."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu box breathing?",
+          "answer": "Pola dengan empat bagian yang sama panjang: tarik napas empat detik, tahan empat, embuskan empat, dan istirahat empat. Orang memakainya untuk merasa tenang dan stabil, misalnya sebelum ujian atau presentasi."
+        },
+        {
+          "question": "Apa itu pernapasan 4-7-8?",
+          "answer": "Tarik napas lewat hidung selama empat detik, tahan selama tujuh, lalu embuskan perlahan selama delapan. Embusan panjang ini sangat menenangkan, sehingga banyak orang memakainya untuk bersantai atau tidur."
+        },
+        {
+          "question": "Apakah latihan pernapasan benar-benar membantu?",
+          "answer": "Pernapasan lambat dengan embusan yang lebih panjang dapat menurunkan detak jantung dan membuat Anda merasa lebih tenang untuk sementara. Ini teknik relaksasi sederhana, bukan pengobatan. Jika merasa pusing, bernapaslah seperti biasa. Bicarakan dengan dokter jika Anda mengalami kecemasan atau gangguan pernapasan."
+        },
+        {
+          "question": "Berapa lama sebaiknya saya melakukannya?",
+          "answer": "Tiga sampai lima menit sudah cukup untuk satu istirahat. Satu menit pun tetap bermanfaat saat waktu Anda terbatas."
+        },
+        {
+          "question": "Bagaimana cara bernapas yang benar?",
+          "answer": "Duduklah dengan nyaman, rilekskan bahu, dan bernapaslah lewat hidung jika terasa mudah. Biarkan perut bergerak lembut. Jangan memaksa atau menegangkan diri."
+        },
+        {
+          "question": "Bisakah dipakai bersama suara fokus?",
+          "answer": "Bisa. Jalankan mixer Suara Fokus dengan suara hujan atau ombak laut di tab lain, lalu bernapaslah mengikuti lingkaran."
+        },
+        {
+          "question": "Apakah data saya disimpan?",
+          "answer": "Tidak. Tidak ada yang disimpan atau diunggah. Alat ini hanya menjalankan timer di browser Anda."
+        }
+      ]
+    },
+    "memory-match": {
+      "seoTitle": "Game Memory Match – Game Mencocokkan Kartu Online Gratis untuk Rehat Otak",
+      "metaDescription": "Mainkan game mencocokkan kartu memori gratis dengan tiga tingkat kesulitan. Balik kartu, temukan pasangan, pantau langkah dan waktu, lalu kalahkan skor terbaik Anda. Cocok untuk istirahat singkat.",
+      "h1": "Game Memory Match",
+      "subheading": "Balik kartu dan temukan semua pasangan yang cocok dengan langkah sesedikit mungkin — rehat otak singkat di sela sesi belajar.",
+      "keywords": [
+        "game memory match",
+        "game kartu memori",
+        "game mencocokkan pasangan",
+        "game memori online gratis",
+        "game konsentrasi",
+        "game rehat otak",
+        "game mencocokkan kartu",
+        "game latihan memori"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih level",
+          "text": "Mudah punya 6 pasang, Sedang 8, dan Sulit 12."
+        },
+        {
+          "name": "Balik dua kartu",
+          "text": "Klik kartu untuk membaliknya, lalu kartu kedua. Jika cocok, kartu tetap terbuka; jika tidak, kartu terbalik lagi."
+        },
+        {
+          "name": "Ingat posisinya",
+          "text": "Gunakan ingatan Anda untuk menemukan pasangan dengan lebih sedikit langkah. Timer mulai pada balikan pertama."
+        },
+        {
+          "name": "Kalahkan rekor Anda",
+          "text": "Selesaikan semua pasangan untuk mendapat hingga tiga bintang. Skor terbaik untuk setiap level disimpan di perangkat ini."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana cara menang?",
+          "answer": "Temukan semua pasangan yang cocok. Semakin sedikit langkah dan semakin singkat waktunya, semakin baik skor dan semakin banyak bintang."
+        },
+        {
+          "question": "Apakah game ini meningkatkan daya ingat?",
+          "answer": "Game seperti ini melatih memori visual jangka pendek dan perhatian, dan menjadi cara menyenangkan untuk mengistirahatkan pikiran. Game ini bukan pengobatan, dan hasil di dalam game tidak membuktikan perubahan daya ingat sehari-hari."
+        },
+        {
+          "question": "Apa arti bintangnya?",
+          "answer": "Tiga bintang berarti Anda selesai dengan sangat sedikit langkah, mendekati jumlah pasangan. Dua bintang berarti permainan yang bagus, dan satu bintang berarti Anda butuh banyak percobaan — main lagi saja."
+        },
+        {
+          "question": "Bisakah dimainkan di ponsel?",
+          "answer": "Bisa. Kartunya besar dan mendukung sentuhan. Dalam layar penuh, kartu menjadi lebih besar lagi."
+        },
+        {
+          "question": "Apakah skor saya disimpan?",
+          "answer": "Langkah dan waktu terbaik Anda untuk setiap level disimpan di browser pada perangkat ini saja."
+        },
+        {
+          "question": "Mengapa ada game di situs belajar?",
+          "answer": "Game singkat tanpa tekanan membantu otak beristirahat di sela sesi fokus. Cukup beberapa menit, lalu kembali bekerja."
+        },
+        {
+          "question": "Apakah gratis?",
+          "answer": "Ya. Gratis, tanpa iklan di dalam game, dan tidak perlu akun."
+        }
+      ]
+    },
+    "reaction-time-test": {
+      "seoTitle": "Tes Waktu Reaksi – Tes Kecepatan Refleks Online Gratis dalam Milidetik",
+      "metaDescription": "Tes waktu reaksi Anda dalam milidetik. Klik saat layar berubah hijau, mainkan lima ronde, lihat rata-rata, dan simpan rekor terbaik. Gratis, privat, tanpa daftar.",
+      "h1": "Tes Waktu Reaksi",
+      "subheading": "Klik secepat mungkin saat layar berubah hijau. Lima ronde memberi Anda rata-rata waktu reaksi dalam milidetik.",
+      "keywords": [
+        "tes waktu reaksi",
+        "tes refleks",
+        "tes kecepatan klik reaksi",
+        "human benchmark waktu reaksi",
+        "seberapa cepat refleks saya",
+        "tes kecepatan reaksi",
+        "waktu reaksi dalam milidetik",
+        "rata-rata waktu reaksi"
+      ],
+      "howTo": [
+        {
+          "name": "Mulai tes",
+          "text": "Klik area merah untuk memulai satu ronde."
+        },
+        {
+          "name": "Tunggu hijau",
+          "text": "Layar berubah merah, lalu hijau setelah jeda acak. Jangan klik selagi masih merah."
+        },
+        {
+          "name": "Klik dengan cepat",
+          "text": "Begitu layar berubah hijau, klik atau ketuk. Waktu Anda dalam milidetik akan muncul."
+        },
+        {
+          "name": "Selesaikan lima ronde",
+          "text": "Setelah lima ronde, rata-rata Anda ditampilkan. Rata-rata terbaik Anda disimpan di perangkat ini."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Berapa waktu reaksi yang bagus?",
+          "answer": "Untuk tes visual seperti ini, kebanyakan orang rata-rata 200 sampai 300 milidetik. Di bawah 200 ms tergolong sangat cepat. Hasil Anda juga dipengaruhi layar, mouse, dan perangkat."
+        },
+        {
+          "question": "Mengapa muncul tulisan Terlalu cepat?",
+          "answer": "Anda mengklik sebelum layar berubah hijau. Waktu tunggunya sengaja acak agar tidak bisa ditebak. Cukup klik untuk mencoba lagi."
+        },
+        {
+          "question": "Apakah kelelahan memengaruhi waktu reaksi?",
+          "answer": "Ya. Kurang tidur, sesi kerja yang panjang, atau gangguan biasanya memperlambat reaksi. Karena itu tes ini bisa menjadi cara sederhana untuk mengecek seberapa segar Anda."
+        },
+        {
+          "question": "Apakah tes ini akurat?",
+          "answer": "Tes ini mengukur dari saat layar berubah hingga Anda mengklik, tetapi refresh rate layar, perangkat input, dan browser menambah beberapa milidetik. Cocok untuk membandingkan diri Anda dari waktu ke waktu, bukan untuk hasil laboratorium."
+        },
+        {
+          "question": "Apakah skor terbaik saya disimpan?",
+          "answer": "Ya, rata-rata terbaik Anda disimpan di browser pada perangkat ini. Gunakan Atur ulang untuk menghapusnya."
+        },
+        {
+          "question": "Bisakah dipakai di layar sentuh?",
+          "answer": "Bisa, ketuk di mana saja pada area berwarna. Layar sentuh sering menambah sedikit penundaan."
+        },
+        {
+          "question": "Apakah ada yang diunggah?",
+          "answer": "Tidak. Semuanya berjalan di browser Anda."
+        }
+      ]
+    },
+    "game-2048": {
+      "seoTitle": "Game 2048 – Puzzle 2048 Online Gratis dengan Undo dan Kontrol Sentuh",
+      "metaDescription": "Mainkan 2048 gratis di browser. Geser dan gabungkan ubin hingga mencapai 2048 dengan keyboard, WASD, atau usap layar, lengkap dengan undo dan skor terbaik tersimpan. Istirahat santai dari belajar.",
+      "h1": "Game Puzzle 2048",
+      "subheading": "Geser ubin, gabungkan angka yang sama, dan coba capai 2048 — puzzle klasik untuk istirahat singkat yang menenangkan.",
+      "keywords": [
+        "game 2048",
+        "main 2048 online",
+        "puzzle 2048",
+        "2048 gratis",
+        "2048 tanpa blokir",
+        "game puzzle angka",
+        "game menggabungkan ubin",
+        "2048 dengan undo"
+      ],
+      "howTo": [
+        {
+          "name": "Gerakkan ubin",
+          "text": "Gunakan tombol panah atau W, A, S, D di keyboard, atau usap di layar sentuh. Semua ubin bergeser ke arah itu."
+        },
+        {
+          "name": "Gabungkan angka yang sama",
+          "text": "Saat dua ubin dengan angka sama bersentuhan, keduanya menyatu menjadi satu ubin berisi jumlahnya."
+        },
+        {
+          "name": "Rencanakan ke depan",
+          "text": "Simpan ubin terbesar di sudut dan jaga papan tetap rapi. Angka 2 atau 4 baru muncul setelah setiap gerakan."
+        },
+        {
+          "name": "Capai 2048",
+          "text": "Bentuk ubin 2048 untuk menang, lalu lanjutkan demi skor lebih tinggi. Undo membatalkan gerakan terakhir Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa tujuan game 2048?",
+          "answer": "Membuat ubin bernomor 2048 dengan menggabungkan ubin yang sama. Anda bisa terus bermain setelahnya untuk mendapat skor lebih tinggi."
+        },
+        {
+          "question": "Strategi apa yang paling efektif?",
+          "answer": "Simpan ubin terbesar di satu sudut, susun deretan angka menurun di sebelahnya, dan hindari bergerak ke arah yang menarik ubin besar keluar dari sudut."
+        },
+        {
+          "question": "Kapan permainan berakhir?",
+          "answer": "Saat papan penuh dan tidak ada dua ubin bersebelahan yang sama, sehingga tidak ada gerakan yang mungkin."
+        },
+        {
+          "question": "Bisakah saya membatalkan gerakan?",
+          "answer": "Bisa. Tekan Undo untuk membatalkan gerakan terakhir. Hanya satu langkah yang diingat."
+        },
+        {
+          "question": "Apakah bisa dimainkan di ponsel?",
+          "answer": "Bisa. Usap pada papan. Layar penuh membuat papan lebih besar."
+        },
+        {
+          "question": "Apakah skor terbaik saya disimpan?",
+          "answer": "Ya, hanya di perangkat ini, di penyimpanan lokal browser Anda. Tidak ada yang diunggah."
+        },
+        {
+          "question": "Apakah cocok untuk istirahat belajar?",
+          "answer": "Beberapa menit puzzle yang tenang dapat mengistirahatkan pikiran. Karena mudah terus bermain, atur timer singkat agar istirahat tetap menjadi istirahat."
         }
       ]
     }

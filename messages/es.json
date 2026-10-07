@@ -76,8 +76,8 @@
       "navLabel": "Azar"
     },
     "focus-study": {
-      "label": "Herramientas de concentración y estudio",
-      "description": "Temporizador Pomodoro, sonidos para concentrarse, flashcards y planificadores para concentrarte, repasar y crear mejores hábitos de estudio, todo privado y en tu navegador.",
+      "label": "Concentración y relax",
+      "description": "Temporizador Pomodoro, sonidos para concentrarse, tarjetas de estudio y planificadores para rendir más, además de pausas de estiramiento, respiración y minijuegos rápidos para recargar energía entre sesiones.",
       "navLabel": "Concentración"
     }
   },
@@ -8014,6 +8014,326 @@
         {
           "question": "¿Funciona con el temporizador Pomodoro?",
           "answer": "Combinan muy bien: añade un hábito como Dos sesiones de concentración y márcalo cuando termine tu temporizador."
+        }
+      ]
+    },
+    "stretch-break": {
+      "seoTitle": "Pausa de estiramientos en el escritorio – Rutinas guiadas gratis para trabajar y estudiar",
+      "metaDescription": "Pausas de estiramiento guiadas con temporizador para cada movimiento: reinicio de escritorio, cuello y hombros, muñecas y manos, y descanso visual 20-20-20. Gratis, privado y sin registro.",
+      "h1": "Pausa de estiramientos guiada",
+      "subheading": "Relaja el cuerpo después de sesiones largas con estiramientos paso a paso y cronometrados para cuello, hombros, muñecas y ojos.",
+      "keywords": [
+        "estiramientos de escritorio",
+        "temporizador de pausa activa",
+        "estiramientos para la oficina",
+        "rutina de estiramientos para estudiar",
+        "estiramientos de cuello y hombros",
+        "estiramientos de muñeca para escribir",
+        "regla 20-20-20 para los ojos",
+        "pausa activa guiada"
+      ],
+      "howTo": [
+        {
+          "name": "Elige una rutina",
+          "text": "Elige Reinicio de escritorio para una relajación completa, Cuello y hombros, Muñecas y manos o Descanso visual 20-20-20."
+        },
+        {
+          "name": "Sigue cada paso",
+          "text": "La pantalla muestra el movimiento, una breve instrucción y un anillo de cuenta atrás. Un suave sonido te avisa cuándo cambiar."
+        },
+        {
+          "name": "Pausa o salta",
+          "text": "Usa Pausa si necesitas un momento, o las flechas para retroceder o avanzar."
+        },
+        {
+          "name": "Crea el hábito",
+          "text": "Cada rutina terminada suma al recuento de pausas de hoy. Prueba una después de cada dos sesiones Pomodoro."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cada cuánto debo estirarme al estudiar o trabajar?",
+          "answer": "Una pausa corta cada 30 a 60 minutos es una buena regla. Incluso uno o dos minutos de movimiento ayudan al cuello, la espalda y los ojos, y también te ayudan a concentrarte al volver."
+        },
+        {
+          "question": "¿Necesito algún equipo o espacio?",
+          "answer": "No. Todos los movimientos se pueden hacer sentado en el escritorio o de pie a su lado. Lleva la ropa con la que te sientas cómodo."
+        },
+        {
+          "question": "¿Qué es la regla 20-20-20?",
+          "answer": "Cada 20 minutos, mira algo situado a unos 6 metros (20 pies) durante al menos 20 segundos. Así descansan los músculos internos del ojo y se reduce la fatiga por las pantallas."
+        },
+        {
+          "question": "¿Estirar es seguro para todo el mundo?",
+          "answer": "Los estiramientos deben producir una tensión suave, nunca dolor. Para si algo duele. Si tienes una lesión o una condición médica, consulta antes a un médico o fisioterapeuta. Esta herramienta ofrece información general de bienestar, no consejo médico."
+        },
+        {
+          "question": "¿Puedo usarlo con el temporizador Pomodoro?",
+          "answer": "Sí. Mucha gente aprovecha el descanso corto tras una sesión de concentración para hacer una rutina de un minuto. Abre el temporizador Pomodoro en otra pestaña y alterna entre ellas."
+        },
+        {
+          "question": "¿Se guarda o se sube algo?",
+          "answer": "Solo se guarda el número de pausas que completas cada día, en tu navegador y en este dispositivo. No se sube nada."
+        },
+        {
+          "question": "¿Funciona en pantalla completa?",
+          "answer": "Sí. Pulsa Pantalla completa para ver texto grande y un temporizador enorme, muy útil en una tableta o en una segunda pantalla."
+        }
+      ]
+    },
+    "breathing-exercise": {
+      "seoTitle": "Temporizador de respiración – Respiración cuadrada y 4-7-8 gratis para relajarte",
+      "metaDescription": "Temporizador de respiración guiada con círculo animado: respiración cuadrada, 4-7-8, coherente 5-5 y exhalación larga. Calma la mente entre sesiones de estudio. Gratis y privado.",
+      "h1": "Ejercicio de respiración y temporizador de relajación",
+      "subheading": "Sigue el círculo para inhalar, mantener y exhalar a un ritmo constante, para calmarte, recuperar la concentración o prepararte para dormir.",
+      "keywords": [
+        "ejercicio de respiración",
+        "respiración cuadrada",
+        "respiración 4-7-8",
+        "temporizador de respiración",
+        "ejercicios de relajación",
+        "app de respiración para calmarse",
+        "ejercicios de respiración para la ansiedad",
+        "respiración guiada online"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un patrón",
+          "text": "La respiración cuadrada es estable y centrada, la 4-7-8 es profundamente calmante, la Coherente 5-5 es suave y uniforme, y la Exhalación larga ayuda a soltar la tensión."
+        },
+        {
+          "name": "Elige la duración",
+          "text": "Selecciona 1, 3, 5 o 10 minutos."
+        },
+        {
+          "name": "Pulsa Iniciar",
+          "text": "Inhala mientras el círculo crece, mantén el aire cuando indique Mantener y exhala mientras se encoge. El número muestra los segundos que quedan en cada paso."
+        },
+        {
+          "name": "Termina con un sonido",
+          "text": "Cuando se acaba el tiempo suena un suave aviso. Reinicia o elige otro patrón cuando quieras."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es la respiración cuadrada?",
+          "answer": "Es un patrón de partes iguales: inhala durante cuatro segundos, mantén cuatro, exhala cuatro y descansa cuatro. Se usa para sentirse tranquilo y estable, por ejemplo antes de un examen o una presentación."
+        },
+        {
+          "question": "¿Qué es la respiración 4-7-8?",
+          "answer": "Inhala por la nariz durante cuatro segundos, mantén el aire siete y exhala lentamente durante ocho. La exhalación larga es muy relajante, por eso mucha gente la usa para desconectar o conciliar el sueño."
+        },
+        {
+          "question": "¿Los ejercicios de respiración realmente ayudan?",
+          "answer": "Respirar despacio con una exhalación más larga puede reducir la frecuencia cardíaca y ayudarte a sentirte más tranquilo durante un rato. Es una técnica de relajación sencilla, no un tratamiento. Si sientes mareo, respira con normalidad. Consulta con un médico si tienes ansiedad o problemas respiratorios."
+        },
+        {
+          "question": "¿Cuánto tiempo debo hacerlo?",
+          "answer": "De tres a cinco minutos son más que suficientes para una pausa. Un solo minuto también ayuda cuando tienes poco tiempo."
+        },
+        {
+          "question": "¿Cómo debo respirar?",
+          "answer": "Siéntate cómodamente, relaja los hombros y respira por la nariz si te resulta fácil. Deja que el abdomen se mueva suavemente. Nunca fuerces la respiración."
+        },
+        {
+          "question": "¿Puedo usarlo con sonidos para concentrarse?",
+          "answer": "Sí. Inicia el mezclador de Sonidos de concentración con lluvia u olas del mar en otra pestaña y respira al ritmo del círculo."
+        },
+        {
+          "question": "¿Se guardan mis datos?",
+          "answer": "No. No se guarda ni se sube nada. La herramienta solo ejecuta un temporizador en tu navegador."
+        }
+      ]
+    },
+    "memory-match": {
+      "seoTitle": "Juego de memoria – Juego de parejas de cartas online gratis para descansar la mente",
+      "metaDescription": "Juega gratis al juego de memoria de cartas con tres niveles de dificultad. Voltea cartas, encuentra parejas, controla movimientos y tiempo, y supera tu mejor marca. Ideal para una pausa corta.",
+      "h1": "Juego de memoria de parejas",
+      "subheading": "Voltea las cartas y encuentra todas las parejas con el menor número de movimientos posible: un descanso mental rápido entre sesiones de estudio.",
+      "keywords": [
+        "juego de memoria",
+        "juego de cartas de memoria",
+        "juego de encontrar parejas",
+        "juego de memoria online gratis",
+        "juego de concentración",
+        "juego para descansar la mente",
+        "juego de parejas de cartas",
+        "juego para entrenar la memoria"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un nivel",
+          "text": "Fácil tiene 6 parejas, Medio 8 y Difícil 12."
+        },
+        {
+          "name": "Voltea dos cartas",
+          "text": "Haz clic en una carta para darle la vuelta y luego en otra. Si coinciden se quedan boca arriba; si no, vuelven a girarse."
+        },
+        {
+          "name": "Recuerda las posiciones",
+          "text": "Usa la memoria para encontrar parejas con menos movimientos. El cronómetro empieza con tu primera carta."
+        },
+        {
+          "name": "Supera tu mejor marca",
+          "text": "Completa todas las parejas para ganar hasta tres estrellas. Tu mejor resultado de cada nivel se guarda en este dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cómo se gana?",
+          "answer": "Encontrando todas las parejas. Cuantos menos movimientos y menos tiempo, mejor puntuación y más estrellas."
+        },
+        {
+          "question": "¿Mejora la memoria?",
+          "answer": "Juegos como este ejercitan la memoria visual a corto plazo y la atención, y son una forma divertida de descansar la mente. No son un tratamiento médico, y los resultados del juego no demuestran cambios en la memoria cotidiana."
+        },
+        {
+          "question": "¿Qué significan las estrellas?",
+          "answer": "Tres estrellas significan que terminaste con muy pocos movimientos, cerca del número de parejas. Dos estrellas es una buena partida, y una estrella indica que necesitaste muchos intentos: simplemente vuelve a jugar."
+        },
+        {
+          "question": "¿Puedo jugar en el móvil?",
+          "answer": "Sí. Las cartas son grandes y funcionan con la pantalla táctil. En pantalla completa se ven aún más grandes."
+        },
+        {
+          "question": "¿Se guarda mi puntuación?",
+          "answer": "Tu mejor número de movimientos y tiempo de cada nivel se guardan solo en tu navegador, en este dispositivo."
+        },
+        {
+          "question": "¿Por qué un juego en una web de estudio?",
+          "answer": "Los juegos cortos y sin presión ayudan a que tu cerebro descanse entre sesiones de concentración. Limítate a unos minutos y vuelve al trabajo."
+        },
+        {
+          "question": "¿Es gratis?",
+          "answer": "Sí. Es gratis, no tiene anuncios dentro del juego y no necesita cuenta."
+        }
+      ]
+    },
+    "reaction-time-test": {
+      "seoTitle": "Test de tiempo de reacción – Prueba de reflejos online gratis en milisegundos",
+      "metaDescription": "Mide tu tiempo de reacción en milisegundos. Haz clic cuando la pantalla se ponga verde, juega cinco rondas, consulta tu media y guarda tu mejor marca. Gratis, privado y sin registro.",
+      "h1": "Test de tiempo de reacción",
+      "subheading": "Haz clic en cuanto la pantalla se ponga verde. Cinco rondas te dan tu tiempo de reacción medio en milisegundos.",
+      "keywords": [
+        "test de tiempo de reacción",
+        "test de reflejos",
+        "test de velocidad de reacción al clic",
+        "human benchmark tiempo de reacción",
+        "qué tan rápidos son mis reflejos",
+        "prueba de velocidad de reacción",
+        "tiempo de reacción en milisegundos",
+        "tiempo de reacción promedio"
+      ],
+      "howTo": [
+        {
+          "name": "Empieza el test",
+          "text": "Haz clic en la zona roja para comenzar una ronda."
+        },
+        {
+          "name": "Espera al verde",
+          "text": "La pantalla se pone roja y, tras una pausa aleatoria, verde. No hagas clic mientras esté roja."
+        },
+        {
+          "name": "Haz clic rápido",
+          "text": "En cuanto se ponga verde, haz clic o toca la pantalla. Aparecerá tu tiempo en milisegundos."
+        },
+        {
+          "name": "Completa cinco rondas",
+          "text": "Tras cinco rondas verás tu media. Tu mejor media se guarda en este dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es un buen tiempo de reacción?",
+          "answer": "En una prueba visual como esta, la mayoría de las personas promedian entre 200 y 300 milisegundos. Menos de 200 ms es muy rápido. El resultado también depende de tu pantalla, ratón y dispositivo."
+        },
+        {
+          "question": "¿Por qué aparece Demasiado pronto?",
+          "answer": "Hiciste clic antes de que la pantalla se pusiera verde. La espera es aleatoria a propósito para que no puedas adivinarla. Haz clic para intentarlo de nuevo."
+        },
+        {
+          "question": "¿El cansancio cambia mi tiempo de reacción?",
+          "answer": "Sí. La falta de sueño, una sesión larga de trabajo o las distracciones suelen ralentizar los reflejos. Por eso es una forma sencilla de comprobar cuán descansado te sientes."
+        },
+        {
+          "question": "¿Es preciso?",
+          "answer": "Mide desde el momento en que cambia la pantalla hasta tu clic, pero la frecuencia de actualización de la pantalla, el dispositivo de entrada y el navegador añaden unos milisegundos. Es ideal para compararte a lo largo del tiempo, no para resultados de laboratorio."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, tu mejor media se guarda en el navegador de este dispositivo. Usa Restablecer para borrarla."
+        },
+        {
+          "question": "¿Puedo usarlo en una pantalla táctil?",
+          "answer": "Sí, toca en cualquier parte de la zona de color. Las pantallas táctiles suelen añadir un pequeño retraso extra."
+        },
+        {
+          "question": "¿Se sube algo?",
+          "answer": "No. Todo se ejecuta en tu navegador."
+        }
+      ]
+    },
+    "game-2048": {
+      "seoTitle": "Juego 2048 – Puzzle 2048 online gratis con deshacer y controles táctiles",
+      "metaDescription": "Juega gratis al 2048 en tu navegador. Desliza y combina fichas hasta llegar a 2048 con teclado, WASD o deslizando el dedo, con opción de deshacer y mejor puntuación guardada. Un descanso relajante del estudio.",
+      "h1": "Juego de puzzle 2048",
+      "subheading": "Desliza las fichas, une números iguales e intenta llegar a 2048: un puzzle clásico para una pausa corta y tranquila.",
+      "keywords": [
+        "juego 2048",
+        "jugar 2048 online",
+        "puzzle 2048",
+        "2048 gratis",
+        "2048 sin bloqueos",
+        "juego de puzzle de números",
+        "juego de combinar fichas",
+        "2048 con deshacer"
+      ],
+      "howTo": [
+        {
+          "name": "Mueve las fichas",
+          "text": "Usa las teclas de flecha o W, A, S, D en el teclado, o desliza el dedo en una pantalla táctil. Todas las fichas se deslizan en esa dirección."
+        },
+        {
+          "name": "Combina números iguales",
+          "text": "Cuando dos fichas con el mismo número se tocan, se unen en una con la suma de ambas."
+        },
+        {
+          "name": "Planifica con antelación",
+          "text": "Mantén tu ficha más grande en una esquina y el tablero ordenado. Tras cada movimiento aparece un 2 o un 4 nuevo."
+        },
+        {
+          "name": "Llega a 2048",
+          "text": "Forma la ficha 2048 para ganar y sigue jugando para lograr una puntuación mayor. Deshacer anula tu último movimiento."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cuál es el objetivo del 2048?",
+          "answer": "Crear una ficha con el número 2048 combinando fichas iguales. Puedes seguir jugando después para conseguir una puntuación más alta."
+        },
+        {
+          "question": "¿Qué estrategia funciona mejor?",
+          "answer": "Mantén tu ficha más grande en una esquina, forma una fila de números descendentes a su lado y evita moverte en la dirección que saque la ficha grande de la esquina."
+        },
+        {
+          "question": "¿Cuándo termina el juego?",
+          "answer": "Cuando el tablero está lleno y no hay dos fichas vecinas iguales, por lo que no es posible ningún movimiento."
+        },
+        {
+          "question": "¿Puedo deshacer un movimiento?",
+          "answer": "Sí. Pulsa Deshacer para anular tu último movimiento. Solo recuerda un paso."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. Desliza el dedo sobre el tablero. Pantalla completa agranda el tablero."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, solo en este dispositivo, en el almacenamiento local de tu navegador. No se sube nada."
+        },
+        {
+          "question": "¿Es una buena pausa para estudiar?",
+          "answer": "Unos minutos de un puzzle tranquilo pueden descansar la mente. Como es fácil seguir jugando, pon un temporizador corto para que tu descanso siga siendo un descanso."
         }
       ]
     }

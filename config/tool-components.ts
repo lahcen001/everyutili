@@ -137,4 +137,9 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "eisenhower-matrix": () => import("@/components/tools/focus-study/EisenhowerMatrix"),
   "exam-countdown": () => import("@/components/tools/focus-study/ExamCountdown"),
   "habit-tracker": () => import("@/components/tools/focus-study/HabitTracker"),
+  "stretch-break": () => import("@/components/tools/focus-study/StretchBreak"),
+  "breathing-exercise": () => import("@/components/tools/focus-study/BreathingExercise"),
+  "memory-match": () => import("@/components/tools/focus-study/MemoryMatch"),
+  "reaction-time-test": () => import("@/components/tools/focus-study/ReactionTime"),
+  "game-2048": () => import("@/components/tools/focus-study/Game2048"),
 };

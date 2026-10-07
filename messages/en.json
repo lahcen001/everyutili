@@ -76,8 +76,8 @@
       "navLabel": "Random"
     },
     "focus-study": {
-      "label": "Focus & Study Tools",
-      "description": "Pomodoro timer, focus sounds, flashcards and planners to concentrate, revise and build better study habits — all private, in your browser.",
+      "label": "Focus & Relax",
+      "description": "Pomodoro timer, focus sounds, flashcards and planners to concentrate — plus stretch breaks, breathing and quick mini games to recharge between sessions.",
       "navLabel": "Focus"
     }
   },
@@ -8021,6 +8021,326 @@
         {
           "question": "Does it work with the Pomodoro timer?",
           "answer": "They fit well together: add a habit like Two focus sessions and check it off after your timer finishes."
+        }
+      ]
+    },
+    "stretch-break": {
+      "seoTitle": "Desk Stretch Break – Free Guided Stretching Routines for Work & Study",
+      "metaDescription": "Guided stretch breaks with a timer for each move: desk reset, neck and shoulders, wrists and hands, and eye rest 20-20-20. Free, private, no sign-up.",
+      "h1": "Guided Stretch Break",
+      "subheading": "Loosen up after long sessions with timed, step-by-step stretches for your neck, shoulders, wrists and eyes.",
+      "keywords": [
+        "desk stretches",
+        "stretch break timer",
+        "office stretches",
+        "stretching routine for studying",
+        "neck and shoulder stretches",
+        "wrist stretches for typing",
+        "20-20-20 eye rule",
+        "guided stretch break"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a routine",
+          "text": "Pick Desk reset for a full loosen-up, Neck & shoulders, Wrists & hands, or Eye rest 20-20-20."
+        },
+        {
+          "name": "Follow each step",
+          "text": "The screen shows the move, a short instruction and a countdown ring. A soft chime tells you when to change."
+        },
+        {
+          "name": "Pause or skip",
+          "text": "Use Pause if you need a moment, or the arrows to go back or ahead."
+        },
+        {
+          "name": "Make it a habit",
+          "text": "Each finished routine adds to today's break count. Try one after every two Pomodoro sessions."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How often should I stretch while studying or working?",
+          "answer": "A short break every 30 to 60 minutes is a good rule. Even one or two minutes of moving helps your neck, back and eyes, and it also helps you concentrate when you return."
+        },
+        {
+          "question": "Do I need any equipment or space?",
+          "answer": "No. Every move can be done sitting at a desk or standing next to it. Wear whatever you are comfortable in."
+        },
+        {
+          "question": "What is the 20-20-20 rule?",
+          "answer": "Every 20 minutes, look at something about 20 feet (6 metres) away for at least 20 seconds. It rests the muscles inside your eyes and reduces strain from screens."
+        },
+        {
+          "question": "Is stretching safe for everyone?",
+          "answer": "Stretches should feel like gentle tension, never pain. Stop if something hurts. If you have an injury or a medical condition, ask a doctor or physiotherapist first. This tool is general wellness information, not medical advice."
+        },
+        {
+          "question": "Can I use it with the Pomodoro timer?",
+          "answer": "Yes. Many people use the short break after a focus session to do a one-minute routine. Open the Pomodoro Timer in another tab and switch between them."
+        },
+        {
+          "question": "Is anything stored or uploaded?",
+          "answer": "Only the number of breaks you finish each day is saved, in your browser on this device. Nothing is uploaded."
+        },
+        {
+          "question": "Does it work in fullscreen?",
+          "answer": "Yes. Press Fullscreen to get large text and a big timer, which is handy on a tablet or a second screen."
+        }
+      ]
+    },
+    "breathing-exercise": {
+      "seoTitle": "Breathing Exercise Timer – Free Box Breathing & 4-7-8 Relaxation Tool",
+      "metaDescription": "A guided breathing timer with an animated circle: box breathing, 4-7-8, coherent 5-5 and long exhale. Calm down between study sessions. Free and private.",
+      "h1": "Breathing Exercise & Relaxation Timer",
+      "subheading": "Follow the circle to breathe in, hold and out in a steady rhythm — to calm down, reset your focus or wind down for sleep.",
+      "keywords": [
+        "breathing exercise",
+        "box breathing",
+        "4-7-8 breathing",
+        "breathing timer",
+        "relaxation exercise",
+        "calm breathing app",
+        "breathing exercise for anxiety",
+        "guided breathing online"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a pattern",
+          "text": "Box breathing is steady and focused, 4-7-8 is deeply calming, Coherent 5-5 is gentle and even, and Long exhale helps release tension."
+        },
+        {
+          "name": "Choose how long",
+          "text": "Select 1, 3, 5 or 10 minutes."
+        },
+        {
+          "name": "Press Start",
+          "text": "Breathe in as the circle grows, hold when it says Hold, and breathe out as it shrinks. The number shows seconds left in each step."
+        },
+        {
+          "name": "Finish with a chime",
+          "text": "When time is up a soft chime plays. Reset or choose another pattern any time."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is box breathing?",
+          "answer": "It is a pattern of equal parts: breathe in for four seconds, hold four, breathe out four and rest four. People use it to feel calm and steady, for example before a test or a presentation."
+        },
+        {
+          "question": "What is 4-7-8 breathing?",
+          "answer": "Breathe in through the nose for four seconds, hold for seven, and breathe out slowly for eight. The long exhale is very relaxing, so many people use it to unwind or fall asleep."
+        },
+        {
+          "question": "Does breathing exercise really help?",
+          "answer": "Slow breathing with a longer out-breath can lower your heart rate and help you feel calmer for a while. It is a simple relaxation technique, not a treatment. If you feel dizzy, breathe normally. Speak to a doctor about anxiety or breathing problems."
+        },
+        {
+          "question": "How long should I do it?",
+          "answer": "Three to five minutes is plenty for a break. One minute still helps when you are short of time."
+        },
+        {
+          "question": "How should I breathe?",
+          "answer": "Sit comfortably, relax your shoulders, and breathe through your nose if that is easy. Let your belly move gently. Never force or strain."
+        },
+        {
+          "question": "Can I use it with focus sounds?",
+          "answer": "Yes. Start the Focus Sounds mixer with rain or ocean waves in another tab and breathe along with the circle."
+        },
+        {
+          "question": "Is my data stored?",
+          "answer": "No. Nothing is saved or uploaded. The tool just runs a timer in your browser."
+        }
+      ]
+    },
+    "memory-match": {
+      "seoTitle": "Memory Match Game – Free Online Card Matching Game for Brain Breaks",
+      "metaDescription": "Play a free memory card matching game with three difficulty levels. Flip cards, find pairs, track moves and time, and beat your best score. Great for a short break.",
+      "h1": "Memory Match Game",
+      "subheading": "Flip the cards and find all the matching pairs in as few moves as you can — a quick brain break between study sessions.",
+      "keywords": [
+        "memory match game",
+        "memory card game",
+        "matching pairs game",
+        "memory game online free",
+        "concentration game",
+        "brain break game",
+        "card matching game",
+        "memory training game"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a level",
+          "text": "Easy has 6 pairs, Medium 8 and Hard 12."
+        },
+        {
+          "name": "Flip two cards",
+          "text": "Click a card to turn it over, then a second one. If they match they stay face up; if not they flip back."
+        },
+        {
+          "name": "Remember the positions",
+          "text": "Use your memory to find pairs with fewer moves. The timer starts on your first flip."
+        },
+        {
+          "name": "Beat your best",
+          "text": "Finish all pairs to earn up to three stars. Your best score for each level is saved on this device."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I win?",
+          "answer": "Find all the matching pairs. Fewer moves and a shorter time give you a better score and more stars."
+        },
+        {
+          "question": "Does it improve memory?",
+          "answer": "Games like this exercise short-term visual memory and attention, and they are a fun way to rest your mind. They are not a medical treatment, and results in the game do not prove changes in everyday memory."
+        },
+        {
+          "question": "What do the stars mean?",
+          "answer": "Three stars means you finished in very few moves, close to the number of pairs. Two stars is a good game, and one star means you needed many tries — just play again."
+        },
+        {
+          "question": "Can I play on a phone?",
+          "answer": "Yes. The cards are large and work with touch. In fullscreen they get even bigger."
+        },
+        {
+          "question": "Is my score saved?",
+          "answer": "Your best moves and time for each level are stored in your browser on this device only."
+        },
+        {
+          "question": "Why a game on a study site?",
+          "answer": "Short, low-pressure games help your brain rest between focus sessions. Keep it to a few minutes, then go back to work."
+        },
+        {
+          "question": "Is it free?",
+          "answer": "Yes. It is free, has no ads inside the game and needs no account."
+        }
+      ]
+    },
+    "reaction-time-test": {
+      "seoTitle": "Reaction Time Test – Free Online Reflex Speed Test in Milliseconds",
+      "metaDescription": "Test your reaction time in milliseconds. Click when the screen turns green, play five rounds, see your average and save your best. Free, private, no sign-up.",
+      "h1": "Reaction Time Test",
+      "subheading": "Click as soon as the screen turns green. Five rounds give you your average reaction time in milliseconds.",
+      "keywords": [
+        "reaction time test",
+        "reflex test",
+        "click speed reaction test",
+        "human benchmark reaction time",
+        "how fast are my reflexes",
+        "reaction speed test",
+        "reaction time in milliseconds",
+        "average reaction time"
+      ],
+      "howTo": [
+        {
+          "name": "Start the test",
+          "text": "Click the red area to begin a round."
+        },
+        {
+          "name": "Wait for green",
+          "text": "The screen turns red, then green after a random pause. Don't click while it is red."
+        },
+        {
+          "name": "Click fast",
+          "text": "As soon as it turns green, click or tap. Your time in milliseconds appears."
+        },
+        {
+          "name": "Finish five rounds",
+          "text": "After five rounds you see your average. Your best average is saved on this device."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is a good reaction time?",
+          "answer": "For a visual test like this, most people average between 200 and 300 milliseconds. Under 200 ms is very fast. Your result also depends on your screen, mouse and device."
+        },
+        {
+          "question": "Why does it say Too soon?",
+          "answer": "You clicked before the screen turned green. The wait is random on purpose so you can't guess it. Just click to try again."
+        },
+        {
+          "question": "Does tiredness change my reaction time?",
+          "answer": "Yes. Lack of sleep, a long work session or distraction usually slows reactions. That is why it makes a simple check of how rested you feel."
+        },
+        {
+          "question": "Is it accurate?",
+          "answer": "It measures from the moment the screen changes to your click, but your display refresh rate, input device and browser add a few milliseconds. It is great for comparing yourself over time, not for lab results."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, your best average is saved in your browser on this device. Use Reset to clear it."
+        },
+        {
+          "question": "Can I use it on a touch screen?",
+          "answer": "Yes, tap anywhere in the coloured area. Touch screens often add a little extra delay."
+        },
+        {
+          "question": "Is anything uploaded?",
+          "answer": "No. Everything runs in your browser."
+        }
+      ]
+    },
+    "game-2048": {
+      "seoTitle": "2048 Game – Free Online 2048 Puzzle with Undo and Touch Controls",
+      "metaDescription": "Play 2048 free in your browser. Slide and merge tiles to reach 2048 with keyboard, WASD or swipe, with undo and a saved best score. A relaxing break from studying.",
+      "h1": "2048 Puzzle Game",
+      "subheading": "Slide the tiles, join equal numbers and try to reach 2048 — a classic puzzle for a short, calming break.",
+      "keywords": [
+        "2048 game",
+        "play 2048 online",
+        "2048 puzzle",
+        "2048 free",
+        "2048 unblocked",
+        "number puzzle game",
+        "merge tiles game",
+        "2048 with undo"
+      ],
+      "howTo": [
+        {
+          "name": "Move the tiles",
+          "text": "Use the arrow keys or W, A, S, D on a keyboard, or swipe on a touch screen. All tiles slide in that direction."
+        },
+        {
+          "name": "Merge equal numbers",
+          "text": "When two tiles with the same number touch, they join into one with their sum."
+        },
+        {
+          "name": "Plan ahead",
+          "text": "Keep your biggest tile in a corner and keep the board tidy. A new 2 or 4 appears after every move."
+        },
+        {
+          "name": "Reach 2048",
+          "text": "Build the 2048 tile to win, then keep going for a higher score. Undo takes back your last move."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the goal of 2048?",
+          "answer": "Create a tile with the number 2048 by merging equal tiles. You can keep playing afterwards to get a higher score."
+        },
+        {
+          "question": "Which strategy works best?",
+          "answer": "Keep your largest tile in one corner, build a row of descending numbers beside it, and avoid moving in the direction that pulls the big tile out of the corner."
+        },
+        {
+          "question": "When does the game end?",
+          "answer": "When the board is full and no two neighbouring tiles are equal, so no move is possible."
+        },
+        {
+          "question": "Can I undo a move?",
+          "answer": "Yes. Press Undo to take back your last move. It only remembers one step."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. Swipe on the board. Fullscreen makes the board bigger."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, on this device only, in your browser's local storage. Nothing is uploaded."
+        },
+        {
+          "question": "Is it a good study break?",
+          "answer": "A few minutes of a calm puzzle can rest your mind. Because it is easy to keep playing, set a short timer so your break stays a break."
         }
       ]
     }

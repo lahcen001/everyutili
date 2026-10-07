@@ -76,8 +76,8 @@
       "navLabel": "Casuale"
     },
     "focus-study": {
-      "label": "Strumenti per concentrazione e studio",
-      "description": "Timer Pomodoro, suoni per concentrarsi, flashcard e planner per concentrarti, ripassare e costruire abitudini di studio migliori: tutto privato, nel tuo browser.",
+      "label": "Concentrazione e Relax",
+      "description": "Timer Pomodoro, suoni per concentrarsi, flashcard e planner per studiare meglio, più pause di stretching, respirazione e mini giochi veloci per ricaricarti tra una sessione e l'altra.",
       "navLabel": "Focus"
     }
   },
@@ -8014,6 +8014,326 @@
         {
           "question": "Funziona con il timer Pomodoro?",
           "answer": "Si abbinano bene: aggiungi un'abitudine come Due sessioni di concentrazione e spuntala quando il timer finisce."
+        }
+      ]
+    },
+    "stretch-break": {
+      "seoTitle": "Pausa Stretching alla Scrivania – Esercizi Guidati Gratis per Lavoro e Studio",
+      "metaDescription": "Pause di stretching guidate con timer per ogni movimento: reset alla scrivania, collo e spalle, polsi e mani, riposo degli occhi 20-20-20. Gratis, privato, senza registrazione.",
+      "h1": "Pausa Stretching Guidata",
+      "subheading": "Sciogli i muscoli dopo lunghe sessioni con esercizi cronometrati, passo dopo passo, per collo, spalle, polsi e occhi.",
+      "keywords": [
+        "stretching alla scrivania",
+        "timer pausa stretching",
+        "esercizi di stretching per l'ufficio",
+        "stretching per chi studia",
+        "esercizi per collo e spalle",
+        "stretching polsi per chi scrive al computer",
+        "regola 20-20-20 per gli occhi",
+        "pausa stretching guidata"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli una routine",
+          "text": "Scegli Reset scrivania per sciogliere tutto il corpo, Collo e spalle, Polsi e mani oppure Riposo occhi 20-20-20."
+        },
+        {
+          "name": "Segui ogni passaggio",
+          "text": "Lo schermo mostra il movimento, una breve istruzione e un anello con il conto alla rovescia. Un suono delicato ti avvisa quando cambiare."
+        },
+        {
+          "name": "Pausa o salto",
+          "text": "Usa Pausa se ti serve un attimo, oppure le frecce per tornare indietro o andare avanti."
+        },
+        {
+          "name": "Trasformala in un'abitudine",
+          "text": "Ogni routine completata si aggiunge al conteggio delle pause di oggi. Provane una ogni due sessioni Pomodoro."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ogni quanto devo fare stretching mentre studio o lavoro?",
+          "answer": "Una breve pausa ogni 30-60 minuti è una buona regola. Anche uno o due minuti di movimento aiutano collo, schiena e occhi, e ti aiutano a concentrarti meglio quando riprendi."
+        },
+        {
+          "question": "Servono attrezzi o spazio?",
+          "answer": "No. Ogni movimento si può fare seduti alla scrivania o in piedi accanto a essa. Indossa ciò che ti fa stare comodo."
+        },
+        {
+          "question": "Cos'è la regola 20-20-20?",
+          "answer": "Ogni 20 minuti, guarda qualcosa a circa 20 piedi (6 metri) di distanza per almeno 20 secondi. Rilassa i muscoli interni degli occhi e riduce l'affaticamento da schermo."
+        },
+        {
+          "question": "Lo stretching è sicuro per tutti?",
+          "answer": "Lo stretching deve dare una leggera tensione, mai dolore. Fermati se senti male. Se hai un infortunio o una condizione medica, chiedi prima a un medico o a un fisioterapista. Questo strumento offre informazioni generiche sul benessere, non consigli medici."
+        },
+        {
+          "question": "Posso usarlo con il timer Pomodoro?",
+          "answer": "Sì. Molte persone usano la pausa breve dopo una sessione di concentrazione per fare una routine di un minuto. Apri il Timer Pomodoro in un'altra scheda e passa dall'una all'altra."
+        },
+        {
+          "question": "Viene salvato o caricato qualcosa?",
+          "answer": "Viene salvato solo il numero di pause completate ogni giorno, nel browser di questo dispositivo. Non viene caricato nulla."
+        },
+        {
+          "question": "Funziona a schermo intero?",
+          "answer": "Sì. Premi Schermo intero per avere testo grande e un timer ben visibile, utile su un tablet o un secondo schermo."
+        }
+      ]
+    },
+    "breathing-exercise": {
+      "seoTitle": "Timer per Esercizi di Respirazione – Box Breathing e 4-7-8 Gratis per Rilassarsi",
+      "metaDescription": "Un timer di respirazione guidata con cerchio animato: box breathing, 4-7-8, coerente 5-5 ed espirazione lunga. Calmati tra una sessione di studio e l'altra. Gratis e privato.",
+      "h1": "Esercizio di Respirazione e Timer di Rilassamento",
+      "subheading": "Segui il cerchio per inspirare, trattenere ed espirare con un ritmo costante, per calmarti, ritrovare la concentrazione o prepararti al sonno.",
+      "keywords": [
+        "esercizio di respirazione",
+        "box breathing",
+        "respirazione 4-7-8",
+        "timer respirazione",
+        "esercizi di rilassamento",
+        "app per respirare e calmarsi",
+        "esercizi di respirazione per l'ansia",
+        "respirazione guidata online"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli uno schema",
+          "text": "Il box breathing è regolare e concentrato, il 4-7-8 è profondamente calmante, il Coerente 5-5 è dolce e uniforme, e l'Espirazione lunga aiuta a sciogliere la tensione."
+        },
+        {
+          "name": "Scegli la durata",
+          "text": "Seleziona 1, 3, 5 o 10 minuti."
+        },
+        {
+          "name": "Premi Avvia",
+          "text": "Inspira mentre il cerchio si allarga, trattieni quando compare Trattieni ed espira mentre si restringe. Il numero indica i secondi rimasti in ogni fase."
+        },
+        {
+          "name": "Concludi con un suono",
+          "text": "Quando il tempo è scaduto parte un suono delicato. Puoi reimpostare o scegliere un altro schema in qualsiasi momento."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Cos'è il box breathing?",
+          "answer": "È uno schema con fasi di uguale durata: inspira per quattro secondi, trattieni per quattro, espira per quattro e fai una pausa di quattro. Si usa per sentirsi calmi e stabili, per esempio prima di un esame o di una presentazione."
+        },
+        {
+          "question": "Cos'è la respirazione 4-7-8?",
+          "answer": "Inspira dal naso per quattro secondi, trattieni per sette ed espira lentamente per otto. La lunga espirazione è molto rilassante, per questo molti la usano per rilassarsi o addormentarsi."
+        },
+        {
+          "question": "Gli esercizi di respirazione funzionano davvero?",
+          "answer": "Respirare lentamente con un'espirazione più lunga può ridurre la frequenza cardiaca e aiutarti a sentirti più calmo per un po'. È una semplice tecnica di rilassamento, non una terapia. Se ti gira la testa, torna a respirare normalmente. Parla con un medico in caso di ansia o problemi respiratori."
+        },
+        {
+          "question": "Per quanto tempo devo farlo?",
+          "answer": "Da tre a cinque minuti sono più che sufficienti per una pausa. Anche un solo minuto aiuta quando hai poco tempo."
+        },
+        {
+          "question": "Come devo respirare?",
+          "answer": "Siediti comodo, rilassa le spalle e respira dal naso se ti viene facile. Lascia che la pancia si muova dolcemente. Non forzare mai."
+        },
+        {
+          "question": "Posso usarlo con i suoni per concentrarsi?",
+          "answer": "Sì. Avvia il mixer Suoni per concentrarsi con pioggia o onde del mare in un'altra scheda e respira seguendo il cerchio."
+        },
+        {
+          "question": "I miei dati vengono salvati?",
+          "answer": "No. Non viene salvato né caricato nulla. Lo strumento fa semplicemente funzionare un timer nel tuo browser."
+        }
+      ]
+    },
+    "memory-match": {
+      "seoTitle": "Gioco Memory – Gioco Online Gratis di Carte da Abbinare per Pause Mentali",
+      "metaDescription": "Gioca gratis a Memory, il gioco delle carte da abbinare, con tre livelli di difficoltà. Gira le carte, trova le coppie, controlla mosse e tempo e batti il tuo record. Ideale per una pausa veloce.",
+      "h1": "Gioco Memory",
+      "subheading": "Gira le carte e trova tutte le coppie uguali con meno mosse possibili: una rapida pausa mentale tra una sessione di studio e l'altra.",
+      "keywords": [
+        "gioco memory",
+        "memory gioco di carte",
+        "gioco delle coppie",
+        "memory online gratis",
+        "gioco di concentrazione",
+        "giochi per pausa mentale",
+        "gioco abbina le carte",
+        "giochi per allenare la memoria"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli un livello",
+          "text": "Facile ha 6 coppie, Medio 8 e Difficile 12."
+        },
+        {
+          "name": "Gira due carte",
+          "text": "Clicca una carta per girarla, poi una seconda. Se sono uguali restano scoperte, altrimenti si rigirano."
+        },
+        {
+          "name": "Ricorda le posizioni",
+          "text": "Usa la memoria per trovare le coppie con meno mosse. Il timer parte al primo giro di carta."
+        },
+        {
+          "name": "Batti il tuo record",
+          "text": "Completa tutte le coppie per ottenere fino a tre stelle. Il tuo miglior punteggio per ogni livello viene salvato su questo dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Come si vince?",
+          "answer": "Trova tutte le coppie uguali. Meno mosse e meno tempo significano un punteggio migliore e più stelle."
+        },
+        {
+          "question": "Migliora la memoria?",
+          "answer": "Giochi come questo allenano la memoria visiva a breve termine e l'attenzione, e sono un modo divertente per far riposare la mente. Non sono una cura medica e i risultati nel gioco non dimostrano cambiamenti nella memoria di tutti i giorni."
+        },
+        {
+          "question": "Cosa significano le stelle?",
+          "answer": "Tre stelle vuol dire che hai finito con pochissime mosse, vicino al numero di coppie. Due stelle indicano una buona partita, una stella che ti sono serviti molti tentativi: gioca di nuovo."
+        },
+        {
+          "question": "Posso giocare dal telefono?",
+          "answer": "Sì. Le carte sono grandi e funzionano con il tocco. A schermo intero diventano ancora più grandi."
+        },
+        {
+          "question": "Il mio punteggio viene salvato?",
+          "answer": "Le tue migliori mosse e il miglior tempo per ogni livello sono memorizzati solo nel browser di questo dispositivo."
+        },
+        {
+          "question": "Perché un gioco su un sito per studiare?",
+          "answer": "Giochi brevi e senza pressione aiutano il cervello a riposare tra una sessione di concentrazione e l'altra. Limitati a pochi minuti, poi torna al lavoro."
+        },
+        {
+          "question": "È gratuito?",
+          "answer": "Sì. È gratuito, non ha pubblicità nel gioco e non richiede un account."
+        }
+      ]
+    },
+    "reaction-time-test": {
+      "seoTitle": "Test del Tempo di Reazione – Test Online Gratis dei Riflessi in Millisecondi",
+      "metaDescription": "Misura il tuo tempo di reazione in millisecondi. Clicca quando lo schermo diventa verde, gioca cinque round, scopri la tua media e salva il tuo record. Gratis, privato, senza registrazione.",
+      "h1": "Test del Tempo di Reazione",
+      "subheading": "Clicca appena lo schermo diventa verde. Cinque round ti danno il tuo tempo di reazione medio in millisecondi.",
+      "keywords": [
+        "test tempo di reazione",
+        "test dei riflessi",
+        "test velocità di click",
+        "test tempo di reazione online",
+        "quanto sono veloci i miei riflessi",
+        "test velocità di reazione",
+        "tempo di reazione in millisecondi",
+        "tempo di reazione medio"
+      ],
+      "howTo": [
+        {
+          "name": "Avvia il test",
+          "text": "Clicca sull'area rossa per iniziare un round."
+        },
+        {
+          "name": "Aspetta il verde",
+          "text": "Lo schermo diventa rosso, poi verde dopo una pausa casuale. Non cliccare finché è rosso."
+        },
+        {
+          "name": "Clicca veloce",
+          "text": "Appena diventa verde, clicca o tocca. Compare il tuo tempo in millisecondi."
+        },
+        {
+          "name": "Completa cinque round",
+          "text": "Dopo cinque round vedi la tua media. La tua miglior media viene salvata su questo dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual è un buon tempo di reazione?",
+          "answer": "Per un test visivo come questo, la maggior parte delle persone ha una media tra 200 e 300 millisecondi. Sotto i 200 ms è molto veloce. Il risultato dipende anche da schermo, mouse e dispositivo."
+        },
+        {
+          "question": "Perché compare Troppo presto?",
+          "answer": "Hai cliccato prima che lo schermo diventasse verde. L'attesa è casuale di proposito, così non puoi indovinarla. Clicca per riprovare."
+        },
+        {
+          "question": "La stanchezza cambia il mio tempo di reazione?",
+          "answer": "Sì. La mancanza di sonno, una lunga sessione di lavoro o una distrazione di solito rallentano i riflessi. Per questo è un modo semplice per controllare quanto ti senti riposato."
+        },
+        {
+          "question": "È preciso?",
+          "answer": "Misura dal momento in cui lo schermo cambia fino al tuo click, ma la frequenza di aggiornamento dello schermo, il dispositivo di input e il browser aggiungono qualche millisecondo. È ottimo per confrontarti nel tempo, non per risultati da laboratorio."
+        },
+        {
+          "question": "Il mio record viene salvato?",
+          "answer": "Sì, la tua miglior media viene salvata nel browser di questo dispositivo. Usa Reimposta per cancellarla."
+        },
+        {
+          "question": "Posso usarlo su uno schermo touch?",
+          "answer": "Sì, tocca in un punto qualsiasi dell'area colorata. Gli schermi touch spesso aggiungono un piccolo ritardo."
+        },
+        {
+          "question": "Viene caricato qualcosa?",
+          "answer": "No. Tutto funziona nel tuo browser."
+        }
+      ]
+    },
+    "game-2048": {
+      "seoTitle": "Gioco 2048 – Puzzle 2048 Online Gratis con Annulla e Comandi Touch",
+      "metaDescription": "Gioca gratis a 2048 nel browser. Fai scorrere e unisci le tessere per arrivare a 2048 con tastiera, WASD o swipe, con annulla e record salvato. Una pausa rilassante dallo studio.",
+      "h1": "Gioco Puzzle 2048",
+      "subheading": "Fai scorrere le tessere, unisci i numeri uguali e prova ad arrivare a 2048: un puzzle classico per una pausa breve e rilassante.",
+      "keywords": [
+        "gioco 2048",
+        "giocare a 2048 online",
+        "puzzle 2048",
+        "2048 gratis",
+        "2048 senza blocchi",
+        "gioco di numeri puzzle",
+        "gioco unisci le tessere",
+        "2048 con annulla"
+      ],
+      "howTo": [
+        {
+          "name": "Muovi le tessere",
+          "text": "Usa le frecce o i tasti W, A, S, D sulla tastiera, oppure fai swipe su uno schermo touch. Tutte le tessere scorrono in quella direzione."
+        },
+        {
+          "name": "Unisci i numeri uguali",
+          "text": "Quando due tessere con lo stesso numero si toccano, si uniscono in una sola con la loro somma."
+        },
+        {
+          "name": "Pianifica in anticipo",
+          "text": "Tieni la tessera più grande in un angolo e mantieni la griglia in ordine. Dopo ogni mossa compare un nuovo 2 o 4."
+        },
+        {
+          "name": "Raggiungi 2048",
+          "text": "Crea la tessera 2048 per vincere, poi continua per un punteggio più alto. Annulla riprende la tua ultima mossa."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual è l'obiettivo di 2048?",
+          "answer": "Creare una tessera con il numero 2048 unendo tessere uguali. Puoi continuare a giocare dopo per ottenere un punteggio più alto."
+        },
+        {
+          "question": "Quale strategia funziona meglio?",
+          "answer": "Tieni la tessera più grande in un angolo, costruisci accanto a essa una fila di numeri decrescenti ed evita le mosse che portano la tessera grande fuori dall'angolo."
+        },
+        {
+          "question": "Quando finisce la partita?",
+          "answer": "Quando la griglia è piena e nessuna coppia di tessere vicine è uguale, quindi non è possibile alcuna mossa."
+        },
+        {
+          "question": "Posso annullare una mossa?",
+          "answer": "Sì. Premi Annulla per riprendere la tua ultima mossa. Ricorda un solo passaggio."
+        },
+        {
+          "question": "Funziona sul telefono?",
+          "answer": "Sì. Fai swipe sulla griglia. A schermo intero la griglia diventa più grande."
+        },
+        {
+          "question": "Il mio record viene salvato?",
+          "answer": "Sì, solo su questo dispositivo, nella memoria locale del browser. Non viene caricato nulla."
+        },
+        {
+          "question": "È una buona pausa di studio?",
+          "answer": "Qualche minuto di un puzzle rilassante può far riposare la mente. Poiché è facile continuare a giocare, imposta un timer breve così la pausa resta una pausa."
         }
       ]
     }

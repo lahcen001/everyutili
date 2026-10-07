@@ -141,3 +141,81 @@ describe("soundscape rendering", () => {
     expect(a[1000]).not.toBe(b[1000]);
   });
 });
+
+import { canMove, emptyGrid, maxTile, move, newGame, slideRow, spawn } from "@/lib/focus/game2048";
+import { buildDeck, stars } from "@/lib/focus/memory";
+import { PATTERNS, cycleSeconds, phaseAt } from "@/lib/focus/breathing";
+import { ROUTINES, routineSeconds } from "@/lib/focus/stretches";
+
+describe("2048", () => {
+  it("merges each pair once, left to right", () => {
+    expect(slideRow([2, 2, 2, 2])).toEqual({ row: [4, 4, 0, 0], score: 8 });
+    expect(slideRow([2, 2, 4, 0])).toEqual({ row: [4, 4, 0, 0], score: 4 });
+    expect(slideRow([0, 2, 0, 2])).toEqual({ row: [4, 0, 0, 0], score: 4 });
+    expect(slideRow([2, 4, 2, 4])).toEqual({ row: [2, 4, 2, 4], score: 0 });
+  });
+  it("moves in every direction and detects no-ops", () => {
+    const g = emptyGrid();
+    g[0][3] = 2;
+    g[3][3] = 2;
+    expect(move(g, "left").grid[0][0]).toBe(2);
+    expect(move(g, "down").grid[3][3]).toBe(4);
+    expect(move(g, "up").grid[0][3]).toBe(4);
+    expect(move(g, "right").moved).toBe(false);
+  });
+  it("spawns a tile and knows when the game is over", () => {
+    expect(newGame().flat().filter(Boolean).length).toBe(2);
+    expect(spawn(emptyGrid(), () => 0).flat().filter(Boolean)).toEqual([2]);
+    const full = [
+      [2, 4, 2, 4],
+      [4, 2, 4, 2],
+      [2, 4, 2, 4],
+      [4, 2, 4, 2],
+    ];
+    expect(canMove(full)).toBe(false);
+    expect(canMove([[2, 2, 4, 8], ...full.slice(1)])).toBe(true);
+    expect(maxTile(full)).toBe(4);
+  });
+});
+
+describe("memory match", () => {
+  it("builds a shuffled deck of pairs", () => {
+    const deck = buildDeck(8);
+    expect(deck).toHaveLength(16);
+    const counts = new Map<string, number>();
+    deck.forEach((c) => counts.set(c.symbol, (counts.get(c.symbol) ?? 0) + 1));
+    expect([...counts.values()].every((n) => n === 2)).toBe(true);
+    expect(new Set(deck.map((c) => c.id)).size).toBe(16);
+  });
+  it("rates by moves", () => {
+    expect(stars(8, 8)).toBe(3);
+    expect(stars(18, 8)).toBe(2);
+    expect(stars(40, 8)).toBe(1);
+  });
+});
+
+describe("breathing", () => {
+  it("walks through the phases of a pattern", () => {
+    const box = PATTERNS[0];
+    expect(cycleSeconds(box)).toBe(16);
+    expect(phaseAt(0, box)).toMatchObject({ phase: "inhale", cycle: 0, size: 0 });
+    expect(phaseAt(2, box)).toMatchObject({ phase: "inhale", size: 0.5 });
+    expect(phaseAt(5, box)).toMatchObject({ phase: "hold", size: 1 });
+    expect(phaseAt(9, box)).toMatchObject({ phase: "exhale" });
+    expect(phaseAt(13, box)).toMatchObject({ phase: "rest", size: 0 });
+    expect(phaseAt(16.5, box)).toMatchObject({ phase: "inhale", cycle: 1 });
+  });
+});
+
+describe("stretch routines", () => {
+  it("has complete, sensible routines", () => {
+    for (const r of ROUTINES) {
+      expect(r.steps.length).toBeGreaterThan(2);
+      expect(routineSeconds(r)).toBeGreaterThanOrEqual(60);
+      for (const s of r.steps) {
+        expect(s.title && s.how && s.icon).toBeTruthy();
+        expect(s.seconds).toBeGreaterThanOrEqual(10);
+      }
+    }
+  });
+});

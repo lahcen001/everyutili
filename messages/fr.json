@@ -76,8 +76,8 @@
       "navLabel": "Aléatoire"
     },
     "focus-study": {
-      "label": "Outils de concentration et d'étude",
-      "description": "Minuteur Pomodoro, sons de concentration, flashcards et planificateurs pour se concentrer, réviser et acquérir de meilleures habitudes d'étude — tout reste privé, dans votre navigateur.",
+      "label": "Concentration et détente",
+      "description": "Minuteur Pomodoro, sons de concentration, cartes mémoire et planificateurs pour rester concentré, plus pauses étirements, respiration et mini-jeux rapides pour se ressourcer entre deux sessions.",
       "navLabel": "Concentration"
     }
   },
@@ -8014,6 +8014,326 @@
         {
           "question": "Est-ce compatible avec le minuteur Pomodoro ?",
           "answer": "Les deux vont très bien ensemble : ajoutez une habitude comme Deux sessions de concentration et cochez-la une fois votre minuteur terminé."
+        }
+      ]
+    },
+    "stretch-break": {
+      "seoTitle": "Pause étirements au bureau – Routines d'étirements guidées gratuites pour le travail et les études",
+      "metaDescription": "Pauses étirements guidées avec minuteur pour chaque mouvement : remise en forme au bureau, nuque et épaules, poignets et mains, repos des yeux 20-20-20. Gratuit, privé, sans inscription.",
+      "h1": "Pause étirements guidée",
+      "subheading": "Détendez-vous après de longues sessions grâce à des étirements chronométrés, pas à pas, pour la nuque, les épaules, les poignets et les yeux.",
+      "keywords": [
+        "étirements au bureau",
+        "minuteur pause étirements",
+        "exercices d'étirement au travail",
+        "routine d'étirements pour étudier",
+        "étirements nuque et épaules",
+        "étirements des poignets pour le clavier",
+        "règle des yeux 20-20-20",
+        "pause étirements guidée"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir une routine",
+          "text": "Sélectionnez Remise en forme au bureau pour une détente complète, Nuque et épaules, Poignets et mains, ou Repos des yeux 20-20-20."
+        },
+        {
+          "name": "Suivre chaque étape",
+          "text": "L'écran affiche le mouvement, une courte consigne et un cercle de compte à rebours. Un léger carillon vous indique quand changer."
+        },
+        {
+          "name": "Mettre en pause ou passer",
+          "text": "Utilisez Pause si vous avez besoin d'un instant, ou les flèches pour revenir en arrière ou avancer."
+        },
+        {
+          "name": "En faire une habitude",
+          "text": "Chaque routine terminée s'ajoute au nombre de pauses du jour. Essayez-en une après deux sessions Pomodoro."
+        }
+      ],
+      "faq": [
+        {
+          "question": "À quelle fréquence faut-il s'étirer en étudiant ou en travaillant ?",
+          "answer": "Une courte pause toutes les 30 à 60 minutes est une bonne règle. Une ou deux minutes de mouvement soulagent la nuque, le dos et les yeux, et vous aident à mieux vous concentrer ensuite."
+        },
+        {
+          "question": "Ai-je besoin de matériel ou d'espace ?",
+          "answer": "Non. Chaque mouvement peut se faire assis à votre bureau ou debout à côté. Portez simplement une tenue confortable."
+        },
+        {
+          "question": "Qu'est-ce que la règle 20-20-20 ?",
+          "answer": "Toutes les 20 minutes, regardez un objet situé à environ 6 mètres (20 pieds) pendant au moins 20 secondes. Cela repose les muscles de l'œil et réduit la fatigue liée aux écrans."
+        },
+        {
+          "question": "Les étirements sont-ils sans danger pour tout le monde ?",
+          "answer": "Un étirement doit provoquer une tension douce, jamais de douleur. Arrêtez si quelque chose vous fait mal. En cas de blessure ou de problème de santé, demandez d'abord l'avis d'un médecin ou d'un kinésithérapeute. Cet outil fournit des informations générales de bien-être, pas des conseils médicaux."
+        },
+        {
+          "question": "Puis-je l'utiliser avec le minuteur Pomodoro ?",
+          "answer": "Oui. Beaucoup de personnes profitent de la courte pause après une session de concentration pour faire une routine d'une minute. Ouvrez le minuteur Pomodoro dans un autre onglet et passez de l'un à l'autre."
+        },
+        {
+          "question": "Des données sont-elles enregistrées ou envoyées ?",
+          "answer": "Seul le nombre de pauses terminées chaque jour est conservé, dans votre navigateur, sur cet appareil. Rien n'est envoyé."
+        },
+        {
+          "question": "Fonctionne-t-il en plein écran ?",
+          "answer": "Oui. Appuyez sur Plein écran pour obtenir un texte plus grand et un grand minuteur, pratique sur une tablette ou un second écran."
+        }
+      ]
+    },
+    "breathing-exercise": {
+      "seoTitle": "Minuteur d'exercice de respiration – Respiration carrée et 4-7-8 gratuites pour se relaxer",
+      "metaDescription": "Un minuteur de respiration guidée avec cercle animé : respiration carrée, 4-7-8, cohérence cardiaque 5-5 et longue expiration. Apaisez-vous entre deux sessions d'étude. Gratuit et privé.",
+      "h1": "Exercice de respiration et minuteur de relaxation",
+      "subheading": "Suivez le cercle pour inspirer, retenir et expirer à un rythme régulier, pour vous calmer, retrouver votre concentration ou vous préparer au sommeil.",
+      "keywords": [
+        "exercice de respiration",
+        "respiration carrée",
+        "respiration 4-7-8",
+        "minuteur de respiration",
+        "exercice de relaxation",
+        "application de respiration calme",
+        "exercice de respiration contre l'anxiété",
+        "respiration guidée en ligne"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir un rythme",
+          "text": "La respiration carrée est régulière et concentrée, la 4-7-8 est profondément apaisante, la Cohérence 5-5 est douce et uniforme, et la Longue expiration aide à relâcher les tensions."
+        },
+        {
+          "name": "Choisir la durée",
+          "text": "Sélectionnez 1, 3, 5 ou 10 minutes."
+        },
+        {
+          "name": "Appuyer sur Démarrer",
+          "text": "Inspirez pendant que le cercle grandit, retenez votre souffle quand il indique Retenez, et expirez pendant qu'il rétrécit. Le chiffre indique les secondes restantes de chaque étape."
+        },
+        {
+          "name": "Terminer par un carillon",
+          "text": "Quand le temps est écoulé, un léger carillon retentit. Réinitialisez ou choisissez un autre rythme à tout moment."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que la respiration carrée ?",
+          "answer": "C'est un rythme en quatre temps égaux : inspirez quatre secondes, retenez quatre, expirez quatre et faites une pause de quatre. On l'utilise pour se sentir calme et stable, par exemple avant un examen ou une présentation."
+        },
+        {
+          "question": "Qu'est-ce que la respiration 4-7-8 ?",
+          "answer": "Inspirez par le nez pendant quatre secondes, retenez votre souffle sept secondes, puis expirez lentement pendant huit secondes. La longue expiration est très relaxante, c'est pourquoi beaucoup l'utilisent pour se détendre ou s'endormir."
+        },
+        {
+          "question": "Les exercices de respiration sont-ils vraiment efficaces ?",
+          "answer": "Une respiration lente avec une expiration plus longue peut ralentir le rythme cardiaque et vous aider à vous sentir plus calme un moment. C'est une technique de relaxation simple, pas un traitement. En cas de vertige, respirez normalement. Parlez à un médecin en cas d'anxiété ou de problèmes respiratoires."
+        },
+        {
+          "question": "Combien de temps faut-il pratiquer ?",
+          "answer": "Trois à cinq minutes suffisent largement pour une pause. Une minute aide déjà quand on manque de temps."
+        },
+        {
+          "question": "Comment dois-je respirer ?",
+          "answer": "Asseyez-vous confortablement, relâchez les épaules et respirez par le nez si c'est facile. Laissez le ventre bouger doucement. Ne forcez jamais."
+        },
+        {
+          "question": "Puis-je l'utiliser avec les sons de concentration ?",
+          "answer": "Oui. Lancez le mixeur de sons de concentration avec de la pluie ou des vagues dans un autre onglet et respirez en suivant le cercle."
+        },
+        {
+          "question": "Mes données sont-elles enregistrées ?",
+          "answer": "Non. Rien n'est enregistré ni envoyé. L'outil se contente de lancer un minuteur dans votre navigateur."
+        }
+      ]
+    },
+    "memory-match": {
+      "seoTitle": "Jeu de memory – Jeu de paires de cartes gratuit en ligne pour faire une pause cérébrale",
+      "metaDescription": "Jouez gratuitement au jeu de memory avec trois niveaux de difficulté. Retournez les cartes, trouvez les paires, suivez vos coups et votre temps, et battez votre meilleur score. Idéal pour une courte pause.",
+      "h1": "Jeu de memory",
+      "subheading": "Retournez les cartes et trouvez toutes les paires en un minimum de coups, une pause cérébrale rapide entre deux sessions d'étude.",
+      "keywords": [
+        "jeu de memory",
+        "jeu de cartes memory",
+        "jeu de paires",
+        "jeu de memory en ligne gratuit",
+        "jeu de concentration",
+        "jeu pour faire une pause",
+        "jeu de cartes à associer",
+        "jeu d'entraînement de la mémoire"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir un niveau",
+          "text": "Facile compte 6 paires, Moyen 8 et Difficile 12."
+        },
+        {
+          "name": "Retourner deux cartes",
+          "text": "Cliquez sur une carte pour la retourner, puis sur une deuxième. Si elles sont identiques, elles restent visibles ; sinon, elles se retournent de nouveau."
+        },
+        {
+          "name": "Mémoriser les positions",
+          "text": "Faites appel à votre mémoire pour trouver les paires en moins de coups. Le chrono démarre à votre première carte retournée."
+        },
+        {
+          "name": "Battre son record",
+          "text": "Trouvez toutes les paires pour gagner jusqu'à trois étoiles. Votre meilleur score pour chaque niveau est enregistré sur cet appareil."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment gagner ?",
+          "answer": "Trouvez toutes les paires. Moins de coups et un temps plus court vous donnent un meilleur score et plus d'étoiles."
+        },
+        {
+          "question": "Ce jeu améliore-t-il la mémoire ?",
+          "answer": "Ce type de jeu sollicite la mémoire visuelle à court terme et l'attention, et c'est une façon agréable de reposer l'esprit. Ce n'est pas un traitement médical, et les résultats obtenus dans le jeu ne prouvent pas une évolution de la mémoire au quotidien."
+        },
+        {
+          "question": "Que signifient les étoiles ?",
+          "answer": "Trois étoiles signifient que vous avez terminé en très peu de coups, proche du nombre de paires. Deux étoiles correspondent à une bonne partie, et une étoile indique qu'il vous a fallu beaucoup d'essais : rejouez simplement."
+        },
+        {
+          "question": "Puis-je jouer sur téléphone ?",
+          "answer": "Oui. Les cartes sont grandes et fonctionnent au toucher. En plein écran, elles sont encore plus grandes."
+        },
+        {
+          "question": "Mon score est-il enregistré ?",
+          "answer": "Vos meilleurs coups et temps pour chaque niveau sont conservés dans votre navigateur, uniquement sur cet appareil."
+        },
+        {
+          "question": "Pourquoi un jeu sur un site d'étude ?",
+          "answer": "Des jeux courts et sans pression reposent le cerveau entre deux sessions de concentration. Limitez-vous à quelques minutes, puis retournez au travail."
+        },
+        {
+          "question": "Est-ce gratuit ?",
+          "answer": "Oui. C'est gratuit, sans publicité dans le jeu et sans compte à créer."
+        }
+      ]
+    },
+    "reaction-time-test": {
+      "seoTitle": "Test de temps de réaction – Test de réflexes en ligne gratuit en millisecondes",
+      "metaDescription": "Testez votre temps de réaction en millisecondes. Cliquez quand l'écran devient vert, jouez cinq manches, découvrez votre moyenne et enregistrez votre record. Gratuit, privé, sans inscription.",
+      "h1": "Test de temps de réaction",
+      "subheading": "Cliquez dès que l'écran devient vert. Cinq manches vous donnent votre temps de réaction moyen en millisecondes.",
+      "keywords": [
+        "test de temps de réaction",
+        "test de réflexes",
+        "test de vitesse de réaction au clic",
+        "test de réaction en ligne",
+        "quels sont mes réflexes",
+        "test de vitesse de réaction",
+        "temps de réaction en millisecondes",
+        "temps de réaction moyen"
+      ],
+      "howTo": [
+        {
+          "name": "Lancer le test",
+          "text": "Cliquez sur la zone rouge pour commencer une manche."
+        },
+        {
+          "name": "Attendre le vert",
+          "text": "L'écran devient rouge, puis vert après une pause aléatoire. Ne cliquez pas tant qu'il est rouge."
+        },
+        {
+          "name": "Cliquer vite",
+          "text": "Dès qu'il devient vert, cliquez ou touchez l'écran. Votre temps en millisecondes s'affiche."
+        },
+        {
+          "name": "Terminer cinq manches",
+          "text": "Après cinq manches, vous voyez votre moyenne. Votre meilleure moyenne est enregistrée sur cet appareil."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quel est un bon temps de réaction ?",
+          "answer": "Pour un test visuel comme celui-ci, la plupart des gens obtiennent en moyenne entre 200 et 300 millisecondes. Moins de 200 ms est très rapide. Votre résultat dépend aussi de votre écran, de votre souris et de votre appareil."
+        },
+        {
+          "question": "Pourquoi affiche-t-il Trop tôt ?",
+          "answer": "Vous avez cliqué avant que l'écran ne devienne vert. L'attente est aléatoire volontairement pour que vous ne puissiez pas la deviner. Cliquez simplement pour réessayer."
+        },
+        {
+          "question": "La fatigue modifie-t-elle mon temps de réaction ?",
+          "answer": "Oui. Le manque de sommeil, une longue session de travail ou la distraction ralentissent généralement les réactions. C'est pourquoi c'est un moyen simple de vérifier si vous êtes reposé."
+        },
+        {
+          "question": "Est-il précis ?",
+          "answer": "Il mesure le temps entre le changement de l'écran et votre clic, mais la fréquence de rafraîchissement de l'écran, le périphérique de saisie et le navigateur ajoutent quelques millisecondes. Il est idéal pour vous comparer dans le temps, pas pour obtenir des résultats de laboratoire."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, votre meilleure moyenne est conservée dans votre navigateur, sur cet appareil. Utilisez Réinitialiser pour l'effacer."
+        },
+        {
+          "question": "Puis-je l'utiliser sur un écran tactile ?",
+          "answer": "Oui, touchez n'importe où dans la zone colorée. Les écrans tactiles ajoutent souvent un petit délai supplémentaire."
+        },
+        {
+          "question": "Des données sont-elles envoyées ?",
+          "answer": "Non. Tout s'exécute dans votre navigateur."
+        }
+      ]
+    },
+    "game-2048": {
+      "seoTitle": "Jeu 2048 – Puzzle 2048 gratuit en ligne avec annulation et commandes tactiles",
+      "metaDescription": "Jouez gratuitement à 2048 dans votre navigateur. Faites glisser et fusionnez les tuiles pour atteindre 2048 au clavier, avec ZQSD ou en balayant, avec annulation et meilleur score enregistré. Une pause détente pendant les révisions.",
+      "h1": "Jeu de puzzle 2048",
+      "subheading": "Faites glisser les tuiles, fusionnez les nombres identiques et essayez d'atteindre 2048, un puzzle classique pour une courte pause apaisante.",
+      "keywords": [
+        "jeu 2048",
+        "jouer à 2048 en ligne",
+        "puzzle 2048",
+        "2048 gratuit",
+        "2048 débloqué",
+        "jeu de puzzle avec des nombres",
+        "jeu de fusion de tuiles",
+        "2048 avec annulation"
+      ],
+      "howTo": [
+        {
+          "name": "Déplacer les tuiles",
+          "text": "Utilisez les touches fléchées ou W, A, S, D au clavier, ou balayez l'écran tactile. Toutes les tuiles glissent dans cette direction."
+        },
+        {
+          "name": "Fusionner les nombres identiques",
+          "text": "Quand deux tuiles portant le même nombre se touchent, elles fusionnent en une seule dont la valeur est leur somme."
+        },
+        {
+          "name": "Anticiper",
+          "text": "Gardez votre plus grosse tuile dans un coin et le plateau bien rangé. Une nouvelle tuile 2 ou 4 apparaît après chaque coup."
+        },
+        {
+          "name": "Atteindre 2048",
+          "text": "Créez la tuile 2048 pour gagner, puis continuez pour viser un meilleur score. Annuler reprend votre dernier coup."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quel est le but du jeu 2048 ?",
+          "answer": "Créer une tuile portant le nombre 2048 en fusionnant des tuiles identiques. Vous pouvez continuer à jouer ensuite pour améliorer votre score."
+        },
+        {
+          "question": "Quelle est la meilleure stratégie ?",
+          "answer": "Gardez votre plus grande tuile dans un coin, construisez à côté une rangée de nombres décroissants et évitez le mouvement qui ferait sortir la grosse tuile du coin."
+        },
+        {
+          "question": "Quand la partie se termine-t-elle ?",
+          "answer": "Quand le plateau est plein et qu'aucune paire de tuiles voisines n'est identique, aucun mouvement n'est donc possible."
+        },
+        {
+          "question": "Puis-je annuler un coup ?",
+          "answer": "Oui. Appuyez sur Annuler pour reprendre votre dernier coup. Une seule étape est mémorisée."
+        },
+        {
+          "question": "Fonctionne-t-il sur téléphone ?",
+          "answer": "Oui. Balayez l'écran sur le plateau. Le plein écran agrandit le plateau."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, uniquement sur cet appareil, dans le stockage local de votre navigateur. Rien n'est envoyé."
+        },
+        {
+          "question": "Est-ce une bonne pause pendant les révisions ?",
+          "answer": "Quelques minutes d'un puzzle tranquille peuvent reposer l'esprit. Comme on a vite envie de rejouer, réglez un court minuteur pour que votre pause reste une pause."
         }
       ]
     }

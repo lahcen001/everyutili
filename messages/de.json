@@ -76,8 +76,8 @@
       "navLabel": "Zufall"
     },
     "focus-study": {
-      "label": "Fokus- & Lernwerkzeuge",
-      "description": "Pomodoro-Timer, Fokus-Sounds, Karteikarten und Planer, um dich zu konzentrieren, zu lernen und bessere Lerngewohnheiten aufzubauen – alles privat, direkt in deinem Browser.",
+      "label": "Fokus & Entspannung",
+      "description": "Pomodoro-Timer, Fokus-Sounds, Karteikarten und Planer für mehr Konzentration – dazu Dehnpausen, Atemübungen und kurze Minispiele, um zwischen den Lernphasen neue Energie zu tanken.",
       "navLabel": "Fokus"
     }
   },
@@ -8014,6 +8014,326 @@
         {
           "question": "Funktioniert es mit dem Pomodoro Timer?",
           "answer": "Beide passen gut zusammen: Füge eine Gewohnheit wie Zwei Fokus-Sitzungen hinzu und hake sie ab, wenn dein Timer fertig ist."
+        }
+      ]
+    },
+    "stretch-break": {
+      "seoTitle": "Dehnübungen am Schreibtisch – Kostenlose geführte Dehnpause für Arbeit & Studium",
+      "metaDescription": "Geführte Dehnpause mit Timer für jede Übung: Schreibtisch-Reset, Nacken und Schultern, Handgelenke und Hände sowie Augenentspannung 20-20-20. Kostenlos, privat, ohne Anmeldung.",
+      "h1": "Geführte Dehnpause",
+      "subheading": "Lockere dich nach langen Sitzungen mit zeitgesteuerten Schritt-für-Schritt-Dehnübungen für Nacken, Schultern, Handgelenke und Augen.",
+      "keywords": [
+        "Dehnübungen am Schreibtisch",
+        "Dehnpause Timer",
+        "Büro Dehnübungen",
+        "Dehnübungen beim Lernen",
+        "Nacken und Schultern dehnen",
+        "Handgelenk Übungen beim Tippen",
+        "20-20-20-Regel Augen",
+        "geführte Dehnpause"
+      ],
+      "howTo": [
+        {
+          "name": "Routine auswählen",
+          "text": "Wähle Schreibtisch-Reset zum kompletten Lockern, Nacken & Schultern, Handgelenke & Hände oder Augenentspannung 20-20-20."
+        },
+        {
+          "name": "Jedem Schritt folgen",
+          "text": "Der Bildschirm zeigt die Übung, eine kurze Anleitung und einen Countdown-Ring. Ein sanfter Gong zeigt dir, wann du wechseln sollst."
+        },
+        {
+          "name": "Pausieren oder überspringen",
+          "text": "Mit Pause machst du bei Bedarf einen Moment Halt, mit den Pfeilen gehst du zurück oder vor."
+        },
+        {
+          "name": "Zur Gewohnheit machen",
+          "text": "Jede abgeschlossene Routine erhöht die Pausenzahl von heute. Probiere nach jeweils zwei Pomodoro-Einheiten eine aus."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie oft sollte ich mich beim Lernen oder Arbeiten dehnen?",
+          "answer": "Eine kurze Pause alle 30 bis 60 Minuten ist eine gute Faustregel. Schon ein bis zwei Minuten Bewegung tun Nacken, Rücken und Augen gut und helfen dir, dich danach besser zu konzentrieren."
+        },
+        {
+          "question": "Brauche ich Geräte oder viel Platz?",
+          "answer": "Nein. Alle Übungen lassen sich im Sitzen am Schreibtisch oder im Stehen daneben machen. Trage einfach, was dir bequem ist."
+        },
+        {
+          "question": "Was ist die 20-20-20-Regel?",
+          "answer": "Schaue alle 20 Minuten mindestens 20 Sekunden lang auf etwas, das etwa 20 Fuß (6 Meter) entfernt ist. Das entspannt die Muskeln im Auge und verringert die Belastung durch Bildschirme."
+        },
+        {
+          "question": "Ist Dehnen für jeden unbedenklich?",
+          "answer": "Dehnen sollte sich wie sanfte Spannung anfühlen, niemals wie Schmerz. Höre auf, wenn etwas wehtut. Bei einer Verletzung oder Erkrankung frage vorher eine Ärztin, einen Arzt oder Physiotherapeuten. Dieses Tool bietet allgemeine Gesundheitsinformationen und keine medizinische Beratung."
+        },
+        {
+          "question": "Kann ich es mit dem Pomodoro-Timer nutzen?",
+          "answer": "Ja. Viele nutzen die kurze Pause nach einer Fokusphase für eine einminütige Routine. Öffne den Pomodoro-Timer in einem anderen Tab und wechsle zwischen beiden."
+        },
+        {
+          "question": "Wird etwas gespeichert oder hochgeladen?",
+          "answer": "Gespeichert wird nur die Zahl der Pausen, die du pro Tag abschließt, und zwar in deinem Browser auf diesem Gerät. Es wird nichts hochgeladen."
+        },
+        {
+          "question": "Funktioniert es im Vollbildmodus?",
+          "answer": "Ja. Mit Vollbild erhältst du große Schrift und einen großen Timer, praktisch auf einem Tablet oder einem zweiten Bildschirm."
+        }
+      ]
+    },
+    "breathing-exercise": {
+      "seoTitle": "Atemübung Timer – Kostenloses Tool für Box-Atmung & 4-7-8 zur Entspannung",
+      "metaDescription": "Geführter Atem-Timer mit animiertem Kreis: Box-Atmung, 4-7-8, kohärente 5-5-Atmung und lange Ausatmung. Komm zwischen Lernphasen zur Ruhe. Kostenlos und privat.",
+      "h1": "Atemübung & Entspannungs-Timer",
+      "subheading": "Folge dem Kreis und atme in gleichmäßigem Rhythmus ein, halte an und aus – zum Beruhigen, zum Zurückfinden zum Fokus oder zum Runterkommen vor dem Schlafen.",
+      "keywords": [
+        "Atemübung",
+        "Box-Atmung",
+        "4-7-8 Atemtechnik",
+        "Atem Timer",
+        "Entspannungsübung",
+        "Atemübung zur Beruhigung",
+        "Atemübung bei Angst",
+        "geführte Atemübung online"
+      ],
+      "howTo": [
+        {
+          "name": "Muster wählen",
+          "text": "Box-Atmung ist gleichmäßig und fokussiert, 4-7-8 wirkt tief beruhigend, Kohärent 5-5 ist sanft und ausgeglichen, und Lange Ausatmung hilft, Anspannung zu lösen."
+        },
+        {
+          "name": "Dauer festlegen",
+          "text": "Wähle 1, 3, 5 oder 10 Minuten."
+        },
+        {
+          "name": "Auf Start drücken",
+          "text": "Atme ein, während der Kreis wächst, halte an, wenn Halten angezeigt wird, und atme aus, während er schrumpft. Die Zahl zeigt die verbleibenden Sekunden jedes Schritts."
+        },
+        {
+          "name": "Mit einem Gong beenden",
+          "text": "Wenn die Zeit um ist, ertönt ein sanfter Gong. Du kannst jederzeit zurücksetzen oder ein anderes Muster wählen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist Box-Atmung?",
+          "answer": "Ein Muster aus gleich langen Phasen: vier Sekunden einatmen, vier halten, vier ausatmen und vier pausieren. Man nutzt sie, um ruhig und stabil zu werden, zum Beispiel vor einer Prüfung oder einer Präsentation."
+        },
+        {
+          "question": "Was ist die 4-7-8-Atmung?",
+          "answer": "Vier Sekunden durch die Nase einatmen, sieben Sekunden halten und acht Sekunden langsam ausatmen. Die lange Ausatmung wirkt sehr entspannend, deshalb nutzen viele sie zum Abschalten oder Einschlafen."
+        },
+        {
+          "question": "Helfen Atemübungen wirklich?",
+          "answer": "Langsames Atmen mit längerer Ausatmung kann den Puls senken und dir für eine Weile zu mehr Ruhe verhelfen. Es ist eine einfache Entspannungstechnik, keine Behandlung. Wenn dir schwindelig wird, atme normal. Sprich bei Ängsten oder Atemproblemen mit einem Arzt."
+        },
+        {
+          "question": "Wie lange sollte ich üben?",
+          "answer": "Drei bis fünf Minuten sind für eine Pause völlig ausreichend. Eine Minute hilft auch schon, wenn du wenig Zeit hast."
+        },
+        {
+          "question": "Wie soll ich atmen?",
+          "answer": "Setze dich bequem hin, entspanne die Schultern und atme, wenn es dir leichtfällt, durch die Nase. Lass den Bauch sich sanft bewegen. Niemals erzwingen oder verkrampfen."
+        },
+        {
+          "question": "Kann ich es mit Fokus-Sounds nutzen?",
+          "answer": "Ja. Starte den Fokus-Sounds-Mixer mit Regen oder Meeresrauschen in einem anderen Tab und atme im Rhythmus des Kreises."
+        },
+        {
+          "question": "Werden meine Daten gespeichert?",
+          "answer": "Nein. Es wird nichts gespeichert oder hochgeladen. Das Tool lässt nur einen Timer in deinem Browser laufen."
+        }
+      ]
+    },
+    "memory-match": {
+      "seoTitle": "Memory-Spiel – Kostenloses Online-Kartenspiel für Gehirnpausen",
+      "metaDescription": "Spiele kostenloses Memory mit drei Schwierigkeitsstufen. Karten aufdecken, Paare finden, Züge und Zeit verfolgen und deinen Bestwert schlagen. Ideal für eine kurze Pause.",
+      "h1": "Memory-Spiel",
+      "subheading": "Decke die Karten auf und finde alle Paare mit möglichst wenigen Zügen – eine schnelle Gehirnpause zwischen Lernphasen.",
+      "keywords": [
+        "Memory Spiel",
+        "Memory Kartenspiel",
+        "Paare finden Spiel",
+        "Memory online kostenlos spielen",
+        "Konzentrationsspiel",
+        "Spiel für die Gehirnpause",
+        "Paare-Suchspiel",
+        "Gedächtnistraining Spiel"
+      ],
+      "howTo": [
+        {
+          "name": "Stufe wählen",
+          "text": "Leicht hat 6 Paare, Mittel 8 und Schwer 12."
+        },
+        {
+          "name": "Zwei Karten aufdecken",
+          "text": "Klicke auf eine Karte, um sie umzudrehen, dann auf eine zweite. Passen sie zusammen, bleiben sie offen liegen, sonst drehen sie sich zurück."
+        },
+        {
+          "name": "Positionen merken",
+          "text": "Nutze dein Gedächtnis, um Paare mit weniger Zügen zu finden. Der Timer startet mit deiner ersten aufgedeckten Karte."
+        },
+        {
+          "name": "Bestwert knacken",
+          "text": "Finde alle Paare und erhalte bis zu drei Sterne. Dein Bestwert für jede Stufe wird auf diesem Gerät gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie gewinne ich?",
+          "answer": "Finde alle passenden Paare. Weniger Züge und eine kürzere Zeit bringen dir eine bessere Wertung und mehr Sterne."
+        },
+        {
+          "question": "Verbessert es das Gedächtnis?",
+          "answer": "Spiele wie dieses trainieren das visuelle Kurzzeitgedächtnis und die Aufmerksamkeit und sind eine unterhaltsame Art, den Kopf auszuruhen. Sie sind keine medizinische Behandlung, und Ergebnisse im Spiel belegen keine Veränderung des Alltagsgedächtnisses."
+        },
+        {
+          "question": "Was bedeuten die Sterne?",
+          "answer": "Drei Sterne bedeuten, dass du mit sehr wenigen Zügen fertig warst, nahe an der Anzahl der Paare. Zwei Sterne sind ein gutes Spiel, und ein Stern heißt, dass du viele Versuche gebraucht hast – spiel einfach noch einmal."
+        },
+        {
+          "question": "Kann ich es auf dem Smartphone spielen?",
+          "answer": "Ja. Die Karten sind groß und lassen sich per Touch bedienen. Im Vollbild werden sie noch größer."
+        },
+        {
+          "question": "Wird mein Ergebnis gespeichert?",
+          "answer": "Deine besten Züge und Zeiten für jede Stufe werden nur in deinem Browser auf diesem Gerät gespeichert."
+        },
+        {
+          "question": "Warum ein Spiel auf einer Lernseite?",
+          "answer": "Kurze, stressfreie Spiele lassen dein Gehirn zwischen Fokusphasen ausruhen. Beschränke dich auf ein paar Minuten und kehre dann zur Arbeit zurück."
+        },
+        {
+          "question": "Ist es kostenlos?",
+          "answer": "Ja. Es ist kostenlos, enthält keine Werbung im Spiel und braucht kein Konto."
+        }
+      ]
+    },
+    "reaction-time-test": {
+      "seoTitle": "Reaktionstest – Kostenloser Online-Test für Reflexe und Reaktionszeit in Millisekunden",
+      "metaDescription": "Teste deine Reaktionszeit in Millisekunden. Klicke, sobald der Bildschirm grün wird, spiele fünf Runden, sieh deinen Durchschnitt und speichere deinen Bestwert. Kostenlos, privat, ohne Anmeldung.",
+      "h1": "Reaktionstest",
+      "subheading": "Klicke, sobald der Bildschirm grün wird. Fünf Runden ergeben deine durchschnittliche Reaktionszeit in Millisekunden.",
+      "keywords": [
+        "Reaktionstest",
+        "Reaktionszeit testen",
+        "Reflextest online",
+        "Klickgeschwindigkeit Reaktionstest",
+        "wie schnell sind meine Reflexe",
+        "Reaktionsgeschwindigkeit testen",
+        "Reaktionszeit in Millisekunden",
+        "durchschnittliche Reaktionszeit"
+      ],
+      "howTo": [
+        {
+          "name": "Test starten",
+          "text": "Klicke auf die rote Fläche, um eine Runde zu beginnen."
+        },
+        {
+          "name": "Auf Grün warten",
+          "text": "Der Bildschirm wird rot und nach einer zufälligen Pause grün. Klicke nicht, solange er rot ist."
+        },
+        {
+          "name": "Schnell klicken",
+          "text": "Sobald er grün wird, klicke oder tippe. Deine Zeit in Millisekunden erscheint."
+        },
+        {
+          "name": "Fünf Runden abschließen",
+          "text": "Nach fünf Runden siehst du deinen Durchschnitt. Dein bester Durchschnitt wird auf diesem Gerät gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist eine gute Reaktionszeit?",
+          "answer": "Bei einem visuellen Test wie diesem liegen die meisten Menschen im Durchschnitt zwischen 200 und 300 Millisekunden. Unter 200 ms ist sehr schnell. Dein Ergebnis hängt auch von Bildschirm, Maus und Gerät ab."
+        },
+        {
+          "question": "Warum erscheint „Zu früh“?",
+          "answer": "Du hast geklickt, bevor der Bildschirm grün wurde. Die Wartezeit ist absichtlich zufällig, damit man sie nicht erraten kann. Klicke einfach, um es noch einmal zu versuchen."
+        },
+        {
+          "question": "Verändert Müdigkeit meine Reaktionszeit?",
+          "answer": "Ja. Schlafmangel, eine lange Arbeitsphase oder Ablenkung verlangsamen die Reaktion meist. Deshalb ist es ein einfacher Check, wie ausgeruht du dich fühlst."
+        },
+        {
+          "question": "Ist er genau?",
+          "answer": "Gemessen wird ab dem Moment, in dem sich der Bildschirm ändert, bis zu deinem Klick, doch Bildwiederholrate, Eingabegerät und Browser fügen ein paar Millisekunden hinzu. Er eignet sich gut, um dich im Zeitverlauf zu vergleichen, nicht für Laborergebnisse."
+        },
+        {
+          "question": "Wird mein Bestwert gespeichert?",
+          "answer": "Ja, dein bester Durchschnitt wird in deinem Browser auf diesem Gerät gespeichert. Mit Zurücksetzen löschst du ihn."
+        },
+        {
+          "question": "Kann ich ihn auf einem Touchscreen nutzen?",
+          "answer": "Ja, tippe irgendwo auf die farbige Fläche. Touchscreens verursachen oft eine kleine zusätzliche Verzögerung."
+        },
+        {
+          "question": "Wird etwas hochgeladen?",
+          "answer": "Nein. Alles läuft in deinem Browser."
+        }
+      ]
+    },
+    "game-2048": {
+      "seoTitle": "2048 Spiel – Kostenloses Online-2048-Puzzle mit Rückgängig und Touch-Steuerung",
+      "metaDescription": "Spiele 2048 kostenlos im Browser. Verschiebe und verbinde Kacheln bis 2048 per Tastatur, WASD oder Wischen, mit Rückgängig-Funktion und gespeichertem Bestwert. Entspannende Lernpause.",
+      "h1": "2048 Puzzlespiel",
+      "subheading": "Verschiebe die Kacheln, verbinde gleiche Zahlen und versuche, 2048 zu erreichen – ein Klassiker für eine kurze, entspannende Pause.",
+      "keywords": [
+        "2048 Spiel",
+        "2048 online spielen",
+        "2048 Puzzle",
+        "2048 kostenlos",
+        "2048 ohne Download",
+        "Zahlenpuzzle",
+        "Kacheln verbinden Spiel",
+        "2048 mit Rückgängig"
+      ],
+      "howTo": [
+        {
+          "name": "Kacheln bewegen",
+          "text": "Nutze die Pfeiltasten oder W, A, S, D auf der Tastatur oder wische auf dem Touchscreen. Alle Kacheln rutschen in diese Richtung."
+        },
+        {
+          "name": "Gleiche Zahlen verbinden",
+          "text": "Berühren sich zwei Kacheln mit derselben Zahl, verschmelzen sie zu einer Kachel mit der Summe."
+        },
+        {
+          "name": "Vorausplanen",
+          "text": "Halte deine größte Kachel in einer Ecke und das Spielfeld ordentlich. Nach jedem Zug erscheint eine neue 2 oder 4."
+        },
+        {
+          "name": "2048 erreichen",
+          "text": "Baue die 2048-Kachel, um zu gewinnen, und spiele dann für eine höhere Punktzahl weiter. Mit Rückgängig nimmst du deinen letzten Zug zurück."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist das Ziel von 2048?",
+          "answer": "Erzeuge durch das Verbinden gleicher Kacheln eine Kachel mit der Zahl 2048. Danach kannst du weiterspielen, um eine höhere Punktzahl zu erreichen."
+        },
+        {
+          "question": "Welche Strategie funktioniert am besten?",
+          "answer": "Halte deine größte Kachel in einer Ecke, baue daneben eine Reihe absteigender Zahlen auf und vermeide Züge in die Richtung, die die große Kachel aus der Ecke zieht."
+        },
+        {
+          "question": "Wann endet das Spiel?",
+          "answer": "Wenn das Spielfeld voll ist und keine zwei benachbarten Kacheln gleich sind, sodass kein Zug mehr möglich ist."
+        },
+        {
+          "question": "Kann ich einen Zug rückgängig machen?",
+          "answer": "Ja. Drücke Rückgängig, um deinen letzten Zug zurückzunehmen. Es wird nur ein Schritt gespeichert."
+        },
+        {
+          "question": "Funktioniert es auf dem Smartphone?",
+          "answer": "Ja. Wische auf dem Spielfeld. Mit Vollbild wird es größer."
+        },
+        {
+          "question": "Wird mein Bestwert gespeichert?",
+          "answer": "Ja, nur auf diesem Gerät, im lokalen Speicher deines Browsers. Es wird nichts hochgeladen."
+        },
+        {
+          "question": "Ist es eine gute Lernpause?",
+          "answer": "Ein paar Minuten ruhiges Puzzeln können den Kopf entspannen. Weil man leicht weiterspielt, stelle einen kurzen Timer, damit deine Pause eine Pause bleibt."
         }
       ]
     }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HistoryCleanup } from "@/components/HistoryCleanup";
 import type { ReactNode, CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import Script from "next/script";
@@ -189,6 +190,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         <AmbientBackground />
+        <HistoryCleanup />
         <NextIntlClientProvider>
           <ThemeProvider>
             <SiteHeader />

@@ -57,6 +57,12 @@ export const useRecentToolsStore = create<RecentToolsState>()(
     }),
     {
       name: "omnitools-recent-tools",
+      // Drop visits older than one month when the saved list is loaded.
+      merge: (persisted, current) => {
+        const saved = (persisted as Partial<RecentToolsState> | undefined)?.recentTools ?? [];
+        const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
+        return { ...current, recentTools: saved.filter((t) => t.lastVisited >= cutoff) };
+      },
     }
   )
 );

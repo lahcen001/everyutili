@@ -23,6 +23,9 @@ export interface ToolHistoryItem {
 
 const MAX_ITEMS_PER_TOOL = 5;
 
+/** Saved results older than this are deleted automatically (one month). */
+export const HISTORY_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
+
 // Dedicated IndexedDB database/store, separate from any other idb-keyval
 // consumer in the app. Keys are `${toolSlug}:${id}` so all of one tool's
 // history can be listed via a prefix scan over `keys()`.
@@ -73,7 +76,7 @@ export async function getToolHistory(toolSlug: string): Promise<ToolHistoryItem[
   );
 
   return items
-    .filter((item): item is ToolHistoryItem => Boolean(item))
+    .filter((item): item is ToolHistoryItem => Boolean(item) && Date.now() - item!.timestamp <= HISTORY_MAX_AGE_MS)
     .sort((a, b) => b.timestamp - a.timestamp)
     .slice(0, MAX_ITEMS_PER_TOOL);
 }
@@ -106,4 +109,23 @@ export async function clearToolHistory(toolSlug: string): Promise<void> {
   const prefix = `${toolSlug}:`;
   const toolKeys = allKeys.filter((k) => k.startsWith(prefix));
   await Promise.all(toolKeys.map((k) => del(k, historyStore)));
+}
+
+/**
+ * Deletes every saved result older than one month, across all tools, so
+ * stored blobs never pile up on the user's device. Returns how many were removed.
+ */
+export async function purgeExpiredHistory(now: number = Date.now()): Promise<number> {
+  const allKeys = await keys<string>(historyStore);
+  let removed = 0;
+  await Promise.all(
+    allKeys.map(async (k) => {
+      const item = await get<ToolHistoryItem>(k, historyStore);
+      if (!item || typeof item.timestamp !== "number" || now - item.timestamp > HISTORY_MAX_AGE_MS) {
+        await del(k, historyStore);
+        removed += 1;
+      }
+    })
+  );
+  return removed;
 }

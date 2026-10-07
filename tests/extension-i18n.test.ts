@@ -161,12 +161,12 @@ describe("extension data", () => {
       const code = l === "zh_CN" ? "zh-CN" : l;
       const data = JSON.parse(read(`i18n/tools.${code}.json`));
       for (const s of slugs) expect(data.tools[s]?.n, `${code}/${s}`).toBeTruthy();
-      expect(Object.keys(data.categories).sort()).toEqual(["developer", "document", "financial", "media", "random-decision"]);
+      expect(Object.keys(data.categories).sort()).toEqual(["developer", "document", "financial", "focus-study", "media", "random-decision"]);
     }
   });
 
   it("lists every site category in the extension", () => {
     const cats = [...read("tools-data.js").matchAll(/\{ slug: "([^"]+)", label:/g)].map((m) => m[1]);
-    expect(cats).toEqual(["media", "document", "developer", "financial", "random-decision"]);
+    expect(cats).toEqual(["media", "document", "developer", "financial", "random-decision", "focus-study"]);
   });
 });

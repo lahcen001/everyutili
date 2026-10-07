@@ -41,6 +41,7 @@
     "notFoundTitle": "Page not found",
     "notFoundCta": "Go home",
     "usedRecently": "Used",
+    "featured": "Featured",
     "errorTitle": "Something went wrong",
     "errorBody": "This tool hit an unexpected error. Your files were not uploaded anywhere.",
     "errorRetry": "Try again"
@@ -73,6 +74,11 @@
       "label": "Random & Decision Tools",
       "description": "Spin, flip, roll, and pick your way to a decision — team generators, wheels, and random pickers, all offline.",
       "navLabel": "Random"
+    },
+    "focus-study": {
+      "label": "Focus & Study Tools",
+      "description": "Pomodoro timer, focus sounds, flashcards and planners to concentrate, revise and build better study habits — all private, in your browser.",
+      "navLabel": "Focus"
     }
   },
   "tools": {
@@ -7631,6 +7637,390 @@
         {
           "question": "Is this suitable for a legally regulated raffle?",
           "answer": "It's suitable for casual and informal giveaways — check your local regulations for anything requiring a certified or audited drawing process."
+        }
+      ]
+    },
+    "pomodoro-timer": {
+      "seoTitle": "Pomodoro Timer Online – Free Focus & Break Timer with Stats",
+      "metaDescription": "A free Pomodoro timer for studying and work: 25/5 focus and break cycles, long breaks, auto-start, sound and notifications, daily stats and fullscreen focus mode. Private, no sign-up.",
+      "h1": "Pomodoro Timer",
+      "subheading": "Stay focused with timed work sessions and short breaks — with a fullscreen focus mode, daily stats and a chime, all in your browser.",
+      "keywords": [
+        "pomodoro timer",
+        "pomodoro timer online",
+        "study timer",
+        "focus timer",
+        "25 5 timer",
+        "pomodoro technique",
+        "work break timer",
+        "pomodoro timer with stats"
+      ],
+      "howTo": [
+        {
+          "name": "Pick your rhythm",
+          "text": "Start with the classic 25 minutes of focus and 5 of rest, or choose Deep work 50/10 or Short 15/3. You can also type your own lengths."
+        },
+        {
+          "name": "Name your task",
+          "text": "Write what you are working on so it shows under the clock. It helps you stay on one thing."
+        },
+        {
+          "name": "Press Start",
+          "text": "The ring fills as time passes and the countdown also appears in your browser tab title, so you can see it from another tab."
+        },
+        {
+          "name": "Rest and repeat",
+          "text": "When a session ends you hear a chime and the next phase starts. After four focus sessions you get a longer break. Check today's totals and the 7-day chart on the right."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the Pomodoro Technique?",
+          "answer": "It is a time-management method: work in focused blocks of about 25 minutes, then take a 5-minute break. After four blocks, take a longer break of 15 to 30 minutes. The short deadlines make it easier to start and to resist distractions."
+        },
+        {
+          "question": "Can I change the session lengths?",
+          "answer": "Yes. Set focus, short break, long break and how often the long break comes. Your choices are remembered on this device."
+        },
+        {
+          "question": "Does it keep running if I switch tabs?",
+          "answer": "Yes. The timer is based on the real clock, not on counting ticks, so it stays accurate in a background tab. The remaining time is also shown in the tab title."
+        },
+        {
+          "question": "Will it alert me when time is up?",
+          "answer": "It plays a short chime and can show a desktop notification if you allow notifications. You can turn either off."
+        },
+        {
+          "question": "What does focus mode do?",
+          "answer": "It makes the timer fill your whole screen with a large clock and nothing else, which is useful on a second monitor or a tablet next to your books."
+        },
+        {
+          "question": "Is my data uploaded?",
+          "answer": "No. Your settings, task name and statistics are stored only in your browser and never sent anywhere. Clearing your browser data removes them."
+        },
+        {
+          "question": "Which break length is best?",
+          "answer": "There is no single answer. The classic 25/5 works for most people. If you like long, deep sessions try 50/10. Short 15-minute sessions can help when you find it hard to begin."
+        }
+      ]
+    },
+    "focus-sounds": {
+      "seoTitle": "Focus Sounds & Noise Mixer – Free White, Brown Noise, Rain for Studying",
+      "metaDescription": "Mix white, pink and brown noise with rain, ocean waves, wind, a fan hum and alpha binaural beats to concentrate or study. Sleep timer, saved mixes, generated in your browser — no downloads.",
+      "h1": "Focus Sounds & Noise Mixer",
+      "subheading": "Blend rain, ocean waves, brown noise and more into your own background mix to block distractions while you study or work.",
+      "keywords": [
+        "white noise generator",
+        "brown noise",
+        "pink noise",
+        "rain sounds for studying",
+        "focus sounds",
+        "background noise for studying",
+        "binaural beats alpha",
+        "noise mixer"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a sound",
+          "text": "Tap a card such as Rain, Brown noise or Ocean waves to switch it on. Use a Quick mix like Deep focus for a ready-made blend."
+        },
+        {
+          "name": "Mix the levels",
+          "text": "Move each slider to set how loud that sound is, and the master volume for everything together. You can layer several sounds."
+        },
+        {
+          "name": "Set a sleep timer",
+          "text": "Choose a time and the sound fades out and stops by itself — handy when you listen while falling asleep."
+        },
+        {
+          "name": "Keep working",
+          "text": "Your mix is remembered on this device, so next time you only need to press Play mix."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which sound is best for concentration?",
+          "answer": "It differs between people. Brown noise is deep and warm and many find it good for focus. Pink noise is more balanced. Rain and ocean waves feel natural and calming. White noise is brightest and masks speech well."
+        },
+        {
+          "question": "Do the sounds need an internet connection?",
+          "answer": "No. Every sound is created live in your browser with the Web Audio API. There is nothing to download or stream, so it works offline after the page has loaded."
+        },
+        {
+          "question": "What are alpha binaural beats?",
+          "answer": "Two slightly different tones are played, one in each ear, 10 Hz apart. Some people find the effect relaxing. You need headphones for it to work, and the science is mixed, so treat it as an option rather than a promise."
+        },
+        {
+          "question": "Why can't I hear anything?",
+          "answer": "Browsers only start audio after you click. Press Play mix, check your device volume and the master slider, and make sure at least one sound has a volume above zero."
+        },
+        {
+          "question": "Is it safe to play all night?",
+          "answer": "Keep the volume low and use the sleep timer. Loud noise for long periods can be tiring for your ears."
+        },
+        {
+          "question": "Is my mix saved?",
+          "answer": "Yes, on this device only. It is stored in your browser and never uploaded."
+        },
+        {
+          "question": "Can I use it together with a timer?",
+          "answer": "Yes. Open the Pomodoro Timer in another tab and keep the sounds playing while you work."
+        }
+      ]
+    },
+    "flashcards": {
+      "seoTitle": "Flashcard Maker with Spaced Repetition – Free Online Study Cards",
+      "metaDescription": "Make flashcard decks, import cards from text, and study with a spaced-repetition (Leitner) schedule. Flip cards, track progress, export your deck. Free, private, works offline.",
+      "h1": "Flashcards with Spaced Repetition",
+      "subheading": "Build decks, flip through cards, and let the schedule bring back the ones you miss — stored only on your device.",
+      "keywords": [
+        "flashcard maker",
+        "flashcards online",
+        "spaced repetition",
+        "leitner system",
+        "study cards",
+        "anki alternative",
+        "vocabulary flashcards",
+        "make flashcards free"
+      ],
+      "howTo": [
+        {
+          "name": "Create a deck",
+          "text": "Type a deck name and press Create deck, or choose Import cards and paste a list with one question and answer per line."
+        },
+        {
+          "name": "Add your cards",
+          "text": "Fill in the front and back and press Enter to add each card quickly. You can edit or delete any card later."
+        },
+        {
+          "name": "Study",
+          "text": "Press Study to see the cards that are due. Click the card or press Space to flip it, then choose Got it or Missed it (keys 2 and 1)."
+        },
+        {
+          "name": "Come back tomorrow",
+          "text": "Cards you know move to a later box and return after more days. Missed cards come back soon. Export the deck any time to back it up."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is spaced repetition?",
+          "answer": "It is a way of reviewing information just before you would forget it. Cards you know well are shown less often and cards you find hard are shown more often, which saves time and builds long-term memory."
+        },
+        {
+          "question": "How does the schedule work?",
+          "answer": "It uses the Leitner system with five boxes. A correct answer moves a card up a box and it returns after 1, 2, 4, 8 and then 16 days. A wrong answer sends it back to the first box so you see it again today."
+        },
+        {
+          "question": "How do I import cards?",
+          "answer": "Paste one card per line with the question and answer separated by a tab, a comma, a semicolon or a space-dash-space. This works with lists copied from spreadsheets and most notes apps."
+        },
+        {
+          "question": "Can I back up or move my decks?",
+          "answer": "Yes. Open a deck, press Export, and you get a tab-separated file that you can import again here or open in a spreadsheet."
+        },
+        {
+          "question": "Where are my cards stored?",
+          "answer": "Only in your browser's local storage on this device. Nothing is uploaded, so clearing browser data deletes your decks — export first if they matter."
+        },
+        {
+          "question": "Can I study everything, not only due cards?",
+          "answer": "Yes. The All button shuffles every card in the deck, which is useful the night before an exam."
+        },
+        {
+          "question": "Does it support images or other languages?",
+          "answer": "Cards are text, and any language or symbol your device can display works, including right-to-left scripts and maths symbols."
+        }
+      ]
+    },
+    "eisenhower-matrix": {
+      "seoTitle": "Eisenhower Matrix – Free Priority Matrix & To-Do Planner Online",
+      "metaDescription": "Sort tasks into the Eisenhower matrix: do first, schedule, delegate or eliminate. Drag and drop, check off, copy as text. Free, private, saved in your browser.",
+      "h1": "Eisenhower Priority Matrix",
+      "subheading": "Decide what to do now, what to plan, what to hand off and what to drop — drag your tasks into four boxes.",
+      "keywords": [
+        "eisenhower matrix",
+        "priority matrix",
+        "urgent important matrix",
+        "to do list planner",
+        "task prioritization",
+        "time management matrix",
+        "decision matrix tasks",
+        "eisenhower box"
+      ],
+      "howTo": [
+        {
+          "name": "Add your tasks",
+          "text": "Type a task into the box where it belongs and press Enter. You can start with a brain dump and sort later."
+        },
+        {
+          "name": "Sort by urgency and importance",
+          "text": "Drag tasks between the four boxes, or use the small menu on a task. Urgent and important goes in Do first."
+        },
+        {
+          "name": "Work from the top",
+          "text": "Finish Do first, book time for Schedule, hand off Delegate and be honest about Eliminate."
+        },
+        {
+          "name": "Check off and share",
+          "text": "Tick tasks as you complete them, clear finished ones, or copy the whole matrix as text to paste into notes or a message."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the Eisenhower matrix?",
+          "answer": "It is a way to prioritise by sorting tasks on two questions: is it urgent, and is it important? The answer tells you whether to do it now, schedule it, delegate it or drop it."
+        },
+        {
+          "question": "What goes in each box?",
+          "answer": "Do first: urgent and important, like a deadline tomorrow. Schedule: important but not urgent, like revision or exercise. Delegate: urgent but not important, like some requests and interruptions. Eliminate: neither, like time-wasting habits."
+        },
+        {
+          "question": "How many tasks should be in Do first?",
+          "answer": "As few as possible. If this box is always full, planning more in Schedule usually helps, because well-planned work becomes less urgent."
+        },
+        {
+          "question": "Can I use it on a phone?",
+          "answer": "Yes. Dragging works on many devices, and every task also has a small menu to move it to another box."
+        },
+        {
+          "question": "Is my list saved?",
+          "answer": "Yes, in your browser on this device only. It is not uploaded, and clearing browser data removes it."
+        },
+        {
+          "question": "Can I export the matrix?",
+          "answer": "Press Copy as text to get all four boxes as a checklist you can paste anywhere."
+        },
+        {
+          "question": "Why do I need to separate urgent from important?",
+          "answer": "Urgent things shout for attention, but important things move your goals forward. Seeing them in separate boxes helps you stop reacting all day and start planning."
+        }
+      ]
+    },
+    "exam-countdown": {
+      "seoTitle": "Exam & Deadline Countdown – Free Days Until Timer for Students",
+      "metaDescription": "Count down to exams, deadlines and trips with live days, hours, minutes and seconds. Add many events, colour-coded by urgency. Free and private, saved in your browser.",
+      "h1": "Exam & Deadline Countdown",
+      "subheading": "See exactly how much time is left until your next exam, deadline or trip, with live days, hours, minutes and seconds.",
+      "keywords": [
+        "exam countdown",
+        "days until exam",
+        "deadline countdown",
+        "countdown timer to date",
+        "study countdown",
+        "how many days until",
+        "exam timer",
+        "event countdown"
+      ],
+      "howTo": [
+        {
+          "name": "Name the event",
+          "text": "Type what you are counting down to, for example Chemistry final."
+        },
+        {
+          "name": "Choose the date and time",
+          "text": "Pick the exact moment, or tap a quick choice such as Tomorrow, In a week or In 100 days."
+        },
+        {
+          "name": "Watch the clock",
+          "text": "The nearest event is shown big, with a colour that goes from green to amber to red as it gets closer."
+        },
+        {
+          "name": "Plan backwards",
+          "text": "Use the number of days left to split your revision into daily goals. Past events are tucked away under Past."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I count down to more than one date?",
+          "answer": "Yes. Add as many exams and deadlines as you like. They are sorted with the nearest first."
+        },
+        {
+          "question": "What do the colours mean?",
+          "answer": "Green means more than two weeks away, amber means within two weeks and red means within three days. Past events are grey."
+        },
+        {
+          "question": "Is the time zone handled correctly?",
+          "answer": "The date and time you choose are in your device's local time zone, and the countdown uses the same clock."
+        },
+        {
+          "question": "Does it keep counting when the page is closed?",
+          "answer": "The page must be open to show the live seconds, but your events are saved, so the correct time left appears as soon as you open it again."
+        },
+        {
+          "question": "Are my events uploaded?",
+          "answer": "No. They are stored only in your browser on this device."
+        },
+        {
+          "question": "How should I use the days left?",
+          "answer": "Divide the topics you still have to cover by the days left. A countdown makes the deadline real and helps you start earlier."
+        },
+        {
+          "question": "Can I use it for non-study events?",
+          "answer": "Yes. It works for any date: a flight, a birthday, a product launch or a holiday."
+        }
+      ]
+    },
+    "habit-tracker": {
+      "seoTitle": "Habit Tracker – Free Daily Streak Tracker for Study & Routines",
+      "metaDescription": "Track daily habits like studying, reading or exercise. Check off days, see current and best streaks, 30-day completion and a 5-week heat map. Free and private.",
+      "h1": "Habit & Streak Tracker",
+      "subheading": "Build a routine one day at a time — check off your habits, keep your streak alive and see your progress.",
+      "keywords": [
+        "habit tracker",
+        "streak tracker",
+        "daily habit tracker",
+        "study habit tracker",
+        "habit tracker free",
+        "routine tracker",
+        "daily goals tracker",
+        "habit streak counter"
+      ],
+      "howTo": [
+        {
+          "name": "Add a habit",
+          "text": "Type a small, specific habit such as Review notes for 20 minutes, or tap one of the suggestions."
+        },
+        {
+          "name": "Check it off",
+          "text": "Each day, tap the day in the week row. Tap again to undo. You can also fill in a missed day."
+        },
+        {
+          "name": "Protect your streak",
+          "text": "The flame shows how many days in a row you have done it. If you have not checked today yet, yesterday's streak still counts."
+        },
+        {
+          "name": "Review your progress",
+          "text": "See your best streak, the share of the last 30 days you completed, and a 5-week heat map for each habit."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How are streaks counted?",
+          "answer": "A streak is the number of consecutive days that are checked, ending today. If today is not checked yet, the streak ending yesterday is still shown so you do not lose it before the day is over."
+        },
+        {
+          "question": "What makes a good habit?",
+          "answer": "Small and specific. Twenty minutes of revision is easier to repeat than study more. Link it to something you already do, like after breakfast."
+        },
+        {
+          "question": "Can I edit past days?",
+          "answer": "Yes. Tap any day in the last seven days to turn it on or off."
+        },
+        {
+          "question": "How many habits should I track?",
+          "answer": "Two to five is plenty. Too many make it hard to keep up, and a missed day can feel like failure."
+        },
+        {
+          "question": "Is my data private?",
+          "answer": "Yes. Habits are stored only in your browser on this device. Nothing is uploaded or shared."
+        },
+        {
+          "question": "What if I break my streak?",
+          "answer": "Start again today. The best streak is kept, and the 30-day completion rate shows that a missed day does not erase your progress."
+        },
+        {
+          "question": "Does it work with the Pomodoro timer?",
+          "answer": "They fit well together: add a habit like Two focus sessions and check it off after your timer finishes."
         }
       ]
     }

@@ -41,6 +41,7 @@
     "notFoundTitle": "Page introuvable",
     "notFoundCta": "Retour à l'accueil",
     "usedRecently": "Utilisé",
+    "featured": "À la une",
     "errorTitle": "Une erreur s'est produite",
     "errorBody": "Cet outil a rencontré une erreur inattendue. Vos fichiers n'ont été envoyés nulle part.",
     "errorRetry": "Réessayer"
@@ -73,6 +74,11 @@
       "label": "Outils Aléatoires & Décision",
       "description": "Faites tourner, pile ou face, lancez les dés et choisissez pour décider — générateurs d'équipes, roues et sélecteurs aléatoires, tous hors ligne.",
       "navLabel": "Aléatoire"
+    },
+    "focus-study": {
+      "label": "Outils de concentration et d'étude",
+      "description": "Minuteur Pomodoro, sons de concentration, flashcards et planificateurs pour se concentrer, réviser et acquérir de meilleures habitudes d'étude — tout reste privé, dans votre navigateur.",
+      "navLabel": "Concentration"
     }
   },
   "tools": {
@@ -7624,6 +7630,390 @@
         {
           "question": "Cet outil convient-il pour une tombola légalement réglementée ?",
           "answer": "Il convient pour des jeux-concours informels et amicaux — vérifiez la réglementation locale pour tout ce qui nécessite un processus de tirage certifié ou audité."
+        }
+      ]
+    },
+    "pomodoro-timer": {
+      "seoTitle": "Minuteur Pomodoro en ligne – Timer de concentration et de pauses gratuit avec statistiques",
+      "metaDescription": "Un minuteur Pomodoro gratuit pour étudier et travailler : cycles de concentration et de pause 25/5, pauses longues, démarrage automatique, son et notifications, statistiques quotidiennes et mode focus plein écran. Privé, sans inscription.",
+      "h1": "Minuteur Pomodoro",
+      "subheading": "Restez concentré grâce à des sessions de travail chronométrées et de courtes pauses — avec un mode focus plein écran, des statistiques quotidiennes et une sonnerie, directement dans votre navigateur.",
+      "keywords": [
+        "minuteur pomodoro",
+        "minuteur pomodoro en ligne",
+        "timer pour réviser",
+        "minuteur de concentration",
+        "timer 25 5",
+        "technique pomodoro",
+        "minuteur travail pause",
+        "pomodoro avec statistiques"
+      ],
+      "howTo": [
+        {
+          "name": "Choisissez votre rythme",
+          "text": "Commencez avec le classique : 25 minutes de concentration et 5 de repos, ou choisissez Travail profond 50/10 ou Court 15/3. Vous pouvez aussi saisir vos propres durées."
+        },
+        {
+          "name": "Nommez votre tâche",
+          "text": "Écrivez sur quoi vous travaillez pour l'afficher sous l'horloge. Cela vous aide à rester concentré sur une seule chose."
+        },
+        {
+          "name": "Appuyez sur Démarrer",
+          "text": "L'anneau se remplit au fil du temps et le compte à rebours apparaît aussi dans le titre de l'onglet de votre navigateur, ce qui permet de le voir depuis un autre onglet."
+        },
+        {
+          "name": "Reposez-vous et recommencez",
+          "text": "À la fin d'une session, une sonnerie retentit et la phase suivante démarre. Après quatre sessions de concentration, vous avez droit à une pause plus longue. Consultez les totaux du jour et le graphique des 7 derniers jours à droite."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que la technique Pomodoro ?",
+          "answer": "C'est une méthode de gestion du temps : travaillez par blocs de concentration d'environ 25 minutes, puis faites une pause de 5 minutes. Après quatre blocs, prenez une pause plus longue de 15 à 30 minutes. Ces échéances courtes aident à se mettre au travail et à résister aux distractions."
+        },
+        {
+          "question": "Puis-je modifier la durée des sessions ?",
+          "answer": "Oui. Réglez la concentration, la pause courte, la pause longue et la fréquence de la pause longue. Vos choix sont mémorisés sur cet appareil."
+        },
+        {
+          "question": "Le minuteur continue-t-il de tourner si je change d'onglet ?",
+          "answer": "Oui. Le minuteur se base sur l'horloge réelle et non sur un décompte de ticks, il reste donc précis dans un onglet en arrière-plan. Le temps restant s'affiche aussi dans le titre de l'onglet."
+        },
+        {
+          "question": "Me prévient-il quand le temps est écoulé ?",
+          "answer": "Il émet une courte sonnerie et peut afficher une notification sur le bureau si vous autorisez les notifications. Vous pouvez désactiver l'une ou l'autre."
+        },
+        {
+          "question": "À quoi sert le mode focus ?",
+          "answer": "Il affiche le minuteur sur tout l'écran avec une grande horloge et rien d'autre, ce qui est pratique sur un second écran ou sur une tablette posée à côté de vos livres."
+        },
+        {
+          "question": "Mes données sont-elles envoyées sur un serveur ?",
+          "answer": "Non. Vos réglages, le nom de votre tâche et vos statistiques sont stockés uniquement dans votre navigateur et ne sont jamais envoyés ailleurs. Effacer les données du navigateur les supprime."
+        },
+        {
+          "question": "Quelle durée de pause est la meilleure ?",
+          "answer": "Il n'y a pas de réponse unique. Le classique 25/5 convient à la plupart des gens. Si vous aimez les sessions longues et profondes, essayez 50/10. De courtes sessions de 15 minutes peuvent aider quand il est difficile de s'y mettre."
+        }
+      ]
+    },
+    "focus-sounds": {
+      "seoTitle": "Sons de concentration et mixeur de bruits – Bruit blanc, brun et pluie gratuits pour étudier",
+      "metaDescription": "Mélangez bruit blanc, rose et brun avec de la pluie, des vagues, du vent, le ronronnement d'un ventilateur et des battements binauraux alpha pour vous concentrer ou étudier. Minuterie de veille, mix enregistrés, généré dans votre navigateur — sans téléchargement.",
+      "h1": "Sons de concentration et mixeur de bruits",
+      "subheading": "Mélangez pluie, vagues, bruit brun et bien plus pour créer votre propre ambiance sonore et écarter les distractions pendant que vous étudiez ou travaillez.",
+      "keywords": [
+        "générateur de bruit blanc",
+        "bruit brun",
+        "bruit rose",
+        "sons de pluie pour étudier",
+        "sons de concentration",
+        "bruit de fond pour étudier",
+        "battements binauraux alpha",
+        "mixeur de bruits"
+      ],
+      "howTo": [
+        {
+          "name": "Choisissez un son",
+          "text": "Touchez une carte comme Pluie, Bruit brun ou Vagues pour l'activer. Utilisez un mix rapide comme Concentration profonde pour obtenir un mélange tout prêt."
+        },
+        {
+          "name": "Réglez les niveaux",
+          "text": "Déplacez chaque curseur pour régler le volume de ce son, ainsi que le volume général pour l'ensemble. Vous pouvez superposer plusieurs sons."
+        },
+        {
+          "name": "Programmez une minuterie de veille",
+          "text": "Choisissez une durée : le son s'atténue puis s'arrête tout seul — pratique si vous écoutez en vous endormant."
+        },
+        {
+          "name": "Continuez à travailler",
+          "text": "Votre mix est mémorisé sur cet appareil : la prochaine fois, il vous suffira d'appuyer sur Lancer le mix."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quel son est le meilleur pour se concentrer ?",
+          "answer": "Cela dépend des personnes. Le bruit brun est grave et chaud, et beaucoup le trouvent idéal pour se concentrer. Le bruit rose est plus équilibré. La pluie et les vagues sont naturelles et apaisantes. Le bruit blanc est le plus brillant et masque bien les voix."
+        },
+        {
+          "question": "Les sons nécessitent-ils une connexion internet ?",
+          "answer": "Non. Chaque son est créé en direct dans votre navigateur grâce à la Web Audio API. Il n'y a rien à télécharger ni à diffuser en streaming, et cela fonctionne donc hors ligne une fois la page chargée."
+        },
+        {
+          "question": "Que sont les battements binauraux alpha ?",
+          "answer": "Deux tons légèrement différents sont joués, un dans chaque oreille, avec 10 Hz d'écart. Certaines personnes trouvent cet effet relaxant. Il faut un casque pour que cela fonctionne, et les preuves scientifiques sont partagées : considérez-le comme une option, pas comme une promesse."
+        },
+        {
+          "question": "Pourquoi je n'entends rien ?",
+          "answer": "Les navigateurs ne démarrent l'audio qu'après un clic. Appuyez sur Lancer le mix, vérifiez le volume de votre appareil et le curseur du volume général, et assurez-vous qu'au moins un son a un volume supérieur à zéro."
+        },
+        {
+          "question": "Peut-on le laisser jouer toute la nuit sans risque ?",
+          "answer": "Gardez un volume bas et utilisez la minuterie de veille. Un bruit fort pendant de longues périodes peut fatiguer vos oreilles."
+        },
+        {
+          "question": "Mon mix est-il enregistré ?",
+          "answer": "Oui, uniquement sur cet appareil. Il est stocké dans votre navigateur et jamais envoyé sur un serveur."
+        },
+        {
+          "question": "Puis-je l'utiliser avec un minuteur ?",
+          "answer": "Oui. Ouvrez le minuteur Pomodoro dans un autre onglet et laissez les sons jouer pendant que vous travaillez."
+        }
+      ]
+    },
+    "flashcards": {
+      "seoTitle": "Créateur de flashcards à répétition espacée – Cartes de révision en ligne gratuites",
+      "metaDescription": "Créez des paquets de flashcards, importez des cartes depuis du texte et révisez avec un calendrier de répétition espacée (Leitner). Retournez les cartes, suivez vos progrès, exportez votre paquet. Gratuit, privé, fonctionne hors ligne.",
+      "h1": "Flashcards à répétition espacée",
+      "subheading": "Créez des paquets, retournez les cartes et laissez le calendrier vous représenter celles que vous ratez — stockées uniquement sur votre appareil.",
+      "keywords": [
+        "créateur de flashcards",
+        "flashcards en ligne",
+        "répétition espacée",
+        "système de Leitner",
+        "cartes de révision",
+        "alternative à Anki",
+        "flashcards de vocabulaire",
+        "créer des flashcards gratuitement"
+      ],
+      "howTo": [
+        {
+          "name": "Créez un paquet",
+          "text": "Saisissez un nom de paquet et appuyez sur Créer le paquet, ou choisissez Importer des cartes et collez une liste avec une question et une réponse par ligne."
+        },
+        {
+          "name": "Ajoutez vos cartes",
+          "text": "Remplissez le recto et le verso, puis appuyez sur Entrée pour ajouter chaque carte rapidement. Vous pouvez modifier ou supprimer n'importe quelle carte plus tard."
+        },
+        {
+          "name": "Révisez",
+          "text": "Appuyez sur Réviser pour voir les cartes à revoir. Cliquez sur la carte ou appuyez sur Espace pour la retourner, puis choisissez Réussi ou Raté (touches 2 et 1)."
+        },
+        {
+          "name": "Revenez demain",
+          "text": "Les cartes que vous connaissez passent dans une boîte supérieure et reviennent après davantage de jours. Les cartes ratées reviennent vite. Exportez le paquet à tout moment pour le sauvegarder."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que la répétition espacée ?",
+          "answer": "C'est une façon de réviser une information juste avant de l'oublier. Les cartes que vous maîtrisez apparaissent moins souvent et celles qui vous posent problème plus souvent, ce qui fait gagner du temps et construit une mémoire durable."
+        },
+        {
+          "question": "Comment fonctionne le calendrier ?",
+          "answer": "Il utilise le système de Leitner avec cinq boîtes. Une bonne réponse fait monter la carte d'une boîte et elle revient après 1, 2, 4, 8 puis 16 jours. Une mauvaise réponse la renvoie dans la première boîte pour que vous la revoyiez aujourd'hui."
+        },
+        {
+          "question": "Comment importer des cartes ?",
+          "answer": "Collez une carte par ligne, avec la question et la réponse séparées par une tabulation, une virgule, un point-virgule ou un espace-tiret-espace. Cela fonctionne avec les listes copiées depuis un tableur et la plupart des applications de notes."
+        },
+        {
+          "question": "Puis-je sauvegarder ou déplacer mes paquets ?",
+          "answer": "Oui. Ouvrez un paquet, appuyez sur Exporter et vous obtenez un fichier séparé par des tabulations que vous pouvez réimporter ici ou ouvrir dans un tableur."
+        },
+        {
+          "question": "Où sont stockées mes cartes ?",
+          "answer": "Uniquement dans le stockage local de votre navigateur, sur cet appareil. Rien n'est envoyé sur un serveur : effacer les données du navigateur supprime donc vos paquets — exportez-les d'abord s'ils comptent pour vous."
+        },
+        {
+          "question": "Puis-je tout réviser, pas seulement les cartes à revoir ?",
+          "answer": "Oui. Le bouton Toutes mélange chaque carte du paquet, ce qui est utile la veille d'un examen."
+        },
+        {
+          "question": "Les images et les autres langues sont-elles prises en charge ?",
+          "answer": "Les cartes sont en texte, et toute langue ou tout symbole que votre appareil peut afficher fonctionne, y compris les écritures de droite à gauche et les symboles mathématiques."
+        }
+      ]
+    },
+    "eisenhower-matrix": {
+      "seoTitle": "Matrice d'Eisenhower – Matrice des priorités et planificateur de tâches gratuit en ligne",
+      "metaDescription": "Classez vos tâches dans la matrice d'Eisenhower : à faire en premier, à planifier, à déléguer ou à éliminer. Glisser-déposer, cocher, copier en texte. Gratuit, privé, enregistré dans votre navigateur.",
+      "h1": "Matrice des priorités d'Eisenhower",
+      "subheading": "Décidez ce qu'il faut faire maintenant, planifier, déléguer ou abandonner — faites glisser vos tâches dans quatre cases.",
+      "keywords": [
+        "matrice d'Eisenhower",
+        "matrice des priorités",
+        "matrice urgent important",
+        "planificateur to-do list",
+        "priorisation des tâches",
+        "matrice de gestion du temps",
+        "matrice de décision tâches",
+        "tableau d'Eisenhower"
+      ],
+      "howTo": [
+        {
+          "name": "Ajoutez vos tâches",
+          "text": "Saisissez une tâche dans la case qui lui correspond et appuyez sur Entrée. Vous pouvez commencer par tout vider de votre tête, puis trier plus tard."
+        },
+        {
+          "name": "Triez par urgence et importance",
+          "text": "Faites glisser les tâches entre les quatre cases, ou utilisez le petit menu d'une tâche. Ce qui est urgent et important va dans À faire en premier."
+        },
+        {
+          "name": "Travaillez de haut en bas",
+          "text": "Terminez À faire en premier, réservez du temps pour Planifier, passez la main pour Déléguer et soyez honnête avec Éliminer."
+        },
+        {
+          "name": "Cochez et partagez",
+          "text": "Cochez les tâches au fur et à mesure, effacez celles qui sont terminées, ou copiez toute la matrice en texte pour la coller dans vos notes ou un message."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que la matrice d'Eisenhower ?",
+          "answer": "C'est une méthode pour établir des priorités en triant les tâches selon deux questions : est-ce urgent, et est-ce important ? La réponse vous dit s'il faut la faire maintenant, la planifier, la déléguer ou l'abandonner."
+        },
+        {
+          "question": "Que met-on dans chaque case ?",
+          "answer": "À faire en premier : urgent et important, comme une échéance demain. Planifier : important mais pas urgent, comme les révisions ou le sport. Déléguer : urgent mais pas important, comme certaines demandes et interruptions. Éliminer : ni l'un ni l'autre, comme les habitudes qui font perdre du temps."
+        },
+        {
+          "question": "Combien de tâches faut-il dans À faire en premier ?",
+          "answer": "Le moins possible. Si cette case est toujours pleine, planifier davantage dans Planifier aide généralement, car un travail bien préparé devient moins urgent."
+        },
+        {
+          "question": "Puis-je l'utiliser sur un téléphone ?",
+          "answer": "Oui. Le glisser-déposer fonctionne sur de nombreux appareils, et chaque tâche dispose aussi d'un petit menu pour la déplacer vers une autre case."
+        },
+        {
+          "question": "Ma liste est-elle enregistrée ?",
+          "answer": "Oui, dans votre navigateur et uniquement sur cet appareil. Elle n'est pas envoyée sur un serveur, et effacer les données du navigateur la supprime."
+        },
+        {
+          "question": "Puis-je exporter la matrice ?",
+          "answer": "Appuyez sur Copier en texte pour obtenir les quatre cases sous forme de liste de contrôle que vous pouvez coller n'importe où."
+        },
+        {
+          "question": "Pourquoi séparer l'urgent de l'important ?",
+          "answer": "Les choses urgentes réclament votre attention, mais les choses importantes font avancer vos objectifs. Les voir dans des cases distinctes vous aide à arrêter de réagir toute la journée et à commencer à planifier."
+        }
+      ]
+    },
+    "exam-countdown": {
+      "seoTitle": "Compte à rebours examen et échéance – Minuteur gratuit « jours restants » pour étudiants",
+      "metaDescription": "Faites le compte à rebours jusqu'à vos examens, échéances et voyages avec les jours, heures, minutes et secondes en direct. Ajoutez plusieurs événements, codés par couleur selon l'urgence. Gratuit et privé, enregistré dans votre navigateur.",
+      "h1": "Compte à rebours examen et échéance",
+      "subheading": "Voyez exactement combien de temps il reste avant votre prochain examen, échéance ou voyage, avec les jours, heures, minutes et secondes en direct.",
+      "keywords": [
+        "compte à rebours examen",
+        "jours restants avant l'examen",
+        "compte à rebours échéance",
+        "minuteur jusqu'à une date",
+        "compte à rebours révisions",
+        "combien de jours avant",
+        "minuteur d'examen",
+        "compte à rebours événement"
+      ],
+      "howTo": [
+        {
+          "name": "Nommez l'événement",
+          "text": "Saisissez ce pour quoi vous faites le compte à rebours, par exemple Examen final de chimie."
+        },
+        {
+          "name": "Choisissez la date et l'heure",
+          "text": "Sélectionnez le moment exact, ou touchez un choix rapide comme Demain, Dans une semaine ou Dans 100 jours."
+        },
+        {
+          "name": "Regardez l'horloge",
+          "text": "L'événement le plus proche s'affiche en grand, avec une couleur qui passe du vert à l'orange puis au rouge à mesure qu'il approche."
+        },
+        {
+          "name": "Planifiez à rebours",
+          "text": "Utilisez le nombre de jours restants pour répartir vos révisions en objectifs quotidiens. Les événements passés sont rangés sous Passés."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Puis-je faire le compte à rebours de plusieurs dates ?",
+          "answer": "Oui. Ajoutez autant d'examens et d'échéances que vous le souhaitez. Ils sont triés du plus proche au plus lointain."
+        },
+        {
+          "question": "Que signifient les couleurs ?",
+          "answer": "Le vert signifie plus de deux semaines, l'orange signifie moins de deux semaines et le rouge moins de trois jours. Les événements passés sont gris."
+        },
+        {
+          "question": "Le fuseau horaire est-il géré correctement ?",
+          "answer": "La date et l'heure que vous choisissez sont dans le fuseau horaire local de votre appareil, et le compte à rebours utilise la même horloge."
+        },
+        {
+          "question": "Continue-t-il de compter quand la page est fermée ?",
+          "answer": "La page doit être ouverte pour afficher les secondes en direct, mais vos événements sont enregistrés : le temps restant exact apparaît dès que vous la rouvrez."
+        },
+        {
+          "question": "Mes événements sont-ils envoyés sur un serveur ?",
+          "answer": "Non. Ils sont stockés uniquement dans votre navigateur, sur cet appareil."
+        },
+        {
+          "question": "Comment utiliser les jours restants ?",
+          "answer": "Divisez les sujets qu'il vous reste à couvrir par le nombre de jours restants. Un compte à rebours rend l'échéance concrète et vous aide à commencer plus tôt."
+        },
+        {
+          "question": "Puis-je l'utiliser pour des événements autres que les études ?",
+          "answer": "Oui. Il fonctionne pour toute date : un vol, un anniversaire, le lancement d'un produit ou des vacances."
+        }
+      ]
+    },
+    "habit-tracker": {
+      "seoTitle": "Suivi d'habitudes – Tracker de séries quotidiennes gratuit pour les études et les routines",
+      "metaDescription": "Suivez vos habitudes quotidiennes comme étudier, lire ou faire du sport. Cochez les jours, consultez vos séries actuelle et record, le taux de réussite sur 30 jours et une carte de chaleur sur 5 semaines. Gratuit et privé.",
+      "h1": "Suivi d'habitudes et de séries",
+      "subheading": "Construisez une routine jour après jour — cochez vos habitudes, gardez votre série en vie et suivez vos progrès.",
+      "keywords": [
+        "suivi d'habitudes",
+        "tracker de séries",
+        "suivi d'habitudes quotidiennes",
+        "suivi d'habitudes d'étude",
+        "habit tracker gratuit",
+        "suivi de routine",
+        "suivi d'objectifs quotidiens",
+        "compteur de série d'habitudes"
+      ],
+      "howTo": [
+        {
+          "name": "Ajoutez une habitude",
+          "text": "Saisissez une habitude petite et précise, comme Relire mes notes pendant 20 minutes, ou touchez l'une des suggestions."
+        },
+        {
+          "name": "Cochez-la",
+          "text": "Chaque jour, touchez le jour dans la ligne de la semaine. Touchez de nouveau pour annuler. Vous pouvez aussi remplir un jour manqué."
+        },
+        {
+          "name": "Protégez votre série",
+          "text": "La flamme indique combien de jours d'affilée vous l'avez faite. Si vous n'avez pas encore coché aujourd'hui, la série d'hier compte toujours."
+        },
+        {
+          "name": "Faites le point sur vos progrès",
+          "text": "Consultez votre meilleure série, la part des 30 derniers jours que vous avez réalisée, et une carte de chaleur sur 5 semaines pour chaque habitude."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment les séries sont-elles comptées ?",
+          "answer": "Une série correspond au nombre de jours consécutifs cochés, jusqu'à aujourd'hui. Si aujourd'hui n'est pas encore coché, la série qui s'arrête hier reste affichée pour que vous ne la perdiez pas avant la fin de la journée."
+        },
+        {
+          "question": "Qu'est-ce qui fait une bonne habitude ?",
+          "answer": "Elle est petite et précise. Vingt minutes de révision se répètent plus facilement que étudier plus. Associez-la à quelque chose que vous faites déjà, comme après le petit-déjeuner."
+        },
+        {
+          "question": "Puis-je modifier les jours passés ?",
+          "answer": "Oui. Touchez n'importe quel jour des sept derniers jours pour l'activer ou le désactiver."
+        },
+        {
+          "question": "Combien d'habitudes faut-il suivre ?",
+          "answer": "De deux à cinq suffisent. Trop d'habitudes sont difficiles à tenir, et un jour manqué peut ressembler à un échec."
+        },
+        {
+          "question": "Mes données sont-elles privées ?",
+          "answer": "Oui. Les habitudes sont stockées uniquement dans votre navigateur, sur cet appareil. Rien n'est envoyé ni partagé."
+        },
+        {
+          "question": "Et si je casse ma série ?",
+          "answer": "Recommencez aujourd'hui. La meilleure série est conservée, et le taux de réussite sur 30 jours montre qu'un jour manqué n'efface pas vos progrès."
+        },
+        {
+          "question": "Est-ce compatible avec le minuteur Pomodoro ?",
+          "answer": "Les deux vont très bien ensemble : ajoutez une habitude comme Deux sessions de concentration et cochez-la une fois votre minuteur terminé."
         }
       ]
     }

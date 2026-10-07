@@ -41,6 +41,7 @@
     "notFoundTitle": "Seite nicht gefunden",
     "notFoundCta": "Zur Startseite",
     "usedRecently": "Verwendet",
+    "featured": "Empfohlen",
     "errorTitle": "Etwas ist schiefgelaufen",
     "errorBody": "Dieses Tool ist auf einen unerwarteten Fehler gestoßen. Ihre Dateien wurden nirgendwohin hochgeladen.",
     "errorRetry": "Erneut versuchen"
@@ -73,6 +74,11 @@
       "label": "Zufalls- & Entscheidungstools",
       "description": "Drehen, werfen, würfeln und wählen – Team-Generatoren, Glücksräder und Zufallsauswahl-Tools, alle offline nutzbar.",
       "navLabel": "Zufall"
+    },
+    "focus-study": {
+      "label": "Fokus- & Lernwerkzeuge",
+      "description": "Pomodoro-Timer, Fokus-Sounds, Karteikarten und Planer, um dich zu konzentrieren, zu lernen und bessere Lerngewohnheiten aufzubauen – alles privat, direkt in deinem Browser.",
+      "navLabel": "Fokus"
     }
   },
   "tools": {
@@ -7624,6 +7630,390 @@
         {
           "question": "Ist das für eine gesetzlich regulierte Verlosung geeignet?",
           "answer": "Es eignet sich für lockere und informelle Gewinnspiele – prüfe deine lokalen Vorschriften, falls ein zertifizierter oder geprüfter Ziehungsprozess erforderlich ist."
+        }
+      ]
+    },
+    "pomodoro-timer": {
+      "seoTitle": "Pomodoro Timer Online – Kostenloser Fokus- & Pausentimer mit Statistik",
+      "metaDescription": "Kostenloser Pomodoro-Timer zum Lernen und Arbeiten: 25/5 Fokus- und Pausenzyklen, lange Pausen, Autostart, Ton und Benachrichtigungen, Tagesstatistik und Vollbild-Fokusmodus. Privat, ohne Anmeldung.",
+      "h1": "Pomodoro Timer",
+      "subheading": "Bleib konzentriert mit festen Arbeitsphasen und kurzen Pausen – mit Vollbild-Fokusmodus, Tagesstatistik und Signalton, direkt im Browser.",
+      "keywords": [
+        "pomodoro timer",
+        "pomodoro timer online",
+        "lerntimer",
+        "fokus timer",
+        "25 5 timer",
+        "pomodoro technik",
+        "arbeits und pausentimer",
+        "pomodoro timer mit statistik"
+      ],
+      "howTo": [
+        {
+          "name": "Wähle deinen Rhythmus",
+          "text": "Starte mit den klassischen 25 Minuten Fokus und 5 Minuten Pause oder wähle Deep Work 50/10 oder Kurz 15/3. Du kannst auch eigene Längen eingeben."
+        },
+        {
+          "name": "Benenne deine Aufgabe",
+          "text": "Schreibe auf, woran du arbeitest, damit es unter der Uhr angezeigt wird. So bleibst du bei einer Sache."
+        },
+        {
+          "name": "Drücke Start",
+          "text": "Der Ring füllt sich mit der Zeit, und der Countdown erscheint auch im Titel deines Browser-Tabs, sodass du ihn von einem anderen Tab aus siehst."
+        },
+        {
+          "name": "Pausieren und wiederholen",
+          "text": "Wenn eine Sitzung endet, hörst du einen Signalton und die nächste Phase beginnt. Nach vier Fokus-Sitzungen gibt es eine längere Pause. Die heutigen Summen und das 7-Tage-Diagramm findest du rechts."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist die Pomodoro-Technik?",
+          "answer": "Es ist eine Zeitmanagement-Methode: Du arbeitest in konzentrierten Blöcken von etwa 25 Minuten und machst dann 5 Minuten Pause. Nach vier Blöcken folgt eine längere Pause von 15 bis 30 Minuten. Die kurzen Zeitlimits erleichtern den Einstieg und helfen, Ablenkungen zu widerstehen."
+        },
+        {
+          "question": "Kann ich die Länge der Sitzungen ändern?",
+          "answer": "Ja. Du kannst Fokus, kurze Pause, lange Pause und den Abstand zur langen Pause einstellen. Deine Auswahl wird auf diesem Gerät gespeichert."
+        },
+        {
+          "question": "Läuft der Timer weiter, wenn ich den Tab wechsle?",
+          "answer": "Ja. Der Timer basiert auf der echten Uhrzeit und nicht auf gezählten Takten, deshalb bleibt er auch in einem Hintergrund-Tab genau. Die verbleibende Zeit steht außerdem im Tab-Titel."
+        },
+        {
+          "question": "Werde ich benachrichtigt, wenn die Zeit abgelaufen ist?",
+          "answer": "Der Timer spielt einen kurzen Signalton und kann eine Desktop-Benachrichtigung anzeigen, wenn du Benachrichtigungen erlaubst. Beides lässt sich ausschalten."
+        },
+        {
+          "question": "Was macht der Fokusmodus?",
+          "answer": "Er lässt den Timer deinen ganzen Bildschirm ausfüllen – mit einer großen Uhr und sonst nichts. Das ist praktisch auf einem zweiten Monitor oder einem Tablet neben deinen Büchern."
+        },
+        {
+          "question": "Werden meine Daten hochgeladen?",
+          "answer": "Nein. Deine Einstellungen, der Aufgabenname und die Statistiken werden nur in deinem Browser gespeichert und nirgendwohin gesendet. Wenn du die Browserdaten löschst, werden sie entfernt."
+        },
+        {
+          "question": "Welche Pausenlänge ist die beste?",
+          "answer": "Eine pauschale Antwort gibt es nicht. Das klassische 25/5 funktioniert für die meisten Menschen. Wenn du lange, tiefe Sitzungen magst, probiere 50/10. Kurze 15-Minuten-Sitzungen helfen, wenn dir der Anfang schwerfällt."
+        }
+      ]
+    },
+    "focus-sounds": {
+      "seoTitle": "Fokus-Sounds & Rauschen-Mixer – Kostenlos Weißes Rauschen, Braunes Rauschen, Regen zum Lernen",
+      "metaDescription": "Mische weißes, rosa und braunes Rauschen mit Regen, Meeresrauschen, Wind, Ventilatorbrummen und Alpha-Binauralbeats zum Konzentrieren oder Lernen. Schlaftimer, gespeicherte Mixe, im Browser erzeugt – ohne Downloads.",
+      "h1": "Fokus-Sounds & Rauschen-Mixer",
+      "subheading": "Mische Regen, Meeresrauschen, braunes Rauschen und mehr zu deinem eigenen Hintergrundklang, der Ablenkungen beim Lernen oder Arbeiten ausblendet.",
+      "keywords": [
+        "weißes rauschen generator",
+        "braunes rauschen",
+        "rosa rauschen",
+        "regengeräusche zum lernen",
+        "fokus sounds",
+        "hintergrundgeräusche zum lernen",
+        "binaurale beats alpha",
+        "rauschen mixer"
+      ],
+      "howTo": [
+        {
+          "name": "Wähle einen Sound",
+          "text": "Tippe auf eine Karte wie Regen, Braunes Rauschen oder Meeresrauschen, um den Sound einzuschalten. Nutze einen Schnellmix wie Tiefer Fokus für eine fertige Mischung."
+        },
+        {
+          "name": "Mische die Lautstärken",
+          "text": "Bewege jeden Regler, um die Lautstärke des jeweiligen Sounds einzustellen, und die Gesamtlautstärke für alles zusammen. Du kannst mehrere Sounds übereinanderlegen."
+        },
+        {
+          "name": "Stelle einen Schlaftimer ein",
+          "text": "Wähle eine Zeit, und der Sound blendet sich aus und stoppt von selbst – praktisch, wenn du beim Einschlafen zuhörst."
+        },
+        {
+          "name": "Arbeite weiter",
+          "text": "Dein Mix wird auf diesem Gerät gespeichert, sodass du beim nächsten Mal nur noch auf Mix abspielen drücken musst."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Welcher Sound eignet sich am besten zur Konzentration?",
+          "answer": "Das ist von Mensch zu Mensch verschieden. Braunes Rauschen klingt tief und warm, und viele empfinden es als gut für den Fokus. Rosa Rauschen ist ausgewogener. Regen und Meeresrauschen wirken natürlich und beruhigend. Weißes Rauschen ist am hellsten und überdeckt Sprache gut."
+        },
+        {
+          "question": "Brauchen die Sounds eine Internetverbindung?",
+          "answer": "Nein. Jeder Sound wird live in deinem Browser mit der Web Audio API erzeugt. Es gibt nichts herunterzuladen oder zu streamen, daher funktioniert es nach dem Laden der Seite auch offline."
+        },
+        {
+          "question": "Was sind Alpha-Binauralbeats?",
+          "answer": "Es werden zwei leicht unterschiedliche Töne abgespielt, einer auf jedem Ohr, im Abstand von 10 Hz. Manche empfinden den Effekt als entspannend. Du brauchst dafür Kopfhörer, und die Studienlage ist uneinheitlich – sieh es also als Option und nicht als Versprechen."
+        },
+        {
+          "question": "Warum höre ich nichts?",
+          "answer": "Browser starten Audio erst nach einem Klick. Drücke Mix abspielen, prüfe die Lautstärke deines Geräts und den Gesamtregler und stelle sicher, dass mindestens ein Sound eine Lautstärke über null hat."
+        },
+        {
+          "question": "Ist es unbedenklich, die ganze Nacht abzuspielen?",
+          "answer": "Halte die Lautstärke niedrig und nutze den Schlaftimer. Lauter Schall über lange Zeit kann deine Ohren belasten."
+        },
+        {
+          "question": "Wird mein Mix gespeichert?",
+          "answer": "Ja, nur auf diesem Gerät. Er wird in deinem Browser gespeichert und nie hochgeladen."
+        },
+        {
+          "question": "Kann ich es zusammen mit einem Timer nutzen?",
+          "answer": "Ja. Öffne den Pomodoro Timer in einem anderen Tab und lass die Sounds beim Arbeiten weiterlaufen."
+        }
+      ]
+    },
+    "flashcards": {
+      "seoTitle": "Karteikarten erstellen mit Spaced Repetition – Kostenlose Lernkarten online",
+      "metaDescription": "Erstelle Karteikarten-Stapel, importiere Karten aus Text und lerne mit einem Spaced-Repetition-Plan (Leitner). Karten umdrehen, Fortschritt verfolgen, Stapel exportieren. Kostenlos, privat, funktioniert offline.",
+      "h1": "Karteikarten mit Spaced Repetition",
+      "subheading": "Erstelle Stapel, blättere durch die Karten und lass den Lernplan die Karten zurückbringen, die du nicht wusstest – gespeichert nur auf deinem Gerät.",
+      "keywords": [
+        "karteikarten erstellen",
+        "karteikarten online",
+        "spaced repetition",
+        "leitner system",
+        "lernkarten",
+        "anki alternative",
+        "vokabelkarten",
+        "karteikarten kostenlos erstellen"
+      ],
+      "howTo": [
+        {
+          "name": "Erstelle einen Stapel",
+          "text": "Gib einen Stapelnamen ein und drücke Stapel erstellen, oder wähle Karten importieren und füge eine Liste mit je einer Frage und Antwort pro Zeile ein."
+        },
+        {
+          "name": "Füge deine Karten hinzu",
+          "text": "Fülle Vorder- und Rückseite aus und drücke die Eingabetaste, um jede Karte schnell hinzuzufügen. Du kannst jede Karte später bearbeiten oder löschen."
+        },
+        {
+          "name": "Lernen",
+          "text": "Drücke Lernen, um die fälligen Karten zu sehen. Klicke auf die Karte oder drücke die Leertaste, um sie umzudrehen, und wähle dann Gewusst oder Nicht gewusst (Tasten 2 und 1)."
+        },
+        {
+          "name": "Komm morgen wieder",
+          "text": "Karten, die du kannst, wandern in ein späteres Fach und kommen nach mehr Tagen wieder. Nicht gewusste Karten kehren bald zurück. Exportiere den Stapel jederzeit als Sicherung."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist Spaced Repetition?",
+          "answer": "Das ist eine Methode, Wissen kurz vor dem Vergessen zu wiederholen. Karten, die du gut kannst, werden seltener gezeigt, schwierige Karten häufiger. Das spart Zeit und stärkt das Langzeitgedächtnis."
+        },
+        {
+          "question": "Wie funktioniert der Lernplan?",
+          "answer": "Er nutzt das Leitner-System mit fünf Fächern. Eine richtige Antwort schiebt eine Karte ein Fach weiter, und sie kommt nach 1, 2, 4, 8 und dann 16 Tagen wieder. Eine falsche Antwort schickt sie zurück ins erste Fach, sodass du sie heute noch einmal siehst."
+        },
+        {
+          "question": "Wie importiere ich Karten?",
+          "answer": "Füge eine Karte pro Zeile ein, wobei Frage und Antwort durch einen Tabulator, ein Komma, ein Semikolon oder Leerzeichen-Bindestrich-Leerzeichen getrennt sind. Das funktioniert mit Listen aus Tabellen und den meisten Notiz-Apps."
+        },
+        {
+          "question": "Kann ich meine Stapel sichern oder verschieben?",
+          "answer": "Ja. Öffne einen Stapel und drücke Exportieren. Du erhältst eine tabulatorgetrennte Datei, die du hier wieder importieren oder in einer Tabellenkalkulation öffnen kannst."
+        },
+        {
+          "question": "Wo werden meine Karten gespeichert?",
+          "answer": "Nur im lokalen Speicher deines Browsers auf diesem Gerät. Nichts wird hochgeladen, daher löscht das Leeren der Browserdaten deine Stapel – exportiere sie vorher, wenn sie dir wichtig sind."
+        },
+        {
+          "question": "Kann ich alles lernen, nicht nur fällige Karten?",
+          "answer": "Ja. Die Schaltfläche Alle mischt jede Karte im Stapel, was am Abend vor einer Prüfung nützlich ist."
+        },
+        {
+          "question": "Werden Bilder oder andere Sprachen unterstützt?",
+          "answer": "Die Karten bestehen aus Text, und jede Sprache oder jedes Symbol, das dein Gerät anzeigen kann, funktioniert – auch Schriften von rechts nach links und mathematische Symbole."
+        }
+      ]
+    },
+    "eisenhower-matrix": {
+      "seoTitle": "Eisenhower-Matrix – Kostenlose Prioritätenmatrix & To-do-Planer online",
+      "metaDescription": "Sortiere Aufgaben in die Eisenhower-Matrix: sofort erledigen, einplanen, delegieren oder streichen. Per Drag-and-drop, abhaken, als Text kopieren. Kostenlos, privat, im Browser gespeichert.",
+      "h1": "Eisenhower-Prioritätenmatrix",
+      "subheading": "Entscheide, was du jetzt tust, was du planst, was du abgibst und was du streichst – ziehe deine Aufgaben in vier Felder.",
+      "keywords": [
+        "eisenhower matrix",
+        "prioritätenmatrix",
+        "dringend wichtig matrix",
+        "to do liste planer",
+        "aufgaben priorisieren",
+        "zeitmanagement matrix",
+        "entscheidungsmatrix aufgaben",
+        "eisenhower prinzip"
+      ],
+      "howTo": [
+        {
+          "name": "Füge deine Aufgaben hinzu",
+          "text": "Gib eine Aufgabe in das passende Feld ein und drücke die Eingabetaste. Du kannst erst alles sammeln und später sortieren."
+        },
+        {
+          "name": "Sortiere nach Dringlichkeit und Wichtigkeit",
+          "text": "Ziehe Aufgaben zwischen den vier Feldern hin und her oder nutze das kleine Menü an einer Aufgabe. Dringend und wichtig gehört in Sofort erledigen."
+        },
+        {
+          "name": "Arbeite von oben nach unten",
+          "text": "Erledige Sofort erledigen, reserviere Zeit für Einplanen, gib Delegieren ab und sei ehrlich bei Streichen."
+        },
+        {
+          "name": "Abhaken und teilen",
+          "text": "Hake Aufgaben ab, wenn du sie erledigt hast, entferne erledigte Aufgaben oder kopiere die ganze Matrix als Text, um sie in Notizen oder eine Nachricht einzufügen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist die Eisenhower-Matrix?",
+          "answer": "Sie ist eine Methode zum Priorisieren, bei der du Aufgaben nach zwei Fragen sortierst: Ist es dringend, und ist es wichtig? Die Antwort zeigt dir, ob du es sofort erledigst, einplanst, delegierst oder streichst."
+        },
+        {
+          "question": "Was gehört in welches Feld?",
+          "answer": "Sofort erledigen: dringend und wichtig, etwa eine Frist morgen. Einplanen: wichtig, aber nicht dringend, etwa Lernen oder Sport. Delegieren: dringend, aber nicht wichtig, etwa manche Anfragen und Störungen. Streichen: weder noch, etwa Zeitfresser-Gewohnheiten."
+        },
+        {
+          "question": "Wie viele Aufgaben sollten in Sofort erledigen stehen?",
+          "answer": "So wenige wie möglich. Wenn dieses Feld ständig voll ist, hilft es meist, mehr in Einplanen zu legen, denn gut geplante Arbeit wird weniger dringend."
+        },
+        {
+          "question": "Kann ich es auf dem Handy nutzen?",
+          "answer": "Ja. Das Ziehen funktioniert auf vielen Geräten, und jede Aufgabe hat zusätzlich ein kleines Menü, um sie in ein anderes Feld zu verschieben."
+        },
+        {
+          "question": "Wird meine Liste gespeichert?",
+          "answer": "Ja, in deinem Browser und nur auf diesem Gerät. Sie wird nicht hochgeladen, und das Löschen der Browserdaten entfernt sie."
+        },
+        {
+          "question": "Kann ich die Matrix exportieren?",
+          "answer": "Drücke Als Text kopieren, um alle vier Felder als Checkliste zu erhalten, die du überall einfügen kannst."
+        },
+        {
+          "question": "Warum muss ich dringend und wichtig trennen?",
+          "answer": "Dringendes schreit nach Aufmerksamkeit, aber Wichtiges bringt deine Ziele voran. Wenn du beides in getrennten Feldern siehst, hörst du auf, den ganzen Tag nur zu reagieren, und fängst an zu planen."
+        }
+      ]
+    },
+    "exam-countdown": {
+      "seoTitle": "Prüfungs- & Fristen-Countdown – Kostenloser Tage-bis-Timer für Studierende",
+      "metaDescription": "Zähle live Tage, Stunden, Minuten und Sekunden bis zu Prüfungen, Fristen und Reisen. Viele Termine, nach Dringlichkeit farbig markiert. Kostenlos und privat, im Browser gespeichert.",
+      "h1": "Prüfungs- & Fristen-Countdown",
+      "subheading": "Sieh genau, wie viel Zeit bis zu deiner nächsten Prüfung, Frist oder Reise bleibt – live mit Tagen, Stunden, Minuten und Sekunden.",
+      "keywords": [
+        "prüfung countdown",
+        "tage bis zur prüfung",
+        "deadline countdown",
+        "countdown bis datum",
+        "lern countdown",
+        "wie viele tage noch bis",
+        "prüfungstimer",
+        "ereignis countdown"
+      ],
+      "howTo": [
+        {
+          "name": "Benenne den Termin",
+          "text": "Gib ein, worauf du herunterzählst, zum Beispiel Chemie-Abschlussprüfung."
+        },
+        {
+          "name": "Wähle Datum und Uhrzeit",
+          "text": "Wähle den genauen Zeitpunkt oder tippe auf eine Schnellauswahl wie Morgen, In einer Woche oder In 100 Tagen."
+        },
+        {
+          "name": "Behalte die Uhr im Blick",
+          "text": "Der nächste Termin wird groß angezeigt, mit einer Farbe, die von Grün über Gelb zu Rot wechselt, je näher er rückt."
+        },
+        {
+          "name": "Plane rückwärts",
+          "text": "Teile deinen Lernstoff anhand der verbleibenden Tage in Tagesziele auf. Vergangene Termine liegen unter Vergangen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kann ich auf mehrere Termine herunterzählen?",
+          "answer": "Ja. Füge so viele Prüfungen und Fristen hinzu, wie du möchtest. Sie werden nach dem nächsten Termin sortiert."
+        },
+        {
+          "question": "Was bedeuten die Farben?",
+          "answer": "Grün bedeutet mehr als zwei Wochen entfernt, Gelb innerhalb von zwei Wochen und Rot innerhalb von drei Tagen. Vergangene Termine sind grau."
+        },
+        {
+          "question": "Wird die Zeitzone korrekt berücksichtigt?",
+          "answer": "Datum und Uhrzeit, die du wählst, gelten in der lokalen Zeitzone deines Geräts, und der Countdown nutzt dieselbe Uhr."
+        },
+        {
+          "question": "Zählt er weiter, wenn die Seite geschlossen ist?",
+          "answer": "Die Seite muss geöffnet sein, um die Live-Sekunden anzuzeigen, aber deine Termine werden gespeichert, sodass die richtige Restzeit sofort erscheint, wenn du sie wieder öffnest."
+        },
+        {
+          "question": "Werden meine Termine hochgeladen?",
+          "answer": "Nein. Sie werden nur in deinem Browser auf diesem Gerät gespeichert."
+        },
+        {
+          "question": "Wie nutze ich die verbleibenden Tage?",
+          "answer": "Teile die Themen, die du noch durcharbeiten musst, durch die verbleibenden Tage. Ein Countdown macht die Frist greifbar und hilft dir, früher anzufangen."
+        },
+        {
+          "question": "Kann ich ihn auch für Termine außerhalb des Lernens nutzen?",
+          "answer": "Ja. Er funktioniert für jedes Datum: einen Flug, einen Geburtstag, einen Produktstart oder einen Urlaub."
+        }
+      ]
+    },
+    "habit-tracker": {
+      "seoTitle": "Habit Tracker – Kostenloser täglicher Streak-Tracker für Lernen & Routinen",
+      "metaDescription": "Verfolge tägliche Gewohnheiten wie Lernen, Lesen oder Sport. Tage abhaken, aktuelle und beste Serie, 30-Tage-Quote und 5-Wochen-Heatmap ansehen. Kostenlos und privat.",
+      "h1": "Gewohnheits- & Streak-Tracker",
+      "subheading": "Baue eine Routine Tag für Tag auf – hake deine Gewohnheiten ab, halte deine Serie am Leben und sieh deinen Fortschritt.",
+      "keywords": [
+        "habit tracker",
+        "streak tracker",
+        "täglicher habit tracker",
+        "lerngewohnheiten tracker",
+        "habit tracker kostenlos",
+        "routine tracker",
+        "tägliche ziele tracker",
+        "gewohnheiten serie zähler"
+      ],
+      "howTo": [
+        {
+          "name": "Füge eine Gewohnheit hinzu",
+          "text": "Gib eine kleine, konkrete Gewohnheit ein, etwa Notizen 20 Minuten wiederholen, oder tippe auf einen der Vorschläge."
+        },
+        {
+          "name": "Hake sie ab",
+          "text": "Tippe jeden Tag auf den Tag in der Wochenzeile. Tippe erneut, um es rückgängig zu machen. Einen verpassten Tag kannst du ebenfalls nachtragen."
+        },
+        {
+          "name": "Schütze deine Serie",
+          "text": "Die Flamme zeigt, an wie vielen Tagen in Folge du es getan hast. Wenn du heute noch nicht abgehakt hast, zählt die Serie von gestern weiterhin."
+        },
+        {
+          "name": "Prüfe deinen Fortschritt",
+          "text": "Sieh deine beste Serie, den Anteil der letzten 30 Tage, den du geschafft hast, und eine 5-Wochen-Heatmap für jede Gewohnheit."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie werden Serien gezählt?",
+          "answer": "Eine Serie ist die Anzahl aufeinanderfolgender abgehakter Tage bis heute. Wenn heute noch nicht abgehakt ist, wird die Serie bis gestern weiter angezeigt, damit du sie nicht verlierst, bevor der Tag vorbei ist."
+        },
+        {
+          "question": "Was macht eine gute Gewohnheit aus?",
+          "answer": "Klein und konkret. Zwanzig Minuten Wiederholung lassen sich leichter wiederholen als mehr lernen. Verknüpfe sie mit etwas, das du schon tust, zum Beispiel nach dem Frühstück."
+        },
+        {
+          "question": "Kann ich vergangene Tage bearbeiten?",
+          "answer": "Ja. Tippe auf einen beliebigen Tag der letzten sieben Tage, um ihn ein- oder auszuschalten."
+        },
+        {
+          "question": "Wie viele Gewohnheiten sollte ich verfolgen?",
+          "answer": "Zwei bis fünf reichen völlig. Zu viele machen es schwer, dranzubleiben, und ein verpasster Tag kann sich wie Scheitern anfühlen."
+        },
+        {
+          "question": "Sind meine Daten privat?",
+          "answer": "Ja. Gewohnheiten werden nur in deinem Browser auf diesem Gerät gespeichert. Nichts wird hochgeladen oder geteilt."
+        },
+        {
+          "question": "Was, wenn meine Serie reißt?",
+          "answer": "Fang heute neu an. Die beste Serie bleibt erhalten, und die 30-Tage-Quote zeigt, dass ein verpasster Tag deinen Fortschritt nicht auslöscht."
+        },
+        {
+          "question": "Funktioniert es mit dem Pomodoro Timer?",
+          "answer": "Beide passen gut zusammen: Füge eine Gewohnheit wie Zwei Fokus-Sitzungen hinzu und hake sie ab, wenn dein Timer fertig ist."
         }
       ]
     }

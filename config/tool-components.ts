@@ -129,4 +129,12 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "list-shuffler": () => import("@/components/tools/random-decision/ListShuffler"),
   "bracket-generator": () => import("@/components/tools/random-decision/BracketGenerator"),
   "raffle-picker": () => import("@/components/tools/random-decision/RafflePicker"),
+
+  // Focus & Study
+  "pomodoro-timer": () => import("@/components/tools/focus-study/PomodoroTimer"),
+  "focus-sounds": () => import("@/components/tools/focus-study/FocusSounds"),
+  "flashcards": () => import("@/components/tools/focus-study/Flashcards"),
+  "eisenhower-matrix": () => import("@/components/tools/focus-study/EisenhowerMatrix"),
+  "exam-countdown": () => import("@/components/tools/focus-study/ExamCountdown"),
+  "habit-tracker": () => import("@/components/tools/focus-study/HabitTracker"),
 };

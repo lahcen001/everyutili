@@ -41,6 +41,7 @@
     "notFoundTitle": "Página não encontrada",
     "notFoundCta": "Ir para o início",
     "usedRecently": "Usada",
+    "featured": "Destaque",
     "errorTitle": "Algo correu mal",
     "errorBody": "Esta ferramenta encontrou um erro inesperado. Os seus ficheiros não foram enviados para lado nenhum.",
     "errorRetry": "Tentar novamente"
@@ -73,6 +74,11 @@
       "label": "Ferramentas de Aleatoriedade e Decisão",
       "description": "Gire, jogue, lance e escolha o caminho até uma decisão — geradores de equipas, rodas e seletores aleatórios, tudo offline.",
       "navLabel": "Aleatório"
+    },
+    "focus-study": {
+      "label": "Ferramentas de Foco e Estudo",
+      "description": "Timer Pomodoro, sons para foco, flashcards e planejadores para se concentrar, revisar e criar melhores hábitos de estudo — tudo privado, no seu navegador.",
+      "navLabel": "Foco"
     }
   },
   "tools": {
@@ -7624,6 +7630,390 @@
         {
           "question": "Isto é adequado para uma rifa legalmente regulamentada?",
           "answer": "É adequado para sorteios casuais e informais — verifique as regulamentações locais para qualquer coisa que exija um processo de sorteio certificado ou auditado."
+        }
+      ]
+    },
+    "pomodoro-timer": {
+      "seoTitle": "Timer Pomodoro Online – Temporizador de Foco e Pausa Grátis com Estatísticas",
+      "metaDescription": "Um timer Pomodoro grátis para estudar e trabalhar: ciclos de foco e pausa 25/5, pausas longas, início automático, som e notificações, estatísticas diárias e modo foco em tela cheia. Privado, sem cadastro.",
+      "h1": "Timer Pomodoro",
+      "subheading": "Mantenha o foco com sessões de trabalho cronometradas e pausas curtas — com modo foco em tela cheia, estatísticas diárias e um sinal sonoro, tudo no seu navegador.",
+      "keywords": [
+        "timer pomodoro",
+        "timer pomodoro online",
+        "cronômetro para estudar",
+        "temporizador de foco",
+        "timer 25 5",
+        "técnica pomodoro",
+        "timer de trabalho e pausa",
+        "pomodoro com estatísticas"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha seu ritmo",
+          "text": "Comece com o clássico 25 minutos de foco e 5 de descanso, ou escolha Trabalho profundo 50/10 ou Curto 15/3. Você também pode digitar seus próprios tempos."
+        },
+        {
+          "name": "Dê um nome à tarefa",
+          "text": "Escreva no que você está trabalhando para que apareça abaixo do relógio. Isso ajuda a manter o foco em uma coisa só."
+        },
+        {
+          "name": "Clique em Iniciar",
+          "text": "O anel se preenche com o passar do tempo e a contagem regressiva também aparece no título da aba do navegador, para você acompanhar de outra aba."
+        },
+        {
+          "name": "Descanse e repita",
+          "text": "Quando uma sessão termina, você ouve um sinal sonoro e a próxima fase começa. Depois de quatro sessões de foco, você ganha uma pausa mais longa. Veja os totais de hoje e o gráfico dos últimos 7 dias à direita."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O que é a técnica Pomodoro?",
+          "answer": "É um método de gestão do tempo: trabalhe em blocos focados de cerca de 25 minutos e depois faça uma pausa de 5 minutos. Após quatro blocos, faça uma pausa mais longa, de 15 a 30 minutos. Os prazos curtos facilitam começar e resistir às distrações."
+        },
+        {
+          "question": "Posso mudar a duração das sessões?",
+          "answer": "Sim. Defina o foco, a pausa curta, a pausa longa e a frequência da pausa longa. Suas escolhas ficam salvas neste dispositivo."
+        },
+        {
+          "question": "O timer continua funcionando se eu trocar de aba?",
+          "answer": "Sim. O timer se baseia no relógio real, e não na contagem de intervalos, então continua preciso em uma aba em segundo plano. O tempo restante também aparece no título da aba."
+        },
+        {
+          "question": "Ele me avisa quando o tempo acaba?",
+          "answer": "Ele toca um sinal sonoro curto e pode exibir uma notificação na área de trabalho se você permitir notificações. Você pode desativar qualquer um dos dois."
+        },
+        {
+          "question": "O que o modo foco faz?",
+          "answer": "Ele faz o timer ocupar a tela inteira, com um relógio grande e mais nada, o que é útil em um segundo monitor ou em um tablet ao lado dos seus livros."
+        },
+        {
+          "question": "Meus dados são enviados para algum lugar?",
+          "answer": "Não. Suas configurações, o nome da tarefa e as estatísticas ficam armazenados apenas no seu navegador e nunca são enviados a lugar nenhum. Limpar os dados do navegador os remove."
+        },
+        {
+          "question": "Qual é o melhor tempo de pausa?",
+          "answer": "Não existe uma resposta única. O clássico 25/5 funciona para a maioria das pessoas. Se você gosta de sessões longas e profundas, experimente 50/10. Sessões curtas de 15 minutos podem ajudar quando é difícil começar."
+        }
+      ]
+    },
+    "focus-sounds": {
+      "seoTitle": "Sons para Foco e Mixer de Ruído – Ruído Branco, Marrom e Chuva para Estudar Grátis",
+      "metaDescription": "Misture ruído branco, rosa e marrom com chuva, ondas do mar, vento, zumbido de ventilador e batidas binaurais alfa para se concentrar ou estudar. Timer para dormir, mixagens salvas, gerado no seu navegador — sem downloads.",
+      "h1": "Sons para Foco e Mixer de Ruído",
+      "subheading": "Combine chuva, ondas do mar, ruído marrom e mais em uma mixagem de fundo só sua para bloquear distrações enquanto estuda ou trabalha.",
+      "keywords": [
+        "gerador de ruído branco",
+        "ruído marrom",
+        "ruído rosa",
+        "sons de chuva para estudar",
+        "sons para foco",
+        "barulho de fundo para estudar",
+        "batidas binaurais alfa",
+        "mixer de ruídos"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um som",
+          "text": "Toque em um cartão como Chuva, Ruído marrom ou Ondas do mar para ativá-lo. Use uma Mixagem rápida como Foco profundo para uma combinação pronta."
+        },
+        {
+          "name": "Ajuste os volumes",
+          "text": "Mova cada controle deslizante para definir o volume daquele som, e o volume geral para tudo junto. Você pode sobrepor vários sons."
+        },
+        {
+          "name": "Defina um timer para dormir",
+          "text": "Escolha um tempo e o som diminui gradualmente e para sozinho — prático quando você ouve enquanto adormece."
+        },
+        {
+          "name": "Continue trabalhando",
+          "text": "Sua mixagem fica salva neste dispositivo, então da próxima vez basta clicar em Tocar mixagem."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual som é melhor para concentração?",
+          "answer": "Varia de pessoa para pessoa. O ruído marrom é grave e quente, e muita gente o considera bom para focar. O ruído rosa é mais equilibrado. Chuva e ondas do mar parecem naturais e calmantes. O ruído branco é o mais agudo e mascara bem a fala."
+        },
+        {
+          "question": "Os sons precisam de conexão com a internet?",
+          "answer": "Não. Todos os sons são criados na hora no seu navegador com a Web Audio API. Não há nada para baixar ou transmitir, então funciona offline depois que a página é carregada."
+        },
+        {
+          "question": "O que são batidas binaurais alfa?",
+          "answer": "São reproduzidos dois tons ligeiramente diferentes, um em cada ouvido, com 10 Hz de diferença. Algumas pessoas acham o efeito relaxante. É preciso usar fones de ouvido para funcionar, e as evidências científicas são divergentes, então encare como uma opção e não como uma promessa."
+        },
+        {
+          "question": "Por que não ouço nada?",
+          "answer": "Os navegadores só iniciam o áudio depois de um clique. Clique em Tocar mixagem, confira o volume do dispositivo e o controle de volume geral, e verifique se pelo menos um som está com volume acima de zero."
+        },
+        {
+          "question": "É seguro deixar tocando a noite toda?",
+          "answer": "Mantenha o volume baixo e use o timer para dormir. Ruído alto por longos períodos pode cansar os ouvidos."
+        },
+        {
+          "question": "Minha mixagem é salva?",
+          "answer": "Sim, apenas neste dispositivo. Ela fica armazenada no seu navegador e nunca é enviada."
+        },
+        {
+          "question": "Posso usar junto com um timer?",
+          "answer": "Sim. Abra o Timer Pomodoro em outra aba e deixe os sons tocando enquanto trabalha."
+        }
+      ]
+    },
+    "flashcards": {
+      "seoTitle": "Criador de Flashcards com Repetição Espaçada – Cartões de Estudo Online Grátis",
+      "metaDescription": "Crie baralhos de flashcards, importe cartões de um texto e estude com um cronograma de repetição espaçada (Leitner). Vire os cartões, acompanhe o progresso, exporte seu baralho. Grátis, privado, funciona offline.",
+      "h1": "Flashcards com Repetição Espaçada",
+      "subheading": "Monte baralhos, vire os cartões e deixe o cronograma trazer de volta os que você errou — armazenado apenas no seu dispositivo.",
+      "keywords": [
+        "criador de flashcards",
+        "flashcards online",
+        "repetição espaçada",
+        "sistema leitner",
+        "cartões de estudo",
+        "alternativa ao anki",
+        "flashcards de vocabulário",
+        "criar flashcards grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Crie um baralho",
+          "text": "Digite o nome do baralho e clique em Criar baralho, ou escolha Importar cartões e cole uma lista com uma pergunta e uma resposta por linha."
+        },
+        {
+          "name": "Adicione seus cartões",
+          "text": "Preencha a frente e o verso e pressione Enter para adicionar cada cartão rapidamente. Você pode editar ou excluir qualquer cartão depois."
+        },
+        {
+          "name": "Estude",
+          "text": "Clique em Estudar para ver os cartões que estão no prazo. Clique no cartão ou pressione Espaço para virá-lo, depois escolha Acertei ou Errei (teclas 2 e 1)."
+        },
+        {
+          "name": "Volte amanhã",
+          "text": "Os cartões que você sabe vão para uma caixa mais adiante e voltam depois de mais dias. Os cartões errados voltam logo. Exporte o baralho quando quiser para fazer backup."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O que é repetição espaçada?",
+          "answer": "É uma forma de revisar informações um pouco antes de você esquecê-las. Os cartões que você domina aparecem menos e os que considera difíceis aparecem mais, o que economiza tempo e fortalece a memória de longo prazo."
+        },
+        {
+          "question": "Como funciona o cronograma?",
+          "answer": "Ele usa o sistema Leitner com cinco caixas. Uma resposta certa move o cartão uma caixa para cima e ele volta depois de 1, 2, 4, 8 e depois 16 dias. Uma resposta errada o devolve à primeira caixa, para você vê-lo de novo hoje."
+        },
+        {
+          "question": "Como importo cartões?",
+          "answer": "Cole um cartão por linha, com a pergunta e a resposta separadas por tabulação, vírgula, ponto e vírgula ou espaço-hífen-espaço. Funciona com listas copiadas de planilhas e da maioria dos aplicativos de notas."
+        },
+        {
+          "question": "Posso fazer backup ou mover meus baralhos?",
+          "answer": "Sim. Abra um baralho, clique em Exportar e você recebe um arquivo separado por tabulações que pode importar novamente aqui ou abrir em uma planilha."
+        },
+        {
+          "question": "Onde meus cartões ficam armazenados?",
+          "answer": "Somente no armazenamento local do seu navegador, neste dispositivo. Nada é enviado, então limpar os dados do navegador apaga seus baralhos — exporte antes se eles forem importantes."
+        },
+        {
+          "question": "Posso estudar tudo, e não só os cartões no prazo?",
+          "answer": "Sim. O botão Todos embaralha todos os cartões do baralho, o que é útil na véspera de uma prova."
+        },
+        {
+          "question": "Aceita imagens ou outros idiomas?",
+          "answer": "Os cartões são de texto, e funciona qualquer idioma ou símbolo que seu dispositivo consiga exibir, incluindo escritas da direita para a esquerda e símbolos matemáticos."
+        }
+      ]
+    },
+    "eisenhower-matrix": {
+      "seoTitle": "Matriz de Eisenhower – Matriz de Prioridades e Planejador de Tarefas Online Grátis",
+      "metaDescription": "Organize tarefas na matriz de Eisenhower: fazer primeiro, agendar, delegar ou eliminar. Arraste e solte, marque como concluído, copie como texto. Grátis, privado, salvo no seu navegador.",
+      "h1": "Matriz de Prioridades de Eisenhower",
+      "subheading": "Decida o que fazer agora, o que planejar, o que delegar e o que descartar — arraste suas tarefas para quatro quadrantes.",
+      "keywords": [
+        "matriz de eisenhower",
+        "matriz de prioridades",
+        "matriz urgente e importante",
+        "planejador de lista de tarefas",
+        "priorização de tarefas",
+        "matriz de gestão do tempo",
+        "matriz de decisão de tarefas",
+        "quadrante de eisenhower"
+      ],
+      "howTo": [
+        {
+          "name": "Adicione suas tarefas",
+          "text": "Digite uma tarefa na caixa a que ela pertence e pressione Enter. Você pode começar despejando tudo o que vier à cabeça e organizar depois."
+        },
+        {
+          "name": "Classifique por urgência e importância",
+          "text": "Arraste as tarefas entre os quatro quadrantes ou use o pequeno menu de cada tarefa. O que é urgente e importante vai em Fazer primeiro."
+        },
+        {
+          "name": "Trabalhe de cima para baixo",
+          "text": "Conclua o Fazer primeiro, reserve tempo para o Agendar, repasse o Delegar e seja honesto com o Eliminar."
+        },
+        {
+          "name": "Marque como concluído e compartilhe",
+          "text": "Marque as tarefas conforme as conclui, limpe as finalizadas ou copie a matriz inteira como texto para colar em suas notas ou em uma mensagem."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O que é a matriz de Eisenhower?",
+          "answer": "É uma forma de priorizar classificando as tarefas com duas perguntas: é urgente? é importante? A resposta indica se você deve fazer agora, agendar, delegar ou descartar."
+        },
+        {
+          "question": "O que vai em cada quadrante?",
+          "answer": "Fazer primeiro: urgente e importante, como um prazo para amanhã. Agendar: importante mas não urgente, como revisão de estudos ou exercício. Delegar: urgente mas não importante, como alguns pedidos e interrupções. Eliminar: nem um nem outro, como hábitos que fazem perder tempo."
+        },
+        {
+          "question": "Quantas tarefas devem ficar em Fazer primeiro?",
+          "answer": "O mínimo possível. Se esse quadrante está sempre cheio, planejar mais em Agendar costuma ajudar, porque o trabalho bem planejado se torna menos urgente."
+        },
+        {
+          "question": "Posso usar no celular?",
+          "answer": "Sim. Arrastar funciona em muitos dispositivos, e cada tarefa também tem um pequeno menu para movê-la a outro quadrante."
+        },
+        {
+          "question": "Minha lista fica salva?",
+          "answer": "Sim, no seu navegador, apenas neste dispositivo. Ela não é enviada, e limpar os dados do navegador a remove."
+        },
+        {
+          "question": "Posso exportar a matriz?",
+          "answer": "Clique em Copiar como texto para obter os quatro quadrantes como uma lista de verificação que você pode colar em qualquer lugar."
+        },
+        {
+          "question": "Por que preciso separar o urgente do importante?",
+          "answer": "As coisas urgentes gritam por atenção, mas as importantes levam seus objetivos adiante. Vê-las em quadrantes separados ajuda você a deixar de reagir o dia todo e começar a planejar."
+        }
+      ]
+    },
+    "exam-countdown": {
+      "seoTitle": "Contagem Regressiva para Provas e Prazos – Timer de Dias Restantes Grátis para Estudantes",
+      "metaDescription": "Faça a contagem regressiva para provas, prazos e viagens com dias, horas, minutos e segundos ao vivo. Adicione vários eventos, com cores por urgência. Grátis e privado, salvo no seu navegador.",
+      "h1": "Contagem Regressiva para Provas e Prazos",
+      "subheading": "Veja exatamente quanto tempo falta para sua próxima prova, prazo ou viagem, com dias, horas, minutos e segundos ao vivo.",
+      "keywords": [
+        "contagem regressiva para prova",
+        "quantos dias faltam para a prova",
+        "contagem regressiva de prazo",
+        "contador regressivo até uma data",
+        "contagem regressiva para estudar",
+        "quantos dias faltam para",
+        "cronômetro de prova",
+        "contagem regressiva de evento"
+      ],
+      "howTo": [
+        {
+          "name": "Dê um nome ao evento",
+          "text": "Digite para o que você está fazendo a contagem regressiva, por exemplo Prova final de Química."
+        },
+        {
+          "name": "Escolha a data e a hora",
+          "text": "Selecione o momento exato ou toque em uma opção rápida como Amanhã, Em uma semana ou Em 100 dias."
+        },
+        {
+          "name": "Acompanhe o relógio",
+          "text": "O evento mais próximo aparece em destaque, com uma cor que vai do verde ao âmbar e ao vermelho conforme ele se aproxima."
+        },
+        {
+          "name": "Planeje de trás para frente",
+          "text": "Use o número de dias restantes para dividir sua revisão em metas diárias. Os eventos passados ficam guardados em Passados."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Posso fazer a contagem regressiva para mais de uma data?",
+          "answer": "Sim. Adicione quantas provas e prazos quiser. Eles são ordenados com o mais próximo primeiro."
+        },
+        {
+          "question": "O que significam as cores?",
+          "answer": "Verde significa que faltam mais de duas semanas, âmbar significa menos de duas semanas e vermelho significa menos de três dias. Os eventos passados ficam em cinza."
+        },
+        {
+          "question": "O fuso horário é tratado corretamente?",
+          "answer": "A data e a hora que você escolhe estão no fuso horário local do seu dispositivo, e a contagem regressiva usa o mesmo relógio."
+        },
+        {
+          "question": "Ele continua contando quando a página está fechada?",
+          "answer": "A página precisa estar aberta para mostrar os segundos ao vivo, mas seus eventos ficam salvos, então o tempo restante correto aparece assim que você a abrir de novo."
+        },
+        {
+          "question": "Meus eventos são enviados para algum lugar?",
+          "answer": "Não. Eles ficam armazenados apenas no seu navegador, neste dispositivo."
+        },
+        {
+          "question": "Como devo usar os dias restantes?",
+          "answer": "Divida os tópicos que ainda precisa estudar pelos dias que faltam. Uma contagem regressiva torna o prazo real e ajuda você a começar mais cedo."
+        },
+        {
+          "question": "Posso usar para eventos que não são de estudo?",
+          "answer": "Sim. Funciona para qualquer data: um voo, um aniversário, o lançamento de um produto ou as férias."
+        }
+      ]
+    },
+    "habit-tracker": {
+      "seoTitle": "Rastreador de Hábitos – Controle Diário de Sequências Grátis para Estudos e Rotinas",
+      "metaDescription": "Acompanhe hábitos diários como estudar, ler ou se exercitar. Marque os dias, veja a sequência atual e a melhor, a taxa de conclusão de 30 dias e um mapa de calor de 5 semanas. Grátis e privado.",
+      "h1": "Rastreador de Hábitos e Sequências",
+      "subheading": "Construa uma rotina um dia de cada vez — marque seus hábitos, mantenha sua sequência viva e acompanhe seu progresso.",
+      "keywords": [
+        "rastreador de hábitos",
+        "controle de sequência",
+        "rastreador de hábitos diários",
+        "rastreador de hábitos de estudo",
+        "rastreador de hábitos grátis",
+        "controle de rotina",
+        "rastreador de metas diárias",
+        "contador de sequência de hábitos"
+      ],
+      "howTo": [
+        {
+          "name": "Adicione um hábito",
+          "text": "Digite um hábito pequeno e específico, como Revisar anotações por 20 minutos, ou toque em uma das sugestões."
+        },
+        {
+          "name": "Marque como feito",
+          "text": "Todos os dias, toque no dia na linha da semana. Toque de novo para desfazer. Você também pode preencher um dia que ficou para trás."
+        },
+        {
+          "name": "Proteja sua sequência",
+          "text": "A chama mostra quantos dias seguidos você cumpriu o hábito. Se você ainda não marcou hoje, a sequência de ontem continua valendo."
+        },
+        {
+          "name": "Acompanhe seu progresso",
+          "text": "Veja sua melhor sequência, a porcentagem dos últimos 30 dias que você concluiu e um mapa de calor de 5 semanas para cada hábito."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como as sequências são contadas?",
+          "answer": "Uma sequência é o número de dias consecutivos marcados, terminando hoje. Se hoje ainda não foi marcado, a sequência que terminou ontem continua sendo exibida para você não perdê-la antes de o dia acabar."
+        },
+        {
+          "question": "O que faz um bom hábito?",
+          "answer": "Ser pequeno e específico. Vinte minutos de revisão são mais fáceis de repetir do que estudar mais. Associe-o a algo que você já faz, como depois do café da manhã."
+        },
+        {
+          "question": "Posso editar dias passados?",
+          "answer": "Sim. Toque em qualquer dia dos últimos sete dias para marcar ou desmarcar."
+        },
+        {
+          "question": "Quantos hábitos devo acompanhar?",
+          "answer": "De dois a cinco é o suficiente. Muitos tornam difícil manter o ritmo, e um dia perdido pode parecer um fracasso."
+        },
+        {
+          "question": "Meus dados são privados?",
+          "answer": "Sim. Os hábitos ficam armazenados apenas no seu navegador, neste dispositivo. Nada é enviado ou compartilhado."
+        },
+        {
+          "question": "E se eu quebrar minha sequência?",
+          "answer": "Recomece hoje. A melhor sequência é mantida, e a taxa de conclusão de 30 dias mostra que um dia perdido não apaga seu progresso."
+        },
+        {
+          "question": "Funciona com o timer Pomodoro?",
+          "answer": "Os dois combinam bem: adicione um hábito como Duas sessões de foco e marque quando seu timer terminar."
         }
       ]
     }

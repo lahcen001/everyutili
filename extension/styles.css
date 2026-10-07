@@ -31,6 +31,8 @@
   --cat-financial-tint: rgba(245, 158, 11, 0.15);
   --cat-random-decision: #a855f7;
   --cat-random-decision-tint: rgba(168, 85, 247, 0.15);
+  --cat-focus-study: #06b6d4;
+  --cat-focus-study-tint: rgba(6, 182, 212, 0.15);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -215,6 +217,10 @@ button {
   color: var(--cat-random-decision);
   background: var(--cat-random-decision-tint);
 }
+.badge[data-category="focus-study"] {
+  color: var(--cat-focus-study);
+  background: var(--cat-focus-study-tint);
+}
 
 .icon-box {
   display: flex;
@@ -247,6 +253,11 @@ button {
 .icon-box[data-category="random-decision"] {
   color: var(--cat-random-decision);
   background: var(--cat-random-decision-tint);
+  box-shadow: 0 0 20px -6px rgba(245, 158, 11, 0.5);
+}
+.icon-box[data-category="focus-study"] {
+  color: var(--cat-focus-study);
+  background: var(--cat-focus-study-tint);
   box-shadow: 0 0 20px -6px rgba(245, 158, 11, 0.5);
 }
 
@@ -1175,6 +1186,9 @@ button {
 }
 .pill.active[data-category="random-decision"] {
   background: var(--cat-random-decision);
+}
+.pill.active[data-category="focus-study"] {
+  background: var(--cat-focus-study);
 }
 
 .popup-list {

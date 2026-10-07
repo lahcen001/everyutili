@@ -1,5 +1,10 @@
 import type { LucideIcon } from "lucide-react";
 import {
+  Timer,
+  Headphones,
+  Layers,
+  CalendarClock,
+  Flame,
   ImageIcon,
   FileImage,
   Shrink,
@@ -98,6 +103,7 @@ export const CATEGORIES = [
   "developer",
   "financial",
   "random-decision",
+  "focus-study",
 ] as const;
 
 export type ToolCategory = (typeof CATEGORIES)[number];
@@ -116,6 +122,7 @@ export const CATEGORY_META: Record<ToolCategory, CategoryMeta> = {
   developer: { slug: "developer" },
   financial: { slug: "financial" },
   "random-decision": { slug: "random-decision" },
+  "focus-study": { slug: "focus-study" },
 };
 
 export interface HowToStep {
@@ -175,6 +182,8 @@ export interface ToolConfig {
    * Defaults to the standard narrow layout.
    */
   layout?: "default" | "workspace";
+  /** Pinned first in its category and shown as a highlighted banner card. */
+  featured?: boolean;
   priority: number;
   changeFrequency: "daily" | "weekly" | "monthly";
 }
@@ -1311,6 +1320,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["screen-studio", "video-trimmer"],
     ssr: false,
     layout: "workspace",
+    featured: true,
     priority: 0.78,
     changeFrequency: "daily",
   },
@@ -1426,6 +1436,72 @@ export const TOOLS: ToolConfig[] = [
     priority: 0.63,
     changeFrequency: "monthly",
   },
+  {
+    slug: "pomodoro-timer",
+    category: "focus-study",
+    icon: Timer,
+    name: "Pomodoro Timer",
+    shortName: "Pomodoro Timer",
+    relatedSlugs: ["focus-sounds", "habit-tracker"],
+    ssr: false,
+    priority: 0.8,
+    changeFrequency: "monthly",
+  },
+  {
+    slug: "focus-sounds",
+    category: "focus-study",
+    icon: Headphones,
+    name: "Focus Sounds & Noise Mixer",
+    shortName: "Focus Sounds",
+    relatedSlugs: ["pomodoro-timer", "habit-tracker"],
+    ssr: false,
+    priority: 0.76,
+    changeFrequency: "monthly",
+  },
+  {
+    slug: "flashcards",
+    category: "focus-study",
+    icon: Layers,
+    name: "Flashcards with Spaced Repetition",
+    shortName: "Flashcards",
+    relatedSlugs: ["exam-countdown", "pomodoro-timer"],
+    ssr: false,
+    priority: 0.74,
+    changeFrequency: "monthly",
+  },
+  {
+    slug: "eisenhower-matrix",
+    category: "focus-study",
+    icon: LayoutGrid,
+    name: "Eisenhower Priority Matrix",
+    shortName: "Priority Matrix",
+    relatedSlugs: ["pomodoro-timer", "habit-tracker"],
+    ssr: false,
+    priority: 0.7,
+    changeFrequency: "monthly",
+  },
+  {
+    slug: "exam-countdown",
+    category: "focus-study",
+    icon: CalendarClock,
+    name: "Exam & Deadline Countdown",
+    shortName: "Exam Countdown",
+    relatedSlugs: ["flashcards", "pomodoro-timer"],
+    ssr: false,
+    priority: 0.68,
+    changeFrequency: "monthly",
+  },
+  {
+    slug: "habit-tracker",
+    category: "focus-study",
+    icon: Flame,
+    name: "Habit & Streak Tracker",
+    shortName: "Habit Tracker",
+    relatedSlugs: ["pomodoro-timer", "eisenhower-matrix"],
+    ssr: false,
+    priority: 0.66,
+    changeFrequency: "monthly",
+  },
 ];
 
 export function getToolBySlug(slug: string): ToolConfig | undefined {
@@ -1434,7 +1510,7 @@ export function getToolBySlug(slug: string): ToolConfig | undefined {
 
 /** Tools for a category, most-used-first (by editorial `priority`, descending). */
 export function getToolsByCategory(category: ToolCategory): ToolConfig[] {
-  return TOOLS.filter((tool) => tool.category === category).sort((a, b) => b.priority - a.priority);
+  return TOOLS.filter((tool) => tool.category === category).sort((a, b) => Number(!!b.featured) - Number(!!a.featured) || b.priority - a.priority);
 }
 
 export function getRelatedTools(tool: ToolConfig): ToolConfig[] {

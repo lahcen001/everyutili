@@ -41,6 +41,7 @@
     "notFoundTitle": "Halaman tidak ditemukan",
     "notFoundCta": "Kembali ke beranda",
     "usedRecently": "Digunakan",
+    "featured": "Unggulan",
     "errorTitle": "Terjadi kesalahan",
     "errorBody": "Alat ini mengalami kesalahan tak terduga. File Anda tidak diunggah ke mana pun.",
     "errorRetry": "Coba lagi"
@@ -73,6 +74,11 @@
       "label": "Alat Acak & Keputusan",
       "description": "Putar, lempar, kocok, dan pilih jalanmu menuju keputusan — generator tim, roda putar, dan pemilih acak, semuanya offline.",
       "navLabel": "Acak"
+    },
+    "focus-study": {
+      "label": "Alat Fokus & Belajar",
+      "description": "Timer Pomodoro, suara fokus, kartu flash, dan perencana untuk berkonsentrasi, mengulang materi, dan membangun kebiasaan belajar yang lebih baik — semuanya privat, di browser Anda.",
+      "navLabel": "Fokus"
     }
   },
   "tools": {
@@ -7624,6 +7630,390 @@
         {
           "question": "Apakah ini cocok untuk undian yang diatur secara hukum?",
           "answer": "Cocok untuk giveaway santai dan informal — periksa regulasi setempat Anda untuk hal-hal yang memerlukan proses pengundian bersertifikat atau teraudit."
+        }
+      ]
+    },
+    "pomodoro-timer": {
+      "seoTitle": "Timer Pomodoro Online – Timer Fokus & Istirahat Gratis dengan Statistik",
+      "metaDescription": "Timer Pomodoro gratis untuk belajar dan bekerja: siklus fokus dan istirahat 25/5, istirahat panjang, mulai otomatis, suara dan notifikasi, statistik harian, serta mode fokus layar penuh. Privat, tanpa daftar.",
+      "h1": "Timer Pomodoro",
+      "subheading": "Tetap fokus dengan sesi kerja terjadwal dan istirahat singkat — lengkap dengan mode fokus layar penuh, statistik harian, dan bunyi lonceng, semua di browser Anda.",
+      "keywords": [
+        "timer pomodoro",
+        "timer pomodoro online",
+        "timer belajar",
+        "timer fokus",
+        "timer 25 5",
+        "teknik pomodoro",
+        "timer kerja dan istirahat",
+        "timer pomodoro dengan statistik"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih ritme Anda",
+          "text": "Mulai dengan klasik 25 menit fokus dan 5 menit istirahat, atau pilih Kerja mendalam 50/10 atau Singkat 15/3. Anda juga bisa mengetik durasi sendiri."
+        },
+        {
+          "name": "Beri nama tugas",
+          "text": "Tulis apa yang sedang Anda kerjakan agar tampil di bawah jam. Ini membantu Anda tetap fokus pada satu hal."
+        },
+        {
+          "name": "Tekan Mulai",
+          "text": "Lingkaran terisi seiring waktu berjalan, dan hitung mundur juga muncul di judul tab browser sehingga bisa dilihat dari tab lain."
+        },
+        {
+          "name": "Istirahat dan ulangi",
+          "text": "Saat sesi selesai, Anda mendengar bunyi lonceng dan fase berikutnya dimulai. Setelah empat sesi fokus, Anda mendapat istirahat lebih panjang. Lihat total hari ini dan grafik 7 hari di sebelah kanan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu Teknik Pomodoro?",
+          "answer": "Ini adalah metode manajemen waktu: bekerja dalam blok fokus sekitar 25 menit, lalu istirahat 5 menit. Setelah empat blok, ambil istirahat lebih panjang selama 15 hingga 30 menit. Tenggat singkat membuat Anda lebih mudah memulai dan menahan gangguan."
+        },
+        {
+          "question": "Bisakah saya mengubah durasi sesi?",
+          "answer": "Bisa. Atur durasi fokus, istirahat pendek, istirahat panjang, dan seberapa sering istirahat panjang datang. Pilihan Anda diingat di perangkat ini."
+        },
+        {
+          "question": "Apakah timer tetap berjalan jika saya berpindah tab?",
+          "answer": "Ya. Timer berbasis jam sebenarnya, bukan menghitung detakan, sehingga tetap akurat di tab latar belakang. Sisa waktu juga ditampilkan di judul tab."
+        },
+        {
+          "question": "Apakah ada pengingat saat waktu habis?",
+          "answer": "Timer memutar bunyi lonceng singkat dan dapat menampilkan notifikasi desktop jika Anda mengizinkan notifikasi. Keduanya bisa dimatikan."
+        },
+        {
+          "question": "Apa fungsi mode fokus?",
+          "answer": "Mode ini membuat timer memenuhi seluruh layar dengan jam besar dan tanpa elemen lain, berguna di monitor kedua atau tablet di samping buku Anda."
+        },
+        {
+          "question": "Apakah data saya diunggah?",
+          "answer": "Tidak. Pengaturan, nama tugas, dan statistik Anda hanya disimpan di browser dan tidak pernah dikirim ke mana pun. Menghapus data browser akan menghapusnya."
+        },
+        {
+          "question": "Berapa lama istirahat yang terbaik?",
+          "answer": "Tidak ada jawaban tunggal. Pola klasik 25/5 cocok untuk kebanyakan orang. Jika Anda suka sesi panjang dan mendalam, coba 50/10. Sesi singkat 15 menit bisa membantu saat Anda sulit memulai."
+        }
+      ]
+    },
+    "focus-sounds": {
+      "seoTitle": "Suara Fokus & Pencampur Noise – White Noise, Brown Noise, Suara Hujan Gratis untuk Belajar",
+      "metaDescription": "Campurkan white, pink, dan brown noise dengan suara hujan, ombak laut, angin, dengung kipas, dan binaural beats alpha untuk berkonsentrasi atau belajar. Timer tidur, campuran tersimpan, dibuat di browser — tanpa unduhan.",
+      "h1": "Suara Fokus & Pencampur Noise",
+      "subheading": "Padukan hujan, ombak laut, brown noise, dan lainnya menjadi campuran suara latar sendiri untuk menyingkirkan gangguan saat belajar atau bekerja.",
+      "keywords": [
+        "white noise generator",
+        "brown noise",
+        "pink noise",
+        "suara hujan untuk belajar",
+        "suara fokus",
+        "suara latar untuk belajar",
+        "binaural beats alpha",
+        "pencampur noise"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih suara",
+          "text": "Ketuk kartu seperti Hujan, Brown noise, atau Ombak laut untuk menyalakannya. Gunakan Campuran cepat seperti Fokus mendalam untuk campuran siap pakai."
+        },
+        {
+          "name": "Atur tingkat suara",
+          "text": "Geser setiap penggeser untuk mengatur keras suara tersebut, dan volume utama untuk semuanya sekaligus. Anda bisa menumpuk beberapa suara."
+        },
+        {
+          "name": "Atur timer tidur",
+          "text": "Pilih waktu dan suara akan memudar lalu berhenti sendiri — praktis saat Anda mendengarkan sambil tertidur."
+        },
+        {
+          "name": "Lanjutkan bekerja",
+          "text": "Campuran Anda diingat di perangkat ini, jadi lain kali Anda hanya perlu menekan Putar campuran."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Suara apa yang terbaik untuk konsentrasi?",
+          "answer": "Berbeda untuk setiap orang. Brown noise terdengar dalam dan hangat, dan banyak yang merasa cocok untuk fokus. Pink noise lebih seimbang. Hujan dan ombak laut terasa alami dan menenangkan. White noise paling terang dan efektif meredam suara percakapan."
+        },
+        {
+          "question": "Apakah suara membutuhkan koneksi internet?",
+          "answer": "Tidak. Setiap suara dibuat langsung di browser Anda dengan Web Audio API. Tidak ada yang perlu diunduh atau di-streaming, sehingga bisa berfungsi offline setelah halaman dimuat."
+        },
+        {
+          "question": "Apa itu binaural beats alpha?",
+          "answer": "Dua nada yang sedikit berbeda diputar, satu di tiap telinga, dengan selisih 10 Hz. Sebagian orang merasa efeknya menenangkan. Anda memerlukan headphone agar berfungsi, dan bukti ilmiahnya beragam, jadi anggap ini sebagai pilihan, bukan jaminan."
+        },
+        {
+          "question": "Mengapa saya tidak mendengar apa pun?",
+          "answer": "Browser hanya memulai audio setelah Anda mengklik. Tekan Putar campuran, periksa volume perangkat dan penggeser utama, dan pastikan setidaknya satu suara memiliki volume di atas nol."
+        },
+        {
+          "question": "Amankah diputar semalaman?",
+          "answer": "Jaga volume tetap rendah dan gunakan timer tidur. Suara keras dalam waktu lama dapat melelahkan telinga Anda."
+        },
+        {
+          "question": "Apakah campuran saya tersimpan?",
+          "answer": "Ya, hanya di perangkat ini. Disimpan di browser Anda dan tidak pernah diunggah."
+        },
+        {
+          "question": "Bisakah digunakan bersama timer?",
+          "answer": "Bisa. Buka Timer Pomodoro di tab lain dan biarkan suara tetap diputar saat Anda bekerja."
+        }
+      ]
+    },
+    "flashcards": {
+      "seoTitle": "Pembuat Kartu Flash dengan Spaced Repetition – Kartu Belajar Online Gratis",
+      "metaDescription": "Buat dek kartu flash, impor kartu dari teks, dan belajar dengan jadwal pengulangan berspasi (Leitner). Balik kartu, pantau kemajuan, ekspor dek Anda. Gratis, privat, bisa offline.",
+      "h1": "Kartu Flash dengan Spaced Repetition",
+      "subheading": "Buat dek, balik kartu, dan biarkan jadwal memunculkan kembali kartu yang Anda lewatkan — disimpan hanya di perangkat Anda.",
+      "keywords": [
+        "pembuat kartu flash",
+        "kartu flash online",
+        "spaced repetition",
+        "sistem leitner",
+        "kartu belajar",
+        "alternatif anki",
+        "kartu flash kosakata",
+        "buat kartu flash gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Buat dek",
+          "text": "Ketik nama dek lalu tekan Buat dek, atau pilih Impor kartu dan tempel daftar dengan satu pertanyaan dan jawaban per baris."
+        },
+        {
+          "name": "Tambahkan kartu",
+          "text": "Isi sisi depan dan belakang lalu tekan Enter untuk menambah setiap kartu dengan cepat. Anda bisa mengedit atau menghapus kartu kapan saja."
+        },
+        {
+          "name": "Belajar",
+          "text": "Tekan Belajar untuk melihat kartu yang jatuh tempo. Klik kartu atau tekan Spasi untuk membaliknya, lalu pilih Paham atau Terlewat (tombol 2 dan 1)."
+        },
+        {
+          "name": "Kembali besok",
+          "text": "Kartu yang Anda kuasai pindah ke kotak berikutnya dan muncul lagi setelah lebih banyak hari. Kartu yang terlewat segera kembali. Ekspor dek kapan saja sebagai cadangan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu spaced repetition?",
+          "answer": "Ini adalah cara mengulang informasi tepat sebelum Anda lupa. Kartu yang Anda kuasai ditampilkan lebih jarang dan kartu yang sulit lebih sering, sehingga menghemat waktu dan membangun ingatan jangka panjang."
+        },
+        {
+          "question": "Bagaimana cara kerja jadwalnya?",
+          "answer": "Menggunakan sistem Leitner dengan lima kotak. Jawaban benar memindahkan kartu naik satu kotak dan kartu muncul lagi setelah 1, 2, 4, 8, lalu 16 hari. Jawaban salah mengembalikannya ke kotak pertama sehingga Anda melihatnya lagi hari ini."
+        },
+        {
+          "question": "Bagaimana cara mengimpor kartu?",
+          "answer": "Tempel satu kartu per baris dengan pertanyaan dan jawaban dipisahkan oleh tab, koma, titik koma, atau spasi-tanda hubung-spasi. Cara ini cocok untuk daftar yang disalin dari spreadsheet dan sebagian besar aplikasi catatan."
+        },
+        {
+          "question": "Bisakah saya mencadangkan atau memindahkan dek?",
+          "answer": "Bisa. Buka dek, tekan Ekspor, dan Anda mendapat file yang dipisahkan tab yang bisa diimpor kembali di sini atau dibuka di spreadsheet."
+        },
+        {
+          "question": "Di mana kartu saya disimpan?",
+          "answer": "Hanya di penyimpanan lokal browser pada perangkat ini. Tidak ada yang diunggah, jadi menghapus data browser akan menghapus dek Anda — ekspor dulu jika penting."
+        },
+        {
+          "question": "Bisakah saya mempelajari semuanya, bukan hanya kartu yang jatuh tempo?",
+          "answer": "Bisa. Tombol Semua mengacak setiap kartu dalam dek, berguna pada malam sebelum ujian."
+        },
+        {
+          "question": "Apakah mendukung gambar atau bahasa lain?",
+          "answer": "Kartu berupa teks, dan bahasa atau simbol apa pun yang bisa ditampilkan perangkat Anda dapat digunakan, termasuk aksara kanan-ke-kiri dan simbol matematika."
+        }
+      ]
+    },
+    "eisenhower-matrix": {
+      "seoTitle": "Matriks Eisenhower – Matriks Prioritas & Perencana To-Do Online Gratis",
+      "metaDescription": "Kelompokkan tugas ke dalam matriks Eisenhower: kerjakan dulu, jadwalkan, delegasikan, atau hapus. Seret dan lepas, centang, salin sebagai teks. Gratis, privat, tersimpan di browser Anda.",
+      "h1": "Matriks Prioritas Eisenhower",
+      "subheading": "Tentukan apa yang dikerjakan sekarang, direncanakan, diserahkan, dan dibuang — seret tugas Anda ke empat kotak.",
+      "keywords": [
+        "matriks eisenhower",
+        "matriks prioritas",
+        "matriks mendesak penting",
+        "perencana to do list",
+        "prioritas tugas",
+        "matriks manajemen waktu",
+        "matriks keputusan tugas",
+        "kotak eisenhower"
+      ],
+      "howTo": [
+        {
+          "name": "Tambahkan tugas",
+          "text": "Ketik tugas ke dalam kotak yang sesuai lalu tekan Enter. Anda bisa mulai dengan menuangkan semua ide dulu dan mengurutkannya nanti."
+        },
+        {
+          "name": "Urutkan berdasarkan urgensi dan kepentingan",
+          "text": "Seret tugas di antara empat kotak, atau gunakan menu kecil pada tugas. Yang mendesak dan penting masuk ke Kerjakan dulu."
+        },
+        {
+          "name": "Kerjakan dari atas",
+          "text": "Selesaikan Kerjakan dulu, sediakan waktu untuk Jadwalkan, serahkan yang ada di Delegasikan, dan bersikaplah jujur soal Hapus."
+        },
+        {
+          "name": "Centang dan bagikan",
+          "text": "Centang tugas saat selesai, bersihkan yang sudah selesai, atau salin seluruh matriks sebagai teks untuk ditempel ke catatan atau pesan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu matriks Eisenhower?",
+          "answer": "Ini adalah cara menentukan prioritas dengan memilah tugas berdasarkan dua pertanyaan: apakah mendesak, dan apakah penting? Jawabannya menentukan apakah tugas dikerjakan sekarang, dijadwalkan, didelegasikan, atau dibuang."
+        },
+        {
+          "question": "Apa yang masuk ke setiap kotak?",
+          "answer": "Kerjakan dulu: mendesak dan penting, seperti tenggat besok. Jadwalkan: penting tetapi tidak mendesak, seperti belajar ulang atau olahraga. Delegasikan: mendesak tetapi tidak penting, seperti beberapa permintaan dan interupsi. Hapus: tidak keduanya, seperti kebiasaan yang membuang waktu."
+        },
+        {
+          "question": "Berapa banyak tugas yang sebaiknya ada di Kerjakan dulu?",
+          "answer": "Sesedikit mungkin. Jika kotak ini selalu penuh, merencanakan lebih banyak di Jadwalkan biasanya membantu, karena pekerjaan yang terencana baik menjadi kurang mendesak."
+        },
+        {
+          "question": "Bisakah saya memakainya di ponsel?",
+          "answer": "Bisa. Seret dan lepas berfungsi di banyak perangkat, dan setiap tugas juga punya menu kecil untuk memindahkannya ke kotak lain."
+        },
+        {
+          "question": "Apakah daftar saya tersimpan?",
+          "answer": "Ya, di browser pada perangkat ini saja. Tidak diunggah, dan menghapus data browser akan menghapusnya."
+        },
+        {
+          "question": "Bisakah saya mengekspor matriks?",
+          "answer": "Tekan Salin sebagai teks untuk mendapatkan keempat kotak sebagai daftar centang yang bisa ditempel di mana saja."
+        },
+        {
+          "question": "Mengapa perlu memisahkan mendesak dari penting?",
+          "answer": "Hal mendesak berteriak meminta perhatian, tetapi hal penting menggerakkan tujuan Anda maju. Melihatnya di kotak terpisah membantu Anda berhenti bereaksi sepanjang hari dan mulai merencanakan."
+        }
+      ]
+    },
+    "exam-countdown": {
+      "seoTitle": "Hitung Mundur Ujian & Tenggat – Timer Berapa Hari Lagi Gratis untuk Pelajar",
+      "metaDescription": "Hitung mundur ke ujian, tenggat, dan perjalanan dengan hari, jam, menit, dan detik langsung. Tambahkan banyak acara, diberi warna sesuai urgensi. Gratis dan privat, tersimpan di browser Anda.",
+      "h1": "Hitung Mundur Ujian & Tenggat",
+      "subheading": "Lihat persis berapa waktu tersisa hingga ujian, tenggat, atau perjalanan Anda berikutnya, dengan hari, jam, menit, dan detik secara langsung.",
+      "keywords": [
+        "hitung mundur ujian",
+        "berapa hari lagi ujian",
+        "hitung mundur tenggat",
+        "timer hitung mundur ke tanggal",
+        "hitung mundur belajar",
+        "berapa hari lagi",
+        "timer ujian",
+        "hitung mundur acara"
+      ],
+      "howTo": [
+        {
+          "name": "Beri nama acara",
+          "text": "Ketik apa yang sedang Anda hitung mundur, misalnya Ujian akhir Kimia."
+        },
+        {
+          "name": "Pilih tanggal dan jam",
+          "text": "Pilih waktu yang tepat, atau ketuk pilihan cepat seperti Besok, Seminggu lagi, atau 100 hari lagi."
+        },
+        {
+          "name": "Pantau jam",
+          "text": "Acara terdekat ditampilkan besar, dengan warna yang berubah dari hijau ke kuning ke merah saat makin dekat."
+        },
+        {
+          "name": "Rencanakan mundur",
+          "text": "Gunakan jumlah hari tersisa untuk membagi materi belajar menjadi target harian. Acara yang sudah lewat disimpan di bawah Lewat."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bisakah saya menghitung mundur ke lebih dari satu tanggal?",
+          "answer": "Bisa. Tambahkan ujian dan tenggat sebanyak yang Anda mau. Semuanya diurutkan dari yang terdekat."
+        },
+        {
+          "question": "Apa arti warna-warnanya?",
+          "answer": "Hijau berarti lebih dari dua minggu lagi, kuning berarti dalam dua minggu, dan merah berarti dalam tiga hari. Acara yang sudah lewat berwarna abu-abu."
+        },
+        {
+          "question": "Apakah zona waktu ditangani dengan benar?",
+          "answer": "Tanggal dan jam yang Anda pilih memakai zona waktu lokal perangkat Anda, dan hitung mundur memakai jam yang sama."
+        },
+        {
+          "question": "Apakah terus menghitung saat halaman ditutup?",
+          "answer": "Halaman harus terbuka untuk menampilkan detik secara langsung, tetapi acara Anda tersimpan, sehingga sisa waktu yang benar langsung muncul begitu Anda membukanya lagi."
+        },
+        {
+          "question": "Apakah acara saya diunggah?",
+          "answer": "Tidak. Semuanya hanya disimpan di browser pada perangkat ini."
+        },
+        {
+          "question": "Bagaimana sebaiknya memanfaatkan sisa hari?",
+          "answer": "Bagi topik yang masih harus dipelajari dengan jumlah hari tersisa. Hitung mundur membuat tenggat terasa nyata dan membantu Anda mulai lebih awal."
+        },
+        {
+          "question": "Bisakah dipakai untuk acara non-belajar?",
+          "answer": "Bisa. Cocok untuk tanggal apa pun: penerbangan, ulang tahun, peluncuran produk, atau liburan."
+        }
+      ]
+    },
+    "habit-tracker": {
+      "seoTitle": "Pelacak Kebiasaan – Pelacak Streak Harian Gratis untuk Belajar & Rutinitas",
+      "metaDescription": "Lacak kebiasaan harian seperti belajar, membaca, atau olahraga. Centang hari, lihat streak saat ini dan terbaik, penyelesaian 30 hari, serta peta panas 5 minggu. Gratis dan privat.",
+      "h1": "Pelacak Kebiasaan & Streak",
+      "subheading": "Bangun rutinitas satu hari demi satu hari — centang kebiasaan Anda, jaga streak tetap menyala, dan lihat kemajuan Anda.",
+      "keywords": [
+        "pelacak kebiasaan",
+        "pelacak streak",
+        "habit tracker harian",
+        "pelacak kebiasaan belajar",
+        "habit tracker gratis",
+        "pelacak rutinitas",
+        "pelacak target harian",
+        "penghitung streak kebiasaan"
+      ],
+      "howTo": [
+        {
+          "name": "Tambahkan kebiasaan",
+          "text": "Ketik kebiasaan kecil dan spesifik seperti Ulas catatan selama 20 menit, atau ketuk salah satu saran."
+        },
+        {
+          "name": "Centang",
+          "text": "Setiap hari, ketuk hari tersebut di baris minggu. Ketuk lagi untuk membatalkan. Anda juga bisa mengisi hari yang terlewat."
+        },
+        {
+          "name": "Jaga streak Anda",
+          "text": "Api menunjukkan berapa hari berturut-turut Anda melakukannya. Jika hari ini belum dicentang, streak kemarin tetap dihitung."
+        },
+        {
+          "name": "Tinjau kemajuan",
+          "text": "Lihat streak terbaik Anda, persentase 30 hari terakhir yang Anda selesaikan, dan peta panas 5 minggu untuk setiap kebiasaan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana streak dihitung?",
+          "answer": "Streak adalah jumlah hari berturut-turut yang dicentang, berakhir hari ini. Jika hari ini belum dicentang, streak yang berakhir kemarin tetap ditampilkan agar tidak hilang sebelum hari berakhir."
+        },
+        {
+          "question": "Apa yang membuat kebiasaan baik?",
+          "answer": "Kecil dan spesifik. Mengulang materi selama dua puluh menit lebih mudah diulang daripada belajar lebih banyak. Kaitkan dengan sesuatu yang sudah Anda lakukan, seperti setelah sarapan."
+        },
+        {
+          "question": "Bisakah saya mengedit hari yang sudah lewat?",
+          "answer": "Bisa. Ketuk hari mana pun dalam tujuh hari terakhir untuk mengaktifkan atau menonaktifkannya."
+        },
+        {
+          "question": "Berapa banyak kebiasaan yang sebaiknya dilacak?",
+          "answer": "Dua sampai lima sudah cukup. Terlalu banyak membuat sulit konsisten, dan satu hari terlewat bisa terasa seperti kegagalan."
+        },
+        {
+          "question": "Apakah data saya privat?",
+          "answer": "Ya. Kebiasaan hanya disimpan di browser pada perangkat ini. Tidak ada yang diunggah atau dibagikan."
+        },
+        {
+          "question": "Bagaimana jika streak saya putus?",
+          "answer": "Mulai lagi hari ini. Streak terbaik tetap tersimpan, dan tingkat penyelesaian 30 hari menunjukkan bahwa satu hari terlewat tidak menghapus kemajuan Anda."
+        },
+        {
+          "question": "Apakah cocok dengan timer Pomodoro?",
+          "answer": "Keduanya cocok dipadukan: tambahkan kebiasaan seperti Dua sesi fokus dan centang setelah timer Anda selesai."
         }
       ]
     }

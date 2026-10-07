@@ -1,16 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { Dices, Save, X, Maximize2 } from "lucide-react";
+import { Dices, Save, X } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
-import { Confetti } from "@/components/tools/random-decision/Confetti";
+import { RandomStage, type Reveal } from "@/components/tools/random-decision/RandomStage";
 
 const DIE_SIZES = [4, 6, 8, 10, 12, 20] as const;
 type DieSize = (typeof DIE_SIZES)[number];
@@ -28,8 +27,7 @@ export default function DiceRoller() {
   const [rolling, setRolling] = React.useState(false);
   const [current, setCurrent] = React.useState<Roll | null>(null);
   const [rolls, setRolls] = React.useState<Roll[]>([]);
-  const [celebrate, setCelebrate] = React.useState(0);
-  const [fullscreen, setFullscreen] = React.useState(false);
+  const [reveal, setReveal] = React.useState<Reveal | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const roll = () => {
@@ -41,7 +39,14 @@ export default function DiceRoller() {
       setCurrent(result);
       setRolls((prev) => [result, ...prev].slice(0, 20));
       setRolling(false);
-      setCelebrate((c) => c + 1);
+      setReveal({
+        id: Date.now(),
+        items: [String(result.total)],
+        label: "You rolled",
+        sub: `${count}d${sides}: ${values.join(" + ")}`,
+        icon: <Dices />,
+        confetti: result.total >= count * sides * 0.85,
+      });
     }, 400);
   };
 
@@ -56,7 +61,6 @@ export default function DiceRoller() {
 
   const diceBlock = (isFullscreen: boolean) => (
     <div className="relative space-y-4 p-6">
-      <Confetti fire={celebrate} />
       <div
         className={cn(
           "flex flex-wrap justify-center gap-3 rounded-lg border border-border bg-muted/20 p-6",
@@ -96,12 +100,6 @@ export default function DiceRoller() {
           <Button variant="outline" onClick={handleSave}>
             <Save className="h-4 w-4" />
             Save
-          </Button>
-        )}
-        {!isFullscreen && (
-          <Button variant="outline" onClick={() => setFullscreen(true)}>
-            <Maximize2 className="h-4 w-4" />
-            Fullscreen
           </Button>
         )}
       </div>
@@ -144,14 +142,9 @@ export default function DiceRoller() {
         </div>
       </Card>
 
-      <Card className="overflow-hidden">{diceBlock(false)}</Card>
-
-      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
-        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
-          <DialogTitle className="sr-only">Dice roller — fullscreen</DialogTitle>
-          {diceBlock(true)}
-        </DialogContent>
-      </Dialog>
+      <RandomStage reveal={reveal} onAgain={roll} againLabel="Roll again" onSave={handleSave}>
+        {diceBlock}
+      </RandomStage>
 
       {rolls.length > 0 && (
         <Card className="space-y-2 p-4">

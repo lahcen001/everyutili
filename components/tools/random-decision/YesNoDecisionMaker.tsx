@@ -1,24 +1,22 @@
 "use client";
 
 import * as React from "react";
-import { HelpCircle, Save, Maximize2 } from "lucide-react";
+import { HelpCircle, Save } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
-import { Confetti } from "@/components/tools/random-decision/Confetti";
+import { RandomStage, type Reveal } from "@/components/tools/random-decision/RandomStage";
 
 export default function YesNoDecisionMaker() {
   useTrackTool("yes-no-decision-maker");
   const [question, setQuestion] = React.useState("");
   const [answer, setAnswer] = React.useState<"Yes" | "No" | null>(null);
   const [deciding, setDeciding] = React.useState(false);
-  const [celebrate, setCelebrate] = React.useState(0);
-  const [fullscreen, setFullscreen] = React.useState(false);
+  const [reveal, setReveal] = React.useState<Reveal | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const decide = () => {
@@ -30,7 +28,15 @@ export default function YesNoDecisionMaker() {
       setDeciding(false);
       // Only a "Yes" reads as a celebration-worthy reveal — confetti on "No"
       // would feel like the tool is mocking the user.
-      if (outcome === "Yes") setCelebrate((c) => c + 1);
+      setReveal({
+        id: Date.now(),
+        items: [outcome],
+        label: "The answer is",
+        sub: question.trim() || undefined,
+        color: outcome === "Yes" ? "#10b981" : "#ef4444",
+        icon: <HelpCircle />,
+        confetti: outcome === "Yes",
+      });
     }, 500);
   };
 
@@ -45,7 +51,6 @@ export default function YesNoDecisionMaker() {
 
   const answerBlock = (isFullscreen: boolean) => (
     <div className="relative flex flex-col items-center gap-6 p-8">
-      <Confetti fire={celebrate} />
       <div
         className={cn(
           "flex items-center justify-center rounded-full border-4 font-bold transition-all duration-300",
@@ -70,12 +75,6 @@ export default function YesNoDecisionMaker() {
             Save
           </Button>
         )}
-        {!isFullscreen && (
-          <Button variant="outline" onClick={() => setFullscreen(true)}>
-            <Maximize2 className="h-4 w-4" />
-            Fullscreen
-          </Button>
-        )}
       </div>
     </div>
   );
@@ -94,14 +93,9 @@ export default function YesNoDecisionMaker() {
         </label>
       </Card>
 
-      <Card className="overflow-hidden">{answerBlock(false)}</Card>
-
-      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
-        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
-          <DialogTitle className="sr-only">Yes or no decision maker — fullscreen</DialogTitle>
-          {answerBlock(true)}
-        </DialogContent>
-      </Dialog>
+      <RandomStage reveal={reveal} onAgain={decide} againLabel="Ask again" onSave={handleSave}>
+        {answerBlock}
+      </RandomStage>
 
       <ToolHistoryList ref={historyRef} toolSlug="yes-no-decision-maker" />
     </div>

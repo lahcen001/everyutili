@@ -1,16 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { Ticket, Save, Maximize2 } from "lucide-react";
+import { Ticket, Save } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { CopyButton } from "@/components/tool-shell/CopyButton";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
-import { Confetti } from "@/components/tools/random-decision/Confetti";
+import { RandomStage, type Reveal } from "@/components/tools/random-decision/RandomStage";
 
 function parseEntries(input: string): string[] {
   return input
@@ -38,8 +37,7 @@ export default function RafflePicker() {
   const [winnerCount, setWinnerCount] = React.useState(1);
   const [drawing, setDrawing] = React.useState(false);
   const [winners, setWinners] = React.useState<string[] | null>(null);
-  const [celebrate, setCelebrate] = React.useState(0);
-  const [fullscreen, setFullscreen] = React.useState(false);
+  const [reveal, setReveal] = React.useState<Reveal | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const entries = React.useMemo(() => parseEntries(input), [input]);
@@ -50,9 +48,10 @@ export default function RafflePicker() {
     setDrawing(true);
     setWinners(null);
     window.setTimeout(() => {
-      setWinners(drawWinners(entries, Math.min(winnerCount, entries.length)));
+      const drawn = drawWinners(entries, Math.min(winnerCount, entries.length));
+      setWinners(drawn);
       setDrawing(false);
-      setCelebrate((c) => c + 1);
+      setReveal({ id: Date.now(), items: drawn, label: drawn.length === 1 ? "The winner is" : `${drawn.length} winners`, icon: <Ticket /> });
     }, 900);
   };
 
@@ -71,7 +70,6 @@ export default function RafflePicker() {
 
   const resultBlock = (isFullscreen: boolean) => (
     <div className="relative space-y-3 p-6">
-      <Confetti fire={celebrate} />
       {drawing ? (
         <div className="flex items-center justify-center gap-2 py-8 text-muted-foreground">
           <Ticket className="h-5 w-5 animate-bounce" />
@@ -116,17 +114,6 @@ export default function RafflePicker() {
             </Button>
           </>
         )}
-        {!isFullscreen && (
-          <Button
-            size="sm"
-            variant="outline"
-            onClick={() => setFullscreen(true)}
-            disabled={entries.length === 0}
-          >
-            <Maximize2 className="h-3.5 w-3.5" />
-            Fullscreen
-          </Button>
-        )}
       </div>
     </div>
   );
@@ -162,14 +149,9 @@ export default function RafflePicker() {
         </label>
       </Card>
 
-      <Card className="overflow-hidden">{resultBlock(false)}</Card>
-
-      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
-        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
-          <DialogTitle className="sr-only">Raffle picker — fullscreen</DialogTitle>
-          {resultBlock(true)}
-        </DialogContent>
-      </Dialog>
+      <RandomStage reveal={reveal} onAgain={draw} againLabel="Draw again" onSave={handleSave}>
+        {resultBlock}
+      </RandomStage>
 
       <ToolHistoryList ref={historyRef} toolSlug="raffle-picker" onRestore={restoreResult} />
     </div>

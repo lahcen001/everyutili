@@ -1,16 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { Coins, Save, Maximize2 } from "lucide-react";
+import { Coins, Save } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
-import { Confetti } from "@/components/tools/random-decision/Confetti";
+import { RandomStage, type Reveal } from "@/components/tools/random-decision/RandomStage";
 
 type Side = "heads" | "tails";
 
@@ -20,8 +19,7 @@ export default function CoinFlip() {
   const [result, setResult] = React.useState<Side[] | null>(null);
   const [flipping, setFlipping] = React.useState(false);
   const [history, setHistory] = React.useState<Side[]>([]);
-  const [celebrate, setCelebrate] = React.useState(0);
-  const [fullscreen, setFullscreen] = React.useState(false);
+  const [reveal, setReveal] = React.useState<Reveal | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const tally = React.useMemo(() => {
@@ -37,7 +35,14 @@ export default function CoinFlip() {
       setResult(outcome);
       setHistory((prev) => [...prev, ...outcome]);
       setFlipping(false);
-      setCelebrate((c) => c + 1);
+      const h = outcome.filter((s) => s === "heads").length;
+      setReveal({
+        id: Date.now(),
+        items: [outcome.length === 1 ? (outcome[0] === "heads" ? "Heads" : "Tails") : `${h} heads · ${outcome.length - h} tails`],
+        label: outcome.length === 1 ? "It's" : "Result",
+        color: outcome.length === 1 ? (outcome[0] === "heads" ? "#f59e0b" : "#3b82f6") : "#7c74ff",
+        icon: <Coins />,
+      });
     }, 600);
   };
 
@@ -58,7 +63,6 @@ export default function CoinFlip() {
 
   const coinBlock = (isFullscreen: boolean) => (
     <div className="relative flex flex-col items-center gap-6 p-8">
-      <Confetti fire={celebrate} />
       <div className="flex max-w-full flex-wrap items-center justify-center gap-3">
         {Array.from({ length: coins }, (_, i) => {
           const side = result?.[i];
@@ -92,12 +96,6 @@ export default function CoinFlip() {
           <Button variant="outline" onClick={handleSave}>
             <Save className="h-4 w-4" />
             Save
-          </Button>
-        )}
-        {!isFullscreen && (
-          <Button variant="outline" onClick={() => setFullscreen(true)}>
-            <Maximize2 className="h-4 w-4" />
-            Fullscreen
           </Button>
         )}
       </div>
@@ -137,14 +135,9 @@ export default function CoinFlip() {
 
   return (
     <div className="space-y-6">
-      <Card className="overflow-hidden">{coinBlock(false)}</Card>
-
-      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
-        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
-          <DialogTitle className="sr-only">Coin flip — fullscreen</DialogTitle>
-          {coinBlock(true)}
-        </DialogContent>
-      </Dialog>
+      <RandomStage reveal={reveal} onAgain={flip} againLabel="Flip again" onSave={handleSave}>
+        {coinBlock}
+      </RandomStage>
 
       <ToolHistoryList ref={historyRef} toolSlug="coin-flip" />
     </div>

@@ -1,16 +1,15 @@
 "use client";
 
 import * as React from "react";
-import { UserCheck, Save, Maximize2 } from "lucide-react";
+import { UserCheck, Save } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { CopyButton } from "@/components/tool-shell/CopyButton";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { saveToolResult, type ToolHistoryItem } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
-import { Confetti } from "@/components/tools/random-decision/Confetti";
+import { RandomStage, type Reveal } from "@/components/tools/random-decision/RandomStage";
 
 function parseNames(input: string): string[] {
   return input
@@ -36,16 +35,16 @@ export default function RandomNamePicker() {
   const [pickCount, setPickCount] = React.useState(1);
   const [picked, setPicked] = React.useState<string[] | null>(null);
   const [removeAfterPick, setRemoveAfterPick] = React.useState(false);
-  const [celebrate, setCelebrate] = React.useState(0);
-  const [fullscreen, setFullscreen] = React.useState(false);
+  const [reveal, setReveal] = React.useState<Reveal | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 
   const names = React.useMemo(() => parseNames(input), [input]);
 
   const pick = () => {
+    if (names.length === 0) return;
     const result = pickRandom(names, Math.min(pickCount, names.length));
     setPicked(result);
-    setCelebrate((c) => c + 1);
+    setReveal({ id: Date.now(), items: result, label: result.length === 1 ? "The winner is" : `${result.length} picked`, icon: <UserCheck /> });
     if (removeAfterPick) {
       // Remove exactly the picked entries (handles duplicate names in the
       // list correctly, unlike a plain value-based filter).
@@ -75,7 +74,6 @@ export default function RandomNamePicker() {
 
   const resultBlock = (isFullscreen: boolean) => (
     <div className="relative space-y-3 p-6">
-      <Confetti fire={celebrate} />
       {picked && picked.length > 0 ? (
         <div
           className={
@@ -113,12 +111,6 @@ export default function RandomNamePicker() {
               Save
             </Button>
           </>
-        )}
-        {!isFullscreen && (
-          <Button size="sm" variant="outline" onClick={() => setFullscreen(true)} disabled={names.length === 0}>
-            <Maximize2 className="h-3.5 w-3.5" />
-            Fullscreen
-          </Button>
         )}
       </div>
     </div>
@@ -163,14 +155,9 @@ export default function RandomNamePicker() {
         </div>
       </Card>
 
-      <Card className="overflow-hidden">{resultBlock(false)}</Card>
-
-      <Dialog open={fullscreen} onOpenChange={setFullscreen}>
-        <DialogContent className="flex h-[90vh] w-full max-w-[95vw] flex-col items-center justify-center gap-0 overflow-hidden p-0 sm:max-w-[95vw]">
-          <DialogTitle className="sr-only">Random name picker — fullscreen</DialogTitle>
-          {resultBlock(true)}
-        </DialogContent>
-      </Dialog>
+      <RandomStage reveal={reveal} onAgain={pick} againLabel="Pick again" onSave={handleSave}>
+        {resultBlock}
+      </RandomStage>
 
       <ToolHistoryList ref={historyRef} toolSlug="random-name-picker" onRestore={restoreResult} />
     </div>

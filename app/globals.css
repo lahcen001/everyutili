@@ -274,3 +274,116 @@ body {
 .regex-match-a { background: color-mix(in srgb, var(--primary) 28%, transparent); border-radius: 2px; box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 55%, transparent); }
 .regex-match-b { background: color-mix(in srgb, #f59e0b 30%, transparent); border-radius: 2px; box-shadow: 0 0 0 1px color-mix(in srgb, #f59e0b 60%, transparent); }
 .regex-group { background: color-mix(in srgb, #10b981 35%, transparent); border-radius: 2px; }
+
+/* ------------------------------------------------------------------ */
+/* Pro tool surface: refined controls for the media tools              */
+/* ------------------------------------------------------------------ */
+
+.pro-tool .bg-card {
+  border-radius: 1rem;
+  border-color: color-mix(in oklab, var(--border) 70%, transparent);
+  background-image: linear-gradient(180deg, color-mix(in oklab, var(--primary) 4%, transparent), transparent 40%);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px -12px color-mix(in oklab, var(--primary) 22%, transparent);
+}
+
+.pro-tool input:not([type="range"]):not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="file"]),
+.pro-tool select,
+.pro-tool textarea {
+  border-radius: 0.75rem;
+  border-color: color-mix(in oklab, var(--border) 85%, transparent);
+  background-color: color-mix(in oklab, var(--background) 92%, var(--muted));
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.pro-tool input:not([type="range"]):not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="file"]):focus,
+.pro-tool select:focus,
+.pro-tool textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 18%, transparent);
+  outline: none;
+}
+
+.pro-tool input[type="checkbox"],
+.pro-tool input[type="radio"] {
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+/* sliders: slim track, round lifted thumb */
+.pro-tool input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1.25rem;
+  background: transparent;
+  cursor: pointer;
+}
+.pro-tool input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--primary) 18%, var(--muted));
+}
+.pro-tool input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--primary) 18%, var(--muted));
+}
+.pro-tool input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -6px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: var(--primary);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  transition: transform 0.15s;
+}
+.pro-tool input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: var(--primary);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+}
+.pro-tool input[type="range"]:hover::-webkit-slider-thumb,
+.pro-tool input[type="range"]:focus-visible::-webkit-slider-thumb {
+  transform: scale(1.15);
+}
+.pro-tool input[type="range"]:focus-visible {
+  outline: none;
+}
+
+/* primary buttons: soft gradient and lift */
+.pro-tool button.bg-primary,
+.pro-tool a.bg-primary {
+  background-image: linear-gradient(180deg, color-mix(in oklab, white 14%, transparent), transparent);
+  box-shadow: 0 6px 16px -6px color-mix(in oklab, var(--primary) 70%, transparent);
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+.pro-tool button.bg-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px -8px color-mix(in oklab, var(--primary) 80%, transparent);
+}
+.pro-tool button.bg-primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+.pro-tool button.bg-primary:disabled {
+  box-shadow: none;
+}
+.pro-tool button.border:not(:disabled):hover {
+  border-color: color-mix(in oklab, var(--primary) 55%, var(--border));
+}
+
+/* video / canvas previews get a soft frame */
+.pro-tool video,
+.pro-tool canvas {
+  border-radius: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pro-tool button.bg-primary,
+  .pro-tool input[type="range"]::-webkit-slider-thumb {
+    transition: none;
+  }
+}

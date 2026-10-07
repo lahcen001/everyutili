@@ -12,6 +12,8 @@ interface ToolLayoutProps {
   aboveTool?: ReactNode;
   /** Wide, viewport-tall layout for editor-style tools. */
   wide?: boolean;
+  /** Extra-polished control styling (used by the media tools). */
+  pro?: boolean;
 }
 
 export async function ToolLayout({
@@ -21,6 +23,7 @@ export async function ToolLayout({
   children,
   aboveTool,
   wide = false,
+  pro = false,
 }: ToolLayoutProps) {
   const header = (compact: boolean) => (
     <div className={compact ? "mt-3 flex flex-col items-center gap-2 text-center" : "mt-4 flex flex-col items-center gap-3 text-center"}>
@@ -49,7 +52,7 @@ export async function ToolLayout({
         <div className="relative mx-auto max-w-[1600px] px-3 pt-4 sm:px-6">
           <Breadcrumbs items={breadcrumbs} />
           {header(true)}
-          <div className="mt-5">{children}</div>
+          <div className={pro ? "pro-tool mt-5" : "mt-5"}>{children}</div>
           {aboveTool}
         </div>
       </div>
@@ -66,7 +69,7 @@ export async function ToolLayout({
         {aboveTool}
 
         <MotionSection>
-          <div className="glass mt-6 rounded-2xl p-4 shadow-lg shadow-primary/5">{children}</div>
+          <div className={`glass mt-6 rounded-2xl p-4 shadow-lg shadow-primary/5${pro ? " pro-tool" : ""}`}>{children}</div>
         </MotionSection>
       </div>
     </div>

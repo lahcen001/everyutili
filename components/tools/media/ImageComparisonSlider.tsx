@@ -13,6 +13,8 @@ interface ImageComparisonSliderProps {
   originalLabel?: string;
   processedLabel?: string;
   className?: string;
+  /** Fill the parent (height and width) instead of using a 16:9 box. */
+  fill?: boolean;
 }
 
 const ZOOM_STEPS: { value: ZoomLevel; label: string }[] = [
@@ -27,6 +29,7 @@ export function ImageComparisonSlider({
   originalLabel,
   processedLabel,
   className,
+  fill = false,
 }: ImageComparisonSliderProps) {
   const [position, setPosition] = React.useState(50);
   const [zoom, setZoom] = React.useState<ZoomLevel>("fit");
@@ -60,7 +63,7 @@ export function ImageComparisonSlider({
   const scale = zoom === "fit" ? 1 : zoom;
 
   return (
-    <div className={cn("space-y-3", className)}>
+    <div className={cn(fill ? "flex h-full w-full flex-col gap-3" : "space-y-3", className)}>
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-1 rounded-lg border border-border bg-muted/30 p-1">
           {ZOOM_STEPS.map((step) => (
@@ -87,7 +90,7 @@ export function ImageComparisonSlider({
 
       <div
         ref={containerRef}
-        className="relative aspect-video w-full select-none overflow-hidden rounded-lg border border-border bg-muted/30 touch-none"
+        className={cn("relative w-full select-none overflow-hidden rounded-lg border border-border bg-muted/30 touch-none", fill ? "min-h-0 flex-1" : "aspect-video")}
       >
         <div
           className="absolute inset-0 flex items-center justify-center"

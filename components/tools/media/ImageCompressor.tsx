@@ -1,22 +1,21 @@
 "use client";
 
 import * as React from "react";
-import { Download, ImageDown, Loader2, Maximize2, X } from "lucide-react";
+import JSZip from "jszip";
+import { Download, Loader2, Maximize2, PackageOpen } from "lucide-react";
 
-import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { SidebarSection, SliderRow } from "@/components/tools/shared/EditorLayout";
+import { ImageComparisonSlider } from "@/components/tools/media/ImageComparisonSlider";
+import { BatchWorkspace } from "@/components/tools/media/BatchWorkspace";
+import { useBatchProcessor, type BatchProcessable } from "@/components/tools/media/useBatchProcessor";
+import { ImageDeepInspector, type ImageInspectorItem } from "@/components/shared/inspectors/ImageDeepInspector";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
-import { ImageComparisonSlider } from "@/components/tools/media/ImageComparisonSlider";
-import {
-  ImageDeepInspector,
-  type ImageInspectorItem,
-} from "@/components/shared/inspectors/ImageDeepInspector";
 import type { ImageConvertRequest, ImageConvertResponse } from "@/workers/image-converter.worker";
 
 const EXTENSION_BY_MIME: Record<string, string> = {
@@ -25,300 +24,258 @@ const EXTENSION_BY_MIME: Record<string, string> = {
   "image/webp": "webp",
 };
 
-interface QueueItem {
-  id: string;
+interface QueueItem extends BatchProcessable {
   file: File;
-  status: "pending" | "processing" | "done" | "error";
-  resultBlob?: Blob;
+  thumbUrl: string;
   error?: string;
+  resultBlob?: Blob;
+  originalUrl?: string;
+  processedUrl?: string;
 }
 
-interface PreviewUrls {
-  originalUrl: string;
-  processedUrl: string;
-  resultBlob: Blob;
-}
+const PRESETS = [
+  { label: "Small file", quality: 55 },
+  { label: "Balanced", quality: 75 },
+  { label: "High quality", quality: 90 },
+];
+
+const outName = (item: QueueItem) => {
+  const base = item.file.name.replace(/\.[^/.]+$/, "");
+  return `${base}-compressed.${EXTENSION_BY_MIME[item.resultBlob?.type ?? ""] ?? "jpg"}`;
+};
+const pct = (orig: number, now: number) => (orig > 0 ? Math.round((1 - now / orig) * 100) : 0);
 
 export default function ImageCompressor() {
   useTrackTool("image-compressor");
   const [queue, setQueue] = React.useState<QueueItem[]>([]);
-  const [quality, setQuality] = React.useState(0.7);
-  const [isProcessing, setIsProcessing] = React.useState(false);
-  const [previewUrls, setPreviewUrls] = React.useState<Map<string, PreviewUrls>>(new Map());
+  const [selectedId, setSelectedId] = React.useState<string | null>(null);
+  const [quality, setQuality] = React.useState(0.75);
+  const [pngToJpg, setPngToJpg] = React.useState(true);
+  const [limitWidth, setLimitWidth] = React.useState(false);
+  const [maxWidth, setMaxWidth] = React.useState(2560);
+  const [inspectorOpen, setInspectorOpen] = React.useState(false);
   const workerRef = React.useRef<Worker | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
-  const [inspectorOpen, setInspectorOpen] = React.useState(false);
-  const [inspectorIndex, setInspectorIndex] = React.useState(0);
+  const urlsRef = React.useRef<Set<string>>(new Set());
 
   React.useEffect(() => {
-    workerRef.current = new Worker(
-      new URL("@/workers/image-converter.worker.ts", import.meta.url)
-    );
-    return () => workerRef.current?.terminate();
-  }, []);
-
-  const previewUrlsRef = React.useRef(previewUrls);
-  previewUrlsRef.current = previewUrls;
-
-  React.useEffect(() => {
-    setPreviewUrls((prev) => {
-      const next = new Map(prev);
-      let changed = false;
-
-      for (const [id, urls] of prev) {
-        const item = queue.find((q) => q.id === id);
-        if (!item || item.resultBlob !== urls.resultBlob) {
-          URL.revokeObjectURL(urls.originalUrl);
-          URL.revokeObjectURL(urls.processedUrl);
-          next.delete(id);
-          changed = true;
-        }
-      }
-
-      for (const item of queue) {
-        if (item.status === "done" && item.resultBlob && !next.has(item.id)) {
-          next.set(item.id, {
-            originalUrl: URL.createObjectURL(item.file),
-            processedUrl: URL.createObjectURL(item.resultBlob),
-            resultBlob: item.resultBlob,
-          });
-          changed = true;
-        }
-      }
-
-      return changed ? next : prev;
-    });
-  }, [queue]);
-
-  React.useEffect(() => {
+    workerRef.current = new Worker(new URL("@/workers/image-converter.worker.ts", import.meta.url));
+    const urls = urlsRef.current;
     return () => {
-      for (const urls of previewUrlsRef.current.values()) {
-        URL.revokeObjectURL(urls.originalUrl);
-        URL.revokeObjectURL(urls.processedUrl);
-      }
+      workerRef.current?.terminate();
+      urls.forEach((u) => URL.revokeObjectURL(u));
+      urls.clear();
     };
   }, []);
+
+  const makeUrl = (blob: Blob) => {
+    const u = URL.createObjectURL(blob);
+    urlsRef.current.add(u);
+    return u;
+  };
+  const dropUrl = (u?: string) => {
+    if (!u) return;
+    URL.revokeObjectURL(u);
+    urlsRef.current.delete(u);
+  };
 
   const handleFiles = (files: File[]) => {
     const items: QueueItem[] = files
-      .filter((f) => f.type.startsWith("image/"))
-      .map((file) => ({ id: crypto.randomUUID(), file, status: "pending" }));
+      .filter((f) => f.type.startsWith("image/") && f.type !== "image/svg+xml")
+      .map((file) => ({ id: crypto.randomUUID(), file, status: "pending", thumbUrl: makeUrl(file) }));
+    if (items.length === 0) return;
     setQueue((prev) => [...prev, ...items]);
+    setSelectedId((cur) => cur ?? items[0].id);
   };
 
-  // Picks up a "Send to..." handoff from another tool (e.g. Screenshot
-  // Beautifier's output opened here via ?from=<id>) and feeds it through
-  // the exact same path as a manual drop.
+  // Picks up a "Send to..." handoff from another tool via ?from=<id>.
   useIncomingHandoff((file) => handleFiles([file]));
 
-  const removeItem = (id: string) => setQueue((prev) => prev.filter((item) => item.id !== id));
-
-  const compressAll = async () => {
-    const worker = workerRef.current;
-    if (!worker) return;
-    setIsProcessing(true);
-    const pending = queue.filter((item) => item.status !== "done");
-    for (const item of pending) {
-      setQueue((prev) => prev.map((q) => (q.id === item.id ? { ...q, status: "processing" } : q)));
-      try {
-        // PNG is lossless, so quality alone won't shrink it — recompress as JPEG.
-        // Every other format keeps its own encoding (JPEG stays JPEG, WebP stays WebP).
-        const isPng = item.file.type === "image/png";
-
-        const response = await new Promise<ImageConvertResponse>((resolve) => {
-          const handleMessage = (event: MessageEvent<ImageConvertResponse>) => {
-            if (event.data.id === item.id) {
-              worker.removeEventListener("message", handleMessage);
-              resolve(event.data);
-            }
-          };
-          worker.addEventListener("message", handleMessage);
-
-          const request: ImageConvertRequest = {
-            id: item.id,
-            file: item.file,
-            format: isPng ? "jpeg" : "auto",
-            quality,
-            maxWidth: null,
-          };
-          worker.postMessage(request);
-        });
-
-        if (response.status === "error") throw new Error(response.message);
-        const blob = response.blob;
-        setQueue((prev) =>
-          prev.map((q) => (q.id === item.id ? { ...q, status: "done", resultBlob: blob } : q))
-        );
-
-        const baseName = item.file.name.replace(/\.[^/.]+$/, "");
-        const ext = EXTENSION_BY_MIME[blob.type] ?? "jpg";
-        await saveToolResult("image-compressor", {
-          title: `${baseName}-compressed.${ext}`,
-          summary: `${item.file.name} → ${formatBytes(blob.size)} (${Math.round(
-            (1 - blob.size / item.file.size) * 100
-          )}% smaller)`,
-          blob,
-        });
-        historyRef.current?.refresh();
-      } catch (e) {
-        setQueue((prev) =>
-          prev.map((q) =>
-            q.id === item.id
-              ? { ...q, status: "error", error: e instanceof Error ? e.message : "Failed" }
-              : q
-          )
-        );
-      }
-    }
-    setIsProcessing(false);
+  const removeItem = (id: string) => {
+    const item = queue.find((q) => q.id === id);
+    if (item) [item.thumbUrl, item.originalUrl, item.processedUrl].forEach(dropUrl);
+    setQueue((prev) => prev.filter((q) => q.id !== id));
   };
 
-  const downloadItem = (item: QueueItem) => {
-    if (!item.resultBlob) return;
-    const baseName = item.file.name.replace(/\.[^/.]+$/, "");
-    const ext = EXTENSION_BY_MIME[item.resultBlob.type] ?? "jpg";
-    downloadBlob(item.resultBlob, `${baseName}-compressed.${ext}`);
-  };
+  const settingsKey = JSON.stringify([quality, pngToJpg, limitWidth, maxWidth]);
 
-  const doneItems = queue.filter(
-    (item): item is QueueItem & { resultBlob: Blob } =>
-      item.status === "done" && Boolean(item.resultBlob) && previewUrls.has(item.id)
+  const process = React.useCallback(
+    async (item: QueueItem): Promise<Partial<QueueItem>> => {
+      const worker = workerRef.current;
+      if (!worker) throw new Error("Compressor not ready");
+      // PNG is lossless, so quality alone won't shrink it — optionally recompress as JPEG.
+      // Every other format keeps its own encoding (JPEG stays JPEG, WebP stays WebP).
+      const response = await new Promise<ImageConvertResponse>((resolve) => {
+        const onMessage = (event: MessageEvent<ImageConvertResponse>) => {
+          if (event.data.id === item.id) {
+            worker.removeEventListener("message", onMessage);
+            resolve(event.data);
+          }
+        };
+        worker.addEventListener("message", onMessage);
+        const request: ImageConvertRequest = {
+          id: item.id,
+          file: item.file,
+          format: item.file.type === "image/png" && pngToJpg ? "jpeg" : "auto",
+          quality,
+          maxWidth: limitWidth ? maxWidth : null,
+        };
+        worker.postMessage(request);
+      });
+      if (response.status === "error") throw new Error(response.message);
+      dropUrl(item.processedUrl);
+      return {
+        resultBlob: response.blob,
+        processedUrl: makeUrl(response.blob),
+        originalUrl: item.originalUrl ?? makeUrl(item.file),
+        error: undefined,
+      };
+    },
+    [quality, pngToJpg, limitWidth, maxWidth]
   );
 
-  const inspectorItems: ImageInspectorItem[] = doneItems.map((item) => {
-    const preview = previewUrls.get(item.id)!;
-    return {
-      id: item.id,
-      name: item.file.name,
-      originalUrl: preview.originalUrl,
-      processedUrl: preview.processedUrl,
-      originalBytes: item.file.size,
-      processedBytes: item.resultBlob.size,
-      mimeType: item.resultBlob.type,
-    };
-  });
+  const { running } = useBatchProcessor({ queue, setQueue, settingsKey, process });
 
-  const openInspectorFor = (id: string) => {
-    const index = doneItems.findIndex((item) => item.id === id);
-    if (index === -1) return;
-    setInspectorIndex(index);
-    setInspectorOpen(true);
+  const done = queue.filter((q): q is QueueItem & { resultBlob: Blob } => q.status === "done" && !!q.resultBlob);
+  const before = done.reduce((s, i) => s + i.file.size, 0);
+  const after = done.reduce((s, i) => s + i.resultBlob.size, 0);
+  const selected = queue.find((q) => q.id === selectedId) ?? queue[0] ?? null;
+
+  const downloadOne = async (item: QueueItem) => {
+    if (!item.resultBlob) return;
+    downloadBlob(item.resultBlob, outName(item));
+    await saveToolResult("image-compressor", {
+      title: outName(item),
+      summary: `${item.file.name} → ${formatBytes(item.resultBlob.size)} (${pct(item.file.size, item.resultBlob.size)}% smaller)`,
+      blob: item.resultBlob,
+    });
+    historyRef.current?.refresh();
   };
+
+  const downloadAllAsZip = async () => {
+    if (done.length === 0) return;
+    const zip = new JSZip();
+    const used = new Set<string>();
+    for (const item of done) {
+      let name = outName(item);
+      for (let n = 2; used.has(name); n++) name = outName(item).replace(/(\.[^.]+)$/, `-${n}$1`);
+      used.add(name);
+      zip.file(name, item.resultBlob);
+    }
+    downloadBlob(await zip.generateAsync({ type: "blob" }), "compressed-images.zip");
+  };
+
+  const inspectorItems: ImageInspectorItem[] = done
+    .filter((i) => i.originalUrl && i.processedUrl)
+    .map((i) => ({
+      id: i.id,
+      name: i.file.name,
+      originalUrl: i.originalUrl!,
+      processedUrl: i.processedUrl!,
+      originalBytes: i.file.size,
+      processedBytes: i.resultBlob.size,
+      mimeType: i.resultBlob.type,
+    }));
+  const inspectorIndex = Math.max(0, inspectorItems.findIndex((i) => i.id === selected?.id));
+
+  const stage = !selected ? null : selected.status === "error" ? (
+    <p role="alert" className="rounded-lg bg-destructive/10 px-4 py-3 text-sm text-destructive">
+      {selected.file.name}: {selected.error}
+    </p>
+  ) : selected.processedUrl && selected.originalUrl && selected.resultBlob ? (
+    <div className="h-full w-full">
+      <ImageComparisonSlider
+        fill
+        originalUrl={selected.originalUrl}
+        processedUrl={selected.processedUrl}
+        originalLabel={`Original: ${formatBytes(selected.file.size)}`}
+        processedLabel={`Compressed: ${formatBytes(selected.resultBlob.size)} (-${pct(selected.file.size, selected.resultBlob.size)}%)`}
+      />
+    </div>
+  ) : (
+    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+      <Loader2 className="h-4 w-4 animate-spin" /> Compressing…
+    </div>
+  );
+
+  const sidebar = (
+    <>
+      <SidebarSection title="Result">
+        <div className="rounded-lg border border-border bg-muted/30 p-3 text-sm">
+          <p className="font-medium">
+            {done.length} of {queue.length} compressed
+            {running && <Loader2 className="ml-2 inline h-3.5 w-3.5 animate-spin text-primary" />}
+          </p>
+          {done.length > 0 && (
+            <>
+              <p className="mt-1 text-muted-foreground" role="status">
+                {formatBytes(before)} → <span className="font-medium text-foreground">{formatBytes(after)}</span>
+              </p>
+              <p className="mt-1 text-2xl font-extrabold text-emerald-600 dark:text-emerald-400">
+                {Math.max(0, pct(before, after))}% <span className="text-sm font-medium">saved</span>
+              </p>
+            </>
+          )}
+        </div>
+      </SidebarSection>
+
+      <SidebarSection title="Compression">
+        <div className="grid grid-cols-3 gap-1.5">
+          {PRESETS.map((p) => (
+            <button key={p.label} onClick={() => setQuality(p.quality / 100)} aria-pressed={Math.round(quality * 100) === p.quality} className={`rounded-lg border px-2 py-1.5 text-xs font-medium transition-colors ${Math.round(quality * 100) === p.quality ? "border-primary bg-primary/10 text-primary" : "border-border hover:bg-muted"}`}>
+              {p.label}
+            </button>
+          ))}
+        </div>
+        <SliderRow label="Quality" value={Math.round(quality * 100)} min={10} max={100} step={5} unit="%" onChange={(v) => setQuality(v / 100)} />
+        <p className="text-xs text-muted-foreground">Changes apply to every file automatically — compare with the slider.</p>
+      </SidebarSection>
+
+      <SidebarSection title="Options">
+        <label className="flex items-start gap-2 text-sm">
+          <input type="checkbox" checked={pngToJpg} onChange={(e) => setPngToJpg(e.target.checked)} className="mt-0.5 h-4 w-4 rounded border-border accent-primary" />
+          <span>
+            Convert PNG to JPG
+            <span className="block text-xs text-muted-foreground">PNG is lossless, so quality alone barely shrinks it. Turn off to keep transparency.</span>
+          </span>
+        </label>
+        <label className="flex items-center gap-2 text-sm">
+          <input type="checkbox" checked={limitWidth} onChange={(e) => setLimitWidth(e.target.checked)} className="h-4 w-4 rounded border-border accent-primary" /> Limit the width
+        </label>
+        {limitWidth && <SliderRow label="Max width" value={maxWidth} min={320} max={8000} step={80} unit="px" onChange={setMaxWidth} />}
+      </SidebarSection>
+    </>
+  );
+
+  const footer = (
+    <>
+      <Button className="flex-1" onClick={downloadAllAsZip} disabled={done.length === 0}>
+        <PackageOpen className="h-4 w-4" /> {done.length > 1 ? `Download all (${done.length}) as ZIP` : "Download ZIP"}
+      </Button>
+      <Button variant="outline" onClick={() => selected && void downloadOne(selected)} disabled={!selected?.resultBlob} aria-label="Download this file">
+        <Download className="h-4 w-4" />
+      </Button>
+      <Button variant="outline" onClick={() => setInspectorOpen(true)} disabled={inspectorItems.length === 0} aria-label="Inspect in full screen">
+        <Maximize2 className="h-4 w-4" />
+      </Button>
+    </>
+  );
 
   return (
     <div className="space-y-6">
-      <DropZone
+      <BatchWorkspace
+        items={queue.map((q) => ({ id: q.id, name: q.file.name, size: q.file.size, status: q.status, error: q.error, thumbUrl: q.thumbUrl, resultSize: q.resultBlob?.size }))}
+        selectedId={selected?.id ?? null}
+        onSelect={setSelectedId}
+        onRemove={removeItem}
         onFiles={handleFiles}
         accept="image/*"
-        label="Drag & drop images here, or click to browse"
-        hint="Compress JPG, PNG, or WebP images entirely in your browser"
+        dropLabel="Drag & drop images here, or click to browse"
+        dropHint="Compress JPG, PNG, or WebP images entirely in your browser"
+        stage={stage}
+        sidebar={sidebar}
+        footer={footer}
       />
-
-      {queue.length > 0 && (
-        <>
-          <Card className="flex flex-wrap items-center gap-4 p-4">
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-medium">Quality</span>
-              <input
-                type="range"
-                min={0.1}
-                max={1}
-                step={0.05}
-                value={quality}
-                onChange={(e) => setQuality(Number(e.target.value))}
-                className="w-32 accent-primary"
-              />
-              <span className="w-10 text-right text-sm text-muted-foreground">
-                {Math.round(quality * 100)}%
-              </span>
-            </div>
-            <Button className="ml-auto" onClick={compressAll} disabled={isProcessing}>
-              {isProcessing ? (
-                <>
-                  <Loader2 className="h-4 w-4 animate-spin" /> Compressing…
-                </>
-              ) : (
-                <>
-                  <ImageDown className="h-4 w-4" /> Compress all
-                </>
-              )}
-            </Button>
-          </Card>
-
-          <div className="grid gap-2">
-            {queue.map((item) => {
-              const preview = item.resultBlob ? previewUrls.get(item.id) : undefined;
-              const percent = item.resultBlob
-                ? Math.round((1 - item.resultBlob.size / item.file.size) * 100)
-                : 0;
-
-              if (item.status === "done" && item.resultBlob && preview) {
-                return (
-                  <Card key={item.id} className="space-y-3 p-3">
-                    <div className="flex items-center gap-3">
-                      <ImageDown className="h-5 w-5 shrink-0 text-muted-foreground" />
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate text-sm font-medium">{item.file.name}</p>
-                        <p className="text-xs text-muted-foreground">
-                          {formatBytes(item.file.size)} {" → "}
-                          <span className="font-medium text-emerald-600 dark:text-emerald-400">
-                            {formatBytes(item.resultBlob.size)}
-                          </span>{" "}
-                          ({percent}% smaller)
-                        </p>
-                      </div>
-                      <Button size="sm" variant="outline" onClick={() => openInspectorFor(item.id)}>
-                        <Maximize2 className="h-3.5 w-3.5" /> Compare
-                      </Button>
-                      <Button size="sm" variant="outline" onClick={() => downloadItem(item)}>
-                        <Download className="h-3.5 w-3.5" /> Save
-                      </Button>
-                      <button
-                        onClick={() => removeItem(item.id)}
-                        className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground"
-                        aria-label="Remove file"
-                      >
-                        <X className="h-4 w-4" />
-                      </button>
-                    </div>
-                    <ImageComparisonSlider
-                      originalUrl={preview.originalUrl}
-                      processedUrl={preview.processedUrl}
-                      originalLabel={`Original: ${formatBytes(item.file.size)}`}
-                      processedLabel={`Compressed: ${formatBytes(item.resultBlob.size)} (-${percent}%)`}
-                    />
-                  </Card>
-                );
-              }
-
-              return (
-                <Card key={item.id} className="flex items-center gap-3 p-3">
-                  <ImageDown className="h-5 w-5 shrink-0 text-muted-foreground" />
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium">{item.file.name}</p>
-                    <p className="text-xs text-muted-foreground">
-                      {formatBytes(item.file.size)}
-                      {item.status === "error" && (
-                        <span className="ml-2 text-destructive">{item.error}</span>
-                      )}
-                    </p>
-                  </div>
-                  {item.status === "processing" && (
-                    <Loader2 className="h-4 w-4 shrink-0 animate-spin text-primary" />
-                  )}
-                  <button
-                    onClick={() => removeItem(item.id)}
-                    className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground"
-                    aria-label="Remove file"
-                  >
-                    <X className="h-4 w-4" />
-                  </button>
-                </Card>
-              );
-            })}
-          </div>
-        </>
-      )}
 
       <ToolHistoryList ref={historyRef} toolSlug="image-compressor" />
 
@@ -327,7 +284,7 @@ export default function ImageCompressor() {
         onOpenChange={setInspectorOpen}
         items={inspectorItems}
         activeIndex={inspectorIndex}
-        onActiveIndexChange={setInspectorIndex}
+        onActiveIndexChange={(i) => inspectorItems[i] && setSelectedId(inspectorItems[i].id)}
       />
     </div>
   );

@@ -2,17 +2,17 @@
 
 import * as React from "react";
 import JSZip from "jszip";
-import { Download, FileImage, Loader2, X } from "lucide-react";
+import { Download, Loader2, PackageOpen } from "lucide-react";
 
-import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { Card } from "@/components/ui/card";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
 import { ToolHistoryList, type ToolHistoryListHandle } from "@/components/tools/shared/ToolHistoryList";
+import { SidebarSection, SliderRow } from "@/components/tools/shared/EditorLayout";
 import { ImageComparisonSlider } from "@/components/tools/media/ImageComparisonSlider";
+import { BatchWorkspace } from "@/components/tools/media/BatchWorkspace";
+import { useBatchProcessor, type BatchProcessable } from "@/components/tools/media/useBatchProcessor";
 import { formatBytes } from "@/lib/format";
 import { downloadBlob } from "@/lib/downloadBlob";
 import { rasterizeSvg } from "@/lib/svgRaster";
@@ -34,16 +34,16 @@ export interface ImageConvertToolProps {
   svg?: boolean;
 }
 
-interface QueueItem {
-  id: string;
+interface QueueItem extends BatchProcessable {
   file: File;
-  status: "pending" | "processing" | "done" | "error";
   aspectRatio: number;
+  thumbUrl: string;
+  error?: string;
   resultBlob?: Blob;
   resultName?: string;
+  /** Object URL of the original (raster sources only) */
   originalUrl?: string;
   processedUrl?: string;
-  error?: string;
 }
 
 const OUTPUT_LABEL: Record<ImageOutputFormat, string> = { png: "PNG", jpeg: "JPG", webp: "WebP" };
@@ -65,15 +65,17 @@ async function readSvgAspectRatio(file: File): Promise<number> {
   return 1;
 }
 
+const pct = (orig: number, now: number) => (orig > 0 ? Math.round((Math.abs(now - orig) / orig) * 100) : 0);
+
 export default function ImageConvertTool({ slug, output, accept, matches, defaultQuality = 0.9, dropLabel, dropHint, svg = false }: ImageConvertToolProps) {
   useTrackTool(slug);
   const [queue, setQueue] = React.useState<QueueItem[]>([]);
+  const [selectedId, setSelectedId] = React.useState<string | null>(null);
   const [quality, setQuality] = React.useState(defaultQuality);
   const [background, setBackground] = React.useState("#ffffff");
   const [svgWidth, setSvgWidth] = React.useState(DEFAULT_SVG_WIDTH);
   const [resize, setResize] = React.useState(false);
   const [maxWidth, setMaxWidth] = React.useState(1920);
-  const [isProcessing, setIsProcessing] = React.useState(false);
   const workerRef = React.useRef<Worker | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
   const urlsRef = React.useRef<Set<string>>(new Set());
@@ -89,11 +91,30 @@ export default function ImageConvertTool({ slug, output, accept, matches, defaul
     };
   }, []);
 
+  const makeUrl = (blob: Blob) => {
+    const u = URL.createObjectURL(blob);
+    urlsRef.current.add(u);
+    return u;
+  };
+  const dropUrl = (u?: string) => {
+    if (!u) return;
+    URL.revokeObjectURL(u);
+    urlsRef.current.delete(u);
+  };
+
   const handleFiles = async (files: File[]) => {
-    const items = await Promise.all(
-      files.filter(matches).map(async (file) => ({ id: crypto.randomUUID(), file, status: "pending" as const, aspectRatio: svg ? await readSvgAspectRatio(file).catch(() => 1) : 1 }))
+    const items: QueueItem[] = await Promise.all(
+      files.filter(matches).map(async (file) => ({
+        id: crypto.randomUUID(),
+        file,
+        status: "pending" as const,
+        aspectRatio: svg ? await readSvgAspectRatio(file).catch(() => 1) : 1,
+        thumbUrl: makeUrl(file),
+      }))
     );
+    if (items.length === 0) return;
     setQueue((prev) => [...prev, ...items]);
+    setSelectedId((cur) => cur ?? items[0].id);
   };
 
   // Picks up a "Send to..." handoff from another tool via ?from=<id>.
@@ -101,24 +122,14 @@ export default function ImageConvertTool({ slug, output, accept, matches, defaul
 
   const removeItem = (id: string) => {
     const item = queue.find((q) => q.id === id);
-    for (const u of [item?.originalUrl, item?.processedUrl]) {
-      if (u) {
-        URL.revokeObjectURL(u);
-        urlsRef.current.delete(u);
-      }
-    }
+    if (item) [item.thumbUrl, item.originalUrl, item.processedUrl].forEach(dropUrl);
     setQueue((prev) => prev.filter((q) => q.id !== id));
   };
 
-  const convertAll = async () => {
-    const worker = workerRef.current;
-    if (!worker || queue.length === 0) return;
-    setIsProcessing(true);
-    const pending = queue.filter((item) => item.status === "pending" || item.status === "error");
+  const settingsKey = JSON.stringify([output, quality, background, svgWidth, resize, maxWidth]);
 
-    for (const item of pending) {
-      setQueue((prev) => prev.map((q) => (q.id === item.id ? { ...q, status: "processing" } : q)));
-
+  const process = React.useCallback(
+    async (item: QueueItem): Promise<Partial<QueueItem>> => {
       let result: ImageConvertResponse;
       if (svg) {
         // SVG is rasterized on the main thread through an <img>; a worker's createImageBitmap can't decode SVG everywhere.
@@ -130,6 +141,8 @@ export default function ImageConvertTool({ slug, output, accept, matches, defaul
           result = { id: item.id, status: "error", message: e instanceof Error ? e.message : "Conversion failed" };
         }
       } else {
+        const worker = workerRef.current;
+        if (!worker) throw new Error("Converter not ready");
         result = await new Promise<ImageConvertResponse>((resolve) => {
           const onMessage = (event: MessageEvent<ImageConvertResponse>) => {
             if (event.data.id === item.id) {
@@ -149,37 +162,35 @@ export default function ImageConvertTool({ slug, output, accept, matches, defaul
           worker.postMessage(request);
         });
       }
+      if (result.status !== "success") throw new Error(result.message);
+      dropUrl(item.processedUrl);
+      return {
+        resultBlob: result.blob,
+        resultName: result.fileName,
+        processedUrl: makeUrl(result.blob),
+        // An SVG "original" is a vector: only raster sources get a before/after slider.
+        originalUrl: svg ? undefined : (item.originalUrl ?? makeUrl(item.file)),
+        error: undefined,
+      };
+    },
+    [svg, svgWidth, output, quality, background, resize, maxWidth]
+  );
 
-      let originalUrl: string | undefined;
-      let processedUrl: string | undefined;
-      if (result.status === "success") {
-        processedUrl = URL.createObjectURL(result.blob);
-        urlsRef.current.add(processedUrl);
-        // An SVG "original" is a vector — show it only for raster sources.
-        if (!svg) {
-          originalUrl = URL.createObjectURL(item.file);
-          urlsRef.current.add(originalUrl);
-        }
-      }
+  const { running } = useBatchProcessor({ queue, setQueue, settingsKey, process });
 
-      setQueue((prev) =>
-        prev.map((q) => {
-          if (q.id !== item.id) return q;
-          if (result.status === "success") return { ...q, status: "done", resultBlob: result.blob, resultName: result.fileName, originalUrl, processedUrl };
-          return { ...q, status: "error", error: result.message };
-        })
-      );
+  const done = queue.filter((q) => q.status === "done" && q.resultBlob);
+  const before = done.reduce((s, i) => s + i.file.size, 0);
+  const after = done.reduce((s, i) => s + (i.resultBlob?.size ?? 0), 0);
+  const selected = queue.find((q) => q.id === selectedId) ?? queue[0] ?? null;
 
-      if (result.status === "success") {
-        await saveToolResult(slug, { title: result.fileName, summary: `${item.file.name} → ${formatBytes(result.blob.size)}`, blob: result.blob });
-        historyRef.current?.refresh();
-      }
-    }
-    setIsProcessing(false);
+  const downloadOne = async (item: QueueItem) => {
+    if (!item.resultBlob || !item.resultName) return;
+    downloadBlob(item.resultBlob, item.resultName);
+    await saveToolResult(slug, { title: item.resultName, summary: `${item.file.name} → ${formatBytes(item.resultBlob.size)}`, blob: item.resultBlob });
+    historyRef.current?.refresh();
   };
 
   const downloadAllAsZip = async () => {
-    const done = queue.filter((item) => item.status === "done" && item.resultBlob && item.resultName);
     if (done.length === 0) return;
     const zip = new JSZip();
     const used = new Set<string>();
@@ -192,125 +203,115 @@ export default function ImageConvertTool({ slug, output, accept, matches, defaul
     downloadBlob(await zip.generateAsync({ type: "blob" }), `converted-${label.toLowerCase()}.zip`);
   };
 
-  const doneItems = queue.filter((item) => item.status === "done");
-  const totalCount = queue.length;
-  const progressPct = totalCount === 0 ? 0 : (doneItems.length / totalCount) * 100;
-  const before = doneItems.reduce((s, i) => s + i.file.size, 0);
-  const after = doneItems.reduce((s, i) => s + (i.resultBlob?.size ?? 0), 0);
-  const changeText = (orig: number, now: number) => {
-    const pct = orig > 0 ? Math.round((Math.abs(now - orig) / orig) * 100) : 0;
-    return now <= orig ? `${pct}% smaller` : `${pct}% larger`;
-  };
+  const stage = !selected ? null : selected.status === "error" ? (
+    <p role="alert" className="rounded-lg bg-destructive/10 px-4 py-3 text-sm text-destructive">
+      {selected.file.name}: {selected.error}
+    </p>
+  ) : selected.processedUrl && selected.resultBlob && selected.originalUrl ? (
+    <div className="h-full w-full">
+      <ImageComparisonSlider
+        fill
+        originalUrl={selected.originalUrl}
+        processedUrl={selected.processedUrl}
+        originalLabel={`Original: ${formatBytes(selected.file.size)}`}
+        processedLabel={`${label}: ${formatBytes(selected.resultBlob.size)}`}
+      />
+    </div>
+  ) : selected.processedUrl ? (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={selected.processedUrl} alt={`${selected.resultName} preview`} className="max-h-full max-w-full object-contain" />
+  ) : (
+    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+      <Loader2 className="h-4 w-4 animate-spin" /> Converting…
+    </div>
+  );
+
+  const sidebar = (
+    <>
+      <SidebarSection title="Summary">
+        <div className="rounded-lg border border-border bg-muted/30 p-3 text-sm">
+          <p className="font-medium">
+            {done.length} of {queue.length} converted to {label}
+            {running && <Loader2 className="ml-2 inline h-3.5 w-3.5 animate-spin text-primary" />}
+          </p>
+          {done.length > 0 && (
+            <p className="mt-1 text-muted-foreground" role="status">
+              {formatBytes(before)} → <span className="font-medium text-foreground">{formatBytes(after)}</span>{" "}
+              <span className={after <= before ? "text-emerald-600 dark:text-emerald-400" : "text-amber-600"}>({pct(before, after)}% {after <= before ? "smaller" : "larger"})</span>
+            </p>
+          )}
+        </div>
+      </SidebarSection>
+
+      {selected?.resultBlob && (
+        <SidebarSection title="Selected file">
+          <div className="space-y-1 text-sm">
+            <p className="truncate font-medium" title={selected.file.name}>{selected.file.name}</p>
+            <p className="text-muted-foreground">
+              {formatBytes(selected.file.size)} → {formatBytes(selected.resultBlob.size)} · {pct(selected.file.size, selected.resultBlob.size)}% {selected.resultBlob.size <= selected.file.size ? "smaller" : "larger"}
+            </p>
+          </div>
+        </SidebarSection>
+      )}
+
+      <SidebarSection title="Settings">
+        <p className="text-xs text-muted-foreground">Changes apply to every file automatically.</p>
+        {svg && <SliderRow label="Output width" value={svgWidth} min={16} max={4096} step={16} unit="px" onChange={setSvgWidth} />}
+        {output !== "png" ? (
+          <SliderRow label="Quality" value={Math.round(quality * 100)} min={40} max={100} step={5} unit="%" onChange={(v) => setQuality(v / 100)} />
+        ) : (
+          <p className="text-xs text-muted-foreground">PNG is lossless, so there is no quality setting — file size depends on the image itself.</p>
+        )}
+        {!svg && (
+          <div className="space-y-2">
+            <label className="flex items-center gap-2 text-sm">
+              <input type="checkbox" checked={resize} onChange={(e) => setResize(e.target.checked)} className="h-4 w-4 rounded border-border accent-primary" /> Limit the width
+            </label>
+            {resize && <SliderRow label="Max width" value={maxWidth} min={64} max={8000} step={32} unit="px" onChange={setMaxWidth} />}
+          </div>
+        )}
+        {output === "jpeg" && (
+          <div className="space-y-1.5" role="group" aria-label="Background colour">
+            <p className="text-sm font-medium">Background</p>
+            <div className="flex flex-wrap items-center gap-2">
+              {BACKGROUNDS.map((b) => (
+                <button key={b.value} onClick={() => setBackground(b.value)} aria-pressed={background === b.value} title={b.label} aria-label={b.label} className={cn("h-7 w-7 rounded-full border-2 transition-shadow", background === b.value ? "border-primary ring-2 ring-primary/30" : "border-border")} style={{ backgroundColor: b.value }} />
+              ))}
+              <input type="color" value={background} onChange={(e) => setBackground(e.target.value)} aria-label="Custom background colour" className="h-7 w-9 cursor-pointer rounded border border-border bg-transparent p-0" />
+            </div>
+            <p className="text-xs text-muted-foreground">Fills transparent areas (JPG has no transparency).</p>
+          </div>
+        )}
+      </SidebarSection>
+    </>
+  );
+
+  const footer = (
+    <>
+      <Button className="flex-1" onClick={downloadAllAsZip} disabled={done.length === 0}>
+        <PackageOpen className="h-4 w-4" /> {done.length > 1 ? `Download all (${done.length}) as ZIP` : "Download ZIP"}
+      </Button>
+      <Button variant="outline" onClick={() => selected && void downloadOne(selected)} disabled={!selected?.resultBlob}>
+        <Download className="h-4 w-4" /> This file
+      </Button>
+    </>
+  );
 
   return (
     <div className="space-y-6">
-      <DropZone onFiles={(f) => void handleFiles(f)} accept={accept} label={dropLabel} hint={dropHint} />
-
-      {queue.length > 0 && (
-        <>
-          <Card className="space-y-4 p-4">
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-              {svg && (
-                <label className="flex items-center gap-2 text-sm">
-                  <span className="font-medium">Output width</span>
-                  <input type="number" min={16} max={8000} value={svgWidth} onChange={(e) => setSvgWidth(Math.max(16, Math.min(8000, Number(e.target.value) || DEFAULT_SVG_WIDTH)))} className="w-24 rounded-lg border border-border bg-background px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-                  <span className="text-muted-foreground">px</span>
-                </label>
-              )}
-              {output !== "png" && (
-                <label className="flex items-center gap-2 text-sm">
-                  <span className="font-medium">Quality</span>
-                  <input type="range" min={0.4} max={1} step={0.05} value={quality} onChange={(e) => setQuality(Number(e.target.value))} className="w-28 accent-primary" />
-                  <span className="w-10 text-right text-muted-foreground">{Math.round(quality * 100)}%</span>
-                </label>
-              )}
-              {output === "jpeg" && (
-                <div className="flex flex-wrap items-center gap-2 text-sm" role="group" aria-label="Background colour">
-                  <span className="font-medium">Background</span>
-                  {BACKGROUNDS.map((b) => (
-                    <button key={b.value} onClick={() => setBackground(b.value)} aria-pressed={background === b.value} title={b.label} aria-label={b.label} className={cn("h-7 w-7 rounded-full border-2 transition-shadow", background === b.value ? "border-primary ring-2 ring-primary/30" : "border-border")} style={{ backgroundColor: b.value }} />
-                  ))}
-                  <input type="color" value={background} onChange={(e) => setBackground(e.target.value)} aria-label="Custom background colour" className="h-7 w-9 cursor-pointer rounded border border-border bg-transparent p-0" />
-                  <span className="text-xs text-muted-foreground">fills transparent areas (JPG has no transparency)</span>
-                </div>
-              )}
-              {!svg && (
-                <div className="flex items-center gap-2 text-sm">
-                  <label className="flex items-center gap-1.5">
-                    <input type="checkbox" checked={resize} onChange={(e) => setResize(e.target.checked)} className="h-4 w-4 rounded border-border" /> Limit width to
-                  </label>
-                  <input type="number" min={16} max={16000} value={maxWidth} disabled={!resize} onChange={(e) => setMaxWidth(Math.max(16, Number(e.target.value) || 1920))} aria-label="Maximum width" className="w-24 rounded-lg border border-border bg-background px-2 py-1.5 text-sm disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-primary" />
-                  <span className="text-muted-foreground">px</span>
-                </div>
-              )}
-            </div>
-            {output === "png" && <p className="text-xs text-muted-foreground">PNG is lossless, so there is no quality setting — file size depends on the image itself.</p>}
-            <div className="flex flex-wrap items-center gap-2">
-              <Button onClick={convertAll} disabled={isProcessing || queue.every((q) => q.status === "done")}>
-                {isProcessing ? (
-                  <>
-                    <Loader2 className="h-4 w-4 animate-spin" /> Converting…
-                  </>
-                ) : doneItems.length > 0 && doneItems.length < totalCount ? (
-                  "Convert remaining"
-                ) : (
-                  `Convert to ${label}`
-                )}
-              </Button>
-              {doneItems.length > 0 && (
-                <Button variant="outline" onClick={downloadAllAsZip}>
-                  <Download className="h-4 w-4" /> Download ZIP ({doneItems.length})
-                </Button>
-              )}
-              {doneItems.length > 0 && (
-                <span className="text-sm text-muted-foreground" role="status">
-                  {formatBytes(before)} → {formatBytes(after)} ({changeText(before, after)})
-                </span>
-              )}
-            </div>
-            {doneItems.length > 0 && (
-              <p className="text-xs text-muted-foreground">Changed a setting? Remove a file and add it again to convert it with the new settings.</p>
-            )}
-          </Card>
-
-          <Progress value={progressPct} aria-label="Conversion progress" />
-
-          <div className="grid gap-2">
-            {queue.map((item) => (
-              <Card key={item.id} className="space-y-3 p-3">
-                <div className="flex items-center gap-3">
-                  <FileImage className="h-5 w-5 shrink-0 text-muted-foreground" />
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium">{item.file.name}</p>
-                    <p className="text-xs text-muted-foreground">
-                      {formatBytes(item.file.size)}
-                      {item.resultBlob && ` → ${formatBytes(item.resultBlob.size)} (${changeText(item.file.size, item.resultBlob.size)})`}
-                      {item.status === "error" && <span className="ml-2 text-destructive">{item.error}</span>}
-                    </p>
-                  </div>
-                  {item.status === "processing" && <Loader2 className="h-4 w-4 shrink-0 animate-spin text-primary" />}
-                  {item.status === "done" && item.resultBlob && item.resultName && (
-                    <Button size="sm" variant="outline" onClick={() => downloadBlob(item.resultBlob!, item.resultName!)}>
-                      <Download className="h-3.5 w-3.5" /> Save
-                    </Button>
-                  )}
-                  <button onClick={() => removeItem(item.id)} className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Remove file">
-                    <X className="h-4 w-4" />
-                  </button>
-                </div>
-                {item.status === "done" && item.processedUrl && item.originalUrl && item.resultBlob && (
-                  <ImageComparisonSlider originalUrl={item.originalUrl} processedUrl={item.processedUrl} originalLabel={`Original: ${formatBytes(item.file.size)}`} processedLabel={`${label}: ${formatBytes(item.resultBlob.size)}`} />
-                )}
-                {item.status === "done" && item.processedUrl && !item.originalUrl && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={item.processedUrl} alt={`${item.resultName} preview`} className="max-h-48 rounded border border-border bg-[repeating-conic-gradient(#e5e7eb_0%_25%,#fff_0%_50%)] bg-[length:16px_16px]" />
-                )}
-              </Card>
-            ))}
-          </div>
-        </>
-      )}
-
+      <BatchWorkspace
+        items={queue.map((q) => ({ id: q.id, name: q.file.name, size: q.file.size, status: q.status, error: q.error, thumbUrl: q.thumbUrl, resultSize: q.resultBlob?.size }))}
+        selectedId={selected?.id ?? null}
+        onSelect={setSelectedId}
+        onRemove={removeItem}
+        onFiles={(f) => void handleFiles(f)}
+        accept={accept}
+        dropLabel={dropLabel}
+        dropHint={dropHint}
+        stage={stage}
+        sidebar={sidebar}
+        footer={footer}
+      />
       <ToolHistoryList ref={historyRef} toolSlug={slug} />
     </div>
   );

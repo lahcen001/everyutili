@@ -244,6 +244,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["image-resizer", "webp-converter"],
     priority: 0.94,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "image-resizer",
@@ -274,6 +275,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["jpg-to-png", "image-compressor"],
     priority: 0.96,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "svg-to-png",
@@ -284,6 +286,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["svg-optimizer", "png-to-jpg"],
     priority: 0.82,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "svg-to-jpg",
@@ -294,6 +297,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["svg-to-png", "jpg-to-png"],
     priority: 0.74,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "svg-to-webp",
@@ -304,6 +308,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["svg-to-png", "webp-converter"],
     priority: 0.7,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "png-to-webp",
@@ -314,6 +319,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["webp-converter", "jpg-to-png"],
     priority: 0.78,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "webp-to-png",
@@ -324,6 +330,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["png-to-jpg", "webp-converter"],
     priority: 0.78,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "webp-to-jpg",
@@ -334,6 +341,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["png-to-jpg", "webp-converter"],
     priority: 0.76,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "jpg-to-webp",
@@ -344,6 +352,7 @@ export const TOOLS: ToolConfig[] = [
     relatedSlugs: ["webp-converter", "png-to-jpg"],
     priority: 0.76,
     changeFrequency: "weekly",
+    layout: "workspace",
   },
   {
     slug: "base64-image-encoder",

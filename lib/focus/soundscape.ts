@@ -1,6 +1,7 @@
 import { fillNoise, type NoiseKind } from "@/lib/focus/noise";
+import { makeLoopable, renderFire, renderOcean, renderRain, renderStream, renderWind, type Rand } from "@/lib/focus/soundscapeRender";
 
-export type SoundId = "white" | "pink" | "brown" | "rain" | "ocean" | "wind" | "fan" | "alpha";
+export type SoundId = "white" | "pink" | "brown" | "rain" | "ocean" | "wind" | "stream" | "fire" | "fan" | "alpha";
 
 export interface Channel {
   /** Connect this to the master gain. */
@@ -8,14 +9,38 @@ export interface Channel {
   stop: () => void;
 }
 
-function noiseSource(ctx: AudioContext, kind: NoiseKind): AudioBufferSourceNode {
-  const seconds = 6;
-  const buffer = ctx.createBuffer(1, ctx.sampleRate * seconds, ctx.sampleRate);
-  fillNoise(buffer.getChannelData(0), kind);
+const bufferCache = new Map<string, AudioBuffer>();
+
+/** A looping stereo source whose two ears are rendered independently, so it sounds wide and natural. */
+function renderedSource(ctx: AudioContext, key: string, render: (sr: number, seconds: number, rand: Rand) => Float32Array, seconds: number): AudioBufferSourceNode {
+  const cacheKey = `${key}:${ctx.sampleRate}`;
+  let buffer = bufferCache.get(cacheKey);
+  if (!buffer) {
+    const left = render(ctx.sampleRate, seconds, Math.random);
+    const right = render(ctx.sampleRate, seconds, Math.random);
+    buffer = ctx.createBuffer(2, left.length, ctx.sampleRate);
+    buffer.copyToChannel(left as Float32Array<ArrayBuffer>, 0);
+    buffer.copyToChannel(right as Float32Array<ArrayBuffer>, 1);
+    bufferCache.set(cacheKey, buffer);
+  }
   const src = ctx.createBufferSource();
   src.buffer = buffer;
   src.loop = true;
   return src;
+}
+
+function noiseSource(ctx: AudioContext, kind: NoiseKind): AudioBufferSourceNode {
+  return renderedSource(
+    ctx,
+    kind,
+    (sr, seconds) => {
+      const fade = Math.floor(sr);
+      const data = new Float32Array(Math.floor(sr * seconds) + fade);
+      fillNoise(data, kind);
+      return makeLoopable(data, fade);
+    },
+    8
+  );
 }
 
 function filter(ctx: AudioContext, type: BiquadFilterType, frequency: number, q = 0.7): BiquadFilterNode {
@@ -64,51 +89,66 @@ export function createChannel(ctx: AudioContext, id: SoundId): Channel {
       break;
     }
     case "rain": {
-      const hiss = track(noiseSource(ctx, "white"));
-      const hp = filter(ctx, "highpass", 900);
-      const lp = filter(ctx, "lowpass", 9000);
+      const src = track(renderedSource(ctx, "rain", renderRain, 14));
       const g = ctx.createGain();
-      g.gain.value = 0.28;
-      hiss.connect(hp).connect(lp).connect(g).connect(out);
-      hiss.start();
-      const rumble = track(noiseSource(ctx, "brown"));
-      const rg = ctx.createGain();
-      rg.gain.value = 0.35;
-      rumble.connect(filter(ctx, "lowpass", 400)).connect(rg).connect(out);
-      rumble.start();
+      g.gain.value = 0.9;
+      src.connect(g).connect(out);
+      src.start();
       break;
     }
     case "ocean": {
-      const src = track(noiseSource(ctx, "brown"));
+      const src = track(renderedSource(ctx, "ocean", renderOcean, 30));
       const g = ctx.createGain();
-      g.gain.value = 0.55;
-      src.connect(filter(ctx, "lowpass", 700)).connect(g).connect(out);
+      g.gain.value = 0.9;
+      src.connect(g).connect(out);
       src.start();
-      stops.push(() => lfo(ctx, 0.11, 0.35, g.gain).stop());
       break;
     }
     case "wind": {
-      const src = track(noiseSource(ctx, "pink"));
-      const bp = filter(ctx, "bandpass", 500, 0.8);
+      const src = track(renderedSource(ctx, "wind", renderWind, 22));
       const g = ctx.createGain();
-      g.gain.value = 0.9;
-      src.connect(bp).connect(g).connect(out);
+      g.gain.value = 0.95;
+      src.connect(g).connect(out);
       src.start();
-      const l = lfo(ctx, 0.07, 280, bp.frequency);
-      stops.push(() => l.stop());
+      break;
+    }
+    case "stream": {
+      const src = track(renderedSource(ctx, "stream", renderStream, 12));
+      const g = ctx.createGain();
+      g.gain.value = 0.85;
+      src.connect(g).connect(out);
+      src.start();
+      break;
+    }
+    case "fire": {
+      const src = track(renderedSource(ctx, "fire", renderFire, 24));
+      const g = ctx.createGain();
+      g.gain.value = 0.95;
+      src.connect(g).connect(out);
+      src.start();
       break;
     }
     case "fan": {
-      const src = track(noiseSource(ctx, "brown"));
-      const g = ctx.createGain();
-      g.gain.value = 0.9;
-      src.connect(filter(ctx, "lowpass", 320)).connect(g).connect(out);
-      src.start();
-      const air = track(noiseSource(ctx, "white"));
+      // soft airflow plus a faint motor hum with blade flutter
+      const air = track(noiseSource(ctx, "brown"));
       const ag = ctx.createGain();
-      ag.gain.value = 0.04;
-      air.connect(filter(ctx, "bandpass", 2200, 0.5)).connect(ag).connect(out);
+      ag.gain.value = 0.85;
+      air.connect(filter(ctx, "lowpass", 380)).connect(ag).connect(out);
       air.start();
+      const hiss = track(noiseSource(ctx, "white"));
+      const hg = ctx.createGain();
+      hg.gain.value = 0.05;
+      hiss.connect(filter(ctx, "bandpass", 2400, 0.5)).connect(hg).connect(out);
+      hiss.start();
+      const hum = track(ctx.createOscillator());
+      hum.type = "triangle";
+      hum.frequency.value = 96;
+      const mg = ctx.createGain();
+      mg.gain.value = 0.035;
+      hum.connect(mg).connect(out);
+      hum.start();
+      const flutter = lfo(ctx, 24, 0.012, mg.gain);
+      stops.push(() => flutter.stop());
       break;
     }
     case "alpha": {

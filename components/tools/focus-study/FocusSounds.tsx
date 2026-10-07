@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { AudioWaveform, CloudRain, Fan, Headphones, Moon, Waves, Wind, Volume2 } from "lucide-react";
+import { AudioWaveform, CloudRain, Droplets, Fan, Flame, Headphones, Moon, Waves, Wind, Volume2 } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -14,6 +14,8 @@ const SOUNDS: { id: SoundId; label: string; hint: string; icon: React.ReactNode;
   { id: "rain", label: "Rain", hint: "Steady rainfall", icon: <CloudRain className="h-6 w-6" />, color: "from-sky-500/20 to-sky-500/5 text-sky-500" },
   { id: "ocean", label: "Ocean waves", hint: "Slow rolling surf", icon: <Waves className="h-6 w-6" />, color: "from-cyan-500/20 to-cyan-500/5 text-cyan-500" },
   { id: "wind", label: "Wind", hint: "Soft gusts", icon: <Wind className="h-6 w-6" />, color: "from-slate-500/20 to-slate-500/5 text-slate-500" },
+  { id: "stream", label: "Stream", hint: "Babbling brook", icon: <Droplets className="h-6 w-6" />, color: "from-teal-500/20 to-teal-500/5 text-teal-500" },
+  { id: "fire", label: "Fireplace", hint: "Crackling logs", icon: <Flame className="h-6 w-6" />, color: "from-red-500/20 to-red-500/5 text-red-500" },
   { id: "fan", label: "Fan hum", hint: "Low room tone", icon: <Fan className="h-6 w-6" />, color: "from-amber-500/20 to-amber-500/5 text-amber-500" },
   { id: "brown", label: "Brown noise", hint: "Deep and warm", icon: <AudioWaveform className="h-6 w-6" />, color: "from-orange-500/20 to-orange-500/5 text-orange-500" },
   { id: "pink", label: "Pink noise", hint: "Balanced, natural", icon: <AudioWaveform className="h-6 w-6" />, color: "from-pink-500/20 to-pink-500/5 text-pink-500" },
@@ -24,6 +26,7 @@ const SOUNDS: { id: SoundId; label: string; hint: string; icon: React.ReactNode;
 const PRESETS: { label: string; mix: Partial<Record<SoundId, number>> }[] = [
   { label: "Deep focus", mix: { brown: 0.5, alpha: 0.25 } },
   { label: "Rainy study", mix: { rain: 0.6, brown: 0.2 } },
+  { label: "Cozy fire", mix: { fire: 0.6, rain: 0.25 } },
   { label: "Calm", mix: { ocean: 0.55, wind: 0.2 } },
   { label: "Block distractions", mix: { pink: 0.5, fan: 0.3 } },
 ];
@@ -196,7 +199,7 @@ export default function FocusSounds() {
         )}
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         {SOUNDS.map((s) => {
           const v = mix.volumes[s.id] ?? 0;
           const on = v > 0;

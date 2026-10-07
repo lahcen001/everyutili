@@ -104,3 +104,40 @@ describe("noise", () => {
     }
   });
 });
+
+import { makeLoopable, renderFire, renderOcean, renderRain, renderStream, renderWind } from "@/lib/focus/soundscapeRender";
+
+describe("soundscape rendering", () => {
+  const sr = 8000;
+  let seed = 7;
+  const rand = () => {
+    seed = (seed * 1664525 + 1013904223) % 4294967296;
+    return seed / 4294967296;
+  };
+  it("renders loopable, bounded, non-silent buffers", () => {
+    for (const render of [renderRain, renderOcean, renderWind, renderStream, renderFire]) {
+      const buf = render(sr, 6, rand);
+      expect(buf.length).toBeGreaterThan(sr * 3);
+      let peak = 0;
+      let energy = 0;
+      for (const v of buf) {
+        peak = Math.max(peak, Math.abs(v));
+        energy += v * v;
+      }
+      expect(peak).toBeLessThanOrEqual(1);
+      expect(energy / buf.length).toBeGreaterThan(1e-4);
+      expect(Number.isNaN(energy)).toBe(false);
+    }
+  });
+  it("crossfades the loop point so there is no jump", () => {
+    const data = Float32Array.from({ length: 1000 }, (_, i) => Math.sin(i / 7));
+    const loop = makeLoopable(data, 200);
+    expect(loop.length).toBe(800);
+    expect(Math.abs(loop[0] - loop[799])).toBeLessThan(0.3);
+  });
+  it("gives a different signal for each ear", () => {
+    const a = renderRain(sr, 3, rand);
+    const b = renderRain(sr, 3, rand);
+    expect(a[1000]).not.toBe(b[1000]);
+  });
+});

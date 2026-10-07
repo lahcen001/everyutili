@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "用新标签页替换默认页面，即时搜索79+款免费、隐私优先的工具：转换器、PDF工具、计算器、开发者实用工具。"
+    "message": "用新标签页替换默认页面，即时搜索100+款免费、隐私优先的工具：转换器、PDF工具、计算器、开发者实用工具。"
   },
 
   "offlineBadge": {
@@ -20,6 +20,12 @@
   },
   "settingsClockFormat": {
     "message": "时钟格式"
+  },
+  "settingsLanguage": {
+    "message": "语言"
+  },
+  "languageSystem": {
+    "message": "系统默认"
   },
   "clockAuto": {
     "message": "自动"

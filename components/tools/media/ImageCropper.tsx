@@ -5,7 +5,8 @@ import { Crop, Save, X } from "lucide-react";
 
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { EditorLayout, SidebarSection } from "@/components/tools/shared/EditorLayout";
+import { useFitScale } from "@/components/tools/shared/useFitScale";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
@@ -241,7 +242,13 @@ export default function ImageCropper() {
     }
   };
 
-  const stageWidth = image ? image.naturalWidth * displayScale : 0;
+  const fields: { key: keyof CropRect; label: string; min: number }[] = [
+    { key: "x", label: "X", min: 0 },
+    { key: "y", label: "Y", min: 0 },
+    { key: "width", label: "Width", min: 1 },
+    { key: "height", label: "Height", min: 1 },
+  ];
+  const inputClass = "w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary";
 
   return (
     <div className="space-y-6">
@@ -262,114 +269,82 @@ export default function ImageCropper() {
       )}
 
       {image && crop && (
-        <>
-          <Card className="flex items-center gap-3 p-3">
-            <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-medium">{image.file.name}</p>
-              <p className="text-xs text-muted-foreground">
-                {image.naturalWidth}×{image.naturalHeight}px · {formatBytes(image.file.size)}
-              </p>
-            </div>
-            <button
-              onClick={removeImage}
-              className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground"
-              aria-label="Remove file"
-            >
-              <X className="h-4 w-4" />
-            </button>
-          </Card>
-
-          <Card className="overflow-auto p-4">
-            <div
-              className="relative mx-auto select-none"
-              style={{ width: stageWidth || "100%", maxWidth: "100%" }}
-            >
-              <ImageStage
-                image={image}
-                onScaleChange={setDisplayScale}
-                stageRef={stageRef}
-                onPointerDown={onStagePointerDown}
-                onPointerMove={onStagePointerMove}
-                onPointerUp={endDrag}
-              >
-                <div
-                  onPointerDown={onCropPointerDown}
-                  className="absolute cursor-move border-2 border-primary bg-primary/10"
-                  style={{
-                    left: crop.x * displayScale,
-                    top: crop.y * displayScale,
-                    width: crop.width * displayScale,
-                    height: crop.height * displayScale,
-                  }}
-                >
-                  {HANDLES.map((handle) => (
-                    <div
-                      key={handle}
-                      onPointerDown={onHandlePointerDown(handle)}
-                      className="absolute h-3 w-3 rounded-full border-2 border-primary bg-background"
-                      style={{
-                        cursor: handle === "nw" || handle === "se" ? "nwse-resize" : "nesw-resize",
-                        left: handle.includes("w") ? -6 : undefined,
-                        right: handle.includes("e") ? -6 : undefined,
-                        top: handle.includes("n") ? -6 : undefined,
-                        bottom: handle.includes("s") ? -6 : undefined,
-                      }}
-                    />
+        <EditorLayout
+          stage={
+            <ImageStage image={image} onScaleChange={setDisplayScale} stageRef={stageRef} onPointerDown={onStagePointerDown} onPointerMove={onStagePointerMove} onPointerUp={endDrag}>
+              <div onPointerDown={onCropPointerDown} className="absolute cursor-move border-2 border-primary bg-primary/10" style={{ left: crop.x * displayScale, top: crop.y * displayScale, width: crop.width * displayScale, height: crop.height * displayScale, boxShadow: "0 0 0 9999px rgba(0,0,0,0.35)" }}>
+                {HANDLES.map((handle) => (
+                  <div
+                    key={handle}
+                    onPointerDown={onHandlePointerDown(handle)}
+                    className="absolute h-3 w-3 rounded-full border-2 border-primary bg-background"
+                    style={{
+                      cursor: handle === "nw" || handle === "se" ? "nwse-resize" : "nesw-resize",
+                      left: handle.includes("w") ? -6 : undefined,
+                      right: handle.includes("e") ? -6 : undefined,
+                      top: handle.includes("n") ? -6 : undefined,
+                      bottom: handle.includes("s") ? -6 : undefined,
+                    }}
+                  />
+                ))}
+              </div>
+            </ImageStage>
+          }
+          stageToolbar={<span className="text-xs text-muted-foreground">Drag on the picture to draw a new crop area, drag the box to move it, drag a corner to resize.</span>}
+          sidebar={
+            <>
+              <SidebarSection title="Image">
+                <div className="flex items-center gap-2">
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-medium">{image.file.name}</p>
+                    <p className="text-xs text-muted-foreground">
+                      {image.naturalWidth}×{image.naturalHeight}px · {formatBytes(image.file.size)}
+                    </p>
+                  </div>
+                  <button onClick={removeImage} className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Remove file">
+                    <X className="h-4 w-4" />
+                  </button>
+                </div>
+              </SidebarSection>
+              <SidebarSection title="Crop area (pixels)">
+                <div className="grid grid-cols-2 gap-3">
+                  {fields.map((f) => (
+                    <label key={f.key} className="space-y-1">
+                      <span className="text-xs font-medium text-muted-foreground">{f.label}</span>
+                      <input type="number" min={f.min} value={Math.round(crop[f.key])} onChange={(e) => updateField(f.key, Number(e.target.value) || f.min)} className={inputClass} />
+                    </label>
                   ))}
                 </div>
-              </ImageStage>
-            </div>
-          </Card>
-
-          <Card className="space-y-4 p-4">
-            <div className="grid gap-4 sm:grid-cols-4">
-              <label className="space-y-1.5">
-                <span className="text-sm font-medium">X</span>
-                <input
-                  type="number"
-                  min={0}
-                  value={Math.round(crop.x)}
-                  onChange={(e) => updateField("x", Number(e.target.value) || 0)}
-                  className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </label>
-              <label className="space-y-1.5">
-                <span className="text-sm font-medium">Y</span>
-                <input
-                  type="number"
-                  min={0}
-                  value={Math.round(crop.y)}
-                  onChange={(e) => updateField("y", Number(e.target.value) || 0)}
-                  className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </label>
-              <label className="space-y-1.5">
-                <span className="text-sm font-medium">Width</span>
-                <input
-                  type="number"
-                  min={1}
-                  value={Math.round(crop.width)}
-                  onChange={(e) => updateField("width", Number(e.target.value) || 1)}
-                  className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </label>
-              <label className="space-y-1.5">
-                <span className="text-sm font-medium">Height</span>
-                <input
-                  type="number"
-                  min={1}
-                  value={Math.round(crop.height)}
-                  onChange={(e) => updateField("height", Number(e.target.value) || 1)}
-                  className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </label>
-            </div>
-
-            <Button onClick={handleCrop} disabled={isCropping || crop.width < 1 || crop.height < 1}>
+                <div className="flex flex-wrap gap-1.5">
+                  <button onClick={() => setCrop({ x: 0, y: 0, width: image.naturalWidth, height: image.naturalHeight })} className="rounded-full border border-border px-2.5 py-1 text-xs hover:border-primary">
+                    Whole image
+                  </button>
+                  <button onClick={() => { const side = Math.min(image.naturalWidth, image.naturalHeight); setCrop({ x: (image.naturalWidth - side) / 2, y: (image.naturalHeight - side) / 2, width: side, height: side }); }} className="rounded-full border border-border px-2.5 py-1 text-xs hover:border-primary">
+                    Square (1:1)
+                  </button>
+                  {([[16, 9], [4, 3], [3, 2]] as const).map(([w, h]) => (
+                    <button
+                      key={`${w}:${h}`}
+                      onClick={() => {
+                        const width = Math.min(image.naturalWidth, (image.naturalHeight * w) / h);
+                        const height = (width * h) / w;
+                        setCrop({ x: (image.naturalWidth - width) / 2, y: (image.naturalHeight - height) / 2, width, height });
+                      }}
+                      className="rounded-full border border-border px-2.5 py-1 text-xs hover:border-primary"
+                    >
+                      {w}:{h}
+                    </button>
+                  ))}
+                </div>
+              </SidebarSection>
+            </>
+          }
+          footer={
+            <Button className="w-full" onClick={handleCrop} disabled={isCropping || crop.width < 1 || crop.height < 1}>
               <Save className="h-4 w-4" /> <Crop className="h-4 w-4" /> Crop & Download
             </Button>
-          </Card>
-        </>
+          }
+        />
       )}
 
       <ToolHistoryList ref={historyRef} toolSlug="image-cropper" />
@@ -401,45 +376,23 @@ function ImageStage({
   onPointerUp,
   children,
 }: ImageStageProps) {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const [containerWidth, setContainerWidth] = React.useState(0);
-
-  React.useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-    const observer = new ResizeObserver((entries) => {
-      const width = entries[0]?.contentRect.width;
-      if (width) setContainerWidth(width);
-    });
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  const scale = React.useMemo(() => {
-    if (containerWidth <= 0) return 1;
-    return Math.min(1, containerWidth / image.naturalWidth);
-  }, [containerWidth, image.naturalWidth]);
+  const { ref: containerRef, scale } = useFitScale(image.naturalWidth, image.naturalHeight);
 
   React.useEffect(() => {
     onScaleChange(scale);
   }, [scale, onScaleChange]);
 
   return (
-    <div ref={containerRef} className="w-full">
+    <div ref={containerRef} className="flex h-full w-full items-center justify-center">
       <div
         ref={stageRef}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
-        className="relative touch-none"
+        className="relative shrink-0 touch-none select-none overflow-hidden shadow-md"
         style={{ width: image.naturalWidth * scale, height: image.naturalHeight * scale }}
       >
-        <img
-          src={image.url}
-          alt="Uploaded image to crop"
-          className="pointer-events-none absolute inset-0 h-full w-full"
-          draggable={false}
-        />
+        <img src={image.url} alt="Uploaded image to crop" className="pointer-events-none absolute inset-0 h-full w-full" draggable={false} />
         {children}
       </div>
     </div>

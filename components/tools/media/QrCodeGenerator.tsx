@@ -1,5 +1,6 @@
 "use client";
 
+import { FileDropTarget } from "@/components/tool-shell/FileDropTarget";
 import * as React from "react";
 import QRCode from "qrcode";
 import { Download, ImagePlus, QrCode, X } from "lucide-react";
@@ -171,7 +172,7 @@ export default function QrCodeGenerator() {
   };
 
   return (
-    <div className="space-y-6">
+    <FileDropTarget label="Drop an image to use as logo" onFiles={(f) => pickLogo(f.find((x) => x.type.startsWith("image/")))} className="space-y-6">
       <Card className="space-y-4 p-6">
         <div className="flex flex-wrap gap-1" role="tablist" aria-label="QR code content">
           {KINDS.map((k) => (
@@ -327,6 +328,6 @@ export default function QrCodeGenerator() {
       )}
 
       <ToolHistoryList ref={historyRef} toolSlug="qr-code-generator" />
-    </div>
+    </FileDropTarget>
   );
 }

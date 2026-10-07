@@ -7,6 +7,8 @@ import { Download, ImageIcon, Loader2, Stamp, Type, X } from "lucide-react";
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { EditorLayout, SidebarSection, SliderRow } from "@/components/tools/shared/EditorLayout";
+import { FitStage } from "@/components/tools/shared/FitStage";
 import { Progress } from "@/components/ui/progress";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
@@ -155,8 +157,62 @@ export default function WatermarkMaker() {
   const [isProcessing, setIsProcessing] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
 
+  const [previewId, setPreviewId] = React.useState<string | null>(null);
+  const [previewImg, setPreviewImg] = React.useState<HTMLImageElement | null>(null);
+  const [logoImg, setLogoImg] = React.useState<HTMLImageElement | null>(null);
+  const previewCanvasRef = React.useRef<HTMLCanvasElement>(null);
+  const addMoreRef = React.useRef<HTMLInputElement>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
   const logoUrlRef = React.useRef<string | null>(null);
+
+  const previewItem = queue.find((q) => q.id === previewId) ?? queue[0] ?? null;
+
+  // Load the picture shown in the live preview.
+  React.useEffect(() => {
+    if (!previewItem) return;
+    let cancelled = false;
+    let objectUrl: string | null = null;
+    loadImageFromFile(previewItem.file)
+      .then(({ img, url }) => {
+        objectUrl = url;
+        if (cancelled) URL.revokeObjectURL(url);
+        else setPreviewImg(img);
+      })
+      .catch(() => {
+        if (!cancelled) setPreviewImg(null);
+      });
+    return () => {
+      cancelled = true;
+      // keep the URL alive until the next image replaces it (the canvas has already copied the pixels)
+      if (objectUrl) window.setTimeout(() => URL.revokeObjectURL(objectUrl!), 1000);
+    };
+  }, [previewItem?.id, previewItem?.file]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Load the logo for the preview.
+  React.useEffect(() => {
+    if (!logoPreviewUrl) return;
+    let cancelled = false;
+    const img = new Image();
+    img.onload = () => {
+      if (!cancelled) setLogoImg(img);
+    };
+    img.src = logoPreviewUrl;
+    return () => {
+      cancelled = true;
+    };
+  }, [logoPreviewUrl]);
+
+  // Draw the preview at the picture's real size, so the watermark looks exactly as it will in the result.
+  React.useEffect(() => {
+    const canvas = previewCanvasRef.current;
+    if (!canvas || !previewImg) return;
+    canvas.width = previewImg.naturalWidth;
+    canvas.height = previewImg.naturalHeight;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+    ctx.drawImage(previewImg, 0, 0);
+    drawWatermark(ctx, canvas.width, canvas.height, options, logoPreviewUrl ? logoImg : null);
+  }, [previewImg, options, logoImg, logoPreviewUrl]);
 
   React.useEffect(() => {
     return () => {
@@ -291,15 +347,20 @@ export default function WatermarkMaker() {
   const totalCount = queue.length;
   const progressPct = totalCount === 0 ? 0 : (doneCount / totalCount) * 100;
 
+  const textMode = options.mode === "text";
+  const set = <K extends keyof WatermarkOptions>(key: K, value: WatermarkOptions[K]) => setOptions((o) => ({ ...o, [key]: value }));
+
   return (
     <div className="space-y-6">
-      <DropZone
-        onFiles={handleFiles}
-        accept="image/*"
-        multiple
-        label="Drag & drop images to watermark here, or click to browse"
-        hint="Batch apply a text or logo watermark to every image — all rendered locally"
-      />
+      {queue.length === 0 && (
+        <DropZone
+          onFiles={handleFiles}
+          accept="image/*"
+          multiple
+          label="Drag & drop images to watermark here, or click to browse"
+          hint="Add a text or logo watermark to one image or a whole batch — live preview, all rendered locally"
+        />
+      )}
 
       {error && (
         <div className="rounded-lg border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
@@ -307,196 +368,114 @@ export default function WatermarkMaker() {
         </div>
       )}
 
-      <Card className="space-y-5 p-4">
-        <div className="space-y-1.5">
-          <span className="text-sm font-medium">Watermark type</span>
-          <div className="flex overflow-hidden rounded-lg border border-border">
-            <button
-              onClick={() => setOptions((o) => ({ ...o, mode: "text" }))}
-              className={`flex flex-1 items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-colors ${
-                options.mode === "text" ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"
-              }`}
-            >
-              <Type className="h-3.5 w-3.5" /> Text
-            </button>
-            <button
-              onClick={() => setOptions((o) => ({ ...o, mode: "image" }))}
-              className={`flex flex-1 items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-colors ${
-                options.mode === "image" ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"
-              }`}
-            >
-              <ImageIcon className="h-3.5 w-3.5" /> Logo image
-            </button>
-          </div>
-        </div>
-
-        {options.mode === "text" ? (
-          <div className="space-y-4 border-t border-border pt-4">
-            <div className="space-y-1.5">
-              <span className="text-sm font-medium">Watermark text</span>
-              <input
-                type="text"
-                value={options.text}
-                onChange={(e) => setOptions((o) => ({ ...o, text: e.target.value }))}
-                placeholder="Your Watermark"
-                className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary"
-              />
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="flex items-center gap-2">
-                <span className="w-20 shrink-0 text-sm font-medium">Font size</span>
-                <input
-                  type="range"
-                  min={8}
-                  max={200}
-                  step={1}
-                  value={options.fontSize}
-                  onChange={(e) => setOptions((o) => ({ ...o, fontSize: Number(e.target.value) }))}
-                  className="flex-1 accent-primary"
-                />
-                <span className="w-12 text-right text-sm text-muted-foreground">{options.fontSize}px</span>
+      {queue.length > 0 && (
+        <EditorLayout
+          stage={
+            previewImg ? (
+              <FitStage width={previewImg.naturalWidth} height={previewImg.naturalHeight}>
+                <canvas ref={previewCanvasRef} className="block h-full w-full bg-white shadow-md" aria-label="Watermark preview" />
+              </FitStage>
+            ) : (
+              <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+            )
+          }
+          stageToolbar={
+            <>
+              <div className="flex max-w-full flex-1 items-center gap-1.5 overflow-x-auto py-0.5" role="listbox" aria-label="Pick the picture to preview">
+                {queue.map((item) => (
+                  <button key={item.id} role="option" aria-selected={item.id === previewItem?.id} onClick={() => setPreviewId(item.id)} className={`shrink-0 rounded-md border px-2 py-1 text-xs ${item.id === previewItem?.id ? "border-primary bg-primary/10 font-medium" : "border-border hover:bg-muted"}`} title={item.file.name}>
+                    <span className="block max-w-28 truncate">{item.file.name}</span>
+                  </button>
+                ))}
               </div>
-              <div className="flex items-center gap-2">
-                <span className="w-20 shrink-0 text-sm font-medium">Opacity</span>
-                <input
-                  type="range"
-                  min={0}
-                  max={100}
-                  step={1}
-                  value={options.textOpacity}
-                  onChange={(e) => setOptions((o) => ({ ...o, textOpacity: Number(e.target.value) }))}
-                  className="flex-1 accent-primary"
-                />
-                <span className="w-12 text-right text-sm text-muted-foreground">{options.textOpacity}%</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-20 shrink-0 text-sm font-medium">Color</span>
-              <input
-                type="color"
-                value={options.textColor}
-                onChange={(e) => setOptions((o) => ({ ...o, textColor: e.target.value }))}
-                className="h-8 w-14 cursor-pointer rounded border border-border bg-transparent"
-              />
-            </div>
-          </div>
-        ) : (
-          <div className="space-y-4 border-t border-border pt-4">
-            {logoPreviewUrl ? (
-              <div className="flex items-center gap-3">
-                <img
-                  src={logoPreviewUrl}
-                  alt="Watermark logo preview"
-                  className="h-14 w-14 rounded-md border border-border object-contain"
-                />
-                <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-medium">{logoFile?.name}</p>
-                  <p className="text-xs text-muted-foreground">{logoFile ? formatBytes(logoFile.size) : ""}</p>
+              <Button size="sm" variant="outline" onClick={() => addMoreRef.current?.click()}>
+                Add more
+              </Button>
+              <input ref={addMoreRef} type="file" accept="image/*" multiple className="hidden" onChange={(e) => { handleFiles(Array.from(e.target.files ?? [])); e.target.value = ""; }} />
+            </>
+          }
+          sidebar={
+            <>
+              <SidebarSection title="Watermark type">
+                <div className="flex overflow-hidden rounded-lg border border-border">
+                  {([["text", "Text", Type], ["image", "Logo image", ImageIcon]] as const).map(([mode, label, Icon]) => (
+                    <button key={mode} onClick={() => set("mode", mode)} aria-pressed={options.mode === mode} className={`flex flex-1 items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-medium transition-colors ${options.mode === mode ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"}`}>
+                      <Icon className="h-3.5 w-3.5" /> {label}
+                    </button>
+                  ))}
                 </div>
-                <button
-                  onClick={removeLogo}
-                  className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground"
-                  aria-label="Remove logo"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-              </div>
-            ) : (
-              <DropZone
-                onFiles={handleLogoFile}
-                accept="image/*"
-                multiple={false}
-                label="Drag & drop a logo image, or click to browse"
-                hint="PNG with transparency works best"
-              />
-            )}
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="flex items-center gap-2">
-                <span className="w-20 shrink-0 text-sm font-medium">Scale</span>
-                <input
-                  type="range"
-                  min={2}
-                  max={80}
-                  step={1}
-                  value={options.logoScale}
-                  onChange={(e) => setOptions((o) => ({ ...o, logoScale: Number(e.target.value) }))}
-                  className="flex-1 accent-primary"
-                />
-                <span className="w-12 text-right text-sm text-muted-foreground">{options.logoScale}%</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-20 shrink-0 text-sm font-medium">Opacity</span>
-                <input
-                  type="range"
-                  min={0}
-                  max={100}
-                  step={1}
-                  value={options.logoOpacity}
-                  onChange={(e) => setOptions((o) => ({ ...o, logoOpacity: Number(e.target.value) }))}
-                  className="flex-1 accent-primary"
-                />
-                <span className="w-12 text-right text-sm text-muted-foreground">{options.logoOpacity}%</span>
-              </div>
-            </div>
-          </div>
-        )}
+              </SidebarSection>
 
-        <div className="grid gap-4 border-t border-border pt-4 sm:grid-cols-[auto_1fr]">
-          <div className="space-y-1.5">
-            <span className="text-sm font-medium">Position</span>
-            <div className="grid grid-cols-3 gap-1 rounded-lg border border-border p-1">
-              {POSITIONS.map((pos) => (
-                <button
-                  key={pos.value}
-                  onClick={() => setOptions((o) => ({ ...o, position: pos.value }))}
-                  title={pos.label}
-                  aria-label={pos.label}
-                  className={`flex h-9 w-9 items-center justify-center rounded-md transition-colors ${
-                    options.position === pos.value
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-transparent hover:bg-muted"
-                  }`}
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-current" />
-                </button>
-              ))}
-            </div>
-          </div>
+              {textMode ? (
+                <SidebarSection title="Text">
+                  <input type="text" value={options.text} onChange={(e) => set("text", e.target.value)} placeholder="Your Watermark" aria-label="Watermark text" className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary" />
+                  <SliderRow label="Font size" value={options.fontSize} min={8} max={200} unit="px" onChange={(v) => set("fontSize", v)} />
+                  <SliderRow label="Opacity" value={options.textOpacity} min={0} max={100} unit="%" onChange={(v) => set("textOpacity", v)} />
+                  <label className="flex items-center justify-between text-sm">
+                    <span className="font-medium">Colour</span>
+                    <input type="color" value={options.textColor} onChange={(e) => set("textColor", e.target.value)} aria-label="Text colour" className="h-8 w-14 cursor-pointer rounded border border-border bg-transparent" />
+                  </label>
+                </SidebarSection>
+              ) : (
+                <SidebarSection title="Logo">
+                  {logoPreviewUrl ? (
+                    <div className="flex items-center gap-3">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={logoPreviewUrl} alt="Watermark logo preview" className="h-12 w-12 rounded-md border border-border bg-white object-contain" />
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-sm font-medium">{logoFile?.name}</p>
+                        <p className="text-xs text-muted-foreground">{logoFile ? formatBytes(logoFile.size) : ""}</p>
+                      </div>
+                      <button onClick={() => { removeLogo(); setLogoImg(null); }} className="shrink-0 rounded-md p-1 text-muted-foreground hover:bg-muted hover:text-foreground" aria-label="Remove logo">
+                        <X className="h-4 w-4" />
+                      </button>
+                    </div>
+                  ) : (
+                    <DropZone onFiles={handleLogoFile} accept="image/*" multiple={false} label="Drop a logo, or click" hint="PNG with transparency works best" className="py-4" />
+                  )}
+                  <SliderRow label="Size" value={options.logoScale} min={2} max={80} unit="%" onChange={(v) => set("logoScale", v)} />
+                  <SliderRow label="Opacity" value={options.logoOpacity} min={0} max={100} unit="%" onChange={(v) => set("logoOpacity", v)} />
+                </SidebarSection>
+              )}
 
-          <div className="flex items-center gap-2 self-end">
-            <span className="w-20 shrink-0 text-sm font-medium">Margin</span>
-            <input
-              type="range"
-              min={0}
-              max={200}
-              step={2}
-              value={options.margin}
-              onChange={(e) => setOptions((o) => ({ ...o, margin: Number(e.target.value) }))}
-              className="flex-1 accent-primary"
-            />
-            <span className="w-12 text-right text-sm text-muted-foreground">{options.margin}px</span>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-2 border-t border-border pt-4">
-          <Button onClick={applyToAll} disabled={isProcessing || queue.length === 0}>
-            {isProcessing ? (
-              <>
-                <Loader2 className="h-4 w-4 animate-spin" /> Applying…
-              </>
-            ) : (
-              <>
-                <Stamp className="h-4 w-4" /> Apply to all
-              </>
-            )}
-          </Button>
-          {doneCount > 0 && (
-            <Button variant="outline" onClick={downloadAllAsZip}>
-              <Download className="h-4 w-4" /> Download all as ZIP ({doneCount})
-            </Button>
-          )}
-        </div>
-      </Card>
+              <SidebarSection title="Position">
+                <div className="flex items-center gap-4">
+                  <div className="grid grid-cols-3 gap-1 rounded-lg border border-border p-1" role="radiogroup" aria-label="Position">
+                    {POSITIONS.map((pos) => (
+                      <button key={pos.value} role="radio" aria-checked={options.position === pos.value} onClick={() => set("position", pos.value)} title={pos.label} aria-label={pos.label} className={`flex h-9 w-9 items-center justify-center rounded-md transition-colors ${options.position === pos.value ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"}`}>
+                        <span className="h-1.5 w-1.5 rounded-full bg-current" />
+                      </button>
+                    ))}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <SliderRow label="Margin" value={options.margin} min={0} max={200} step={2} unit="px" onChange={(v) => set("margin", v)} />
+                  </div>
+                </div>
+              </SidebarSection>
+            </>
+          }
+          footer={
+            <>
+              <Button className="flex-1" onClick={applyToAll} disabled={isProcessing || queue.length === 0}>
+                {isProcessing ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" /> Applying…
+                  </>
+                ) : (
+                  <>
+                    <Stamp className="h-4 w-4" /> Apply to {queue.length === 1 ? "image" : `all ${queue.length}`}
+                  </>
+                )}
+              </Button>
+              {doneCount > 0 && (
+                <Button variant="outline" onClick={downloadAllAsZip}>
+                  <Download className="h-4 w-4" /> ZIP ({doneCount})
+                </Button>
+              )}
+            </>
+          }
+        />
+      )}
 
       {totalCount > 0 && (
         <>

@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "Sostituisce la Nuova Scheda con ricerca istantanea in 79+ strumenti gratuiti e privati: convertitori, PDF, calcolatrici, dev."
+    "message": "Sostituisce la Nuova Scheda con ricerca istantanea in 100+ strumenti gratuiti e privati: convertitori, PDF, calcolatrici, dev."
   },
   "offlineBadge": {
     "message": "Funziona offline"
@@ -19,6 +19,12 @@
   },
   "settingsClockFormat": {
     "message": "Formato orario"
+  },
+  "settingsLanguage": {
+    "message": "Lingua"
+  },
+  "languageSystem": {
+    "message": "Predefinito di sistema"
   },
   "clockAuto": {
     "message": "Automatico"

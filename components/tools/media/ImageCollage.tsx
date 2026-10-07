@@ -7,6 +7,8 @@ import { Download, GripVertical, LayoutGrid, Loader2, Trash2, Upload } from "luc
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { EditorLayout, SidebarSection, SliderRow } from "@/components/tools/shared/EditorLayout";
+import { FitStage } from "@/components/tools/shared/FitStage";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
@@ -385,150 +387,100 @@ export default function ImageCollage() {
 
       {images.length > 0 && (
         <>
-          <Card className="space-y-4 p-4">
-            <div className="flex items-center justify-between">
-              <p className="text-sm font-medium">
-                {images.length} photo{images.length === 1 ? "" : "s"} · using {usedCount} of {cellCount} cells
-              </p>
-              <div className="flex gap-2">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  onClick={() => {
-                    const input = document.createElement("input");
-                    input.type = "file";
-                    input.accept = "image/*";
-                    input.multiple = true;
-                    input.onchange = () => {
-                      if (input.files) void handleFiles(Array.from(input.files));
-                    };
-                    input.click();
-                  }}
+          <EditorLayout
+            stage={
+              <FitStage width={CANVAS_BASE} height={Math.round(CANVAS_BASE / layout.aspect)}>
+                <canvas ref={previewCanvasRef} className="block h-full w-full shadow-md" aria-label="Collage preview" />
+              </FitStage>
+            }
+            stageToolbar={
+              <span className="text-xs text-muted-foreground">
+                {images.length} photo{images.length === 1 ? "" : "s"} · using {usedCount} of {cellCount} cells · {layout.label}
+              </span>
+            }
+            sidebar={
+              <>
+                <SidebarSection
+                  title="Photos"
+                  action={
+                    <span className="flex gap-1">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="h-7 px-2 text-xs"
+                        onClick={() => {
+                          const input = document.createElement("input");
+                          input.type = "file";
+                          input.accept = "image/*";
+                          input.multiple = true;
+                          input.onchange = () => {
+                            if (input.files) void handleFiles(Array.from(input.files));
+                          };
+                          input.click();
+                        }}
+                      >
+                        <Upload className="h-3 w-3" /> Add
+                      </Button>
+                      <Button size="sm" variant="outline" className="h-7 px-2 text-xs" onClick={resetAll}>
+                        <Trash2 className="h-3 w-3" /> Clear
+                      </Button>
+                    </span>
+                  }
                 >
-                  <Upload className="h-3.5 w-3.5" /> Add photos
-                </Button>
-                <Button size="sm" variant="outline" onClick={resetAll}>
-                  <Trash2 className="h-3.5 w-3.5" /> Clear all
-                </Button>
-              </div>
-            </div>
+                  <p className="text-xs text-muted-foreground">Drag to reorder — photos fill the cells in this order.</p>
+                  <Reorder.Group axis="y" values={order} onReorder={setOrder} className="max-h-56 space-y-2 overflow-y-auto rounded-lg border border-border bg-background p-2">
+                    {order.map((id, index) => {
+                      const entry = imagesById.get(id);
+                      if (!entry) return null;
+                      return <ReorderRow key={id} id={id} index={index} inUse={index < cellCount} entry={entry} onRemove={() => removeImage(id)} />;
+                    })}
+                  </Reorder.Group>
+                </SidebarSection>
 
-            <div>
-              <p className="mb-2 text-xs font-medium text-muted-foreground">Reorder photos (fills cells in order)</p>
-              <Reorder.Group
-                axis="y"
-                values={order}
-                onReorder={setOrder}
-                className="max-h-64 space-y-2 overflow-y-auto rounded-lg border border-border bg-background p-2"
-              >
-                {order.map((id, index) => {
-                  const entry = imagesById.get(id);
-                  if (!entry) return null;
-                  return (
-                    <ReorderRow
-                      key={id}
-                      id={id}
-                      index={index}
-                      inUse={index < cellCount}
-                      entry={entry}
-                      onRemove={() => removeImage(id)}
-                    />
-                  );
-                })}
-              </Reorder.Group>
-            </div>
+                <SidebarSection title="Layout">
+                  <div className="grid grid-cols-2 gap-2">
+                    {LAYOUTS.map((l) => (
+                      <button
+                        key={l.id}
+                        type="button"
+                        onClick={() => setLayoutId(l.id)}
+                        aria-pressed={layoutId === l.id}
+                        className={cn("flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-xs font-medium transition-colors", layoutId === l.id ? "border-primary bg-primary/10 text-primary" : "border-border bg-background text-muted-foreground hover:bg-muted")}
+                      >
+                        <LayoutGrid className="h-3.5 w-3.5 shrink-0" />
+                        <span className="truncate">{l.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                </SidebarSection>
 
-            <div>
-              <p className="mb-2 text-xs font-medium text-muted-foreground">Layout</p>
-              <div className="flex flex-wrap gap-2">
-                {LAYOUTS.map((l) => (
-                  <button
-                    key={l.id}
-                    type="button"
-                    onClick={() => setLayoutId(l.id)}
-                    className={cn(
-                      "flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-xs font-medium transition-colors",
-                      layoutId === l.id
-                        ? "border-primary bg-primary/10 text-primary"
-                        : "border-border bg-background text-muted-foreground hover:bg-muted"
-                    )}
-                  >
-                    <LayoutGrid className="h-3.5 w-3.5" />
-                    {l.label}
-                  </button>
-                ))}
-              </div>
-            </div>
+                <SidebarSection title="Style">
+                  <div className="space-y-3.5">
+                    <SliderRow label="Spacing" value={gutter} min={0} max={32} unit="px" onChange={setGutter} />
+                    <SliderRow label="Corner radius" value={radius} min={0} max={24} unit="px" onChange={setRadius} />
+                    <label className="flex items-center justify-between text-sm">
+                      <span className="font-medium">Background</span>
+                      <span className="flex items-center gap-2">
+                        <span className="font-mono text-xs text-muted-foreground">{bgColor}</span>
+                        <input type="color" value={bgColor} onChange={(e) => setBgColor(e.target.value)} aria-label="Background colour" className="h-8 w-10 cursor-pointer rounded border border-border bg-transparent p-0.5" />
+                      </span>
+                    </label>
+                  </div>
+                </SidebarSection>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              <label className="space-y-1 text-xs">
-                <span className="flex justify-between text-muted-foreground">
-                  <span>Spacing</span>
-                  <span>{gutter}px</span>
-                </span>
-                <input
-                  type="range"
-                  min={0}
-                  max={32}
-                  step={1}
-                  value={gutter}
-                  onChange={(e) => setGutter(Number(e.target.value))}
-                  className="w-full accent-primary"
-                />
-              </label>
-              <label className="space-y-1 text-xs">
-                <span className="flex justify-between text-muted-foreground">
-                  <span>Corner radius</span>
-                  <span>{radius}px</span>
-                </span>
-                <input
-                  type="range"
-                  min={0}
-                  max={24}
-                  step={1}
-                  value={radius}
-                  onChange={(e) => setRadius(Number(e.target.value))}
-                  className="w-full accent-primary"
-                />
-              </label>
-              <label className="space-y-1 text-xs">
-                <span className="text-muted-foreground">Background color</span>
-                <div className="flex items-center gap-2">
-                  <input
-                    type="color"
-                    value={bgColor}
-                    onChange={(e) => setBgColor(e.target.value)}
-                    className="h-8 w-10 cursor-pointer rounded border border-border bg-transparent p-0.5"
-                  />
-                  <span className="font-mono text-xs text-muted-foreground">{bgColor}</span>
-                </div>
-              </label>
-            </div>
-
-            <div className="overflow-hidden rounded-lg border border-border bg-muted/30">
-              <canvas ref={previewCanvasRef} className="w-full" />
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="flex gap-1">
-                {OUTPUT_FORMATS.map((f) => (
-                  <button
-                    key={f.id}
-                    type="button"
-                    onClick={() => setFormat(f.id)}
-                    className={cn(
-                      "rounded-md border px-3 py-1.5 text-xs font-medium transition-colors",
-                      format === f.id
-                        ? "border-primary bg-primary/10 text-primary"
-                        : "border-border bg-background text-muted-foreground hover:bg-muted"
-                    )}
-                  >
-                    {f.label}
-                  </button>
-                ))}
-              </div>
-
-              <Button size="sm" className="ml-auto" onClick={handleExport} disabled={isExporting}>
+                <SidebarSection title="Save as">
+                  <div className="flex gap-1">
+                    {OUTPUT_FORMATS.map((f) => (
+                      <button key={f.id} type="button" onClick={() => setFormat(f.id)} aria-pressed={format === f.id} className={cn("rounded-md border px-3 py-1.5 text-xs font-medium transition-colors", format === f.id ? "border-primary bg-primary/10 text-primary" : "border-border bg-background text-muted-foreground hover:bg-muted")}>
+                        {f.label}
+                      </button>
+                    ))}
+                  </div>
+                </SidebarSection>
+              </>
+            }
+            footer={
+              <Button size="sm" className="w-full" onClick={handleExport} disabled={isExporting}>
                 {isExporting ? (
                   <>
                     <Loader2 className="h-3.5 w-3.5 animate-spin" /> Rendering…
@@ -539,8 +491,8 @@ export default function ImageCollage() {
                   </>
                 )}
               </Button>
-            </div>
-          </Card>
+            }
+          />
 
           {resultUrl && resultBlob && (
             <Card className="space-y-3 p-4">

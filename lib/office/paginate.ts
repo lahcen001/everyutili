@@ -9,12 +9,20 @@ export interface PageSlice {
  * block, table row or list item. A slice ends at the last allowed break that still fits; only when a
  * single piece of content is taller than a page is it cut at the page boundary.
  */
-export function paginate(totalHeight: number, pageHeight: number, breakPoints: number[]): PageSlice[] {
+export function paginate(totalHeight: number, pageHeight: number, breakPoints: number[], forcedBreaks: number[] = []): PageSlice[] {
   if (totalHeight <= 0 || pageHeight <= 0) return [{ start: 0, end: Math.max(totalHeight, 0) }];
   const breaks = [...new Set(breakPoints.map((y) => Math.round(y)))].filter((y) => y > 0 && y < totalHeight).sort((a, b) => a - b);
+  // A forced break ends a page at that exact position (a cover page, a contents page…).
+  const forced = [...new Set(forcedBreaks.map((y) => Math.round(y)))].filter((y) => y > 0 && y < totalHeight).sort((a, b) => a - b);
   const slices: PageSlice[] = [];
   let start = 0;
   while (start < totalHeight - 0.5) {
+    const nextForced = forced.find((y) => y > start + 1);
+    if (nextForced !== undefined && nextForced <= start + pageHeight) {
+      slices.push({ start, end: nextForced });
+      start = nextForced;
+      continue;
+    }
     const limit = start + pageHeight;
     if (limit >= totalHeight) {
       slices.push({ start, end: totalHeight });

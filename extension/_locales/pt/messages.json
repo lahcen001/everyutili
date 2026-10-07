@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "Substitui a Nova Guia por busca instantânea em 79+ ferramentas grátis e privadas: conversores, PDF, calculadoras, dev."
+    "message": "Substitui a Nova Guia por busca instantânea em 100+ ferramentas grátis e privadas: conversores, PDF, calculadoras, dev."
   },
   "offlineBadge": {
     "message": "Funciona offline"
@@ -19,6 +19,12 @@
   },
   "settingsClockFormat": {
     "message": "Formato do relógio"
+  },
+  "settingsLanguage": {
+    "message": "Idioma"
+  },
+  "languageSystem": {
+    "message": "Padrão do sistema"
   },
   "clockAuto": {
     "message": "Automático"

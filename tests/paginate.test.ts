@@ -40,4 +40,18 @@ describe("paginate", () => {
     expect(paginate(0, 1000, [])).toEqual([{ start: 0, end: 0 }]);
     expect(paginate(100, 0, [])).toEqual([{ start: 0, end: 100 }]);
   });
+
+  it("ends a page exactly at a forced break, even when more content would fit", () => {
+    // a 300px cover, then content; forced break at 300
+    const pages = paginate(1500, 1000, [300, 700, 1100, 1500], [300]);
+    expect(pages[0]).toEqual({ start: 0, end: 300 });
+    expect(pages[1].start).toBe(300);
+    expect(pages[pages.length - 1].end).toBe(1500);
+  });
+
+  it("handles several forced breaks and stays contiguous", () => {
+    const pages = paginate(3000, 1000, [500, 1500, 2500], [500, 1500]);
+    expect(pages.slice(0, 2)).toEqual([{ start: 0, end: 500 }, { start: 500, end: 1500 }]);
+    pages.forEach((p, i) => i > 0 && expect(p.start).toBe(pages[i - 1].end));
+  });
 });

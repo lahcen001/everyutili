@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "Sustituye la pestaña nueva por búsqueda instantánea en 79+ herramientas gratis y privadas: conversores, PDF, calculadoras, dev."
+    "message": "Sustituye la pestaña nueva por búsqueda instantánea en 100+ herramientas gratis y privadas: conversores, PDF, calculadoras, dev."
   },
   "offlineBadge": {
     "message": "Funciona sin conexión"
@@ -19,6 +19,12 @@
   },
   "settingsClockFormat": {
     "message": "Formato de hora"
+  },
+  "settingsLanguage": {
+    "message": "Idioma"
+  },
+  "languageSystem": {
+    "message": "Predeterminado del sistema"
   },
   "clockAuto": {
     "message": "Auto"

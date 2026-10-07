@@ -17,7 +17,8 @@ import {
 
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { EditorLayout, SidebarSection } from "@/components/tools/shared/EditorLayout";
+import { FitStage } from "@/components/tools/shared/FitStage";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
@@ -472,73 +473,12 @@ export default function ImageAnnotator() {
       )}
 
       {image && (
-        <>
-          <Card className="flex flex-wrap items-center gap-3 p-3">
-            <div className="flex items-center gap-1 overflow-hidden rounded-lg border border-border">
-              {TOOLS.map((t) => (
-                <button
-                  key={t.value}
-                  onClick={() => setTool(t.value)}
-                  title={t.label}
-                  aria-label={t.label}
-                  className={`flex h-9 w-9 items-center justify-center transition-colors ${
-                    tool === t.value ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"
-                  }`}
-                >
-                  <t.icon className="h-4 w-4" />
-                </button>
-              ))}
-            </div>
-
-            <div className="flex items-center gap-1.5">
-              {COLORS.map((c) => (
-                <button
-                  key={c}
-                  onClick={() => setColor(c)}
-                  aria-label={`Color ${c}`}
-                  className={`h-6 w-6 rounded-full border-2 transition-transform hover:scale-110 ${
-                    color === c ? "border-primary" : "border-transparent"
-                  }`}
-                  style={{ background: c }}
-                />
-              ))}
-            </div>
-
-            <div className="ml-auto flex items-center gap-1">
-              <Button size="sm" variant="outline" onClick={undo} disabled={shapes.length === 0}>
-                <Undo2 className="h-3.5 w-3.5" />
-              </Button>
-              <Button size="sm" variant="outline" onClick={redo} disabled={redoStack.length === 0}>
-                <Redo2 className="h-3.5 w-3.5" />
-              </Button>
-              <Button size="sm" variant="outline" onClick={() => setImage(null)}>
-                <ImageIcon className="h-3.5 w-3.5" /> New
-              </Button>
-              <Button size="sm" onClick={handleExport} disabled={isExporting}>
-                {isExporting ? (
-                  <>
-                    <Loader2 className="h-3.5 w-3.5 animate-spin" /> Exporting…
-                  </>
-                ) : (
-                  <>
-                    <Download className="h-3.5 w-3.5" /> Export
-                  </>
-                )}
-              </Button>
-            </div>
-          </Card>
-
-          <Card className="relative overflow-hidden p-0">
-            <div className="relative">
-              <canvas
-                ref={canvasRef}
-                className="block w-full cursor-crosshair"
-                onMouseDown={handleMouseDown}
-                onMouseMove={handleMouseMove}
-                onMouseUp={handleMouseUp}
-                onMouseLeave={handleMouseUp}
-              />
-              <canvas ref={overlayCanvasRef} className="pointer-events-none absolute inset-0 block w-full" />
+        <EditorLayout
+          sidebarWidth="sm"
+          stage={
+            <FitStage width={image.naturalWidth} height={image.naturalHeight} boxClassName="shadow-md">
+              <canvas ref={canvasRef} className="block h-full w-full cursor-crosshair bg-white" onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} />
+              <canvas ref={overlayCanvasRef} className="pointer-events-none absolute inset-0 block h-full w-full" />
               {textDraft && (
                 <input
                   autoFocus
@@ -550,17 +490,73 @@ export default function ImageAnnotator() {
                     if (e.key === "Escape") setTextDraft(null);
                   }}
                   className="absolute z-10 rounded border border-primary bg-card px-2 py-1 text-sm font-semibold outline-none"
-                  style={{
-                    left: `${(textDraft.at.x / image.naturalWidth) * 100}%`,
-                    top: `${(textDraft.at.y / image.naturalHeight) * 100}%`,
-                    color,
-                  }}
+                  style={{ left: `${(textDraft.at.x / image.naturalWidth) * 100}%`, top: `${(textDraft.at.y / image.naturalHeight) * 100}%`, color }}
                   placeholder="Type…"
                 />
               )}
-            </div>
-          </Card>
-        </>
+            </FitStage>
+          }
+          stageToolbar={
+            <>
+              <Button size="sm" variant="outline" onClick={undo} disabled={shapes.length === 0}>
+                <Undo2 className="h-3.5 w-3.5" /> Undo
+              </Button>
+              <Button size="sm" variant="outline" onClick={redo} disabled={redoStack.length === 0}>
+                <Redo2 className="h-3.5 w-3.5" /> Redo
+              </Button>
+              <span className="text-xs text-muted-foreground">
+                {image.naturalWidth} × {image.naturalHeight}px · {shapes.length} mark{shapes.length === 1 ? "" : "s"}
+              </span>
+            </>
+          }
+          sidebar={
+            <>
+              <SidebarSection title="Tool">
+                <div className="grid grid-cols-4 gap-2">
+                  {TOOLS.map((t) => (
+                    <button
+                      key={t.value}
+                      onClick={() => setTool(t.value)}
+                      title={t.label}
+                      aria-label={t.label}
+                      aria-pressed={tool === t.value}
+                      className={`flex h-10 flex-col items-center justify-center gap-0.5 rounded-lg border text-[10px] transition-colors ${tool === t.value ? "border-primary bg-primary text-primary-foreground" : "border-border hover:bg-muted"}`}
+                    >
+                      <t.icon className="h-4 w-4" />
+                      <span className="max-w-full truncate px-0.5">{t.label}</span>
+                    </button>
+                  ))}
+                </div>
+              </SidebarSection>
+              <SidebarSection title="Colour">
+                <div className="flex flex-wrap items-center gap-2">
+                  {COLORS.map((c) => (
+                    <button key={c} onClick={() => setColor(c)} aria-label={`Color ${c}`} aria-pressed={color === c} className={`h-7 w-7 rounded-full border-2 transition-transform hover:scale-110 ${color === c ? "border-primary ring-2 ring-primary/30" : "border-border"}`} style={{ background: c }} />
+                  ))}
+                </div>
+              </SidebarSection>
+              <p className="text-xs text-muted-foreground">Click and drag on the picture to draw. Pick Text to type a label, Counter for numbered badges, and Pixelate to hide private details.</p>
+            </>
+          }
+          footer={
+            <>
+              <Button size="sm" variant="outline" onClick={() => setImage(null)}>
+                <ImageIcon className="h-3.5 w-3.5" /> New image
+              </Button>
+              <Button size="sm" className="ml-auto" onClick={handleExport} disabled={isExporting}>
+                {isExporting ? (
+                  <>
+                    <Loader2 className="h-3.5 w-3.5 animate-spin" /> Exporting…
+                  </>
+                ) : (
+                  <>
+                    <Download className="h-3.5 w-3.5" /> Export
+                  </>
+                )}
+              </Button>
+            </>
+          }
+        />
       )}
 
       <ToolHistoryList ref={historyRef} toolSlug="image-annotator" />

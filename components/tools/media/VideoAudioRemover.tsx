@@ -273,16 +273,19 @@ export default function VideoAudioRemover() {
 
       {file && videoUrl && (
         <>
-          <Card className="space-y-4 p-4">
-            <video
+          <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_23rem] lg:items-start">
+            <div className="min-w-0 lg:sticky lg:top-20">
+              <video
               ref={videoRef}
               src={videoUrl}
               onLoadedMetadata={handleLoadedMetadata}
-              className="w-full rounded-lg border border-border"
+              className="max-h-[72vh] w-full rounded-xl border border-border bg-black object-contain"
               controls
               playsInline
             />
-            <canvas ref={canvasRef} className="hidden" />
+              <canvas ref={canvasRef} className="hidden" />
+            </div>
+            <Card className="space-y-4 p-4">
 
             <div className="flex flex-wrap items-center gap-2">
               <Button
@@ -335,7 +338,8 @@ export default function VideoAudioRemover() {
                 )}
               </Button>
             </div>
-          </Card>
+            </Card>
+          </div>
 
           {resultUrl && resultBlob && (
             <Card className="space-y-3 p-4">

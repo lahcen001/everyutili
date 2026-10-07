@@ -12,7 +12,7 @@ const CHROME_STORE_URL =
 export const metadata: Metadata = {
   title: "Chrome Extension — EveryUtili",
   description:
-    "Replace Chrome's New Tab with instant access to 79+ free, privacy-first tools. Get the EveryUtili extension from the Chrome Web Store.",
+    "Replace Chrome's New Tab with instant access to 100+ free, privacy-first tools. Get the EveryUtili extension from the Chrome Web Store.",
   alternates: {
     canonical: `${SITE_URL}/en/extension`,
   },
@@ -22,7 +22,12 @@ const FEATURES = [
   {
     icon: Search,
     title: "Instant tool search",
-    body: "Every new tab opens straight into a searchable grid of all 79+ tools — no bookmarks needed.",
+    body: "Every new tab opens straight into a searchable grid of all 100+ tools — no bookmarks needed.",
+  },
+  {
+    icon: Globe,
+    title: "Speaks your language",
+    body: "Follows your browser's language by default — English if yours isn't supported — in 12 languages, with a setting to switch anytime.",
   },
   {
     icon: Sparkles,
@@ -66,7 +71,7 @@ export default function ExtensionPage() {
         </div>
       </div>
 
-      <div className="mt-14 grid gap-4 sm:grid-cols-3">
+      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {FEATURES.map((feature) => (
           <Card key={feature.title} className="p-5">
             <feature.icon className="h-5 w-5 text-primary" />

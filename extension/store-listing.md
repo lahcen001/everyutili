@@ -12,21 +12,24 @@ EveryUtili — Free Online Tools
 
 ## Summary (132 characters max)
 
-Replace your New Tab with instant search across 79+ free, privacy-first tools — file converters, PDF tools, calculators & more.
+Replace your New Tab with instant search across 100+ free, privacy-first tools — file converters, PDF tools, calculators & more.
 
 ## Description (full)
 
 EveryUtili turns your New Tab into a fast, distraction-free launcher for
-everyutili.com's full toolkit — file converters, PDF tools, calculators, and
-developer utilities. No more digging through bookmarks or typing the URL
+everyutili.com's full toolkit — file converters, PDF tools, calculators,
+developer utilities, and random pickers. No more digging through bookmarks or typing the URL
 every time.
 
 **What you get**
 
-- Instant search across all 79+ tools, with typo-tolerant fuzzy matching and
+- Instant search across all 100+ tools, with typo-tolerant fuzzy matching and
   acronym shortcuts (type "jtp" to jump straight to JPG to PNG)
 - A dual-engine search bar — search your tools by default, or switch to
   Google with one keystroke (Tab) or a "g " prefix
+- Speaks your language: follows your browser's language by default (English
+  if yours isn't supported) in 12 languages, with a Language setting to switch
+  — tool names and search work in each language
 - Pin your favorite tools so they're always the first thing you see
 - Recently used tools surface automatically
 - A calm, minimalist dashboard: live clock, date, and a collapsible "browse
@@ -53,7 +56,8 @@ Productivity
 
 ## Language
 
-English
+English (the extension itself is localized into 12 languages — upload the
+translated name/description from `_locales/` in the developer console)
 
 ## Privacy policy URL
 
@@ -89,7 +93,7 @@ exactly), not a placeholder shape.
    date, floating search bar, "Quick Access" shelf
 2. `store-assets-v2/screenshot-2-search.png` — Smart dual-engine search:
    active query, EveryUtili/Google engine pill, filtered results dropdown
-3. `store-assets-v2/screenshot-3-tools.png` — 79+ tool suite as a bento grid
+3. `store-assets-v2/screenshot-3-tools.png` — 100+ tool suite as a bento grid
    across the 4 categories (Media, Documents, Developer, Financial)
 
 These are designed mockups (canvas-rendered via `logo.html`), not literal

@@ -177,8 +177,28 @@ function headingStyle(theme: DocTheme, level: number) {
   };
 }
 
+export interface DocxMeta {
+  title: string;
+  author: string;
+  date: string;
+}
+
+/** Turns header/footer text with {page}, {pages}, {title}, {author}, {date} into runs; page numbers become live Word fields. */
+function variableRuns(template: string, meta: DocxMeta, run: { color?: string; size?: number } = {}): ParagraphChild[] {
+  const out: ParagraphChild[] = [];
+  for (const piece of template.split(/(\{page\}|\{pages\})/i)) {
+    const lower = piece.toLowerCase();
+    if (lower === "{page}") out.push(new TextRun({ children: [PageNumber.CURRENT], ...run }));
+    else if (lower === "{pages}") out.push(new TextRun({ children: [PageNumber.TOTAL_PAGES], ...run }));
+    else if (piece) out.push(new TextRun({ text: piece.replace(/\{title\}/gi, meta.title).replace(/\{author\}/gi, meta.author).replace(/\{date\}/gi, meta.date), ...run }));
+  }
+  return out;
+}
+
+const WORD_ALIGN = { left: AlignmentType.LEFT, center: AlignmentType.CENTER, right: AlignmentType.RIGHT } as const;
+
 /** Builds a real .docx whose styles, lists, tables, links and page setup come from the shared model and theme. */
-export async function blocksToDocxBlob(blocks: Block[], theme: DocTheme, page: PageSettings): Promise<Blob> {
+export async function blocksToDocxBlob(blocks: Block[], theme: DocTheme, page: PageSettings, meta: DocxMeta = { title: "", author: "", date: "" }): Promise<Blob> {
   const paper = PAPER_MM[page.size];
   const margin = mmToTwips(page.marginMm);
   let instance = 0;
@@ -187,12 +207,17 @@ export async function blocksToDocxBlob(blocks: Block[], theme: DocTheme, page: P
   const children = blocks.flatMap((block) => blockToElements(block, theme, listInstance));
   if (children.length === 0) children.push(new Paragraph({}));
 
-  const footerChildren: ParagraphChild[] = [];
-  if (page.footerText.trim()) footerChildren.push(new TextRun({ text: page.footerText.trim() + (page.pageNumbers ? "   ·   " : "") }));
-  if (page.pageNumbers) footerChildren.push(new TextRun({ children: [PageNumber.CURRENT] }));
+  const footerText = page.footerText.trim();
+  const footerChildren: ParagraphChild[] = footerText ? variableRuns(footerText, meta) : [];
+  // "Show page numbers" adds the number unless the footer already places {page} itself
+  if (page.pageNumbers && !/\{page\}/i.test(footerText)) {
+    if (footerChildren.length > 0) footerChildren.push(new TextRun({ text: "   ·   " }));
+    footerChildren.push(new TextRun({ children: [PageNumber.CURRENT] }));
+  }
 
   const doc = new Document({
-    creator: "EveryUtili",
+    creator: meta.author || "EveryUtili",
+    title: meta.title || undefined,
     styles: {
       default: {
         document: {
@@ -212,11 +237,11 @@ export async function blocksToDocxBlob(blocks: Block[], theme: DocTheme, page: P
           },
         },
         headers: page.headerText.trim()
-          ? { default: new Header({ children: [new Paragraph({ children: [new TextRun({ text: page.headerText.trim(), color: "6B7280", size: 18 })] })] }) }
+          ? { default: new Header({ children: [new Paragraph({ alignment: WORD_ALIGN[page.headerAlign], children: variableRuns(page.headerText.trim(), meta, { color: "6B7280", size: 18 }) })] }) }
           : undefined,
         footers:
           footerChildren.length > 0
-            ? { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.CENTER, children: footerChildren })] }) }
+            ? { default: new Footer({ children: [new Paragraph({ alignment: WORD_ALIGN[page.footerAlign], children: footerChildren })] }) }
             : undefined,
         children,
       },

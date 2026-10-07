@@ -3309,65 +3309,75 @@
       ]
     },
     "pdf-maker": {
-      "seoTitle": "Creador de PDF – Word, Excel, CSV, texto y HTML a PDF, gratis",
-      "metaDescription": "Convierte Word, Excel, CSV, Markdown, HTML o texto plano en un PDF desde tu navegador. Elige estilo, tamaño de papel y márgenes, añade encabezados y números de página y previsualiza cada página, sin subir nada.",
-      "h1": "Creador de PDF: Word, Excel, texto y HTML a PDF",
-      "subheading": "Convierte documentos y hojas de cálculo a PDF con estilo, tamaño de papel y vista previa de páginas en vivo, todo procesado 100 % en local en tu navegador.",
+      "seoTitle": "Creador de PDF – Plantillas, portada, índice y marca de agua, gratis",
+      "metaDescription": "Crea PDF profesionales en tu navegador: parte de una plantilla de factura, currículum, carta o informe, o convierte Word, Excel, CSV, Markdown y HTML. Portada, índice, encabezados, pies de página, marca de agua y fuentes, sin subir archivos.",
+      "h1": "Creador de PDF: plantillas, Word, Excel y Markdown a PDF",
+      "subheading": "Un estudio de PDF a pantalla completa: parte de una plantilla o de tu propio archivo, dale estilo, añade portada, índice, encabezados y una marca de agua, y mira cada página en directo.",
       "keywords": [
+        "creador de pdf",
+        "crear pdf online",
+        "plantilla de factura pdf",
+        "crear currículum en pdf",
+        "markdown a pdf",
         "word a pdf",
         "excel a pdf",
-        "csv a pdf",
-        "html a pdf",
-        "texto a pdf",
-        "markdown a pdf",
-        "crear pdf online"
+        "índice en pdf",
+        "añadir marca de agua a pdf"
       ],
       "howTo": [
         {
-          "name": "Añade tu contenido",
-          "text": "Sube un archivo Word, Excel, CSV, JSON, Markdown, HTML o de texto, o escribe o pega tu contenido directamente."
+          "name": "Empieza con una plantilla o con tu propio contenido",
+          "text": "Elige una plantilla, como factura, currículum, carta, informe, propuesta o notas de reunión; o abre un archivo Word, Excel, CSV, JSON, Markdown, HTML o de texto, o simplemente escribe."
         },
         {
-          "name": "Elige estilo y página",
-          "text": "Escoge uno de los seis estilos, un tamaño de papel (A4, Letter, Legal, A5), la orientación y los márgenes, y añade encabezado, pie de página y números de página."
+          "name": "Dale estilo al documento",
+          "text": "Elige uno de los seis estilos y ajusta después la fuente, el color de acento, el tamaño del texto y el interlineado. Define el tamaño de papel, la orientación y los márgenes."
         },
         {
-          "name": "Revisa la vista previa",
-          "text": "Mira las páginas exactas antes de descargar. Los saltos de página caen entre párrafos, filas de tabla y elementos de lista, nunca en medio de ellos."
+          "name": "Añade los toques finales",
+          "text": "Activa una portada, un índice automático con números de página reales, encabezados y pies de página con las variables {page} y {pages}, y una marca de agua de texto."
         },
         {
           "name": "Descarga o imprime",
-          "text": "Haz clic en Download PDF, o usa Print / Save as PDF para conservar el texto seleccionable."
+          "text": "Revisa la vista previa de las páginas en directo y haz clic en Download PDF, o usa Print / Save as PDF para conservar el texto seleccionable."
         }
       ],
       "faq": [
         {
           "question": "¿Mi PDF se verá exactamente igual que el archivo original de Word o Excel?",
-          "answer": "No. La herramienta genera tu contenido (texto, títulos, listas, tablas e imágenes) con el estilo que elijas, pero no copia el diseño de página, las fuentes ni los encabezados exactos del original. Para un resultado idéntico al píxel, exporta a PDF desde el propio Word o Excel."
+          "answer": "No. La herramienta renderiza tu contenido (texto, títulos, listas, tablas e imágenes) con el estilo que elijas, pero no copia la maquetación exacta de la página, las fuentes ni los encabezados del original. Para un resultado idéntico al píxel, exporta a PDF desde el propio Word o Excel."
         },
         {
-          "question": "¿Qué diferencia hay entre Download PDF y Print / Save as PDF?",
-          "answer": "Download PDF convierte cada página en una imagen: se ve igual en todas partes, pero el texto no se puede seleccionar. Print / Save as PDF abre el cuadro de impresión de tu navegador y, al elegir \"Guardar como PDF\", conserva el texto seleccionable y con función de búsqueda."
+          "question": "¿Cuál es la diferencia entre Download PDF y Print / Save as PDF?",
+          "answer": "Download PDF convierte cada página en una imagen: se ve igual en todas partes e incluye tus encabezados, pies de página, números de página, portada y marca de agua, pero el texto no se puede seleccionar. Print / Save as PDF abre el cuadro de impresión de tu navegador, y si eliges allí «Guardar como PDF» se conserva el texto seleccionable y con búsqueda (tu navegador añade sus propios encabezados y números de página)."
         },
         {
           "question": "¿Qué archivos puedo convertir?",
-          "answer": "Word (.docx), hojas de cálculo de Excel y OpenDocument (.xlsx, .xls, .xlsm, .ods), CSV, TSV, JSON, Markdown, HTML y texto plano. Los archivos .doc antiguos deben guardarse de nuevo como .docx antes."
+          "answer": "Word (.docx), hojas de cálculo de Excel y OpenDocument (.xlsx, .xls, .xlsm, .ods), CSV, TSV, JSON, Markdown, HTML y texto plano. Los archivos .doc antiguos deben volver a guardarse primero como .docx."
+        },
+        {
+          "question": "¿Cómo funcionan las plantillas?",
+          "answer": "Una plantilla rellena el editor con Markdown de ejemplo, elige un estilo a juego y configura opciones de página como una portada o un índice. Sustituye el texto de ejemplo por el tuyo. La fecha de una plantilla se rellena con la fecha de hoy."
+        },
+        {
+          "question": "¿Cómo funciona el índice?",
+          "answer": "Se genera a partir de tus títulos (hasta el nivel que elijas) y muestra el número de página real de cada uno. La portada no se numera, por lo que la numeración empieza después de ella."
+        },
+        {
+          "question": "¿Qué puedo poner en el encabezado y el pie de página?",
+          "answer": "Cualquier texto, además de las variables {page}, {pages}, {title}, {author} y {date}, por ejemplo «Página {page} de {pages}». Cada uno puede alinearse a la izquierda, al centro o a la derecha."
         },
         {
           "question": "¿Cómo se dividen las páginas?",
-          "answer": "Primero se mide el documento y solo se empieza una página nueva entre párrafos, filas de tabla y elementos de lista, de modo que nunca se cortan líneas o filas por la mitad ni un título queda al final de una página. Solo un bloque más alto que una página, como un bloque de código muy largo, puede dividirse."
-        },
-        {
-          "question": "¿Puedo convertir una hoja de cálculo ancha?",
-          "answer": "Sí. Cambia a orientación horizontal o reduce el tamaño del texto. Cada hoja se convierte en una tabla, y las hojas muy largas se limitan a sus primeras 3,000 filas para que el PDF siga siendo manejable."
+          "answer": "Primero se mide el documento y una página nueva solo empieza entre párrafos, filas de tabla y elementos de lista, de modo que nunca se cortan líneas o filas por la mitad ni un título queda al final de una página. Solo un bloque único más alto que una página, como un bloque de código muy largo, puede dividirse."
         },
         {
           "question": "¿Funciona con árabe, chino, japonés y otras escrituras?",
           "answer": "Sí. Tu navegador dibuja el texto, así que cualquier escritura para la que tu dispositivo tenga fuentes funciona en ambas vías de PDF."
         },
         {
-          "question": "¿Se sube mi archivo a algún sitio?",
-          "answer": "No, todo ocurre en tu navegador. Los documentos largos tardan más porque cada página se genera una a una, y un contador de progreso te muestra en qué punto va."
+          "question": "¿Mi archivo se sube a algún sitio?",
+          "answer": "No, todo ocurre en tu navegador. Los documentos largos tardan más porque cada página se renderiza una a una, y un contador de progreso muestra en qué punto va."
         }
       ]
     },
@@ -3738,6 +3748,333 @@
         {
           "question": "¿Se sube mi PDF a algún sitio?",
           "answer": "No, el texto se lee íntegramente en tu navegador."
+        }
+      ]
+    },
+    "organize-pdf": {
+      "seoTitle": "Organizar páginas de PDF – Reordenar, girar, eliminar y duplicar gratis",
+      "metaDescription": "Reorganiza las páginas de un PDF arrastrando y soltando: reordena, gira, elimina, duplica e inserta páginas en blanco, combina varios PDF o corrige un escaneo a doble cara. Gratis, privado y sin subir archivos.",
+      "h1": "Organizar páginas de PDF",
+      "subheading": "Arrastra las páginas para ordenarlas, gíralas, duplícalas o elimínalas y añade páginas en blanco, todo en tu navegador.",
+      "keywords": [
+        "organizar pdf",
+        "reordenar páginas de pdf",
+        "cambiar el orden de las páginas de un pdf",
+        "girar páginas de pdf",
+        "eliminar páginas de pdf",
+        "duplicar página de pdf",
+        "añadir página en blanco a pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Añade tus PDF",
+          "text": "Suelta uno o varios archivos PDF. Sus páginas aparecen como miniaturas en una sola cuadrícula."
+        },
+        {
+          "name": "Ordena las páginas",
+          "text": "Arrastra las páginas para darles un nuevo orden, o selecciónalas para girarlas, duplicarlas, eliminarlas o añadir una página en blanco a continuación."
+        },
+        {
+          "name": "Usa los arreglos rápidos",
+          "text": "Invierte el orden, coloca las páginas impares antes que las pares o intercala un escaneo de anversos y reversos."
+        },
+        {
+          "name": "Descarga",
+          "text": "Haz clic en Download PDF para guardar las páginas en el orden que ves."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Organizar el PDF reduce su calidad?",
+          "answer": "No. Las páginas se copian del archivo original, sin volver a renderizarse, así que el texto sigue siendo seleccionable y las imágenes conservan su calidad. Las miniaturas son solo para mostrar."
+        },
+        {
+          "question": "¿Puedo combinar páginas de varios PDF?",
+          "answer": "Sí. Añade tantos PDF como quieras con Add PDF; todas las páginas se unen en la misma cuadrícula, etiquetadas con su archivo, y puedes mezclarlas en cualquier orden."
+        },
+        {
+          "question": "¿Cómo giro o elimino varias páginas a la vez?",
+          "answer": "Haz clic en las páginas para seleccionarlas (cuando ya hay algo seleccionado, cada clic activa o desactiva la página) y usa Left, Right, Delete o Duplicate. Select all y Clear selection facilitan el trabajo con documentos grandes."
+        },
+        {
+          "question": "¿Cuáles son los arreglos rápidos para documentos escaneados?",
+          "answer": "Reverse all invierte todo el orden. Odd, then even agrupa las páginas 1, 3, 5… antes que las 2, 4, 6…. Interleave duplex scan fusiona dos escaneos (todos los anversos y, después, todos los reversos introducidos en orden inverso) en un único documento correctamente ordenado."
+        },
+        {
+          "question": "¿Hay un límite de páginas?",
+          "answer": "Hasta 400 páginas a la vez, porque cada página se dibuja como miniatura en tu navegador. Si el archivo es más largo, divídelo primero."
+        },
+        {
+          "question": "¿Funciona con PDF protegidos con contraseña?",
+          "answer": "No. Quita primero la contraseña y después organiza el archivo."
+        },
+        {
+          "question": "¿Mis archivos se suben a algún sitio?",
+          "answer": "No. Todo se ejecuta en tu navegador, por lo que tus documentos nunca salen de tu dispositivo."
+        }
+      ]
+    },
+    "sign-pdf": {
+      "seoTitle": "Firmar PDF online – Dibuja, escribe o firma digitalmente con certificado, gratis",
+      "metaDescription": "Firma un PDF en tu navegador: dibuja, escribe o sube tu firma, o añade una firma digital criptográfica real con un certificado. Gratis y privado: no se sube nada.",
+      "h1": "Firmar PDF online",
+      "subheading": "Dibuja, escribe o sube tu firma, o añade una firma digital a prueba de manipulaciones con tu propio certificado, todo en tu dispositivo.",
+      "keywords": [
+        "firmar pdf",
+        "firmar pdf online gratis",
+        "añadir firma a pdf",
+        "firma electrónica pdf",
+        "dibujar firma pdf",
+        "rellenar y firmar pdf",
+        "añadir fecha a pdf",
+        "firma digital pdf",
+        "firmar pdf con certificado"
+      ],
+      "howTo": [
+        {
+          "name": "Abre tu PDF",
+          "text": "Arrastra el PDF que necesitas firmar."
+        },
+        {
+          "name": "Crea tu firma",
+          "text": "Dibújala con el ratón o el dedo, escribe tu nombre con un estilo manuscrito o sube una foto de tu firma: el fondo blanco del papel se elimina automáticamente."
+        },
+        {
+          "name": "Colócala",
+          "text": "Arrastra la firma al lugar correcto, tira de la esquina para cambiar su tamaño y añade la fecha de hoy, texto o tus iniciales."
+        },
+        {
+          "name": "Elige dónde aparece",
+          "text": "Muestra el sello en una página, en todas las páginas (útil para iniciales) o solo en la última, y descarga el PDF firmado."
+        },
+        {
+          "name": "Añade una firma digital (opcional)",
+          "text": "Marca Añadir una firma digital y carga tu certificado .p12 / .pfx con su contraseña, o genera uno nuevo. Elige una insignia visible, un motivo y una ubicación, y descarga el PDF firmado criptográficamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Es una firma con validez legal?",
+          "answer": "Una firma dibujada es una imagen en la página, que muchas personas y empresas aceptan para documentos cotidianos. Para una prueba más sólida activa Añadir una firma digital: firma el archivo con un certificado para que los lectores de PDF detecten cualquier cambio posterior. Comprueba qué exige tu caso."
+        },
+        {
+          "question": "¿Cuál es la diferencia entre una firma dibujada y una firma digital?",
+          "answer": "Una firma dibujada es solo una imagen. Una firma digital es un sello criptográfico creado con la clave privada de tu certificado y almacenado dentro del PDF. Si alguien modifica el archivo después, lectores como Adobe Acrobat avisan de que la firma está rota."
+        },
+        {
+          "question": "¿Por qué mi lector dice que el firmante no está verificado?",
+          "answer": "Un certificado creado en esta herramienta es autofirmado, por lo que el documento está protegido contra ediciones, pero el lector no puede confirmar quién eres hasta que el destinatario confíe en el certificado. Para flujos con validez legal, usa un certificado emitido por una autoridad de confianza y cárgalo como archivo .p12 / .pfx. Tu clave privada nunca sale de tu dispositivo."
+        },
+        {
+          "question": "¿Se sube mi documento o mi firma?",
+          "answer": "No. El PDF, tu firma y el resultado permanecen en tu navegador. Opcionalmente puedes recordar una firma en este dispositivo; se guarda solo en el almacenamiento local de tu navegador y puedes borrarla cuando quieras."
+        },
+        {
+          "question": "¿Cómo obtengo una firma limpia a partir de una foto?",
+          "answer": "Firma sobre papel blanco liso con buena luz y sube la imagen. Deja marcada la opción Quitar el fondo blanco y el papel se vuelve transparente, conservando solo la tinta."
+        },
+        {
+          "question": "¿Puedo firmar todas las páginas o añadir iniciales?",
+          "answer": "Sí. Crea un sello de texto corto, como tus iniciales, selecciónalo y elige Todas las páginas en Mostrar en."
+        },
+        {
+          "question": "¿Funciona en páginas giradas?",
+          "answer": "Sí. El sello se posiciona respecto a la página tal como la ves, incluidas las páginas giradas, y mantiene el mismo lugar en el archivo guardado."
+        },
+        {
+          "question": "¿Puedo escribir texto en otro idioma?",
+          "answer": "Sí. El texto y las fechas los dibuja tu navegador, así que funciona cualquier idioma para el que tu dispositivo tenga fuentes."
+        },
+        {
+          "question": "¿Firmar modifica el resto de mi PDF?",
+          "answer": "No. La firma se añade sobre la página; el texto, las imágenes y los enlaces originales quedan exactamente como estaban."
+        }
+      ]
+    },
+    "crop-pdf": {
+      "seoTitle": "Recortar páginas de PDF – Quita márgenes a mano o automáticamente, gratis",
+      "metaDescription": "Recorta páginas de PDF online: arrastra los bordes para quitar márgenes, detecta automáticamente el espacio en blanco, aplícalo a todas las páginas, a las impares, a las pares o a las seleccionadas, y descarga. Gratis y privado, sin subir archivos.",
+      "h1": "Recortar páginas de PDF",
+      "subheading": "Quita márgenes arrastrando los bordes o detecta el espacio en blanco automáticamente, y aplícalo a todas las páginas o solo a algunas.",
+      "keywords": [
+        "recortar pdf",
+        "quitar márgenes de pdf",
+        "eliminar espacio en blanco de pdf",
+        "recortar páginas de pdf online",
+        "recorte automático de pdf",
+        "cortar márgenes pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Abre tu PDF",
+          "text": "Suelta el PDF que quieres recortar."
+        },
+        {
+          "name": "Define el área de recorte",
+          "text": "Arrastra los bordes azules sobre la página, usa los deslizadores, elige un ajuste predefinido o deja que la herramienta detecte el espacio en blanco por ti."
+        },
+        {
+          "name": "Elige las páginas",
+          "text": "Aplica el recorte a todas las páginas, a la página actual, a las impares o pares, o a un intervalo como 1-3, 7."
+        },
+        {
+          "name": "Descarga",
+          "text": "Haz clic en Download cropped PDF. El contenido de la página se conserva; solo cambia el área visible."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Recortar elimina el contenido que corto?",
+          "answer": "No. Se ajusta el cuadro de recorte de la página, que oculta el área exterior al ver o imprimir el PDF. El tamaño del archivo es prácticamente el mismo. Si el contenido oculto es confidencial, mejor redáctalo."
+        },
+        {
+          "question": "¿Cómo funciona Auto-trim?",
+          "answer": "La herramienta dibuja la página, busca el rectángulo más pequeño que contiene todo lo que no es blanco y añade un pequeño margen. Same trim for all pages usa el margen más pequeño encontrado en cualquier página para que no se corte nada; Trim each page separately ajusta cada página a su propio contenido."
+        },
+        {
+          "question": "¿Puedo recortar solo algunas páginas?",
+          "answer": "Sí. Elige todas las páginas, la página actual, las impares o las pares, o escribe un intervalo como 1-3, 7."
+        },
+        {
+          "question": "¿Funciona en páginas giradas?",
+          "answer": "Sí. Los márgenes se aplican a la página tal como la ves, sea cual sea su rotación."
+        },
+        {
+          "question": "¿Puedo recortar documentos escaneados?",
+          "answer": "Sí, las páginas escaneadas se recortan como cualquier otra, y Auto-trim es especialmente útil para quitar el borde vacío alrededor de un escaneo."
+        },
+        {
+          "question": "¿Cambiará el tamaño de la página?",
+          "answer": "La página visible se hace más pequeña, y la herramienta muestra el nuevo tamaño en milímetros antes de descargar."
+        },
+        {
+          "question": "¿Se sube mi PDF?",
+          "answer": "No. Todo ocurre en tu navegador."
+        }
+      ]
+    },
+    "pdf-metadata": {
+      "seoTitle": "Editor de metadatos de PDF – Ver, editar y eliminar propiedades, gratis",
+      "metaDescription": "Consulta y edita el título, autor, asunto, palabras clave y fechas de un PDF, o elimina todos los metadatos antes de compartirlo. Gratis, privado y procesado en tu navegador: no se sube nada.",
+      "h1": "Editor de metadatos de PDF",
+      "subheading": "Consulta el título, el autor y las fechas ocultos de tu PDF, edítalos o elimínalos todos antes de compartir el archivo.",
+      "keywords": [
+        "editor de metadatos pdf",
+        "editar propiedades de pdf",
+        "eliminar metadatos de pdf",
+        "cambiar autor de pdf",
+        "editar título de pdf",
+        "propiedades de pdf online",
+        "borrar metadatos de pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Abre tu PDF",
+          "text": "Suelta el PDF que quieres inspeccionar. Sus propiedades, el número de páginas y el tamaño del papel se muestran al instante."
+        },
+        {
+          "name": "Edita los campos",
+          "text": "Cambia el título, el autor, el asunto, las palabras clave, el creador, el productor y las fechas."
+        },
+        {
+          "name": "O elimínalo todo",
+          "text": "Usa Clear all fields o descarga una copia sin ningún metadato."
+        },
+        {
+          "name": "Guarda",
+          "text": "Haz clic en Save changes. Las páginas en sí se quedan exactamente como están."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué metadatos contiene un PDF?",
+          "answer": "Normalmente un título, un autor, un asunto, palabras clave, el programa que creó el documento, el programa que generó el PDF y las fechas de creación y modificación. Muchos archivos incluyen además un bloque XMP que repite esta información."
+        },
+        {
+          "question": "¿Por qué eliminar los metadatos de un PDF antes de compartirlo?",
+          "answer": "Pueden revelar el nombre del autor, el software utilizado y cuándo se creó el archivo, datos que quizá no quieras compartir. Al descargar con todos los metadatos eliminados obtienes una copia limpia."
+        },
+        {
+          "question": "¿Qué es la opción de datos XMP?",
+          "answer": "XMP es un segundo lugar donde los PDF guardan sus propiedades, en formato XML. Si dejas marcada la opción Also remove XMP data, los valores antiguos no sobreviven allí."
+        },
+        {
+          "question": "¿Modifica las páginas?",
+          "answer": "No. Solo cambian las propiedades del documento; el texto, las imágenes, los enlaces y los formularios se conservan como estaban."
+        },
+        {
+          "question": "¿Puedo poner la fecha de modificación en el momento actual?",
+          "answer": "Sí. Marca Set “last modified” to now o introduce tú mismo la fecha y la hora que quieras."
+        },
+        {
+          "question": "¿Los metadatos son lo único que identifica al autor?",
+          "answer": "No. Los nombres también pueden aparecer en el texto visible, en comentarios, en campos de formulario o en archivos incrustados. Esta herramienta solo gestiona las propiedades del documento."
+        },
+        {
+          "question": "¿Mi PDF se sube a algún sitio?",
+          "answer": "No. El archivo se lee y se reescribe en tu navegador."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "seoTitle": "Convertidor de PDF a Word – .docx editable, gratis y privado",
+      "metaDescription": "Convierte un PDF en un documento de Word editable en tu navegador. Se reconstruyen los títulos, párrafos y listas, y se eliminan los encabezados y pies de página repetidos. Conversión básica, sin subir archivos ni registrarte.",
+      "h1": "Convertidor de PDF a Word",
+      "subheading": "Reconstruye los títulos, párrafos y listas de un PDF como un .docx editable: una conversión básica que se ejecuta por completo en tu navegador.",
+      "keywords": [
+        "pdf a word",
+        "pdf a docx",
+        "convertir pdf a word gratis",
+        "pdf a word online",
+        "pdf a word editable",
+        "extraer texto de pdf a word"
+      ],
+      "howTo": [
+        {
+          "name": "Abre tu PDF",
+          "text": "Suelta un PDF que contenga texto real (no un escaneo). El texto se lee página por página."
+        },
+        {
+          "name": "Elige páginas y estilo",
+          "text": "Selecciona qué páginas convertir, si quieres quitar los encabezados y pies de página repetidos, el tamaño de papel y un estilo de Word."
+        },
+        {
+          "name": "Revisa la vista previa",
+          "text": "Comprueba cómo se han reconstruido los títulos, párrafos y listas."
+        },
+        {
+          "name": "Descarga",
+          "text": "Haz clic en Download .docx y sigue editando en Word, Google Docs o LibreOffice."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué tal es la conversión?",
+          "answer": "Es una conversión básica. Los títulos se detectan por su mayor tamaño de fuente, las líneas cortadas se unen en párrafos, los saltos de línea con guion se corrigen y las listas con viñetas o numeradas se convierten en listas reales. Las tablas, las imágenes, las columnas y la maquetación exacta de la página no se conservan, así que revisa siempre el resultado."
+        },
+        {
+          "question": "¿Funciona con PDF escaneados?",
+          "answer": "No. Un escaneo es una imagen de texto, y leerlo requiere OCR, algo que esta herramienta no hace. Te avisará cuando un PDF casi no tenga capa de texto."
+        },
+        {
+          "question": "¿Qué pasa con los encabezados, pies de página y números de página?",
+          "answer": "El texto que se repite en la parte superior o inferior de la mayoría de las páginas, y los números de página sueltos, se eliminan por defecto para que no acaben en medio de tu texto. Desmarca la opción para conservarlos."
+        },
+        {
+          "question": "¿Se conservan las fuentes y los colores?",
+          "answer": "No. El archivo de Word usa uno de los estilos integrados que elijas, con títulos y texto de cuerpo coherentes, lo que facilita la edición."
+        },
+        {
+          "question": "¿Puedo convertir solo algunas páginas?",
+          "answer": "Sí. Introduce un intervalo como 1-5, 9 y solo se convertirán esas páginas."
+        },
+        {
+          "question": "¿Funciona con árabe, chino u otras escrituras?",
+          "answer": "La extracción de texto funciona con cualquier escritura almacenada como texto real en el PDF. La disposición de derecha a izquierda y las escrituras complejas pueden requerir una revisión manual en Word."
+        },
+        {
+          "question": "¿Mi PDF se sube a algún sitio?",
+          "answer": "No. El PDF se lee en tu navegador y el archivo de Word también se crea allí."
         }
       ]
     },

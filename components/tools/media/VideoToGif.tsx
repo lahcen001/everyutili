@@ -261,15 +261,18 @@ export default function VideoToGif() {
 
       {file && videoUrl && (
         <>
-          <Card className="space-y-4 p-4">
-            <video
+          <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_23rem] lg:items-start">
+            <div className="min-w-0 lg:sticky lg:top-20">
+              <video
               ref={videoRef}
               src={videoUrl}
               onLoadedMetadata={handleLoadedMetadata}
-              className="w-full rounded-lg border border-border"
+              className="max-h-[72vh] w-full rounded-xl border border-border bg-black object-contain"
               playsInline
               muted
             />
+            </div>
+            <Card className="space-y-4 p-4">
 
             <div className="relative h-10 select-none overflow-hidden rounded-lg border border-border bg-muted/30">
               <div className="absolute inset-y-0 bg-black/60" style={{ left: 0, width: `${startPct}%` }} />
@@ -406,7 +409,8 @@ export default function VideoToGif() {
                 )}
               </Button>
             </div>
-          </Card>
+            </Card>
+          </div>
 
           {gifUrl && gifBlob && (
             <Card className="space-y-3 p-4">

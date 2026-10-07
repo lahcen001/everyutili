@@ -3,7 +3,7 @@
 import * as React from "react";
 
 import { DOC_THEMES, type DocTheme } from "@/lib/office/docThemes";
-import { PAPER_MM, type PageSettings, type PaperSize } from "@/lib/office/pageSettings";
+import { PAPER_MM, type PageSettings, type PaperSize, type TextAlign } from "@/lib/office/pageSettings";
 import { cn } from "@/lib/utils";
 
 export function ThemePicker({ value, onChange }: { value: string; onChange: (id: string) => void }) {
@@ -35,6 +35,12 @@ export function ThemePicker({ value, onChange }: { value: string; onChange: (id:
     </div>
   );
 }
+
+const ALIGNS: { id: TextAlign; label: string }[] = [
+  { id: "left", label: "L" },
+  { id: "center", label: "C" },
+  { id: "right", label: "R" },
+];
 
 const MARGINS = [
   { label: "Narrow", mm: 12.7 },
@@ -108,15 +114,22 @@ export function PageSettingsPanel({ page, onChange }: { page: PageSettings; onCh
         </div>
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
-        <label className="space-y-1">
-          <span className="text-xs font-medium text-muted-foreground">Header text (every page)</span>
-          <input value={page.headerText} onChange={(e) => set({ headerText: e.target.value })} className="h-9 w-full rounded-lg border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-primary" />
-        </label>
-        <label className="space-y-1">
-          <span className="text-xs font-medium text-muted-foreground">Footer text (every page)</span>
-          <input value={page.footerText} onChange={(e) => set({ footerText: e.target.value })} className="h-9 w-full rounded-lg border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-primary" />
-        </label>
+        <div className="space-y-1">
+          <span className="text-xs font-medium text-muted-foreground">Header (every page)</span>
+          <div className="flex gap-2">
+            <input value={page.headerText} onChange={(e) => set({ headerText: e.target.value })} aria-label="Header text" placeholder="{title}" className="h-9 min-w-0 flex-1 rounded-lg border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-primary" />
+            <Segmented<TextAlign> label="Header alignment" value={page.headerAlign} onChange={(headerAlign) => set({ headerAlign })} options={ALIGNS} />
+          </div>
+        </div>
+        <div className="space-y-1">
+          <span className="text-xs font-medium text-muted-foreground">Footer (every page)</span>
+          <div className="flex gap-2">
+            <input value={page.footerText} onChange={(e) => set({ footerText: e.target.value })} aria-label="Footer text" placeholder="Page {page} of {pages}" className="h-9 min-w-0 flex-1 rounded-lg border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-primary" />
+            <Segmented<TextAlign> label="Footer alignment" value={page.footerAlign} onChange={(footerAlign) => set({ footerAlign })} options={ALIGNS} />
+          </div>
+        </div>
       </div>
+      <p className="text-xs text-muted-foreground">Variables: {"{page}"} {"{pages}"} {"{title}"} {"{author}"} {"{date}"}</p>
       <label className="flex items-center gap-2 text-sm">
         <input type="checkbox" checked={page.pageNumbers} onChange={(e) => set({ pageNumbers: e.target.checked })} className="h-4 w-4 rounded border-border" />
         Show page numbers

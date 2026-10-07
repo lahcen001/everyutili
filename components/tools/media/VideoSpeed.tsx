@@ -246,16 +246,19 @@ export default function VideoSpeed() {
 
       {file && videoUrl && (
         <>
-          <Card className="space-y-4 p-4">
-            <video
+          <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_23rem] lg:items-start">
+            <div className="min-w-0 lg:sticky lg:top-20">
+              <video
               ref={videoRef}
               src={videoUrl}
               onLoadedMetadata={handleLoadedMetadata}
               onEnded={() => setIsPlaying(false)}
-              className="w-full rounded-lg border border-border"
+              className="max-h-[72vh] w-full rounded-xl border border-border bg-black object-contain"
               playsInline
             />
-            <canvas ref={canvasRef} className="hidden" />
+              <canvas ref={canvasRef} className="hidden" />
+            </div>
+            <Card className="space-y-4 p-4">
 
             <div className="flex items-center gap-3">
               <Button size="sm" variant="outline" onClick={togglePlay} disabled={duration === 0}>
@@ -328,7 +331,8 @@ export default function VideoSpeed() {
                 )}
               </Button>
             </div>
-          </Card>
+            </Card>
+          </div>
 
           {resultUrl && resultBlob && (
             <Card className="space-y-3 p-4">

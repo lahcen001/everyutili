@@ -1,11 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { Download, ImageIcon, Loader2, RotateCcw } from "lucide-react";
+import { Download, Eye, ImageIcon, Loader2, RotateCcw } from "lucide-react";
 
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { EditorLayout, SidebarSection, SliderRow } from "@/components/tools/shared/EditorLayout";
+import { FitStage } from "@/components/tools/shared/FitStage";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
@@ -92,6 +93,7 @@ export default function ImageFilters() {
   const [filters, setFilters] = React.useState<Filters>(NEUTRAL_FILTERS);
   const [format, setFormat] = React.useState<ExportFormat>("png");
   const [isExporting, setIsExporting] = React.useState(false);
+  const [showOriginal, setShowOriginal] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
 
   const canvasRef = React.useRef<HTMLCanvasElement>(null);
@@ -150,16 +152,14 @@ export default function ImageFilters() {
 
     canvas.width = image.naturalWidth;
     canvas.height = image.naturalHeight;
-    canvas.style.width = "100%";
-    canvas.style.aspectRatio = `${image.naturalWidth} / ${image.naturalHeight}`;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.filter = buildFilterString(filters);
+    ctx.filter = showOriginal ? "none" : buildFilterString(filters);
     ctx.drawImage(image, 0, 0);
     ctx.filter = "none";
-  }, [image, filters]);
+  }, [image, filters, showOriginal]);
 
   React.useEffect(() => {
     render();
@@ -177,6 +177,7 @@ export default function ImageFilters() {
     setIsExporting(true);
     setError(null);
     try {
+      setShowOriginal(false);
       render();
       const mime = format === "png" ? "image/png" : "image/webp";
       const blob: Blob | null = await new Promise((resolve) =>
@@ -218,88 +219,78 @@ export default function ImageFilters() {
       )}
 
       {image && (
-        <>
-          <Card className="overflow-hidden p-0">
-            <canvas ref={canvasRef} className="block w-full" />
-          </Card>
-
-          <Card className="space-y-5 p-4">
-            <div className="space-y-1.5">
-              <span className="text-sm font-medium">Presets</span>
-              <div className="flex flex-wrap gap-2">
-                {PRESETS.map((preset) => (
-                  <button
-                    key={preset.name}
-                    onClick={() => applyPreset(preset)}
-                    className="rounded-full border border-border px-3 py-1.5 text-xs font-medium transition-colors hover:border-primary/50 hover:bg-muted"
-                  >
-                    {preset.name}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="grid gap-4 border-t border-border pt-4 sm:grid-cols-2">
-              {SLIDERS.map((slider) => (
-                <div key={slider.key} className="flex items-center gap-2">
-                  <span className="w-24 shrink-0 text-sm font-medium">{slider.label}</span>
-                  <input
-                    type="range"
-                    min={slider.min}
-                    max={slider.max}
-                    step={slider.step}
-                    value={filters[slider.key]}
-                    onChange={(e) =>
-                      setFilters((f) => ({ ...f, [slider.key]: Number(e.target.value) }))
-                    }
-                    className="flex-1 accent-primary"
-                  />
-                  <span className="w-14 text-right text-sm text-muted-foreground">
-                    {filters[slider.key]}
-                    {slider.unit}
-                  </span>
+        <EditorLayout
+          stage={
+            <FitStage width={image.naturalWidth} height={image.naturalHeight}>
+              <canvas ref={canvasRef} className="block h-full w-full rounded-sm bg-white shadow-md" aria-label="Image preview" />
+            </FitStage>
+          }
+          stageToolbar={
+            <>
+              <button
+                onPointerDown={() => setShowOriginal(true)}
+                onPointerUp={() => setShowOriginal(false)}
+                onPointerLeave={() => setShowOriginal(false)}
+                onKeyDown={(e) => (e.key === " " || e.key === "Enter") && setShowOriginal(true)}
+                onKeyUp={() => setShowOriginal(false)}
+                className="inline-flex h-8 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm font-medium hover:bg-muted"
+                title="Hold to see the original"
+              >
+                <Eye className="h-3.5 w-3.5" /> Hold to compare
+              </button>
+              <span className="text-xs text-muted-foreground">
+                {image.naturalWidth} × {image.naturalHeight}px{showOriginal ? " — original" : ""}
+              </span>
+            </>
+          }
+          sidebar={
+            <>
+              <SidebarSection title="Presets">
+                <div className="grid grid-cols-3 gap-2">
+                  {PRESETS.map((preset) => (
+                    <button key={preset.name} onClick={() => applyPreset(preset)} className="rounded-lg border border-border px-2 py-1.5 text-xs font-medium transition-colors hover:border-primary/50 hover:bg-muted">
+                      {preset.name}
+                    </button>
+                  ))}
                 </div>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3 border-t border-border pt-4">
-              <div className="flex items-center gap-1 overflow-hidden rounded-lg border border-border">
-                {(["png", "webp"] as ExportFormat[]).map((f) => (
-                  <button
-                    key={f}
-                    onClick={() => setFormat(f)}
-                    className={`px-3 py-1.5 text-xs font-medium uppercase transition-colors ${
-                      format === f ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"
-                    }`}
-                  >
-                    {f}
-                  </button>
-                ))}
-              </div>
-
-              <Button variant="outline" size="sm" onClick={resetFilters}>
-                <RotateCcw className="h-3.5 w-3.5" /> Reset
+              </SidebarSection>
+              <SidebarSection title="Adjust" action={<button onClick={resetFilters} className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"><RotateCcw className="h-3 w-3" /> Reset</button>}>
+                <div className="space-y-3.5">
+                  {SLIDERS.map((slider) => (
+                    <SliderRow key={slider.key} label={slider.label} value={filters[slider.key]} min={slider.min} max={slider.max} step={slider.step} unit={slider.unit} onChange={(v) => setFilters((f) => ({ ...f, [slider.key]: v }))} />
+                  ))}
+                </div>
+              </SidebarSection>
+              <SidebarSection title="Export as">
+                <div className="flex w-fit items-center overflow-hidden rounded-lg border border-border">
+                  {(["png", "webp"] as ExportFormat[]).map((f) => (
+                    <button key={f} onClick={() => setFormat(f)} aria-pressed={format === f} className={`px-3 py-1.5 text-xs font-medium uppercase transition-colors ${format === f ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"}`}>
+                      {f}
+                    </button>
+                  ))}
+                </div>
+              </SidebarSection>
+            </>
+          }
+          footer={
+            <>
+              <Button variant="outline" size="sm" onClick={() => setImage(null)}>
+                <ImageIcon className="h-3.5 w-3.5" /> New image
               </Button>
-
-              <div className="ml-auto flex gap-2">
-                <Button variant="outline" size="sm" onClick={() => setImage(null)}>
-                  <ImageIcon className="h-3.5 w-3.5" /> New image
-                </Button>
-                <Button size="sm" onClick={handleExport} disabled={isExporting}>
-                  {isExporting ? (
-                    <>
-                      <Loader2 className="h-3.5 w-3.5 animate-spin" /> Exporting…
-                    </>
-                  ) : (
-                    <>
-                      <Download className="h-3.5 w-3.5" /> Export
-                    </>
-                  )}
-                </Button>
-              </div>
-            </div>
-          </Card>
-        </>
+              <Button size="sm" className="ml-auto" onClick={handleExport} disabled={isExporting}>
+                {isExporting ? (
+                  <>
+                    <Loader2 className="h-3.5 w-3.5 animate-spin" /> Exporting…
+                  </>
+                ) : (
+                  <>
+                    <Download className="h-3.5 w-3.5" /> Export
+                  </>
+                )}
+              </Button>
+            </>
+          }
+        />
       )}
 
       <ToolHistoryList ref={historyRef} toolSlug="image-filters" />

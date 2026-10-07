@@ -45,9 +45,16 @@
   const FILLER_WORDS = new Set(["convert", "converter", "to", "into", "as", "a", "an", "the"]);
 
   function scoreMatch(tool, query) {
-    const name = tool.name.toLowerCase();
+    const own = scoreOne(tool.name, tool.keywords || [], tool, query);
+    // In another language, English names and keywords still work ("jpg to png").
+    if (tool.enName === undefined || tool.enName === tool.name) return own;
+    return Math.max(own, scoreOne(tool.enName, tool.enKeywords || [], tool, query) * 0.98);
+  }
+
+  function scoreOne(toolName, toolKeywords, tool, query) {
+    const name = toolName.toLowerCase();
     const slug = tool.slug.toLowerCase();
-    const keywords = tool.keywords || [];
+    const keywords = toolKeywords;
 
     if (name.startsWith(query)) return 5;
     if (name.includes(query)) return 4;
@@ -63,8 +70,8 @@
     if (slug.includes(query)) return 3;
 
     if (query.length <= 4) {
-      if (initials(tool.name) === query) return 3.5;
-      if (initials(tool.name).startsWith(query)) return 2.5;
+      if (initials(toolName) === query) return 3.5;
+      if (initials(toolName).startsWith(query)) return 2.5;
     }
 
     // Fuzzy fallback: only worth trying for reasonably short queries, and

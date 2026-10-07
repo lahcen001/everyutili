@@ -3686,65 +3686,75 @@
       ]
     },
     "pdf-maker": {
-      "seoTitle": "PDF Maker – Word, Excel, CSV, Teks & HTML ke PDF, Gratis",
-      "metaDescription": "Ubah Word, Excel, CSV, Markdown, HTML, atau teks biasa menjadi PDF langsung di browser Anda. Pilih gaya, ukuran kertas, dan margin, tambahkan header dan nomor halaman, lalu pratinjau setiap halaman — tanpa unggah.",
-      "h1": "PDF Maker — Word, Excel, Teks & HTML ke PDF",
-      "subheading": "Konversi dokumen dan spreadsheet ke PDF dengan pilihan gaya, ukuran kertas, dan pratinjau halaman langsung — diproses 100% secara lokal di browser Anda.",
+      "seoTitle": "Pembuat PDF – Templat, Halaman Sampul, Daftar Isi & Watermark, Gratis",
+      "metaDescription": "Buat PDF profesional di browser Anda: mulai dari templat faktur, resume, surat, atau laporan, atau konversi Word, Excel, CSV, Markdown, dan HTML. Halaman sampul, daftar isi, header, footer, watermark, dan font — tanpa unggah.",
+      "h1": "Pembuat PDF — Templat, Word, Excel & Markdown ke PDF",
+      "subheading": "Studio PDF layar penuh: mulai dari templat atau file Anda sendiri, atur gayanya, tambahkan sampul, daftar isi, header, dan watermark, lalu lihat setiap halaman secara langsung.",
       "keywords": [
+        "pembuat pdf",
+        "buat pdf online",
+        "templat faktur pdf",
+        "pembuat resume pdf",
+        "markdown ke pdf",
         "word ke pdf",
         "excel ke pdf",
-        "csv ke pdf",
-        "html ke pdf",
-        "teks ke pdf",
-        "markdown ke pdf",
-        "pembuat pdf online"
+        "daftar isi pdf",
+        "tambah watermark ke pdf"
       ],
       "howTo": [
         {
-          "name": "Tambahkan konten Anda",
-          "text": "Unggah file Word, Excel, CSV, JSON, Markdown, HTML, atau teks — atau tulis dan tempel konten Anda langsung."
+          "name": "Mulai dari templat atau konten Anda sendiri",
+          "text": "Pilih templat seperti faktur, resume, surat, laporan, proposal, atau catatan rapat — atau buka file Word, Excel, CSV, JSON, Markdown, HTML, atau teks, atau langsung menulis."
         },
         {
-          "name": "Pilih gaya dan halaman",
-          "text": "Pilih salah satu dari enam gaya, ukuran kertas (A4, Letter, Legal, A5), orientasi, dan margin, lalu tambahkan header, footer, dan nomor halaman."
+          "name": "Atur gaya dokumen",
+          "text": "Pilih satu dari enam gaya, lalu sesuaikan font, warna aksen, ukuran teks, dan jarak baris. Tentukan ukuran kertas, orientasi, dan margin."
         },
         {
-          "name": "Periksa pratinjau halaman",
-          "text": "Lihat halaman persis seperti hasilnya sebelum mengunduh. Halaman dipisah di antara paragraf, baris tabel, dan butir daftar — tidak pernah memotong di tengahnya."
+          "name": "Tambahkan sentuhan akhir",
+          "text": "Aktifkan halaman sampul, daftar isi otomatis dengan nomor halaman sebenarnya, header dan footer dengan variabel {page} dan {pages}, serta watermark teks."
         },
         {
           "name": "Unduh atau cetak",
-          "text": "Klik Download PDF, atau gunakan Print / Save as PDF agar teks tetap bisa dipilih."
+          "text": "Periksa pratinjau halaman langsung, lalu klik Download PDF, atau gunakan Print / Save as PDF agar teks tetap bisa dipilih."
         }
       ],
       "faq": [
         {
-          "question": "Apakah PDF saya akan tampak persis seperti file Word atau Excel aslinya?",
-          "answer": "Tidak. Alat ini merender konten Anda — teks, judul, daftar, tabel, dan gambar — dengan gaya yang Anda pilih, tetapi tidak menyalin tata letak halaman, font, atau header asli secara persis. Untuk hasil yang presisi sampai ke piksel, ekspor ke PDF langsung dari Word atau Excel."
+          "question": "Apakah PDF saya akan persis sama dengan file Word atau Excel aslinya?",
+          "answer": "Tidak. Alat ini merender konten Anda — teks, judul, daftar, tabel, dan gambar — dalam gaya yang Anda pilih, tetapi tidak menyalin tata letak halaman, font, atau header yang persis dari aslinya. Untuk hasil yang presisi sampai ke piksel, ekspor ke PDF langsung dari Word atau Excel."
         },
         {
-          "question": "Apa bedanya Download PDF dengan Print / Save as PDF?",
-          "answer": "Download PDF mengubah setiap halaman menjadi gambar: tampilannya identik di mana pun, tetapi teks tidak bisa dipilih. Print / Save as PDF membuka dialog cetak browser Anda, dan dengan memilih \"Save as PDF\" di sana, teks tetap bisa dipilih dan dicari."
+          "question": "Apa bedanya Download PDF dan Print / Save as PDF?",
+          "answer": "Download PDF mengubah setiap halaman menjadi gambar: tampilannya identik di mana pun dan menyertakan header, footer, nomor halaman, sampul, dan watermark Anda, tetapi teksnya tidak bisa dipilih. Print / Save as PDF membuka dialog cetak browser Anda, dan memilih \"Save as PDF\" di sana mempertahankan teks yang bisa dipilih dan dicari (browser menambahkan header dan nomor halamannya sendiri)."
         },
         {
-          "question": "File apa saja yang bisa dikonversi?",
+          "question": "File apa saja yang bisa saya konversi?",
           "answer": "Word (.docx), spreadsheet Excel dan OpenDocument (.xlsx, .xls, .xlsm, .ods), CSV, TSV, JSON, Markdown, HTML, dan teks biasa. File .doc lama harus disimpan ulang sebagai .docx terlebih dahulu."
         },
         {
-          "question": "Bagaimana halaman dipisahkan?",
-          "answer": "Dokumen diukur terlebih dahulu, dan halaman baru dimulai hanya di antara paragraf, baris tabel, dan butir daftar, sehingga baris tidak pernah terpotong dan judul tidak pernah berada di akhir halaman. Hanya satu blok yang lebih tinggi dari satu halaman, seperti blok kode yang sangat panjang, yang dapat terpotong."
+          "question": "Bagaimana cara kerja templat?",
+          "answer": "Templat mengisi editor dengan contoh Markdown, memilih gaya yang sesuai, dan menyiapkan opsi halaman seperti sampul atau daftar isi. Ganti contoh teks dengan teks Anda sendiri. Tanggal dalam templat diisi dengan tanggal hari ini."
         },
         {
-          "question": "Bisakah saya mengonversi spreadsheet yang lebar?",
-          "answer": "Bisa. Ganti ke orientasi lanskap atau perkecil ukuran teks. Setiap sheet menjadi satu tabel, dan sheet yang sangat panjang dibatasi hingga 3.000 baris pertama agar PDF tetap nyaman digunakan."
+          "question": "Bagaimana cara kerja daftar isi?",
+          "answer": "Daftar isi dibuat dari judul Anda (hingga tingkat yang Anda pilih) dan menampilkan nomor halaman sebenarnya dari tiap judul. Halaman sampul tidak diberi nomor, jadi penomoran dimulai setelahnya."
         },
         {
-          "question": "Apakah mendukung aksara Arab, Mandarin, Jepang, dan lainnya?",
-          "answer": "Ya. Browser Anda yang menggambar teksnya, jadi aksara apa pun yang fontnya tersedia di perangkat Anda akan berfungsi di kedua cara pembuatan PDF."
+          "question": "Apa yang bisa saya taruh di header dan footer?",
+          "answer": "Teks apa pun, ditambah variabel {page}, {pages}, {title}, {author}, dan {date}, misalnya “Halaman {page} dari {pages}”. Masing-masing bisa diratakan ke kiri, tengah, atau kanan."
+        },
+        {
+          "question": "Bagaimana halaman dipecah?",
+          "answer": "Dokumen diukur lebih dulu, dan halaman baru dimulai hanya di antara paragraf, baris tabel, dan butir daftar, sehingga baris tidak pernah terpotong dan judul tidak pernah berada di akhir halaman. Hanya satu blok yang lebih tinggi dari satu halaman, seperti blok kode yang sangat panjang, yang bisa dipecah."
+        },
+        {
+          "question": "Apakah berfungsi dengan aksara Arab, Mandarin, Jepang, dan lainnya?",
+          "answer": "Ya. Browser Anda yang menggambar teks, jadi aksara apa pun yang fontnya tersedia di perangkat Anda berfungsi di kedua jalur PDF."
         },
         {
           "question": "Apakah file saya diunggah ke suatu tempat?",
-          "answer": "Tidak, semuanya berlangsung di browser Anda. Dokumen panjang membutuhkan waktu lebih lama karena setiap halaman dirender satu per satu, dan penghitung progres menunjukkan sampai di mana prosesnya."
+          "answer": "Tidak, semuanya terjadi di browser Anda. Dokumen panjang membutuhkan waktu lebih lama karena setiap halaman dirender satu per satu, dan penghitung kemajuan menunjukkan posisinya."
         }
       ]
     },
@@ -4115,6 +4125,333 @@
         {
           "question": "Apakah PDF saya diunggah ke suatu tempat?",
           "answer": "Tidak, teks dibaca sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "organize-pdf": {
+      "seoTitle": "Atur Halaman PDF – Urutkan, Putar, Hapus & Gandakan, Gratis",
+      "metaDescription": "Susun ulang halaman PDF dengan seret dan lepas: ubah urutan, putar, hapus, gandakan, sisipkan halaman kosong, gabungkan beberapa PDF, atau perbaiki hasil pindai dupleks. Gratis, privat, tanpa unggah.",
+      "h1": "Atur Halaman PDF",
+      "subheading": "Seret halaman ke urutan baru, putar, gandakan atau hapus, lalu tambahkan halaman kosong — semuanya di browser Anda.",
+      "keywords": [
+        "atur halaman pdf",
+        "ubah urutan halaman pdf",
+        "susun ulang halaman pdf",
+        "putar halaman pdf",
+        "hapus halaman pdf",
+        "gandakan halaman pdf",
+        "tambah halaman kosong ke pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Tambahkan PDF Anda",
+          "text": "Letakkan satu atau beberapa file PDF. Halamannya tampil sebagai gambar mini dalam satu kisi."
+        },
+        {
+          "name": "Susun halaman",
+          "text": "Seret halaman ke urutan baru, atau pilih halaman lalu putar, gandakan, hapus, atau tambahkan halaman kosong setelahnya."
+        },
+        {
+          "name": "Gunakan perbaikan cepat",
+          "text": "Balik urutan, letakkan halaman ganjil sebelum halaman genap, atau gabungkan pindaian sisi depan dan sisi belakang."
+        },
+        {
+          "name": "Unduh",
+          "text": "Klik Download PDF untuk menyimpan halaman sesuai urutan yang Anda lihat."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah mengatur halaman menurunkan kualitas PDF saya?",
+          "answer": "Tidak. Halaman disalin dari file asli, bukan dirender ulang, sehingga teks tetap bisa dipilih dan gambar tetap berkualitas. Gambar mini hanya untuk tampilan."
+        },
+        {
+          "question": "Bisakah saya menggabungkan halaman dari beberapa PDF?",
+          "answer": "Bisa. Tambahkan PDF sebanyak yang Anda mau dengan Add PDF; semua halaman masuk ke kisi yang sama, diberi label nama filenya, dan bisa Anda campur dalam urutan apa pun."
+        },
+        {
+          "question": "Bagaimana cara memutar atau menghapus beberapa halaman sekaligus?",
+          "answer": "Klik halaman untuk memilihnya (setelah ada yang terpilih, klik berfungsi sebagai pilih/batal pilih), lalu gunakan Kiri, Kanan, Hapus, atau Gandakan. Pilih semua dan Hapus pilihan memudahkan dokumen besar."
+        },
+        {
+          "question": "Apa saja perbaikan cepat untuk dokumen hasil pindai?",
+          "answer": "Balik semua membalik seluruh urutan. Ganjil, lalu genap mengelompokkan halaman 1, 3, 5… sebelum 2, 4, 6…. Gabung pindaian dupleks menyatukan dua pindaian — semua sisi depan, lalu semua sisi belakang yang dimasukkan terbalik — menjadi satu dokumen dengan urutan benar."
+        },
+        {
+          "question": "Apakah ada batas jumlah halaman?",
+          "answer": "Hingga 400 halaman sekaligus, karena setiap halaman digambar sebagai gambar mini di browser Anda. Untuk file yang lebih panjang, pisahkan dulu."
+        },
+        {
+          "question": "Apakah bisa untuk PDF yang dilindungi kata sandi?",
+          "answer": "Tidak. Hapus kata sandinya terlebih dahulu, lalu atur filenya."
+        },
+        {
+          "question": "Apakah file saya diunggah ke suatu tempat?",
+          "answer": "Tidak. Semuanya berjalan di browser Anda, jadi dokumen tidak pernah meninggalkan perangkat Anda."
+        }
+      ]
+    },
+    "sign-pdf": {
+      "seoTitle": "Tanda Tangan PDF Online – Gambar, Ketik, atau Tanda Tangan Digital dengan Sertifikat, Gratis",
+      "metaDescription": "Tanda tangani PDF di browser: gambar, ketik, atau unggah tanda tangan, atau tambahkan tanda tangan digital kriptografi asli dengan sertifikat. Gratis dan privat — tidak ada yang diunggah.",
+      "h1": "Tanda Tangan PDF Online",
+      "subheading": "Gambar, ketik, atau unggah tanda tangan Anda — atau tambahkan tanda tangan digital anti-manipulasi dengan sertifikat milik Anda — semuanya di perangkat Anda.",
+      "keywords": [
+        "tanda tangan pdf",
+        "tanda tangan pdf online gratis",
+        "menambahkan tanda tangan ke pdf",
+        "tanda tangan elektronik pdf",
+        "membuat tanda tangan di pdf",
+        "isi dan tanda tangani pdf",
+        "tambah tanggal di pdf",
+        "tanda tangan digital pdf",
+        "tanda tangan pdf dengan sertifikat"
+      ],
+      "howTo": [
+        {
+          "name": "Buka PDF Anda",
+          "text": "Seret dan lepas PDF yang perlu Anda tandatangani."
+        },
+        {
+          "name": "Buat tanda tangan Anda",
+          "text": "Gambar dengan mouse atau jari, ketik nama Anda dengan gaya tulisan tangan, atau unggah foto tanda tangan Anda — latar kertas putih dihapus secara otomatis."
+        },
+        {
+          "name": "Tempatkan tanda tangan",
+          "text": "Seret tanda tangan ke posisi yang tepat, tarik sudutnya untuk mengubah ukuran, lalu tambahkan tanggal hari ini atau teks maupun paraf."
+        },
+        {
+          "name": "Pilih tempat tampilnya",
+          "text": "Tampilkan stempel di satu halaman, di setiap halaman (praktis untuk paraf), atau hanya di halaman terakhir, lalu unduh PDF yang sudah ditandatangani."
+        },
+        {
+          "name": "Tambahkan tanda tangan digital (opsional)",
+          "text": "Centang Tambahkan tanda tangan digital, lalu muat sertifikat .p12 / .pfx Anda beserta kata sandinya atau buat yang baru. Pilih lencana yang terlihat, alasan, dan lokasi, lalu unduh PDF yang ditandatangani secara kriptografi."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah ini tanda tangan yang sah secara hukum?",
+          "answer": "Tanda tangan gambar hanyalah gambar di halaman, yang diterima banyak orang dan perusahaan untuk dokumen sehari-hari. Untuk bukti yang lebih kuat, aktifkan Tambahkan tanda tangan digital: file ditandatangani dengan sertifikat sehingga pembaca PDF dapat mendeteksi setiap perubahan setelahnya. Periksa apa yang dibutuhkan dalam situasi Anda."
+        },
+        {
+          "question": "Apa perbedaan tanda tangan gambar dan tanda tangan digital?",
+          "answer": "Tanda tangan gambar hanyalah sebuah gambar. Tanda tangan digital adalah segel kriptografi yang dibuat dengan kunci privat sertifikat Anda dan disimpan di dalam PDF. Jika ada yang mengubah file setelahnya, pembaca seperti Adobe Acrobat akan menandai bahwa tanda tangan tersebut rusak."
+        },
+        {
+          "question": "Mengapa pembaca PDF saya menyebut penanda tangan tidak terverifikasi?",
+          "answer": "Sertifikat yang dibuat di alat ini bersifat self-signed, sehingga dokumen terlindungi dari pengeditan, tetapi pembaca tidak dapat memastikan identitas Anda sampai penerimanya mempercayai sertifikat tersebut. Untuk alur kerja yang mengikat secara hukum, gunakan sertifikat yang diterbitkan otoritas tepercaya dan muat sebagai file .p12 / .pfx. Kunci privat Anda tidak pernah meninggalkan perangkat Anda."
+        },
+        {
+          "question": "Apakah dokumen atau tanda tangan saya diunggah?",
+          "answer": "Tidak. PDF, tanda tangan, dan hasilnya tetap berada di browser Anda. Anda dapat menyimpan tanda tangan di perangkat ini secara opsional; tanda tangan hanya disimpan di penyimpanan lokal browser Anda dan dapat dihapus kapan saja."
+        },
+        {
+          "question": "Bagaimana cara mendapatkan tanda tangan bersih dari foto?",
+          "answer": "Tanda tanganlah di kertas putih polos dengan cahaya yang baik, lalu unggah fotonya. Biarkan Hapus latar belakang putih tetap dicentang dan kertas akan menjadi transparan, hanya menyisakan tintanya."
+        },
+        {
+          "question": "Bisakah saya menandatangani setiap halaman atau menambahkan paraf?",
+          "answer": "Bisa. Buat stempel teks singkat seperti paraf Anda, pilih stempel tersebut, lalu pilih Setiap halaman pada Tampilkan di."
+        },
+        {
+          "question": "Apakah berfungsi di halaman yang diputar?",
+          "answer": "Ya. Stempel diposisikan relatif terhadap halaman seperti yang Anda lihat, termasuk halaman yang diputar, dan tetap berada di tempat yang sama pada file yang disimpan."
+        },
+        {
+          "question": "Bisakah saya mengetik teks dalam bahasa lain?",
+          "answer": "Bisa. Teks dan tanggal digambar oleh browser Anda, sehingga bahasa apa pun yang fontnya tersedia di perangkat Anda dapat digunakan."
+        },
+        {
+          "question": "Apakah penandatanganan mengubah bagian lain dari PDF saya?",
+          "answer": "Tidak. Tanda tangan ditambahkan di atas halaman; teks asli, gambar, dan tautan dibiarkan persis seperti semula."
+        }
+      ]
+    },
+    "crop-pdf": {
+      "seoTitle": "Potong Halaman PDF – Pangkas Margin Secara Visual atau Otomatis, Gratis",
+      "metaDescription": "Potong halaman PDF online: seret tepi untuk memangkas margin, deteksi ruang kosong otomatis, terapkan ke semua halaman, ganjil, genap, atau yang dipilih, lalu unduh. Gratis dan privat — tanpa unggah.",
+      "h1": "Potong Halaman PDF",
+      "subheading": "Pangkas margin dengan menyeret tepi atau deteksi ruang kosong secara otomatis — terapkan ke semua halaman atau sebagian saja.",
+      "keywords": [
+        "potong pdf",
+        "pangkas margin pdf",
+        "hapus ruang kosong di pdf",
+        "crop pdf online",
+        "crop pdf otomatis",
+        "hilangkan margin pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Buka PDF Anda",
+          "text": "Letakkan PDF yang ingin Anda potong."
+        },
+        {
+          "name": "Atur area potong",
+          "text": "Seret tepi biru pada halaman, gunakan penggeser, pilih preset, atau biarkan alat mendeteksi ruang kosong untuk Anda."
+        },
+        {
+          "name": "Pilih halaman",
+          "text": "Terapkan pemotongan ke semua halaman, halaman ini, halaman ganjil atau genap, atau rentang seperti 1-3, 7."
+        },
+        {
+          "name": "Unduh",
+          "text": "Klik Unduh PDF hasil potong. Isi halaman tetap ada, hanya area yang terlihat yang berubah."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah memotong menghapus konten yang saya buang?",
+          "answer": "Tidak. Alat ini mengatur crop box halaman, yang menyembunyikan area luar saat PDF dilihat atau dicetak. Ukuran file hampir sama. Jika konten yang disembunyikan bersifat sensitif, sensor (redact) saja."
+        },
+        {
+          "question": "Bagaimana cara kerja pangkas otomatis?",
+          "answer": "Alat ini menggambar halaman, mencari persegi terkecil yang memuat semua yang bukan putih, lalu menambahkan sedikit padding. Pangkas sama untuk semua halaman memakai margin terkecil yang ditemukan di halaman mana pun agar tidak ada yang terpotong; Pangkas tiap halaman terpisah menyesuaikan setiap halaman dengan isinya sendiri."
+        },
+        {
+          "question": "Bisakah saya memotong hanya sebagian halaman?",
+          "answer": "Bisa. Pilih semua halaman, halaman saat ini, halaman ganjil atau genap, atau ketik rentang seperti 1-3, 7."
+        },
+        {
+          "question": "Apakah berfungsi pada halaman yang diputar?",
+          "answer": "Ya. Margin diterapkan pada halaman seperti yang Anda lihat, berapa pun rotasinya."
+        },
+        {
+          "question": "Bisakah saya memotong dokumen hasil pindai?",
+          "answer": "Bisa, halaman hasil pindai dipotong seperti halaman lain, dan pangkas otomatis sangat berguna untuk membuang tepi kosong di sekitar pindaian."
+        },
+        {
+          "question": "Apakah ukuran halaman akan berubah?",
+          "answer": "Halaman yang terlihat menjadi lebih kecil, dan alat menampilkan ukuran barunya dalam milimeter sebelum Anda mengunduh."
+        },
+        {
+          "question": "Apakah PDF saya diunggah?",
+          "answer": "Tidak. Semuanya terjadi di browser Anda."
+        }
+      ]
+    },
+    "pdf-metadata": {
+      "seoTitle": "Editor Metadata PDF – Lihat, Ubah & Hapus Properti PDF, Gratis",
+      "metaDescription": "Lihat dan ubah judul, penulis, subjek, kata kunci, dan tanggal PDF, atau hapus semua metadata sebelum dibagikan. Gratis, privat, diproses di browser Anda — tidak ada yang diunggah.",
+      "h1": "Editor Metadata PDF",
+      "subheading": "Lihat judul, penulis, dan tanggal tersembunyi di PDF Anda, ubah, atau hapus semuanya sebelum file dibagikan.",
+      "keywords": [
+        "editor metadata pdf",
+        "ubah properti pdf",
+        "hapus metadata pdf",
+        "ganti penulis pdf",
+        "ubah judul pdf",
+        "properti pdf online",
+        "bersihkan metadata pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Buka PDF Anda",
+          "text": "Letakkan PDF yang ingin diperiksa. Properti, jumlah halaman, dan ukuran kertasnya langsung ditampilkan."
+        },
+        {
+          "name": "Ubah kolom",
+          "text": "Ganti judul, penulis, subjek, kata kunci, pembuat, produser, dan tanggal."
+        },
+        {
+          "name": "Atau hapus semuanya",
+          "text": "Gunakan Hapus semua kolom, atau unduh salinan dengan semua metadata dihapus."
+        },
+        {
+          "name": "Simpan",
+          "text": "Klik Simpan perubahan. Halaman-halamannya sendiri dibiarkan persis seperti semula."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Metadata apa saja yang ada di PDF?",
+          "answer": "Biasanya judul, penulis, subjek, kata kunci, program yang membuat dokumen, program yang menulis PDF, serta tanggal pembuatan dan perubahan. Banyak file juga memuat blok XMP yang mengulang informasi ini."
+        },
+        {
+          "question": "Mengapa menghapus metadata PDF sebelum dibagikan?",
+          "answer": "Metadata bisa mengungkap nama penulis, perangkat lunak yang dipakai, dan kapan file dibuat — rincian yang mungkin tidak ingin Anda bagikan. Unduh dengan semua metadata dihapus memberi Anda salinan yang bersih."
+        },
+        {
+          "question": "Apa itu opsi data XMP?",
+          "answer": "XMP adalah tempat kedua PDF menyimpan properti, dalam format XML. Dengan membiarkan Hapus juga data XMP tercentang, nilai lama dipastikan tidak tersisa di sana."
+        },
+        {
+          "question": "Apakah halamannya ikut berubah?",
+          "answer": "Tidak. Hanya properti dokumen yang berubah; teks, gambar, tautan, dan formulir tetap seperti semula."
+        },
+        {
+          "question": "Bisakah saya mengatur tanggal perubahan ke sekarang?",
+          "answer": "Bisa. Centang Atur “terakhir diubah” ke sekarang, atau masukkan tanggal dan waktu apa pun sendiri."
+        },
+        {
+          "question": "Apakah metadata satu-satunya yang mengidentifikasi penulis?",
+          "answer": "Bukan. Nama juga bisa muncul di teks yang terlihat, komentar, kolom formulir, atau file yang disematkan. Alat ini hanya menangani properti dokumen."
+        },
+        {
+          "question": "Apakah PDF saya diunggah ke suatu tempat?",
+          "answer": "Tidak. File dibaca dan ditulis ulang di browser Anda."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "seoTitle": "Konverter PDF ke Word – .docx yang Bisa Diedit, Gratis & Privat",
+      "metaDescription": "Ubah PDF menjadi dokumen Word yang bisa diedit di browser Anda. Judul, paragraf, dan daftar dibangun ulang, header dan footer berulang dihapus. Konversi dasar — tanpa unggah, tanpa daftar akun.",
+      "h1": "Konverter PDF ke Word",
+      "subheading": "Bangun ulang judul, paragraf, dan daftar PDF menjadi .docx yang bisa diedit — konversi dasar yang berjalan sepenuhnya di browser Anda.",
+      "keywords": [
+        "pdf ke word",
+        "pdf ke docx",
+        "ubah pdf ke word gratis",
+        "pdf ke word online",
+        "pdf ke word yang bisa diedit",
+        "ambil teks dari pdf ke word"
+      ],
+      "howTo": [
+        {
+          "name": "Buka PDF Anda",
+          "text": "Letakkan PDF yang berisi teks asli (bukan hasil pindai). Teks dibaca halaman demi halaman."
+        },
+        {
+          "name": "Pilih halaman dan gaya",
+          "text": "Tentukan halaman yang dikonversi, apakah header dan footer berulang dihapus, ukuran kertas, dan gaya Word."
+        },
+        {
+          "name": "Periksa pratinjau",
+          "text": "Lihat bagaimana judul, paragraf, dan daftar dibangun ulang."
+        },
+        {
+          "name": "Unduh",
+          "text": "Klik Unduh .docx lalu lanjutkan mengedit di Word, Google Docs, atau LibreOffice."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Seberapa bagus hasil konversinya?",
+          "answer": "Ini konversi dasar. Judul dikenali dari ukuran fontnya yang lebih besar, baris yang terputus digabung menjadi paragraf, pemenggalan kata di akhir baris diperbaiki, dan daftar berpoin atau bernomor menjadi daftar sungguhan. Tabel, gambar, kolom, dan tata letak halaman yang persis tidak ikut terbawa, jadi selalu periksa hasilnya."
+        },
+        {
+          "question": "Apakah berfungsi pada PDF hasil pindai?",
+          "answer": "Tidak. Hasil pindai adalah gambar teks, dan membacanya membutuhkan OCR, yang tidak dimiliki alat ini. Alat akan memberi tahu Anda bila PDF nyaris tidak punya lapisan teks."
+        },
+        {
+          "question": "Bagaimana dengan header, footer, dan nomor halaman?",
+          "answer": "Teks yang berulang di bagian atas atau bawah sebagian besar halaman, serta nomor halaman polos, dihapus secara default agar tidak muncul di tengah teks Anda. Hapus centang opsinya untuk mempertahankannya."
+        },
+        {
+          "question": "Apakah font dan warna dipertahankan?",
+          "answer": "Tidak. File Word memakai salah satu gaya bawaan yang Anda pilih, dengan judul dan teks isi yang konsisten, sehingga lebih mudah diedit."
+        },
+        {
+          "question": "Bisakah saya mengonversi hanya sebagian halaman?",
+          "answer": "Bisa. Masukkan rentang seperti 1-5, 9 dan hanya halaman itu yang dikonversi."
+        },
+        {
+          "question": "Apakah berfungsi dengan aksara Arab, Mandarin, atau lainnya?",
+          "answer": "Ekstraksi teks berfungsi untuk aksara apa pun yang tersimpan sebagai teks asli di PDF. Tata letak kanan-ke-kiri dan aksara kompleks mungkin perlu diperiksa manual di Word."
+        },
+        {
+          "question": "Apakah PDF saya diunggah ke suatu tempat?",
+          "answer": "Tidak. PDF dibaca di browser Anda dan file Word juga dibuat di sana."
         }
       ]
     },

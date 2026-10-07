@@ -1,5 +1,6 @@
 "use client";
 
+import { FileDropTarget } from "@/components/tool-shell/FileDropTarget";
 import * as React from "react";
 import dynamic from "next/dynamic";
 import { useTheme } from "next-themes";
@@ -141,7 +142,7 @@ export default function TextDiffChecker() {
   );
 
   return (
-    <div className="space-y-4">
+    <FileDropTarget label="Drop file(s): first → original, second → changed" onFiles={async (f) => { const empty = !original; if (f[1]) { setOriginal(await f[0].text()); setModified(await f[1].text()); } else if (empty) setOriginal(await f[0].text()); else setModified(await f[0].text()); }} className="space-y-4">
       <Workspace toolbar={toolbar} status={status}>
         <div className="grid h-full grid-rows-[auto_1fr] gap-2">
           {sideBySide && (
@@ -176,6 +177,6 @@ export default function TextDiffChecker() {
         </div>
       </Workspace>
       <ToolHistoryList ref={historyRef} toolSlug="text-diff-checker" onRestore={restore} />
-    </div>
+    </FileDropTarget>
   );
 }

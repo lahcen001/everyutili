@@ -1,4 +1,5 @@
-(function () {
+// Waits for the chosen language to load (see i18n.js) before building the page.
+EveryUtiliI18n.init().then(function () {
   "use strict";
 
   const SITE_URL = "https://everyutili.com";
@@ -19,32 +20,13 @@
 
   // ---------------------------------------------------------- i18n
   //
-  // chrome.i18n.getMessage reads extension/_locales/<lang>/messages.json,
-  // auto-selected by Chrome's own UI language (no per-page detection code
-  // needed). tr() is a thin wrapper so call sites read like a normal i18n
-  // call (named tr, not t, since `t` is this file's usual loop variable for
-  // a single tool object — e.g. `EVERYUTILI_TOOLS.map((t) => ...)`); no
-  // collision either way since a shadowed `t` never itself gets called as a
-  // function, but a distinct name keeps it unambiguous while skimming code.
-  // SITE_LOCALES maps the UI language down to one of the 12 locale
-  // segments everyutili.com actually serves (e.g. "en-US" -> "en"), falling
-  // back to English for any language the site doesn't have a translation for.
-  const SITE_LOCALES = ["en", "es", "fr", "de", "pt", "ar", "ja", "hi", "zh-CN", "ru", "it", "id"];
-
-  function tr(key, substitutions) {
-    return chrome.i18n.getMessage(key, substitutions) || key;
-  }
-
-  function resolveSiteLocale() {
-    const uiLang = chrome.i18n.getUILanguage(); // e.g. "en-US", "zh-CN", "pt-BR"
-    if (SITE_LOCALES.includes(uiLang)) return uiLang;
-    const base = uiLang.split("-")[0];
-    if (base === "zh") return uiLang.toLowerCase() === "zh-tw" ? "en" : "zh-CN";
-    if (SITE_LOCALES.includes(base)) return base;
-    return "en";
-  }
-
-  const SITE_LOCALE = resolveSiteLocale();
+  // Strings and tool names come from i18n.js: the language picked in
+  // Settings, or the browser's language ("System default"), or English.
+  // tr() keeps call sites reading like a normal i18n call (named tr, not t,
+  // since `t` is this file's usual loop variable for a single tool object).
+  // SITE_LOCALE is the everyutili.com URL segment for the same language.
+  const tr = EveryUtiliI18n.tr;
+  const SITE_LOCALE = EveryUtiliI18n.code;
 
   function toolUrl(tool) {
     return `${SITE_URL}/${SITE_LOCALE}/tools/${tool.category}/${tool.slug}`;
@@ -59,16 +41,7 @@
     return `<svg class="${extraClass || ""}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;
   }
 
-  const CATEGORY_LABEL_KEYS = {
-    media: "categoryMedia",
-    document: "categoryDocument",
-    developer: "categoryDeveloper",
-    financial: "categoryFinancial",
-  };
-
-  function categoryLabel(slug) {
-    return CATEGORY_LABEL_KEYS[slug] ? tr(CATEGORY_LABEL_KEYS[slug]) : slug;
-  }
+  const categoryLabel = EveryUtiliI18n.categoryLabel;
 
   function escapeHtml(str) {
     const div = document.createElement("div");
@@ -144,6 +117,7 @@
         clockFormat: ["auto", "12h", "24h"].includes(settings.clockFormat)
           ? settings.clockFormat
           : "auto",
+        language: typeof settings.language === "string" ? settings.language : "auto",
       });
     });
   }
@@ -330,6 +304,12 @@
     clockFormatPref = "24h";
     tick();
     persistSettings({ clockFormat: "24h" });
+  });
+
+  const languageSelect = document.getElementById("language-select");
+  languageSelect.addEventListener("change", () => {
+    // Everything on the page is built from the language, so reload to apply it.
+    EveryUtiliI18n.setLanguage(languageSelect.value, () => location.reload());
   });
 
   function persistSettings(partial) {
@@ -767,6 +747,20 @@
     settingsToggle.setAttribute("aria-label", tr("settingsAriaLabel"));
     document.getElementById("settings-default-search-label").textContent = tr("settingsDefaultSearch");
     document.getElementById("settings-default-search-group").setAttribute("aria-label", tr("settingsDefaultSearch"));
+    document.getElementById("settings-language-label").textContent = tr("settingsLanguage");
+    languageSelect.setAttribute("aria-label", tr("settingsLanguage"));
+    languageSelect.innerHTML = "";
+    const systemOption = document.createElement("option");
+    systemOption.value = "auto";
+    systemOption.textContent = tr("languageSystem");
+    languageSelect.appendChild(systemOption);
+    for (const lang of EveryUtiliI18n.LANGUAGES) {
+      const option = document.createElement("option");
+      option.value = lang.code;
+      option.textContent = lang.native;
+      languageSelect.appendChild(option);
+    }
+    languageSelect.value = EveryUtiliI18n.preference;
     document.getElementById("settings-clock-format-label").textContent = tr("settingsClockFormat");
     document.getElementById("settings-clock-format-group").setAttribute("aria-label", tr("settingsClockFormat"));
     defaultEngineButtons.tools.textContent = tr("engineEveryUtili");
@@ -798,4 +792,4 @@
   drawerLabel.textContent = tr("browseAllTools", [String(EVERYUTILI_TOOLS.length)]);
   renderQuickShelf();
   searchInput.focus();
-})();
+});

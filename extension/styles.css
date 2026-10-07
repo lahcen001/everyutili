@@ -29,6 +29,8 @@
   --cat-developer-tint: rgba(16, 185, 129, 0.15);
   --cat-financial: #f59e0b;
   --cat-financial-tint: rgba(245, 158, 11, 0.15);
+  --cat-random-decision: #a855f7;
+  --cat-random-decision-tint: rgba(168, 85, 247, 0.15);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -209,6 +211,10 @@ button {
   color: var(--cat-financial);
   background: var(--cat-financial-tint);
 }
+.badge[data-category="random-decision"] {
+  color: var(--cat-random-decision);
+  background: var(--cat-random-decision-tint);
+}
 
 .icon-box {
   display: flex;
@@ -236,6 +242,11 @@ button {
 .icon-box[data-category="financial"] {
   color: var(--cat-financial);
   background: var(--cat-financial-tint);
+  box-shadow: 0 0 20px -6px rgba(245, 158, 11, 0.5);
+}
+.icon-box[data-category="random-decision"] {
+  color: var(--cat-random-decision);
+  background: var(--cat-random-decision-tint);
   box-shadow: 0 0 20px -6px rgba(245, 158, 11, 0.5);
 }
 
@@ -1162,6 +1173,9 @@ button {
 .pill.active[data-category="financial"] {
   background: var(--cat-financial);
 }
+.pill.active[data-category="random-decision"] {
+  background: var(--cat-random-decision);
+}
 
 .popup-list {
   flex: 1;
@@ -1234,4 +1248,70 @@ button {
 
 .popup-toast[hidden] {
   display: none;
+}
+
+/* ---------------------------------------------------------------- Language */
+
+/* Hide the page until the chosen language has loaded (i18n.js removes the class),
+   so a non-English user never sees a flash of English. */
+html.i18n-pending body {
+  opacity: 0;
+}
+
+.settings-select {
+  width: 100%;
+  padding: 7px 8px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  font-size: 11.5px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.settings-select:hover,
+.settings-select:focus-visible {
+  border-color: var(--glass-border-hover);
+  outline: none;
+}
+
+.settings-select option {
+  background: #12141a;
+  color: #f4f5f7;
+}
+
+/* Right-to-left languages (Arabic): mirror the few physically positioned bits. */
+html[dir="rtl"] .status-bar {
+  /* the status bar sits at the opposite top corner */
+  right: auto;
+  left: 22px;
+}
+
+html[dir="rtl"] .settings-panel {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .pin-btn,
+html[dir="rtl"] .remove-btn {
+  right: auto;
+  left: 6px;
+}
+
+html[dir="rtl"] .remove-btn {
+  left: 30px;
+}
+
+html[dir="rtl"] .pin-btn-sm,
+html[dir="rtl"] .drawer-cat-head .count,
+html[dir="rtl"] .popup-header .site-link {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Search box, hints and keyboard hints keep their left-to-right keycap order. */
+html[dir="rtl"] kbd {
+  direction: ltr;
 }

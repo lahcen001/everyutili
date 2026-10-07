@@ -22,19 +22,34 @@ export async function ToolLayout({
   aboveTool,
   wide = false,
 }: ToolLayoutProps) {
+  const header = (compact: boolean) => (
+    <div className={compact ? "mt-3 flex flex-col items-center gap-2 text-center" : "mt-4 flex flex-col items-center gap-3 text-center"}>
+      <PrivacyBadge />
+      <h1
+        className={
+          compact
+            ? "text-balance bg-gradient-to-b from-foreground to-foreground/70 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl"
+            : "text-balance bg-gradient-to-b from-foreground to-foreground/70 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent sm:text-5xl"
+        }
+      >
+        {h1}
+      </h1>
+      <span className="h-1 w-12 rounded-full bg-gradient-to-r from-primary/20 via-primary to-primary/20" aria-hidden />
+      <p className={compact ? "max-w-2xl text-balance text-sm text-muted-foreground sm:text-base" : "max-w-xl text-balance text-muted-foreground sm:text-lg"}>
+        {subheading}
+      </p>
+    </div>
+  );
+
   if (wide) {
     return (
       <div className="bg-noise relative">
+        <div className="bg-hero-glow pointer-events-none absolute inset-x-0 top-0 h-56 opacity-70" aria-hidden />
+        <div className="bg-grid-dots pointer-events-none absolute inset-x-0 top-0 h-48" aria-hidden />
         <div className="relative mx-auto max-w-[1600px] px-3 pt-4 sm:px-6">
           <Breadcrumbs items={breadcrumbs} />
-          <div className="mt-3 flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
-            <div className="min-w-0">
-              <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">{h1}</h1>
-              <p className="mt-1 max-w-3xl text-sm text-muted-foreground">{subheading}</p>
-            </div>
-            <PrivacyBadge />
-          </div>
-          <div className="mt-4">{children}</div>
+          {header(true)}
+          <div className="mt-5">{children}</div>
           {aboveTool}
         </div>
       </div>
@@ -42,20 +57,16 @@ export async function ToolLayout({
   }
   return (
     <div className="bg-noise relative">
+      <div className="bg-hero-glow pointer-events-none absolute inset-x-0 top-0 h-72 opacity-70" aria-hidden />
       <div className="bg-grid-dots pointer-events-none absolute inset-x-0 top-0 h-64" aria-hidden />
       <div className="relative mx-auto max-w-4xl px-4 pt-6">
         <Breadcrumbs items={breadcrumbs} />
-
-        <div className="mt-4 flex flex-col items-center gap-3 text-center">
-          <PrivacyBadge />
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{h1}</h1>
-          <p className="max-w-xl text-balance text-muted-foreground">{subheading}</p>
-        </div>
+        {header(false)}
 
         {aboveTool}
 
         <MotionSection>
-          <div className="glass mt-6 rounded-2xl p-4">{children}</div>
+          <div className="glass mt-6 rounded-2xl p-4 shadow-lg shadow-primary/5">{children}</div>
         </MotionSection>
       </div>
     </div>

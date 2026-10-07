@@ -5,7 +5,8 @@ import { Download, ImageIcon, Loader2 } from "lucide-react";
 
 import { DropZone } from "@/components/tool-shell/DropZone";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { EditorLayout, SidebarSection, SliderRow } from "@/components/tools/shared/EditorLayout";
+import { FitStage } from "@/components/tools/shared/FitStage";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { useIncomingHandoff } from "@/hooks/useIncomingHandoff";
 import { saveToolResult } from "@/lib/storage/toolHistoryDb";
@@ -216,8 +217,6 @@ export default function ScreenshotBeautifier() {
 
       canvas.width = outWidth;
       canvas.height = outHeight;
-      canvas.style.width = "100%";
-      canvas.style.aspectRatio = `${outWidth} / ${outHeight}`;
 
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
@@ -323,155 +322,92 @@ export default function ScreenshotBeautifier() {
       )}
 
       {image && (
-        <>
-          <Card className="overflow-hidden p-0">
-            <canvas ref={canvasRef} className="block w-full" />
-          </Card>
-
-          <Card className="space-y-5 p-4">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="space-y-1.5">
-                <span className="text-sm font-medium">Window theme</span>
-                <div className="flex flex-wrap gap-1 overflow-hidden rounded-lg border border-border">
+        <EditorLayout
+          stage={
+            <FitStage width={image.naturalWidth + preset.padding * 2} height={image.naturalHeight + (preset.theme === "none" ? 0 : TITLEBAR_HEIGHT) + preset.padding * 2}>
+              <canvas ref={canvasRef} className="block h-full w-full rounded-sm shadow-md" aria-label="Preview" />
+            </FitStage>
+          }
+          stageToolbar={
+            <span className="text-xs text-muted-foreground">
+              Output {Math.round((image.naturalWidth + preset.padding * 2) * scale)} × {Math.round((image.naturalHeight + (preset.theme === "none" ? 0 : TITLEBAR_HEIGHT) + preset.padding * 2) * scale)}px at {scale}x
+            </span>
+          }
+          sidebar={
+            <>
+              <SidebarSection title="Window theme">
+                <div className="flex flex-wrap gap-1.5">
                   {THEMES.map((t) => (
-                    <button
-                      key={t.value}
-                      onClick={() => setPreset((p) => ({ ...p, theme: t.value }))}
-                      className={`px-2.5 py-1.5 text-xs font-medium transition-colors ${
-                        preset.theme === t.value
-                          ? "bg-primary text-primary-foreground"
-                          : "bg-transparent hover:bg-muted"
-                      }`}
-                    >
+                    <button key={t.value} onClick={() => setPreset((p) => ({ ...p, theme: t.value }))} aria-pressed={preset.theme === t.value} className={`rounded-md border px-2.5 py-1.5 text-xs font-medium transition-colors ${preset.theme === t.value ? "border-primary bg-primary text-primary-foreground" : "border-border hover:bg-muted"}`}>
                       {t.label}
                     </button>
                   ))}
                 </div>
-              </div>
-
-              <div className="space-y-1.5">
-                <span className="text-sm font-medium">Shadow depth</span>
-                <div className="flex flex-wrap gap-1 overflow-hidden rounded-lg border border-border">
-                  {SHADOWS.map((s) => (
-                    <button
-                      key={s.value}
-                      onClick={() => setPreset((p) => ({ ...p, shadow: s.value }))}
-                      className={`px-2.5 py-1.5 text-xs font-medium transition-colors ${
-                        preset.shadow === s.value
-                          ? "bg-primary text-primary-foreground"
-                          : "bg-transparent hover:bg-muted"
-                      }`}
-                    >
-                      {s.label}
+              </SidebarSection>
+              <SidebarSection title="Shadow">
+                <div className="flex flex-wrap gap-1.5">
+                  {SHADOWS.map((sh) => (
+                    <button key={sh.value} onClick={() => setPreset((p) => ({ ...p, shadow: sh.value }))} aria-pressed={preset.shadow === sh.value} className={`rounded-md border px-2.5 py-1.5 text-xs font-medium transition-colors ${preset.shadow === sh.value ? "border-primary bg-primary text-primary-foreground" : "border-border hover:bg-muted"}`}>
+                      {sh.label}
                     </button>
                   ))}
                 </div>
-              </div>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="flex items-center gap-2">
-                <span className="w-20 shrink-0 text-sm font-medium">Padding</span>
-                <input
-                  type="range"
-                  min={16}
-                  max={128}
-                  step={4}
-                  value={preset.padding}
-                  onChange={(e) => setPreset((p) => ({ ...p, padding: Number(e.target.value) }))}
-                  className="flex-1 accent-primary"
-                />
-                <span className="w-12 text-right text-sm text-muted-foreground">{preset.padding}px</span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <span className="w-20 shrink-0 text-sm font-medium">Radius</span>
-                <input
-                  type="range"
-                  min={0}
-                  max={32}
-                  step={1}
-                  value={preset.radius}
-                  onChange={(e) => setPreset((p) => ({ ...p, radius: Number(e.target.value) }))}
-                  className="flex-1 accent-primary"
-                />
-                <span className="w-12 text-right text-sm text-muted-foreground">{preset.radius}px</span>
-              </div>
-            </div>
-
-            <div className="space-y-1.5">
-              <span className="text-sm font-medium">Background</span>
-              <div className="flex flex-wrap gap-2">
-                {BACKGROUNDS.map((bg) => (
-                  <button
-                    key={bg.value}
-                    onClick={() => setPreset((p) => ({ ...p, background: bg.value }))}
-                    title={bg.label}
-                    aria-label={bg.label}
-                    className={`h-8 w-8 rounded-full border-2 transition-transform hover:scale-110 ${
-                      preset.background === bg.value ? "border-primary" : "border-border"
-                    }`}
-                    style={{ background: bg.value }}
-                  />
-                ))}
-                <label className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-border text-xs text-muted-foreground hover:scale-110 hover:border-primary/50">
-                  <input
-                    type="color"
-                    className="sr-only"
-                    onChange={(e) => setPreset((p) => ({ ...p, background: e.target.value }))}
-                  />
-                  +
-                </label>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3 border-t border-border pt-4">
-              <div className="flex items-center gap-1 overflow-hidden rounded-lg border border-border">
-                {(["png", "webp"] as ExportFormat[]).map((f) => (
-                  <button
-                    key={f}
-                    onClick={() => setFormat(f)}
-                    className={`px-3 py-1.5 text-xs font-medium uppercase transition-colors ${
-                      format === f ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"
-                    }`}
-                  >
-                    {f}
-                  </button>
-                ))}
-              </div>
-              <div className="flex items-center gap-1 overflow-hidden rounded-lg border border-border">
-                {([1, 2, 4] as ExportScale[]).map((s) => (
-                  <button
-                    key={s}
-                    onClick={() => setScale(s)}
-                    className={`px-3 py-1.5 text-xs font-medium transition-colors ${
-                      scale === s ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"
-                    }`}
-                  >
-                    {s}x
-                  </button>
-                ))}
-              </div>
-
-              <div className="ml-auto flex gap-2">
-                <Button variant="outline" size="sm" onClick={() => setImage(null)}>
-                  <ImageIcon className="h-3.5 w-3.5" /> New image
-                </Button>
-                <Button size="sm" onClick={handleExport} disabled={isExporting}>
-                  {isExporting ? (
-                    <>
-                      <Loader2 className="h-3.5 w-3.5 animate-spin" /> Exporting…
-                    </>
-                  ) : (
-                    <>
-                      <Download className="h-3.5 w-3.5" /> Export
-                    </>
-                  )}
-                </Button>
-              </div>
-            </div>
-          </Card>
-        </>
+              </SidebarSection>
+              <SidebarSection title="Size">
+                <div className="space-y-3.5">
+                  <SliderRow label="Padding" value={preset.padding} min={16} max={128} step={4} unit="px" onChange={(v) => setPreset((p) => ({ ...p, padding: v }))} />
+                  <SliderRow label="Corner radius" value={preset.radius} min={0} max={32} unit="px" onChange={(v) => setPreset((p) => ({ ...p, radius: v }))} />
+                </div>
+              </SidebarSection>
+              <SidebarSection title="Background">
+                <div className="flex flex-wrap gap-2">
+                  {BACKGROUNDS.map((bg) => (
+                    <button key={bg.value} onClick={() => setPreset((p) => ({ ...p, background: bg.value }))} title={bg.label} aria-label={bg.label} aria-pressed={preset.background === bg.value} className={`h-8 w-8 rounded-full border-2 transition-transform hover:scale-110 ${preset.background === bg.value ? "border-primary ring-2 ring-primary/30" : "border-border"}`} style={{ background: bg.value }} />
+                  ))}
+                  <label className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-border text-xs text-muted-foreground hover:scale-110 hover:border-primary/50" title="Custom colour">
+                    <input type="color" className="sr-only" aria-label="Custom background colour" onChange={(e) => setPreset((p) => ({ ...p, background: e.target.value }))} />+
+                  </label>
+                </div>
+              </SidebarSection>
+              <SidebarSection title="Export">
+                <div className="flex flex-wrap items-center gap-3">
+                  <div className="flex items-center overflow-hidden rounded-lg border border-border">
+                    {(["png", "webp"] as ExportFormat[]).map((f) => (
+                      <button key={f} onClick={() => setFormat(f)} aria-pressed={format === f} className={`px-3 py-1.5 text-xs font-medium uppercase transition-colors ${format === f ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"}`}>
+                        {f}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="flex items-center overflow-hidden rounded-lg border border-border">
+                    {([1, 2, 4] as ExportScale[]).map((sc) => (
+                      <button key={sc} onClick={() => setScale(sc)} aria-pressed={scale === sc} className={`px-3 py-1.5 text-xs font-medium transition-colors ${scale === sc ? "bg-primary text-primary-foreground" : "bg-transparent hover:bg-muted"}`}>
+                        {sc}x
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </SidebarSection>
+            </>
+          }
+          footer={
+            <>
+              <Button variant="outline" size="sm" onClick={() => setImage(null)}>
+                <ImageIcon className="h-3.5 w-3.5" /> New image
+              </Button>
+              <Button size="sm" className="ml-auto" onClick={handleExport} disabled={isExporting}>
+                {isExporting ? (
+                  <>
+                    <Loader2 className="h-3.5 w-3.5 animate-spin" /> Exporting…
+                  </>
+                ) : (
+                  <>
+                    <Download className="h-3.5 w-3.5" /> Export
+                  </>
+                )}
+              </Button>
+            </>
+          }
+        />
       )}
 
       <ToolHistoryList ref={historyRef} toolSlug="screenshot-beautifier" />

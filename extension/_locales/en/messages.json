@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "Replace New Tab with instant search across 79+ free, privacy-first tools: converters, PDF tools, calculators, dev utilities."
+    "message": "Replace New Tab with instant search across 100+ free, privacy-first tools: converters, PDF tools, calculators, dev utilities."
   },
 
   "offlineBadge": {
@@ -20,6 +20,12 @@
   },
   "settingsClockFormat": {
     "message": "Clock format"
+  },
+  "settingsLanguage": {
+    "message": "Language"
+  },
+  "languageSystem": {
+    "message": "System default"
   },
   "clockAuto": {
     "message": "Auto"

@@ -3,7 +3,9 @@ import html2canvas from "html2canvas";
 
 import { themeCss, type DocTheme } from "@/lib/office/docThemes";
 import { paginate, type PageSlice } from "@/lib/office/paginate";
-import { mmToPx, pageDimensionsMm, type PageSettings } from "@/lib/office/pageSettings";
+import { mmToPx, pageDimensionsMm, type PageSettings, type TextAlign } from "@/lib/office/pageSettings";
+import { pageLabels, type PageContext } from "@/lib/office/headerFooter";
+import { watermarkDataUrl, type TextWatermark } from "@/lib/office/watermarkImage";
 
 export const DOC_SCOPE = "doc-root";
 const PX_PER_MM = 96 / 25.4;
@@ -14,6 +16,8 @@ export interface PdfLayout {
   /** Height of the printable area of one page in CSS px. */
   heightPx: number;
   slices: PageSlice[];
+  /** top offset (px) of every element whose id starts with "toc-" — used to number the contents page */
+  marks: Record<string, number>;
 }
 
 function createHost(html: string, theme: DocTheme, widthPx: number, fontSizePt?: number): HTMLDivElement {
@@ -30,21 +34,30 @@ async function imagesLoaded(host: HTMLElement): Promise<void> {
   );
 }
 
-/** Bottom edges (px, relative to the document top) where a page may end: blocks, table rows, list items — never headings. */
-function measureBreakPoints(host: HTMLElement): { total: number; breaks: number[] } {
+/** Where a page may end (blocks, table rows, list items — never headings), where it must end, and where headings sit. */
+function measureBreakPoints(host: HTMLElement): { total: number; breaks: number[]; forced: number[]; marks: Record<string, number> } {
   const doc = host.querySelector(`.${DOC_SCOPE}`) as HTMLElement;
   const top = doc.getBoundingClientRect().top;
   const breaks: number[] = [];
+  const forced: number[] = [];
   const add = (el: Element) => breaks.push(el.getBoundingClientRect().bottom - top);
 
   for (const child of Array.from(doc.children)) {
     const tag = child.tagName.toLowerCase();
+    if (child.hasAttribute("data-page-break")) {
+      forced.push(child.getBoundingClientRect().bottom - top);
+      continue;
+    }
     if (/^h[1-6]$/.test(tag)) continue;
     if (tag === "table") child.querySelectorAll("tr").forEach(add);
     else if (tag === "ul" || tag === "ol") child.querySelectorAll("li").forEach(add);
     else add(child);
   }
-  return { total: doc.getBoundingClientRect().height, breaks };
+  const marks: Record<string, number> = {};
+  doc.querySelectorAll('[id^="toc-"]').forEach((el) => {
+    marks[el.id] = el.getBoundingClientRect().top - top;
+  });
+  return { total: doc.getBoundingClientRect().height, breaks, forced, marks };
 }
 
 /** Lays the document out at the page's printable width and decides where each page starts and ends. */
@@ -55,8 +68,8 @@ export async function layoutDocument(html: string, theme: DocTheme, page: PageSe
   const host = createHost(html, theme, widthPx, fontSizePt);
   try {
     await imagesLoaded(host);
-    const { total, breaks } = measureBreakPoints(host);
-    return { widthPx, heightPx, slices: paginate(total, heightPx, breaks) };
+    const { total, breaks, forced, marks } = measureBreakPoints(host);
+    return { widthPx, heightPx, slices: paginate(total, heightPx, breaks, forced), marks };
   } finally {
     host.remove();
   }
@@ -80,13 +93,13 @@ async function renderSlice(html: string, theme: DocTheme, widthPx: number, slice
 }
 
 /** Header/footer text rendered through the browser so any script (Arabic, CJK…) works, then placed as an image. */
-async function renderStrip(text: string, widthPx: number, align: "left" | "center", theme: DocTheme): Promise<string> {
+async function renderStrip(text: string, widthPx: number, align: TextAlign, theme: DocTheme): Promise<string> {
   const el = document.createElement("div");
   el.style.cssText = `position:fixed;left:-99999px;top:0;width:${widthPx}px;padding:2px 0;background:#ffffff;color:#6b7280;font:9pt ${theme.cssFont};text-align:${align};white-space:nowrap;overflow:hidden;text-overflow:ellipsis;`;
   el.textContent = text;
   document.body.appendChild(el);
   try {
-    const canvas = await html2canvas(el, { backgroundColor: "#ffffff", scale: 2, width: widthPx });
+    const canvas = await html2canvas(el, { backgroundColor: "#ffffff", scale: 3, width: widthPx });
     return canvas.toDataURL("image/png");
   } finally {
     el.remove();
@@ -95,10 +108,15 @@ async function renderStrip(text: string, widthPx: number, align: "left" | "cente
 
 export interface PdfExportOptions {
   onProgress?: (done: number, total: number) => void;
-  /** Rendering resolution multiplier (2 ≈ 190 dpi). */
+  /** Rendering resolution multiplier (3 ≈ 290 dpi, sharp enough to print). */
   scale?: number;
   /** Body font size override in points (headings scale with it). */
   fontSizePt?: number;
+  /** Title / author / date available to header and footer variables, and written to the PDF's properties. */
+  meta?: { title: string; author: string; date: string };
+  /** Unnumbered pages at the start (a cover) — they get no header, footer or number. */
+  coverPages?: number;
+  watermark?: TextWatermark;
 }
 
 /**
@@ -116,22 +134,38 @@ export async function htmlToPdfBlob(html: string, theme: DocTheme, page: PageSet
   const stripHeightMm = 6;
   const margin = page.marginMm;
 
+  const hasImages = /<img\b/i.test(html);
+  const meta = options.meta ?? { title: "", author: "", date: "" };
+  const coverPages = options.coverPages ?? 0;
+  const numbered = Math.max(0, total - coverPages);
+  const pageWpx = mmToPx(width);
+  const pageHpx = mmToPx(height);
+  const watermark = options.watermark ? watermarkDataUrl(options.watermark, pageWpx, pageHpx) : null;
+  if (meta.title || meta.author) pdf.setProperties({ title: meta.title || undefined, author: meta.author || undefined, creator: "EveryUtili PDF Maker" });
+
   for (let i = 0; i < total; i++) {
     if (i > 0) pdf.addPage();
     const slice = layout.slices[i];
-    const canvas = await renderSlice(html, theme, layout.widthPx, slice, options.scale ?? 2, options.fontSizePt);
-    pdf.addImage(canvas.toDataURL("image/jpeg", 0.92), "JPEG", margin, margin, contentWidthMm, (slice.end - slice.start) / PX_PER_MM);
+    const canvas = await renderSlice(html, theme, layout.widthPx, slice, options.scale ?? 3, options.fontSizePt);
+    // Text pages are saved losslessly (JPEG smudges the edges of small text); pages with pictures use high-quality JPEG to keep the file small.
+    if (hasImages) pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", margin, margin, contentWidthMm, (slice.end - slice.start) / PX_PER_MM);
+    else pdf.addImage(canvas.toDataURL("image/png"), "PNG", margin, margin, contentWidthMm, (slice.end - slice.start) / PX_PER_MM, undefined, "FAST");
     canvas.width = 0;
     canvas.height = 0;
 
-    if (page.headerText.trim()) {
-      const strip = await renderStrip(page.headerText.trim(), stripWidthPx, "left", theme);
-      pdf.addImage(strip, "PNG", margin, Math.max(2, margin / 2 - 3), contentWidthMm, stripHeightMm);
-    }
-    const footer = [page.footerText.trim(), page.pageNumbers ? String(i + 1) : ""].filter(Boolean).join("   ·   ");
-    if (footer) {
-      const strip = await renderStrip(footer, stripWidthPx, "center", theme);
-      pdf.addImage(strip, "PNG", margin, height - Math.max(2, margin / 2 - 3) - stripHeightMm, contentWidthMm, stripHeightMm);
+    if (watermark) pdf.addImage(watermark, "PNG", 0, 0, width, height);
+
+    if (i >= coverPages) {
+      const ctx: PageContext = { page: i - coverPages + 1, pages: numbered, ...meta };
+      const labels = pageLabels(page, ctx);
+      if (labels.header) {
+        const strip = await renderStrip(labels.header, stripWidthPx, page.headerAlign, theme);
+        pdf.addImage(strip, "PNG", margin, Math.max(2, margin / 2 - 3), contentWidthMm, stripHeightMm);
+      }
+      if (labels.footer) {
+        const strip = await renderStrip(labels.footer, stripWidthPx, page.footerAlign, theme);
+        pdf.addImage(strip, "PNG", margin, height - Math.max(2, margin / 2 - 3) - stripHeightMm, contentWidthMm, stripHeightMm);
+      }
     }
     options.onProgress?.(i + 1, total);
   }
@@ -141,7 +175,7 @@ export async function htmlToPdfBlob(html: string, theme: DocTheme, page: PageSet
 const CSS_PAPER: Record<PageSettings["size"], string> = { a4: "A4", letter: "letter", legal: "legal", a5: "A5" };
 
 /** Opens the browser's print dialog for the document, where "Save as PDF" produces selectable, searchable text. */
-export function printDocument(html: string, theme: DocTheme, page: PageSettings, fontSizePt?: number): void {
+export function printDocument(html: string, theme: DocTheme, page: PageSettings, fontSizePt?: number, watermarkUrl?: string | null): void {
   const iframe = document.createElement("iframe");
   iframe.setAttribute("aria-hidden", "true");
   iframe.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0;";
@@ -153,7 +187,7 @@ export function printDocument(html: string, theme: DocTheme, page: PageSettings,
   }
   doc.open();
   doc.write(
-    `<!doctype html><html><head><meta charset="utf-8"><title>Document</title><style>@page{size:${CSS_PAPER[page.size]} ${page.orientation};margin:${page.marginMm}mm}body{margin:0;background:#fff}${themeCss(theme, DOC_SCOPE, fontSizePt)}h1,h2,h3,h4,h5,h6{break-after:avoid}tr,li,pre,blockquote,img{break-inside:avoid}</style></head><body><div class="${DOC_SCOPE}">${html}</div></body></html>`
+    `<!doctype html><html><head><meta charset="utf-8"><title>Document</title><style>@page{size:${CSS_PAPER[page.size]} ${page.orientation};margin:${page.marginMm}mm}body{margin:0;background:#fff}${themeCss(theme, DOC_SCOPE, fontSizePt)}h1,h2,h3,h4,h5,h6{break-after:avoid}tr,li,pre,blockquote,img{break-inside:avoid}[data-page-break]{break-after:page}${watermarkUrl ? `body::before{content:'';position:fixed;inset:0;background:url(${watermarkUrl}) center/contain no-repeat;pointer-events:none}` : ""}</style></head><body><div class="${DOC_SCOPE}">${html}</div></body></html>`
   );
   doc.close();
   const cleanup = () => window.setTimeout(() => iframe.remove(), 500);

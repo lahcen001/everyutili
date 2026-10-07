@@ -3,7 +3,7 @@
 // extension's tool list never drifts from the website's real registry. Run
 // this after adding, removing, or reprioritizing tools in config/tools.ts.
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -63,6 +63,12 @@ function extractNum(obj, field) {
   return m ? Number(m[1]) : null;
 }
 
+// The category list comes from config/tools.ts (CATEGORIES) so a new category on
+// the site shows up in the extension without editing this script.
+const catMatch = src.match(/export const CATEGORIES = \[([\s\S]*?)\] as const/);
+const categorySlugs = catMatch ? [...catMatch[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]) : [];
+if (categorySlugs.length === 0) throw new Error("Could not find CATEGORIES in config/tools.ts");
+
 const tools = objs
   .map((obj) => {
     const slug = extractField(obj, "slug");
@@ -98,10 +104,10 @@ for (const t of tools) {
 lines.push("];");
 lines.push("");
 lines.push("const EVERYUTILI_CATEGORIES = [");
-lines.push('  { slug: "media", label: "Media" },');
-lines.push('  { slug: "document", label: "Documents" },');
-lines.push('  { slug: "developer", label: "Developer" },');
-lines.push('  { slug: "financial", label: "Finance" },');
+for (const slug of categorySlugs) {
+  const label = messages.categories?.[slug]?.navLabel ?? slug;
+  lines.push(`  { slug: ${JSON.stringify(slug)}, label: ${JSON.stringify(label)} },`);
+}
 lines.push("];");
 lines.push("");
 lines.push("// Hand-authored, one outline icon per category (lucide-style paths, 24x24");
@@ -119,6 +125,9 @@ lines.push(
 lines.push(
   '  financial: \'<path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>\','
 );
+lines.push(
+  '  "random-decision": \'<rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/>\','
+);
 lines.push("};");
 lines.push("");
 lines.push('if (typeof module !== "undefined" && module.exports) {');
@@ -130,3 +139,32 @@ lines.push("");
 
 writeFileSync(path.join(rootDir, "extension/tools-data.js"), lines.join("\n"));
 console.log(`Wrote ${tools.length} tools to extension/tools-data.js`);
+
+// ---------------------------------------------------------------------------
+// Per-language tool names, taglines and search keywords for the extension's
+// language setting. One small JSON file per site locale, read at startup by
+// extension/i18n.js — English stays in tools-data.js and is also kept as a
+// search fallback, so a French user can still type "jpg to png".
+// ---------------------------------------------------------------------------
+const LOCALES = ["ar", "de", "es", "fr", "hi", "id", "it", "ja", "pt", "ru", "zh-CN"];
+const i18nDir = path.join(rootDir, "extension/i18n");
+mkdirSync(i18nDir, { recursive: true });
+for (const locale of LOCALES) {
+  const loc = JSON.parse(readFileSync(path.join(rootDir, `messages/${locale}.json`), "utf-8"));
+  const out = { categories: {}, tools: {} };
+  for (const slug of categorySlugs) {
+    const label = loc.categories?.[slug]?.navLabel;
+    if (label) out.categories[slug] = label;
+  }
+  for (const t of tools) {
+    const c = loc.tools?.[t.slug];
+    if (!c || !c.h1) continue;
+    // A one-line tagline: the first clause/sentence of the subheading, capped in length.
+    let tagline = (c.subheading ?? "").split(/\s[—–-]\s/)[0].split(/(?<=[。．.!?！？])\s*/u)[0].trim();
+    const chars = Array.from(tagline);
+    if (chars.length > 80) tagline = `${chars.slice(0, 79).join("").trimEnd()}…`;
+    out.tools[t.slug] = { n: c.h1, t: tagline || c.h1, k: Array.isArray(c.keywords) ? c.keywords : [] };
+  }
+  writeFileSync(path.join(i18nDir, `tools.${locale}.json`), JSON.stringify(out));
+}
+console.log(`Wrote ${LOCALES.length} language files to extension/i18n/`);

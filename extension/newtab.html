@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="i18n-pending">
   <head>
     <meta charset="utf-8" />
     <title>New Tab — EveryUtili</title>
@@ -31,6 +31,10 @@
               <button type="button" id="default-engine-tools" class="settings-choice-btn" data-value="tools" role="radio">EveryUtili</button>
               <button type="button" id="default-engine-google" class="settings-choice-btn" data-value="google" role="radio">Google</button>
             </div>
+          </div>
+          <div class="settings-row">
+            <span id="settings-language-label" class="settings-label">Language</span>
+            <select id="language-select" class="settings-select" aria-label="Language"></select>
           </div>
           <div class="settings-row">
             <span id="settings-clock-format-label" class="settings-label">Clock format</span>
@@ -110,6 +114,7 @@
     </main>
 
     <script src="tools-data.js"></script>
+    <script src="i18n.js"></script>
     <script src="search.js"></script>
     <script src="newtab.js"></script>
   </body>

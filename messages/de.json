@@ -3309,65 +3309,75 @@
       ]
     },
     "pdf-maker": {
-      "seoTitle": "PDF Maker – Word, Excel, CSV, Text & HTML in PDF umwandeln, kostenlos",
-      "metaDescription": "Wandle Word, Excel, CSV, Markdown, HTML oder reinen Text direkt im Browser in ein PDF um. Wähle Stil, Papierformat und Ränder, füge Kopfzeilen und Seitenzahlen hinzu und prüfe jede Seite in der Vorschau – ohne Upload.",
-      "h1": "PDF Maker – Word, Excel, Text & HTML in PDF umwandeln",
-      "subheading": "Wandle Dokumente und Tabellen in PDF um – mit Stil, Papierformat und Live-Seitenvorschau, zu 100 % lokal in deinem Browser verarbeitet.",
+      "seoTitle": "PDF Maker – Vorlagen, Deckblatt, Inhaltsverzeichnis & Wasserzeichen, kostenlos",
+      "metaDescription": "Professionelle PDFs im Browser erstellen: Starten Sie mit einer Vorlage für Rechnung, Lebenslauf, Brief oder Bericht oder konvertieren Sie Word, Excel, CSV, Markdown und HTML. Deckblatt, Inhaltsverzeichnis, Kopf- und Fußzeilen, Wasserzeichen und Schriftarten – ohne Upload.",
+      "h1": "PDF Maker – Vorlagen, Word, Excel & Markdown zu PDF",
+      "subheading": "Ein PDF-Studio im Vollbild: Starten Sie mit einer Vorlage oder Ihrer eigenen Datei, gestalten Sie sie, fügen Sie Deckblatt, Inhaltsverzeichnis, Kopfzeilen und ein Wasserzeichen hinzu und sehen Sie jede Seite live.",
       "keywords": [
-        "word in pdf umwandeln",
-        "excel in pdf umwandeln",
-        "csv in pdf",
-        "html in pdf",
-        "text in pdf",
-        "markdown in pdf",
-        "pdf erstellen online"
+        "PDF Maker",
+        "PDF online erstellen",
+        "Rechnungsvorlage PDF",
+        "Lebenslauf PDF erstellen",
+        "Markdown zu PDF",
+        "Word in PDF umwandeln",
+        "Excel in PDF umwandeln",
+        "Inhaltsverzeichnis PDF",
+        "Wasserzeichen in PDF einfügen"
       ],
       "howTo": [
         {
-          "name": "Inhalt hinzufügen",
-          "text": "Lade eine Word-, Excel-, CSV-, JSON-, Markdown-, HTML- oder Textdatei hoch – oder schreibe bzw. füge deinen Inhalt direkt ein."
+          "name": "Mit einer Vorlage oder eigenem Inhalt starten",
+          "text": "Wählen Sie eine Vorlage wie Rechnung, Lebenslauf, Brief, Bericht, Angebot oder Besprechungsnotizen – oder öffnen Sie eine Word-, Excel-, CSV-, JSON-, Markdown-, HTML- oder Textdatei, oder schreiben Sie einfach los."
         },
         {
-          "name": "Stil und Seite wählen",
-          "text": "Wähle einen von sechs Stilen, ein Papierformat (A4, Letter, Legal, A5), die Ausrichtung und die Ränder und füge Kopfzeile, Fußzeile und Seitenzahlen hinzu."
+          "name": "Dokument gestalten",
+          "text": "Wählen Sie einen von sechs Stilen und passen Sie dann Schriftart, Akzentfarbe, Textgröße und Zeilenabstand an. Legen Sie Papierformat, Ausrichtung und Ränder fest."
         },
         {
-          "name": "Seitenvorschau prüfen",
-          "text": "Sieh dir die genauen Seiten an, bevor du herunterlädst. Seitenumbrüche entstehen zwischen Absätzen, Tabellenzeilen und Listeneinträgen – nie mittendrin."
+          "name": "Den letzten Schliff hinzufügen",
+          "text": "Aktivieren Sie ein Deckblatt, ein automatisches Inhaltsverzeichnis mit echten Seitenzahlen, Kopf- und Fußzeilen mit den Variablen {page} und {pages} sowie ein Text-Wasserzeichen."
         },
         {
           "name": "Herunterladen oder drucken",
-          "text": "Klicke auf Download PDF oder nutze Print / Save as PDF, um den Text markierbar zu behalten."
+          "text": "Prüfen Sie die Live-Seitenvorschau und klicken Sie dann auf Download PDF oder nutzen Sie Drucken / Als PDF speichern, um markierbaren Text beizubehalten."
         }
       ],
       "faq": [
         {
-          "question": "Sieht mein PDF exakt wie die ursprüngliche Word- oder Excel-Datei aus?",
-          "answer": "Nein. Das Tool stellt deinen Inhalt – Text, Überschriften, Listen, Tabellen und Bilder – im gewählten Stil dar, übernimmt aber nicht das exakte Seitenlayout, die Schriftarten oder Kopfzeilen des Originals. Für ein pixelgenaues Ergebnis exportierst du direkt aus Word oder Excel als PDF."
+          "question": "Sieht meine PDF genau wie die ursprüngliche Word- oder Excel-Datei aus?",
+          "answer": "Nein. Das Tool rendert Ihren Inhalt – Text, Überschriften, Listen, Tabellen und Bilder – im gewählten Stil, übernimmt aber nicht das exakte Seitenlayout, die Schriftarten oder Kopfzeilen des Originals. Für pixelgenaue Ergebnisse exportieren Sie direkt aus Word oder Excel als PDF."
         },
         {
-          "question": "Was ist der Unterschied zwischen Download PDF und Print / Save as PDF?",
-          "answer": "Download PDF wandelt jede Seite in ein Bild um: Das PDF sieht überall gleich aus, der Text lässt sich aber nicht markieren. Print / Save as PDF öffnet den Druckdialog deines Browsers; wählst du dort „Als PDF speichern“, bleibt der Text markierbar und durchsuchbar."
+          "question": "Was ist der Unterschied zwischen Download PDF und Drucken / Als PDF speichern?",
+          "answer": "Download PDF wandelt jede Seite in ein Bild um: Sie sieht überall identisch aus und enthält Ihre Kopf- und Fußzeilen, Seitenzahlen, das Deckblatt und das Wasserzeichen, der Text lässt sich jedoch nicht markieren. Drucken / Als PDF speichern öffnet den Druckdialog Ihres Browsers, und wenn Sie dort „Als PDF speichern“ wählen, bleibt der Text markier- und durchsuchbar (Ihr Browser fügt eigene Kopfzeilen und Seitenzahlen hinzu)."
         },
         {
-          "question": "Welche Dateien kann ich umwandeln?",
-          "answer": "Word (.docx), Excel- und OpenDocument-Tabellen (.xlsx, .xls, .xlsm, .ods), CSV, TSV, JSON, Markdown, HTML und reinen Text. Ältere .doc-Dateien musst du zuerst als .docx neu speichern."
+          "question": "Welche Dateien kann ich konvertieren?",
+          "answer": "Word (.docx), Excel- und OpenDocument-Tabellen (.xlsx, .xls, .xlsm, .ods), CSV, TSV, JSON, Markdown, HTML und reinen Text. Ältere .doc-Dateien müssen zuvor als .docx neu gespeichert werden."
         },
         {
-          "question": "Wie werden die Seiten umgebrochen?",
-          "answer": "Das Dokument wird zuerst ausgemessen, und eine neue Seite beginnt nur zwischen Absätzen, Tabellenzeilen und Listeneinträgen. So werden Zeilen nie halbiert und eine Überschrift steht nie allein am Seitenende. Nur ein einzelner Block, der höher als eine Seite ist, etwa ein sehr langer Codeblock, kann geteilt werden."
+          "question": "Wie funktionieren die Vorlagen?",
+          "answer": "Eine Vorlage füllt den Editor mit Beispiel-Markdown, wählt einen passenden Stil und richtet Seitenoptionen wie Deckblatt oder Inhaltsverzeichnis ein. Ersetzen Sie den Beispieltext durch Ihren eigenen. Das Datum in einer Vorlage wird mit dem heutigen Datum gefüllt."
         },
         {
-          "question": "Kann ich eine breite Tabelle umwandeln?",
-          "answer": "Ja. Wechsle ins Querformat oder verkleinere die Schrift. Jedes Tabellenblatt wird zu einer Tabelle, und sehr lange Blätter werden auf ihre ersten 3.000 Zeilen begrenzt, damit das PDF gut nutzbar bleibt."
+          "question": "Wie funktioniert das Inhaltsverzeichnis?",
+          "answer": "Es wird aus Ihren Überschriften (bis zur gewählten Ebene) erstellt und zeigt die tatsächliche Seitenzahl jeder Überschrift. Das Deckblatt wird nicht nummeriert, die Nummerierung beginnt also danach."
         },
         {
-          "question": "Funktioniert es mit Arabisch, Chinesisch, Japanisch und anderen Schriften?",
-          "answer": "Ja. Dein Browser zeichnet den Text, daher funktioniert jede Schrift, für die dein Gerät Schriftarten hat, in beiden PDF-Varianten."
+          "question": "Was kann ich in die Kopf- und Fußzeile schreiben?",
+          "answer": "Beliebigen Text sowie die Variablen {page}, {pages}, {title}, {author} und {date}, zum Beispiel „Seite {page} von {pages}“. Jeder Eintrag kann links, zentriert oder rechts ausgerichtet werden."
+        },
+        {
+          "question": "Wie werden Seiten umbrochen?",
+          "answer": "Das Dokument wird zuerst ausgemessen, und eine neue Seite beginnt nur zwischen Absätzen, Tabellenzeilen und Listeneinträgen, sodass Zeilen nie halbiert werden und eine Überschrift nie am Seitenende steht. Nur ein einzelner Block, der höher als eine Seite ist, etwa ein sehr langer Codeblock, kann geteilt werden."
+        },
+        {
+          "question": "Funktioniert es mit Arabisch, Chinesisch, Japanisch und anderen Schriftsystemen?",
+          "answer": "Ja. Ihr Browser zeichnet den Text, daher funktioniert jedes Schriftsystem, für das Ihr Gerät Schriftarten besitzt, auf beiden PDF-Wegen."
         },
         {
           "question": "Wird meine Datei irgendwohin hochgeladen?",
-          "answer": "Nein, alles passiert in deinem Browser. Lange Dokumente brauchen etwas länger, weil jede Seite einzeln gerendert wird; ein Fortschrittszähler zeigt dir den aktuellen Stand."
+          "answer": "Nein, alles geschieht in Ihrem Browser. Lange Dokumente dauern länger, da jede Seite einzeln gerendert wird; ein Fortschrittszähler zeigt den aktuellen Stand."
         }
       ]
     },
@@ -3738,6 +3748,333 @@
         {
           "question": "Wird mein PDF irgendwohin hochgeladen?",
           "answer": "Nein, der Text wird vollständig in Ihrem Browser gelesen."
+        }
+      ]
+    },
+    "organize-pdf": {
+      "seoTitle": "PDF-Seiten organisieren – sortieren, drehen, löschen & duplizieren, kostenlos",
+      "metaDescription": "PDF-Seiten per Drag-and-drop neu anordnen: sortieren, drehen, löschen, duplizieren und Leerseiten einfügen, mehrere PDFs zusammenführen oder einen Duplex-Scan korrigieren. Kostenlos, privat, ohne Upload.",
+      "h1": "PDF-Seiten organisieren",
+      "subheading": "Seiten per Drag-and-drop sortieren, drehen, duplizieren oder löschen und Leerseiten einfügen – alles in Ihrem Browser.",
+      "keywords": [
+        "PDF organisieren",
+        "PDF-Seiten sortieren",
+        "PDF-Seiten neu anordnen",
+        "PDF-Seiten drehen",
+        "PDF-Seiten löschen",
+        "PDF-Seite duplizieren",
+        "leere Seite in PDF einfügen"
+      ],
+      "howTo": [
+        {
+          "name": "PDFs hinzufügen",
+          "text": "Ziehen Sie eine oder mehrere PDF-Dateien hinein. Ihre Seiten erscheinen als Vorschaubilder in einem gemeinsamen Raster."
+        },
+        {
+          "name": "Seiten anordnen",
+          "text": "Ziehen Sie Seiten in eine neue Reihenfolge, oder wählen Sie Seiten aus und drehen, duplizieren oder löschen Sie sie bzw. fügen Sie dahinter eine Leerseite ein."
+        },
+        {
+          "name": "Schnellkorrekturen nutzen",
+          "text": "Kehren Sie die Reihenfolge um, stellen Sie ungerade Seiten vor gerade Seiten oder führen Sie einen Scan der Vorder- und Rückseiten zusammen."
+        },
+        {
+          "name": "Herunterladen",
+          "text": "Klicken Sie auf Download PDF, um die Seiten in der angezeigten Reihenfolge zu speichern."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Verschlechtert das Organisieren die Qualität meiner PDF?",
+          "answer": "Nein. Die Seiten werden aus der Originaldatei kopiert und nicht neu gerendert, sodass Text markierbar bleibt und Bilder ihre Qualität behalten. Die Vorschaubilder dienen nur der Anzeige."
+        },
+        {
+          "question": "Kann ich Seiten aus mehreren PDFs kombinieren?",
+          "answer": "Ja. Fügen Sie mit PDF hinzufügen beliebig viele PDFs hinzu; jede Seite landet im selben Raster, mit dem Dateinamen gekennzeichnet, und Sie können sie in beliebiger Reihenfolge mischen."
+        },
+        {
+          "question": "Wie drehe oder lösche ich mehrere Seiten auf einmal?",
+          "answer": "Klicken Sie auf Seiten, um sie auszuwählen (sobald etwas ausgewählt ist, schaltet ein Klick die Auswahl um), und verwenden Sie dann Links, Rechts, Löschen oder Duplizieren. Alle auswählen und Auswahl aufheben helfen bei großen Dokumenten."
+        },
+        {
+          "question": "Welche Schnellkorrekturen gibt es für gescannte Dokumente?",
+          "answer": "Alle umkehren dreht die gesamte Reihenfolge um. Ungerade, dann gerade ordnet die Seiten 1, 3, 5 … vor 2, 4, 6 … an. Duplex-Scan zusammenführen verbindet zwei Scans – zuerst alle Vorderseiten, dann alle Rückseiten in umgekehrter Reihenfolge eingelesen – zu einem korrekt sortierten Dokument."
+        },
+        {
+          "question": "Gibt es eine Seitenbegrenzung?",
+          "answer": "Bis zu 400 Seiten auf einmal, da jede Seite als Vorschaubild in Ihrem Browser gezeichnet wird. Teilen Sie längere Dateien vorher auf."
+        },
+        {
+          "question": "Funktioniert es mit passwortgeschützten PDFs?",
+          "answer": "Nein. Entfernen Sie zuerst das Passwort und organisieren Sie die Datei anschließend."
+        },
+        {
+          "question": "Werden meine Dateien irgendwohin hochgeladen?",
+          "answer": "Nein. Alles läuft in Ihrem Browser ab, Ihre Dokumente verlassen also nie Ihr Gerät."
+        }
+      ]
+    },
+    "sign-pdf": {
+      "seoTitle": "PDF online unterschreiben – Zeichnen, Tippen oder digital mit Zertifikat signieren, kostenlos",
+      "metaDescription": "PDF im Browser unterschreiben: Unterschrift zeichnen, tippen oder hochladen – oder eine echte kryptografische digitale Signatur mit Zertifikat hinzufügen. Kostenlos und privat – es wird nichts hochgeladen.",
+      "h1": "PDF online unterschreiben",
+      "subheading": "Zeichnen, tippen oder laden Sie Ihre Unterschrift hoch – oder fügen Sie mit Ihrem eigenen Zertifikat eine manipulationssichere digitale Signatur hinzu – alles direkt auf Ihrem Gerät.",
+      "keywords": [
+        "pdf unterschreiben",
+        "pdf online kostenlos unterschreiben",
+        "unterschrift in pdf einfügen",
+        "pdf elektronisch signieren",
+        "unterschrift zeichnen pdf",
+        "pdf ausfüllen und unterschreiben",
+        "datum in pdf einfügen",
+        "digitale signatur pdf",
+        "pdf mit zertifikat signieren"
+      ],
+      "howTo": [
+        {
+          "name": "PDF öffnen",
+          "text": "Ziehen Sie die PDF-Datei, die Sie unterschreiben möchten, in das Fenster."
+        },
+        {
+          "name": "Unterschrift erstellen",
+          "text": "Zeichnen Sie sie mit der Maus oder dem Finger, tippen Sie Ihren Namen in einer Handschriftart oder laden Sie ein Foto Ihrer Unterschrift hoch – das weiße Papier wird automatisch entfernt."
+        },
+        {
+          "name": "Unterschrift platzieren",
+          "text": "Ziehen Sie die Unterschrift an die richtige Stelle, passen Sie die Größe über die Ecke an und fügen Sie das heutige Datum, beliebigen Text oder Initialen hinzu."
+        },
+        {
+          "name": "Anzeige festlegen",
+          "text": "Zeigen Sie den Stempel auf einer Seite, auf allen Seiten (praktisch für Initialen) oder nur auf der letzten Seite an und laden Sie dann die unterschriebene PDF herunter."
+        },
+        {
+          "name": "Digitale Signatur hinzufügen (optional)",
+          "text": "Aktivieren Sie „Digitale Signatur hinzufügen“, laden Sie dann Ihr .p12-/.pfx-Zertifikat mit Passwort oder erzeugen Sie ein neues. Wählen Sie ein sichtbares Siegel, einen Grund und einen Ort und laden Sie die kryptografisch signierte PDF herunter."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ist das eine rechtsverbindliche Unterschrift?",
+          "answer": "Eine gezeichnete Unterschrift ist ein Bild auf der Seite, das viele Personen und Unternehmen für alltägliche Dokumente akzeptieren. Für einen stärkeren Nachweis aktivieren Sie „Digitale Signatur hinzufügen“: Die Datei wird mit einem Zertifikat signiert, sodass PDF-Reader jede spätere Änderung erkennen. Prüfen Sie, was in Ihrem Fall erforderlich ist."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen einer gezeichneten und einer digitalen Signatur?",
+          "answer": "Eine gezeichnete Unterschrift ist nur ein Bild. Eine digitale Signatur ist ein kryptografisches Siegel, das mit dem privaten Schlüssel Ihres Zertifikats erstellt und in der PDF gespeichert wird. Wird die Datei danach verändert, melden Reader wie Adobe Acrobat, dass die Signatur ungültig ist."
+        },
+        {
+          "question": "Warum meldet mein Reader, dass der Unterzeichner nicht verifiziert ist?",
+          "answer": "Ein in diesem Tool erstelltes Zertifikat ist selbstsigniert. Das Dokument ist dadurch gegen Änderungen geschützt, aber der Reader kann Ihre Identität nicht bestätigen, solange der Empfänger dem Zertifikat nicht vertraut. Verwenden Sie für rechtsverbindliche Abläufe ein Zertifikat einer vertrauenswürdigen Zertifizierungsstelle und laden Sie es als .p12-/.pfx-Datei. Ihr privater Schlüssel verlässt nie Ihr Gerät."
+        },
+        {
+          "question": "Werden mein Dokument oder meine Unterschrift hochgeladen?",
+          "answer": "Nein. Die PDF, Ihre Unterschrift und das Ergebnis bleiben in Ihrem Browser. Optional können Sie eine Unterschrift auf diesem Gerät speichern; sie wird nur im lokalen Speicher Ihres Browsers abgelegt und lässt sich jederzeit löschen."
+        },
+        {
+          "question": "Wie erhalte ich aus einem Foto eine saubere Unterschrift?",
+          "answer": "Unterschreiben Sie auf einfarbig weißem Papier bei gutem Licht und laden Sie das Bild hoch. Lassen Sie „Weißen Hintergrund entfernen“ aktiviert, dann wird das Papier transparent und nur die Tinte bleibt erhalten."
+        },
+        {
+          "question": "Kann ich jede Seite unterschreiben oder Initialen hinzufügen?",
+          "answer": "Ja. Erstellen Sie einen kurzen Textstempel, etwa Ihre Initialen, wählen Sie ihn aus und stellen Sie unter „Anzeigen auf“ die Option „Jede Seite“ ein."
+        },
+        {
+          "question": "Funktioniert es auch bei gedrehten Seiten?",
+          "answer": "Ja. Der Stempel wird relativ zur Seite so positioniert, wie Sie sie sehen, auch bei gedrehten Seiten, und behält in der gespeicherten Datei dieselbe Position."
+        },
+        {
+          "question": "Kann ich Text in einer anderen Sprache eingeben?",
+          "answer": "Ja. Text und Datum werden von Ihrem Browser gezeichnet, daher funktioniert jede Sprache, für die Ihr Gerät Schriftarten besitzt."
+        },
+        {
+          "question": "Verändert das Unterschreiben den Rest meiner PDF?",
+          "answer": "Nein. Die Unterschrift wird oberhalb der Seite hinzugefügt; der ursprüngliche Text, die Bilder und die Links bleiben genau so erhalten, wie sie waren."
+        }
+      ]
+    },
+    "crop-pdf": {
+      "seoTitle": "PDF-Seiten zuschneiden – Ränder visuell oder automatisch beschneiden, kostenlos",
+      "metaDescription": "PDF-Seiten online zuschneiden: Ränder per Ziehen der Kanten beschneiden, Leerraum automatisch erkennen, auf alle, ungerade, gerade oder ausgewählte Seiten anwenden und herunterladen. Kostenlos und privat – kein Upload.",
+      "h1": "PDF-Seiten zuschneiden",
+      "subheading": "Schneiden Sie Ränder durch Ziehen der Kanten zu oder erkennen Sie Leerraum automatisch – für alle Seiten oder nur für einige.",
+      "keywords": [
+        "PDF zuschneiden",
+        "PDF-Ränder beschneiden",
+        "Leerraum aus PDF entfernen",
+        "PDF-Seiten online zuschneiden",
+        "PDF automatisch zuschneiden",
+        "PDF-Ränder entfernen"
+      ],
+      "howTo": [
+        {
+          "name": "PDF öffnen",
+          "text": "Ziehen Sie die PDF hinein, die Sie zuschneiden möchten."
+        },
+        {
+          "name": "Zuschnittbereich festlegen",
+          "text": "Ziehen Sie die blauen Kanten auf der Seite, nutzen Sie die Schieberegler, wählen Sie eine Voreinstellung oder lassen Sie das Tool den Leerraum für Sie erkennen."
+        },
+        {
+          "name": "Seiten auswählen",
+          "text": "Wenden Sie den Zuschnitt auf alle Seiten, diese Seite, ungerade oder gerade Seiten oder einen Bereich wie 1-3, 7 an."
+        },
+        {
+          "name": "Herunterladen",
+          "text": "Klicken Sie auf Zugeschnittene PDF herunterladen. Der Seiteninhalt bleibt erhalten, nur der sichtbare Bereich ändert sich."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Löscht das Zuschneiden den abgeschnittenen Inhalt?",
+          "answer": "Nein. Es setzt die Zuschneidebox (CropBox) der Seite, die den äußeren Bereich beim Anzeigen oder Drucken der PDF ausblendet. Die Dateigröße bleibt ungefähr gleich. Wenn der ausgeblendete Inhalt sensibel ist, schwärzen Sie ihn stattdessen."
+        },
+        {
+          "question": "Wie funktioniert die automatische Beschneidung?",
+          "answer": "Das Tool zeichnet die Seite, ermittelt das kleinste Rechteck, das alles Nicht-Weiße enthält, und fügt einen kleinen Abstand hinzu. Gleicher Zuschnitt für alle Seiten verwendet den kleinsten auf einer beliebigen Seite gefundenen Rand, damit nichts abgeschnitten wird; Jede Seite einzeln zuschneiden passt jede Seite an ihren eigenen Inhalt an."
+        },
+        {
+          "question": "Kann ich nur einige Seiten zuschneiden?",
+          "answer": "Ja. Wählen Sie alle Seiten, die aktuelle Seite, ungerade oder gerade Seiten oder geben Sie einen Bereich wie 1-3, 7 ein."
+        },
+        {
+          "question": "Funktioniert es auf gedrehten Seiten?",
+          "answer": "Ja. Die Ränder werden auf die Seite so angewendet, wie Sie sie sehen, unabhängig von ihrer Drehung."
+        },
+        {
+          "question": "Kann ich gescannte Dokumente zuschneiden?",
+          "answer": "Ja, gescannte Seiten werden wie alle anderen zugeschnitten, und die automatische Beschneidung ist besonders nützlich, um den leeren Rand um einen Scan zu entfernen."
+        },
+        {
+          "question": "Ändert sich die Seitengröße?",
+          "answer": "Die sichtbare Seite wird kleiner, und das Tool zeigt die neue Größe vor dem Herunterladen in Millimetern an."
+        },
+        {
+          "question": "Wird meine PDF hochgeladen?",
+          "answer": "Nein. Alles geschieht in Ihrem Browser."
+        }
+      ]
+    },
+    "pdf-metadata": {
+      "seoTitle": "PDF-Metadaten-Editor – PDF-Eigenschaften anzeigen, bearbeiten & entfernen, kostenlos",
+      "metaDescription": "Titel, Autor, Betreff, Schlüsselwörter und Datumsangaben einer PDF anzeigen und bearbeiten oder alle Metadaten vor dem Teilen entfernen. Kostenlos, privat, im Browser verarbeitet – nichts wird hochgeladen.",
+      "h1": "PDF-Metadaten-Editor",
+      "subheading": "Sehen Sie den versteckten Titel, Autor und die Datumsangaben in Ihrer PDF, bearbeiten Sie sie oder entfernen Sie alles, bevor Sie die Datei teilen.",
+      "keywords": [
+        "PDF-Metadaten-Editor",
+        "PDF-Eigenschaften bearbeiten",
+        "PDF-Metadaten entfernen",
+        "PDF-Autor ändern",
+        "PDF-Titel bearbeiten",
+        "PDF-Eigenschaften online",
+        "PDF-Metadaten löschen"
+      ],
+      "howTo": [
+        {
+          "name": "PDF öffnen",
+          "text": "Ziehen Sie die zu prüfende PDF hinein. Eigenschaften, Seitenzahl und Papierformat werden sofort angezeigt."
+        },
+        {
+          "name": "Felder bearbeiten",
+          "text": "Ändern Sie Titel, Autor, Betreff, Schlüsselwörter, Ersteller, Producer und Datumsangaben."
+        },
+        {
+          "name": "Oder alles entfernen",
+          "text": "Verwenden Sie Alle Felder leeren oder laden Sie eine Kopie ohne jegliche Metadaten herunter."
+        },
+        {
+          "name": "Speichern",
+          "text": "Klicken Sie auf Änderungen speichern. Die Seiten selbst bleiben exakt unverändert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Welche Metadaten enthält eine PDF?",
+          "answer": "In der Regel Titel, Autor, Betreff, Schlüsselwörter, das Programm, das das Dokument erstellt hat, das Programm, das die PDF geschrieben hat, sowie Erstellungs- und Änderungsdatum. Viele Dateien enthalten außerdem einen XMP-Block, der diese Informationen wiederholt."
+        },
+        {
+          "question": "Warum sollte ich PDF-Metadaten vor dem Teilen entfernen?",
+          "answer": "Sie können den Namen des Autors, die verwendete Software und den Zeitpunkt der Dateierstellung verraten – Angaben, die Sie vielleicht nicht weitergeben möchten. Mit dem Download ohne Metadaten erhalten Sie eine saubere Kopie."
+        },
+        {
+          "question": "Was bedeutet die Option für XMP-Daten?",
+          "answer": "XMP ist ein zweiter Ort, an dem PDFs Eigenschaften im XML-Format speichern. Wenn Auch XMP-Daten entfernen angehakt bleibt, ist sichergestellt, dass die alten Werte dort nicht erhalten bleiben."
+        },
+        {
+          "question": "Verändert es die Seiten?",
+          "answer": "Nein. Es ändern sich nur die Dokumenteigenschaften; Text, Bilder, Links und Formulare bleiben unverändert erhalten."
+        },
+        {
+          "question": "Kann ich das Änderungsdatum auf jetzt setzen?",
+          "answer": "Ja. Haken Sie „Zuletzt geändert“ auf jetzt setzen an oder geben Sie selbst ein beliebiges Datum mit Uhrzeit ein."
+        },
+        {
+          "question": "Sind Metadaten das Einzige, was den Autor identifiziert?",
+          "answer": "Nein. Namen können auch im sichtbaren Text, in Kommentaren, Formularfeldern oder eingebetteten Dateien vorkommen. Dieses Tool bearbeitet nur die Dokumenteigenschaften."
+        },
+        {
+          "question": "Wird meine PDF irgendwohin hochgeladen?",
+          "answer": "Nein. Die Datei wird in Ihrem Browser gelesen und neu geschrieben."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "seoTitle": "PDF-zu-Word-Konverter – bearbeitbare .docx, kostenlos & privat",
+      "metaDescription": "Wandeln Sie eine PDF in Ihrem Browser in ein bearbeitbares Word-Dokument um. Überschriften, Absätze und Listen werden neu aufgebaut, wiederkehrende Kopf- und Fußzeilen entfernt. Einfache Konvertierung – kein Upload, keine Anmeldung.",
+      "h1": "PDF-zu-Word-Konverter",
+      "subheading": "Überschriften, Absätze und Listen einer PDF als bearbeitbare .docx neu aufbauen – eine einfache Konvertierung, die vollständig in Ihrem Browser läuft.",
+      "keywords": [
+        "PDF in Word umwandeln",
+        "PDF zu DOCX",
+        "PDF kostenlos in Word konvertieren",
+        "PDF zu Word online",
+        "PDF in bearbeitbares Word umwandeln",
+        "Text aus PDF in Word extrahieren"
+      ],
+      "howTo": [
+        {
+          "name": "PDF öffnen",
+          "text": "Ziehen Sie eine PDF hinein, die echten Text enthält (keinen Scan). Der Text wird Seite für Seite gelesen."
+        },
+        {
+          "name": "Seiten und Stil wählen",
+          "text": "Wählen Sie, welche Seiten konvertiert werden, ob wiederkehrende Kopf- und Fußzeilen entfernt werden sollen, das Papierformat und einen Word-Stil."
+        },
+        {
+          "name": "Vorschau prüfen",
+          "text": "Sehen Sie, wie Überschriften, Absätze und Listen neu aufgebaut wurden."
+        },
+        {
+          "name": "Herunterladen",
+          "text": "Klicken Sie auf .docx herunterladen und bearbeiten Sie weiter in Word, Google Docs oder LibreOffice."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie gut ist die Konvertierung?",
+          "answer": "Es ist eine einfache Konvertierung. Überschriften werden an ihrer größeren Schriftgröße erkannt, umgebrochene Zeilen zu Absätzen verbunden, Trennstriche am Zeilenende repariert, und Aufzählungs- oder nummerierte Listen werden zu echten Listen. Tabellen, Bilder, Spalten und das exakte Seitenlayout werden nicht übernommen, prüfen Sie das Ergebnis daher immer."
+        },
+        {
+          "question": "Funktioniert es mit gescannten PDFs?",
+          "answer": "Nein. Ein Scan ist ein Bild von Text, und zum Lesen ist OCR nötig, was dieses Tool nicht leistet. Es weist Sie darauf hin, wenn eine PDF kaum eine Textebene hat."
+        },
+        {
+          "question": "Was passiert mit Kopfzeilen, Fußzeilen und Seitenzahlen?",
+          "answer": "Text, der oben oder unten auf den meisten Seiten wiederkehrt, sowie einzelne Seitenzahlen werden standardmäßig entfernt, damit sie nicht mitten in Ihrem Text landen. Deaktivieren Sie die Option, um sie zu behalten."
+        },
+        {
+          "question": "Bleiben Schriftarten und Farben erhalten?",
+          "answer": "Nein. Die Word-Datei verwendet einen der integrierten Stile Ihrer Wahl mit einheitlichen Überschriften und Fließtext, was die Bearbeitung erleichtert."
+        },
+        {
+          "question": "Kann ich nur einige Seiten konvertieren?",
+          "answer": "Ja. Geben Sie einen Bereich wie 1-5, 9 ein, und nur diese Seiten werden konvertiert."
+        },
+        {
+          "question": "Funktioniert es mit Arabisch, Chinesisch oder anderen Schriftsystemen?",
+          "answer": "Die Textextraktion funktioniert für jedes Schriftsystem, das in der PDF als echter Text gespeichert ist. Rechts-nach-links-Layouts und komplexe Schriften müssen eventuell in Word manuell geprüft werden."
+        },
+        {
+          "question": "Wird meine PDF irgendwohin hochgeladen?",
+          "answer": "Nein. Die PDF wird in Ihrem Browser gelesen, und die Word-Datei wird ebenfalls dort erstellt."
         }
       ]
     },

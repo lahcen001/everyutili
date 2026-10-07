@@ -5,6 +5,7 @@ import * as React from "react";
 import { themeCss, type DocTheme } from "@/lib/office/docThemes";
 import { mmToPx, pageDimensionsMm, type PageSettings } from "@/lib/office/pageSettings";
 import type { PdfLayout } from "@/lib/office/pdfExport";
+import { pageLabels } from "@/lib/office/headerFooter";
 
 const SCOPE = "doc-preview";
 const GAP_PX = 24;
@@ -20,6 +21,9 @@ export function DocPreview({
   layout,
   fontSizePt,
   headerFooter,
+  meta = { title: "", author: "", date: "" },
+  coverPages = 0,
+  watermarkUrl = null,
 }: {
   html: string;
   theme: DocTheme;
@@ -27,6 +31,12 @@ export function DocPreview({
   layout?: PdfLayout | null;
   fontSizePt?: number;
   headerFooter?: boolean;
+  /** values for {title}, {author} and {date} in the header and footer */
+  meta?: { title: string; author: string; date: string };
+  /** unnumbered pages at the start (a cover): no header, footer or number */
+  coverPages?: number;
+  /** a page-sized transparent image drawn over every page */
+  watermarkUrl?: string | null;
 }) {
   const wrapRef = React.useRef<HTMLDivElement>(null);
   const innerRef = React.useRef<HTMLDivElement>(null);
@@ -72,14 +82,20 @@ export function DocPreview({
                     <div className={SCOPE} dangerouslySetInnerHTML={{ __html: html }} />
                   </div>
                 </div>
-                {headerFooter && page.headerText.trim() && (
-                  <div style={{ position: "absolute", left: margin, top: Math.max(6, margin / 2 - 8), fontSize: 11, color: "#6b7280" }}>{page.headerText}</div>
+                {watermarkUrl && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={watermarkUrl} alt="" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none" }} />
                 )}
-                {headerFooter && (page.pageNumbers || page.footerText.trim()) && (
-                  <div style={{ position: "absolute", left: 0, right: 0, bottom: Math.max(6, margin / 2 - 8), textAlign: "center", fontSize: 11, color: "#6b7280" }}>
-                    {[page.footerText.trim(), page.pageNumbers ? String(i + 1) : ""].filter(Boolean).join("   ·   ")}
-                  </div>
-                )}
+                {headerFooter && i >= coverPages && (() => {
+                  const labels = pageLabels(page, { page: i - coverPages + 1, pages: pageCount - coverPages, ...meta });
+                  const align = (a: string): React.CSSProperties => ({ position: "absolute", left: margin, right: margin, textAlign: a as React.CSSProperties["textAlign"], fontSize: 11, color: "#6b7280" });
+                  return (
+                    <>
+                      {labels.header && <div style={{ ...align(page.headerAlign), top: Math.max(6, margin / 2 - 8) }}>{labels.header}</div>}
+                      {labels.footer && <div style={{ ...align(page.footerAlign), bottom: Math.max(6, margin / 2 - 8) }}>{labels.footer}</div>}
+                    </>
+                  );
+                })()}
               </div>
             ))}
           </div>

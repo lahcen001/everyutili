@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "न्यू टैब को बदलें और 79+ मुफ़्त, प्राइवेसी-फर्स्ट टूल्स में तुरंत खोजें: कन्वर्टर, PDF टूल्स, कैलकुलेटर, डेवलपर यूटिलिटीज़।"
+    "message": "न्यू टैब को बदलें और 100+ मुफ़्त, प्राइवेसी-फर्स्ट टूल्स में तुरंत खोजें: कन्वर्टर, PDF टूल्स, कैलकुलेटर, डेवलपर यूटिलिटीज़।"
   },
 
   "offlineBadge": {
@@ -20,6 +20,12 @@
   },
   "settingsClockFormat": {
     "message": "घड़ी फ़ॉर्मेट"
+  },
+  "settingsLanguage": {
+    "message": "भाषा"
+  },
+  "languageSystem": {
+    "message": "सिस्टम डिफ़ॉल्ट"
   },
   "clockAuto": {
     "message": "ऑटो"

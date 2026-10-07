@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "Ganti Tab Baru dengan pencarian instan ke 79+ alat gratis privat: konverter, alat PDF, kalkulator, utilitas developer."
+    "message": "Ganti Tab Baru dengan pencarian instan ke 100+ alat gratis privat: konverter, alat PDF, kalkulator, utilitas developer."
   },
   "offlineBadge": {
     "message": "Berfungsi offline"
@@ -19,6 +19,12 @@
   },
   "settingsClockFormat": {
     "message": "Format jam"
+  },
+  "settingsLanguage": {
+    "message": "Bahasa"
+  },
+  "languageSystem": {
+    "message": "Default sistem"
   },
   "clockAuto": {
     "message": "Otomatis"

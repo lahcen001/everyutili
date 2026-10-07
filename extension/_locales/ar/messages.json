@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "استبدل التبويب الجديد ببحث فوري عبر أكثر من 79 أداة مجانية خاصة: محولات، أدوات PDF، آلات حاسبة، أدوات مطورين."
+    "message": "استبدل التبويب الجديد ببحث فوري عبر أكثر من 100 أداة مجانية خاصة: محولات، أدوات PDF، آلات حاسبة، أدوات مطورين."
   },
   "offlineBadge": {
     "message": "يعمل بلا اتصال"
@@ -19,6 +19,12 @@
   },
   "settingsClockFormat": {
     "message": "تنسيق الساعة"
+  },
+  "settingsLanguage": {
+    "message": "اللغة"
+  },
+  "languageSystem": {
+    "message": "افتراضي النظام"
   },
   "clockAuto": {
     "message": "تلقائي"

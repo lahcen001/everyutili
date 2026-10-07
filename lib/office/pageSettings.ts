@@ -11,7 +11,12 @@ export interface PageSettings {
   headerText: string;
   /** Optional text printed at the bottom of every page, next to the page number. */
   footerText: string;
+  /** Where header / footer text sits. Variables such as {page} and {pages} are filled in per page. */
+  headerAlign: TextAlign;
+  footerAlign: TextAlign;
 }
+
+export type TextAlign = "left" | "center" | "right";
 
 export const DEFAULT_PAGE: PageSettings = {
   size: "a4",
@@ -20,6 +25,8 @@ export const DEFAULT_PAGE: PageSettings = {
   pageNumbers: true,
   headerText: "",
   footerText: "",
+  headerAlign: "left",
+  footerAlign: "center",
 };
 
 /** Portrait dimensions in millimetres. */

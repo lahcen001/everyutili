@@ -1,5 +1,6 @@
 "use client";
 
+import { FileDropTarget } from "@/components/tool-shell/FileDropTarget";
 import * as React from "react";
 import { marked } from "marked";
 import { Download, Eraser, FileText, FileUp, Save } from "lucide-react";
@@ -141,7 +142,7 @@ export default function MarkdownPreviewer() {
   );
 
   return (
-    <div className="space-y-4">
+    <FileDropTarget label="Drop a Markdown file" onFiles={async (f) => setMarkdown(await f[0].text())} className="space-y-4">
       <Workspace
         toolbar={toolbar}
         status={
@@ -167,6 +168,6 @@ export default function MarkdownPreviewer() {
         />
       </Workspace>
       <ToolHistoryList ref={historyRef} toolSlug="markdown-previewer" onRestore={restore} />
-    </div>
+    </FileDropTarget>
   );
 }

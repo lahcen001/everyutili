@@ -3689,35 +3689,37 @@
       ]
     },
     "pdf-maker": {
-      "seoTitle": "PDF Maker – Word, Excel, CSV, Text & HTML to PDF, Free",
-      "metaDescription": "Turn Word, Excel, CSV, Markdown, HTML or plain text into a PDF in your browser. Pick a style, paper size and margins, add headers and page numbers, and preview every page — no upload.",
-      "h1": "PDF Maker — Word, Excel, Text & HTML to PDF",
-      "subheading": "Convert documents and spreadsheets to PDF with a style, paper size and live page preview — processed 100% locally in your browser.",
+      "seoTitle": "PDF Maker – Templates, Cover Page, Contents & Watermark, Free",
+      "metaDescription": "Create professional PDFs in your browser: start from an invoice, resume, letter or report template, or convert Word, Excel, CSV, Markdown and HTML. Cover page, table of contents, headers, footers, watermark and fonts — no upload.",
+      "h1": "PDF Maker — Templates, Word, Excel & Markdown to PDF",
+      "subheading": "A full-screen PDF studio: start from a template or your own file, style it, add a cover, contents, headers and a watermark, and see every page live.",
       "keywords": [
+        "pdf maker",
+        "create pdf online",
+        "invoice template pdf",
+        "resume pdf maker",
+        "markdown to pdf",
         "word to pdf",
         "excel to pdf",
-        "csv to pdf",
-        "html to pdf",
-        "text to pdf",
-        "markdown to pdf",
-        "pdf maker online"
+        "table of contents pdf",
+        "add watermark to pdf"
       ],
       "howTo": [
         {
-          "name": "Add your content",
-          "text": "Upload a Word, Excel, CSV, JSON, Markdown, HTML or text file — or write or paste your content directly."
+          "name": "Start from a template or your own content",
+          "text": "Choose a template such as an invoice, resume, letter, report, proposal or meeting notes — or open a Word, Excel, CSV, JSON, Markdown, HTML or text file, or just write."
         },
         {
-          "name": "Choose a style and page",
-          "text": "Pick one of six styles, a paper size (A4, Letter, Legal, A5), orientation and margins, and add a header, footer and page numbers."
+          "name": "Style the document",
+          "text": "Pick one of six styles, then fine-tune the font, accent colour, text size and line spacing. Set the paper size, orientation and margins."
         },
         {
-          "name": "Check the page preview",
-          "text": "See the exact pages before you download. Pages break between paragraphs, table rows and list items — never through them."
+          "name": "Add the finishing touches",
+          "text": "Turn on a cover page, an automatic table of contents with real page numbers, headers and footers with {page} and {pages} variables, and a text watermark."
         },
         {
           "name": "Download or print",
-          "text": "Click Download PDF, or use Print / Save as PDF to keep selectable text."
+          "text": "Check the live page preview, then click Download PDF, or use Print / Save as PDF to keep selectable text."
         }
       ],
       "faq": [
@@ -3727,19 +3729,27 @@
         },
         {
           "question": "What is the difference between Download PDF and Print / Save as PDF?",
-          "answer": "Download PDF turns each page into an image: it looks identical everywhere, but the text can't be selected. Print / Save as PDF opens your browser's print dialog, and choosing \"Save as PDF\" there keeps selectable, searchable text."
+          "answer": "Download PDF turns each page into an image: it looks identical everywhere and includes your headers, footers, page numbers, cover and watermark, but the text can't be selected. Print / Save as PDF opens your browser's print dialog, and choosing \"Save as PDF\" there keeps selectable, searchable text (your browser adds its own headers and page numbers)."
         },
         {
           "question": "Which files can I convert?",
           "answer": "Word (.docx), Excel and OpenDocument spreadsheets (.xlsx, .xls, .xlsm, .ods), CSV, TSV, JSON, Markdown, HTML and plain text. Older .doc files must be re-saved as .docx first."
         },
         {
-          "question": "How are pages split?",
-          "answer": "The document is measured first, and a new page starts only between paragraphs, table rows and list items, so lines and rows are never cut in half and a heading never ends a page. Only a single block taller than a page, such as a very long code block, can be split."
+          "question": "How do the templates work?",
+          "answer": "A template fills the editor with sample Markdown, picks a matching style and sets up page options such as a cover or contents. Replace the sample text with your own. The date in a template is filled in with today's date."
         },
         {
-          "question": "Can I convert a wide spreadsheet?",
-          "answer": "Yes. Switch to landscape or lower the text size. Each sheet becomes a table, and very long sheets are limited to their first 3,000 rows so the PDF stays usable."
+          "question": "How does the table of contents work?",
+          "answer": "It is built from your headings (down to the level you choose) and shows the real page number of each one. The cover page is not numbered, so numbering starts after it."
+        },
+        {
+          "question": "What can I put in the header and footer?",
+          "answer": "Any text, plus the variables {page}, {pages}, {title}, {author} and {date}, for example “Page {page} of {pages}”. Each can be aligned left, centre or right."
+        },
+        {
+          "question": "How are pages split?",
+          "answer": "The document is measured first, and a new page starts only between paragraphs, table rows and list items, so lines and rows are never cut in half and a heading never ends a page. Only a single block taller than a page, such as a very long code block, can be split."
         },
         {
           "question": "Does it work with Arabic, Chinese, Japanese and other scripts?",
@@ -4118,6 +4128,333 @@
         {
           "question": "Is my PDF uploaded anywhere?",
           "answer": "No, the text is read entirely in your browser."
+        }
+      ]
+    },
+    "organize-pdf": {
+      "seoTitle": "Organize PDF Pages – Reorder, Rotate, Delete & Duplicate, Free",
+      "metaDescription": "Rearrange PDF pages with drag and drop: reorder, rotate, delete, duplicate and insert blank pages, combine several PDFs, or fix a duplex scan. Free, private, no upload.",
+      "h1": "Organize PDF Pages",
+      "subheading": "Drag pages into order, rotate, duplicate or delete them, and add blank pages — all in your browser.",
+      "keywords": [
+        "organize pdf",
+        "reorder pdf pages",
+        "rearrange pdf pages",
+        "rotate pdf pages",
+        "delete pdf pages",
+        "duplicate pdf page",
+        "add blank page to pdf"
+      ],
+      "howTo": [
+        {
+          "name": "Add your PDFs",
+          "text": "Drop one or more PDF files. Their pages appear as thumbnails in one grid."
+        },
+        {
+          "name": "Arrange the pages",
+          "text": "Drag pages into a new order, or select pages and rotate, duplicate, delete or add a blank page after them."
+        },
+        {
+          "name": "Use the quick fixes",
+          "text": "Reverse the order, put odd pages before even ones, or interleave a front-side and back-side scan."
+        },
+        {
+          "name": "Download",
+          "text": "Click Download PDF to save the pages in the order you see."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does organizing reduce the quality of my PDF?",
+          "answer": "No. Pages are copied from the original file, not re-rendered, so text stays selectable and images keep their quality. The thumbnails are only for display."
+        },
+        {
+          "question": "Can I combine pages from several PDFs?",
+          "answer": "Yes. Add as many PDFs as you like with Add PDF; every page joins the same grid, labelled with its file, and you can mix them in any order."
+        },
+        {
+          "question": "How do I rotate or delete several pages at once?",
+          "answer": "Click pages to select them (a click toggles once something is selected), then use Left, Right, Delete or Duplicate. Select all and Clear selection help with big documents."
+        },
+        {
+          "question": "What are the quick fixes for scanned documents?",
+          "answer": "Reverse all flips the whole order. Odd, then even groups pages 1, 3, 5… before 2, 4, 6…. Interleave duplex scan merges two scans — all front sides, then all back sides fed in reverse — into one correctly ordered document."
+        },
+        {
+          "question": "Is there a page limit?",
+          "answer": "Up to 400 pages at once, because every page is drawn as a thumbnail in your browser. For longer files, split them first."
+        },
+        {
+          "question": "Does it work with password-protected PDFs?",
+          "answer": "No. Remove the password first, then organize the file."
+        },
+        {
+          "question": "Are my files uploaded anywhere?",
+          "answer": "No. Everything runs in your browser, so your documents never leave your device."
+        }
+      ]
+    },
+    "sign-pdf": {
+      "seoTitle": "Sign PDF Online – Draw, Type or Digitally Sign with a Certificate, Free",
+      "metaDescription": "Sign a PDF in your browser: draw, type or upload a signature, or add a real cryptographic digital signature with a certificate. Free and private — nothing is uploaded.",
+      "h1": "Sign PDF Online",
+      "subheading": "Draw, type or upload your signature — or add a tamper-evident digital signature with your own certificate — all on your device.",
+      "keywords": [
+        "sign pdf",
+        "sign pdf online free",
+        "add signature to pdf",
+        "e-sign pdf",
+        "draw signature pdf",
+        "fill and sign pdf",
+        "add date to pdf",
+        "digital signature pdf",
+        "sign pdf with certificate"
+      ],
+      "howTo": [
+        {
+          "name": "Open your PDF",
+          "text": "Drop the PDF you need to sign."
+        },
+        {
+          "name": "Create your signature",
+          "text": "Draw it with a mouse or finger, type your name in a handwriting style, or upload a photo of your signature — the white paper is removed automatically."
+        },
+        {
+          "name": "Place it",
+          "text": "Drag the signature to the right spot, pull the corner to resize it, and add today's date or any text or initials."
+        },
+        {
+          "name": "Choose where it appears",
+          "text": "Show a stamp on one page, every page (handy for initials) or only the last page, then download the signed PDF."
+        },
+        {
+          "name": "Add a digital signature (optional)",
+          "text": "Tick Add a digital signature, then load your .p12 / .pfx certificate with its password or generate a new one. Choose a visible badge, a reason and a location, and download the cryptographically signed PDF."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is this a legally binding signature?",
+          "answer": "A drawn signature is an image on the page, which many people and companies accept for everyday documents. For stronger proof turn on Add a digital signature: it signs the file with a certificate so PDF readers can detect any later change. Check what your situation requires."
+        },
+        {
+          "question": "What is the difference between a drawn and a digital signature?",
+          "answer": "A drawn signature is only a picture. A digital signature is a cryptographic seal made with your certificate's private key and stored inside the PDF. If anyone changes the file afterwards, readers such as Adobe Acrobat report that the signature is broken."
+        },
+        {
+          "question": "Why does my reader say the signer is unverified?",
+          "answer": "A certificate created in this tool is self-signed, so the document is protected against edits but the reader cannot confirm who you are until its recipient trusts the certificate. For legally binding workflows, use a certificate issued by a trusted authority and load it as a .p12 / .pfx file. Your private key never leaves your device."
+        },
+        {
+          "question": "Is my document or signature uploaded?",
+          "answer": "No. The PDF, your signature and the result stay in your browser. You can optionally remember a signature on this device; it is stored only in your browser's local storage and you can delete it any time."
+        },
+        {
+          "question": "How do I get a clean signature from a photo?",
+          "answer": "Sign on plain white paper in good light and upload the picture. Leave Remove the white background ticked and the paper becomes transparent, keeping only the ink."
+        },
+        {
+          "question": "Can I sign every page or add initials?",
+          "answer": "Yes. Create a short text stamp such as your initials, select it and choose Every page under Show on."
+        },
+        {
+          "question": "Will it work on rotated pages?",
+          "answer": "Yes. The stamp is positioned relative to the page as you see it, including pages that are rotated, and keeps the same place in the saved file."
+        },
+        {
+          "question": "Can I type text in another language?",
+          "answer": "Yes. Text and dates are drawn by your browser, so any language your device has fonts for works."
+        },
+        {
+          "question": "Does signing change the rest of my PDF?",
+          "answer": "No. The signature is added on top of the page; the original text, images and links are left exactly as they were."
+        }
+      ]
+    },
+    "crop-pdf": {
+      "seoTitle": "Crop PDF Pages – Trim Margins Visually or Automatically, Free",
+      "metaDescription": "Crop PDF pages online: drag the edges to trim margins, auto-detect white space, apply to all, odd, even or selected pages, and download. Free and private — no upload.",
+      "h1": "Crop PDF Pages",
+      "subheading": "Trim margins by dragging the edges or detect white space automatically — apply to all pages or just some.",
+      "keywords": [
+        "crop pdf",
+        "trim pdf margins",
+        "remove white space from pdf",
+        "crop pdf pages online",
+        "auto crop pdf",
+        "remove pdf margins"
+      ],
+      "howTo": [
+        {
+          "name": "Open your PDF",
+          "text": "Drop the PDF you want to crop."
+        },
+        {
+          "name": "Set the crop area",
+          "text": "Drag the blue edges on the page, use the sliders, pick a preset, or let the tool detect the white space for you."
+        },
+        {
+          "name": "Choose the pages",
+          "text": "Apply the crop to all pages, this page, odd or even pages, or a range such as 1-3, 7."
+        },
+        {
+          "name": "Download",
+          "text": "Click Download cropped PDF. The page content is kept, only the visible area changes."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does cropping delete the content I cut away?",
+          "answer": "No. It sets the page's crop box, which hides the outer area when the PDF is viewed or printed. The file size stays about the same. If the hidden content is sensitive, redact it instead."
+        },
+        {
+          "question": "How does auto-trim work?",
+          "answer": "The tool draws the page, finds the smallest rectangle that contains everything that isn't white, and adds a small padding. Same trim for all pages uses the smallest margin found on any page so nothing is cut off; Trim each page separately fits every page to its own content."
+        },
+        {
+          "question": "Can I crop only some pages?",
+          "answer": "Yes. Choose all pages, the current page, odd or even pages, or type a range like 1-3, 7."
+        },
+        {
+          "question": "Does it work on rotated pages?",
+          "answer": "Yes. Margins are applied to the page as you see it, whatever its rotation."
+        },
+        {
+          "question": "Can I crop scanned documents?",
+          "answer": "Yes, scanned pages are cropped like any others, and Auto-trim is especially useful for removing the empty border around a scan."
+        },
+        {
+          "question": "Will the page size change?",
+          "answer": "The visible page becomes smaller, and the tool shows the new size in millimetres before you download."
+        },
+        {
+          "question": "Is my PDF uploaded?",
+          "answer": "No. Everything happens in your browser."
+        }
+      ]
+    },
+    "pdf-metadata": {
+      "seoTitle": "PDF Metadata Editor – View, Edit & Remove PDF Properties, Free",
+      "metaDescription": "View and edit a PDF's title, author, subject, keywords and dates, or strip all metadata before sharing. Free, private, processed in your browser — nothing is uploaded.",
+      "h1": "PDF Metadata Editor",
+      "subheading": "See the hidden title, author and dates in your PDF, edit them, or remove them all before you share the file.",
+      "keywords": [
+        "pdf metadata editor",
+        "edit pdf properties",
+        "remove pdf metadata",
+        "change pdf author",
+        "edit pdf title",
+        "pdf properties online",
+        "strip pdf metadata"
+      ],
+      "howTo": [
+        {
+          "name": "Open your PDF",
+          "text": "Drop the PDF to inspect. Its properties, page count and paper size are shown straight away."
+        },
+        {
+          "name": "Edit the fields",
+          "text": "Change the title, author, subject, keywords, creator, producer and dates."
+        },
+        {
+          "name": "Or remove everything",
+          "text": "Use Clear all fields, or download a copy with all metadata removed."
+        },
+        {
+          "name": "Save",
+          "text": "Click Save changes. The pages themselves are left exactly as they are."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What metadata does a PDF contain?",
+          "answer": "Typically a title, author, subject, keywords, the program that created the document, the program that wrote the PDF, and creation and modification dates. Many files also carry an XMP block that repeats this information."
+        },
+        {
+          "question": "Why remove PDF metadata before sharing?",
+          "answer": "It can reveal the author's name, the software used and when the file was made — details you may not want to share. Download with all metadata removed gives you a clean copy."
+        },
+        {
+          "question": "What is the XMP data option?",
+          "answer": "XMP is a second place where PDFs store properties, in XML form. Leaving Also remove XMP data ticked makes sure the old values don't survive there."
+        },
+        {
+          "question": "Does it change the pages?",
+          "answer": "No. Only the document properties change; text, images, links and forms are kept as they were."
+        },
+        {
+          "question": "Can I set the modified date to now?",
+          "answer": "Yes. Tick Set “last modified” to now, or enter any date and time yourself."
+        },
+        {
+          "question": "Is metadata the only thing that identifies the author?",
+          "answer": "No. Names can also appear in the visible text, comments, form fields or embedded files. This tool only handles the document properties."
+        },
+        {
+          "question": "Is my PDF uploaded anywhere?",
+          "answer": "No. The file is read and rewritten in your browser."
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "seoTitle": "PDF to Word Converter – Editable .docx, Free & Private",
+      "metaDescription": "Convert a PDF to an editable Word document in your browser. Headings, paragraphs and lists are rebuilt, running headers and footers are removed. Basic conversion — no upload, no sign-up.",
+      "h1": "PDF to Word Converter",
+      "subheading": "Rebuild a PDF's headings, paragraphs and lists as an editable .docx — a basic conversion that runs entirely in your browser.",
+      "keywords": [
+        "pdf to word",
+        "pdf to docx",
+        "convert pdf to word free",
+        "pdf to word online",
+        "pdf to editable word",
+        "extract text from pdf to word"
+      ],
+      "howTo": [
+        {
+          "name": "Open your PDF",
+          "text": "Drop a PDF that contains real text (not a scan). The text is read page by page."
+        },
+        {
+          "name": "Choose pages and style",
+          "text": "Pick which pages to convert, whether to remove repeating headers and footers, the paper size and a Word style."
+        },
+        {
+          "name": "Check the preview",
+          "text": "See how headings, paragraphs and lists were rebuilt."
+        },
+        {
+          "name": "Download",
+          "text": "Click Download .docx and keep editing in Word, Google Docs or LibreOffice."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How good is the conversion?",
+          "answer": "It is a basic conversion. Headings are found by their larger font size, wrapped lines are joined into paragraphs, hyphenated line breaks are mended and bullet or numbered lists become real lists. Tables, images, columns and the exact page layout are not carried over, so always check the result."
+        },
+        {
+          "question": "Does it work on scanned PDFs?",
+          "answer": "No. A scan is a picture of text, and reading it needs OCR, which this tool doesn't do. It will tell you when a PDF has almost no text layer."
+        },
+        {
+          "question": "What happens to headers, footers and page numbers?",
+          "answer": "Text that repeats at the top or bottom of most pages, and bare page numbers, is removed by default so it doesn't end up in the middle of your text. Untick the option to keep it."
+        },
+        {
+          "question": "Are fonts and colours kept?",
+          "answer": "No. The Word file uses one of the built-in styles you choose, with consistent headings and body text, which makes it easier to edit."
+        },
+        {
+          "question": "Can I convert only some pages?",
+          "answer": "Yes. Enter a range such as 1-5, 9 and only those pages are converted."
+        },
+        {
+          "question": "Does it work with Arabic, Chinese or other scripts?",
+          "answer": "Text extraction works for any script stored as real text in the PDF. Right-to-left layout and complex scripts may need a manual check in Word."
+        },
+        {
+          "question": "Is my PDF uploaded anywhere?",
+          "answer": "No. The PDF is read in your browser and the Word file is created there too."
         }
       ]
     },

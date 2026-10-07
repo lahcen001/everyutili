@@ -6,7 +6,7 @@
     "message": "EveryUtili"
   },
   "extDescription": {
-    "message": "Ersetzt den neuen Tab durch Sofortsuche über 79+ kostenlose, private Tools: Konverter, PDF, Rechner, Entwicklertools."
+    "message": "Ersetzt den neuen Tab durch Sofortsuche über 100+ kostenlose, private Tools: Konverter, PDF, Rechner, Entwicklertools."
   },
   "offlineBadge": {
     "message": "Funktioniert offline"
@@ -19,6 +19,12 @@
   },
   "settingsClockFormat": {
     "message": "Uhrzeitformat"
+  },
+  "settingsLanguage": {
+    "message": "Sprache"
+  },
+  "languageSystem": {
+    "message": "Systemstandard"
   },
   "clockAuto": {
     "message": "Auto"

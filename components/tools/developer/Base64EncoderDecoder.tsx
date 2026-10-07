@@ -1,5 +1,6 @@
 "use client";
 
+import { FileDropTarget } from "@/components/tool-shell/FileDropTarget";
 import * as React from "react";
 import { ArrowLeftRight, Download, FileUp, Save, Sparkles, X } from "lucide-react";
 
@@ -101,7 +102,7 @@ export default function Base64EncoderDecoder() {
   };
 
   return (
-    <div className="space-y-6">
+    <FileDropTarget label="Drop a file to encode / decode" onFiles={async (f) => { if (mode === "decode") setInput(await f[0].text()); else await pickFile(f[0]); }} className="space-y-6">
       <Card className="flex flex-wrap items-center gap-3 p-3">
         <div className="flex overflow-hidden rounded-lg border border-border" role="group" aria-label="Direction">
           {(["encode", "decode"] as const).map((m) => (
@@ -212,6 +213,6 @@ export default function Base64EncoderDecoder() {
       </div>
 
       <ToolHistoryList ref={historyRef} toolSlug="base64-encoder-decoder" onRestore={restoreResult} />
-    </div>
+    </FileDropTarget>
   );
 }

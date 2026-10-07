@@ -70,6 +70,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     shortName: tool.shortName,
     subheading: localizedContents[i].subheading,
     keywords: localizedContents[i].keywords,
+    featured: tool.featured,
   }));
 
   return (

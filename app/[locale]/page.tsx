@@ -54,7 +54,7 @@ export default async function Home({ params }: HomeProps) {
   const toolsByCategory = CATEGORIES.map((category) => {
     const tools = TOOLS.filter((tool) => tool.category === category)
       .slice()
-      .sort((a, b) => b.priority - a.priority);
+      .sort((a, b) => Number(!!b.featured) - Number(!!a.featured) || b.priority - a.priority);
     return { category, tools };
   });
 

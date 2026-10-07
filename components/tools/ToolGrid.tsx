@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ArrowRight, Check, Search, X } from "lucide-react";
+import { ArrowRight, Check, Search, Sparkles, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { getToolBySlug } from "@/config/tools";
@@ -17,6 +17,7 @@ export interface ToolGridEntry {
   shortName: string;
   subheading: string;
   keywords: string[];
+  featured?: boolean;
 }
 
 interface ToolGridProps {
@@ -94,6 +95,34 @@ export function ToolGrid({ tools, searchPlaceholder }: ToolGridProps) {
           {filtered.map((tool) => {
             const Icon = getToolBySlug(tool.slug)?.icon;
             const isUsed = recentSlugs.has(tool.slug);
+            if (tool.featured) {
+              return (
+                <Link key={tool.slug} href={`/tools/${tool.category}/${tool.slug}`} className="sm:col-span-2">
+                  <div className="group relative overflow-hidden rounded-3xl border border-primary/30 bg-gradient-to-br from-indigo-600 via-violet-600 to-fuchsia-600 p-6 text-white shadow-xl shadow-primary/20 transition-transform duration-300 hover:-translate-y-0.5 sm:p-8">
+                    <span className="pointer-events-none absolute -right-10 -top-10 h-56 w-56 rounded-full bg-white/10 blur-2xl" aria-hidden />
+                    <span className="pointer-events-none absolute -bottom-16 left-1/3 h-48 w-48 rounded-full bg-fuchsia-300/20 blur-3xl" aria-hidden />
+                    <div className="relative flex items-center gap-5">
+                      <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white/15 ring-1 ring-white/30 backdrop-blur sm:h-20 sm:w-20">
+                        {Icon && <Icon className="h-8 w-8 sm:h-10 sm:w-10" />}
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="inline-flex items-center gap-1 rounded-full bg-white px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-violet-700">
+                            <Sparkles className="h-3 w-3" /> {t("featured")}
+                          </span>
+                          <span className="inline-flex items-center gap-1.5 rounded-full bg-red-500 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wider">
+                            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-white" /> Live
+                          </span>
+                        </div>
+                        <h2 className="mt-2 text-xl font-extrabold tracking-tight sm:text-2xl">{tool.shortName}</h2>
+                        <p className="mt-1 line-clamp-2 max-w-2xl text-sm text-white/80 sm:text-base">{tool.subheading}</p>
+                      </div>
+                      <ArrowRight className="hidden h-6 w-6 shrink-0 transition-transform rtl:-scale-x-100 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 sm:block" />
+                    </div>
+                  </div>
+                </Link>
+              );
+            }
             return (
               <Link key={tool.slug} href={`/tools/${tool.category}/${tool.slug}`}>
                 <Card

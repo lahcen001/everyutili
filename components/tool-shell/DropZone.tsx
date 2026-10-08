@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import * as React from "react";
 import { motion } from "framer-motion";
 import { UploadCloud } from "lucide-react";
@@ -18,10 +19,11 @@ export function DropZone({
   onFiles,
   accept,
   multiple = true,
-  label = "Drag & drop files here, or click to browse",
+  label,
   hint,
   className,
 }: DropZoneProps) {
+  const t = useTranslations("ui");
   const [isDragging, setIsDragging] = React.useState(false);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
@@ -77,10 +79,10 @@ export function DropZone({
         <UploadCloud className="h-8 w-8" />
       </motion.span>
       <div className="relative space-y-1">
-        <p className="text-base font-semibold">{label}</p>
+        <p className="text-base font-semibold">{label ?? t("dropDefault")}</p>
         {hint && <p className="mx-auto max-w-md text-sm text-muted-foreground">{hint}</p>}
       </div>
-      <span className="relative inline-flex h-9 items-center rounded-full bg-foreground px-5 text-sm font-medium text-background transition-transform group-hover:scale-105">Browse files</span>
+      <span className="relative inline-flex h-9 items-center rounded-full bg-foreground px-5 text-sm font-medium text-background transition-transform group-hover:scale-105">{t("browse")}</span>
       <input
         ref={inputRef}
         type="file"

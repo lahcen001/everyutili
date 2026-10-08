@@ -88,7 +88,7 @@ export default function MathTrainer() {
     });
 
   return (
-    <FullscreenStage className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-background to-emerald-500/5 p-4 sm:p-8" label="Fullscreen">
+    <FullscreenStage className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-background to-emerald-500/5 p-4 sm:p-8">
       {(isFs) => (
         <div className="mx-auto flex w-full max-w-xl flex-col items-center gap-5 py-6 text-center">
           {phase === "idle" && (

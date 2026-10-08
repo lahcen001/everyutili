@@ -78,7 +78,7 @@ export default function ReactionTime() {
 
   return (
     <div className="space-y-4">
-      <FullscreenStage className="overflow-hidden rounded-2xl" label="Fullscreen">
+      <FullscreenStage className="overflow-hidden rounded-2xl">
         {(isFs) => (
           <button onPointerDown={(e) => { e.preventDefault(); press(); }} onKeyDown={(e) => { if (e.key === " " || e.key === "Enter") { e.preventDefault(); press(); } }} className={cn("flex w-full select-none flex-col items-center justify-center gap-3 px-6 text-center text-white transition-colors duration-150", view.bg, isFs ? "h-screen" : "h-[22rem] sm:h-[26rem]")} aria-live="polite">
             <Zap className="h-12 w-12 opacity-90" />

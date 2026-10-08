@@ -62,7 +62,7 @@ export default function BreathingExercise() {
 
   return (
     <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_20rem]">
-      <FullscreenStage className="overflow-hidden rounded-2xl border border-border bg-gradient-to-b from-sky-500/5 via-background to-emerald-500/5 p-6" label="Fullscreen">
+      <FullscreenStage className="overflow-hidden rounded-2xl border border-border bg-gradient-to-b from-sky-500/5 via-background to-emerald-500/5 p-6">
         {(isFs) => {
           const box = isFs ? "min(60vh, 70vw)" : "min(22rem, 80vw)";
           return (

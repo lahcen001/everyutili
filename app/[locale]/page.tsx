@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FavoritesShelf } from "@/components/home/FavoritesShelf";
 import { RemindersShelf } from "@/components/home/RemindersShelf";
 import { ArrowRight } from "lucide-react";
 import { hasLocale } from "next-intl";
@@ -89,6 +90,8 @@ export default async function Home({ params }: HomeProps) {
       />
 
       <RemindersShelf />
+
+      <FavoritesShelf />
 
       <RecentToolsShelf />
 

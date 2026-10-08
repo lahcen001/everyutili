@@ -3,6 +3,19 @@
 All notable changes to the EveryUtili Chrome extension are documented here.
 Bump `manifest.json`'s `version` field alongside each entry.
 
+## 1.4.0
+
+- Synced with the website: all **142 tools**, including the new **Focus & Games**
+  category (Pomodoro timer, focus sounds, flashcards, planners, stretch and
+  breathing breaks, brain-training and casual games) and the new **Math &
+  Science Calculators** category (scientific, graphing, fraction, matrix,
+  quadratic, programmer, statistics and GCD/LCM calculators), each with its own
+  icon and colour.
+- Tool names, taglines and category names follow your language for every new
+  tool (`i18n/tools.<lang>.json`).
+- Updated the store description tool count from "100+" to "140+" in every
+  language (still under the 132-character limit).
+
 ## 1.3.0
 
 - Added a **Language** setting (New Tab → Settings). The default is

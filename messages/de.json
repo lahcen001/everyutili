@@ -1631,74 +1631,74 @@
       ]
     },
     "qr-code-generator": {
-      "seoTitle": "QR-Code-Generator Online – Kostenlos & sofort, ohne Anmeldung",
-      "metaDescription": "Erstelle QR-Codes für Links, Text, WLAN, E-Mail, Telefon, SMS und Visitenkarten. Wähle Fehlerkorrektur, Farben und ein Logo in der Mitte und lade PNG oder SVG herunter. Kostenlos und privat.",
+      "seoTitle": "QR-Code-Generator online – kostenlos & sofort, ohne Anmeldung",
+      "metaDescription": "Erstellen Sie QR-Codes für Links, Text, WLAN, E-Mail, Telefon, SMS und Visitenkarten. 8 Designs, runde oder gepunktete Formen, Farbverläufe, Logo in der Mitte, Titel und Rahmen – und viele Codes auf einer Seite drucken. Kostenlos und privat.",
       "h1": "QR-Code-Generator",
-      "subheading": "Erstelle QR-Codes für Links, WLAN, Kontakte und mehr, mit Fehlerkorrektur, Logo und PNG- oder SVG-Download – 100 % lokal erzeugt.",
+      "subheading": "Erstellen Sie gestaltete QR-Codes mit Ihrem Logo und einem Titel, laden Sie PNG oder SVG herunter oder drucken Sie eine ganze Seite Etiketten – zu 100 % lokal erzeugt.",
       "keywords": [
-        "QR-Code Generator",
-        "kostenloser QR-Code Ersteller",
-        "QR-Code online erstellen",
-        "URL in QR-Code umwandeln",
-        "QR-Code Generator ohne Anmeldung",
-        "WLAN QR-Code Generator",
-        "vCard QR-Code",
-        "QR-Code SVG"
+        "qr code generator",
+        "kostenloser qr code ersteller",
+        "qr code online erstellen",
+        "url in qr code umwandeln",
+        "qr code generator ohne anmeldung",
+        "qr code mit logo",
+        "qr code individuell gestalten",
+        "mehrere qr codes drucken"
       ],
       "howTo": [
         {
-          "name": "Inhalt wählen",
-          "text": "Wähle Link, Text, WLAN, E-Mail, Telefon, SMS oder Kontakt und fülle die Felder aus."
+          "name": "Inhalt auswählen",
+          "text": "Wählen Sie Link, Text, WLAN, E-Mail, Telefon, SMS oder Kontakt und füllen Sie die Felder aus."
         },
         {
           "name": "Aussehen anpassen",
-          "text": "Lege Farben, Rand, Fehlerkorrekturstufe und optional ein Logo in der Mitte fest."
+          "text": "Wählen Sie ein Design oder legen Sie Punkt- und Eckenform, Farben oder einen Farbverlauf selbst fest. Fügen Sie Ihr Logo in der Mitte, einen Titel über oder unter dem Code und einen Rahmen wie das Label „Scan me“ hinzu."
         },
         {
           "name": "Vorschau prüfen",
-          "text": "Der Code wird beim Tippen aktualisiert, mit einer Warnung, wenn die Farben zu blass oder invertiert sind, um zuverlässig gescannt zu werden."
+          "text": "Der Code aktualisiert sich während der Eingabe und warnt Sie, wenn die Farben zu blass oder invertiert sind, um zuverlässig gescannt zu werden."
         },
         {
           "name": "Herunterladen",
-          "text": "Speichere ein PNG in der gewählten Größe oder eine SVG, die in jeder Größe scharf bleibt."
+          "text": "Speichern Sie ein PNG in der gewünschten Größe oder ein SVG, das in jeder Größe scharf bleibt. Für Etiketten oder Tischkarten fügen Sie Codes zum Druckbogen hinzu, wählen Papier und Spalten und klicken auf Drucken."
         }
       ],
       "faq": [
         {
           "question": "Laufen hier erzeugte QR-Codes ab?",
-          "answer": "Nein, der QR-Code wird komplett clientseitig erzeugt und kodiert deinen Inhalt direkt – es gibt keinen Server und kein Ablaufdatum."
+          "answer": "Nein, der QR-Code wird vollständig im Browser erzeugt und kodiert Ihren Inhalt direkt – es gibt keinen Server und kein Ablaufdatum."
         },
         {
           "question": "Kann ich das für ein Unternehmen oder Produkt nutzen?",
-          "answer": "Ja, erzeugte QR-Codes dürfen kostenlos für jeden privaten oder kommerziellen Zweck verwendet werden."
+          "answer": "Ja, erzeugte QR-Codes dürfen kostenlos für private und kommerzielle Zwecke verwendet werden."
         },
         {
           "question": "Wie viel Text kann ich maximal kodieren?",
-          "answer": "QR-Codes fassen bis zu einigen Tausend Zeichen, doch kürzere Inhalte lassen sich zuverlässiger scannen."
+          "answer": "QR-Codes fassen bis zu einigen tausend Zeichen, kürzere Inhalte lassen sich jedoch zuverlässiger scannen."
         },
         {
-          "question": "Werden meine Daten zum Erzeugen des Codes an einen Server gesendet?",
-          "answer": "Nein, das QR-Code-Bild wird komplett in deinem Browser gerendert – es wird nichts irgendwohin übertragen."
+          "question": "Werden meine Daten zur Erzeugung an einen Server gesendet?",
+          "answer": "Nein, das QR-Code-Bild wird vollständig in Ihrem Browser erzeugt – es wird nichts übertragen."
         },
         {
           "question": "Welche Fehlerkorrekturstufe verwendet der QR-Code?",
-          "answer": "Standardmäßig Mittel (15 %). Du kannst Niedrig, Mittel, Quartil oder Hoch wählen; höhere Stufen überstehen mehr Beschädigung, brauchen aber einen dichteren Code. Beim Hinzufügen eines Logos wird automatisch Hoch (30 %) verwendet."
+          "answer": "Standardmäßig Mittel (15 %). Sie können Niedrig, Mittel, Quartil oder Hoch wählen; höhere Stufen überstehen mehr Beschädigung, benötigen aber einen dichteren Code. Mit einem Logo wird automatisch Hoch (30 %) verwendet."
         },
         {
-          "question": "Kann ich die Farbe des QR-Codes ändern oder ein Logo hinzufügen?",
-          "answer": "Ja. Wähle beliebige Vorder- und Hintergrundfarben und lade ein Logo hoch, das in der Mitte platziert wird. Halte das Logo klein und teste den Code vor dem Drucken mit einem Handy."
+          "question": "Kann ich Design und Farben des QR-Codes ändern oder ein Logo hinzufügen?",
+          "answer": "Ja. Wählen Sie aus 8 Designs oder legen Sie Punktform, Eckenform, Farben und Farbverlauf selbst fest. Laden Sie ein Logo hoch, wählen Sie Größe und Form und fügen Sie Titel und Rahmen hinzu. Halten Sie das Logo klein und testen Sie den Code vor dem Druck mit einem Smartphone."
         },
         {
           "question": "In welchen Dateiformaten kann ich den QR-Code herunterladen?",
-          "answer": "PNG in einer von dir gewählten Größe (128–2048 px) und SVG, das vektorbasiert ist und in jeder Größe scharf bleibt."
+          "answer": "Als PNG in einer frei wählbaren Größe (128–2048 px) und als SVG, das als Vektorgrafik in jeder Größe scharf bleibt."
         },
         {
           "question": "Warum lässt sich mein QR-Code nicht scannen?",
-          "answer": "Häufige Ursachen sind zu wenig Kontrast zwischen Vorder- und Hintergrundfarbe, ein zu großes Logo, das wesentliche Musterdaten verdeckt, oder ein für die Menge des kodierten Textes zu klein gedruckter Code."
+          "answer": "Häufige Ursachen sind zu wenig Kontrast zwischen Vorder- und Hintergrundfarbe, ein zu großes Logo, das wichtige Musterdaten verdeckt, oder ein zu klein gedruckter Code für die Menge an kodiertem Text."
         },
         {
           "question": "Wie erstelle ich einen QR-Code, der sich mit dem WLAN verbindet?",
-          "answer": "Wähle den Tab WLAN und gib Netzwerkname, Passwort und Sicherheitstyp ein. Beim Scannen des Codes mit einem Handy wird angeboten, dem Netzwerk beizutreten, ohne das Passwort einzutippen."
+          "answer": "Wählen Sie den Tab WLAN und geben Sie Netzwerkname, Passwort und Sicherheitstyp ein. Beim Scannen mit dem Smartphone wird angeboten, dem Netzwerk beizutreten, ohne das Passwort einzutippen."
         }
       ]
     },
@@ -7703,10 +7703,10 @@
       ]
     },
     "focus-sounds": {
-      "seoTitle": "Fokus-Sounds & Rauschen-Mixer – Kostenlos Weißes Rauschen, Braunes Rauschen, Regen zum Lernen",
-      "metaDescription": "Mische weißes, rosa und braunes Rauschen mit Regen, Meeresrauschen, Wind, Ventilatorbrummen und Alpha-Binauralbeats zum Konzentrieren oder Lernen. Schlaftimer, gespeicherte Mixe, im Browser erzeugt – ohne Downloads.",
-      "h1": "Fokus-Sounds & Rauschen-Mixer",
-      "subheading": "Mische Regen, Meeresrauschen, braunes Rauschen und mehr zu deinem eigenen Hintergrundklang, der Ablenkungen beim Lernen oder Arbeiten ausblendet.",
+      "seoTitle": "Fokus-Sounds & Rausch-Mixer – kostenlos: Weißes, Braunes Rauschen, Regen zum Lernen",
+      "metaDescription": "Mischen Sie 24 beruhigende Klänge – Regen, Donner, Meer, Vögel, Café, Zug, Feuer, weißes, rosa und braunes Rauschen sowie binaurale Beats – zum Konzentrieren, Lernen oder Schlafen. Klangregler, Einschlaf-Timer, gespeicherte Mixe. Im Browser erzeugt, ohne Downloads.",
+      "h1": "Fokus-Sounds & Rausch-Mixer",
+      "subheading": "Mischen Sie Regen, Donner, Café-Atmosphäre, braunes Rauschen, binaurale Beats und mehr zu Ihrem eigenen Hintergrund-Mix, der beim Lernen, Arbeiten oder Schlafen Ablenkungen ausblendet.",
       "keywords": [
         "weißes rauschen generator",
         "braunes rauschen",
@@ -7714,55 +7714,55 @@
         "regengeräusche zum lernen",
         "fokus sounds",
         "hintergrundgeräusche zum lernen",
-        "binaurale beats alpha",
-        "rauschen mixer"
+        "binaurale beats zur konzentration",
+        "rausch-mixer"
       ],
       "howTo": [
         {
-          "name": "Wähle einen Sound",
-          "text": "Tippe auf eine Karte wie Regen, Braunes Rauschen oder Meeresrauschen, um den Sound einzuschalten. Nutze einen Schnellmix wie Tiefer Fokus für eine fertige Mischung."
+          "name": "Klang auswählen",
+          "text": "Tippen Sie auf eine Karte wie Regen, Braunes Rauschen oder Café, um sie einzuschalten, oder filtern Sie nach Natur, Rauschen, Räume oder Töne und Beats. Nutzen Sie einen Schnellmix wie Tiefer Fokus oder drücken Sie Überrasch mich."
         },
         {
-          "name": "Mische die Lautstärken",
-          "text": "Bewege jeden Regler, um die Lautstärke des jeweiligen Sounds einzustellen, und die Gesamtlautstärke für alles zusammen. Du kannst mehrere Sounds übereinanderlegen."
+          "name": "Lautstärken mischen",
+          "text": "Stellen Sie mit jedem Regler die Lautstärke des jeweiligen Klangs ein, mit der Gesamtlautstärke die von allem. Unter Klang und Einblenden passen Sie Bass, Höhen, Helligkeit und die Einblendzeit an."
         },
         {
-          "name": "Stelle einen Schlaftimer ein",
-          "text": "Wähle eine Zeit, und der Sound blendet sich aus und stoppt von selbst – praktisch, wenn du beim Einschlafen zuhörst."
+          "name": "Einschlaf-Timer einstellen",
+          "text": "Wählen Sie eine Zeit, und der Klang wird von selbst ausgeblendet und beendet – praktisch, wenn Sie beim Einschlafen zuhören."
         },
         {
-          "name": "Arbeite weiter",
-          "text": "Dein Mix wird auf diesem Gerät gespeichert, sodass du beim nächsten Mal nur noch auf Mix abspielen drücken musst."
+          "name": "Weiterarbeiten",
+          "text": "Speichern Sie Ihre Lieblingsmixe unter einem Namen. Sie werden auf diesem Gerät gespeichert, sodass Sie beim nächsten Mal nur Mix abspielen drücken müssen."
         }
       ],
       "faq": [
         {
-          "question": "Welcher Sound eignet sich am besten zur Konzentration?",
-          "answer": "Das ist von Mensch zu Mensch verschieden. Braunes Rauschen klingt tief und warm, und viele empfinden es als gut für den Fokus. Rosa Rauschen ist ausgewogener. Regen und Meeresrauschen wirken natürlich und beruhigend. Weißes Rauschen ist am hellsten und überdeckt Sprache gut."
+          "question": "Welcher Klang eignet sich am besten zur Konzentration?",
+          "answer": "Das ist von Mensch zu Mensch verschieden. Braunes Rauschen ist tief und warm, und viele finden es gut für den Fokus. Rosa Rauschen ist ausgewogener. Regen und Meeresrauschen wirken natürlich und beruhigend. Weißes Rauschen ist am hellsten und überdeckt Sprache gut."
         },
         {
-          "question": "Brauchen die Sounds eine Internetverbindung?",
-          "answer": "Nein. Jeder Sound wird live in deinem Browser mit der Web Audio API erzeugt. Es gibt nichts herunterzuladen oder zu streamen, daher funktioniert es nach dem Laden der Seite auch offline."
+          "question": "Brauchen die Klänge eine Internetverbindung?",
+          "answer": "Nein. Jeder Klang wird live in Ihrem Browser mit der Web Audio API erzeugt. Es gibt nichts herunterzuladen oder zu streamen, daher funktioniert es nach dem Laden der Seite auch offline."
         },
         {
-          "question": "Was sind Alpha-Binauralbeats?",
-          "answer": "Es werden zwei leicht unterschiedliche Töne abgespielt, einer auf jedem Ohr, im Abstand von 10 Hz. Manche empfinden den Effekt als entspannend. Du brauchst dafür Kopfhörer, und die Studienlage ist uneinheitlich – sieh es also als Option und nicht als Versprechen."
+          "question": "Was sind binaurale Beats?",
+          "answer": "Es werden zwei leicht unterschiedliche Töne abgespielt, einer pro Ohr. Der Unterschied (zum Beispiel 10 Hz für Alpha) ist der Beat. Manche empfinden sie als entspannend oder hilfreich für die Konzentration. Sie benötigen dafür Kopfhörer, und die Studienlage ist gemischt – sehen Sie es also als Option, nicht als Versprechen."
         },
         {
           "question": "Warum höre ich nichts?",
-          "answer": "Browser starten Audio erst nach einem Klick. Drücke Mix abspielen, prüfe die Lautstärke deines Geräts und den Gesamtregler und stelle sicher, dass mindestens ein Sound eine Lautstärke über null hat."
+          "answer": "Browser starten Audio erst nach einem Klick. Drücken Sie Mix abspielen, prüfen Sie die Gerätelautstärke und den Gesamtregler und stellen Sie sicher, dass mindestens ein Klang eine Lautstärke über null hat."
         },
         {
           "question": "Ist es unbedenklich, die ganze Nacht abzuspielen?",
-          "answer": "Halte die Lautstärke niedrig und nutze den Schlaftimer. Lauter Schall über lange Zeit kann deine Ohren belasten."
+          "answer": "Halten Sie die Lautstärke niedrig und nutzen Sie den Einschlaf-Timer. Lange anhaltender Lärm kann die Ohren ermüden."
         },
         {
           "question": "Wird mein Mix gespeichert?",
-          "answer": "Ja, nur auf diesem Gerät. Er wird in deinem Browser gespeichert und nie hochgeladen."
+          "answer": "Ja, nur auf diesem Gerät. Er wird in Ihrem Browser abgelegt und nie hochgeladen."
         },
         {
-          "question": "Kann ich es zusammen mit einem Timer nutzen?",
-          "answer": "Ja. Öffne den Pomodoro Timer in einem anderen Tab und lass die Sounds beim Arbeiten weiterlaufen."
+          "question": "Kann ich es zusammen mit einem Timer verwenden?",
+          "answer": "Ja. Öffnen Sie den Pomodoro-Timer in einem anderen Tab und lassen Sie die Klänge während der Arbeit weiterlaufen."
         }
       ]
     },
@@ -9654,6 +9654,67 @@
     "relax": "Entspannen & Dehnen",
     "train": "Spiele zum Konzentrationstraining",
     "fun": "Gelegenheitsspiele"
+  },
+  "ui": {
+    "dropDefault": "Dateien hierher ziehen oder zum Auswählen klicken",
+    "browse": "Dateien auswählen",
+    "dropToLoad": "Datei zum Laden ablegen",
+    "fullscreen": "Vollbild",
+    "exitFullscreen": "Beenden",
+    "footerExtension": "Chrome-Erweiterung holen",
+    "footerPrivacy": "Datenschutzerklärung",
+    "footerMyData": "Meine Daten",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "download": "Herunterladen",
+    "clear": "Leeren",
+    "remove": "Entfernen",
+    "reset": "Zurücksetzen",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Fortsetzen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "loading": "Wird geladen …",
+    "undo": "Rückgängig",
+    "redo": "Wiederholen",
+    "playAgain": "Nochmal spielen",
+    "newGame": "Neues Spiel"
+  },
+  "myData": {
+    "title": "Meine Daten",
+    "subtitle": "Alles, was sich die Tools merken, wird nur in diesem Browser gespeichert. Sichern Sie es, übertragen Sie es auf ein anderes Gerät oder löschen Sie es.",
+    "heading": "Auf diesem Gerät gespeichert",
+    "empty": "Auf diesem Gerät ist noch nichts gespeichert.",
+    "items": "{count, plural, one {# Eintrag} other {# Einträge}}",
+    "total": "Gesamt: {size}",
+    "export": "Sicherung herunterladen",
+    "import": "Aus Sicherung wiederherstellen",
+    "clearAll": "Alles löschen",
+    "confirmClear": "Alle gespeicherten Daten aus diesem Browser löschen? Das lässt sich nicht rückgängig machen.",
+    "cleared": "Alle gespeicherten Daten wurden gelöscht.",
+    "imported": "{count, plural, one {# Eintrag wiederhergestellt.} other {# Einträge wiederhergestellt.}}",
+    "importError": "Diese Datei ist keine EveryUtili-Sicherung.",
+    "historyNote": "Aus Tools gespeicherte Ergebnisse (von Ihnen erstellte Dateien) werden separat aufbewahrt und ebenfalls gelöscht.",
+    "privacy": "Sicherungen sind einfache Dateien, die auf Ihrem Gerät gespeichert werden. Es wird nichts irgendwohin gesendet.",
+    "group_tasks": "To-do-Liste & Prioritätenmatrix",
+    "group_habits": "Gewohnheiten, Tagebuch & Lernprotokoll",
+    "group_flashcards": "Karteikarten",
+    "group_exams": "Prüfungen, Countdowns & Erinnerungen",
+    "group_focus": "Pomodoro & Fokus-Sounds",
+    "group_games": "Spielstände & Einstellungen",
+    "group_qr": "QR-Designs & Druckbögen",
+    "group_calc": "Rechnerverlauf & Daten",
+    "group_random": "Listen für Zufalls-Tools",
+    "group_tools": "Zuletzt verwendete & Lieblingstools, IPTV",
+    "group_other": "Weitere Einstellungen"
+  },
+  "favorites": {
+    "heading": "Ihre Lieblingstools",
+    "add": "Zu Favoriten hinzufügen",
+    "remove": "Aus Favoriten entfernen",
+    "empty": "Tippen Sie bei einem Tool auf den Stern, um es hier zu behalten."
   },
   "recentTools": {
     "heading": "Kürzlich Verwendet",

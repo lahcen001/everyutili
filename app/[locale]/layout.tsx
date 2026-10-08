@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { ReminderNotifier } from "@/components/ReminderNotifier";
 import { HistoryCleanup } from "@/components/HistoryCleanup";
 import type { ReactNode, CSSProperties } from "react";
@@ -93,6 +94,8 @@ interface LocaleLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
+export const viewport: Viewport = { themeColor: "#635bff", width: "device-width", initialScale: 1 };
+
 export async function generateMetadata({
   params,
 }: {
@@ -111,6 +114,8 @@ export async function generateMetadata({
     },
     description: t("metaDescription"),
     applicationName: "EveryUtili",
+    icons: { apple: "/icons/apple-touch-icon.png" },
+    appleWebApp: { capable: true, title: "EveryUtili", statusBarStyle: "default" },
     keywords: ["online tools", "file converter", "pdf tools", "developer tools", "calculators"],
     openGraph: {
       type: "website",
@@ -195,6 +200,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         <NextIntlClientProvider>
           <ThemeProvider>
             <ReminderNotifier />
+            <ServiceWorkerRegister />
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />

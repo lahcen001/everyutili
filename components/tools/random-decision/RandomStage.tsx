@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Maximize2, Minimize2, RotateCw, Save, Trophy, X } from "lucide-react";
@@ -37,6 +38,7 @@ interface RandomStageProps {
  * (with an in-page fallback), a big animated result reveal and confetti.
  */
 export function RandomStage({ reveal, children, onAgain, againLabel = "Again", onSave, className }: RandomStageProps) {
+  const t = useTranslations("ui");
   const stageRef = React.useRef<HTMLDivElement>(null);
   const [fullscreen, setFullscreen] = React.useState(false);
   const [pseudoFs, setPseudoFs] = React.useState(false);
@@ -93,9 +95,9 @@ export function RandomStage({ reveal, children, onAgain, againLabel = "Again", o
       )}
     >
       <div className="flex justify-end px-4 pt-3">
-        <Button size="sm" variant="outline" onClick={toggleFullscreen} aria-label={isFs ? "Exit fullscreen" : "Fullscreen"}>
+        <Button size="sm" variant="outline" onClick={toggleFullscreen} aria-label={isFs ? t("exitFullscreen") : t("fullscreen")}>
           {isFs ? <Minimize2 className="h-3.5 w-3.5" /> : <Maximize2 className="h-3.5 w-3.5" />}
-          {isFs ? "Exit" : "Fullscreen"}
+          {isFs ? t("exitFullscreen") : t("fullscreen")}
         </Button>
       </div>
       <div className={cn("flex flex-1 flex-col items-center justify-center overflow-auto", isFs && "min-h-0")}>{children(isFs)}</div>

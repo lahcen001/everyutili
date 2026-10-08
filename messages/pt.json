@@ -1632,73 +1632,73 @@
     },
     "qr-code-generator": {
       "seoTitle": "Gerador de QR Code Online – Grátis e Instantâneo, Sem Cadastro",
-      "metaDescription": "Crie QR Codes para links, texto, Wi-Fi, e-mail, telefone, SMS e cartões de contato. Escolha a correção de erros, as cores e um logotipo central, e baixe em PNG ou SVG. Grátis e privado.",
+      "metaDescription": "Crie QR codes para links, texto, Wi-Fi, e-mail, telefone, SMS e cartões de contato. 8 estilos, formas arredondadas ou pontilhadas, degradês, logo no centro, título e moldura — e imprima vários em uma página. Grátis e privado.",
       "h1": "Gerador de QR Code",
-      "subheading": "Crie QR Codes para links, Wi-Fi, contatos e mais, com correção de erros, logotipo e download em PNG ou SVG — gerado 100% localmente.",
+      "subheading": "Crie QR codes estilizados com seu logo e um título, baixe em PNG ou SVG, ou imprima uma página inteira de etiquetas — gerado 100% localmente.",
       "keywords": [
         "gerador de qr code",
         "criador de qr code grátis",
         "criar qr code online",
         "link para qr code",
         "gerador de qr code sem cadastro",
-        "gerador de qr code wifi",
-        "qr code vcard",
-        "qr code svg"
+        "qr code com logo",
+        "qr code personalizado",
+        "imprimir vários qr codes"
       ],
       "howTo": [
         {
           "name": "Escolha o conteúdo",
-          "text": "Escolha Link, Texto, Wi-Fi, E-mail, Telefone, SMS ou Contato e preencha os campos."
+          "text": "Selecione Link, Texto, Wi-Fi, E-mail, Telefone, SMS ou Contato e preencha os campos."
         },
         {
           "name": "Personalize a aparência",
-          "text": "Defina as cores, a borda, o nível de correção de erros e, opcionalmente, um logotipo no centro."
+          "text": "Escolha um estilo ou defina você mesmo as formas dos pontos e dos cantos, as cores ou um degradê. Adicione seu logo no centro, um título acima ou abaixo do código e uma moldura, como o rótulo Escaneie-me."
         },
         {
-          "name": "Confira a prévia",
-          "text": "O código é atualizado enquanto você digita, com um aviso se as cores estiverem muito fracas ou invertidas para uma leitura confiável."
+          "name": "Confira a pré-visualização",
+          "text": "O código é atualizado enquanto você digita, com um aviso caso as cores estejam fracas ou invertidas demais para uma leitura confiável."
         },
         {
           "name": "Baixe",
-          "text": "Salve um PNG no tamanho escolhido ou um SVG que permanece nítido em qualquer tamanho."
+          "text": "Salve um PNG no tamanho que preferir ou um SVG que continua nítido em qualquer tamanho. Para criar etiquetas ou cartões de mesa, adicione códigos à folha de impressão, escolha o papel e as colunas e clique em Imprimir."
         }
       ],
       "faq": [
         {
-          "question": "Os QR Codes gerados aqui expiram?",
-          "answer": "Não, o QR Code é gerado inteiramente no lado do cliente e codifica o seu conteúdo diretamente — não há servidor nem prazo de validade."
+          "question": "Os QR codes gerados aqui expiram?",
+          "answer": "Não, o QR code é gerado inteiramente no seu navegador e codifica o conteúdo diretamente — não há servidor nem prazo de validade."
         },
         {
-          "question": "Posso usar isto para uma empresa ou produto?",
-          "answer": "Sim, os QR Codes gerados podem ser usados gratuitamente para qualquer finalidade pessoal ou comercial."
+          "question": "Posso usar para um negócio ou produto?",
+          "answer": "Sim, os QR codes gerados são gratuitos para qualquer uso pessoal ou comercial."
         },
         {
           "question": "Qual é a quantidade máxima de texto que posso codificar?",
-          "answer": "Os QR Codes podem armazenar até alguns milhares de caracteres, embora conteúdos mais curtos sejam lidos com mais confiabilidade."
+          "answer": "Os QR codes podem conter até alguns milhares de caracteres, mas conteúdos mais curtos são lidos com mais facilidade."
         },
         {
           "question": "Meus dados são enviados a um servidor para gerar o código?",
-          "answer": "Não, a imagem do QR Code é renderizada inteiramente no seu navegador — nada é transmitido para lugar nenhum."
+          "answer": "Não, a imagem do QR code é criada inteiramente no seu navegador — nada é enviado para lugar nenhum."
         },
         {
-          "question": "Qual nível de correção de erros o QR Code usa?",
-          "answer": "Médio (15%) por padrão. Você pode escolher Baixo, Médio, Quartil ou Alto; níveis mais altos resistem a mais danos, mas exigem um código mais denso. Ao adicionar um logotipo, o nível Alto (30%) é usado automaticamente."
+          "question": "Qual nível de correção de erros o QR code usa?",
+          "answer": "Médio (15%) por padrão. Você pode escolher Baixo, Médio, Quartil ou Alto; níveis mais altos suportam mais danos, mas exigem um código mais denso. Ao adicionar um logo, o nível Alto (30%) é usado automaticamente."
         },
         {
-          "question": "Posso mudar a cor do QR Code ou adicionar um logotipo?",
-          "answer": "Sim. Escolha qualquer cor de primeiro plano e de fundo e envie um logotipo para colocar no centro. Mantenha o logotipo pequeno e teste o código com um celular antes de imprimir."
+          "question": "Posso mudar o design, as cores ou adicionar um logo ao QR code?",
+          "answer": "Sim. Escolha entre 8 estilos ou defina você mesmo a forma dos pontos, a forma dos cantos, as cores e o degradê. Envie um logo, escolha o tamanho e a forma e adicione um título e uma moldura. Mantenha o logo pequeno e teste o código com um celular antes de imprimir."
         },
         {
-          "question": "Em quais formatos de arquivo posso baixar o QR Code?",
+          "question": "Em quais formatos de arquivo posso baixar o QR code?",
           "answer": "PNG em um tamanho à sua escolha (128–2048 px) e SVG, que é vetorial e permanece nítido em qualquer tamanho."
         },
         {
-          "question": "Por que meu QR Code não é lido?",
-          "answer": "As causas comuns incluem pouco contraste entre as cores de primeiro plano e de fundo, um logotipo grande demais que cobre dados essenciais do padrão, ou a impressão do código pequena demais para a quantidade de texto codificado."
+          "question": "Por que meu QR code não é lido?",
+          "answer": "As causas mais comuns são pouco contraste entre as cores do primeiro plano e do fundo, um logo grande demais que cobre dados essenciais do padrão, ou o código impresso pequeno demais para a quantidade de texto codificado."
         },
         {
-          "question": "Como crio um QR Code que conecta ao Wi-Fi?",
-          "answer": "Escolha a aba Wi-Fi e informe o nome da rede, a senha e o tipo de segurança. Ao escanear o código com um celular, é oferecida a opção de entrar na rede sem digitar a senha."
+          "question": "Como faço um QR code que conecta ao Wi-Fi?",
+          "answer": "Escolha a aba Wi-Fi e informe o nome da rede, a senha e o tipo de segurança. Ao escanear o código com o celular, ele oferece a opção de entrar na rede sem digitar a senha."
         }
       ]
     },
@@ -7703,66 +7703,66 @@
       ]
     },
     "focus-sounds": {
-      "seoTitle": "Sons para Foco e Mixer de Ruído – Ruído Branco, Marrom e Chuva para Estudar Grátis",
-      "metaDescription": "Misture ruído branco, rosa e marrom com chuva, ondas do mar, vento, zumbido de ventilador e batidas binaurais alfa para se concentrar ou estudar. Timer para dormir, mixagens salvas, gerado no seu navegador — sem downloads.",
+      "seoTitle": "Sons para Foco e Mixer de Ruído – Ruído Branco, Marrom e Chuva Grátis para Estudar",
+      "metaDescription": "Misture 24 sons relaxantes — chuva, trovão, mar, pássaros, café, trem, fogueira, ruído branco, rosa e marrom e batidas binaurais — para se concentrar, estudar ou dormir. Controles de tom, timer para dormir e mixes salvos. Gerado no navegador, sem downloads.",
       "h1": "Sons para Foco e Mixer de Ruído",
-      "subheading": "Combine chuva, ondas do mar, ruído marrom e mais em uma mixagem de fundo só sua para bloquear distrações enquanto estuda ou trabalha.",
+      "subheading": "Combine chuva, trovão, ambiente de café, ruído marrom, batidas binaurais e muito mais em uma mistura de fundo só sua, para bloquear distrações enquanto você estuda, trabalha ou dorme.",
       "keywords": [
         "gerador de ruído branco",
         "ruído marrom",
         "ruído rosa",
         "sons de chuva para estudar",
         "sons para foco",
-        "barulho de fundo para estudar",
-        "batidas binaurais alfa",
-        "mixer de ruídos"
+        "ruído de fundo para estudar",
+        "batidas binaurais para foco",
+        "mixer de ruído"
       ],
       "howTo": [
         {
           "name": "Escolha um som",
-          "text": "Toque em um cartão como Chuva, Ruído marrom ou Ondas do mar para ativá-lo. Use uma Mixagem rápida como Foco profundo para uma combinação pronta."
+          "text": "Toque em um cartão como Chuva, Ruído marrom ou Café para ativá-lo, ou filtre por Natureza, Ruído, Ambientes ou Tons e batidas. Use um Mix rápido como Foco profundo, ou clique em Surpreenda-me."
         },
         {
           "name": "Ajuste os volumes",
-          "text": "Mova cada controle deslizante para definir o volume daquele som, e o volume geral para tudo junto. Você pode sobrepor vários sons."
+          "text": "Mova cada controle deslizante para definir o volume de cada som, além do volume geral de tudo. Abra Tom e fade para ajustar graves, agudos e brilho e o tempo de entrada gradual."
         },
         {
           "name": "Defina um timer para dormir",
-          "text": "Escolha um tempo e o som diminui gradualmente e para sozinho — prático quando você ouve enquanto adormece."
+          "text": "Escolha um tempo e o som diminui gradualmente e para sozinho — ideal para ouvir enquanto você adormece."
         },
         {
           "name": "Continue trabalhando",
-          "text": "Sua mixagem fica salva neste dispositivo, então da próxima vez basta clicar em Tocar mixagem."
+          "text": "Salve seus mixes favoritos com um nome. Eles ficam guardados neste dispositivo, então da próxima vez basta clicar em Tocar mix."
         }
       ],
       "faq": [
         {
-          "question": "Qual som é melhor para concentração?",
-          "answer": "Varia de pessoa para pessoa. O ruído marrom é grave e quente, e muita gente o considera bom para focar. O ruído rosa é mais equilibrado. Chuva e ondas do mar parecem naturais e calmantes. O ruído branco é o mais agudo e mascara bem a fala."
+          "question": "Qual som é melhor para a concentração?",
+          "answer": "Varia de pessoa para pessoa. O ruído marrom é grave e quente, e muita gente o considera bom para o foco. O ruído rosa é mais equilibrado. A chuva e as ondas do mar soam naturais e calmantes. O ruído branco é o mais brilhante e mascara bem a fala."
         },
         {
           "question": "Os sons precisam de conexão com a internet?",
-          "answer": "Não. Todos os sons são criados na hora no seu navegador com a Web Audio API. Não há nada para baixar ou transmitir, então funciona offline depois que a página é carregada."
+          "answer": "Não. Todos os sons são criados na hora no seu navegador com a Web Audio API. Não há nada para baixar nem transmitir, então funciona offline depois que a página é carregada."
         },
         {
-          "question": "O que são batidas binaurais alfa?",
-          "answer": "São reproduzidos dois tons ligeiramente diferentes, um em cada ouvido, com 10 Hz de diferença. Algumas pessoas acham o efeito relaxante. É preciso usar fones de ouvido para funcionar, e as evidências científicas são divergentes, então encare como uma opção e não como uma promessa."
+          "question": "O que são batidas binaurais?",
+          "answer": "Dois tons ligeiramente diferentes são reproduzidos, um em cada ouvido. A diferença (por exemplo, 10 Hz para alfa) é a batida. Algumas pessoas as acham relaxantes ou úteis para o foco. É preciso usar fones de ouvido para funcionar, e as evidências científicas são mistas, então encare como uma opção, não como uma promessa."
         },
         {
-          "question": "Por que não ouço nada?",
-          "answer": "Os navegadores só iniciam o áudio depois de um clique. Clique em Tocar mixagem, confira o volume do dispositivo e o controle de volume geral, e verifique se pelo menos um som está com volume acima de zero."
+          "question": "Por que não estou ouvindo nada?",
+          "answer": "Os navegadores só iniciam o áudio depois de um clique. Clique em Tocar mix, verifique o volume do dispositivo e o controle geral, e confirme que pelo menos um som está com volume acima de zero."
         },
         {
           "question": "É seguro deixar tocando a noite toda?",
           "answer": "Mantenha o volume baixo e use o timer para dormir. Ruído alto por longos períodos pode cansar os ouvidos."
         },
         {
-          "question": "Minha mixagem é salva?",
-          "answer": "Sim, apenas neste dispositivo. Ela fica armazenada no seu navegador e nunca é enviada."
+          "question": "Meu mix fica salvo?",
+          "answer": "Sim, somente neste dispositivo. Ele fica armazenado no seu navegador e nunca é enviado."
         },
         {
           "question": "Posso usar junto com um timer?",
-          "answer": "Sim. Abra o Timer Pomodoro em outra aba e deixe os sons tocando enquanto trabalha."
+          "answer": "Sim. Abra o Timer Pomodoro em outra aba e deixe os sons tocando enquanto você trabalha."
         }
       ]
     },
@@ -9654,6 +9654,67 @@
     "relax": "Relaxar e alongar",
     "train": "Jogos de treino de foco",
     "fun": "Jogos casuais"
+  },
+  "ui": {
+    "dropDefault": "Arraste e solte arquivos aqui ou clique para procurar",
+    "browse": "Procurar arquivos",
+    "dropToLoad": "Solte o arquivo para carregar",
+    "fullscreen": "Tela cheia",
+    "exitFullscreen": "Sair",
+    "footerExtension": "Baixe a extensão para Chrome",
+    "footerPrivacy": "Política de Privacidade",
+    "footerMyData": "Meus dados",
+    "copy": "Copiar",
+    "copied": "Copiado!",
+    "download": "Baixar",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "reset": "Redefinir",
+    "start": "Iniciar",
+    "pause": "Pausar",
+    "resume": "Retomar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "loading": "Carregando…",
+    "undo": "Desfazer",
+    "redo": "Refazer",
+    "playAgain": "Jogar novamente",
+    "newGame": "Novo jogo"
+  },
+  "myData": {
+    "title": "Meus dados",
+    "subtitle": "Tudo o que as ferramentas lembram fica armazenado somente neste navegador. Faça um backup, leve para outro dispositivo ou apague.",
+    "heading": "Salvo neste dispositivo",
+    "empty": "Ainda não há nada salvo neste dispositivo.",
+    "items": "{count, plural, one {# item} many {# de itens} other {# itens}}",
+    "total": "Total: {size}",
+    "export": "Baixar um backup",
+    "import": "Restaurar de um backup",
+    "clearAll": "Apagar tudo",
+    "confirmClear": "Apagar todos os dados salvos deste navegador? Esta ação não pode ser desfeita.",
+    "cleared": "Todos os dados salvos foram apagados.",
+    "imported": "{count, plural, one {# item restaurado.} many {# de itens restaurados.} other {# itens restaurados.}}",
+    "importError": "Esse arquivo não é um backup do EveryUtili.",
+    "historyNote": "Os resultados que você salvou das ferramentas (arquivos que você criou) são mantidos separadamente e também são apagados.",
+    "privacy": "Os backups são arquivos simples salvos no seu dispositivo. Nada é enviado para lugar nenhum.",
+    "group_tasks": "Lista de tarefas e matriz de prioridades",
+    "group_habits": "Hábitos, diário e registro de estudos",
+    "group_flashcards": "Flashcards",
+    "group_exams": "Provas, contagens regressivas e lembretes",
+    "group_focus": "Pomodoro e sons para foco",
+    "group_games": "Pontuações e configurações dos jogos",
+    "group_qr": "Estilos de QR e folhas de impressão",
+    "group_calc": "Histórico e dados da calculadora",
+    "group_random": "Listas das ferramentas aleatórias",
+    "group_tools": "Ferramentas recentes e favoritas, IPTV",
+    "group_other": "Outras configurações"
+  },
+  "favorites": {
+    "heading": "Suas ferramentas favoritas",
+    "add": "Adicionar aos favoritos",
+    "remove": "Remover dos favoritos",
+    "empty": "Toque na estrela de qualquer ferramenta para mantê-la aqui."
   },
   "recentTools": {
     "heading": "Usados Recentemente",

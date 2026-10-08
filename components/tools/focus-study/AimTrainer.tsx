@@ -49,7 +49,7 @@ export default function AimTrainer() {
   const total = hits + misses;
 
   return (
-    <FullscreenStage className="rounded-2xl border border-border p-4 sm:p-6" label="Fullscreen">
+    <FullscreenStage className="rounded-2xl border border-border p-4 sm:p-6">
       {(isFs) => (
         <div className="mx-auto flex w-full max-w-3xl flex-col gap-3 py-4">
           <div className="flex items-center gap-3 pe-28 text-sm">

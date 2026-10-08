@@ -189,7 +189,7 @@ function Study({ deck, queue, onExit, onGrade, onRestart }: { deck: Deck; queue:
   }, [done, flipped, grade]);
 
   return (
-    <FullscreenStage className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-background to-fuchsia-500/5 p-4 sm:p-8" label="Fullscreen">
+    <FullscreenStage className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-background to-fuchsia-500/5 p-4 sm:p-8">
       {(isFs) => (
         <div className="mx-auto flex w-full max-w-2xl flex-col gap-5 py-6">
           <div className="flex items-center gap-3">

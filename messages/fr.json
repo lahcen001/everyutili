@@ -1632,73 +1632,73 @@
     },
     "qr-code-generator": {
       "seoTitle": "Générateur de QR code en ligne – Gratuit et instantané, sans inscription",
-      "metaDescription": "Créez des QR codes pour des liens, du texte, le Wi-Fi, un e-mail, un téléphone, un SMS et des cartes de contact. Choisissez la correction d'erreur, les couleurs et un logo au centre, et téléchargez en PNG ou SVG. Gratuit et privé.",
+      "metaDescription": "Créez des QR codes pour des liens, du texte, le Wi-Fi, un e-mail, un téléphone, un SMS et des cartes de contact. 8 styles, formes arrondies ou en points, dégradés, logo central, titre et cadre — et imprimez-en plusieurs sur une page. Gratuit et privé.",
       "h1": "Générateur de QR code",
-      "subheading": "Créez des QR codes pour des liens, le Wi-Fi, des contacts et plus encore, avec correction d'erreur, logo et téléchargement en PNG ou SVG — généré 100 % en local.",
+      "subheading": "Créez des QR codes personnalisés avec votre logo et un titre, téléchargez-les en PNG ou SVG, ou imprimez une planche d'étiquettes — généré à 100 % en local.",
       "keywords": [
         "générateur de qr code",
         "créateur de qr code gratuit",
         "créer un qr code en ligne",
         "url en qr code",
         "générateur de qr code sans inscription",
-        "générateur de qr code wifi",
-        "qr code vcard",
-        "qr code svg"
+        "qr code avec logo",
+        "qr code personnalisé",
+        "imprimer plusieurs qr codes"
       ],
       "howTo": [
         {
           "name": "Choisissez le contenu",
-          "text": "Sélectionnez Lien, Texte, Wi-Fi, E-mail, Téléphone, SMS ou Contact et remplissez les champs."
+          "text": "Sélectionnez Lien, Texte, Wi-Fi, E-mail, Téléphone, SMS ou Contact, puis remplissez les champs."
         },
         {
           "name": "Personnalisez l'apparence",
-          "text": "Définissez les couleurs, la bordure, le niveau de correction d'erreur et, si vous le souhaitez, un logo au centre."
+          "text": "Choisissez un style ou réglez vous-même la forme des points et des coins, les couleurs ou un dégradé. Ajoutez votre logo au centre, un titre au-dessus ou en dessous du code, et un cadre comme une étiquette « Scannez-moi »."
         },
         {
           "name": "Vérifiez l'aperçu",
-          "text": "Le code se met à jour pendant que vous tapez, avec un avertissement si les couleurs sont trop pâles ou inversées pour être scannées de manière fiable."
+          "text": "Le code se met à jour pendant la saisie, avec un avertissement si les couleurs sont trop pâles ou inversées pour être scannées de façon fiable."
         },
         {
           "name": "Téléchargez",
-          "text": "Enregistrez un PNG à la taille de votre choix, ou un SVG qui reste net à n'importe quelle taille."
+          "text": "Enregistrez un PNG à la taille de votre choix ou un SVG qui reste net à toutes les tailles. Pour créer des étiquettes ou des cartes de table, ajoutez des codes à la planche d'impression, choisissez le papier et les colonnes, puis cliquez sur Imprimer."
         }
       ],
       "faq": [
         {
           "question": "Les QR codes générés ici expirent-ils ?",
-          "answer": "Non, le QR code est généré entièrement côté client et encode directement votre contenu — il n'y a ni serveur ni expiration."
+          "answer": "Non, le QR code est généré entièrement côté client et encode directement votre contenu — il n'y a ni serveur ni date d'expiration."
         },
         {
           "question": "Puis-je l'utiliser pour une entreprise ou un produit ?",
           "answer": "Oui, les QR codes générés sont libres d'utilisation à des fins personnelles comme commerciales."
         },
         {
-          "question": "Quelle est la quantité maximale de texte que je peux encoder ?",
-          "answer": "Les QR codes peuvent contenir jusqu'à quelques milliers de caractères, bien qu'un contenu plus court se scanne de façon plus fiable."
+          "question": "Quelle quantité maximale de texte puis-je encoder ?",
+          "answer": "Un QR code peut contenir jusqu'à quelques milliers de caractères, mais un contenu plus court se scanne de manière plus fiable."
         },
         {
           "question": "Mes données sont-elles envoyées à un serveur pour générer le code ?",
-          "answer": "Non, l'image du QR code est générée entièrement dans votre navigateur — rien n'est transmis nulle part."
+          "answer": "Non, l'image du QR code est créée entièrement dans votre navigateur — rien n'est transmis nulle part."
         },
         {
           "question": "Quel niveau de correction d'erreur le QR code utilise-t-il ?",
-          "answer": "Moyen (15 %) par défaut. Vous pouvez choisir Faible, Moyen, Quartile ou Élevé ; les niveaux supérieurs résistent à davantage de dégâts mais nécessitent un code plus dense. Ajouter un logo utilise automatiquement le niveau Élevé (30 %)."
+          "answer": "Moyen (15 %) par défaut. Vous pouvez choisir Faible, Moyen, Quartile ou Élevé ; les niveaux supérieurs résistent mieux aux dégâts mais nécessitent un code plus dense. L'ajout d'un logo active automatiquement le niveau Élevé (30 %)."
         },
         {
-          "question": "Puis-je changer la couleur du QR code ou ajouter un logo ?",
-          "answer": "Oui. Choisissez n'importe quelles couleurs d'avant-plan et d'arrière-plan et importez un logo à placer au centre. Gardez le logo petit et testez le code avec un téléphone avant d'imprimer."
+          "question": "Puis-je modifier le style et les couleurs du QR code ou ajouter un logo ?",
+          "answer": "Oui. Choisissez parmi 8 styles ou réglez vous-même la forme des points, la forme des coins, les couleurs et le dégradé. Importez un logo, choisissez sa taille et sa forme, puis ajoutez un titre et un cadre. Gardez le logo petit et testez le code avec un téléphone avant d'imprimer."
         },
         {
-          "question": "Dans quels formats de fichier puis-je télécharger le QR code ?",
-          "answer": "En PNG à la taille de votre choix (128 à 2048 px) et en SVG, qui est vectoriel et reste net à n'importe quelle taille."
+          "question": "Dans quels formats puis-je télécharger le QR code ?",
+          "answer": "En PNG à la taille de votre choix (128–2048 px) et en SVG, un format vectoriel qui reste net à toutes les tailles."
         },
         {
           "question": "Pourquoi mon QR code ne se scanne-t-il pas ?",
-          "answer": "Les causes courantes sont un contraste insuffisant entre les couleurs d'avant-plan et d'arrière-plan, un logo trop grand qui recouvre des données essentielles du motif, ou une impression du code trop petite pour la quantité de texte encodé."
+          "answer": "Les causes courantes sont un contraste insuffisant entre la couleur du code et celle du fond, un logo trop grand qui masque des données essentielles du motif, ou un code imprimé trop petit pour la quantité de texte encodée."
         },
         {
           "question": "Comment créer un QR code qui se connecte au Wi-Fi ?",
-          "answer": "Choisissez l'onglet Wi-Fi, saisissez le nom du réseau, le mot de passe et le type de sécurité. Scanner le code avec un téléphone propose de rejoindre le réseau sans avoir à taper le mot de passe."
+          "answer": "Choisissez l'onglet Wi-Fi, saisissez le nom du réseau, le mot de passe et le type de sécurité. En scannant le code avec un téléphone, vous pouvez rejoindre le réseau sans saisir le mot de passe."
         }
       ]
     },
@@ -7703,10 +7703,10 @@
       ]
     },
     "focus-sounds": {
-      "seoTitle": "Sons de concentration et mixeur de bruits – Bruit blanc, brun et pluie gratuits pour étudier",
-      "metaDescription": "Mélangez bruit blanc, rose et brun avec de la pluie, des vagues, du vent, le ronronnement d'un ventilateur et des battements binauraux alpha pour vous concentrer ou étudier. Minuterie de veille, mix enregistrés, généré dans votre navigateur — sans téléchargement.",
+      "seoTitle": "Sons de concentration et mixeur de bruits – Bruit blanc, brun, pluie gratuits pour étudier",
+      "metaDescription": "Mélangez 24 sons apaisants — pluie, orage, océan, oiseaux, café, train, feu, bruit blanc, rose et brun, et battements binauraux — pour vous concentrer, étudier ou dormir. Réglages du timbre, minuterie de sommeil, mix enregistrés. Généré dans votre navigateur, sans téléchargement.",
       "h1": "Sons de concentration et mixeur de bruits",
-      "subheading": "Mélangez pluie, vagues, bruit brun et bien plus pour créer votre propre ambiance sonore et écarter les distractions pendant que vous étudiez ou travaillez.",
+      "subheading": "Mélangez pluie, orage, ambiance de café, bruit brun, battements binauraux et plus encore pour créer votre fond sonore et bloquer les distractions pendant que vous étudiez, travaillez ou dormez.",
       "keywords": [
         "générateur de bruit blanc",
         "bruit brun",
@@ -7714,51 +7714,51 @@
         "sons de pluie pour étudier",
         "sons de concentration",
         "bruit de fond pour étudier",
-        "battements binauraux alpha",
+        "battements binauraux pour la concentration",
         "mixeur de bruits"
       ],
       "howTo": [
         {
           "name": "Choisissez un son",
-          "text": "Touchez une carte comme Pluie, Bruit brun ou Vagues pour l'activer. Utilisez un mix rapide comme Concentration profonde pour obtenir un mélange tout prêt."
+          "text": "Touchez une carte comme Pluie, Bruit brun ou Café pour l'activer, ou filtrez par Nature, Bruits, Ambiances ou Tonalités et battements. Utilisez un mix rapide comme Concentration profonde, ou appuyez sur Surprenez-moi."
         },
         {
           "name": "Réglez les niveaux",
-          "text": "Déplacez chaque curseur pour régler le volume de ce son, ainsi que le volume général pour l'ensemble. Vous pouvez superposer plusieurs sons."
+          "text": "Déplacez chaque curseur pour régler le volume du son concerné, ainsi que le volume général pour l'ensemble. Ouvrez Timbre et fondu pour ajuster les basses, les aigus, la brillance et la durée du fondu d'entrée."
         },
         {
-          "name": "Programmez une minuterie de veille",
-          "text": "Choisissez une durée : le son s'atténue puis s'arrête tout seul — pratique si vous écoutez en vous endormant."
+          "name": "Programmez une minuterie de sommeil",
+          "text": "Choisissez une durée et le son s'atténue puis s'arrête tout seul — pratique quand vous écoutez en vous endormant."
         },
         {
           "name": "Continuez à travailler",
-          "text": "Votre mix est mémorisé sur cet appareil : la prochaine fois, il vous suffira d'appuyer sur Lancer le mix."
+          "text": "Enregistrez vos mix préférés avec un nom. Ils sont mémorisés sur cet appareil : la prochaine fois, il vous suffira d'appuyer sur Lire le mix."
         }
       ],
       "faq": [
         {
           "question": "Quel son est le meilleur pour se concentrer ?",
-          "answer": "Cela dépend des personnes. Le bruit brun est grave et chaud, et beaucoup le trouvent idéal pour se concentrer. Le bruit rose est plus équilibré. La pluie et les vagues sont naturelles et apaisantes. Le bruit blanc est le plus brillant et masque bien les voix."
+          "answer": "Cela dépend des personnes. Le bruit brun est grave et chaleureux, et beaucoup le trouvent efficace pour se concentrer. Le bruit rose est plus équilibré. La pluie et les vagues de l'océan paraissent naturelles et apaisantes. Le bruit blanc est le plus brillant et masque bien les voix."
         },
         {
-          "question": "Les sons nécessitent-ils une connexion internet ?",
-          "answer": "Non. Chaque son est créé en direct dans votre navigateur grâce à la Web Audio API. Il n'y a rien à télécharger ni à diffuser en streaming, et cela fonctionne donc hors ligne une fois la page chargée."
+          "question": "Les sons nécessitent-ils une connexion Internet ?",
+          "answer": "Non. Chaque son est créé en direct dans votre navigateur grâce à l'API Web Audio. Il n'y a rien à télécharger ni à diffuser en streaming, donc cela fonctionne hors ligne une fois la page chargée."
         },
         {
-          "question": "Que sont les battements binauraux alpha ?",
-          "answer": "Deux tons légèrement différents sont joués, un dans chaque oreille, avec 10 Hz d'écart. Certaines personnes trouvent cet effet relaxant. Il faut un casque pour que cela fonctionne, et les preuves scientifiques sont partagées : considérez-le comme une option, pas comme une promesse."
+          "question": "Que sont les battements binauraux ?",
+          "answer": "Deux tonalités légèrement différentes sont diffusées, une dans chaque oreille. La différence (par exemple 10 Hz pour l'alpha) constitue le battement. Certaines personnes les trouvent relaxants ou utiles pour se concentrer. Il faut un casque pour que cela fonctionne, et les données scientifiques sont partagées : considérez-les comme une option plutôt que comme une promesse."
         },
         {
           "question": "Pourquoi je n'entends rien ?",
-          "answer": "Les navigateurs ne démarrent l'audio qu'après un clic. Appuyez sur Lancer le mix, vérifiez le volume de votre appareil et le curseur du volume général, et assurez-vous qu'au moins un son a un volume supérieur à zéro."
+          "answer": "Les navigateurs ne lancent le son qu'après un clic. Appuyez sur Lire le mix, vérifiez le volume de votre appareil et le curseur du volume général, et assurez-vous qu'au moins un son a un volume supérieur à zéro."
         },
         {
-          "question": "Peut-on le laisser jouer toute la nuit sans risque ?",
-          "answer": "Gardez un volume bas et utilisez la minuterie de veille. Un bruit fort pendant de longues périodes peut fatiguer vos oreilles."
+          "question": "Est-ce sans danger de l'écouter toute la nuit ?",
+          "answer": "Gardez le volume bas et utilisez la minuterie de sommeil. Un bruit fort pendant de longues périodes peut fatiguer vos oreilles."
         },
         {
           "question": "Mon mix est-il enregistré ?",
-          "answer": "Oui, uniquement sur cet appareil. Il est stocké dans votre navigateur et jamais envoyé sur un serveur."
+          "answer": "Oui, sur cet appareil uniquement. Il est stocké dans votre navigateur et n'est jamais envoyé en ligne."
         },
         {
           "question": "Puis-je l'utiliser avec un minuteur ?",
@@ -9654,6 +9654,67 @@
     "relax": "Détente et étirements",
     "train": "Jeux d'entraînement à la concentration",
     "fun": "Jeux occasionnels"
+  },
+  "ui": {
+    "dropDefault": "Glissez-déposez des fichiers ici, ou cliquez pour parcourir",
+    "browse": "Parcourir les fichiers",
+    "dropToLoad": "Déposez le fichier pour le charger",
+    "fullscreen": "Plein écran",
+    "exitFullscreen": "Quitter",
+    "footerExtension": "Obtenir l'extension Chrome",
+    "footerPrivacy": "Politique de confidentialité",
+    "footerMyData": "Mes données",
+    "copy": "Copier",
+    "copied": "Copié !",
+    "download": "Télécharger",
+    "clear": "Effacer",
+    "remove": "Supprimer",
+    "reset": "Réinitialiser",
+    "start": "Démarrer",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "loading": "Chargement…",
+    "undo": "Annuler",
+    "redo": "Rétablir",
+    "playAgain": "Rejouer",
+    "newGame": "Nouvelle partie"
+  },
+  "myData": {
+    "title": "Mes données",
+    "subtitle": "Tout ce dont les outils se souviennent est stocké uniquement dans ce navigateur. Sauvegardez-le, transférez-le sur un autre appareil ou effacez-le.",
+    "heading": "Enregistré sur cet appareil",
+    "empty": "Rien n'est encore enregistré sur cet appareil.",
+    "items": "{count, plural, one {# élément} many {# d'éléments} other {# éléments}}",
+    "total": "Total : {size}",
+    "export": "Télécharger une sauvegarde",
+    "import": "Restaurer depuis une sauvegarde",
+    "clearAll": "Tout effacer",
+    "confirmClear": "Effacer toutes les données enregistrées de ce navigateur ? Cette action est irréversible.",
+    "cleared": "Toutes les données enregistrées ont été effacées.",
+    "imported": "{count, plural, one {# élément restauré.} many {# d'éléments restaurés.} other {# éléments restaurés.}}",
+    "importError": "Ce fichier n'est pas une sauvegarde EveryUtili.",
+    "historyNote": "Les résultats que vous avez enregistrés depuis les outils (les fichiers que vous avez créés) sont conservés séparément et sont également effacés.",
+    "privacy": "Les sauvegardes sont de simples fichiers enregistrés sur votre appareil. Rien n'est envoyé nulle part.",
+    "group_tasks": "Liste de tâches et matrice de priorités",
+    "group_habits": "Habitudes, journal et suivi d'études",
+    "group_flashcards": "Cartes mémoire",
+    "group_exams": "Examens, comptes à rebours et rappels",
+    "group_focus": "Pomodoro et sons de concentration",
+    "group_games": "Scores et réglages des jeux",
+    "group_qr": "Styles de QR et planches d'impression",
+    "group_calc": "Historique et données de la calculatrice",
+    "group_random": "Listes des outils aléatoires",
+    "group_tools": "Outils récents et favoris, IPTV",
+    "group_other": "Autres réglages"
+  },
+  "favorites": {
+    "heading": "Vos outils favoris",
+    "add": "Ajouter aux favoris",
+    "remove": "Retirer des favoris",
+    "empty": "Touchez l'étoile sur n'importe quel outil pour le garder ici."
   },
   "recentTools": {
     "heading": "Utilisés Récemment",

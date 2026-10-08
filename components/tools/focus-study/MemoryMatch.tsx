@@ -88,7 +88,7 @@ export default function MemoryMatch() {
   const record = best[levelId];
 
   return (
-    <FullscreenStage className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-background to-fuchsia-500/5 p-4 sm:p-6" label="Fullscreen">
+    <FullscreenStage className="rounded-2xl border border-border bg-gradient-to-br from-primary/5 via-background to-fuchsia-500/5 p-4 sm:p-6">
       {(isFs) => (
         <div className="mx-auto flex w-full max-w-2xl flex-col gap-4 py-4">
           <Confetti fire={win} big />

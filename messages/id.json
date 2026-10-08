@@ -1631,74 +1631,74 @@
       ]
     },
     "qr-code-generator": {
-      "seoTitle": "Generator Kode QR Online – Gratis & Instan, Tanpa Daftar",
-      "metaDescription": "Buat kode QR untuk tautan, teks, Wi-Fi, email, telepon, SMS, dan kartu kontak. Pilih koreksi kesalahan, warna, dan logo di tengah, lalu unduh PNG atau SVG. Gratis dan privat.",
-      "h1": "Generator Kode QR",
-      "subheading": "Buat kode QR untuk tautan, Wi-Fi, kontak, dan lainnya, dengan koreksi kesalahan, logo, dan unduhan PNG atau SVG — dibuat 100% secara lokal.",
+      "seoTitle": "Pembuat Kode QR Online – Gratis & Instan, Tanpa Daftar",
+      "metaDescription": "Buat kode QR untuk tautan, teks, Wi-Fi, email, telepon, SMS, dan kartu kontak. 8 desain, bentuk bulat atau titik, gradasi, logo di tengah, judul, dan bingkai — serta cetak banyak sekaligus dalam satu halaman. Gratis dan privat.",
+      "h1": "Pembuat Kode QR",
+      "subheading": "Buat kode QR bergaya dengan logo dan judul Anda, unduh PNG atau SVG, atau cetak satu halaman penuh label — dibuat 100% secara lokal.",
       "keywords": [
-        "generator kode qr",
+        "pembuat kode qr",
         "pembuat kode qr gratis",
         "buat kode qr online",
-        "url ke kode qr",
-        "generator kode qr tanpa daftar",
-        "generator kode qr wifi",
-        "kode qr vcard",
-        "kode qr svg"
+        "ubah url menjadi kode qr",
+        "pembuat kode qr tanpa daftar",
+        "kode qr dengan logo",
+        "desain kode qr kustom",
+        "cetak banyak kode qr"
       ],
       "howTo": [
         {
-          "name": "Pilih isinya",
-          "text": "Pilih Tautan, Teks, Wi-Fi, Email, Telepon, SMS, atau Kontak dan isi kolomnya."
+          "name": "Pilih isi kodenya",
+          "text": "Pilih Tautan, Teks, Wi-Fi, Email, Telepon, SMS, atau Kontak, lalu isi kolom yang tersedia."
         },
         {
           "name": "Sesuaikan tampilan",
-          "text": "Atur warna, bingkai, tingkat koreksi kesalahan, dan logo opsional di tengah."
+          "text": "Pilih salah satu desain atau atur sendiri bentuk titik dan sudut, warna, atau gradasi. Tambahkan logo di tengah, judul di atas atau di bawah kode, serta bingkai seperti label Pindai saya."
         },
         {
           "name": "Periksa pratinjau",
-          "text": "Kode diperbarui saat Anda mengetik, dengan peringatan jika warna terlalu pudar atau terbalik sehingga tidak dapat dipindai dengan andal."
+          "text": "Kode diperbarui saat Anda mengetik, disertai peringatan jika warnanya terlalu pudar atau terbalik sehingga sulit dipindai."
         },
         {
           "name": "Unduh",
-          "text": "Simpan PNG pada ukuran pilihan Anda, atau SVG yang tetap tajam pada ukuran apa pun."
+          "text": "Simpan PNG dengan ukuran pilihan Anda atau SVG yang tetap tajam di ukuran apa pun. Untuk membuat label atau kartu meja, tambahkan kode ke lembar cetak, pilih kertas dan jumlah kolom, lalu tekan Cetak."
         }
       ],
       "faq": [
         {
           "question": "Apakah kode QR yang dibuat di sini kedaluwarsa?",
-          "answer": "Tidak, kode QR dibuat sepenuhnya di sisi klien dan mengenkode konten Anda secara langsung — tidak ada server atau masa berlaku."
+          "answer": "Tidak, kode QR dibuat sepenuhnya di sisi klien dan langsung menyimpan isi Anda — tidak ada server maupun masa berlaku."
         },
         {
-          "question": "Bisakah saya memakai ini untuk bisnis atau produk?",
+          "question": "Bolehkah saya menggunakannya untuk bisnis atau produk?",
           "answer": "Ya, kode QR yang dibuat bebas digunakan untuk keperluan pribadi maupun komersial."
         },
         {
-          "question": "Berapa jumlah teks maksimum yang bisa saya enkode?",
-          "answer": "Kode QR dapat menampung hingga beberapa ribu karakter, meskipun konten yang lebih pendek lebih andal dipindai."
+          "question": "Berapa banyak teks maksimum yang bisa dimasukkan?",
+          "answer": "Kode QR dapat memuat hingga beberapa ribu karakter, tetapi isi yang lebih singkat lebih andal saat dipindai."
         },
         {
           "question": "Apakah data saya dikirim ke server untuk membuat kode?",
-          "answer": "Tidak, gambar kode QR dirender sepenuhnya di browser Anda — tidak ada yang dikirim ke mana pun."
+          "answer": "Tidak, gambar kode QR dibuat sepenuhnya di peramban Anda — tidak ada yang dikirim ke mana pun."
         },
         {
-          "question": "Tingkat koreksi kesalahan apa yang dipakai kode QR?",
-          "answer": "Sedang (15%) secara bawaan. Anda dapat memilih Rendah, Sedang, Kuartil, atau Tinggi; tingkat lebih tinggi tahan lebih banyak kerusakan tetapi membutuhkan kode yang lebih rapat. Menambahkan logo otomatis memakai Tinggi (30%)."
+          "question": "Tingkat koreksi kesalahan apa yang digunakan kode QR ini?",
+          "answer": "Secara bawaan Sedang (15%). Anda dapat memilih Rendah, Sedang, Kuartil, atau Tinggi; tingkat yang lebih tinggi lebih tahan terhadap kerusakan tetapi membuat kode lebih padat. Menambahkan logo otomatis memakai Tinggi (30%)."
         },
         {
-          "question": "Bisakah saya mengubah warna kode QR atau menambahkan logo?",
-          "answer": "Ya. Pilih warna latar depan dan latar belakang apa pun dan unggah logo untuk ditempatkan di tengah. Jaga logo tetap kecil dan uji kode dengan ponsel sebelum mencetak."
+          "question": "Bisakah saya mengubah desain, warna, atau menambahkan logo pada kode QR?",
+          "answer": "Bisa. Pilih dari 8 desain atau atur sendiri bentuk titik, bentuk sudut, warna, dan gradasi. Unggah logo, tentukan ukuran dan bentuknya, lalu tambahkan judul dan bingkai. Jaga agar logo tetap kecil dan uji kode dengan ponsel sebelum dicetak."
         },
         {
           "question": "Dalam format file apa saya bisa mengunduh kode QR?",
-          "answer": "PNG pada ukuran pilihan Anda (128–2048 px) dan SVG, yang berupa vektor dan tetap tajam pada ukuran apa pun."
+          "answer": "PNG dengan ukuran pilihan Anda (128–2048 px) dan SVG, yaitu vektor yang tetap tajam di ukuran apa pun."
         },
         {
           "question": "Mengapa kode QR saya tidak bisa dipindai?",
-          "answer": "Penyebab umum meliputi kontras yang terlalu rendah antara warna latar depan dan latar belakang, logo yang terlalu besar sehingga menutupi data pola penting, atau kode dicetak terlalu kecil untuk jumlah teks yang dienkode."
+          "answer": "Penyebab umumnya antara lain kontras warna depan dan latar belakang yang terlalu rendah, logo yang terlalu besar sehingga menutupi data pola penting, atau kode dicetak terlalu kecil untuk jumlah teks yang disimpan."
         },
         {
           "question": "Bagaimana cara membuat kode QR yang terhubung ke Wi-Fi?",
-          "answer": "Pilih tab Wi-Fi, masukkan nama jaringan, kata sandi, dan jenis keamanan. Memindai kode dengan ponsel menawarkan untuk bergabung ke jaringan tanpa mengetik kata sandi."
+          "answer": "Pilih tab Wi-Fi, lalu masukkan nama jaringan, kata sandi, dan jenis keamanan. Saat kode dipindai dengan ponsel, Anda akan diberi pilihan untuk bergabung ke jaringan tanpa mengetik kata sandi."
         }
       ]
     },
@@ -7704,65 +7704,65 @@
     },
     "focus-sounds": {
       "seoTitle": "Suara Fokus & Pencampur Noise – White Noise, Brown Noise, Suara Hujan Gratis untuk Belajar",
-      "metaDescription": "Campurkan white, pink, dan brown noise dengan suara hujan, ombak laut, angin, dengung kipas, dan binaural beats alpha untuk berkonsentrasi atau belajar. Timer tidur, campuran tersimpan, dibuat di browser — tanpa unduhan.",
+      "metaDescription": "Campurkan 24 suara menenangkan — hujan, guntur, laut, burung, kafe, kereta, api, white, pink, dan brown noise, serta binaural beats — untuk berkonsentrasi, belajar, atau tidur. Kontrol nada, timer tidur, campuran tersimpan. Dibuat di peramban Anda, tanpa unduhan.",
       "h1": "Suara Fokus & Pencampur Noise",
-      "subheading": "Padukan hujan, ombak laut, brown noise, dan lainnya menjadi campuran suara latar sendiri untuk menyingkirkan gangguan saat belajar atau bekerja.",
+      "subheading": "Padukan hujan, guntur, suasana kafe, brown noise, binaural beats, dan lainnya menjadi campuran latar Anda sendiri untuk meredam gangguan saat belajar, bekerja, atau tidur.",
       "keywords": [
-        "white noise generator",
+        "pembuat white noise",
         "brown noise",
         "pink noise",
         "suara hujan untuk belajar",
         "suara fokus",
         "suara latar untuk belajar",
-        "binaural beats alpha",
+        "binaural beats untuk fokus",
         "pencampur noise"
       ],
       "howTo": [
         {
           "name": "Pilih suara",
-          "text": "Ketuk kartu seperti Hujan, Brown noise, atau Ombak laut untuk menyalakannya. Gunakan Campuran cepat seperti Fokus mendalam untuk campuran siap pakai."
+          "text": "Ketuk kartu seperti Hujan, Brown noise, atau Kafe untuk menyalakannya, atau saring berdasarkan Alam, Noise, Ruangan, atau Nada dan beats. Gunakan Campuran cepat seperti Fokus mendalam, atau tekan Kejutkan saya."
         },
         {
           "name": "Atur tingkat suara",
-          "text": "Geser setiap penggeser untuk mengatur keras suara tersebut, dan volume utama untuk semuanya sekaligus. Anda bisa menumpuk beberapa suara."
+          "text": "Geser setiap penggeser untuk mengatur keras suara tersebut, serta volume utama untuk semuanya. Buka Nada dan fade untuk menyesuaikan bass, treble, kecerahan, dan waktu fade-in."
         },
         {
-          "name": "Atur timer tidur",
-          "text": "Pilih waktu dan suara akan memudar lalu berhenti sendiri — praktis saat Anda mendengarkan sambil tertidur."
+          "name": "Setel timer tidur",
+          "text": "Pilih durasi dan suara akan memudar lalu berhenti sendiri — praktis saat Anda mendengarkan sambil tertidur."
         },
         {
           "name": "Lanjutkan bekerja",
-          "text": "Campuran Anda diingat di perangkat ini, jadi lain kali Anda hanya perlu menekan Putar campuran."
+          "text": "Simpan campuran favorit Anda dengan sebuah nama. Campuran diingat di perangkat ini, sehingga lain kali Anda cukup menekan Putar campuran."
         }
       ],
       "faq": [
         {
-          "question": "Suara apa yang terbaik untuk konsentrasi?",
-          "answer": "Berbeda untuk setiap orang. Brown noise terdengar dalam dan hangat, dan banyak yang merasa cocok untuk fokus. Pink noise lebih seimbang. Hujan dan ombak laut terasa alami dan menenangkan. White noise paling terang dan efektif meredam suara percakapan."
+          "question": "Suara apa yang terbaik untuk berkonsentrasi?",
+          "answer": "Berbeda untuk tiap orang. Brown noise terdengar dalam dan hangat, dan banyak orang merasa cocok untuk fokus. Pink noise lebih seimbang. Hujan dan ombak laut terasa alami dan menenangkan. White noise paling terang dan efektif menyamarkan suara percakapan."
         },
         {
-          "question": "Apakah suara membutuhkan koneksi internet?",
-          "answer": "Tidak. Setiap suara dibuat langsung di browser Anda dengan Web Audio API. Tidak ada yang perlu diunduh atau di-streaming, sehingga bisa berfungsi offline setelah halaman dimuat."
+          "question": "Apakah suara-suara ini membutuhkan koneksi internet?",
+          "answer": "Tidak. Setiap suara dibuat langsung di peramban Anda dengan Web Audio API. Tidak ada yang perlu diunduh atau di-streaming, jadi tetap berfungsi secara offline setelah halaman dimuat."
         },
         {
-          "question": "Apa itu binaural beats alpha?",
-          "answer": "Dua nada yang sedikit berbeda diputar, satu di tiap telinga, dengan selisih 10 Hz. Sebagian orang merasa efeknya menenangkan. Anda memerlukan headphone agar berfungsi, dan bukti ilmiahnya beragam, jadi anggap ini sebagai pilihan, bukan jaminan."
+          "question": "Apa itu binaural beats?",
+          "answer": "Dua nada yang sedikit berbeda diputar, satu di tiap telinga. Selisihnya (misalnya 10 Hz untuk alfa) adalah beat-nya. Sebagian orang merasa binaural beats menenangkan atau membantu fokus. Anda memerlukan headphone agar berfungsi, dan bukti ilmiahnya beragam, jadi anggap sebagai pilihan, bukan jaminan."
         },
         {
           "question": "Mengapa saya tidak mendengar apa pun?",
-          "answer": "Browser hanya memulai audio setelah Anda mengklik. Tekan Putar campuran, periksa volume perangkat dan penggeser utama, dan pastikan setidaknya satu suara memiliki volume di atas nol."
+          "answer": "Peramban baru memulai audio setelah Anda mengeklik. Tekan Putar campuran, periksa volume perangkat dan penggeser utama, dan pastikan setidaknya satu suara memiliki volume di atas nol."
         },
         {
-          "question": "Amankah diputar semalaman?",
+          "question": "Amankah diputar sepanjang malam?",
           "answer": "Jaga volume tetap rendah dan gunakan timer tidur. Suara keras dalam waktu lama dapat melelahkan telinga Anda."
         },
         {
           "question": "Apakah campuran saya tersimpan?",
-          "answer": "Ya, hanya di perangkat ini. Disimpan di browser Anda dan tidak pernah diunggah."
+          "answer": "Ya, hanya di perangkat ini. Disimpan di peramban Anda dan tidak pernah diunggah."
         },
         {
           "question": "Bisakah digunakan bersama timer?",
-          "answer": "Bisa. Buka Timer Pomodoro di tab lain dan biarkan suara tetap diputar saat Anda bekerja."
+          "answer": "Bisa. Buka Timer Pomodoro di tab lain dan biarkan suara terus diputar selama Anda bekerja."
         }
       ]
     },
@@ -9654,6 +9654,67 @@
     "relax": "Rileks & peregangan",
     "train": "Game latihan fokus",
     "fun": "Game santai"
+  },
+  "ui": {
+    "dropDefault": "Seret & lepas file di sini, atau klik untuk menelusuri",
+    "browse": "Telusuri file",
+    "dropToLoad": "Lepas file untuk memuat",
+    "fullscreen": "Layar penuh",
+    "exitFullscreen": "Keluar",
+    "footerExtension": "Dapatkan ekstensi Chrome",
+    "footerPrivacy": "Kebijakan Privasi",
+    "footerMyData": "Data saya",
+    "copy": "Salin",
+    "copied": "Tersalin!",
+    "download": "Unduh",
+    "clear": "Hapus",
+    "remove": "Buang",
+    "reset": "Atur ulang",
+    "start": "Mulai",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "close": "Tutup",
+    "loading": "Memuat…",
+    "undo": "Urungkan",
+    "redo": "Ulangi",
+    "playAgain": "Main lagi",
+    "newGame": "Permainan baru"
+  },
+  "myData": {
+    "title": "Data saya",
+    "subtitle": "Semua yang diingat oleh alat-alat ini hanya disimpan di peramban ini. Cadangkan, pindahkan ke perangkat lain, atau hapus.",
+    "heading": "Tersimpan di perangkat ini",
+    "empty": "Belum ada yang tersimpan di perangkat ini.",
+    "items": "{count, plural, other {# item}}",
+    "total": "Total: {size}",
+    "export": "Unduh cadangan",
+    "import": "Pulihkan dari cadangan",
+    "clearAll": "Hapus semuanya",
+    "confirmClear": "Hapus semua data tersimpan dari peramban ini? Tindakan ini tidak dapat dibatalkan.",
+    "cleared": "Semua data tersimpan telah dihapus.",
+    "imported": "{count, plural, other {# item dipulihkan.}}",
+    "importError": "File tersebut bukan cadangan EveryUtili.",
+    "historyNote": "Hasil yang Anda simpan dari alat (file yang Anda buat) disimpan terpisah dan ikut dihapus.",
+    "privacy": "Cadangan berupa file biasa yang disimpan di perangkat Anda. Tidak ada yang dikirim ke mana pun.",
+    "group_tasks": "Daftar tugas & matriks prioritas",
+    "group_habits": "Kebiasaan, jurnal & catatan belajar",
+    "group_flashcards": "Kartu kilat",
+    "group_exams": "Ujian, hitung mundur & pengingat",
+    "group_focus": "Pomodoro & suara fokus",
+    "group_games": "Skor & pengaturan permainan",
+    "group_qr": "Desain QR & lembar cetak",
+    "group_calc": "Riwayat & data kalkulator",
+    "group_random": "Daftar alat acak",
+    "group_tools": "Alat terbaru & favorit, IPTV",
+    "group_other": "Pengaturan lainnya"
+  },
+  "favorites": {
+    "heading": "Alat favorit Anda",
+    "add": "Tambahkan ke favorit",
+    "remove": "Hapus dari favorit",
+    "empty": "Ketuk bintang pada alat mana pun untuk menyimpannya di sini."
   },
   "recentTools": {
     "heading": "Baru Digunakan",

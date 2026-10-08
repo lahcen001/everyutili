@@ -1635,18 +1635,18 @@
     },
     "qr-code-generator": {
       "seoTitle": "QR Code Generator Online – Free & Instant, No Sign-Up",
-      "metaDescription": "Create QR codes for links, text, Wi-Fi, email, phone, SMS and contact cards. Choose error correction, colours and a centre logo, and download PNG or SVG. Free and private.",
+      "metaDescription": "Create QR codes for links, text, Wi-Fi, email, phone, SMS and contact cards. 8 designs, rounded or dotted shapes, gradients, a centre logo, a title and frame — and print many on one page. Free and private.",
       "h1": "QR Code Generator",
-      "subheading": "Make QR codes for links, Wi-Fi, contacts and more, with error correction, a logo and PNG or SVG download — generated 100% locally.",
+      "subheading": "Make styled QR codes with your logo and a title, download PNG or SVG, or print a whole page of labels — generated 100% locally.",
       "keywords": [
         "qr code generator",
         "free qr code maker",
         "create qr code online",
         "url to qr code",
         "qr code generator no sign up",
-        "wifi qr code generator",
-        "vcard qr code",
-        "qr code svg"
+        "qr code with logo",
+        "custom qr code design",
+        "print multiple qr codes"
       ],
       "howTo": [
         {
@@ -1655,7 +1655,7 @@
         },
         {
           "name": "Customize appearance",
-          "text": "Set the colours, border, error-correction level and an optional logo in the centre."
+          "text": "Pick a design or set the dot and corner shapes, colours or a gradient yourself. Add your logo in the centre, a title above or below the code, and a frame such as a Scan me label."
         },
         {
           "name": "Check the preview",
@@ -1663,7 +1663,7 @@
         },
         {
           "name": "Download",
-          "text": "Save a PNG at your chosen size, or an SVG that stays sharp at any size."
+          "text": "Save a PNG at your chosen size or an SVG that stays sharp at any size. To make labels or table cards, add codes to the print sheet, choose the paper and columns, and press Print."
         }
       ],
       "faq": [
@@ -1688,8 +1688,8 @@
           "answer": "Medium (15%) by default. You can choose Low, Medium, Quartile or High; higher levels survive more damage but need a denser code. Adding a logo automatically uses High (30%)."
         },
         {
-          "question": "Can I change the QR code's color or add a logo?",
-          "answer": "Yes. Pick any foreground and background colours and upload a logo to place in the centre. Keep the logo small and test the code with a phone before printing."
+          "question": "Can I change the QR code's design, colours or add a logo?",
+          "answer": "Yes. Choose from 8 designs or set the dot shape, corner shape, colours and gradient yourself. Upload a logo, pick its size and shape, and add a title and frame. Keep the logo small and test the code with a phone before printing."
         },
         {
           "question": "What file formats can I download the QR code in?",
@@ -7711,9 +7711,9 @@
     },
     "focus-sounds": {
       "seoTitle": "Focus Sounds & Noise Mixer – Free White, Brown Noise, Rain for Studying",
-      "metaDescription": "Mix white, pink and brown noise with rain, ocean waves, wind, a fan hum and alpha binaural beats to concentrate or study. Sleep timer, saved mixes, generated in your browser — no downloads.",
+      "metaDescription": "Mix 24 calming sounds — rain, thunder, ocean, birds, café, train, fire, white, pink and brown noise, and binaural beats — to concentrate, study or sleep. Tone controls, sleep timer, saved mixes. Generated in your browser, no downloads.",
       "h1": "Focus Sounds & Noise Mixer",
-      "subheading": "Blend rain, ocean waves, brown noise and more into your own background mix to block distractions while you study or work.",
+      "subheading": "Blend rain, thunder, café ambience, brown noise, binaural beats and more into your own background mix to block distractions while you study, work or sleep.",
       "keywords": [
         "white noise generator",
         "brown noise",
@@ -7721,17 +7721,17 @@
         "rain sounds for studying",
         "focus sounds",
         "background noise for studying",
-        "binaural beats alpha",
+        "binaural beats for focus",
         "noise mixer"
       ],
       "howTo": [
         {
           "name": "Pick a sound",
-          "text": "Tap a card such as Rain, Brown noise or Ocean waves to switch it on. Use a Quick mix like Deep focus for a ready-made blend."
+          "text": "Tap a card such as Rain, Brown noise or Café to switch it on, or filter by Nature, Noise, Rooms or Tones and beats. Use a Quick mix like Deep focus, or press Surprise me."
         },
         {
           "name": "Mix the levels",
-          "text": "Move each slider to set how loud that sound is, and the master volume for everything together. You can layer several sounds."
+          "text": "Move each slider to set how loud that sound is, and the master volume for everything. Open Tone and fade to adjust bass, treble and brightness and the fade-in time."
         },
         {
           "name": "Set a sleep timer",
@@ -7739,7 +7739,7 @@
         },
         {
           "name": "Keep working",
-          "text": "Your mix is remembered on this device, so next time you only need to press Play mix."
+          "text": "Save your favourite mixes with a name. They are remembered on this device, so next time you only need to press Play mix."
         }
       ],
       "faq": [
@@ -7752,8 +7752,8 @@
           "answer": "No. Every sound is created live in your browser with the Web Audio API. There is nothing to download or stream, so it works offline after the page has loaded."
         },
         {
-          "question": "What are alpha binaural beats?",
-          "answer": "Two slightly different tones are played, one in each ear, 10 Hz apart. Some people find the effect relaxing. You need headphones for it to work, and the science is mixed, so treat it as an option rather than a promise."
+          "question": "What are binaural beats?",
+          "answer": "Two slightly different tones are played, one in each ear. The difference (for example 10 Hz for alpha) is the beat. Some people find them relaxing or helpful for focus. You need headphones for it to work, and the science is mixed, so treat it as an option rather than a promise."
         },
         {
           "question": "Why can't I hear anything?",
@@ -9661,6 +9661,67 @@
     "relax": "Relax & stretch",
     "train": "Focus-training games",
     "fun": "Casual games"
+  },
+  "ui": {
+    "dropDefault": "Drag & drop files here, or click to browse",
+    "browse": "Browse files",
+    "dropToLoad": "Drop file to load",
+    "fullscreen": "Fullscreen",
+    "exitFullscreen": "Exit",
+    "footerExtension": "Get the Chrome extension",
+    "footerPrivacy": "Privacy Policy",
+    "footerMyData": "My data",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "download": "Download",
+    "clear": "Clear",
+    "remove": "Remove",
+    "reset": "Reset",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "loading": "Loading…",
+    "undo": "Undo",
+    "redo": "Redo",
+    "playAgain": "Play again",
+    "newGame": "New game"
+  },
+  "myData": {
+    "title": "My data",
+    "subtitle": "Everything the tools remember is stored only in this browser. Back it up, move it to another device, or erase it.",
+    "heading": "Saved on this device",
+    "empty": "Nothing is saved on this device yet.",
+    "items": "{count, plural, one {# item} other {# items}}",
+    "total": "Total: {size}",
+    "export": "Download a backup",
+    "import": "Restore from a backup",
+    "clearAll": "Erase everything",
+    "confirmClear": "Erase all saved data from this browser? This cannot be undone.",
+    "cleared": "All saved data was erased.",
+    "imported": "{count, plural, one {# item restored.} other {# items restored.}}",
+    "importError": "That file is not an EveryUtili backup.",
+    "historyNote": "Results you saved from tools (files you made) are kept separately and are erased too.",
+    "privacy": "Backups are plain files saved on your device. Nothing is sent anywhere.",
+    "group_tasks": "To-do list & priority matrix",
+    "group_habits": "Habits, journal & study log",
+    "group_flashcards": "Flashcards",
+    "group_exams": "Exams, countdowns & reminders",
+    "group_focus": "Pomodoro & focus sounds",
+    "group_games": "Game scores & settings",
+    "group_qr": "QR designs & print sheets",
+    "group_calc": "Calculator history & data",
+    "group_random": "Random tool lists",
+    "group_tools": "Recent & favourite tools, IPTV",
+    "group_other": "Other settings"
+  },
+  "favorites": {
+    "heading": "Your favourite tools",
+    "add": "Add to favourites",
+    "remove": "Remove from favourites",
+    "empty": "Tap the star on any tool to keep it here."
   },
   "recentTools": {
     "heading": "Recently Used",

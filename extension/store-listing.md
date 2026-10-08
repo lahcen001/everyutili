@@ -12,7 +12,7 @@ EveryUtili — Free Online Tools
 
 ## Summary (132 characters max)
 
-Replace your New Tab with instant search across 100+ free, privacy-first tools — file converters, PDF tools, calculators & more.
+Replace your New Tab with instant search across 140+ free, privacy-first tools — file converters, PDF tools, calculators & more.
 
 ## Description (full)
 
@@ -23,7 +23,7 @@ every time.
 
 **What you get**
 
-- Instant search across all 100+ tools, with typo-tolerant fuzzy matching and
+- Instant search across all 140+ tools, with typo-tolerant fuzzy matching and
   acronym shortcuts (type "jtp" to jump straight to JPG to PNG)
 - A dual-engine search bar — search your tools by default, or switch to
   Google with one keystroke (Tab) or a "g " prefix
@@ -93,7 +93,7 @@ exactly), not a placeholder shape.
    date, floating search bar, "Quick Access" shelf
 2. `store-assets-v2/screenshot-2-search.png` — Smart dual-engine search:
    active query, EveryUtili/Google engine pill, filtered results dropdown
-3. `store-assets-v2/screenshot-3-tools.png` — 100+ tool suite as a bento grid
+3. `store-assets-v2/screenshot-3-tools.png` — 140+ tool suite as a bento grid
    across the 4 categories (Media, Documents, Developer, Financial)
 
 These are designed mockups (canvas-rendered via `logo.html`), not literal

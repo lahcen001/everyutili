@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -227,6 +228,7 @@ function Wheel({ entries, colors, size, rotation, spinning, svgRef, pointerRef, 
 }
 
 export default function WheelSpinner() {
+  const t = useTranslations("ui");
   useTrackTool("wheel-spinner");
   const [input, setInput] = usePersisted("everyutili_wheel_entries", "Pizza\nSushi\nTacos\nBurgers\nSalad\nPasta");
   const [paletteId, setPaletteId] = usePersisted("everyutili_wheel_palette", "vibrant");
@@ -532,9 +534,9 @@ export default function WheelSpinner() {
         >
           <div className="flex items-center justify-between gap-2 px-4 pt-3">
             <p className="text-xs font-medium text-muted-foreground">Click the centre or press Spin</p>
-            <Button size="sm" variant="outline" onClick={toggleFullscreen} aria-label={isFs ? "Exit fullscreen" : "Fullscreen"}>
+            <Button size="sm" variant="outline" onClick={toggleFullscreen} aria-label={isFs ? t("exitFullscreen") : t("fullscreen")}>
               {isFs ? <Minimize2 className="h-3.5 w-3.5" /> : <Maximize2 className="h-3.5 w-3.5" />}
-              {isFs ? "Exit" : "Fullscreen"}
+              {isFs ? t("exitFullscreen") : t("fullscreen")}
             </Button>
           </div>
 

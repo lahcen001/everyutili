@@ -14,6 +14,8 @@ interface ToolLayoutProps {
   wide?: boolean;
   /** Extra-polished control styling (used by the media tools). */
   pro?: boolean;
+  /** Small controls shown beside the privacy badge (for example the favourite star). */
+  actions?: ReactNode;
 }
 
 export async function ToolLayout({
@@ -24,10 +26,14 @@ export async function ToolLayout({
   aboveTool,
   wide = false,
   pro = false,
+  actions,
 }: ToolLayoutProps) {
   const header = (compact: boolean) => (
     <div className={compact ? "mt-3 flex flex-col items-center gap-2 text-center" : "mt-4 flex flex-col items-center gap-3 text-center"}>
-      <PrivacyBadge />
+      <div className="flex items-center gap-2">
+        <PrivacyBadge />
+        {actions}
+      </div>
       <h1
         className={
           compact

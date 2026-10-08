@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FavoriteToolButton } from "@/components/tool-shell/FavoriteToolButton";
 import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import { hasLocale } from "next-intl";
@@ -114,6 +115,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
         aboveTool={<QuickAnswer locale={locale} answer={content.quickAnswer} />}
         wide={tool.layout === "workspace"}
         pro={tool.category === "media"}
+        actions={<FavoriteToolButton slug={tool.slug} />}
       >
         <ToolErrorBoundary>
           <ToolComponent />

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>You are offline – EveryUtili</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; background: #f8fafc; color: #0f172a; text-align: center; padding: 24px; }
+    @media (prefers-color-scheme: dark) { body { background: #0b1220; color: #e2e8f0; } }
+    main { max-width: 28rem; }
+    h1 { font-size: 1.6rem; margin: 0 0 .5rem; }
+    p { color: #64748b; line-height: 1.5; }
+    a { display: inline-block; margin-top: 1rem; background: #635bff; color: #fff; padding: .7rem 1.4rem; border-radius: 999px; text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>You are offline</h1>
+    <p>This page hasn't been saved on your device yet. Tools you opened before still work offline — go back to one of them, or reconnect and try again.</p>
+    <a href="/en" onclick="location.reload(); return false;">Try again</a>
+  </main>
+</body>
+</html>

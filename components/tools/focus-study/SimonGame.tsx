@@ -96,7 +96,7 @@ export default function SimonGame() {
   };
 
   return (
-    <FullscreenStage className="rounded-2xl border border-border p-4 sm:p-8" label="Fullscreen">
+    <FullscreenStage className="rounded-2xl border border-border p-4 sm:p-8">
       {(isFs) => (
         <div className="mx-auto flex w-full max-w-md flex-col items-center gap-5 py-6 text-center">
           <div className="flex w-full items-center justify-between pe-28 text-sm">

@@ -10,6 +10,7 @@ export async function SiteFooter() {
   const t = await getTranslations("categories");
   const tNav = await getTranslations("nav");
   const tSite = await getTranslations("site");
+  const tUi = await getTranslations("ui");
 
   return (
     <footer className="border-t border-border bg-muted/30">
@@ -53,11 +54,15 @@ export async function SiteFooter() {
         </p>
         <p className="mt-1 flex items-center justify-center gap-3">
           <Link href="/extension" className="font-medium text-primary hover:underline">
-            Get the Chrome extension
+            {tUi("footerExtension")}
           </Link>
           <span aria-hidden="true">&middot;</span>
           <Link href="/privacy" className="hover:text-foreground hover:underline">
-            Privacy Policy
+            {tUi("footerPrivacy")}
+          </Link>
+          <span aria-hidden="true">&middot;</span>
+          <Link href="/my-data" className="hover:text-foreground hover:underline">
+            {tUi("footerMyData")}
           </Link>
         </p>
       </div>

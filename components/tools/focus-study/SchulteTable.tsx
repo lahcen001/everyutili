@@ -62,7 +62,7 @@ export default function SchulteTable() {
   };
 
   return (
-    <FullscreenStage className="rounded-2xl border border-border p-4 sm:p-6" label="Fullscreen">
+    <FullscreenStage className="rounded-2xl border border-border p-4 sm:p-6">
       {(isFs) => (
         <div className="mx-auto flex w-full flex-col gap-4 py-4" style={{ maxWidth: isFs ? "min(80vh, 90vw)" : 30 * 16 }}>
           <div className="flex flex-wrap items-center gap-2 pe-28">

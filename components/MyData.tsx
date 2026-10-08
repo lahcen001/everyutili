@@ -4,6 +4,7 @@ import * as React from "react";
 import { DatabaseBackup, Download, ShieldCheck, Trash2, Upload } from "lucide-react";
 import { useTranslations } from "next-intl";
 
+import { AppSettings } from "@/components/pwa/AppSettings";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { downloadBlob } from "@/lib/downloadBlob";
@@ -78,6 +79,8 @@ export function MyData() {
         <h1 className="text-3xl font-extrabold tracking-tight">{t("title")}</h1>
         <p className="max-w-lg text-balance text-muted-foreground">{t("subtitle")}</p>
       </div>
+
+      <AppSettings />
 
       <Card className="space-y-4 p-5">
         <div className="flex items-center justify-between">

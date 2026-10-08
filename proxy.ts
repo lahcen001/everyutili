@@ -20,6 +20,6 @@ export const config = {
   // - static files with a file extension (favicon.ico, images, etc.)
   // - the top-level metadata routes served at true root
   matcher: [
-    "/((?!api|_next|_vercel|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)",
+    "/((?!api|_next|_vercel|share-target|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)",
   ],
 };

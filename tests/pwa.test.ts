@@ -18,6 +18,16 @@ describe("installable app", () => {
     expect(sizes).toContain("512x512");
     expect((m.icons ?? []).some((i) => i.purpose === "maskable")).toBe(true);
   });
+  it("offers app shortcuts and receives shared files", () => {
+    const full = m as unknown as { shortcuts: { url: string }[]; share_target: { action: string; method: string; params: { files: { name: string }[] } }; id: string; display_override: string[] };
+    expect(full.shortcuts.length).toBeGreaterThanOrEqual(3);
+    for (const s of full.shortcuts) expect(s.url).toMatch(/^\/tools\//);
+    expect(full.share_target.action).toBe("/share-target");
+    expect(full.share_target.method).toBe("POST");
+    expect(full.share_target.params.files[0].name).toBe("media");
+    expect(full.display_override).toContain("standalone");
+    expect(full.id).toBeTruthy();
+  });
   it("ships every icon and the offline page it refers to", () => {
     for (const icon of m.icons ?? []) expect(existsSync(path.join(root, "public", icon.src)), icon.src).toBe(true);
     expect(existsSync(path.join(root, "public/offline.html"))).toBe(true);
@@ -28,5 +38,8 @@ describe("installable app", () => {
     expect(sw).toContain("/offline.html");
     expect(sw).toContain("caches.delete");
     expect(sw).toContain('req.method !== "GET"');
+    expect(sw).toContain("SKIP_WAITING");
+    expect(sw).toContain("/share-target");
+    expect(sw).toContain("LIMITS");
   });
 });

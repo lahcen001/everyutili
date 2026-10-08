@@ -43,11 +43,29 @@ export function ReminderNotifier() {
         /* notifications unavailable */
       }
     };
-    const first = window.setTimeout(check, 4000);
-    const id = window.setInterval(check, EVERY_MS);
+    // The app icon on the home screen shows how many reminders are waiting (installed app only).
+    const badge = () => {
+      try {
+        const nav = navigator as Navigator & { setAppBadge?: (n?: number) => Promise<void>; clearAppBadge?: () => Promise<void> };
+        if (!nav.setAppBadge) return;
+        const count = loadReminders().filter((r) => r.kind !== "timer").length;
+        void (count > 0 ? nav.setAppBadge(count) : nav.clearAppBadge?.())?.catch(() => {});
+      } catch {
+        /* badges unavailable */
+      }
+    };
+    const both = () => {
+      check();
+      badge();
+    };
+    const first = window.setTimeout(both, 4000);
+    const id = window.setInterval(both, EVERY_MS);
+    const onVisible = () => document.visibilityState === "visible" && badge();
+    document.addEventListener("visibilitychange", onVisible);
     return () => {
       window.clearTimeout(first);
       window.clearInterval(id);
+      document.removeEventListener("visibilitychange", onVisible);
     };
   }, [t, text]);
 

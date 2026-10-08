@@ -13,7 +13,7 @@ export async function SiteFooter() {
   const tUi = await getTranslations("ui");
 
   return (
-    <footer className="border-t border-border bg-muted/30">
+    <footer className="site-footer border-t border-border bg-muted/30">
       <div className="mx-auto grid max-w-6xl gap-6 px-4 py-8 sm:grid-cols-2 md:grid-cols-4">
         {CATEGORIES.map((category) => {
           const topTools = TOOLS.filter((tool) => tool.category === category)

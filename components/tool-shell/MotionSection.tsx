@@ -3,6 +3,8 @@
 import type { ReactNode } from "react";
 import { motion } from "framer-motion";
 
+import { useAppMode } from "@/components/pwa/useAppMode";
+
 /**
  * Thin client boundary that fades/slides its children in on mount. Kept
  * separate from ToolLayout (a server component) so the surrounding
@@ -10,6 +12,9 @@ import { motion } from "framer-motion";
  * itself needs a client-side entrance animation.
  */
 export function MotionSection({ children }: { children: ReactNode }) {
+  const { lite } = useAppMode();
+  // On older phones (lite mode) skip the entrance animation entirely.
+  if (lite) return <div>{children}</div>;
   return (
     <motion.div
       initial={{ opacity: 0, y: 12 }}

@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
+import { AppRuntime } from "@/components/pwa/AppRuntime";
+import { BottomNav } from "@/components/pwa/BottomNav";
+import { InstallBanner } from "@/components/pwa/InstallBanner";
+import { UpdateBar } from "@/components/pwa/UpdateBar";
 import { ReminderNotifier } from "@/components/ReminderNotifier";
 import { HistoryCleanup } from "@/components/HistoryCleanup";
 import type { ReactNode, CSSProperties } from "react";
@@ -94,7 +97,16 @@ interface LocaleLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
-export const viewport: Viewport = { themeColor: "#635bff", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b0d13" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+  // lets the app use the whole screen on phones with notches; the page adds safe-area padding itself
+  viewportFit: "cover",
+};
 
 export async function generateMetadata({
   params,
@@ -200,10 +212,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         <NextIntlClientProvider>
           <ThemeProvider>
             <ReminderNotifier />
-            <ServiceWorkerRegister />
+            <AppRuntime />
+            <UpdateBar />
+            <InstallBanner />
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />
+            <BottomNav />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import QRCode from "qrcode";
+import { useSearchParams } from "next/navigation";
 import { Download, ImagePlus, Plus, Printer, QrCode, Trash2, X } from "lucide-react";
 
 import { FileDropTarget } from "@/components/tool-shell/FileDropTarget";
@@ -131,9 +132,12 @@ function matrixFor(text: string, ec: Ec) {
 
 export default function QrCodeGenerator() {
   useTrackTool("qr-code-generator");
-  const [kind, setKind] = React.useState<QrKind>("url");
-  const [url, setUrl] = React.useState("https://everyutili.com");
-  const [freeText, setFreeText] = React.useState("");
+  // A link or text shared from another app arrives as ?text=… (see the Share page)
+  const shared = useSearchParams().get("text")?.trim() ?? "";
+  const sharedIsLink = /^https?:\/\/\S+$/i.test(shared);
+  const [kind, setKind] = React.useState<QrKind>(shared && !sharedIsLink ? "text" : "url");
+  const [url, setUrl] = React.useState(sharedIsLink ? shared : "https://everyutili.com");
+  const [freeText, setFreeText] = React.useState(shared && !sharedIsLink ? shared : "");
   const [wifi, setWifi] = React.useState({ ssid: "", password: "", security: "WPA" as "WPA" | "WEP" | "nopass", hidden: false });
   const [mail, setMail] = React.useState({ to: "", subject: "", body: "" });
   const [phone, setPhone] = React.useState("");

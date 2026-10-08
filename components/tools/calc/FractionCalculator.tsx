@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { CalcFrame } from "@/components/tools/calc/CalcFrame";
+import { FitText } from "@/components/tools/calc/FitText";
 import { Keypad, type KeyDef } from "@/components/tools/calc/Keypad";
 import { applyKey } from "@/lib/calc/keys";
 import * as F from "@/lib/calc/fraction";
@@ -88,11 +89,11 @@ export default function FractionCalculator() {
   return (
     <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]">
       <div className="space-y-4">
-        <Card className="space-y-5 bg-gradient-to-br from-primary/5 to-fuchsia-500/5 p-5">
+        <Card className="space-y-5 p-5">
           <p className="text-xs text-muted-foreground">Tap a box, then use the keys. Leave the whole-number box empty for a plain fraction.</p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             {frac("a", "First fraction")}
-            <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-2xl font-black text-primary-foreground">{op}</span>
+            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-2xl font-semibold text-primary">{op}</span>
             {frac("b", "Second fraction")}
           </div>
         </Card>
@@ -104,9 +105,9 @@ export default function FractionCalculator() {
           ) : (
             <>
               <div className="grid gap-3 sm:grid-cols-3">
-                <div className="rounded-xl bg-primary/10 p-3 text-center"><p className="text-xs text-muted-foreground">Fraction</p><p className="font-mono text-2xl font-extrabold">{F.toString(calc.r)}</p></div>
-                <div className="rounded-xl bg-muted p-3 text-center"><p className="text-xs text-muted-foreground">Mixed number</p><p className="font-mono text-2xl font-extrabold">{F.toMixedString(calc.r)}</p></div>
-                <div className="rounded-xl bg-muted p-3 text-center"><p className="text-xs text-muted-foreground">Decimal</p><p className="font-mono text-2xl font-extrabold">{Number(F.toDecimal(calc.r).toPrecision(10))}</p></div>
+                <div className="min-w-0 rounded-xl bg-primary/10 p-3 text-center"><p className="text-xs text-muted-foreground">Fraction</p><FitText max={28} className="font-mono font-semibold">{F.toString(calc.r)}</FitText></div>
+                <div className="min-w-0 rounded-xl bg-muted/60 p-3 text-center"><p className="text-xs text-muted-foreground">Mixed number</p><FitText max={28} className="font-mono font-semibold">{F.toMixedString(calc.r)}</FitText></div>
+                <div className="min-w-0 rounded-xl bg-muted/60 p-3 text-center"><p className="text-xs text-muted-foreground">Decimal</p><FitText max={28} className="font-mono font-semibold">{String(Number(F.toDecimal(calc.r).toPrecision(10)))}</FitText></div>
               </div>
               <div className="rounded-xl border border-border p-3">
                 <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Steps</p>

@@ -22,14 +22,17 @@ export interface KeyDef {
   disabled?: boolean;
 }
 
-/** Tactile, colour-coded keys with a solid "edge" that presses down. Designed for the dark CalcFrame. */
+/**
+ * Flat, calm keys that follow the site's light/dark theme. One accent colour (the site's primary) marks
+ * operators and equals; everything else is neutral.
+ */
 const STYLE: Record<KeyKind, string> = {
-  num: "bg-gradient-to-b from-slate-500 to-slate-600 text-white text-xl font-semibold shadow-[0_4px_0_#1e293b,inset_0_1px_0_rgba(255,255,255,0.25)]",
-  fn: "bg-gradient-to-b from-slate-600 to-slate-700 text-slate-100 text-sm font-semibold shadow-[0_4px_0_#0f172a,inset_0_1px_0_rgba(255,255,255,0.18)]",
-  op: "bg-gradient-to-b from-indigo-400 to-indigo-500 text-white text-xl font-bold shadow-[0_4px_0_#312e81,inset_0_1px_0_rgba(255,255,255,0.3)]",
-  act: "bg-gradient-to-b from-rose-400 to-rose-500 text-white text-base font-bold shadow-[0_4px_0_#881337,inset_0_1px_0_rgba(255,255,255,0.3)]",
-  eq: "bg-gradient-to-b from-fuchsia-400 via-violet-500 to-indigo-500 text-white text-2xl font-black shadow-[0_4px_0_#4c1d95,0_0_24px_rgba(168,85,247,0.5),inset_0_1px_0_rgba(255,255,255,0.35)]",
-  mod: "bg-gradient-to-b from-amber-300 to-amber-400 text-slate-900 text-sm font-bold shadow-[0_4px_0_#92400e,inset_0_1px_0_rgba(255,255,255,0.5)]",
+  num: "bg-card text-foreground text-xl font-medium border border-border hover:bg-muted",
+  fn: "bg-muted/60 text-foreground/80 text-[15px] font-medium hover:bg-muted",
+  op: "bg-primary/10 text-primary text-xl font-semibold hover:bg-primary/20",
+  act: "bg-muted/60 text-destructive text-base font-semibold hover:bg-destructive/10",
+  eq: "bg-primary text-primary-foreground text-2xl font-semibold hover:bg-primary/90",
+  mod: "bg-transparent text-muted-foreground text-xs font-semibold border border-dashed border-border hover:bg-muted/60 hover:text-foreground",
 };
 
 const buzz = () => {
@@ -43,7 +46,7 @@ const buzz = () => {
 /** A grid of calculator keys. Rows are arrays of keys; `cols` is the width of the grid. */
 export function Keypad({ rows, cols, onPress, className }: { rows: KeyDef[][]; cols: number; onPress: (value: string) => void; className?: string }) {
   return (
-    <div className={cn("grid gap-x-2 gap-y-2.5 sm:gap-x-2.5 sm:gap-y-3", className)} style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }} role="group" aria-label="Calculator keys">
+    <div className={cn("grid gap-2", className)} style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }} role="group" aria-label="Calculator keys">
       {rows.flat().map((k, i) => {
         const value = k.value ?? (typeof k.label === "string" ? k.label : "");
         return (
@@ -60,13 +63,13 @@ export function Keypad({ rows, cols, onPress, className }: { rows: KeyDef[][]; c
             aria-label={k.aria}
             aria-pressed={k.active}
             className={cn(
-              "relative flex h-12 select-none items-center justify-center rounded-2xl outline-none transition-[transform,box-shadow,filter] duration-75 hover:brightness-110 focus-visible:ring-2 focus-visible:ring-white/80 active:translate-y-[3px] active:shadow-none disabled:pointer-events-none disabled:opacity-30 sm:h-14",
+              "relative flex h-12 min-w-0 select-none items-center justify-center rounded-2xl outline-none transition-[transform,background-color,color] duration-100 focus-visible:ring-2 focus-visible:ring-primary active:scale-95 disabled:pointer-events-none disabled:opacity-35 sm:h-14",
               STYLE[k.kind ?? "num"],
-              k.active && "ring-2 ring-white/90 brightness-110"
+              k.active && "!border-primary !bg-primary !text-primary-foreground"
             )}
             style={k.span && k.span > 1 ? { gridColumn: `span ${k.span}` } : undefined}
           >
-            {k.sub && <span className="pointer-events-none absolute right-1.5 top-0.5 text-[9px] font-semibold leading-none text-white/55">{k.sub}</span>}
+            {k.sub && <span className="pointer-events-none absolute right-2 top-1 text-[9px] font-medium leading-none text-muted-foreground">{k.sub}</span>}
             {k.label}
           </button>
         );

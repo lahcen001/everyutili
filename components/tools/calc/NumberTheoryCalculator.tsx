@@ -5,6 +5,7 @@ import * as React from "react";
 import { Card } from "@/components/ui/card";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { CalcFrame } from "@/components/tools/calc/CalcFrame";
+import { FitText } from "@/components/tools/calc/FitText";
 import { Keypad, type KeyDef } from "@/components/tools/calc/Keypad";
 import { applyKey } from "@/lib/calc/keys";
 import { divisors, factorString, gcd, gcdAll, isPrime, lcmAll, primeFactors } from "@/lib/calc/numtheory";
@@ -59,8 +60,8 @@ export default function NumberTheoryCalculator() {
           <>
             {parsed.nums.length > 1 && (
               <div className="grid gap-3 sm:grid-cols-2" aria-live="polite">
-                <div className="rounded-2xl bg-primary/10 p-4 text-center"><p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">GCD (greatest common divisor)</p><p className="font-mono text-4xl font-extrabold">{parsed.gcd.toLocaleString()}</p>{parsed.coprime && <p className="text-xs text-muted-foreground">These numbers are coprime.</p>}</div>
-                <div className="rounded-2xl bg-fuchsia-500/10 p-4 text-center"><p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">LCM (least common multiple)</p><p className="font-mono text-4xl font-extrabold">{parsed.lcm.toLocaleString()}</p></div>
+                <div className="min-w-0 rounded-2xl bg-primary/10 p-4 text-center"><p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">GCD (greatest common divisor)</p><FitText max={40} className="font-mono font-semibold">{parsed.gcd.toLocaleString()}</FitText>{parsed.coprime && <p className="text-xs text-muted-foreground">These numbers are coprime.</p>}</div>
+                <div className="min-w-0 rounded-2xl bg-muted/60 p-4 text-center"><p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">LCM (least common multiple)</p><FitText max={40} className="font-mono font-semibold">{parsed.lcm.toLocaleString()}</FitText></div>
               </div>
             )}
             {parsed.euclid.length > 0 && (
@@ -76,7 +77,7 @@ export default function NumberTheoryCalculator() {
                 const d = n <= 1e7 ? divisors(n) : null;
                 return (
                   <Card key={i} className="space-y-1.5 p-4">
-                    <div className="flex items-center justify-between"><span className="font-mono text-2xl font-extrabold">{n.toLocaleString()}</span><span className={isPrime(n) ? "rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-bold text-emerald-600" : "rounded-full bg-muted px-2.5 py-0.5 text-xs font-bold text-muted-foreground"}>{n === 1 ? "neither" : isPrime(n) ? "prime" : "composite"}</span></div>
+                    <div className="flex items-center justify-between"><span className="min-w-0 truncate font-mono text-2xl font-semibold">{n.toLocaleString()}</span><span className={isPrime(n) ? "rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary" : "shrink-0 rounded-full bg-muted px-2.5 py-0.5 text-xs font-semibold text-muted-foreground"}>{n === 1 ? "neither" : isPrime(n) ? "prime" : "composite"}</span></div>
                     {n > 1 && <p className="font-mono text-sm"><span className="text-muted-foreground">Prime factors: </span>{factorString(f)}</p>}
                     {d && <p className="text-xs text-muted-foreground">{d.length} divisor{d.length === 1 ? "" : "s"}: {d.length <= 40 ? d.join(", ") : `${d.slice(0, 40).join(", ")}…`}</p>}
                   </Card>

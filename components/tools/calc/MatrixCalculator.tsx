@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { CalcFrame } from "@/components/tools/calc/CalcFrame";
+import { FitText } from "@/components/tools/calc/FitText";
 import { Keypad, type KeyDef } from "@/components/tools/calc/Keypad";
 import { applyKey } from "@/lib/calc/keys";
 import * as M from "@/lib/calc/matrix";
@@ -105,10 +106,10 @@ export default function MatrixCalculator() {
               <div className="flex flex-col items-center gap-2">
                 <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{out.title}</p>
                 {out.error && <p role="alert" className="text-sm text-destructive">{out.error}</p>}
-                {out.value !== undefined && <p className="font-mono text-3xl font-extrabold">{fmt(out.value)}</p>}
+                {out.value !== undefined && <FitText max={36} className="text-center font-mono font-semibold">{fmt(out.value)}</FitText>}
                 {out.matrix && (
                   <div className="grid gap-1.5" style={{ gridTemplateColumns: `repeat(${out.matrix[0].length}, minmax(3.5rem, 1fr))` }}>
-                    {out.matrix.flat().map((v, i) => <span key={i} className="rounded-lg bg-primary/10 px-2 py-2 text-center font-mono text-base font-bold">{fmt(v)}</span>)}
+                    {out.matrix.flat().map((v, i) => <span key={i} className="min-w-0 truncate rounded-lg bg-primary/10 px-2 py-2 text-center font-mono text-base font-semibold" title={fmt(v)}>{fmt(v)}</span>)}
                   </div>
                 )}
               </div>

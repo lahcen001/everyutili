@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { CalcFrame } from "@/components/tools/calc/CalcFrame";
+import { FitText } from "@/components/tools/calc/FitText";
 import { Keypad, type KeyDef } from "@/components/tools/calc/Keypad";
 import { applyKey } from "@/lib/calc/keys";
 import { formatRoot, solveQuadratic } from "@/lib/calc/quadratic";
@@ -60,7 +61,7 @@ export default function QuadraticSolver() {
   return (
     <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,20rem)]">
       <div className="space-y-4">
-        <Card className="space-y-3 bg-gradient-to-br from-primary/5 to-fuchsia-500/5 p-5">
+        <Card className="space-y-3 p-5">
           <p className="text-xs text-muted-foreground">Solve ax² + bx + c = 0. Tap a box and use the keys.</p>
           <div className="flex flex-wrap items-center justify-center gap-2 text-xl">
             {input("a", "x² +")}
@@ -78,9 +79,9 @@ export default function QuadraticSolver() {
               <p className="text-center font-mono text-lg font-semibold">{result.eq}</p>
               <div className={cn("grid gap-3", result.r.roots.length > 1 ? "sm:grid-cols-2" : "")}>
                 {result.r.roots.map((root, i) => (
-                  <div key={i} className="rounded-xl bg-primary/10 p-4 text-center">
+                  <div key={i} className="min-w-0 rounded-xl bg-primary/10 p-4 text-center">
                     <p className="text-xs text-muted-foreground">{result.r.roots.length > 1 ? `x${i === 0 ? "₁" : "₂"}` : "x"}</p>
-                    <p className="font-mono text-2xl font-extrabold">{formatRoot(root)}</p>
+                    <FitText max={28} className="font-mono font-semibold">{formatRoot(root)}</FitText>
                   </div>
                 ))}
               </div>

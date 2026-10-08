@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useTrackTool } from "@/hooks/useTrackTool";
 import { CalcFrame, CalcScreen } from "@/components/tools/calc/CalcFrame";
+import { FitText } from "@/components/tools/calc/FitText";
 import { Keypad, type KeyDef } from "@/components/tools/calc/Keypad";
 import * as R from "@/lib/calc/radix";
 
@@ -133,9 +134,9 @@ export default function ProgrammerCalculator() {
             </div>
           </div>
           <CalcScreen>
-            <p className="h-5 font-mono text-sm text-slate-400">{pending ? `${show(pending.left)} ${pending.label}` : ""}</p>
-            <p className="min-h-10 break-all font-mono text-3xl font-semibold" aria-live="polite">{text || "0"}</p>
-            {error && <p role="alert" className="font-mono text-sm text-rose-400">{error}</p>}
+            <p className="h-5 font-mono text-sm text-muted-foreground">{pending ? `${show(pending.left)} ${pending.label}` : ""}</p>
+            <FitText max={34} min={14} className="font-mono font-medium">{text || "0"}</FitText>
+            {error && <p role="alert" className="font-mono text-sm text-destructive">{error}</p>}
           </CalcScreen>
           <div className="grid gap-2 sm:grid-cols-2">
             {BASES.map((b) => (

@@ -10,6 +10,7 @@ import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import { CalcFrame, CalcScreen } from "@/components/tools/calc/CalcFrame";
 import { Keypad, type KeyDef } from "@/components/tools/calc/Keypad";
 import { useCaretInput } from "@/components/tools/calc/useCaretInput";
+import { useFitFont } from "@/components/tools/calc/useFitFont";
 import { CalcError, calculate, formatNumber, type AngleMode } from "@/lib/calc/expr";
 
 interface Saved {
@@ -27,6 +28,8 @@ export default function ScientificCalculator() {
   const [error, setError] = React.useState<string | null>(null);
   const [copied, setCopied] = React.useState(false);
   const { ref, insert, backspace } = useCaretInput(expr, setExpr);
+  const fitRef = React.useRef<HTMLInputElement | null>(null);
+  useFitFont(fitRef, expr, 44, 18);
   const ans = saved.history[0] ? Number(saved.history[0].result.replace("−", "-")) : 0;
 
   const preview = React.useMemo(() => {
@@ -111,7 +114,6 @@ export default function ScientificCalculator() {
   };
 
   const shown = error ?? (preview !== null && !done ? preview : null);
-  const size = expr.length > 30 ? "text-xl" : expr.length > 20 ? "text-2xl" : expr.length > 12 ? "text-3xl" : "text-4xl sm:text-5xl";
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(done ? expr : (preview ?? expr));
@@ -123,19 +125,19 @@ export default function ScientificCalculator() {
   };
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,27rem)_minmax(0,1fr)] lg:justify-center">
+    <div className="grid gap-5 lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:justify-center">
       <CalcFrame>
-        <CalcScreen className="mb-4">
-          <div className="mb-2 flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider">
-            <button onClick={() => press("ANGLE")} className="rounded-md bg-indigo-500/25 px-2 py-1 text-indigo-200 transition hover:bg-indigo-500/40" aria-label="Switch degrees or radians">{saved.angle}</button>
-            {second && <span className="rounded-md bg-amber-400/25 px-2 py-1 text-amber-200">2nd</span>}
-            {saved.memory !== 0 && <span className="rounded-md bg-white/10 px-2 py-1 normal-case text-slate-300">M = {formatNumber(saved.memory)}</span>}
-            <button onClick={() => void copy()} className="ms-auto flex items-center gap-1 rounded-md px-2 py-1 normal-case text-slate-400 transition hover:bg-white/10 hover:text-white" aria-label="Copy result">
-              {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />} {copied ? "Copied" : "Copy"}
+        <CalcScreen className="mb-3">
+          <div className="mb-1 flex items-center gap-1.5 text-xs font-semibold">
+            <button onClick={() => press("ANGLE")} className="rounded-md border border-border px-2 py-0.5 uppercase tracking-wide text-muted-foreground transition hover:bg-background hover:text-foreground" aria-label="Switch degrees or radians">{saved.angle}</button>
+            {second && <span className="rounded-md bg-primary px-2 py-0.5 text-primary-foreground">2nd</span>}
+            {saved.memory !== 0 && <span className="rounded-md border border-border px-2 py-0.5 text-muted-foreground">M = {formatNumber(saved.memory)}</span>}
+            <button onClick={() => void copy()} className="ms-auto flex items-center gap-1 rounded-md px-2 py-0.5 text-muted-foreground transition hover:bg-background hover:text-foreground" aria-label="Copy result">
+              {copied ? <Check className="h-3.5 w-3.5 text-primary" /> : <Copy className="h-3.5 w-3.5" />} {copied ? "Copied" : "Copy"}
             </button>
           </div>
           <input
-            ref={ref}
+            ref={(el) => { ref.current = el; fitRef.current = el; }}
             value={expr}
             onChange={(e) => { setExpr(e.target.value); setDone(false); setError(null); }}
             onKeyDown={onKey}
@@ -144,14 +146,14 @@ export default function ScientificCalculator() {
             spellCheck={false}
             aria-label="Expression"
             placeholder="0"
-            className={cn("w-full bg-transparent text-right font-mono font-semibold tracking-tight outline-none placeholder:text-slate-600", size)}
+            className="block w-full min-w-0 bg-transparent p-0 text-right font-mono font-medium tracking-tight text-foreground outline-none placeholder:text-muted-foreground/40"
           />
-          <p className={cn("mt-1 h-7 truncate font-mono text-xl transition-colors", error ? "text-rose-400" : "text-emerald-300/90")} aria-live="polite">
+          <p className={cn("mt-1 h-6 truncate font-mono text-base", error ? "text-destructive" : "text-muted-foreground")} aria-live="polite">
             {error ?? (shown !== null ? `= ${shown}` : "")}
           </p>
         </CalcScreen>
         <Keypad rows={rows} cols={5} onPress={press} />
-        <p className="mt-3 text-center text-[11px] text-slate-400">Type on your keyboard too · Enter = equals · Esc = clear</p>
+        <p className="mt-3 text-center text-[11px] text-muted-foreground">Type on your keyboard too · Enter = equals · Esc = clear</p>
       </CalcFrame>
 
       <Card className="space-y-2 p-4 lg:max-h-[40rem] lg:overflow-auto">

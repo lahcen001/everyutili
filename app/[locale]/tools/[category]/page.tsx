@@ -20,6 +20,9 @@ function isToolCategory(value: string): value is ToolCategory {
   return (CATEGORIES as readonly string[]).includes(value);
 }
 
+// Unknown tools/categories/locales are a real 404 (not a 200 "not found" page).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     CATEGORIES.map((category) => ({ locale, category }))

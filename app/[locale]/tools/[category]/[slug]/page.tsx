@@ -46,6 +46,9 @@ interface ToolPageProps {
   params: Promise<{ locale: string; category: string; slug: string }>;
 }
 
+// Unknown tools/categories/locales are a real 404 (not a 200 "not found" page).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     TOOLS.map((tool) => ({ locale, category: tool.category, slug: tool.slug }))

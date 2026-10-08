@@ -20,8 +20,14 @@ function languageAlternates(pathForLocale: (locale: string) => string) {
   return languages;
 }
 
+/**
+ * Date of the last content change. A fixed date (instead of "now") keeps the sitemap stable between
+ * builds, so search engines only see a change when we bump this on a real update.
+ */
+const LAST_CONTENT_UPDATE = new Date("2026-10-08");
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+  const lastModified = LAST_CONTENT_UPDATE;
 
   // Homepage: one entry per locale (12), each with the full hreflang cluster.
   const homeRoutes: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
@@ -32,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: languageAlternates((l) => `/${l}`) },
   }));
 
-  // Category listing pages: 4 categories x 12 locales = 48 entries.
+  // Category listing pages: every category x every locale.
   const categoryRoutes: MetadataRoute.Sitemap = routing.locales.flatMap((locale) =>
     CATEGORIES.map((category) => ({
       url: `${SITE_URL}/${locale}/tools/${category}`,
@@ -45,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // Tool pages: 36 tools x 12 locales = 432 entries.
+  // Tool pages: every tool x every locale.
   const toolRoutes: MetadataRoute.Sitemap = routing.locales.flatMap((locale) =>
     TOOLS.map((tool) => ({
       url: `${SITE_URL}/${locale}/tools/${tool.category}/${tool.slug}`,
@@ -60,5 +66,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...homeRoutes, ...categoryRoutes, ...toolRoutes];
+  // Static pages (privacy policy and the Chrome extension page).
+  const staticRoutes: MetadataRoute.Sitemap = routing.locales.flatMap((locale) =>
+    ["privacy", "extension"].map((page) => ({
+      url: `${SITE_URL}/${locale}/${page}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: page === "extension" ? 0.6 : 0.3,
+      alternates: { languages: languageAlternates((l) => `/${l}/${page}`) },
+    }))
+  );
+
+  return [...homeRoutes, ...categoryRoutes, ...toolRoutes, ...staticRoutes];
 }

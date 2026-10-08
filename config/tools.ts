@@ -416,6 +416,8 @@ export const TOOLS: ToolConfig[] = [
     name: "QR Code Generator",
     shortName: "QR Code Generator",
     relatedSlugs: ["base64-image-encoder", "favicon-generator"],
+    ssr: false,
+    layout: "workspace",
     priority: 0.98,
     changeFrequency: "weekly",
   },

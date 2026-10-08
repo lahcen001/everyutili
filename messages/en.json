@@ -8738,6 +8738,23 @@
     "close": "Close"
   },
   "privacyBadgeExtended": "Processed 100% locally in your browser via WebAssembly (Zero uploads)",
+  "reminders": {
+    "heading": "Reminders",
+    "subheading": "Things waiting for you today",
+    "todosOverdue": "{count, plural, one {# overdue task} other {# overdue tasks}}",
+    "todosToday": "{count, plural, one {# task due today} other {# tasks due today}}",
+    "habitsLeft": "{count, plural, one {# habit left to check off today} other {# habits left to check off today}}",
+    "examSoon": "{name}: {days, plural, =0 {less than a day left} one {# day left} other {# days left}}",
+    "cardsDue": "{count, plural, one {# flashcard ready to review} other {# flashcards ready to review}}",
+    "timerRunning": "Study timer running: {subject}",
+    "open": "Open",
+    "hideToday": "Hide for today",
+    "notifyOn": "Notify me",
+    "notifyEnabled": "Notifications on",
+    "notifyBlocked": "Notifications are blocked in your browser settings",
+    "notificationTitle": "EveryUtili reminders",
+    "privacyNote": "Based on data saved only in this browser. Notifications appear while EveryUtili is open in a tab."
+  },
   "recentTools": {
     "heading": "Recently Used",
     "clearAll": "Clear history"

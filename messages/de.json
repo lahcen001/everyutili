@@ -8731,6 +8731,23 @@
     "close": "Schließen"
   },
   "privacyBadgeExtended": "100% lokal in Ihrem Browser via WebAssembly verarbeitet (kein Upload)",
+  "reminders": {
+    "heading": "Erinnerungen",
+    "subheading": "Das wartet heute auf dich",
+    "todosOverdue": "{count, plural, one {# überfällige Aufgabe} other {# überfällige Aufgaben}}",
+    "todosToday": "{count, plural, one {# Aufgabe heute fällig} other {# Aufgaben heute fällig}}",
+    "habitsLeft": "{count, plural, one {# Gewohnheit heute noch abzuhaken} other {# Gewohnheiten heute noch abzuhaken}}",
+    "examSoon": "{name}: {days, plural, =0 {weniger als ein Tag übrig} one {# Tag übrig} other {# Tage übrig}}",
+    "cardsDue": "{count, plural, one {# Lernkarte bereit zur Wiederholung} other {# Lernkarten bereit zur Wiederholung}}",
+    "timerRunning": "Lerntimer läuft: {subject}",
+    "open": "Öffnen",
+    "hideToday": "Für heute ausblenden",
+    "notifyOn": "Benachrichtige mich",
+    "notifyEnabled": "Benachrichtigungen an",
+    "notifyBlocked": "Benachrichtigungen sind in deinen Browsereinstellungen blockiert",
+    "notificationTitle": "EveryUtili-Erinnerungen",
+    "privacyNote": "Basiert auf Daten, die nur in diesem Browser gespeichert sind. Benachrichtigungen erscheinen, solange EveryUtili in einem Tab geöffnet ist."
+  },
   "recentTools": {
     "heading": "Kürzlich Verwendet",
     "clearAll": "Verlauf löschen"

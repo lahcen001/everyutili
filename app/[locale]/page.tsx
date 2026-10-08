@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { RemindersShelf } from "@/components/home/RemindersShelf";
 import { ArrowRight } from "lucide-react";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -86,6 +87,8 @@ export default async function Home({ params }: HomeProps) {
         featureNoSignup={tSite("featureNoSignup")}
         searchPlaceholder={tSite("heroSearchPlaceholder", { count: TOOLS.length })}
       />
+
+      <RemindersShelf />
 
       <RecentToolsShelf />
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ReminderNotifier } from "@/components/ReminderNotifier";
 import { HistoryCleanup } from "@/components/HistoryCleanup";
 import type { ReactNode, CSSProperties } from "react";
 import { notFound } from "next/navigation";
@@ -193,6 +194,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         <HistoryCleanup />
         <NextIntlClientProvider>
           <ThemeProvider>
+            <ReminderNotifier />
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />

@@ -8731,6 +8731,23 @@
     "close": "Tutup"
   },
   "privacyBadgeExtended": "Diproses 100% secara lokal di browser Anda melalui WebAssembly (tanpa unggah)",
+  "reminders": {
+    "heading": "Pengingat",
+    "subheading": "Hal-hal yang menunggumu hari ini",
+    "todosOverdue": "{count, plural, other {# tugas terlambat}}",
+    "todosToday": "{count, plural, other {# tugas jatuh tempo hari ini}}",
+    "habitsLeft": "{count, plural, other {# kebiasaan belum dicentang hari ini}}",
+    "examSoon": "{name}: {days, plural, =0 {kurang dari sehari lagi} other {# hari lagi}}",
+    "cardsDue": "{count, plural, other {# kartu belajar siap diulang}}",
+    "timerRunning": "Timer belajar berjalan: {subject}",
+    "open": "Buka",
+    "hideToday": "Sembunyikan untuk hari ini",
+    "notifyOn": "Beri tahu saya",
+    "notifyEnabled": "Notifikasi aktif",
+    "notifyBlocked": "Notifikasi diblokir di pengaturan browser Anda",
+    "notificationTitle": "Pengingat EveryUtili",
+    "privacyNote": "Berdasarkan data yang hanya disimpan di browser ini. Notifikasi muncul selama EveryUtili terbuka di salah satu tab."
+  },
   "recentTools": {
     "heading": "Baru Digunakan",
     "clearAll": "Hapus riwayat"

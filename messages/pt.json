@@ -8731,6 +8731,23 @@
     "close": "Fechar"
   },
   "privacyBadgeExtended": "Processado 100% localmente no seu navegador via WebAssembly (sem envios)",
+  "reminders": {
+    "heading": "Lembretes",
+    "subheading": "Coisas esperando por você hoje",
+    "todosOverdue": "{count, plural, one {# tarefa atrasada} many {# de tarefas atrasadas} other {# tarefas atrasadas}}",
+    "todosToday": "{count, plural, one {# tarefa para hoje} many {# de tarefas para hoje} other {# tarefas para hoje}}",
+    "habitsLeft": "{count, plural, one {# hábito para marcar hoje} many {# de hábitos para marcar hoje} other {# hábitos para marcar hoje}}",
+    "examSoon": "{name}: {days, plural, =0 {falta menos de um dia} one {falta # dia} many {faltam # de dias} other {faltam # dias}}",
+    "cardsDue": "{count, plural, one {# flashcard pronto para revisar} many {# de flashcards prontos para revisar} other {# flashcards prontos para revisar}}",
+    "timerRunning": "Timer de estudo em andamento: {subject}",
+    "open": "Abrir",
+    "hideToday": "Ocultar por hoje",
+    "notifyOn": "Avisar-me",
+    "notifyEnabled": "Notificações ativadas",
+    "notifyBlocked": "As notificações estão bloqueadas nas configurações do navegador",
+    "notificationTitle": "Lembretes do EveryUtili",
+    "privacyNote": "Baseado em dados salvos apenas neste navegador. As notificações aparecem enquanto o EveryUtili estiver aberto em uma aba."
+  },
   "recentTools": {
     "heading": "Usados Recentemente",
     "clearAll": "Limpar histórico"

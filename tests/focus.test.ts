@@ -299,3 +299,39 @@ describe("snake", () => {
     expect(w.over).toBe(true);
   });
 });
+
+import { buildReminders } from "@/lib/focus/reminders";
+
+describe("reminders", () => {
+  const now = new Date(2026, 5, 10, 9, 0);
+  const today = "2026-06-10";
+  it("lists what needs attention today", () => {
+    const r = buildReminders(
+      {
+        todos: [
+          { done: false, due: "2026-06-08" },
+          { done: false, due: today },
+          { done: true, due: "2026-06-01" },
+          { done: false, due: "2026-07-01" },
+          { done: false, due: "" },
+        ],
+        habits: [{ done: [today] }, { done: [] }, { done: ["2026-06-09"] }],
+        countdowns: [{ name: "Far", at: now.getTime() + 40 * 86400000 }, { name: "Chem", at: now.getTime() + 2.5 * 86400000 }, { name: "Gone", at: now.getTime() - 1000 }],
+        decks: [{ cards: [{ due: now.getTime() - 5 }, { due: now.getTime() + 99999 }] }],
+        running: { subject: "Maths" },
+      },
+      now
+    );
+    const by = Object.fromEntries(r.map((x) => [x.kind, x]));
+    expect(by["todos-overdue"].count).toBe(1);
+    expect(by["todos-today"].count).toBe(1);
+    expect(by.habits.count).toBe(2);
+    expect(by.exam).toMatchObject({ name: "Chem", days: 2, tone: "red" });
+    expect(by.cards.count).toBe(1);
+    expect(by.timer.name).toBe("Maths");
+  });
+  it("shows nothing when there is nothing to do", () => {
+    expect(buildReminders({}, now)).toEqual([]);
+    expect(buildReminders({ habits: [{ done: [today] }], todos: [{ done: true, due: "2020-01-01" }] }, now)).toEqual([]);
+  });
+});

@@ -8731,6 +8731,23 @@
     "close": "Cerrar"
   },
   "privacyBadgeExtended": "Procesado 100% localmente en tu navegador mediante WebAssembly (sin subidas)",
+  "reminders": {
+    "heading": "Recordatorios",
+    "subheading": "Cosas que te esperan hoy",
+    "todosOverdue": "{count, plural, one {# tarea atrasada} other {# tareas atrasadas}}",
+    "todosToday": "{count, plural, one {# tarea para hoy} other {# tareas para hoy}}",
+    "habitsLeft": "{count, plural, one {# hábito por marcar hoy} other {# hábitos por marcar hoy}}",
+    "examSoon": "{name}: {days, plural, =0 {queda menos de un día} one {queda # día} other {quedan # días}}",
+    "cardsDue": "{count, plural, one {# tarjeta lista para repasar} other {# tarjetas listas para repasar}}",
+    "timerRunning": "Temporizador de estudio en marcha: {subject}",
+    "open": "Abrir",
+    "hideToday": "Ocultar por hoy",
+    "notifyOn": "Avisarme",
+    "notifyEnabled": "Notificaciones activadas",
+    "notifyBlocked": "Las notificaciones están bloqueadas en la configuración de tu navegador",
+    "notificationTitle": "Recordatorios de EveryUtili",
+    "privacyNote": "Basado en datos guardados solo en este navegador. Las notificaciones aparecen mientras EveryUtili está abierto en una pestaña."
+  },
   "recentTools": {
     "heading": "Usados Recientemente",
     "clearAll": "Borrar historial"

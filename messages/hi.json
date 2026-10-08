@@ -8731,6 +8731,23 @@
     "close": "बंद करें"
   },
   "privacyBadgeExtended": "WebAssembly के माध्यम से आपके ब्राउज़र में 100% स्थानीय रूप से प्रोसेस किया गया (कोई अपलोड नहीं)",
+  "reminders": {
+    "heading": "रिमाइंडर",
+    "subheading": "आज आपका इंतज़ार कर रहे काम",
+    "todosOverdue": "{count, plural, one {# काम की समय-सीमा निकल चुकी है} other {# कामों की समय-सीमा निकल चुकी है}}",
+    "todosToday": "{count, plural, one {आज पूरा करने के लिए # काम} other {आज पूरा करने के लिए # काम}}",
+    "habitsLeft": "{count, plural, one {आज टिक करने के लिए # आदत बाकी} other {आज टिक करने के लिए # आदतें बाकी}}",
+    "examSoon": "{name}: {days, plural, =0 {एक दिन से भी कम बचा है} one {# दिन बचा है} other {# दिन बचे हैं}}",
+    "cardsDue": "{count, plural, one {दोहराने के लिए # फ़्लैशकार्ड तैयार} other {दोहराने के लिए # फ़्लैशकार्ड तैयार}}",
+    "timerRunning": "स्टडी टाइमर चल रहा है: {subject}",
+    "open": "खोलें",
+    "hideToday": "आज के लिए छिपाएँ",
+    "notifyOn": "मुझे सूचित करें",
+    "notifyEnabled": "सूचनाएँ चालू हैं",
+    "notifyBlocked": "आपके ब्राउज़र की सेटिंग में सूचनाएँ ब्लॉक हैं",
+    "notificationTitle": "EveryUtili रिमाइंडर",
+    "privacyNote": "यह केवल इसी ब्राउज़र में सहेजे गए डेटा पर आधारित है। जब तक EveryUtili किसी टैब में खुला है, तब तक सूचनाएँ दिखेंगी।"
+  },
   "recentTools": {
     "heading": "हाल ही में उपयोग किए गए",
     "clearAll": "इतिहास साफ़ करें"

@@ -8731,6 +8731,23 @@
     "close": "閉じる"
   },
   "privacyBadgeExtended": "WebAssemblyでブラウザ内100%ローカル処理（アップロードなし）",
+  "reminders": {
+    "heading": "リマインダー",
+    "subheading": "今日あなたを待っていること",
+    "todosOverdue": "{count, plural, other {期限切れのタスクが#件}}",
+    "todosToday": "{count, plural, other {今日が期限のタスクが#件}}",
+    "habitsLeft": "{count, plural, other {今日チェックする習慣があと#件}}",
+    "examSoon": "{name}：{days, plural, =0 {残り1日未満} other {あと#日}}",
+    "cardsDue": "{count, plural, other {復習できるフラッシュカードが#枚}}",
+    "timerRunning": "勉強タイマー作動中：{subject}",
+    "open": "開く",
+    "hideToday": "今日は非表示",
+    "notifyOn": "通知を受け取る",
+    "notifyEnabled": "通知オン",
+    "notifyBlocked": "ブラウザの設定で通知がブロックされています",
+    "notificationTitle": "EveryUtiliのリマインダー",
+    "privacyNote": "このブラウザにだけ保存されたデータに基づいています。通知はEveryUtiliがタブで開いている間に表示されます。"
+  },
   "recentTools": {
     "heading": "最近使用したツール",
     "clearAll": "履歴を削除"

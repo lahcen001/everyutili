@@ -8731,6 +8731,23 @@
     "close": "Fermer"
   },
   "privacyBadgeExtended": "Traité à 100% localement dans votre navigateur via WebAssembly (aucun envoi)",
+  "reminders": {
+    "heading": "Rappels",
+    "subheading": "Ce qui vous attend aujourd’hui",
+    "todosOverdue": "{count, plural, one {# tâche en retard} many {# de tâches en retard} other {# tâches en retard}}",
+    "todosToday": "{count, plural, one {# tâche à terminer aujourd’hui} many {# de tâches à terminer aujourd’hui} other {# tâches à terminer aujourd’hui}}",
+    "habitsLeft": "{count, plural, one {# habitude à cocher aujourd’hui} many {# d’habitudes à cocher aujourd’hui} other {# habitudes à cocher aujourd’hui}}",
+    "examSoon": "{name} : {days, plural, =0 {moins d’un jour restant} one {# jour restant} many {# de jours restants} other {# jours restants}}",
+    "cardsDue": "{count, plural, one {# carte mémoire à réviser} many {# de cartes mémoire à réviser} other {# cartes mémoire à réviser}}",
+    "timerRunning": "Minuteur d’étude en cours : {subject}",
+    "open": "Ouvrir",
+    "hideToday": "Masquer pour aujourd’hui",
+    "notifyOn": "Me notifier",
+    "notifyEnabled": "Notifications activées",
+    "notifyBlocked": "Les notifications sont bloquées dans les paramètres de votre navigateur",
+    "notificationTitle": "Rappels EveryUtili",
+    "privacyNote": "Basé sur des données enregistrées uniquement dans ce navigateur. Les notifications s’affichent tant qu’EveryUtili est ouvert dans un onglet."
+  },
   "recentTools": {
     "heading": "Utilisés Récemment",
     "clearAll": "Effacer l'historique"

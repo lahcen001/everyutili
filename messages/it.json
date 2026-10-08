@@ -8731,6 +8731,23 @@
     "close": "Chiudi"
   },
   "privacyBadgeExtended": "Elaborato al 100% localmente nel tuo browser tramite WebAssembly (nessun caricamento)",
+  "reminders": {
+    "heading": "Promemoria",
+    "subheading": "Cose che ti aspettano oggi",
+    "todosOverdue": "{count, plural, one {# attività in ritardo} other {# attività in ritardo}}",
+    "todosToday": "{count, plural, one {# attività in scadenza oggi} other {# attività in scadenza oggi}}",
+    "habitsLeft": "{count, plural, one {# abitudine da spuntare oggi} other {# abitudini da spuntare oggi}}",
+    "examSoon": "{name}: {days, plural, =0 {manca meno di un giorno} one {manca # giorno} other {mancano # giorni}}",
+    "cardsDue": "{count, plural, one {# flashcard pronta da ripassare} other {# flashcard pronte da ripassare}}",
+    "timerRunning": "Timer di studio attivo: {subject}",
+    "open": "Apri",
+    "hideToday": "Nascondi per oggi",
+    "notifyOn": "Avvisami",
+    "notifyEnabled": "Notifiche attive",
+    "notifyBlocked": "Le notifiche sono bloccate nelle impostazioni del browser",
+    "notificationTitle": "Promemoria di EveryUtili",
+    "privacyNote": "Basato su dati salvati solo in questo browser. Le notifiche appaiono finché EveryUtili è aperto in una scheda."
+  },
   "recentTools": {
     "heading": "Usati di Recente",
     "clearAll": "Cancella cronologia"

@@ -8343,6 +8343,390 @@
           "answer": "A few minutes of a calm puzzle can rest your mind. Because it is easy to keep playing, set a short timer so your break stays a break."
         }
       ]
+    },
+    "todo-list": {
+      "seoTitle": "To-Do List Online – Free Task List with Priorities & Due Dates",
+      "metaDescription": "A free online to-do list with priorities, due dates, filters and a progress bar. Tasks are saved automatically in your browser — no account, no sign-up, private.",
+      "h1": "To-Do List with Priorities",
+      "subheading": "Write down your tasks, set a priority and a due date, and tick them off. Everything saves automatically on your device.",
+      "keywords": [
+        "to do list online",
+        "task list",
+        "todo list with due dates",
+        "free to do list",
+        "daily task planner",
+        "checklist online",
+        "homework planner",
+        "priority task list"
+      ],
+      "howTo": [
+        {
+          "name": "Add a task",
+          "text": "Type what you need to do, choose High, Medium or Low priority, optionally pick a due date, and press Enter."
+        },
+        {
+          "name": "Work from the top",
+          "text": "Tasks are sorted by priority and due date, with finished tasks at the bottom. Overdue tasks turn red."
+        },
+        {
+          "name": "Tick and edit",
+          "text": "Press the circle to mark a task as done. Click a task's text to rename it."
+        },
+        {
+          "name": "Clean up",
+          "text": "Use Completed to review finished tasks and Clear completed to remove them. Your progress bar shows how much is done."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is my to-do list saved?",
+          "answer": "Yes. It is saved automatically in your browser's local storage on this device, so it is still there when you come back. It is never uploaded, and clearing your browser data removes it."
+        },
+        {
+          "question": "Can I use it on my phone and computer?",
+          "answer": "The list lives in one browser on one device. To use it somewhere else, open the page there — it will start empty, because nothing is sent online."
+        },
+        {
+          "question": "How are tasks ordered?",
+          "answer": "Unfinished tasks come first, then by priority (High, Medium, Low), then by earliest due date."
+        },
+        {
+          "question": "What does Overdue mean?",
+          "answer": "A task with a due date earlier than today that is not finished. It is shown in red so you notice it."
+        },
+        {
+          "question": "Can I edit a task?",
+          "answer": "Yes. Click the task text, change it and press Enter."
+        },
+        {
+          "question": "Is there a limit to the number of tasks?",
+          "answer": "No fixed limit. Browsers allow several megabytes of local storage, which is room for thousands of tasks."
+        },
+        {
+          "question": "Does it work with the Pomodoro timer?",
+          "answer": "Yes. Pick a task, then run a Pomodoro session on it in the Pomodoro Timer tool."
+        }
+      ]
+    },
+    "study-time-tracker": {
+      "seoTitle": "Study Time Tracker – Free Study Log with Timer and Weekly Chart",
+      "metaDescription": "Track how long you study each subject with a one-click timer or manual entries. See today, this week and all-time totals, a 7-day chart, and export to CSV. Private and saved locally.",
+      "h1": "Study Time Tracker",
+      "subheading": "Start a timer for a subject, see where your hours go, and build a clear picture of your week.",
+      "keywords": [
+        "study time tracker",
+        "study log",
+        "study hours tracker",
+        "time tracker for students",
+        "study timer by subject",
+        "track study time",
+        "homework time tracker",
+        "study planner log"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a subject",
+          "text": "Choose one of the subjects or add your own, such as Maths or Reading."
+        },
+        {
+          "name": "Start studying",
+          "text": "Press Start studying. The timer keeps running even if you reload the page. Press Stop & save when you finish."
+        },
+        {
+          "name": "Add missed time",
+          "text": "If you forgot to start the timer, add minutes manually to a subject."
+        },
+        {
+          "name": "Review and export",
+          "text": "See today, this week and all-time totals per subject, the 7-day chart and recent sessions. Download everything as a CSV file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Where is my study data stored?",
+          "answer": "In your browser's local storage on this device only. Nothing is uploaded. Clearing your browser data deletes it, so export a CSV if you want a backup."
+        },
+        {
+          "question": "Does the timer keep going if I close the tab?",
+          "answer": "Yes. The start time is saved, so when you open the page again the timer shows the correct elapsed time. Press Stop & save to record the session."
+        },
+        {
+          "question": "Can I track several subjects?",
+          "answer": "Yes. Add as many subjects as you like. Each has its own colour and totals."
+        },
+        {
+          "question": "How is the week calculated?",
+          "answer": "The last seven days including today, based on the date each session started."
+        },
+        {
+          "question": "Can I delete a wrong entry?",
+          "answer": "Yes. Use the bin icon next to a session in Recent sessions."
+        },
+        {
+          "question": "What is in the CSV?",
+          "answer": "The start date and time, subject, minutes and note for every session, ready for a spreadsheet."
+        },
+        {
+          "question": "How much should I study?",
+          "answer": "It depends on your goals. Regular, focused sessions with breaks work better than very long ones. Use the Pomodoro Timer to structure them."
+        }
+      ]
+    },
+    "daily-journal": {
+      "seoTitle": "Daily Journal & Mood Tracker – Free Private Online Diary",
+      "metaDescription": "A private daily journal with mood tracking, gratitude and wins, a week view, search and streaks. Saved only in your browser — no account, nothing uploaded. Export anytime.",
+      "h1": "Daily Journal & Mood Tracker",
+      "subheading": "Check in with a few lines a day: your mood, what you are grateful for and what went well. Private and saved on your device.",
+      "keywords": [
+        "daily journal online",
+        "mood tracker",
+        "gratitude journal",
+        "online diary private",
+        "journal app free",
+        "reflection journal for students",
+        "daily check in",
+        "mood diary"
+      ],
+      "howTo": [
+        {
+          "name": "Pick the day",
+          "text": "Today is open by default. Tap another day in the week strip or choose any past date."
+        },
+        {
+          "name": "Choose your mood",
+          "text": "Tap one of five faces from Rough to Great. Tap again to clear it."
+        },
+        {
+          "name": "Write a little",
+          "text": "Add what you are grateful for, your wins and any notes. It saves as you type."
+        },
+        {
+          "name": "Look back",
+          "text": "Search your entries, see your streak and average mood, and export everything as a text file."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is my journal private?",
+          "answer": "Yes. Entries are stored only in your browser's local storage on this device. They are not uploaded, and there is no account. Anyone who can open this browser on your device could read them, so use a device lock."
+        },
+        {
+          "question": "Can I lose my entries?",
+          "answer": "Clearing your browser data or using a different browser or device will remove or hide them. Use Export now and then to keep a backup."
+        },
+        {
+          "question": "Why keep a gratitude journal?",
+          "answer": "Writing down a few good things each day is a simple habit that many people find lifts their mood. It is a wellbeing practice, not medical advice."
+        },
+        {
+          "question": "What is the streak?",
+          "answer": "The number of days in a row you wrote something, ending today or yesterday."
+        },
+        {
+          "question": "Can I write for past days?",
+          "answer": "Yes. Pick a date from the calendar field or tap an entry in the list."
+        },
+        {
+          "question": "Does it track my mood over time?",
+          "answer": "It shows your average mood across entries and the face for each day in the week strip."
+        },
+        {
+          "question": "Is it suitable for mental health support?",
+          "answer": "It is a reflection tool only. If you feel very low or unsafe, please talk to someone you trust or a mental health professional."
+        }
+      ]
+    },
+    "math-speed-trainer": {
+      "seoTitle": "Mental Math Speed Trainer – Free 60-Second Arithmetic Practice Game",
+      "metaDescription": "Practise addition, subtraction, multiplication and division against the clock. Choose operations and difficulty, see score and accuracy, and beat your best. Free, saved locally.",
+      "h1": "Mental Math Speed Trainer",
+      "subheading": "Answer as many sums as you can in 60 seconds. Pick the operations and the level, and try to beat your best.",
+      "keywords": [
+        "mental math practice",
+        "math speed test",
+        "arithmetic practice online",
+        "multiplication practice",
+        "60 second math game",
+        "math trainer",
+        "quick math drills",
+        "times tables practice"
+      ],
+      "howTo": [
+        {
+          "name": "Choose operations",
+          "text": "Tick any of + − × ÷. At least one must stay on."
+        },
+        {
+          "name": "Pick a level",
+          "text": "Easy uses small numbers, Medium goes up to 20 and tables to 10, and Hard goes to 100 and tables to 12."
+        },
+        {
+          "name": "Answer fast",
+          "text": "Type the answer and press Enter. A new question appears straight away."
+        },
+        {
+          "name": "Beat your best",
+          "text": "When 60 seconds are up you see your score and accuracy. Your best for each setting is saved on this device."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Are the questions always whole numbers?",
+          "answer": "Yes. Subtraction never goes below zero and division always has an exact whole-number answer."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, separately for each combination of operations and level, in your browser on this device."
+        },
+        {
+          "question": "What is a good score?",
+          "answer": "It depends on the level. Aim to improve a little each time. Accuracy matters as much as speed."
+        },
+        {
+          "question": "How can it help my studying?",
+          "answer": "Short daily drills build fluency with basic facts, which frees up your attention for harder problems."
+        },
+        {
+          "question": "Can I practise only times tables?",
+          "answer": "Yes. Turn on only × and choose a level. Hard covers tables up to 12."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. A number keypad appears on most phones when you tap the answer box."
+        },
+        {
+          "question": "Is anything sent online?",
+          "answer": "No. The questions are made in your browser and your scores stay on your device."
+        }
+      ]
+    },
+    "typing-speed-test": {
+      "seoTitle": "Typing Speed Test – Free WPM and Accuracy Test with History",
+      "metaDescription": "Test your typing speed in words per minute with 30, 60 or 120 second tests. See live WPM and accuracy and track your last results. Free, private, saved in your browser.",
+      "h1": "Typing Speed Test",
+      "subheading": "Type the passage as fast and accurately as you can and get your words per minute and accuracy.",
+      "keywords": [
+        "typing speed test",
+        "wpm test",
+        "typing test online free",
+        "words per minute test",
+        "typing practice",
+        "typing accuracy test",
+        "keyboard speed test",
+        "typing test 1 minute"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a length",
+          "text": "Choose 30, 60 or 120 seconds."
+        },
+        {
+          "name": "Start typing",
+          "text": "Click the text and type. The timer starts with your first key, and each letter turns green or red."
+        },
+        {
+          "name": "Read your result",
+          "text": "When time is up, or you reach the end of the passage, you see your words per minute and accuracy."
+        },
+        {
+          "name": "Track progress",
+          "text": "Your last results are listed on the right so you can see yourself improve."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is WPM calculated?",
+          "answer": "Every five correct characters count as one word, divided by the minutes taken. Only correctly typed characters count."
+        },
+        {
+          "question": "What is a good typing speed?",
+          "answer": "Many people type 35 to 45 WPM. Above 60 is quick and above 80 is very fast. Accuracy matters more than raw speed."
+        },
+        {
+          "question": "Why does accuracy matter?",
+          "answer": "Mistakes cost time to fix. Typing a little slower with fewer errors usually gets you further than rushing."
+        },
+        {
+          "question": "Can I fix a mistake?",
+          "answer": "You can delete with Backspace. Characters you typed wrong show in red until you correct them."
+        },
+        {
+          "question": "Are my results saved?",
+          "answer": "The last 20 results are kept in your browser on this device only. Use Clear to remove them."
+        },
+        {
+          "question": "Does it work with other keyboard layouts?",
+          "answer": "Yes, but the passages are in English, so you need to be able to type English letters and punctuation."
+        },
+        {
+          "question": "Is anything uploaded?",
+          "answer": "No. The test runs fully in your browser."
+        }
+      ]
+    },
+    "snake-game": {
+      "seoTitle": "Snake Game – Free Classic Snake Online with Touch Controls",
+      "metaDescription": "Play the classic Snake game free in your browser. Arrow keys, WASD or swipe, three speeds, saved best score and fullscreen. A relaxing break from studying.",
+      "h1": "Snake Game",
+      "subheading": "Guide the snake to eat the food without hitting the walls or yourself. A classic, quick break.",
+      "keywords": [
+        "snake game",
+        "play snake online",
+        "classic snake game",
+        "snake game free",
+        "snake game no download",
+        "snake with keyboard",
+        "snake mobile game",
+        "retro snake"
+      ],
+      "howTo": [
+        {
+          "name": "Start",
+          "text": "Press Start or any arrow key. The snake begins moving to the right."
+        },
+        {
+          "name": "Steer",
+          "text": "Use the arrow keys or W, A, S, D on a keyboard, or swipe on a touch screen. You can't turn straight back on yourself."
+        },
+        {
+          "name": "Eat and grow",
+          "text": "Eat the red food to score a point and grow longer."
+        },
+        {
+          "name": "Avoid crashes",
+          "text": "The game ends if you touch a wall or your own body. Beat your saved best score."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What are the controls?",
+          "answer": "Arrow keys or W, A, S, D to steer, Space to pause, and swipe on a phone or tablet."
+        },
+        {
+          "question": "Can I change the speed?",
+          "answer": "Yes. Choose Chill, Normal or Fast. Faster speeds are harder."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, in your browser on this device only."
+        },
+        {
+          "question": "Does the snake wrap around the edges?",
+          "answer": "No. Touching the edge ends the game, which makes it a little harder."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. Swipe on the board to turn. Fullscreen gives you a bigger board."
+        },
+        {
+          "question": "Is it a good study break?",
+          "answer": "A few minutes can clear your head. Set a short timer so your break doesn't turn into an hour."
+        },
+        {
+          "question": "Does it cost anything?",
+          "answer": "No. It is free, has no ads in the game and needs no account."
+        }
+      ]
     }
   },
   "commandMenu": {

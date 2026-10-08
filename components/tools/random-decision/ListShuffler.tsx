@@ -1,5 +1,6 @@
 "use client";
 
+import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import * as React from "react";
 import { Shuffle, Save } from "lucide-react";
 
@@ -28,7 +29,7 @@ function shuffle<T>(items: T[]): T[] {
 
 export default function ListShuffler() {
   useTrackTool("list-shuffler");
-  const [input, setInput] = React.useState("Alice\nBob\nCharlie\nDiana\nEthan");
+  const [input, setInput] = usePersisted("everyutili_shuffler", "Alice\nBob\nCharlie\nDiana\nEthan");
   const [shuffled, setShuffled] = React.useState<string[] | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);
 

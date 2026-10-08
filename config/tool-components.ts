@@ -142,4 +142,10 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "memory-match": () => import("@/components/tools/focus-study/MemoryMatch"),
   "reaction-time-test": () => import("@/components/tools/focus-study/ReactionTime"),
   "game-2048": () => import("@/components/tools/focus-study/Game2048"),
+  "todo-list": () => import("@/components/tools/focus-study/TodoList"),
+  "study-time-tracker": () => import("@/components/tools/focus-study/StudyTimeTracker"),
+  "daily-journal": () => import("@/components/tools/focus-study/DailyJournal"),
+  "math-speed-trainer": () => import("@/components/tools/focus-study/MathTrainer"),
+  "typing-speed-test": () => import("@/components/tools/focus-study/TypingTest"),
+  "snake-game": () => import("@/components/tools/focus-study/SnakeGame"),
 };

@@ -1,5 +1,6 @@
 "use client";
 
+import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import * as React from "react";
 import { Ticket, Save } from "lucide-react";
 
@@ -31,10 +32,10 @@ function drawWinners(entries: string[], count: number): string[] {
 
 export default function RafflePicker() {
   useTrackTool("raffle-picker");
-  const [input, setInput] = React.useState(
+  const [input, setInput] = usePersisted("everyutili_raffle", 
     "Alice\nAlice\nBob\nCharlie\nCharlie\nCharlie\nDiana"
   );
-  const [winnerCount, setWinnerCount] = React.useState(1);
+  const [winnerCount, setWinnerCount] = usePersisted("everyutili_raffle_winners", 1);
   const [drawing, setDrawing] = React.useState(false);
   const [winners, setWinners] = React.useState<string[] | null>(null);
   const [reveal, setReveal] = React.useState<Reveal | null>(null);

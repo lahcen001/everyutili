@@ -1,5 +1,6 @@
 "use client";
 
+import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Eraser, ImagePlus, Maximize2, Minimize2, RotateCw, Save, Shuffle, Trophy, UserMinus, X } from "lucide-react";
@@ -227,8 +228,8 @@ function Wheel({ entries, colors, size, rotation, spinning, svgRef, pointerRef, 
 
 export default function WheelSpinner() {
   useTrackTool("wheel-spinner");
-  const [input, setInput] = React.useState("Pizza\nSushi\nTacos\nBurgers\nSalad\nPasta");
-  const [paletteId, setPaletteId] = React.useState("vibrant");
+  const [input, setInput] = usePersisted("everyutili_wheel_entries", "Pizza\nSushi\nTacos\nBurgers\nSalad\nPasta");
+  const [paletteId, setPaletteId] = usePersisted("everyutili_wheel_palette", "vibrant");
   const [removeWinner, setRemoveWinner] = React.useState(false);
   const [rotation, setRotation] = React.useState(0);
   const [spinning, setSpinning] = React.useState(false);

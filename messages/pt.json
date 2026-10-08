@@ -8336,6 +8336,390 @@
           "answer": "Alguns minutos de um quebra-cabeça tranquilo podem descansar a mente. Como é fácil continuar jogando, defina um timer curto para que a pausa continue sendo uma pausa."
         }
       ]
+    },
+    "todo-list": {
+      "seoTitle": "Lista de Tarefas Online – Grátis, com Prioridades e Prazos",
+      "metaDescription": "Lista de tarefas online grátis com prioridades, prazos, filtros e barra de progresso. As tarefas são salvas automaticamente no navegador — sem conta, sem cadastro, privado.",
+      "h1": "Lista de Tarefas com Prioridades",
+      "subheading": "Anote suas tarefas, defina uma prioridade e um prazo e vá marcando como concluídas. Tudo é salvo automaticamente no seu dispositivo.",
+      "keywords": [
+        "lista de tarefas online",
+        "lista de afazeres",
+        "to do list com prazos",
+        "lista de tarefas grátis",
+        "planejador de tarefas diárias",
+        "checklist online",
+        "agenda de lição de casa",
+        "lista de tarefas por prioridade"
+      ],
+      "howTo": [
+        {
+          "name": "Adicionar uma tarefa",
+          "text": "Digite o que você precisa fazer, escolha a prioridade Alta, Média ou Baixa, defina um prazo se quiser e pressione Enter."
+        },
+        {
+          "name": "Comece pelo topo",
+          "text": "As tarefas são ordenadas por prioridade e prazo, com as concluídas no final. As tarefas Atrasadas ficam em vermelho."
+        },
+        {
+          "name": "Marcar e editar",
+          "text": "Clique no círculo para marcar a tarefa como concluída. Clique no texto da tarefa para renomeá-la."
+        },
+        {
+          "name": "Fazer a limpeza",
+          "text": "Use Concluídas para revisar as tarefas finalizadas e Limpar concluídas para removê-las. A barra de progresso mostra quanto já foi feito."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Minha lista de tarefas fica salva?",
+          "answer": "Sim. Ela é salva automaticamente no armazenamento local do navegador, neste dispositivo, e continua lá quando você voltar. Nada é enviado para a internet, e limpar os dados do navegador apaga a lista."
+        },
+        {
+          "question": "Posso usar no celular e no computador?",
+          "answer": "A lista fica em um único navegador, em um único dispositivo. Para usar em outro lugar, abra a página lá — ela começará vazia, porque nada é enviado online."
+        },
+        {
+          "question": "Como as tarefas são ordenadas?",
+          "answer": "Primeiro as tarefas não concluídas, depois por prioridade (Alta, Média, Baixa) e, por fim, pelo prazo mais próximo."
+        },
+        {
+          "question": "O que significa Atrasada?",
+          "answer": "Uma tarefa com prazo anterior a hoje que ainda não foi concluída. Ela aparece em vermelho para você não esquecer."
+        },
+        {
+          "question": "Posso editar uma tarefa?",
+          "answer": "Sim. Clique no texto da tarefa, altere e pressione Enter."
+        },
+        {
+          "question": "Existe um limite de tarefas?",
+          "answer": "Não há um limite fixo. Os navegadores permitem vários megabytes de armazenamento local, o que dá espaço para milhares de tarefas."
+        },
+        {
+          "question": "Funciona junto com o timer Pomodoro?",
+          "answer": "Sim. Escolha uma tarefa e faça uma sessão Pomodoro com ela na ferramenta Timer Pomodoro."
+        }
+      ]
+    },
+    "study-time-tracker": {
+      "seoTitle": "Controle de Tempo de Estudo – Registro de Estudos Grátis com Timer e Gráfico Semanal",
+      "metaDescription": "Registre quanto tempo você estuda cada matéria com um timer de um clique ou lançamentos manuais. Veja os totais de hoje, da semana e gerais, um gráfico de 7 dias e exporte para CSV. Privado e salvo localmente.",
+      "h1": "Controle de Tempo de Estudo",
+      "subheading": "Inicie um timer para uma matéria, veja para onde vão suas horas e tenha uma visão clara da sua semana.",
+      "keywords": [
+        "controle de tempo de estudo",
+        "registro de estudos",
+        "contador de horas de estudo",
+        "cronômetro de estudo para estudantes",
+        "cronômetro de estudo por matéria",
+        "como controlar o tempo de estudo",
+        "controle de tempo da lição de casa",
+        "planilha de horas de estudo"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha uma matéria",
+          "text": "Escolha uma das matérias ou adicione a sua, como Matemática ou Leitura."
+        },
+        {
+          "name": "Comece a estudar",
+          "text": "Clique em Começar a estudar. O timer continua rodando mesmo se você recarregar a página. Clique em Parar e salvar quando terminar."
+        },
+        {
+          "name": "Adicione o tempo esquecido",
+          "text": "Se você esqueceu de iniciar o timer, adicione os minutos manualmente a uma matéria."
+        },
+        {
+          "name": "Revise e exporte",
+          "text": "Veja os totais de hoje, da semana e gerais por matéria, o gráfico de 7 dias e as sessões recentes. Baixe tudo em um arquivo CSV."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Onde ficam armazenados os meus dados de estudo?",
+          "answer": "Apenas no armazenamento local do seu navegador, neste dispositivo. Nada é enviado. Limpar os dados do navegador apaga tudo, então exporte um CSV se quiser fazer um backup."
+        },
+        {
+          "question": "O timer continua se eu fechar a aba?",
+          "answer": "Sim. O horário de início fica salvo, então, ao abrir a página novamente, o timer mostra o tempo decorrido correto. Clique em Parar e salvar para registrar a sessão."
+        },
+        {
+          "question": "Posso acompanhar várias matérias?",
+          "answer": "Sim. Adicione quantas matérias quiser. Cada uma tem sua própria cor e seus próprios totais."
+        },
+        {
+          "question": "Como a semana é calculada?",
+          "answer": "Os últimos sete dias, incluindo hoje, com base na data em que cada sessão começou."
+        },
+        {
+          "question": "Posso apagar um lançamento errado?",
+          "answer": "Sim. Use o ícone de lixeira ao lado da sessão em Sessões recentes."
+        },
+        {
+          "question": "O que vem no CSV?",
+          "answer": "A data e a hora de início, a matéria, os minutos e a anotação de cada sessão, prontos para uma planilha."
+        },
+        {
+          "question": "Quanto devo estudar?",
+          "answer": "Depende dos seus objetivos. Sessões regulares e focadas, com pausas, funcionam melhor do que sessões muito longas. Use o Timer Pomodoro para organizá-las."
+        }
+      ]
+    },
+    "daily-journal": {
+      "seoTitle": "Diário e Registro de Humor – Diário Online Grátis e Privado",
+      "metaDescription": "Um diário privado com registro de humor, gratidão e conquistas, visão da semana, busca e sequências. Salvo apenas no seu navegador — sem conta, nada é enviado. Exporte quando quiser.",
+      "h1": "Diário e Registro de Humor",
+      "subheading": "Faça um check-in com poucas linhas por dia: seu humor, pelo que você é grato e o que deu certo. Privado e salvo no seu dispositivo.",
+      "keywords": [
+        "diário online",
+        "registro de humor",
+        "diário de gratidão",
+        "diário online privado",
+        "app de diário grátis",
+        "diário de reflexão para estudantes",
+        "check-in diário",
+        "diário de humor"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha o dia",
+          "text": "Hoje já vem aberto por padrão. Toque em outro dia na faixa da semana ou escolha qualquer data passada."
+        },
+        {
+          "name": "Escolha seu humor",
+          "text": "Toque em uma das cinco carinhas, de Péssimo a Ótimo. Toque novamente para desmarcar."
+        },
+        {
+          "name": "Escreva um pouco",
+          "text": "Adicione pelo que você é grato, suas conquistas e outras anotações. Tudo é salvo enquanto você digita."
+        },
+        {
+          "name": "Olhe para trás",
+          "text": "Pesquise suas anotações, veja sua sequência e seu humor médio e exporte tudo como um arquivo de texto."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Meu diário é privado?",
+          "answer": "Sim. As anotações ficam armazenadas apenas no armazenamento local do navegador, neste dispositivo. Elas não são enviadas e não existe conta. Qualquer pessoa que consiga abrir este navegador no seu dispositivo poderia lê-las, então use um bloqueio de tela."
+        },
+        {
+          "question": "Posso perder minhas anotações?",
+          "answer": "Limpar os dados do navegador ou usar outro navegador ou dispositivo vai removê-las ou escondê-las. Use Exportar de vez em quando para manter um backup."
+        },
+        {
+          "question": "Por que manter um diário de gratidão?",
+          "answer": "Anotar algumas coisas boas por dia é um hábito simples que muita gente acha que melhora o humor. É uma prática de bem-estar, não um aconselhamento médico."
+        },
+        {
+          "question": "O que é a sequência?",
+          "answer": "O número de dias seguidos em que você escreveu algo, terminando hoje ou ontem."
+        },
+        {
+          "question": "Posso escrever em dias anteriores?",
+          "answer": "Sim. Escolha uma data no campo de calendário ou toque em uma anotação na lista."
+        },
+        {
+          "question": "Ele acompanha meu humor ao longo do tempo?",
+          "answer": "Ele mostra seu humor médio nas anotações e a carinha de cada dia na faixa da semana."
+        },
+        {
+          "question": "Serve como apoio para a saúde mental?",
+          "answer": "É apenas uma ferramenta de reflexão. Se você se sentir muito mal ou em risco, converse com alguém de confiança ou com um profissional de saúde mental."
+        }
+      ]
+    },
+    "math-speed-trainer": {
+      "seoTitle": "Treino de Cálculo Mental – Jogo Grátis de Matemática em 60 Segundos",
+      "metaDescription": "Pratique soma, subtração, multiplicação e divisão contra o relógio. Escolha as operações e a dificuldade, veja sua pontuação e precisão e supere seu recorde. Grátis e salvo localmente.",
+      "h1": "Treino de Cálculo Mental",
+      "subheading": "Responda a quantas contas conseguir em 60 segundos. Escolha as operações e o nível e tente superar seu recorde.",
+      "keywords": [
+        "treino de cálculo mental",
+        "teste de velocidade de matemática",
+        "exercícios de aritmética online",
+        "treino de multiplicação",
+        "jogo de matemática 60 segundos",
+        "treinador de matemática",
+        "exercícios rápidos de matemática",
+        "treino de tabuada"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha as operações",
+          "text": "Marque qualquer uma entre + − × ÷. Pelo menos uma deve ficar ativa."
+        },
+        {
+          "name": "Escolha um nível",
+          "text": "Fácil usa números pequenos, Médio vai até 20 e tabuada até 10, e Difícil vai até 100 e tabuada até 12."
+        },
+        {
+          "name": "Responda rápido",
+          "text": "Digite a resposta e pressione Enter. Uma nova pergunta aparece na hora."
+        },
+        {
+          "name": "Supere seu recorde",
+          "text": "Quando os 60 segundos acabam, você vê sua pontuação e precisão. Seu recorde de cada configuração fica salvo neste dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "As perguntas são sempre com números inteiros?",
+          "answer": "Sim. A subtração nunca fica abaixo de zero e a divisão sempre tem um resultado exato, em número inteiro."
+        },
+        {
+          "question": "Meu recorde fica salvo?",
+          "answer": "Sim, separadamente para cada combinação de operações e nível, no seu navegador, neste dispositivo."
+        },
+        {
+          "question": "O que é uma boa pontuação?",
+          "answer": "Depende do nível. Procure melhorar um pouco a cada vez. A precisão importa tanto quanto a velocidade."
+        },
+        {
+          "question": "Como isso pode ajudar nos meus estudos?",
+          "answer": "Treinos curtos diários desenvolvem fluência com as contas básicas, o que libera sua atenção para problemas mais difíceis."
+        },
+        {
+          "question": "Posso praticar só a tabuada?",
+          "answer": "Sim. Ative apenas × e escolha um nível. O nível Difícil abrange a tabuada até 12."
+        },
+        {
+          "question": "Funciona no celular?",
+          "answer": "Sim. Um teclado numérico aparece na maioria dos celulares quando você toca na caixa de resposta."
+        },
+        {
+          "question": "Algo é enviado para a internet?",
+          "answer": "Não. As perguntas são geradas no seu navegador e suas pontuações ficam no seu dispositivo."
+        }
+      ]
+    },
+    "typing-speed-test": {
+      "seoTitle": "Teste de Digitação – Teste Grátis de PPM (WPM) e Precisão com Histórico",
+      "metaDescription": "Teste sua velocidade de digitação em palavras por minuto com testes de 30, 60 ou 120 segundos. Veja o WPM e a precisão ao vivo e acompanhe seus últimos resultados. Grátis, privado, salvo no navegador.",
+      "h1": "Teste de Velocidade de Digitação",
+      "subheading": "Digite o texto o mais rápido e com a maior precisão possível e descubra suas palavras por minuto e sua precisão.",
+      "keywords": [
+        "teste de digitação",
+        "teste de wpm",
+        "teste de digitação online grátis",
+        "teste de palavras por minuto",
+        "treino de digitação",
+        "teste de precisão de digitação",
+        "teste de velocidade do teclado",
+        "teste de digitação 1 minuto"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha a duração",
+          "text": "Escolha 30, 60 ou 120 segundos."
+        },
+        {
+          "name": "Comece a digitar",
+          "text": "Clique no texto e digite. O timer começa com a primeira tecla e cada letra fica verde ou vermelha."
+        },
+        {
+          "name": "Veja seu resultado",
+          "text": "Quando o tempo acaba, ou você chega ao fim do texto, aparecem suas palavras por minuto e sua precisão."
+        },
+        {
+          "name": "Acompanhe seu progresso",
+          "text": "Seus últimos resultados aparecem listados à direita para você ver sua evolução."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como o WPM é calculado?",
+          "answer": "A cada cinco caracteres corretos conta-se uma palavra, dividida pelos minutos gastos. Só contam os caracteres digitados corretamente."
+        },
+        {
+          "question": "Qual é uma boa velocidade de digitação?",
+          "answer": "Muitas pessoas digitam entre 35 e 45 WPM. Acima de 60 é rápido e acima de 80 é muito rápido. A precisão importa mais do que a velocidade bruta."
+        },
+        {
+          "question": "Por que a precisão importa?",
+          "answer": "Os erros custam tempo para corrigir. Digitar um pouco mais devagar com menos erros normalmente leva você mais longe do que ter pressa."
+        },
+        {
+          "question": "Posso corrigir um erro?",
+          "answer": "Você pode apagar com Backspace. Os caracteres digitados errado aparecem em vermelho até você corrigi-los."
+        },
+        {
+          "question": "Meus resultados ficam salvos?",
+          "answer": "Os últimos 20 resultados ficam guardados no seu navegador, somente neste dispositivo. Use Limpar para removê-los."
+        },
+        {
+          "question": "Funciona com outros layouts de teclado?",
+          "answer": "Sim, mas os textos estão em inglês, então você precisa conseguir digitar as letras e a pontuação do inglês."
+        },
+        {
+          "question": "Algo é enviado para a internet?",
+          "answer": "Não. O teste roda totalmente no seu navegador."
+        }
+      ]
+    },
+    "snake-game": {
+      "seoTitle": "Jogo da Cobrinha – Snake Clássico Grátis Online com Controles de Toque",
+      "metaDescription": "Jogue o clássico jogo da cobrinha grátis no navegador. Setas, WASD ou deslize, três velocidades, recorde salvo e tela cheia. Uma pausa relaxante nos estudos.",
+      "h1": "Jogo da Cobrinha",
+      "subheading": "Guie a cobrinha para comer a comida sem bater nas paredes nem em si mesma. Um clássico, para uma pausa rápida.",
+      "keywords": [
+        "jogo da cobrinha",
+        "jogar snake online",
+        "jogo da cobrinha clássico",
+        "jogo da cobrinha grátis",
+        "jogo da cobrinha sem baixar",
+        "snake com teclado",
+        "jogo da cobrinha para celular",
+        "snake retrô"
+      ],
+      "howTo": [
+        {
+          "name": "Começar",
+          "text": "Clique em Iniciar ou pressione qualquer seta. A cobrinha começa a se mover para a direita."
+        },
+        {
+          "name": "Direcionar",
+          "text": "Use as setas ou W, A, S, D no teclado, ou deslize o dedo na tela de toque. Não é possível virar direto para trás."
+        },
+        {
+          "name": "Comer e crescer",
+          "text": "Coma a comida vermelha para marcar um ponto e ficar maior."
+        },
+        {
+          "name": "Evite batidas",
+          "text": "O jogo termina se você encostar em uma parede ou no próprio corpo. Supere seu recorde salvo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais são os controles?",
+          "answer": "Setas ou W, A, S, D para direcionar, Espaço para pausar e deslizar o dedo no celular ou tablet."
+        },
+        {
+          "question": "Posso mudar a velocidade?",
+          "answer": "Sim. Escolha Tranquila, Normal ou Rápida. Quanto mais rápida, mais difícil."
+        },
+        {
+          "question": "Meu recorde fica salvo?",
+          "answer": "Sim, no seu navegador, somente neste dispositivo."
+        },
+        {
+          "question": "A cobrinha atravessa as bordas?",
+          "answer": "Não. Encostar na borda encerra o jogo, o que o deixa um pouco mais difícil."
+        },
+        {
+          "question": "Funciona no celular?",
+          "answer": "Sim. Deslize o dedo no tabuleiro para virar. A tela cheia oferece um tabuleiro maior."
+        },
+        {
+          "question": "É uma boa pausa nos estudos?",
+          "answer": "Alguns minutos podem desanuviar a cabeça. Defina um timer curto para que a pausa não vire uma hora."
+        },
+        {
+          "question": "Custa alguma coisa?",
+          "answer": "Não. É grátis, não tem anúncios no jogo e não precisa de conta."
+        }
+      ]
     }
   },
   "commandMenu": {

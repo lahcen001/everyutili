@@ -8336,6 +8336,390 @@
           "answer": "Quelques minutes d'un puzzle tranquille peuvent reposer l'esprit. Comme on a vite envie de rejouer, réglez un court minuteur pour que votre pause reste une pause."
         }
       ]
+    },
+    "todo-list": {
+      "seoTitle": "To-do list en ligne – Liste de tâches gratuite avec priorités et échéances",
+      "metaDescription": "Une to-do list en ligne gratuite avec priorités, échéances, filtres et barre de progression. Vos tâches sont enregistrées automatiquement dans votre navigateur – sans compte, sans inscription, en toute confidentialité.",
+      "h1": "To-do list avec priorités",
+      "subheading": "Notez vos tâches, choisissez une priorité et une échéance, puis cochez-les. Tout est enregistré automatiquement sur votre appareil.",
+      "keywords": [
+        "to do list en ligne",
+        "liste de tâches",
+        "to do list avec échéances",
+        "to do list gratuite",
+        "planificateur de tâches quotidiennes",
+        "checklist en ligne",
+        "planificateur de devoirs",
+        "liste de tâches par priorité"
+      ],
+      "howTo": [
+        {
+          "name": "Ajouter une tâche",
+          "text": "Saisissez ce que vous devez faire, choisissez la priorité Haute, Moyenne ou Basse, indiquez éventuellement une échéance, puis appuyez sur Entrée."
+        },
+        {
+          "name": "Travailler dans l'ordre",
+          "text": "Les tâches sont triées par priorité et par échéance, les tâches terminées étant placées en bas. Les tâches en retard passent au rouge."
+        },
+        {
+          "name": "Cocher et modifier",
+          "text": "Cliquez sur le cercle pour marquer une tâche comme terminée. Cliquez sur le texte d'une tâche pour la renommer."
+        },
+        {
+          "name": "Faire le ménage",
+          "text": "Utilisez Terminées pour revoir les tâches accomplies et Effacer les terminées pour les supprimer. La barre de progression indique ce qui est fait."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ma to-do list est-elle enregistrée ?",
+          "answer": "Oui. Elle est enregistrée automatiquement dans le stockage local de votre navigateur, sur cet appareil, et vous la retrouvez à votre retour. Elle n'est jamais envoyée en ligne, et effacer les données de votre navigateur la supprime."
+        },
+        {
+          "question": "Puis-je l'utiliser sur mon téléphone et sur mon ordinateur ?",
+          "answer": "La liste reste dans un seul navigateur, sur un seul appareil. Pour l'utiliser ailleurs, ouvrez la page à cet endroit : elle sera vide, car rien n'est envoyé en ligne."
+        },
+        {
+          "question": "Comment les tâches sont-elles classées ?",
+          "answer": "Les tâches non terminées passent en premier, puis par priorité (Haute, Moyenne, Basse), puis par échéance la plus proche."
+        },
+        {
+          "question": "Que signifie En retard ?",
+          "answer": "Une tâche dont l'échéance est antérieure à aujourd'hui et qui n'est pas terminée. Elle s'affiche en rouge pour que vous la remarquiez."
+        },
+        {
+          "question": "Puis-je modifier une tâche ?",
+          "answer": "Oui. Cliquez sur le texte de la tâche, modifiez-le et appuyez sur Entrée."
+        },
+        {
+          "question": "Y a-t-il une limite au nombre de tâches ?",
+          "answer": "Aucune limite fixe. Les navigateurs autorisent plusieurs mégaoctets de stockage local, ce qui laisse de la place pour des milliers de tâches."
+        },
+        {
+          "question": "Fonctionne-t-elle avec le minuteur Pomodoro ?",
+          "answer": "Oui. Choisissez une tâche, puis lancez une session Pomodoro dessus avec l'outil Minuteur Pomodoro."
+        }
+      ]
+    },
+    "study-time-tracker": {
+      "seoTitle": "Suivi du temps d'étude – Journal de révision gratuit avec minuteur et graphique hebdomadaire",
+      "metaDescription": "Suivez le temps passé à étudier chaque matière avec un minuteur en un clic ou des saisies manuelles. Consultez les totaux du jour, de la semaine et globaux, un graphique sur 7 jours, et exportez en CSV. Privé et enregistré en local.",
+      "h1": "Suivi du temps d'étude",
+      "subheading": "Lancez un minuteur pour une matière, voyez où passent vos heures et obtenez une vision claire de votre semaine.",
+      "keywords": [
+        "suivi du temps d'étude",
+        "journal de révision",
+        "suivi des heures d'étude",
+        "suivi du temps pour étudiants",
+        "minuteur d'étude par matière",
+        "suivre son temps de travail scolaire",
+        "suivi du temps de devoirs",
+        "planning de révision"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir une matière",
+          "text": "Sélectionnez l'une des matières ou ajoutez la vôtre, par exemple Maths ou Lecture."
+        },
+        {
+          "name": "Commencer à étudier",
+          "text": "Appuyez sur Commencer à étudier. Le minuteur continue de tourner même si vous rechargez la page. Appuyez sur Arrêter et enregistrer quand vous avez terminé."
+        },
+        {
+          "name": "Ajouter du temps oublié",
+          "text": "Si vous avez oublié de lancer le minuteur, ajoutez manuellement des minutes à une matière."
+        },
+        {
+          "name": "Consulter et exporter",
+          "text": "Consultez les totaux du jour, de la semaine et globaux par matière, le graphique sur 7 jours et les sessions récentes. Téléchargez tout dans un fichier CSV."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Où sont stockées mes données d'étude ?",
+          "answer": "Uniquement dans le stockage local de votre navigateur, sur cet appareil. Rien n'est envoyé en ligne. Effacer les données du navigateur les supprime : exportez un CSV si vous voulez une sauvegarde."
+        },
+        {
+          "question": "Le minuteur continue-t-il si je ferme l'onglet ?",
+          "answer": "Oui. L'heure de départ est enregistrée : à la réouverture de la page, le minuteur affiche le temps écoulé exact. Appuyez sur Arrêter et enregistrer pour enregistrer la session."
+        },
+        {
+          "question": "Puis-je suivre plusieurs matières ?",
+          "answer": "Oui. Ajoutez autant de matières que vous voulez. Chacune a sa propre couleur et ses propres totaux."
+        },
+        {
+          "question": "Comment la semaine est-elle calculée ?",
+          "answer": "Les sept derniers jours, aujourd'hui compris, selon la date de début de chaque session."
+        },
+        {
+          "question": "Puis-je supprimer une entrée erronée ?",
+          "answer": "Oui. Utilisez l'icône de corbeille à côté d'une session dans Sessions récentes."
+        },
+        {
+          "question": "Que contient le fichier CSV ?",
+          "answer": "La date et l'heure de début, la matière, les minutes et la note de chaque session, prêtes pour un tableur."
+        },
+        {
+          "question": "Combien de temps dois-je étudier ?",
+          "answer": "Cela dépend de vos objectifs. Des sessions régulières et concentrées, avec des pauses, sont plus efficaces que de très longues sessions. Utilisez le Minuteur Pomodoro pour les structurer."
+        }
+      ]
+    },
+    "daily-journal": {
+      "seoTitle": "Journal quotidien et suivi d'humeur – Journal intime en ligne gratuit et privé",
+      "metaDescription": "Un journal quotidien privé avec suivi de l'humeur, gratitude et réussites, vue de la semaine, recherche et séries. Enregistré uniquement dans votre navigateur – sans compte, rien n'est envoyé en ligne. Exportez à tout moment.",
+      "h1": "Journal quotidien et suivi d'humeur",
+      "subheading": "Faites le point en quelques lignes par jour : votre humeur, ce dont vous êtes reconnaissant et ce qui s'est bien passé. Privé et enregistré sur votre appareil.",
+      "keywords": [
+        "journal quotidien en ligne",
+        "suivi d'humeur",
+        "journal de gratitude",
+        "journal intime en ligne privé",
+        "application journal gratuite",
+        "journal de réflexion pour étudiants",
+        "bilan quotidien",
+        "carnet d'humeur"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir le jour",
+          "text": "Aujourd'hui est ouvert par défaut. Touchez un autre jour dans la bande de la semaine ou choisissez une date passée."
+        },
+        {
+          "name": "Choisir votre humeur",
+          "text": "Touchez l'un des cinq visages, de Difficile à Super. Touchez à nouveau pour l'effacer."
+        },
+        {
+          "name": "Écrire un peu",
+          "text": "Ajoutez ce dont vous êtes reconnaissant, vos réussites et d'éventuelles notes. L'enregistrement se fait pendant la saisie."
+        },
+        {
+          "name": "Regarder en arrière",
+          "text": "Recherchez dans vos entrées, consultez votre série et votre humeur moyenne, et exportez tout dans un fichier texte."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Mon journal est-il privé ?",
+          "answer": "Oui. Les entrées sont stockées uniquement dans le stockage local de votre navigateur, sur cet appareil. Elles ne sont pas envoyées en ligne et il n'y a pas de compte. Toute personne pouvant ouvrir ce navigateur sur votre appareil pourrait les lire : utilisez donc un verrouillage d'appareil."
+        },
+        {
+          "question": "Puis-je perdre mes entrées ?",
+          "answer": "Effacer les données du navigateur ou utiliser un autre navigateur ou appareil les supprimera ou les masquera. Utilisez Exporter de temps en temps pour garder une sauvegarde."
+        },
+        {
+          "question": "Pourquoi tenir un journal de gratitude ?",
+          "answer": "Noter quelques bonnes choses chaque jour est une habitude simple qui, pour beaucoup de gens, améliore l'humeur. C'est une pratique de bien-être, pas un avis médical."
+        },
+        {
+          "question": "Qu'est-ce que la série ?",
+          "answer": "Le nombre de jours consécutifs où vous avez écrit quelque chose, jusqu'à aujourd'hui ou hier."
+        },
+        {
+          "question": "Puis-je écrire pour des jours passés ?",
+          "answer": "Oui. Choisissez une date dans le champ calendrier ou touchez une entrée dans la liste."
+        },
+        {
+          "question": "Suit-il mon humeur dans le temps ?",
+          "answer": "Il affiche votre humeur moyenne sur l'ensemble des entrées et le visage de chaque jour dans la bande de la semaine."
+        },
+        {
+          "question": "Convient-il comme soutien en santé mentale ?",
+          "answer": "C'est uniquement un outil de réflexion. Si vous vous sentez très mal ou en danger, parlez-en à une personne de confiance ou à un professionnel de la santé mentale."
+        }
+      ]
+    },
+    "math-speed-trainer": {
+      "seoTitle": "Entraînement au calcul mental – Jeu gratuit de calcul en 60 secondes",
+      "metaDescription": "Entraînez-vous à l'addition, la soustraction, la multiplication et la division contre la montre. Choisissez les opérations et la difficulté, consultez votre score et votre précision, et battez votre record. Gratuit, enregistré en local.",
+      "h1": "Entraînement au calcul mental",
+      "subheading": "Répondez à un maximum de calculs en 60 secondes. Choisissez les opérations et le niveau, et essayez de battre votre record.",
+      "keywords": [
+        "entraînement calcul mental",
+        "test de vitesse de calcul",
+        "exercices de calcul en ligne",
+        "entraînement multiplication",
+        "jeu de calcul 60 secondes",
+        "entraîneur de calcul mental",
+        "exercices de calcul rapide",
+        "réviser les tables de multiplication"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir les opérations",
+          "text": "Cochez n'importe lesquelles parmi + − × ÷. Au moins une doit rester activée."
+        },
+        {
+          "name": "Choisir un niveau",
+          "text": "Facile utilise de petits nombres, Moyen va jusqu'à 20 et les tables jusqu'à 10, et Difficile va jusqu'à 100 et les tables jusqu'à 12."
+        },
+        {
+          "name": "Répondre vite",
+          "text": "Saisissez la réponse et appuyez sur Entrée. Une nouvelle question apparaît aussitôt."
+        },
+        {
+          "name": "Battre votre record",
+          "text": "Quand les 60 secondes sont écoulées, vous voyez votre score et votre précision. Votre meilleur résultat pour chaque réglage est enregistré sur cet appareil."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Les questions sont-elles toujours des nombres entiers ?",
+          "answer": "Oui. La soustraction ne donne jamais de résultat négatif et la division a toujours un résultat entier exact."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, séparément pour chaque combinaison d'opérations et de niveau, dans votre navigateur sur cet appareil."
+        },
+        {
+          "question": "Qu'est-ce qu'un bon score ?",
+          "answer": "Cela dépend du niveau. Essayez de vous améliorer un peu à chaque fois. La précision compte autant que la vitesse."
+        },
+        {
+          "question": "Comment peut-il m'aider dans mes études ?",
+          "answer": "De courts exercices quotidiens développent l'aisance avec les bases, ce qui libère votre attention pour des problèmes plus difficiles."
+        },
+        {
+          "question": "Puis-je m'entraîner uniquement sur les tables de multiplication ?",
+          "answer": "Oui. Activez uniquement × et choisissez un niveau. Difficile couvre les tables jusqu'à 12."
+        },
+        {
+          "question": "Fonctionne-t-il sur téléphone ?",
+          "answer": "Oui. Un pavé numérique apparaît sur la plupart des téléphones quand vous touchez la zone de réponse."
+        },
+        {
+          "question": "Quelque chose est-il envoyé en ligne ?",
+          "answer": "Non. Les questions sont générées dans votre navigateur et vos scores restent sur votre appareil."
+        }
+      ]
+    },
+    "typing-speed-test": {
+      "seoTitle": "Test de vitesse de frappe – Test MPM et précision gratuit avec historique",
+      "metaDescription": "Testez votre vitesse de frappe en mots par minute (WPM) avec des tests de 30, 60 ou 120 secondes. Consultez le WPM et la précision en direct et suivez vos derniers résultats. Gratuit, privé, enregistré dans votre navigateur.",
+      "h1": "Test de vitesse de frappe",
+      "subheading": "Tapez le texte aussi vite et aussi précisément que possible et obtenez votre vitesse en mots par minute et votre précision.",
+      "keywords": [
+        "test de vitesse de frappe",
+        "test wpm",
+        "test de frappe en ligne gratuit",
+        "test de mots par minute",
+        "entraînement à la frappe",
+        "test de précision de frappe",
+        "test de vitesse clavier",
+        "test de frappe 1 minute"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir une durée",
+          "text": "Choisissez 30, 60 ou 120 secondes."
+        },
+        {
+          "name": "Commencer à taper",
+          "text": "Cliquez sur le texte et tapez. Le minuteur démarre à la première touche, et chaque lettre devient verte ou rouge."
+        },
+        {
+          "name": "Lire votre résultat",
+          "text": "Quand le temps est écoulé, ou que vous arrivez à la fin du texte, vous voyez vos mots par minute et votre précision."
+        },
+        {
+          "name": "Suivre vos progrès",
+          "text": "Vos derniers résultats sont listés à droite pour que vous voyiez vos progrès."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment le WPM est-il calculé ?",
+          "answer": "Chaque tranche de cinq caractères corrects compte pour un mot, divisée par le nombre de minutes écoulées. Seuls les caractères tapés correctement comptent."
+        },
+        {
+          "question": "Qu'est-ce qu'une bonne vitesse de frappe ?",
+          "answer": "Beaucoup de gens tapent entre 35 et 45 WPM. Au-delà de 60, c'est rapide, et au-delà de 80, c'est très rapide. La précision compte plus que la vitesse brute."
+        },
+        {
+          "question": "Pourquoi la précision est-elle importante ?",
+          "answer": "Corriger les erreurs fait perdre du temps. Taper un peu plus lentement avec moins d'erreurs vous mène généralement plus loin que se précipiter."
+        },
+        {
+          "question": "Puis-je corriger une erreur ?",
+          "answer": "Vous pouvez effacer avec Retour arrière. Les caractères mal tapés s'affichent en rouge tant que vous ne les corrigez pas."
+        },
+        {
+          "question": "Mes résultats sont-ils enregistrés ?",
+          "answer": "Les 20 derniers résultats sont conservés dans votre navigateur, sur cet appareil uniquement. Utilisez Effacer pour les supprimer."
+        },
+        {
+          "question": "Fonctionne-t-il avec d'autres dispositions de clavier ?",
+          "answer": "Oui, mais les textes sont en anglais : vous devez donc pouvoir taper les lettres et la ponctuation de l'anglais."
+        },
+        {
+          "question": "Quelque chose est-il envoyé en ligne ?",
+          "answer": "Non. Le test s'exécute entièrement dans votre navigateur."
+        }
+      ]
+    },
+    "snake-game": {
+      "seoTitle": "Jeu du serpent (Snake) – Snake classique gratuit en ligne avec commandes tactiles",
+      "metaDescription": "Jouez gratuitement au Snake classique dans votre navigateur. Flèches, ZQSD ou balayage, trois vitesses, meilleur score enregistré et plein écran. Une pause détente entre deux révisions.",
+      "h1": "Jeu du serpent (Snake)",
+      "subheading": "Guidez le serpent pour manger la nourriture sans heurter les murs ni vous-même. Un classique, pour une pause rapide.",
+      "keywords": [
+        "jeu du serpent",
+        "jouer à snake en ligne",
+        "snake classique",
+        "snake gratuit",
+        "snake sans téléchargement",
+        "snake au clavier",
+        "jeu snake mobile",
+        "snake rétro"
+      ],
+      "howTo": [
+        {
+          "name": "Démarrer",
+          "text": "Appuyez sur Démarrer ou sur une touche fléchée. Le serpent commence à se déplacer vers la droite."
+        },
+        {
+          "name": "Diriger",
+          "text": "Utilisez les flèches ou les touches W, A, S, D au clavier, ou balayez l'écran sur un appareil tactile. Vous ne pouvez pas faire demi-tour directement."
+        },
+        {
+          "name": "Manger et grandir",
+          "text": "Mangez la nourriture rouge pour marquer un point et allonger le serpent."
+        },
+        {
+          "name": "Éviter les collisions",
+          "text": "La partie se termine si vous touchez un mur ou votre propre corps. Battez votre meilleur score enregistré."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelles sont les commandes ?",
+          "answer": "Les flèches ou W, A, S, D pour diriger, Espace pour mettre en pause, et le balayage sur un téléphone ou une tablette."
+        },
+        {
+          "question": "Puis-je changer la vitesse ?",
+          "answer": "Oui. Choisissez Tranquille, Normal ou Rapide. Les vitesses élevées sont plus difficiles."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, dans votre navigateur, sur cet appareil uniquement."
+        },
+        {
+          "question": "Le serpent traverse-t-il les bords ?",
+          "answer": "Non. Toucher le bord met fin à la partie, ce qui rend le jeu un peu plus difficile."
+        },
+        {
+          "question": "Fonctionne-t-il sur téléphone ?",
+          "answer": "Oui. Balayez sur le plateau pour tourner. Le plein écran offre un plateau plus grand."
+        },
+        {
+          "question": "Est-ce une bonne pause pour réviser ?",
+          "answer": "Quelques minutes peuvent vous vider la tête. Réglez un minuteur court pour que votre pause ne se transforme pas en une heure."
+        },
+        {
+          "question": "Est-ce payant ?",
+          "answer": "Non. C'est gratuit, sans publicité dans le jeu et sans compte."
+        }
+      ]
     }
   },
   "commandMenu": {

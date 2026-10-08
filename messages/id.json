@@ -8336,6 +8336,390 @@
           "answer": "Beberapa menit puzzle yang tenang dapat mengistirahatkan pikiran. Karena mudah terus bermain, atur timer singkat agar istirahat tetap menjadi istirahat."
         }
       ]
+    },
+    "todo-list": {
+      "seoTitle": "To-Do List Online – Daftar Tugas Gratis dengan Prioritas & Tenggat",
+      "metaDescription": "To-do list online gratis dengan prioritas, tenggat waktu, filter, dan bilah kemajuan. Tugas tersimpan otomatis di browser Anda — tanpa akun, tanpa pendaftaran, privat.",
+      "h1": "To-Do List dengan Prioritas",
+      "subheading": "Catat tugas Anda, atur prioritas dan tenggat, lalu centang jika sudah selesai. Semuanya tersimpan otomatis di perangkat Anda.",
+      "keywords": [
+        "to do list online",
+        "daftar tugas",
+        "to do list dengan tenggat waktu",
+        "to do list gratis",
+        "perencana tugas harian",
+        "checklist online",
+        "perencana pekerjaan rumah",
+        "daftar tugas prioritas"
+      ],
+      "howTo": [
+        {
+          "name": "Tambah tugas",
+          "text": "Ketik apa yang perlu Anda kerjakan, pilih prioritas Tinggi, Sedang, atau Rendah, pilih tenggat jika perlu, lalu tekan Enter."
+        },
+        {
+          "name": "Kerjakan dari atas",
+          "text": "Tugas diurutkan berdasarkan prioritas dan tenggat, dengan tugas yang selesai di bagian bawah. Tugas Terlambat berwarna merah."
+        },
+        {
+          "name": "Centang dan ubah",
+          "text": "Tekan lingkaran untuk menandai tugas selesai. Klik teks tugas untuk mengubah namanya."
+        },
+        {
+          "name": "Rapikan",
+          "text": "Gunakan Selesai untuk melihat tugas yang sudah selesai dan Hapus yang selesai untuk menghapusnya. Bilah kemajuan menunjukkan seberapa banyak yang sudah dikerjakan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah to-do list saya tersimpan?",
+          "answer": "Ya. Daftar tersimpan otomatis di penyimpanan lokal browser pada perangkat ini, jadi masih ada saat Anda kembali. Daftar tidak pernah diunggah, dan menghapus data browser akan menghapusnya."
+        },
+        {
+          "question": "Bisakah saya memakainya di ponsel dan komputer?",
+          "answer": "Daftar hanya tersimpan di satu browser pada satu perangkat. Untuk memakainya di tempat lain, buka halaman ini di sana — daftarnya akan kosong, karena tidak ada yang dikirim ke internet."
+        },
+        {
+          "question": "Bagaimana tugas diurutkan?",
+          "answer": "Tugas yang belum selesai tampil lebih dulu, lalu berdasarkan prioritas (Tinggi, Sedang, Rendah), kemudian berdasarkan tenggat paling awal."
+        },
+        {
+          "question": "Apa arti Terlambat?",
+          "answer": "Tugas dengan tenggat sebelum hari ini yang belum selesai. Tugas ini ditampilkan dengan warna merah agar Anda memperhatikannya."
+        },
+        {
+          "question": "Bisakah saya mengubah tugas?",
+          "answer": "Bisa. Klik teks tugas, ubah, lalu tekan Enter."
+        },
+        {
+          "question": "Apakah ada batas jumlah tugas?",
+          "answer": "Tidak ada batas tetap. Browser mengizinkan beberapa megabita penyimpanan lokal, yang cukup untuk ribuan tugas."
+        },
+        {
+          "question": "Apakah bisa dipakai bersama timer Pomodoro?",
+          "answer": "Bisa. Pilih tugas, lalu jalankan sesi Pomodoro untuk tugas itu di alat Timer Pomodoro."
+        }
+      ]
+    },
+    "study-time-tracker": {
+      "seoTitle": "Pelacak Waktu Belajar – Catatan Belajar Gratis dengan Timer dan Grafik Mingguan",
+      "metaDescription": "Lacak berapa lama Anda belajar setiap mata pelajaran dengan timer sekali klik atau input manual. Lihat total hari ini, minggu ini, dan keseluruhan, grafik 7 hari, serta ekspor ke CSV. Privat dan tersimpan lokal.",
+      "h1": "Pelacak Waktu Belajar",
+      "subheading": "Mulai timer untuk satu mata pelajaran, lihat ke mana perginya jam belajar Anda, dan dapatkan gambaran jelas tentang minggu Anda.",
+      "keywords": [
+        "pelacak waktu belajar",
+        "catatan belajar",
+        "pencatat jam belajar",
+        "pelacak waktu untuk pelajar",
+        "timer belajar per mata pelajaran",
+        "mencatat waktu belajar",
+        "pelacak waktu mengerjakan PR",
+        "jurnal jadwal belajar"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih mata pelajaran",
+          "text": "Pilih salah satu mata pelajaran atau tambahkan sendiri, misalnya Matematika atau Membaca."
+        },
+        {
+          "name": "Mulai belajar",
+          "text": "Tekan Mulai belajar. Timer tetap berjalan meskipun halaman dimuat ulang. Tekan Berhenti & simpan saat Anda selesai."
+        },
+        {
+          "name": "Tambahkan waktu yang terlewat",
+          "text": "Jika lupa menyalakan timer, tambahkan menit secara manual ke sebuah mata pelajaran."
+        },
+        {
+          "name": "Tinjau dan ekspor",
+          "text": "Lihat total hari ini, minggu ini, dan keseluruhan per mata pelajaran, grafik 7 hari, serta sesi terbaru. Unduh semuanya sebagai file CSV."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Di mana data belajar saya disimpan?",
+          "answer": "Hanya di penyimpanan lokal browser pada perangkat ini. Tidak ada yang diunggah. Menghapus data browser akan menghapusnya, jadi ekspor CSV jika Anda ingin cadangan."
+        },
+        {
+          "question": "Apakah timer tetap berjalan jika saya menutup tab?",
+          "answer": "Ya. Waktu mulai disimpan, jadi saat Anda membuka halaman lagi, timer menampilkan waktu yang telah berlalu dengan benar. Tekan Berhenti & simpan untuk merekam sesi."
+        },
+        {
+          "question": "Bisakah saya melacak beberapa mata pelajaran?",
+          "answer": "Bisa. Tambahkan sebanyak yang Anda mau. Setiap mata pelajaran punya warna dan total sendiri."
+        },
+        {
+          "question": "Bagaimana minggu dihitung?",
+          "answer": "Tujuh hari terakhir termasuk hari ini, berdasarkan tanggal mulai setiap sesi."
+        },
+        {
+          "question": "Bisakah saya menghapus catatan yang salah?",
+          "answer": "Bisa. Gunakan ikon tempat sampah di samping sesi pada Sesi terbaru."
+        },
+        {
+          "question": "Apa isi file CSV?",
+          "answer": "Tanggal dan jam mulai, mata pelajaran, menit, dan catatan untuk setiap sesi, siap dibuka di spreadsheet."
+        },
+        {
+          "question": "Berapa lama sebaiknya saya belajar?",
+          "answer": "Tergantung tujuan Anda. Sesi yang teratur dan fokus dengan jeda lebih efektif daripada sesi yang sangat panjang. Gunakan Timer Pomodoro untuk menyusunnya."
+        }
+      ]
+    },
+    "daily-journal": {
+      "seoTitle": "Jurnal Harian & Pelacak Suasana Hati – Buku Harian Online Privat Gratis",
+      "metaDescription": "Jurnal harian privat dengan pelacak suasana hati, rasa syukur dan pencapaian, tampilan mingguan, pencarian, dan runtutan hari. Tersimpan hanya di browser Anda — tanpa akun, tidak ada yang diunggah. Ekspor kapan saja.",
+      "h1": "Jurnal Harian & Pelacak Suasana Hati",
+      "subheading": "Luangkan beberapa baris setiap hari: suasana hati, hal yang Anda syukuri, dan apa yang berjalan baik. Privat dan tersimpan di perangkat Anda.",
+      "keywords": [
+        "jurnal harian online",
+        "pelacak suasana hati",
+        "jurnal syukur",
+        "buku harian online privat",
+        "aplikasi jurnal gratis",
+        "jurnal refleksi untuk pelajar",
+        "check in harian",
+        "buku harian mood"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih harinya",
+          "text": "Hari ini terbuka secara default. Ketuk hari lain di baris minggu atau pilih tanggal mana pun yang lalu."
+        },
+        {
+          "name": "Pilih suasana hati",
+          "text": "Ketuk salah satu dari lima wajah, dari Buruk sampai Hebat. Ketuk lagi untuk menghapusnya."
+        },
+        {
+          "name": "Tulis sedikit",
+          "text": "Tambahkan hal yang Anda syukuri, pencapaian, dan catatan apa pun. Tersimpan saat Anda mengetik."
+        },
+        {
+          "name": "Lihat kembali",
+          "text": "Cari entri Anda, lihat runtutan hari dan rata-rata suasana hati, lalu ekspor semuanya sebagai file teks."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah jurnal saya privat?",
+          "answer": "Ya. Entri hanya disimpan di penyimpanan lokal browser pada perangkat ini. Tidak diunggah, dan tidak ada akun. Siapa pun yang bisa membuka browser ini di perangkat Anda dapat membacanya, jadi gunakan kunci perangkat."
+        },
+        {
+          "question": "Apakah entri saya bisa hilang?",
+          "answer": "Menghapus data browser atau memakai browser atau perangkat lain akan menghapus atau menyembunyikannya. Gunakan Ekspor sesekali untuk menyimpan cadangan."
+        },
+        {
+          "question": "Mengapa perlu menulis jurnal syukur?",
+          "answer": "Menuliskan beberapa hal baik setiap hari adalah kebiasaan sederhana yang menurut banyak orang dapat memperbaiki suasana hati. Ini adalah latihan kesejahteraan, bukan saran medis."
+        },
+        {
+          "question": "Apa itu runtutan hari?",
+          "answer": "Jumlah hari berturut-turut Anda menulis sesuatu, yang berakhir hari ini atau kemarin."
+        },
+        {
+          "question": "Bisakah saya menulis untuk hari-hari yang lalu?",
+          "answer": "Bisa. Pilih tanggal dari kolom kalender atau ketuk entri di daftar."
+        },
+        {
+          "question": "Apakah suasana hati saya dilacak dari waktu ke waktu?",
+          "answer": "Aplikasi menampilkan rata-rata suasana hati dari semua entri dan wajah untuk setiap hari di baris minggu."
+        },
+        {
+          "question": "Apakah cocok untuk dukungan kesehatan mental?",
+          "answer": "Ini hanya alat refleksi. Jika Anda merasa sangat down atau tidak aman, bicaralah dengan orang yang Anda percaya atau tenaga profesional kesehatan mental."
+        }
+      ]
+    },
+    "math-speed-trainer": {
+      "seoTitle": "Latihan Kecepatan Matematika Mental – Game Latihan Berhitung 60 Detik Gratis",
+      "metaDescription": "Latih penjumlahan, pengurangan, perkalian, dan pembagian melawan waktu. Pilih operasi dan tingkat kesulitan, lihat skor dan akurasi, lalu pecahkan rekor Anda. Gratis, tersimpan lokal.",
+      "h1": "Latihan Kecepatan Matematika Mental",
+      "subheading": "Jawab sebanyak mungkin soal dalam 60 detik. Pilih operasi dan levelnya, lalu coba pecahkan rekor Anda.",
+      "keywords": [
+        "latihan berhitung mental",
+        "tes kecepatan matematika",
+        "latihan berhitung online",
+        "latihan perkalian",
+        "game matematika 60 detik",
+        "latihan matematika",
+        "latihan soal hitung cepat",
+        "latihan perkalian tabel"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih operasi",
+          "text": "Centang salah satu dari + − × ÷. Minimal satu harus tetap aktif."
+        },
+        {
+          "name": "Pilih level",
+          "text": "Mudah memakai angka kecil, Sedang sampai 20 dan tabel sampai 10, dan Sulit sampai 100 dan tabel sampai 12."
+        },
+        {
+          "name": "Jawab dengan cepat",
+          "text": "Ketik jawaban lalu tekan Enter. Soal baru langsung muncul."
+        },
+        {
+          "name": "Pecahkan rekor Anda",
+          "text": "Setelah 60 detik habis, Anda melihat skor dan akurasi. Skor terbaik untuk setiap pengaturan tersimpan di perangkat ini."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah soalnya selalu bilangan bulat?",
+          "answer": "Ya. Pengurangan tidak pernah di bawah nol dan pembagian selalu punya hasil bilangan bulat yang pas."
+        },
+        {
+          "question": "Apakah skor terbaik saya tersimpan?",
+          "answer": "Ya, terpisah untuk setiap kombinasi operasi dan level, di browser pada perangkat ini."
+        },
+        {
+          "question": "Skor berapa yang tergolong bagus?",
+          "answer": "Tergantung levelnya. Usahakan meningkat sedikit setiap kali. Akurasi sama pentingnya dengan kecepatan."
+        },
+        {
+          "question": "Bagaimana ini membantu belajar saya?",
+          "answer": "Latihan singkat setiap hari membangun kelancaran dengan fakta dasar, sehingga perhatian Anda lebih leluasa untuk soal yang lebih sulit."
+        },
+        {
+          "question": "Bisakah saya hanya berlatih tabel perkalian?",
+          "answer": "Bisa. Aktifkan hanya × lalu pilih level. Sulit mencakup tabel sampai 12."
+        },
+        {
+          "question": "Apakah bisa dipakai di ponsel?",
+          "answer": "Ya. Keypad angka muncul di sebagian besar ponsel saat Anda mengetuk kotak jawaban."
+        },
+        {
+          "question": "Apakah ada yang dikirim ke internet?",
+          "answer": "Tidak. Soal dibuat di browser Anda dan skor Anda tetap di perangkat Anda."
+        }
+      ]
+    },
+    "typing-speed-test": {
+      "seoTitle": "Tes Kecepatan Mengetik – Tes WPM dan Akurasi Gratis dengan Riwayat",
+      "metaDescription": "Uji kecepatan mengetik Anda dalam kata per menit dengan tes 30, 60, atau 120 detik. Lihat WPM dan akurasi secara langsung serta pantau hasil terakhir Anda. Gratis, privat, tersimpan di browser.",
+      "h1": "Tes Kecepatan Mengetik",
+      "subheading": "Ketik teks secepat dan seakurat mungkin, lalu lihat kata per menit dan akurasi Anda.",
+      "keywords": [
+        "tes kecepatan mengetik",
+        "tes wpm",
+        "tes mengetik online gratis",
+        "tes kata per menit",
+        "latihan mengetik",
+        "tes akurasi mengetik",
+        "tes kecepatan keyboard",
+        "tes mengetik 1 menit"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih durasi",
+          "text": "Pilih 30, 60, atau 120 detik."
+        },
+        {
+          "name": "Mulai mengetik",
+          "text": "Klik teks lalu ketik. Timer mulai saat tombol pertama ditekan, dan setiap huruf menjadi hijau atau merah."
+        },
+        {
+          "name": "Lihat hasil Anda",
+          "text": "Saat waktu habis, atau Anda mencapai akhir teks, Anda melihat kata per menit dan akurasi Anda."
+        },
+        {
+          "name": "Pantau kemajuan",
+          "text": "Hasil terakhir Anda tercantum di sebelah kanan sehingga Anda bisa melihat diri Anda berkembang."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana WPM dihitung?",
+          "answer": "Setiap lima karakter yang benar dihitung sebagai satu kata, dibagi menit yang digunakan. Hanya karakter yang diketik dengan benar yang dihitung."
+        },
+        {
+          "question": "Berapa kecepatan mengetik yang bagus?",
+          "answer": "Kebanyakan orang mengetik 35 sampai 45 WPM. Di atas 60 tergolong cepat dan di atas 80 sangat cepat. Akurasi lebih penting daripada kecepatan semata."
+        },
+        {
+          "question": "Mengapa akurasi penting?",
+          "answer": "Kesalahan memakan waktu untuk diperbaiki. Mengetik sedikit lebih lambat dengan lebih sedikit kesalahan biasanya membawa Anda lebih jauh daripada terburu-buru."
+        },
+        {
+          "question": "Bisakah saya memperbaiki kesalahan?",
+          "answer": "Anda bisa menghapus dengan Backspace. Karakter yang salah ketik tampil merah sampai Anda memperbaikinya."
+        },
+        {
+          "question": "Apakah hasil saya tersimpan?",
+          "answer": "20 hasil terakhir disimpan di browser pada perangkat ini saja. Gunakan Hapus untuk menghilangkannya."
+        },
+        {
+          "question": "Apakah bisa dipakai dengan tata letak keyboard lain?",
+          "answer": "Bisa, tetapi teksnya dalam bahasa Inggris, jadi Anda harus bisa mengetik huruf dan tanda baca bahasa Inggris."
+        },
+        {
+          "question": "Apakah ada yang diunggah?",
+          "answer": "Tidak. Tes berjalan sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "snake-game": {
+      "seoTitle": "Game Ular – Snake Klasik Gratis Online dengan Kontrol Sentuh",
+      "metaDescription": "Mainkan game Snake klasik gratis di browser Anda. Tombol panah, WASD, atau geser, tiga kecepatan, skor terbaik tersimpan, dan layar penuh. Istirahat santai dari belajar.",
+      "h1": "Game Ular (Snake)",
+      "subheading": "Pandu ular untuk memakan makanan tanpa menabrak dinding atau tubuhnya sendiri. Istirahat singkat yang klasik.",
+      "keywords": [
+        "game ular",
+        "main snake online",
+        "game snake klasik",
+        "game ular gratis",
+        "game ular tanpa download",
+        "snake dengan keyboard",
+        "game ular di hp",
+        "snake jadul"
+      ],
+      "howTo": [
+        {
+          "name": "Mulai",
+          "text": "Tekan Mulai atau tombol panah apa pun. Ular mulai bergerak ke kanan."
+        },
+        {
+          "name": "Arahkan",
+          "text": "Gunakan tombol panah atau W, A, S, D di keyboard, atau geser di layar sentuh. Anda tidak bisa langsung berbalik arah ke belakang."
+        },
+        {
+          "name": "Makan dan tumbuh",
+          "text": "Makan makanan merah untuk mendapat satu poin dan memanjang."
+        },
+        {
+          "name": "Hindari tabrakan",
+          "text": "Permainan berakhir jika Anda menyentuh dinding atau tubuh sendiri. Pecahkan skor terbaik Anda yang tersimpan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa saja kontrolnya?",
+          "answer": "Tombol panah atau W, A, S, D untuk mengarahkan, Spasi untuk jeda, dan geser di ponsel atau tablet."
+        },
+        {
+          "question": "Bisakah saya mengubah kecepatan?",
+          "answer": "Bisa. Pilih Santai, Normal, atau Cepat. Kecepatan yang lebih tinggi lebih sulit."
+        },
+        {
+          "question": "Apakah skor terbaik saya tersimpan?",
+          "answer": "Ya, di browser pada perangkat ini saja."
+        },
+        {
+          "question": "Apakah ular tembus ke sisi seberang saat mencapai tepi?",
+          "answer": "Tidak. Menyentuh tepi mengakhiri permainan, sehingga sedikit lebih sulit."
+        },
+        {
+          "question": "Apakah bisa dimainkan di ponsel?",
+          "answer": "Ya. Geser di papan untuk berbelok. Layar penuh memberi papan yang lebih besar."
+        },
+        {
+          "question": "Apakah cocok untuk istirahat belajar?",
+          "answer": "Beberapa menit bisa menyegarkan pikiran. Setel timer singkat agar istirahat Anda tidak berubah menjadi satu jam."
+        },
+        {
+          "question": "Apakah berbayar?",
+          "answer": "Tidak. Gratis, tanpa iklan di dalam game, dan tidak perlu akun."
+        }
+      ]
     }
   },
   "commandMenu": {

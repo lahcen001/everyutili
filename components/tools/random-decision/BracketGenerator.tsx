@@ -1,5 +1,6 @@
 "use client";
 
+import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import * as React from "react";
 import { Trophy, Save } from "lucide-react";
 
@@ -64,7 +65,7 @@ function formatBracketAsText(round: Matchup[]): string {
 
 export default function BracketGenerator() {
   useTrackTool("bracket-generator");
-  const [input, setInput] = React.useState(
+  const [input, setInput] = usePersisted("everyutili_bracket", 
     "Team Alpha\nTeam Bravo\nTeam Charlie\nTeam Delta\nTeam Echo\nTeam Foxtrot"
   );
   const [roundOne, setRoundOne] = React.useState<Matchup[] | null>(null);

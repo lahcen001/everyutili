@@ -8336,6 +8336,390 @@
           "answer": "Ein paar Minuten ruhiges Puzzeln können den Kopf entspannen. Weil man leicht weiterspielt, stelle einen kurzen Timer, damit deine Pause eine Pause bleibt."
         }
       ]
+    },
+    "todo-list": {
+      "seoTitle": "To-do-Liste online – Kostenlose Aufgabenliste mit Prioritäten & Fälligkeitsdatum",
+      "metaDescription": "Kostenlose Online-To-do-Liste mit Prioritäten, Fälligkeitsdaten, Filtern und Fortschrittsbalken. Aufgaben werden automatisch in Ihrem Browser gespeichert – ohne Konto, ohne Anmeldung, privat.",
+      "h1": "To-do-Liste mit Prioritäten",
+      "subheading": "Schreiben Sie Ihre Aufgaben auf, legen Sie Priorität und Fälligkeitsdatum fest und haken Sie sie ab. Alles wird automatisch auf Ihrem Gerät gespeichert.",
+      "keywords": [
+        "to do liste online",
+        "aufgabenliste",
+        "to-do-liste mit fälligkeitsdatum",
+        "kostenlose to do liste",
+        "tagesplaner aufgaben",
+        "checkliste online",
+        "hausaufgabenplaner",
+        "aufgabenliste mit prioritäten"
+      ],
+      "howTo": [
+        {
+          "name": "Aufgabe hinzufügen",
+          "text": "Geben Sie ein, was zu tun ist, wählen Sie die Priorität Hoch, Mittel oder Niedrig, wählen Sie optional ein Fälligkeitsdatum und drücken Sie die Eingabetaste."
+        },
+        {
+          "name": "Von oben nach unten arbeiten",
+          "text": "Die Aufgaben sind nach Priorität und Fälligkeitsdatum sortiert, erledigte stehen ganz unten. Überfällige Aufgaben werden rot."
+        },
+        {
+          "name": "Abhaken und bearbeiten",
+          "text": "Klicken Sie auf den Kreis, um eine Aufgabe als erledigt zu markieren. Klicken Sie auf den Text einer Aufgabe, um sie umzubenennen."
+        },
+        {
+          "name": "Aufräumen",
+          "text": "Unter Erledigt sehen Sie abgeschlossene Aufgaben, mit Erledigte löschen entfernen Sie sie. Der Fortschrittsbalken zeigt, wie viel geschafft ist."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wird meine To-do-Liste gespeichert?",
+          "answer": "Ja. Sie wird automatisch im lokalen Speicher Ihres Browsers auf diesem Gerät gespeichert und ist beim nächsten Besuch noch da. Sie wird nie hochgeladen; beim Löschen der Browserdaten wird sie entfernt."
+        },
+        {
+          "question": "Kann ich sie auf Handy und Computer nutzen?",
+          "answer": "Die Liste liegt in einem Browser auf einem Gerät. Um sie woanders zu nutzen, öffnen Sie die Seite dort – sie beginnt leer, da nichts online übertragen wird."
+        },
+        {
+          "question": "Wie werden die Aufgaben sortiert?",
+          "answer": "Zuerst kommen unerledigte Aufgaben, dann nach Priorität (Hoch, Mittel, Niedrig), danach nach dem frühesten Fälligkeitsdatum."
+        },
+        {
+          "question": "Was bedeutet Überfällig?",
+          "answer": "Eine nicht erledigte Aufgabe, deren Fälligkeitsdatum vor dem heutigen Tag liegt. Sie wird rot angezeigt, damit sie Ihnen auffällt."
+        },
+        {
+          "question": "Kann ich eine Aufgabe bearbeiten?",
+          "answer": "Ja. Klicken Sie auf den Aufgabentext, ändern Sie ihn und drücken Sie die Eingabetaste."
+        },
+        {
+          "question": "Gibt es eine Obergrenze für die Anzahl der Aufgaben?",
+          "answer": "Nein, es gibt keine feste Grenze. Browser erlauben mehrere Megabyte lokalen Speicher, das reicht für Tausende von Aufgaben."
+        },
+        {
+          "question": "Funktioniert sie mit dem Pomodoro-Timer?",
+          "answer": "Ja. Wählen Sie eine Aufgabe und starten Sie dafür im Pomodoro-Timer eine Pomodoro-Sitzung."
+        }
+      ]
+    },
+    "study-time-tracker": {
+      "seoTitle": "Lernzeit-Tracker – Kostenloses Lernprotokoll mit Timer und Wochendiagramm",
+      "metaDescription": "Erfassen Sie, wie lange Sie für jedes Fach lernen – per Timer mit einem Klick oder manuell. Sehen Sie Summen für heute, diese Woche und insgesamt, ein 7-Tage-Diagramm und exportieren Sie als CSV. Privat und lokal gespeichert.",
+      "h1": "Lernzeit-Tracker",
+      "subheading": "Starten Sie einen Timer für ein Fach, sehen Sie, wohin Ihre Stunden gehen, und behalten Sie Ihre Woche im Blick.",
+      "keywords": [
+        "lernzeit tracker",
+        "lernprotokoll",
+        "lernstunden erfassen",
+        "zeiterfassung für schüler und studenten",
+        "lerntimer nach fach",
+        "lernzeit messen",
+        "hausaufgaben zeit erfassen",
+        "lernplan protokoll"
+      ],
+      "howTo": [
+        {
+          "name": "Fach auswählen",
+          "text": "Wählen Sie eines der Fächer oder fügen Sie ein eigenes hinzu, zum Beispiel Mathe oder Lesen."
+        },
+        {
+          "name": "Lernen starten",
+          "text": "Drücken Sie auf Lernen starten. Der Timer läuft auch weiter, wenn Sie die Seite neu laden. Drücken Sie am Ende auf Stoppen & speichern."
+        },
+        {
+          "name": "Verpasste Zeit nachtragen",
+          "text": "Wenn Sie vergessen haben, den Timer zu starten, tragen Sie die Minuten manuell für ein Fach nach."
+        },
+        {
+          "name": "Auswerten und exportieren",
+          "text": "Sehen Sie die Summen für heute, diese Woche und insgesamt pro Fach, das 7-Tage-Diagramm und die letzten Sitzungen. Laden Sie alles als CSV-Datei herunter."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wo werden meine Lerndaten gespeichert?",
+          "answer": "Nur im lokalen Speicher Ihres Browsers auf diesem Gerät. Es wird nichts hochgeladen. Beim Löschen der Browserdaten gehen sie verloren – exportieren Sie daher eine CSV-Datei als Sicherung."
+        },
+        {
+          "question": "Läuft der Timer weiter, wenn ich den Tab schließe?",
+          "answer": "Ja. Die Startzeit wird gespeichert, sodass der Timer beim erneuten Öffnen der Seite die richtige verstrichene Zeit anzeigt. Drücken Sie auf Stoppen & speichern, um die Sitzung zu erfassen."
+        },
+        {
+          "question": "Kann ich mehrere Fächer erfassen?",
+          "answer": "Ja. Fügen Sie so viele Fächer hinzu, wie Sie möchten. Jedes hat eine eigene Farbe und eigene Summen."
+        },
+        {
+          "question": "Wie wird die Woche berechnet?",
+          "answer": "Es zählen die letzten sieben Tage einschließlich heute, basierend auf dem Datum, an dem jede Sitzung begonnen hat."
+        },
+        {
+          "question": "Kann ich einen falschen Eintrag löschen?",
+          "answer": "Ja. Verwenden Sie das Papierkorb-Symbol neben einer Sitzung unter Letzte Sitzungen."
+        },
+        {
+          "question": "Was steht in der CSV-Datei?",
+          "answer": "Startdatum und -uhrzeit, Fach, Minuten und Notiz jeder Sitzung – bereit für eine Tabellenkalkulation."
+        },
+        {
+          "question": "Wie viel sollte ich lernen?",
+          "answer": "Das hängt von Ihren Zielen ab. Regelmäßige, konzentrierte Einheiten mit Pausen sind wirksamer als sehr lange. Nutzen Sie den Pomodoro-Timer, um sie zu strukturieren."
+        }
+      ]
+    },
+    "daily-journal": {
+      "seoTitle": "Tagebuch & Stimmungstracker – Kostenloses privates Online-Tagebuch",
+      "metaDescription": "Ein privates Tagebuch mit Stimmungstracking, Dankbarkeit und Erfolgen, Wochenansicht, Suche und Serien. Nur in Ihrem Browser gespeichert – ohne Konto, nichts wird hochgeladen. Jederzeit exportierbar.",
+      "h1": "Tagebuch & Stimmungstracker",
+      "subheading": "Ziehen Sie täglich mit ein paar Zeilen Bilanz: Ihre Stimmung, wofür Sie dankbar sind und was gut lief. Privat und auf Ihrem Gerät gespeichert.",
+      "keywords": [
+        "tagebuch online",
+        "stimmungstracker",
+        "dankbarkeitstagebuch",
+        "privates online tagebuch",
+        "tagebuch app kostenlos",
+        "reflexionstagebuch für schüler und studenten",
+        "tägliches check-in",
+        "stimmungstagebuch"
+      ],
+      "howTo": [
+        {
+          "name": "Tag auswählen",
+          "text": "Standardmäßig ist heute geöffnet. Tippen Sie in der Wochenleiste auf einen anderen Tag oder wählen Sie ein beliebiges vergangenes Datum."
+        },
+        {
+          "name": "Stimmung wählen",
+          "text": "Tippen Sie auf eines von fünf Gesichtern, von Mies bis Großartig. Erneut tippen, um die Auswahl aufzuheben."
+        },
+        {
+          "name": "Ein wenig schreiben",
+          "text": "Notieren Sie, wofür Sie dankbar sind, Ihre Erfolge und weitere Notizen. Es wird beim Tippen gespeichert."
+        },
+        {
+          "name": "Zurückblicken",
+          "text": "Durchsuchen Sie Ihre Einträge, sehen Sie Ihre Serie und die durchschnittliche Stimmung und exportieren Sie alles als Textdatei."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ist mein Tagebuch privat?",
+          "answer": "Ja. Einträge werden nur im lokalen Speicher Ihres Browsers auf diesem Gerät abgelegt. Sie werden nicht hochgeladen, und es gibt kein Konto. Wer diesen Browser auf Ihrem Gerät öffnen kann, könnte sie lesen – nutzen Sie daher eine Gerätesperre."
+        },
+        {
+          "question": "Kann ich meine Einträge verlieren?",
+          "answer": "Das Löschen der Browserdaten oder die Nutzung eines anderen Browsers oder Geräts entfernt oder verbirgt sie. Nutzen Sie ab und zu Exportieren, um eine Sicherung zu behalten."
+        },
+        {
+          "question": "Warum ein Dankbarkeitstagebuch führen?",
+          "answer": "Jeden Tag ein paar gute Dinge aufzuschreiben ist eine einfache Gewohnheit, die nach Erfahrung vieler Menschen die Stimmung hebt. Es ist eine Übung für das Wohlbefinden, kein medizinischer Rat."
+        },
+        {
+          "question": "Was ist die Serie?",
+          "answer": "Die Anzahl der Tage in Folge, an denen Sie etwas geschrieben haben, bis heute oder gestern."
+        },
+        {
+          "question": "Kann ich für vergangene Tage schreiben?",
+          "answer": "Ja. Wählen Sie ein Datum im Kalenderfeld oder tippen Sie auf einen Eintrag in der Liste."
+        },
+        {
+          "question": "Verfolgt es meine Stimmung im Zeitverlauf?",
+          "answer": "Es zeigt Ihre durchschnittliche Stimmung über alle Einträge und das Gesicht für jeden Tag in der Wochenleiste."
+        },
+        {
+          "question": "Eignet es sich zur Unterstützung bei psychischen Problemen?",
+          "answer": "Es ist nur ein Werkzeug zur Reflexion. Wenn Sie sich sehr niedergeschlagen oder unsicher fühlen, sprechen Sie bitte mit einer Vertrauensperson oder einer Fachkraft für psychische Gesundheit."
+        }
+      ]
+    },
+    "math-speed-trainer": {
+      "seoTitle": "Kopfrechnen trainieren – Kostenloses 60-Sekunden-Rechenspiel",
+      "metaDescription": "Üben Sie Addition, Subtraktion, Multiplikation und Division gegen die Uhr. Wählen Sie Rechenarten und Schwierigkeit, sehen Sie Punktzahl und Genauigkeit und übertreffen Sie Ihren Rekord. Kostenlos, lokal gespeichert.",
+      "h1": "Kopfrechen-Trainer",
+      "subheading": "Lösen Sie in 60 Sekunden so viele Aufgaben wie möglich. Wählen Sie Rechenarten und Stufe und versuchen Sie, Ihren Rekord zu knacken.",
+      "keywords": [
+        "kopfrechnen üben",
+        "kopfrechnen test",
+        "rechnen üben online",
+        "einmaleins üben",
+        "60 sekunden rechenspiel",
+        "kopfrechen trainer",
+        "schnell rechnen üben",
+        "einmaleins trainer"
+      ],
+      "howTo": [
+        {
+          "name": "Rechenarten wählen",
+          "text": "Haken Sie beliebige von + − × ÷ an. Mindestens eine muss aktiv bleiben."
+        },
+        {
+          "name": "Stufe wählen",
+          "text": "Leicht verwendet kleine Zahlen, Mittel geht bis 20 und das Einmaleins bis 10, und Schwer geht bis 100 und das Einmaleins bis 12."
+        },
+        {
+          "name": "Schnell antworten",
+          "text": "Geben Sie die Antwort ein und drücken Sie die Eingabetaste. Sofort erscheint eine neue Aufgabe."
+        },
+        {
+          "name": "Rekord knacken",
+          "text": "Nach Ablauf der 60 Sekunden sehen Sie Ihre Punktzahl und Genauigkeit. Ihr Rekord für jede Einstellung wird auf diesem Gerät gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Sind die Aufgaben immer ganze Zahlen?",
+          "answer": "Ja. Subtraktionen ergeben nie weniger als null, und Divisionen haben immer ein exaktes ganzzahliges Ergebnis."
+        },
+        {
+          "question": "Wird mein Rekord gespeichert?",
+          "answer": "Ja, getrennt für jede Kombination aus Rechenarten und Stufe, in Ihrem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Was ist eine gute Punktzahl?",
+          "answer": "Das hängt von der Stufe ab. Versuchen Sie, sich jedes Mal ein wenig zu verbessern. Genauigkeit zählt genauso viel wie Tempo."
+        },
+        {
+          "question": "Wie kann es mir beim Lernen helfen?",
+          "answer": "Kurze tägliche Übungen festigen die Grundrechenfertigkeiten und schaffen so Aufmerksamkeit für schwierigere Aufgaben."
+        },
+        {
+          "question": "Kann ich nur das Einmaleins üben?",
+          "answer": "Ja. Aktivieren Sie nur × und wählen Sie eine Stufe. Schwer deckt das Einmaleins bis 12 ab."
+        },
+        {
+          "question": "Funktioniert es auf dem Handy?",
+          "answer": "Ja. Auf den meisten Handys erscheint eine Zifferntastatur, wenn Sie auf das Antwortfeld tippen."
+        },
+        {
+          "question": "Wird etwas online gesendet?",
+          "answer": "Nein. Die Aufgaben werden in Ihrem Browser erzeugt und Ihre Ergebnisse bleiben auf Ihrem Gerät."
+        }
+      ]
+    },
+    "typing-speed-test": {
+      "seoTitle": "Tipptest – Kostenloser WPM- und Genauigkeitstest mit Verlauf",
+      "metaDescription": "Testen Sie Ihre Tippgeschwindigkeit in Wörtern pro Minute mit Tests von 30, 60 oder 120 Sekunden. Sehen Sie WPM und Genauigkeit live und verfolgen Sie Ihre letzten Ergebnisse. Kostenlos, privat, im Browser gespeichert.",
+      "h1": "Tipptest",
+      "subheading": "Tippen Sie den Text so schnell und genau wie möglich ab und erfahren Sie Ihre Wörter pro Minute und Ihre Genauigkeit.",
+      "keywords": [
+        "tipptest",
+        "wpm test",
+        "schreibtest online kostenlos",
+        "wörter pro minute test",
+        "tippen üben",
+        "tippgenauigkeit testen",
+        "tastatur geschwindigkeitstest",
+        "tipptest 1 minute"
+      ],
+      "howTo": [
+        {
+          "name": "Dauer wählen",
+          "text": "Wählen Sie 30, 60 oder 120 Sekunden."
+        },
+        {
+          "name": "Mit dem Tippen beginnen",
+          "text": "Klicken Sie auf den Text und tippen Sie los. Der Timer startet mit Ihrer ersten Taste, und jeder Buchstabe wird grün oder rot."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Wenn die Zeit abgelaufen ist oder Sie das Ende des Textes erreichen, sehen Sie Ihre Wörter pro Minute und Ihre Genauigkeit."
+        },
+        {
+          "name": "Fortschritt verfolgen",
+          "text": "Ihre letzten Ergebnisse werden rechts aufgelistet, damit Sie Ihre Verbesserung sehen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie wird WPM berechnet?",
+          "answer": "Je fünf richtige Zeichen zählen als ein Wort, geteilt durch die benötigten Minuten. Nur korrekt getippte Zeichen werden gezählt."
+        },
+        {
+          "question": "Was ist eine gute Tippgeschwindigkeit?",
+          "answer": "Viele Menschen tippen 35 bis 45 WPM. Über 60 ist schnell und über 80 sehr schnell. Genauigkeit ist wichtiger als reine Geschwindigkeit."
+        },
+        {
+          "question": "Warum ist Genauigkeit wichtig?",
+          "answer": "Fehler zu korrigieren kostet Zeit. Etwas langsamer mit weniger Fehlern zu tippen bringt Sie meist weiter als Hetze."
+        },
+        {
+          "question": "Kann ich einen Fehler korrigieren?",
+          "answer": "Sie können mit der Rücktaste löschen. Falsch getippte Zeichen werden rot angezeigt, bis Sie sie korrigieren."
+        },
+        {
+          "question": "Werden meine Ergebnisse gespeichert?",
+          "answer": "Die letzten 20 Ergebnisse werden nur in Ihrem Browser auf diesem Gerät gespeichert. Mit Löschen entfernen Sie sie."
+        },
+        {
+          "question": "Funktioniert es mit anderen Tastaturlayouts?",
+          "answer": "Ja, aber die Texte sind auf Englisch, daher müssen Sie englische Buchstaben und Satzzeichen tippen können."
+        },
+        {
+          "question": "Wird etwas hochgeladen?",
+          "answer": "Nein. Der Test läuft vollständig in Ihrem Browser."
+        }
+      ]
+    },
+    "snake-game": {
+      "seoTitle": "Snake-Spiel – Kostenloses Classic Snake online mit Touch-Steuerung",
+      "metaDescription": "Spielen Sie das klassische Snake kostenlos im Browser. Pfeiltasten, WASD oder Wischen, drei Geschwindigkeiten, gespeicherter Rekord und Vollbild. Eine entspannende Lernpause.",
+      "h1": "Snake-Spiel",
+      "subheading": "Steuern Sie die Schlange zum Futter, ohne gegen die Wände oder sich selbst zu stoßen. Eine klassische, kurze Pause.",
+      "keywords": [
+        "snake spiel",
+        "snake online spielen",
+        "klassisches snake spiel",
+        "snake kostenlos",
+        "snake ohne download",
+        "snake mit tastatur",
+        "snake handyspiel",
+        "retro snake"
+      ],
+      "howTo": [
+        {
+          "name": "Starten",
+          "text": "Drücken Sie Start oder eine beliebige Pfeiltaste. Die Schlange bewegt sich zunächst nach rechts."
+        },
+        {
+          "name": "Steuern",
+          "text": "Nutzen Sie die Pfeiltasten oder W, A, S, D auf der Tastatur oder wischen Sie auf einem Touchscreen. Sie können nicht direkt in die Gegenrichtung umkehren."
+        },
+        {
+          "name": "Fressen und wachsen",
+          "text": "Fressen Sie das rote Futter, um einen Punkt zu erhalten und länger zu werden."
+        },
+        {
+          "name": "Zusammenstöße vermeiden",
+          "text": "Das Spiel endet, wenn Sie eine Wand oder Ihren eigenen Körper berühren. Übertreffen Sie Ihren gespeicherten Rekord."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie lautet die Steuerung?",
+          "answer": "Pfeiltasten oder W, A, S, D zum Steuern, Leertaste für Pause und Wischen auf Handy oder Tablet."
+        },
+        {
+          "question": "Kann ich die Geschwindigkeit ändern?",
+          "answer": "Ja. Wählen Sie Gemütlich, Normal oder Schnell. Höhere Geschwindigkeiten sind schwieriger."
+        },
+        {
+          "question": "Wird mein Rekord gespeichert?",
+          "answer": "Ja, nur in Ihrem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Kommt die Schlange an den Rändern auf der anderen Seite wieder heraus?",
+          "answer": "Nein. Das Berühren des Randes beendet das Spiel, was es etwas schwerer macht."
+        },
+        {
+          "question": "Funktioniert es auf dem Handy?",
+          "answer": "Ja. Wischen Sie auf dem Spielfeld, um abzubiegen. Im Vollbild ist das Spielfeld größer."
+        },
+        {
+          "question": "Ist es eine gute Lernpause?",
+          "answer": "Ein paar Minuten können den Kopf freimachen. Stellen Sie einen kurzen Timer, damit aus der Pause nicht eine Stunde wird."
+        },
+        {
+          "question": "Kostet es etwas?",
+          "answer": "Nein. Es ist kostenlos, hat keine Werbung im Spiel und braucht kein Konto."
+        }
+      ]
     }
   },
   "commandMenu": {

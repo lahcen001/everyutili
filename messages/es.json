@@ -8336,6 +8336,390 @@
           "answer": "Unos minutos de un puzzle tranquilo pueden descansar la mente. Como es fácil seguir jugando, pon un temporizador corto para que tu descanso siga siendo un descanso."
         }
       ]
+    },
+    "todo-list": {
+      "seoTitle": "Lista de tareas online – Gratis, con prioridades y fechas límite",
+      "metaDescription": "Lista de tareas online gratis con prioridades, fechas límite, filtros y barra de progreso. Tus tareas se guardan automáticamente en el navegador: sin cuenta, sin registro y privado.",
+      "h1": "Lista de tareas con prioridades",
+      "subheading": "Anota tus tareas, define una prioridad y una fecha límite, y márcalas como hechas. Todo se guarda automáticamente en tu dispositivo.",
+      "keywords": [
+        "lista de tareas online",
+        "lista de tareas",
+        "lista de tareas con fecha límite",
+        "lista de tareas gratis",
+        "planificador de tareas diarias",
+        "checklist online",
+        "planificador de deberes",
+        "lista de tareas con prioridades"
+      ],
+      "howTo": [
+        {
+          "name": "Añadir una tarea",
+          "text": "Escribe lo que tienes que hacer, elige prioridad Alta, Media o Baja, selecciona una fecha límite si quieres y pulsa Enter."
+        },
+        {
+          "name": "Trabaja de arriba abajo",
+          "text": "Las tareas se ordenan por prioridad y fecha límite, con las terminadas al final. Las tareas vencidas (Overdue) se ponen en rojo."
+        },
+        {
+          "name": "Marcar y editar",
+          "text": "Pulsa el círculo para marcar una tarea como hecha. Haz clic en el texto de una tarea para cambiarle el nombre."
+        },
+        {
+          "name": "Limpiar",
+          "text": "Usa Completadas para revisar las tareas terminadas y Borrar completadas para eliminarlas. La barra de progreso muestra cuánto llevas hecho."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Se guarda mi lista de tareas?",
+          "answer": "Sí. Se guarda automáticamente en el almacenamiento local de tu navegador en este dispositivo, así que sigue ahí cuando vuelvas. Nunca se sube a internet, y si borras los datos del navegador se elimina."
+        },
+        {
+          "question": "¿Puedo usarla en el móvil y en el ordenador?",
+          "answer": "La lista vive en un solo navegador de un solo dispositivo. Para usarla en otro sitio, abre la página allí: empezará vacía, porque no se envía nada online."
+        },
+        {
+          "question": "¿Cómo se ordenan las tareas?",
+          "answer": "Primero las tareas sin terminar, luego por prioridad (Alta, Media, Baja) y después por la fecha límite más próxima."
+        },
+        {
+          "question": "¿Qué significa Vencida?",
+          "answer": "Una tarea con una fecha límite anterior a hoy que no está terminada. Se muestra en rojo para que no se te pase."
+        },
+        {
+          "question": "¿Puedo editar una tarea?",
+          "answer": "Sí. Haz clic en el texto de la tarea, cámbialo y pulsa Enter."
+        },
+        {
+          "question": "¿Hay un límite de tareas?",
+          "answer": "No hay un límite fijo. Los navegadores permiten varios megabytes de almacenamiento local, espacio suficiente para miles de tareas."
+        },
+        {
+          "question": "¿Funciona con el temporizador Pomodoro?",
+          "answer": "Sí. Elige una tarea y luego haz una sesión Pomodoro con ella en la herramienta Temporizador Pomodoro."
+        }
+      ]
+    },
+    "study-time-tracker": {
+      "seoTitle": "Control del tiempo de estudio – Registro gratis con cronómetro y gráfico semanal",
+      "metaDescription": "Controla cuánto estudias cada asignatura con un cronómetro de un clic o entradas manuales. Consulta totales de hoy, de la semana y totales históricos, un gráfico de 7 días y exporta a CSV. Privado y guardado en local.",
+      "h1": "Control del tiempo de estudio",
+      "subheading": "Inicia un cronómetro para una asignatura, descubre en qué se van tus horas y ten una idea clara de tu semana.",
+      "keywords": [
+        "control del tiempo de estudio",
+        "registro de estudio",
+        "contador de horas de estudio",
+        "control de tiempo para estudiantes",
+        "cronómetro de estudio por asignatura",
+        "medir tiempo de estudio",
+        "control de tiempo de deberes",
+        "planificador de estudio con registro"
+      ],
+      "howTo": [
+        {
+          "name": "Elige una asignatura",
+          "text": "Selecciona una de las asignaturas o añade la tuya, como Matemáticas o Lectura."
+        },
+        {
+          "name": "Empieza a estudiar",
+          "text": "Pulsa Empezar a estudiar. El cronómetro sigue funcionando aunque recargues la página. Pulsa Parar y guardar cuando termines."
+        },
+        {
+          "name": "Añade el tiempo olvidado",
+          "text": "Si olvidaste iniciar el cronómetro, añade minutos manualmente a una asignatura."
+        },
+        {
+          "name": "Revisa y exporta",
+          "text": "Consulta los totales de hoy, de la semana y los históricos por asignatura, el gráfico de 7 días y las sesiones recientes. Descarga todo en un archivo CSV."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Dónde se guardan mis datos de estudio?",
+          "answer": "En el almacenamiento local de tu navegador, solo en este dispositivo. No se sube nada. Si borras los datos del navegador se eliminan, así que exporta un CSV si quieres una copia de seguridad."
+        },
+        {
+          "question": "¿Sigue el cronómetro si cierro la pestaña?",
+          "answer": "Sí. La hora de inicio queda guardada, así que al abrir la página de nuevo el cronómetro muestra el tiempo transcurrido correcto. Pulsa Parar y guardar para registrar la sesión."
+        },
+        {
+          "question": "¿Puedo controlar varias asignaturas?",
+          "answer": "Sí. Añade tantas asignaturas como quieras. Cada una tiene su propio color y sus propios totales."
+        },
+        {
+          "question": "¿Cómo se calcula la semana?",
+          "answer": "Son los últimos siete días, incluido hoy, según la fecha en que empezó cada sesión."
+        },
+        {
+          "question": "¿Puedo borrar una entrada equivocada?",
+          "answer": "Sí. Usa el icono de la papelera junto a una sesión en Sesiones recientes."
+        },
+        {
+          "question": "¿Qué contiene el CSV?",
+          "answer": "La fecha y hora de inicio, la asignatura, los minutos y la nota de cada sesión, listo para una hoja de cálculo."
+        },
+        {
+          "question": "¿Cuánto debería estudiar?",
+          "answer": "Depende de tus objetivos. Las sesiones regulares y concentradas con descansos funcionan mejor que las muy largas. Usa el Temporizador Pomodoro para organizarlas."
+        }
+      ]
+    },
+    "daily-journal": {
+      "seoTitle": "Diario personal y registro del estado de ánimo – Diario online gratis y privado",
+      "metaDescription": "Un diario diario privado con registro del estado de ánimo, gratitud y logros, vista semanal, búsqueda y rachas. Se guarda solo en tu navegador: sin cuenta y sin subir nada. Exporta cuando quieras.",
+      "h1": "Diario personal y registro del estado de ánimo",
+      "subheading": "Haz un repaso diario con unas pocas líneas: tu estado de ánimo, por qué estás agradecido y qué salió bien. Privado y guardado en tu dispositivo.",
+      "keywords": [
+        "diario personal online",
+        "registro del estado de ánimo",
+        "diario de gratitud",
+        "diario online privado",
+        "app de diario gratis",
+        "diario de reflexión para estudiantes",
+        "chequeo diario emocional",
+        "diario del estado de ánimo"
+      ],
+      "howTo": [
+        {
+          "name": "Elige el día",
+          "text": "Hoy está abierto por defecto. Toca otro día en la tira semanal o elige cualquier fecha pasada."
+        },
+        {
+          "name": "Elige tu estado de ánimo",
+          "text": "Toca una de las cinco caras, de Mal a Genial. Tócala otra vez para quitarla."
+        },
+        {
+          "name": "Escribe un poco",
+          "text": "Añade por qué estás agradecido, tus logros y las notas que quieras. Se guarda mientras escribes."
+        },
+        {
+          "name": "Mira atrás",
+          "text": "Busca en tus entradas, consulta tu racha y tu estado de ánimo medio, y exporta todo como archivo de texto."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Es privado mi diario?",
+          "answer": "Sí. Las entradas se guardan solo en el almacenamiento local de tu navegador en este dispositivo. No se suben y no hay cuenta. Cualquiera que pueda abrir este navegador en tu dispositivo podría leerlas, así que usa un bloqueo de pantalla."
+        },
+        {
+          "question": "¿Puedo perder mis entradas?",
+          "answer": "Borrar los datos del navegador o usar otro navegador o dispositivo las eliminará o las ocultará. Usa Exportar de vez en cuando para tener una copia de seguridad."
+        },
+        {
+          "question": "¿Por qué llevar un diario de gratitud?",
+          "answer": "Escribir unas cuantas cosas buenas cada día es un hábito sencillo que a muchas personas les ayuda a mejorar el ánimo. Es una práctica de bienestar, no un consejo médico."
+        },
+        {
+          "question": "¿Qué es la racha?",
+          "answer": "El número de días seguidos en los que escribiste algo, terminando hoy o ayer."
+        },
+        {
+          "question": "¿Puedo escribir sobre días pasados?",
+          "answer": "Sí. Elige una fecha en el campo del calendario o toca una entrada de la lista."
+        },
+        {
+          "question": "¿Registra mi estado de ánimo a lo largo del tiempo?",
+          "answer": "Muestra tu estado de ánimo medio entre las entradas y la cara de cada día en la tira semanal."
+        },
+        {
+          "question": "¿Sirve como apoyo para la salud mental?",
+          "answer": "Es solo una herramienta de reflexión. Si te sientes muy decaído o inseguro, habla con alguien de confianza o con un profesional de la salud mental."
+        }
+      ]
+    },
+    "math-speed-trainer": {
+      "seoTitle": "Entrenador de cálculo mental – Juego gratis de aritmética de 60 segundos",
+      "metaDescription": "Practica sumas, restas, multiplicaciones y divisiones contra el reloj. Elige operaciones y dificultad, consulta tu puntuación y precisión, y supera tu mejor marca. Gratis y guardado en local.",
+      "h1": "Entrenador de cálculo mental",
+      "subheading": "Resuelve cuantas operaciones puedas en 60 segundos. Elige las operaciones y el nivel, e intenta superar tu mejor marca.",
+      "keywords": [
+        "cálculo mental",
+        "test de velocidad de cálculo",
+        "practicar aritmética online",
+        "practicar multiplicaciones",
+        "juego de matemáticas de 60 segundos",
+        "entrenador de matemáticas",
+        "ejercicios rápidos de cálculo",
+        "practicar tablas de multiplicar"
+      ],
+      "howTo": [
+        {
+          "name": "Elige las operaciones",
+          "text": "Marca cualquiera de + − × ÷. Al menos una debe quedar activada."
+        },
+        {
+          "name": "Elige un nivel",
+          "text": "Fácil usa números pequeños, Medio llega hasta 20 y tablas hasta el 10, y Difícil llega hasta 100 y tablas hasta el 12."
+        },
+        {
+          "name": "Responde rápido",
+          "text": "Escribe la respuesta y pulsa Enter. Aparece una nueva pregunta enseguida."
+        },
+        {
+          "name": "Supera tu mejor marca",
+          "text": "Cuando pasan los 60 segundos ves tu puntuación y tu precisión. Tu mejor marca para cada configuración se guarda en este dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Las preguntas son siempre con números enteros?",
+          "answer": "Sí. La resta nunca da menos de cero y la división siempre tiene un resultado exacto entero."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, por separado para cada combinación de operaciones y nivel, en tu navegador en este dispositivo."
+        },
+        {
+          "question": "¿Qué es una buena puntuación?",
+          "answer": "Depende del nivel. Intenta mejorar un poco cada vez. La precisión importa tanto como la velocidad."
+        },
+        {
+          "question": "¿Cómo puede ayudarme a estudiar?",
+          "answer": "Los ejercicios cortos diarios mejoran la fluidez con las operaciones básicas, lo que libera tu atención para problemas más difíciles."
+        },
+        {
+          "question": "¿Puedo practicar solo las tablas de multiplicar?",
+          "answer": "Sí. Activa solo × y elige un nivel. Difícil cubre las tablas hasta el 12."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. En la mayoría de los móviles aparece un teclado numérico al tocar el cuadro de respuesta."
+        },
+        {
+          "question": "¿Se envía algo online?",
+          "answer": "No. Las preguntas se generan en tu navegador y tus puntuaciones se quedan en tu dispositivo."
+        }
+      ]
+    },
+    "typing-speed-test": {
+      "seoTitle": "Test de velocidad de mecanografía – Test de WPM y precisión gratis con historial",
+      "metaDescription": "Mide tu velocidad de escritura en palabras por minuto con tests de 30, 60 o 120 segundos. Consulta WPM y precisión en directo y sigue tus últimos resultados. Gratis, privado y guardado en tu navegador.",
+      "h1": "Test de velocidad de mecanografía",
+      "subheading": "Escribe el texto lo más rápido y preciso que puedas y obtén tus palabras por minuto y tu precisión.",
+      "keywords": [
+        "test de velocidad de mecanografía",
+        "test de wpm",
+        "test de mecanografía online gratis",
+        "test de palabras por minuto",
+        "práctica de mecanografía",
+        "test de precisión al escribir",
+        "test de velocidad de teclado",
+        "test de mecanografía de 1 minuto"
+      ],
+      "howTo": [
+        {
+          "name": "Elige la duración",
+          "text": "Elige 30, 60 o 120 segundos."
+        },
+        {
+          "name": "Empieza a escribir",
+          "text": "Haz clic en el texto y escribe. El cronómetro arranca con tu primera tecla, y cada letra se pone verde o roja."
+        },
+        {
+          "name": "Consulta tu resultado",
+          "text": "Cuando se acaba el tiempo, o llegas al final del texto, ves tus palabras por minuto y tu precisión."
+        },
+        {
+          "name": "Sigue tu progreso",
+          "text": "Tus últimos resultados aparecen a la derecha para que veas cómo mejoras."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cómo se calcula el WPM?",
+          "answer": "Cada cinco caracteres correctos cuentan como una palabra, divididos entre los minutos empleados. Solo cuentan los caracteres escritos correctamente."
+        },
+        {
+          "question": "¿Qué es una buena velocidad de escritura?",
+          "answer": "Mucha gente escribe entre 35 y 45 WPM. Por encima de 60 es rápido y por encima de 80 es muy rápido. La precisión importa más que la velocidad pura."
+        },
+        {
+          "question": "¿Por qué importa la precisión?",
+          "answer": "Corregir errores cuesta tiempo. Escribir un poco más despacio con menos fallos suele llevarte más lejos que ir con prisa."
+        },
+        {
+          "question": "¿Puedo corregir un error?",
+          "answer": "Puedes borrar con Retroceso. Los caracteres mal escritos se muestran en rojo hasta que los corriges."
+        },
+        {
+          "question": "¿Se guardan mis resultados?",
+          "answer": "Los últimos 20 resultados se guardan en tu navegador, solo en este dispositivo. Usa Borrar para eliminarlos."
+        },
+        {
+          "question": "¿Funciona con otras distribuciones de teclado?",
+          "answer": "Sí, pero los textos están en inglés, así que necesitas poder escribir letras y signos de puntuación del inglés."
+        },
+        {
+          "question": "¿Se sube algo?",
+          "answer": "No. El test se ejecuta por completo en tu navegador."
+        }
+      ]
+    },
+    "snake-game": {
+      "seoTitle": "Juego de la serpiente (Snake) – Snake clásico gratis online con controles táctiles",
+      "metaDescription": "Juega gratis al clásico Snake en tu navegador. Flechas, WASD o deslizar, tres velocidades, mejor puntuación guardada y pantalla completa. Un descanso relajante entre estudios.",
+      "h1": "Juego de la serpiente (Snake)",
+      "subheading": "Guía a la serpiente para comer sin chocar con las paredes ni contigo misma. Un clásico para un descanso rápido.",
+      "keywords": [
+        "juego de la serpiente",
+        "jugar snake online",
+        "snake clásico",
+        "juego de la serpiente gratis",
+        "snake sin descargar",
+        "snake con teclado",
+        "snake para móvil",
+        "snake retro"
+      ],
+      "howTo": [
+        {
+          "name": "Empezar",
+          "text": "Pulsa Empezar o cualquier flecha. La serpiente empieza a moverse hacia la derecha."
+        },
+        {
+          "name": "Dirigir",
+          "text": "Usa las flechas o W, A, S, D en un teclado, o desliza el dedo en una pantalla táctil. No puedes girar en redondo sobre ti misma."
+        },
+        {
+          "name": "Come y crece",
+          "text": "Come la comida roja para sumar un punto y crecer."
+        },
+        {
+          "name": "Evita los choques",
+          "text": "El juego termina si tocas una pared o tu propio cuerpo. Supera tu mejor puntuación guardada."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cuáles son los controles?",
+          "answer": "Flechas o W, A, S, D para dirigir, Espacio para pausar, y deslizar el dedo en el móvil o la tableta."
+        },
+        {
+          "question": "¿Puedo cambiar la velocidad?",
+          "answer": "Sí. Elige Tranquila, Normal o Rápida. Las velocidades más altas son más difíciles."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, en tu navegador, solo en este dispositivo."
+        },
+        {
+          "question": "¿La serpiente aparece por el lado contrario al salir por un borde?",
+          "answer": "No. Tocar el borde termina la partida, lo que lo hace un poco más difícil."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. Desliza el dedo sobre el tablero para girar. La pantalla completa te da un tablero más grande."
+        },
+        {
+          "question": "¿Es un buen descanso de estudio?",
+          "answer": "Unos minutos pueden despejarte la mente. Pon un temporizador corto para que tu descanso no se convierta en una hora."
+        },
+        {
+          "question": "¿Cuesta algo?",
+          "answer": "No. Es gratis, no tiene anuncios dentro del juego y no necesita cuenta."
+        }
+      ]
     }
   },
   "commandMenu": {

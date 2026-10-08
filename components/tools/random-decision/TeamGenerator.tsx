@@ -1,5 +1,6 @@
 "use client";
 
+import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import * as React from "react";
 import { Users, Save } from "lucide-react";
 
@@ -46,10 +47,10 @@ function formatTeamsAsText(teams: string[][]): string {
 
 export default function TeamGenerator() {
   useTrackTool("team-generator");
-  const [input, setInput] = React.useState(
+  const [input, setInput] = usePersisted("everyutili_teams_names", 
     "Alice\nBob\nCharlie\nDiana\nEthan\nFiona\nGeorge\nHannah"
   );
-  const [mode, setMode] = React.useState<SplitMode>("teamCount");
+  const [mode, setMode] = usePersisted<SplitMode>("everyutili_teams_mode", "teamCount");
   const [value, setValue] = React.useState(2);
   const [teams, setTeams] = React.useState<string[][] | null>(null);
   const historyRef = React.useRef<ToolHistoryListHandle>(null);

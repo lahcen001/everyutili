@@ -11,7 +11,11 @@ export function usePersisted<T>(key: string, initial: T): [T, (value: T | ((prev
     if (typeof window === "undefined") return initial;
     try {
       const raw = window.localStorage.getItem(key);
-      return raw ? ({ ...(typeof initial === "object" && !Array.isArray(initial) ? initial : {}), ...JSON.parse(raw) } as T) : initial;
+      if (!raw) return initial;
+      const parsed = JSON.parse(raw) as unknown;
+      const plain = (v: unknown) => typeof v === "object" && v !== null && !Array.isArray(v);
+      // merge so settings added in later versions keep their defaults
+      return (plain(initial) && plain(parsed) ? { ...(initial as object), ...(parsed as object) } : parsed) as T;
     } catch {
       return initial;
     }

@@ -219,3 +219,83 @@ describe("stretch routines", () => {
     }
   });
 });
+
+import { dailyTotals, formatMinutes, sumMinutes, toCsv, totalsBySubject, type LogEntry } from "@/lib/focus/studylog";
+import { accuracy, makeProblem } from "@/lib/focus/mathquiz";
+import { PASSAGES, typingStats } from "@/lib/focus/typing";
+import { canTurn, initialState, step } from "@/lib/focus/snake";
+
+describe("study log", () => {
+  const day = new Date(2026, 4, 10, 12).getTime();
+  const entries: LogEntry[] = [
+    { id: "1", subject: "Maths", start: day, minutes: 45 },
+    { id: "2", subject: "Maths", start: day + 3600000, minutes: 30 },
+    { id: "3", subject: "History", start: day - 86400000, minutes: 20, note: 'said "hi", ok' },
+  ];
+  it("totals by subject and day", () => {
+    const from = new Date(2026, 4, 10).getTime();
+    expect(totalsBySubject(entries, from, from + 86400000)).toEqual({ Maths: 75 });
+    expect(sumMinutes({ a: 5, b: 7 })).toBe(12);
+    const week = dailyTotals(entries, 3, day);
+    expect(week.map((d) => d.minutes)).toEqual([0, 20, 75]);
+  });
+  it("formats minutes and exports CSV with quoting", () => {
+    expect(formatMinutes(45)).toBe("45m");
+    expect(formatMinutes(120)).toBe("2h");
+    expect(formatMinutes(95)).toBe("1h 35m");
+    const csv = toCsv(entries);
+    expect(csv.split("\n")[0]).toBe("start,subject,minutes,note");
+    expect(csv).toContain('"said ""hi"", ok"');
+  });
+});
+
+describe("math trainer", () => {
+  it("always makes whole-number, non-negative answers", () => {
+    for (const op of ["+", "-", "×", "÷"] as const) {
+      for (const level of [1, 2, 3] as const) {
+        for (let i = 0; i < 60; i++) {
+          const p = makeProblem(op, level);
+          expect(Number.isInteger(p.answer)).toBe(true);
+          expect(p.answer).toBeGreaterThanOrEqual(0);
+          if (op === "÷") expect(p.a / p.b).toBe(p.answer);
+          if (op === "×") expect(p.a * p.b).toBe(p.answer);
+        }
+      }
+    }
+    expect(accuracy(3, 4)).toBe(75);
+    expect(accuracy(0, 0)).toBe(0);
+  });
+});
+
+describe("typing", () => {
+  it("computes wpm and accuracy", () => {
+    expect(typingStats("hello wor", "hello world", 12)).toMatchObject({ wpm: 9, accuracy: 100 });
+    expect(typingStats("hellx", "hello", 60)).toMatchObject({ correctChars: 4, accuracy: 80, wpm: 1 });
+    expect(typingStats("", "abc", 10).accuracy).toBe(100);
+    expect(PASSAGES.length).toBeGreaterThan(5);
+  });
+});
+
+describe("snake", () => {
+  it("moves, grows and dies", () => {
+    let s = initialState(10, () => 0);
+    expect(s.snake).toHaveLength(3);
+    const head = s.snake[0];
+    s = step(s, "right", () => 0);
+    expect(s.snake[0]).toEqual({ x: head.x + 1, y: head.y });
+    expect(s.snake).toHaveLength(3);
+    // eat
+    s = { ...s, food: { x: s.snake[0].x + 1, y: s.snake[0].y } };
+    const len = s.snake.length;
+    s = step(s, "right", () => 0);
+    expect(s.snake).toHaveLength(len + 1);
+    expect(s.score).toBe(1);
+    // cannot reverse
+    expect(canTurn("right", "left")).toBe(false);
+    expect(step(s, "left", () => 0).dir).toBe("right");
+    // wall
+    let w = initialState(5, () => 0);
+    for (let i = 0; i < 6; i++) w = step(w, "right", () => 0);
+    expect(w.over).toBe(true);
+  });
+});

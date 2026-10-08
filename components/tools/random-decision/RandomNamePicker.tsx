@@ -1,5 +1,6 @@
 "use client";
 
+import { usePersisted } from "@/components/tools/focus-study/usePersisted";
 import * as React from "react";
 import { UserCheck, Save } from "lucide-react";
 
@@ -31,8 +32,8 @@ function pickRandom<T>(items: T[], count: number): T[] {
 
 export default function RandomNamePicker() {
   useTrackTool("random-name-picker");
-  const [input, setInput] = React.useState("Alice\nBob\nCharlie\nDiana\nEthan");
-  const [pickCount, setPickCount] = React.useState(1);
+  const [input, setInput] = usePersisted("everyutili_names", "Alice\nBob\nCharlie\nDiana\nEthan");
+  const [pickCount, setPickCount] = usePersisted("everyutili_names_count", 1);
   const [picked, setPicked] = React.useState<string[] | null>(null);
   const [removeAfterPick, setRemoveAfterPick] = React.useState(false);
   const [reveal, setReveal] = React.useState<Reveal | null>(null);

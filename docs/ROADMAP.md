@@ -105,3 +105,9 @@ Build in this order: **Health & Fitness**, then **Islamic & Prayer**, then **OCR
 - Production server on port 3100: new pages return 200 in `en`, `ja` and `ar`; unknown URLs return 404.
 - For SEO items: check the sitemap output, a share-image URL and the JSON-LD for one tool.
 - I can't drive a browser here, so you check these by eye: installing the app and using it offline, the data export / import round trip, and screens in a non-English language.
+
+## Status (2026-10-08)
+
+Done in this pass: items 1 (stale text for QR generator and Focus Sounds, all 12 languages), 2 (real 404s), 3 (stable sitemap + privacy / extension pages), 4 (share images), 7 (installable, offline app), 8 (My data: back up, restore, erase), 9 (favourite tools), 12 (content-integrity, SEO, sanitizer, GIF, PWA and backup tests; 515 tests), 15 (security updates: Next 16.3.8 and audit fixes; the critical finding is closed), 16 (CI workflow; the pull request itself is not opened), 17 (extension 1.4.0, 142 tools). Partly done: item 6 (the shared drop zone, fullscreen, copy button and footer are translated; the insides of the other ~165 tool screens are still English) and item 13 (reduced-motion support added; a scan found no icon-only buttons without a label; a keyboard / screen-reader pass is still to do).
+
+Still open: items 5, 10, 11, 14, 18, the rest of 6, and these remaining audit findings (all in development tooling or rarely used paths): `node-forge` (no fix exists upstream; we only create signatures, never verify them), `pptxgenjs` / `mammoth` and their helpers (fixes are breaking changes), and `eslint-config-next` helpers (dev only).

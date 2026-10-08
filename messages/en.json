@@ -79,6 +79,11 @@
       "label": "Focus & Relax",
       "description": "Pomodoro timer, focus sounds, flashcards and planners to concentrate — plus stretch breaks, breathing and quick mini games to recharge between sessions.",
       "navLabel": "Focus"
+    },
+    "math-calculators": {
+      "label": "Math & Science Calculators",
+      "description": "Scientific, graphing, fraction, matrix, statistics and more — each calculator is simple, with its own on-screen keyboard and works offline.",
+      "navLabel": "Math"
     }
   },
   "tools": {
@@ -8725,6 +8730,518 @@
         {
           "question": "Does it cost anything?",
           "answer": "No. It is free, has no ads in the game and needs no account."
+        }
+      ]
+    },
+    "scientific-calculator": {
+      "seoTitle": "Scientific Calculator Online – Free with Trig, Log, Powers & On-Screen Keyboard",
+      "metaDescription": "A free online scientific calculator with sin, cos, tan, log, ln, powers, roots, factorial, memory, history and degrees or radians. Big on-screen keys and keyboard typing. Private.",
+      "h1": "Scientific Calculator",
+      "subheading": "Trigonometry, logarithms, powers, roots and more — with a full on-screen keyboard, live answer preview and saved history.",
+      "keywords": [
+        "scientific calculator",
+        "online scientific calculator",
+        "scientific calculator with trig functions",
+        "calculator sin cos tan",
+        "log calculator",
+        "free scientific calculator",
+        "calculator with parentheses",
+        "degrees radians calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Type or tap",
+          "text": "Use the on-screen keys or type with your keyboard. Functions such as sin( open a bracket for you."
+        },
+        {
+          "name": "Check the preview",
+          "text": "The answer appears in grey as you type. Brackets you leave open are closed automatically."
+        },
+        {
+          "name": "Choose degrees or radians",
+          "text": "Tap DEG/RAD at the top left of the display before using sin, cos or tan. Tap 2nd for inverse functions such as sin⁻¹ and for ex, 10x and cube roots."
+        },
+        {
+          "name": "Press equals",
+          "text": "Press = or Enter. Your calculation is added to the history, which is saved on this device. Use Ans to reuse the last result and M+, M−, MR and MC for memory."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does it follow the order of operations?",
+          "answer": "Yes. Brackets first, then powers and roots, then multiplication and division, then addition and subtraction. So 2+3×4 gives 14, and −2² gives −4."
+        },
+        {
+          "question": "How do I switch between degrees and radians?",
+          "answer": "Tap the DEG or RAD label above the display. In degrees sin(30) = 0.5; in radians it is about −0.988."
+        },
+        {
+          "question": "What does 2nd do?",
+          "answer": "It switches the function keys: sin, cos and tan become their inverses, ln becomes eˣ, log becomes 10ˣ, √ becomes a cube root, x² becomes x³, xʸ becomes a y-th root and n! becomes nCr."
+        },
+        {
+          "question": "Can I type with my keyboard?",
+          "answer": "Yes. Click the display and type numbers and operators. Enter calculates and Escape clears. On phones, only the on-screen keys appear."
+        },
+        {
+          "question": "Is my history saved?",
+          "answer": "Yes, the last 30 calculations and the memory value are saved in your browser on this device. Nothing is uploaded."
+        },
+        {
+          "question": "Why does 0.1 + 0.2 show 0.3?",
+          "answer": "The calculator tidies the tiny rounding errors that computers make with decimals, and shows up to 12 significant digits."
+        },
+        {
+          "question": "Which functions are supported?",
+          "answer": "Trigonometric and hyperbolic functions, their inverses, log, ln, square and cube roots, any power and root, factorial, permutations and combinations, absolute value, percent, π and e."
+        }
+      ]
+    },
+    "graphing-calculator": {
+      "seoTitle": "Graphing Calculator Online – Free Function Plotter with Keyboard",
+      "metaDescription": "Plot up to three functions at once. Drag to move, scroll to zoom, trace values, and use degrees or radians. A free online graphing calculator with an on-screen keyboard.",
+      "h1": "Graphing Calculator",
+      "subheading": "Type a function of x and see its graph at once — plot up to three, zoom, drag and read exact values.",
+      "keywords": [
+        "graphing calculator",
+        "online graphing calculator",
+        "function plotter",
+        "plot graph online",
+        "graph y=",
+        "desmos alternative",
+        "graph sin x",
+        "free graphing calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter a function",
+          "text": "Type an expression in terms of x, such as x^2-2 or sin(x)*3, or use the keys. Tap one of the Try examples to start quickly."
+        },
+        {
+          "name": "Add more graphs",
+          "text": "Use the second and third rows to plot more functions in different colours at the same time."
+        },
+        {
+          "name": "Move and zoom",
+          "text": "Drag the graph to pan, scroll or use + and − to zoom, and press the reset button to return to the origin."
+        },
+        {
+          "name": "Read values",
+          "text": "Hover or touch the graph to see x and y for every function at that point."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I write powers and roots?",
+          "answer": "Use ^ for powers, such as x^3, and sqrt(x) for square roots. Multiplication signs can be left out in many cases, so 2x and 3sin(x) work."
+        },
+        {
+          "question": "Which functions can I plot?",
+          "answer": "Polynomials, trigonometric and inverse trigonometric functions, logs, exponentials, absolute value and more, written in x."
+        },
+        {
+          "question": "Why are there gaps in my graph?",
+          "answer": "The graph is not drawn where the function is undefined, for example 1/x at x = 0 or sqrt(x) for negative x."
+        },
+        {
+          "question": "Radians or degrees?",
+          "answer": "Graphs use radians by default. Tap RAD/DEG to switch the angle mode for sin, cos and tan."
+        },
+        {
+          "question": "Can I use it on a phone?",
+          "answer": "Yes. Drag with one finger to pan. The on-screen keys work without opening the phone keyboard."
+        },
+        {
+          "question": "Is anything uploaded?",
+          "answer": "No. Everything is calculated and drawn in your browser."
+        },
+        {
+          "question": "How accurate is the graph?",
+          "answer": "It is calculated at every pixel across the screen. Zoom in to look closely at a small area."
+        }
+      ]
+    },
+    "fraction-calculator": {
+      "seoTitle": "Fraction Calculator – Add, Subtract, Multiply & Divide Fractions with Steps",
+      "metaDescription": "Free fraction calculator for fractions and mixed numbers. Add, subtract, multiply and divide, see the simplified fraction, mixed number, decimal and the steps. On-screen keypad.",
+      "h1": "Fraction Calculator",
+      "subheading": "Add, subtract, multiply and divide fractions and mixed numbers, with the answer in lowest terms and the working shown.",
+      "keywords": [
+        "fraction calculator",
+        "add fractions",
+        "subtract fractions",
+        "multiply fractions",
+        "divide fractions",
+        "mixed number calculator",
+        "simplify fractions",
+        "fraction calculator with steps"
+      ],
+      "howTo": [
+        {
+          "name": "Enter the fractions",
+          "text": "Tap a box and use the keys. Type the whole number, numerator and denominator for each fraction. Leave the whole-number box empty for a plain fraction."
+        },
+        {
+          "name": "Pick the operation",
+          "text": "Tap +, −, × or ÷ on the keypad."
+        },
+        {
+          "name": "Read the answer",
+          "text": "See the result as a simplified fraction, a mixed number and a decimal."
+        },
+        {
+          "name": "Follow the steps",
+          "text": "The steps show how the answer was found, such as finding a common denominator."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I add fractions with different denominators?",
+          "answer": "Find a common denominator, convert both fractions, then add the numerators. The steps panel shows exactly this."
+        },
+        {
+          "question": "How do I enter a mixed number?",
+          "answer": "Type the whole number in the left box and the fraction in the numerator and denominator boxes. For 2 1/3, enter 2, 1 and 3."
+        },
+        {
+          "question": "What about negative fractions?",
+          "answer": "Use the ± key on the whole-number or numerator box."
+        },
+        {
+          "question": "Is the answer always simplified?",
+          "answer": "Yes. The result is shown in lowest terms, and also as a mixed number and a decimal."
+        },
+        {
+          "question": "How do I divide fractions?",
+          "answer": "Multiply the first fraction by the reciprocal of the second. The steps show this."
+        },
+        {
+          "question": "Why do I get an error?",
+          "answer": "A denominator of zero is not allowed, and you can't divide by a fraction that equals zero."
+        },
+        {
+          "question": "Does it work offline?",
+          "answer": "Yes, once the page has loaded. Nothing is sent to a server."
+        }
+      ]
+    },
+    "matrix-calculator": {
+      "seoTitle": "Matrix Calculator – Add, Multiply, Determinant & Inverse Online",
+      "metaDescription": "Free matrix calculator for matrices up to 4×4: add, subtract, multiply, transpose, determinant, inverse, trace and scalar multiplication. On-screen number keypad.",
+      "h1": "Matrix Calculator",
+      "subheading": "Enter two matrices and add, multiply, transpose or find a determinant or inverse — with an on-screen number pad.",
+      "keywords": [
+        "matrix calculator",
+        "matrix multiplication calculator",
+        "determinant calculator",
+        "inverse matrix calculator",
+        "matrix addition",
+        "transpose matrix calculator",
+        "3x3 matrix calculator",
+        "matrix calculator online"
+      ],
+      "howTo": [
+        {
+          "name": "Set the sizes",
+          "text": "Choose the number of rows and columns (1 to 4) for matrices A and B."
+        },
+        {
+          "name": "Fill in the numbers",
+          "text": "Tap a cell and use the keypad, or type directly. Use Next to move through the cells."
+        },
+        {
+          "name": "Choose an operation",
+          "text": "Press A + B, A − B, A × B, Aᵀ, det(A), A⁻¹, tr(A) or k · A."
+        },
+        {
+          "name": "Read the result",
+          "text": "The answer is shown below as a matrix or a single number. Errors such as mismatched sizes are explained."
+        }
+      ],
+      "faq": [
+        {
+          "question": "When can two matrices be multiplied?",
+          "answer": "The number of columns of A must equal the number of rows of B. The result has the rows of A and the columns of B."
+        },
+        {
+          "question": "What is a determinant?",
+          "answer": "A single number found from a square matrix. If it is 0 the matrix has no inverse."
+        },
+        {
+          "question": "Why does it say there is no inverse?",
+          "answer": "Only square matrices with a determinant that is not 0 can be inverted."
+        },
+        {
+          "question": "What is the trace?",
+          "answer": "The sum of the numbers on the main diagonal of a square matrix."
+        },
+        {
+          "question": "How big can the matrices be?",
+          "answer": "Up to 4 by 4, which covers most homework and exam questions."
+        },
+        {
+          "question": "Are decimals and negatives allowed?",
+          "answer": "Yes. Use the dot key for decimals and ± for negatives."
+        },
+        {
+          "question": "Is anything stored or uploaded?",
+          "answer": "No. All calculations happen in your browser."
+        }
+      ]
+    },
+    "quadratic-equation-solver": {
+      "seoTitle": "Quadratic Equation Solver – Roots, Discriminant & Vertex with Steps",
+      "metaDescription": "Solve ax² + bx + c = 0 for real or complex roots. See the discriminant, vertex, axis of symmetry, factored form and steps. Free, with an on-screen keypad.",
+      "h1": "Quadratic Equation Solver",
+      "subheading": "Enter a, b and c to get both solutions, the discriminant, the vertex and the working — including complex roots.",
+      "keywords": [
+        "quadratic equation solver",
+        "quadratic formula calculator",
+        "solve ax2+bx+c",
+        "discriminant calculator",
+        "find roots of quadratic",
+        "vertex of parabola calculator",
+        "complex roots calculator",
+        "quadratic calculator with steps"
+      ],
+      "howTo": [
+        {
+          "name": "Enter a, b and c",
+          "text": "Tap a box and use the keys. The equation is written as ax² + bx + c = 0."
+        },
+        {
+          "name": "See the solutions",
+          "text": "Both roots appear straight away, with a note on whether they are real or complex."
+        },
+        {
+          "name": "Read the steps",
+          "text": "The discriminant, the quadratic formula with your numbers, the vertex and the factored form are shown."
+        },
+        {
+          "name": "Try another",
+          "text": "Change any value and everything updates immediately."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the quadratic formula?",
+          "answer": "x = (−b ± √(b² − 4ac)) / 2a. The part under the root, b² − 4ac, is called the discriminant."
+        },
+        {
+          "question": "What does the discriminant tell me?",
+          "answer": "If it is positive there are two different real roots, if it is zero there is one repeated root, and if it is negative the roots are complex numbers."
+        },
+        {
+          "question": "What are complex roots?",
+          "answer": "Solutions involving i, the square root of −1. They appear in pairs like −1 + 2i and −1 − 2i."
+        },
+        {
+          "question": "Why can't a be 0?",
+          "answer": "Then the equation is linear, not quadratic, so the formula does not apply."
+        },
+        {
+          "question": "What is the vertex?",
+          "answer": "The turning point of the parabola. Its x-value is −b/2a and it lies on the axis of symmetry."
+        },
+        {
+          "question": "Is the answer exact?",
+          "answer": "Results are shown with up to 12 significant digits, using a numerically stable method for large coefficients."
+        },
+        {
+          "question": "Can I enter decimals and negatives?",
+          "answer": "Yes. Use the dot and ± keys."
+        }
+      ]
+    },
+    "programmer-calculator": {
+      "seoTitle": "Programmer Calculator – Hex, Binary, Octal & Bitwise Operations Online",
+      "metaDescription": "A free programmer calculator: convert between hex, decimal, octal and binary, use AND, OR, XOR, NOT, shifts and arithmetic with 8 to 64 bit words, and flip individual bits.",
+      "h1": "Programmer Calculator",
+      "subheading": "Work in hex, decimal, octal or binary, with bitwise operators, word sizes up to 64-bit and tap-to-flip bits.",
+      "keywords": [
+        "programmer calculator",
+        "hex calculator",
+        "binary calculator",
+        "bitwise calculator",
+        "hex to decimal",
+        "binary to decimal converter",
+        "xor calculator",
+        "bit shift calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a base",
+          "text": "Choose HEX, DEC, OCT or BIN. Keys that don't belong to the base are disabled."
+        },
+        {
+          "name": "Choose the word size",
+          "text": "Select 8, 16, 32 or 64 bits. Numbers wrap around like they do in real hardware."
+        },
+        {
+          "name": "Calculate",
+          "text": "Type a number, press an operator such as AND, OR, XOR, << or +, type the second number and press =. NOT acts on the current value."
+        },
+        {
+          "name": "Look at the bits",
+          "text": "All four bases are shown at once, and you can tap any bit to flip it."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I convert hex to decimal?",
+          "answer": "Pick HEX, type the number, then look at the DEC line (or tap DEC). All bases update together."
+        },
+        {
+          "question": "What does the word size do?",
+          "answer": "It sets how many bits a number has. Results wrap around within that size, using two's complement for negative numbers."
+        },
+        {
+          "question": "What are AND, OR and XOR?",
+          "answer": "Bitwise operators that compare each bit: AND is 1 only if both are 1, OR is 1 if either is 1, and XOR is 1 if exactly one is 1."
+        },
+        {
+          "question": "What do << and >> do?",
+          "answer": "Shift the bits left or right, which multiplies or divides by powers of two."
+        },
+        {
+          "question": "How are negative numbers shown?",
+          "answer": "In decimal they have a minus sign. In hex, octal and binary they appear in two's complement for the chosen word size."
+        },
+        {
+          "question": "Can it handle 64-bit values?",
+          "answer": "Yes. It uses big integers, so 64-bit numbers are exact."
+        },
+        {
+          "question": "Does it work offline?",
+          "answer": "Yes. Everything runs in your browser."
+        }
+      ]
+    },
+    "statistics-calculator": {
+      "seoTitle": "Statistics Calculator – Mean, Median, Mode, Standard Deviation Online",
+      "metaDescription": "Paste numbers and get mean, median, mode, range, quartiles, variance, standard deviation (sample or population), outliers and a histogram. Free, with an on-screen keypad.",
+      "h1": "Statistics Calculator",
+      "subheading": "Enter a list of numbers and get the mean, median, mode, spread, quartiles and a distribution chart in one place.",
+      "keywords": [
+        "statistics calculator",
+        "standard deviation calculator",
+        "mean median mode calculator",
+        "variance calculator",
+        "quartile calculator",
+        "descriptive statistics calculator",
+        "range calculator",
+        "outlier calculator"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your data",
+          "text": "Type or paste numbers separated by commas, spaces or new lines. Or use the on-screen keys."
+        },
+        {
+          "name": "Choose sample or population",
+          "text": "Pick Sample (n−1) for a sample of a larger group, or Population (n) when you have everyone."
+        },
+        {
+          "name": "Read the results",
+          "text": "See count, sum, mean, median, mode, range, quartiles, variance, standard deviation and more."
+        },
+        {
+          "name": "Check the chart",
+          "text": "The distribution chart shows how your values are spread. Your data is saved on this device."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between sample and population?",
+          "answer": "Use sample when your numbers are only part of a larger group; it divides by n − 1. Use population when you have every value; it divides by n."
+        },
+        {
+          "question": "How is the median found?",
+          "answer": "Sort the numbers and take the middle one, or the average of the two middle ones if there is an even count."
+        },
+        {
+          "question": "What if there is no mode?",
+          "answer": "If every number appears once there is no mode, and it shows none."
+        },
+        {
+          "question": "How are quartiles calculated?",
+          "answer": "With linear interpolation between the closest values. Different textbooks use slightly different methods."
+        },
+        {
+          "question": "What counts as an outlier?",
+          "answer": "A value more than 1.5 times the interquartile range below Q1 or above Q3."
+        },
+        {
+          "question": "How many numbers can I enter?",
+          "answer": "Thousands. Everything is calculated instantly in your browser."
+        },
+        {
+          "question": "Is my data saved?",
+          "answer": "Yes, on this device only, so it is still here next time. Nothing is uploaded."
+        }
+      ]
+    },
+    "gcd-lcm-calculator": {
+      "seoTitle": "GCD & LCM Calculator – Greatest Common Divisor, Least Common Multiple & Prime Factors",
+      "metaDescription": "Find the GCD and LCM of two or more numbers, with Euclid's algorithm steps, prime factorization, divisors and a prime check. Free, with an on-screen keypad.",
+      "h1": "GCD, LCM & Prime Factor Calculator",
+      "subheading": "Find the greatest common divisor and least common multiple of your numbers, and see each number's prime factors and divisors.",
+      "keywords": [
+        "gcd calculator",
+        "lcm calculator",
+        "greatest common divisor",
+        "least common multiple",
+        "prime factorization calculator",
+        "hcf calculator",
+        "is it a prime number",
+        "factors of a number"
+      ],
+      "howTo": [
+        {
+          "name": "Enter your numbers",
+          "text": "Type whole numbers separated by commas, such as 48, 180, or use the keys."
+        },
+        {
+          "name": "Read the GCD and LCM",
+          "text": "The greatest common divisor and least common multiple appear at the top."
+        },
+        {
+          "name": "See the working",
+          "text": "For two numbers, Euclid's algorithm is shown step by step."
+        },
+        {
+          "name": "Explore each number",
+          "text": "See whether it is prime, its prime factorization and its list of divisors."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the GCD?",
+          "answer": "The largest number that divides all your numbers exactly. It is also called the HCF (highest common factor)."
+        },
+        {
+          "question": "What is the LCM?",
+          "answer": "The smallest number that is a multiple of all your numbers. It is useful for adding fractions with different denominators."
+        },
+        {
+          "question": "What is Euclid's algorithm?",
+          "answer": "Repeatedly divide the larger number by the smaller and keep the remainder until it is 0. The last non-zero remainder is the GCD."
+        },
+        {
+          "question": "How does prime factorization work?",
+          "answer": "Every whole number above 1 is a product of primes. For example, 360 = 2³ × 3² × 5."
+        },
+        {
+          "question": "What does coprime mean?",
+          "answer": "Two numbers whose GCD is 1, meaning they share no factor other than 1."
+        },
+        {
+          "question": "How large can the numbers be?",
+          "answer": "Up to one trillion, and up to twelve numbers at once."
+        },
+        {
+          "question": "Is anything uploaded?",
+          "answer": "No. The calculation runs in your browser."
         }
       ]
     }

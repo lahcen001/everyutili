@@ -79,6 +79,11 @@
       "label": "Concentration et détente",
       "description": "Minuteur Pomodoro, sons de concentration, cartes mémoire et planificateurs pour rester concentré, plus pauses étirements, respiration et mini-jeux rapides pour se ressourcer entre deux sessions.",
       "navLabel": "Concentration"
+    },
+    "math-calculators": {
+      "label": "Calculatrices maths et sciences",
+      "description": "Scientifique, graphique, fractions, matrices, statistiques et plus encore : des calculatrices simples, avec leur propre clavier à l'écran, qui fonctionnent hors ligne.",
+      "navLabel": "Maths"
     }
   },
   "tools": {
@@ -8718,6 +8723,518 @@
         {
           "question": "Est-ce payant ?",
           "answer": "Non. C'est gratuit, sans publicité dans le jeu et sans compte."
+        }
+      ]
+    },
+    "scientific-calculator": {
+      "seoTitle": "Calculatrice scientifique en ligne – gratuite, trigonométrie, log, puissances et clavier à l'écran",
+      "metaDescription": "Calculatrice scientifique en ligne gratuite avec sin, cos, tan, log, ln, puissances, racines, factorielle, mémoire, historique et degrés ou radians. Grandes touches et saisie au clavier. Privée.",
+      "h1": "Calculatrice scientifique",
+      "subheading": "Trigonométrie, logarithmes, puissances, racines et plus encore, avec un clavier complet à l'écran, un aperçu du résultat en direct et un historique enregistré.",
+      "keywords": [
+        "calculatrice scientifique",
+        "calculatrice scientifique en ligne",
+        "calculatrice scientifique trigonométrie",
+        "calculatrice sin cos tan",
+        "calculatrice log",
+        "calculatrice scientifique gratuite",
+        "calculatrice avec parenthèses",
+        "calculatrice degrés radians"
+      ],
+      "howTo": [
+        {
+          "name": "Saisir ou appuyer",
+          "text": "Utilisez les touches à l'écran ou tapez avec votre clavier. Les fonctions comme sin( ouvrent automatiquement une parenthèse."
+        },
+        {
+          "name": "Consulter l'aperçu",
+          "text": "Le résultat s'affiche en gris pendant la saisie. Les parenthèses laissées ouvertes sont fermées automatiquement."
+        },
+        {
+          "name": "Choisir degrés ou radians",
+          "text": "Appuyez sur DEG/RAD en haut à gauche de l'écran avant d'utiliser sin, cos ou tan. Appuyez sur 2nd pour les fonctions inverses comme sin⁻¹, ainsi que pour ex, 10x et les racines cubiques."
+        },
+        {
+          "name": "Appuyer sur égal",
+          "text": "Appuyez sur = ou Entrée. Votre calcul est ajouté à l'historique, enregistré sur cet appareil. Utilisez Ans pour réutiliser le dernier résultat, et M+, M−, MR et MC pour la mémoire."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Respecte-t-elle l'ordre des opérations ?",
+          "answer": "Oui. D'abord les parenthèses, puis les puissances et les racines, ensuite les multiplications et divisions, enfin les additions et soustractions. Ainsi 2+3×4 donne 14, et −2² donne −4."
+        },
+        {
+          "question": "Comment passer des degrés aux radians ?",
+          "answer": "Appuyez sur l'indicateur DEG ou RAD au-dessus de l'écran. En degrés, sin(30) = 0,5 ; en radians, il vaut environ −0,988."
+        },
+        {
+          "question": "À quoi sert la touche 2nd ?",
+          "answer": "Elle change les touches de fonction : sin, cos et tan deviennent leurs fonctions inverses, ln devient eˣ, log devient 10ˣ, √ devient une racine cubique, x² devient x³, xʸ devient une racine y-ième et n! devient nCr."
+        },
+        {
+          "question": "Puis-je taper avec le clavier de mon ordinateur ?",
+          "answer": "Oui. Cliquez sur l'écran et tapez les nombres et les opérateurs. Entrée lance le calcul et Échap efface. Sur téléphone, seules les touches à l'écran s'affichent."
+        },
+        {
+          "question": "Mon historique est-il enregistré ?",
+          "answer": "Oui, les 30 derniers calculs et la valeur en mémoire sont enregistrés dans votre navigateur, sur cet appareil. Rien n'est envoyé en ligne."
+        },
+        {
+          "question": "Pourquoi 0,1 + 0,2 affiche-t-il 0,3 ?",
+          "answer": "La calculatrice corrige les minuscules erreurs d'arrondi que les ordinateurs font avec les nombres décimaux, et affiche jusqu'à 12 chiffres significatifs."
+        },
+        {
+          "question": "Quelles fonctions sont prises en charge ?",
+          "answer": "Les fonctions trigonométriques et hyperboliques et leurs inverses, log, ln, racines carrée et cubique, puissances et racines quelconques, factorielle, permutations et combinaisons, valeur absolue, pourcentage, π et e."
+        }
+      ]
+    },
+    "graphing-calculator": {
+      "seoTitle": "Calculatrice graphique en ligne – traceur de fonctions gratuit avec clavier",
+      "metaDescription": "Tracez jusqu'à trois fonctions à la fois. Déplacez, zoomez, lisez les valeurs et choisissez degrés ou radians. Une calculatrice graphique en ligne gratuite avec clavier à l'écran.",
+      "h1": "Calculatrice graphique",
+      "subheading": "Saisissez une fonction de x et voyez aussitôt sa courbe : tracez-en jusqu'à trois, zoomez, déplacez et lisez les valeurs exactes.",
+      "keywords": [
+        "calculatrice graphique",
+        "calculatrice graphique en ligne",
+        "traceur de fonctions",
+        "tracer une courbe en ligne",
+        "tracer y=",
+        "alternative à Desmos",
+        "courbe de sin x",
+        "calculatrice graphique gratuite"
+      ],
+      "howTo": [
+        {
+          "name": "Saisir une fonction",
+          "text": "Tapez une expression en x, comme x^2-2 ou sin(x)*3, ou utilisez les touches. Appuyez sur l'un des exemples proposés pour commencer rapidement."
+        },
+        {
+          "name": "Ajouter d'autres courbes",
+          "text": "Utilisez les deuxième et troisième lignes pour tracer d'autres fonctions de couleurs différentes en même temps."
+        },
+        {
+          "name": "Déplacer et zoomer",
+          "text": "Faites glisser le graphique pour le déplacer, faites défiler ou utilisez + et − pour zoomer, et appuyez sur le bouton de réinitialisation pour revenir à l'origine."
+        },
+        {
+          "name": "Lire les valeurs",
+          "text": "Survolez ou touchez le graphique pour voir x et y de chaque fonction en ce point."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment écrire les puissances et les racines ?",
+          "answer": "Utilisez ^ pour les puissances, par exemple x^3, et sqrt(x) pour les racines carrées. Le signe de multiplication peut souvent être omis : 2x et 3sin(x) fonctionnent."
+        },
+        {
+          "question": "Quelles fonctions puis-je tracer ?",
+          "answer": "Des polynômes, des fonctions trigonométriques et trigonométriques inverses, des logarithmes, des exponentielles, la valeur absolue et bien d'autres, écrites en x."
+        },
+        {
+          "question": "Pourquoi y a-t-il des trous dans ma courbe ?",
+          "answer": "La courbe n'est pas tracée là où la fonction n'est pas définie, par exemple 1/x en x = 0 ou sqrt(x) pour x négatif."
+        },
+        {
+          "question": "Radians ou degrés ?",
+          "answer": "Les graphiques utilisent les radians par défaut. Appuyez sur RAD/DEG pour changer le mode d'angle de sin, cos et tan."
+        },
+        {
+          "question": "Puis-je l'utiliser sur un téléphone ?",
+          "answer": "Oui. Faites glisser avec un doigt pour déplacer la courbe. Les touches à l'écran fonctionnent sans ouvrir le clavier du téléphone."
+        },
+        {
+          "question": "Des données sont-elles envoyées en ligne ?",
+          "answer": "Non. Tout est calculé et dessiné dans votre navigateur."
+        },
+        {
+          "question": "Le graphique est-il précis ?",
+          "answer": "Il est calculé pour chaque pixel de l'écran. Zoomez pour observer de près une petite zone."
+        }
+      ]
+    },
+    "fraction-calculator": {
+      "seoTitle": "Calculatrice de fractions – additionner, soustraire, multiplier et diviser avec les étapes",
+      "metaDescription": "Calculatrice de fractions gratuite pour fractions et nombres mixtes. Additionnez, soustrayez, multipliez et divisez, et obtenez la fraction simplifiée, le nombre mixte, le décimal et les étapes. Clavier à l'écran.",
+      "h1": "Calculatrice de fractions",
+      "subheading": "Additionnez, soustrayez, multipliez et divisez des fractions et des nombres mixtes, avec le résultat sous forme irréductible et le détail du calcul.",
+      "keywords": [
+        "calculatrice de fractions",
+        "additionner des fractions",
+        "soustraire des fractions",
+        "multiplier des fractions",
+        "diviser des fractions",
+        "calculatrice nombre mixte",
+        "simplifier une fraction",
+        "calculatrice de fractions avec étapes"
+      ],
+      "howTo": [
+        {
+          "name": "Saisir les fractions",
+          "text": "Appuyez sur une case et utilisez les touches. Entrez la partie entière, le numérateur et le dénominateur de chaque fraction. Laissez la case de la partie entière vide pour une fraction simple."
+        },
+        {
+          "name": "Choisir l'opération",
+          "text": "Appuyez sur +, −, × ou ÷ sur le clavier."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat s'affiche sous forme de fraction simplifiée, de nombre mixte et de nombre décimal."
+        },
+        {
+          "name": "Suivre les étapes",
+          "text": "Les étapes montrent comment le résultat a été trouvé, par exemple la recherche d'un dénominateur commun."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment additionner des fractions de dénominateurs différents ?",
+          "answer": "Trouvez un dénominateur commun, convertissez les deux fractions, puis additionnez les numérateurs. Le panneau des étapes montre exactement cela."
+        },
+        {
+          "question": "Comment saisir un nombre mixte ?",
+          "answer": "Tapez la partie entière dans la case de gauche et la fraction dans les cases du numérateur et du dénominateur. Pour 2 1/3, entrez 2, 1 et 3."
+        },
+        {
+          "question": "Et pour les fractions négatives ?",
+          "answer": "Utilisez la touche ± sur la case de la partie entière ou du numérateur."
+        },
+        {
+          "question": "Le résultat est-il toujours simplifié ?",
+          "answer": "Oui. Le résultat est donné sous forme irréductible, ainsi qu'en nombre mixte et en décimal."
+        },
+        {
+          "question": "Comment diviser des fractions ?",
+          "answer": "Multipliez la première fraction par l'inverse de la seconde. Les étapes le montrent."
+        },
+        {
+          "question": "Pourquoi une erreur s'affiche-t-elle ?",
+          "answer": "Un dénominateur égal à zéro n'est pas autorisé, et on ne peut pas diviser par une fraction égale à zéro."
+        },
+        {
+          "question": "Fonctionne-t-elle hors ligne ?",
+          "answer": "Oui, une fois la page chargée. Rien n'est envoyé à un serveur."
+        }
+      ]
+    },
+    "matrix-calculator": {
+      "seoTitle": "Calculatrice de matrices – addition, produit, déterminant et inverse en ligne",
+      "metaDescription": "Calculatrice de matrices gratuite jusqu'à 4×4 : addition, soustraction, produit, transposée, déterminant, inverse, trace et multiplication par un scalaire. Pavé numérique à l'écran.",
+      "h1": "Calculatrice de matrices",
+      "subheading": "Entrez deux matrices, puis additionnez, multipliez, transposez ou calculez un déterminant ou une inverse, avec un pavé numérique à l'écran.",
+      "keywords": [
+        "calculatrice de matrices",
+        "multiplication de matrices calculatrice",
+        "calcul de déterminant",
+        "calculatrice matrice inverse",
+        "addition de matrices",
+        "transposée d'une matrice",
+        "calculatrice matrice 3x3",
+        "calculatrice matricielle en ligne"
+      ],
+      "howTo": [
+        {
+          "name": "Définir les dimensions",
+          "text": "Choisissez le nombre de lignes et de colonnes (de 1 à 4) des matrices A et B."
+        },
+        {
+          "name": "Remplir les nombres",
+          "text": "Appuyez sur une case et utilisez le pavé, ou tapez directement. Utilisez Next pour passer d'une case à l'autre."
+        },
+        {
+          "name": "Choisir une opération",
+          "text": "Appuyez sur A + B, A − B, A × B, Aᵀ, det(A), A⁻¹, tr(A) ou k · A."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat s'affiche en dessous, sous forme de matrice ou de nombre. Les erreurs, comme des dimensions incompatibles, sont expliquées."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quand peut-on multiplier deux matrices ?",
+          "answer": "Le nombre de colonnes de A doit être égal au nombre de lignes de B. Le résultat a le nombre de lignes de A et le nombre de colonnes de B."
+        },
+        {
+          "question": "Qu'est-ce qu'un déterminant ?",
+          "answer": "Un nombre unique calculé à partir d'une matrice carrée. S'il vaut 0, la matrice n'a pas d'inverse."
+        },
+        {
+          "question": "Pourquoi est-il indiqué qu'il n'y a pas d'inverse ?",
+          "answer": "Seules les matrices carrées dont le déterminant n'est pas nul sont inversibles."
+        },
+        {
+          "question": "Qu'est-ce que la trace ?",
+          "answer": "La somme des nombres de la diagonale principale d'une matrice carrée."
+        },
+        {
+          "question": "Quelle taille de matrice est possible ?",
+          "answer": "Jusqu'à 4 sur 4, ce qui couvre la plupart des exercices et des examens."
+        },
+        {
+          "question": "Les décimaux et les négatifs sont-ils acceptés ?",
+          "answer": "Oui. Utilisez la touche point pour les décimaux et ± pour les négatifs."
+        },
+        {
+          "question": "Des données sont-elles stockées ou envoyées ?",
+          "answer": "Non. Tous les calculs se font dans votre navigateur."
+        }
+      ]
+    },
+    "quadratic-equation-solver": {
+      "seoTitle": "Résolution d'équation du second degré – racines, discriminant et sommet avec étapes",
+      "metaDescription": "Résolvez ax² + bx + c = 0 en racines réelles ou complexes. Découvrez le discriminant, le sommet, l'axe de symétrie, la forme factorisée et les étapes. Gratuit, avec pavé numérique à l'écran.",
+      "h1": "Résolution d'équation du second degré",
+      "subheading": "Entrez a, b et c pour obtenir les deux solutions, le discriminant, le sommet et le détail du calcul, y compris les racines complexes.",
+      "keywords": [
+        "résoudre équation du second degré",
+        "calculatrice équation du second degré",
+        "résoudre ax2+bx+c",
+        "calcul du discriminant",
+        "trouver les racines d'un trinôme",
+        "sommet d'une parabole calculatrice",
+        "racines complexes calculatrice",
+        "équation du second degré avec étapes"
+      ],
+      "howTo": [
+        {
+          "name": "Entrer a, b et c",
+          "text": "Appuyez sur une case et utilisez les touches. L'équation s'écrit ax² + bx + c = 0."
+        },
+        {
+          "name": "Voir les solutions",
+          "text": "Les deux racines s'affichent aussitôt, avec une indication précisant si elles sont réelles ou complexes."
+        },
+        {
+          "name": "Lire les étapes",
+          "text": "Le discriminant, la formule quadratique avec vos nombres, le sommet et la forme factorisée sont affichés."
+        },
+        {
+          "name": "Essayer une autre équation",
+          "text": "Modifiez n'importe quelle valeur et tout se met à jour immédiatement."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle est la formule quadratique ?",
+          "answer": "x = (−b ± √(b² − 4ac)) / 2a. L'expression sous la racine, b² − 4ac, s'appelle le discriminant."
+        },
+        {
+          "question": "Que m'apprend le discriminant ?",
+          "answer": "S'il est positif, il y a deux racines réelles distinctes ; s'il est nul, il y a une racine double ; s'il est négatif, les racines sont des nombres complexes."
+        },
+        {
+          "question": "Que sont les racines complexes ?",
+          "answer": "Des solutions faisant intervenir i, la racine carrée de −1. Elles vont par paires, comme −1 + 2i et −1 − 2i."
+        },
+        {
+          "question": "Pourquoi a ne peut-il pas être égal à 0 ?",
+          "answer": "L'équation serait alors du premier degré, et non du second, et la formule ne s'appliquerait pas."
+        },
+        {
+          "question": "Qu'est-ce que le sommet ?",
+          "answer": "Le point de retournement de la parabole. Son abscisse vaut −b/2a et il se trouve sur l'axe de symétrie."
+        },
+        {
+          "question": "Le résultat est-il exact ?",
+          "answer": "Les résultats sont affichés avec jusqu'à 12 chiffres significatifs, grâce à une méthode numériquement stable pour les grands coefficients."
+        },
+        {
+          "question": "Puis-je saisir des décimaux et des négatifs ?",
+          "answer": "Oui. Utilisez les touches point et ±."
+        }
+      ]
+    },
+    "programmer-calculator": {
+      "seoTitle": "Calculatrice programmeur – hexadécimal, binaire, octal et opérations bit à bit en ligne",
+      "metaDescription": "Calculatrice programmeur gratuite : convertissez entre hexadécimal, décimal, octal et binaire, utilisez AND, OR, XOR, NOT, décalages et arithmétique sur des mots de 8 à 64 bits, et inversez chaque bit.",
+      "h1": "Calculatrice programmeur",
+      "subheading": "Travaillez en hexadécimal, décimal, octal ou binaire, avec opérateurs bit à bit, mots jusqu'à 64 bits et inversion des bits d'un simple appui.",
+      "keywords": [
+        "calculatrice programmeur",
+        "calculatrice hexadécimale",
+        "calculatrice binaire",
+        "calculatrice bit à bit",
+        "hexadécimal vers décimal",
+        "convertisseur binaire décimal",
+        "calculatrice xor",
+        "calculatrice décalage de bits"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir une base",
+          "text": "Choisissez HEX, DEC, OCT ou BIN. Les touches qui n'appartiennent pas à la base sont désactivées."
+        },
+        {
+          "name": "Choisir la taille du mot",
+          "text": "Sélectionnez 8, 16, 32 ou 64 bits. Les nombres bouclent comme sur un vrai processeur."
+        },
+        {
+          "name": "Calculer",
+          "text": "Tapez un nombre, appuyez sur un opérateur comme AND, OR, XOR, << ou +, tapez le second nombre et appuyez sur =. NOT s'applique à la valeur actuelle."
+        },
+        {
+          "name": "Observer les bits",
+          "text": "Les quatre bases sont affichées en même temps, et vous pouvez appuyer sur un bit pour l'inverser."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment convertir de l'hexadécimal en décimal ?",
+          "answer": "Choisissez HEX, tapez le nombre, puis regardez la ligne DEC (ou appuyez sur DEC). Toutes les bases se mettent à jour ensemble."
+        },
+        {
+          "question": "À quoi sert la taille du mot ?",
+          "answer": "Elle définit le nombre de bits d'un nombre. Les résultats bouclent dans cette taille, avec le complément à deux pour les nombres négatifs."
+        },
+        {
+          "question": "Que sont AND, OR et XOR ?",
+          "answer": "Des opérateurs bit à bit qui comparent chaque bit : AND vaut 1 seulement si les deux valent 1, OR vaut 1 si l'un des deux vaut 1, et XOR vaut 1 si un seul des deux vaut 1."
+        },
+        {
+          "question": "Que font << et >> ?",
+          "answer": "Ils décalent les bits vers la gauche ou la droite, ce qui multiplie ou divise par des puissances de deux."
+        },
+        {
+          "question": "Comment les nombres négatifs sont-ils affichés ?",
+          "answer": "En décimal, ils portent un signe moins. En hexadécimal, octal et binaire, ils apparaissent en complément à deux pour la taille de mot choisie."
+        },
+        {
+          "question": "Gère-t-elle les valeurs de 64 bits ?",
+          "answer": "Oui. Elle utilise de grands entiers, donc les nombres de 64 bits sont exacts."
+        },
+        {
+          "question": "Fonctionne-t-elle hors ligne ?",
+          "answer": "Oui. Tout s'exécute dans votre navigateur."
+        }
+      ]
+    },
+    "statistics-calculator": {
+      "seoTitle": "Calculatrice de statistiques – moyenne, médiane, mode, écart type en ligne",
+      "metaDescription": "Collez vos nombres et obtenez moyenne, médiane, mode, étendue, quartiles, variance, écart type (échantillon ou population), valeurs aberrantes et histogramme. Gratuit, avec pavé numérique à l'écran.",
+      "h1": "Calculatrice de statistiques",
+      "subheading": "Entrez une liste de nombres et obtenez au même endroit la moyenne, la médiane, le mode, la dispersion, les quartiles et un graphique de la distribution.",
+      "keywords": [
+        "calculatrice de statistiques",
+        "calcul écart type",
+        "calcul moyenne médiane mode",
+        "calcul de la variance",
+        "calcul des quartiles",
+        "statistiques descriptives calculatrice",
+        "calcul de l'étendue",
+        "valeurs aberrantes calculatrice"
+      ],
+      "howTo": [
+        {
+          "name": "Saisir vos données",
+          "text": "Tapez ou collez des nombres séparés par des virgules, des espaces ou des retours à la ligne. Ou utilisez les touches à l'écran."
+        },
+        {
+          "name": "Choisir échantillon ou population",
+          "text": "Choisissez Échantillon (n−1) pour un échantillon d'un groupe plus large, ou Population (n) si vous avez toutes les valeurs."
+        },
+        {
+          "name": "Lire les résultats",
+          "text": "Consultez l'effectif, la somme, la moyenne, la médiane, le mode, l'étendue, les quartiles, la variance, l'écart type et plus encore."
+        },
+        {
+          "name": "Consulter le graphique",
+          "text": "Le graphique de distribution montre comment vos valeurs sont réparties. Vos données sont enregistrées sur cet appareil."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelle est la différence entre échantillon et population ?",
+          "answer": "Utilisez échantillon quand vos nombres ne représentent qu'une partie d'un groupe plus large : on divise par n − 1. Utilisez population quand vous avez toutes les valeurs : on divise par n."
+        },
+        {
+          "question": "Comment trouve-t-on la médiane ?",
+          "answer": "Triez les nombres et prenez celui du milieu, ou la moyenne des deux valeurs centrales si l'effectif est pair."
+        },
+        {
+          "question": "Que se passe-t-il s'il n'y a pas de mode ?",
+          "answer": "Si chaque nombre n'apparaît qu'une fois, il n'y a pas de mode et aucun n'est affiché."
+        },
+        {
+          "question": "Comment les quartiles sont-ils calculés ?",
+          "answer": "Par interpolation linéaire entre les valeurs les plus proches. Les manuels utilisent des méthodes légèrement différentes."
+        },
+        {
+          "question": "Qu'est-ce qu'une valeur aberrante ?",
+          "answer": "Une valeur située à plus de 1,5 fois l'écart interquartile en dessous de Q1 ou au-dessus de Q3."
+        },
+        {
+          "question": "Combien de nombres puis-je saisir ?",
+          "answer": "Des milliers. Tout est calculé instantanément dans votre navigateur."
+        },
+        {
+          "question": "Mes données sont-elles enregistrées ?",
+          "answer": "Oui, sur cet appareil uniquement, pour les retrouver la prochaine fois. Rien n'est envoyé en ligne."
+        }
+      ]
+    },
+    "gcd-lcm-calculator": {
+      "seoTitle": "Calculatrice PGCD et PPCM – plus grand commun diviseur, plus petit commun multiple et facteurs premiers",
+      "metaDescription": "Trouvez le PGCD et le PPCM de deux nombres ou plus, avec les étapes de l'algorithme d'Euclide, la décomposition en facteurs premiers, les diviseurs et un test de primalité. Gratuit, avec pavé numérique à l'écran.",
+      "h1": "Calculatrice PGCD, PPCM et facteurs premiers",
+      "subheading": "Trouvez le plus grand commun diviseur et le plus petit commun multiple de vos nombres, et découvrez les facteurs premiers et les diviseurs de chacun.",
+      "keywords": [
+        "calculatrice pgcd",
+        "calculatrice ppcm",
+        "plus grand commun diviseur",
+        "plus petit commun multiple",
+        "décomposition en facteurs premiers",
+        "calcul pgcd ppcm en ligne",
+        "est-ce un nombre premier",
+        "diviseurs d'un nombre"
+      ],
+      "howTo": [
+        {
+          "name": "Saisir vos nombres",
+          "text": "Tapez des nombres entiers séparés par des virgules, comme 48, 180, ou utilisez les touches."
+        },
+        {
+          "name": "Lire le PGCD et le PPCM",
+          "text": "Le plus grand commun diviseur et le plus petit commun multiple s'affichent en haut."
+        },
+        {
+          "name": "Voir le détail du calcul",
+          "text": "Pour deux nombres, l'algorithme d'Euclide est présenté pas à pas."
+        },
+        {
+          "name": "Explorer chaque nombre",
+          "text": "Découvrez s'il est premier, sa décomposition en facteurs premiers et la liste de ses diviseurs."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que le PGCD ?",
+          "answer": "Le plus grand nombre qui divise exactement tous vos nombres. Il s'appelle aussi plus grand commun diviseur."
+        },
+        {
+          "question": "Qu'est-ce que le PPCM ?",
+          "answer": "Le plus petit nombre qui soit un multiple de tous vos nombres. Il est utile pour additionner des fractions de dénominateurs différents."
+        },
+        {
+          "question": "Qu'est-ce que l'algorithme d'Euclide ?",
+          "answer": "On divise le plus grand nombre par le plus petit et on garde le reste, en répétant jusqu'à obtenir 0. Le dernier reste non nul est le PGCD."
+        },
+        {
+          "question": "Comment fonctionne la décomposition en facteurs premiers ?",
+          "answer": "Tout nombre entier supérieur à 1 est un produit de nombres premiers. Par exemple, 360 = 2³ × 3² × 5."
+        },
+        {
+          "question": "Que signifie premiers entre eux ?",
+          "answer": "Deux nombres dont le PGCD vaut 1, c'est-à-dire qu'ils n'ont aucun facteur commun autre que 1."
+        },
+        {
+          "question": "Quelle taille de nombres est acceptée ?",
+          "answer": "Jusqu'à mille milliards, et jusqu'à douze nombres à la fois."
+        },
+        {
+          "question": "Des données sont-elles envoyées en ligne ?",
+          "answer": "Non. Le calcul se fait dans votre navigateur."
         }
       ]
     }

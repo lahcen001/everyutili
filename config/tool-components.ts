@@ -148,4 +148,14 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "math-speed-trainer": () => import("@/components/tools/focus-study/MathTrainer"),
   "typing-speed-test": () => import("@/components/tools/focus-study/TypingTest"),
   "snake-game": () => import("@/components/tools/focus-study/SnakeGame"),
+
+  // Math & Science Calculators
+  "scientific-calculator": () => import("@/components/tools/calc/ScientificCalculator"),
+  "graphing-calculator": () => import("@/components/tools/calc/GraphingCalculator"),
+  "fraction-calculator": () => import("@/components/tools/calc/FractionCalculator"),
+  "matrix-calculator": () => import("@/components/tools/calc/MatrixCalculator"),
+  "quadratic-equation-solver": () => import("@/components/tools/calc/QuadraticSolver"),
+  "programmer-calculator": () => import("@/components/tools/calc/ProgrammerCalculator"),
+  "statistics-calculator": () => import("@/components/tools/calc/StatisticsCalculator"),
+  "gcd-lcm-calculator": () => import("@/components/tools/calc/NumberTheoryCalculator"),
 };

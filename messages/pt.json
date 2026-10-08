@@ -79,6 +79,11 @@
       "label": "Foco e Relaxamento",
       "description": "Timer Pomodoro, sons de foco, flashcards e planejadores para se concentrar — além de pausas de alongamento, respiração e minijogos rápidos para recarregar as energias entre as sessões.",
       "navLabel": "Foco"
+    },
+    "math-calculators": {
+      "label": "Calculadoras de Matemática e Ciências",
+      "description": "Científica, gráfica, de frações, matrizes, estatística e muito mais — cada calculadora é simples, tem seu próprio teclado na tela e funciona offline.",
+      "navLabel": "Matemática"
     }
   },
   "tools": {
@@ -8718,6 +8723,518 @@
         {
           "question": "Custa alguma coisa?",
           "answer": "Não. É grátis, não tem anúncios no jogo e não precisa de conta."
+        }
+      ]
+    },
+    "scientific-calculator": {
+      "seoTitle": "Calculadora Científica Online – Grátis com Trigonometria, Log, Potências e Teclado na Tela",
+      "metaDescription": "Calculadora científica online grátis com sin, cos, tan, log, ln, potências, raízes, fatorial, memória, histórico e graus ou radianos. Teclas grandes na tela e digitação pelo teclado. Privada.",
+      "h1": "Calculadora Científica",
+      "subheading": "Trigonometria, logaritmos, potências, raízes e mais — com teclado completo na tela, prévia do resultado ao vivo e histórico salvo.",
+      "keywords": [
+        "calculadora científica",
+        "calculadora científica online",
+        "calculadora científica com funções trigonométricas",
+        "calculadora seno cosseno tangente",
+        "calculadora de logaritmo",
+        "calculadora científica grátis",
+        "calculadora com parênteses",
+        "calculadora graus e radianos"
+      ],
+      "howTo": [
+        {
+          "name": "Digite ou toque",
+          "text": "Use as teclas da tela ou digite pelo teclado. Funções como sin( abrem o parêntese para você."
+        },
+        {
+          "name": "Confira a prévia",
+          "text": "O resultado aparece em cinza enquanto você digita. Parênteses deixados abertos são fechados automaticamente."
+        },
+        {
+          "name": "Escolha graus ou radianos",
+          "text": "Toque em DEG/RAD no canto superior esquerdo do visor antes de usar sin, cos ou tan. Toque em 2nd para as funções inversas, como sin⁻¹, e para eˣ, 10ˣ e raízes cúbicas."
+        },
+        {
+          "name": "Pressione igual",
+          "text": "Pressione = ou Enter. O cálculo é adicionado ao histórico, que fica salvo neste dispositivo. Use Ans para reaproveitar o último resultado e M+, M−, MR e MC para a memória."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ela segue a ordem das operações?",
+          "answer": "Sim. Primeiro os parênteses, depois potências e raízes, depois multiplicação e divisão, e por fim adição e subtração. Assim, 2+3×4 resulta em 14 e −2² resulta em −4."
+        },
+        {
+          "question": "Como alternar entre graus e radianos?",
+          "answer": "Toque no rótulo DEG ou RAD acima do visor. Em graus, sin(30) = 0,5; em radianos, é cerca de −0,988."
+        },
+        {
+          "question": "O que faz a tecla 2nd?",
+          "answer": "Ela troca as teclas de função: sin, cos e tan viram suas inversas, ln vira eˣ, log vira 10ˣ, √ vira raiz cúbica, x² vira x³, xʸ vira raiz y-ésima e n! vira nCr."
+        },
+        {
+          "question": "Posso digitar pelo teclado?",
+          "answer": "Sim. Clique no visor e digite números e operadores. Enter calcula e Escape limpa. Em celulares, aparecem apenas as teclas da tela."
+        },
+        {
+          "question": "Meu histórico fica salvo?",
+          "answer": "Sim, os últimos 30 cálculos e o valor da memória ficam salvos no navegador deste dispositivo. Nada é enviado para a internet."
+        },
+        {
+          "question": "Por que 0,1 + 0,2 mostra 0,3?",
+          "answer": "A calculadora corrige os pequenos erros de arredondamento que os computadores cometem com decimais e mostra até 12 algarismos significativos."
+        },
+        {
+          "question": "Quais funções são compatíveis?",
+          "answer": "Funções trigonométricas e hiperbólicas, suas inversas, log, ln, raízes quadrada e cúbica, qualquer potência e raiz, fatorial, permutações e combinações, valor absoluto, porcentagem, π e e."
+        }
+      ]
+    },
+    "graphing-calculator": {
+      "seoTitle": "Calculadora Gráfica Online – Plotador de Funções Grátis com Teclado",
+      "metaDescription": "Plote até três funções ao mesmo tempo. Arraste para mover, use a rolagem para dar zoom, acompanhe valores e use graus ou radianos. Calculadora gráfica online grátis com teclado na tela.",
+      "h1": "Calculadora Gráfica",
+      "subheading": "Digite uma função de x e veja o gráfico na hora — plote até três, dê zoom, arraste e leia valores exatos.",
+      "keywords": [
+        "calculadora gráfica",
+        "calculadora gráfica online",
+        "plotador de funções",
+        "gerar gráfico de função online",
+        "gráfico de y=",
+        "alternativa ao desmos",
+        "gráfico de sen x",
+        "calculadora gráfica grátis"
+      ],
+      "howTo": [
+        {
+          "name": "Digite uma função",
+          "text": "Digite uma expressão em x, como x^2-2 ou sin(x)*3, ou use as teclas. Toque em um dos exemplos para começar rápido."
+        },
+        {
+          "name": "Adicione mais gráficos",
+          "text": "Use a segunda e a terceira linhas para plotar mais funções, em cores diferentes, ao mesmo tempo."
+        },
+        {
+          "name": "Mova e dê zoom",
+          "text": "Arraste o gráfico para mover, use a rolagem ou + e − para dar zoom e pressione o botão de redefinir para voltar à origem."
+        },
+        {
+          "name": "Leia os valores",
+          "text": "Passe o cursor ou toque no gráfico para ver x e y de cada função naquele ponto."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como escrevo potências e raízes?",
+          "answer": "Use ^ para potências, como x^3, e sqrt(x) para raízes quadradas. O sinal de multiplicação pode ser omitido em muitos casos, então 2x e 3sin(x) funcionam."
+        },
+        {
+          "question": "Quais funções posso plotar?",
+          "answer": "Polinômios, funções trigonométricas e trigonométricas inversas, logaritmos, exponenciais, valor absoluto e mais, escritas em x."
+        },
+        {
+          "question": "Por que há lacunas no meu gráfico?",
+          "answer": "O gráfico não é desenhado onde a função não está definida, por exemplo 1/x em x = 0 ou sqrt(x) para x negativo."
+        },
+        {
+          "question": "Radianos ou graus?",
+          "answer": "Os gráficos usam radianos por padrão. Toque em RAD/DEG para trocar o modo de ângulo para sin, cos e tan."
+        },
+        {
+          "question": "Posso usar no celular?",
+          "answer": "Sim. Arraste com um dedo para mover. As teclas da tela funcionam sem abrir o teclado do celular."
+        },
+        {
+          "question": "Algo é enviado para a internet?",
+          "answer": "Não. Tudo é calculado e desenhado no seu navegador."
+        },
+        {
+          "question": "Qual é a precisão do gráfico?",
+          "answer": "Ele é calculado em cada pixel da tela. Dê zoom para observar uma área pequena de perto."
+        }
+      ]
+    },
+    "fraction-calculator": {
+      "seoTitle": "Calculadora de Frações – Somar, Subtrair, Multiplicar e Dividir Frações com Passo a Passo",
+      "metaDescription": "Calculadora de frações grátis para frações e números mistos. Some, subtraia, multiplique e divida, veja a fração simplificada, o número misto, o decimal e o passo a passo. Teclado na tela.",
+      "h1": "Calculadora de Frações",
+      "subheading": "Some, subtraia, multiplique e divida frações e números mistos, com a resposta na forma irredutível e os cálculos mostrados.",
+      "keywords": [
+        "calculadora de frações",
+        "soma de frações",
+        "subtração de frações",
+        "multiplicação de frações",
+        "divisão de frações",
+        "calculadora de número misto",
+        "simplificar frações",
+        "calculadora de frações com passo a passo"
+      ],
+      "howTo": [
+        {
+          "name": "Digite as frações",
+          "text": "Toque em uma caixa e use as teclas. Digite o número inteiro, o numerador e o denominador de cada fração. Deixe a caixa do inteiro vazia para uma fração simples."
+        },
+        {
+          "name": "Escolha a operação",
+          "text": "Toque em +, −, × ou ÷ no teclado."
+        },
+        {
+          "name": "Leia a resposta",
+          "text": "Veja o resultado como fração simplificada, número misto e decimal."
+        },
+        {
+          "name": "Acompanhe o passo a passo",
+          "text": "Os passos mostram como a resposta foi encontrada, como achar o denominador comum."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como somar frações com denominadores diferentes?",
+          "answer": "Encontre um denominador comum, converta as duas frações e depois some os numeradores. O painel de passos mostra exatamente isso."
+        },
+        {
+          "question": "Como digito um número misto?",
+          "answer": "Digite o número inteiro na caixa da esquerda e a fração nas caixas do numerador e do denominador. Para 2 1/3, digite 2, 1 e 3."
+        },
+        {
+          "question": "E as frações negativas?",
+          "answer": "Use a tecla ± na caixa do inteiro ou do numerador."
+        },
+        {
+          "question": "A resposta é sempre simplificada?",
+          "answer": "Sim. O resultado aparece na forma irredutível e também como número misto e decimal."
+        },
+        {
+          "question": "Como dividir frações?",
+          "answer": "Multiplique a primeira fração pelo inverso da segunda. Os passos mostram isso."
+        },
+        {
+          "question": "Por que aparece um erro?",
+          "answer": "Denominador igual a zero não é permitido, e não é possível dividir por uma fração igual a zero."
+        },
+        {
+          "question": "Funciona offline?",
+          "answer": "Sim, depois que a página for carregada. Nada é enviado a um servidor."
+        }
+      ]
+    },
+    "matrix-calculator": {
+      "seoTitle": "Calculadora de Matrizes – Soma, Multiplicação, Determinante e Inversa Online",
+      "metaDescription": "Calculadora de matrizes grátis para matrizes de até 4×4: soma, subtração, multiplicação, transposta, determinante, inversa, traço e multiplicação por escalar. Teclado numérico na tela.",
+      "h1": "Calculadora de Matrizes",
+      "subheading": "Digite duas matrizes e some, multiplique, transponha ou calcule o determinante ou a inversa — com teclado numérico na tela.",
+      "keywords": [
+        "calculadora de matrizes",
+        "calculadora de multiplicação de matrizes",
+        "calculadora de determinante",
+        "calculadora de matriz inversa",
+        "soma de matrizes",
+        "calculadora de matriz transposta",
+        "calculadora de matriz 3x3",
+        "calculadora de matrizes online"
+      ],
+      "howTo": [
+        {
+          "name": "Defina os tamanhos",
+          "text": "Escolha o número de linhas e colunas (de 1 a 4) das matrizes A e B."
+        },
+        {
+          "name": "Preencha os números",
+          "text": "Toque em uma célula e use o teclado, ou digite diretamente. Use Next para passar de célula em célula."
+        },
+        {
+          "name": "Escolha uma operação",
+          "text": "Pressione A + B, A − B, A × B, Aᵀ, det(A), A⁻¹, tr(A) ou k · A."
+        },
+        {
+          "name": "Leia o resultado",
+          "text": "A resposta aparece abaixo como matriz ou número único. Erros, como tamanhos incompatíveis, são explicados."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quando duas matrizes podem ser multiplicadas?",
+          "answer": "O número de colunas de A deve ser igual ao número de linhas de B. O resultado tem as linhas de A e as colunas de B."
+        },
+        {
+          "question": "O que é o determinante?",
+          "answer": "Um número obtido de uma matriz quadrada. Se for 0, a matriz não tem inversa."
+        },
+        {
+          "question": "Por que aparece que não há inversa?",
+          "answer": "Só matrizes quadradas com determinante diferente de 0 podem ser invertidas."
+        },
+        {
+          "question": "O que é o traço?",
+          "answer": "A soma dos números da diagonal principal de uma matriz quadrada."
+        },
+        {
+          "question": "Qual o tamanho máximo das matrizes?",
+          "answer": "Até 4 por 4, o que cobre a maioria dos exercícios e provas."
+        },
+        {
+          "question": "Posso usar decimais e negativos?",
+          "answer": "Sim. Use a tecla de ponto para decimais e ± para negativos."
+        },
+        {
+          "question": "Algo é armazenado ou enviado?",
+          "answer": "Não. Todos os cálculos acontecem no seu navegador."
+        }
+      ]
+    },
+    "quadratic-equation-solver": {
+      "seoTitle": "Calculadora de Equação do 2º Grau – Raízes, Delta e Vértice com Passo a Passo",
+      "metaDescription": "Resolva ax² + bx + c = 0 com raízes reais ou complexas. Veja o discriminante (delta), o vértice, o eixo de simetria, a forma fatorada e o passo a passo. Grátis, com teclado na tela.",
+      "h1": "Calculadora de Equação do 2º Grau",
+      "subheading": "Digite a, b e c para obter as duas soluções, o discriminante, o vértice e o desenvolvimento — inclusive raízes complexas.",
+      "keywords": [
+        "calculadora de equação do 2º grau",
+        "calculadora de bhaskara",
+        "resolver ax2+bx+c",
+        "calculadora de delta",
+        "calcular raízes da equação do segundo grau",
+        "calculadora de vértice da parábola",
+        "calculadora de raízes complexas",
+        "equação do segundo grau passo a passo"
+      ],
+      "howTo": [
+        {
+          "name": "Digite a, b e c",
+          "text": "Toque em uma caixa e use as teclas. A equação é escrita como ax² + bx + c = 0."
+        },
+        {
+          "name": "Veja as soluções",
+          "text": "As duas raízes aparecem na hora, com uma indicação de que são reais ou complexas."
+        },
+        {
+          "name": "Leia o passo a passo",
+          "text": "São mostrados o discriminante, a fórmula quadrática (de Bhaskara) com os seus números, o vértice e a forma fatorada."
+        },
+        {
+          "name": "Tente outra",
+          "text": "Altere qualquer valor e tudo é atualizado imediatamente."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual é a fórmula de Bhaskara?",
+          "answer": "x = (−b ± √(b² − 4ac)) / 2a. A parte dentro da raiz, b² − 4ac, é chamada de discriminante (delta)."
+        },
+        {
+          "question": "O que o discriminante me diz?",
+          "answer": "Se for positivo, há duas raízes reais diferentes; se for zero, há uma raiz repetida; se for negativo, as raízes são números complexos."
+        },
+        {
+          "question": "O que são raízes complexas?",
+          "answer": "Soluções que envolvem i, a raiz quadrada de −1. Aparecem em pares, como −1 + 2i e −1 − 2i."
+        },
+        {
+          "question": "Por que a não pode ser 0?",
+          "answer": "Nesse caso a equação é do 1º grau, não do 2º, e a fórmula não se aplica."
+        },
+        {
+          "question": "O que é o vértice?",
+          "answer": "O ponto de inflexão da parábola. Seu valor de x é −b/2a e ele fica sobre o eixo de simetria."
+        },
+        {
+          "question": "A resposta é exata?",
+          "answer": "Os resultados aparecem com até 12 algarismos significativos, usando um método numericamente estável para coeficientes grandes."
+        },
+        {
+          "question": "Posso digitar decimais e negativos?",
+          "answer": "Sim. Use as teclas de ponto e ±."
+        }
+      ]
+    },
+    "programmer-calculator": {
+      "seoTitle": "Calculadora de Programador – Hexadecimal, Binário, Octal e Operações Bit a Bit Online",
+      "metaDescription": "Calculadora de programador grátis: converta entre hexadecimal, decimal, octal e binário, use AND, OR, XOR, NOT, deslocamentos e aritmética com palavras de 8 a 64 bits e inverta bits individuais.",
+      "h1": "Calculadora de Programador",
+      "subheading": "Trabalhe em hexadecimal, decimal, octal ou binário, com operadores bit a bit, palavras de até 64 bits e bits que se invertem ao toque.",
+      "keywords": [
+        "calculadora de programador",
+        "calculadora hexadecimal",
+        "calculadora binária",
+        "calculadora bit a bit",
+        "converter hexadecimal para decimal",
+        "conversor de binário para decimal",
+        "calculadora xor",
+        "calculadora de deslocamento de bits"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha uma base",
+          "text": "Escolha HEX, DEC, OCT ou BIN. As teclas que não pertencem à base ficam desativadas."
+        },
+        {
+          "name": "Escolha o tamanho da palavra",
+          "text": "Selecione 8, 16, 32 ou 64 bits. Os números dão a volta (overflow) como em hardware real."
+        },
+        {
+          "name": "Calcule",
+          "text": "Digite um número, pressione um operador como AND, OR, XOR, << ou +, digite o segundo número e pressione =. NOT atua sobre o valor atual."
+        },
+        {
+          "name": "Observe os bits",
+          "text": "As quatro bases aparecem ao mesmo tempo, e você pode tocar em qualquer bit para invertê-lo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como converto hexadecimal para decimal?",
+          "answer": "Escolha HEX, digite o número e olhe a linha DEC (ou toque em DEC). Todas as bases são atualizadas juntas."
+        },
+        {
+          "question": "Para que serve o tamanho da palavra?",
+          "answer": "Ele define quantos bits um número tem. Os resultados dão a volta dentro desse tamanho, usando complemento de dois para números negativos."
+        },
+        {
+          "question": "O que são AND, OR e XOR?",
+          "answer": "Operadores bit a bit que comparam cada bit: AND é 1 apenas se ambos forem 1, OR é 1 se qualquer um for 1, e XOR é 1 se exatamente um for 1."
+        },
+        {
+          "question": "O que fazem << e >>?",
+          "answer": "Deslocam os bits para a esquerda ou para a direita, o que multiplica ou divide por potências de dois."
+        },
+        {
+          "question": "Como os números negativos são mostrados?",
+          "answer": "Em decimal, aparecem com sinal de menos. Em hexadecimal, octal e binário, aparecem em complemento de dois para o tamanho de palavra escolhido."
+        },
+        {
+          "question": "Ela aceita valores de 64 bits?",
+          "answer": "Sim. Usa inteiros grandes (big integers), então números de 64 bits são exatos."
+        },
+        {
+          "question": "Funciona offline?",
+          "answer": "Sim. Tudo roda no seu navegador."
+        }
+      ]
+    },
+    "statistics-calculator": {
+      "seoTitle": "Calculadora de Estatística – Média, Mediana, Moda e Desvio Padrão Online",
+      "metaDescription": "Cole números e obtenha média, mediana, moda, amplitude, quartis, variância, desvio padrão (amostral ou populacional), outliers e um histograma. Grátis, com teclado na tela.",
+      "h1": "Calculadora de Estatística",
+      "subheading": "Digite uma lista de números e veja média, mediana, moda, dispersão, quartis e um gráfico de distribuição em um só lugar.",
+      "keywords": [
+        "calculadora de estatística",
+        "calculadora de desvio padrão",
+        "calculadora de média, mediana e moda",
+        "calculadora de variância",
+        "calculadora de quartis",
+        "calculadora de estatística descritiva",
+        "calculadora de amplitude",
+        "calculadora de outliers"
+      ],
+      "howTo": [
+        {
+          "name": "Digite seus dados",
+          "text": "Digite ou cole números separados por vírgulas, espaços ou quebras de linha. Ou use as teclas da tela."
+        },
+        {
+          "name": "Escolha amostra ou população",
+          "text": "Escolha Amostra (n−1) para uma amostra de um grupo maior, ou População (n) quando você tem todos os dados."
+        },
+        {
+          "name": "Leia os resultados",
+          "text": "Veja contagem, soma, média, mediana, moda, amplitude, quartis, variância, desvio padrão e mais."
+        },
+        {
+          "name": "Confira o gráfico",
+          "text": "O gráfico de distribuição mostra como seus valores estão espalhados. Seus dados ficam salvos neste dispositivo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qual é a diferença entre amostra e população?",
+          "answer": "Use amostra quando seus números são só parte de um grupo maior; divide-se por n − 1. Use população quando você tem todos os valores; divide-se por n."
+        },
+        {
+          "question": "Como a mediana é encontrada?",
+          "answer": "Ordene os números e pegue o do meio, ou a média dos dois do meio se a quantidade for par."
+        },
+        {
+          "question": "E se não houver moda?",
+          "answer": "Se todos os números aparecem uma só vez, não há moda, e nenhuma é exibida."
+        },
+        {
+          "question": "Como os quartis são calculados?",
+          "answer": "Por interpolação linear entre os valores mais próximos. Livros diferentes usam métodos ligeiramente diferentes."
+        },
+        {
+          "question": "O que é considerado outlier?",
+          "answer": "Um valor que está mais de 1,5 vez a amplitude interquartil abaixo de Q1 ou acima de Q3."
+        },
+        {
+          "question": "Quantos números posso digitar?",
+          "answer": "Milhares. Tudo é calculado instantaneamente no seu navegador."
+        },
+        {
+          "question": "Meus dados ficam salvos?",
+          "answer": "Sim, somente neste dispositivo, então continuam aqui na próxima vez. Nada é enviado."
+        }
+      ]
+    },
+    "gcd-lcm-calculator": {
+      "seoTitle": "Calculadora de MDC e MMC – Máximo Divisor Comum, Mínimo Múltiplo Comum e Fatores Primos",
+      "metaDescription": "Calcule o MDC e o MMC de dois ou mais números, com o passo a passo do algoritmo de Euclides, fatoração em primos, divisores e verificação de número primo. Grátis, com teclado na tela.",
+      "h1": "Calculadora de MDC, MMC e Fatores Primos",
+      "subheading": "Encontre o máximo divisor comum e o mínimo múltiplo comum dos seus números e veja os fatores primos e os divisores de cada um.",
+      "keywords": [
+        "calculadora de mdc",
+        "calculadora de mmc",
+        "máximo divisor comum",
+        "mínimo múltiplo comum",
+        "calculadora de fatoração em números primos",
+        "calculadora de mdc e mmc",
+        "é número primo?",
+        "divisores de um número"
+      ],
+      "howTo": [
+        {
+          "name": "Digite seus números",
+          "text": "Digite números inteiros separados por vírgulas, como 48, 180, ou use as teclas."
+        },
+        {
+          "name": "Leia o MDC e o MMC",
+          "text": "O máximo divisor comum e o mínimo múltiplo comum aparecem no topo."
+        },
+        {
+          "name": "Veja o desenvolvimento",
+          "text": "Para dois números, o algoritmo de Euclides é mostrado passo a passo."
+        },
+        {
+          "name": "Explore cada número",
+          "text": "Veja se ele é primo, sua fatoração em primos e a lista de divisores."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O que é o MDC?",
+          "answer": "O maior número que divide exatamente todos os seus números. Também é chamado de máximo divisor comum."
+        },
+        {
+          "question": "O que é o MMC?",
+          "answer": "O menor número que é múltiplo de todos os seus números. É útil para somar frações com denominadores diferentes."
+        },
+        {
+          "question": "O que é o algoritmo de Euclides?",
+          "answer": "Divida repetidamente o maior número pelo menor e guarde o resto até que ele seja 0. O último resto diferente de zero é o MDC."
+        },
+        {
+          "question": "Como funciona a fatoração em primos?",
+          "answer": "Todo número inteiro maior que 1 é um produto de primos. Por exemplo, 360 = 2³ × 3² × 5."
+        },
+        {
+          "question": "O que significa primos entre si?",
+          "answer": "Dois números cujo MDC é 1, ou seja, que não têm nenhum fator em comum além de 1."
+        },
+        {
+          "question": "Qual o tamanho máximo dos números?",
+          "answer": "Até um trilhão, e até doze números de uma vez."
+        },
+        {
+          "question": "Algo é enviado para a internet?",
+          "answer": "Não. O cálculo roda no seu navegador."
         }
       ]
     }

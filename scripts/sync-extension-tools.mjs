@@ -131,6 +131,9 @@ lines.push(
 lines.push(
   '  "focus-study": \'<line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/>\','
 );
+lines.push(
+  '  "math-calculators": \'<rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/>\','
+);
 lines.push("};");
 lines.push("");
 lines.push('if (typeof module !== "undefined" && module.exports) {');

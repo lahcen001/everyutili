@@ -79,6 +79,11 @@
       "label": "Fokus & Relaksasi",
       "description": "Timer Pomodoro, suara fokus, kartu belajar, dan perencana untuk berkonsentrasi — plus istirahat peregangan, latihan pernapasan, dan mini game singkat untuk mengisi ulang tenaga di sela sesi.",
       "navLabel": "Fokus"
+    },
+    "math-calculators": {
+      "label": "Kalkulator Matematika & Sains",
+      "description": "Kalkulator ilmiah, grafik, pecahan, matriks, statistik, dan lainnya — setiap kalkulator mudah dipakai, punya keyboard layar sendiri, dan bisa digunakan offline.",
+      "navLabel": "Matematika"
     }
   },
   "tools": {
@@ -8718,6 +8723,518 @@
         {
           "question": "Apakah berbayar?",
           "answer": "Tidak. Gratis, tanpa iklan di dalam game, dan tidak perlu akun."
+        }
+      ]
+    },
+    "scientific-calculator": {
+      "seoTitle": "Kalkulator Ilmiah Online – Gratis dengan Trigonometri, Log, Pangkat & Keyboard Layar",
+      "metaDescription": "Kalkulator ilmiah online gratis dengan sin, cos, tan, log, ln, pangkat, akar, faktorial, memori, riwayat, serta mode derajat atau radian. Tombol layar besar dan bisa mengetik lewat keyboard. Privasi terjaga.",
+      "h1": "Kalkulator Ilmiah",
+      "subheading": "Trigonometri, logaritma, pangkat, akar, dan lainnya — dengan keyboard layar lengkap, pratinjau jawaban langsung, dan riwayat tersimpan.",
+      "keywords": [
+        "kalkulator ilmiah",
+        "kalkulator ilmiah online",
+        "kalkulator scientific online",
+        "kalkulator sin cos tan",
+        "kalkulator logaritma",
+        "kalkulator ilmiah gratis",
+        "kalkulator dengan tanda kurung",
+        "kalkulator derajat radian"
+      ],
+      "howTo": [
+        {
+          "name": "Ketik atau ketuk",
+          "text": "Gunakan tombol di layar atau ketik dengan keyboard. Fungsi seperti sin( otomatis membuka tanda kurung untuk Anda."
+        },
+        {
+          "name": "Lihat pratinjau",
+          "text": "Jawaban muncul berwarna abu-abu saat Anda mengetik. Tanda kurung yang belum ditutup akan ditutup otomatis."
+        },
+        {
+          "name": "Pilih derajat atau radian",
+          "text": "Ketuk DEG/RAD di kiri atas layar sebelum memakai sin, cos, atau tan. Ketuk 2nd untuk fungsi invers seperti sin⁻¹ serta untuk ex, 10x, dan akar pangkat tiga."
+        },
+        {
+          "name": "Tekan sama dengan",
+          "text": "Tekan = atau Enter. Perhitungan Anda masuk ke riwayat yang disimpan di perangkat ini. Gunakan Ans untuk memakai hasil terakhir, serta M+, M−, MR, dan MC untuk memori."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah kalkulator ini mengikuti urutan operasi hitung?",
+          "answer": "Ya. Tanda kurung dahulu, lalu pangkat dan akar, kemudian perkalian dan pembagian, terakhir penjumlahan dan pengurangan. Jadi 2+3×4 hasilnya 14, dan −2² hasilnya −4."
+        },
+        {
+          "question": "Bagaimana cara beralih antara derajat dan radian?",
+          "answer": "Ketuk label DEG atau RAD di atas layar. Dalam derajat sin(30) = 0,5; dalam radian hasilnya sekitar −0,988."
+        },
+        {
+          "question": "Apa fungsi tombol 2nd?",
+          "answer": "Tombol ini mengganti fungsi tombol lain: sin, cos, dan tan menjadi inversnya, ln menjadi eˣ, log menjadi 10ˣ, √ menjadi akar pangkat tiga, x² menjadi x³, xʸ menjadi akar ke-y, dan n! menjadi nCr."
+        },
+        {
+          "question": "Bisakah saya mengetik dengan keyboard?",
+          "answer": "Bisa. Klik layar lalu ketik angka dan operator. Enter untuk menghitung dan Escape untuk menghapus. Di ponsel, hanya tombol layar yang muncul."
+        },
+        {
+          "question": "Apakah riwayat saya tersimpan?",
+          "answer": "Ya, 30 perhitungan terakhir dan nilai memori disimpan di browser pada perangkat ini. Tidak ada yang diunggah."
+        },
+        {
+          "question": "Mengapa 0.1 + 0.2 menampilkan 0.3?",
+          "answer": "Kalkulator merapikan kesalahan pembulatan kecil yang biasa terjadi pada bilangan desimal di komputer, dan menampilkan hingga 12 angka signifikan."
+        },
+        {
+          "question": "Fungsi apa saja yang didukung?",
+          "answer": "Fungsi trigonometri dan hiperbolik beserta inversnya, log, ln, akar kuadrat dan akar pangkat tiga, pangkat dan akar apa pun, faktorial, permutasi dan kombinasi, nilai mutlak, persen, π, dan e."
+        }
+      ]
+    },
+    "graphing-calculator": {
+      "seoTitle": "Kalkulator Grafik Online – Pembuat Grafik Fungsi Gratis dengan Keyboard",
+      "metaDescription": "Gambar hingga tiga fungsi sekaligus. Geser untuk memindah, gulir untuk zoom, telusuri nilai, dan pakai derajat atau radian. Kalkulator grafik online gratis dengan keyboard layar.",
+      "h1": "Kalkulator Grafik",
+      "subheading": "Ketik fungsi dalam x dan langsung lihat grafiknya — gambar hingga tiga fungsi, zoom, geser, dan baca nilai tepatnya.",
+      "keywords": [
+        "kalkulator grafik",
+        "kalkulator grafik online",
+        "pembuat grafik fungsi",
+        "menggambar grafik fungsi online",
+        "grafik y=",
+        "alternatif desmos",
+        "grafik sin x",
+        "kalkulator grafik gratis"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan fungsi",
+          "text": "Ketik ekspresi dalam x, seperti x^2-2 atau sin(x)*3, atau gunakan tombolnya. Ketuk salah satu contoh Coba untuk memulai dengan cepat."
+        },
+        {
+          "name": "Tambahkan grafik lain",
+          "text": "Gunakan baris kedua dan ketiga untuk menggambar fungsi lain dengan warna berbeda sekaligus."
+        },
+        {
+          "name": "Geser dan zoom",
+          "text": "Seret grafik untuk menggeser, gulir atau gunakan + dan − untuk zoom, lalu tekan tombol reset untuk kembali ke titik asal."
+        },
+        {
+          "name": "Baca nilai",
+          "text": "Arahkan kursor atau sentuh grafik untuk melihat x dan y setiap fungsi pada titik tersebut."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana menulis pangkat dan akar?",
+          "answer": "Gunakan ^ untuk pangkat, misalnya x^3, dan sqrt(x) untuk akar kuadrat. Tanda kali sering kali boleh dihilangkan, jadi 2x dan 3sin(x) berfungsi."
+        },
+        {
+          "question": "Fungsi apa saja yang bisa digambar?",
+          "answer": "Polinomial, fungsi trigonometri dan inversnya, logaritma, eksponen, nilai mutlak, dan lainnya, yang ditulis dalam x."
+        },
+        {
+          "question": "Mengapa grafik saya ada yang terputus?",
+          "answer": "Grafik tidak digambar di titik yang fungsinya tidak terdefinisi, misalnya 1/x di x = 0 atau sqrt(x) untuk x negatif."
+        },
+        {
+          "question": "Radian atau derajat?",
+          "answer": "Grafik memakai radian secara default. Ketuk RAD/DEG untuk mengganti mode sudut pada sin, cos, dan tan."
+        },
+        {
+          "question": "Bisakah dipakai di ponsel?",
+          "answer": "Bisa. Seret dengan satu jari untuk menggeser. Tombol layar berfungsi tanpa membuka keyboard ponsel."
+        },
+        {
+          "question": "Apakah ada yang diunggah?",
+          "answer": "Tidak. Semua dihitung dan digambar di browser Anda."
+        },
+        {
+          "question": "Seberapa akurat grafiknya?",
+          "answer": "Grafik dihitung di setiap piksel di seluruh layar. Perbesar untuk melihat area kecil dengan lebih teliti."
+        }
+      ]
+    },
+    "fraction-calculator": {
+      "seoTitle": "Kalkulator Pecahan – Tambah, Kurang, Kali & Bagi Pecahan dengan Langkah",
+      "metaDescription": "Kalkulator pecahan gratis untuk pecahan dan bilangan campuran. Jumlahkan, kurangkan, kalikan, dan bagi; lihat pecahan sederhana, bilangan campuran, desimal, serta langkah-langkahnya. Keypad di layar.",
+      "h1": "Kalkulator Pecahan",
+      "subheading": "Jumlahkan, kurangkan, kalikan, dan bagi pecahan serta bilangan campuran, dengan jawaban dalam bentuk paling sederhana dan langkah pengerjaannya.",
+      "keywords": [
+        "kalkulator pecahan",
+        "penjumlahan pecahan",
+        "pengurangan pecahan",
+        "perkalian pecahan",
+        "pembagian pecahan",
+        "kalkulator bilangan campuran",
+        "menyederhanakan pecahan",
+        "kalkulator pecahan dengan langkah"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan pecahan",
+          "text": "Ketuk kotak lalu gunakan tombolnya. Ketik bilangan bulat, pembilang, dan penyebut untuk tiap pecahan. Kosongkan kotak bilangan bulat untuk pecahan biasa."
+        },
+        {
+          "name": "Pilih operasi",
+          "text": "Ketuk +, −, ×, atau ÷ pada keypad."
+        },
+        {
+          "name": "Baca jawabannya",
+          "text": "Lihat hasil sebagai pecahan sederhana, bilangan campuran, dan desimal."
+        },
+        {
+          "name": "Ikuti langkahnya",
+          "text": "Langkah-langkah menunjukkan cara jawaban diperoleh, misalnya mencari penyebut yang sama."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana cara menjumlahkan pecahan berpenyebut berbeda?",
+          "answer": "Cari penyebut yang sama, ubah kedua pecahan, lalu jumlahkan pembilangnya. Panel langkah menunjukkan hal ini dengan jelas."
+        },
+        {
+          "question": "Bagaimana cara memasukkan bilangan campuran?",
+          "answer": "Ketik bilangan bulat di kotak kiri, lalu pecahannya di kotak pembilang dan penyebut. Untuk 2 1/3, masukkan 2, 1, dan 3."
+        },
+        {
+          "question": "Bagaimana dengan pecahan negatif?",
+          "answer": "Gunakan tombol ± pada kotak bilangan bulat atau pembilang."
+        },
+        {
+          "question": "Apakah jawabannya selalu disederhanakan?",
+          "answer": "Ya. Hasil ditampilkan dalam bentuk paling sederhana, juga sebagai bilangan campuran dan desimal."
+        },
+        {
+          "question": "Bagaimana cara membagi pecahan?",
+          "answer": "Kalikan pecahan pertama dengan kebalikan pecahan kedua. Langkah-langkahnya menunjukkan hal ini."
+        },
+        {
+          "question": "Mengapa muncul pesan error?",
+          "answer": "Penyebut nol tidak diperbolehkan, dan Anda tidak bisa membagi dengan pecahan yang bernilai nol."
+        },
+        {
+          "question": "Apakah bisa dipakai offline?",
+          "answer": "Ya, setelah halaman termuat. Tidak ada yang dikirim ke server."
+        }
+      ]
+    },
+    "matrix-calculator": {
+      "seoTitle": "Kalkulator Matriks – Penjumlahan, Perkalian, Determinan & Invers Online",
+      "metaDescription": "Kalkulator matriks gratis hingga ukuran 4×4: jumlah, kurang, kali, transpose, determinan, invers, trace, dan perkalian skalar. Keypad angka di layar.",
+      "h1": "Kalkulator Matriks",
+      "subheading": "Masukkan dua matriks lalu jumlahkan, kalikan, transpose, atau cari determinan dan inversnya — dengan keypad angka di layar.",
+      "keywords": [
+        "kalkulator matriks",
+        "kalkulator perkalian matriks",
+        "kalkulator determinan",
+        "kalkulator invers matriks",
+        "penjumlahan matriks",
+        "kalkulator transpose matriks",
+        "kalkulator matriks 3x3",
+        "kalkulator matriks online"
+      ],
+      "howTo": [
+        {
+          "name": "Atur ukuran",
+          "text": "Pilih jumlah baris dan kolom (1 sampai 4) untuk matriks A dan B."
+        },
+        {
+          "name": "Isi angkanya",
+          "text": "Ketuk sel lalu gunakan keypad, atau ketik langsung. Gunakan Next untuk berpindah antar sel."
+        },
+        {
+          "name": "Pilih operasi",
+          "text": "Tekan A + B, A − B, A × B, Aᵀ, det(A), A⁻¹, tr(A), atau k · A."
+        },
+        {
+          "name": "Baca hasilnya",
+          "text": "Jawaban ditampilkan di bawah sebagai matriks atau satu angka. Kesalahan seperti ukuran yang tidak cocok akan dijelaskan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Kapan dua matriks dapat dikalikan?",
+          "answer": "Jumlah kolom A harus sama dengan jumlah baris B. Hasilnya memiliki baris dari A dan kolom dari B."
+        },
+        {
+          "question": "Apa itu determinan?",
+          "answer": "Satu angka yang dihitung dari matriks persegi. Jika bernilai 0, matriks tersebut tidak memiliki invers."
+        },
+        {
+          "question": "Mengapa muncul pesan tidak ada invers?",
+          "answer": "Hanya matriks persegi dengan determinan bukan 0 yang dapat dibalik (memiliki invers)."
+        },
+        {
+          "question": "Apa itu trace?",
+          "answer": "Jumlah angka-angka pada diagonal utama matriks persegi."
+        },
+        {
+          "question": "Seberapa besar ukuran matriksnya?",
+          "answer": "Hingga 4 kali 4, yang mencakup sebagian besar soal PR dan ujian."
+        },
+        {
+          "question": "Apakah desimal dan bilangan negatif boleh dipakai?",
+          "answer": "Boleh. Gunakan tombol titik untuk desimal dan ± untuk bilangan negatif."
+        },
+        {
+          "question": "Apakah ada yang disimpan atau diunggah?",
+          "answer": "Tidak. Semua perhitungan dilakukan di browser Anda."
+        }
+      ]
+    },
+    "quadratic-equation-solver": {
+      "seoTitle": "Kalkulator Persamaan Kuadrat – Akar, Diskriminan & Titik Puncak dengan Langkah",
+      "metaDescription": "Selesaikan ax² + bx + c = 0 untuk akar real maupun kompleks. Lihat diskriminan, titik puncak, sumbu simetri, bentuk faktor, dan langkah-langkahnya. Gratis, dengan keypad di layar.",
+      "h1": "Kalkulator Persamaan Kuadrat",
+      "subheading": "Masukkan a, b, dan c untuk mendapatkan kedua penyelesaian, diskriminan, titik puncak, dan langkah pengerjaan — termasuk akar kompleks.",
+      "keywords": [
+        "kalkulator persamaan kuadrat",
+        "kalkulator rumus abc",
+        "menyelesaikan ax2+bx+c",
+        "kalkulator diskriminan",
+        "mencari akar persamaan kuadrat",
+        "kalkulator titik puncak parabola",
+        "kalkulator akar kompleks",
+        "kalkulator persamaan kuadrat dengan langkah"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan a, b, dan c",
+          "text": "Ketuk kotak lalu gunakan tombolnya. Persamaan ditulis sebagai ax² + bx + c = 0."
+        },
+        {
+          "name": "Lihat penyelesaiannya",
+          "text": "Kedua akar langsung muncul, disertai keterangan apakah akarnya real atau kompleks."
+        },
+        {
+          "name": "Baca langkahnya",
+          "text": "Diskriminan, rumus kuadrat (rumus abc) dengan angka Anda, titik puncak, dan bentuk faktor ditampilkan."
+        },
+        {
+          "name": "Coba yang lain",
+          "text": "Ubah nilai apa pun dan semuanya langsung diperbarui."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu rumus kuadrat (rumus abc)?",
+          "answer": "x = (−b ± √(b² − 4ac)) / 2a. Bagian di bawah akar, b² − 4ac, disebut diskriminan."
+        },
+        {
+          "question": "Apa yang ditunjukkan oleh diskriminan?",
+          "answer": "Jika positif ada dua akar real yang berbeda, jika nol ada satu akar kembar, dan jika negatif akarnya berupa bilangan kompleks."
+        },
+        {
+          "question": "Apa itu akar kompleks?",
+          "answer": "Penyelesaian yang melibatkan i, yaitu akar kuadrat dari −1. Akar ini muncul berpasangan, seperti −1 + 2i dan −1 − 2i."
+        },
+        {
+          "question": "Mengapa a tidak boleh 0?",
+          "answer": "Karena persamaannya menjadi linear, bukan kuadrat, sehingga rumusnya tidak berlaku."
+        },
+        {
+          "question": "Apa itu titik puncak?",
+          "answer": "Titik balik parabola. Nilai x-nya adalah −b/2a dan terletak pada sumbu simetri."
+        },
+        {
+          "question": "Apakah jawabannya eksak?",
+          "answer": "Hasil ditampilkan hingga 12 angka signifikan, dengan metode numerik yang stabil untuk koefisien besar."
+        },
+        {
+          "question": "Bisakah memasukkan desimal dan bilangan negatif?",
+          "answer": "Bisa. Gunakan tombol titik dan ±."
+        }
+      ]
+    },
+    "programmer-calculator": {
+      "seoTitle": "Kalkulator Programmer – Hex, Biner, Oktal & Operasi Bitwise Online",
+      "metaDescription": "Kalkulator programmer gratis: konversi antara hex, desimal, oktal, dan biner, pakai AND, OR, XOR, NOT, shift, dan aritmetika dengan word 8 sampai 64 bit, serta balik setiap bit.",
+      "h1": "Kalkulator Programmer",
+      "subheading": "Hitung dalam hex, desimal, oktal, atau biner, dengan operator bitwise, ukuran word hingga 64-bit, dan bit yang bisa dibalik dengan sekali ketuk.",
+      "keywords": [
+        "kalkulator programmer",
+        "kalkulator hex",
+        "kalkulator biner",
+        "kalkulator bitwise",
+        "hex ke desimal",
+        "konversi biner ke desimal",
+        "kalkulator xor",
+        "kalkulator bit shift"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih basis bilangan",
+          "text": "Pilih HEX, DEC, OCT, atau BIN. Tombol yang tidak termasuk basis tersebut dinonaktifkan."
+        },
+        {
+          "name": "Pilih ukuran word",
+          "text": "Pilih 8, 16, 32, atau 64 bit. Angka akan berputar (wrap around) seperti pada perangkat keras sebenarnya."
+        },
+        {
+          "name": "Hitung",
+          "text": "Ketik angka, tekan operator seperti AND, OR, XOR, << atau +, ketik angka kedua, lalu tekan =. NOT bekerja pada nilai saat ini."
+        },
+        {
+          "name": "Lihat bit-nya",
+          "text": "Keempat basis ditampilkan sekaligus, dan Anda bisa mengetuk bit mana pun untuk membaliknya."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana cara mengubah hex ke desimal?",
+          "answer": "Pilih HEX, ketik angkanya, lalu lihat baris DEC (atau ketuk DEC). Semua basis diperbarui bersamaan."
+        },
+        {
+          "question": "Apa fungsi ukuran word?",
+          "answer": "Menentukan jumlah bit sebuah angka. Hasil akan berputar dalam ukuran tersebut, dengan komplemen dua (two's complement) untuk bilangan negatif."
+        },
+        {
+          "question": "Apa itu AND, OR, dan XOR?",
+          "answer": "Operator bitwise yang membandingkan setiap bit: AND bernilai 1 hanya jika keduanya 1, OR bernilai 1 jika salah satunya 1, dan XOR bernilai 1 jika tepat satu yang bernilai 1."
+        },
+        {
+          "question": "Apa fungsi << dan >>?",
+          "answer": "Menggeser bit ke kiri atau kanan, yang berarti mengalikan atau membagi dengan pangkat dua."
+        },
+        {
+          "question": "Bagaimana bilangan negatif ditampilkan?",
+          "answer": "Dalam desimal memakai tanda minus. Dalam hex, oktal, dan biner ditampilkan sebagai komplemen dua untuk ukuran word yang dipilih."
+        },
+        {
+          "question": "Apakah bisa menangani nilai 64-bit?",
+          "answer": "Bisa. Kalkulator ini memakai big integer, sehingga angka 64-bit tepat."
+        },
+        {
+          "question": "Apakah bisa dipakai offline?",
+          "answer": "Ya. Semuanya berjalan di browser Anda."
+        }
+      ]
+    },
+    "statistics-calculator": {
+      "seoTitle": "Kalkulator Statistika – Mean, Median, Modus, Standar Deviasi Online",
+      "metaDescription": "Tempel angka dan dapatkan mean, median, modus, jangkauan, kuartil, varians, standar deviasi (sampel atau populasi), pencilan, dan histogram. Gratis, dengan keypad di layar.",
+      "h1": "Kalkulator Statistika",
+      "subheading": "Masukkan daftar angka dan dapatkan mean, median, modus, sebaran, kuartil, serta diagram distribusi dalam satu tempat.",
+      "keywords": [
+        "kalkulator statistika",
+        "kalkulator standar deviasi",
+        "kalkulator mean median modus",
+        "kalkulator varians",
+        "kalkulator kuartil",
+        "kalkulator statistik deskriptif",
+        "kalkulator jangkauan data",
+        "kalkulator pencilan"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan data Anda",
+          "text": "Ketik atau tempel angka yang dipisahkan koma, spasi, atau baris baru. Atau gunakan tombol di layar."
+        },
+        {
+          "name": "Pilih sampel atau populasi",
+          "text": "Pilih Sampel (n−1) untuk sampel dari kelompok yang lebih besar, atau Populasi (n) jika Anda memiliki seluruh data."
+        },
+        {
+          "name": "Baca hasilnya",
+          "text": "Lihat banyak data, jumlah, mean, median, modus, jangkauan, kuartil, varians, standar deviasi, dan lainnya."
+        },
+        {
+          "name": "Periksa diagramnya",
+          "text": "Diagram distribusi menunjukkan sebaran nilai Anda. Data Anda disimpan di perangkat ini."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa beda sampel dan populasi?",
+          "answer": "Gunakan sampel jika angka Anda hanya sebagian dari kelompok yang lebih besar; pembaginya n − 1. Gunakan populasi jika Anda memiliki semua nilai; pembaginya n."
+        },
+        {
+          "question": "Bagaimana median dicari?",
+          "answer": "Urutkan angka lalu ambil yang di tengah, atau rata-rata dua angka tengah jika jumlah datanya genap."
+        },
+        {
+          "question": "Bagaimana jika tidak ada modus?",
+          "answer": "Jika setiap angka hanya muncul sekali, tidak ada modus, dan hasilnya ditampilkan kosong."
+        },
+        {
+          "question": "Bagaimana kuartil dihitung?",
+          "answer": "Dengan interpolasi linear antara nilai-nilai terdekat. Buku teks yang berbeda memakai metode yang sedikit berbeda."
+        },
+        {
+          "question": "Apa yang dianggap sebagai pencilan?",
+          "answer": "Nilai yang lebih dari 1,5 kali jangkauan antarkuartil di bawah Q1 atau di atas Q3."
+        },
+        {
+          "question": "Berapa banyak angka yang bisa dimasukkan?",
+          "answer": "Ribuan. Semuanya dihitung seketika di browser Anda."
+        },
+        {
+          "question": "Apakah data saya disimpan?",
+          "answer": "Ya, hanya di perangkat ini, sehingga masih ada saat Anda kembali. Tidak ada yang diunggah."
+        }
+      ]
+    },
+    "gcd-lcm-calculator": {
+      "seoTitle": "Kalkulator FPB & KPK – Faktor Persekutuan Terbesar, Kelipatan Persekutuan Terkecil & Faktorisasi Prima",
+      "metaDescription": "Cari FPB dan KPK dari dua angka atau lebih, lengkap dengan langkah algoritma Euclid, faktorisasi prima, pembagi, dan pengecekan bilangan prima. Gratis, dengan keypad di layar.",
+      "h1": "Kalkulator FPB, KPK & Faktor Prima",
+      "subheading": "Cari faktor persekutuan terbesar dan kelipatan persekutuan terkecil dari angka Anda, serta lihat faktor prima dan pembagi tiap angka.",
+      "keywords": [
+        "kalkulator fpb",
+        "kalkulator kpk",
+        "faktor persekutuan terbesar",
+        "kelipatan persekutuan terkecil",
+        "kalkulator faktorisasi prima",
+        "kalkulator fpb dan kpk",
+        "cek bilangan prima",
+        "faktor dari suatu bilangan"
+      ],
+      "howTo": [
+        {
+          "name": "Masukkan angka Anda",
+          "text": "Ketik bilangan bulat yang dipisahkan koma, seperti 48, 180, atau gunakan tombolnya."
+        },
+        {
+          "name": "Baca FPB dan KPK",
+          "text": "Faktor persekutuan terbesar (FPB) dan kelipatan persekutuan terkecil (KPK) muncul di bagian atas."
+        },
+        {
+          "name": "Lihat pengerjaannya",
+          "text": "Untuk dua angka, algoritma Euclid ditampilkan langkah demi langkah."
+        },
+        {
+          "name": "Jelajahi tiap angka",
+          "text": "Lihat apakah angka itu prima, faktorisasi primanya, dan daftar pembaginya."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu FPB?",
+          "answer": "Bilangan terbesar yang habis membagi semua angka Anda. Dalam bahasa Inggris disebut GCD atau HCF (highest common factor)."
+        },
+        {
+          "question": "Apa itu KPK?",
+          "answer": "Bilangan terkecil yang merupakan kelipatan dari semua angka Anda. Berguna untuk menjumlahkan pecahan berpenyebut berbeda."
+        },
+        {
+          "question": "Apa itu algoritma Euclid?",
+          "answer": "Bagi bilangan yang lebih besar dengan yang lebih kecil secara berulang dan ambil sisanya sampai sisanya 0. Sisa terakhir yang bukan nol adalah FPB."
+        },
+        {
+          "question": "Bagaimana faktorisasi prima bekerja?",
+          "answer": "Setiap bilangan bulat di atas 1 merupakan hasil kali bilangan prima. Contohnya, 360 = 2³ × 3² × 5."
+        },
+        {
+          "question": "Apa arti koprima (relatif prima)?",
+          "answer": "Dua bilangan yang FPB-nya 1, artinya keduanya tidak memiliki faktor persekutuan selain 1."
+        },
+        {
+          "question": "Seberapa besar angka yang bisa dimasukkan?",
+          "answer": "Hingga satu triliun, dan sampai dua belas angka sekaligus."
+        },
+        {
+          "question": "Apakah ada yang diunggah?",
+          "answer": "Tidak. Perhitungan berjalan di browser Anda."
         }
       ]
     }

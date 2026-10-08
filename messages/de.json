@@ -79,6 +79,11 @@
       "label": "Fokus & Entspannung",
       "description": "Pomodoro-Timer, Fokus-Sounds, Karteikarten und Planer für mehr Konzentration – dazu Dehnpausen, Atemübungen und kurze Minispiele, um zwischen den Lernphasen neue Energie zu tanken.",
       "navLabel": "Fokus"
+    },
+    "math-calculators": {
+      "label": "Mathe- & Wissenschaftsrechner",
+      "description": "Wissenschaftlich, Grafik, Brüche, Matrizen, Statistik und mehr – jeder Rechner ist einfach aufgebaut, hat eine eigene Bildschirmtastatur und funktioniert offline.",
+      "navLabel": "Mathe"
     }
   },
   "tools": {
@@ -8718,6 +8723,518 @@
         {
           "question": "Kostet es etwas?",
           "answer": "Nein. Es ist kostenlos, hat keine Werbung im Spiel und braucht kein Konto."
+        }
+      ]
+    },
+    "scientific-calculator": {
+      "seoTitle": "Wissenschaftlicher Taschenrechner online – kostenlos mit Trigonometrie, Logarithmus, Potenzen & Bildschirmtastatur",
+      "metaDescription": "Kostenloser wissenschaftlicher Taschenrechner online mit sin, cos, tan, log, ln, Potenzen, Wurzeln, Fakultät, Speicher, Verlauf und Grad oder Bogenmaß. Große Tasten und Tastatureingabe. Privat.",
+      "h1": "Wissenschaftlicher Taschenrechner",
+      "subheading": "Trigonometrie, Logarithmen, Potenzen, Wurzeln und mehr – mit vollständiger Bildschirmtastatur, Live-Vorschau des Ergebnisses und gespeichertem Verlauf.",
+      "keywords": [
+        "wissenschaftlicher Taschenrechner",
+        "wissenschaftlicher Taschenrechner online",
+        "Taschenrechner mit Winkelfunktionen",
+        "Taschenrechner sin cos tan",
+        "Logarithmus Rechner",
+        "kostenloser wissenschaftlicher Taschenrechner",
+        "Taschenrechner mit Klammern",
+        "Grad Bogenmaß Rechner"
+      ],
+      "howTo": [
+        {
+          "name": "Eintippen oder antippen",
+          "text": "Nutze die Tasten auf dem Bildschirm oder tippe mit der Tastatur. Funktionen wie sin( öffnen automatisch eine Klammer."
+        },
+        {
+          "name": "Vorschau prüfen",
+          "text": "Das Ergebnis erscheint beim Tippen in Grau. Offene Klammern werden automatisch geschlossen."
+        },
+        {
+          "name": "Grad oder Bogenmaß wählen",
+          "text": "Tippe oben links im Display auf DEG/RAD, bevor du sin, cos oder tan benutzt. Mit 2nd erreichst du Umkehrfunktionen wie sin⁻¹ sowie ex, 10x und die dritte Wurzel."
+        },
+        {
+          "name": "Gleichheitszeichen drücken",
+          "text": "Drücke = oder Enter. Die Rechnung wird im Verlauf gespeichert, der auf diesem Gerät bleibt. Mit Ans verwendest du das letzte Ergebnis erneut, mit M+, M−, MR und MC nutzt du den Speicher."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Beachtet der Rechner die Rangfolge der Rechenoperationen?",
+          "answer": "Ja. Zuerst Klammern, dann Potenzen und Wurzeln, dann Punktrechnung (Multiplikation und Division), danach Strichrechnung (Addition und Subtraktion). So ergibt 2+3×4 den Wert 14 und −2² den Wert −4."
+        },
+        {
+          "question": "Wie wechsle ich zwischen Grad und Bogenmaß?",
+          "answer": "Tippe auf die Anzeige DEG oder RAD über dem Display. In Grad gilt sin(30) = 0,5; im Bogenmaß ergibt es etwa −0,988."
+        },
+        {
+          "question": "Was bewirkt die Taste 2nd?",
+          "answer": "Sie schaltet die Funktionstasten um: sin, cos und tan werden zu ihren Umkehrfunktionen, ln wird zu eˣ, log wird zu 10ˣ, √ wird zur dritten Wurzel, x² wird zu x³, xʸ wird zur y-ten Wurzel und n! wird zu nCr."
+        },
+        {
+          "question": "Kann ich mit der Tastatur tippen?",
+          "answer": "Ja. Klicke auf das Display und gib Zahlen und Operatoren ein. Enter berechnet, Escape löscht. Auf Smartphones erscheinen nur die Tasten auf dem Bildschirm."
+        },
+        {
+          "question": "Wird mein Verlauf gespeichert?",
+          "answer": "Ja, die letzten 30 Rechnungen und der Speicherwert werden in deinem Browser auf diesem Gerät gespeichert. Es wird nichts hochgeladen."
+        },
+        {
+          "question": "Warum zeigt 0,1 + 0,2 genau 0,3 an?",
+          "answer": "Der Rechner bereinigt die winzigen Rundungsfehler, die Computer bei Dezimalzahlen machen, und zeigt bis zu 12 signifikante Stellen an."
+        },
+        {
+          "question": "Welche Funktionen werden unterstützt?",
+          "answer": "Winkelfunktionen und Hyperbelfunktionen samt Umkehrfunktionen, log, ln, Quadrat- und Kubikwurzeln, beliebige Potenzen und Wurzeln, Fakultät, Permutationen und Kombinationen, Betrag, Prozent, π und e."
+        }
+      ]
+    },
+    "graphing-calculator": {
+      "seoTitle": "Grafikrechner online – kostenloser Funktionsplotter mit Tastatur",
+      "metaDescription": "Zeichne bis zu drei Funktionen gleichzeitig. Verschieben per Ziehen, Zoomen per Scrollen, Werte ablesen, Grad oder Bogenmaß. Ein kostenloser Online-Grafikrechner mit Bildschirmtastatur.",
+      "h1": "Grafikrechner",
+      "subheading": "Gib eine Funktion von x ein und sieh sofort ihren Graphen – bis zu drei Funktionen zeichnen, zoomen, verschieben und genaue Werte ablesen.",
+      "keywords": [
+        "Grafikrechner",
+        "Grafikrechner online",
+        "Funktionsplotter",
+        "Funktionen zeichnen online",
+        "Graph zeichnen y=",
+        "Desmos Alternative",
+        "Graph von sin x zeichnen",
+        "kostenloser Grafikrechner"
+      ],
+      "howTo": [
+        {
+          "name": "Funktion eingeben",
+          "text": "Tippe einen Term in x ein, etwa x^2-2 oder sin(x)*3, oder nutze die Tasten. Tippe auf eines der Beispiele, um schnell loszulegen."
+        },
+        {
+          "name": "Weitere Graphen hinzufügen",
+          "text": "In der zweiten und dritten Zeile kannst du weitere Funktionen in verschiedenen Farben gleichzeitig zeichnen."
+        },
+        {
+          "name": "Verschieben und zoomen",
+          "text": "Ziehe den Graphen zum Verschieben, scrolle oder nutze + und − zum Zoomen und drücke die Reset-Taste, um zum Ursprung zurückzukehren."
+        },
+        {
+          "name": "Werte ablesen",
+          "text": "Fahre mit der Maus über den Graphen oder tippe darauf, um x und y jeder Funktion an dieser Stelle zu sehen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie schreibe ich Potenzen und Wurzeln?",
+          "answer": "Nutze ^ für Potenzen, zum Beispiel x^3, und sqrt(x) für Quadratwurzeln. Das Malzeichen kann oft weggelassen werden, daher funktionieren 2x und 3sin(x)."
+        },
+        {
+          "question": "Welche Funktionen kann ich zeichnen?",
+          "answer": "Polynome, trigonometrische Funktionen und ihre Umkehrfunktionen, Logarithmen, Exponentialfunktionen, Betragsfunktionen und mehr, jeweils in x geschrieben."
+        },
+        {
+          "question": "Warum hat mein Graph Lücken?",
+          "answer": "Der Graph wird dort nicht gezeichnet, wo die Funktion nicht definiert ist, zum Beispiel 1/x bei x = 0 oder sqrt(x) für negative x."
+        },
+        {
+          "question": "Bogenmaß oder Grad?",
+          "answer": "Standardmäßig rechnen Graphen im Bogenmaß. Tippe auf RAD/DEG, um den Winkelmodus für sin, cos und tan umzuschalten."
+        },
+        {
+          "question": "Kann ich ihn auf dem Smartphone nutzen?",
+          "answer": "Ja. Ziehe mit einem Finger, um zu verschieben. Die Bildschirmtasten funktionieren, ohne dass die Smartphone-Tastatur geöffnet wird."
+        },
+        {
+          "question": "Wird etwas hochgeladen?",
+          "answer": "Nein. Alles wird in deinem Browser berechnet und gezeichnet."
+        },
+        {
+          "question": "Wie genau ist der Graph?",
+          "answer": "Er wird für jedes Pixel auf dem Bildschirm berechnet. Zoome hinein, um einen kleinen Bereich genau zu betrachten."
+        }
+      ]
+    },
+    "fraction-calculator": {
+      "seoTitle": "Bruchrechner – Brüche addieren, subtrahieren, multiplizieren & dividieren mit Rechenweg",
+      "metaDescription": "Kostenloser Bruchrechner für Brüche und gemischte Zahlen. Addieren, subtrahieren, multiplizieren und dividieren, mit gekürztem Bruch, gemischter Zahl, Dezimalzahl und Rechenweg. Mit Bildschirm-Tastenfeld.",
+      "h1": "Bruchrechner",
+      "subheading": "Brüche und gemischte Zahlen addieren, subtrahieren, multiplizieren und dividieren – mit gekürztem Ergebnis und gezeigtem Rechenweg.",
+      "keywords": [
+        "Bruchrechner",
+        "Brüche addieren",
+        "Brüche subtrahieren",
+        "Brüche multiplizieren",
+        "Brüche dividieren",
+        "Rechner für gemischte Zahlen",
+        "Brüche kürzen",
+        "Bruchrechner mit Rechenweg"
+      ],
+      "howTo": [
+        {
+          "name": "Brüche eingeben",
+          "text": "Tippe auf ein Feld und nutze die Tasten. Gib für jeden Bruch die ganze Zahl, den Zähler und den Nenner ein. Lass das Feld für die ganze Zahl leer, wenn es ein einfacher Bruch ist."
+        },
+        {
+          "name": "Rechenart wählen",
+          "text": "Tippe auf dem Tastenfeld auf +, −, × oder ÷."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Ergebnis wird als gekürzter Bruch, als gemischte Zahl und als Dezimalzahl angezeigt."
+        },
+        {
+          "name": "Rechenweg verfolgen",
+          "text": "Die Schritte zeigen, wie das Ergebnis entstanden ist, etwa das Finden des Hauptnenners."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie addiere ich Brüche mit verschiedenen Nennern?",
+          "answer": "Suche einen gemeinsamen Nenner, erweitere beide Brüche und addiere dann die Zähler. Der Bereich mit den Schritten zeigt genau das."
+        },
+        {
+          "question": "Wie gebe ich eine gemischte Zahl ein?",
+          "answer": "Gib die ganze Zahl im linken Feld ein und den Bruch in den Feldern für Zähler und Nenner. Für 2 1/3 trägst du 2, 1 und 3 ein."
+        },
+        {
+          "question": "Was ist mit negativen Brüchen?",
+          "answer": "Nutze die Taste ± im Feld für die ganze Zahl oder den Zähler."
+        },
+        {
+          "question": "Ist das Ergebnis immer gekürzt?",
+          "answer": "Ja. Das Ergebnis wird vollständig gekürzt angezeigt, außerdem als gemischte Zahl und als Dezimalzahl."
+        },
+        {
+          "question": "Wie dividiere ich Brüche?",
+          "answer": "Multipliziere den ersten Bruch mit dem Kehrwert des zweiten. Die Schritte zeigen das."
+        },
+        {
+          "question": "Warum bekomme ich eine Fehlermeldung?",
+          "answer": "Ein Nenner von null ist nicht erlaubt, und durch einen Bruch, der null ergibt, kann man nicht dividieren."
+        },
+        {
+          "question": "Funktioniert er offline?",
+          "answer": "Ja, sobald die Seite geladen ist. Es wird nichts an einen Server gesendet."
+        }
+      ]
+    },
+    "matrix-calculator": {
+      "seoTitle": "Matrizenrechner – Matrizen addieren, multiplizieren, Determinante & Inverse online",
+      "metaDescription": "Kostenloser Matrizenrechner für Matrizen bis 4×4: addieren, subtrahieren, multiplizieren, transponieren, Determinante, Inverse, Spur und Skalarmultiplikation. Mit Zahlenfeld auf dem Bildschirm.",
+      "h1": "Matrizenrechner",
+      "subheading": "Gib zwei Matrizen ein und addiere, multipliziere, transponiere oder berechne Determinante und Inverse – mit Zahlenfeld auf dem Bildschirm.",
+      "keywords": [
+        "Matrizenrechner",
+        "Matrizen multiplizieren Rechner",
+        "Determinante berechnen",
+        "Inverse Matrix berechnen",
+        "Matrizen addieren",
+        "Matrix transponieren Rechner",
+        "3x3 Matrix Rechner",
+        "Matrizenrechner online"
+      ],
+      "howTo": [
+        {
+          "name": "Größe festlegen",
+          "text": "Wähle die Anzahl der Zeilen und Spalten (1 bis 4) für die Matrizen A und B."
+        },
+        {
+          "name": "Zahlen eintragen",
+          "text": "Tippe auf eine Zelle und nutze das Tastenfeld oder tippe direkt. Mit Next springst du von Zelle zu Zelle."
+        },
+        {
+          "name": "Rechenoperation wählen",
+          "text": "Drücke A + B, A − B, A × B, Aᵀ, det(A), A⁻¹, tr(A) oder k · A."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Ergebnis erscheint darunter als Matrix oder als einzelne Zahl. Fehler wie nicht passende Größen werden erklärt."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wann lassen sich zwei Matrizen multiplizieren?",
+          "answer": "Die Spaltenzahl von A muss der Zeilenzahl von B entsprechen. Das Ergebnis hat die Zeilen von A und die Spalten von B."
+        },
+        {
+          "question": "Was ist eine Determinante?",
+          "answer": "Eine einzelne Zahl, die man aus einer quadratischen Matrix berechnet. Ist sie 0, hat die Matrix keine Inverse."
+        },
+        {
+          "question": "Warum heißt es, es gibt keine Inverse?",
+          "answer": "Nur quadratische Matrizen mit einer Determinante ungleich 0 lassen sich invertieren."
+        },
+        {
+          "question": "Was ist die Spur?",
+          "answer": "Die Summe der Zahlen auf der Hauptdiagonale einer quadratischen Matrix."
+        },
+        {
+          "question": "Wie groß dürfen die Matrizen sein?",
+          "answer": "Bis zu 4 mal 4. Das deckt die meisten Hausaufgaben und Prüfungsaufgaben ab."
+        },
+        {
+          "question": "Sind Dezimalzahlen und negative Zahlen erlaubt?",
+          "answer": "Ja. Nutze die Punkt-Taste für Dezimalzahlen und ± für negative Zahlen."
+        },
+        {
+          "question": "Wird etwas gespeichert oder hochgeladen?",
+          "answer": "Nein. Alle Berechnungen finden in deinem Browser statt."
+        }
+      ]
+    },
+    "quadratic-equation-solver": {
+      "seoTitle": "Quadratische Gleichung lösen – Nullstellen, Diskriminante & Scheitelpunkt mit Rechenweg",
+      "metaDescription": "Löse ax² + bx + c = 0 mit reellen oder komplexen Lösungen. Mit Diskriminante, Scheitelpunkt, Symmetrieachse, Linearfaktorform und Rechenweg. Kostenlos, mit Bildschirm-Tastenfeld.",
+      "h1": "Rechner für quadratische Gleichungen",
+      "subheading": "Gib a, b und c ein und erhalte beide Lösungen, die Diskriminante, den Scheitelpunkt und den Rechenweg – auch bei komplexen Lösungen.",
+      "keywords": [
+        "quadratische Gleichung lösen",
+        "Mitternachtsformel Rechner",
+        "ax2+bx+c lösen",
+        "Diskriminante berechnen",
+        "Nullstellen berechnen quadratische Funktion",
+        "Scheitelpunkt Parabel berechnen",
+        "komplexe Lösungen Rechner",
+        "quadratische Gleichung Rechner mit Rechenweg"
+      ],
+      "howTo": [
+        {
+          "name": "a, b und c eingeben",
+          "text": "Tippe auf ein Feld und nutze die Tasten. Die Gleichung hat die Form ax² + bx + c = 0."
+        },
+        {
+          "name": "Lösungen ansehen",
+          "text": "Beide Lösungen erscheinen sofort, mit einem Hinweis, ob sie reell oder komplex sind."
+        },
+        {
+          "name": "Rechenweg lesen",
+          "text": "Angezeigt werden die Diskriminante, die Lösungsformel mit deinen Zahlen, der Scheitelpunkt und die Linearfaktorform."
+        },
+        {
+          "name": "Etwas anderes ausprobieren",
+          "text": "Ändere einen beliebigen Wert, und alles wird sofort aktualisiert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist die Mitternachtsformel?",
+          "answer": "x = (−b ± √(b² − 4ac)) / 2a. Der Ausdruck unter der Wurzel, b² − 4ac, heißt Diskriminante."
+        },
+        {
+          "question": "Was sagt mir die Diskriminante?",
+          "answer": "Ist sie positiv, gibt es zwei verschiedene reelle Lösungen, ist sie null, gibt es eine doppelte Lösung, und ist sie negativ, sind die Lösungen komplexe Zahlen."
+        },
+        {
+          "question": "Was sind komplexe Lösungen?",
+          "answer": "Lösungen mit i, der Wurzel aus −1. Sie treten paarweise auf, etwa −1 + 2i und −1 − 2i."
+        },
+        {
+          "question": "Warum darf a nicht 0 sein?",
+          "answer": "Dann ist die Gleichung linear und nicht quadratisch, daher gilt die Formel nicht."
+        },
+        {
+          "question": "Was ist der Scheitelpunkt?",
+          "answer": "Der Wendepunkt der Parabel, also ihr höchster oder tiefster Punkt. Sein x-Wert ist −b/2a, und er liegt auf der Symmetrieachse."
+        },
+        {
+          "question": "Ist das Ergebnis exakt?",
+          "answer": "Die Ergebnisse werden mit bis zu 12 signifikanten Stellen angezeigt, mit einem numerisch stabilen Verfahren auch für große Koeffizienten."
+        },
+        {
+          "question": "Kann ich Dezimalzahlen und negative Zahlen eingeben?",
+          "answer": "Ja. Nutze die Punkt-Taste und die Taste ±."
+        }
+      ]
+    },
+    "programmer-calculator": {
+      "seoTitle": "Programmierer-Taschenrechner – Hex, Binär, Oktal & bitweise Operationen online",
+      "metaDescription": "Ein kostenloser Programmierer-Taschenrechner: Umrechnen zwischen Hex, Dezimal, Oktal und Binär, AND, OR, XOR, NOT, Shifts und Rechnen mit 8 bis 64 Bit sowie einzelne Bits umschalten.",
+      "h1": "Programmierer-Taschenrechner",
+      "subheading": "Rechne in Hex, Dezimal, Oktal oder Binär – mit bitweisen Operatoren, Wortbreiten bis 64 Bit und Bits zum Umschalten per Tipp.",
+      "keywords": [
+        "Programmierer Taschenrechner",
+        "Hex Rechner",
+        "Binärrechner",
+        "bitweiser Rechner",
+        "Hex in Dezimal umrechnen",
+        "Binär in Dezimal umrechnen",
+        "XOR Rechner",
+        "Bitshift Rechner"
+      ],
+      "howTo": [
+        {
+          "name": "Zahlensystem wählen",
+          "text": "Wähle HEX, DEC, OCT oder BIN. Tasten, die nicht zum Zahlensystem gehören, sind deaktiviert."
+        },
+        {
+          "name": "Wortbreite wählen",
+          "text": "Wähle 8, 16, 32 oder 64 Bit. Zahlen laufen über, genau wie in echter Hardware."
+        },
+        {
+          "name": "Rechnen",
+          "text": "Gib eine Zahl ein, drücke einen Operator wie AND, OR, XOR, << oder +, gib die zweite Zahl ein und drücke =. NOT wirkt auf den aktuellen Wert."
+        },
+        {
+          "name": "Bits ansehen",
+          "text": "Alle vier Zahlensysteme werden gleichzeitig angezeigt, und du kannst jedes Bit antippen, um es umzuschalten."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie rechne ich Hex in Dezimal um?",
+          "answer": "Wähle HEX, gib die Zahl ein und sieh dir die Zeile DEC an (oder tippe auf DEC). Alle Zahlensysteme werden gemeinsam aktualisiert."
+        },
+        {
+          "question": "Was bewirkt die Wortbreite?",
+          "answer": "Sie legt fest, wie viele Bits eine Zahl hat. Ergebnisse laufen innerhalb dieser Größe über, und negative Zahlen werden im Zweierkomplement dargestellt."
+        },
+        {
+          "question": "Was sind AND, OR und XOR?",
+          "answer": "Bitweise Operatoren, die jedes Bit vergleichen: AND ergibt nur 1, wenn beide 1 sind, OR ergibt 1, wenn mindestens eines 1 ist, und XOR ergibt 1, wenn genau eines 1 ist."
+        },
+        {
+          "question": "Was bewirken << und >>?",
+          "answer": "Sie verschieben die Bits nach links oder rechts, was einer Multiplikation oder Division mit Zweierpotenzen entspricht."
+        },
+        {
+          "question": "Wie werden negative Zahlen dargestellt?",
+          "answer": "Im Dezimalsystem mit Minuszeichen. In Hex, Oktal und Binär erscheinen sie im Zweierkomplement für die gewählte Wortbreite."
+        },
+        {
+          "question": "Kann er mit 64-Bit-Werten umgehen?",
+          "answer": "Ja. Er verwendet große Ganzzahlen, daher sind 64-Bit-Zahlen exakt."
+        },
+        {
+          "question": "Funktioniert er offline?",
+          "answer": "Ja. Alles läuft in deinem Browser."
+        }
+      ]
+    },
+    "statistics-calculator": {
+      "seoTitle": "Statistik-Rechner – Mittelwert, Median, Modus, Standardabweichung online",
+      "metaDescription": "Füge Zahlen ein und erhalte Mittelwert, Median, Modus, Spannweite, Quartile, Varianz, Standardabweichung (Stichprobe oder Grundgesamtheit), Ausreißer und ein Histogramm. Kostenlos, mit Bildschirm-Tastenfeld.",
+      "h1": "Statistik-Rechner",
+      "subheading": "Gib eine Zahlenliste ein und erhalte Mittelwert, Median, Modus, Streuung, Quartile und ein Verteilungsdiagramm an einem Ort.",
+      "keywords": [
+        "Statistik Rechner",
+        "Standardabweichung berechnen",
+        "Mittelwert Median Modus berechnen",
+        "Varianz berechnen",
+        "Quartile berechnen",
+        "deskriptive Statistik Rechner",
+        "Spannweite berechnen",
+        "Ausreißer berechnen"
+      ],
+      "howTo": [
+        {
+          "name": "Daten eingeben",
+          "text": "Tippe oder füge Zahlen ein, getrennt durch Kommas, Leerzeichen oder Zeilenumbrüche. Oder nutze die Tasten auf dem Bildschirm."
+        },
+        {
+          "name": "Stichprobe oder Grundgesamtheit wählen",
+          "text": "Wähle Stichprobe (n−1), wenn deine Daten nur einen Teil einer größeren Gruppe darstellen, oder Grundgesamtheit (n), wenn du alle Werte hast."
+        },
+        {
+          "name": "Ergebnisse ablesen",
+          "text": "Du siehst Anzahl, Summe, Mittelwert, Median, Modus, Spannweite, Quartile, Varianz, Standardabweichung und mehr."
+        },
+        {
+          "name": "Diagramm prüfen",
+          "text": "Das Verteilungsdiagramm zeigt, wie deine Werte streuen. Deine Daten werden auf diesem Gerät gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Unterschied zwischen Stichprobe und Grundgesamtheit?",
+          "answer": "Nutze die Stichprobe, wenn deine Zahlen nur ein Teil einer größeren Gruppe sind; dabei wird durch n − 1 geteilt. Nutze die Grundgesamtheit, wenn du jeden Wert hast; dabei wird durch n geteilt."
+        },
+        {
+          "question": "Wie wird der Median bestimmt?",
+          "answer": "Sortiere die Zahlen und nimm die mittlere, oder bei gerader Anzahl den Mittelwert der beiden mittleren."
+        },
+        {
+          "question": "Was, wenn es keinen Modus gibt?",
+          "answer": "Kommt jede Zahl nur einmal vor, gibt es keinen Modus, und es wird keiner angezeigt."
+        },
+        {
+          "question": "Wie werden Quartile berechnet?",
+          "answer": "Mit linearer Interpolation zwischen den nächstgelegenen Werten. Verschiedene Lehrbücher verwenden leicht unterschiedliche Methoden."
+        },
+        {
+          "question": "Was gilt als Ausreißer?",
+          "answer": "Ein Wert, der mehr als das 1,5-Fache des Interquartilsabstands unter Q1 oder über Q3 liegt."
+        },
+        {
+          "question": "Wie viele Zahlen kann ich eingeben?",
+          "answer": "Tausende. Alles wird sofort in deinem Browser berechnet."
+        },
+        {
+          "question": "Werden meine Daten gespeichert?",
+          "answer": "Ja, nur auf diesem Gerät, damit sie beim nächsten Mal noch da sind. Es wird nichts hochgeladen."
+        }
+      ]
+    },
+    "gcd-lcm-calculator": {
+      "seoTitle": "ggT & kgV Rechner – größter gemeinsamer Teiler, kleinstes gemeinsames Vielfaches & Primfaktoren",
+      "metaDescription": "Berechne ggT und kgV von zwei oder mehr Zahlen, mit den Schritten des euklidischen Algorithmus, Primfaktorzerlegung, Teilern und Primzahltest. Kostenlos, mit Bildschirm-Tastenfeld.",
+      "h1": "ggT, kgV & Primfaktor-Rechner",
+      "subheading": "Finde den größten gemeinsamen Teiler und das kleinste gemeinsame Vielfache deiner Zahlen und sieh dir die Primfaktoren und Teiler jeder Zahl an.",
+      "keywords": [
+        "ggT Rechner",
+        "kgV Rechner",
+        "größter gemeinsamer Teiler",
+        "kleinstes gemeinsames Vielfaches",
+        "Primfaktorzerlegung Rechner",
+        "ggT und kgV berechnen",
+        "ist das eine Primzahl",
+        "Teiler einer Zahl berechnen"
+      ],
+      "howTo": [
+        {
+          "name": "Zahlen eingeben",
+          "text": "Gib ganze Zahlen durch Kommas getrennt ein, etwa 48, 180, oder nutze die Tasten."
+        },
+        {
+          "name": "ggT und kgV ablesen",
+          "text": "Der größte gemeinsame Teiler und das kleinste gemeinsame Vielfache stehen oben."
+        },
+        {
+          "name": "Rechenweg ansehen",
+          "text": "Bei zwei Zahlen wird der euklidische Algorithmus Schritt für Schritt gezeigt."
+        },
+        {
+          "name": "Jede Zahl untersuchen",
+          "text": "Sieh, ob sie eine Primzahl ist, und lass dir ihre Primfaktorzerlegung und die Liste ihrer Teiler anzeigen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der ggT?",
+          "answer": "Die größte Zahl, die alle deine Zahlen ohne Rest teilt. Er heißt auch größter gemeinsamer Teiler."
+        },
+        {
+          "question": "Was ist das kgV?",
+          "answer": "Die kleinste Zahl, die ein Vielfaches aller deiner Zahlen ist. Sie ist nützlich, um Brüche mit verschiedenen Nennern zu addieren."
+        },
+        {
+          "question": "Was ist der euklidische Algorithmus?",
+          "answer": "Teile wiederholt die größere Zahl durch die kleinere und behalte den Rest, bis er 0 ist. Der letzte Rest ungleich 0 ist der ggT."
+        },
+        {
+          "question": "Wie funktioniert die Primfaktorzerlegung?",
+          "answer": "Jede ganze Zahl größer als 1 ist ein Produkt von Primzahlen. Zum Beispiel ist 360 = 2³ × 3² × 5."
+        },
+        {
+          "question": "Was bedeutet teilerfremd?",
+          "answer": "Zwei Zahlen, deren ggT 1 ist, die also keinen gemeinsamen Teiler außer 1 haben."
+        },
+        {
+          "question": "Wie groß dürfen die Zahlen sein?",
+          "answer": "Bis zu einer Billion und bis zu zwölf Zahlen gleichzeitig."
+        },
+        {
+          "question": "Wird etwas hochgeladen?",
+          "answer": "Nein. Die Berechnung läuft in deinem Browser."
         }
       ]
     }

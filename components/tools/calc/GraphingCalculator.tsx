@@ -32,7 +32,7 @@ function FnRow({ index, value, onChange, active, onFocus, register, error }: { i
   return (
     <label className="flex items-center gap-2">
       <span className="w-14 shrink-0 text-right font-mono text-sm font-bold" style={{ color: COLORS[index] }}>y{index + 1} =</span>
-      <input ref={ref} value={value} onChange={(e) => onChange(e.target.value)} onFocus={onFocus} inputMode="none" spellCheck={false} autoComplete="off" placeholder={index === 0 ? "x^2" : "add another function"} aria-label={`Function ${index + 1}`} className={cn("h-11 min-w-0 flex-1 rounded-xl border-2 bg-background px-3 font-mono text-base outline-none", active ? "border-primary ring-4 ring-primary/15" : error ? "border-rose-500/60" : "border-border")} />
+      <input ref={ref} value={value} onChange={(e) => onChange(e.target.value)} onFocus={onFocus} inputMode="none" spellCheck={false} autoComplete="off" placeholder={index === 0 ? "x^2" : "add another function"} aria-label={`Function ${index + 1}`} className={cn("h-11 min-w-0 flex-1 rounded-xl border-2 bg-background px-3 font-mono text-base outline-none", active ? "border-primary ring-4 ring-primary/15" : error ? "border-destructive/60" : "border-border")} />
     </label>
   );
 }

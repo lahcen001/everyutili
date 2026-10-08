@@ -10,7 +10,7 @@ import { canShowInstallBanner } from "@/lib/appMode";
 import { promptInstall } from "@/lib/appModeStore";
 
 const KEY = "everyutili_install_dismissed";
-const DELAY_MS = 25000;
+const DELAY_MS = 3000;
 
 const readDismissed = (): number | null => {
   try {
@@ -49,7 +49,9 @@ export function InstallBanner() {
   if (standalone || hidden || !armed || (!canInstall && !ios)) return null;
 
   return (
-    <div role="dialog" aria-label={t("installTitle")} className="fixed inset-x-3 bottom-3 z-50 mx-auto max-w-md rounded-2xl border border-border bg-card p-4 shadow-2xl sm:bottom-5" style={{ marginBottom: "env(safe-area-inset-bottom)" }}>
+    <>
+    <div aria-hidden onClick={dismiss} className="fixed inset-0 z-40 bg-black/50 sm:hidden" />
+    <div role="dialog" aria-label={t("installTitle")} className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-md rounded-t-3xl border border-border bg-card p-5 shadow-2xl sm:inset-x-3 sm:bottom-5 sm:rounded-2xl sm:p-4" style={{ paddingBottom: "calc(1.25rem + env(safe-area-inset-bottom))" }}>
       <button onClick={dismiss} aria-label={t("notNow")} className="absolute end-2 top-2 rounded-full p-1.5 text-muted-foreground hover:bg-muted"><X className="h-4 w-4" /></button>
       <div className="flex items-start gap-3 pe-6">
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground"><Download className="h-5 w-5" /></span>
@@ -70,5 +72,6 @@ export function InstallBanner() {
         )}
       </div>
     </div>
+    </>
   );
 }

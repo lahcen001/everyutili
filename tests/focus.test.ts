@@ -105,7 +105,7 @@ describe("noise", () => {
   });
 });
 
-import { makeLoopable, renderFire, renderOcean, renderRain, renderStream, renderWind } from "@/lib/focus/soundscapeRender";
+import { makeLoopable, renderBirds, renderCafe, renderClock, renderCrickets, renderFire, renderHeartbeat, renderKeyboard, renderOcean, renderRain, renderStream, renderThunder, renderTrain, renderUnderwater, renderWaterfall, renderWind } from "@/lib/focus/soundscapeRender";
 
 describe("soundscape rendering", () => {
   const sr = 8000;
@@ -115,7 +115,7 @@ describe("soundscape rendering", () => {
     return seed / 4294967296;
   };
   it("renders loopable, bounded, non-silent buffers", () => {
-    for (const render of [renderRain, renderOcean, renderWind, renderStream, renderFire]) {
+    for (const render of [renderRain, renderOcean, renderWind, renderStream, renderFire, renderThunder, renderCrickets, renderBirds, renderCafe, renderTrain, renderClock, renderHeartbeat, renderKeyboard, renderWaterfall, renderUnderwater]) {
       const buf = render(sr, 6, rand);
       expect(buf.length).toBeGreaterThan(sr * 3);
       let peak = 0;

@@ -1,7 +1,14 @@
 import { fillNoise, type NoiseKind } from "@/lib/focus/noise";
-import { makeLoopable, renderFire, renderOcean, renderRain, renderStream, renderWind, type Rand } from "@/lib/focus/soundscapeRender";
+import { makeLoopable, renderBirds, renderCafe, renderClock, renderCrickets, renderFire, renderHeartbeat, renderKeyboard, renderOcean, renderRain, renderStream, renderThunder, renderTrain, renderUnderwater, renderWaterfall, renderWind, type Rand } from "@/lib/focus/soundscapeRender";
 
-export type SoundId = "white" | "pink" | "brown" | "rain" | "ocean" | "wind" | "stream" | "fire" | "fan" | "alpha";
+export type SoundId =
+  | "white" | "pink" | "brown"
+  | "rain" | "thunder" | "ocean" | "wind" | "stream" | "waterfall" | "fire" | "birds" | "crickets" | "underwater"
+  | "cafe" | "train" | "fan" | "clock" | "keyboard" | "heartbeat" | "drone"
+  | "delta" | "theta" | "alpha" | "beta" | "gamma";
+
+/** Beat frequency (Hz) of each binaural-beat sound. */
+export const BEATS: Partial<Record<SoundId, number>> = { delta: 2, theta: 6, alpha: 10, beta: 18, gamma: 40 };
 
 export interface Channel {
   /** Connect this to the master gain. */
@@ -128,6 +135,50 @@ export function createChannel(ctx: AudioContext, id: SoundId): Channel {
       src.start();
       break;
     }
+    case "thunder":
+    case "birds":
+    case "crickets":
+    case "cafe":
+    case "train":
+    case "clock":
+    case "heartbeat":
+    case "keyboard":
+    case "waterfall":
+    case "underwater": {
+      const spec = {
+        thunder: [renderThunder, 40, 0.95],
+        birds: [renderBirds, 24, 0.8],
+        crickets: [renderCrickets, 10, 0.7],
+        cafe: [renderCafe, 14, 0.9],
+        train: [renderTrain, 12, 0.9],
+        clock: [renderClock, 8, 0.8],
+        heartbeat: [renderHeartbeat, 6, 0.9],
+        keyboard: [renderKeyboard, 16, 0.8],
+        waterfall: [renderWaterfall, 10, 0.85],
+        underwater: [renderUnderwater, 14, 0.9],
+      }[id] as [(sr: number, s: number, r: Rand) => Float32Array, number, number];
+      const src = track(renderedSource(ctx, id, spec[0], spec[1]));
+      const g = ctx.createGain();
+      g.gain.value = spec[2];
+      src.connect(g).connect(out);
+      src.start();
+      break;
+    }
+    case "drone": {
+      // a warm singing-bowl style hum: a low note with slightly detuned overtones that slowly beat against each other
+      [[136.1, 0.5], [136.1 * 1.004, 0.4], [272.2, 0.18], [408.3, 0.08], [68.05, 0.3]].forEach(([freq, amp]) => {
+        const osc = track(ctx.createOscillator());
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        const g = ctx.createGain();
+        g.gain.value = amp * 0.35;
+        osc.connect(g).connect(out);
+        osc.start();
+        const wobble = lfo(ctx, 0.05 + amp * 0.1, amp * 0.12, g.gain);
+        stops.push(() => wobble.stop());
+      });
+      break;
+    }
     case "fan": {
       // soft airflow plus a faint motor hum with blade flutter
       const air = track(noiseSource(ctx, "brown"));
@@ -151,9 +202,14 @@ export function createChannel(ctx: AudioContext, id: SoundId): Channel {
       stops.push(() => flutter.stop());
       break;
     }
-    case "alpha": {
-      // 10 Hz binaural beat (alpha waves): 200 Hz in the left ear, 210 Hz in the right. Best with headphones.
-      [200, 210].forEach((freq, i) => {
+    case "delta":
+    case "theta":
+    case "alpha":
+    case "beta":
+    case "gamma": {
+      // binaural beat: slightly different tones in each ear (headphones needed). Left 200 Hz, right 200 Hz + beat.
+      const beat = BEATS[id] ?? 10;
+      [200, 200 + beat].forEach((freq, i) => {
         const osc = track(ctx.createOscillator());
         osc.frequency.value = freq;
         const pan = ctx.createStereoPanner();

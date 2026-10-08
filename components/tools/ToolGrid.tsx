@@ -18,6 +18,8 @@ export interface ToolGridEntry {
   subheading: string;
   keywords: string[];
   featured?: boolean;
+  /** Sub-section of the category this tool belongs to (for pages that group their tools). */
+  group?: string;
 }
 
 interface ToolGridProps {
@@ -33,6 +35,8 @@ interface ToolGridProps {
    */
   tools: ToolGridEntry[];
   searchPlaceholder?: string;
+  /** Localized headings for `group` values, shown when the tools are grouped. */
+  groupLabels?: Record<string, string>;
 }
 
 function matchesQuery(tool: ToolGridEntry, query: string) {
@@ -42,7 +46,7 @@ function matchesQuery(tool: ToolGridEntry, query: string) {
   return haystack.includes(query);
 }
 
-export function ToolGrid({ tools, searchPlaceholder }: ToolGridProps) {
+export function ToolGrid({ tools, searchPlaceholder, groupLabels }: ToolGridProps) {
   const t = useTranslations("common");
   const [query, setQuery] = React.useState("");
   const recentTools = useRecentToolsStore((s) => s.recentTools);
@@ -53,6 +57,15 @@ export function ToolGrid({ tools, searchPlaceholder }: ToolGridProps) {
     if (!q) return tools;
     return tools.filter((tool) => matchesQuery(tool, q));
   }, [tools, query]);
+
+  const sections = React.useMemo(() => {
+    if (!groupLabels) return [{ key: "all", label: null as string | null, items: filtered }];
+    const order = Object.keys(groupLabels);
+    return order
+      .map((key) => ({ key, label: groupLabels[key] as string | null, items: filtered.filter((t) => t.group === key) }))
+      .concat([{ key: "other", label: null, items: filtered.filter((t) => !t.group || !(t.group in groupLabels)) }])
+      .filter((sec) => sec.items.length > 0);
+  }, [filtered, groupLabels]);
 
   // Gated on hasMounted so the server-rendered markup (no localStorage
   // access) matches the client's first paint — recentTools only reflects
@@ -91,8 +104,12 @@ export function ToolGrid({ tools, searchPlaceholder }: ToolGridProps) {
           {t("noToolsMatch", { query })}
         </p>
       ) : (
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          {filtered.map((tool) => {
+        <div className="mt-6 space-y-10">
+          {sections.map((sec) => (
+            <section key={sec.key}>
+              {sec.label && <h2 className="mb-4 flex items-center gap-3 text-lg font-bold tracking-tight">{sec.label}<span className="h-px flex-1 bg-border" aria-hidden /><span className="text-xs font-medium text-muted-foreground">{sec.items.length}</span></h2>}
+              <div className="grid gap-4 sm:grid-cols-2">
+          {sec.items.map((tool) => {
             const Icon = getToolBySlug(tool.slug)?.icon;
             const isUsed = recentSlugs.has(tool.slug);
             if (tool.featured) {
@@ -150,6 +167,9 @@ export function ToolGrid({ tools, searchPlaceholder }: ToolGridProps) {
               </Link>
             );
           })}
+              </div>
+            </section>
+          ))}
         </div>
       )}
     </div>

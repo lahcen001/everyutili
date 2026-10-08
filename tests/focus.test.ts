@@ -335,3 +335,45 @@ describe("reminders", () => {
     expect(buildReminders({ habits: [{ done: [today] }], todos: [{ done: true, due: "2020-01-01" }] }, now)).toEqual([]);
   });
 });
+
+import { isNBackMatch, makeNBackSequence, makeSchulte, makeStroopTrial, randomDigits, randomTarget, scoreNBack, STROOP_COLORS } from "@/lib/focus/games";
+
+describe("focus games", () => {
+  it("builds a Schulte table with every number once", () => {
+    const t = makeSchulte(5);
+    expect(t).toHaveLength(25);
+    expect([...t].sort((a, b) => a - b)).toEqual(Array.from({ length: 25 }, (_, i) => i + 1));
+  });
+  it("makes Stroop trials where most words and colours disagree", () => {
+    let mismatch = 0;
+    for (let i = 0; i < 400; i++) {
+      const t = makeStroopTrial();
+      expect(STROOP_COLORS).toContain(t.ink);
+      if (t.ink.id !== t.word.id) mismatch += 1;
+    }
+    expect(mismatch / 400).toBeGreaterThan(0.6);
+  });
+  it("creates n-back sequences with real matches and scores them", () => {
+    const seq = makeNBackSequence(60, 2, Math.random, 0.4);
+    expect(seq.every((p) => p >= 0 && p <= 8)).toBe(true);
+    const matches = seq.filter((_, i) => isNBackMatch(seq, i, 2)).length;
+    expect(matches).toBeGreaterThan(5);
+    const perfect = seq.map((_, i) => isNBackMatch(seq, i, 2));
+    expect(scoreNBack(seq, 2, perfect)).toMatchObject({ misses: 0, falseAlarms: 0, accuracy: 100 });
+    const none = scoreNBack(seq, 2, seq.map(() => false));
+    expect(none.hits).toBe(0);
+    expect(none.misses).toBe(matches);
+    expect(scoreNBack([1, 1, 2], 1, [false, true, true])).toMatchObject({ hits: 1, falseAlarms: 1, correctRejections: 1 });
+  });
+  it("generates digits and targets", () => {
+    for (let i = 1; i <= 12; i++) {
+      const d = randomDigits(i);
+      expect(d).toHaveLength(i);
+      expect(d[0]).not.toBe("0");
+    }
+    const p = randomTarget(() => 0, 0.1);
+    expect(p).toEqual({ x: 0.1, y: 0.1 });
+    const q = randomTarget(() => 0.999999, 0.1);
+    expect(q.x).toBeLessThanOrEqual(0.9);
+  });
+});

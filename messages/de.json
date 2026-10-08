@@ -76,8 +76,8 @@
       "navLabel": "Zufall"
     },
     "focus-study": {
-      "label": "Fokus & Entspannung",
-      "description": "Pomodoro-Timer, Fokus-Sounds, Karteikarten und Planer für mehr Konzentration – dazu Dehnpausen, Atemübungen und kurze Minispiele, um zwischen den Lernphasen neue Energie zu tanken.",
+      "label": "Fokus & Spiele",
+      "description": "Fokus-Timer, Hintergrundgeräusche, Karteikarten und Planer – dazu Dehnpausen, Gehirntraining und schnelle Gelegenheitsspiele, um zwischen den Lerneinheiten neue Energie zu tanken.",
       "navLabel": "Fokus"
     },
     "math-calculators": {
@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "schulte-table": {
+      "seoTitle": "Schulte-Tafel – Kostenloses Aufmerksamkeits- und Peripheres-Sehen-Training",
+      "metaDescription": "Trainiere Aufmerksamkeit und Tempo mit der Schulte-Tafel: Finde die Zahlen von 1 bis 25 so schnell wie möglich der Reihe nach. Vier Rastergrößen, Timer und gespeicherte Bestzeiten. Kostenlos und privat.",
+      "h1": "Schulte-Tafel",
+      "subheading": "Finde die Zahlen der Reihe nach so schnell wie möglich und behalte dabei den Blick in der Mitte – eine klassische Methode, um Konzentration und peripheres Sehen zu trainieren.",
+      "keywords": [
+        "Schulte-Tafel",
+        "Schulte-Tabelle online",
+        "Aufmerksamkeitstraining Spiel",
+        "peripheres Sehen trainieren",
+        "Schnelllesen Übung",
+        "Konzentrationstraining Spiel",
+        "Konzentrationstest",
+        "Schulte-Raster"
+      ],
+      "howTo": [
+        {
+          "name": "Raster wählen",
+          "text": "Wähle 3×3, 4×4, 5×5 oder 6×6. Die 5×5-Tafel ist der Klassiker."
+        },
+        {
+          "name": "Mit der 1 beginnen",
+          "text": "Tippe auf die Zahl 1, um den Timer zu starten, und suche dann der Reihe nach die 2, 3, 4 und so weiter."
+        },
+        {
+          "name": "Blick in der Mitte halten",
+          "text": "Versuche, auf die Mitte der Tafel zu schauen und die nächste Zahl mit dem seitlichen Sehen zu erkennen."
+        },
+        {
+          "name": "Eigene Zeit schlagen",
+          "text": "Sobald du die letzte Zahl erreichst, wird deine Zeit gespeichert, falls sie für diese Größe deine Bestzeit ist."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist eine Schulte-Tafel?",
+          "answer": "Ein Raster mit Zahlen in zufälliger Reihenfolge. Du findest sie nacheinander in der richtigen Reihenfolge. Sie wurde entwickelt, um Aufmerksamkeit, visuelle Suche und peripheres Sehen zu trainieren."
+        },
+        {
+          "question": "Hilft sie beim Schnelllesen?",
+          "answer": "Viele nutzen sie als Aufwärmübung fürs Schnelllesen, weil sie trainiert, Informationen aufzunehmen, ohne die Augen viel zu bewegen. Die Ergebnisse sind unterschiedlich, und es handelt sich nicht um eine medizinische Behandlung."
+        },
+        {
+          "question": "Was ist eine gute Zeit?",
+          "answer": "Bei der 5×5-Tafel sind unter 30 Sekunden gut und unter 20 Sekunden sehr schnell. Vergleiche dich am besten mit deinen eigenen früheren Zeiten."
+        },
+        {
+          "question": "Warum blinkt ein falscher Tipp rot?",
+          "answer": "Du hast eine Zahl angetippt, die nicht als Nächstes dran ist. Es geht nichts verloren; suche einfach die richtige Zahl."
+        },
+        {
+          "question": "Werden meine Bestzeiten gespeichert?",
+          "answer": "Ja, für jede Rastergröße, nur in deinem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Wie oft sollte ich üben?",
+          "answer": "Ein paar kurze Runden pro Tag genügen. Höre auf, wenn du müde wirst."
+        },
+        {
+          "question": "Funktioniert es auf dem Smartphone?",
+          "answer": "Ja. Die Zahlen sind groß und reagieren auf Berührung."
+        }
+      ]
+    },
+    "stroop-test": {
+      "seoTitle": "Stroop-Test – Kostenloses Online-Spiel für Farb-Wort-Konzentration und Selbstkontrolle",
+      "metaDescription": "Mach den Stroop-Test: Ein Wort wird in einer Farbe angezeigt, und du tippst auf die Farbe der Schrift, nicht auf das, was das Wort sagt. 30-Sekunden-Runden, Punktzahl und Genauigkeit, gespeicherte Bestleistung. Kostenlos und privat.",
+      "h1": "Stroop-Test",
+      "subheading": "Nenne die Farbe der Schrift, nicht das Wort – ein schneller Test für Konzentration, Aufmerksamkeit und Selbstkontrolle.",
+      "keywords": [
+        "Stroop-Test",
+        "Stroop-Effekt Test",
+        "Farb-Wort-Test",
+        "Stroop-Test online",
+        "Konzentrationstest",
+        "Aufmerksamkeitstest",
+        "Gehirnjogging Spiel",
+        "Stroop-Spiel"
+      ],
+      "howTo": [
+        {
+          "name": "Regeln lesen",
+          "text": "Es erscheint ein Farbwort, das oft in einer anderen Farbe gedruckt ist als das Wort selbst."
+        },
+        {
+          "name": "Auf die Schriftfarbe tippen",
+          "text": "Tippe auf die Schaltfläche der Farbe, die du siehst, nicht des Wortes, das du liest. Du kannst auch die Tasten 1, 2, 3 oder 4 drücken."
+        },
+        {
+          "name": "Schnell und sorgfältig sein",
+          "text": "Du hast 30 Sekunden. Falsche Antworten kosten keine Punkte, senken aber deine Genauigkeit."
+        },
+        {
+          "name": "Ergebnis ansehen",
+          "text": "Sieh, wie viele richtig waren und wie genau du warst. Deine Bestleistung wird gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist der Stroop-Effekt?",
+          "answer": "Das sind die Verzögerung und die Fehler, die auftreten, wenn die Bedeutung eines Wortes (z. B. ROT) im Widerspruch zur Farbe steht, in der es gedruckt ist (z. B. blau). Dein Gehirn muss das automatische Lesen unterdrücken."
+        },
+        {
+          "question": "Was misst der Test?",
+          "answer": "Selektive Aufmerksamkeit und die Fähigkeit, eine automatische Reaktion zu unterdrücken. Er ist ein klassischer Test der Psychologie."
+        },
+        {
+          "question": "Kann Üben meine Punktzahl verbessern?",
+          "answer": "Ja, mit etwas Übung werden die meisten schneller und genauer. Das beweist jedoch keine dauerhafte Veränderung des Denkens im Alltag."
+        },
+        {
+          "question": "Warum haben die meisten Wörter die falsche Farbe?",
+          "answer": "Das ist Absicht. Bei den meisten Durchgängen passen Wort und Farbe nicht zusammen, um den Konflikt zu erzeugen; einige stimmen überein, damit du es nicht vorhersagen kannst."
+        },
+        {
+          "question": "Wird meine Bestleistung gespeichert?",
+          "answer": "Ja, nur in deinem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Ist das ein medizinischer Test?",
+          "answer": "Nein. Es ist eine unterhaltsame Übung, keine Diagnose."
+        },
+        {
+          "question": "Ist der Test für Farbenblinde geeignet?",
+          "answer": "Die Schaltflächen sind mit den Farbnamen beschriftet. Wenn du Farben schwer unterscheiden kannst, verlass dich auf die Beschriftungen."
+        }
+      ]
+    },
+    "n-back-game": {
+      "seoTitle": "N-Back-Spiel – Kostenloses Arbeitsgedächtnis-Training (1-back, 2-back, 3-back)",
+      "metaDescription": "Trainiere dein Arbeitsgedächtnis mit der n-back-Aufgabe: Auf einem 3×3-Raster leuchtet ein Feld auf, und du drückst Match, wenn es an derselben Stelle liegt wie n Schritte zuvor. Drei Stufen, Ergebnisse werden gespeichert. Kostenlos.",
+      "h1": "N-Back-Spiel für das Arbeitsgedächtnis",
+      "subheading": "Beobachte, wie die Felder aufleuchten, und drücke Match, wenn eines an derselben Stelle liegt wie n Schritte zuvor – eine bekannte Übung für das Arbeitsgedächtnis.",
+      "keywords": [
+        "n-back Spiel",
+        "n-back Test",
+        "Arbeitsgedächtnis trainieren",
+        "Dual n-back",
+        "Gedächtnistraining Spiel",
+        "Gehirntraining n-back",
+        "Arbeitsgedächtnis Test",
+        "n-back online"
+      ],
+      "howTo": [
+        {
+          "name": "Stufe wählen",
+          "text": "1-back ist am einfachsten. 2-back und 3-back sind schwieriger."
+        },
+        {
+          "name": "Raster beobachten",
+          "text": "Auf einem 3×3-Raster leuchtet alle paar Sekunden ein Feld auf."
+        },
+        {
+          "name": "Match drücken",
+          "text": "Drücke Match oder die Leertaste, wenn das Feld an derselben Position liegt wie n Schritte zuvor. Andernfalls tust du nichts."
+        },
+        {
+          "name": "Ergebnis ansehen",
+          "text": "Nach 24 Runden siehst du Treffer, Auslassungen, Fehlalarme und deine Genauigkeit."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was ist die n-back-Aufgabe?",
+          "answer": "Ein Test, bei dem du das aktuelle Element mit dem vergleichst, das n Schritte zuvor gezeigt wurde. So bleibt dein Arbeitsgedächtnis ständig beschäftigt."
+        },
+        {
+          "question": "Was bedeutet 2-back?",
+          "answer": "Du vergleichst das aktuelle Feld mit dem von vor zwei Schritten. Merke dir die letzten beiden Positionen und aktualisiere sie jedes Mal."
+        },
+        {
+          "question": "Macht n-back mich klüger?",
+          "answer": "Die Forschungslage ist uneinheitlich. Es verbessert zuverlässig deine n-back-Leistung; ob sich das auf Alltagsaufgaben überträgt, ist umstritten. Sieh es als geistiges Training, nicht als Garantie."
+        },
+        {
+          "question": "Was ist ein Fehlalarm?",
+          "answer": "Match zu drücken, obwohl es keine Übereinstimmung gab."
+        },
+        {
+          "question": "Wird meine Bestleistung gespeichert?",
+          "answer": "Ja, pro Stufe, nur in deinem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Warum ist es so schwer?",
+          "answer": "Du musst mehrere Positionen gleichzeitig behalten und aktualisieren, während neue hinzukommen. Es soll fordernd sein."
+        },
+        {
+          "question": "Kann ich die Tastatur benutzen?",
+          "answer": "Ja. Drücke die Leertaste oder Enter für Match."
+        }
+      ]
+    },
+    "simon-game": {
+      "seoTitle": "Simon-Spiel – Kostenloses Online-Merkspiel mit Mustern und Ton",
+      "metaDescription": "Spiele das Simon-Gedächtnisspiel online: Beobachte das Muster aus Farben und Tönen und wiederhole es. Die Folge wird jede Runde länger. Gespeicherte Bestleistung, funktioniert auf dem Smartphone. Kostenlos.",
+      "h1": "Simon-Gedächtnisspiel",
+      "subheading": "Beobachte das Muster aus Lichtern und Tönen und wiederhole es – jede Runde kommt ein Schritt hinzu.",
+      "keywords": [
+        "Simon Spiel",
+        "Simon sagt Spiel online",
+        "Merkspiel Muster",
+        "Simon Gedächtnisspiel",
+        "Simon online spielen",
+        "Sequenz Gedächtnisspiel",
+        "Farbfolge Spiel",
+        "Simon Spiel mit Ton"
+      ],
+      "howTo": [
+        {
+          "name": "Start drücken",
+          "text": "Das Spiel lässt ein Feld aufleuchten und spielt seinen Ton ab."
+        },
+        {
+          "name": "Zusehen und zuhören",
+          "text": "Folge der Abfolge von Lichtern und Tönen."
+        },
+        {
+          "name": "Wiederholen",
+          "text": "Tippe die Felder in derselben Reihenfolge an. Wenn du richtig liegst, wird die Folge um einen Schritt länger."
+        },
+        {
+          "name": "Auf Highscore gehen",
+          "text": "Ein Fehler beendet das Spiel. Deine beste Stufe wird gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie spielt man Simon?",
+          "answer": "Beobachte das Muster und wiederhole es, indem du die Felder in derselben Reihenfolge antippst. Jede Runde kommt ein Schritt hinzu."
+        },
+        {
+          "question": "Brauche ich Ton?",
+          "answer": "Der Ton hilft, sich das Muster zu merken, aber die Lichter funktionieren auch ohne ihn."
+        },
+        {
+          "question": "Was ist eine gute Punktzahl?",
+          "answer": "Stufe 8 oder 9 zu erreichen ist für die meisten gut. Über 12 ist sehr gut."
+        },
+        {
+          "question": "Trainiert es das Gedächtnis?",
+          "answer": "Es trainiert das kurzzeitige Sequenzgedächtnis und die Aufmerksamkeit. Es ist eine unterhaltsame Gehirnübung, keine Behandlung."
+        },
+        {
+          "question": "Wird meine Bestleistung gespeichert?",
+          "answer": "Ja, nur in deinem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Kann ich auf dem Smartphone spielen?",
+          "answer": "Ja. Die Felder sind große Touch-Flächen."
+        },
+        {
+          "question": "Warum werden die Felder schneller?",
+          "answer": "Das Muster wird schneller abgespielt, je länger es wird, damit die Herausforderung bestehen bleibt."
+        }
+      ]
+    },
+    "number-memory-game": {
+      "seoTitle": "Zahlengedächtnis-Test – Kostenloses Online-Spiel zur Merkspanne für Ziffern",
+      "metaDescription": "Teste dein Zahlengedächtnis: Eine Zahl blitzt auf dem Bildschirm auf, und du tippst sie ein. Jede Stufe fügt eine Ziffer hinzu. Kostenlos, privat, mit gespeicherter Bestleistung.",
+      "h1": "Zahlengedächtnis-Test",
+      "subheading": "Eine Zahl blitzt auf dem Bildschirm auf – merke sie dir und tippe sie wieder ein. Jede Stufe fügt eine Ziffer hinzu.",
+      "keywords": [
+        "Zahlengedächtnis Test",
+        "Merkspanne Ziffern Test",
+        "Gedächtnistest online",
+        "Zahlengedächtnis Spiel",
+        "wie viele Ziffern kann man sich merken",
+        "Kurzzeitgedächtnis Test",
+        "Gedächtnistraining",
+        "Zahlen merken Spiel"
+      ],
+      "howTo": [
+        {
+          "name": "Start drücken",
+          "text": "Eine Zahl erscheint für einige Sekunden. Stufe 1 hat drei Ziffern."
+        },
+        {
+          "name": "Merken",
+          "text": "Versuche, Ziffern in Blöcken zu gruppieren, etwa 3 + 3, damit du sie dir leichter merkst."
+        },
+        {
+          "name": "Zahl eintippen",
+          "text": "Wenn die Zahl verschwindet, tippe ein, was du gesehen hast, und drücke Enter."
+        },
+        {
+          "name": "Nächste Stufe",
+          "text": "Jede richtige Antwort fügt eine Ziffer hinzu. Deine beste Stufe wird gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie viele Ziffern können sich die meisten Menschen merken?",
+          "answer": "Etwa sieben, plus oder minus zwei, ist die klassische Größe für das Kurzzeitgedächtnis. Mit Übung und Chunking kannst du dir mehr merken."
+        },
+        {
+          "question": "Was ist Chunking?",
+          "answer": "Ziffern in kleine Gruppen zusammenzufassen, wie bei Telefonnummern, sodass du dir weniger Einheiten merken musst."
+        },
+        {
+          "question": "Ändert sich die Zeit zum Einprägen?",
+          "answer": "Ja. Auf höheren Stufen hast du etwas länger Zeit zum Hinsehen, aber nicht so viel, wie jede zusätzliche Ziffer eigentlich bräuchte."
+        },
+        {
+          "question": "Was passiert, wenn ich falsch liege?",
+          "answer": "Das Spiel endet und zeigt die richtige Zahl. Du kannst sofort noch einmal spielen."
+        },
+        {
+          "question": "Wird meine beste Stufe gespeichert?",
+          "answer": "Ja, nur in deinem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Ist das ein medizinischer Gedächtnistest?",
+          "answer": "Nein. Es ist eine unterhaltsame Übung. Wenn du dir Sorgen um dein Gedächtnis machst, sprich mit einem Arzt."
+        },
+        {
+          "question": "Kann ich es auf dem Smartphone nutzen?",
+          "answer": "Ja. Beim Antippen des Antwortfelds erscheint eine Zifferntastatur."
+        }
+      ]
+    },
+    "aim-trainer": {
+      "seoTitle": "Aim Trainer – Kostenloser Online-Test für Klickgenauigkeit und Geschwindigkeit",
+      "metaDescription": "Klicke 30 Sekunden lang so schnell und genau wie möglich auf die Ziele. Sieh Treffer, Fehlschüsse, Genauigkeit und Zeit pro Ziel und speichere deine Bestleistung. Kostenloser Aim Trainer für Maus und Touch.",
+      "h1": "Aim Trainer",
+      "subheading": "Triff in 30 Sekunden so viele Ziele wie möglich – übe Mausgenauigkeit, Tempo und Hand-Augen-Koordination.",
+      "keywords": [
+        "Aim Trainer",
+        "Aim Test",
+        "Klickgenauigkeit Test",
+        "Mausgenauigkeit Spiel",
+        "Zielen üben online",
+        "Zielscheiben anklicken Spiel",
+        "Hand-Augen-Koordination Spiel",
+        "Reaktions-Aim-Trainer"
+      ],
+      "howTo": [
+        {
+          "name": "Start drücken",
+          "text": "Irgendwo im Feld erscheint ein Ziel."
+        },
+        {
+          "name": "Schnell klicken",
+          "text": "Klicke oder tippe auf das Ziel. Sofort erscheint ein neues."
+        },
+        {
+          "name": "Genau bleiben",
+          "text": "Klicks, die das Ziel verfehlen, zählen als Fehlschüsse und senken deine Genauigkeit."
+        },
+        {
+          "name": "Ergebnis ansehen",
+          "text": "Nach 30 Sekunden siehst du Treffer, Genauigkeit und Sekunden pro Ziel. Deine Bestleistung wird gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was misst der Aim Trainer?",
+          "answer": "Wie viele Ziele du in 30 Sekunden triffst, deine Genauigkeit und deine durchschnittliche Zeit pro Ziel."
+        },
+        {
+          "question": "Wie kann ich meine Zielgenauigkeit verbessern?",
+          "answer": "Lockere deinen Griff, sitze bequem, nutze eine Mausunterlage, die dir gefällt, und finde die Balance zwischen Tempo und Genauigkeit."
+        },
+        {
+          "question": "Spielt die Mausempfindlichkeit eine Rolle?",
+          "answer": "Ja. Eine Empfindlichkeit, die zu deinem Arm und deiner Bildschirmgröße passt, macht einen großen Unterschied. Probiere ein paar Einstellungen aus."
+        },
+        {
+          "question": "Ist es gut für die Konzentration?",
+          "answer": "Es trainiert anhaltende Aufmerksamkeit und schnelle Entscheidungen. Außerdem ist es eine unterhaltsame Pause."
+        },
+        {
+          "question": "Wird meine Bestleistung gespeichert?",
+          "answer": "Ja, nur in deinem Browser auf diesem Gerät."
+        },
+        {
+          "question": "Funktioniert es auf dem Touchscreen?",
+          "answer": "Ja. Tippe die Ziele mit dem Finger an."
+        },
+        {
+          "question": "Wird etwas hochgeladen?",
+          "answer": "Nein. Das Spiel läuft komplett in deinem Browser."
+        }
+      ]
+    },
     "scientific-calculator": {
       "seoTitle": "Wissenschaftlicher Taschenrechner online – kostenlos mit Trigonometrie, Logarithmus, Potenzen & Bildschirmtastatur",
       "metaDescription": "Kostenloser wissenschaftlicher Taschenrechner online mit sin, cos, tan, log, ln, Potenzen, Wurzeln, Fakultät, Speicher, Verlauf und Grad oder Bogenmaß. Große Tasten und Tastatureingabe. Privat.",
@@ -9264,6 +9648,12 @@
     "notifyBlocked": "Benachrichtigungen sind in deinen Browsereinstellungen blockiert",
     "notificationTitle": "EveryUtili-Erinnerungen",
     "privacyNote": "Basiert auf Daten, die nur in diesem Browser gespeichert sind. Benachrichtigungen erscheinen, solange EveryUtili in einem Tab geöffnet ist."
+  },
+  "toolGroups": {
+    "study": "Fokus- & Lernwerkzeuge",
+    "relax": "Entspannen & Dehnen",
+    "train": "Spiele zum Konzentrationstraining",
+    "fun": "Gelegenheitsspiele"
   },
   "recentTools": {
     "heading": "Kürzlich Verwendet",

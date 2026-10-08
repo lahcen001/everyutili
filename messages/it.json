@@ -76,8 +76,8 @@
       "navLabel": "Casuale"
     },
     "focus-study": {
-      "label": "Concentrazione e Relax",
-      "description": "Timer Pomodoro, suoni per concentrarsi, flashcard e planner per studiare meglio, più pause di stretching, respirazione e mini giochi veloci per ricaricarti tra una sessione e l'altra.",
+      "label": "Concentrazione e giochi",
+      "description": "Timer per la concentrazione, suoni ambientali, flashcard e planner, più pause di stretching, giochi di allenamento mentale e giochi casual veloci per ricaricarti tra una sessione e l'altra.",
       "navLabel": "Focus"
     },
     "math-calculators": {
@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "schulte-table": {
+      "seoTitle": "Tabella di Schulte – Gioco gratuito per allenare attenzione e visione periferica",
+      "metaDescription": "Allena attenzione e velocità con la tabella di Schulte: trova i numeri da 1 a 25 in ordine il più in fretta possibile. Quattro dimensioni di griglia, timer e migliori tempi salvati. Gratis e privato.",
+      "h1": "Tabella di Schulte",
+      "subheading": "Trova i numeri in ordine il più velocemente possibile tenendo lo sguardo al centro: un metodo classico per allenare la concentrazione e la visione periferica.",
+      "keywords": [
+        "tabella di Schulte",
+        "tabella di Schulte online",
+        "gioco per allenare l'attenzione",
+        "allenamento visione periferica",
+        "esercizio di lettura veloce",
+        "gioco per allenare la concentrazione",
+        "test di concentrazione",
+        "griglia di Schulte"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli una griglia",
+          "text": "Scegli 3×3, 4×4, 5×5 o 6×6. La tabella 5×5 è quella classica."
+        },
+        {
+          "name": "Parti dall'1",
+          "text": "Tocca il numero 1 per avviare il timer, poi trova 2, 3, 4 e così via in ordine."
+        },
+        {
+          "name": "Tieni lo sguardo al centro",
+          "text": "Cerca di guardare il centro della tabella e di individuare il numero successivo con la visione laterale."
+        },
+        {
+          "name": "Batti il tuo tempo",
+          "text": "Quando raggiungi l'ultimo numero, il tuo tempo viene salvato se è il migliore per quella dimensione."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Che cos'è una tabella di Schulte?",
+          "answer": "Una griglia di numeri disposti in ordine casuale. Devi trovarli uno dopo l'altro in sequenza. È stata ideata per allenare l'attenzione, la ricerca visiva e la visione periferica."
+        },
+        {
+          "question": "Aiuta con la lettura veloce?",
+          "answer": "Molte persone la usano come riscaldamento per la lettura veloce perché si impara a cogliere le informazioni muovendo poco gli occhi. I risultati variano e non è un trattamento medico."
+        },
+        {
+          "question": "Qual è un buon tempo?",
+          "answer": "Per la tabella 5×5, meno di 30 secondi è buono e meno di 20 è velocissimo. Confrontati con i tuoi tempi precedenti."
+        },
+        {
+          "question": "Perché un tocco sbagliato lampeggia in rosso?",
+          "answer": "Hai toccato un numero che non è quello successivo. Non perdi nulla: basta trovare il numero giusto."
+        },
+        {
+          "question": "I miei migliori tempi vengono salvati?",
+          "answer": "Sì, per ogni dimensione di griglia, nel tuo browser e solo su questo dispositivo."
+        },
+        {
+          "question": "Quanto spesso devo allenarmi?",
+          "answer": "Bastano poche partite brevi al giorno. Fermati quando ti senti stanco."
+        },
+        {
+          "question": "Funziona su smartphone?",
+          "answer": "Sì. I numeri sono grandi e rispondono al tocco."
+        }
+      ]
+    },
+    "stroop-test": {
+      "seoTitle": "Test di Stroop – Gioco online gratuito su colori e parole per concentrazione e autocontrollo",
+      "metaDescription": "Fai il test di Stroop: una parola appare in un colore e devi toccare il colore dell'inchiostro, non ciò che dice la parola. Round da 30 secondi, punteggio e precisione, record salvato. Gratis e privato.",
+      "h1": "Test di Stroop",
+      "subheading": "Indica il colore dell'inchiostro, non la parola: un test rapido di concentrazione, attenzione e autocontrollo.",
+      "keywords": [
+        "test di Stroop",
+        "effetto Stroop test",
+        "test colori e parole",
+        "test di Stroop online",
+        "test di concentrazione",
+        "test di attenzione",
+        "gioco di allenamento mentale",
+        "gioco di Stroop"
+      ],
+      "howTo": [
+        {
+          "name": "Leggi le regole",
+          "text": "Appare il nome di un colore, scritto in un colore spesso diverso da quello della parola."
+        },
+        {
+          "name": "Tocca il colore dell'inchiostro",
+          "text": "Tocca il pulsante del colore che vedi, non della parola che leggi. Puoi anche premere 1, 2, 3 o 4."
+        },
+        {
+          "name": "Sii veloce e preciso",
+          "text": "Hai 30 secondi. Le risposte sbagliate non tolgono punti, ma abbassano la tua precisione."
+        },
+        {
+          "name": "Controlla il punteggio",
+          "text": "Guarda quante risposte hai azzeccato e la tua precisione. Il tuo punteggio migliore viene salvato."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Che cos'è l'effetto Stroop?",
+          "answer": "È il ritardo e sono gli errori che si verificano quando il significato di una parola (come ROSSO) è in conflitto con il colore in cui è scritta (come blu). Il cervello deve ignorare la lettura automatica."
+        },
+        {
+          "question": "Che cosa misura il test?",
+          "answer": "L'attenzione selettiva e la capacità di sopprimere una risposta automatica. È un test classico della psicologia."
+        },
+        {
+          "question": "Allenandomi posso migliorare il punteggio?",
+          "answer": "Sì, di solito con la pratica si diventa più veloci e precisi. Questo non dimostra un cambiamento duraturo nel pensiero di tutti i giorni."
+        },
+        {
+          "question": "Perché la maggior parte delle parole ha il colore sbagliato?",
+          "answer": "È voluto. Nella maggior parte delle prove parola e colore sono diversi per creare il conflitto; alcune coincidono così non si può prevedere."
+        },
+        {
+          "question": "Il mio punteggio migliore viene salvato?",
+          "answer": "Sì, nel tuo browser e solo su questo dispositivo."
+        },
+        {
+          "question": "È un test medico?",
+          "answer": "No. È un esercizio divertente, non una diagnosi."
+        },
+        {
+          "question": "Il test è adatto a chi ha difficoltà con i colori?",
+          "answer": "I pulsanti riportano i nomi dei colori. Se fai fatica a distinguere i colori, affidati alle etichette."
+        }
+      ]
+    },
+    "n-back-game": {
+      "seoTitle": "Gioco N-Back – Allenamento gratuito della memoria di lavoro (1-back, 2-back, 3-back)",
+      "metaDescription": "Allena la memoria di lavoro con il compito n-back: un quadrato si illumina su una griglia 3×3 e premi Corrisponde quando si trova nella stessa posizione di n passi prima. Tre livelli, punteggi salvati. Gratis.",
+      "h1": "Gioco N-Back per la memoria di lavoro",
+      "subheading": "Osserva i quadrati che si illuminano e premi Corrisponde quando uno si trova nella stessa posizione di n passi fa: un noto esercizio per la memoria di lavoro.",
+      "keywords": [
+        "gioco n-back",
+        "test n-back",
+        "allenamento memoria di lavoro",
+        "dual n-back",
+        "gioco per allenare la memoria",
+        "allenamento mentale n-back",
+        "test memoria di lavoro",
+        "n-back online"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli un livello",
+          "text": "1-back è il più facile. 2-back e 3-back sono più difficili."
+        },
+        {
+          "name": "Osserva la griglia",
+          "text": "Un quadrato alla volta si illumina su una griglia 3×3 ogni due secondi circa."
+        },
+        {
+          "name": "Premi Corrisponde",
+          "text": "Premi Corrisponde o la barra spaziatrice quando il quadrato è nella stessa posizione di n passi prima. Altrimenti non fare nulla."
+        },
+        {
+          "name": "Leggi i risultati",
+          "text": "Dopo 24 turni vedi risposte corrette, mancate, falsi allarmi e la tua precisione."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Che cos'è il compito n-back?",
+          "answer": "Un test in cui confronti l'elemento attuale con quello mostrato n passi prima. Tiene la tua memoria di lavoro costantemente impegnata."
+        },
+        {
+          "question": "Che cosa significa 2-back?",
+          "answer": "Confronti il quadrato attuale con quello di due passi prima. Ricorda le ultime due posizioni e aggiornale ogni volta."
+        },
+        {
+          "question": "L'n-back mi rende più intelligente?",
+          "answer": "Le ricerche non sono concordi. Migliora in modo affidabile le tue prestazioni nell'n-back; il trasferimento ai compiti quotidiani è discusso. Consideralo un allenamento mentale, non una garanzia."
+        },
+        {
+          "question": "Che cos'è un falso allarme?",
+          "answer": "Premere Corrisponde quando non c'era alcuna corrispondenza."
+        },
+        {
+          "question": "Il mio punteggio migliore viene salvato?",
+          "answer": "Sì, per ogni livello, nel tuo browser e solo su questo dispositivo."
+        },
+        {
+          "question": "Perché è così difficile?",
+          "answer": "Devi mantenere e aggiornare più posizioni contemporaneamente mentre ne arrivano di nuove. È pensato per essere impegnativo."
+        },
+        {
+          "question": "Posso usare la tastiera?",
+          "answer": "Sì. Premi la barra spaziatrice o Invio per Corrisponde."
+        }
+      ]
+    },
+    "simon-game": {
+      "seoTitle": "Gioco Simon – Gioco di memoria online gratuito con suoni",
+      "metaDescription": "Gioca online al gioco di memoria Simon: osserva la sequenza di colori e suoni, poi ripetila. La sequenza si allunga a ogni turno. Record salvato, funziona su smartphone. Gratis.",
+      "h1": "Gioco di memoria Simon",
+      "subheading": "Osserva la sequenza di luci e suoni, poi ripetila: a ogni turno si aggiunge un passo.",
+      "keywords": [
+        "gioco Simon",
+        "Simon dice gioco online",
+        "gioco di memoria a sequenze",
+        "gioco di memoria Simon",
+        "giocare a Simon online",
+        "gioco memoria sequenze",
+        "gioco sequenza di colori",
+        "gioco Simon con suoni"
+      ],
+      "howTo": [
+        {
+          "name": "Premi Start",
+          "text": "Il gioco illumina un pulsante e riproduce il suo suono."
+        },
+        {
+          "name": "Guarda e ascolta",
+          "text": "Segui la sequenza di luci e suoni."
+        },
+        {
+          "name": "Ripetila",
+          "text": "Tocca i pulsanti nello stesso ordine. Se hai ragione, la sequenza si allunga di uno."
+        },
+        {
+          "name": "Punta al record",
+          "text": "Un solo errore termina la partita. Il tuo livello migliore viene salvato."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Come si gioca a Simon?",
+          "answer": "Osserva la sequenza, poi ripetila toccando i pulsanti nello stesso ordine. A ogni turno si aggiunge un passo."
+        },
+        {
+          "question": "Mi serve l'audio?",
+          "answer": "L'audio aiuta a ricordare la sequenza, ma le luci funzionano anche senza."
+        },
+        {
+          "question": "Qual è un buon punteggio?",
+          "answer": "Per la maggior parte delle persone raggiungere il livello 8 o 9 è un buon risultato. Oltre il 12 è ottimo."
+        },
+        {
+          "question": "Allena la memoria?",
+          "answer": "Esercita la memoria a breve termine per le sequenze e l'attenzione. È un esercizio mentale divertente, non una terapia."
+        },
+        {
+          "question": "Il mio punteggio migliore viene salvato?",
+          "answer": "Sì, nel tuo browser e solo su questo dispositivo."
+        },
+        {
+          "question": "Posso giocare su smartphone?",
+          "answer": "Sì. I pulsanti sono ampie aree da toccare."
+        },
+        {
+          "question": "Perché i pulsanti accelerano?",
+          "answer": "La sequenza viene riprodotta più velocemente man mano che si allunga, per mantenere alta la sfida."
+        }
+      ]
+    },
+    "number-memory-game": {
+      "seoTitle": "Test di memoria dei numeri – Gioco online gratuito sulla memoria di cifre",
+      "metaDescription": "Metti alla prova la tua memoria dei numeri: un numero compare sullo schermo e devi riscriverlo. A ogni livello si aggiunge una cifra. Gratis, privato, con livello migliore salvato.",
+      "h1": "Test di memoria dei numeri",
+      "subheading": "Un numero compare sullo schermo: ricordalo e riscrivilo. A ogni livello si aggiunge una cifra.",
+      "keywords": [
+        "test memoria numeri",
+        "test di memoria delle cifre",
+        "test di memoria online",
+        "gioco memoria numeri",
+        "quante cifre riesci a ricordare",
+        "test memoria a breve termine",
+        "allenamento della memoria",
+        "gioco ricorda i numeri"
+      ],
+      "howTo": [
+        {
+          "name": "Premi Start",
+          "text": "Un numero appare per qualche secondo. Il livello 1 ha tre cifre."
+        },
+        {
+          "name": "Ricordalo",
+          "text": "Prova a raggruppare le cifre in blocchi, per esempio 3 + 3, per ricordarle più facilmente."
+        },
+        {
+          "name": "Riscrivilo",
+          "text": "Quando il numero scompare, scrivi ciò che hai visto e premi Invio."
+        },
+        {
+          "name": "Passa al livello successivo",
+          "text": "Ogni risposta corretta aggiunge una cifra. Il tuo livello migliore viene salvato."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quante cifre riesce a ricordare la maggior parte delle persone?",
+          "answer": "Circa sette, più o meno due, è la cifra classica per la memoria a breve termine. Allenamento e raggruppamento possono aiutarti a ricordarne di più."
+        },
+        {
+          "question": "Che cos'è il raggruppamento (chunking)?",
+          "answer": "Raggruppare le cifre in piccoli blocchi, come i numeri di telefono, per ricordare meno elementi."
+        },
+        {
+          "question": "Il tempo per memorizzare cambia?",
+          "answer": "Sì. I livelli più alti ti danno un po' più di tempo per guardare, ma non quanto ne richiede ogni cifra in più."
+        },
+        {
+          "question": "Cosa succede se sbaglio?",
+          "answer": "La partita finisce e viene mostrato il numero corretto. Puoi riprovare subito."
+        },
+        {
+          "question": "Il mio livello migliore viene salvato?",
+          "answer": "Sì, nel tuo browser e solo su questo dispositivo."
+        },
+        {
+          "question": "È un test medico della memoria?",
+          "answer": "No. È un esercizio divertente. Se sei preoccupato per la tua memoria, parlane con un medico."
+        },
+        {
+          "question": "Posso usarlo su smartphone?",
+          "answer": "Sì. Quando tocchi la casella della risposta compare un tastierino numerico."
+        }
+      ]
+    },
+    "aim-trainer": {
+      "seoTitle": "Aim Trainer – Test online gratuito di precisione e velocità del clic",
+      "metaDescription": "Clicca i bersagli il più velocemente e precisamente possibile per 30 secondi. Vedi colpi, errori, precisione e tempo per bersaglio, e salva il tuo record. Aim trainer gratuito per mouse e touch.",
+      "h1": "Aim Trainer",
+      "subheading": "Colpisci più bersagli che puoi in 30 secondi: allena la precisione del mouse, la velocità e la coordinazione occhio-mano.",
+      "keywords": [
+        "aim trainer",
+        "test di mira",
+        "test precisione clic",
+        "gioco precisione mouse",
+        "allenamento mira online",
+        "gioco clicca i bersagli",
+        "gioco coordinazione occhio-mano",
+        "aim trainer reattività"
+      ],
+      "howTo": [
+        {
+          "name": "Premi Start",
+          "text": "Un bersaglio appare da qualche parte nel riquadro."
+        },
+        {
+          "name": "Cliccalo in fretta",
+          "text": "Clicca o tocca il bersaglio. Ne compare subito uno nuovo."
+        },
+        {
+          "name": "Resta preciso",
+          "text": "I clic che mancano il bersaglio contano come errori e abbassano la tua precisione."
+        },
+        {
+          "name": "Guarda il risultato",
+          "text": "Dopo 30 secondi ottieni colpi, precisione e secondi per bersaglio. Il tuo record viene salvato."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Che cosa misura l'aim trainer?",
+          "answer": "Quanti bersagli colpisci in 30 secondi, la tua precisione e il tempo medio per bersaglio."
+        },
+        {
+          "question": "Come posso migliorare la mia mira?",
+          "answer": "Rilassa la presa, siediti comodamente, usa una superficie per il mouse che ti piace e bilancia velocità e precisione."
+        },
+        {
+          "question": "La sensibilità del mouse conta?",
+          "answer": "Sì. Una sensibilità adatta al tuo braccio e alle dimensioni dello schermo fa una grande differenza. Prova diverse impostazioni."
+        },
+        {
+          "question": "Fa bene alla concentrazione?",
+          "answer": "Allena l'attenzione prolungata e le decisioni rapide. È anche una divertente pausa."
+        },
+        {
+          "question": "Il mio punteggio migliore viene salvato?",
+          "answer": "Sì, nel tuo browser e solo su questo dispositivo."
+        },
+        {
+          "question": "Funziona su touch screen?",
+          "answer": "Sì. Tocca i bersagli con il dito."
+        },
+        {
+          "question": "Viene caricato qualcosa?",
+          "answer": "No. Il gioco funziona interamente nel tuo browser."
+        }
+      ]
+    },
     "scientific-calculator": {
       "seoTitle": "Calcolatrice scientifica online gratis – Trigonometria, logaritmi, potenze e tastiera su schermo",
       "metaDescription": "Calcolatrice scientifica online gratuita con sin, cos, tan, log, ln, potenze, radici, fattoriale, memoria, cronologia e gradi o radianti. Tasti grandi e digitazione da tastiera. Privata.",
@@ -9264,6 +9648,12 @@
     "notifyBlocked": "Le notifiche sono bloccate nelle impostazioni del browser",
     "notificationTitle": "Promemoria di EveryUtili",
     "privacyNote": "Basato su dati salvati solo in questo browser. Le notifiche appaiono finché EveryUtili è aperto in una scheda."
+  },
+  "toolGroups": {
+    "study": "Strumenti per concentrazione e studio",
+    "relax": "Relax e stretching",
+    "train": "Giochi per allenare la concentrazione",
+    "fun": "Giochi casual"
   },
   "recentTools": {
     "heading": "Usati di Recente",

@@ -76,8 +76,8 @@
       "navLabel": "Aléatoire"
     },
     "focus-study": {
-      "label": "Concentration et détente",
-      "description": "Minuteur Pomodoro, sons de concentration, cartes mémoire et planificateurs pour rester concentré, plus pauses étirements, respiration et mini-jeux rapides pour se ressourcer entre deux sessions.",
+      "label": "Concentration et jeux",
+      "description": "Minuteurs de concentration, sons d'ambiance, cartes mémoire et planificateurs — plus des pauses d'étirement, des jeux d'entraînement cérébral et des jeux occasionnels rapides pour se ressourcer entre deux sessions.",
       "navLabel": "Concentration"
     },
     "math-calculators": {
@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "schulte-table": {
+      "seoTitle": "Table de Schulte – Jeu gratuit d'entraînement à l'attention et à la vision périphérique",
+      "metaDescription": "Entraînez votre attention et votre rapidité avec une table de Schulte : trouvez les nombres de 1 à 25 dans l'ordre, le plus vite possible. Quatre tailles de grille, un chronomètre et vos meilleurs temps enregistrés. Gratuit et privé.",
+      "h1": "Table de Schulte",
+      "subheading": "Trouvez les nombres dans l'ordre le plus vite possible en gardant le regard au centre — une méthode classique pour entraîner la concentration et la vision périphérique.",
+      "keywords": [
+        "table de Schulte",
+        "table de Schulte en ligne",
+        "jeu d'entraînement à l'attention",
+        "entraînement vision périphérique",
+        "exercice de lecture rapide",
+        "jeu d'entraînement à la concentration",
+        "test de concentration",
+        "grille de Schulte"
+      ],
+      "howTo": [
+        {
+          "name": "Choisissez une grille",
+          "text": "Sélectionnez 3×3, 4×4, 5×5 ou 6×6. La table 5×5 est la version classique."
+        },
+        {
+          "name": "Commencez par 1",
+          "text": "Touchez le nombre 1 pour lancer le chronomètre, puis trouvez 2, 3, 4 et ainsi de suite dans l'ordre."
+        },
+        {
+          "name": "Gardez le regard au centre",
+          "text": "Essayez de fixer le milieu de la table et de repérer le nombre suivant grâce à votre vision périphérique."
+        },
+        {
+          "name": "Battez votre temps",
+          "text": "Lorsque vous atteignez le dernier nombre, votre temps est enregistré s'il s'agit de votre meilleur pour cette taille."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce qu'une table de Schulte ?",
+          "answer": "Une grille de nombres placés dans un ordre aléatoire. Vous les trouvez un par un, dans l'ordre. Elle a été conçue pour entraîner l'attention, la recherche visuelle et la vision périphérique."
+        },
+        {
+          "question": "Est-ce utile pour la lecture rapide ?",
+          "answer": "Beaucoup de personnes l'utilisent comme échauffement pour la lecture rapide, car elle apprend à saisir l'information sans trop bouger les yeux. Les résultats varient et il ne s'agit pas d'un traitement médical."
+        },
+        {
+          "question": "Quel est un bon temps ?",
+          "answer": "Pour la table 5×5, moins de 30 secondes est bon et moins de 20 est très rapide. Comparez-vous plutôt à vos propres temps précédents."
+        },
+        {
+          "question": "Pourquoi un mauvais choix clignote-t-il en rouge ?",
+          "answer": "Vous avez touché un nombre qui n'est pas le suivant. Rien n'est perdu ; trouvez simplement le bon nombre."
+        },
+        {
+          "question": "Mes meilleurs temps sont-ils enregistrés ?",
+          "answer": "Oui, pour chaque taille de grille, dans votre navigateur et uniquement sur cet appareil."
+        },
+        {
+          "question": "À quelle fréquence dois-je m'entraîner ?",
+          "answer": "Quelques courtes parties par jour suffisent. Arrêtez-vous dès que vous vous sentez fatigué."
+        },
+        {
+          "question": "Cela fonctionne-t-il sur téléphone ?",
+          "answer": "Oui. Les nombres sont grands et réagissent au toucher."
+        }
+      ]
+    },
+    "stroop-test": {
+      "seoTitle": "Test de Stroop – Jeu gratuit en ligne sur les couleurs, la concentration et la maîtrise de soi",
+      "metaDescription": "Passez le test de Stroop : un mot s'affiche dans une couleur et vous touchez la couleur de l'encre, pas ce que dit le mot. Parties de 30 secondes, score et précision, meilleur score enregistré. Gratuit et privé.",
+      "h1": "Test de Stroop",
+      "subheading": "Nommez la couleur de l'encre, pas le mot — un test rapide de concentration, d'attention et de maîtrise de soi.",
+      "keywords": [
+        "test de Stroop",
+        "effet Stroop test",
+        "test couleur mot",
+        "test de Stroop en ligne",
+        "test de concentration",
+        "test d'attention",
+        "jeu d'entraînement cérébral",
+        "jeu de Stroop"
+      ],
+      "howTo": [
+        {
+          "name": "Lisez les règles",
+          "text": "Un mot de couleur apparaît, écrit dans une couleur souvent différente de celle du mot."
+        },
+        {
+          "name": "Touchez la couleur de l'encre",
+          "text": "Touchez le bouton de la couleur que vous voyez, et non du mot que vous lisez. Vous pouvez aussi appuyer sur 1, 2, 3 ou 4."
+        },
+        {
+          "name": "Soyez rapide et précis",
+          "text": "Vous avez 30 secondes. Les mauvaises réponses ne font pas perdre de points, mais elles diminuent votre précision."
+        },
+        {
+          "name": "Consultez votre score",
+          "text": "Découvrez combien de réponses étaient justes ainsi que votre précision. Votre meilleur score est enregistré."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que l'effet Stroop ?",
+          "answer": "Ce sont le retard et les erreurs qui apparaissent quand le sens d'un mot (comme ROUGE) entre en conflit avec la couleur dans laquelle il est écrit (comme le bleu). Votre cerveau doit ignorer la lecture automatique."
+        },
+        {
+          "question": "Que mesure ce test ?",
+          "answer": "L'attention sélective et la capacité à inhiber une réponse automatique. C'est un test classique en psychologie."
+        },
+        {
+          "question": "L'entraînement peut-il améliorer mon score ?",
+          "answer": "Oui, on devient généralement plus rapide et plus précis avec la pratique. Cela ne prouve pas un changement durable dans la réflexion de tous les jours."
+        },
+        {
+          "question": "Pourquoi la plupart des mots sont-ils dans la mauvaise couleur ?",
+          "answer": "C'est voulu. La plupart des essais affichent un mot et une couleur différents pour créer le conflit ; certains correspondent, afin que vous ne puissiez pas deviner."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, dans votre navigateur et uniquement sur cet appareil."
+        },
+        {
+          "question": "Est-ce un test médical ?",
+          "answer": "Non. C'est un exercice ludique, pas un diagnostic."
+        },
+        {
+          "question": "Le test est-il adapté aux personnes daltoniennes ?",
+          "answer": "Les boutons portent le nom des couleurs. Si vous avez du mal à distinguer les couleurs, fiez-vous aux libellés."
+        }
+      ]
+    },
+    "n-back-game": {
+      "seoTitle": "Jeu N-Back – Entraînement gratuit de la mémoire de travail (1-back, 2-back, 3-back)",
+      "metaDescription": "Entraînez votre mémoire de travail avec la tâche n-back : un carré s'illumine sur une grille 3×3 et vous appuyez sur Correspond lorsqu'il est au même endroit qu'il y a n étapes. Trois niveaux, scores enregistrés. Gratuit.",
+      "h1": "Jeu N-Back de mémoire de travail",
+      "subheading": "Regardez les carrés s'illuminer et appuyez sur Correspond lorsqu'un carré est au même endroit qu'il y a n étapes — un exercice bien connu pour la mémoire de travail.",
+      "keywords": [
+        "jeu n-back",
+        "test n-back",
+        "entraînement mémoire de travail",
+        "dual n-back",
+        "jeu d'entraînement de la mémoire",
+        "entraînement cérébral n-back",
+        "test de mémoire de travail",
+        "n-back en ligne"
+      ],
+      "howTo": [
+        {
+          "name": "Choisissez un niveau",
+          "text": "Le 1-back est le plus facile. Le 2-back et le 3-back sont plus difficiles."
+        },
+        {
+          "name": "Observez la grille",
+          "text": "Un carré à la fois s'illumine sur une grille 3×3, toutes les deux secondes environ."
+        },
+        {
+          "name": "Appuyez sur Correspond",
+          "text": "Appuyez sur Correspond ou sur la barre d'espace lorsque le carré est à la même position qu'il y a n étapes. Sinon, ne faites rien."
+        },
+        {
+          "name": "Consultez vos résultats",
+          "text": "Après 24 tours, vous voyez vos réussites, vos oublis, vos fausses alertes et votre précision."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Qu'est-ce que la tâche n-back ?",
+          "answer": "Un test où vous comparez l'élément actuel à celui affiché n étapes plus tôt. Il sollicite en permanence votre mémoire de travail."
+        },
+        {
+          "question": "Que signifie 2-back ?",
+          "answer": "Vous comparez le carré actuel à celui d'il y a deux étapes. Retenez les deux dernières positions et mettez-les à jour à chaque fois."
+        },
+        {
+          "question": "Le n-back rend-il plus intelligent ?",
+          "answer": "Les recherches sont partagées. Il améliore de façon fiable vos performances au n-back ; le transfert aux tâches du quotidien est débattu. Considérez-le comme un entraînement mental, pas comme une garantie."
+        },
+        {
+          "question": "Qu'est-ce qu'une fausse alerte ?",
+          "answer": "Appuyer sur Correspond alors qu'il n'y avait pas de correspondance."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, pour chaque niveau, dans votre navigateur et uniquement sur cet appareil."
+        },
+        {
+          "question": "Pourquoi est-ce difficile ?",
+          "answer": "Vous devez retenir et mettre à jour plusieurs positions à la fois pendant que de nouvelles arrivent. C'est fait pour être exigeant."
+        },
+        {
+          "question": "Puis-je utiliser le clavier ?",
+          "answer": "Oui. Appuyez sur la barre d'espace ou sur Entrée pour Correspond."
+        }
+      ]
+    },
+    "simon-game": {
+      "seoTitle": "Jeu Simon – Jeu de mémoire gratuit en ligne avec sons",
+      "metaDescription": "Jouez au jeu de mémoire Simon en ligne : observez la séquence de couleurs et de sons, puis reproduisez-la. La séquence s'allonge à chaque tour. Meilleur score enregistré, compatible téléphone. Gratuit.",
+      "h1": "Jeu de mémoire Simon",
+      "subheading": "Observez la séquence de lumières et de sons, puis reproduisez-la — chaque tour ajoute une étape.",
+      "keywords": [
+        "jeu Simon",
+        "jeu Simon en ligne",
+        "jeu de mémoire de séquences",
+        "jeu de mémoire Simon",
+        "jouer à Simon en ligne",
+        "jeu de mémoire séquentielle",
+        "jeu de séquence de couleurs",
+        "jeu Simon avec son"
+      ],
+      "howTo": [
+        {
+          "name": "Appuyez sur Démarrer",
+          "text": "Le jeu allume une touche et joue son son."
+        },
+        {
+          "name": "Regardez et écoutez",
+          "text": "Suivez la séquence de lumières et de sons."
+        },
+        {
+          "name": "Reproduisez-la",
+          "text": "Touchez les touches dans le même ordre. Si vous avez bon, la séquence s'allonge d'une étape."
+        },
+        {
+          "name": "Visez un meilleur score",
+          "text": "Une seule erreur met fin à la partie. Votre meilleur niveau est enregistré."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment jouer à Simon ?",
+          "answer": "Observez la séquence, puis reproduisez-la en touchant les touches dans le même ordre. Chaque tour ajoute une étape."
+        },
+        {
+          "question": "Ai-je besoin du son ?",
+          "answer": "Le son aide à mémoriser la séquence, mais les lumières suffisent pour jouer sans lui."
+        },
+        {
+          "question": "Quel est un bon score ?",
+          "answer": "Atteindre le niveau 8 ou 9 est bien pour la plupart des gens. Au-delà de 12, c'est très bon."
+        },
+        {
+          "question": "Cela entraîne-t-il la mémoire ?",
+          "answer": "Cela exerce la mémoire séquentielle à court terme et l'attention. C'est un exercice cérébral ludique, pas un traitement."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, dans votre navigateur et uniquement sur cet appareil."
+        },
+        {
+          "question": "Puis-je jouer sur téléphone ?",
+          "answer": "Oui. Les touches sont de grandes zones tactiles."
+        },
+        {
+          "question": "Pourquoi les touches s'accélèrent-elles ?",
+          "answer": "La séquence se joue plus vite à mesure qu'elle s'allonge, pour garder le défi stimulant."
+        }
+      ]
+    },
+    "number-memory-game": {
+      "seoTitle": "Test de mémoire des nombres – Jeu gratuit en ligne d'empan de chiffres",
+      "metaDescription": "Testez votre mémoire des nombres : un nombre s'affiche brièvement à l'écran et vous le saisissez de mémoire. Chaque niveau ajoute un chiffre. Gratuit, privé, avec meilleur niveau enregistré.",
+      "h1": "Test de mémoire des nombres",
+      "subheading": "Un nombre s'affiche brièvement à l'écran — mémorisez-le et saisissez-le. Chaque niveau ajoute un chiffre.",
+      "keywords": [
+        "test de mémoire des nombres",
+        "test d'empan de chiffres",
+        "test de mémoire en ligne",
+        "jeu de mémoire des nombres",
+        "combien de chiffres pouvez-vous retenir",
+        "test de mémoire à court terme",
+        "entraînement de la mémoire",
+        "jeu pour retenir des nombres"
+      ],
+      "howTo": [
+        {
+          "name": "Appuyez sur Démarrer",
+          "text": "Un nombre apparaît pendant quelques secondes. Le niveau 1 compte trois chiffres."
+        },
+        {
+          "name": "Mémorisez-le",
+          "text": "Essayez de regrouper les chiffres en blocs, par exemple 3 + 3, pour les retenir plus facilement."
+        },
+        {
+          "name": "Saisissez-le",
+          "text": "Quand le nombre disparaît, saisissez ce que vous avez vu et appuyez sur Entrée."
+        },
+        {
+          "name": "Passez au niveau suivant",
+          "text": "Chaque bonne réponse ajoute un chiffre. Votre meilleur niveau est enregistré."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Combien de chiffres la plupart des gens peuvent-ils retenir ?",
+          "answer": "Environ sept, plus ou moins deux, est le chiffre classique pour la mémoire à court terme. L'entraînement et le regroupement en blocs peuvent aider à en retenir davantage."
+        },
+        {
+          "question": "Qu'est-ce que le regroupement en blocs ?",
+          "answer": "Regrouper les chiffres en petits morceaux, comme les numéros de téléphone, pour avoir moins d'éléments à retenir."
+        },
+        {
+          "question": "Le temps de mémorisation change-t-il ?",
+          "answer": "Oui. Les niveaux plus élevés vous laissent un peu plus de temps pour regarder, mais pas autant que ce que demande chaque chiffre supplémentaire."
+        },
+        {
+          "question": "Que se passe-t-il si je me trompe ?",
+          "answer": "La partie se termine et le bon nombre s'affiche. Vous pouvez rejouer tout de suite."
+        },
+        {
+          "question": "Mon meilleur niveau est-il enregistré ?",
+          "answer": "Oui, dans votre navigateur et uniquement sur cet appareil."
+        },
+        {
+          "question": "Est-ce un test de mémoire médical ?",
+          "answer": "Non. C'est un exercice ludique. Si votre mémoire vous inquiète, parlez-en à un médecin."
+        },
+        {
+          "question": "Puis-je y jouer sur téléphone ?",
+          "answer": "Oui. Un pavé numérique s'affiche lorsque vous touchez la zone de réponse."
+        }
+      ]
+    },
+    "aim-trainer": {
+      "seoTitle": "Aim Trainer – Test gratuit en ligne de précision et de vitesse de clic",
+      "metaDescription": "Cliquez sur les cibles le plus vite et le plus précisément possible pendant 30 secondes. Découvrez touches, ratés, précision et temps par cible, et enregistrez votre meilleur score. Aim trainer gratuit pour souris et écran tactile.",
+      "h1": "Aim Trainer",
+      "subheading": "Atteignez autant de cibles que possible en 30 secondes — travaillez la précision à la souris, la rapidité et la coordination œil-main.",
+      "keywords": [
+        "aim trainer",
+        "test d'aim",
+        "test de précision de clic",
+        "jeu de précision à la souris",
+        "entraînement aim en ligne",
+        "jeu de clic sur des cibles",
+        "jeu de coordination œil-main",
+        "entraînement de visée et réflexes"
+      ],
+      "howTo": [
+        {
+          "name": "Appuyez sur Démarrer",
+          "text": "Une cible apparaît quelque part dans la zone."
+        },
+        {
+          "name": "Cliquez vite",
+          "text": "Cliquez ou touchez la cible. Une nouvelle apparaît aussitôt."
+        },
+        {
+          "name": "Restez précis",
+          "text": "Les clics qui ratent la cible comptent comme des ratés et diminuent votre précision."
+        },
+        {
+          "name": "Consultez votre résultat",
+          "text": "Après 30 secondes, vous obtenez vos touches, votre précision et le temps par cible. Votre meilleur résultat est enregistré."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Que mesure l'aim trainer ?",
+          "answer": "Le nombre de cibles atteintes en 30 secondes, votre précision et votre temps moyen par cible."
+        },
+        {
+          "question": "Comment améliorer ma visée ?",
+          "answer": "Détendez votre prise, installez-vous confortablement, utilisez une surface de souris qui vous convient et équilibrez vitesse et précision."
+        },
+        {
+          "question": "La sensibilité de la souris compte-t-elle ?",
+          "answer": "Oui. Une sensibilité adaptée à votre bras et à la taille de votre écran change beaucoup de choses. Essayez plusieurs réglages."
+        },
+        {
+          "question": "Est-ce bon pour la concentration ?",
+          "answer": "Cela exerce l'attention soutenue et la prise de décision rapide. C'est aussi une pause amusante."
+        },
+        {
+          "question": "Mon meilleur score est-il enregistré ?",
+          "answer": "Oui, dans votre navigateur et uniquement sur cet appareil."
+        },
+        {
+          "question": "Cela fonctionne-t-il sur écran tactile ?",
+          "answer": "Oui. Touchez les cibles avec le doigt."
+        },
+        {
+          "question": "Des données sont-elles envoyées ?",
+          "answer": "Non. Le jeu fonctionne entièrement dans votre navigateur."
+        }
+      ]
+    },
     "scientific-calculator": {
       "seoTitle": "Calculatrice scientifique en ligne – gratuite, trigonométrie, log, puissances et clavier à l'écran",
       "metaDescription": "Calculatrice scientifique en ligne gratuite avec sin, cos, tan, log, ln, puissances, racines, factorielle, mémoire, historique et degrés ou radians. Grandes touches et saisie au clavier. Privée.",
@@ -9264,6 +9648,12 @@
     "notifyBlocked": "Les notifications sont bloquées dans les paramètres de votre navigateur",
     "notificationTitle": "Rappels EveryUtili",
     "privacyNote": "Basé sur des données enregistrées uniquement dans ce navigateur. Les notifications s’affichent tant qu’EveryUtili est ouvert dans un onglet."
+  },
+  "toolGroups": {
+    "study": "Outils de concentration et d'étude",
+    "relax": "Détente et étirements",
+    "train": "Jeux d'entraînement à la concentration",
+    "fun": "Jeux occasionnels"
   },
   "recentTools": {
     "heading": "Utilisés Récemment",

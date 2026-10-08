@@ -76,8 +76,8 @@
       "navLabel": "Random"
     },
     "focus-study": {
-      "label": "Focus & Relax",
-      "description": "Pomodoro timer, focus sounds, flashcards and planners to concentrate — plus stretch breaks, breathing and quick mini games to recharge between sessions.",
+      "label": "Focus & Games",
+      "description": "Focus timers, ambient sounds, flashcards and planners — plus stretch breaks, brain-training games and quick casual games to recharge between sessions.",
       "navLabel": "Focus"
     },
     "math-calculators": {
@@ -8733,6 +8733,390 @@
         }
       ]
     },
+    "schulte-table": {
+      "seoTitle": "Schulte Table – Free Attention & Peripheral Vision Training Game",
+      "metaDescription": "Train your attention and speed with a Schulte table: find the numbers 1 to 25 in order as fast as you can. Four grid sizes, a timer and saved best times. Free and private.",
+      "h1": "Schulte Table",
+      "subheading": "Find the numbers in order as fast as you can while keeping your eyes in the middle — a classic way to train focus and peripheral vision.",
+      "keywords": [
+        "schulte table",
+        "schulte table online",
+        "attention training game",
+        "peripheral vision training",
+        "speed reading exercise",
+        "focus training game",
+        "concentration test",
+        "schulte grid"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a grid",
+          "text": "Pick 3×3, 4×4, 5×5 or 6×6. The 5×5 table is the classic."
+        },
+        {
+          "name": "Start with 1",
+          "text": "Tap the number 1 to start the timer, then find 2, 3, 4 and so on in order."
+        },
+        {
+          "name": "Keep your eyes in the centre",
+          "text": "Try to look at the middle of the table and spot the next number with your side vision."
+        },
+        {
+          "name": "Beat your time",
+          "text": "When you reach the last number your time is saved if it is your best for that size."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is a Schulte table?",
+          "answer": "A grid of numbers placed in random order. You find them one by one in sequence. It was designed to train attention, visual search and peripheral vision."
+        },
+        {
+          "question": "Does it help with speed reading?",
+          "answer": "Many people use it as a warm-up for speed reading because it practises taking in information without moving your eyes much. Results vary and it is not a medical treatment."
+        },
+        {
+          "question": "What is a good time?",
+          "answer": "For the 5×5 table, under 30 seconds is good and under 20 is very fast. Compare yourself with your own earlier times."
+        },
+        {
+          "question": "Why does a wrong tap flash red?",
+          "answer": "You tapped a number that is not the next one. Nothing is lost; just find the right number."
+        },
+        {
+          "question": "Are my best times saved?",
+          "answer": "Yes, for each grid size, in your browser on this device only."
+        },
+        {
+          "question": "How often should I practise?",
+          "answer": "A few short rounds a day are enough. Stop when you feel tired."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. The numbers are large and respond to touch."
+        }
+      ]
+    },
+    "stroop-test": {
+      "seoTitle": "Stroop Test – Free Online Colour-Word Focus and Self-Control Game",
+      "metaDescription": "Take the Stroop test: a word is shown in a colour and you tap the colour of the ink, not what the word says. 30-second rounds, score and accuracy, saved best. Free and private.",
+      "h1": "Stroop Test",
+      "subheading": "Name the colour of the ink, not the word — a quick test of focus, attention and self-control.",
+      "keywords": [
+        "stroop test",
+        "stroop effect test",
+        "colour word test",
+        "stroop test online",
+        "focus test",
+        "attention test",
+        "brain training game",
+        "stroop game"
+      ],
+      "howTo": [
+        {
+          "name": "Read the rules",
+          "text": "A colour word appears, printed in a colour that is often different from the word."
+        },
+        {
+          "name": "Tap the ink colour",
+          "text": "Tap the button for the colour you see, not the word you read. You can also press 1, 2, 3 or 4."
+        },
+        {
+          "name": "Be quick and careful",
+          "text": "You have 30 seconds. Wrong answers do not cost points, but they lower your accuracy."
+        },
+        {
+          "name": "Check your score",
+          "text": "See how many you got right and your accuracy. Your best score is saved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the Stroop effect?",
+          "answer": "It is the delay and mistakes that happen when the meaning of a word (such as RED) conflicts with the colour it is printed in (such as blue). Your brain has to ignore the automatic reading."
+        },
+        {
+          "question": "What does the test measure?",
+          "answer": "Selective attention and the ability to suppress an automatic response. It is a classic test in psychology."
+        },
+        {
+          "question": "Can practice improve my score?",
+          "answer": "Yes, people usually get faster and more accurate with practice. That does not prove a lasting change in everyday thinking."
+        },
+        {
+          "question": "Why are most words in the wrong colour?",
+          "answer": "On purpose. Most trials show a different word and colour to create the conflict; some match so you cannot predict."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, in your browser on this device only."
+        },
+        {
+          "question": "Is it a medical test?",
+          "answer": "No. It is a fun exercise, not a diagnosis."
+        },
+        {
+          "question": "Is the test colour-blind friendly?",
+          "answer": "The buttons are labelled with the colour names. If you have trouble telling colours apart, rely on the labels."
+        }
+      ]
+    },
+    "n-back-game": {
+      "seoTitle": "N-Back Game – Free Working Memory Training (1-back, 2-back, 3-back)",
+      "metaDescription": "Train your working memory with the n-back task: a square lights up on a 3×3 grid and you press Match when it is in the same place as n steps earlier. Three levels, scores saved. Free.",
+      "h1": "N-Back Working Memory Game",
+      "subheading": "Watch the squares light up and press Match when one is in the same place as n steps ago — a well-known working memory exercise.",
+      "keywords": [
+        "n-back game",
+        "n back test",
+        "working memory training",
+        "dual n back",
+        "memory training game",
+        "brain training n-back",
+        "working memory test",
+        "n-back online"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a level",
+          "text": "1-back is the easiest. 2-back and 3-back are harder."
+        },
+        {
+          "name": "Watch the grid",
+          "text": "One square at a time lights up on a 3×3 grid every couple of seconds."
+        },
+        {
+          "name": "Press Match",
+          "text": "Press Match or the Space bar when the square is in the same position as n steps earlier. Do nothing otherwise."
+        },
+        {
+          "name": "Read your results",
+          "text": "After 24 rounds you see hits, misses, false alarms and your accuracy."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What is the n-back task?",
+          "answer": "A test where you compare the current item with the one shown n steps earlier. It keeps your working memory constantly busy."
+        },
+        {
+          "question": "What does 2-back mean?",
+          "answer": "You compare the current square with the one two steps before. Remember the last two positions and update them every time."
+        },
+        {
+          "question": "Does n-back make me smarter?",
+          "answer": "Research is mixed. It reliably improves your n-back performance; transfer to everyday tasks is debated. Treat it as a mental workout, not a guarantee."
+        },
+        {
+          "question": "What is a false alarm?",
+          "answer": "Pressing Match when there was no match."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, per level, in your browser on this device only."
+        },
+        {
+          "question": "Why is it hard?",
+          "answer": "You must hold and update several positions at once while new ones arrive. It is meant to be demanding."
+        },
+        {
+          "question": "Can I use the keyboard?",
+          "answer": "Yes. Press the Space bar or Enter for Match."
+        }
+      ]
+    },
+    "simon-game": {
+      "seoTitle": "Simon Game – Free Online Memory Pattern Game with Sound",
+      "metaDescription": "Play the Simon memory game online: watch the colour and sound pattern, then repeat it. The sequence gets longer every round. Saved best score, works on phone. Free.",
+      "h1": "Simon Memory Game",
+      "subheading": "Watch the pattern of lights and sounds, then repeat it — each round adds one more step.",
+      "keywords": [
+        "simon game",
+        "simon says game online",
+        "memory pattern game",
+        "simon memory game",
+        "play simon online",
+        "sequence memory game",
+        "color sequence game",
+        "simon game with sound"
+      ],
+      "howTo": [
+        {
+          "name": "Press Start",
+          "text": "The game lights up one pad and plays its sound."
+        },
+        {
+          "name": "Watch and listen",
+          "text": "Follow the sequence of lights and sounds."
+        },
+        {
+          "name": "Repeat it",
+          "text": "Tap the pads in the same order. If you are right, the sequence grows by one."
+        },
+        {
+          "name": "Go for a high score",
+          "text": "One mistake ends the game. Your best level is saved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I play Simon?",
+          "answer": "Watch the pattern, then repeat it by tapping the pads in the same order. Each round adds one more step."
+        },
+        {
+          "question": "Do I need sound?",
+          "answer": "Sound helps you remember the pattern, but the lights work without it."
+        },
+        {
+          "question": "What is a good score?",
+          "answer": "Reaching level 8 or 9 is good for most people. Above 12 is very good."
+        },
+        {
+          "question": "Does it train memory?",
+          "answer": "It exercises short-term sequence memory and attention. It is a fun brain exercise, not a treatment."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, in your browser on this device only."
+        },
+        {
+          "question": "Can I play on a phone?",
+          "answer": "Yes. The pads are large touch targets."
+        },
+        {
+          "question": "Why do the pads speed up?",
+          "answer": "The pattern plays faster as it gets longer, to keep the challenge up."
+        }
+      ]
+    },
+    "number-memory-game": {
+      "seoTitle": "Number Memory Test – Free Online Digit Span Memory Game",
+      "metaDescription": "Test your number memory: a number flashes on screen and you type it back. Each level adds a digit. Free, private, with a saved best level.",
+      "h1": "Number Memory Test",
+      "subheading": "A number flashes on the screen — remember it and type it back. Each level adds one more digit.",
+      "keywords": [
+        "number memory test",
+        "digit span test",
+        "memory test online",
+        "number memory game",
+        "how many digits can you remember",
+        "short term memory test",
+        "memory training",
+        "remember numbers game"
+      ],
+      "howTo": [
+        {
+          "name": "Press Start",
+          "text": "A number appears for a few seconds. Level 1 has three digits."
+        },
+        {
+          "name": "Remember it",
+          "text": "Try grouping digits into chunks, such as 3 + 3, to make them easier to remember."
+        },
+        {
+          "name": "Type it back",
+          "text": "When the number disappears, type what you saw and press Enter."
+        },
+        {
+          "name": "Level up",
+          "text": "Each correct answer adds a digit. Your best level is saved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How many digits can most people remember?",
+          "answer": "Around seven, plus or minus two, is the classic figure for short-term memory. Practice and chunking can help you remember more."
+        },
+        {
+          "question": "What is chunking?",
+          "answer": "Grouping digits into small pieces, like phone numbers, so that you remember fewer items."
+        },
+        {
+          "question": "Does the time to memorise change?",
+          "answer": "Yes. Higher levels give you a little longer to look, but not as much as each extra digit needs."
+        },
+        {
+          "question": "What happens if I get it wrong?",
+          "answer": "The game ends and shows the correct number. You can try again right away."
+        },
+        {
+          "question": "Is my best level saved?",
+          "answer": "Yes, in your browser on this device only."
+        },
+        {
+          "question": "Is this a medical memory test?",
+          "answer": "No. It is a fun exercise. If you are worried about your memory, speak to a doctor."
+        },
+        {
+          "question": "Can I use it on a phone?",
+          "answer": "Yes. A number keypad appears when you tap the answer box."
+        }
+      ]
+    },
+    "aim-trainer": {
+      "seoTitle": "Aim Trainer – Free Online Click Accuracy and Speed Test",
+      "metaDescription": "Click the targets as fast and accurately as you can for 30 seconds. See hits, misses, accuracy and time per target, and save your best. Free aim trainer for mouse and touch.",
+      "h1": "Aim Trainer",
+      "subheading": "Hit as many targets as you can in 30 seconds — practise mouse accuracy, speed and hand–eye coordination.",
+      "keywords": [
+        "aim trainer",
+        "aim test",
+        "click accuracy test",
+        "mouse accuracy game",
+        "aim practice online",
+        "target clicking game",
+        "hand eye coordination game",
+        "reaction aim trainer"
+      ],
+      "howTo": [
+        {
+          "name": "Press Start",
+          "text": "A target appears somewhere in the box."
+        },
+        {
+          "name": "Click it fast",
+          "text": "Click or tap the target. A new one appears straight away."
+        },
+        {
+          "name": "Stay accurate",
+          "text": "Clicks that miss the target count as misses and lower your accuracy."
+        },
+        {
+          "name": "See your result",
+          "text": "After 30 seconds you get hits, accuracy and seconds per target. Your best is saved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What does the aim trainer measure?",
+          "answer": "How many targets you hit in 30 seconds, your accuracy, and your average time per target."
+        },
+        {
+          "question": "How can I improve my aim?",
+          "answer": "Relax your grip, sit comfortably, use a mouse surface you like, and balance speed with accuracy."
+        },
+        {
+          "question": "Does mouse sensitivity matter?",
+          "answer": "Yes. A sensitivity that suits your arm and screen size makes a big difference. Try a few settings."
+        },
+        {
+          "question": "Is it good for focus?",
+          "answer": "It practises sustained attention and quick decisions. It is also a fun break."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, in your browser on this device only."
+        },
+        {
+          "question": "Does it work on a touch screen?",
+          "answer": "Yes. Tap the targets with your finger."
+        },
+        {
+          "question": "Is anything uploaded?",
+          "answer": "No. The game runs entirely in your browser."
+        }
+      ]
+    },
     "scientific-calculator": {
       "seoTitle": "Scientific Calculator Online – Free with Trig, Log, Powers & On-Screen Keyboard",
       "metaDescription": "A free online scientific calculator with sin, cos, tan, log, ln, powers, roots, factorial, memory, history and degrees or radians. Big on-screen keys and keyboard typing. Private.",
@@ -9271,6 +9655,12 @@
     "notifyBlocked": "Notifications are blocked in your browser settings",
     "notificationTitle": "EveryUtili reminders",
     "privacyNote": "Based on data saved only in this browser. Notifications appear while EveryUtili is open in a tab."
+  },
+  "toolGroups": {
+    "study": "Focus & study tools",
+    "relax": "Relax & stretch",
+    "train": "Focus-training games",
+    "fun": "Casual games"
   },
   "recentTools": {
     "heading": "Recently Used",

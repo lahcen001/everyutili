@@ -158,4 +158,10 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "programmer-calculator": () => import("@/components/tools/calc/ProgrammerCalculator"),
   "statistics-calculator": () => import("@/components/tools/calc/StatisticsCalculator"),
   "gcd-lcm-calculator": () => import("@/components/tools/calc/NumberTheoryCalculator"),
+  "schulte-table": () => import("@/components/tools/focus-study/SchulteTable"),
+  "stroop-test": () => import("@/components/tools/focus-study/StroopTest"),
+  "n-back-game": () => import("@/components/tools/focus-study/NBackGame"),
+  "simon-game": () => import("@/components/tools/focus-study/SimonGame"),
+  "number-memory-game": () => import("@/components/tools/focus-study/NumberMemory"),
+  "aim-trainer": () => import("@/components/tools/focus-study/AimTrainer"),
 };

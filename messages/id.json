@@ -76,8 +76,8 @@
       "navLabel": "Acak"
     },
     "focus-study": {
-      "label": "Fokus & Relaksasi",
-      "description": "Timer Pomodoro, suara fokus, kartu belajar, dan perencana untuk berkonsentrasi — plus istirahat peregangan, latihan pernapasan, dan mini game singkat untuk mengisi ulang tenaga di sela sesi.",
+      "label": "Fokus & Game",
+      "description": "Timer fokus, suara ambient, flashcard, dan perencana — plus istirahat peregangan, game latihan otak, dan game santai singkat untuk mengisi ulang energi di sela sesi belajar.",
       "navLabel": "Fokus"
     },
     "math-calculators": {
@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "schulte-table": {
+      "seoTitle": "Tabel Schulte – Game Latihan Perhatian & Penglihatan Perifer Gratis",
+      "metaDescription": "Latih perhatian dan kecepatan Anda dengan tabel Schulte: temukan angka 1 sampai 25 secara berurutan secepat mungkin. Empat ukuran grid, timer, dan waktu terbaik tersimpan. Gratis dan privat.",
+      "h1": "Tabel Schulte",
+      "subheading": "Temukan angka secara berurutan secepat mungkin sambil menjaga mata tetap di tengah — cara klasik untuk melatih fokus dan penglihatan perifer.",
+      "keywords": [
+        "tabel schulte",
+        "tabel schulte online",
+        "game latihan perhatian",
+        "latihan penglihatan perifer",
+        "latihan membaca cepat",
+        "game latihan fokus",
+        "tes konsentrasi",
+        "grid schulte"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih grid",
+          "text": "Pilih 3×3, 4×4, 5×5, atau 6×6. Tabel 5×5 adalah yang klasik."
+        },
+        {
+          "name": "Mulai dari 1",
+          "text": "Ketuk angka 1 untuk memulai timer, lalu temukan 2, 3, 4, dan seterusnya secara berurutan."
+        },
+        {
+          "name": "Jaga mata tetap di tengah",
+          "text": "Usahakan menatap bagian tengah tabel dan temukan angka berikutnya dengan penglihatan samping."
+        },
+        {
+          "name": "Kalahkan waktu Anda",
+          "text": "Saat mencapai angka terakhir, waktu Anda disimpan jika itu yang terbaik untuk ukuran tersebut."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu tabel Schulte?",
+          "answer": "Sebuah grid berisi angka dalam urutan acak. Anda menemukannya satu per satu secara berurutan. Tabel ini dirancang untuk melatih perhatian, pencarian visual, dan penglihatan perifer."
+        },
+        {
+          "question": "Apakah membantu membaca cepat?",
+          "answer": "Banyak orang memakainya sebagai pemanasan membaca cepat karena melatih menyerap informasi tanpa banyak menggerakkan mata. Hasilnya bervariasi dan ini bukan pengobatan medis."
+        },
+        {
+          "question": "Berapa waktu yang bagus?",
+          "answer": "Untuk tabel 5×5, di bawah 30 detik sudah bagus dan di bawah 20 detik sangat cepat. Bandingkan dengan waktu Anda sebelumnya."
+        },
+        {
+          "question": "Mengapa ketukan yang salah berkedip merah?",
+          "answer": "Anda mengetuk angka yang bukan angka berikutnya. Tidak ada yang hilang; cukup temukan angka yang benar."
+        },
+        {
+          "question": "Apakah waktu terbaik saya disimpan?",
+          "answer": "Ya, untuk setiap ukuran grid, hanya di browser pada perangkat ini."
+        },
+        {
+          "question": "Seberapa sering saya harus berlatih?",
+          "answer": "Beberapa ronde singkat per hari sudah cukup. Berhentilah saat Anda merasa lelah."
+        },
+        {
+          "question": "Apakah bisa dimainkan di ponsel?",
+          "answer": "Ya. Angkanya besar dan responsif terhadap sentuhan."
+        }
+      ]
+    },
+    "stroop-test": {
+      "seoTitle": "Tes Stroop – Game Fokus & Pengendalian Diri Warna-Kata Online Gratis",
+      "metaDescription": "Ikuti tes Stroop: sebuah kata ditampilkan dalam warna tertentu dan Anda mengetuk warna tintanya, bukan tulisan kata itu. Ronde 30 detik, skor dan akurasi, skor terbaik tersimpan. Gratis dan privat.",
+      "h1": "Tes Stroop",
+      "subheading": "Sebutkan warna tinta, bukan katanya — tes cepat untuk fokus, perhatian, dan pengendalian diri.",
+      "keywords": [
+        "tes stroop",
+        "tes efek stroop",
+        "tes warna kata",
+        "tes stroop online",
+        "tes fokus",
+        "tes perhatian",
+        "game latihan otak",
+        "game stroop"
+      ],
+      "howTo": [
+        {
+          "name": "Baca aturannya",
+          "text": "Sebuah kata warna muncul, dicetak dengan warna yang sering berbeda dari katanya."
+        },
+        {
+          "name": "Ketuk warna tinta",
+          "text": "Ketuk tombol warna yang Anda lihat, bukan kata yang Anda baca. Anda juga bisa menekan 1, 2, 3, atau 4."
+        },
+        {
+          "name": "Cepat dan teliti",
+          "text": "Anda punya 30 detik. Jawaban salah tidak mengurangi poin, tetapi menurunkan akurasi Anda."
+        },
+        {
+          "name": "Lihat skor Anda",
+          "text": "Lihat berapa jawaban yang benar dan akurasi Anda. Skor terbaik Anda tersimpan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu efek Stroop?",
+          "answer": "Yaitu keterlambatan dan kesalahan yang terjadi saat arti sebuah kata (seperti MERAH) bertentangan dengan warna cetaknya (seperti biru). Otak Anda harus mengabaikan kebiasaan membaca otomatis."
+        },
+        {
+          "question": "Apa yang diukur oleh tes ini?",
+          "answer": "Perhatian selektif dan kemampuan menekan respons otomatis. Ini adalah tes klasik dalam psikologi."
+        },
+        {
+          "question": "Apakah latihan bisa meningkatkan skor saya?",
+          "answer": "Ya, biasanya orang menjadi lebih cepat dan akurat dengan latihan. Itu tidak membuktikan perubahan jangka panjang pada cara berpikir sehari-hari."
+        },
+        {
+          "question": "Mengapa kebanyakan kata berwarna berbeda?",
+          "answer": "Memang disengaja. Sebagian besar soal menampilkan kata dan warna yang berbeda untuk menciptakan konflik; sebagian cocok agar tidak bisa ditebak."
+        },
+        {
+          "question": "Apakah skor terbaik saya disimpan?",
+          "answer": "Ya, hanya di browser pada perangkat ini."
+        },
+        {
+          "question": "Apakah ini tes medis?",
+          "answer": "Bukan. Ini hanya latihan yang menyenangkan, bukan diagnosis."
+        },
+        {
+          "question": "Apakah tes ini ramah buta warna?",
+          "answer": "Tombol diberi label nama warna. Jika Anda sulit membedakan warna, andalkan labelnya."
+        }
+      ]
+    },
+    "n-back-game": {
+      "seoTitle": "Game N-Back – Latihan Memori Kerja Gratis (1-back, 2-back, 3-back)",
+      "metaDescription": "Latih memori kerja Anda dengan tugas n-back: sebuah kotak menyala di grid 3×3 dan Anda menekan Cocok saat posisinya sama dengan n langkah sebelumnya. Tiga level, skor tersimpan. Gratis.",
+      "h1": "Game Memori Kerja N-Back",
+      "subheading": "Perhatikan kotak yang menyala dan tekan Cocok saat posisinya sama dengan n langkah lalu — latihan memori kerja yang terkenal.",
+      "keywords": [
+        "game n-back",
+        "tes n back",
+        "latihan memori kerja",
+        "dual n back",
+        "game latihan memori",
+        "latihan otak n-back",
+        "tes memori kerja",
+        "n-back online"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih level",
+          "text": "1-back adalah yang termudah. 2-back dan 3-back lebih sulit."
+        },
+        {
+          "name": "Perhatikan grid",
+          "text": "Satu kotak menyala sekali pada grid 3×3 setiap beberapa detik."
+        },
+        {
+          "name": "Tekan Cocok",
+          "text": "Tekan Cocok atau tombol Spasi saat kotak berada di posisi yang sama dengan n langkah sebelumnya. Jika tidak, jangan lakukan apa-apa."
+        },
+        {
+          "name": "Baca hasil Anda",
+          "text": "Setelah 24 ronde, Anda melihat tepat, terlewat, alarm palsu, dan akurasi Anda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa itu tugas n-back?",
+          "answer": "Tes di mana Anda membandingkan item saat ini dengan item yang ditampilkan n langkah sebelumnya. Tes ini membuat memori kerja Anda terus sibuk."
+        },
+        {
+          "question": "Apa arti 2-back?",
+          "answer": "Anda membandingkan kotak saat ini dengan kotak dua langkah sebelumnya. Ingat dua posisi terakhir dan perbarui setiap kali."
+        },
+        {
+          "question": "Apakah n-back membuat saya lebih pintar?",
+          "answer": "Hasil penelitian beragam. Latihan ini pasti meningkatkan performa n-back Anda; transfer ke tugas sehari-hari masih diperdebatkan. Anggap sebagai olahraga mental, bukan jaminan."
+        },
+        {
+          "question": "Apa itu alarm palsu?",
+          "answer": "Menekan Cocok padahal tidak ada kecocokan."
+        },
+        {
+          "question": "Apakah skor terbaik saya disimpan?",
+          "answer": "Ya, per level, hanya di browser pada perangkat ini."
+        },
+        {
+          "question": "Mengapa ini sulit?",
+          "answer": "Anda harus menyimpan dan memperbarui beberapa posisi sekaligus saat posisi baru terus datang. Memang dirancang menantang."
+        },
+        {
+          "question": "Bisakah saya memakai keyboard?",
+          "answer": "Ya. Tekan Spasi atau Enter untuk Cocok."
+        }
+      ]
+    },
+    "simon-game": {
+      "seoTitle": "Game Simon – Game Pola Memori Online Gratis dengan Suara",
+      "metaDescription": "Mainkan game memori Simon online: perhatikan pola warna dan suara, lalu ulangi. Urutan makin panjang di setiap ronde. Skor terbaik tersimpan, bisa dimainkan di ponsel. Gratis.",
+      "h1": "Game Memori Simon",
+      "subheading": "Perhatikan pola lampu dan suara, lalu ulangi — setiap ronde menambah satu langkah.",
+      "keywords": [
+        "game simon",
+        "main simon says online",
+        "game pola memori",
+        "game memori simon",
+        "main simon online",
+        "game memori urutan",
+        "game urutan warna",
+        "game simon dengan suara"
+      ],
+      "howTo": [
+        {
+          "name": "Tekan Mulai",
+          "text": "Game menyalakan satu pad dan memainkan suaranya."
+        },
+        {
+          "name": "Lihat dan dengarkan",
+          "text": "Ikuti urutan lampu dan suara."
+        },
+        {
+          "name": "Ulangi",
+          "text": "Ketuk pad dengan urutan yang sama. Jika benar, urutan bertambah satu."
+        },
+        {
+          "name": "Kejar skor tertinggi",
+          "text": "Satu kesalahan mengakhiri permainan. Level terbaik Anda tersimpan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana cara bermain Simon?",
+          "answer": "Perhatikan polanya, lalu ulangi dengan mengetuk pad dalam urutan yang sama. Setiap ronde menambah satu langkah."
+        },
+        {
+          "question": "Apakah saya perlu suara?",
+          "answer": "Suara membantu mengingat pola, tetapi lampu tetap berfungsi tanpa suara."
+        },
+        {
+          "question": "Berapa skor yang bagus?",
+          "answer": "Mencapai level 8 atau 9 sudah bagus untuk kebanyakan orang. Di atas 12 sangat bagus."
+        },
+        {
+          "question": "Apakah ini melatih memori?",
+          "answer": "Game ini melatih memori urutan jangka pendek dan perhatian. Ini latihan otak yang menyenangkan, bukan pengobatan."
+        },
+        {
+          "question": "Apakah skor terbaik saya disimpan?",
+          "answer": "Ya, hanya di browser pada perangkat ini."
+        },
+        {
+          "question": "Bisakah dimainkan di ponsel?",
+          "answer": "Ya. Pad berukuran besar sehingga mudah disentuh."
+        },
+        {
+          "question": "Mengapa pad makin cepat?",
+          "answer": "Pola diputar lebih cepat seiring bertambah panjang, agar tantangannya tetap terjaga."
+        }
+      ]
+    },
+    "number-memory-game": {
+      "seoTitle": "Tes Memori Angka – Game Memori Rentang Digit Online Gratis",
+      "metaDescription": "Uji memori angka Anda: sebuah angka muncul sekilas di layar dan Anda mengetikkannya kembali. Setiap level menambah satu digit. Gratis, privat, dengan level terbaik tersimpan.",
+      "h1": "Tes Memori Angka",
+      "subheading": "Sebuah angka muncul sekilas di layar — ingat lalu ketik kembali. Setiap level menambah satu digit.",
+      "keywords": [
+        "tes memori angka",
+        "tes rentang digit",
+        "tes memori online",
+        "game memori angka",
+        "berapa digit yang bisa kamu ingat",
+        "tes memori jangka pendek",
+        "latihan memori",
+        "game mengingat angka"
+      ],
+      "howTo": [
+        {
+          "name": "Tekan Mulai",
+          "text": "Sebuah angka muncul selama beberapa detik. Level 1 terdiri dari tiga digit."
+        },
+        {
+          "name": "Ingat angkanya",
+          "text": "Coba kelompokkan digit menjadi potongan, misalnya 3 + 3, agar lebih mudah diingat."
+        },
+        {
+          "name": "Ketik kembali",
+          "text": "Saat angka menghilang, ketik apa yang Anda lihat lalu tekan Enter."
+        },
+        {
+          "name": "Naik level",
+          "text": "Setiap jawaban benar menambah satu digit. Level terbaik Anda tersimpan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Berapa digit yang bisa diingat kebanyakan orang?",
+          "answer": "Sekitar tujuh, plus minus dua, adalah angka klasik untuk memori jangka pendek. Latihan dan pengelompokan dapat membantu Anda mengingat lebih banyak."
+        },
+        {
+          "question": "Apa itu pengelompokan (chunking)?",
+          "answer": "Mengelompokkan digit menjadi potongan kecil, seperti nomor telepon, sehingga Anda mengingat lebih sedikit item."
+        },
+        {
+          "question": "Apakah waktu untuk menghafal berubah?",
+          "answer": "Ya. Level yang lebih tinggi memberi waktu melihat sedikit lebih lama, tetapi tidak sebanyak yang dibutuhkan setiap digit tambahan."
+        },
+        {
+          "question": "Apa yang terjadi jika saya salah?",
+          "answer": "Game berakhir dan menampilkan angka yang benar. Anda bisa langsung mencoba lagi."
+        },
+        {
+          "question": "Apakah level terbaik saya disimpan?",
+          "answer": "Ya, hanya di browser pada perangkat ini."
+        },
+        {
+          "question": "Apakah ini tes memori medis?",
+          "answer": "Bukan. Ini hanya latihan yang menyenangkan. Jika Anda khawatir tentang daya ingat, bicarakan dengan dokter."
+        },
+        {
+          "question": "Bisakah dipakai di ponsel?",
+          "answer": "Ya. Keypad angka muncul saat Anda mengetuk kotak jawaban."
+        }
+      ]
+    },
+    "aim-trainer": {
+      "seoTitle": "Aim Trainer – Tes Akurasi & Kecepatan Klik Online Gratis",
+      "metaDescription": "Klik target secepat dan seakurat mungkin selama 30 detik. Lihat tepat, meleset, akurasi, dan waktu per target, lalu simpan yang terbaik. Aim trainer gratis untuk mouse dan layar sentuh.",
+      "h1": "Aim Trainer",
+      "subheading": "Kenai sebanyak mungkin target dalam 30 detik — latih akurasi mouse, kecepatan, dan koordinasi tangan-mata.",
+      "keywords": [
+        "aim trainer",
+        "tes aim",
+        "tes akurasi klik",
+        "game akurasi mouse",
+        "latihan aim online",
+        "game klik target",
+        "game koordinasi tangan mata",
+        "aim trainer reaksi"
+      ],
+      "howTo": [
+        {
+          "name": "Tekan Mulai",
+          "text": "Sebuah target muncul di suatu tempat dalam kotak."
+        },
+        {
+          "name": "Klik dengan cepat",
+          "text": "Klik atau ketuk target. Target baru langsung muncul."
+        },
+        {
+          "name": "Tetap akurat",
+          "text": "Klik yang meleset dari target dihitung sebagai meleset dan menurunkan akurasi Anda."
+        },
+        {
+          "name": "Lihat hasil Anda",
+          "text": "Setelah 30 detik Anda mendapat jumlah tepat, akurasi, dan detik per target. Hasil terbaik Anda tersimpan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa yang diukur oleh aim trainer?",
+          "answer": "Berapa banyak target yang Anda kenai dalam 30 detik, akurasi Anda, dan waktu rata-rata per target."
+        },
+        {
+          "question": "Bagaimana cara meningkatkan aim saya?",
+          "answer": "Rilekskan genggaman, duduk dengan nyaman, gunakan alas mouse yang Anda sukai, dan seimbangkan kecepatan dengan akurasi."
+        },
+        {
+          "question": "Apakah sensitivitas mouse berpengaruh?",
+          "answer": "Ya. Sensitivitas yang sesuai dengan lengan dan ukuran layar Anda membuat perbedaan besar. Coba beberapa pengaturan."
+        },
+        {
+          "question": "Apakah bagus untuk fokus?",
+          "answer": "Ini melatih perhatian berkelanjutan dan keputusan cepat. Juga menyenangkan sebagai selingan."
+        },
+        {
+          "question": "Apakah skor terbaik saya disimpan?",
+          "answer": "Ya, hanya di browser pada perangkat ini."
+        },
+        {
+          "question": "Apakah bisa dimainkan di layar sentuh?",
+          "answer": "Ya. Ketuk target dengan jari Anda."
+        },
+        {
+          "question": "Apakah ada yang diunggah?",
+          "answer": "Tidak. Game berjalan sepenuhnya di browser Anda."
+        }
+      ]
+    },
     "scientific-calculator": {
       "seoTitle": "Kalkulator Ilmiah Online – Gratis dengan Trigonometri, Log, Pangkat & Keyboard Layar",
       "metaDescription": "Kalkulator ilmiah online gratis dengan sin, cos, tan, log, ln, pangkat, akar, faktorial, memori, riwayat, serta mode derajat atau radian. Tombol layar besar dan bisa mengetik lewat keyboard. Privasi terjaga.",
@@ -9264,6 +9648,12 @@
     "notifyBlocked": "Notifikasi diblokir di pengaturan browser Anda",
     "notificationTitle": "Pengingat EveryUtili",
     "privacyNote": "Berdasarkan data yang hanya disimpan di browser ini. Notifikasi muncul selama EveryUtili terbuka di salah satu tab."
+  },
+  "toolGroups": {
+    "study": "Alat fokus & belajar",
+    "relax": "Rileks & peregangan",
+    "train": "Game latihan fokus",
+    "fun": "Game santai"
   },
   "recentTools": {
     "heading": "Baru Digunakan",

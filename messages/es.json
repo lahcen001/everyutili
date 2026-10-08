@@ -76,9 +76,9 @@
       "navLabel": "Azar"
     },
     "focus-study": {
-      "label": "Concentración y relax",
-      "description": "Temporizador Pomodoro, sonidos para concentrarse, tarjetas de estudio y planificadores para rendir más, además de pausas de estiramiento, respiración y minijuegos rápidos para recargar energía entre sesiones.",
-      "navLabel": "Concentración"
+      "label": "Enfoque y juegos",
+      "description": "Temporizadores de concentración, sonidos ambientales, tarjetas de estudio y planificadores, además de pausas para estirarte, juegos de entrenamiento cerebral y juegos casuales rápidos para recargar energías entre sesiones.",
+      "navLabel": "Enfoque"
     },
     "math-calculators": {
       "label": "Calculadoras de matemáticas y ciencias",
@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "schulte-table": {
+      "seoTitle": "Tabla de Schulte – Juego gratis para entrenar la atención y la visión periférica",
+      "metaDescription": "Entrena tu atención y tu velocidad con una tabla de Schulte: encuentra los números del 1 al 25 en orden lo más rápido que puedas. Cuatro tamaños de cuadrícula, cronómetro y mejores tiempos guardados. Gratis y privado.",
+      "h1": "Tabla de Schulte",
+      "subheading": "Encuentra los números en orden lo más rápido que puedas mientras mantienes la vista en el centro: una forma clásica de entrenar la concentración y la visión periférica.",
+      "keywords": [
+        "tabla de Schulte",
+        "tabla de Schulte online",
+        "juego de entrenamiento de la atención",
+        "entrenamiento de la visión periférica",
+        "ejercicio de lectura rápida",
+        "juego para entrenar la concentración",
+        "test de concentración",
+        "cuadrícula de Schulte"
+      ],
+      "howTo": [
+        {
+          "name": "Elige una cuadrícula",
+          "text": "Elige 3×3, 4×4, 5×5 o 6×6. La tabla de 5×5 es la clásica."
+        },
+        {
+          "name": "Empieza por el 1",
+          "text": "Toca el número 1 para iniciar el cronómetro y después busca el 2, el 3, el 4 y así en orden."
+        },
+        {
+          "name": "Mantén la vista en el centro",
+          "text": "Intenta mirar al centro de la tabla y localizar el siguiente número con la visión lateral."
+        },
+        {
+          "name": "Supera tu tiempo",
+          "text": "Al llegar al último número, tu tiempo se guarda si es tu mejor marca para ese tamaño."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es una tabla de Schulte?",
+          "answer": "Es una cuadrícula de números colocados en orden aleatorio. Los vas encontrando uno a uno en secuencia. Se diseñó para entrenar la atención, la búsqueda visual y la visión periférica."
+        },
+        {
+          "question": "¿Ayuda con la lectura rápida?",
+          "answer": "Mucha gente la usa como calentamiento para la lectura rápida porque practica captar información sin mover mucho los ojos. Los resultados varían y no es un tratamiento médico."
+        },
+        {
+          "question": "¿Cuál es un buen tiempo?",
+          "answer": "En la tabla de 5×5, menos de 30 segundos es bueno y menos de 20 es muy rápido. Compárate con tus propios tiempos anteriores."
+        },
+        {
+          "question": "¿Por qué parpadea en rojo cuando me equivoco?",
+          "answer": "Has tocado un número que no es el siguiente. No pierdes nada; simplemente busca el número correcto."
+        },
+        {
+          "question": "¿Se guardan mis mejores tiempos?",
+          "answer": "Sí, para cada tamaño de cuadrícula, en tu navegador y solo en este dispositivo."
+        },
+        {
+          "question": "¿Con qué frecuencia debo practicar?",
+          "answer": "Bastan unas pocas rondas cortas al día. Para cuando te sientas cansado."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. Los números son grandes y responden al tacto."
+        }
+      ]
+    },
+    "stroop-test": {
+      "seoTitle": "Test de Stroop – Juego gratis de color y palabra para la concentración y el autocontrol",
+      "metaDescription": "Haz el test de Stroop: aparece una palabra escrita en un color y debes tocar el color de la tinta, no lo que dice la palabra. Rondas de 30 segundos, puntuación y precisión, y mejor marca guardada. Gratis y privado.",
+      "h1": "Test de Stroop",
+      "subheading": "Nombra el color de la tinta, no la palabra: una prueba rápida de concentración, atención y autocontrol.",
+      "keywords": [
+        "test de Stroop",
+        "test del efecto Stroop",
+        "test de colores y palabras",
+        "test de Stroop online",
+        "test de concentración",
+        "test de atención",
+        "juego de entrenamiento cerebral",
+        "juego de Stroop"
+      ],
+      "howTo": [
+        {
+          "name": "Lee las reglas",
+          "text": "Aparece una palabra de color escrita con un color que a menudo es distinto al de la palabra."
+        },
+        {
+          "name": "Toca el color de la tinta",
+          "text": "Toca el botón del color que ves, no de la palabra que lees. También puedes pulsar 1, 2, 3 o 4."
+        },
+        {
+          "name": "Sé rápido y cuidadoso",
+          "text": "Tienes 30 segundos. Las respuestas incorrectas no restan puntos, pero reducen tu precisión."
+        },
+        {
+          "name": "Consulta tu puntuación",
+          "text": "Mira cuántas has acertado y tu precisión. Tu mejor puntuación se guarda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es el efecto Stroop?",
+          "answer": "Es el retraso y los errores que aparecen cuando el significado de una palabra (como ROJO) entra en conflicto con el color en que está escrita (como azul). Tu cerebro tiene que ignorar la lectura automática."
+        },
+        {
+          "question": "¿Qué mide el test?",
+          "answer": "La atención selectiva y la capacidad de inhibir una respuesta automática. Es una prueba clásica de la psicología."
+        },
+        {
+          "question": "¿Puede la práctica mejorar mi puntuación?",
+          "answer": "Sí, con la práctica la gente suele ser más rápida y precisa. Eso no demuestra un cambio duradero en el pensamiento cotidiano."
+        },
+        {
+          "question": "¿Por qué la mayoría de las palabras tienen otro color?",
+          "answer": "Es a propósito. En la mayoría de los intentos la palabra y el color son distintos para crear el conflicto; algunos coinciden para que no puedas predecirlo."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, en tu navegador y solo en este dispositivo."
+        },
+        {
+          "question": "¿Es una prueba médica?",
+          "answer": "No. Es un ejercicio divertido, no un diagnóstico."
+        },
+        {
+          "question": "¿El test es apto para personas daltónicas?",
+          "answer": "Los botones llevan el nombre de los colores. Si te cuesta distinguir los colores, guíate por las etiquetas."
+        }
+      ]
+    },
+    "n-back-game": {
+      "seoTitle": "Juego N-Back – Entrenamiento gratis de la memoria de trabajo (1-back, 2-back, 3-back)",
+      "metaDescription": "Entrena tu memoria de trabajo con la tarea n-back: se ilumina un cuadrado en una cuadrícula de 3×3 y pulsas Coincide cuando está en la misma posición que n pasos antes. Tres niveles y puntuaciones guardadas. Gratis.",
+      "h1": "Juego N-Back de memoria de trabajo",
+      "subheading": "Observa cómo se iluminan los cuadrados y pulsa Coincide cuando uno esté en la misma posición que hace n pasos: un conocido ejercicio de memoria de trabajo.",
+      "keywords": [
+        "juego n-back",
+        "test n-back",
+        "entrenamiento de la memoria de trabajo",
+        "dual n-back",
+        "juego de entrenamiento de memoria",
+        "entrenamiento cerebral n-back",
+        "test de memoria de trabajo",
+        "n-back online"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un nivel",
+          "text": "1-back es el más fácil. 2-back y 3-back son más difíciles."
+        },
+        {
+          "name": "Observa la cuadrícula",
+          "text": "Cada un par de segundos se ilumina un cuadrado en una cuadrícula de 3×3."
+        },
+        {
+          "name": "Pulsa Coincide",
+          "text": "Pulsa Coincide o la barra espaciadora cuando el cuadrado esté en la misma posición que n pasos antes. En caso contrario, no hagas nada."
+        },
+        {
+          "name": "Consulta tus resultados",
+          "text": "Tras 24 rondas verás los aciertos, los fallos, las falsas alarmas y tu precisión."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es la tarea n-back?",
+          "answer": "Es una prueba en la que comparas el elemento actual con el que apareció n pasos antes. Mantiene tu memoria de trabajo ocupada constantemente."
+        },
+        {
+          "question": "¿Qué significa 2-back?",
+          "answer": "Comparas el cuadrado actual con el de dos pasos antes. Recuerda las dos últimas posiciones y actualízalas cada vez."
+        },
+        {
+          "question": "¿El n-back me hace más inteligente?",
+          "answer": "Las investigaciones no son concluyentes. Mejora de forma fiable tu rendimiento en el n-back; que se transfiera a las tareas cotidianas es objeto de debate. Considéralo un entrenamiento mental, no una garantía."
+        },
+        {
+          "question": "¿Qué es una falsa alarma?",
+          "answer": "Pulsar Coincide cuando no había coincidencia."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, por nivel, en tu navegador y solo en este dispositivo."
+        },
+        {
+          "question": "¿Por qué es tan difícil?",
+          "answer": "Tienes que retener y actualizar varias posiciones a la vez mientras llegan otras nuevas. Está pensado para ser exigente."
+        },
+        {
+          "question": "¿Puedo usar el teclado?",
+          "answer": "Sí. Pulsa la barra espaciadora o Intro para Coincide."
+        }
+      ]
+    },
+    "simon-game": {
+      "seoTitle": "Juego de Simon – Juego de memoria gratis online con sonido",
+      "metaDescription": "Juega online al Simon, el juego de memoria: observa el patrón de colores y sonidos y luego repítelo. La secuencia se alarga en cada ronda. Mejor puntuación guardada y funciona en el móvil. Gratis.",
+      "h1": "Juego de memoria Simon",
+      "subheading": "Observa el patrón de luces y sonidos y luego repítelo: cada ronda añade un paso más.",
+      "keywords": [
+        "juego de Simon",
+        "Simon dice juego online",
+        "juego de memoria de patrones",
+        "juego de memoria Simon",
+        "jugar a Simon online",
+        "juego de memoria de secuencias",
+        "juego de secuencia de colores",
+        "juego de Simon con sonido"
+      ],
+      "howTo": [
+        {
+          "name": "Pulsa Empezar",
+          "text": "El juego ilumina un botón y reproduce su sonido."
+        },
+        {
+          "name": "Mira y escucha",
+          "text": "Sigue la secuencia de luces y sonidos."
+        },
+        {
+          "name": "Repítela",
+          "text": "Toca los botones en el mismo orden. Si aciertas, la secuencia crece en uno."
+        },
+        {
+          "name": "Busca una puntuación alta",
+          "text": "Un solo error termina la partida. Tu mejor nivel se guarda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cómo se juega a Simon?",
+          "answer": "Observa el patrón y repítelo tocando los botones en el mismo orden. Cada ronda añade un paso más."
+        },
+        {
+          "question": "¿Necesito sonido?",
+          "answer": "El sonido ayuda a recordar el patrón, pero las luces funcionan sin él."
+        },
+        {
+          "question": "¿Cuál es una buena puntuación?",
+          "answer": "Llegar al nivel 8 o 9 es bueno para la mayoría de la gente. Más de 12 es muy bueno."
+        },
+        {
+          "question": "¿Entrena la memoria?",
+          "answer": "Ejercita la memoria de secuencias a corto plazo y la atención. Es un ejercicio mental divertido, no un tratamiento."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, en tu navegador y solo en este dispositivo."
+        },
+        {
+          "question": "¿Puedo jugar en el móvil?",
+          "answer": "Sí. Los botones son grandes y fáciles de tocar."
+        },
+        {
+          "question": "¿Por qué los botones van más rápido?",
+          "answer": "El patrón se reproduce más deprisa a medida que se alarga, para mantener el reto."
+        }
+      ]
+    },
+    "number-memory-game": {
+      "seoTitle": "Test de memoria de números – Juego gratis online de amplitud de dígitos",
+      "metaDescription": "Pon a prueba tu memoria numérica: un número aparece un instante en pantalla y lo escribes de memoria. Cada nivel añade un dígito. Gratis, privado y con tu mejor nivel guardado.",
+      "h1": "Test de memoria de números",
+      "subheading": "Un número aparece un instante en la pantalla: recuérdalo y escríbelo. Cada nivel añade un dígito más.",
+      "keywords": [
+        "test de memoria de números",
+        "test de amplitud de dígitos",
+        "test de memoria online",
+        "juego de memoria numérica",
+        "cuántos dígitos puedes recordar",
+        "test de memoria a corto plazo",
+        "entrenamiento de memoria",
+        "juego para recordar números"
+      ],
+      "howTo": [
+        {
+          "name": "Pulsa Empezar",
+          "text": "Aparece un número durante unos segundos. El nivel 1 tiene tres dígitos."
+        },
+        {
+          "name": "Memorízalo",
+          "text": "Prueba a agrupar los dígitos en bloques, como 3 + 3, para recordarlos mejor."
+        },
+        {
+          "name": "Escríbelo",
+          "text": "Cuando el número desaparezca, escribe lo que viste y pulsa Intro."
+        },
+        {
+          "name": "Sube de nivel",
+          "text": "Cada respuesta correcta añade un dígito. Tu mejor nivel se guarda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cuántos dígitos puede recordar la mayoría de la gente?",
+          "answer": "Alrededor de siete, más o menos dos, es la cifra clásica de la memoria a corto plazo. La práctica y la agrupación en bloques pueden ayudarte a recordar más."
+        },
+        {
+          "question": "¿Qué es agrupar en bloques?",
+          "answer": "Dividir los dígitos en trozos pequeños, como los números de teléfono, para tener que recordar menos elementos."
+        },
+        {
+          "question": "¿Cambia el tiempo para memorizar?",
+          "answer": "Sí. Los niveles más altos te dan un poco más de tiempo para mirar, pero no tanto como necesita cada dígito adicional."
+        },
+        {
+          "question": "¿Qué pasa si me equivoco?",
+          "answer": "La partida termina y se muestra el número correcto. Puedes volver a intentarlo enseguida."
+        },
+        {
+          "question": "¿Se guarda mi mejor nivel?",
+          "answer": "Sí, en tu navegador y solo en este dispositivo."
+        },
+        {
+          "question": "¿Es una prueba médica de memoria?",
+          "answer": "No. Es un ejercicio divertido. Si te preocupa tu memoria, consulta con un médico."
+        },
+        {
+          "question": "¿Puedo usarlo en el móvil?",
+          "answer": "Sí. Al tocar el cuadro de respuesta aparece un teclado numérico."
+        }
+      ]
+    },
+    "aim-trainer": {
+      "seoTitle": "Entrenador de puntería – Test gratis online de precisión y velocidad de clic",
+      "metaDescription": "Haz clic en los objetivos con la mayor rapidez y precisión posibles durante 30 segundos. Consulta aciertos, fallos, precisión y tiempo por objetivo, y guarda tu mejor marca. Entrenador de puntería gratis para ratón y pantalla táctil.",
+      "h1": "Entrenador de puntería",
+      "subheading": "Acierta a cuantos objetivos puedas en 30 segundos: practica la precisión con el ratón, la velocidad y la coordinación ojo-mano.",
+      "keywords": [
+        "entrenador de puntería",
+        "test de puntería",
+        "test de precisión de clic",
+        "juego de precisión con el ratón",
+        "practicar puntería online",
+        "juego de hacer clic en objetivos",
+        "juego de coordinación ojo-mano",
+        "entrenador de puntería y reacción"
+      ],
+      "howTo": [
+        {
+          "name": "Pulsa Empezar",
+          "text": "Aparece un objetivo en algún lugar del recuadro."
+        },
+        {
+          "name": "Haz clic rápido",
+          "text": "Haz clic o toca el objetivo. Aparece uno nuevo al instante."
+        },
+        {
+          "name": "Mantén la precisión",
+          "text": "Los clics que fallan el objetivo cuentan como fallos y reducen tu precisión."
+        },
+        {
+          "name": "Consulta tu resultado",
+          "text": "A los 30 segundos verás los aciertos, la precisión y los segundos por objetivo. Tu mejor marca se guarda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué mide el entrenador de puntería?",
+          "answer": "Cuántos objetivos aciertas en 30 segundos, tu precisión y tu tiempo medio por objetivo."
+        },
+        {
+          "question": "¿Cómo puedo mejorar mi puntería?",
+          "answer": "Relaja la mano, siéntate con comodidad, usa una superficie de ratón que te guste y equilibra la velocidad con la precisión."
+        },
+        {
+          "question": "¿Importa la sensibilidad del ratón?",
+          "answer": "Sí. Una sensibilidad adecuada para tu brazo y el tamaño de tu pantalla marca una gran diferencia. Prueba varios ajustes."
+        },
+        {
+          "question": "¿Es bueno para la concentración?",
+          "answer": "Practica la atención sostenida y la toma rápida de decisiones. Además, es una pausa divertida."
+        },
+        {
+          "question": "¿Se guarda mi mejor puntuación?",
+          "answer": "Sí, en tu navegador y solo en este dispositivo."
+        },
+        {
+          "question": "¿Funciona en una pantalla táctil?",
+          "answer": "Sí. Toca los objetivos con el dedo."
+        },
+        {
+          "question": "¿Se sube algo a internet?",
+          "answer": "No. El juego se ejecuta íntegramente en tu navegador."
+        }
+      ]
+    },
     "scientific-calculator": {
       "seoTitle": "Calculadora científica online – Gratis con trigonometría, logaritmos, potencias y teclado en pantalla",
       "metaDescription": "Calculadora científica online gratis con sin, cos, tan, log, ln, potencias, raíces, factorial, memoria, historial y grados o radianes. Teclas grandes y escritura con el teclado. Privada.",
@@ -9264,6 +9648,12 @@
     "notifyBlocked": "Las notificaciones están bloqueadas en la configuración de tu navegador",
     "notificationTitle": "Recordatorios de EveryUtili",
     "privacyNote": "Basado en datos guardados solo en este navegador. Las notificaciones aparecen mientras EveryUtili está abierto en una pestaña."
+  },
+  "toolGroups": {
+    "study": "Herramientas de concentración y estudio",
+    "relax": "Relajación y estiramientos",
+    "train": "Juegos para entrenar la concentración",
+    "fun": "Juegos casuales"
   },
   "recentTools": {
     "heading": "Usados Recientemente",

@@ -50,10 +50,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   setRequestLocale(locale);
 
-  const [tCategories, tCommon] = await Promise.all([
+  const [tCategories, tCommon, tGroups] = await Promise.all([
     getTranslations({ locale, namespace: "categories" }),
     getTranslations({ locale, namespace: "common" }),
+    getTranslations({ locale, namespace: "toolGroups" }),
   ]);
+  const groupLabels =
+    category === "focus-study"
+      ? { study: tGroups("study"), relax: tGroups("relax"), train: tGroups("train"), fun: tGroups("fun") }
+      : undefined;
 
   const label = tCategories(`${category}.label`);
   const description = tCategories(`${category}.description`);
@@ -71,6 +76,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     subheading: localizedContents[i].subheading,
     keywords: localizedContents[i].keywords,
     featured: tool.featured,
+    group: tool.group,
   }));
 
   return (
@@ -83,6 +89,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <ToolGrid
           tools={tools}
           searchPlaceholder={tCommon("categorySearchPlaceholder", { category: label.toLowerCase() })}
+          groupLabels={groupLabels}
         />
       </div>
     </div>

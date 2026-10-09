@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "minesweeper": {
+      "seoTitle": "Démineur – Démineur gratuit en ligne avec commandes tactiles",
+      "metaDescription": "Jouez gratuitement au Démineur classique en ligne. Trois niveaux, premier clic sûr, mode drapeau pour mobile, chrono et meilleurs temps sauvegardés.",
+      "h1": "Démineur",
+      "subheading": "Dégagez la grille sans toucher une mine. Servez-vous des chiffres pour deviner où se cachent les mines.",
+      "keywords": [
+        "démineur",
+        "jouer au démineur en ligne",
+        "démineur gratuit",
+        "démineur mobile",
+        "démineur classique",
+        "démineur sans téléchargement",
+        "démineur avec drapeaux",
+        "démineur débutant"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir un niveau",
+          "text": "Choisissez Facile (9x9, 10 mines), Moyen (12x12, 24 mines) ou Difficile (16x16, 40 mines). Le chrono démarre à votre premier appui."
+        },
+        {
+          "name": "Ouvrir des cases",
+          "text": "Touchez ou cliquez sur une case pour l'ouvrir. Votre premier appui est toujours sûr. Les zones vides s'ouvrent automatiquement."
+        },
+        {
+          "name": "Lire les chiffres",
+          "text": "Un chiffre indique combien de mines touchent la case, diagonales comprises. Servez-vous-en pour déduire quelles cases voisines sont sûres."
+        },
+        {
+          "name": "Poser des drapeaux",
+          "text": "Faites un clic droit, un appui long, ou activez le mode Drapeau pour poser un drapeau. Ouvrez toutes les cases sûres pour gagner."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Le premier clic est-il toujours sûr ?",
+          "answer": "Oui. Les mines sont placées après votre premier appui, jamais sur cette case ni sur ses voisines : vous ouvrez donc toujours une petite zone pour commencer."
+        },
+        {
+          "question": "Comment poser des drapeaux sur mobile ?",
+          "answer": "Appuyez sur le bouton Mode drapeau puis touchez les cases à marquer, ou faites simplement un appui long sur une case. Appuyez de nouveau sur Mode drapeau pour revenir à l'ouverture des cases."
+        },
+        {
+          "question": "Que se passe-t-il si je touche un chiffre ?",
+          "answer": "Si vous avez posé autant de drapeaux autour d'un chiffre qu'il en indique, le toucher ouvre d'un coup toutes les autres cases voisines. C'est ce qu'on appelle un accord."
+        },
+        {
+          "question": "Quels sont les trois niveaux ?",
+          "answer": "Facile est en 9x9 avec 10 mines, Moyen en 12x12 avec 24 mines et Difficile en 16x16 avec 40 mines."
+        },
+        {
+          "question": "Mes meilleurs temps sont-ils sauvegardés ?",
+          "answer": "Oui. Le temps de victoire le plus rapide de chaque niveau est enregistré dans votre navigateur, sur cet appareil uniquement."
+        },
+        {
+          "question": "Peut-on jouer au clavier ?",
+          "answer": "Vous pouvez passer d'une case à l'autre avec Tab, ouvrir une case avec Entrée ou Espace, et poser un drapeau sur la case active avec F."
+        },
+        {
+          "question": "Est-ce payant ?",
+          "answer": "Non. C'est gratuit, sans compte, et tout se passe dans votre navigateur."
+        }
+      ]
+    },
+    "tic-tac-toe": {
+      "seoTitle": "Morpion – Jouer gratuitement contre l'ordinateur ou un ami",
+      "metaDescription": "Jouez gratuitement au Morpion. Battez l'ordinateur (Facile, Moyen, Impossible) ou jouez à 2 sur un appareil. Scores sauvegardés, compatible mobile.",
+      "h1": "Morpion",
+      "subheading": "Trois en ligne et vous gagnez. Affrontez l'ordinateur à trois niveaux de difficulté ou passez l'appareil à un ami.",
+      "keywords": [
+        "morpion",
+        "jouer au morpion en ligne",
+        "morpion contre l'ordinateur",
+        "morpion 2 joueurs",
+        "tic tac toe",
+        "morpion imbattable",
+        "morpion gratuit",
+        "morpion mobile"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir un mode",
+          "text": "Choisissez contre l'ordinateur ou 2 joueurs. Face à l'ordinateur, sélectionnez Facile, Moyen ou Impossible et décidez si vous jouez X ou O."
+        },
+        {
+          "name": "Jouer son coup",
+          "text": "Touchez une case vide, ou appuyez sur les touches 1 à 9 du clavier, pour placer votre symbole."
+        },
+        {
+          "name": "Aligner trois symboles",
+          "text": "Alignez trois de vos symboles en ligne, en colonne ou en diagonale. La ligne gagnante s'affiche en vert."
+        },
+        {
+          "name": "Rejouer une manche",
+          "text": "Appuyez sur Rejouer. Le premier joueur change à chaque manche, et votre tableau des scores est sauvegardé."
+        }
+      ],
+      "faq": [
+        {
+          "question": "En quoi les niveaux de difficulté diffèrent-ils ?",
+          "answer": "Facile joue des cases au hasard. Moyen gagne quand il le peut et bloque vos coups, sinon il préfère le centre et les coins. Impossible utilise l'algorithme minimax et ne se trompe jamais."
+        },
+        {
+          "question": "Peut-on battre le niveau Impossible ?",
+          "answer": "Non. Avec un jeu parfait, le morpion finit toujours par un match nul : face à Impossible, le mieux que vous puissiez faire est d'égaliser."
+        },
+        {
+          "question": "Peut-on jouer à deux sur le même appareil ?",
+          "answer": "Oui. Choisissez 2 joueurs et touchez les cases chacun votre tour. Les victoires de X et de O sont comptées séparément."
+        },
+        {
+          "question": "Qui commence ?",
+          "answer": "Le joueur qui commence change à chaque manche : vous et l'ordinateur (ou les deux joueurs) commencez à tour de rôle."
+        },
+        {
+          "question": "Mon tableau des scores est-il sauvegardé ?",
+          "answer": "Oui, dans votre navigateur, sur cet appareil uniquement. Victoires, nuls et défaites sont comptés séparément pour chaque difficulté. Vous pouvez les effacer avec Réinitialiser les scores."
+        },
+        {
+          "question": "Puis-je jouer avec les O ?",
+          "answer": "Oui. Choisissez Jouer O dans le mode contre l'ordinateur. Changer de mode, de difficulté ou de symbole lance une nouvelle partie."
+        },
+        {
+          "question": "Est-ce que ça marche sur mobile ?",
+          "answer": "Oui. La grille s'adapte à votre écran avec de grandes zones tactiles, et le plein écran l'agrandit. C'est gratuit et sans compte."
+        }
+      ]
+    },
+    "connect-four": {
+      "seoTitle": "Puissance 4 – Jeu gratuit en ligne contre l'ordinateur ou à 2",
+      "metaDescription": "Jouez gratuitement à Puissance 4. Battez l'ordinateur ou jouez à 2 sur un appareil. Annulation, scores sauvegardés et commandes tactiles.",
+      "h1": "Puissance 4",
+      "subheading": "Faites tomber des jetons dans la grille et alignez-en quatre avant votre adversaire.",
+      "keywords": [
+        "puissance 4",
+        "puissance 4 en ligne",
+        "puissance 4 contre l'ordinateur",
+        "puissance 4 2 joueurs",
+        "jouer à puissance 4 gratuit",
+        "jeu des quatre en ligne",
+        "puissance 4 sans téléchargement",
+        "puissance 4 mobile"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir un mode",
+          "text": "Choisissez contre l'ordinateur (Facile, Moyen ou Difficile) ou 2 joueurs pour partager un appareil. Vous jouez les rouges et commencez contre l'ordinateur."
+        },
+        {
+          "name": "Lâcher un jeton",
+          "text": "Touchez ou cliquez sur une colonne. Votre jeton tombe à la place libre la plus basse de cette colonne."
+        },
+        {
+          "name": "Aligner quatre jetons",
+          "text": "Alignez quatre jetons à l'horizontale, à la verticale ou en diagonale. Les quatre jetons gagnants sont mis en évidence."
+        },
+        {
+          "name": "Annuler ou recommencer",
+          "text": "Utilisez Annuler pour reprendre votre dernier coup, ou Nouvelle partie pour recommencer. Vos victoires restent dans le tableau des scores."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Comment jouer à Puissance 4 ?",
+          "answer": "À tour de rôle, faites tomber un jeton dans l'une des sept colonnes. Le premier à aligner quatre jetons, dans n'importe quelle direction, gagne."
+        },
+        {
+          "question": "Quelle est la force de l'ordinateur ?",
+          "answer": "Facile voit deux coups à l'avance et fait parfois des erreurs. Moyen en voit environ quatre. Difficile explore environ six coups et se trompe rarement."
+        },
+        {
+          "question": "Puis-je jouer contre un ami ?",
+          "answer": "Oui. Choisissez 2 joueurs et passez l'appareil de l'un à l'autre. Rouge et jaune jouent chacun leur tour."
+        },
+        {
+          "question": "Puis-je annuler un coup ?",
+          "answer": "Oui. Annuler reprend votre dernier coup. Contre l'ordinateur, cela supprime aussi sa réponse pour que ce soit de nouveau votre tour."
+        },
+        {
+          "question": "Mon tableau des scores est-il sauvegardé ?",
+          "answer": "Oui. Victoires, défaites et nuls sont enregistrés dans votre navigateur, sur cet appareil uniquement. Vous pouvez les réinitialiser à tout moment."
+        },
+        {
+          "question": "Est-ce que ça marche sur mobile ?",
+          "answer": "Oui. Touchez une colonne pour lâcher un jeton. La grille s'adapte à la largeur de votre écran, et le plein écran l'agrandit."
+        },
+        {
+          "question": "Est-ce payant ?",
+          "answer": "Non. C'est gratuit, sans compte ni téléchargement."
+        }
+      ]
+    },
+    "sliding-puzzle": {
+      "seoTitle": "Taquin – Jeu du taquin gratuit en ligne (3x3, 4x4, 5x5)",
+      "metaDescription": "Jouez gratuitement au taquin classique. Choisissez 3x3, 4x4 ou 5x5, touchez les tuiles ou utilisez les flèches, et battez vos meilleurs scores.",
+      "h1": "Taquin",
+      "subheading": "Faites glisser les tuiles numérotées dans l'ordre, de 1 jusqu'au dernier numéro, avec la case vide en bas à droite.",
+      "keywords": [
+        "taquin",
+        "jeu du taquin",
+        "taquin en ligne",
+        "puzzle de chiffres",
+        "taquin 15",
+        "taquin 3x3",
+        "taquin gratuit",
+        "jeu de réflexion sans téléchargement"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir une taille",
+          "text": "Choisissez 3x3, 4x4 ou 5x5. La grille est mélangée pour vous et peut toujours être résolue."
+        },
+        {
+          "name": "Faire glisser les tuiles",
+          "text": "Touchez une tuile voisine de la case vide pour la faire glisser. Touchez une tuile sur la même ligne ou colonne que la case vide pour déplacer toute la rangée d'un coup."
+        },
+        {
+          "name": "Utiliser le clavier",
+          "text": "Appuyez sur une flèche pour faire glisser dans cette direction la tuile située de l'autre côté de la case vide."
+        },
+        {
+          "name": "Remettre les chiffres dans l'ordre",
+          "text": "Placez les tuiles dans l'ordre à partir de 1, la case vide à la fin. Vos coups et votre temps sont comptés et votre meilleur résultat est sauvegardé."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Tous les puzzles sont-ils résolubles ?",
+          "answer": "Oui. La grille est mélangée en effectuant des coups légaux au hasard depuis la position résolue, elle est donc toujours résoluble."
+        },
+        {
+          "question": "Comment fonctionnent les flèches du clavier ?",
+          "answer": "Une flèche fait glisser une tuile dans cette direction vers la case vide. Par exemple, Gauche déplace d'un cran vers la gauche la tuile située à droite de la case vide."
+        },
+        {
+          "question": "Déplacer plusieurs tuiles compte-t-il pour un seul coup ?",
+          "answer": "Oui. Toucher une tuile sur la même ligne ou colonne que la case vide fait glisser toute la rangée et compte pour un seul coup."
+        },
+        {
+          "question": "Mes meilleurs résultats sont-ils sauvegardés ?",
+          "answer": "Oui. Le meilleur nombre de coups et le meilleur temps sont enregistrés séparément pour chaque taille de grille, dans votre navigateur, sur cet appareil uniquement."
+        },
+        {
+          "question": "Par quelle taille commencer ?",
+          "answer": "Le 3x3 est rapide et idéal pour apprendre. Le 4x4 est le célèbre taquin à 15 tuiles, et le 5x5 est un défi plus long."
+        },
+        {
+          "question": "Est-ce que ça marche sur mobile ?",
+          "answer": "Oui. Les tuiles sont de grandes zones tactiles et la grille s'adapte à la largeur de l'écran. Le plein écran l'agrandit."
+        },
+        {
+          "question": "Est-ce payant ?",
+          "answer": "Non. C'est gratuit, sans publicité dans le jeu et sans compte."
+        }
+      ]
+    },
+    "block-stacker": {
+      "seoTitle": "Block Stacker – Jeu gratuit de blocs qui tombent, commandes tactiles",
+      "metaDescription": "Jouez gratuitement à Block Stacker. Empilez des blocs, complétez des lignes, gardez des pièces et montez de niveau. Clavier, tactile, plein écran.",
+      "h1": "Block Stacker",
+      "subheading": "Faites pivoter et placez les blocs qui tombent pour compléter des lignes avant que la pile n'atteigne le haut. Une pause casse-tête classique.",
+      "keywords": [
+        "block stacker",
+        "jeu de blocs qui tombent",
+        "jeu de blocs en ligne",
+        "jouer à block stacker gratuit",
+        "jeu d'empilement de blocs",
+        "puzzle de lignes à compléter",
+        "blocs qui tombent mobile",
+        "jeu de blocs rétro"
+      ],
+      "howTo": [
+        {
+          "name": "Démarrer",
+          "text": "Appuyez sur Démarrer. Des pièces de quatre carrés tombent du haut de la grille de 10 sur 20. Un aperçu montre la pièce suivante."
+        },
+        {
+          "name": "Déplacer et pivoter",
+          "text": "Utilisez les flèches pour déplacer et Haut ou X pour pivoter (Z pivote en sens inverse). Sur mobile, utilisez les boutons gauche, droite, bas et rotation à l'écran."
+        },
+        {
+          "name": "Lâcher et garder",
+          "text": "Appuyez sur Espace ou sur le bouton de chute pour envoyer la pièce directement sur son contour fantôme. Appuyez sur C ou sur le bouton de réserve pour l'échanger avec la pièce gardée, une fois par pièce."
+        },
+        {
+          "name": "Compléter des lignes",
+          "text": "Remplissez tous les carrés d'une rangée pour l'effacer. Effacer 1, 2, 3 ou 4 lignes rapporte 100, 300, 500 ou 800 fois votre niveau. La partie s'arrête quand la pile bloque l'arrivée de nouvelles pièces."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quelles sont les commandes ?",
+          "answer": "Les flèches gauche et droite déplacent, Bas accélère la chute, Haut ou X pivote dans le sens horaire, Z en sens inverse, Espace lâche la pièce, C la garde et P met en pause. Les boutons tactiles font de même sur mobile."
+        },
+        {
+          "question": "Comment fonctionne le score ?",
+          "answer": "Effacer 1, 2, 3 ou 4 lignes d'un coup donne 100, 300, 500 ou 800 points multipliés par votre niveau actuel. Les chutes accélérées et instantanées ajoutent quelques points bonus."
+        },
+        {
+          "question": "Comment fonctionnent les niveaux ?",
+          "answer": "Vous montez d'un niveau toutes les 10 lignes effacées, et les pièces tombent plus vite à chaque niveau."
+        },
+        {
+          "question": "Qu'est-ce que la pièce fantôme ?",
+          "answer": "Un contour discret qui montre où la pièce actuelle atterrira si vous la lâchez directement."
+        },
+        {
+          "question": "À quoi sert la réserve ?",
+          "answer": "Vous pouvez mettre de côté la pièce actuelle et la rééchanger plus tard. Un seul échange est possible par pièce qui tombe."
+        },
+        {
+          "question": "L'ordre des pièces est-il équitable ?",
+          "answer": "Oui. Les pièces sortent d'un sac mélangé contenant les sept formes, vous n'attendez donc jamais longtemps une forme donnée."
+        },
+        {
+          "question": "Mon meilleur score est-il sauvegardé ?",
+          "answer": "Oui, dans votre navigateur, sur cet appareil uniquement. Rien n'est envoyé à un serveur."
+        }
+      ]
+    },
+    "sudoku": {
+      "seoTitle": "Sudoku – Sudoku gratuit en ligne avec notes, indices et meilleurs temps",
+      "metaDescription": "Jouez gratuitement au Sudoku en ligne. Trois niveaux à solution unique, notes au crayon, indices, annulation, chrono et partie sauvegardée.",
+      "h1": "Sudoku",
+      "subheading": "Remplissez la grille pour que chaque ligne, colonne et bloc 3x3 contienne les chiffres de 1 à 9. Chaque grille a une seule solution.",
+      "keywords": [
+        "sudoku",
+        "sudoku gratuit en ligne",
+        "sudoku avec notes",
+        "sudoku facile moyen difficile",
+        "sudoku sans téléchargement",
+        "sudoku avec indice",
+        "sudoku chrono",
+        "sudoku pour mobile"
+      ],
+      "howTo": [
+        {
+          "name": "Choisir un niveau",
+          "text": "Choisissez Facile, Moyen ou Difficile. Une nouvelle grille est générée instantanément dans votre navigateur."
+        },
+        {
+          "name": "Sélectionner une case et saisir un chiffre",
+          "text": "Touchez une case vide, puis un chiffre du pavé. Au clavier, utilisez les chiffres, les flèches et Retour arrière pour effacer."
+        },
+        {
+          "name": "Utiliser les notes",
+          "text": "Activez Notes pour inscrire de petits chiffres candidats. Placer un chiffre l'efface des notes de sa ligne, de sa colonne et de son bloc."
+        },
+        {
+          "name": "Vérifier, demander un indice et annuler",
+          "text": "Les chiffres identiques et la ligne, la colonne et le bloc sélectionnés sont surlignés, et les doublons passent en rouge. Utilisez Annuler pour revenir en arrière ou Indice pour révéler une case correcte."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Chaque grille n'a-t-elle vraiment qu'une seule solution ?",
+          "answer": "Oui. Chaque grille est créée à partir d'une grille complète valide, et les cases ne sont retirées que tant que la solution reste unique : vous n'avez jamais besoin de deviner."
+        },
+        {
+          "question": "Quelle est la différence entre les niveaux ?",
+          "answer": "Facile commence avec environ 38 chiffres donnés, Moyen environ 32 et Difficile environ 27. Moins d'indices demande en général plus de logique."
+        },
+        {
+          "question": "Que fait le bouton Indice ?",
+          "answer": "Il remplit une case correcte : la case sélectionnée si elle est vide ou fausse, sinon une case au hasard. Les indices sont comptés et affichés au-dessus de la grille."
+        },
+        {
+          "question": "Ma partie est-elle sauvegardée si j'actualise la page ?",
+          "answer": "Oui. La grille en cours, vos chiffres, vos notes et le chrono sont enregistrés dans votre navigateur, sur cet appareil : vous pouvez reprendre plus tard."
+        },
+        {
+          "question": "Comment sont enregistrés les meilleurs temps ?",
+          "answer": "Le temps de résolution le plus rapide de chaque niveau est sauvegardé sur cet appareil. Seules les parties terminées sans indice comptent pour un meilleur temps."
+        },
+        {
+          "question": "Comment fonctionnent les notes au crayon ?",
+          "answer": "Activez Notes et touchez des chiffres pour afficher ou masquer de petits candidats dans une case. Quand vous placez un chiffre, il disparaît des notes de sa ligne, de sa colonne et de son bloc."
+        },
+        {
+          "question": "Est-ce que ça marche sur mobile ?",
+          "answer": "Oui. La grille s'adapte à votre écran, le pavé numérique a de grandes zones tactiles et les grilles se génèrent en une fraction de seconde. Le plein écran offre une grille plus grande."
+        }
+      ]
+    },
     "schulte-table": {
       "seoTitle": "Table de Schulte – Jeu gratuit d'entraînement à l'attention et à la vision périphérique",
       "metaDescription": "Entraînez votre attention et votre rapidité avec une table de Schulte : trouvez les nombres de 1 à 25 dans l'ordre, le plus vite possible. Quatre tailles de grille, un chronomètre et vos meilleurs temps enregistrés. Gratuit et privé.",
@@ -9753,6 +10137,16 @@
     "storageUsed": "Stockage utilisé sur cet appareil : {used}",
     "clearCache": "Effacer les copies hors ligne",
     "cacheCleared": "Copies hors ligne effacées."
+  },
+  "games": {
+    "title": "Jeux",
+    "metaTitle": "Jeux en ligne gratuits – Jouez dans votre navigateur, sans téléchargement",
+    "metaDescription": "Jouez gratuitement en ligne : Sudoku, Block Stacker, Démineur, Snake, 2048, Puissance 4 et plus. Sans pub, sans inscription, hors ligne sur mobile.",
+    "subtitle": "{count} jeux gratuits qui tournent sur votre appareil. Sans inscription ni téléchargement, et disponibles hors ligne une fois installés.",
+    "search": "Rechercher un jeu",
+    "bannerTitle": "Jouer",
+    "bannerBody": "{count} jeux gratuits : casse-têtes, classiques et entraînement cérébral. Sans inscription, hors ligne.",
+    "playNow": "Tous les jeux"
   },
   "recentTools": {
     "heading": "Utilisés Récemment",

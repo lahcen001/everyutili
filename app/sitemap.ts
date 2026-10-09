@@ -68,11 +68,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Static pages (privacy policy and the Chrome extension page).
   const staticRoutes: MetadataRoute.Sitemap = routing.locales.flatMap((locale) =>
-    ["privacy", "extension"].map((page) => ({
+    ["privacy", "extension", "games"].map((page) => ({
       url: `${SITE_URL}/${locale}/${page}`,
       lastModified,
       changeFrequency: "monthly" as const,
-      priority: page === "extension" ? 0.6 : 0.3,
+      priority: page === "games" ? 0.7 : page === "extension" ? 0.6 : 0.3,
       alternates: { languages: languageAlternates((l) => `/${l}/${page}`) },
     }))
   );

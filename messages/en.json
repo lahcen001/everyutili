@@ -8733,6 +8733,390 @@
         }
       ]
     },
+    "minesweeper": {
+      "seoTitle": "Minesweeper – Free Online Minesweeper with Touch Controls",
+      "metaDescription": "Play classic Minesweeper free in your browser. Three levels, safe first click, flag mode for phones, timer and saved best times. No download or account.",
+      "h1": "Minesweeper",
+      "subheading": "Clear the board without hitting a mine. Use the numbers to work out where the mines are hiding.",
+      "keywords": [
+        "minesweeper",
+        "play minesweeper online",
+        "minesweeper free",
+        "minesweeper mobile",
+        "classic minesweeper",
+        "minesweeper no download",
+        "minesweeper with flags",
+        "minesweeper beginner"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a level",
+          "text": "Choose Easy (9x9, 10 mines), Medium (12x12, 24 mines) or Hard (16x16, 40 mines). The timer starts on your first tap."
+        },
+        {
+          "name": "Open squares",
+          "text": "Tap or click a square to open it. Your first tap is always safe. Empty areas open automatically."
+        },
+        {
+          "name": "Read the numbers",
+          "text": "A number shows how many mines touch that square, including diagonals. Use it to deduce which neighbours are safe."
+        },
+        {
+          "name": "Flag the mines",
+          "text": "Right-click, long-press, or switch on Flag mode to place a flag. Open every safe square to win."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the first click always safe?",
+          "answer": "Yes. Mines are placed after your first tap, and never on that square or the squares touching it, so you always open a small area to start."
+        },
+        {
+          "question": "How do I place flags on a phone?",
+          "answer": "Press the Flag mode button and tap squares to flag them, or simply long-press a square. Tap Flag mode again to go back to opening squares."
+        },
+        {
+          "question": "What does tapping a number do?",
+          "answer": "If you have placed as many flags around a number as it shows, tapping it opens all the other neighbouring squares at once. This is called a chord."
+        },
+        {
+          "question": "What are the three levels?",
+          "answer": "Easy is 9x9 with 10 mines, Medium is 12x12 with 24 mines and Hard is 16x16 with 40 mines."
+        },
+        {
+          "question": "Are my best times saved?",
+          "answer": "Yes. The fastest winning time for each level is saved in your browser on this device only."
+        },
+        {
+          "question": "Can I play with a keyboard?",
+          "answer": "You can move between squares with Tab, press Enter or Space to open one, and press F to flag the focused square."
+        },
+        {
+          "question": "Does it cost anything?",
+          "answer": "No. It is free, needs no account and runs entirely in your browser."
+        }
+      ]
+    },
+    "tic-tac-toe": {
+      "seoTitle": "Tic-Tac-Toe – Play Free Online vs Computer or a Friend",
+      "metaDescription": "Play Tic-Tac-Toe free in your browser. Beat an Easy, Medium or Impossible computer, or play 2 players on one device. Saved scoreboard, works on phones.",
+      "h1": "Tic-Tac-Toe",
+      "subheading": "Three in a row wins. Play the computer at three difficulty levels or pass the device to a friend.",
+      "keywords": [
+        "tic tac toe",
+        "play tic tac toe online",
+        "tic tac toe vs computer",
+        "tic tac toe 2 player",
+        "noughts and crosses",
+        "unbeatable tic tac toe",
+        "tic tac toe free",
+        "tic tac toe mobile"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a mode",
+          "text": "Choose vs Computer or 2 Players. Against the computer, pick Easy, Medium or Impossible and choose whether you play X or O."
+        },
+        {
+          "name": "Make your move",
+          "text": "Tap an empty square, or press the keys 1 to 9 on a keyboard, to place your mark."
+        },
+        {
+          "name": "Get three in a row",
+          "text": "Line up three of your marks across, down or diagonally. The winning line is highlighted in green."
+        },
+        {
+          "name": "Play another round",
+          "text": "Press Play again. The player who goes first switches each round, and your scoreboard is saved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do the difficulty levels differ?",
+          "answer": "Easy plays random squares. Medium takes a win when it can and blocks yours, otherwise prefers the centre and corners. Impossible uses the minimax algorithm and never makes a mistake."
+        },
+        {
+          "question": "Can I beat the Impossible level?",
+          "answer": "No. With perfect play tic-tac-toe is always a draw, so the best you can do against Impossible is tie."
+        },
+        {
+          "question": "Can two people play on one device?",
+          "answer": "Yes. Choose 2 Players and take turns tapping squares. X and O wins are counted separately."
+        },
+        {
+          "question": "Who goes first?",
+          "answer": "The starting player alternates every round, so you and the computer (or both players) take turns going first."
+        },
+        {
+          "question": "Is my scoreboard saved?",
+          "answer": "Yes, in your browser on this device only. Wins, draws and losses are kept separately for each difficulty. You can clear them with Reset scores."
+        },
+        {
+          "question": "Can I play as O?",
+          "answer": "Yes. Choose Play O in vs Computer mode. Changing mode, difficulty or mark starts a fresh game."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. The board scales to your screen with large tap targets, and fullscreen gives you a bigger board. It is free and needs no account."
+        }
+      ]
+    },
+    "connect-four": {
+      "seoTitle": "Connect Four – Free Online Game vs Computer or 2 Players",
+      "metaDescription": "Play Connect Four free in your browser. Beat the computer on Easy, Medium or Hard, or play 2 players on one device. Undo, saved scoreboard and touch controls.",
+      "h1": "Connect Four",
+      "subheading": "Drop discs into the grid and connect four in a row before your opponent does.",
+      "keywords": [
+        "connect four",
+        "connect 4 online",
+        "connect four vs computer",
+        "connect four 2 players",
+        "play connect 4 free",
+        "four in a row game",
+        "connect four no download",
+        "connect four mobile"
+      ],
+      "howTo": [
+        {
+          "name": "Choose a mode",
+          "text": "Pick vs Computer (Easy, Medium or Hard) or 2 players to share one device. You play red and go first against the computer."
+        },
+        {
+          "name": "Drop a disc",
+          "text": "Tap or click a column. Your disc falls to the lowest free spot in that column."
+        },
+        {
+          "name": "Connect four",
+          "text": "Line up four discs horizontally, vertically or diagonally. The winning four are highlighted."
+        },
+        {
+          "name": "Undo or restart",
+          "text": "Use Undo to take back your last move, or New game to start again. Your wins are kept in the scoreboard."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I play Connect Four?",
+          "answer": "Take turns dropping a disc into one of the seven columns. The first player to get four discs in a row, in any direction, wins."
+        },
+        {
+          "question": "How strong is the computer?",
+          "answer": "Easy looks two moves ahead and sometimes makes mistakes. Medium looks about four moves ahead. Hard searches around six moves ahead and rarely slips."
+        },
+        {
+          "question": "Can I play against a friend?",
+          "answer": "Yes. Choose 2 players and pass the device back and forth. Red and yellow take turns."
+        },
+        {
+          "question": "Can I undo a move?",
+          "answer": "Yes. Undo takes back your last move. Against the computer it also removes the computer's reply so it is your turn again."
+        },
+        {
+          "question": "Is my scoreboard saved?",
+          "answer": "Yes. Wins, losses and draws are stored in your browser on this device only. You can reset them any time."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. Tap any column to drop a disc. The board scales to your screen width, and fullscreen gives you a bigger board."
+        },
+        {
+          "question": "Does it cost anything?",
+          "answer": "No. It is free and needs no account or download."
+        }
+      ]
+    },
+    "sliding-puzzle": {
+      "seoTitle": "Sliding Puzzle – Free 15 Puzzle Online (3x3, 4x4, 5x5)",
+      "metaDescription": "Play the classic sliding tile puzzle free. Choose 3x3, 4x4 or 5x5, tap tiles or use arrow keys, and beat your saved best moves and time.",
+      "h1": "Sliding Puzzle",
+      "subheading": "Slide the numbered tiles into order, 1 up to the last number, with the gap in the bottom-right corner.",
+      "keywords": [
+        "sliding puzzle",
+        "15 puzzle",
+        "sliding tile puzzle",
+        "number puzzle game",
+        "8 puzzle online",
+        "24 puzzle",
+        "free sliding puzzle",
+        "puzzle game no download"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a size",
+          "text": "Choose 3x3, 4x4 or 5x5. The board is shuffled for you and can always be solved."
+        },
+        {
+          "name": "Slide tiles",
+          "text": "Tap a tile next to the gap to slide it in. Tap a tile in the same row or column as the gap to slide the whole line at once."
+        },
+        {
+          "name": "Use the keyboard",
+          "text": "Press an arrow key to slide the tile on the opposite side of the gap in that direction."
+        },
+        {
+          "name": "Order the numbers",
+          "text": "Put the tiles in order from 1 with the empty gap last. Your moves and time are counted and your best is saved."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can every puzzle be solved?",
+          "answer": "Yes. The board is shuffled by making random legal moves from the solved position, so it is always solvable."
+        },
+        {
+          "question": "How do the arrow keys work?",
+          "answer": "An arrow key slides a tile in that direction into the gap. For example, Left moves the tile to the right of the gap one step left."
+        },
+        {
+          "question": "Does sliding several tiles count as one move?",
+          "answer": "Yes. Tapping a tile in the same row or column as the gap slides the whole line and counts as one move."
+        },
+        {
+          "question": "Are my best results saved?",
+          "answer": "Yes. The best moves and best time are saved separately for each board size in your browser on this device only."
+        },
+        {
+          "question": "Which size should I start with?",
+          "answer": "3x3 is quick and good for learning. 4x4 is the classic 15 puzzle, and 5x5 is a longer challenge."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. The tiles are large tap targets and the board fits the screen width. Fullscreen gives a bigger board."
+        },
+        {
+          "question": "Does it cost anything?",
+          "answer": "No. It is free, has no ads in the game and needs no account."
+        }
+      ]
+    },
+    "block-stacker": {
+      "seoTitle": "Block Stacker – Free Falling Blocks Puzzle Game with Touch Controls",
+      "metaDescription": "Play Block Stacker free in your browser. Stack falling blocks, clear lines, hold pieces and level up. Keyboard and touch buttons, saved best score, fullscreen.",
+      "h1": "Block Stacker",
+      "subheading": "Rotate and place falling blocks to clear full lines before the stack reaches the top. A classic puzzle break.",
+      "keywords": [
+        "block stacker",
+        "falling blocks game",
+        "block puzzle game online",
+        "play block stacker free",
+        "stacking blocks game",
+        "line clearing puzzle",
+        "falling blocks mobile",
+        "retro block game"
+      ],
+      "howTo": [
+        {
+          "name": "Start",
+          "text": "Press Start. Pieces of four squares fall from the top of the 10 by 20 board. A preview shows the next piece."
+        },
+        {
+          "name": "Move and rotate",
+          "text": "Use the arrow keys to move and Up or X to rotate (Z rotates back). On a phone use the on-screen left, right, down and rotate buttons."
+        },
+        {
+          "name": "Drop and hold",
+          "text": "Press Space or the drop button to hard drop the piece onto its ghost outline. Press C or the hold button to swap it with the held piece, once per piece."
+        },
+        {
+          "name": "Clear lines",
+          "text": "Fill every square in a row to clear it. Clearing 1, 2, 3 or 4 lines scores 100, 300, 500 or 800 times your level. The game ends when the stack blocks new pieces."
+        }
+      ],
+      "faq": [
+        {
+          "question": "What are the controls?",
+          "answer": "Left and right arrows move, Down soft drops, Up or X rotates clockwise, Z rotates back, Space hard drops, C holds a piece and P pauses. Touch buttons do the same on phones."
+        },
+        {
+          "question": "How does scoring work?",
+          "answer": "Clearing 1, 2, 3 or 4 lines at once gives 100, 300, 500 or 800 points multiplied by your current level. Soft and hard drops add a few bonus points."
+        },
+        {
+          "question": "How does the level system work?",
+          "answer": "You go up a level every 10 lines cleared, and pieces fall faster with each level."
+        },
+        {
+          "question": "What is the ghost piece?",
+          "answer": "A faint outline showing where the current piece will land if you hard drop it."
+        },
+        {
+          "question": "What is the hold slot?",
+          "answer": "You can store the current piece and swap it back later. You can only hold once per falling piece."
+        },
+        {
+          "question": "Is the piece order fair?",
+          "answer": "Yes. Pieces come from a shuffled bag of all seven shapes, so you never wait long for any shape."
+        },
+        {
+          "question": "Is my best score saved?",
+          "answer": "Yes, in your browser on this device only. Nothing is sent to a server."
+        }
+      ]
+    },
+    "sudoku": {
+      "seoTitle": "Sudoku – Free Online Sudoku with Notes, Hints and Best Times",
+      "metaDescription": "Play free Sudoku in your browser. Easy, Medium and Hard puzzles with one unique solution, pencil notes, hints, undo, a timer and an autosaved game.",
+      "h1": "Sudoku",
+      "subheading": "Fill the grid so every row, column and 3x3 box holds the digits 1 to 9. Every puzzle has exactly one solution.",
+      "keywords": [
+        "sudoku",
+        "free online sudoku",
+        "sudoku with pencil notes",
+        "sudoku easy medium hard",
+        "sudoku no download",
+        "sudoku hint button",
+        "sudoku timer",
+        "sudoku for mobile"
+      ],
+      "howTo": [
+        {
+          "name": "Pick a level",
+          "text": "Choose Easy, Medium or Hard. A new puzzle is generated instantly in your browser."
+        },
+        {
+          "name": "Select a cell and enter a number",
+          "text": "Tap an empty cell, then a number from the pad. On a keyboard use the digits, the arrow keys and Backspace to erase."
+        },
+        {
+          "name": "Use notes",
+          "text": "Switch on Notes to pencil in small candidate numbers. Placing a number clears it from the notes of its row, column and box."
+        },
+        {
+          "name": "Check, hint and undo",
+          "text": "Matching numbers and the selected row, column and box are highlighted, and duplicates turn red. Use Undo to step back or Hint to reveal one correct cell."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does every puzzle have only one solution?",
+          "answer": "Yes. Each puzzle is generated from a full valid grid and cells are removed only while the solution stays unique, so you never need to guess."
+        },
+        {
+          "question": "What is the difference between the levels?",
+          "answer": "Easy starts with about 38 given numbers, Medium about 32 and Hard about 27. Fewer clues usually means harder logic."
+        },
+        {
+          "question": "What does the Hint button do?",
+          "answer": "It fills in one correct cell, the selected one if it is empty or wrong, otherwise a random one. Hints are counted and shown above the board."
+        },
+        {
+          "question": "Is my game saved if I refresh the page?",
+          "answer": "Yes. The current puzzle, your numbers, notes and timer are saved in your browser on this device, so you can continue later."
+        },
+        {
+          "question": "How are best times recorded?",
+          "answer": "The fastest solve for each level is saved on this device. Only games finished without hints count towards a best time."
+        },
+        {
+          "question": "How do pencil notes work?",
+          "answer": "Turn on Notes and tap numbers to toggle small candidates in a cell. When you place a number, it is removed from the notes of its row, column and box."
+        },
+        {
+          "question": "Does it work on a phone?",
+          "answer": "Yes. The board scales to your screen, the number pad has big tap targets and puzzles generate in a fraction of a second. Fullscreen gives you a larger board."
+        }
+      ]
+    },
     "schulte-table": {
       "seoTitle": "Schulte Table – Free Attention & Peripheral Vision Training Game",
       "metaDescription": "Train your attention and speed with a Schulte table: find the numbers 1 to 25 in order as fast as you can. Four grid sizes, a timer and saved best times. Free and private.",
@@ -9760,6 +10144,16 @@
     "storageUsed": "Storage used on this device: {used}",
     "clearCache": "Clear offline copies",
     "cacheCleared": "Offline copies cleared."
+  },
+  "games": {
+    "title": "Games",
+    "metaTitle": "Free Online Games – Play in Your Browser, No Download",
+    "metaDescription": "Play free games online: Sudoku, Block Stacker, Minesweeper, Snake, 2048, Connect Four and more. No ads, no sign-up, works offline on your phone.",
+    "subtitle": "{count} free games that run on your device. No sign-up, no downloads, and they work offline once installed.",
+    "search": "Search games",
+    "bannerTitle": "Play games",
+    "bannerBody": "{count} free games: puzzles, classics and brain training. No sign-up, works offline.",
+    "playNow": "All games"
   },
   "recentTools": {
     "heading": "Recently Used",

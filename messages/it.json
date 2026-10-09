@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "minesweeper": {
+      "seoTitle": "Campo minato – Gioco gratis online con comandi touch",
+      "metaDescription": "Gioca gratis al classico Campo minato nel browser. Tre livelli, primo tocco sicuro, modalità bandierine per telefono, timer e record salvati. Senza download.",
+      "h1": "Campo minato",
+      "subheading": "Libera il campo senza colpire una mina. Usa i numeri per capire dove si nascondono le mine.",
+      "keywords": [
+        "campo minato",
+        "campo minato online",
+        "campo minato gratis",
+        "campo minato su cellulare",
+        "campo minato classico",
+        "campo minato senza download",
+        "campo minato con bandierine",
+        "campo minato per principianti"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli un livello",
+          "text": "Scegli Facile (9x9, 10 mine), Medio (12x12, 24 mine) o Difficile (16x16, 40 mine). Il timer parte al primo tocco."
+        },
+        {
+          "name": "Apri le caselle",
+          "text": "Tocca o clicca una casella per aprirla. Il primo tocco è sempre sicuro. Le aree vuote si aprono da sole."
+        },
+        {
+          "name": "Leggi i numeri",
+          "text": "Un numero indica quante mine toccano quella casella, comprese le diagonali. Usalo per capire quali caselle vicine sono sicure."
+        },
+        {
+          "name": "Segna le mine",
+          "text": "Clicca con il tasto destro, tieni premuto o attiva la modalità Bandierina per metterne una. Apri tutte le caselle sicure per vincere."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Il primo clic è sempre sicuro?",
+          "answer": "Sì. Le mine vengono posizionate dopo il primo tocco, mai su quella casella né su quelle adiacenti, quindi si apre sempre una piccola area."
+        },
+        {
+          "question": "Come metto le bandierine su un telefono?",
+          "answer": "Premi il pulsante Bandierina e tocca le caselle, oppure tieni premuta una casella. Premi di nuovo il pulsante per tornare ad aprire le caselle."
+        },
+        {
+          "question": "Cosa succede toccando un numero?",
+          "answer": "Se hai messo tante bandierine intorno a un numero quante ne indica, toccandolo si aprono subito tutte le altre caselle adiacenti. Si chiama accordo."
+        },
+        {
+          "question": "Quali sono i tre livelli?",
+          "answer": "Facile è 9x9 con 10 mine, Medio è 12x12 con 24 mine e Difficile è 16x16 con 40 mine."
+        },
+        {
+          "question": "I miei record vengono salvati?",
+          "answer": "Sì. Il tempo di vittoria più veloce per ogni livello è salvato nel browser, solo su questo dispositivo."
+        },
+        {
+          "question": "Posso giocare con la tastiera?",
+          "answer": "Puoi spostarti tra le caselle con Tab, premere Invio o Spazio per aprirne una e F per mettere la bandierina su quella selezionata."
+        },
+        {
+          "question": "Ha dei costi?",
+          "answer": "No. È gratis, non richiede account e funziona interamente nel browser."
+        }
+      ]
+    },
+    "tic-tac-toe": {
+      "seoTitle": "Tris – Gioca gratis online contro il computer o un amico",
+      "metaDescription": "Gioca gratis a Tris nel browser. Sfida il computer Facile, Medio o Impossibile, oppure gioca in 2 sullo stesso dispositivo. Punteggi salvati, ottimo su telefono.",
+      "h1": "Tris",
+      "subheading": "Tre in fila vince. Gioca contro il computer a tre livelli di difficoltà o passa il dispositivo a un amico.",
+      "keywords": [
+        "tris",
+        "tris online",
+        "tris contro il computer",
+        "tris 2 giocatori",
+        "tris gratis",
+        "tris imbattibile",
+        "gioco del tris",
+        "tris su cellulare"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli la modalità",
+          "text": "Scegli Contro il computer o 2 giocatori. Contro il computer scegli Facile, Medio o Impossibile e se giocare con X o O."
+        },
+        {
+          "name": "Fai la tua mossa",
+          "text": "Tocca una casella vuota, oppure premi i tasti da 1 a 9 sulla tastiera, per mettere il tuo segno."
+        },
+        {
+          "name": "Fai tris",
+          "text": "Allinea tre dei tuoi segni in orizzontale, verticale o diagonale. La linea vincente è evidenziata in verde."
+        },
+        {
+          "name": "Gioca un altro round",
+          "text": "Premi Gioca ancora. Chi inizia cambia a ogni round e il tuo punteggio viene salvato."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Come cambiano i livelli di difficoltà?",
+          "answer": "Facile gioca a caso. Medio vince quando può e blocca le tue vittorie, altrimenti preferisce centro e angoli. Impossibile usa l'algoritmo minimax e non sbaglia mai."
+        },
+        {
+          "question": "Posso battere il livello Impossibile?",
+          "answer": "No. Con un gioco perfetto il tris finisce sempre in pareggio, quindi contro Impossibile il massimo è pareggiare."
+        },
+        {
+          "question": "Possono giocare due persone sullo stesso dispositivo?",
+          "answer": "Sì. Scegli 2 giocatori e toccate le caselle a turno. Le vittorie di X e O sono contate separatamente."
+        },
+        {
+          "question": "Chi inizia?",
+          "answer": "Il giocatore che inizia cambia a ogni round, quindi tu e il computer (o entrambi i giocatori) iniziate a turno."
+        },
+        {
+          "question": "Il punteggio viene salvato?",
+          "answer": "Sì, nel browser e solo su questo dispositivo. Vittorie, pareggi e sconfitte sono conservati separatamente per ogni difficoltà. Puoi azzerarli con Azzera punteggi."
+        },
+        {
+          "question": "Posso giocare con O?",
+          "answer": "Sì. Scegli Gioca con O nella modalità contro il computer. Cambiando modalità, difficoltà o segno si inizia una nuova partita."
+        },
+        {
+          "question": "Funziona su telefono?",
+          "answer": "Sì. La griglia si adatta allo schermo con grandi aree da toccare e lo schermo intero la ingrandisce. È gratis e senza account."
+        }
+      ]
+    },
+    "connect-four": {
+      "seoTitle": "Forza 4 – Gioco gratis online contro il computer o in 2",
+      "metaDescription": "Gioca gratis a Forza 4 nel browser. Batti il computer Facile, Medio o Difficile, o gioca in 2 sullo stesso dispositivo. Annulla, punteggi salvati e comandi touch.",
+      "h1": "Forza 4",
+      "subheading": "Lascia cadere i dischi nella griglia e allinea quattro dischi prima del tuo avversario.",
+      "keywords": [
+        "forza 4",
+        "forza 4 online",
+        "forza 4 contro il computer",
+        "forza 4 2 giocatori",
+        "forza 4 gratis",
+        "gioco quattro in fila",
+        "forza 4 senza download",
+        "forza 4 su cellulare"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli la modalità",
+          "text": "Scegli Contro il computer (Facile, Medio o Difficile) o 2 giocatori per condividere il dispositivo. Contro il computer giochi con il rosso e inizi tu."
+        },
+        {
+          "name": "Lascia cadere un disco",
+          "text": "Tocca o clicca una colonna. Il disco cade nella posizione libera più bassa di quella colonna."
+        },
+        {
+          "name": "Allinea quattro dischi",
+          "text": "Allinea quattro dischi in orizzontale, verticale o diagonale. I quattro vincenti sono evidenziati."
+        },
+        {
+          "name": "Annulla o ricomincia",
+          "text": "Usa Annulla per ritirare l'ultima mossa o Nuova partita per ricominciare. Le tue vittorie restano nel punteggio."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Come si gioca a Forza 4?",
+          "answer": "A turno si lascia cadere un disco in una delle sette colonne. Vince il primo che allinea quattro dischi in qualsiasi direzione."
+        },
+        {
+          "question": "Quanto è forte il computer?",
+          "answer": "Facile guarda due mosse avanti e a volte sbaglia. Medio guarda circa quattro mosse avanti. Difficile ne calcola circa sei e sbaglia raramente."
+        },
+        {
+          "question": "Posso giocare contro un amico?",
+          "answer": "Sì. Scegli 2 giocatori e passatevi il dispositivo. Rosso e giallo giocano a turno."
+        },
+        {
+          "question": "Posso annullare una mossa?",
+          "answer": "Sì. Annulla ritira la tua ultima mossa. Contro il computer rimuove anche la sua risposta, così tocca di nuovo a te."
+        },
+        {
+          "question": "Il punteggio viene salvato?",
+          "answer": "Sì. Vittorie, sconfitte e pareggi sono salvati nel browser, solo su questo dispositivo. Puoi azzerarli quando vuoi."
+        },
+        {
+          "question": "Funziona su telefono?",
+          "answer": "Sì. Tocca una colonna qualsiasi per lasciar cadere un disco. La griglia si adatta alla larghezza dello schermo e lo schermo intero la ingrandisce."
+        },
+        {
+          "question": "Ha dei costi?",
+          "answer": "No. È gratis e non richiede account né download."
+        }
+      ]
+    },
+    "sliding-puzzle": {
+      "seoTitle": "Gioco del 15 – Puzzle scorrevole gratis online (3x3, 4x4, 5x5)",
+      "metaDescription": "Gioca gratis al classico puzzle con tessere scorrevoli. Scegli 3x3, 4x4 o 5x5, tocca le tessere o usa le frecce e batti i tuoi record di mosse e tempo.",
+      "h1": "Puzzle scorrevole",
+      "subheading": "Fai scorrere le tessere numerate in ordine, da 1 all'ultimo numero, con lo spazio vuoto nell'angolo in basso a destra.",
+      "keywords": [
+        "gioco del 15",
+        "puzzle scorrevole",
+        "puzzle con tessere scorrevoli",
+        "puzzle di numeri",
+        "gioco del 15 online",
+        "puzzle 5x5",
+        "gioco del 15 gratis",
+        "puzzle senza download"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli la dimensione",
+          "text": "Scegli 3x3, 4x4 o 5x5. La griglia viene mescolata per te ed è sempre risolvibile."
+        },
+        {
+          "name": "Fai scorrere le tessere",
+          "text": "Tocca una tessera accanto allo spazio vuoto per spostarla. Tocca una tessera nella stessa riga o colonna dello spazio per spostare tutta la fila insieme."
+        },
+        {
+          "name": "Usa la tastiera",
+          "text": "Premi una freccia per spostare in quella direzione la tessera dal lato opposto dello spazio vuoto."
+        },
+        {
+          "name": "Metti i numeri in ordine",
+          "text": "Disponi le tessere in ordine da 1 con lo spazio vuoto per ultimo. Mosse e tempo vengono contati e il tuo record è salvato."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ogni puzzle si può risolvere?",
+          "answer": "Sì. La griglia viene mescolata con mosse casuali legali a partire dalla posizione risolta, quindi è sempre risolvibile."
+        },
+        {
+          "question": "Come funzionano le frecce?",
+          "answer": "Una freccia sposta una tessera in quella direzione nello spazio vuoto. Ad esempio, Sinistra sposta di un passo a sinistra la tessera a destra dello spazio."
+        },
+        {
+          "question": "Spostare più tessere conta come una mossa?",
+          "answer": "Sì. Toccare una tessera nella stessa riga o colonna dello spazio sposta tutta la fila e conta come una sola mossa."
+        },
+        {
+          "question": "I miei risultati migliori vengono salvati?",
+          "answer": "Sì. Il minor numero di mosse e il tempo migliore sono salvati separatamente per ogni dimensione, nel browser e solo su questo dispositivo."
+        },
+        {
+          "question": "Con quale dimensione conviene iniziare?",
+          "answer": "Il 3x3 è veloce e adatto per imparare. Il 4x4 è il classico gioco del 15 e il 5x5 è una sfida più lunga."
+        },
+        {
+          "question": "Funziona su telefono?",
+          "answer": "Sì. Le tessere sono ampie e facili da toccare e la griglia si adatta allo schermo. Lo schermo intero la ingrandisce."
+        },
+        {
+          "question": "Ha dei costi?",
+          "answer": "No. È gratis, senza pubblicità nel gioco e senza account."
+        }
+      ]
+    },
+    "block-stacker": {
+      "seoTitle": "Block Stacker – Gioco gratis di blocchi che cadono con comandi touch",
+      "metaDescription": "Gioca gratis a Block Stacker nel browser. Impila i blocchi, completa le righe, tieni i pezzi e sali di livello. Tastiera e pulsanti touch, record salvato, schermo intero.",
+      "h1": "Block Stacker",
+      "subheading": "Ruota e posiziona i blocchi che cadono per completare le righe prima che la pila arrivi in cima. Una pausa puzzle classica.",
+      "keywords": [
+        "block stacker",
+        "gioco di blocchi che cadono",
+        "puzzle di blocchi online",
+        "block stacker gratis",
+        "gioco di blocchi da impilare",
+        "puzzle a righe",
+        "blocchi che cadono su cellulare",
+        "gioco di blocchi retro"
+      ],
+      "howTo": [
+        {
+          "name": "Inizia",
+          "text": "Premi Start. Pezzi di quattro quadrati cadono dall'alto della griglia 10 per 20. Un'anteprima mostra il pezzo successivo."
+        },
+        {
+          "name": "Muovi e ruota",
+          "text": "Usa le frecce per muovere e Su o X per ruotare (Z ruota all'indietro). Sul telefono usa i pulsanti a schermo per sinistra, destra, giù e ruota."
+        },
+        {
+          "name": "Lascia cadere e tieni",
+          "text": "Premi Spazio o il pulsante di caduta per far cadere subito il pezzo sul suo contorno fantasma. Premi C o il pulsante Tieni per scambiarlo con il pezzo tenuto, una volta per pezzo."
+        },
+        {
+          "name": "Completa le righe",
+          "text": "Riempi ogni quadrato di una riga per eliminarla. Eliminare 1, 2, 3 o 4 righe vale 100, 300, 500 o 800 volte il tuo livello. La partita finisce quando la pila blocca i nuovi pezzi."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quali sono i comandi?",
+          "answer": "Frecce sinistra e destra per muovere, Giù per scendere piano, Su o X per ruotare in senso orario, Z per ruotare all'indietro, Spazio per far cadere subito, C per tenere un pezzo e P per mettere in pausa. I pulsanti touch fanno lo stesso sui telefoni."
+        },
+        {
+          "question": "Come funziona il punteggio?",
+          "answer": "Eliminare 1, 2, 3 o 4 righe insieme dà 100, 300, 500 o 800 punti moltiplicati per il livello attuale. Le cadute lente e rapide aggiungono qualche punto bonus."
+        },
+        {
+          "question": "Come funzionano i livelli?",
+          "answer": "Sali di un livello ogni 10 righe eliminate e i pezzi cadono più velocemente a ogni livello."
+        },
+        {
+          "question": "Cos'è il pezzo fantasma?",
+          "answer": "Un contorno tenue che mostra dove atterrerà il pezzo attuale se lo fai cadere subito."
+        },
+        {
+          "question": "Cos'è lo spazio Tieni?",
+          "answer": "Puoi mettere da parte il pezzo attuale e riprenderlo in seguito. Puoi tenerne uno solo per ogni pezzo che cade."
+        },
+        {
+          "question": "L'ordine dei pezzi è equo?",
+          "answer": "Sì. I pezzi escono da un sacchetto mescolato con tutte e sette le forme, quindi nessuna forma si fa attendere a lungo."
+        },
+        {
+          "question": "Il mio record viene salvato?",
+          "answer": "Sì, nel browser e solo su questo dispositivo. Non viene inviato nulla a un server."
+        }
+      ]
+    },
+    "sudoku": {
+      "seoTitle": "Sudoku – Gioco gratis online con note, suggerimenti e record",
+      "metaDescription": "Gioca gratis a Sudoku nel browser. Schemi Facile, Medio e Difficile con soluzione unica, note a matita, suggerimenti, annulla, timer e salvataggio automatico.",
+      "h1": "Sudoku",
+      "subheading": "Riempi la griglia in modo che ogni riga, colonna e riquadro 3x3 contenga le cifre da 1 a 9. Ogni schema ha una sola soluzione.",
+      "keywords": [
+        "sudoku",
+        "sudoku online gratis",
+        "sudoku con note",
+        "sudoku facile medio difficile",
+        "sudoku senza download",
+        "sudoku con suggerimenti",
+        "sudoku con timer",
+        "sudoku per cellulare"
+      ],
+      "howTo": [
+        {
+          "name": "Scegli un livello",
+          "text": "Scegli Facile, Medio o Difficile. Un nuovo schema viene generato subito nel browser."
+        },
+        {
+          "name": "Seleziona una cella e inserisci un numero",
+          "text": "Tocca una cella vuota, poi un numero dalla tastiera a schermo. Con la tastiera usa le cifre, le frecce e Backspace per cancellare."
+        },
+        {
+          "name": "Usa le note",
+          "text": "Attiva Note per scrivere a matita piccoli numeri candidati. Inserendo un numero, viene tolto dalle note della sua riga, colonna e riquadro."
+        },
+        {
+          "name": "Controlla, suggerimento e annulla",
+          "text": "I numeri uguali e la riga, colonna e riquadro selezionati sono evidenziati, e i duplicati diventano rossi. Usa Annulla per tornare indietro o Suggerimento per svelare una cella corretta."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ogni schema ha una sola soluzione?",
+          "answer": "Sì. Ogni schema parte da una griglia completa valida e le celle vengono rimosse solo finché la soluzione resta unica, quindi non serve mai tirare a indovinare."
+        },
+        {
+          "question": "Che differenza c'è tra i livelli?",
+          "answer": "Facile parte con circa 38 numeri dati, Medio circa 32 e Difficile circa 27. Meno indizi di solito significa un ragionamento più difficile."
+        },
+        {
+          "question": "Cosa fa il pulsante Suggerimento?",
+          "answer": "Riempie una cella corretta: quella selezionata se è vuota o sbagliata, altrimenti una a caso. I suggerimenti sono contati e mostrati sopra la griglia."
+        },
+        {
+          "question": "La partita viene salvata se aggiorno la pagina?",
+          "answer": "Sì. Lo schema attuale, i tuoi numeri, le note e il timer sono salvati nel browser su questo dispositivo, così puoi continuare più tardi."
+        },
+        {
+          "question": "Come vengono registrati i tempi migliori?",
+          "answer": "La risoluzione più veloce per ogni livello è salvata su questo dispositivo. Solo le partite finite senza suggerimenti contano per il record."
+        },
+        {
+          "question": "Come funzionano le note a matita?",
+          "answer": "Attiva Note e tocca i numeri per aggiungere o togliere piccoli candidati in una cella. Quando inserisci un numero, viene rimosso dalle note della sua riga, colonna e riquadro."
+        },
+        {
+          "question": "Funziona su telefono?",
+          "answer": "Sì. La griglia si adatta allo schermo, la tastiera numerica ha grandi aree da toccare e gli schemi si generano in una frazione di secondo. Lo schermo intero ingrandisce la griglia."
+        }
+      ]
+    },
     "schulte-table": {
       "seoTitle": "Tabella di Schulte – Gioco gratuito per allenare attenzione e visione periferica",
       "metaDescription": "Allena attenzione e velocità con la tabella di Schulte: trova i numeri da 1 a 25 in ordine il più in fretta possibile. Quattro dimensioni di griglia, timer e migliori tempi salvati. Gratis e privato.",
@@ -9753,6 +10137,16 @@
     "storageUsed": "Spazio usato su questo dispositivo: {used}",
     "clearCache": "Cancella copie offline",
     "cacheCleared": "Copie offline cancellate."
+  },
+  "games": {
+    "title": "Giochi",
+    "metaTitle": "Giochi online gratis – Gioca nel browser, senza download",
+    "metaDescription": "Gioca gratis online a Sudoku, Block Stacker, Campo minato, Snake, 2048, Forza 4 e altri. Senza pubblicità né registrazione, funziona offline sul telefono.",
+    "subtitle": "{count} giochi gratuiti che funzionano sul tuo dispositivo. Senza registrazione né download, e funzionano offline una volta installati.",
+    "search": "Cerca giochi",
+    "bannerTitle": "Gioca ora",
+    "bannerBody": "{count} giochi gratuiti: puzzle, classici e allenamento mentale. Senza registrazione, funziona offline.",
+    "playNow": "Tutti i giochi"
   },
   "recentTools": {
     "heading": "Usati di Recente",

@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "minesweeper": {
+      "seoTitle": "Minesweeper – Kostenlos online spielen mit Touch-Steuerung",
+      "metaDescription": "Spiele den Klassiker Minesweeper kostenlos im Browser. Drei Stufen, sicherer erster Klick, Flaggenmodus fürs Handy, Timer und gespeicherte Bestzeiten. Ohne Download.",
+      "h1": "Minesweeper",
+      "subheading": "Räume das Feld ab, ohne auf eine Mine zu treten. Finde mithilfe der Zahlen heraus, wo die Minen versteckt sind.",
+      "keywords": [
+        "minesweeper",
+        "minesweeper online spielen",
+        "minesweeper kostenlos",
+        "minesweeper handy",
+        "minesweeper klassisch",
+        "minesweeper ohne download",
+        "minesweeper mit flaggen",
+        "minesweeper für anfänger"
+      ],
+      "howTo": [
+        {
+          "name": "Stufe wählen",
+          "text": "Wähle Leicht (9x9, 10 Minen), Mittel (12x12, 24 Minen) oder Schwer (16x16, 40 Minen). Der Timer startet mit deinem ersten Tipp."
+        },
+        {
+          "name": "Felder aufdecken",
+          "text": "Tippe oder klicke auf ein Feld, um es aufzudecken. Dein erster Zug ist immer sicher. Leere Bereiche öffnen sich automatisch."
+        },
+        {
+          "name": "Zahlen lesen",
+          "text": "Eine Zahl zeigt, wie viele Minen an das Feld grenzen, auch diagonal. Schließe daraus, welche Nachbarfelder sicher sind."
+        },
+        {
+          "name": "Minen markieren",
+          "text": "Rechtsklick, langes Drücken oder der Flaggenmodus setzt eine Flagge. Decke alle sicheren Felder auf, um zu gewinnen."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ist der erste Klick immer sicher?",
+          "answer": "Ja. Die Minen werden erst nach deinem ersten Tipp verteilt, und zwar nie auf diesem Feld oder seinen Nachbarfeldern. So öffnest du am Anfang immer einen kleinen Bereich."
+        },
+        {
+          "question": "Wie setze ich Flaggen auf dem Handy?",
+          "answer": "Tippe auf die Schaltfläche Flaggenmodus und dann auf die Felder, oder drücke ein Feld einfach lange. Tippe erneut auf Flaggenmodus, um wieder Felder aufzudecken."
+        },
+        {
+          "question": "Was passiert, wenn ich auf eine Zahl tippe?",
+          "answer": "Hast du um eine Zahl genauso viele Flaggen gesetzt, wie sie anzeigt, deckt ein Tipp darauf alle übrigen Nachbarfelder auf einmal auf. Das nennt man Chord."
+        },
+        {
+          "question": "Welche drei Stufen gibt es?",
+          "answer": "Leicht hat 9x9 Felder mit 10 Minen, Mittel 12x12 mit 24 Minen und Schwer 16x16 mit 40 Minen."
+        },
+        {
+          "question": "Werden meine Bestzeiten gespeichert?",
+          "answer": "Ja. Die schnellste Gewinnzeit jeder Stufe wird nur in deinem Browser auf diesem Gerät gespeichert."
+        },
+        {
+          "question": "Kann ich mit der Tastatur spielen?",
+          "answer": "Mit der Tabulatortaste wechselst du zwischen den Feldern, mit Enter oder Leertaste deckst du eines auf, und mit F setzt du eine Flagge auf das markierte Feld."
+        },
+        {
+          "question": "Kostet das Spiel etwas?",
+          "answer": "Nein. Es ist kostenlos, braucht kein Konto und läuft komplett in deinem Browser."
+        }
+      ]
+    },
+    "tic-tac-toe": {
+      "seoTitle": "Tic-Tac-Toe – Kostenlos online gegen den Computer oder einen Freund",
+      "metaDescription": "Spiele Tic-Tac-Toe kostenlos im Browser. Besiege den Computer (Leicht, Mittel, Unmöglich) oder spiele zu zweit an einem Gerät. Punktestand gespeichert, handytauglich.",
+      "h1": "Tic-Tac-Toe",
+      "subheading": "Drei in einer Reihe gewinnen. Spiele in drei Schwierigkeitsstufen gegen den Computer oder gib das Gerät an einen Freund weiter.",
+      "keywords": [
+        "tic tac toe",
+        "tic tac toe online spielen",
+        "tic tac toe gegen computer",
+        "tic tac toe für zwei spieler",
+        "drei gewinnt",
+        "unschlagbares tic tac toe",
+        "tic tac toe kostenlos",
+        "tic tac toe handy"
+      ],
+      "howTo": [
+        {
+          "name": "Modus wählen",
+          "text": "Wähle Gegen Computer oder 2 Spieler. Gegen den Computer wählst du Leicht, Mittel oder Unmöglich und ob du X oder O spielst."
+        },
+        {
+          "name": "Zug machen",
+          "text": "Tippe auf ein leeres Feld oder drücke auf der Tastatur die Tasten 1 bis 9, um dein Zeichen zu setzen."
+        },
+        {
+          "name": "Drei in einer Reihe bilden",
+          "text": "Bringe drei deiner Zeichen waagerecht, senkrecht oder diagonal in eine Linie. Die Gewinnlinie wird grün hervorgehoben."
+        },
+        {
+          "name": "Neue Runde spielen",
+          "text": "Drücke Nochmal spielen. Wer anfängt, wechselt in jeder Runde, und dein Punktestand wird gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie unterscheiden sich die Schwierigkeitsstufen?",
+          "answer": "Leicht spielt zufällige Felder. Mittel gewinnt, wenn es kann, und blockt deinen Gewinnzug, sonst bevorzugt es Mitte und Ecken. Unmöglich nutzt den Minimax-Algorithmus und macht nie einen Fehler."
+        },
+        {
+          "question": "Kann ich die Stufe Unmöglich schlagen?",
+          "answer": "Nein. Bei perfektem Spiel endet Tic-Tac-Toe immer unentschieden, mehr als ein Remis ist gegen Unmöglich also nicht drin."
+        },
+        {
+          "question": "Können zwei Personen an einem Gerät spielen?",
+          "answer": "Ja. Wähle 2 Spieler und tippt abwechselnd auf die Felder. Siege von X und O werden getrennt gezählt."
+        },
+        {
+          "question": "Wer fängt an?",
+          "answer": "Der Startspieler wechselt jede Runde, sodass du und der Computer (oder beide Spieler) abwechselnd beginnen."
+        },
+        {
+          "question": "Wird mein Punktestand gespeichert?",
+          "answer": "Ja, nur in deinem Browser auf diesem Gerät. Siege, Unentschieden und Niederlagen werden für jede Stufe getrennt geführt. Mit Punkte zurücksetzen löschst du sie."
+        },
+        {
+          "question": "Kann ich als O spielen?",
+          "answer": "Ja. Wähle im Modus Gegen Computer die Option O spielen. Wenn du Modus, Stufe oder Zeichen änderst, beginnt ein neues Spiel."
+        },
+        {
+          "question": "Funktioniert es auf dem Handy?",
+          "answer": "Ja. Das Spielfeld passt sich deinem Bildschirm an und hat große Tippflächen, im Vollbild wird es noch größer. Es ist kostenlos und braucht kein Konto."
+        }
+      ]
+    },
+    "connect-four": {
+      "seoTitle": "Vier gewinnt – Kostenlos online gegen den Computer oder zu zweit",
+      "metaDescription": "Spiele Vier gewinnt kostenlos im Browser. Besiege den Computer (Leicht, Mittel, Schwer) oder spielt zu zweit an einem Gerät. Rückgängig, Punktestand, Touch-Steuerung.",
+      "h1": "Vier gewinnt",
+      "subheading": "Wirf Steine ins Spielfeld und bilde vier in einer Reihe, bevor dein Gegner es schafft.",
+      "keywords": [
+        "vier gewinnt",
+        "vier gewinnt online spielen",
+        "vier gewinnt gegen computer",
+        "vier gewinnt für zwei spieler",
+        "vier gewinnt kostenlos",
+        "4 gewinnt spiel",
+        "vier gewinnt ohne download",
+        "vier gewinnt handy"
+      ],
+      "howTo": [
+        {
+          "name": "Modus wählen",
+          "text": "Wähle Gegen Computer (Leicht, Mittel oder Schwer) oder 2 Spieler an einem Gerät. Gegen den Computer spielst du Rot und fängst an."
+        },
+        {
+          "name": "Stein einwerfen",
+          "text": "Tippe oder klicke auf eine Spalte. Dein Stein fällt auf den untersten freien Platz dieser Spalte."
+        },
+        {
+          "name": "Vier verbinden",
+          "text": "Bilde eine Reihe aus vier Steinen, waagerecht, senkrecht oder diagonal. Die vier Gewinnsteine werden hervorgehoben."
+        },
+        {
+          "name": "Rückgängig oder neu starten",
+          "text": "Mit Rückgängig nimmst du deinen letzten Zug zurück, mit Neues Spiel beginnst du von vorn. Deine Siege bleiben im Punktestand erhalten."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie spielt man Vier gewinnt?",
+          "answer": "Werft abwechselnd einen Stein in eine der sieben Spalten. Wer zuerst vier Steine in einer Reihe hat, in beliebiger Richtung, gewinnt."
+        },
+        {
+          "question": "Wie stark ist der Computer?",
+          "answer": "Leicht schaut zwei Züge voraus und macht manchmal Fehler. Mittel schaut etwa vier Züge voraus. Schwer berechnet rund sechs Züge im Voraus und patzt nur selten."
+        },
+        {
+          "question": "Kann ich gegen einen Freund spielen?",
+          "answer": "Ja. Wähle 2 Spieler und reicht das Gerät hin und her. Rot und Gelb sind abwechselnd dran."
+        },
+        {
+          "question": "Kann ich einen Zug rückgängig machen?",
+          "answer": "Ja. Rückgängig nimmt deinen letzten Zug zurück. Gegen den Computer entfällt auch seine Antwort, sodass du wieder am Zug bist."
+        },
+        {
+          "question": "Wird mein Punktestand gespeichert?",
+          "answer": "Ja. Siege, Niederlagen und Unentschieden werden nur in deinem Browser auf diesem Gerät gespeichert. Du kannst sie jederzeit zurücksetzen."
+        },
+        {
+          "question": "Funktioniert es auf dem Handy?",
+          "answer": "Ja. Tippe auf eine beliebige Spalte, um einen Stein einzuwerfen. Das Spielfeld passt sich der Bildschirmbreite an, im Vollbild wird es noch größer."
+        },
+        {
+          "question": "Kostet das Spiel etwas?",
+          "answer": "Nein. Es ist kostenlos und braucht weder Konto noch Download."
+        }
+      ]
+    },
+    "sliding-puzzle": {
+      "seoTitle": "Schiebepuzzle – Kostenloses 15-Puzzle online (3x3, 4x4, 5x5)",
+      "metaDescription": "Spiele das klassische Schiebepuzzle kostenlos. Wähle 3x3, 4x4 oder 5x5, tippe auf Kacheln oder nutze die Pfeiltasten und knacke deine gespeicherten Bestwerte.",
+      "h1": "Schiebepuzzle",
+      "subheading": "Schiebe die nummerierten Kacheln in die richtige Reihenfolge, von 1 bis zur letzten Zahl, mit der Lücke unten rechts.",
+      "keywords": [
+        "schiebepuzzle",
+        "15 puzzle",
+        "schiebespiel",
+        "zahlenpuzzle online",
+        "8 puzzle online",
+        "24 puzzle",
+        "schiebepuzzle kostenlos",
+        "puzzle spiel ohne download"
+      ],
+      "howTo": [
+        {
+          "name": "Größe wählen",
+          "text": "Wähle 3x3, 4x4 oder 5x5. Das Spielfeld wird für dich gemischt und ist immer lösbar."
+        },
+        {
+          "name": "Kacheln schieben",
+          "text": "Tippe auf eine Kachel neben der Lücke, um sie zu verschieben. Tippst du auf eine Kachel in derselben Zeile oder Spalte wie die Lücke, rutscht die ganze Reihe auf einmal."
+        },
+        {
+          "name": "Tastatur nutzen",
+          "text": "Mit einer Pfeiltaste schiebst du die Kachel auf der gegenüberliegenden Seite der Lücke in diese Richtung."
+        },
+        {
+          "name": "Zahlen ordnen",
+          "text": "Bringe die Kacheln ab 1 in die richtige Reihenfolge, die Lücke bleibt zuletzt. Züge und Zeit werden gezählt, dein Bestwert wird gespeichert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Ist jedes Puzzle lösbar?",
+          "answer": "Ja. Das Feld wird durch zufällige, erlaubte Züge ausgehend von der gelösten Position gemischt und ist deshalb immer lösbar."
+        },
+        {
+          "question": "Wie funktionieren die Pfeiltasten?",
+          "answer": "Eine Pfeiltaste schiebt eine Kachel in dieser Richtung in die Lücke. Mit Links rückt zum Beispiel die Kachel rechts von der Lücke einen Schritt nach links."
+        },
+        {
+          "question": "Zählt das Verschieben mehrerer Kacheln als ein Zug?",
+          "answer": "Ja. Tippst du auf eine Kachel in derselben Zeile oder Spalte wie die Lücke, rutscht die ganze Reihe und zählt als ein Zug."
+        },
+        {
+          "question": "Werden meine Bestwerte gespeichert?",
+          "answer": "Ja. Die wenigsten Züge und die beste Zeit werden für jede Feldgröße getrennt nur in deinem Browser auf diesem Gerät gespeichert."
+        },
+        {
+          "question": "Mit welcher Größe soll ich anfangen?",
+          "answer": "3x3 ist schnell und gut zum Lernen. 4x4 ist das klassische 15-Puzzle, und 5x5 ist eine längere Herausforderung."
+        },
+        {
+          "question": "Funktioniert es auf dem Handy?",
+          "answer": "Ja. Die Kacheln sind große Tippflächen und das Feld passt sich der Bildschirmbreite an. Im Vollbild wird es noch größer."
+        },
+        {
+          "question": "Kostet das Spiel etwas?",
+          "answer": "Nein. Es ist kostenlos, hat keine Werbung im Spiel und braucht kein Konto."
+        }
+      ]
+    },
+    "block-stacker": {
+      "seoTitle": "Block Stacker – Kostenloses Puzzlespiel mit fallenden Blöcken und Touch-Steuerung",
+      "metaDescription": "Spiele Block Stacker kostenlos im Browser. Stapele fallende Blöcke, räume Reihen ab, nutze Hold und steige auf. Tastatur und Touch-Tasten, Highscore, Vollbild.",
+      "h1": "Block Stacker",
+      "subheading": "Drehe und platziere fallende Blöcke, um volle Reihen zu räumen, bevor der Stapel oben ankommt. Eine klassische Rätselpause.",
+      "keywords": [
+        "block stacker",
+        "fallende blöcke spiel",
+        "block puzzle online spielen",
+        "block stacker kostenlos spielen",
+        "blöcke stapeln spiel",
+        "reihen räumen puzzle",
+        "fallende blöcke handy",
+        "retro blockspiel"
+      ],
+      "howTo": [
+        {
+          "name": "Starten",
+          "text": "Drücke Start. Teile aus vier Quadraten fallen von oben auf das Spielfeld (10 mal 20). Eine Vorschau zeigt das nächste Teil."
+        },
+        {
+          "name": "Bewegen und drehen",
+          "text": "Bewege mit den Pfeiltasten und drehe mit Hoch oder X (Z dreht zurück). Auf dem Handy nutzt du die Tasten für links, rechts, runter und drehen."
+        },
+        {
+          "name": "Fallenlassen und halten",
+          "text": "Mit Leertaste oder der Drop-Taste lässt du das Teil direkt auf seine Schattenposition fallen. Mit C oder der Hold-Taste tauschst du es gegen das gehaltene Teil, einmal pro Teil."
+        },
+        {
+          "name": "Reihen räumen",
+          "text": "Fülle jedes Feld einer Reihe, um sie zu räumen. 1, 2, 3 oder 4 Reihen bringen 100, 300, 500 oder 800 Punkte mal deine Stufe. Das Spiel endet, wenn der Stapel neue Teile blockiert."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Wie lautet die Steuerung?",
+          "answer": "Links und Rechts bewegen, Runter lässt schneller fallen, Hoch oder X dreht im Uhrzeigersinn, Z dreht zurück, die Leertaste lässt direkt fallen, C hält ein Teil und P pausiert. Auf dem Handy erledigen das die Touch-Tasten."
+        },
+        {
+          "question": "Wie funktioniert die Punktezählung?",
+          "answer": "Das gleichzeitige Räumen von 1, 2, 3 oder 4 Reihen bringt 100, 300, 500 oder 800 Punkte, multipliziert mit deiner aktuellen Stufe. Schnelles und direktes Fallenlassen geben einige Bonuspunkte."
+        },
+        {
+          "question": "Wie funktioniert das Stufensystem?",
+          "answer": "Alle 10 geräumten Reihen steigst du eine Stufe auf, und die Teile fallen mit jeder Stufe schneller."
+        },
+        {
+          "question": "Was ist das Schattenteil?",
+          "answer": "Ein blasser Umriss, der zeigt, wo das aktuelle Teil landet, wenn du es direkt fallen lässt."
+        },
+        {
+          "question": "Was ist der Hold-Platz?",
+          "answer": "Du kannst das aktuelle Teil ablegen und später wieder austauschen. Pro fallendem Teil geht das nur einmal."
+        },
+        {
+          "question": "Ist die Reihenfolge der Teile fair?",
+          "answer": "Ja. Die Teile stammen aus einem gemischten Beutel mit allen sieben Formen, sodass keine Form lange auf sich warten lässt."
+        },
+        {
+          "question": "Wird mein Highscore gespeichert?",
+          "answer": "Ja, nur in deinem Browser auf diesem Gerät. Es wird nichts an einen Server gesendet."
+        }
+      ]
+    },
+    "sudoku": {
+      "seoTitle": "Sudoku – Kostenlos online mit Notizen, Hinweisen und Bestzeiten",
+      "metaDescription": "Spiele Sudoku kostenlos im Browser. Leichte, mittlere und schwere Rätsel mit eindeutiger Lösung, Bleistiftnotizen, Hinweise, Rückgängig, Timer und automatisches Speichern.",
+      "h1": "Sudoku",
+      "subheading": "Fülle das Gitter so, dass jede Zeile, jede Spalte und jeder 3x3-Block die Ziffern 1 bis 9 enthält. Jedes Rätsel hat genau eine Lösung.",
+      "keywords": [
+        "sudoku",
+        "sudoku kostenlos online",
+        "sudoku mit notizen",
+        "sudoku leicht mittel schwer",
+        "sudoku ohne download",
+        "sudoku mit hinweis",
+        "sudoku mit timer",
+        "sudoku fürs handy"
+      ],
+      "howTo": [
+        {
+          "name": "Stufe wählen",
+          "text": "Wähle Leicht, Mittel oder Schwer. Ein neues Rätsel wird sofort in deinem Browser erzeugt."
+        },
+        {
+          "name": "Feld auswählen und Zahl eingeben",
+          "text": "Tippe auf ein leeres Feld und dann auf eine Zahl im Ziffernblock. Auf der Tastatur nutzt du die Ziffern, die Pfeiltasten und die Rücktaste zum Löschen."
+        },
+        {
+          "name": "Notizen nutzen",
+          "text": "Schalte Notizen ein, um kleine Kandidatenzahlen zu notieren. Setzt du eine Zahl, verschwindet sie aus den Notizen ihrer Zeile, Spalte und ihres Blocks."
+        },
+        {
+          "name": "Prüfen, Hinweis und Rückgängig",
+          "text": "Gleiche Zahlen sowie die gewählte Zeile, Spalte und der Block sind markiert, Doppelte werden rot. Mit Rückgängig gehst du zurück, mit Hinweis deckst du ein richtiges Feld auf."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Hat jedes Rätsel nur eine Lösung?",
+          "answer": "Ja. Jedes Rätsel entsteht aus einem vollständigen gültigen Gitter, und Zahlen werden nur entfernt, solange die Lösung eindeutig bleibt. Raten ist nie nötig."
+        },
+        {
+          "question": "Was unterscheidet die Stufen?",
+          "answer": "Leicht startet mit etwa 38 vorgegebenen Zahlen, Mittel mit etwa 32 und Schwer mit etwa 27. Weniger Vorgaben bedeuten meist anspruchsvollere Logik."
+        },
+        {
+          "question": "Was macht die Hinweis-Taste?",
+          "answer": "Sie füllt ein richtiges Feld aus: das gewählte, wenn es leer oder falsch ist, sonst ein zufälliges. Hinweise werden gezählt und über dem Spielfeld angezeigt."
+        },
+        {
+          "question": "Wird mein Spiel gespeichert, wenn ich die Seite neu lade?",
+          "answer": "Ja. Das aktuelle Rätsel, deine Zahlen, Notizen und der Timer werden in deinem Browser auf diesem Gerät gespeichert, sodass du später weiterspielen kannst."
+        },
+        {
+          "question": "Wie werden Bestzeiten erfasst?",
+          "answer": "Die schnellste Lösung jeder Stufe wird auf diesem Gerät gespeichert. Nur Spiele ohne Hinweise zählen für eine Bestzeit."
+        },
+        {
+          "question": "Wie funktionieren Bleistiftnotizen?",
+          "answer": "Schalte Notizen ein und tippe auf Zahlen, um kleine Kandidaten in einem Feld an- oder auszuschalten. Setzt du eine Zahl, wird sie aus den Notizen ihrer Zeile, Spalte und ihres Blocks entfernt."
+        },
+        {
+          "question": "Funktioniert es auf dem Handy?",
+          "answer": "Ja. Das Spielfeld passt sich deinem Bildschirm an, der Ziffernblock hat große Tippflächen und Rätsel entstehen in Sekundenbruchteilen. Im Vollbild wird das Feld größer."
+        }
+      ]
+    },
     "schulte-table": {
       "seoTitle": "Schulte-Tafel – Kostenloses Aufmerksamkeits- und Peripheres-Sehen-Training",
       "metaDescription": "Trainiere Aufmerksamkeit und Tempo mit der Schulte-Tafel: Finde die Zahlen von 1 bis 25 so schnell wie möglich der Reihe nach. Vier Rastergrößen, Timer und gespeicherte Bestzeiten. Kostenlos und privat.",
@@ -9753,6 +10137,16 @@
     "storageUsed": "Belegter Speicher auf diesem Gerät: {used}",
     "clearCache": "Offline-Kopien löschen",
     "cacheCleared": "Offline-Kopien gelöscht."
+  },
+  "games": {
+    "title": "Spiele",
+    "metaTitle": "Kostenlose Online-Spiele – im Browser spielen, ohne Download",
+    "metaDescription": "Kostenlose Online-Spiele: Sudoku, Block Stacker, Minesweeper, Snake, 2048, Vier gewinnt und mehr. Ohne Werbung, ohne Anmeldung, offline auf dem Handy nutzbar.",
+    "subtitle": "{count} kostenlose Spiele, die direkt auf deinem Gerät laufen. Ohne Anmeldung, ohne Download und nach der Installation auch offline spielbar.",
+    "search": "Spiele suchen",
+    "bannerTitle": "Spiele spielen",
+    "bannerBody": "{count} kostenlose Spiele: Rätsel, Klassiker und Gehirntraining. Ohne Anmeldung, auch offline spielbar.",
+    "playNow": "Alle Spiele"
   },
   "recentTools": {
     "heading": "Kürzlich Verwendet",

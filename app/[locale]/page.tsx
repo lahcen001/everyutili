@@ -12,6 +12,7 @@ import { buildLanguageAlternates } from "@/lib/alternates";
 import { Link } from "@/i18n/routing";
 import { HeroSection } from "@/components/home/HeroSection";
 import { RecentToolsShelf } from "@/components/home/RecentToolsShelf";
+import { GamesBanner } from "@/components/home/GamesBanner";
 import { CategoryToolSection } from "@/components/home/CategoryToolSection";
 import type { BentoTool } from "@/components/home/BentoToolGrid";
 
@@ -88,6 +89,8 @@ export default async function Home({ params }: HomeProps) {
         featureNoSignup={tSite("featureNoSignup")}
         searchPlaceholder={tSite("heroSearchPlaceholder", { count: TOOLS.length })}
       />
+
+      <GamesBanner locale={locale} />
 
       <RemindersShelf />
 

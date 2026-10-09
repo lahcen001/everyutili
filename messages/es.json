@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "minesweeper": {
+      "seoTitle": "Buscaminas – Buscaminas online gratis con controles táctiles",
+      "metaDescription": "Juega al Buscaminas clásico gratis en tu navegador. Tres niveles, primer toque seguro, modo bandera para móvil, cronómetro y mejores tiempos guardados.",
+      "h1": "Buscaminas",
+      "subheading": "Despeja el tablero sin pisar ninguna mina. Usa los números para deducir dónde se esconden.",
+      "keywords": [
+        "buscaminas",
+        "jugar buscaminas online",
+        "buscaminas gratis",
+        "buscaminas para móvil",
+        "buscaminas clásico",
+        "buscaminas sin descargar",
+        "buscaminas con banderas",
+        "buscaminas para principiantes"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un nivel",
+          "text": "Elige Fácil (9x9, 10 minas), Medio (12x12, 24 minas) o Difícil (16x16, 40 minas). El cronómetro arranca con tu primer toque."
+        },
+        {
+          "name": "Abre casillas",
+          "text": "Toca o haz clic en una casilla para abrirla. Tu primer toque siempre es seguro. Las zonas vacías se abren solas."
+        },
+        {
+          "name": "Lee los números",
+          "text": "Un número indica cuántas minas tocan esa casilla, diagonales incluidas. Úsalo para deducir qué vecinas son seguras."
+        },
+        {
+          "name": "Marca las minas",
+          "text": "Haz clic derecho, mantén pulsado o activa el modo Bandera para poner una bandera. Abre todas las casillas seguras para ganar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿El primer clic siempre es seguro?",
+          "answer": "Sí. Las minas se colocan después de tu primer toque, nunca en esa casilla ni en las contiguas, así que siempre empiezas abriendo una zona pequeña."
+        },
+        {
+          "question": "¿Cómo pongo banderas en el móvil?",
+          "answer": "Pulsa el botón del modo Bandera y toca las casillas para marcarlas, o simplemente mantén pulsada una casilla. Vuelve a pulsar el modo Bandera para seguir abriendo casillas."
+        },
+        {
+          "question": "¿Qué pasa al tocar un número?",
+          "answer": "Si has puesto tantas banderas alrededor de un número como indica, al tocarlo se abren de golpe todas las demás casillas vecinas. Es lo que se llama un acorde."
+        },
+        {
+          "question": "¿Cuáles son los tres niveles?",
+          "answer": "Fácil es 9x9 con 10 minas, Medio es 12x12 con 24 minas y Difícil es 16x16 con 40 minas."
+        },
+        {
+          "question": "¿Se guardan mis mejores tiempos?",
+          "answer": "Sí. El tiempo ganador más rápido de cada nivel se guarda en tu navegador, solo en este dispositivo."
+        },
+        {
+          "question": "¿Puedo jugar con el teclado?",
+          "answer": "Puedes moverte entre casillas con Tab, abrir una con Intro o Espacio y poner una bandera en la casilla enfocada con F."
+        },
+        {
+          "question": "¿Cuesta algo?",
+          "answer": "No. Es gratis, no necesita cuenta y funciona por completo en tu navegador."
+        }
+      ]
+    },
+    "tic-tac-toe": {
+      "seoTitle": "Tres en raya – Juega gratis online contra la máquina o un amigo",
+      "metaDescription": "Juega al tres en raya gratis en tu navegador. Vence a la máquina en nivel Fácil, Medio o Imposible, o juega de a dos en un dispositivo. Marcador guardado.",
+      "h1": "Tres en raya",
+      "subheading": "Gana quien alinee tres. Juega contra la máquina en tres niveles de dificultad o pasa el dispositivo a un amigo.",
+      "keywords": [
+        "tres en raya",
+        "jugar tres en raya online",
+        "tres en raya contra el ordenador",
+        "tres en raya 2 jugadores",
+        "gato juego",
+        "tres en raya imposible de ganar",
+        "tres en raya gratis",
+        "tres en raya para móvil"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un modo",
+          "text": "Elige contra la máquina o 2 jugadores. Contra la máquina, selecciona Fácil, Medio o Imposible y decide si juegas con X u O."
+        },
+        {
+          "name": "Haz tu jugada",
+          "text": "Toca una casilla vacía, o pulsa las teclas del 1 al 9 en el teclado, para colocar tu marca."
+        },
+        {
+          "name": "Alinea tres",
+          "text": "Alinea tres de tus marcas en horizontal, vertical o diagonal. La línea ganadora se resalta en verde."
+        },
+        {
+          "name": "Juega otra ronda",
+          "text": "Pulsa Jugar de nuevo. Quien empieza cambia en cada ronda y tu marcador se guarda."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿En qué se diferencian los niveles?",
+          "answer": "En Fácil juega casillas al azar. En Medio gana si puede y bloquea tu jugada; si no, prefiere el centro y las esquinas. En Imposible usa el algoritmo minimax y nunca se equivoca."
+        },
+        {
+          "question": "¿Puedo ganar al nivel Imposible?",
+          "answer": "No. Con juego perfecto el tres en raya siempre acaba en empate, así que lo máximo que puedes lograr contra Imposible es empatar."
+        },
+        {
+          "question": "¿Pueden jugar dos personas en el mismo dispositivo?",
+          "answer": "Sí. Elige 2 jugadores y túrnense para tocar casillas. Las victorias de X y de O se cuentan por separado."
+        },
+        {
+          "question": "¿Quién empieza?",
+          "answer": "El jugador inicial se alterna en cada ronda, así que tú y la máquina (o los dos jugadores) se turnan para empezar."
+        },
+        {
+          "question": "¿Se guarda mi marcador?",
+          "answer": "Sí, en tu navegador y solo en este dispositivo. Victorias, empates y derrotas se guardan por separado para cada dificultad. Puedes borrarlos con Reiniciar marcador."
+        },
+        {
+          "question": "¿Puedo jugar con O?",
+          "answer": "Sí. Elige Jugar con O en el modo contra la máquina. Cambiar el modo, la dificultad o la marca inicia una partida nueva."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. El tablero se adapta a tu pantalla con botones grandes y la pantalla completa te da un tablero mayor. Es gratis y no necesita cuenta."
+        }
+      ]
+    },
+    "connect-four": {
+      "seoTitle": "Conecta Cuatro – Juego online gratis contra la máquina o 2 jugadores",
+      "metaDescription": "Juega a Conecta Cuatro gratis en tu navegador. Vence a la máquina en Fácil, Medio o Difícil, o juega de a dos en un dispositivo. Deshacer, marcador y táctil.",
+      "h1": "Conecta Cuatro",
+      "subheading": "Deja caer fichas en la cuadrícula y alinea cuatro antes que tu rival.",
+      "keywords": [
+        "conecta cuatro",
+        "conecta 4 online",
+        "conecta 4 contra el ordenador",
+        "conecta cuatro 2 jugadores",
+        "jugar conecta 4 gratis",
+        "cuatro en línea juego",
+        "conecta 4 sin descargar",
+        "conecta 4 para móvil"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un modo",
+          "text": "Elige contra la máquina (Fácil, Medio o Difícil) o 2 jugadores para compartir un dispositivo. Juegas con las rojas y empiezas tú contra la máquina."
+        },
+        {
+          "name": "Suelta una ficha",
+          "text": "Toca o haz clic en una columna. Tu ficha cae al hueco libre más bajo de esa columna."
+        },
+        {
+          "name": "Conecta cuatro",
+          "text": "Alinea cuatro fichas en horizontal, vertical o diagonal. Las cuatro ganadoras se resaltan."
+        },
+        {
+          "name": "Deshacer o reiniciar",
+          "text": "Usa Deshacer para anular tu última jugada o Partida nueva para empezar de cero. Tus victorias se conservan en el marcador."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cómo se juega a Conecta Cuatro?",
+          "answer": "Por turnos, cada jugador deja caer una ficha en una de las siete columnas. Gana el primero que alinee cuatro fichas en cualquier dirección."
+        },
+        {
+          "question": "¿Qué tan fuerte es la máquina?",
+          "answer": "Fácil mira dos jugadas por delante y a veces se equivoca. Medio mira unas cuatro jugadas. Difícil analiza unas seis jugadas y rara vez falla."
+        },
+        {
+          "question": "¿Puedo jugar contra un amigo?",
+          "answer": "Sí. Elige 2 jugadores y pásense el dispositivo. Rojas y amarillas juegan por turnos."
+        },
+        {
+          "question": "¿Puedo deshacer una jugada?",
+          "answer": "Sí. Deshacer anula tu última jugada. Contra la máquina también quita su respuesta, así que vuelve a ser tu turno."
+        },
+        {
+          "question": "¿Se guarda mi marcador?",
+          "answer": "Sí. Victorias, derrotas y empates se guardan en tu navegador, solo en este dispositivo. Puedes reiniciarlos cuando quieras."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. Toca cualquier columna para soltar una ficha. El tablero se adapta al ancho de tu pantalla y la pantalla completa te da un tablero mayor."
+        },
+        {
+          "question": "¿Cuesta algo?",
+          "answer": "No. Es gratis y no necesita cuenta ni descarga."
+        }
+      ]
+    },
+    "sliding-puzzle": {
+      "seoTitle": "Puzle deslizante – Puzle del 15 gratis online (3x3, 4x4, 5x5)",
+      "metaDescription": "Juega gratis al clásico puzle de fichas deslizantes. Elige 3x3, 4x4 o 5x5, toca las fichas o usa las flechas y supera tus mejores movimientos y tiempo guardados.",
+      "h1": "Puzle deslizante",
+      "subheading": "Desliza las fichas numeradas hasta ordenarlas, del 1 al último número, con el hueco en la esquina inferior derecha.",
+      "keywords": [
+        "puzle deslizante",
+        "puzzle del 15",
+        "rompecabezas de fichas deslizantes",
+        "juego de puzzle de números",
+        "puzzle de 8 online",
+        "puzzle del 24",
+        "puzzle deslizante gratis",
+        "juego de puzzle sin descargar"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un tamaño",
+          "text": "Elige 3x3, 4x4 o 5x5. El tablero se mezcla solo y siempre se puede resolver."
+        },
+        {
+          "name": "Desliza las fichas",
+          "text": "Toca una ficha junto al hueco para deslizarla. Toca una ficha de la misma fila o columna que el hueco para mover toda la línea de una vez."
+        },
+        {
+          "name": "Usa el teclado",
+          "text": "Pulsa una flecha para deslizar en esa dirección la ficha que está al otro lado del hueco."
+        },
+        {
+          "name": "Ordena los números",
+          "text": "Coloca las fichas en orden desde el 1 con el hueco al final. Se cuentan tus movimientos y tu tiempo, y se guarda tu mejor marca."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Se puede resolver todos los puzles?",
+          "answer": "Sí. El tablero se mezcla haciendo movimientos legales al azar desde la posición resuelta, así que siempre tiene solución."
+        },
+        {
+          "question": "¿Cómo funcionan las flechas del teclado?",
+          "answer": "Una flecha desliza una ficha en esa dirección hacia el hueco. Por ejemplo, Izquierda mueve un paso a la izquierda la ficha que está a la derecha del hueco."
+        },
+        {
+          "question": "¿Mover varias fichas cuenta como un solo movimiento?",
+          "answer": "Sí. Tocar una ficha de la misma fila o columna que el hueco desliza toda la línea y cuenta como un movimiento."
+        },
+        {
+          "question": "¿Se guardan mis mejores resultados?",
+          "answer": "Sí. Los mejores movimientos y el mejor tiempo se guardan por separado para cada tamaño de tablero, en tu navegador y solo en este dispositivo."
+        },
+        {
+          "question": "¿Con qué tamaño debería empezar?",
+          "answer": "3x3 es rápido y bueno para aprender. 4x4 es el clásico puzle del 15 y 5x5 es un reto más largo."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. Las fichas son grandes y el tablero se ajusta al ancho de la pantalla. La pantalla completa da un tablero mayor."
+        },
+        {
+          "question": "¿Cuesta algo?",
+          "answer": "No. Es gratis, no tiene anuncios en el juego y no necesita cuenta."
+        }
+      ]
+    },
+    "block-stacker": {
+      "seoTitle": "Block Stacker – Juego de bloques que caen gratis con controles táctiles",
+      "metaDescription": "Juega gratis a Block Stacker en tu navegador. Apila bloques que caen, completa líneas, guarda piezas y sube de nivel. Teclado y botones táctiles, récord guardado.",
+      "h1": "Block Stacker",
+      "subheading": "Gira y coloca los bloques que caen para completar líneas antes de que la pila llegue arriba. Un clásico para despejar la mente.",
+      "keywords": [
+        "block stacker",
+        "juego de bloques que caen",
+        "juego de bloques online",
+        "jugar block stacker gratis",
+        "juego de apilar bloques",
+        "puzzle de completar líneas",
+        "bloques que caen para móvil",
+        "juego de bloques retro"
+      ],
+      "howTo": [
+        {
+          "name": "Empieza",
+          "text": "Pulsa Empezar. Piezas de cuatro cuadros caen desde arriba del tablero de 10 por 20. Una vista previa muestra la siguiente pieza."
+        },
+        {
+          "name": "Mueve y gira",
+          "text": "Usa las flechas para mover y Arriba o X para girar (Z gira en sentido contrario). En el móvil usa los botones de izquierda, derecha, abajo y girar."
+        },
+        {
+          "name": "Suelta y guarda",
+          "text": "Pulsa Espacio o el botón de caída para soltar la pieza de golpe sobre su silueta fantasma. Pulsa C o el botón de guardar para cambiarla por la pieza guardada, una vez por pieza."
+        },
+        {
+          "name": "Completa líneas",
+          "text": "Llena todos los cuadros de una fila para eliminarla. Eliminar 1, 2, 3 o 4 líneas da 100, 300, 500 u 800 puntos por tu nivel. La partida termina cuando la pila bloquea las piezas nuevas."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Cuáles son los controles?",
+          "answer": "Las flechas izquierda y derecha mueven, Abajo acelera la caída, Arriba o X giran a la derecha, Z gira a la izquierda, Espacio suelta de golpe, C guarda una pieza y P pausa. Los botones táctiles hacen lo mismo en el móvil."
+        },
+        {
+          "question": "¿Cómo funciona la puntuación?",
+          "answer": "Eliminar 1, 2, 3 o 4 líneas a la vez da 100, 300, 500 u 800 puntos multiplicados por tu nivel actual. Las caídas rápidas y de golpe suman algunos puntos extra."
+        },
+        {
+          "question": "¿Cómo funcionan los niveles?",
+          "answer": "Subes de nivel cada 10 líneas eliminadas y las piezas caen más rápido con cada nivel."
+        },
+        {
+          "question": "¿Qué es la pieza fantasma?",
+          "answer": "Una silueta tenue que muestra dónde aterrizará la pieza actual si la sueltas de golpe."
+        },
+        {
+          "question": "¿Qué es la reserva?",
+          "answer": "Puedes guardar la pieza actual y recuperarla más tarde. Solo se puede guardar una vez por cada pieza que cae."
+        },
+        {
+          "question": "¿El orden de las piezas es justo?",
+          "answer": "Sí. Las piezas salen de una bolsa mezclada con las siete formas, así que ninguna tarda mucho en aparecer."
+        },
+        {
+          "question": "¿Se guarda mi récord?",
+          "answer": "Sí, en tu navegador y solo en este dispositivo. No se envía nada a ningún servidor."
+        }
+      ]
+    },
+    "sudoku": {
+      "seoTitle": "Sudoku – Sudoku online gratis con notas, pistas y mejores tiempos",
+      "metaDescription": "Juega gratis al Sudoku en tu navegador. Puzles Fácil, Medio y Difícil con solución única, notas a lápiz, pistas, deshacer, cronómetro y guardado automático.",
+      "h1": "Sudoku",
+      "subheading": "Rellena la cuadrícula para que cada fila, columna y cuadro de 3x3 contenga los dígitos del 1 al 9. Cada puzle tiene una única solución.",
+      "keywords": [
+        "sudoku",
+        "sudoku online gratis",
+        "sudoku con notas a lápiz",
+        "sudoku fácil medio difícil",
+        "sudoku sin descargar",
+        "sudoku con pistas",
+        "sudoku con cronómetro",
+        "sudoku para móvil"
+      ],
+      "howTo": [
+        {
+          "name": "Elige un nivel",
+          "text": "Elige Fácil, Medio o Difícil. Se genera un puzle nuevo al instante en tu navegador."
+        },
+        {
+          "name": "Selecciona una casilla e introduce un número",
+          "text": "Toca una casilla vacía y luego un número del teclado en pantalla. Con teclado físico usa los dígitos, las flechas y Retroceso para borrar."
+        },
+        {
+          "name": "Usa las notas",
+          "text": "Activa Notas para anotar a lápiz pequeños números candidatos. Al colocar un número se borra de las notas de su fila, columna y cuadro."
+        },
+        {
+          "name": "Comprueba, pide pistas y deshaz",
+          "text": "Se resaltan los números iguales y la fila, columna y cuadro seleccionados, y los duplicados se ponen en rojo. Usa Deshacer para retroceder o Pista para revelar una casilla correcta."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Todos los puzles tienen una única solución?",
+          "answer": "Sí. Cada puzle se genera a partir de una cuadrícula completa válida y solo se quitan casillas mientras la solución siga siendo única, así que nunca hace falta adivinar."
+        },
+        {
+          "question": "¿Qué diferencia hay entre los niveles?",
+          "answer": "Fácil empieza con unos 38 números dados, Medio con unos 32 y Difícil con unos 27. Menos pistas suele significar una lógica más difícil."
+        },
+        {
+          "question": "¿Qué hace el botón Pista?",
+          "answer": "Rellena una casilla correcta: la seleccionada si está vacía o es errónea y, si no, una al azar. Las pistas se cuentan y se muestran sobre el tablero."
+        },
+        {
+          "question": "¿Se guarda mi partida si recargo la página?",
+          "answer": "Sí. El puzle actual, tus números, notas y cronómetro se guardan en tu navegador en este dispositivo, así que puedes continuar más tarde."
+        },
+        {
+          "question": "¿Cómo se registran los mejores tiempos?",
+          "answer": "La resolución más rápida de cada nivel se guarda en este dispositivo. Solo cuentan para el mejor tiempo las partidas terminadas sin pistas."
+        },
+        {
+          "question": "¿Cómo funcionan las notas a lápiz?",
+          "answer": "Activa Notas y toca números para marcar o quitar pequeños candidatos en una casilla. Al colocar un número, se elimina de las notas de su fila, columna y cuadro."
+        },
+        {
+          "question": "¿Funciona en el móvil?",
+          "answer": "Sí. El tablero se adapta a tu pantalla, el teclado numérico tiene botones grandes y los puzles se generan en una fracción de segundo. La pantalla completa te da un tablero mayor."
+        }
+      ]
+    },
     "schulte-table": {
       "seoTitle": "Tabla de Schulte – Juego gratis para entrenar la atención y la visión periférica",
       "metaDescription": "Entrena tu atención y tu velocidad con una tabla de Schulte: encuentra los números del 1 al 25 en orden lo más rápido que puedas. Cuatro tamaños de cuadrícula, cronómetro y mejores tiempos guardados. Gratis y privado.",
@@ -9753,6 +10137,16 @@
     "storageUsed": "Almacenamiento usado en este dispositivo: {used}",
     "clearCache": "Borrar copias sin conexión",
     "cacheCleared": "Copias sin conexión borradas."
+  },
+  "games": {
+    "title": "Juegos",
+    "metaTitle": "Juegos online gratis: juega en el navegador, sin descargas",
+    "metaDescription": "Juega gratis online: Sudoku, Block Stacker, Buscaminas, Snake, 2048, Conecta Cuatro y más. Sin anuncios, sin registro y con modo sin conexión en el móvil.",
+    "subtitle": "{count} juegos gratis que funcionan en tu dispositivo. Sin registro ni descargas, y funcionan sin conexión una vez instalados.",
+    "search": "Buscar juegos",
+    "bannerTitle": "Jugar",
+    "bannerBody": "{count} juegos gratis: puzles, clásicos y entrenamiento mental. Sin registro y sin conexión.",
+    "playNow": "Todos los juegos"
   },
   "recentTools": {
     "heading": "Usados Recientemente",

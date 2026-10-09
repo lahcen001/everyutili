@@ -148,6 +148,12 @@ export const TOOL_COMPONENT_LOADERS: Record<string, () => Promise<{ default: Com
   "math-speed-trainer": () => import("@/components/tools/focus-study/MathTrainer"),
   "typing-speed-test": () => import("@/components/tools/focus-study/TypingTest"),
   "snake-game": () => import("@/components/tools/focus-study/SnakeGame"),
+  "minesweeper": () => import("@/components/tools/focus-study/Minesweeper"),
+  "tic-tac-toe": () => import("@/components/tools/focus-study/TicTacToe"),
+  "connect-four": () => import("@/components/tools/focus-study/ConnectFour"),
+  "sliding-puzzle": () => import("@/components/tools/focus-study/SlidingPuzzle"),
+  "block-stacker": () => import("@/components/tools/focus-study/BlockStacker"),
+  "sudoku": () => import("@/components/tools/focus-study/Sudoku"),
 
   // Math & Science Calculators
   "scientific-calculator": () => import("@/components/tools/calc/ScientificCalculator"),

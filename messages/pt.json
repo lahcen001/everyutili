@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "minesweeper": {
+      "seoTitle": "Campo Minado – Jogo Grátis Online com Controles de Toque",
+      "metaDescription": "Jogue o clássico Campo Minado grátis no navegador. Três níveis, primeiro clique seguro, modo bandeira para celular, cronômetro e melhores tempos salvos.",
+      "h1": "Campo Minado",
+      "subheading": "Limpe o tabuleiro sem pisar em nenhuma mina. Use os números para descobrir onde as minas estão escondidas.",
+      "keywords": [
+        "campo minado",
+        "jogar campo minado online",
+        "campo minado grátis",
+        "campo minado para celular",
+        "campo minado clássico",
+        "campo minado sem baixar",
+        "campo minado com bandeiras",
+        "campo minado iniciante"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um nível",
+          "text": "Escolha Fácil (9x9, 10 minas), Médio (12x12, 24 minas) ou Difícil (16x16, 40 minas). O cronômetro começa no primeiro toque."
+        },
+        {
+          "name": "Abra os quadrados",
+          "text": "Toque ou clique em um quadrado para abri-lo. O primeiro toque é sempre seguro. Áreas vazias abrem automaticamente."
+        },
+        {
+          "name": "Leia os números",
+          "text": "Um número mostra quantas minas tocam aquele quadrado, inclusive nas diagonais. Use-o para deduzir quais vizinhos são seguros."
+        },
+        {
+          "name": "Marque as minas",
+          "text": "Clique com o botão direito, toque e segure, ou ative o modo Bandeira para colocar uma bandeira. Abra todos os quadrados seguros para vencer."
+        }
+      ],
+      "faq": [
+        {
+          "question": "O primeiro clique é sempre seguro?",
+          "answer": "Sim. As minas são colocadas depois do seu primeiro toque, nunca nesse quadrado nem nos vizinhos, então você sempre começa abrindo uma pequena área."
+        },
+        {
+          "question": "Como colocar bandeiras no celular?",
+          "answer": "Toque no botão do modo Bandeira e depois nos quadrados para marcá-los, ou simplesmente toque e segure um quadrado. Toque no modo Bandeira de novo para voltar a abrir quadrados."
+        },
+        {
+          "question": "O que acontece ao tocar em um número?",
+          "answer": "Se você já colocou ao redor do número a mesma quantidade de bandeiras que ele indica, tocar nele abre todos os outros quadrados vizinhos de uma vez. Isso se chama acorde."
+        },
+        {
+          "question": "Quais são os três níveis?",
+          "answer": "Fácil tem 9x9 com 10 minas, Médio tem 12x12 com 24 minas e Difícil tem 16x16 com 40 minas."
+        },
+        {
+          "question": "Meus melhores tempos ficam salvos?",
+          "answer": "Sim. O tempo de vitória mais rápido de cada nível é salvo no seu navegador, somente neste dispositivo."
+        },
+        {
+          "question": "Posso jogar com o teclado?",
+          "answer": "Sim. Use Tab para se mover entre os quadrados, Enter ou Espaço para abrir e F para marcar com bandeira o quadrado em foco."
+        },
+        {
+          "question": "Tem algum custo?",
+          "answer": "Não. É grátis, não exige conta e roda inteiramente no seu navegador."
+        }
+      ]
+    },
+    "tic-tac-toe": {
+      "seoTitle": "Jogo da Velha – Jogue Grátis Online contra o Computador ou um Amigo",
+      "metaDescription": "Jogue Jogo da Velha grátis no navegador. Enfrente o computador no Fácil, Médio ou Impossível, ou jogue em 2 no mesmo aparelho. Placar salvo, ótimo no celular.",
+      "h1": "Jogo da Velha",
+      "subheading": "Três em linha vence. Jogue contra o computador em três níveis de dificuldade ou passe o aparelho para um amigo.",
+      "keywords": [
+        "jogo da velha",
+        "jogar jogo da velha online",
+        "jogo da velha contra o computador",
+        "jogo da velha 2 jogadores",
+        "jogo da velha grátis",
+        "jogo da velha impossível",
+        "jogo da velha para celular",
+        "jogo da velha sem baixar"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um modo",
+          "text": "Escolha contra o Computador ou 2 Jogadores. Contra o computador, selecione Fácil, Médio ou Impossível e decida se joga com X ou O."
+        },
+        {
+          "name": "Faça sua jogada",
+          "text": "Toque em um quadrado vazio, ou use as teclas de 1 a 9 no teclado, para colocar sua marca."
+        },
+        {
+          "name": "Complete três em linha",
+          "text": "Alinhe três marcas suas na horizontal, vertical ou diagonal. A linha vencedora fica destacada em verde."
+        },
+        {
+          "name": "Jogue outra rodada",
+          "text": "Toque em Jogar de novo. Quem começa muda a cada rodada, e seu placar fica salvo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como os níveis de dificuldade são diferentes?",
+          "answer": "No Fácil, o computador joga em quadrados aleatórios. No Médio, ele vence quando pode e bloqueia você, senão prefere o centro e os cantos. No Impossível, usa o algoritmo minimax e nunca erra."
+        },
+        {
+          "question": "Dá para vencer o nível Impossível?",
+          "answer": "Não. Com jogo perfeito, o jogo da velha sempre termina em empate, então o melhor que você consegue contra o Impossível é empatar."
+        },
+        {
+          "question": "Duas pessoas podem jogar no mesmo aparelho?",
+          "answer": "Sim. Escolha 2 Jogadores e alternem os toques nos quadrados. As vitórias de X e de O são contadas separadamente."
+        },
+        {
+          "question": "Quem começa?",
+          "answer": "Quem começa alterna a cada rodada, então você e o computador (ou os dois jogadores) se revezam na primeira jogada."
+        },
+        {
+          "question": "Meu placar fica salvo?",
+          "answer": "Sim, no seu navegador, somente neste dispositivo. Vitórias, empates e derrotas são guardados separadamente para cada dificuldade. Você pode apagá-los em Zerar placar."
+        },
+        {
+          "question": "Posso jogar com O?",
+          "answer": "Sim. Escolha Jogar com O no modo contra o Computador. Trocar o modo, a dificuldade ou a marca inicia um novo jogo."
+        },
+        {
+          "question": "Funciona no celular?",
+          "answer": "Sim. O tabuleiro se ajusta à tela com áreas de toque grandes, e a tela cheia deixa o tabuleiro maior. É grátis e não exige conta."
+        }
+      ]
+    },
+    "connect-four": {
+      "seoTitle": "Ligue 4 – Jogo Grátis Online contra o Computador ou 2 Jogadores",
+      "metaDescription": "Jogue Ligue 4 grátis no navegador. Vença o computador no Fácil, Médio ou Difícil, ou jogue em 2 no mesmo aparelho. Desfazer, placar salvo e controles de toque.",
+      "h1": "Ligue 4",
+      "subheading": "Solte as fichas na grade e conecte quatro em linha antes do seu adversário.",
+      "keywords": [
+        "ligue 4",
+        "ligue 4 online",
+        "ligue 4 contra o computador",
+        "ligue 4 2 jogadores",
+        "jogar ligue 4 grátis",
+        "jogo de quatro em linha",
+        "ligue 4 sem baixar",
+        "ligue 4 para celular"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um modo",
+          "text": "Escolha contra o Computador (Fácil, Médio ou Difícil) ou 2 jogadores para dividir o mesmo aparelho. Você joga de vermelho e começa contra o computador."
+        },
+        {
+          "name": "Solte uma ficha",
+          "text": "Toque ou clique em uma coluna. Sua ficha cai até a posição livre mais baixa dessa coluna."
+        },
+        {
+          "name": "Conecte quatro",
+          "text": "Alinhe quatro fichas na horizontal, vertical ou diagonal. As quatro vencedoras ficam destacadas."
+        },
+        {
+          "name": "Desfaça ou recomece",
+          "text": "Use Desfazer para voltar sua última jogada, ou Novo jogo para recomeçar. Suas vitórias continuam no placar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Como se joga Ligue 4?",
+          "answer": "Os jogadores se revezam soltando uma ficha em uma das sete colunas. Quem formar primeiro quatro fichas em linha, em qualquer direção, vence."
+        },
+        {
+          "question": "Qual é a força do computador?",
+          "answer": "O Fácil enxerga duas jogadas à frente e às vezes erra. O Médio enxerga cerca de quatro jogadas. O Difícil analisa por volta de seis jogadas à frente e raramente vacila."
+        },
+        {
+          "question": "Posso jogar contra um amigo?",
+          "answer": "Sim. Escolha 2 jogadores e passe o aparelho de um para o outro. Vermelho e amarelo se alternam."
+        },
+        {
+          "question": "Posso desfazer uma jogada?",
+          "answer": "Sim. Desfazer anula sua última jogada. Contra o computador, também remove a resposta dele, e a vez volta para você."
+        },
+        {
+          "question": "Meu placar fica salvo?",
+          "answer": "Sim. Vitórias, derrotas e empates ficam guardados no seu navegador, somente neste dispositivo. Você pode zerá-los quando quiser."
+        },
+        {
+          "question": "Funciona no celular?",
+          "answer": "Sim. Toque em qualquer coluna para soltar uma ficha. O tabuleiro se ajusta à largura da tela, e a tela cheia deixa o tabuleiro maior."
+        },
+        {
+          "question": "Tem algum custo?",
+          "answer": "Não. É grátis e não exige conta nem download."
+        }
+      ]
+    },
+    "sliding-puzzle": {
+      "seoTitle": "Quebra-Cabeça Deslizante – Jogo dos 15 Grátis Online (3x3, 4x4, 5x5)",
+      "metaDescription": "Jogue grátis o clássico quebra-cabeça deslizante. Escolha 3x3, 4x4 ou 5x5, toque nas peças ou use as setas e supere seus recordes de movimentos e tempo.",
+      "h1": "Quebra-Cabeça Deslizante",
+      "subheading": "Deslize as peças numeradas até colocá-las em ordem, do 1 ao último número, com o espaço vazio no canto inferior direito.",
+      "keywords": [
+        "quebra-cabeça deslizante",
+        "jogo dos 15",
+        "quebra-cabeça de peças deslizantes",
+        "jogo de números",
+        "jogo dos 8 online",
+        "jogo dos 24",
+        "quebra-cabeça deslizante grátis",
+        "jogo de quebra-cabeça sem baixar"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um tamanho",
+          "text": "Escolha 3x3, 4x4 ou 5x5. O tabuleiro é embaralhado para você e sempre tem solução."
+        },
+        {
+          "name": "Deslize as peças",
+          "text": "Toque em uma peça ao lado do espaço vazio para deslizá-la. Toque em uma peça na mesma linha ou coluna do espaço para deslizar a fila inteira de uma vez."
+        },
+        {
+          "name": "Use o teclado",
+          "text": "Pressione uma seta para deslizar nessa direção a peça que está do lado oposto do espaço vazio."
+        },
+        {
+          "name": "Ordene os números",
+          "text": "Coloque as peças em ordem a partir do 1, com o espaço vazio por último. Seus movimentos e seu tempo são contados e o melhor resultado fica salvo."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Todo quebra-cabeça tem solução?",
+          "answer": "Sim. O tabuleiro é embaralhado com movimentos aleatórios válidos a partir da posição resolvida, então sempre tem solução."
+        },
+        {
+          "question": "Como funcionam as setas do teclado?",
+          "answer": "Uma seta desliza uma peça nessa direção para dentro do espaço vazio. Por exemplo, a seta para a esquerda move um passo para a esquerda a peça que está à direita do espaço."
+        },
+        {
+          "question": "Deslizar várias peças conta como um movimento?",
+          "answer": "Sim. Tocar em uma peça na mesma linha ou coluna do espaço desliza a fila inteira e conta como um único movimento."
+        },
+        {
+          "question": "Meus melhores resultados ficam salvos?",
+          "answer": "Sim. O menor número de movimentos e o melhor tempo são salvos separadamente para cada tamanho de tabuleiro, no seu navegador, somente neste dispositivo."
+        },
+        {
+          "question": "Com qual tamanho devo começar?",
+          "answer": "O 3x3 é rápido e bom para aprender. O 4x4 é o clássico jogo dos 15, e o 5x5 é um desafio mais longo."
+        },
+        {
+          "question": "Funciona no celular?",
+          "answer": "Sim. As peças têm áreas de toque grandes e o tabuleiro se ajusta à largura da tela. A tela cheia deixa o tabuleiro maior."
+        },
+        {
+          "question": "Tem algum custo?",
+          "answer": "Não. É grátis, não tem anúncios dentro do jogo e não exige conta."
+        }
+      ]
+    },
+    "block-stacker": {
+      "seoTitle": "Block Stacker – Jogo Grátis de Blocos Caindo com Controles de Toque",
+      "metaDescription": "Jogue Block Stacker grátis no navegador. Empilhe blocos, complete linhas, guarde peças e suba de nível. Teclado e toque, recorde salvo e tela cheia.",
+      "h1": "Block Stacker",
+      "subheading": "Gire e posicione os blocos que caem para completar linhas antes que a pilha chegue ao topo. Uma pausa clássica de quebra-cabeça.",
+      "keywords": [
+        "block stacker",
+        "jogo de blocos caindo",
+        "jogo de blocos online",
+        "jogar block stacker grátis",
+        "jogo de empilhar blocos",
+        "quebra-cabeça de completar linhas",
+        "blocos caindo para celular",
+        "jogo de blocos retrô"
+      ],
+      "howTo": [
+        {
+          "name": "Comece",
+          "text": "Toque em Iniciar. Peças de quatro quadrados caem do topo do tabuleiro de 10 por 20. Uma prévia mostra a próxima peça."
+        },
+        {
+          "name": "Mova e gire",
+          "text": "Use as setas para mover e Cima ou X para girar (Z gira no sentido contrário). No celular, use os botões na tela de esquerda, direita, baixo e girar."
+        },
+        {
+          "name": "Solte e guarde",
+          "text": "Pressione Espaço ou o botão de soltar para jogar a peça direto até o contorno fantasma. Pressione C ou o botão de guardar para trocá-la pela peça guardada, uma vez por peça."
+        },
+        {
+          "name": "Complete linhas",
+          "text": "Preencha todos os quadrados de uma linha para eliminá-la. Eliminar 1, 2, 3 ou 4 linhas vale 100, 300, 500 ou 800 vezes o seu nível. O jogo termina quando a pilha bloqueia novas peças."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Quais são os controles?",
+          "answer": "Setas esquerda e direita movem, Baixo desce devagar, Cima ou X gira no sentido horário, Z gira no sentido contrário, Espaço solta direto, C guarda uma peça e P pausa. Os botões de toque fazem o mesmo no celular."
+        },
+        {
+          "question": "Como funciona a pontuação?",
+          "answer": "Eliminar 1, 2, 3 ou 4 linhas de uma vez dá 100, 300, 500 ou 800 pontos multiplicados pelo seu nível atual. Descidas rápidas e soltas diretas somam alguns pontos extras."
+        },
+        {
+          "question": "Como funciona o sistema de níveis?",
+          "answer": "Você sobe um nível a cada 10 linhas eliminadas, e as peças caem mais rápido a cada nível."
+        },
+        {
+          "question": "O que é a peça fantasma?",
+          "answer": "Um contorno suave que mostra onde a peça atual vai parar se você a soltar direto."
+        },
+        {
+          "question": "O que é o espaço de reserva?",
+          "answer": "Você pode guardar a peça atual e trocá-la de volta mais tarde. Só é possível guardar uma vez por peça que cai."
+        },
+        {
+          "question": "A ordem das peças é justa?",
+          "answer": "Sim. As peças saem de um saco embaralhado com os sete formatos, então você nunca espera muito por nenhum deles."
+        },
+        {
+          "question": "Meu recorde fica salvo?",
+          "answer": "Sim, no seu navegador, somente neste dispositivo. Nada é enviado a um servidor."
+        }
+      ]
+    },
+    "sudoku": {
+      "seoTitle": "Sudoku – Jogo Grátis Online com Anotações, Dicas e Melhores Tempos",
+      "metaDescription": "Jogue Sudoku grátis no navegador. Puzzles Fácil, Médio e Difícil com solução única, anotações a lápis, dicas, desfazer, cronômetro e jogo salvo automaticamente.",
+      "h1": "Sudoku",
+      "subheading": "Preencha a grade para que cada linha, coluna e bloco 3x3 contenha os dígitos de 1 a 9. Cada puzzle tem exatamente uma solução.",
+      "keywords": [
+        "sudoku",
+        "sudoku grátis online",
+        "sudoku com anotações",
+        "sudoku fácil médio difícil",
+        "sudoku sem baixar",
+        "sudoku com dica",
+        "sudoku com cronômetro",
+        "sudoku para celular"
+      ],
+      "howTo": [
+        {
+          "name": "Escolha um nível",
+          "text": "Escolha Fácil, Médio ou Difícil. Um novo puzzle é gerado na hora, direto no seu navegador."
+        },
+        {
+          "name": "Selecione uma célula e digite um número",
+          "text": "Toque em uma célula vazia e depois em um número do teclado numérico. No teclado do computador, use os dígitos, as setas e Backspace para apagar."
+        },
+        {
+          "name": "Use as anotações",
+          "text": "Ative Anotações para escrever a lápis pequenos números candidatos. Ao colocar um número, ele é removido das anotações da sua linha, coluna e bloco."
+        },
+        {
+          "name": "Confira, peça dica e desfaça",
+          "text": "Números iguais e a linha, coluna e bloco selecionados ficam destacados, e duplicatas ficam vermelhas. Use Desfazer para voltar um passo ou Dica para revelar uma célula correta."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Todo puzzle tem apenas uma solução?",
+          "answer": "Sim. Cada puzzle é gerado a partir de uma grade completa válida e as células só são removidas enquanto a solução continuar única, então você nunca precisa chutar."
+        },
+        {
+          "question": "Qual é a diferença entre os níveis?",
+          "answer": "O Fácil começa com cerca de 38 números dados, o Médio com cerca de 32 e o Difícil com cerca de 27. Menos pistas costuma significar lógica mais difícil."
+        },
+        {
+          "question": "O que o botão Dica faz?",
+          "answer": "Ele preenche uma célula correta: a selecionada, se estiver vazia ou errada, ou então uma aleatória. As dicas são contadas e mostradas acima do tabuleiro."
+        },
+        {
+          "question": "Meu jogo fica salvo se eu atualizar a página?",
+          "answer": "Sim. O puzzle atual, seus números, anotações e o cronômetro ficam salvos no seu navegador, neste dispositivo, para você continuar depois."
+        },
+        {
+          "question": "Como os melhores tempos são registrados?",
+          "answer": "A resolução mais rápida de cada nível é salva neste dispositivo. Só jogos concluídos sem dicas contam para o melhor tempo."
+        },
+        {
+          "question": "Como funcionam as anotações a lápis?",
+          "answer": "Ative Anotações e toque nos números para marcar ou desmarcar pequenos candidatos em uma célula. Ao colocar um número, ele é removido das anotações da sua linha, coluna e bloco."
+        },
+        {
+          "question": "Funciona no celular?",
+          "answer": "Sim. O tabuleiro se ajusta à tela, o teclado numérico tem áreas de toque grandes e os puzzles são gerados em uma fração de segundo. A tela cheia deixa o tabuleiro maior."
+        }
+      ]
+    },
     "schulte-table": {
       "seoTitle": "Tabela de Schulte – Jogo Grátis de Treino de Atenção e Visão Periférica",
       "metaDescription": "Treine sua atenção e velocidade com a tabela de Schulte: encontre os números de 1 a 25 em ordem o mais rápido possível. Quatro tamanhos de grade, cronômetro e melhores tempos salvos. Grátis e privado.",
@@ -9753,6 +10137,16 @@
     "storageUsed": "Armazenamento usado neste dispositivo: {used}",
     "clearCache": "Limpar cópias offline",
     "cacheCleared": "Cópias offline removidas."
+  },
+  "games": {
+    "title": "Jogos",
+    "metaTitle": "Jogos Online Grátis – Jogue no Navegador, Sem Baixar",
+    "metaDescription": "Jogue grátis online: Sudoku, Block Stacker, Campo Minado, Snake, 2048, Ligue 4 e mais. Sem anúncios, sem cadastro, funciona offline no celular.",
+    "subtitle": "{count} jogos grátis que rodam no seu dispositivo. Sem cadastro, sem downloads e com funcionamento offline depois de instalado.",
+    "search": "Buscar jogos",
+    "bannerTitle": "Jogue agora",
+    "bannerBody": "{count} jogos grátis: quebra-cabeças, clássicos e treino mental. Sem cadastro, funciona offline.",
+    "playNow": "Todos os jogos"
   },
   "recentTools": {
     "heading": "Usados Recentemente",

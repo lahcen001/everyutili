@@ -8726,6 +8726,390 @@
         }
       ]
     },
+    "minesweeper": {
+      "seoTitle": "Minesweeper – Game Minesweeper Online Gratis dengan Kontrol Sentuh",
+      "metaDescription": "Main Minesweeper klasik gratis di browser. Tiga level, klik pertama aman, mode bendera untuk ponsel, timer, dan waktu terbaik tersimpan. Tanpa unduhan atau akun.",
+      "h1": "Minesweeper",
+      "subheading": "Bersihkan papan tanpa menginjak ranjau. Gunakan angka untuk menebak di mana ranjau bersembunyi.",
+      "keywords": [
+        "minesweeper",
+        "main minesweeper online",
+        "minesweeper gratis",
+        "minesweeper hp",
+        "minesweeper klasik",
+        "minesweeper tanpa unduh",
+        "minesweeper dengan bendera",
+        "minesweeper pemula"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih level",
+          "text": "Pilih Mudah (9x9, 10 ranjau), Sedang (12x12, 24 ranjau), atau Sulit (16x16, 40 ranjau). Timer mulai saat Anda mengetuk pertama kali."
+        },
+        {
+          "name": "Buka kotak",
+          "text": "Ketuk atau klik kotak untuk membukanya. Ketukan pertama selalu aman. Area kosong terbuka otomatis."
+        },
+        {
+          "name": "Baca angkanya",
+          "text": "Angka menunjukkan jumlah ranjau yang menyentuh kotak itu, termasuk secara diagonal. Gunakan untuk menyimpulkan kotak tetangga mana yang aman."
+        },
+        {
+          "name": "Tandai ranjau",
+          "text": "Klik kanan, tekan lama, atau aktifkan mode Bendera untuk memasang bendera. Buka semua kotak aman untuk menang."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah klik pertama selalu aman?",
+          "answer": "Ya. Ranjau ditempatkan setelah ketukan pertama Anda, tidak pernah di kotak itu atau kotak di sekitarnya, jadi Anda selalu membuka area kecil di awal."
+        },
+        {
+          "question": "Bagaimana cara memasang bendera di ponsel?",
+          "answer": "Tekan tombol mode Bendera lalu ketuk kotak untuk menandainya, atau cukup tekan lama sebuah kotak. Ketuk mode Bendera lagi untuk kembali membuka kotak."
+        },
+        {
+          "question": "Apa yang terjadi saat mengetuk angka?",
+          "answer": "Jika jumlah bendera di sekitar angka sama dengan angka itu, mengetuknya akan membuka semua kotak tetangga lainnya sekaligus. Ini disebut chord."
+        },
+        {
+          "question": "Apa saja tiga levelnya?",
+          "answer": "Mudah 9x9 dengan 10 ranjau, Sedang 12x12 dengan 24 ranjau, dan Sulit 16x16 dengan 40 ranjau."
+        },
+        {
+          "question": "Apakah waktu terbaik saya tersimpan?",
+          "answer": "Ya. Waktu kemenangan tercepat untuk tiap level disimpan di browser pada perangkat ini saja."
+        },
+        {
+          "question": "Bisakah bermain dengan keyboard?",
+          "answer": "Bisa. Pindah antar kotak dengan Tab, tekan Enter atau Spasi untuk membuka, dan tekan F untuk memberi bendera pada kotak yang dipilih."
+        },
+        {
+          "question": "Apakah ada biayanya?",
+          "answer": "Tidak. Gratis, tanpa akun, dan berjalan sepenuhnya di browser Anda."
+        }
+      ]
+    },
+    "tic-tac-toe": {
+      "seoTitle": "Tic-Tac-Toe – Main Gratis Online Lawan Komputer atau Teman",
+      "metaDescription": "Main Tic-Tac-Toe gratis di browser. Kalahkan komputer level Mudah, Sedang, atau Mustahil, atau main berdua di satu perangkat. Skor tersimpan, cocok untuk ponsel.",
+      "h1": "Tic-Tac-Toe",
+      "subheading": "Tiga berderet menang. Lawan komputer dengan tiga tingkat kesulitan atau oper perangkat ke teman.",
+      "keywords": [
+        "tic tac toe",
+        "main tic tac toe online",
+        "tic tac toe lawan komputer",
+        "tic tac toe 2 pemain",
+        "permainan XO",
+        "tic tac toe tidak terkalahkan",
+        "tic tac toe gratis",
+        "tic tac toe hp"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih mode",
+          "text": "Pilih Lawan Komputer atau 2 Pemain. Melawan komputer, pilih Mudah, Sedang, atau Mustahil dan tentukan Anda bermain sebagai X atau O."
+        },
+        {
+          "name": "Jalankan langkah",
+          "text": "Ketuk kotak kosong, atau tekan tombol 1 sampai 9 di keyboard, untuk menaruh tanda Anda."
+        },
+        {
+          "name": "Raih tiga berderet",
+          "text": "Susun tiga tanda Anda mendatar, menurun, atau diagonal. Garis kemenangan disorot warna hijau."
+        },
+        {
+          "name": "Main ronde lagi",
+          "text": "Tekan Main lagi. Pemain yang jalan lebih dulu bergantian tiap ronde, dan papan skor Anda tersimpan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa beda tingkat kesulitannya?",
+          "answer": "Mudah memilih kotak secara acak. Sedang mengambil kemenangan jika bisa dan memblokir Anda, selain itu lebih suka tengah dan sudut. Mustahil memakai algoritma minimax dan tidak pernah salah."
+        },
+        {
+          "question": "Bisakah saya mengalahkan level Mustahil?",
+          "answer": "Tidak. Dengan permainan sempurna, tic-tac-toe selalu seri, jadi hasil terbaik melawan Mustahil adalah seri."
+        },
+        {
+          "question": "Bisakah dua orang bermain di satu perangkat?",
+          "answer": "Bisa. Pilih 2 Pemain lalu bergantian mengetuk kotak. Kemenangan X dan O dihitung terpisah."
+        },
+        {
+          "question": "Siapa yang jalan lebih dulu?",
+          "answer": "Pemain pertama bergantian setiap ronde, jadi Anda dan komputer (atau kedua pemain) bergiliran memulai."
+        },
+        {
+          "question": "Apakah papan skor saya tersimpan?",
+          "answer": "Ya, di browser pada perangkat ini saja. Menang, seri, dan kalah dicatat terpisah untuk tiap tingkat kesulitan. Anda bisa menghapusnya dengan Reset skor."
+        },
+        {
+          "question": "Bisakah saya bermain sebagai O?",
+          "answer": "Bisa. Pilih Main O di mode Lawan Komputer. Mengubah mode, tingkat kesulitan, atau tanda akan memulai game baru."
+        },
+        {
+          "question": "Apakah bisa dimainkan di ponsel?",
+          "answer": "Ya. Papan menyesuaikan layar dengan area ketuk besar, dan layar penuh memberi papan lebih besar. Gratis dan tanpa akun."
+        }
+      ]
+    },
+    "connect-four": {
+      "seoTitle": "Connect Four – Game Gratis Online Lawan Komputer atau 2 Pemain",
+      "metaDescription": "Main Connect Four gratis di browser. Kalahkan komputer level Mudah, Sedang, atau Sulit, atau main berdua di satu perangkat. Ada undo, skor tersimpan, kontrol sentuh.",
+      "h1": "Connect Four",
+      "subheading": "Jatuhkan cakram ke dalam kisi dan hubungkan empat berderet sebelum lawan Anda.",
+      "keywords": [
+        "connect four",
+        "connect 4 online",
+        "connect four lawan komputer",
+        "connect four 2 pemain",
+        "main connect 4 gratis",
+        "game empat berderet",
+        "connect four tanpa unduh",
+        "connect four hp"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih mode",
+          "text": "Pilih Lawan Komputer (Mudah, Sedang, atau Sulit) atau 2 pemain di satu perangkat. Anda memakai warna merah dan jalan lebih dulu melawan komputer."
+        },
+        {
+          "name": "Jatuhkan cakram",
+          "text": "Ketuk atau klik sebuah kolom. Cakram Anda jatuh ke tempat kosong paling bawah di kolom itu."
+        },
+        {
+          "name": "Hubungkan empat",
+          "text": "Susun empat cakram mendatar, menurun, atau diagonal. Keempat cakram pemenang disorot."
+        },
+        {
+          "name": "Undo atau ulangi",
+          "text": "Gunakan Undo untuk membatalkan langkah terakhir, atau Game baru untuk mulai lagi. Kemenangan Anda tetap tercatat di papan skor."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Bagaimana cara bermain Connect Four?",
+          "answer": "Bergantian menjatuhkan cakram ke salah satu dari tujuh kolom. Pemain pertama yang membuat empat cakram berderet ke arah mana pun menang."
+        },
+        {
+          "question": "Seberapa kuat komputernya?",
+          "answer": "Mudah melihat dua langkah ke depan dan kadang salah. Sedang melihat sekitar empat langkah. Sulit menelusuri sekitar enam langkah dan jarang meleset."
+        },
+        {
+          "question": "Bisakah bermain melawan teman?",
+          "answer": "Bisa. Pilih 2 pemain lalu oper perangkat bolak-balik. Merah dan kuning bergiliran."
+        },
+        {
+          "question": "Bisakah membatalkan langkah?",
+          "answer": "Bisa. Undo membatalkan langkah terakhir Anda. Melawan komputer, balasan komputer juga dihapus sehingga giliran Anda lagi."
+        },
+        {
+          "question": "Apakah papan skor saya tersimpan?",
+          "answer": "Ya. Menang, kalah, dan seri disimpan di browser pada perangkat ini saja. Anda bisa meresetnya kapan saja."
+        },
+        {
+          "question": "Apakah bisa dimainkan di ponsel?",
+          "answer": "Ya. Ketuk kolom mana pun untuk menjatuhkan cakram. Papan menyesuaikan lebar layar, dan layar penuh memberi papan lebih besar."
+        },
+        {
+          "question": "Apakah ada biayanya?",
+          "answer": "Tidak. Gratis, tanpa akun atau unduhan."
+        }
+      ]
+    },
+    "sliding-puzzle": {
+      "seoTitle": "Sliding Puzzle – Puzzle 15 Online Gratis (3x3, 4x4, 5x5)",
+      "metaDescription": "Main puzzle geser klasik gratis. Pilih 3x3, 4x4, atau 5x5, ketuk ubin atau pakai tombol panah, dan kalahkan langkah serta waktu terbaik Anda yang tersimpan.",
+      "h1": "Sliding Puzzle",
+      "subheading": "Geser ubin bernomor hingga berurutan, dari 1 sampai angka terakhir, dengan celah di pojok kanan bawah.",
+      "keywords": [
+        "sliding puzzle",
+        "puzzle 15",
+        "puzzle geser angka",
+        "game puzzle angka",
+        "8 puzzle online",
+        "puzzle 24",
+        "sliding puzzle gratis",
+        "game puzzle tanpa unduh"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih ukuran",
+          "text": "Pilih 3x3, 4x4, atau 5x5. Papan diacak untuk Anda dan selalu bisa diselesaikan."
+        },
+        {
+          "name": "Geser ubin",
+          "text": "Ketuk ubin di sebelah celah untuk menggesernya. Ketuk ubin di baris atau kolom yang sama dengan celah untuk menggeser seluruh barisnya sekaligus."
+        },
+        {
+          "name": "Pakai keyboard",
+          "text": "Tekan tombol panah untuk menggeser ubin di sisi berlawanan celah ke arah tersebut."
+        },
+        {
+          "name": "Urutkan angkanya",
+          "text": "Susun ubin berurutan mulai dari 1 dengan celah kosong di akhir. Langkah dan waktu Anda dihitung, dan hasil terbaik disimpan."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah setiap puzzle bisa diselesaikan?",
+          "answer": "Ya. Papan diacak dengan langkah legal acak dari posisi selesai, jadi selalu bisa diselesaikan."
+        },
+        {
+          "question": "Bagaimana cara kerja tombol panah?",
+          "answer": "Tombol panah menggeser ubin ke arah itu masuk ke celah. Misalnya, Kiri menggeser ubin di kanan celah satu langkah ke kiri."
+        },
+        {
+          "question": "Apakah menggeser beberapa ubin dihitung satu langkah?",
+          "answer": "Ya. Mengetuk ubin di baris atau kolom yang sama dengan celah menggeser seluruh barisnya dan dihitung satu langkah."
+        },
+        {
+          "question": "Apakah hasil terbaik saya tersimpan?",
+          "answer": "Ya. Langkah dan waktu terbaik disimpan terpisah untuk tiap ukuran papan di browser pada perangkat ini saja."
+        },
+        {
+          "question": "Sebaiknya mulai dari ukuran berapa?",
+          "answer": "3x3 cepat dan bagus untuk belajar. 4x4 adalah puzzle 15 klasik, dan 5x5 tantangan yang lebih panjang."
+        },
+        {
+          "question": "Apakah bisa dimainkan di ponsel?",
+          "answer": "Ya. Ubinnya berukuran besar untuk diketuk dan papan menyesuaikan lebar layar. Layar penuh memberi papan lebih besar."
+        },
+        {
+          "question": "Apakah ada biayanya?",
+          "answer": "Tidak. Gratis, tanpa iklan di dalam game, dan tanpa akun."
+        }
+      ]
+    },
+    "block-stacker": {
+      "seoTitle": "Block Stacker – Game Puzzle Balok Jatuh Gratis dengan Kontrol Sentuh",
+      "metaDescription": "Main Block Stacker gratis di browser. Susun balok jatuh, hapus baris, simpan balok, dan naik level. Keyboard dan tombol sentuh, skor terbaik tersimpan, layar penuh.",
+      "h1": "Block Stacker",
+      "subheading": "Putar dan tempatkan balok yang jatuh untuk menghapus baris penuh sebelum tumpukan mencapai atas. Selingan puzzle klasik.",
+      "keywords": [
+        "block stacker",
+        "game balok jatuh",
+        "game puzzle balok online",
+        "main block stacker gratis",
+        "game menyusun balok",
+        "puzzle hapus baris",
+        "game balok jatuh hp",
+        "game balok retro"
+      ],
+      "howTo": [
+        {
+          "name": "Mulai",
+          "text": "Tekan Mulai. Keping berisi empat kotak jatuh dari atas papan 10 kali 20. Pratinjau menampilkan keping berikutnya."
+        },
+        {
+          "name": "Gerak dan putar",
+          "text": "Gunakan tombol panah untuk bergerak dan Atas atau X untuk memutar (Z memutar balik). Di ponsel gunakan tombol kiri, kanan, bawah, dan putar di layar."
+        },
+        {
+          "name": "Jatuhkan dan simpan",
+          "text": "Tekan Spasi atau tombol jatuhkan untuk menjatuhkan keping langsung ke garis bayangannya. Tekan C atau tombol simpan untuk menukarnya dengan keping tersimpan, sekali per keping."
+        },
+        {
+          "name": "Hapus baris",
+          "text": "Isi setiap kotak dalam satu baris untuk menghapusnya. Menghapus 1, 2, 3, atau 4 baris memberi 100, 300, 500, atau 800 kali level Anda. Game berakhir saat tumpukan menghalangi keping baru."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apa saja kontrolnya?",
+          "answer": "Panah kiri dan kanan untuk bergerak, Bawah untuk jatuh pelan, Atas atau X memutar searah jarum jam, Z memutar balik, Spasi menjatuhkan langsung, C menyimpan keping, dan P menjeda. Tombol sentuh melakukan hal sama di ponsel."
+        },
+        {
+          "question": "Bagaimana sistem skornya?",
+          "answer": "Menghapus 1, 2, 3, atau 4 baris sekaligus memberi 100, 300, 500, atau 800 poin dikali level Anda saat ini. Jatuh pelan dan jatuh langsung menambah sedikit poin bonus."
+        },
+        {
+          "question": "Bagaimana sistem levelnya?",
+          "answer": "Anda naik level setiap 10 baris yang dihapus, dan keping jatuh lebih cepat di tiap level."
+        },
+        {
+          "question": "Apa itu keping bayangan?",
+          "answer": "Garis samar yang menunjukkan tempat keping saat ini akan mendarat jika Anda menjatuhkannya langsung."
+        },
+        {
+          "question": "Apa itu slot simpan?",
+          "answer": "Anda bisa menyimpan keping saat ini dan menukarnya kembali nanti. Hanya bisa menyimpan sekali per keping yang jatuh."
+        },
+        {
+          "question": "Apakah urutan kepingnya adil?",
+          "answer": "Ya. Keping berasal dari kantong acak berisi ketujuh bentuk, jadi Anda tidak pernah menunggu lama untuk bentuk apa pun."
+        },
+        {
+          "question": "Apakah skor terbaik saya tersimpan?",
+          "answer": "Ya, di browser pada perangkat ini saja. Tidak ada yang dikirim ke server."
+        }
+      ]
+    },
+    "sudoku": {
+      "seoTitle": "Sudoku – Sudoku Online Gratis dengan Catatan, Petunjuk, dan Waktu Terbaik",
+      "metaDescription": "Main Sudoku gratis di browser. Puzzle Mudah, Sedang, Sulit dengan satu solusi unik, catatan pensil, petunjuk, undo, timer, dan game tersimpan otomatis.",
+      "h1": "Sudoku",
+      "subheading": "Isi kisi agar setiap baris, kolom, dan kotak 3x3 berisi angka 1 sampai 9. Setiap puzzle memiliki tepat satu solusi.",
+      "keywords": [
+        "sudoku",
+        "sudoku online gratis",
+        "sudoku dengan catatan pensil",
+        "sudoku mudah sedang sulit",
+        "sudoku tanpa unduh",
+        "sudoku tombol petunjuk",
+        "sudoku timer",
+        "sudoku untuk hp"
+      ],
+      "howTo": [
+        {
+          "name": "Pilih level",
+          "text": "Pilih Mudah, Sedang, atau Sulit. Puzzle baru dibuat seketika di browser Anda."
+        },
+        {
+          "name": "Pilih sel dan isi angka",
+          "text": "Ketuk sel kosong, lalu angka dari papan angka. Di keyboard gunakan digit, tombol panah, dan Backspace untuk menghapus."
+        },
+        {
+          "name": "Gunakan catatan",
+          "text": "Aktifkan Catatan untuk menulis angka kandidat kecil dengan pensil. Menempatkan angka akan menghapusnya dari catatan di baris, kolom, dan kotaknya."
+        },
+        {
+          "name": "Periksa, petunjuk, dan undo",
+          "text": "Angka yang sama serta baris, kolom, dan kotak terpilih disorot, dan duplikat berubah merah. Gunakan Undo untuk mundur atau Petunjuk untuk mengungkap satu sel yang benar."
+        }
+      ],
+      "faq": [
+        {
+          "question": "Apakah setiap puzzle hanya punya satu solusi?",
+          "answer": "Ya. Setiap puzzle dibuat dari kisi lengkap yang valid dan sel dihapus hanya selama solusinya tetap unik, jadi Anda tidak perlu menebak."
+        },
+        {
+          "question": "Apa beda antar level?",
+          "answer": "Mudah dimulai dengan sekitar 38 angka awal, Sedang sekitar 32, dan Sulit sekitar 27. Petunjuk lebih sedikit biasanya berarti logika lebih sulit."
+        },
+        {
+          "question": "Apa fungsi tombol Petunjuk?",
+          "answer": "Mengisi satu sel yang benar: sel terpilih jika kosong atau salah, jika tidak sel acak. Petunjuk dihitung dan ditampilkan di atas papan."
+        },
+        {
+          "question": "Apakah game saya tersimpan jika halaman dimuat ulang?",
+          "answer": "Ya. Puzzle saat ini, angka, catatan, dan timer Anda disimpan di browser pada perangkat ini, jadi bisa dilanjutkan nanti."
+        },
+        {
+          "question": "Bagaimana waktu terbaik dicatat?",
+          "answer": "Penyelesaian tercepat untuk tiap level disimpan di perangkat ini. Hanya game yang selesai tanpa petunjuk yang dihitung sebagai waktu terbaik."
+        },
+        {
+          "question": "Bagaimana cara kerja catatan pensil?",
+          "answer": "Aktifkan Catatan lalu ketuk angka untuk menambah atau menghapus kandidat kecil di sebuah sel. Saat Anda menempatkan angka, angka itu dihapus dari catatan di baris, kolom, dan kotaknya."
+        },
+        {
+          "question": "Apakah bisa dimainkan di ponsel?",
+          "answer": "Ya. Papan menyesuaikan layar, papan angka berukuran besar untuk diketuk, dan puzzle dibuat dalam sekejap. Layar penuh memberi papan lebih besar."
+        }
+      ]
+    },
     "schulte-table": {
       "seoTitle": "Tabel Schulte – Game Latihan Perhatian & Penglihatan Perifer Gratis",
       "metaDescription": "Latih perhatian dan kecepatan Anda dengan tabel Schulte: temukan angka 1 sampai 25 secara berurutan secepat mungkin. Empat ukuran grid, timer, dan waktu terbaik tersimpan. Gratis dan privat.",
@@ -9753,6 +10137,16 @@
     "storageUsed": "Penyimpanan terpakai di perangkat ini: {used}",
     "clearCache": "Hapus salinan offline",
     "cacheCleared": "Salinan offline dihapus."
+  },
+  "games": {
+    "title": "Game",
+    "metaTitle": "Game Online Gratis – Main di Browser, Tanpa Unduhan",
+    "metaDescription": "Main game online gratis: Sudoku, Block Stacker, Minesweeper, Snake, 2048, Connect Four dan lainnya. Tanpa iklan, tanpa daftar, bisa offline di ponsel.",
+    "subtitle": "{count} game gratis yang berjalan di perangkat Anda. Tanpa daftar, tanpa unduhan, dan bisa dimainkan offline setelah dipasang.",
+    "search": "Cari game",
+    "bannerTitle": "Main game",
+    "bannerBody": "{count} game gratis: teka-teki, game klasik, dan latihan otak. Tanpa daftar, bisa offline.",
+    "playNow": "Semua game"
   },
   "recentTools": {
     "heading": "Baru Digunakan",
